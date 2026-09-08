@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "ntr001_deep_enclosure",
+  "summary": "按 NTR-001 初代厚机身建立银色下壳、主框架、控制面板、原生尺寸约束与内部空腔。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "NTR-001 rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15131.693002749798,
+      "bounds": [
+        -73.44999999999999,
+        73.44999999999999,
+        -41.45,
+        41.45,
+        0.0,
+        1.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut",
+      "label": "Original DS deep lower frame001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 14409.552920371869,
+      "bounds": [
+        -74.35,
+        74.35,
+        -42.35,
+        42.35,
+        1.3,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckBody",
+      "label": "Original DS control deck",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 12969.66610997811,
+      "bounds": [
+        -74.0,
+        74.0,
+        -42.0,
+        42.0,
+        17.549999999999997,
+        18.599999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 24.554353945176842,
+      "bounds": [
+        -74.1,
+        74.1,
+        -42.1,
+        42.1,
+        17.51,
+        17.540000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/nds/output/iterations/01_ntr001_deep_enclosure.FCStd",
+  "views": [
+    "devices/nds/output/previews/01_ntr001_deep_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 150
+}
