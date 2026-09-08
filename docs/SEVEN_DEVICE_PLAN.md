@@ -35,7 +35,7 @@ Additional corrective stages are recorded when inspection finds defects; the lis
 | --- | --- |
 | Switch | Existing published baseline verified |
 | Switch 2 | Existing published baseline verified |
-| Nintendo 3DS | Reference and model preparation |
+| Nintendo 3DS | Stages 1–5 built: 101 components; exterior and display structure validated |
 | Nintendo DS | Reference preparation |
 | PSP-1000 | Reference preparation |
 | PS Vita PCH-1000 | Reference preparation |

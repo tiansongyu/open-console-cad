@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "lower_enclosure",
+  "summary": "建立原生草图、凸台和圆角驱动的下机身、空腔、控制面板与分型缝。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "Removable lower rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9646.379816339744,
+      "bounds": [
+        -66.4,
+        66.4,
+        -36.4,
+        36.4,
+        0.0,
+        1.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut",
+      "label": "Lower structural side frame001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6364.41471378632,
+      "bounds": [
+        -67.0,
+        67.0,
+        -37.0,
+        37.0,
+        1.05,
+        10.950000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckBody",
+      "label": "Control deck",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9807.928841778676,
+      "bounds": [
+        -66.8,
+        66.8,
+        -36.8,
+        36.8,
+        11.0,
+        12.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 35.861211734269844,
+      "bounds": [
+        -66.925,
+        66.925,
+        -36.925,
+        36.925,
+        10.93,
+        10.985
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/3ds/output/iterations/01_lower_enclosure.FCStd",
+  "views": [
+    "devices/3ds/output/previews/01_lower_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 160.0
+}

@@ -1,0 +1,610 @@
+{
+  "iteration": 2,
+  "slug": "dual_displays_and_hinge",
+  "summary": "建立铰链套、通轴和轴承垫，加入上下 LCD、金属背板、下屏触控层及上屏立体显示膜层。",
+  "physical_components": 22,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "Removable lower rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9646.379816339744,
+      "bounds": [
+        -66.4,
+        66.4,
+        -36.4,
+        36.4,
+        0.0,
+        1.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "Lower structural side frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 6195.261392730422,
+      "bounds": [
+        -67.0000001,
+        67.0000001,
+        -37.0,
+        37.0000001,
+        1.0499999,
+        10.950000100001134
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckCut001",
+      "label": "Control deck002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 5240.859981408522,
+      "bounds": [
+        -66.80000009999999,
+        66.80000009999999,
+        -36.8,
+        32.65257597982065,
+        10.9999999,
+        12.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 35.861211734269844,
+      "bounds": [
+        -66.925,
+        66.925,
+        -36.925,
+        36.925,
+        10.93,
+        10.985
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidBackCoverBody",
+      "label": "Upper outer cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8397.48583470577,
+      "bounds": [
+        -66.8,
+        66.8,
+        35.0,
+        105.0,
+        4.800000000000001,
+        5.700000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBackCover",
+      "assembly": "Lid",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidFrameCut001",
+      "label": "Upper display frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 3483.685505380995,
+      "bounds": [
+        -66.67500009999999,
+        66.67500009999999,
+        35.12499989999999,
+        104.875,
+        5.749999900000001,
+        12.60000010000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidFrame",
+      "assembly": "Lid",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBezelCut001",
+      "label": "Black upper display bezel002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1316.412989543704,
+      "bounds": [
+        -66.35000009999999,
+        66.35000009999999,
+        38.00963442930741,
+        104.55,
+        12.649999900000001,
+        12.9000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBezel",
+      "assembly": "Lid",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LeftHingeSleeve",
+      "label": "Hinge knuckle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 180.7747811099253,
+      "bounds": [
+        -65.2,
+        -56.2,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CenterHingeSleeve",
+      "label": "Hinge knuckle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2048.7808525791534,
+      "bounds": [
+        -51.0,
+        51.0,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CenterHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "RightHingeSleeve",
+      "label": "Hinge knuckle002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 180.7747811099253,
+      "bounds": [
+        56.2,
+        65.2,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeAxle",
+      "label": "Continuous hinge pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 697.9236575508941,
+      "bounds": [
+        -63.75,
+        63.75,
+        33.68,
+        36.32,
+        11.58,
+        14.22
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher_1",
+      "label": "Hinge end bearing washer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.613712627827944,
+      "bounds": [
+        -54.025,
+        -53.574999999999996,
+        32.3,
+        37.7,
+        10.2,
+        15.600000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher-1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher1",
+      "label": "Hinge end bearing washer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.613712627827942,
+      "bounds": [
+        53.574999999999996,
+        54.025,
+        32.3,
+        37.7,
+        10.2,
+        15.600000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerDisplaySurround",
+      "label": "Lower touch-panel frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 552.2291148575123,
+      "bounds": [
+        -35.769999999999996,
+        35.769999999999996,
+        -29.59,
+        25.59,
+        11.65,
+        12.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerDisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCD",
+      "label": "LCD module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9126.538500532011,
+      "bounds": [
+        -33.72,
+        33.72,
+        -27.54,
+        23.54,
+        8.7,
+        11.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCDBackplate",
+      "label": "LCD metal backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 826.5544302368617,
+      "bounds": [
+        -33.72,
+        33.72,
+        -27.54,
+        23.54,
+        8.4,
+        8.64
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerTouchDigitizer",
+      "label": "Resistive touch layer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 212.33519143760225,
+      "bounds": [
+        -30.72,
+        30.72,
+        -25.04,
+        21.04,
+        11.93,
+        12.004999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerTouchDigitizer",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerGlass",
+      "label": "Lower screen cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 353.89198572933816,
+      "bounds": [
+        -30.72,
+        30.72,
+        -25.04,
+        21.04,
+        12.005,
+        12.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperLCD",
+      "label": "LCD module001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 11205.698820532009,
+      "bounds": [
+        -41.4,
+        41.4,
+        44.46,
+        95.53999999999999,
+        9.600000000000001,
+        12.250000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCD",
+      "assembly": "LidDisplay",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCDBackplate",
+      "label": "LCD metal backplate001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1014.8557422368616,
+      "bounds": [
+        -41.4,
+        41.4,
+        44.46,
+        95.53999999999999,
+        9.3,
+        9.540000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCDBackplate",
+      "assembly": "LidDisplay",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "ParallaxBarrier",
+      "label": "3D parallax film layout",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.55638654824472,
+      "bounds": [
+        -38.4,
+        38.4,
+        46.959999999999994,
+        93.04,
+        12.655000000000001,
+        12.695
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallaxBarrier",
+      "assembly": "LidDisplay",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperGlass",
+      "label": "Upper display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 583.9200945115126,
+      "bounds": [
+        -38.4,
+        38.4,
+        46.959999999999994,
+        93.04,
+        12.705,
+        12.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperGlass",
+      "assembly": "LidDisplay",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/3ds/output/iterations/02_dual_displays_and_hinge.FCStd",
+  "views": [
+    "devices/3ds/output/previews/02_dual_displays_and_hinge_hero.png",
+    "devices/3ds/output/previews/02_dual_displays_and_hinge_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 160.0
+}

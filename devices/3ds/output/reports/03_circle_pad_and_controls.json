@@ -1,0 +1,1365 @@
+{
+  "iteration": 3,
+  "slug": "circle_pad_and_controls",
+  "summary": "完成圆形滑控钮、十字键、ABXY、SELECT/HOME/START 和电源键，各按键与安装孔分离建模。",
+  "physical_components": 50,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "Removable lower rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9646.379816339744,
+      "bounds": [
+        -66.4,
+        66.4,
+        -36.4,
+        36.4,
+        0.0,
+        1.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "Lower structural side frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 6195.261392781933,
+      "bounds": [
+        -67.0000001,
+        67.0000001,
+        -37.0,
+        37.0000001,
+        1.0499999,
+        10.950000100001139
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckCut011",
+      "label": "Control deck012",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 79,
+      "volume": 4437.948195232845,
+      "bounds": [
+        -66.80000009999999,
+        66.80000009999999,
+        -36.8,
+        32.65257597982065,
+        10.9999999,
+        12.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 35.861211734269844,
+      "bounds": [
+        -66.925,
+        66.925,
+        -36.925,
+        36.925,
+        10.93,
+        10.985
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidBackCoverBody",
+      "label": "Upper outer cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8397.48583470577,
+      "bounds": [
+        -66.8,
+        66.8,
+        35.0,
+        105.0,
+        4.800000000000001,
+        5.700000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBackCover",
+      "assembly": "Lid",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidFrameCut001",
+      "label": "Upper display frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 3483.685505380995,
+      "bounds": [
+        -66.67500009999999,
+        66.67500009999999,
+        35.12499989999999,
+        104.875,
+        5.749999900000001,
+        12.60000010000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidFrame",
+      "assembly": "Lid",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBezelCut001",
+      "label": "Black upper display bezel002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1316.412989543704,
+      "bounds": [
+        -66.35000009999999,
+        66.35000009999999,
+        38.00963442930741,
+        104.55,
+        12.649999900000001,
+        12.9000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBezel",
+      "assembly": "Lid",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LeftHingeSleeve",
+      "label": "Hinge knuckle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 180.7747811099253,
+      "bounds": [
+        -65.2,
+        -56.2,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CenterHingeSleeve",
+      "label": "Hinge knuckle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2048.7808525791534,
+      "bounds": [
+        -51.0,
+        51.0,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CenterHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "RightHingeSleeve",
+      "label": "Hinge knuckle002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 180.7747811099253,
+      "bounds": [
+        56.2,
+        65.2,
+        32.1,
+        37.9,
+        10.0,
+        15.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeAxle",
+      "label": "Continuous hinge pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 697.9236575508941,
+      "bounds": [
+        -63.75,
+        63.75,
+        33.68,
+        36.32,
+        11.58,
+        14.22
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher_1",
+      "label": "Hinge end bearing washer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.613712627827944,
+      "bounds": [
+        -54.025,
+        -53.574999999999996,
+        32.3,
+        37.7,
+        10.2,
+        15.600000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher-1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher1",
+      "label": "Hinge end bearing washer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.613712627827942,
+      "bounds": [
+        53.574999999999996,
+        54.025,
+        32.3,
+        37.7,
+        10.2,
+        15.600000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerDisplaySurround",
+      "label": "Lower touch-panel frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 552.2291148575123,
+      "bounds": [
+        -35.769999999999996,
+        35.769999999999996,
+        -29.59,
+        25.59,
+        11.65,
+        12.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerDisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCD",
+      "label": "LCD module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9126.538500532011,
+      "bounds": [
+        -33.72,
+        33.72,
+        -27.54,
+        23.54,
+        8.7,
+        11.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCDBackplate",
+      "label": "LCD metal backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 826.5544302368617,
+      "bounds": [
+        -33.72,
+        33.72,
+        -27.54,
+        23.54,
+        8.4,
+        8.64
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerTouchDigitizer",
+      "label": "Resistive touch layer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 212.33519143760225,
+      "bounds": [
+        -30.72,
+        30.72,
+        -25.04,
+        21.04,
+        11.93,
+        12.004999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerTouchDigitizer",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerGlass",
+      "label": "Lower screen cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 353.89198572933816,
+      "bounds": [
+        -30.72,
+        30.72,
+        -25.04,
+        21.04,
+        12.005,
+        12.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperLCD",
+      "label": "LCD module001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 11205.698820532009,
+      "bounds": [
+        -41.4,
+        41.4,
+        44.46,
+        95.53999999999999,
+        9.600000000000001,
+        12.250000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCD",
+      "assembly": "LidDisplay",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCDBackplate",
+      "label": "LCD metal backplate001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1014.8557422368616,
+      "bounds": [
+        -41.4,
+        41.4,
+        44.46,
+        95.53999999999999,
+        9.3,
+        9.540000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCDBackplate",
+      "assembly": "LidDisplay",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "ParallaxBarrier",
+      "label": "3D parallax film layout",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.55638654824472,
+      "bounds": [
+        -38.4,
+        38.4,
+        46.959999999999994,
+        93.04,
+        12.655000000000001,
+        12.695
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallaxBarrier",
+      "assembly": "LidDisplay",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperGlass",
+      "label": "Upper display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 583.9200945115126,
+      "bounds": [
+        -38.4,
+        38.4,
+        46.959999999999994,
+        93.04,
+        12.705,
+        12.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperGlass",
+      "assembly": "LidDisplay",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "CirclePadBezel",
+      "label": "Circle Pad black annular surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 54.07819784164958,
+      "bounds": [
+        -59.0,
+        -41.0,
+        5.0,
+        23.0,
+        11.65,
+        12.200000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CirclePadBezel",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CirclePadCap",
+      "label": "Circle Pad rubber cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 116.78396404400506,
+      "bounds": [
+        -56.8500001,
+        -43.15,
+        7.15,
+        20.850000100000003,
+        11.95,
+        12.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CirclePadCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CirclePadStem",
+      "label": "Circle Pad transmission stem",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 46.53327038497201,
+      "bounds": [
+        -52.3,
+        -47.7,
+        11.7,
+        16.3,
+        9.0,
+        11.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CirclePadStem",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPad",
+      "label": "Directional cross",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 242.54823639881084,
+      "bounds": [
+        -58.5,
+        -41.5,
+        -21.5,
+        -4.5,
+        11.28,
+        12.729999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadMark0",
+      "label": "Directional key tick",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015741111473693812,
+      "bounds": [
+        -50.2,
+        -49.8,
+        -8.2,
+        -6.0,
+        12.745,
+        12.763
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadMark0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadMark1",
+      "label": "Directional key tick001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01574111147369374,
+      "bounds": [
+        -45.2,
+        -43.0,
+        -13.200000000000001,
+        -12.799999999999999,
+        12.745,
+        12.763
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadMark1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadMark2",
+      "label": "Directional key tick002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015741111473693815,
+      "bounds": [
+        -50.2,
+        -49.8,
+        -20.0,
+        -17.799999999999997,
+        12.745,
+        12.763
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadMark2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadMark3",
+      "label": "Directional key tick003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01574111147369374,
+      "bounds": [
+        -57.0,
+        -54.8,
+        -13.200000000000001,
+        -12.799999999999999,
+        12.745,
+        12.763
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadMark3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonX",
+      "label": "X button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 45.901299181546165,
+      "bounds": [
+        45.6999999,
+        52.3000001,
+        7.499999900000001,
+        14.1000001,
+        11.35,
+        12.700000099999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkX",
+      "label": "X",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.02232897846123498,
+      "bounds": [
+        48.18635696308725,
+        49.99560612416108,
+        9.8,
+        11.914093959731545,
+        12.716,
+        12.734
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemX",
+      "label": "Face key plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        47.6,
+        50.4,
+        9.4,
+        12.200000000000001,
+        8.85,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemX",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 45.90129918154616,
+      "bounds": [
+        52.4999999,
+        59.100000099999995,
+        0.6999999000000002,
+        7.3000001,
+        11.35,
+        12.700000099999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.024445060921119442,
+      "bounds": [
+        54.922651006711405,
+        56.85931208053691,
+        3.0,
+        5.1140939597315445,
+        12.716,
+        12.734
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemA",
+      "label": "Face key plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        54.4,
+        57.199999999999996,
+        2.6,
+        5.4,
+        8.85,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemA",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 45.90129918154616,
+      "bounds": [
+        45.6999999,
+        52.3000001,
+        -6.1000001,
+        0.5000001,
+        11.35,
+        12.700000099999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.030789871385804253,
+      "bounds": [
+        48.38455317181208,
+        49.883766878523495,
+        -3.8000000999999997,
+        -1.6859059402684557,
+        12.7159999,
+        12.7340001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemB",
+      "label": "Face key plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        47.6,
+        50.4,
+        -4.199999999999999,
+        -1.4,
+        8.85,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemB",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonY",
+      "label": "Y button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 45.90129918154616,
+      "bounds": [
+        38.899999900000005,
+        45.5000001,
+        0.6999999000000002,
+        7.3000001,
+        11.35,
+        12.700000099999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkY",
+      "label": "Y",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 0.016696215777425045,
+      "bounds": [
+        41.29433724832215,
+        43.07668833892618,
+        3.0,
+        5.1140939597315445,
+        12.716,
+        12.734
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemY",
+      "label": "Face key plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        40.800000000000004,
+        43.6,
+        2.6,
+        5.4,
+        8.85,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemY",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuKey0",
+      "label": "SELECT menu key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 51.90715038378978,
+      "bounds": [
+        -29.0,
+        -13.0,
+        -33.85,
+        -30.15,
+        11.55,
+        12.430000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuKey0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuLabel0",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.048726456388859724,
+      "bounds": [
+        -25.481082314765104,
+        -18.806300335570473,
+        -32.67630882483221,
+        -31.31201332281879,
+        12.444999900000001,
+        12.4630001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuLabel0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuKey1",
+      "label": "HOME menu key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 51.90715038378978,
+      "bounds": [
+        -8.0,
+        8.0,
+        -33.85,
+        -30.15,
+        11.55,
+        12.430000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuKey1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuLabel1",
+      "label": "HOME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 61,
+      "volume": 0.04426236502916586,
+      "bounds": [
+        -4.422944630872483,
+        0.757877516778523,
+        -32.67630882483221,
+        -31.31201332281879,
+        12.444999900000001,
+        12.4630001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuLabel1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuKey2",
+      "label": "START menu key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 51.90715038378978,
+      "bounds": [
+        13.0,
+        29.0,
+        -33.85,
+        -30.15,
+        11.55,
+        12.430000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuKey2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuLabel2",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.04266415442055025,
+      "bounds": [
+        16.518917685234896,
+        21.972223154362414,
+        -32.67630882483221,
+        -31.31201332281879,
+        12.444999900000001,
+        12.4630001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuLabel2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerKey",
+      "label": "Power key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 21.137150263212348,
+      "bounds": [
+        45.65,
+        50.35,
+        -30.7,
+        -26.3,
+        11.45,
+        12.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.04015634876188058,
+      "bounds": [
+        51.55176164496644,
+        57.08489942885906,
+        -29.02255043557047,
+        -27.853154262416105,
+        12.024999900000001,
+        12.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/3ds/output/iterations/03_circle_pad_and_controls.FCStd",
+  "views": [
+    "devices/3ds/output/previews/03_circle_pad_and_controls_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 160.0
+}
