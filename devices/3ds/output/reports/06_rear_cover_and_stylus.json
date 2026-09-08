@@ -1,18 +1,18 @@
 {
-  "iteration": 5,
-  "slug": "stereo_cameras_speakers_and_3d_slider",
-  "summary": "增加两组五孔扬声器、内侧摄像头和双外摄像头、3D 强度滑块及麦克风入口。",
-  "physical_components": 101,
+  "iteration": 6,
+  "slug": "rear_cover_and_stylus",
+  "summary": "补齐后盖、带电池开口的支承板、固定螺钉、防滑垫、L/R 肩键及独立伸缩触控笔。",
+  "physical_components": 121,
   "objects": [
     {
-      "name": "BackCoverBody",
-      "label": "Removable lower rear cover",
-      "type": "PartDesign::Body",
+      "name": "BackCoverCut008",
+      "label": "Removable lower rear cover009",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 9646.379816339744,
+      "faces": 310,
+      "volume": 9623.953950839961,
       "bounds": [
         -66.4,
         66.4,
@@ -32,21 +32,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut013",
-      "label": "Lower structural side frame014",
+      "name": "MainFrameCut015",
+      "label": "Lower structural side frame016",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 112,
-      "volume": 5667.6975531758035,
+      "faces": 124,
+      "volume": 5493.3782938065415,
       "bounds": [
         -67.0000001,
         67.0000001,
         -37.0000001,
         37.0000001,
         1.0499999,
-        10.950000100001139
+        10.950000100002423
       ],
       "state": [
         "Up-to-date"
@@ -2730,13 +2730,552 @@
       "material": "black",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
+    },
+    {
+      "name": "RearSupportPlateCut003",
+      "label": "Rear support plate with battery opening004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 3599.9935912548917,
+      "bounds": [
+        -65.2,
+        65.2,
+        -35.2,
+        35.2,
+        1.14,
+        1.64
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearSupportPlate",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        -55.24,
+        -52.76,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.85524594304685,
+      "bounds": [
+        -35.24,
+        -32.76,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        32.76,
+        35.24,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        52.76,
+        55.24,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad0",
+      "label": "Rear rubber contact pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.0610497666566365,
+      "bounds": [
+        -59.5,
+        -54.5,
+        -29.400000000000002,
+        -26.599999999999998,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad1",
+      "label": "Rear rubber contact pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.0610497666566365,
+      "bounds": [
+        54.5,
+        59.5,
+        -29.400000000000002,
+        -26.599999999999998,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad2",
+      "label": "Rear rubber contact pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.061049766656636,
+      "bounds": [
+        -59.5,
+        -54.5,
+        22.599999999999998,
+        25.400000000000002,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad3",
+      "label": "Rear rubber contact pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.061049766656636,
+      "bounds": [
+        54.5,
+        59.5,
+        22.599999999999998,
+        25.400000000000002,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModelMark",
+      "label": "CTR-001  /  CAD STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 248,
+      "volume": 0.17795434793113096,
+      "bounds": [
+        -0.7085423657718124,
+        23.880610418791946,
+        -15.19489932885906,
+        -13.423087148322148,
+        0.005999900000000002,
+        0.0240001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModelMark",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder_1",
+      "label": "L/R shoulder cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 484.47504079052374,
+      "bounds": [
+        -66.35,
+        -48.65,
+        29.9,
+        36.9,
+        7.3,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin_1",
+      "label": "Shoulder pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.699166808518925,
+      "bounds": [
+        -64.0,
+        -51.0,
+        29.88,
+        31.12,
+        8.180000000000001,
+        9.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin-1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMark_1",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.01213485879014475,
+      "bounds": [
+        -57.94706375838927,
+        -56.778020134228186,
+        33.2,
+        35.079194630872486,
+        11.315,
+        11.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMark-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder1",
+      "label": "L/R shoulder cap001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 484.4750407905237,
+      "bounds": [
+        48.65,
+        66.35,
+        29.9,
+        36.9,
+        7.3,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin1",
+      "label": "Shoulder pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.699166808518925,
+      "bounds": [
+        51.0,
+        64.0,
+        29.88,
+        31.12,
+        8.180000000000001,
+        9.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMark1",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.021755684667920626,
+      "bounds": [
+        57.052936141610736,
+        58.51644305302013,
+        33.1999999,
+        35.07919473087249,
+        11.3149999,
+        11.3330001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMark1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusOuter",
+      "label": "Telescoping stylus barrel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 143.68293912678675,
+      "bounds": [
+        -87.5,
+        -84.5,
+        -36.0,
+        11.0,
+        1.7000000000000002,
+        4.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusOuter",
+      "assembly": "Accessories",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusInner",
+      "label": "Telescoping inner rod",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 69.27211801165495,
+      "bounds": [
+        -87.05,
+        -84.95,
+        11.0,
+        31.0,
+        2.1500000000000004,
+        4.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusInner",
+      "assembly": "Accessories",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusGrip",
+      "label": "Stylus cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 45.396013844372526,
+      "bounds": [
+        -87.7,
+        -84.3,
+        31.0,
+        36.0,
+        1.5000000000000002,
+        4.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusGrip",
+      "assembly": "Accessories",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusTip",
+      "label": "Stylus tip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7.902990479370484,
+      "bounds": [
+        -87.5,
+        -84.5,
+        -39.0,
+        -36.0,
+        1.7000000000000002,
+        4.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusTip",
+      "assembly": "Accessories",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/3ds/output/iterations/05_stereo_cameras_speakers_and_3d_slider.FCStd",
+  "file": "devices/3ds/output/iterations/06_rear_cover_and_stylus.FCStd",
   "views": [
-    "devices/3ds/output/previews/05_stereo_cameras_speakers_and_3d_slider_hero.png",
-    "devices/3ds/output/previews/05_stereo_cameras_speakers_and_3d_slider_front.png"
+    "devices/3ds/output/previews/06_rear_cover_and_stylus_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 160.0

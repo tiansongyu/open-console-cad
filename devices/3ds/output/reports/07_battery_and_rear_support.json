@@ -1,18 +1,18 @@
 {
-  "iteration": 5,
-  "slug": "stereo_cameras_speakers_and_3d_slider",
-  "summary": "增加两组五孔扬声器、内侧摄像头和双外摄像头、3D 强度滑块及麦克风入口。",
-  "physical_components": 101,
+  "iteration": 7,
+  "slug": "battery_and_rear_support",
+  "summary": "加入竖置 CTR-003 电池、内层电芯、定位托架、三端接点及后部支承肋，按拆解布局保留电池开口。",
+  "physical_components": 135,
   "objects": [
     {
-      "name": "BackCoverBody",
-      "label": "Removable lower rear cover",
-      "type": "PartDesign::Body",
+      "name": "BackCoverCut008",
+      "label": "Removable lower rear cover009",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 9646.379816339744,
+      "faces": 310,
+      "volume": 9623.953950839961,
       "bounds": [
         -66.4,
         66.4,
@@ -32,21 +32,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut013",
-      "label": "Lower structural side frame014",
+      "name": "MainFrameCut015",
+      "label": "Lower structural side frame016",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 112,
-      "volume": 5667.6975531758035,
+      "faces": 124,
+      "volume": 5493.37829380654,
       "bounds": [
         -67.0000001,
         67.0000001,
         -37.0000001,
         37.0000001,
         1.0499999,
-        10.950000100001139
+        10.950000100002423
       ],
       "state": [
         "Up-to-date"
@@ -2730,13 +2730,930 @@
       "material": "black",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
+    },
+    {
+      "name": "RearSupportPlateCut003",
+      "label": "Rear support plate with battery opening004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 3599.9935912548917,
+      "bounds": [
+        -65.2,
+        65.2,
+        -35.2,
+        35.2,
+        1.14,
+        1.64
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearSupportPlate",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        -55.24,
+        -52.76,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.85524594304685,
+      "bounds": [
+        -35.24,
+        -32.76,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        32.76,
+        35.24,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCoverScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.855245943046851,
+      "bounds": [
+        52.76,
+        55.24,
+        29.060000000000002,
+        31.54,
+        0.05,
+        3.1799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCoverScrew3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad0",
+      "label": "Rear rubber contact pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.0610497666566365,
+      "bounds": [
+        -59.5,
+        -54.5,
+        -29.400000000000002,
+        -26.599999999999998,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad1",
+      "label": "Rear rubber contact pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.0610497666566365,
+      "bounds": [
+        54.5,
+        59.5,
+        -29.400000000000002,
+        -26.599999999999998,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad2",
+      "label": "Rear rubber contact pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.061049766656636,
+      "bounds": [
+        -59.5,
+        -54.5,
+        22.599999999999998,
+        25.400000000000002,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPad3",
+      "label": "Rear rubber contact pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.061049766656636,
+      "bounds": [
+        54.5,
+        59.5,
+        22.599999999999998,
+        25.400000000000002,
+        0.025,
+        0.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPad3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModelMark",
+      "label": "CTR-001  /  CAD STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 248,
+      "volume": 0.17795434793113096,
+      "bounds": [
+        -0.7085423657718124,
+        23.880610418791946,
+        -15.19489932885906,
+        -13.423087148322148,
+        0.005999900000000002,
+        0.0240001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModelMark",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder_1",
+      "label": "L/R shoulder cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 484.47504079052374,
+      "bounds": [
+        -66.35,
+        -48.65,
+        29.9,
+        36.9,
+        7.3,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin_1",
+      "label": "Shoulder pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.699166808518925,
+      "bounds": [
+        -64.0,
+        -51.0,
+        29.88,
+        31.12,
+        8.180000000000001,
+        9.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin-1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMark_1",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.01213485879014475,
+      "bounds": [
+        -57.94706375838927,
+        -56.778020134228186,
+        33.2,
+        35.079194630872486,
+        11.315,
+        11.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMark-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder1",
+      "label": "L/R shoulder cap001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 484.4750407905237,
+      "bounds": [
+        48.65,
+        66.35,
+        29.9,
+        36.9,
+        7.3,
+        11.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin1",
+      "label": "Shoulder pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.699166808518925,
+      "bounds": [
+        51.0,
+        64.0,
+        29.88,
+        31.12,
+        8.180000000000001,
+        9.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMark1",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.021755684667920626,
+      "bounds": [
+        57.052936141610736,
+        58.51644305302013,
+        33.1999999,
+        35.07919473087249,
+        11.3149999,
+        11.3330001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMark1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusOuter",
+      "label": "Telescoping stylus barrel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 143.68293912678675,
+      "bounds": [
+        -87.5,
+        -84.5,
+        -36.0,
+        11.0,
+        1.7000000000000002,
+        4.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusOuter",
+      "assembly": "Accessories",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusInner",
+      "label": "Telescoping inner rod",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 69.27211801165495,
+      "bounds": [
+        -87.05,
+        -84.95,
+        11.0,
+        31.0,
+        2.1500000000000004,
+        4.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusInner",
+      "assembly": "Accessories",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusGrip",
+      "label": "Stylus cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 45.396013844372526,
+      "bounds": [
+        -87.7,
+        -84.3,
+        31.0,
+        36.0,
+        1.5000000000000002,
+        4.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusGrip",
+      "assembly": "Accessories",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StylusTip",
+      "label": "Stylus tip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7.902990479370484,
+      "bounds": [
+        -87.5,
+        -84.5,
+        -39.0,
+        -36.0,
+        1.7000000000000002,
+        4.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StylusTip",
+      "assembly": "Accessories",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryPouchCut",
+      "label": "CTR-003 battery pouch001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 1691.0371004801073,
+      "bounds": [
+        26.2,
+        59.8,
+        -27.3,
+        25.3,
+        1.85,
+        6.699999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryPouch",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryCell",
+      "label": "Battery cell stack layout",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 6281.341011590431,
+      "bounds": [
+        27.0,
+        59.0,
+        -26.5,
+        24.5,
+        2.35,
+        6.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryCell",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryTray",
+      "label": "Battery locating tray",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 76.67758843888787,
+      "bounds": [
+        25.5,
+        60.5,
+        -28.0,
+        26.0,
+        1.68,
+        1.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryTray",
+      "assembly": "Battery",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryConnector",
+      "label": "Battery connector body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 49.848663675999234,
+      "bounds": [
+        37.75,
+        48.25,
+        -30.400000000000002,
+        -27.599999999999998,
+        2.3,
+        4.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryConnector",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact0",
+      "label": "Battery terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1359725309649146,
+      "bounds": [
+        40.074999999999996,
+        40.925000000000004,
+        -29.8,
+        -27.8,
+        4.03,
+        4.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact0",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact1",
+      "label": "Battery terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1359725309649146,
+      "bounds": [
+        42.574999999999996,
+        43.425000000000004,
+        -29.8,
+        -27.8,
+        4.03,
+        4.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact1",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact2",
+      "label": "Battery terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1359725309649146,
+      "bounds": [
+        45.074999999999996,
+        45.925000000000004,
+        -29.8,
+        -27.8,
+        4.03,
+        4.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact2",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryType",
+      "label": "CTR-003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 128,
+      "volume": 0.14529911727496428,
+      "bounds": [
+        40.69451751744966,
+        52.83357812013423,
+        9.956778423489933,
+        12.198120905369127,
+        1.8119999,
+        1.8300001000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryType",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryCapacity",
+      "label": "1300 mAh  /  5 Wh",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 203,
+      "volume": 0.14362679767688882,
+      "bounds": [
+        35.721224732214765,
+        55.75933305369128,
+        2.799194630872483,
+        4.665771912080537,
+        1.8119999,
+        1.8300001000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryCapacity",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryStudy",
+      "label": "LAYOUT STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 159,
+      "volume": 0.09863548065825618,
+      "bounds": [
+        39.99381501677852,
+        53.81662122483222,
+        -8.02724842214765,
+        -6.614228087919463,
+        1.8119999,
+        1.8300001000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryStudy",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRib0",
+      "label": "Rear support rib",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 35.06512720155209,
+      "bounds": [
+        -49.0,
+        -47.0,
+        4.5,
+        31.5,
+        1.7,
+        2.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRib0",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "shell",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRib1",
+      "label": "Rear support rib001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 25.965127201552093,
+      "bounds": [
+        -49.0,
+        -47.0,
+        -27.0,
+        -7.0,
+        1.7,
+        2.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRib1",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "shell",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRib2",
+      "label": "Rear support rib002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 63.340127201552086,
+      "bounds": [
+        -45.5,
+        19.5,
+        -29.75,
+        -28.25,
+        1.7,
+        2.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRib2",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "shell",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRib3",
+      "label": "Rear support rib003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 26.29012720155209,
+      "bounds": [
+        9.25,
+        10.75,
+        3.5,
+        30.5,
+        1.7,
+        2.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRib3",
+      "assembly": "Internal",
+      "layer": -5,
+      "material": "shell",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/3ds/output/iterations/05_stereo_cameras_speakers_and_3d_slider.FCStd",
+  "file": "devices/3ds/output/iterations/07_battery_and_rear_support.FCStd",
   "views": [
-    "devices/3ds/output/previews/05_stereo_cameras_speakers_and_3d_slider_hero.png",
-    "devices/3ds/output/previews/05_stereo_cameras_speakers_and_3d_slider_front.png"
+    "devices/3ds/output/previews/07_battery_and_rear_support_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 160.0

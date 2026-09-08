@@ -1,6 +1,6 @@
 # Nintendo 3DS CTR-001 · work in progress
 
-User-confirmed original model. This project is being built in reviewable stages through FreeCAD MCP. The current checkpoint has the layered enclosure, dual displays, hinge, Circle Pad, controls, ports, three cameras and stereo-speaker details. It is not yet a complete device delivery and is not yet listed in the public 3D catalog.
+User-confirmed original model. This project is being built in reviewable stages through FreeCAD MCP. Thirteen stages now include 324 components: complete exterior, major internal modules, open/closed hinge poses, stylus and charging cradle. Native assemblies, four STEP exports, exact closed envelope and a fresh-source rebuild have passed checks. Detailed drawings and Pages integration remain in progress. It is not yet a complete device delivery and is not yet listed in the public 3D catalog.
 
 - Configuration: [profile.json](profile.json)
 - Geometry: `scripts/iterNN_*.py` call the documented shared builders in `tools/cadlib/`.

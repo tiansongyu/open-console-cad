@@ -63,10 +63,10 @@ class Study:
                 face=Part.makeFace(character,'Part::FaceMakerBullseye');faces.extend(face.Faces)
         sh=Part.makeCompound([f.extrude(V(0,0,.018)) for f in faces]);sh.Placement=App.Placement(V(*pos),rotation or App.Rotation())
         return self.feature(key,text,sh,assembly,layer,material,False,pose)
-    def screw(self,key,pos,assembly='Internal',layer=-2,length=3.2,radius=1.2,pose='Base'):
+    def screw(self,key,pos,assembly='Internal',layer=-2,length=3.2,radius=1.2,pose='Base',axis=(0,0,1)):
         body=Part.makeCylinder(radius,.35).fuse(Part.makeCylinder(.62,length,V(0,0,.33)))
         cutters=[Part.makeBox(.28,radius*1.5,.22,V(-.14,-radius*.75,-.02)),Part.makeBox(radius*1.5,.28,.22,V(-radius*.75,-.14,-.02))]
-        body=body.cut(Part.makeCompound(cutters));body.translate(V(*pos));return self.feature(key,'Cross-head fastener',body,assembly,layer,'metal',True,pose)
+        body=body.cut(Part.makeCompound(cutters));body.rotate(V(),V(0,1,0),180 if axis==(0,0,-1) else 0);body.translate(V(*pos));return self.feature(key,'Cross-head fastener',body,assembly,layer,'metal',True,pose)
     def set_pose(self,opening):
         theta=180-opening;py=self.profile.get('hinge_y',0);pz=self.profile.get('hinge_z',0)
         transform=App.Placement(V(),App.Rotation(V(1,0,0),theta),V(0,py,pz))

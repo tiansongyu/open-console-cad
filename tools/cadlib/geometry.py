@@ -1,11 +1,19 @@
 import json
+
 import math
+
 import time
+
 from pathlib import Path
+
 import FreeCAD as App
+
 import FreeCADGui as Gui
+
 import Part
+
 import Sketcher
+
 from pivy import coin
 
 def vec(x=0,y=0,z=0):
@@ -86,25 +94,6 @@ def audit_objects(objects):
     if bad: raise AssertionError(json.dumps(bad,ensure_ascii=False))
     return rows
 
-def checkpoint(doc, number, slug, summary, objects, views=None, extra=None):
-    doc.recompute()
-    invalid=[{'name':o.Name,'status':o.getStatusString()} for o in doc.Objects if 'Invalid' in o.State]
-    if invalid:raise AssertionError(json.dumps(invalid,ensure_ascii=False))
-    set_visible_components(doc,objects)
-    report={'iteration':number,'slug':slug,'summary':summary,'time':time.time(),
-            'objects':audit_objects(objects),'extra':extra or {},'invalid_features':invalid}
-    path=OUT/'iterations'/f'{number:02d}_{slug}.FCStd'
-    doc.saveAs(str(path))
-    report['file']=str(path)
-    report['views']=[]
-    if views is None:
-        views=[('front',dict()),('back',{'normal':(0,0,-1)}),('perspective',{'normal':(-1,-.45,2)})]
-    for view_name,settings in views:
-        p=OUT/'previews'/f'{number:02d}_{slug}_{view_name}.png'
-        report['views'].append(render(p,**settings))
-    (OUT/'reports'/f'{number:02d}_{slug}.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
-    return report
-
 def rr_shape(width,height,radius,depth,origin=(0,0,0),orient=None):
     """Transient rounded prism used for validating tools and complex cuts."""
     base=Part.makeBox(width,height,depth,vec(-width/2,-height/2,0))
@@ -167,13 +156,6 @@ def part_feature(doc,name,label,shape,color=(.3,.4,.7),group=None):
     appearance(o,color)
     return o
 
-def cylinder(doc,name,label,radius,depth,origin=(0,0,0),axis=(0,0,1),color=(.3,.4,.7),group=None):
-    o=doc.addObject('Part::Cylinder',name);o.Label=label;o.Radius=radius;o.Height=depth
-    o.Placement=App.Placement(vec(*origin),App.Rotation(vec(0,0,1),vec(*axis)))
-    if group:group.addObject(o)
-    doc.recompute();appearance(o,color)
-    return o
-
 def boolean_cut(doc,name,label,base,tool,color=None,group=None):
     o=doc.addObject('Part::Cut',name);o.Label=label;o.Base=base;o.Tool=tool;o.Refine=True
     if group:group.addObject(o)
@@ -181,25 +163,6 @@ def boolean_cut(doc,name,label,base,tool,color=None,group=None):
     if color:appearance(o,color)
     assert o.Shape.isValid() and not o.Shape.isNull(),name
     return o
-
-def compound(doc,name,label,objects,group=None):
-    o=doc.addObject('Part::Compound',name);o.Label=label;o.Links=objects
-    if group:group.addObject(o)
-    doc.recompute()
-    for item in objects:item.Visibility=False
-    return o
-
-def ring(doc,name,label,outer_radius,inner_radius,depth,origin=(0,0,0),axis=(0,0,1),color=(.3,.4,.7),group=None):
-    p=vec(*origin);n=vec(*axis);n.normalize()
-    a=cylinder(doc,name+'Outer',label+' · 外环',outer_radius,depth,origin,axis,color,group)
-    ip=p-n*.05
-    b=cylinder(doc,name+'InnerTool',label+' · 内孔',inner_radius,depth+.1,(ip.x,ip.y,ip.z),axis,color,group)
-    return boolean_cut(doc,name,label,a,b,color,group)
-
-def replace_component(old,new):
-    EXTERIOR[EXTERIOR.index(old)]=new
-    old.Visibility=False
-    new.Visibility=True
 
 def set_visible_components(doc,objects):
     visible={o.Name for o in objects}
@@ -218,15 +181,3 @@ def set_visible_components(doc,objects):
                 o.Visibility=o.Name in visible
     for o in objects:o.Visibility=True
     Gui.updateGui()
-
-def printed_text(doc,name,label,text,height,origin,orient=None,color=(.75,.75,.75),group=None):
-    font=ROOT/'references/DejaVuSans.ttf'
-    if not font.exists():font=Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
-    letters=Part.makeWireString(text,str(font.parent)+'/',font.name,height)
-    solids=[]
-    for wires in letters:
-        if wires:
-            solids.append(Part.makeFace(wires,'Part::FaceMakerBullseye').extrude(vec(0,0,.012)))
-    shape=Part.makeCompound(solids)
-    shape.Placement=App.Placement(vec(*origin),orient or App.Rotation())
-    return part_feature(doc,name,label,shape,color,group)
