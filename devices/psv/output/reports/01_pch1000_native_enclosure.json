@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "pch1000_native_enclosure",
+  "summary": "按 PCH-1000 Wi-Fi OLED 初代的 182 × 83.5 × 18.6 mm 主体尺寸建立圆端壳体、内部空腔、独立前后面板及银色周缘。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "Original Vita rear shell blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15554.893522283894,
+      "bounds": [
+        -89.80000000000001,
+        89.80000000000001,
+        -40.550000000000004,
+        40.550000000000004,
+        0.0,
+        1.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "PCH-1000 structural perimeter002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 36,
+      "volume": 11580.969301661771,
+      "bounds": [
+        -91.0,
+        91.0,
+        -41.75000000000001,
+        41.75000000000001,
+        1.2,
+        17.150000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceBody",
+      "label": "Glossy Vita front face blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 18188.028051110876,
+      "bounds": [
+        -90.80000000000001,
+        90.80000000000001,
+        -41.550000000000004,
+        41.550000000000004,
+        17.3,
+        18.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SilverRim",
+      "label": "Original OLED-model silver perimeter rim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 264.6011925188568,
+      "bounds": [
+        -90.99000000000001,
+        90.99000000000001,
+        -41.74000000000001,
+        41.74000000000001,
+        15.65,
+        17.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SilverRim",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/psv/output/iterations/01_pch1000_native_enclosure.FCStd",
+  "views": [
+    "devices/psv/output/previews/01_pch1000_native_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
