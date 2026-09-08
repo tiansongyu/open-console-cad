@@ -1,0 +1,20 @@
+{
+  "name": "open-console-cad",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite site --host 0.0.0.0",
+    "build": "vite build site --base ./ --outDir ../dist --emptyOutDir",
+    "preview": "vite preview site --host 0.0.0.0 --outDir ../dist",
+    "check": "python3 tools/check_repository.py && node tools/validate_glb.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "gltf-validator": "2.0.0-dev.3.10",
+    "vite": "8.2.2"
+  }
+}

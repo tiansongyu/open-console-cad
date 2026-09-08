@@ -1,4 +1,25 @@
-/*
-!/.gitignore
-!/README.md
-!/LICENSE
+# Local modeling workspace retained as a backup; not part of the public repository.
+/.local/
+/.cad_bridge/
+/.console_bridge/
+/projects/
+/integrations/
+# Tooling and generated local builds
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+*.FCBak
+*.FCStd1
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+# Rebuilds, projection caches and historical binary checkpoints are local outputs.
+**/output/rebuilt/
+**/output/rebuild_verification/
+**/output/iterations/
+**/output/drawings/projections/
+**/*-visual/

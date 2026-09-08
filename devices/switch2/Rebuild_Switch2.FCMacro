@@ -1,0 +1,15 @@
+"""Rebuild the parametric Switch 2 kit into output/rebuilt without replacing the delivery."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parent
+namespace={'App':App,'Gui':Gui,'__name__':'__switch2_rebuild__','PROJECT_ROOT':str(root),'PROJECT_OUTPUT':str(root/'output/rebuilt')}
+namespace['HANDHELD_GROUPS']=['Tablet','Display','TabletInternal','JoyLeft','JoyRight','JoyRailL','JoyRailR','JoyMountL','JoyMountR','JoyInternalL','JoyInternalR']
+for p in sorted((root/'scripts').glob('iter[0-9][0-9]_*.py')):
+    App.Console.PrintMessage('Building '+p.name+'\n')
+    namespace['__file__']=str(p)
+    exec(compile(p.read_bytes(),str(p),'exec'),namespace)
+namespace['D'].saveAs(str(root/'output/rebuilt/Switch2_Rebuilt.FCStd'))
+namespace['visible'](namespace['HANDHELD_GROUPS'])
+namespace['camera']((-.45,-.4,2),target=(0,0,7),span=200)
+App.Console.PrintMessage('Switch 2 kit rebuild complete.\n')

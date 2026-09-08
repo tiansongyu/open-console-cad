@@ -1,0 +1,18 @@
+"""Open the Switch delivery; use one projection worker for this FreeCAD build."""
+from pathlib import Path
+from PySide import QtCore
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parent
+QtCore.QThreadPool.globalInstance().setMaxThreadCount(1)
+for filename in ['Switch_Complete.FCStd','Switch_Exploded.FCStd','Switch_Drawings.FCStd']:
+    if filename=='Switch_Drawings.FCStd':
+        Gui.activateWorkbench('TechDrawWorkbench')
+        for group in ['General','Dimensions','Labels','Colors','Decoration','Hatching','Files','Scale','Advanced','Annotations']:
+            App.ParamGet('User parameter:BaseApp/Preferences/Mod/TechDraw/'+group)
+    path=root/'output'/filename
+    if not any(d.FileName==str(path) for d in App.listDocuments().values()):App.openDocument(str(path))
+main=next(d for d in App.listDocuments().values() if Path(d.FileName).name=='Switch_Complete.FCStd')
+App.setActiveDocument(main.Name)
+Gui.activateView("Gui::View3DInventor",True)
+Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()
