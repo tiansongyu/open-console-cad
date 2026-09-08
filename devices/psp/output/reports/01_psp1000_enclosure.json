@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "psp1000_enclosure",
+  "summary": "按 PSP-1000 的 170 × 74 × 23 mm 主体尺寸建立圆端机身、内部空腔、独立前后外壳及银色周缘饰条。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "PSP-1000 rear enclosure blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 13846.159879202287,
+      "bounds": [
+        -84.5,
+        84.5,
+        -36.5,
+        36.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "Original PSP structural perimeter002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 36,
+      "volume": 14767.107716825585,
+      "bounds": [
+        -85.0,
+        85.0,
+        -37.0,
+        37.0,
+        1.3,
+        21.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelBody",
+      "label": "Glossy PSP front face blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14001.888545881699,
+      "bounds": [
+        -84.8,
+        84.8,
+        -36.8,
+        36.8,
+        21.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PerimeterTrim",
+      "label": "Silver perimeter trim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 125.8034067319856,
+      "bounds": [
+        -84.99,
+        84.99,
+        -36.99000000000001,
+        36.99000000000001,
+        11.0,
+        12.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PerimeterTrim",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/psp/output/iterations/01_psp1000_enclosure.FCStd",
+  "views": [
+    "devices/psp/output/previews/01_psp1000_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
