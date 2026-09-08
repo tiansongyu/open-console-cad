@@ -1,0 +1,399 @@
+[
+  {
+    "id": "switch",
+    "title": "Nintendo Switch",
+    "prefix": "Switch",
+    "model": "HAC-001",
+    "count": 654,
+    "iterations": 14,
+    "pages": 12,
+    "bytes": 9937528,
+    "family": "hybrid",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "完整手持装配，保留独立外壳、显示组件和内部模块。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal",
+          "JoyLeft",
+          "JoyRight",
+          "JoyRailL",
+          "JoyRailR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后壳与屏蔽板，观察电池、主板、散热及内部结构示意。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal",
+          "JoyLeft",
+          "JoyRight",
+          "JoyRailL",
+          "JoyRailR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ],
+        "exclude": [
+          "TabletRear",
+          "Kickstand",
+          "StandFoot",
+          "StandFoot-1",
+          "StandFoot1",
+          "RearNintendoMark",
+          "RearModelMark",
+          "RearEMIShield",
+          "JoyLRear",
+          "JoyRRear"
+        ],
+        "normal": [
+          0.15,
+          0.1,
+          -2.6
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "沿装配层展开主要组件，爆炸位移仅用于展示。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "controllers": {
+        "label": "控制件",
+        "description": "分别观察控制件、摇杆、PCB 和电池等组件。",
+        "groups": [
+          "JoyLeft",
+          "JoyRight",
+          "JoyRailL",
+          "JoyRailR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ]
+      },
+      "dock": {
+        "label": "底座",
+        "description": "观察底座外壳与插接结构，拖动滑块可展开主要装配层。",
+        "groups": [
+          "Dock",
+          "DockInternal"
+        ]
+      },
+      "accessories": {
+        "label": "附件",
+        "description": "独立查看配套附件的结构示意。",
+        "groups": [
+          "Grip",
+          "StrapL",
+          "StrapR"
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "正面装配"
+      ],
+      [
+        "rear",
+        "背面结构"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "主机分层爆炸"
+      ],
+      [
+        "dock",
+        "底座外观"
+      ]
+    ]
+  },
+  {
+    "id": "switch2",
+    "title": "Nintendo Switch 2",
+    "prefix": "Switch2",
+    "model": "BEE-001",
+    "count": 799,
+    "iterations": 15,
+    "pages": 12,
+    "bytes": 13442200,
+    "family": "hybrid",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "完整手持装配，保留独立外壳、显示组件和内部模块。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal",
+          "JoyLeft",
+          "JoyRight",
+          "JoyMountL",
+          "JoyMountR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后壳与屏蔽板，观察电池、主板、散热及内部结构示意。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal",
+          "JoyLeft",
+          "JoyRight",
+          "JoyMountL",
+          "JoyMountR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ],
+        "exclude": [
+          "TabletRear",
+          "Kickstand",
+          "StandFoot",
+          "StandFoot-1",
+          "StandFoot1",
+          "RearNintendoMark",
+          "RearModelMark",
+          "RearEMIShield",
+          "JoyLRear",
+          "JoyRRear"
+        ],
+        "normal": [
+          0.15,
+          0.1,
+          -2.6
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "沿装配层展开主要组件，爆炸位移仅用于展示。",
+        "groups": [
+          "Tablet",
+          "Display",
+          "TabletInternal"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "controllers": {
+        "label": "控制件",
+        "description": "分别观察控制件、摇杆、PCB 和电池等组件。",
+        "groups": [
+          "JoyLeft",
+          "JoyRight",
+          "JoyMountL",
+          "JoyMountR",
+          "JoyInternalL",
+          "JoyInternalR"
+        ]
+      },
+      "dock": {
+        "label": "底座",
+        "description": "观察底座外壳与插接结构，拖动滑块可展开主要装配层。",
+        "groups": [
+          "Dock",
+          "DockInternal"
+        ]
+      },
+      "accessories": {
+        "label": "附件",
+        "description": "独立查看配套附件的结构示意。",
+        "groups": [
+          "Grip",
+          "StrapL",
+          "StrapR"
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "正面装配"
+      ],
+      [
+        "rear",
+        "背面结构"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "主机分层爆炸"
+      ],
+      [
+        "dock",
+        "底座外观"
+      ]
+    ]
+  },
+  {
+    "id": "3ds",
+    "title": "Nintendo 3DS",
+    "prefix": "Nintendo3DS",
+    "model": "CTR-001",
+    "count": 324,
+    "iterations": 13,
+    "pages": 12,
+    "bytes": 2968620,
+    "family": "clamshell",
+    "opening": 160,
+    "views": {
+      "assembled": {
+        "label": "展开整机",
+        "description": "CTR-001 初代，显示、控制件和铰链为独立组件。使用开合角度滑块观察折叠结构。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ]
+      },
+      "closed": {
+        "label": "闭合",
+        "description": "闭合包络 134 × 74 × 21 mm。所有组件使用同一组铰链轴数据。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "opening": 0
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后盖、支承板和屏蔽片，观察电池、主板、三摄像头与扬声器布局示意。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "exclude": [
+          "BackCover",
+          "RearSupportPlate",
+          "EMIShield",
+          "LidBackCover",
+          "RearModelMark"
+        ],
+        "normal": [
+          0.15,
+          0.1,
+          -2.6
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "分别展开上下机身的显示、外壳与内部装配层。爆炸位移仅用于展示。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "controllers": {
+        "label": "操作机构",
+        "description": "观察 Circle Pad、十字键、面按键与内部控制机构。",
+        "groups": [
+          "Controls",
+          "Internal"
+        ]
+      },
+      "dock": {
+        "label": "充电底座",
+        "description": "原款被动触点充电底座的近似结构，含独立充电弹片、弹簧和插孔。",
+        "groups": [
+          "Cradle"
+        ]
+      },
+      "accessories": {
+        "label": "触控笔",
+        "description": "收拢的伸缩触控笔，由笔尖、外管、内杆和端帽组成。",
+        "groups": [
+          "Accessories"
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "展开外观"
+      ],
+      [
+        "closed",
+        "闭合外观"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "上下机身爆炸"
+      ],
+      [
+        "dock",
+        "充电底座与触控笔"
+      ]
+    ]
+  }
+]

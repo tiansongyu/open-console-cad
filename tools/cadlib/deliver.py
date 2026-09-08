@@ -22,7 +22,7 @@ def finalize(m):
     sources=sorted((m.root/'scripts').glob('iter*.py'))+sorted((m.repo/'tools/cadlib').glob('*.py'))
     info.SourceDigest=hashlib.sha256(b''.join(s.read_bytes() for s in sources)).hexdigest()
     views={}
-    settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','RearSupportPlate','EMIShield','LidBackCover'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
+    settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','RearSupportPlate','EMIShield','LidBackCover','RearModelMark'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
         kw.setdefault('assemblies',main_groups);views[name]=m.snapshot('final_'+name,**kw)
     m.snapshot('final_hero',assemblies=main_groups);m.doc.saveAs(str(out/(prefix+'_Complete.FCStd')))
@@ -39,8 +39,17 @@ def finalize(m):
     ec={};offsets={};groups={}
     rotation=App.Rotation(V(1,0,0),180-p.get('default_opening',180))
     for key,src in m.parts.items():
-        delta=V(0,0,src.ExplodeLayer*16)
-        if src.PoseGroup=='Lid':delta=rotation.multVec(delta)+V(0,80,0)
+        layer=src.ExplodeLayer
+        if src.PoseGroup=='Lid':
+            z={-6:-360,0:-160,1:-110,2:-60,3:-10,5:160,6:260,7:360}.get(layer,layer*60)
+            z={'LidFrame':-160,'LidBackCover':-360,'UpperLCDBackplate':-60,'UpperLCD':40,'LidBezel':160,'ParallaxBarrier':260,'UpperGlass':360}.get(key,z)
+            if key.startswith('OuterCameraRing') or key.startswith('OuterCameraLens'):z=-360
+            if key.startswith('InnerCameraRing') or key.startswith('InnerCameraLens'):z=160
+            delta=rotation.multVec(V(0,0,z))+V(0,280,0)
+        else:
+            z={-6:-350,-5:-250,-4:-140,-3:-100,-2:-40,0:0,1:30,2:70,3:110,4:210,5:270,6:300,7:410}.get(layer,layer*60)
+            z={'MainFrame':0,'Mainboard':-40,'EMIShield':-200,'RearSupportPlate':-250,'BackCover':-350,'LowerLCDBackplate':40,'LowerLCD':110,'FrontDeck':210,'LowerDisplaySurround':270,'LowerTouchDigitizer':340,'LowerGlass':410}.get(key,z)
+            delta=V(0,0,z)
         if src.Assembly=='Cradle':delta+=V(0,-70,0)
         if src.Assembly=='Accessories':delta+=V(-50,0,0)
         shape=src.Shape.copy();shape.translate(delta);o=g.part_feature(exploded,src.Name,src.Label,shape)
@@ -55,7 +64,7 @@ def finalize(m):
     def render_exploded(name,assembly_list):
         selected=[o for o in ec.values() if o.Assembly in assembly_list]
         g.set_visible_components(exploded,selected)
-        normal=(1.2,-.25,1.3);q=g.rotation(normal);shape=Part.makeCompound([o.Shape for o in selected]);shape.Placement=App.Placement(V(),q.inverted()).multiply(shape.Placement)
+        normal=(1.7,-.2,-1);q=g.rotation(normal);shape=Part.makeCompound([o.Shape for o in selected]);shape.Placement=App.Placement(V(),q.inverted()).multiply(shape.Placement)
         b=shape.optimalBoundingBox(False,False);size=(2300,1700);span=max(b.YLength,b.XLength*size[1]/size[0])*1.14
         return g.render(out/'previews'/('final_'+name+'.png'),normal=normal,target=tuple(q.multVec(b.Center)),span=span,size=size)
     views['exploded']=render_exploded('exploded',main_groups)

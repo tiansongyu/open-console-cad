@@ -6,15 +6,15 @@ Run in the FreeCAD Python console or via freecad-mcp:
 The web representation uses meters. FCStd and STEP retain millimeters.
 """
 from pathlib import Path
-import json, math, struct, array, hashlib
+import json, math, struct, array, hashlib, re
 import FreeCAD as App
 import MeshPart
 
 
 def export_device(repository, device, deflection=0.25):
-    if device not in ('switch','switch2'):
-        raise ValueError('Unknown device')
+    if not re.fullmatch(r'[a-z0-9][a-z0-9-]*',device):raise ValueError('Invalid device identifier')
     root=Path(repository).resolve();folder=root/'devices'/device
+    if not (folder/'output/reports/final_manifest.json').exists():raise ValueError('No completed native manifest for device')
     manifest=json.loads((folder/'output/reports/final_manifest.json').read_text())
     filename=folder/'output'/manifest['native_files'][0]
     doc=next((d for d in App.listDocuments().values() if d.FileName==str(filename)),None)
@@ -74,8 +74,9 @@ def export_device(repository, device, deflection=0.25):
             indices=accessor([v for tri in triangles for v in tri],'I',len(triangles)*3,5125,34963)
             mi=len(gltf['meshes']);gltf['meshes'].append({'name':row['part_number'],'primitives':[{'attributes':{'POSITION':position,'NORMAL':normal},'indices':indices,'material':colors[signature]}]})
             gltf['scenes'][0]['nodes'].append(len(gltf['nodes']))
-            gltf['nodes'].append({'name':row['part_id'],'mesh':mi,'translation':[c.x/1000,c.y/1000,c.z/1000],'extras':{'partId':row['part_id'],'partNumber':row['part_number'],'label':obj.Label,'assembly':row['assembly'],'material':role,'explodeOffset':[v/1000 for v in manifest['offsets'][row['part_id']]]}})
+            gltf['nodes'].append({'name':row['part_id'],'mesh':mi,'translation':[c.x/1000,c.y/1000,c.z/1000],'extras':{'partId':row['part_id'],'partNumber':row['part_number'],'label':obj.Label,'assembly':row['assembly'],'material':role,'explodeOffset':[v/1000 for v in manifest['offsets'][row['part_id']]],'poseGroup':getattr(obj,'PoseGroup','Base')}})
             triangle_count+=len(triangles)
+        gltf['asset']['extras']={'pose':manifest.get('pose',{'type':'fixed'})}
         gltf['buffers']=[{'byteLength':len(binary)}]
         encoded=json.dumps(gltf,ensure_ascii=False,separators=(',',':')).encode()
         encoded+=b' '*((-len(encoded))%4);binary+=b'\0'*((-len(binary))%4)

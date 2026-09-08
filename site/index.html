@@ -8,22 +8,19 @@
 <body>
 <header class="topbar"><a class="brand" href="./"><span class="brand-mark">◎</span> OPEN CONSOLE <b>CAD</b></a><nav><a href="#explore">模型库</a><a href="#gallery">效果图</a><a href="https://github.com/tiansongyu/open-console-cad" target="_blank" rel="noopener">GitHub ↗</a></nav></header>
 <main>
-<section class="intro"><div><p class="eyebrow">FREECAD · OPEN SOURCE · MIT</p><h1>游戏主机，<br><span>拆开看。</span></h1><p class="lead">从外壳到内部，从整机到零件。<br>在浏览器里探索两代主机的结构与装配。</p></div><div class="intro-aside"><span class="mini-label">THE COLLECTION / 01—02</span><p>2 款设备<br>1,453 个组件<br>24 页 A3 图纸</p><a href="https://github.com/tiansongyu/open-console-cad#readme">查看项目说明 ↗</a></div></section>
-<section id="explore" aria-label="设备选择" class="devices">
-<button class="device-card selected" data-device="switch" aria-pressed="true"><div class="card-top"><span>01 / ORIGINAL</span><span class="card-arrow">↗</span></div><img src="./images/switch/hero.webp" alt="红蓝 Joy-Con 的 Nintendo Switch 模型"><div class="card-bottom"><div><h2>Nintendo Switch</h2><p>HAC-001 · 654 个组件</p></div><span class="tag">14 轮设计</span></div></button>
-<button class="device-card" data-device="switch2" aria-pressed="false"><div class="card-top"><span>02 / NEXT GENERATION</span><span class="card-arrow">↗</span></div><img src="./images/switch2/hero.webp" alt="黑色 Joy-Con 2 的 Nintendo Switch 2 模型"><div class="card-bottom"><div><h2>Nintendo Switch 2</h2><p>BEE-001 · 799 个组件</p></div><span class="tag">15 轮设计</span></div></button>
-</section>
+<section class="intro"><div><p class="eyebrow">FREECAD · OPEN SOURCE · MIT</p><h1>游戏主机，<br><span>拆开看。</span></h1><p class="lead">从外壳到内部，从整机到零件。<br>在浏览器里探索不同世代主机的结构与装配。</p></div><div class="intro-aside"><span class="mini-label" id="collection-label"></span><p id="collection-stats"></p><a href="https://github.com/tiansongyu/open-console-cad#readme">查看项目说明 ↗</a></div></section>
+<section id="explore" aria-label="设备选择"><div id="device-list" class="devices"></div></section>
 <section id="viewer" class="workspace" aria-label="交互式三维预览">
 <div class="workspace-heading"><div><p class="eyebrow">INTERACTIVE MODEL</p><h2 id="model-title">Nintendo Switch</h2></div><span class="live-label"><i></i> 可交互 3D</span></div>
-<div class="scene-tabs" role="group" aria-label="视图模式"><button data-scene="assembled" aria-pressed="true">整机</button><button data-scene="internal" aria-pressed="false">内部结构</button><button data-scene="exploded" aria-pressed="false">主机爆炸</button><button data-scene="controllers" aria-pressed="false">手柄</button><button data-scene="dock" aria-pressed="false">底座</button><button data-scene="accessories" aria-pressed="false">附件</button></div>
+<div class="scene-tabs" id="scene-tabs" role="group" aria-label="视图模式"></div>
 <div class="stage" id="stage"><canvas id="canvas" aria-label="三维模型，拖动旋转，滚轮缩放，方向键旋转，加减键缩放" tabindex="0"></canvas><div id="loading" class="loading" role="status" aria-live="polite">正在加载三维模型…</div><div id="error" class="error" hidden><strong>暂时无法显示 3D 模型</strong><p id="error-message">请检查网络或浏览器的 WebGL 支持。仍可查看下方效果图和下载源文件。</p><button id="retry">重新加载</button><a href="#gallery">查看效果图 ↓</a></div><div class="stage-corner">FREECAD → GLB <span id="mesh-info"></span></div><div class="view-tools"><button id="reset" title="重置视角">重置视角</button><button id="rotate" aria-pressed="false">自动旋转</button><button id="fullscreen">全屏</button></div></div>
-<div class="viewer-bottom"><p>拖动旋转 · 滚轮 / 双指缩放 · 右键平移</p><label class="explode-control" for="explode">展开程度 <input id="explode" type="range" min="0" max="100" value="0"><output id="explode-value">0%</output></label></div>
+<div class="viewer-bottom"><p>拖动旋转 · 滚轮 / 双指缩放 · 右键平移</p><label id="hinge-control" class="explode-control" for="opening" hidden>开合角度 <input id="opening" type="range" min="0" max="160" value="160"><output id="opening-value">160°</output></label><label class="explode-control" for="explode">展开程度 <input id="explode" type="range" min="0" max="100" value="0"><output id="explode-value">0%</output></label></div>
 <div class="model-meta"><p id="scene-description">完整手持装配，保留独立外壳、显示组件和内部模块。</p><div class="download-links"><a id="download-cad" href="#">FreeCAD 原文件 ↓</a><a id="download-pdf" href="#" target="_blank" rel="noopener">12 页图纸 ↗</a><a id="download-glb" href="./models/switch.glb" download>GLB ↓</a></div></div>
 </section>
 <section id="gallery" class="gallery-section"><div class="section-heading"><div><p class="eyebrow">FROM THE CAD WORKSPACE</p><h2>换个角度，看清结构。</h2></div><span>点击图片查看大图 ↗</span></div><div id="gallery-grid" class="gallery-grid"></div></section>
 <section class="about"><div><p class="eyebrow">BUILT TO BE EXPLORED</p><h2>可以看，也可以继续做。</h2></div><div><p>所有预览均由实际 FreeCAD 模型导出。下载原生文件，查看草图、尺寸和建模历史；跟随源码中的逐轮设计，继续改进自己的版本。</p><p class="muted">外形包络参考公开资料，局部尺寸和内部结构为学习用途的近似设计。网页网格用于展示，精确 CAD 数据请以 FCStd / STEP 为准。</p><a class="text-link" href="https://github.com/tiansongyu/open-console-cad">源码、重建方法与检查报告 ↗</a></div></section>
 </main>
 <footer><span>OPEN CONSOLE CAD · 2026</span><p>非官方学习项目，与 Nintendo 无隶属关系。第三方名称与标识归各自权利人所有。</p><a href="https://github.com/tiansongyu/open-console-cad/blob/main/LICENSE">MIT License ↗</a></footer>
-<noscript><p class="noscript">3D 交互需要 JavaScript；你仍可查看设备效果图，或通过 GitHub 下载原生模型。</p></noscript>
+<noscript><p class="noscript">3D 交互需要 JavaScript；可通过 GitHub 查看设备效果图和下载原生模型。</p></noscript>
 <script type="module" src="./src/main.js"></script>
 </body></html>

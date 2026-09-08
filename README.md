@@ -4,7 +4,7 @@
 
 [在线 3D 模型库](https://tiansongyu.github.io/open-console-cad/) · [下载整个仓库](https://github.com/tiansongyu/open-console-cad/archive/refs/heads/main.zip) · [MIT 协议](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)
 
-目前包含 Nintendo Switch 和 Nintendo Switch 2 两个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
+目前已完成 Nintendo Switch、Nintendo Switch 2 和 Nintendo 3DS 三个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
 
 ## 点击设备，直接预览
 
@@ -28,13 +28,27 @@
 
 **范围说明：**这些是非官方 CAD 学习模型。整体包络参考公开规格，局部尺寸、壁厚、孔位、安装间隙和内部模块是近似设计。主板、芯片、天线等不包含真实电路或制造资料；Switch 2 以 2025 年首发 BEE-001 为对象。参考依据在各设备的 `references/SOURCES.md`。
 
+## 扩展设备
+
+| 设备 | 状态 / 直接预览 | 模型与图纸 |
+| --- | --- | --- |
+| Nintendo 3DS CTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=exploded#viewer) | [设备说明](devices/3ds/README.md) · [A3 图册](devices/3ds/output/drawings/Nintendo3DS_Drawings.pdf) |
+| Nintendo DS NTR-001 | 制作中 | [参考与配置](devices/nds/profile.json) |
+| PSP-1000 | 制作中 | [参考与配置](devices/psp/profile.json) |
+| PS Vita PCH-1000 OLED | 制作中 | [参考与配置](devices/psv/profile.json) |
+| Steam Deck LCD（2022） | 制作中 | [参考与配置](devices/steamdeck/profile.json) |
+
+[![Nintendo 3DS 可开合模型](site/public/images/3ds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer)
+
+目标是七款设备。只有完成几何、图纸和预览核验的设备才加入线上目录，阶段进展见 [扩展计划](docs/SEVEN_DEVICE_PLAN.md)。
+
 ## 怎么使用网页
 
 1. 点击设备卡片切换 Switch / Switch 2。
 2. 选择整机、内部结构、主机爆炸、手柄、底座或附件。
 3. 鼠标拖动旋转、滚轮缩放、右键拖动平移；手机支持单指旋转、双指缩放和平移。
 4. 用“展开程度”滑块从装配状态过渡到分层状态。“主机爆炸”默认完全展开。
-5. 使用重置视角、自动旋转或全屏按钮。画布获得焦点后可用方向键旋转、`+` / `-` 缩放。
+5. 使用重置视角、自动旋转或全屏按钮。3DS 等折叠设备另有开合角度滑块。画布获得焦点后可用方向键旋转、`+` / `-` 缩放。
 6. 页面提供 FreeCAD、PDF 和 GLB 下载链接。效果图始终可查看，WebGL 不可用或模型加载失败时有明确提示和重试入口。
 
 链接中的 `device` 和 `view` 参数可以分享，例如：

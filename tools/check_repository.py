@@ -2,7 +2,9 @@
 from pathlib import Path
 import ast, hashlib, json, struct, zipfile
 ROOT=Path(__file__).resolve().parents[1]
-for device,count in [('switch',654),('switch2',799)]:
+catalog=json.loads((ROOT/'site/src/catalog.json').read_text())
+for entry in catalog:
+    device,count=entry['id'],entry['count']
     folder=ROOT/'devices'/device;report=json.loads((ROOT/'site/public/models'/f'{device}.json').read_text())
     manifest=json.loads((folder/'output/reports/final_manifest.json').read_text())
     glb=(ROOT/'site/public/models'/f'{device}.glb').read_bytes()
@@ -18,8 +20,15 @@ for device,count in [('switch',654),('switch2',799)]:
     for filename in manifest['step_files']:assert (folder/'output'/filename).stat().st_size>1000
     for p in folder.rglob('*.py'):ast.parse(p.read_text(),filename=str(p))
     for p in folder.glob('*.FCMacro'):ast.parse(p.read_text(),filename=str(p))
-    for image in ['hero','rear','internal','exploded','dock']:assert (ROOT/'site/public/images'/device/f'{image}.webp').exists()
-    prefix='Switch' if device=='switch' else 'Switch2'
+    for image,label in entry['gallery']:assert (ROOT/'site/public/images'/device/f'{image}.webp').exists()
+    prefix=entry['prefix']
+    for view in entry['views'].values():
+        assert view['groups'] and set(view['groups'])<=set(manifest['assemblies'])
+        assert any(r['assembly'] in view['groups'] and r['part_id'] not in view.get('exclude',[]) for r in manifest['objects'])
+    if entry['family']=='clamshell':
+        pose=doc['asset']['extras']['pose'];assert pose['type']=='hinge' and len(pose['pivot_mm'])==3
+        assert any(n['extras'].get('poseGroup')=='Lid' for n in doc['nodes'])
+        assert (folder/'output'/f'{prefix}_Closed.FCStd').exists()
     assert (folder/'output/drawings'/f'{prefix}_Drawings.pdf').read_bytes().startswith(b'%PDF-')
     for p in folder.rglob('*'):
         if p.is_file():
