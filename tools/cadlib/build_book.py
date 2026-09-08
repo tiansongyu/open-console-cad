@@ -53,6 +53,7 @@ for i,page in enumerate(pages):
 declared=dict(re.findall(r'(--[\w-]+)\s*:\s*([^;]+);',head))
 for _ in range(8):head=re.sub(r'var\((--[\w-]+)\)',lambda m:declared.get(m.group(1),m.group(0)),head)
 filled=head+'<body>'+''.join(body)+'</body></html>'
+filled='\n'.join(line.rstrip() for line in filled.splitlines())+'\n'
 assert not re.search(r'\{\{[^{}]*\}\}',filled)
 out=DRAW/(prefix+'_Drawings.html');out.write_text(filled)
 count=render_pdf(out,DRAW/(prefix+'_Drawings.pdf'));assert count==12,count

@@ -1,0 +1,16 @@
+"""Open the verified original DS project."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+root=Path(__file__).resolve().parent
+QtCore.QThreadPool.globalInstance().setMaxThreadCount(1)
+for suffix in ['Complete','Exploded','Closed','Drawings']:
+    if suffix=='Drawings':
+        Gui.activateWorkbench('TechDrawWorkbench')
+        for group in ['General','Dimensions','Labels','Colors','Decoration','Hatching','Files','Scale','Advanced','Annotations']:App.ParamGet('User parameter:BaseApp/Preferences/Mod/TechDraw/'+group)
+    path=root/'output'/('NintendoDS_'+suffix+'.FCStd')
+    if not any(d.FileName==str(path) for d in App.listDocuments().values()):App.openDocument(str(path))
+main=next(d for d in App.listDocuments().values() if d.FileName==str(root/'output/NintendoDS_Complete.FCStd'))
+App.setActiveDocument(main.Name);Gui.activateView('Gui::View3DInventor',True)
+Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()

@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "file": "devices/nds/output/drawings/NintendoDS_Drawings.pdf",
+  "pdf_sha256": "b88930165335d2657c0d2779b3022799c764c04665c249ebcd63288b7482c697",
+  "pages": 12,
+  "atomic_content_values": 27,
+  "body_font": "TsangerJinKai02",
+  "font_check_passed": true,
+  "all_pages_visually_reviewed": true,
+  "final_changed_pages_reviewed": [
+    1,
+    2,
+    6,
+    7,
+    11,
+    12
+  ],
+  "corrections": [
+    "Closed right-side view changed to horizontal orientation; thickness dimension and caption moved outside the view."
+  ],
+  "checks": [
+    {
+      "name": "content",
+      "passed": true,
+      "output": "OK: devices/nds/output/drawings/content.json: valid long-doc content\nOK: devices/nds/output/drawings/NintendoDS_Drawings.html: all 27 atomic content values present (23 prose field(s) not held verbatim)\n"
+    },
+    {
+      "name": "style",
+      "passed": true,
+      "output": "OK: devices/nds/output/drawings/NintendoDS_Drawings.html: no style drift\n"
+    },
+    {
+      "name": "density",
+      "passed": true,
+      "output": "OK: no density issues across 1 PDF(s)\n"
+    },
+    {
+      "name": "placeholders",
+      "passed": true,
+      "output": "OK: devices/nds/output/drawings/NintendoDS_Drawings.html: no placeholders\n"
+    }
+  ],
+  "page_image_sha256": {
+    "page-01.png": "1c6fb641453bd5449573fd7f47712258fc43702dd7e43546d56ae24bd6d0dacd",
+    "page-02.png": "988e2d972f04eb57b90271e758c777c9d1d8a582bc8e6dba8c3fed18c7c682f5",
+    "page-03.png": "265cdf984e8fc75522db76a5f71d61f3295c1b848e90b0f66c02c3c2fc331c32",
+    "page-04.png": "abaed0f1592dd6e10793daf869b0120fcad559cb1456ffd1f633f0348695f6cc",
+    "page-05.png": "21d631a37b45242c1843501171159b4ef40e67bf020aba95ee25e4d5bea2a13e",
+    "page-06.png": "b3beb566fde864b069e41ee85020b8d38ed03c0bdca45605e2800a16453ad46c",
+    "page-07.png": "164e6734489d5391d06126540b2ecdda34c7f434ecd0662d6970f6a3d8c64af5",
+    "page-08.png": "033c9ae210eec8a03f4f5a91e29723ba0d7847164a5665a074915c99ac72c347",
+    "page-09.png": "b15906cfdb8a3cdac6099c4902c9d10990de5bbb5ac7404998f007eb69a60321",
+    "page-10.png": "6b39264911977974b7aea088031a207e50566fea59a07a4be4188e2b15ecbfb4",
+    "page-11.png": "8f4ffbf96bcf12ddd4f58131bb7f414563e55c913b5e442a380727859fd3b1f6",
+    "page-12.png": "ad1445010433a7b81474dba4d9b96206eb00f80bbbdbadca6d8b0b9fe751f5b9"
+  }
+}

@@ -1,0 +1,11 @@
+"""Rebuild the original DS into output/rebuilt without replacing the delivery."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,nds,deliver
+for module in [geometry,core,nds,deliver]:importlib.reload(module)
+model=core.Study(repo,'nds');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in range(1,16):nds.STAGES[stage](model)
+deliver.finalize(model)

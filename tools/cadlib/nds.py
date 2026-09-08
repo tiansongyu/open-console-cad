@@ -254,3 +254,144 @@ def stage10(m):
     m.checkpoint(10,'mounts_and_lcd_carrier','补齐主板定位柱与紧固螺钉、上盖四处螺钉塔、下屏金属承托边和主封装屏蔽板，进入实体配合检查。')
 
 STAGES.update({6:stage06,7:stage07,8:stage08,9:stage09,10:stage10})
+
+
+def stage11(m):
+    p=m.profile;hy,hz=p['hinge_y'],p['hinge_z'];m.set_pose(180)
+    bore=Part.makeCylinder(3.65,150,V(-75,hy,hz),V(1,0,0))
+    m.cut('LowerCaseSeam',bore,'Parting-line hinge clearance')
+    # Envelope sweep removes only material at the approaching upper-case edge.
+    base=Part.makeBox(p['width']+.04,p['height']+.04,19.44,V(-p['width']/2-.02,-p['height']/2-.02,-.1))
+    sweep=[]
+    for angle in range(20,181,10):
+        t=App.Placement(V(),App.Rotation(V(1,0,0),angle),V(0,hy,hz)).inverse()
+        s=base.copy();s.Placement=t.multiply(s.Placement);sweep.append(s)
+    clearance=sweep[0].multiFuse(sweep[1:]).removeSplitter()
+    for key in ['LidFrame','LidBackCover','LidBezel']:m.cut(key,clearance,'Lower-case swept opening clearance')
+    for j,ch in enumerate('XABY'):
+        m.cut('FrontDeck',m.parts['ButtonStem'+ch].Shape,'Full-depth button-stem clearance')
+        key='ButtonLift'+str(j+4);s=m.parts[key].Shape;bb=s.optimalBoundingBox(False,False)
+        _replace(m,key,Part.makeCylinder(1.3,1.0,V(bb.Center.x,bb.Center.y,14.64)))
+    for j in range(4):
+        key='ButtonLift'+str(j);b=m.parts[key].Shape.optimalBoundingBox(False,False)
+        _replace(m,key,Part.makeCylinder(1.3,3.45,V(b.Center.x,b.Center.y,14.64)))
+    for key in ['PowerKeyLegend','SelectKeyLegend','StartKeyLegend']:_move(m,key,(0,0,.085))
+    for i in range(3):m.cut('FrontDeck',m.parts['SystemStem'+str(i)].Shape,'System-key stem passage')
+    m.cut('GameCardCage',m.parts['GameCardMouth'].Shape,'Slot-1 lip seating rebate')
+    m.cut('MainFrame',[m.parts['GBAChannel'].Shape,m.parts['StylusTube'].Shape],'GBA guide and stylus-guide mounting clearances')
+    m.cut('Mainboard',m.parts['HeadphoneSocket'].Shape,'Headphone socket edge notch')
+    for key in ['HeadsetPort','MainFrame']:m.cut(key,[m.parts['HeadsetPin'+str(i)].Shape for i in range(2)],'Headset contact seats')
+    # Relocate complete fastener stacks into free perimeter regions. Update the
+    # original rear drilling tools too, so obsolete rear holes do not remain.
+    old_rear=[(-68,-31),(68,-31),(-68,30),(68,30),(0,-34),(0,35),(32,4)]
+    old_board=[(-67,-30),(67,-30),(-67,28),(67,28),(0,-34),(0,35),(30,3)]
+    revised=[(-67,-30),(66,-30),(-67,28),(66,28),(35,-34),(22,35),(32,2)]
+    drilling=[o for o in m.doc.Objects if o.Label.startswith('Seven rear-case fastener seats · tool')]
+    assert len(drilling)==7
+    for i,((x,y),(rx,ry),(bx,by)) in enumerate(zip(revised,old_rear,old_board)):
+        _move(m,'RearCoverScrew'+str(i),(x-rx,y-ry,0))
+        for key in ['BoardPost'+str(i),'BoardScrew'+str(i)]:_move(m,key,(x-bx,y-by,0))
+        drilling[i].Shape=Part.makeCompound([Part.makeCylinder(.75,3.4,V(x,y,-.1)),Part.makeCylinder(1.42,.50,V(x,y,-.03))])
+        m.cut('Mainboard',Part.makeCylinder(.78,1.3,V(x,y,10.7)),'Revised mainboard locating hole')
+    door_tool=[o for o in m.doc.Objects if o.Label=='Captive battery-door screw · tool'][0]
+    door_tool.Shape=Part.makeCompound([Part.makeCylinder(.74,2.8,V(-49,27.9,-.1)),Part.makeCylinder(1.05,.50,V(-49,27.9,-.03))])
+    sh=Part.makeCylinder(.9,.35).fuse(Part.makeCylinder(.62,2.4,V(0,0,.33)))
+    sh=sh.cut(Part.makeBox(.25,1.4,.22,V(-.125,-.7,-.02)));sh.translate(V(-49,27.9,.055));_replace(m,'BatteryDoorScrew',sh)
+    # Shoulder switches now sit beside Start/Power, with independent outer arms.
+    for side in [-1,1]:
+        _replace(m,'ShoulderSwitch'+str(side),m.rr(5,3.2,2.0,(side*68.3,25,11.95),.25))
+        _replace(m,'ShoulderActuator'+str(side),m.rr(3,8.6,.8,(side*68.3,32.5,14.0),.2))
+        m.cut('ShoulderActuator'+str(side),m.parts['ShoulderPin'+str(side)].Shape,'Shoulder arm pivot clearance')
+        m.cut('Shoulder'+str(side),m.parts['ShoulderActuator'+str(side)].Shape,'Shoulder transmission-arm seat')
+    _move(m,'TouchZIF',(4.5,0,0))
+    m.cut('LCDCarrier',[m.parts[k].Shape for k in ['LowerLCDFlex','TouchFlex']],'LCD carrier ribbon-feed notches')
+    _move(m,'UpperAntenna',(0,3,0))
+    m.doc.recompute()
+    m.checkpoint(11,'hinge_and_service_interface_fit','依据独立实体求交修正上盖旋转空间、按键通孔、双卡槽安装面、螺钉柱对齐、触控笔导管和排线出口。')
+
+STAGES[11]=stage11
+
+
+def stage12(m):
+    from .geometry import appearance
+    p=m.profile;hy,hz=p['hinge_y'],p['hinge_z']
+    _move(m,'RearRib0',(5,0,0));_replace(m,'RearRib2',m.rr(2,14,.8,(23,26,1.4),.25))
+    m.cut('BatteryTray',m.parts['BatteryDoorScrew'].Shape,'Battery-door fastener clearance in locating lip')
+    for i in range(2):
+        key='HeadsetPin'+str(i);_move(m,key,(0,.02,0))
+        for base in ['MainFrame','HeadsetPort']:m.cut(base,m.parts[key].Shape,'Flush accessory contact seating')
+    for key in ['LeftHingeSleeve','CenterHingeSleeve','RightHingeSleeve']:
+        m.parts[key].MaterialDescription='accent';appearance(m.parts[key],m.colors['accent'])
+    for i in range(4):
+        o=m.parts['LidBumper'+str(i)];o.MaterialDescription='white';appearance(o,m.colors['white'])
+    # Rear-facing cosmetic markings stay within the published envelope.
+    rear=App.Rotation(V(0,1,0),180);backz=2*hz-p['closed_depth']
+    m.label('UpperModelMark','NINTENDO DS',2.8,(15,77,backz+.027),'Lid',-6,'shell','Lid',rotation=rear)
+    m.cut('LidBackCover',m.parts['UpperModelMark'].Shape,'Upper-cover wordmark inlay')
+    for i,yy in enumerate([72.2,78.0]):
+        sh=m.rr(4.1,4.3,.018,(-20,yy,backz+.007),.35).cut(m.rr(3.3,3.5,.10,(-20,yy,backz-.02),.2))
+        m.feature('UpperPanelIcon'+str(i),'Dual-panel cover icon',sh,'Lid',-6,'shell',False,'Lid');m.cut('LidBackCover',sh,'Panel-icon inlay')
+    rear_side=App.Rotation(V(1,0,0),-90)
+    for side in [-1,1]:
+        m.label('ShoulderMark'+str(side),'L' if side<0 else 'R',2.2,(side*65-.75,42.232,14.5),'Controls',0,'white',rotation=rear_side)
+        m.cut('Shoulder'+str(side),m.parts['ShoulderMark'+str(side)].Shape,'Shoulder legend inlay')
+    # Charging contacts and molded volume-slider grip grooves.
+    ry=App.Rotation(V(0,0,1),V(0,1,0))
+    for i in range(2):m.box('ChargePin'+str(i),'AC jack contact',.65,.30,2.6,(-34.4+i*2.8,38.2,8.65),'Ports',0,'gold',.04,orient=ry)
+    m.cut('ChargeJackTongue',[m.parts['ChargePin'+str(i)].Shape for i in range(2)],'Charging contact seats in jack tongue')
+    grooves=[m.rr(.22,2.2,.25,(-57.5+j*1.8,-42.37,9),.04,ry) for j in range(6)]
+    m.cut('VolumeSlider',grooves,'Six molded volume-slider grip grooves')
+    for key,cell in [('HingeY','B8'),('HingeZ','B9')]:
+        m.params.set('A'+cell[1:],key);m.params.set(cell,str(p['hinge_y' if key=='HingeY' else 'hinge_z'])+' mm')
+        if not m.params.getAlias(cell):m.params.setAlias(cell,key)
+        m.param_cells[key]=cell
+    m.checkpoint(12,'final_service_details','完成剩余螺钉与支承肋配合、齐平附件触点、上盖与肩键标识、充电触点及音量滑块纹理，保存铰链轴参数。')
+
+STAGES[12]=stage12
+
+
+def stage13(m):
+    # Rear-facing text grows downward after its rotation; keep its complete
+    # glyph bounds on the shoulder surface, above the lower case lip.
+    m.set_pose(180)
+    for side in [-1,1]:_move(m,'ShoulderMark'+str(side),(0,0,1))
+    for prefix in ['Shoulder legend inlay · tool','Recessed shoulder legend seat · tool']:
+        found=[o for o in m.doc.Objects if o.Label.startswith(prefix)]
+        for tool,side in zip(found,[-1,1]):tool.Shape=m.parts['ShoulderMark'+str(side)].Shape.copy()
+    m.cut('MainFrame',[m.parts['ShoulderMark'+str(s)].Shape for s in [-1,1]],'Flush L/R legend edge clearances')
+    mark=m.parts['UpperModelMark']
+    mark.Placement=App.Placement(V(-15,77,2*m.profile['hinge_z']-m.profile['closed_depth']+.027),App.Rotation(V(1,0,0),180))
+    mark.FlatPlacement=mark.Placement
+    tool=next(o for o in m.doc.Objects if o.Label.startswith('Upper-cover wordmark inlay · tool'))
+    tool.Shape=mark.Shape.copy()
+    m.doc.recompute();m.profile['stages']=13
+    m.checkpoint(13,'cover_marking_and_final_fit','校正合盖后上盖标识的阅读方向，并完成 L/R 薄层标识与机壳边缘的最后配合检查。')
+
+STAGES[13]=stage13
+
+
+def stage14(m):
+    # A 0.03 mm trim strip cut tangentially by a cylinder becomes fragile in
+    # STEP healing. Use a straight-ended hinge gap through the entire rear strip.
+    m.set_pose(180)
+    tool=next(o for o in m.doc.Objects if o.Label.startswith('Parting-line hinge clearance · tool'))
+    tool.Shape=Part.makeBox(150,10,1,V(-75,35,17))
+    m.doc.recompute();m.parts['LowerCaseSeam'].FlatPlacement=m.parts['LowerCaseSeam'].Placement
+    m.profile['stages']=14
+    m.checkpoint(14,'step_stable_parting_strip','将铰链处薄分型条改为直端退让轮廓，避免圆柱相切薄片在 STEP 回读修复时发生几何偏差。')
+
+STAGES[14]=stage14
+
+
+def stage15(m):
+    # NTR-001's hinge occupies only the center. Preserve the lower rear deck
+    # beside it instead of exposing the mainboard through a full-width opening.
+    m.set_pose(180)
+    revised=Part.makeCylinder(3.65,73,V(-36.5,m.profile['hinge_y'],m.profile['hinge_z']),V(1,0,0))
+    for obj in m.doc.Objects:
+        if obj.TypeId=='Part::Cut' and 'PartID' in obj.PropertiesList and obj.PartID in ['MainFrame','FrontDeck'] and obj.Tool.Label.startswith('Hinge-bar clearance · tool'):
+            obj.Tool.Shape=revised.copy()
+    m.doc.recompute();m.profile['stages']=15
+    m.checkpoint(15,'central_hinge_enclosure','将下机身铰链开孔限定在中央铰链范围，恢复两侧连续壳体，修正网页视角中主板外露的问题。')
+
+STAGES[15]=stage15

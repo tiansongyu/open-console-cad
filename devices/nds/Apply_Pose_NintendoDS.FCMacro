@@ -1,0 +1,17 @@
+"""Apply Parameters.Opening to the active original-DS native document."""
+import FreeCAD as App
+import FreeCADGui as Gui
+D=App.ActiveDocument
+if D is None or D.getObject('StudyInfo') is None:raise RuntimeError('Open a NintendoDS native assembly first')
+import json
+if json.loads(D.StudyInfo.ProfileJSON).get('id')!='nds':raise RuntimeError('Open a Nintendo DS NTR-001 native assembly first')
+p=D.getObject('Parameters')
+def value(x):return x.Value if hasattr(x,'Value') else float(x)
+opening=value(p.Opening)
+if not 0<=opening<=150:raise ValueError('Opening must be between 0 and 150 degrees')
+pivot=App.Vector(0,value(p.HingeY),value(p.HingeZ))
+t=App.Placement(App.Vector(),App.Rotation(App.Vector(1,0,0),180-opening),pivot)
+for o in D.Objects:
+    if 'PhysicalPart' in o.PropertiesList and o.PhysicalPart and 'FlatPlacement' in o.PropertiesList:o.Placement=t.multiply(o.FlatPlacement) if o.PoseGroup=='Lid' else o.FlatPlacement
+D.StudyInfo.OpeningDegrees=opening;D.recompute()
+Gui.activateView('Gui::View3DInventor',True);Gui.activeDocument().activeView().fitAll()

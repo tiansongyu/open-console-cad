@@ -395,5 +395,159 @@
         "充电底座与触控笔"
       ]
     ]
+  },
+  {
+    "id": "nds",
+    "title": "Nintendo DS",
+    "prefix": "NintendoDS",
+    "model": "NTR-001",
+    "count": 321,
+    "iterations": 15,
+    "pages": 12,
+    "bytes": 3185776,
+    "family": "clamshell",
+    "opening": 150,
+    "views": {
+      "assembled": {
+        "label": "展开整机",
+        "description": "NTR-001 初代，等大的双屏、中央铰链、DS / GBA 双卡槽与独立控制件。拖动开合滑块观察折叠结构。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ]
+      },
+      "closed": {
+        "label": "闭合",
+        "description": "闭合包络 148.7 × 84.7 × 28.9 mm。上盖和机身使用同一组原生铰链坐标。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "opening": 0
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后盖、电池仓盖和屏蔽片，观察电池、双 ARM 主板、RF 子板、双卡槽及扬声器的布局示意。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "exclude": [
+          "BackCover",
+          "BatteryDoor",
+          "BatteryDoorScrew",
+          "EMIShield",
+          "LidBackCover",
+          "RearModelMark",
+          "UpperModelMark",
+          "UpperPanelIcon0",
+          "UpperPanelIcon1"
+        ],
+        "normal": [
+          0.15,
+          0.1,
+          -2.6
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "分别展开上下机身的显示、外壳与内部装配层。爆炸位移仅用于展示。",
+        "groups": [
+          "Body",
+          "Lid",
+          "Hinge",
+          "Display",
+          "LidDisplay",
+          "Controls",
+          "Ports",
+          "LidInternal",
+          "Internal",
+          "Battery",
+          "Mainboard"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "controllers": {
+        "label": "操作机构",
+        "description": "观察十字键、ABXY、系统键、肩键及其胶垫、触点与传动机构。",
+        "groups": [
+          "Controls",
+          "Internal"
+        ]
+      },
+      "accessories": {
+        "label": "触控笔",
+        "description": "初代约 75 mm 固定长度触控笔，笔尖、笔杆和卡扣帽分别建模。",
+        "groups": [
+          "Accessories"
+        ]
+      },
+      "ports": {
+        "label": "双卡槽与接口",
+        "description": "DS Slot-1 的 17 触点、GBA Slot-2 的 32 触点及充电、耳机和附件接口。",
+        "groups": [
+          "Ports"
+        ],
+        "normal": [
+          0.3,
+          -1,
+          1
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "展开外观"
+      ],
+      [
+        "closed",
+        "闭合外观"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "上下机身爆炸"
+      ],
+      [
+        "rear",
+        "背面结构"
+      ]
+    ]
   }
 ]

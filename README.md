@@ -4,7 +4,7 @@
 
 [在线 3D 模型库](https://tiansongyu.github.io/open-console-cad/) · [下载整个仓库](https://github.com/tiansongyu/open-console-cad/archive/refs/heads/main.zip) · [MIT 协议](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)
 
-目前已完成 Nintendo Switch、Nintendo Switch 2 和 Nintendo 3DS 三个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
+目前已完成 Nintendo Switch、Nintendo Switch 2、Nintendo 3DS 和 Nintendo DS 四个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
 
 ## 点击设备，直接预览
 
@@ -33,22 +33,24 @@
 | 设备 | 状态 / 直接预览 | 模型与图纸 |
 | --- | --- | --- |
 | Nintendo 3DS CTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=exploded#viewer) | [设备说明](devices/3ds/README.md) · [A3 图册](devices/3ds/output/drawings/Nintendo3DS_Drawings.pdf) |
-| Nintendo DS NTR-001 | 制作中 | [参考与配置](devices/nds/profile.json) |
+| Nintendo DS NTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=nds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=nds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=nds&view=exploded#viewer) | [设备说明](devices/nds/README.md) · [A3 图册](devices/nds/output/drawings/NintendoDS_Drawings.pdf) |
 | PSP-1000 | 制作中 | [参考与配置](devices/psp/profile.json) |
 | PS Vita PCH-1000 OLED | 制作中 | [参考与配置](devices/psv/profile.json) |
 | Steam Deck LCD（2022） | 制作中 | [参考与配置](devices/steamdeck/profile.json) |
 
 [![Nintendo 3DS 可开合模型](site/public/images/3ds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer)
 
+[![Nintendo DS 可开合模型](site/public/images/nds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=nds&view=assembled#viewer)
+
 目标是七款设备。只有完成几何、图纸和预览核验的设备才加入线上目录，阶段进展见 [扩展计划](docs/SEVEN_DEVICE_PLAN.md)。
 
 ## 怎么使用网页
 
-1. 点击设备卡片切换 Switch / Switch 2。
-2. 选择整机、内部结构、主机爆炸、手柄、底座或附件。
+1. 点击设备卡片选择已发布的主机型号。
+2. 选择整机、内部结构、分层爆炸或设备提供的专属视图，如双卡槽、操作机构和附件。
 3. 鼠标拖动旋转、滚轮缩放、右键拖动平移；手机支持单指旋转、双指缩放和平移。
 4. 用“展开程度”滑块从装配状态过渡到分层状态。“主机爆炸”默认完全展开。
-5. 使用重置视角、自动旋转或全屏按钮。3DS 等折叠设备另有开合角度滑块。画布获得焦点后可用方向键旋转、`+` / `-` 缩放。
+5. 使用重置视角、自动旋转或全屏按钮。3DS 和 NDS 折叠设备另有开合角度滑块。画布获得焦点后可用方向键旋转、`+` / `-` 缩放。
 6. 页面提供 FreeCAD、PDF 和 GLB 下载链接。效果图始终可查看，WebGL 不可用或模型加载失败时有明确提示和重试入口。
 
 链接中的 `device` 和 `view` 参数可以分享，例如：
@@ -71,7 +73,12 @@ open-console-cad/
 │   │       ├── drawings/  # PDF、SVG、内容数据和图纸模板
 │   │       ├── previews/  # 原生 CAD 渲染
 │   │       └── reports/   # 几何、重建、尺寸与导出检查
-│   └── switch2/           # 同样的独立结构
+│   ├── switch2/           # 同样的独立结构
+│   ├── 3ds/               # CTR-001；含开合宏
+│   ├── nds/               # NTR-001；含双卡槽与开合宏
+│   ├── psp/               # PSP-1000，制作中
+│   ├── psv/               # PCH-1000 OLED，制作中
+│   └── steamdeck/         # 2022 LCD，制作中
 ├── site/
 │   ├── index.html
 │   ├── src/               # Three.js 交互逻辑与响应式样式
@@ -97,7 +104,7 @@ cd open-console-cad
 
 推荐使用 **FreeCAD 1.1.3**，这是原模型验证使用的版本。
 
-- 在 FreeCAD 中打开设备目录下的 `Open_Switch.FCMacro` 或 `Open_Switch2.FCMacro`，通过“宏 → 宏 → 执行”运行，打开完整模型、爆炸装配和图纸。
+- 在 FreeCAD 中打开相应设备目录下的 `Open_*.FCMacro`，通过“宏 → 宏 → 执行”运行，打开完整模型、爆炸装配和图纸。
 - 也可直接打开 `output/*_Complete.FCStd`。默认显示手持整机，底座和附件位于独立分组。
 - `*_Exploded.FCStd` 记录组件编号和爆炸位移，可观察各装配层。
 - `*_Drawings.FCStd` 为当前版本的自包含矢量图页和可测尺寸参考。**修改三维模型后需要重新生成图纸**，它不是自动跟随所有几何变化的完整关联工程图。
@@ -146,7 +153,7 @@ export_device(repo, "switch2")
 
 导出器逐组件读取真实 BRep，用 MeshPart 生成网格，将 mm 转为 glTF 的 m。默认线性偏差设为 0.25 mm、角度偏差为 0.45 rad，保留颜色、组件编号、装配分组及爆炸位移。网页 GLB 的身份和源文件哈希记录在 `site/public/models/*.json`。**导出不会改写 FCStd 或 STEP。**
 
-如果改了几何，还应重新导出 STEP、生成尺寸图并执行设备脚本中的相关 CAD 检查。图纸的 PDF 生成沿用 Kami：安装 Kami 后设置 `KAMI_HOME`，运行设备下的 `build_drawing_book.py`，并执行其字体、内容和逐页视觉检查；单纯更新网页不需要重新生成 PDF。
+如果改了几何，还应重新导出 STEP、生成尺寸图并执行设备脚本中的相关 CAD 检查。图纸的 PDF 生成沿用 Kami：安装 Kami 后设置 `KAMI_HOME`，运行 Switch 设备脚本中的 `build_drawing_book.py`，或为 3DS / NDS 执行 `python3 tools/cadlib/build_book.py devices/<id>`，并执行其字体、内容和逐页视觉检查；单纯更新网页不需要重新生成 PDF。
 
 ## GitHub Pages 发布
 
@@ -164,7 +171,9 @@ export_device(repo, "switch2")
 
 - Switch：最终检查 1,029 对候选组件，14 轮源码构建匹配；26 项模型尺寸、23 项原生图纸尺寸参考。
 - Switch 2：最终检查 1,375 对候选组件，15 轮源码构建匹配；26 项模型尺寸、22 项原生图纸尺寸参考。
-- 两份 PDF 均为 12 页 A3，已完成 Kami 构建、中文字体、内容覆盖和逐页视觉检查。
+- Nintendo 3DS：13 轮、324 组件，展开与闭合检查通过，16 项模型尺寸、17 项原生图纸尺寸参考。
+- Nintendo DS：15 轮、321 组件，展开与闭合检查通过，18 项模型尺寸、18 项原生图纸尺寸参考。
+- 已发布设备的 PDF 均为 12 页 A3，已完成 Kami 构建、中文字体、内容覆盖和逐页视觉检查。
 
 ## 贡献与协议
 

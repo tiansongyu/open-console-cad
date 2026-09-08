@@ -3,10 +3,12 @@ from pathlib import Path
 import ast, hashlib, json, struct, zipfile
 ROOT=Path(__file__).resolve().parents[1]
 catalog=json.loads((ROOT/'site/src/catalog.json').read_text())
+assert len({entry['id'] for entry in catalog})==len(catalog), 'Duplicate device in catalog'
 for entry in catalog:
     device,count=entry['id'],entry['count']
     folder=ROOT/'devices'/device;report=json.loads((ROOT/'site/public/models'/f'{device}.json').read_text())
     manifest=json.loads((folder/'output/reports/final_manifest.json').read_text())
+    assert entry['iterations']==manifest['design_iterations'], f'{device}: catalog iteration count is stale'
     glb=(ROOT/'site/public/models'/f'{device}.glb').read_bytes()
     magic,version,length=struct.unpack_from('<III',glb);assert magic==0x46546c67 and version==2 and length==len(glb)
     size,kind=struct.unpack_from('<II',glb,12);assert kind==0x4e4f534a

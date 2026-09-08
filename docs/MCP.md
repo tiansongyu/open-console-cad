@@ -39,3 +39,5 @@ export_device(repo, "switch2")
 - **图纸页无法执行三维视角命令**：先使用 `Gui.activateView("Gui::View3DInventor", True)`。项目的打开宏已处理这一点。
 
 服务保持在本机即可。仓库不包含认证信息、个人客户端配置、上游虚拟环境或会话日志。
+
+- **建模线程**：创建/修改文档对象、重计算、保存和视图渲染使用 `execute_code`。`execute_code_async` 仅用于不接触文档和 GUI 的后台计算。
