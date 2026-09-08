@@ -1,0 +1,2932 @@
+{
+  "iteration": 5,
+  "slug": "bumpers_triggers_and_rear_paddles",
+  "summary": "加入前缘肩键、中空后扳机及轴销，并沿曲面握把分出四枚背键，保留独立装配组件。",
+  "physical_components": 108,
+  "objects": [
+    {
+      "name": "RearPlateCut003",
+      "label": "LCD model rear shell bridge004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 30966.80236238498,
+      "bounds": [
+        -148.3000001,
+        148.3000001,
+        -57.8000001,
+        57.8000001,
+        13.699999899999984,
+        14.900000100000009
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPlate",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut012",
+      "label": "Steam Deck structural perimeter013",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 192,
+      "volume": 26745.265950403817,
+      "bounds": [
+        -149.0,
+        149.0,
+        -58.5,
+        58.5,
+        15.0,
+        35.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceCut023",
+      "label": "LCD model control and display face blank024",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 288,
+      "volume": 15211.463762853098,
+      "bounds": [
+        -148.8,
+        148.8,
+        -58.3,
+        58.3,
+        35.8,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip_1Cut001",
+      "label": "Hollow curved rear grip003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 6172.580735368579,
+      "bounds": [
+        -148.11077995266945,
+        -89.88922010968865,
+        -55.51796650318935,
+        41.51796650318893,
+        -1e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip-1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip1Cut001",
+      "label": "Hollow curved rear grip005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 6172.580738457615,
+      "bounds": [
+        89.88922004733162,
+        148.11077989031136,
+        -55.51796650318938,
+        41.517966503190365,
+        -1.0000000710542735e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplaySurround",
+      "label": "LCD model wide black bezel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1543.797276103804,
+      "bounds": [
+        -82.3,
+        82.3,
+        -51.8,
+        51.8,
+        36.15,
+        36.699999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDBackplate",
+      "label": "LCD metal backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5636.155557428763,
+      "bounds": [
+        -80.2,
+        80.2,
+        -50.2,
+        50.2,
+        32.35,
+        32.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCD",
+      "label": "7-inch 16:10 LCD module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 58397.46211868033,
+      "bounds": [
+        -80.0,
+        80.0,
+        -50.0,
+        50.0,
+        32.8,
+        36.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TouchLayer",
+      "label": "Front capacitive touch layer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1704.84041394489,
+      "bounds": [
+        -75.385,
+        75.385,
+        -47.115,
+        47.115,
+        36.57,
+        36.69
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TouchLayer",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Seven-inch display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2841.3959686677786,
+      "bounds": [
+        -75.385,
+        75.385,
+        -47.115,
+        47.115,
+        36.8,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadRim_1",
+      "label": "Trackpad surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 90.54175131606085,
+      "bounds": [
+        -126.5,
+        -91.5,
+        -21.5,
+        13.500000000000002,
+        36.2,
+        36.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadRim-1",
+      "assembly": "Touchpads",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadSurface_1",
+      "label": "32.5 mm touchpad surface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1205.8029839646538,
+      "bounds": [
+        -125.25,
+        -92.75,
+        -20.25,
+        12.25,
+        35.85,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadSurface-1",
+      "assembly": "Touchpads",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadFoil_1",
+      "label": "Trackpad electrode foil",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 98.64471663382714,
+      "bounds": [
+        -124.75,
+        -93.25,
+        -19.75,
+        11.75,
+        35.65,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadFoil-1",
+      "assembly": "Touchpads",
+      "layer": 4,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadCarrier_1",
+      "label": "Trackpad pressure plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 486.5734502470397,
+      "bounds": [
+        -125.5,
+        -92.5,
+        -20.5,
+        12.5,
+        35.0,
+        35.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadCarrier-1",
+      "assembly": "Touchpads",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadRim1",
+      "label": "Trackpad surround001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 90.54175131606085,
+      "bounds": [
+        91.5,
+        126.5,
+        -21.5,
+        13.500000000000002,
+        36.2,
+        36.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadRim1",
+      "assembly": "Touchpads",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadSurface1",
+      "label": "32.5 mm touchpad surface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1205.8029839646538,
+      "bounds": [
+        92.75,
+        125.25,
+        -20.25,
+        12.25,
+        35.85,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadSurface1",
+      "assembly": "Touchpads",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadFoil1",
+      "label": "Trackpad electrode foil001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 98.64471663382716,
+      "bounds": [
+        93.25,
+        124.75,
+        -19.75,
+        11.75,
+        35.65,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadFoil1",
+      "assembly": "Touchpads",
+      "layer": 4,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadCarrier1",
+      "label": "Trackpad pressure plate001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 486.5734502470397,
+      "bounds": [
+        92.5,
+        125.5,
+        -20.5,
+        12.5,
+        35.0,
+        35.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadCarrier1",
+      "assembly": "Touchpads",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPad",
+      "label": "Directional cross",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 272.04477181958157,
+      "bounds": [
+        -138.5,
+        -119.5,
+        25.5,
+        44.5,
+        36.35,
+        37.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrow0",
+      "label": "Directional arrow",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.01700999999999987,
+      "bounds": [
+        -129.7,
+        -128.3,
+        40.25,
+        41.599999999999994,
+        37.718,
+        37.736000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrow0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem0",
+      "label": "Directional plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.15256432079835,
+      "bounds": [
+        -130.55,
+        -127.44999999999999,
+        39.25,
+        42.349999999999994,
+        33.05,
+        36.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrow1",
+      "label": "Directional arrow001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.017010000000000212,
+      "bounds": [
+        -123.75000000000001,
+        -122.40000000000002,
+        34.30000000000001,
+        35.70000000000002,
+        37.718,
+        37.736000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrow1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem1",
+      "label": "Directional plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.152564320798344,
+      "bounds": [
+        -124.75,
+        -121.65,
+        33.45,
+        36.55,
+        33.05,
+        36.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrow2",
+      "label": "Directional arrow002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.017009999999999956,
+      "bounds": [
+        -129.7,
+        -128.3,
+        28.400000000000013,
+        29.750000000000014,
+        37.718,
+        37.736000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrow2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem2",
+      "label": "Directional plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.152564320798337,
+      "bounds": [
+        -130.55,
+        -127.44999999999999,
+        27.65,
+        30.75,
+        33.05,
+        36.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem2",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrow3",
+      "label": "Directional arrow003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.01700999999999987,
+      "bounds": [
+        -135.60000000000002,
+        -134.25000000000003,
+        34.30000000000001,
+        35.69999999999999,
+        37.718,
+        37.736000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrow3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem3",
+      "label": "Directional plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.15256432079836,
+      "bounds": [
+        -136.35000000000002,
+        -133.25,
+        33.45,
+        36.55,
+        33.05,
+        36.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem3",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonY",
+      "label": "Y key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.459316953130994,
+      "bounds": [
+        123.9999999,
+        132.0,
+        37.3999999,
+        45.4000001,
+        36.9,
+        38.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkY",
+      "label": "Y",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 0.018996583284536957,
+      "bounds": [
+        127.14395973154363,
+        129.04513422818792,
+        40.4,
+        42.65503355704698,
+        38.067,
+        38.085
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemY",
+      "label": "ABXY plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.03318379996189,
+      "bounds": [
+        126.5,
+        129.5,
+        39.9,
+        42.9,
+        33.4,
+        36.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemY",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.45931695313098,
+      "bounds": [
+        131.3999999,
+        139.4,
+        29.9999999,
+        38.0000001,
+        36.9,
+        38.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.03503203144340359,
+      "bounds": [
+        134.85352338993292,
+        136.4526846637584,
+        32.9999999,
+        35.25503365704698,
+        38.0669999,
+        38.0850001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemB",
+      "label": "ABXY plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.03318379996189,
+      "bounds": [
+        133.9,
+        136.9,
+        32.5,
+        35.5,
+        33.4,
+        36.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemB",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.459316953130994,
+      "bounds": [
+        123.9999999,
+        132.0,
+        22.5999999,
+        30.600000100000003,
+        36.9,
+        38.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.027813047092473727,
+      "bounds": [
+        127.1741610738255,
+        129.23993288590606,
+        25.6,
+        27.85503355704698,
+        38.067,
+        38.085
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemA",
+      "label": "ABXY plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.03318379996189,
+      "bounds": [
+        126.5,
+        129.5,
+        25.1,
+        28.1,
+        33.4,
+        36.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemA",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonX",
+      "label": "X key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.459316953130994,
+      "bounds": [
+        116.5999999,
+        124.60000009999999,
+        29.9999999,
+        38.0000001,
+        36.9,
+        38.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkX",
+      "label": "X",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.02540541549367181,
+      "bounds": [
+        119.84211409395974,
+        121.77197986577181,
+        33.0,
+        35.25503355704698,
+        38.067,
+        38.085
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemX",
+      "label": "ABXY plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 24.03318379996191,
+      "bounds": [
+        119.1,
+        122.1,
+        32.5,
+        35.5,
+        33.4,
+        36.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemX",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickBezel_1",
+      "label": "Thumbstick annular base",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 67.6133570905593,
+      "bounds": [
+        -116.4,
+        -93.6,
+        21.6,
+        44.4,
+        36.65,
+        37.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickBezel-1",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickStem_1",
+      "label": "Thumbstick shaft",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 383.17377277303973,
+      "bounds": [
+        -108.3,
+        -101.7,
+        29.7,
+        36.3,
+        36.1,
+        47.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickStem-1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickCap_1",
+      "label": "Concave capacitive thumb cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 330.4096529844569,
+      "bounds": [
+        -113.2,
+        -96.8,
+        24.7999999,
+        41.2,
+        47.4,
+        49.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickCap-1",
+      "assembly": "Controls",
+      "layer": 7,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickBoot_1",
+      "label": "Thumbstick dust skirt",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 268.330497126575,
+      "bounds": [
+        -114.5,
+        -95.5,
+        23.5,
+        42.5,
+        35.45,
+        36.550000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickBoot-1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickTouchLead_1",
+      "label": "Capacitive thumb sensor lead study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9552778684233799,
+      "bounds": [
+        -101.475,
+        -101.125,
+        32.824999999999996,
+        33.175000000000004,
+        37.3,
+        45.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickTouchLead-1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickBezel1",
+      "label": "Thumbstick annular base001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 67.61335709055933,
+      "bounds": [
+        93.6,
+        116.4,
+        21.6,
+        44.4,
+        36.65,
+        37.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickBezel1",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickStem1",
+      "label": "Thumbstick shaft001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 383.17377277303973,
+      "bounds": [
+        101.7,
+        108.3,
+        29.7,
+        36.3,
+        36.1,
+        47.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickStem1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickCap1",
+      "label": "Concave capacitive thumb cap001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 330.4096529844569,
+      "bounds": [
+        96.8,
+        113.2,
+        24.7999999,
+        41.2,
+        47.4,
+        49.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickCap1",
+      "assembly": "Controls",
+      "layer": 7,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickBoot1",
+      "label": "Thumbstick dust skirt001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 268.330497126575,
+      "bounds": [
+        95.5,
+        114.5,
+        23.5,
+        42.5,
+        35.45,
+        36.550000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickBoot1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StickTouchLead1",
+      "label": "Capacitive thumb sensor lead study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9552778684233799,
+      "bounds": [
+        108.525,
+        108.875,
+        32.824999999999996,
+        33.175000000000004,
+        37.3,
+        45.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StickTouchLead1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SteamKey",
+      "label": "SteamKey",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 61.42017136686654,
+      "bounds": [
+        -111.0,
+        -95.0,
+        -33.4,
+        -28.599999999999998,
+        36.3,
+        37.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SteamKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "QuickAccessKey",
+      "label": "QuickAccessKey",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 51.220171366866545,
+      "bounds": [
+        96.25,
+        109.75,
+        -33.4,
+        -28.599999999999998,
+        36.3,
+        37.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "QuickAccessKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ViewKey",
+      "label": "ViewKey",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 24.70017136686653,
+      "bounds": [
+        -114.5,
+        -107.5,
+        50.300000000000004,
+        55.1,
+        36.3,
+        37.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ViewKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuKey",
+      "label": "MenuKey",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 24.70017136686653,
+      "bounds": [
+        107.5,
+        114.5,
+        50.300000000000004,
+        55.1,
+        36.3,
+        37.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SteamMark",
+      "label": "STEAM",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 82,
+      "volume": 0.05191551070215968,
+      "bounds": [
+        -107.67683525100671,
+        -101.5863485738255,
+        -31.627248422147655,
+        -30.214228087919462,
+        37.1679999,
+        37.1860001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SteamMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "QuickDot0",
+      "label": "Quick-access dot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.009975184993678459,
+      "bounds": [
+        100.58,
+        101.42,
+        -31.42,
+        -30.58,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "QuickDot0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "QuickDot1",
+      "label": "Quick-access dot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.009975184993678459,
+      "bounds": [
+        102.58,
+        103.42,
+        -31.42,
+        -30.58,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "QuickDot1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "QuickDot2",
+      "label": "Quick-access dot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.009975184993678459,
+      "bounds": [
+        104.58,
+        105.42,
+        -31.42,
+        -30.58,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "QuickDot2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuBar0",
+      "label": "Menu icon bar",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0077698194671060455,
+      "bounds": [
+        109.8,
+        112.2,
+        51.709999999999994,
+        51.89,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuBar0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuBar1",
+      "label": "Menu icon bar001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0077698194671060455,
+      "bounds": [
+        109.8,
+        112.2,
+        52.61,
+        52.790000000000006,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuBar1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MenuBar2",
+      "label": "Menu icon bar002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0077698194671060455,
+      "bounds": [
+        109.8,
+        112.2,
+        53.51,
+        53.690000000000005,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MenuBar2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ViewIcon0",
+      "label": "View icon",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 0.019190277868422853,
+      "bounds": [
+        -112.5,
+        -110.5,
+        52.3,
+        53.7,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ViewIcon0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ViewIcon1",
+      "label": "View icon001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 0.019190277868422857,
+      "bounds": [
+        -111.7,
+        -109.7,
+        51.699999999999996,
+        53.1,
+        37.168,
+        37.186
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ViewIcon1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBTypeCShell",
+      "label": "USB-C receptacle shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 76.26011922018289,
+      "bounds": [
+        43.5,
+        52.5,
+        52.0,
+        58.1,
+        23.15,
+        26.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBTypeCShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBTypeCTongue",
+      "label": "USB-C insulator tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 19.267719249683914,
+      "bounds": [
+        44.4,
+        51.6,
+        53.1,
+        58.0,
+        24.725,
+        25.275000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBTypeCTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_0",
+      "label": "USB-C contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        45.11,
+        45.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_1",
+      "label": "USB-C contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        45.61,
+        45.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_2",
+      "label": "USB-C contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        46.11,
+        46.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_3",
+      "label": "USB-C contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        46.61,
+        46.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_4",
+      "label": "USB-C contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        47.11,
+        47.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_5",
+      "label": "USB-C contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        47.61,
+        47.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_6",
+      "label": "USB-C contact study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        48.11,
+        48.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_7",
+      "label": "USB-C contact study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        48.61,
+        48.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_8",
+      "label": "USB-C contact study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        49.11,
+        49.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_9",
+      "label": "USB-C contact study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        49.61,
+        49.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_10",
+      "label": "USB-C contact study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        50.11,
+        50.39,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact_1_11",
+      "label": "USB-C contact study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392087,
+      "bounds": [
+        50.61,
+        50.89,
+        54.2,
+        57.5,
+        24.635,
+        24.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact-1_11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_0",
+      "label": "USB-C contact study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        45.11,
+        45.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_1",
+      "label": "USB-C contact study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        45.61,
+        45.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_2",
+      "label": "USB-C contact study014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        46.11,
+        46.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_3",
+      "label": "USB-C contact study015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        46.61,
+        46.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_4",
+      "label": "USB-C contact study016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        47.11,
+        47.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_5",
+      "label": "USB-C contact study017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        47.61,
+        47.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_6",
+      "label": "USB-C contact study018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        48.11,
+        48.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_7",
+      "label": "USB-C contact study019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392086,
+      "bounds": [
+        48.61,
+        48.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_8",
+      "label": "USB-C contact study020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392087,
+      "bounds": [
+        49.11,
+        49.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_9",
+      "label": "USB-C contact study021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392087,
+      "bounds": [
+        49.61,
+        49.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_10",
+      "label": "USB-C contact study022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04612918139392087,
+      "bounds": [
+        50.11,
+        50.39,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1_11",
+      "label": "USB-C contact study023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.046129181393920866,
+      "bounds": [
+        50.61,
+        50.89,
+        54.2,
+        57.5,
+        25.315,
+        25.365000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1_11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadphoneSocket",
+      "label": "3.5 mm headset jack",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 51.49849474211762,
+      "bounds": [
+        -75.5,
+        -70.5,
+        53.05,
+        58.25,
+        22.5,
+        27.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadphoneSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeMinus",
+      "label": "VolumeMinus",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 19.88272539481854,
+      "bounds": [
+        -97.9,
+        -90.1,
+        57.8,
+        58.5,
+        23.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeMinus",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumePlus",
+      "label": "VolumePlus",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 19.882725394818536,
+      "bounds": [
+        -87.4,
+        -79.6,
+        57.8,
+        58.5,
+        23.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumePlus",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerKey",
+      "label": "PowerKey",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 19.882725394818536,
+      "bounds": [
+        69.1,
+        76.9,
+        57.8,
+        58.5,
+        23.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerKey",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLED",
+      "label": "White power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1388495559215381,
+      "bounds": [
+        62.9,
+        64.1,
+        58.35,
+        58.5,
+        24.6,
+        25.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLED",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MicroSDMouth",
+      "label": "Bottom microSD slot lip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 7.236706849303741,
+      "bounds": [
+        -79.75,
+        -64.25,
+        -58.6,
+        -58.25,
+        21.8,
+        24.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDMouth",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MicrophoneMesh0",
+      "label": "Front microphone mesh",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.060318578948923535,
+      "bounds": [
+        -7.9,
+        -7.1,
+        53.6,
+        54.4,
+        36.45,
+        36.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicrophoneMesh0",
+      "assembly": "Audio",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MicrophoneMesh1",
+      "label": "Front microphone mesh001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.060318578948923535,
+      "bounds": [
+        7.1,
+        7.9,
+        53.6,
+        54.4,
+        36.45,
+        36.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicrophoneMesh1",
+      "assembly": "Audio",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMesh_1",
+      "label": "Speaker grille mesh backing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 27.25699111843058,
+      "bounds": [
+        -112.5,
+        -93.5,
+        -50.5,
+        -38.5,
+        35.5,
+        35.62
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMesh-1",
+      "assembly": "Audio",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMesh1",
+      "label": "Speaker grille mesh backing001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 27.25699111843058,
+      "bounds": [
+        93.5,
+        112.5,
+        -50.5,
+        -38.5,
+        35.5,
+        35.62
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMesh1",
+      "assembly": "Audio",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Bumper_1",
+      "label": "L1 / R1 bumper",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1819.4020204947797,
+      "bounds": [
+        -142.5,
+        -103.5,
+        48.4,
+        56.4,
+        31.1,
+        37.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Bumper-1",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Trigger_1Cut",
+      "label": "L2 / R2 hollow trigger001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 3246.955682586937,
+      "bounds": [
+        -144.5,
+        -115.5,
+        31.5,
+        55.5,
+        15.2,
+        29.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Trigger-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TriggerPin_1",
+      "label": "Trigger pivot shaft",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 72.25663103256521,
+      "bounds": [
+        -141.5,
+        -118.5,
+        37.0,
+        39.0,
+        23.0,
+        25.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TriggerPin-1",
+      "assembly": "ControlsInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Bumper1",
+      "label": "L1 / R1 bumper001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1819.4020204947617,
+      "bounds": [
+        103.5,
+        142.5,
+        48.4,
+        56.4,
+        31.1,
+        37.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Bumper1",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Trigger1Cut",
+      "label": "L2 / R2 hollow trigger003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 3246.955682586937,
+      "bounds": [
+        115.5,
+        144.5,
+        31.5,
+        55.5,
+        15.2,
+        29.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Trigger1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TriggerPin1",
+      "label": "Trigger pivot shaft001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 72.25663103256521,
+      "bounds": [
+        118.5,
+        141.5,
+        37.0,
+        39.0,
+        23.0,
+        25.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TriggerPin1",
+      "assembly": "ControlsInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPaddle_1_0",
+      "label": "L4/L5 or R4/R5 rear paddle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 470.88693679899575,
+      "bounds": [
+        -130.00000010000002,
+        -107.9999999,
+        -1e-07,
+        18.0000001,
+        0.1772728360364767,
+        5.077401328682795
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPaddle-1_0",
+      "assembly": "Controls",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPaddle_1_1",
+      "label": "L4/L5 or R4/R5 rear paddle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 472.8247383695309,
+      "bounds": [
+        -130.0000001,
+        -107.9999999,
+        -29.0000001,
+        -10.9999999,
+        0.05769235591857465,
+        4.446240864039724
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPaddle-1_1",
+      "assembly": "Controls",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPaddle1_0",
+      "label": "L4/L5 or R4/R5 rear paddle002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 470.88693064756114,
+      "bounds": [
+        107.99999989999999,
+        130.0000001,
+        -1e-07,
+        18.0000001,
+        0.17727283603648697,
+        5.077401328682796
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPaddle1_0",
+      "assembly": "Controls",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPaddle1_1",
+      "label": "L4/L5 or R4/R5 rear paddle003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 472.824738369487,
+      "bounds": [
+        107.9999999,
+        130.0000001,
+        -29.0000001,
+        -10.9999999,
+        0.057692355918580324,
+        4.446240864039716
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPaddle1_1",
+      "assembly": "Controls",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/steamdeck/output/iterations/05_bumpers_triggers_and_rear_paddles.FCStd",
+  "views": [
+    "devices/steamdeck/output/previews/05_bumpers_triggers_and_rear_paddles_hero.png",
+    "devices/steamdeck/output/previews/05_bumpers_triggers_and_rear_paddles_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

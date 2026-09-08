@@ -1,0 +1,502 @@
+{
+  "iteration": 2,
+  "slug": "lcd_and_dual_trackpads",
+  "summary": "建立 7 英寸 LCD、触控层和双 32.5 mm 方形触控板，保留独立电极与压力承托层。",
+  "physical_components": 18,
+  "objects": [
+    {
+      "name": "RearPlateCut001",
+      "label": "LCD model rear shell bridge002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 30966.80236238498,
+      "bounds": [
+        -148.3000001,
+        148.3000001,
+        -57.8000001,
+        57.8000001,
+        13.699999899999984,
+        14.900000100000009
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPlate",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut",
+      "label": "Steam Deck structural perimeter001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 27932.2957399578,
+      "bounds": [
+        -149.0,
+        149.0,
+        -58.5,
+        58.5,
+        15.0,
+        35.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceCut002",
+      "label": "LCD model control and display face blank003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 17767.142458415536,
+      "bounds": [
+        -148.8,
+        148.8,
+        -58.3,
+        58.3,
+        35.8,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip_1",
+      "label": "Hollow curved rear grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7116.747382408652,
+      "bounds": [
+        -148.11077995266945,
+        -89.88922010968865,
+        -55.51796650318935,
+        41.51796650318893,
+        -1e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip-1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip1",
+      "label": "Hollow curved rear grip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7116.747382409205,
+      "bounds": [
+        89.88922004733162,
+        148.11077989031136,
+        -55.51796650318938,
+        41.517966503190365,
+        -1.0000000710542735e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplaySurround",
+      "label": "LCD model wide black bezel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1543.797276103804,
+      "bounds": [
+        -82.3,
+        82.3,
+        -51.8,
+        51.8,
+        36.15,
+        36.699999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDBackplate",
+      "label": "LCD metal backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5636.155557428763,
+      "bounds": [
+        -80.2,
+        80.2,
+        -50.2,
+        50.2,
+        32.35,
+        32.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCD",
+      "label": "7-inch 16:10 LCD module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 58397.46211868033,
+      "bounds": [
+        -80.0,
+        80.0,
+        -50.0,
+        50.0,
+        32.8,
+        36.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TouchLayer",
+      "label": "Front capacitive touch layer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1704.84041394489,
+      "bounds": [
+        -75.385,
+        75.385,
+        -47.115,
+        47.115,
+        36.57,
+        36.69
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TouchLayer",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Seven-inch display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2841.3959686677786,
+      "bounds": [
+        -75.385,
+        75.385,
+        -47.115,
+        47.115,
+        36.8,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadRim_1",
+      "label": "Trackpad surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 90.54175131606085,
+      "bounds": [
+        -126.5,
+        -91.5,
+        -21.5,
+        13.500000000000002,
+        36.2,
+        36.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadRim-1",
+      "assembly": "Touchpads",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadSurface_1",
+      "label": "32.5 mm touchpad surface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1205.8029839646538,
+      "bounds": [
+        -125.25,
+        -92.75,
+        -20.25,
+        12.25,
+        35.85,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadSurface-1",
+      "assembly": "Touchpads",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadFoil_1",
+      "label": "Trackpad electrode foil",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 98.64471663382714,
+      "bounds": [
+        -124.75,
+        -93.25,
+        -19.75,
+        11.75,
+        35.65,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadFoil-1",
+      "assembly": "Touchpads",
+      "layer": 4,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadCarrier_1",
+      "label": "Trackpad pressure plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 486.5734502470397,
+      "bounds": [
+        -125.5,
+        -92.5,
+        -20.5,
+        12.5,
+        35.0,
+        35.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadCarrier-1",
+      "assembly": "Touchpads",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadRim1",
+      "label": "Trackpad surround001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 90.54175131606085,
+      "bounds": [
+        91.5,
+        126.5,
+        -21.5,
+        13.500000000000002,
+        36.2,
+        36.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadRim1",
+      "assembly": "Touchpads",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadSurface1",
+      "label": "32.5 mm touchpad surface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1205.8029839646538,
+      "bounds": [
+        92.75,
+        125.25,
+        -20.25,
+        12.25,
+        35.85,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadSurface1",
+      "assembly": "Touchpads",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadFoil1",
+      "label": "Trackpad electrode foil001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 98.64471663382716,
+      "bounds": [
+        93.25,
+        124.75,
+        -19.75,
+        11.75,
+        35.65,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadFoil1",
+      "assembly": "Touchpads",
+      "layer": 4,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrackpadCarrier1",
+      "label": "Trackpad pressure plate001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 486.5734502470397,
+      "bounds": [
+        92.5,
+        125.5,
+        -20.5,
+        12.5,
+        35.0,
+        35.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrackpadCarrier1",
+      "assembly": "Touchpads",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/steamdeck/output/iterations/02_lcd_and_dual_trackpads.FCStd",
+  "views": [
+    "devices/steamdeck/output/previews/02_lcd_and_dual_trackpads_hero.png",
+    "devices/steamdeck/output/previews/02_lcd_and_dual_trackpads_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
