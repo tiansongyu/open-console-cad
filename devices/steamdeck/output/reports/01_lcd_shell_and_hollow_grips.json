@@ -1,0 +1,150 @@
+{
+  "iteration": 1,
+  "slug": "lcd_shell_and_hollow_grips",
+  "summary": "建立 2022 LCD 版的大尺寸机身、原生前面板与周框、后壳桥板和中空曲面握把；49 mm 总厚度将在控制件完成后核对。",
+  "physical_components": 5,
+  "objects": [
+    {
+      "name": "RearPlateCut001",
+      "label": "LCD model rear shell bridge002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 30966.80236238498,
+      "bounds": [
+        -148.3000001,
+        148.3000001,
+        -57.8000001,
+        57.8000001,
+        13.699999899999984,
+        14.900000100000009
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPlate",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut",
+      "label": "Steam Deck structural perimeter001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 27932.2957399578,
+      "bounds": [
+        -149.0,
+        149.0,
+        -58.5,
+        58.5,
+        15.0,
+        35.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceBody",
+      "label": "LCD model control and display face blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 41313.8186596361,
+      "bounds": [
+        -148.8,
+        148.8,
+        -58.3,
+        58.3,
+        35.8,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip_1",
+      "label": "Hollow curved rear grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7116.747382408652,
+      "bounds": [
+        -148.11077995266945,
+        -89.88922010968865,
+        -55.51796650318935,
+        41.51796650318893,
+        -1e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip-1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearGrip1",
+      "label": "Hollow curved rear grip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7116.747382409205,
+      "bounds": [
+        89.88922004733162,
+        148.11077989031136,
+        -55.51796650318938,
+        41.517966503190365,
+        -1.0000000710542735e-07,
+        13.650000100000023
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearGrip1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/steamdeck/output/iterations/01_lcd_shell_and_hollow_grips.FCStd",
+  "views": [
+    "devices/steamdeck/output/previews/01_lcd_shell_and_hollow_grips_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
