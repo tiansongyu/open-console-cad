@@ -1,0 +1,5740 @@
+{
+  "iteration": 8,
+  "slug": "mainboard_memory_and_rf",
+  "summary": "建立带侧臂主板、CPU/媒体引擎/存储封装、记忆棒卡座及十触点、无线子板与屏蔽罩、红外与电源小板和独立阻容器件。",
+  "physical_components": 212,
+  "objects": [
+    {
+      "name": "BackCoverCut002",
+      "label": "PSP-1000 rear enclosure blank003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 205,
+      "volume": 5172.968004213958,
+      "bounds": [
+        -42.7500001,
+        84.5000001,
+        -36.5000001,
+        36.5000001,
+        -1e-07,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut018",
+      "label": "Original PSP structural perimeter019",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 155,
+      "volume": 14327.366198735745,
+      "bounds": [
+        -85.0000001,
+        85.0000001,
+        -37.0000001,
+        37.0,
+        1.2999999,
+        21.7000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelCut027",
+      "label": "Glossy PSP front face blank028",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 160,
+      "volume": 5250.535001170025,
+      "bounds": [
+        -84.8,
+        84.8,
+        -36.8,
+        36.8,
+        21.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PerimeterTrim",
+      "label": "Silver perimeter trim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 125.8034067319856,
+      "bounds": [
+        -84.99,
+        84.99,
+        -36.99000000000001,
+        36.99000000000001,
+        11.0,
+        12.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PerimeterTrim",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplaySurround",
+      "label": "Wide LCD black surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 369.31903945724974,
+      "bounds": [
+        -51.0,
+        51.0,
+        -26.75,
+        33.75,
+        22.6,
+        22.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDBackplate",
+      "label": "LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1741.3618141200786,
+      "bounds": [
+        -49.7,
+        49.7,
+        -25.7,
+        32.7,
+        18.9,
+        19.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCD",
+      "label": "4.3-inch TFT display module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 17799.242017401415,
+      "bounds": [
+        -49.5,
+        49.5,
+        -25.5,
+        32.5,
+        19.3,
+        22.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BacklightFilm",
+      "label": "LCD optical diffuser study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 504.33256637061675,
+      "bounds": [
+        -47.4,
+        47.4,
+        -23.1,
+        30.1,
+        22.47,
+        22.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BacklightFilm",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Wide display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1019.4780327412275,
+      "bounds": [
+        -47.595,
+        47.595,
+        -23.275,
+        30.275,
+        22.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadUp",
+      "label": "Up directional key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 33.026750000000014,
+      "bounds": [
+        -68.25,
+        -61.75,
+        11.2,
+        18.5,
+        22.6,
+        23.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadUp",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStemUp",
+      "label": "Directional-key stem",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.263583199277852,
+      "bounds": [
+        -66.65,
+        -63.349999999999994,
+        13.35,
+        16.65,
+        21.35,
+        22.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStemUp",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrowUp",
+      "label": "Direction arrow",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.03199999999999927,
+      "bounds": [
+        -65.8,
+        -64.2,
+        14.4,
+        16.0,
+        23.56,
+        23.584999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrowUp",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadRight",
+      "label": "Right directional key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 33.02675,
+      "bounds": [
+        -63.80000000000002,
+        -56.500000000000014,
+        6.75,
+        13.25,
+        22.6,
+        23.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadRight",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStemRight",
+      "label": "Directional-key stem001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.26358319927785,
+      "bounds": [
+        -61.65,
+        -58.35,
+        8.35,
+        11.65,
+        21.35,
+        22.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStemRight",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrowRight",
+      "label": "Direction arrow001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.031999999999999265,
+      "bounds": [
+        -60.600000000000016,
+        -59.00000000000001,
+        9.200000000000003,
+        10.799999999999997,
+        23.56,
+        23.584999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrowRight",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadDown",
+      "label": "Down directional key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 33.02675000000002,
+      "bounds": [
+        -68.25,
+        -61.75,
+        1.5000000000000067,
+        8.800000000000008,
+        22.6,
+        23.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadDown",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStemDown",
+      "label": "Directional-key stem002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.263583199277852,
+      "bounds": [
+        -66.65,
+        -63.35,
+        3.35,
+        6.65,
+        21.35,
+        22.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStemDown",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrowDown",
+      "label": "Direction arrow002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.03199999999999927,
+      "bounds": [
+        -65.8,
+        -64.2,
+        4.000000000000007,
+        5.600000000000007,
+        23.56,
+        23.584999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrowDown",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadLeft",
+      "label": "Left directional key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 33.026750000000014,
+      "bounds": [
+        -73.50000000000001,
+        -66.2,
+        6.749999999999998,
+        13.250000000000002,
+        22.6,
+        23.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadLeft",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStemLeft",
+      "label": "Directional-key stem003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.263583199277855,
+      "bounds": [
+        -71.65,
+        -68.35,
+        8.35,
+        11.65,
+        21.35,
+        22.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStemLeft",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadArrowLeft",
+      "label": "Direction arrow003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 0.031999999999999335,
+      "bounds": [
+        -71.00000000000001,
+        -69.4,
+        9.200000000000003,
+        10.799999999999997,
+        23.56,
+        23.584999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadArrowLeft",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadCarrier",
+      "label": "Directional-key common carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 83.22550178257413,
+      "bounds": [
+        -73.7,
+        -56.3,
+        1.3000000000000007,
+        18.7,
+        20.94,
+        21.290000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadCarrier",
+      "assembly": "Internal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonTriangle",
+      "label": "Triangle button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.866512645938485,
+      "bounds": [
+        60.9799999,
+        69.02000009999999,
+        12.479999900000001,
+        20.5200001,
+        22.5,
+        23.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonTriangle",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSymbolTriangle",
+      "label": "Triangle button symbol",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.0687700000000009,
+      "bounds": [
+        63.2,
+        66.8,
+        15.2,
+        18.25,
+        23.66,
+        23.685000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSymbolTriangle",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemTriangle",
+      "label": "Face-button plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 20.5271663985557,
+      "bounds": [
+        63.35,
+        66.65,
+        14.85,
+        18.15,
+        20.05,
+        22.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemTriangle",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonCircle",
+      "label": "Circle button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.86651264593848,
+      "bounds": [
+        68.47999990000001,
+        76.52000009999999,
+        4.9799999,
+        13.020000099999999,
+        22.5,
+        23.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonCircle",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSymbolCircle",
+      "label": "Circle button symbol",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.06627975100911446,
+      "bounds": [
+        70.9,
+        74.1,
+        7.4,
+        10.6,
+        23.66,
+        23.685
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSymbolCircle",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemCircle",
+      "label": "Face-button plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 20.52716639855571,
+      "bounds": [
+        70.85,
+        74.15,
+        7.35,
+        10.65,
+        20.05,
+        22.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemCircle",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonCross",
+      "label": "Cross button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.866512645938485,
+      "bounds": [
+        60.9799999,
+        69.02000009999999,
+        -2.5200000999999994,
+        5.5200001,
+        22.5,
+        23.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonCross",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSymbolCross",
+      "label": "Cross button symbol",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 0.05977132741228311,
+      "bounds": [
+        63.52457323419131,
+        66.47542676580869,
+        0.02457323419130856,
+        2.9754267658086917,
+        23.66,
+        23.685
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSymbolCross",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemCross",
+      "label": "Face-button plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 20.5271663985557,
+      "bounds": [
+        63.35,
+        66.65,
+        -0.1499999999999999,
+        3.15,
+        20.05,
+        22.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemCross",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSquare",
+      "label": "Square button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 57.86651264593849,
+      "bounds": [
+        53.4799999,
+        61.5200001,
+        4.9799999,
+        13.020000099999999,
+        22.5,
+        23.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSquare",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSymbolSquare",
+      "label": "Square button symbol",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 0.07489243361431765,
+      "bounds": [
+        56.0,
+        59.0,
+        7.5,
+        10.5,
+        23.66,
+        23.685
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSymbolSquare",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemSquare",
+      "label": "Face-button plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 20.5271663985557,
+      "bounds": [
+        55.85,
+        59.15,
+        7.35,
+        10.65,
+        20.05,
+        22.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemSquare",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AnalogBezel",
+      "label": "Analog-pad annular surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.975341358182611,
+      "bounds": [
+        -71.65,
+        -58.35,
+        -22.65,
+        -9.35,
+        22.85,
+        23.150000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AnalogBezel",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AnalogCap",
+      "label": "Textured single analog nub",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 2107,
+      "volume": 81.80565240755838,
+      "bounds": [
+        -70.85,
+        -59.15,
+        -21.85,
+        -10.15,
+        23.1,
+        23.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AnalogCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AnalogStem",
+      "label": "Analog nub transmission shaft",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 37.07079331235957,
+      "bounds": [
+        -67.0,
+        -63.0,
+        -18.0,
+        -14.0,
+        20.1,
+        23.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AnalogStem",
+      "assembly": "Internal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HomeKey",
+      "label": "Home system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 38.80728249198703,
+      "bounds": [
+        -50.0,
+        -38.0,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HomeKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HomeLegend",
+      "label": "HOME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 61,
+      "volume": 0.029865804975036693,
+      "bounds": [
+        -45.374561661073834,
+        -41.11888632550336,
+        -31.121610838255037,
+        -30.000939497315436,
+        23.4199999,
+        23.438000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HomeLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeMinusKey",
+      "label": "VolumeMinus system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.867282491987044,
+      "bounds": [
+        -33.5,
+        -28.5,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeMinusKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeMinusLegend",
+      "label": "-",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.0024909418494662803,
+      "bounds": [
+        -31.524161073825503,
+        -30.845889261744965,
+        -30.498657718120807,
+        -30.29463087248322,
+        23.42,
+        23.438000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeMinusLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumePlusKey",
+      "label": "VolumePlus system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.867282491987044,
+      "bounds": [
+        -25.5,
+        -20.5,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumePlusKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumePlusLegend",
+      "label": "+",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.011589532003063055,
+      "bounds": [
+        -23.37692953020134,
+        -21.763674496644295,
+        -31.1,
+        -29.478523489932886,
+        23.42,
+        23.438000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumePlusLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayKey",
+      "label": "Display system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.867282491987046,
+      "bounds": [
+        10.5,
+        15.5,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SoundKey",
+      "label": "Sound system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.867282491987044,
+      "bounds": [
+        20.5,
+        25.5,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SoundKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectKey",
+      "label": "Select system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.96728249198703,
+      "bounds": [
+        30.0,
+        40.0,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectLegend",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.03287792784401383,
+      "bounds": [
+        32.81768236644295,
+        38.30053901006711,
+        -31.121610838255037,
+        -30.000939497315436,
+        23.4199999,
+        23.438000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartKey",
+      "label": "Start system key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.96728249198703,
+      "bounds": [
+        42.0,
+        52.0,
+        -32.5,
+        -28.700000000000003,
+        22.5,
+        23.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartLegend",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.02878742052100906,
+      "bounds": [
+        45.197682366442955,
+        49.67718330536913,
+        -31.121610838255037,
+        -30.000939497315436,
+        23.4199999,
+        23.438000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayIcon",
+      "label": "Display-brightness icon",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 0.04202654862254968,
+      "bounds": [
+        11.8,
+        14.2,
+        -31.500000000000004,
+        -29.7,
+        23.42,
+        23.445
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayIcon",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SoundIcon",
+      "label": "♪",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 0.00723690090721218,
+      "bounds": [
+        22.483976410067115,
+        23.514031140268457,
+        -31.210696408724832,
+        -29.603041007382547,
+        23.4199999,
+        23.438000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SoundIcon",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSPFrontMark",
+      "label": "PSP",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 66,
+      "volume": 0.16575252561469858,
+      "bounds": [
+        -4.757361677181208,
+        2.9467492610738257,
+        -31.56577191208054,
+        -28.15503345704698,
+        23.024999899999997,
+        23.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSPFrontMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SonyFrontMark",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.11294590885320611,
+      "bounds": [
+        55.203858960402684,
+        63.608691275167786,
+        28.15489922885906,
+        30.493691375167785,
+        23.024999899999997,
+        23.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SonyFrontMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PlayStationFrontMark",
+      "label": "PS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 48,
+      "volume": 0.052220140504932885,
+      "bounds": [
+        -70.69647661006711,
+        -67.34704687986577,
+        28.15489922885906,
+        30.493691375167785,
+        23.024999899999997,
+        23.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PlayStationFrontMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MiniUSBShell",
+      "label": "Five-pin Mini-USB shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 89.21837121724613,
+      "bounds": [
+        -4.25,
+        4.25,
+        30.8,
+        36.60000000000001,
+        12.6,
+        16.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiniUSBShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MiniUSBTongue",
+      "label": "Mini-USB tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15.747292006587692,
+      "bounds": [
+        -3.0,
+        3.0,
+        31.5,
+        36.3,
+        14.125,
+        14.675000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiniUSBTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact0",
+      "label": "Mini-USB contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.12690123859659508,
+      "bounds": [
+        -2.2,
+        -1.8,
+        32.6,
+        35.800000000000004,
+        14.77,
+        14.870000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact1",
+      "label": "Mini-USB contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.12690123859659508,
+      "bounds": [
+        -1.2,
+        -0.7999999999999999,
+        32.6,
+        35.800000000000004,
+        14.77,
+        14.870000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact2",
+      "label": "Mini-USB contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.12690123859659508,
+      "bounds": [
+        -0.2,
+        0.2,
+        32.6,
+        35.800000000000004,
+        14.77,
+        14.870000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact3",
+      "label": "Mini-USB contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.12690123859659505,
+      "bounds": [
+        0.7999999999999999,
+        1.2,
+        32.6,
+        35.800000000000004,
+        14.77,
+        14.870000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBContact4",
+      "label": "Mini-USB contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.12690123859659508,
+      "bounds": [
+        1.8,
+        2.2,
+        32.6,
+        35.800000000000004,
+        14.77,
+        14.870000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBMount_1",
+      "label": "USB accessory thread collar",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 4.272880168147479,
+      "bounds": [
+        -9.549999999999999,
+        -6.85,
+        35.7,
+        36.7,
+        13.15,
+        15.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBMount-1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBMount1",
+      "label": "USB accessory thread collar001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 4.272880168147479,
+      "bounds": [
+        6.85,
+        9.549999999999999,
+        35.7,
+        36.7,
+        13.15,
+        15.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBMount1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRWindow",
+      "label": "Original PSP top infrared window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 25.69533976810882,
+      "bounds": [
+        -38.0,
+        -24.0,
+        36.35,
+        36.77,
+        12.399999999999999,
+        16.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRWindow",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDOpenSlider",
+      "label": "Top UMD opening slider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 22.625721180116596,
+      "bounds": [
+        31.5,
+        44.5,
+        36.4,
+        36.85,
+        12.55,
+        16.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDOpenSlider",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadphoneSocket",
+      "label": "3.5 mm headset jack",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 71.21613554569629,
+      "bounds": [
+        -68.7,
+        -63.3,
+        -34.4,
+        -28.9,
+        7.3,
+        12.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadphoneSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadsetRemotePort",
+      "label": "Remote-control connector body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 59.76375203952619,
+      "bounds": [
+        -61.25,
+        -54.75,
+        -36.05,
+        -32.849999999999994,
+        8.55,
+        11.450000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadsetRemotePort",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact0",
+      "label": "Remote contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01917253096491484,
+      "bounds": [
+        -60.2,
+        -59.8,
+        -36.16,
+        -36.08,
+        9.7,
+        10.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact1",
+      "label": "Remote contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01917253096491484,
+      "bounds": [
+        -58.2,
+        -57.8,
+        -36.16,
+        -36.08,
+        9.7,
+        10.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact2",
+      "label": "Remote contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.019172530964914836,
+      "bounds": [
+        -56.2,
+        -55.8,
+        -36.16,
+        -36.08,
+        9.7,
+        10.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChargeCarrierCut001",
+      "label": "Yellow DC and charging-terminal carrier002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 44.284182750417045,
+      "bounds": [
+        62.0,
+        70.0,
+        -34.35,
+        -33.35,
+        7.300000000000001,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChargeCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "yellow",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChargeJack",
+      "label": "DC IN barrel socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.416523080937942,
+      "bounds": [
+        63.62,
+        68.38,
+        -34.1,
+        -28.900000000000002,
+        8.920000000000002,
+        13.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChargeJack",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChargeCenterPin",
+      "label": "DC center contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.297698750110843,
+      "bounds": [
+        65.4,
+        66.6,
+        -33.1,
+        -29.3,
+        10.700000000000001,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChargeCenterPin",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DockContact0",
+      "label": "External charge contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1724548667764605,
+      "bounds": [
+        62.875,
+        64.325,
+        -34.449999999999996,
+        -34.37,
+        7.449999999999999,
+        8.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DockContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DockContact1",
+      "label": "External charge contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17245486677646005,
+      "bounds": [
+        67.675,
+        69.12500000000001,
+        -34.449999999999996,
+        -34.37,
+        7.449999999999999,
+        8.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DockContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryStickDoor",
+      "label": "Curved Memory Stick Duo cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 90.60064768067323,
+      "bounds": [
+        -84.98000000000002,
+        -83.48033242689098,
+        -13.000000000000007,
+        13.0,
+        12.9,
+        18.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryStickDoor",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WLANSlider",
+      "label": "WLANSlider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 16.76104395076645,
+      "bounds": [
+        -83.4927147783991,
+        -79.47297587640675,
+        -22.500000000000004,
+        -15.499999999999991,
+        12.3,
+        15.700000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WLANSlider",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerHoldSlider",
+      "label": "PowerHoldSlider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 15.699985812340586,
+      "bounds": [
+        82.08687415858162,
+        84.65648748633804,
+        -17.500000000000018,
+        -10.499999999999982,
+        12.3,
+        15.700000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerHoldSlider",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMesh_1Cut",
+      "label": "Front speaker grille insert001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 82,
+      "volume": 1.6715327291709838,
+      "bounds": [
+        -66.05000000000001,
+        -57.95,
+        -29.525000000000002,
+        -27.675,
+        22.35,
+        22.51
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMesh-1",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerFrame_1",
+      "label": "Stereo speaker frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 50.328314310508475,
+      "bounds": [
+        -66.9,
+        -57.1,
+        -33.5,
+        -23.700000000000003,
+        18.0,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerFrame-1",
+      "assembly": "Internal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMagnet_1",
+      "label": "Speaker magnet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 35.498426189237875,
+      "bounds": [
+        -64.7,
+        -59.3,
+        -31.3,
+        -25.900000000000002,
+        18.1,
+        19.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMagnet-1",
+      "assembly": "Internal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerDiaphragm_1",
+      "label": "Speaker diaphragm",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.778362426110098,
+      "bounds": [
+        -65.9,
+        -58.1,
+        -32.5,
+        -24.700000000000003,
+        20.1,
+        20.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerDiaphragm-1",
+      "assembly": "Internal",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder_1Cut",
+      "label": "L/R shoulder button001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 815.2022026071379,
+      "bounds": [
+        -72.0,
+        -50.0,
+        26.1,
+        34.1,
+        18.3,
+        23.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder-1",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin_1",
+      "label": "Shoulder pivot pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 26.169466804402983,
+      "bounds": [
+        -69.5,
+        -52.5,
+        27.3,
+        28.7,
+        19.0,
+        20.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin-1",
+      "assembly": "Internal",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderLegend_1",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.01896071685960109,
+      "bounds": [
+        -61.48382969798657,
+        -60.02252516778523,
+        30.0,
+        32.348993288590606,
+        23.32,
+        23.338
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderLegend-1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMesh1Cut",
+      "label": "Front speaker grille insert003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 82,
+      "volume": 1.6715327291709845,
+      "bounds": [
+        57.95,
+        66.05000000000001,
+        -29.525000000000002,
+        -27.675,
+        22.35,
+        22.51
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMesh1",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerFrame1",
+      "label": "Stereo speaker frame001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 50.32831431050853,
+      "bounds": [
+        57.1,
+        66.9,
+        -33.5,
+        -23.700000000000003,
+        18.0,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerFrame1",
+      "assembly": "Internal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMagnet1",
+      "label": "Speaker magnet001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 35.498426189237875,
+      "bounds": [
+        59.3,
+        64.70000000000002,
+        -31.3,
+        -25.900000000000002,
+        18.1,
+        19.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMagnet1",
+      "assembly": "Internal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerDiaphragm1",
+      "label": "Speaker diaphragm001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.778362426110097,
+      "bounds": [
+        58.1,
+        65.9,
+        -32.5,
+        -24.700000000000003,
+        20.1,
+        20.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerDiaphragm1",
+      "assembly": "Internal",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder1Cut",
+      "label": "L/R shoulder button003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 815.2022026071379,
+      "bounds": [
+        50.0,
+        72.0,
+        26.1,
+        34.1,
+        18.3,
+        23.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder1",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin1",
+      "label": "Shoulder pivot pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 26.169466804402983,
+      "bounds": [
+        52.5,
+        69.5,
+        27.3,
+        28.7,
+        19.0,
+        20.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin1",
+      "assembly": "Internal",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderLegend1",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.03399325729362592,
+      "bounds": [
+        60.51617020201342,
+        62.34555379127517,
+        29.9999999,
+        32.34899338859061,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderLegend1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryLED",
+      "label": "MemoryLED",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23048893571891094,
+      "bounds": [
+        -76.0,
+        -74.0,
+        -7.425,
+        -6.575,
+        22.93,
+        23.07
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryLED",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "red",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WirelessLED",
+      "label": "WirelessLED",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2304889357189111,
+      "bounds": [
+        -76.0,
+        -74.0,
+        -11.425,
+        -10.575,
+        22.93,
+        23.07
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WirelessLED",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLED",
+      "label": "PowerLED",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2304889357189111,
+      "bounds": [
+        74.0,
+        76.0,
+        -11.425,
+        -10.575,
+        22.93,
+        23.07
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLED",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.058631057827676296,
+      "bounds": [
+        69.18337867516779,
+        75.8692534557047,
+        -8.52724842214765,
+        -7.114228087919463,
+        23.024999899999997,
+        23.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HoldLegend",
+      "label": "HOLD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 56,
+      "volume": 0.033069262939803244,
+      "bounds": [
+        70.16440855704698,
+        74.7018121805369,
+        -19.024429630201343,
+        -17.75758379261745,
+        23.024999899999997,
+        23.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HoldLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RailSpeakerSlot_1",
+      "label": "Lower rail acoustic opening",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.2124535300194186,
+      "bounds": [
+        -51.4,
+        -44.6,
+        -37.25,
+        -36.95,
+        11.85,
+        12.950000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RailSpeakerSlot-1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RailSpeakerSlot1",
+      "label": "Lower rail acoustic opening001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.2124535300194186,
+      "bounds": [
+        44.6,
+        51.4,
+        -37.25,
+        -36.95,
+        11.85,
+        12.950000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RailSpeakerSlot1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StrapEye",
+      "label": "Left lower strap eye",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 65.05528947446199,
+      "bounds": [
+        -70.0,
+        -62.0,
+        -32.550000000000004,
+        -26.05,
+        15.0,
+        17.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StrapEye",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryDoorCut",
+      "label": "Curved removable battery cover001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 53,
+      "volume": 3154.7434465070646,
+      "bounds": [
+        -84.5,
+        -43.0,
+        -36.5,
+        36.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryDoor",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDDoorCut002",
+      "label": "UMD rear loading door003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 124,
+      "volume": 4558.938827959411,
+      "bounds": [
+        -34.5000001,
+        34.5000001,
+        -33.0000001,
+        33.0000001,
+        0.09999989999999999,
+        1.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDDoor",
+      "assembly": "UMD",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDLogoRing",
+      "label": "Wide brushed-metal PSP rear ring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 76.1133287139285,
+      "bounds": [
+        -21.2,
+        21.2,
+        -21.2,
+        21.2,
+        0.085,
+        0.315
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDLogoRing",
+      "assembly": "UMD",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDPSPMark",
+      "label": "PSP001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 66,
+      "volume": 0.21649309468041986,
+      "bounds": [
+        -4.310570569798657,
+        4.494127616778524,
+        -1.5751678852348994,
+        2.322818891946308,
+        0.09999989999999999,
+        0.1180001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDPSPMark",
+      "assembly": "UMD",
+      "layer": -6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDLabel",
+      "label": "UMD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 47,
+      "volume": 0.05683893117532716,
+      "bounds": [
+        -2.3456376838926167,
+        2.7984061402684564,
+        25.966174396644295,
+        27.691275267785237,
+        0.09999989999999999,
+        0.1180001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDLabel",
+      "assembly": "UMD",
+      "layer": -6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModelMark",
+      "label": "PSP-1000  /  CAD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 194,
+      "volume": 0.1099146206300357,
+      "bounds": [
+        56.718456275838925,
+        72.81029791879195,
+        15.822818791946307,
+        17.433557146979865,
+        -1e-07,
+        0.018000099999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModelMark",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDHingeTab_1Cut",
+      "label": "UMD-door hinge tab001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 17.531835637259142,
+      "bounds": [
+        -27.5,
+        -22.5,
+        -32.5,
+        -28.5,
+        1.3,
+        2.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDHingeTab-1",
+      "assembly": "UMD",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDHingePin_1",
+      "label": "UMD door pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7.3002759287792856,
+      "bounds": [
+        -27.75,
+        -22.25,
+        -31.15,
+        -29.85,
+        1.35,
+        2.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDHingePin-1",
+      "assembly": "UMD",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDHingeTab1Cut",
+      "label": "UMD-door hinge tab003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 17.531835637259142,
+      "bounds": [
+        22.5,
+        27.5,
+        -32.5,
+        -28.5,
+        1.3,
+        2.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDHingeTab1",
+      "assembly": "UMD",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDHingePin1",
+      "label": "UMD door pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7.3002759287792856,
+      "bounds": [
+        22.25,
+        27.75,
+        -31.15,
+        -29.85,
+        1.35,
+        2.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDHingePin1",
+      "assembly": "UMD",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UMDDoorLatch",
+      "label": "UMD-door latch tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 34.500247719318985,
+      "bounds": [
+        -3.5,
+        3.5,
+        28.95,
+        32.05,
+        1.35,
+        2.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UMDDoorLatch",
+      "assembly": "UMD",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryPouchCut",
+      "label": "PSP-110 battery enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 3187.2320266035495,
+      "bounds": [
+        -80.25,
+        -49.75,
+        -24.0,
+        24.0,
+        2.0,
+        12.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryPouch",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryCell",
+      "label": "Battery-cell stack study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 11109.37738298166,
+      "bounds": [
+        -79.45,
+        -50.55,
+        -23.2,
+        23.2,
+        2.85,
+        11.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryCell",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryTray",
+      "label": "Battery locating rim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 62.60230052642457,
+      "bounds": [
+        -81.0,
+        -49.0,
+        -24.75,
+        24.75,
+        1.5,
+        1.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryTray",
+      "assembly": "Battery",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryConnector",
+      "label": "Three-terminal battery connector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.745486677646184,
+      "bounds": [
+        -69.25,
+        -60.75,
+        24.349999999999998,
+        27.05,
+        8.5,
+        10.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryConnector",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact0",
+      "label": "Battery contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19195879644737274,
+      "bounds": [
+        -67.9,
+        -67.1,
+        24.7,
+        26.7,
+        10.65,
+        10.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact0",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact1",
+      "label": "Battery contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1919587964473728,
+      "bounds": [
+        -65.4,
+        -64.6,
+        24.7,
+        26.7,
+        10.65,
+        10.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact1",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryContact2",
+      "label": "Battery contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19195879644737165,
+      "bounds": [
+        -62.900000000000006,
+        -62.099999999999994,
+        24.7,
+        26.7,
+        10.65,
+        10.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryContact2",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryType",
+      "label": "PSP-110",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 116,
+      "volume": 0.1365498600701404,
+      "bounds": [
+        -66.90761335503355,
+        -55.290876577852345,
+        11.956778423489933,
+        14.198120905369127,
+        1.9619999,
+        1.9800001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryType",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryCapacity",
+      "label": "1800 mAh",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 143,
+      "volume": 0.13218067076792717,
+      "bounds": [
+        -67.06006721409395,
+        -54.28313758389262,
+        2.9624160073825503,
+        4.959731643624161,
+        1.9619999,
+        1.9800001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryCapacity",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryStudy",
+      "label": "LAYOUT STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 159,
+      "volume": 0.07928369194409171,
+      "bounds": [
+        -66.55726929530202,
+        -54.164408557046976,
+        -10.024429630201341,
+        -8.757583792617451,
+        1.9619999,
+        1.9800001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryStudy",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Mainboard",
+      "label": "PSP mainboard with control-side arm",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 5875.203855498858,
+      "bounds": [
+        -51.0,
+        72.5,
+        -31.0,
+        31.0,
+        14.6,
+        15.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Mainboard",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUPackage",
+      "label": "CPU package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 595.4764944151065,
+      "bounds": [
+        -25.5,
+        -6.5,
+        -3.5000000000000004,
+        15.5,
+        15.55,
+        17.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUPackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUMark",
+      "label": "CPU",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 54,
+      "volume": 0.03862688611953761,
+      "bounds": [
+        -22.14699254966443,
+        -18.009232282550336,
+        5.368053591275168,
+        7.024698086577182,
+        17.2299999,
+        17.248000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MediaEnginePackage",
+      "label": "MediaEngine package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 404.45278314009045,
+      "bounds": [
+        0.49999999999999967,
+        17.5,
+        -2.5000000000000004,
+        14.5,
+        15.55,
+        16.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MediaEnginePackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MediaEngineMark",
+      "label": "ME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 29,
+      "volume": 0.03413988647206953,
+      "bounds": [
+        3.604995805369127,
+        6.523376677852348,
+        5.4,
+        6.997315436241611,
+        16.98,
+        16.998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MediaEngineMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMPackage",
+      "label": "RAM package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 172.37907186507442,
+      "bounds": [
+        -19.5,
+        -4.5,
+        -22.0,
+        -12.0,
+        15.55,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMPackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMMark",
+      "label": "RAM",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 53,
+      "volume": 0.04982288932959161,
+      "bounds": [
+        -16.735004294630873,
+        -12.33939177852349,
+        -17.600000100000003,
+        -16.00268446375839,
+        16.7299999,
+        16.748000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlashPackage",
+      "label": "Flash package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 107.89484510006474,
+      "bounds": [
+        9.0,
+        21.0,
+        -21.5,
+        -12.5,
+        15.55,
+        16.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlashPackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlashMark",
+      "label": "Flash",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 96,
+      "volume": 0.04942584885724528,
+      "bounds": [
+        11.254995805369127,
+        16.591526945637582,
+        -17.631946408724836,
+        -15.934228087919465,
+        16.579999899999997,
+        16.5980001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlashMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PMICPackage",
+      "label": "PMIC package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.31061833505507,
+      "bounds": [
+        33.0,
+        41.0,
+        3.9999999999999996,
+        12.0,
+        15.55,
+        16.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PMICPackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PMICMark",
+      "label": "PMIC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 59,
+      "volume": 0.051097842706427886,
+      "bounds": [
+        34.57499570536912,
+        39.627219059731544,
+        7.368053591275168,
+        9.02469808657718,
+        16.4299999,
+        16.4480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PMICMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioICPackage",
+      "label": "AudioIC package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.421133825048564,
+      "bounds": [
+        31.0,
+        37.0,
+        -15.5,
+        -8.5,
+        15.55,
+        16.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioICPackage",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioICMark",
+      "label": "AUD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 45,
+      "volume": 0.04450413619362991,
+      "bounds": [
+        32.03711409395974,
+        36.6761745966443,
+        -12.631946408724831,
+        -11.002684463758388,
+        16.329999899999997,
+        16.3480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioICMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryReaderPCB",
+      "label": "Memory Stick reader board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 427.28495559215384,
+      "bounds": [
+        -82.8,
+        -51.8,
+        -11.5,
+        11.5,
+        12.95,
+        13.549999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryReaderPCB",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryReaderCage",
+      "label": "Memory Stick Duo socket cage",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 524.6714641489921,
+      "bounds": [
+        -82.3,
+        -52.3,
+        -10.75,
+        10.75,
+        13.7,
+        15.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryReaderCage",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact0",
+      "label": "Memory Stick terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614305,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        -7.96,
+        -7.340000000000001,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact0",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1",
+      "label": "Memory Stick terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.285165663706143,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        -6.26,
+        -5.640000000000001,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact2",
+      "label": "Memory Stick terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2851656637061431,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        -4.56,
+        -3.94,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact2",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact3",
+      "label": "Memory Stick terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614316,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        -2.8600000000000008,
+        -2.2400000000000007,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact3",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact4",
+      "label": "Memory Stick terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614316,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        -1.1600000000000006,
+        -0.5400000000000005,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact4",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact5",
+      "label": "Memory Stick terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614316,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        0.5399999999999996,
+        1.1599999999999997,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact5",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact6",
+      "label": "Memory Stick terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614316,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        2.239999999999999,
+        2.859999999999999,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact6",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact7",
+      "label": "Memory Stick terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2851656637061431,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        3.94,
+        4.56,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact7",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact8",
+      "label": "Memory Stick terminal008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614305,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        5.64,
+        6.259999999999999,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact8",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact9",
+      "label": "Memory Stick terminal009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.28516566370614305,
+      "bounds": [
+        -57.300000000000004,
+        -52.699999999999996,
+        7.339999999999999,
+        7.959999999999998,
+        14.15,
+        14.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact9",
+      "assembly": "Mainboard",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WiFiBoard",
+      "label": "Wireless daughterboard",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 685.828729910964,
+      "bounds": [
+        38.5,
+        77.5,
+        -16.0,
+        16.0,
+        7.7,
+        8.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WiFiBoard",
+      "assembly": "Mainboard",
+      "layer": -4,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WiFiShield",
+      "label": "Wireless RF shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 316.4450485622591,
+      "bounds": [
+        39.6,
+        76.4,
+        -14.9,
+        14.9,
+        6.65,
+        7.550000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WiFiShield",
+      "assembly": "Mainboard",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WiFiChip",
+      "label": "Wireless package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 77.949783170235,
+      "bounds": [
+        52.0,
+        64.0,
+        -5.0,
+        5.0,
+        6.99,
+        7.640000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WiFiChip",
+      "assembly": "Mainboard",
+      "layer": -4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRBoard",
+      "label": "Top infrared board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 59.2300353454108,
+      "bounds": [
+        -40.0,
+        -22.0,
+        26.0,
+        32.0,
+        15.1,
+        15.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRBoard",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRReceiver",
+      "label": "Infrared optical module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 40.566513201776424,
+      "bounds": [
+        -35.0,
+        -27.0,
+        30.6,
+        33.6,
+        15.8,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRReceiver",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerBoard",
+      "label": "Power switch daughterboard",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 138.3476282401554,
+      "bounds": [
+        69.5,
+        80.5,
+        -16.5,
+        4.500000000000001,
+        15.2,
+        15.799999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerBoard",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive0",
+      "label": "SMD passive",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837902,
+      "bounds": [
+        -43.575,
+        -42.425,
+        -22.4,
+        -21.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive0End_1",
+      "label": "Solder terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -43.82,
+        -43.6,
+        -22.43,
+        -21.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive0End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive0End1",
+      "label": "Solder terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -42.4,
+        -42.18,
+        -22.43,
+        -21.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive0End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive1",
+      "label": "SMD passive001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837901,
+      "bounds": [
+        -34.575,
+        -33.425,
+        -24.4,
+        -23.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive1End_1",
+      "label": "Solder terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -34.82,
+        -34.6,
+        -24.43,
+        -23.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive1End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive1End1",
+      "label": "Solder terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782271,
+      "bounds": [
+        -33.4,
+        -33.18,
+        -24.43,
+        -23.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive1End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive2",
+      "label": "SMD passive002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837892,
+      "bounds": [
+        -23.575,
+        -22.425,
+        -28.4,
+        -27.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive2End_1",
+      "label": "Solder terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -23.82,
+        -23.6,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive2End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive2End1",
+      "label": "Solder terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -22.4,
+        -22.18,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive2End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive3",
+      "label": "SMD passive003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837894,
+      "bounds": [
+        -6.575,
+        -5.425,
+        -28.4,
+        -27.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive3End_1",
+      "label": "Solder terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782297,
+      "bounds": [
+        -6.82,
+        -6.6,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive3End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive3End1",
+      "label": "Solder terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782299,
+      "bounds": [
+        -5.4,
+        -5.18,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive3End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive4",
+      "label": "SMD passive004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837892,
+      "bounds": [
+        9.425,
+        10.575,
+        -28.4,
+        -27.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive4End_1",
+      "label": "Solder terminal008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        9.179999999999998,
+        9.4,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive4End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive4End1",
+      "label": "Solder terminal009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        10.6,
+        10.820000000000002,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive4End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive5",
+      "label": "SMD passive005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837891,
+      "bounds": [
+        24.425,
+        25.575,
+        -28.4,
+        -27.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive5End_1",
+      "label": "Solder terminal010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        24.18,
+        24.4,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive5End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive5End1",
+      "label": "Solder terminal011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        25.6,
+        25.82,
+        -28.43,
+        -27.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive5End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive6",
+      "label": "SMD passive006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837902,
+      "bounds": [
+        40.425,
+        41.575,
+        -23.4,
+        -22.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive6End_1",
+      "label": "Solder terminal012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        40.18,
+        40.4,
+        -23.43,
+        -22.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive6End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive6End1",
+      "label": "Solder terminal013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        41.6,
+        41.82,
+        -23.43,
+        -22.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive6End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive7",
+      "label": "SMD passive007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837902,
+      "bounds": [
+        -43.575,
+        -42.425,
+        22.6,
+        23.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive7",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive7End_1",
+      "label": "Solder terminal014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -43.82,
+        -43.6,
+        22.57,
+        23.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive7End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive7End1",
+      "label": "Solder terminal015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -42.4,
+        -42.18,
+        22.57,
+        23.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive7End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive8",
+      "label": "SMD passive008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837897,
+      "bounds": [
+        -32.575,
+        -31.425,
+        26.6,
+        27.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive8",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive8End_1",
+      "label": "Solder terminal016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782268,
+      "bounds": [
+        -32.82,
+        -32.6,
+        26.57,
+        27.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive8End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive8End1",
+      "label": "Solder terminal017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -31.4,
+        -31.18,
+        26.57,
+        27.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive8End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive9",
+      "label": "SMD passive009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837891,
+      "bounds": [
+        -17.575,
+        -16.425,
+        27.6,
+        28.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive9",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive9End_1",
+      "label": "Solder terminal018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        -17.82,
+        -17.6,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive9End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive9End1",
+      "label": "Solder terminal019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782268,
+      "bounds": [
+        -16.4,
+        -16.18,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive9End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive10",
+      "label": "SMD passive010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837893,
+      "bounds": [
+        -0.575,
+        0.575,
+        27.6,
+        28.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive10",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive10End_1",
+      "label": "Solder terminal020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782288,
+      "bounds": [
+        -0.82,
+        -0.6,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive10End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive10End1",
+      "label": "Solder terminal021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782288,
+      "bounds": [
+        0.6,
+        0.82,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive10End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive11",
+      "label": "SMD passive011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837891,
+      "bounds": [
+        16.425,
+        17.575,
+        27.6,
+        28.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive11",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive11End_1",
+      "label": "Solder terminal022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        16.18,
+        16.4,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive11End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive11End1",
+      "label": "Solder terminal023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782268,
+      "bounds": [
+        17.6,
+        17.82,
+        27.57,
+        28.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive11End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive12",
+      "label": "SMD passive012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837901,
+      "bounds": [
+        33.425,
+        34.575,
+        25.6,
+        26.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive12",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive12End_1",
+      "label": "Solder terminal024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        33.18,
+        33.4,
+        25.57,
+        26.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive12End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive12End1",
+      "label": "Solder terminal025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        34.6,
+        34.82,
+        25.57,
+        26.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive12End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive13",
+      "label": "SMD passive013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837901,
+      "bounds": [
+        47.425,
+        48.575,
+        24.6,
+        25.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive13",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive13End_1",
+      "label": "Solder terminal026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        47.18,
+        47.4,
+        24.57,
+        25.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive13End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive13End1",
+      "label": "Solder terminal027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782271,
+      "bounds": [
+        48.6,
+        48.82,
+        24.57,
+        25.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive13End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive14",
+      "label": "SMD passive014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837901,
+      "bounds": [
+        57.425,
+        58.575,
+        24.6,
+        25.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive14",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive14End_1",
+      "label": "Solder terminal028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782271,
+      "bounds": [
+        57.18,
+        57.4,
+        24.57,
+        25.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive14End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive14End1",
+      "label": "Solder terminal029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        58.6,
+        58.82,
+        24.57,
+        25.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive14End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive15",
+      "label": "SMD passive015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837901,
+      "bounds": [
+        64.425,
+        65.575,
+        -17.4,
+        -16.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive15",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive15End_1",
+      "label": "Solder terminal030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        64.18,
+        64.4,
+        -17.43,
+        -16.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive15End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive15End1",
+      "label": "Solder terminal031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        65.6,
+        65.82,
+        -17.43,
+        -16.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive15End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive16",
+      "label": "SMD passive016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837902,
+      "bounds": [
+        51.425,
+        52.575,
+        -17.4,
+        -16.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive16",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive16End_1",
+      "label": "Solder terminal032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        51.18,
+        51.4,
+        -17.43,
+        -16.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive16End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive16End1",
+      "label": "Solder terminal033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        52.6,
+        52.82,
+        -17.43,
+        -16.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive16End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive17",
+      "label": "SMD passive017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837908,
+      "bounds": [
+        33.425,
+        34.575,
+        -1.4,
+        -0.6,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive17",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive17End_1",
+      "label": "Solder terminal034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782271,
+      "bounds": [
+        33.18,
+        33.4,
+        -1.43,
+        -0.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive17End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive17End1",
+      "label": "Solder terminal035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782274,
+      "bounds": [
+        34.6,
+        34.82,
+        -1.43,
+        -0.57,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive17End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive18",
+      "label": "SMD passive018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837907,
+      "bounds": [
+        -38.575,
+        -37.425,
+        0.6,
+        1.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive18",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive18End_1",
+      "label": "Solder terminal036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782271,
+      "bounds": [
+        -38.82,
+        -38.6,
+        0.57,
+        1.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive18End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive18End1",
+      "label": "Solder terminal037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10773390925782272,
+      "bounds": [
+        -37.4,
+        -37.18,
+        0.57,
+        1.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive18End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive19",
+      "label": "SMD passive019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5058111503837899,
+      "bounds": [
+        25.425,
+        26.575,
+        11.6,
+        12.4,
+        15.55,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive19",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "rubber",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive19End_1",
+      "label": "Solder terminal038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        25.18,
+        25.4,
+        11.57,
+        12.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive19End-1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Passive19End1",
+      "label": "Solder terminal039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1077339092578227,
+      "bounds": [
+        26.6,
+        26.82,
+        11.57,
+        12.43,
+        15.54,
+        16.11
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Passive19End1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/psp/output/iterations/08_mainboard_memory_and_rf.FCStd",
+  "views": [
+    "devices/psp/output/previews/08_mainboard_memory_and_rf_hero.png",
+    "devices/psp/output/previews/08_mainboard_memory_and_rf_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

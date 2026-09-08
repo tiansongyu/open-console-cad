@@ -1,0 +1,259 @@
+{
+  "iteration": 2,
+  "slug": "wide_tft_display",
+  "summary": "建立 4.3 英寸 16:9 显示窗口、独立 LCD 模块、金属背板、光学膜层与黑色屏框，分别记录主体与突出部位的尺寸口径。",
+  "physical_components": 9,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "PSP-1000 rear enclosure blank",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 13846.159879202287,
+      "bounds": [
+        -84.5,
+        84.5,
+        -36.5,
+        36.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "Original PSP structural perimeter002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 36,
+      "volume": 14767.107716825585,
+      "bounds": [
+        -85.0,
+        85.0,
+        -37.0,
+        37.0,
+        1.3,
+        21.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelCut",
+      "label": "Glossy PSP front face blank001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6538.914917822417,
+      "bounds": [
+        -84.8,
+        84.8,
+        -36.8,
+        36.8,
+        21.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PerimeterTrim",
+      "label": "Silver perimeter trim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 125.8034067319856,
+      "bounds": [
+        -84.99,
+        84.99,
+        -36.99000000000001,
+        36.99000000000001,
+        11.0,
+        12.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PerimeterTrim",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplaySurround",
+      "label": "Wide LCD black surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 369.31903945724974,
+      "bounds": [
+        -51.0,
+        51.0,
+        -26.75,
+        33.75,
+        22.6,
+        22.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDBackplate",
+      "label": "LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1741.3618141200786,
+      "bounds": [
+        -49.7,
+        49.7,
+        -25.7,
+        32.7,
+        18.9,
+        19.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCD",
+      "label": "4.3-inch TFT display module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 17799.242017401415,
+      "bounds": [
+        -49.5,
+        49.5,
+        -25.5,
+        32.5,
+        19.3,
+        22.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BacklightFilm",
+      "label": "LCD optical diffuser study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 504.33256637061675,
+      "bounds": [
+        -47.4,
+        47.4,
+        -23.1,
+        30.1,
+        22.47,
+        22.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BacklightFilm",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "screen",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Wide display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1019.4780327412275,
+      "bounds": [
+        -47.595,
+        47.595,
+        -23.275,
+        30.275,
+        22.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/psp/output/iterations/02_wide_tft_display.FCStd",
+  "views": [
+    "devices/psp/output/previews/02_wide_tft_display_hero.png",
+    "devices/psp/output/previews/02_wide_tft_display_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
