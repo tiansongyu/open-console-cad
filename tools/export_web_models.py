@@ -11,7 +11,7 @@ import FreeCAD as App
 import MeshPart
 
 
-def export_device(repository, device, deflection=0.25):
+def export_device(repository, device, deflection=0.25, angular_deflection=0.45):
     if not re.fullmatch(r'[a-z0-9][a-z0-9-]*',device):raise ValueError('Invalid device identifier')
     root=Path(repository).resolve();folder=root/'devices'/device
     if not (folder/'output/reports/final_manifest.json').exists():raise ValueError('No completed native manifest for device')
@@ -36,7 +36,7 @@ def export_device(repository, device, deflection=0.25):
     try:
         for row in manifest['objects']:
             obj=doc.getObject(row['name']);shape=obj.Shape
-            mesh=MeshPart.meshFromShape(Shape=shape,LinearDeflection=deflection,AngularDeflection=0.45,Relative=False)
+            mesh=MeshPart.meshFromShape(Shape=shape,LinearDeflection=deflection,AngularDeflection=angular_deflection,Relative=False)
             vertices,triangles=mesh.Topology
             if not vertices or not triangles:raise ValueError('No mesh for '+row['part_id'])
             b=shape.optimalBoundingBox(False,False);c=b.Center
@@ -82,7 +82,7 @@ def export_device(repository, device, deflection=0.25):
         encoded+=b' '*((-len(encoded))%4);binary+=b'\0'*((-len(binary))%4)
         payload=struct.pack('<III',0x46546c67,2,12+8+len(encoded)+8+len(binary))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+struct.pack('<II',len(binary),0x004e4942)+binary
         dest=root/'site/public/models';dest.mkdir(parents=True,exist_ok=True);file=dest/(device+'.glb');file.write_bytes(payload)
-        report={'device':device,'components':len(gltf['nodes']),'triangles':triangle_count,'materials':len(colors),'bytes':len(payload),'deflection_mm':deflection,'units':'meters','color_conversion':'FreeCAD sRGB to glTF linear RGB','normal_crease_degrees':40,'source':str(filename.relative_to(root)),'source_sha256':hashlib.sha256(filename.read_bytes()).hexdigest(),'sha256':hashlib.sha256(payload).hexdigest(),'preserved':['part IDs','part numbers','assembly groups','colors','exploded offsets']}
+        report={'device':device,'components':len(gltf['nodes']),'triangles':triangle_count,'materials':len(colors),'bytes':len(payload),'deflection_mm':deflection,'angular_deflection_rad':angular_deflection,'units':'meters','color_conversion':'FreeCAD sRGB to glTF linear RGB','normal_crease_degrees':40,'source':str(filename.relative_to(root)),'source_sha256':hashlib.sha256(filename.read_bytes()).hexdigest(),'sha256':hashlib.sha256(payload).hexdigest(),'preserved':['part IDs','part numbers','assembly groups','colors','exploded offsets']}
         (dest/(device+'.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report))
         return report
     finally:

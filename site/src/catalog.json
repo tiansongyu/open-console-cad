@@ -549,5 +549,190 @@
         "背面结构"
       ]
     ]
+  },
+  {
+    "id": "psp",
+    "title": "Sony PSP-1000",
+    "prefix": "PSP1000",
+    "model": "PSP-1000",
+    "count": 346,
+    "iterations": 14,
+    "pages": 12,
+    "bytes": 8752584,
+    "family": "slate",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "初代 PSP-1000，保留宽屏、单模拟滑杆、HOME 键列、Mini-USB 和 UMD 后舱。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "Internal",
+          "Ports",
+          "UMD",
+          "Battery",
+          "Mainboard"
+        ]
+      },
+      "rear": {
+        "label": "背面",
+        "description": "观察独立电池盖、宽金属环、UMD 舱门、铰链和后部紧固件。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "Internal",
+          "Ports",
+          "UMD",
+          "Battery",
+          "Mainboard"
+        ],
+        "normal": [
+          0.15,
+          -0.25,
+          -2.8
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后壳和舱门，观察电池、光驱与主要电子模块的布局示意。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "Internal",
+          "Ports",
+          "UMD",
+          "Battery",
+          "Mainboard"
+        ],
+        "exclude": [
+          "BackCover",
+          "BatteryDoor",
+          "UMDDoor",
+          "UMDLogoRing",
+          "UMDPSPMark",
+          "UMDLabel",
+          "RearModelMark"
+        ],
+        "normal": [
+          0.2,
+          -0.3,
+          -2
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "机身装配层与 UMD 子装配分别展开，展示位移与原生爆炸文件一致。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "Internal",
+          "Ports",
+          "UMD",
+          "Battery",
+          "Mainboard"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "drive": {
+        "label": "UMD 光驱",
+        "description": "移开舱门，单独查看光头、导杆、主轴与进给电机及打孔底盘。",
+        "groups": [
+          "UMD"
+        ],
+        "exclude": [
+          "UMDDoor",
+          "UMDLogoRing",
+          "UMDPSPMark",
+          "UMDLabel"
+        ],
+        "normal": [
+          0.2,
+          -0.3,
+          -2
+        ]
+      },
+      "boards": {
+        "label": "电子模块",
+        "description": "主板、媒体引擎、存储封装、无线与记忆棒模块、电池均为独立组件。",
+        "groups": [
+          "Mainboard",
+          "Battery"
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "controllers": {
+        "label": "操作机构",
+        "description": "分开观察四向键、模拟滑杆、胶垫、触点与系统键传动机构。",
+        "groups": [
+          "Controls",
+          "Internal"
+        ],
+        "explode": 0.2,
+        "normal": [
+          0.4,
+          -0.3,
+          1.5
+        ]
+      },
+      "accessories": {
+        "label": "可拆介质",
+        "description": "空白 UMD 卡壳、60 mm 光盘与记忆棒示意；不包含游戏内容。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          0.3,
+          -0.2,
+          2
+        ]
+      },
+      "ports": {
+        "label": "接口",
+        "description": "Mini-USB、红外、记忆棒盖、耳机遥控和 DC 输入的分离组件。",
+        "groups": [
+          "Ports"
+        ],
+        "normal": [
+          0.3,
+          -0.8,
+          1.5
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "正面装配"
+      ],
+      [
+        "rear",
+        "后部结构"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "整机与光驱爆炸"
+      ],
+      [
+        "media",
+        "UMD 与记忆棒"
+      ]
+    ]
   }
 ]

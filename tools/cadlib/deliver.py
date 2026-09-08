@@ -24,6 +24,7 @@ def finalize(m):
     views={}
     settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
+        if name=='internal' and p.get('internal_exclude'):kw['exclude']=p['internal_exclude']
         kw.setdefault('assemblies',main_groups);views[name]=m.snapshot('final_'+name,**kw)
     m.snapshot('final_hero',assemblies=main_groups);m.doc.saveAs(str(out/(prefix+'_Complete.FCStd')))
     if p['family']=='clamshell':
@@ -33,7 +34,9 @@ def finalize(m):
         closed_shapes=[o.Shape.copy() for o in m.parts.values() if o.Assembly in main_groups]
         m.set_pose(p['default_opening'])
     else:closed_shapes=[o.Shape.copy() for o in m.parts.values() if o.Assembly in main_groups]
-    envelope=Part.makeCompound(closed_shapes).optimalBoundingBox(False,False)
+    overall=Part.makeCompound(closed_shapes).optimalBoundingBox(False,False)
+    envelope_groups=p.get('envelope_groups',main_groups)
+    envelope=Part.makeCompound([o.Shape for o in m.parts.values() if o.Assembly in envelope_groups]).optimalBoundingBox(False,False) if p['family']!='clamshell' else overall
     m.visible(main_groups);m.snapshot('final_hero',assemblies=main_groups);m.doc.save()
     exploded=App.newDocument(prefix+'Exploded');exploded.Label=p['title']+' · exploded assembly'
     ec={};offsets={};groups={}
@@ -52,6 +55,8 @@ def finalize(m):
             delta=V(0,0,z)
         if src.Assembly=='Cradle':delta+=V(0,-70,0)
         if src.Assembly=='Accessories':delta+=V(-50,0,0)
+        if p['family']!='clamshell' and src.Assembly=='UMD':
+            delta=V(0,150,{-6:-220,-5:-170,-4:-110,-3:-60,-2:0,-1:60}.get(layer,layer*50))
         shape=src.Shape.copy();shape.translate(delta);o=g.part_feature(exploded,src.Name,src.Label,shape)
         o.ViewObject.ShapeAppearance=src.ViewObject.ShapeAppearance
         if src.Assembly not in groups:groups[src.Assembly]=exploded.addObject('App::DocumentObjectGroup',src.Assembly+'Group')
@@ -68,8 +73,12 @@ def finalize(m):
         b=shape.optimalBoundingBox(False,False);size=(2300,1700);span=max(b.YLength,b.XLength*size[1]/size[0])*1.14
         return g.render(out/'previews'/('final_'+name+'.png'),normal=normal,target=tuple(q.multVec(b.Center)),span=span,size=size)
     views['exploded']=render_exploded('exploded',main_groups)
-    views['exploded_lower']=render_exploded('exploded_lower',[a for a in main_groups if a not in ['Lid','LidDisplay','LidInternal']])
-    views['exploded_upper']=render_exploded('exploded_upper',['Lid','LidDisplay','LidInternal'])
+    if p['family']=='clamshell':
+        views['exploded_lower']=render_exploded('exploded_lower',[a for a in main_groups if a not in ['Lid','LidDisplay','LidInternal']])
+        views['exploded_upper']=render_exploded('exploded_upper',['Lid','LidDisplay','LidInternal'])
+    else:
+        views['exploded_body']=render_exploded('exploded_body',[a for a in main_groups if a!='UMD'])
+        if 'UMD' in main_groups:views['exploded_drive']=render_exploded('exploded_drive',['UMD'])
     render_exploded('exploded',main_groups);exploded.saveAs(str(out/(prefix+'_Exploded.FCStd')))
     ImportGui.export(list(m.parts.values()),str(out/(prefix+'_FullKit.step')))
     ImportGui.export([o for o in m.parts.values() if o.Assembly in main_groups],str(out/(prefix+'_Handheld.step')))
@@ -80,6 +89,7 @@ def finalize(m):
     native=[prefix+'_Complete.FCStd',prefix+'_Exploded.FCStd'];steps=[prefix+'_FullKit.step',prefix+'_Handheld.step',prefix+'_Exploded.step']
     if p['family']=='clamshell':native.append(prefix+'_Closed.FCStd');steps.append(prefix+'_Closed.step')
     report={'project':p['title']+' '+p['model'],'device':p['id'],'prefix':prefix,'design_iterations':p['stages'],'physical_components':len(m.parts),'solids':sum(len(o.Shape.Solids) for o in m.parts.values()),'assemblies':dict(Counter(o.Assembly for o in m.parts.values())),'handheld_groups':main_groups,'native_files':native,'step_files':steps,'views':{k:str(Path(v).relative_to(m.repo)) for k,v in views.items()},'objects':rows,'exploded_objects':erows,'offsets':offsets,'published_envelope_mm':[p['width'],p['height'],p['closed_depth']],'envelope_pose':'closed' if p['family']=='clamshell' else 'body','measured_envelope_mm':[envelope.XLength,envelope.YLength,envelope.ZLength],'pose':{'type':'hinge' if p['family']=='clamshell' else 'fixed','group':'Lid','pivot_mm':[0,p.get('hinge_y',0),p.get('hinge_z',0)],'axis':[1,0,0],'default_opening':p.get('default_opening',180),'range':[0,p.get('default_opening',180)]},'fidelity':'Published envelope; approximate exterior details and schematic major internals','source_digest':info.SourceDigest}
+    report.update(envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength])
     (out/'reports/final_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     with (out/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['Part number','Part ID','Label','Assembly','Material','Solid count','Volume mm3','X mm','Y mm','Z mm','Fidelity'])

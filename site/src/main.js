@@ -171,11 +171,14 @@ try {
 } catch (e) { console.warn('WebGL unavailable:',e.message); }
 
 buildCards();
+function showViewer() {
+  $('viewer').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+}
 $('device-list').addEventListener('click',event => {
   const button=event.target.closest('[data-device]');if(!button)return;
-  if(button.dataset.device===device && ready){$('viewer').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});return;}
+  if(button.dataset.device===device && ready){showViewer();return;}
   device=button.dataset.device;if(!devices[device].views[view])view='assembled';
-  amount=devices[device].views[view].explode||0;opening=devices[device].views[view].opening??devices[device].opening??180;loadDevice();
+  amount=devices[device].views[view].explode||0;opening=devices[device].views[view].opening??devices[device].opening??180;loadDevice();showViewer();
 });
 $('scene-tabs').addEventListener('click',event => {
   const button=event.target.closest('[data-scene]');if(!button)return;view=button.dataset.scene;
@@ -195,3 +198,4 @@ $('fullscreen').addEventListener('click',async () => {
 });
 if (!$('stage').requestFullscreen) $('fullscreen').hidden = true;
 loadDevice();
+if (location.hash==='#viewer') requestAnimationFrame(() => $('viewer').scrollIntoView({block:'start'}));

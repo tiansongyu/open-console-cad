@@ -2434,7 +2434,7 @@
   ],
   "threshold_mm3": 1e-06,
   "candidate_pairs": 493,
-  "checked_pairs": 400,
+  "checked_pairs": 493,
   "clashes": [
     {
       "a": "PerimeterTrim",
@@ -2655,8 +2655,65 @@
       "a": "UMDDoorLatch",
       "b": "UMDFrame",
       "volume_mm3": 9.975000000000001
+    },
+    {
+      "a": "IRBoard",
+      "b": "Passive8",
+      "volume_mm3": 0.09196566370614323
+    },
+    {
+      "a": "IRBoard",
+      "b": "Passive8End-1",
+      "volume_mm3": 0.020790754418176516
+    },
+    {
+      "a": "IRBoard",
+      "b": "Passive8End1",
+      "volume_mm3": 0.02079075441817653
+    },
+    {
+      "a": "IRBoard",
+      "b": "Mainboard",
+      "volume_mm3": 26.953646003294033
+    },
+    {
+      "a": "PowerBoard",
+      "b": "Mainboard",
+      "volume_mm3": 12.557938040026052
+    },
+    {
+      "a": "Passive14",
+      "b": "ShoulderSwitch1",
+      "volume_mm3": 0.004290156966589409
+    },
+    {
+      "a": "Passive14End1",
+      "b": "ShoulderSwitch1",
+      "volume_mm3": 0.0031353772090881317
+    },
+    {
+      "a": "MenuPCB",
+      "b": "LCDCarrier",
+      "volume_mm3": 10.772049291971948
+    },
+    {
+      "a": "AntennaStrip",
+      "b": "BoardScrew3",
+      "volume_mm3": 0.14491538592478914
+    },
+    {
+      "a": "AntennaStrip",
+      "b": "Mainboard",
+      "volume_mm3": 6.67336780420547
+    },
+    {
+      "a": "BackCover",
+      "b": "UMDCartridge",
+      "volume_mm3": 131.35771238140507
     }
   ],
   "errors": [],
-  "complete": false
+  "complete": true,
+  "elapsed_seconds": 29.60613465309143,
+  "passed": false
 }

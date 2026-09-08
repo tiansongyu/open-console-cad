@@ -333,3 +333,90 @@ def stage11(m):
     m.checkpoint(11,'mounts_and_removable_media','补齐主板与后壳紧固件、LCD 支承垫，并制作独立空白 UMD 卡壳、60 mm 光盘和记忆棒附件，准备整机配合检查。')
 
 STAGES[11]=stage11
+
+
+def stage12(m):
+    # Narrow the shoulder keys to the top rim and restore the front branding field.
+    seating=[o for o in m.doc.Objects if o.Label.startswith('Shoulder button seating recess · tool')]
+    for j,side in enumerate([-1,1]):
+        cap=m.rr(22,4.4,5,(side*61,33.4,18.3),1.8).common(m.rr(170,74,5,(0,0,18.3),31))
+        shoulder=m.parts['Shoulder'+str(side)];shoulder.Base.Shape=cap
+        for tool in seating[j*2:j*2+2]:tool.Shape=cap.copy()
+        _move(m,'ShoulderPin'+str(side),(0,5.2,0));shoulder.Tool.Shape=m.parts['ShoulderPin'+str(side)].Shape.copy()
+        _move(m,'ShoulderLegend'+str(side),(0,2.0,0));_move(m,'ShoulderSwitch'+str(side),(0,5.2,0))
+    # Four directional petals must remain separate, including at their inner corners.
+    holes=[o for o in m.doc.Objects if o.Label.startswith('Directional-key opening · tool')]
+    for i,(key,angle) in enumerate([('Up',0),('Right',-90),('Down',180),('Left',90)]):
+        shape=_polygon([(-65+x,10+y) for x,y in [(-1,1.2),(1,1.2),(3,5.8),(0,8.5),(-3,5.8)]],22.6,.95)
+        shape.rotate(V(-65,10,0),V(0,0,1),angle);_replace(m,'DPad'+key,shape)
+        tool=_polygon([(-65+x,10+y) for x,y in [(-1.15,1.0),(1.15,1.0),(3.25,5.85),(0,8.8),(-3.25,5.85)]],21.65,2.15)
+        tool.rotate(V(-65,10,0),V(0,0,1),angle);holes[i].Shape=tool
+        b=m.parts['ControlBoss'+str(i)].Shape.optimalBoundingBox(False,False)
+        _replace(m,'ControlBoss'+str(i),Part.makeCylinder(1.25,1.20,V(b.Center.x,b.Center.y,19.66)))
+    # Curve the battery package corners and inset it from the curved outer grip.
+    pouch=m.parts['BatteryPouch'];pouch.Base.Shape=m.rr(30.5,48,10.3,(-63.8,0,2.0),6.5);pouch.Tool.Shape=m.rr(29.2,46.7,8.7,(-63.8,0,2.65),5.8)
+    _replace(m,'BatteryCell',m.rr(28.9,46.4,8.3,(-63.8,0,2.85),5.65))
+    tray=m.rr(32,49.5,.35,(-63.8,0,1.5),7.25).cut(m.rr(29.7,47.2,.6,(-63.8,0,1.4),6.1));_replace(m,'BatteryTray',tray)
+    for key in ['BatteryConnector','BatteryContact0','BatteryContact1','BatteryContact2','BatteryType','BatteryCapacity','BatteryStudy']:_move(m,key,(1.2,0,0))
+    # Real connector openings include their central passage, not only a ring-shaped seat.
+    top=App.Rotation(V(0,0,1),V(0,1,0))
+    m.cut('MainFrame',m.rr(6.9,3.3,6.0,(-58,-37.5,10),.5,top),'Open headset-remote mouth')
+    m.cut('MainFrame',Part.makeCylinder(2.60,8,V(66,-36,11.3),V(0,1,0)),'Open DC plug passage')
+    m.cut('MainFrame',[m.parts['DockContact'+str(i)].Shape for i in range(2)],'Charging contact seats')
+    for side in [-1,1]:
+        key='RailSpeakerSlot'+str(side);_move(m,key,(0,.25,0));m.cut('MainFrame',m.parts[key].Shape,'Flush lower-rail acoustic inset')
+    m.cut('PerimeterTrim',[m.parts[k].Shape for k in ['HeadphoneSocket','HeadsetRemotePort','ChargeJack','ChargeCarrier','RailSpeakerSlot-1','RailSpeakerSlot1']],'Connector breaks in silver perimeter trim')
+    m.cut('Mainboard',m.parts['MiniUSBShell'].Shape,'USB shell board-edge notch')
+    # The left speaker clears the analog mechanism while remaining inside the grip.
+    outlet_tools=[o for o in m.doc.Objects if o.Label.startswith('Original lower front speaker outlet · tool')]
+    for j,side in enumerate([-1,1]):
+        for prefix in ['SpeakerMesh','SpeakerFrame','SpeakerMagnet','SpeakerDiaphragm']:_move(m,prefix+str(side),(-side,-.7,0))
+        outlet_tools[j].Shape=m.rr(8.5,2.25,1.7,(side*61,-29.3,21.5),.75)
+    # Preserve distinct door tabs, fasteners and daughterboards at their interfaces.
+    m.cut('UMDFrame',[m.parts[k].Shape for k in ['UMDHingePin-1','UMDHingePin1','UMDHingeTab-1','UMDHingeTab1','UMDDoorLatch']],'UMD hinge and latch seats')
+    m.cut('MainFrame',[m.parts[k].Shape for k in ['RearScrew6','RearPost6']],'Lower center rear-fastener seat')
+    _move(m,'IRBoard',(0,0,.6));_move(m,'IRReceiver',(0,0,.6));_move(m,'IRWindow',(0,0,2.0))
+    next(o for o in m.doc.Objects if o.Label.startswith('Infrared window inset · tool')).Shape=m.parts['IRWindow'].Shape.copy()
+    for key in ['Passive8','Passive8End-1','Passive8End1']:_move(m,key,(0,-3,0))
+    _move(m,'PowerBoard',(0,0,.45));_move(m,'AntennaStrip',(0,0,1.7));_move(m,'MenuPCB',(0,0,.2))
+    for o in list(m.parts.values()):
+        if o.Assembly=='Accessories':_move(m,o.PartID,(22,0,0))
+    # Flush lettering is included in the published body envelope.
+    names=['PSPFrontMark','SonyFrontMark','PlayStationFrontMark','PowerLegend','HoldLegend']
+    for key in names:_move(m,key,(0,0,-.043))
+    m.cut('FrontBezel',[m.parts[k].Shape for k in names],'Flush front-face legend inlays')
+    m.doc.recompute();pouch.FlatPlacement=pouch.Placement
+    m.profile['internal_exclude']=['BackCover','BatteryDoor','UMDDoor','UMDLogoRing','UMDPSPMark','UMDLabel','RearModelMark']
+    m.checkpoint(12,'measured_fit_and_exterior_refinement','依据实体求交修正肩键、四向键、曲面电池、接口通道、胶垫、UMD 铰链与板件间隙，并将附件移出主机包络、前部标识改为齐平嵌入。')
+
+STAGES[12]=stage12
+
+
+def stage13(m):
+    block=Part.makeBox(106,90,8,V(-53,-45,17))
+    seating=[o for o in m.doc.Objects if o.Label.startswith('Shoulder button seating recess · tool')]
+    for j,side in enumerate([-1,1]):
+        shoulder=m.parts['Shoulder'+str(side)]
+        cap=shoulder.Base.Shape.cut(block);assert cap.isValid() and cap.Solids
+        shoulder.Base.Shape=cap
+        for tool in seating[j*2:j*2+2]:tool.Shape=cap.copy()
+    m.doc.recompute();m.profile['stages']=13
+    m.checkpoint(13,'shoulder_display_clearance','收窄肩键内缘，保留与屏框和 LCD 支架之间的独立装配间隙，完成最后的肩键配合修正。')
+
+STAGES[13]=stage13
+
+
+def stage14(m):
+    # Expose top-facing interfaces at the actual case surface instead of burying
+    # them behind a thin residual wall. Keep the rear legend clear of fasteners.
+    _move(m,'IRWindow',(0,.23,0));_move(m,'UMDOpenSlider',(0,.15,0));_move(m,'RearModelMark',(0,-11,0))
+    for prefix,key in [('Infrared window inset · tool','IRWindow'),('UMD release slider track · tool','UMDOpenSlider'),('Rear model inlay · tool','RearModelMark')]:
+        next(o for o in m.doc.Objects if o.Label.startswith(prefix)).Shape=m.parts[key].Shape.copy()
+    tools=[o for o in m.doc.Objects if o.Label.startswith('USB connector mounting seat · tool')]
+    for i,side in enumerate([-1,1],1):
+        key='USBMount'+str(side);_move(m,key,(0,.3,0));tools[i].Shape=m.parts[key].Shape.copy()
+        m.cut('MainFrame',Part.makeCylinder(1.42,1.8,V(side*8.2,35.4,14.5),V(0,1,0)),'Top USB accessory collar passage')
+    m.doc.recompute();m.profile['stages']=14
+    m.checkpoint(14,'flush_top_interfaces_and_rear_mark','将顶部红外窗、UMD 拨钮和 USB 附件安装环露出到机壳表面，并将后部标识移开螺钉孔，完成图纸视图中发现的可见性修正。')
+
+STAGES[14]=stage14

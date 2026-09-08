@@ -37,6 +37,6 @@ Additional corrective stages are recorded when inspection finds defects; the lis
 | Switch 2 | Existing published baseline verified |
 | Nintendo 3DS | 13 stages / 324 components; native, STEP, 12-page drawings and hinge-capable web preview verified; release ready |
 | Nintendo DS | 15 stages / 321 components; native, STEP, 12-page drawings and live hinged web preview verified at 3ec3907 |
-| PSP-1000 | Native enclosure stage 1 built; display and controls next |
+| PSP-1000 | 14 stages / 346 components; native, STEP, twelve A3 sheets and detailed web preview verified; release ready |
 | PS Vita PCH-1000 | Reference preparation |
 | Steam Deck LCD | Reference preparation |
