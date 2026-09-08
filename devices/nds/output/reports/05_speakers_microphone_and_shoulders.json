@@ -1,0 +1,3526 @@
+{
+  "iteration": 5,
+  "slug": "speakers_microphone_and_shoulders",
+  "summary": "增加双扬声器孔阵列、四个上盖螺钉垫、下机身麦克风、状态灯与 L/R 肩键；保留初代无摄像头结构。",
+  "physical_components": 130,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "NTR-001 rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15131.693002749798,
+      "bounds": [
+        -73.44999999999999,
+        73.44999999999999,
+        -41.45,
+        41.45,
+        0.0,
+        1.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 24.554353945176977,
+      "bounds": [
+        -74.1,
+        74.1,
+        -42.1,
+        42.1,
+        17.51,
+        17.540000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidBackCoverBody",
+      "label": "Original DS upper outer cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10928.000163162096,
+      "bounds": [
+        -71.25,
+        71.25,
+        38.5,
+        115.5,
+        10.100000000000001,
+        11.100000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBackCover",
+      "assembly": "Lid",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "MainFrameCut009",
+      "label": "Original DS deep lower frame010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 81,
+      "volume": 12273.069109926262,
+      "bounds": [
+        -74.35000009999999,
+        74.35000009999999,
+        -42.35,
+        42.3500001,
+        1.2999999,
+        17.500000100000094
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidFrameCut001",
+      "label": "Upper display support frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 5242.634334529269,
+      "bounds": [
+        -71.05000009999999,
+        71.05000009999999,
+        38.6999999,
+        115.3,
+        11.149999900000003,
+        19.050000100000094
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidFrame",
+      "assembly": "Lid",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LeftHingeSleeve",
+      "label": "Original DS hinge sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 185.62100193735284,
+      "bounds": [
+        -35.0,
+        -29.0,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CenterHingeSleeve",
+      "label": "Original DS hinge sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1763.3995184048526,
+      "bounds": [
+        -28.5,
+        28.5,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CenterHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "RightHingeSleeve",
+      "label": "Original DS hinge sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 185.62100193735284,
+      "bounds": [
+        29.0,
+        35.0,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftHingeAxle",
+      "label": "Hinge axle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 80.04778081346794,
+      "bounds": [
+        -35.0,
+        -22.0,
+        37.1,
+        39.9,
+        18.1,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightHingeAxle",
+      "label": "Hinge axle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 129.30795362175587,
+      "bounds": [
+        14.0,
+        35.0,
+        37.1,
+        39.9,
+        18.1,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher_1",
+      "label": "Hinge end spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 9.598146751357742,
+      "bounds": [
+        -28.925,
+        -28.575,
+        35.2,
+        41.8,
+        16.2,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher-1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher1",
+      "label": "Hinge end spacer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 9.598146751357742,
+      "bounds": [
+        28.575,
+        28.925,
+        35.2,
+        41.8,
+        16.2,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckCut014",
+      "label": "Original DS control deck015",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 124,
+      "volume": 6089.922779034535,
+      "bounds": [
+        -74.0,
+        74.0,
+        -42.0,
+        42.0000001,
+        17.549999899996642,
+        18.599999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerDisplaySurround",
+      "label": "Lower black screen border",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 590.7174747599323,
+      "bounds": [
+        -36.0,
+        36.0,
+        -24.0,
+        32.0,
+        18.319999999999997,
+        18.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerDisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCD",
+      "label": "Lower 3-inch LCD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9031.731641140486,
+      "bounds": [
+        -33.75,
+        33.75,
+        -21.25,
+        29.25,
+        15.299999999999997,
+        17.949999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCDBackplate",
+      "label": "Lower LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 852.0501548245743,
+      "bounds": [
+        -33.75,
+        33.75,
+        -21.25,
+        29.25,
+        14.999999999999998,
+        15.249999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerTouchDigitizer",
+      "label": "Resistive touch panel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 195.0950320084297,
+      "bounds": [
+        -30.48,
+        30.48,
+        -18.86,
+        26.86,
+        18.529999999999998,
+        18.599999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerTouchDigitizer",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerGlass",
+      "label": "Lower display cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 390.19006401685937,
+      "bounds": [
+        -30.48,
+        30.48,
+        -18.86,
+        26.86,
+        18.604999999999997,
+        18.744999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidBezelCut007",
+      "label": "Silver speaker and display bezel008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 110,
+      "volume": 2468.6323604021964,
+      "bounds": [
+        -70.8250001,
+        70.8250001,
+        42.12801588673405,
+        115.07500000000002,
+        19.0999999,
+        19.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBezel",
+      "assembly": "Lid",
+      "layer": 5,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperDisplaySurround",
+      "label": "Upper black screen border",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 590.7174747599325,
+      "bounds": [
+        -36.0,
+        36.0,
+        56.0,
+        112.0,
+        19.22,
+        19.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperDisplaySurround",
+      "assembly": "LidDisplay",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCD",
+      "label": "Upper 3-inch LCD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9031.731641140484,
+      "bounds": [
+        -33.75,
+        33.75,
+        58.75,
+        109.25,
+        16.2,
+        18.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCD",
+      "assembly": "LidDisplay",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCDBackplate",
+      "label": "Upper LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 852.0501548245724,
+      "bounds": [
+        -33.75,
+        33.75,
+        58.75,
+        109.25,
+        15.9,
+        16.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCDBackplate",
+      "assembly": "LidDisplay",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperGlass",
+      "label": "Upper display cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 390.1900640168594,
+      "bounds": [
+        -30.48,
+        30.48,
+        61.14,
+        106.86000000000001,
+        19.505,
+        19.645
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperGlass",
+      "assembly": "LidDisplay",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "ControlField_1Cut001",
+      "label": "Inset control field007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 639.5574748422202,
+      "bounds": [
+        -69.60000000000001,
+        -38.4,
+        -29.2,
+        34.2,
+        18.319999999999997,
+        18.689999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlField-1",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlField1Cut005",
+      "label": "Inset control field009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 30,
+      "volume": 647.9168602856304,
+      "bounds": [
+        38.4,
+        69.60000000000001,
+        -29.2,
+        34.2,
+        18.319999999999997,
+        18.689999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlField1",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPad",
+      "label": "Original DS directional cross",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 213.12363688057033,
+      "bounds": [
+        -62.5,
+        -43.5,
+        -4.500000000000001,
+        14.5,
+        18.2,
+        19.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadTick0",
+      "label": "Direction tick",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01610111147369378,
+      "bounds": [
+        -53.225,
+        -52.775,
+        11.0,
+        13.0,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadTick0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadTick1",
+      "label": "Direction tick001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.016101111473693745,
+      "bounds": [
+        -47.0,
+        -45.0,
+        4.7749999999999995,
+        5.2250000000000005,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadTick1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadTick2",
+      "label": "Direction tick002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01610111147369378,
+      "bounds": [
+        -53.225,
+        -52.775,
+        -3.0,
+        -1.0,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadTick2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadTick3",
+      "label": "Direction tick003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.016101111473693745,
+      "bounds": [
+        -61.0,
+        -59.0,
+        4.7749999999999995,
+        5.2250000000000005,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadTick3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonX",
+      "label": "X button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.90589321184285,
+      "bounds": [
+        49.619999899999996,
+        56.380000100000004,
+        8.819999900000001,
+        15.580000099999998,
+        18.179999999999996,
+        19.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkX",
+      "label": "X",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.021347606074543647,
+      "bounds": [
+        52.20443791946308,
+        53.97348154362416,
+        11.25,
+        13.317114093959733,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkX",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemX",
+      "label": "Face-button plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.00776438218855,
+      "bounds": [
+        51.7,
+        54.3,
+        10.899999999999999,
+        13.5,
+        15.699999999999998,
+        18.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemX",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.90589321184285,
+      "bounds": [
+        56.8199999,
+        63.58000010000001,
+        1.6199999,
+        8.380000099999998,
+        18.179999899999995,
+        19.3000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.02337068540409244,
+      "bounds": [
+        59.34214765100671,
+        61.235771812080536,
+        4.049999999999999,
+        6.1171140939597315,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemA",
+      "label": "Face-button plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.00776438218855,
+      "bounds": [
+        58.900000000000006,
+        61.5,
+        3.7,
+        6.3,
+        15.699999999999998,
+        18.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemA",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.90589321184285,
+      "bounds": [
+        49.619999899999996,
+        56.380000100000004,
+        -5.5800001,
+        1.1800000999999998,
+        18.179999899999995,
+        19.3000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.02943663753230464,
+      "bounds": [
+        52.39822976577181,
+        53.864127616778525,
+        -3.1500001,
+        -1.0828858060402686,
+        19.314999899999997,
+        19.3330001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemB",
+      "label": "Face-button plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.007764382188546,
+      "bounds": [
+        51.7,
+        54.3,
+        -3.5,
+        -0.9000000000000001,
+        15.699999999999998,
+        18.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemB",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonY",
+      "label": "Y button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.90589321184285,
+      "bounds": [
+        42.41999989999999,
+        49.1800001,
+        1.6199999,
+        8.380000099999998,
+        18.179999899999995,
+        19.3000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkY",
+      "label": "Y",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 0.015962406787701226,
+      "bounds": [
+        44.914463087248315,
+        46.657206375838925,
+        4.049999999999999,
+        6.1171140939597315,
+        19.314999999999998,
+        19.333
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkY",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemY",
+      "label": "Face-button plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.007764382188546,
+      "bounds": [
+        44.5,
+        47.099999999999994,
+        3.7,
+        6.3,
+        15.699999999999998,
+        18.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemY",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerKey",
+      "label": "POWER button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 33.80041138024604,
+      "bounds": [
+        -58.0,
+        -48.0,
+        27.2,
+        30.8,
+        18.2,
+        19.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerKeyLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.0435724270419712,
+      "bounds": [
+        -56.34191494899329,
+        -50.57822976577181,
+        31.976509967114094,
+        33.194630972483225,
+        18.624999899999995,
+        18.6430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerKeyLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectKey",
+      "label": "SELECT button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 26.96041138024604,
+      "bounds": [
+        44.0,
+        52.0,
+        27.2,
+        30.8,
+        18.2,
+        19.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectKeyLegend",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.03884443270795576,
+      "bounds": [
+        44.60617649395973,
+        50.56580327181208,
+        31.976509967114094,
+        33.194630972483225,
+        18.624999899999995,
+        18.6430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectKeyLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartKey",
+      "label": "START button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 26.96041138024604,
+      "bounds": [
+        57.0,
+        65.0,
+        27.2,
+        30.8,
+        18.2,
+        19.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartKeyLegend",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.034011602694954034,
+      "bounds": [
+        57.60617649395973,
+        62.47519924496644,
+        31.976509967114094,
+        33.194630972483225,
+        18.624999899999995,
+        18.6430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartKeyLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DSModelLegend",
+      "label": "NINTENDO DS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 146,
+      "volume": 0.14606604686968808,
+      "bounds": [
+        10.214995805369126,
+        25.352340704026844,
+        -26.531946408724835,
+        -24.875301913422817,
+        18.624999899999995,
+        18.6430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DSModelLegend",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GameCardCage",
+      "label": "DS Slot-1 metal cage",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1166.0520175907584,
+      "bounds": [
+        -18.0,
+        18.0,
+        12.25,
+        42.25,
+        6.2,
+        9.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GameCardCage",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GameCardMouth",
+      "label": "Slot-1 rear lip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 18.268400421470346,
+      "bounds": [
+        -18.1,
+        18.1,
+        42.04,
+        42.339999999999996,
+        5.699999999999999,
+        10.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GameCardMouth",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact0",
+      "label": "DS-card contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491515,
+      "bounds": [
+        -12.31,
+        -11.69,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact1",
+      "label": "DS-card contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649151,
+      "bounds": [
+        -10.81,
+        -10.19,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact2",
+      "label": "DS-card contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491515,
+      "bounds": [
+        -9.31,
+        -8.69,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact3",
+      "label": "DS-card contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649148,
+      "bounds": [
+        -7.81,
+        -7.19,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact4",
+      "label": "DS-card contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491487,
+      "bounds": [
+        -6.31,
+        -5.69,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact5",
+      "label": "DS-card contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649148,
+      "bounds": [
+        -4.81,
+        -4.19,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact6",
+      "label": "DS-card contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.297572530964915,
+      "bounds": [
+        -3.31,
+        -2.69,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact7",
+      "label": "DS-card contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.297572530964915,
+      "bounds": [
+        -1.81,
+        -1.19,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact8",
+      "label": "DS-card contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649149,
+      "bounds": [
+        -0.31,
+        0.31,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact9",
+      "label": "DS-card contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.297572530964915,
+      "bounds": [
+        1.19,
+        1.81,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact10",
+      "label": "DS-card contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.297572530964915,
+      "bounds": [
+        2.69,
+        3.31,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact11",
+      "label": "DS-card contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649148,
+      "bounds": [
+        4.19,
+        4.81,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact12",
+      "label": "DS-card contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649148,
+      "bounds": [
+        5.69,
+        6.31,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact12",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact13",
+      "label": "DS-card contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491487,
+      "bounds": [
+        7.19,
+        7.81,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact13",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact14",
+      "label": "DS-card contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491515,
+      "bounds": [
+        8.69,
+        9.31,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact14",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact15",
+      "label": "DS-card contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2975725309649151,
+      "bounds": [
+        10.19,
+        10.81,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact15",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact16",
+      "label": "DS-card contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29757253096491515,
+      "bounds": [
+        11.69,
+        12.31,
+        21.35,
+        27.35,
+        6.76,
+        6.84
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact16",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAChannel",
+      "label": "GBA cartridge guide channel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1701.2369681220766,
+      "bounds": [
+        -31.85,
+        31.85,
+        -41.95000000000028,
+        -2.249999999999999,
+        3.05,
+        10.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAChannel",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAMouth",
+      "label": "Slot-2 front surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 39.5898229715026,
+      "bounds": [
+        -32.2,
+        32.2,
+        -42.32,
+        -42.07,
+        3.2999999999999994,
+        12.100000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAMouth",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAConnector",
+      "label": "32-pin GBA receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 17,
+      "volume": 1316.0471767119814,
+      "bounds": [
+        -30.25,
+        30.25,
+        -12.0,
+        -3.0,
+        5.65,
+        10.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAConnector",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact0",
+      "label": "GBA edge contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -23.575,
+        -22.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact0",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact1",
+      "label": "GBA edge contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -22.075,
+        -21.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact1",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact2",
+      "label": "GBA edge contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -20.575,
+        -19.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact2",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact3",
+      "label": "GBA edge contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -19.075,
+        -18.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact3",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact4",
+      "label": "GBA edge contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -17.575,
+        -16.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact4",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact5",
+      "label": "GBA edge contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -16.075,
+        -15.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact5",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact6",
+      "label": "GBA edge contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -14.575,
+        -13.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact6",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact7",
+      "label": "GBA edge contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        -13.075,
+        -12.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact7",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact8",
+      "label": "GBA edge contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614285,
+      "bounds": [
+        -11.575,
+        -10.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact8",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact9",
+      "label": "GBA edge contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614285,
+      "bounds": [
+        -10.075,
+        -9.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact9",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact10",
+      "label": "GBA edge contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.409465663706143,
+      "bounds": [
+        -8.575,
+        -7.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact10",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact11",
+      "label": "GBA edge contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614323,
+      "bounds": [
+        -7.075,
+        -6.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact11",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact12",
+      "label": "GBA edge contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614323,
+      "bounds": [
+        -5.575,
+        -4.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact12",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact13",
+      "label": "GBA edge contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061432,
+      "bounds": [
+        -4.075,
+        -3.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact13",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact14",
+      "label": "GBA edge contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061432,
+      "bounds": [
+        -2.575,
+        -1.925,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact14",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact15",
+      "label": "GBA edge contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061431,
+      "bounds": [
+        -1.075,
+        -0.425,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact15",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact16",
+      "label": "GBA edge contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061431,
+      "bounds": [
+        0.425,
+        1.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact16",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact17",
+      "label": "GBA edge contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061431,
+      "bounds": [
+        1.925,
+        2.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact17",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact18",
+      "label": "GBA edge contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061432,
+      "bounds": [
+        3.425,
+        4.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact18",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact19",
+      "label": "GBA edge contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614323,
+      "bounds": [
+        4.925,
+        5.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact19",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact20",
+      "label": "GBA edge contact020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061432,
+      "bounds": [
+        6.425,
+        7.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact20",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact21",
+      "label": "GBA edge contact021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.409465663706143,
+      "bounds": [
+        7.925,
+        8.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact21",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact22",
+      "label": "GBA edge contact022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        9.425,
+        10.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact22",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact23",
+      "label": "GBA edge contact023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614285,
+      "bounds": [
+        10.925,
+        11.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact23",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact24",
+      "label": "GBA edge contact024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        12.425,
+        13.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact24",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact25",
+      "label": "GBA edge contact025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        13.925,
+        14.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact25",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact26",
+      "label": "GBA edge contact026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        15.425,
+        16.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact26",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact27",
+      "label": "GBA edge contact027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        16.925,
+        17.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact27",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact28",
+      "label": "GBA edge contact028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        18.425,
+        19.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact28",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact29",
+      "label": "GBA edge contact029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        19.925,
+        20.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact29",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact30",
+      "label": "GBA edge contact030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4094656637061428,
+      "bounds": [
+        21.425,
+        22.075,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact30",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GBAContact31",
+      "label": "GBA edge contact031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40946566370614285,
+      "bounds": [
+        22.925,
+        23.575,
+        -10.65,
+        -4.35,
+        7.03,
+        7.13
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GBAContact31",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChargeJackShell",
+      "label": "NTR charging socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 86.4733403578366,
+      "bounds": [
+        -37.2,
+        -28.8,
+        37.300000000000004,
+        42.300000000000004,
+        6.199999999999999,
+        10.200000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChargeJackShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChargeJackTongue",
+      "label": "Charge jack insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 17.96208845396,
+      "bounds": [
+        -35.900000000000006,
+        -30.1,
+        37.75,
+        41.65,
+        7.799999999999999,
+        8.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChargeJackTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadphoneSocket",
+      "label": "3.5 mm headphone jack",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 43.48969542217421,
+      "bounds": [
+        50.64,
+        55.36,
+        -42.31,
+        -36.71,
+        6.640000000000001,
+        11.36
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadphoneSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadsetPort",
+      "label": "Headset accessory interface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5.731543128087982,
+      "bounds": [
+        40.5,
+        47.5,
+        -42.33,
+        -42.08,
+        7.35,
+        10.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadsetPort",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadsetPin0",
+      "label": "Accessory contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.013986265482457332,
+      "bounds": [
+        42.25,
+        42.75,
+        -42.36,
+        -42.32,
+        8.65,
+        9.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadsetPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadsetPin1",
+      "label": "Accessory contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.013986265482457332,
+      "bounds": [
+        45.25,
+        45.75,
+        -42.36,
+        -42.32,
+        8.65,
+        9.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadsetPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeSlider",
+      "label": "Front volume slider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15.945929173528885,
+      "bounds": [
+        -58.75,
+        -47.25,
+        -42.34,
+        -41.89,
+        7.449999999999999,
+        10.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeSlider",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerFrame_1",
+      "label": "Upper speaker frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 154.17365947491885,
+      "bounds": [
+        -60.2,
+        -43.8,
+        58.8,
+        75.2,
+        14.7,
+        17.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerFrame-1",
+      "assembly": "LidInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerMagnet_1",
+      "label": "Speaker magnet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 131.85578526381718,
+      "bounds": [
+        -56.7,
+        -47.3,
+        62.3,
+        71.7,
+        15.1,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMagnet-1",
+      "assembly": "LidInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerDiaphragm_1",
+      "label": "Speaker diaphragm",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 14.526724430199273,
+      "bounds": [
+        -58.8,
+        -45.2,
+        60.2,
+        73.8,
+        17.36,
+        17.46
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerDiaphragm-1",
+      "assembly": "LidInternal",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerGasket_1",
+      "label": "Speaker perforation gasket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 26.336725500323503,
+      "bounds": [
+        -63.0,
+        -41.0,
+        58.5,
+        75.5,
+        18.15,
+        18.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerGasket-1",
+      "assembly": "LidInternal",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerFrame1",
+      "label": "Upper speaker frame001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 154.17365947491885,
+      "bounds": [
+        43.8,
+        60.2,
+        58.8,
+        75.2,
+        14.7,
+        17.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerFrame1",
+      "assembly": "LidInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerMagnet1",
+      "label": "Speaker magnet001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 131.85578526381718,
+      "bounds": [
+        47.3,
+        56.7,
+        62.3,
+        71.7,
+        15.1,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMagnet1",
+      "assembly": "LidInternal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerDiaphragm1",
+      "label": "Speaker diaphragm001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 14.526724430199273,
+      "bounds": [
+        45.2,
+        58.8,
+        60.2,
+        73.8,
+        17.36,
+        17.46
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerDiaphragm1",
+      "assembly": "LidInternal",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "SpeakerGasket1",
+      "label": "Speaker perforation gasket001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 26.336725500323503,
+      "bounds": [
+        41.0,
+        63.0,
+        58.5,
+        75.5,
+        18.15,
+        18.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerGasket1",
+      "assembly": "LidInternal",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBumper0",
+      "label": "Upper screw-cover pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.618072991096394,
+      "bounds": [
+        -46.9,
+        -43.1,
+        106.4,
+        109.6,
+        19.43,
+        19.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBumper0",
+      "assembly": "Lid",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBumper1",
+      "label": "Upper screw-cover pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.6180729910963936,
+      "bounds": [
+        43.1,
+        46.9,
+        106.4,
+        109.6,
+        19.43,
+        19.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBumper1",
+      "assembly": "Lid",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBumper2",
+      "label": "Upper screw-cover pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.618072991096397,
+      "bounds": [
+        -46.9,
+        -43.1,
+        49.4,
+        52.6,
+        19.43,
+        19.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBumper2",
+      "assembly": "Lid",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBumper3",
+      "label": "Upper screw-cover pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.6180729910963967,
+      "bounds": [
+        43.1,
+        46.9,
+        49.4,
+        52.6,
+        19.43,
+        19.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBumper3",
+      "assembly": "Lid",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "MicrophoneMesh",
+      "label": "Microphone inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3132292006587707,
+      "bounds": [
+        -27.625,
+        -26.375,
+        -33.075,
+        -30.925,
+        18.15,
+        18.27
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicrophoneMesh",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MicrophoneLabel",
+      "label": "MIC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 41,
+      "volume": 0.01747828250212133,
+      "bounds": [
+        -24.654561661073828,
+        -22.129095957046978,
+        -32.72161083825504,
+        -31.600939497315437,
+        18.6249999,
+        18.643000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicrophoneLabel",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StatusLED0",
+      "label": "Status indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4223429173528852,
+      "bounds": [
+        26.4,
+        27.6,
+        -33.0,
+        -31.0,
+        18.5,
+        18.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StatusLED0",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StatusLED1",
+      "label": "Status indicator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.42234291735288515,
+      "bounds": [
+        30.4,
+        31.6,
+        -33.0,
+        -31.0,
+        18.5,
+        18.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StatusLED1",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "red",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder_1Cut",
+      "label": "L/R shoulder001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 603.4295101571967,
+      "bounds": [
+        -74.05,
+        -55.95,
+        34.25,
+        42.25,
+        13.0,
+        17.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder-1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin_1",
+      "label": "Shoulder pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 18.582520545983634,
+      "bounds": [
+        -72.0,
+        -58.0,
+        34.7,
+        36.0,
+        13.65,
+        14.950000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin-1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Shoulder1Cut",
+      "label": "L/R shoulder003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 603.4295101571967,
+      "bounds": [
+        55.95,
+        74.05,
+        34.25,
+        42.25,
+        13.0,
+        17.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Shoulder1",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderPin1",
+      "label": "Shoulder pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 18.582520545983634,
+      "bounds": [
+        58.0,
+        72.0,
+        34.7,
+        36.0,
+        13.65,
+        14.950000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderPin1",
+      "assembly": "Internal",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/nds/output/iterations/05_speakers_microphone_and_shoulders.FCStd",
+  "views": [
+    "devices/nds/output/previews/05_speakers_microphone_and_shoulders_hero.png",
+    "devices/nds/output/previews/05_speakers_microphone_and_shoulders_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 150
+}

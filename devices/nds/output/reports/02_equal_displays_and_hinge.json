@@ -1,0 +1,637 @@
+{
+  "iteration": 2,
+  "slug": "equal_displays_and_hinge",
+  "summary": "建立两块 3 英寸 4:3 屏幕、黑色边框、下屏触控层及中央分段铰链，保留独立上盖结构。",
+  "physical_components": 23,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "NTR-001 rear cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15131.693002749798,
+      "bounds": [
+        -73.44999999999999,
+        73.44999999999999,
+        -41.45,
+        41.45,
+        0.0,
+        1.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut001",
+      "label": "Original DS deep lower frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 14261.90084196312,
+      "bounds": [
+        -74.35000009999999,
+        74.35000009999999,
+        -42.35,
+        42.3500001,
+        1.2999999,
+        17.500000100000076
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontDeckCut001",
+      "label": "Original DS control deck002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 25,
+      "volume": 7697.8575266578,
+      "bounds": [
+        -74.0,
+        74.0,
+        -42.0,
+        42.0000001,
+        17.549999899996646,
+        18.599999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCaseSeam",
+      "label": "Lower case parting line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 24.554353945176842,
+      "bounds": [
+        -74.1,
+        74.1,
+        -42.1,
+        42.1,
+        17.51,
+        17.540000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCaseSeam",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidBackCoverBody",
+      "label": "Original DS upper outer cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10928.000163162094,
+      "bounds": [
+        -71.25,
+        71.25,
+        38.5,
+        115.5,
+        10.100000000000001,
+        11.100000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBackCover",
+      "assembly": "Lid",
+      "layer": -6,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidFrameCut001",
+      "label": "Upper display support frame002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 5242.634334529269,
+      "bounds": [
+        -71.05000009999999,
+        71.05000009999999,
+        38.6999999,
+        115.3,
+        11.149999900000003,
+        19.050000100000094
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidFrame",
+      "assembly": "Lid",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LidBezelCut001",
+      "label": "Silver speaker and display bezel002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2495.6374849198537,
+      "bounds": [
+        -70.8250001,
+        70.8250001,
+        42.12801588673404,
+        115.07500000000002,
+        19.0999999,
+        19.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidBezel",
+      "assembly": "Lid",
+      "layer": 5,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "LeftHingeSleeve",
+      "label": "Original DS hinge sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 185.62100193735284,
+      "bounds": [
+        -35.0,
+        -29.0,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CenterHingeSleeve",
+      "label": "Original DS hinge sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1763.3995184048526,
+      "bounds": [
+        -28.5,
+        28.5,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CenterHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "RightHingeSleeve",
+      "label": "Original DS hinge sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 185.62100193735284,
+      "bounds": [
+        29.0,
+        35.0,
+        35.0,
+        42.0,
+        16.0,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeSleeve",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "shell",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftHingeAxle",
+      "label": "Hinge axle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 80.04778081346794,
+      "bounds": [
+        -35.0,
+        -22.0,
+        37.1,
+        39.9,
+        18.1,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftHingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightHingeAxle",
+      "label": "Hinge axle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 129.30795362175587,
+      "bounds": [
+        14.0,
+        35.0,
+        37.1,
+        39.9,
+        18.1,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightHingeAxle",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher_1",
+      "label": "Hinge end spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 9.59814675135774,
+      "bounds": [
+        -28.925,
+        -28.575,
+        35.2,
+        41.8,
+        16.2,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher-1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeWasher1",
+      "label": "Hinge end spacer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 9.59814675135774,
+      "bounds": [
+        28.575,
+        28.925,
+        35.2,
+        41.8,
+        16.2,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeWasher1",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerDisplaySurround",
+      "label": "Lower black screen border",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 590.7174747599324,
+      "bounds": [
+        -36.0,
+        36.0,
+        -24.0,
+        32.0,
+        18.319999999999997,
+        18.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerDisplaySurround",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCD",
+      "label": "Lower 3-inch LCD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9031.731641140486,
+      "bounds": [
+        -33.75,
+        33.75,
+        -21.25,
+        29.25,
+        15.299999999999997,
+        17.949999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerLCDBackplate",
+      "label": "Lower LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 852.0501548245745,
+      "bounds": [
+        -33.75,
+        33.75,
+        -21.25,
+        29.25,
+        14.999999999999998,
+        15.249999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerLCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerTouchDigitizer",
+      "label": "Resistive touch panel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 195.0950320084297,
+      "bounds": [
+        -30.48,
+        30.48,
+        -18.86,
+        26.86,
+        18.529999999999998,
+        18.599999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerTouchDigitizer",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerGlass",
+      "label": "Lower display cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 390.19006401685937,
+      "bounds": [
+        -30.48,
+        30.48,
+        -18.86,
+        26.86,
+        18.604999999999997,
+        18.744999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperDisplaySurround",
+      "label": "Upper black screen border",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 590.7174747599327,
+      "bounds": [
+        -36.0,
+        36.0,
+        56.0,
+        112.0,
+        19.22,
+        19.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperDisplaySurround",
+      "assembly": "LidDisplay",
+      "layer": 5,
+      "material": "bezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCD",
+      "label": "Upper 3-inch LCD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9031.731641140486,
+      "bounds": [
+        -33.75,
+        33.75,
+        58.75,
+        109.25,
+        16.2,
+        18.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCD",
+      "assembly": "LidDisplay",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperLCDBackplate",
+      "label": "Upper LCD steel backplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 852.0501548245724,
+      "bounds": [
+        -33.75,
+        33.75,
+        58.75,
+        109.25,
+        15.9,
+        16.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperLCDBackplate",
+      "assembly": "LidDisplay",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "UpperGlass",
+      "label": "Upper display cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 390.1900640168594,
+      "bounds": [
+        -30.48,
+        30.48,
+        61.14,
+        106.86000000000001,
+        19.505,
+        19.645
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperGlass",
+      "assembly": "LidDisplay",
+      "layer": 7,
+      "material": "screen",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/nds/output/iterations/02_equal_displays_and_hinge.FCStd",
+  "views": [
+    "devices/nds/output/previews/02_equal_displays_and_hinge_hero.png",
+    "devices/nds/output/previews/02_equal_displays_and_hinge_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 150
+}
