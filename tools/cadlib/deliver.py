@@ -22,9 +22,10 @@ def finalize(m):
     sources=sorted((m.root/'scripts').glob('iter*.py'))+sorted((m.repo/'tools/cadlib').glob('*.py'))
     info.SourceDigest=hashlib.sha256(b''.join(s.read_bytes() for s in sources)).hexdigest()
     views={}
-    settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
+    settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','ControlsInternal','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
         if name=='internal' and p.get('internal_exclude'):kw['exclude']=p['internal_exclude']
+        if name=='internal' and p.get('internal_normal'):kw['normal']=p['internal_normal']
         kw.setdefault('assemblies',main_groups);views[name]=m.snapshot('final_'+name,**kw)
     m.snapshot('final_hero',assemblies=main_groups);m.doc.saveAs(str(out/(prefix+'_Complete.FCStd')))
     if p['family']=='clamshell':

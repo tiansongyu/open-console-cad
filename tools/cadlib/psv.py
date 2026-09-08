@@ -364,3 +364,96 @@ def stage11(m):
     m.checkpoint(11,'interface_visibility_and_media','完善腕带环贯通开口、前后镜头外观及卡槽盖后的真实通道，加入空白专用游戏卡和存储卡，准备装配配合检查。')
 
 STAGES[11]=stage11
+
+
+def stage12(m):
+    # Keep shoulder caps out of the OLED and its surround, and preserve wordmarks.
+    block=Part.makeBox(117,100,8,V(-58.5,-50,13))
+    seats=[o for o in m.doc.Objects if o.Label.startswith('Shoulder-cap recess · tool')]
+    for j,side in enumerate([-1,1]):
+        o=m.parts['Shoulder'+str(side)];cap=o.Base.Shape.cut(block);o.Base.Shape=cap
+        for tool in seats[j*3:j*3+3]:tool.Shape=cap.copy()
+    _move(m,'SonyMark',(0,-.3,0))
+    next(o for o in m.doc.Objects if o.Label.startswith('Flush front wordmark inlay · tool')).Shape=m.parts['SonyMark'].Shape.copy()
+    # Accessory-cover screws enter from the top edge, not through the OLED plate.
+    into=App.Rotation(V(0,0,1),V(0,-1,0))
+    for i,x in enumerate([-2,25]):
+        shape=Part.makeCylinder(1.1,.35).fuse(Part.makeCylinder(.62,3.5,V(0,0,.33)))
+        shape=shape.cut(Part.makeCompound([Part.makeBox(.25,1.6,.22,V(-.125,-.8,-.02)),Part.makeBox(1.6,.25,.22,V(-.8,-.125,-.02))]))
+        shape.Placement=App.Placement(V(x,41.0,11.2),into);_replace(m,'AccessoryCoverScrew'+str(i),shape)
+        bores=[Part.makeCylinder(1.25,1.8,V(x,39.5,11.2),V(0,1,0)),Part.makeCylinder(.77,4.6,V(x,36.8,11.2),V(0,1,0))]
+        for key in ['MainFrame','SilverRim']:m.cut(key,bores,'Top accessory-cover fastener pocket')
+    # A bent rear touch ribbon passes below the shield, then rises beyond its edge.
+    flex=m.rr(8,12,.09,(16,-24,1.48),.2).fuse(m.rr(8,.10,.68,(16,-29.92,1.48),.02)).fuse(m.rr(21,2,.09,(10.5,-29,2.07),.2)).removeSplitter()
+    _replace(m,'RearTouchFlex',flex)
+    pcb=m.parts['MemoryReaderPCB'].Shape.common(m.rr(177.8,79.3,.45,(0,0,7),33.9));_replace(m,'MemoryReaderPCB',pcb)
+    _replace(m,'WiFiAntenna-1',m.rr(12,2.5,.10,(-60,29,10.7),.3))
+    for key in ['Passive3','Passive3End-1','Passive3End1']:_move(m,key,(0,-21,0))
+    # Mirror the right sensor inward, clear of the pressure-contact speaker.
+    _move(m,'StickSensor1_0',(-16.2,0,0))
+    for side in [-1,1]:
+        _move(m,'ShoulderSwitch'+str(side),(side*3,0,0))
+        base=m.parts['ControlPCB'+str(side)]
+        while base.TypeId=='Part::Cut':base=base.Base
+        tab=m.rr(8,7,.6,(side*69,30.5,11),.8).common(m.rr(177.8,79.3,.6,(0,0,11),33.9))
+        base.Shape=base.Shape.fuse(tab).removeSplitter()
+    for key in ['MainFrame','SilverRim']:m.cut(key,Part.makeCylinder(1.15,3.7,V(18,-41.9,5),V(0,1,0)),'Microphone duct clearance')
+    # Move one mainboard post clear of the rear-camera flex and update both bores.
+    for key in ['BoardPost4','BoardScrew4']:_move(m,key,(12.5,0,0))
+    boardholes=[o for o in m.doc.Objects if o.Label.startswith('Mainboard mounting hole · tool')]
+    shieldholes=[o for o in m.doc.Objects if o.Label.startswith('Support-sheet post clearance · tool')]
+    boardholes[4].Shape=Part.makeCylinder(.78,1.3,V(6.5,28.8,8.1));shieldholes[4].Shape=Part.makeCylinder(1.8,.8,V(6.5,28.8,1.5))
+    # Rear screws sit completely on the curved cover; lower ones share PCB pillars.
+    old=[(-85,23),(85,23),(-85,-24),(85,-24)];new=[(-82,23),(82,23),(-82,-21),(82,-21)]
+    holes=[o for o in m.doc.Objects if o.Label.startswith('Rear service screw seat · tool')]
+    for i,((a,b),(x,y)) in enumerate(zip(old,new)):
+        _move(m,'RearScrew'+str(i),(x-a,y-b,0));holes[i].Shape=Part.makeCompound([Part.makeCylinder(.73,2,V(x,y,-.1)),Part.makeCylinder(1.32,.45,V(x,y,-.03))])
+        if i<2:m.ring('RearBoss'+str(i),'Upper rear-cover screw boss',1.55,.75,3.5,(x,y,1.3),'Internal',-5,'black',internal=True)
+    _move(m,'OLEDCarrier',(0,0,.2))
+    m.cut('OLEDCarrier',m.rr(23,6,8,(11.5,34.5,11),.8,App.Rotation(V(0,0,1),V(0,1,0))),'OLED carrier accessory-port notch')
+    for side in ['Left','Right']:m.cut('ControlConnector'+side,m.parts['ControlFlex'+side].Shape,'Control FPC insertion slot')
+    m.doc.recompute()
+    m.checkpoint(12,'measured_assembly_refinement','依据实体求交修正肩键、顶部螺钉、后触控排线、存储卡小板、传感器、麦克风导管、安装柱与 OLED 支架，并对齐后盖紧固件。')
+
+STAGES[12]=stage12
+
+
+def stage13(m):
+    # Tilt the closed strap eyes along the curved lower corners. The previous
+    # horizontal trim reached the outer silhouette and left an open U shape.
+    seats=[o for o in m.doc.Objects if o.Label.startswith('Strap-eye seat and through opening · tool')]
+    rearholes=[o for o in m.doc.Objects if o.Label.startswith('Strap-eye rear through-opening · tool')]
+    for j,side in enumerate([-1,1]):
+        x,y=side*70,-34
+        outer=_ellipse(21,6.4,16.9,1.7,x,y);inner=_ellipse(17.2,3.5,-.1,20,x,y)
+        outer.rotate(V(x,y,0),V(0,0,1),side*28);inner.rotate(V(x,y,0),V(0,0,1),side*28)
+        eye=outer.cut(inner);_replace(m,'StrapEye'+str(side),eye)
+        for tool in seats[j*3:j*3+3]:tool.Shape=Part.makeCompound([eye,inner])
+        rearholes[j].Shape=inner.copy()
+        m.cut('ControlPCB'+str(side),inner,'Controller-board strap-eye notch')
+    m.doc.recompute();m.profile['stages']=13
+    m.checkpoint(13,'closed_corner_strap_eyes','将腕带孔改为沿机身曲线倾斜的闭合椭圆环，同步调整机壳与按键板让位，消除角部开口越出轮廓的问题。')
+
+STAGES[13]=stage13
+
+
+def stage14(m):
+    # Move the eyes slightly inward/downward and raise the larger PS key so all
+    # three outlines remain closed and separate within the curved corners.
+    seats=[o for o in m.doc.Objects if o.Label.startswith('Strap-eye seat and through opening · tool')]
+    rearholes=[o for o in m.doc.Objects if o.Label.startswith('Strap-eye rear through-opening · tool')]
+    pcbholes=[o for o in m.doc.Objects if o.Label.startswith('Controller-board strap-eye notch · tool')]
+    for j,side in enumerate([-1,1]):
+        x,y=side*68.7,-35.15
+        outer=_ellipse(21,6.4,16.9,1.7,x,y);inner=_ellipse(17.2,3.5,-.1,20,x,y)
+        outer.rotate(V(x,y,0),V(0,0,1),side*28);inner.rotate(V(x,y,0),V(0,0,1),side*28)
+        eye=outer.cut(inner);_replace(m,'StrapEye'+str(side),eye)
+        for tool in seats[j*3:j*3+3]:tool.Shape=Part.makeCompound([eye,inner])
+        rearholes[j].Shape=inner.copy();pcbholes[j].Shape=inner.copy()
+    for key in ['PSKey','PSKeyMark','SystemSwitch0','SystemStem0']:_move(m,key,(0,.8,0))
+    next(o for o in m.doc.Objects if o.Label.startswith('Oval system-key opening · tool')).Shape=_ellipse(12.3,6.1,17.15,1.7,-73,-26.5)
+    next(o for o in m.doc.Objects if o.Label.startswith('System-key transmission bore · tool')).Shape=m.parts['SystemStem0'].Shape.copy()
+    m.doc.recompute();m.profile['stages']=14
+    m.checkpoint(14,'strap_and_system_key_clearance','调整闭合腕带环与 PS/START 键的边界，保留角部轮廓并同步移动 PS 键传动和安装孔，完成相邻外观件的间隙修正。')
+
+STAGES[14]=stage14

@@ -198,4 +198,10 @@ $('fullscreen').addEventListener('click',async () => {
 });
 if (!$('stage').requestFullscreen) $('fullscreen').hidden = true;
 loadDevice();
-if (location.hash==='#viewer') requestAnimationFrame(() => $('viewer').scrollIntoView({block:'start'}));
+if (location.hash==='#viewer') {
+  const jumpToSharedView=() => requestAnimationFrame(() => {
+    if (location.hash==='#viewer') $('viewer').scrollIntoView({block:'start'});
+  });
+  if (document.readyState==='complete') jumpToSharedView();
+  else window.addEventListener('load',jumpToSharedView,{once:true});
+}
