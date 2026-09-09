@@ -1,8 +1,8 @@
 {
-  "iteration": 3,
-  "slug": "distinct_round_button_wired_controllers",
-  "summary": "建立两只独立的圆形按键手柄、金色面板、分壳与螺钉；一号配置 START/SELECT，二号配置麦克风格栅和音量滑块，并竖放在两侧收纳槽中。",
-  "physical_components": 66,
+  "iteration": 4,
+  "slug": "rf_dc_expansion_and_attached_cables",
+  "summary": "加入后部电源口、RF 同轴口、TV/GAME 与频道滑块、前部 15 接点扩展口和两条固定手柄线；接口按原始后面板布局布置。",
+  "physical_components": 100,
   "objects": [
     {
       "name": "BottomCoverBody",
@@ -32,21 +32,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LowerShellCut002",
-      "label": "Burgundy lower enclosure skirt003",
+      "name": "LowerShellCut009",
+      "label": "Burgundy lower enclosure skirt010",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 25,
-      "volume": 9408.72102021002,
+      "faces": 55,
+      "volume": 8900.139870704428,
       "bounds": [
         -75.0,
         75.0,
         -110.0,
         110.0,
         4.7,
-        15.3
+        15.300000000000065
       ],
       "state": [
         "Up-to-date"
@@ -59,14 +59,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "UpperShellCut008",
-      "label": "Sloping cream upper enclosure009",
+      "name": "UpperShellCut015",
+      "label": "Sloping cream upper enclosure016",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 213,
-      "volume": 87090.33106395176,
+      "faces": 243,
+      "volume": 86100.11739393386,
       "bounds": [
         -75.0,
         75.00000000000001,
@@ -1785,12 +1785,930 @@
       "material": "black",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
+    },
+    {
+      "name": "DCJackBody",
+      "label": "Original AC-adapter DC receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1147.9491475832654,
+      "bounds": [
+        28.7,
+        39.3,
+        98.0,
+        109.7,
+        11.199999999999998,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJackBody",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCJackCenter",
+      "label": "DC center contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.602875205865555,
+      "bounds": [
+        33.25,
+        34.75,
+        102.8,
+        108.8,
+        16.25,
+        17.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJackCenter",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackSleeve",
+      "label": "RF coaxial outer contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 217.59927355824328,
+      "bounds": [
+        -33.1,
+        -24.9,
+        98.0,
+        109.7,
+        12.700000000000001,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackSleeve",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackInsulator",
+      "label": "RF jack dielectric",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 167.9495432609104,
+      "bounds": [
+        -32.15,
+        -25.85,
+        101.6,
+        109.6,
+        13.65,
+        19.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackInsulator",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackContact",
+      "label": "RF center socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 33.26161221988194,
+      "bounds": [
+        -30.65,
+        -27.35,
+        101.8,
+        108.8,
+        15.15,
+        18.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackContact",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TVGameSwitch",
+      "label": "Original TVGame slide switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 452.28562805928925,
+      "bounds": [
+        2.0999999999999996,
+        13.9,
+        96.0,
+        104.0,
+        13.6,
+        18.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TVGameSwitch",
+      "assembly": "PowerRF",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TVGameSlider",
+      "label": "Rear TVGame selector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 44.957327351998494,
+      "bounds": [
+        8.05,
+        11.55,
+        106.3,
+        109.7,
+        14.099999999999998,
+        17.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TVGameSlider",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSwitch",
+      "label": "Original Channel slide switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 452.2856280592892,
+      "bounds": [
+        -19.9,
+        -8.1,
+        96.0,
+        104.0,
+        13.6,
+        18.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSwitch",
+      "assembly": "PowerRF",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSlider",
+      "label": "Rear Channel selector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 44.957327351998494,
+      "bounds": [
+        -13.95,
+        -10.45,
+        106.3,
+        109.7,
+        14.099999999999998,
+        17.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSlider",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPortPlate",
+      "label": "Black rear interface label strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 29.887364600329754,
+      "bounds": [
+        -47.0,
+        47.0,
+        110.05,
+        110.11,
+        24.049999999999997,
+        29.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPortPlate",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearDCMark",
+      "label": "AC ADAPTER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 142,
+      "volume": 0.13782470288465518,
+      "bounds": [
+        29.35506701409396,
+        43.98187919463088,
+        110.1399999,
+        110.1580001,
+        25.366174396644293,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearDCMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModeMark",
+      "label": "TV / GAME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 91,
+      "volume": 0.10298327836865594,
+      "bounds": [
+        4.037474832214766,
+        16.006795302013423,
+        110.1399999,
+        110.1580001,
+        25.18738255033557,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModeMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCHMark",
+      "label": "CH1 / CH2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 110,
+      "volume": 0.09084975327624714,
+      "bounds": [
+        -17.70528533489933,
+        -6.130243188590604,
+        110.1399999,
+        110.1580001,
+        25.18738255033557,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCHMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRFMark",
+      "label": "RF SWITCH",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 132,
+      "volume": 0.11714614840681602,
+      "bounds": [
+        -37.5580956375839,
+        -25.227642517449663,
+        110.1399999,
+        110.1580001,
+        25.366174396644293,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRFMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionHousing",
+      "label": "Fifteen-pin expansion receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1609.595000000001,
+      "bounds": [
+        -17.0,
+        17.0,
+        -109.8,
+        -99.3,
+        12.0,
+        21.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionHousing",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin0",
+      "label": "Expansion male contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -12.63,
+        -11.87,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin0",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin1",
+      "label": "Expansion male contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -9.13,
+        -8.37,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin1",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin2",
+      "label": "Expansion male contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -5.63,
+        -4.87,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin2",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin3",
+      "label": "Expansion male contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -2.13,
+        -1.37,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin3",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin4",
+      "label": "Expansion male contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.35698024591991,
+      "bounds": [
+        1.37,
+        2.13,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin4",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin5",
+      "label": "Expansion male contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        4.87,
+        5.63,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin5",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin6",
+      "label": "Expansion male contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        8.37,
+        9.13,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin6",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin7",
+      "label": "Expansion male contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        11.87,
+        12.63,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin7",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin8",
+      "label": "Expansion male contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -10.88,
+        -10.12,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin8",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin9",
+      "label": "Expansion male contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -7.38,
+        -6.62,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin9",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin10",
+      "label": "Expansion male contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.356980245919911,
+      "bounds": [
+        -3.88,
+        -3.12,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin10",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin11",
+      "label": "Expansion male contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -0.38,
+        0.38,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin11",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin12",
+      "label": "Expansion male contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.356980245919911,
+      "bounds": [
+        3.12,
+        3.88,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin12",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin13",
+      "label": "Expansion male contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        6.62,
+        7.38,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin13",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin14",
+      "label": "Expansion male contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        10.12,
+        10.88,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin14",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CableBulkhead1",
+      "label": "Rear controller cable grommet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 388.80350680827274,
+      "bounds": [
+        -67.8,
+        -58.2,
+        105.7,
+        112.5,
+        15.2,
+        24.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CableBulkhead1",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerCable1",
+      "label": "Attached controller cable loop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 545.936092329527,
+      "bounds": [
+        -71.65074196311684,
+        -61.524334845888205,
+        89.46295835820641,
+        127.65096119236723,
+        17.286966408270747,
+        44.65022036194001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerCable1",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CableBulkhead2",
+      "label": "Rear controller cable grommet001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 388.80350680827274,
+      "bounds": [
+        58.2,
+        67.8,
+        105.7,
+        112.5,
+        15.2,
+        24.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CableBulkhead2",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerCable2",
+      "label": "Attached controller cable loop001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 545.9370544295671,
+      "bounds": [
+        61.52433484588828,
+        71.65074196311672,
+        89.46295835820636,
+        127.65096119236617,
+        17.286966408270754,
+        44.65022036130177
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerCable2",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/famicom/output/iterations/03_distinct_round_button_wired_controllers.FCStd",
+  "file": "devices/famicom/output/iterations/04_rf_dc_expansion_and_attached_cables.FCStd",
   "views": [
-    "devices/famicom/output/previews/03_distinct_round_button_wired_controllers_hero.png"
+    "devices/famicom/output/previews/04_rf_dc_expansion_and_attached_cables_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 180

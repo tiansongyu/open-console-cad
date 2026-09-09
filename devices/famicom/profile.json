@@ -14,7 +14,7 @@
     0.77,
     0.66
   ],
-  "stages": 3,
+  "stages": 16,
   "envelope_basis": "Nintendo original-manual body dimensions: width150 x depth220 x height60 mm. Controller cables and separately displayed accessories excluded. Local shape and wall dimensions approximate.",
   "sources": [
     {
@@ -25,5 +25,69 @@
       "url": "https://www.ifixit.com/Teardown/Nintendo+Family+Computer+(Famicom)+Teardown/3199",
       "role": "Firsthand round-button HVC-001 teardown; HVC-CPU-GPM-02 reference board revision"
     }
+  ],
+  "envelope_groups": [
+    "Body",
+    "CardReader",
+    "Controls",
+    "Controller1",
+    "Controller2",
+    "Ports",
+    "PowerRF",
+    "Mainboard",
+    "Mechanism"
+  ],
+  "main_step_suffix": "Console",
+  "controls_groups": [
+    "Controls",
+    "Mechanism",
+    "Controller1",
+    "Controller2"
+  ],
+  "explode_axes": {
+    "Controller1": [
+      -1,
+      0,
+      0
+    ],
+    "Controller2": [
+      1,
+      0,
+      0
+    ]
+  },
+  "explode_group_offsets": {
+    "Controller1": [
+      -360,
+      0,
+      0
+    ],
+    "Controller2": [
+      360,
+      0,
+      0
+    ]
+  },
+  "internal_exclude": [
+    "UpperShell",
+    "CartridgeDustFlap",
+    "DustFlapRearRidge",
+    "FrontNameplate",
+    "FamilyComputerWord",
+    "NintendoWord",
+    "POWERMark",
+    "RESETMark",
+    "EjectMark",
+    "RearPortPlate",
+    "RearDCMark",
+    "RearModeMark",
+    "RearCHMark",
+    "RearRFMark",
+    "RFShield"
+  ],
+  "internal_normal": [
+    0.4,
+    -0.3,
+    2.4
   ]
 }

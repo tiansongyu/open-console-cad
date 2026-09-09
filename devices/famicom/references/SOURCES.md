@@ -4,3 +4,5 @@
 - [iFixit firsthand teardown, guide 3199](https://www.ifixit.com/Teardown/Nintendo+Family+Computer+(Famicom)+Teardown/3199): red/cream HVC-001, round-button controllers, six bottom screws, eject linkage, motherboard and power/RF sections. The photographed HVC-CPU-GPM-02 board is a reference revision, not a claim to reproduce the earliest 1983 electronics.
 
 The model uses the familiar round-button original housing rather than the initial square-button controller revision, AV Famicom, NES or Mini. The published body envelope sets the CAD axes (X across the front; Y front to rear; Z vertical). Wall thickness, sloping faces, fasteners, connectors and electronic packages are approximate study dimensions. Research photographs remain local and are not redistributed. DejaVu Sans retains the root font license.
+
+Additional official photographs reviewed: controller II has a raised 23-hole microphone field and a volume slider above the D-pad; the HVC-002 adapter, cream HVC-003 RF switch with antenna screw clamps, and twin-lead HVC-004 converter set the accessory exterior references. Accessory dimensions, winding volumes and electronic packages are explicitly approximate.

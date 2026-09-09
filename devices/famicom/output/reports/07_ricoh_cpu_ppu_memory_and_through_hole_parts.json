@@ -1,0 +1,8358 @@
+{
+  "iteration": 7,
+  "slug": "ricoh_cpu_ppu_memory_and_through_hole_parts",
+  "summary": "补齐 Ricoh CPU/PPU、两块静态 RAM、总线缓冲器、译码器、锁存器、晶振与穿孔无源件，保留独立引脚和板底焊盘；布局参考指定主板修订版。",
+  "physical_components": 309,
+  "objects": [
+    {
+      "name": "BottomCoverBody",
+      "label": "Burgundy bottom cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 72552.78759594743,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        2.4,
+        4.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut009",
+      "label": "Burgundy lower enclosure skirt010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 55,
+      "volume": 8900.139870704428,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        4.7,
+        15.300000000000065
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut015",
+      "label": "Sloping cream upper enclosure016",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 243,
+      "volume": 86100.11739393386,
+      "bounds": [
+        -75.0,
+        75.00000000000001,
+        -110.0,
+        110.0,
+        15.4,
+        53.00000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Bottom support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Bottom support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Bottom support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Bottom support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDustFlapBody",
+      "label": "Burgundy cartridge dust flap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5371.5545482457455,
+      "bounds": [
+        -58.3,
+        58.3,
+        20.6,
+        49.4,
+        46.2,
+        47.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDustFlap",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlapRearRidge",
+      "label": "Cartridge-flap hinge ridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 161.70265482457458,
+      "bounds": [
+        -57.8,
+        57.8,
+        47.4,
+        48.800000000000004,
+        47.9,
+        48.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlapRearRidge",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectWellFloorCut",
+      "label": "Eject well floor001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2956.228672105405,
+      "bounds": [
+        -20.2,
+        20.2,
+        -74.7,
+        -11.3,
+        49.0,
+        50.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectWellFloor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectLever",
+      "label": "Raised burgundy eject handle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 2965.550000000001,
+      "bounds": [
+        -18.5,
+        18.5,
+        -74.0,
+        -60.0,
+        51.4,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectLever",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCapBody",
+      "label": "Power burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        -45.8,
+        -30.2,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetCapBody",
+      "label": "Reset burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        30.2,
+        45.8,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerFingerRidge",
+      "label": "Power slide raised grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 100.28495559215385,
+      "bounds": [
+        -45.0,
+        -31.0,
+        -78.5,
+        -75.5,
+        54.85,
+        57.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerFingerRidge",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontNameplate",
+      "label": "Famicom burgundy nameplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 207.98626548245784,
+      "bounds": [
+        -65.0,
+        65.0,
+        -104.03314331970495,
+        -92.22503173226441,
+        35.630425205339066,
+        46.57432977671376
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontNameplate",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FamilyComputerWord",
+      "label": "FAMILY COMPUTER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 201,
+      "volume": 1.4652167133823715,
+      "bounds": [
+        -44.392953020134236,
+        12.312483321476494,
+        -99.57583094369933,
+        -96.13137428930885,
+        39.8695226651125,
+        43.06071862189622
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FamilyComputerWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.12127551380709951,
+      "bounds": [
+        42.25293624161075,
+        53.572734999328866,
+        -101.29824794601205,
+        -99.82046688072155,
+        38.27469210741554,
+        39.64489214836596
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "POWERMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.11154541322744628,
+      "bounds": [
+        -54.74706385838926,
+        -45.5251676852349,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "POWERMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RESETMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.09268518010168608,
+      "bounds": [
+        48.25293614161074,
+        56.266359060402685,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RESETMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.08070866825396496,
+      "bounds": [
+        -4.747063758389261,
+        2.3965604026845635,
+        -79.51543634161074,
+        -77.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSeat_1",
+      "label": "Lower controller support shelf",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2279.4766721054034,
+      "bounds": [
+        -73.10000000000001,
+        -58.7,
+        -44.5,
+        87.5,
+        5.3,
+        6.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSeat-1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSeat1",
+      "label": "Lower controller support shelf001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2279.4766721054034,
+      "bounds": [
+        58.7,
+        73.10000000000001,
+        -44.5,
+        87.5,
+        5.3,
+        6.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSeat1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BackCut003",
+      "label": "Controller 1 rear cover004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7813.61362227158,
+      "bounds": [
+        -60.0,
+        -58.8,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Back",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1FrameCut",
+      "label": "Controller middle shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6274.733057183243,
+      "bounds": [
+        -70.3,
+        -60.099999999999994,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Frame",
+      "assembly": "Controller1",
+      "layer": 0,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1FrontCut004",
+      "label": "Controller front cover005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 48,
+      "volume": 7668.133083784479,
+      "bounds": [
+        -71.7,
+        -70.39999999999999,
+        -41.4,
+        84.4,
+        7.1,
+        58.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Front",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1GoldPlateCut003",
+      "label": "Gold control faceplate004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 362.0555928509103,
+      "bounds": [
+        -71.9,
+        -71.78,
+        -37.5,
+        80.5,
+        11.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1GoldPlate",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1DPad",
+      "label": "Controller cross directional pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 234.33194677087445,
+      "bounds": [
+        -73.2,
+        -72.2,
+        55.5,
+        75.5,
+        17.0,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1DPad",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BRim",
+      "label": "Burgundy action-button rim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.21256516484015,
+      "bounds": [
+        -72.57000000000001,
+        -71.91999999999999,
+        -13.600000000000009,
+        -1.4000000000000004,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1BRim",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1B",
+      "label": "Round B button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.637843302345125,
+      "bounds": [
+        -73.39999999999999,
+        -72.05,
+        -12.8,
+        -2.2,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1B",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BMark",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.044337414795558035,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        -8.640520234228187,
+        -6.841463826174496,
+        33.5999999,
+        36.136912851677856
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1BMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1ARim",
+      "label": "Burgundy action-button rim001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840157,
+      "bounds": [
+        -72.57000000000001,
+        -71.91999999999999,
+        -31.6,
+        -19.4,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1ARim",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1A",
+      "label": "Round A button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.63784330234515,
+      "bounds": [
+        -73.39999999999999,
+        -72.05,
+        -30.8,
+        -20.2,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1A",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1AMark",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.03520088772641195,
+      "bounds": [
+        -71.938,
+        -71.92,
+        -26.851174496644294,
+        -24.52718120805369,
+        33.6,
+        36.136912751677855
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1AMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Number",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.05441300842304479,
+      "bounds": [
+        -71.938,
+        -71.92,
+        73.6963087248322,
+        75.93372483221476,
+        46.5,
+        50.258389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Number",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Select",
+      "label": "Select rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.591007675795026,
+      "bounds": [
+        -73.19999999999999,
+        -72.1,
+        30.4,
+        40.6,
+        22.8,
+        27.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Select",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1SelectMark",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.0994417477323669,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        30.794714765100668,
+        40.33011754966443,
+        33.76241600738255,
+        35.71140949597315
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1SelectMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Start",
+      "label": "Start rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.591007675795026,
+      "bounds": [
+        -73.19999999999999,
+        -72.1,
+        9.4,
+        19.6,
+        22.8,
+        27.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Start",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1StartMark",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.08706970289908231,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        11.53968120805369,
+        19.33011754966443,
+        33.76241600738255,
+        35.71140949597315
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1StartMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        -61.83,
+        -59.0,
+        72.15,
+        74.85,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw0",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.7877413896875805,
+      "bounds": [
+        -61.83,
+        -59.0,
+        -31.85,
+        -29.15,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw1",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.787741389687579,
+      "bounds": [
+        -61.83,
+        -59.0,
+        72.15,
+        74.85,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw2",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        -61.83,
+        -59.0,
+        -31.85,
+        -29.15,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw3",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1CableGrommet",
+      "label": "Wired-controller strain relief",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.02654221687297,
+      "bounds": [
+        -67.5,
+        -63.099999999999994,
+        84.5,
+        89.5,
+        40.8,
+        45.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1CableGrommet",
+      "assembly": "Controller1",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BackCut003",
+      "label": "Controller 2 rear cover004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7813.61362227158,
+      "bounds": [
+        58.8,
+        60.0,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Back",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2FrameCut",
+      "label": "Controller middle shell003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6274.733057183243,
+      "bounds": [
+        60.099999999999994,
+        70.3,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Frame",
+      "assembly": "Controller2",
+      "layer": 0,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2FrontCut004",
+      "label": "Controller front cover011",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 63,
+      "volume": 7641.113335060831,
+      "bounds": [
+        70.39999999999999,
+        71.7,
+        -41.4,
+        84.4,
+        7.1,
+        58.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Front",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2GoldPlateCut003",
+      "label": "Gold control faceplate009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 399.9762852469258,
+      "bounds": [
+        71.78,
+        71.9,
+        -37.5,
+        80.5,
+        11.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2GoldPlate",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2DPad",
+      "label": "Controller cross directional pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 234.33194677087454,
+      "bounds": [
+        72.2,
+        73.2,
+        -32.5,
+        -12.5,
+        17.0,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2DPad",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BRim",
+      "label": "Burgundy action-button rim002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840143,
+      "bounds": [
+        71.91999999999999,
+        72.57000000000001,
+        44.4,
+        56.60000000000001,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2BRim",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2B",
+      "label": "Round B button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.637843302345125,
+      "bounds": [
+        72.05,
+        73.39999999999999,
+        45.2,
+        55.8,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2B",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BMark",
+      "label": "B001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.04433741479555804,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        49.8414638261745,
+        51.64052023422819,
+        33.5999999,
+        36.136912851677856
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2BMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2ARim",
+      "label": "Burgundy action-button rim003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840157,
+      "bounds": [
+        71.91999999999999,
+        72.57000000000001,
+        62.4,
+        74.6,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2ARim",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2A",
+      "label": "Round A button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.63784330234511,
+      "bounds": [
+        72.05,
+        73.39999999999999,
+        63.2,
+        73.8,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2A",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2AMark",
+      "label": "A001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.03520088772641195,
+      "bounds": [
+        71.92,
+        71.938,
+        67.52718120805369,
+        69.85117449664429,
+        33.6,
+        36.136912751677855
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2AMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Number",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.06448782208571764,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        -33.122483321476516,
+        -30.736577081208054,
+        46.4999999,
+        50.32281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Number",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2MicFieldCut",
+      "label": "Raised microphone grille001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 33,
+      "volume": 163.66090007756424,
+      "bounds": [
+        71.78,
+        72.23,
+        9.0,
+        34.0,
+        37.0,
+        54.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2MicField",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2MicMesh",
+      "label": "Player-II microphone backing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 74.19819467105881,
+      "bounds": [
+        69.89999999999999,
+        70.1,
+        9.75,
+        33.25,
+        37.6,
+        53.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2MicMesh",
+      "assembly": "Controller2",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeTrack",
+      "label": "Microphone volume track",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 13.465663706143593,
+      "bounds": [
+        70.0,
+        70.25,
+        -22.5,
+        -4.5,
+        49.5,
+        52.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeTrack",
+      "assembly": "Controller2",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeSliderCut005",
+      "label": "Player-II microphone volume knob006",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 64,
+      "volume": 27.742705639667193,
+      "bounds": [
+        72.0,
+        73.4,
+        -20.0,
+        -13.0,
+        49.55,
+        52.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeSlider",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2MicMark",
+      "label": "MIC.",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 47,
+      "volume": 0.054404030892471776,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        17.952936241610736,
+        23.025,
+        33.56241600738255,
+        35.511409495973155
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2MicMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeMark",
+      "label": "VOLUME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 80,
+      "volume": 0.0955355315436254,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        -4.4818791946308725,
+        5.0609144295302,
+        41.76617439664429,
+        43.52026855637584
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw0",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.7877413896875805,
+      "bounds": [
+        59.0,
+        61.83,
+        -31.85,
+        -29.15,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw0",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw1",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        59.0,
+        61.83,
+        72.15,
+        74.85,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw1",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw2",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        59.0,
+        61.83,
+        -31.85,
+        -29.15,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw2",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw3",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.787741389687579,
+      "bounds": [
+        59.0,
+        61.83,
+        72.15,
+        74.85,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw3",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2CableGrommet",
+      "label": "Wired-controller strain relief001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.026542216873,
+      "bounds": [
+        63.099999999999994,
+        67.5,
+        84.5,
+        89.5,
+        40.8,
+        45.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2CableGrommet",
+      "assembly": "Controller2",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCJackBody",
+      "label": "Original AC-adapter DC receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1147.9491475832654,
+      "bounds": [
+        28.7,
+        39.3,
+        98.0,
+        109.7,
+        11.199999999999998,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJackBody",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCJackCenter",
+      "label": "DC center contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 10.602875205865555,
+      "bounds": [
+        33.25,
+        34.75,
+        102.8,
+        108.8,
+        16.25,
+        17.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJackCenter",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackSleeve",
+      "label": "RF coaxial outer contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 217.59927355824328,
+      "bounds": [
+        -33.1,
+        -24.9,
+        98.0,
+        109.7,
+        12.700000000000001,
+        20.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackSleeve",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackInsulator",
+      "label": "RF jack dielectric",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 167.9495432609104,
+      "bounds": [
+        -32.15,
+        -25.85,
+        101.6,
+        109.6,
+        13.65,
+        19.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackInsulator",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFJackContact",
+      "label": "RF center socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 33.26161221988194,
+      "bounds": [
+        -30.65,
+        -27.35,
+        101.8,
+        108.8,
+        15.15,
+        18.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFJackContact",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TVGameSwitch",
+      "label": "Original TVGame slide switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 452.28562805928925,
+      "bounds": [
+        2.0999999999999996,
+        13.9,
+        96.0,
+        104.0,
+        13.6,
+        18.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TVGameSwitch",
+      "assembly": "PowerRF",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TVGameSlider",
+      "label": "Rear TVGame selector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 44.957327351998494,
+      "bounds": [
+        8.05,
+        11.55,
+        106.3,
+        109.7,
+        14.099999999999998,
+        17.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TVGameSlider",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSwitch",
+      "label": "Original Channel slide switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 452.2856280592892,
+      "bounds": [
+        -19.9,
+        -8.1,
+        96.0,
+        104.0,
+        13.6,
+        18.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSwitch",
+      "assembly": "PowerRF",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSlider",
+      "label": "Rear Channel selector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 44.957327351998494,
+      "bounds": [
+        -13.95,
+        -10.45,
+        106.3,
+        109.7,
+        14.099999999999998,
+        17.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSlider",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPortPlate",
+      "label": "Black rear interface label strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 29.887364600329754,
+      "bounds": [
+        -47.0,
+        47.0,
+        110.05,
+        110.11,
+        24.049999999999997,
+        29.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPortPlate",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearDCMark",
+      "label": "AC ADAPTER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 142,
+      "volume": 0.13782470288465518,
+      "bounds": [
+        29.35506701409396,
+        43.98187919463088,
+        110.1399999,
+        110.1580001,
+        25.366174396644293,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearDCMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModeMark",
+      "label": "TV / GAME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 91,
+      "volume": 0.10298327836865594,
+      "bounds": [
+        4.037474832214766,
+        16.006795302013423,
+        110.1399999,
+        110.1580001,
+        25.18738255033557,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModeMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCHMark",
+      "label": "CH1 / CH2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 110,
+      "volume": 0.09084975327624714,
+      "bounds": [
+        -17.70528533489933,
+        -6.130243188590604,
+        110.1399999,
+        110.1580001,
+        25.18738255033557,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCHMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRFMark",
+      "label": "RF SWITCH",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 132,
+      "volume": 0.11714614840681602,
+      "bounds": [
+        -37.5580956375839,
+        -25.227642517449663,
+        110.1399999,
+        110.1580001,
+        25.366174396644293,
+        27.120268556375837
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRFMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionHousing",
+      "label": "Fifteen-pin expansion receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 1609.595000000001,
+      "bounds": [
+        -17.0,
+        17.0,
+        -109.8,
+        -99.3,
+        12.0,
+        21.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionHousing",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin0",
+      "label": "Expansion male contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -12.63,
+        -11.87,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin0",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin1",
+      "label": "Expansion male contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -9.13,
+        -8.37,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin1",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin2",
+      "label": "Expansion male contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -5.63,
+        -4.87,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin2",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin3",
+      "label": "Expansion male contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        -2.13,
+        -1.37,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin3",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin4",
+      "label": "Expansion male contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.35698024591991,
+      "bounds": [
+        1.37,
+        2.13,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin4",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin5",
+      "label": "Expansion male contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        4.87,
+        5.63,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin5",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin6",
+      "label": "Expansion male contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        8.37,
+        9.13,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin6",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin7",
+      "label": "Expansion male contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199094,
+      "bounds": [
+        11.87,
+        12.63,
+        -109.2,
+        -101.8,
+        18.02,
+        18.779999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin7",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin8",
+      "label": "Expansion male contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -10.88,
+        -10.12,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin8",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin9",
+      "label": "Expansion male contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -7.38,
+        -6.62,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin9",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin10",
+      "label": "Expansion male contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.356980245919911,
+      "bounds": [
+        -3.88,
+        -3.12,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin10",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin11",
+      "label": "Expansion male contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        -0.38,
+        0.38,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin11",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin12",
+      "label": "Expansion male contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.356980245919911,
+      "bounds": [
+        3.12,
+        3.88,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin12",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin13",
+      "label": "Expansion male contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        6.62,
+        7.38,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin13",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionPin14",
+      "label": "Expansion male contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.3569802459199107,
+      "bounds": [
+        10.12,
+        10.88,
+        -109.2,
+        -101.8,
+        14.219999999999999,
+        14.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionPin14",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CableBulkhead1",
+      "label": "Rear controller cable grommet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 388.80350680827274,
+      "bounds": [
+        -67.8,
+        -58.2,
+        105.7,
+        112.5,
+        15.2,
+        24.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CableBulkhead1",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerCable1",
+      "label": "Attached controller cable loop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 545.936092329527,
+      "bounds": [
+        -71.65074196311684,
+        -61.524334845888205,
+        89.46295835820641,
+        127.65096119236723,
+        17.286966408270747,
+        44.65022036194001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerCable1",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CableBulkhead2",
+      "label": "Rear controller cable grommet001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 388.80350680827274,
+      "bounds": [
+        58.2,
+        67.8,
+        105.7,
+        112.5,
+        15.2,
+        24.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CableBulkhead2",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerCable2",
+      "label": "Attached controller cable loop001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 545.9370544295671,
+      "bounds": [
+        61.52433484588828,
+        71.65074196311672,
+        89.46295835820636,
+        127.65096119236617,
+        17.286966408270754,
+        44.65022036130177
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerCable2",
+      "assembly": "Cables",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardCut036",
+      "label": "HVC-CPU-GPM-02 layout reference PCB037",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 326,
+      "volume": 22591.221269331123,
+      "bounds": [
+        -52.0,
+        52.0,
+        -89.5,
+        47.5,
+        14.0,
+        15.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Mainboard",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRFBoard",
+      "label": "Separate rear power/RF circuit board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8753.53812337735,
+      "bounds": [
+        -48.0,
+        48.0,
+        48.5,
+        105.5,
+        9.5,
+        11.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRFBoard",
+      "assembly": "PowerRF",
+      "layer": -3,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardRevision",
+      "label": "HVC-CPU-GPM-02",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 213,
+      "volume": 0.21801035551608317,
+      "bounds": [
+        -48.74706375838926,
+        -26.59278513489933,
+        -84.03758399261744,
+        -82.08859050402685,
+        15.6199999,
+        15.6380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardRevision",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardSocketCarrier",
+      "label": "Blue cartridge connector mounting frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 1089.6353960532927,
+      "bounds": [
+        -52.0,
+        52.0,
+        27.5,
+        42.5,
+        16.2,
+        18.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardSocketCarrier",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "blue",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact0",
+      "label": "Cartridge spring contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -36.5,
+        -36.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact0",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact1",
+      "label": "Cartridge spring contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -34.0,
+        -33.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact1",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact2",
+      "label": "Cartridge spring contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -31.5,
+        -31.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact2",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact3",
+      "label": "Cartridge spring contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -29.0,
+        -28.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact3",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact4",
+      "label": "Cartridge spring contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -26.5,
+        -26.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact4",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact5",
+      "label": "Cartridge spring contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -24.0,
+        -23.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact5",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact6",
+      "label": "Cartridge spring contact study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -21.5,
+        -21.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact6",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact7",
+      "label": "Cartridge spring contact study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -19.0,
+        -18.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact7",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact8",
+      "label": "Cartridge spring contact study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -16.5,
+        -16.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact8",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact9",
+      "label": "Cartridge spring contact study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -14.0,
+        -13.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact9",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact10",
+      "label": "Cartridge spring contact study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898633,
+      "bounds": [
+        -11.5,
+        -11.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact10",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact11",
+      "label": "Cartridge spring contact study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -9.0,
+        -8.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact11",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact12",
+      "label": "Cartridge spring contact study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -6.5,
+        -6.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact12",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact13",
+      "label": "Cartridge spring contact study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -4.0,
+        -3.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact13",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact14",
+      "label": "Cartridge spring contact study014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        -1.5,
+        -1.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact14",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact15",
+      "label": "Cartridge spring contact study015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        1.0,
+        1.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact15",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact16",
+      "label": "Cartridge spring contact study016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        3.5,
+        4.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact16",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact17",
+      "label": "Cartridge spring contact study017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        6.0,
+        6.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact17",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact18",
+      "label": "Cartridge spring contact study018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        8.5,
+        9.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact18",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact19",
+      "label": "Cartridge spring contact study019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898633,
+      "bounds": [
+        11.0,
+        11.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact19",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact20",
+      "label": "Cartridge spring contact study020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        13.5,
+        14.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact20",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact21",
+      "label": "Cartridge spring contact study021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        16.0,
+        16.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact21",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact22",
+      "label": "Cartridge spring contact study022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        18.5,
+        19.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact22",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact23",
+      "label": "Cartridge spring contact study023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        21.0,
+        21.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact23",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact24",
+      "label": "Cartridge spring contact study024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        23.5,
+        24.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact24",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact25",
+      "label": "Cartridge spring contact study025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        26.0,
+        26.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact25",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact26",
+      "label": "Cartridge spring contact study026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        28.5,
+        29.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact26",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact27",
+      "label": "Cartridge spring contact study027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        31.0,
+        31.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact27",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact28",
+      "label": "Cartridge spring contact study028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        33.5,
+        34.0,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact28",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact29",
+      "label": "Cartridge spring contact study029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289863,
+      "bounds": [
+        36.0,
+        36.5,
+        30.61,
+        34.050000000000004,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact29",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact30",
+      "label": "Cartridge spring contact study030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        -36.5,
+        -36.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact30",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact31",
+      "label": "Cartridge spring contact study031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        -34.0,
+        -33.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact31",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact32",
+      "label": "Cartridge spring contact study032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        -31.5,
+        -31.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact32",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact33",
+      "label": "Cartridge spring contact study033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -29.0,
+        -28.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact33",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact34",
+      "label": "Cartridge spring contact study034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -26.5,
+        -26.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact34",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact35",
+      "label": "Cartridge spring contact study035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -24.0,
+        -23.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact35",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact36",
+      "label": "Cartridge spring contact study036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -21.5,
+        -21.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact36",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact37",
+      "label": "Cartridge spring contact study037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -19.0,
+        -18.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact37",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact38",
+      "label": "Cartridge spring contact study038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -16.5,
+        -16.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact38",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact39",
+      "label": "Cartridge spring contact study039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289853,
+      "bounds": [
+        -14.0,
+        -13.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact39",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact40",
+      "label": "Cartridge spring contact study040",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        -11.5,
+        -11.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact40",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact41",
+      "label": "Cartridge spring contact study041",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289853,
+      "bounds": [
+        -9.0,
+        -8.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact41",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact42",
+      "label": "Cartridge spring contact study042",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -6.5,
+        -6.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact42",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact43",
+      "label": "Cartridge spring contact study043",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -4.0,
+        -3.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact43",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact44",
+      "label": "Cartridge spring contact study044",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        -1.5,
+        -1.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact44",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact45",
+      "label": "Cartridge spring contact study045",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        1.0,
+        1.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact45",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact46",
+      "label": "Cartridge spring contact study046",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        3.5,
+        4.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact46",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact47",
+      "label": "Cartridge spring contact study047",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        6.0,
+        6.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact47",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact48",
+      "label": "Cartridge spring contact study048",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289853,
+      "bounds": [
+        8.5,
+        9.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact48",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact49",
+      "label": "Cartridge spring contact study049",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        11.0,
+        11.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact49",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact50",
+      "label": "Cartridge spring contact study050",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289853,
+      "bounds": [
+        13.5,
+        14.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact50",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact51",
+      "label": "Cartridge spring contact study051",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        16.0,
+        16.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact51",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact52",
+      "label": "Cartridge spring contact study052",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        18.5,
+        19.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact52",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact53",
+      "label": "Cartridge spring contact study053",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        21.0,
+        21.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact53",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact54",
+      "label": "Cartridge spring contact study054",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        23.5,
+        24.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact54",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact55",
+      "label": "Cartridge spring contact study055",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        26.0,
+        26.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact55",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact56",
+      "label": "Cartridge spring contact study056",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        28.5,
+        29.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact56",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact57",
+      "label": "Cartridge spring contact study057",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.2405208482898535,
+      "bounds": [
+        31.0,
+        31.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact57",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact58",
+      "label": "Cartridge spring contact study058",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        33.5,
+        34.0,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact58",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardContact59",
+      "label": "Cartridge spring contact study059",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 2.240520848289854,
+      "bounds": [
+        36.0,
+        36.5,
+        35.949999999999996,
+        39.39000000000001,
+        13.4,
+        25.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardContact59",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardSocket",
+      "label": "60-position cartridge socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 1099,
+      "volume": 8492.864058549772,
+      "bounds": [
+        -41.0,
+        41.0,
+        29.4,
+        40.6,
+        16.2,
+        28.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardSocket",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardMountScrew0",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 8.642744371656597,
+      "bounds": [
+        -50.5,
+        -46.5,
+        33.0,
+        37.0,
+        14.77,
+        18.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardMountScrew0",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardMountScrew1",
+      "label": "Cross-head fastener009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 8.642744371656597,
+      "bounds": [
+        46.5,
+        50.5,
+        33.0,
+        37.0,
+        14.77,
+        18.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardMountScrew1",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeader1",
+      "label": "Controller motherboard header",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 185.57422995618052,
+      "bounds": [
+        -49.0,
+        -37.0,
+        -72.5,
+        -67.5,
+        15.9,
+        19.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeader1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin1_0",
+      "label": "Controller board contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3419313274122878,
+      "bounds": [
+        -47.225,
+        -46.775,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin1_0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin1_1",
+      "label": "Controller board contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        -45.225,
+        -44.775,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin1_1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin1_2",
+      "label": "Controller board contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        -43.225,
+        -42.775,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin1_2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin1_3",
+      "label": "Controller board contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        -41.225,
+        -40.775,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin1_3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin1_4",
+      "label": "Controller board contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        -39.225,
+        -38.775,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin1_4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeader2",
+      "label": "Controller motherboard header001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 216.57422995618052,
+      "bounds": [
+        36.0,
+        50.0,
+        -72.5,
+        -67.5,
+        15.9,
+        19.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeader2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_0",
+      "label": "Controller board contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        37.775,
+        38.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_1",
+      "label": "Controller board contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        39.775,
+        40.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_2",
+      "label": "Controller board contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        41.775,
+        42.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_3",
+      "label": "Controller board contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3419313274122878,
+      "bounds": [
+        43.775,
+        44.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_4",
+      "label": "Controller board contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.34193132741228777,
+      "bounds": [
+        45.775,
+        46.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerHeaderPin2_5",
+      "label": "Controller board contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3419313274122878,
+      "bounds": [
+        47.775,
+        48.225,
+        -71.9,
+        -68.1,
+        19.2,
+        19.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerHeaderPin2_5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectGuide_1",
+      "label": "Fixed eject-frame guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 3724.106192982976,
+      "bounds": [
+        -52.5,
+        -46.5,
+        -48.0,
+        42.0,
+        29.3,
+        39.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectGuide-1",
+      "assembly": "Mechanism",
+      "layer": 1,
+      "material": "fccream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectGuide1",
+      "label": "Fixed eject-frame guide001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 3724.106192982975,
+      "bounds": [
+        46.5,
+        52.5,
+        -48.0,
+        42.0,
+        29.3,
+        39.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectGuide1",
+      "assembly": "Mechanism",
+      "layer": 1,
+      "material": "fccream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectCarrier",
+      "label": "Sliding crossbar frame with lifting ramps",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 5986.806180481591,
+      "bounds": [
+        -50.75,
+        50.75,
+        -41.5,
+        35.5,
+        33.0,
+        39.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectCarrier",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "fccream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectLinkage",
+      "label": "Metal pull rod and handle transmission blade",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 75.83666600449483,
+      "bounds": [
+        -0.8,
+        0.8,
+        -70.0000001,
+        -32.9999999,
+        38.799999899999996,
+        51.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectLinkage",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectReturnSpring",
+      "label": "Eject mechanism helical return spring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 23.59658408609635,
+      "bounds": [
+        -1.5300088316823948,
+        1.5300160626765602,
+        -87.17962289815834,
+        -71.82037710184167,
+        40.76998723747563,
+        43.830007689698704
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectReturnSpring",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpringEyeFront",
+      "label": "Spring attachment eye",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.9394618671294936,
+      "bounds": [
+        -0.2,
+        0.2,
+        -89.69999999999999,
+        -87.5,
+        41.199999999999996,
+        43.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpringEyeFront",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpringEyeRear",
+      "label": "Spring attachment eye001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.9394618671294936,
+      "bounds": [
+        -0.2,
+        0.2,
+        -71.5,
+        -69.30000000000001,
+        41.199999999999996,
+        43.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpringEyeRear",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpringAnchor",
+      "label": "Front spring anchoring tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.404106096521037,
+      "bounds": [
+        -1.6,
+        1.6,
+        -91.3,
+        -89.3,
+        40.8,
+        43.099999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpringAnchor",
+      "assembly": "Mechanism",
+      "layer": 1,
+      "material": "fccream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchBody",
+      "label": "Original latching power switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2075.6049543863796,
+      "bounds": [
+        -44.5,
+        -31.499999999999996,
+        -80.0,
+        -60.0,
+        37.5,
+        45.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchBody",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchPlunger",
+      "label": "Power-cap transmission sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.22632696012187,
+      "bounds": [
+        -40.25,
+        -35.75,
+        -77.5,
+        -72.5,
+        45.6,
+        52.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchPlunger",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetSwitchBody",
+      "label": "Reset contact switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 242.35619449019237,
+      "bounds": [
+        33.5,
+        42.5,
+        -79.5,
+        -70.5,
+        35.8,
+        38.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetSwitchBody",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetPlunger",
+      "label": "Reset-cap transmission sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 281.5771675440412,
+      "bounds": [
+        35.75,
+        40.25,
+        -77.25,
+        -72.75,
+        39.0,
+        53.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetPlunger",
+      "assembly": "Mechanism",
+      "layer": 3,
+      "material": "fccream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchEar0Cut",
+      "label": "Power-switch mounting ear001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 26.115044407846103,
+      "bounds": [
+        -49.25,
+        -44.75,
+        -74.0,
+        -66.0,
+        41.0,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchEar0",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchScrew0",
+      "label": "Cross-head fastener010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 6.440230406520871,
+      "bounds": [
+        -48.5,
+        -45.5,
+        -71.5,
+        -68.5,
+        38.67,
+        42.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchScrew0",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchEar1Cut",
+      "label": "Power-switch mounting ear003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 26.1150444078461,
+      "bounds": [
+        -31.25,
+        -26.75,
+        -74.0,
+        -66.0,
+        41.0,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchEar1",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchScrew1",
+      "label": "Cross-head fastener011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 6.440230406520871,
+      "bounds": [
+        -30.5,
+        -27.5,
+        -71.5,
+        -68.5,
+        38.67,
+        42.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchScrew1",
+      "assembly": "Mechanism",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPU",
+      "label": "RP2A03G",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2674.9898958902527,
+      "bounds": [
+        -26.5,
+        22.5,
+        -55.0,
+        -41.0,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPU",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUPins",
+      "label": "Through-hole DIP leadframe study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 880,
+      "volume": 28.488739097373863,
+      "bounds": [
+        -25.69,
+        21.69,
+        -56.725,
+        -39.275,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUMark",
+      "label": "RP2A03G001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 152,
+      "volume": 0.1605382773007148,
+      "bounds": [
+        -25.22177023422819,
+        -12.515108960402685,
+        -48.7413423818792,
+        -46.59744956442953,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUSolderPads",
+      "label": "Underside through-hole solder lands",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 160,
+      "volume": 1.1281459219040937,
+      "bounds": [
+        -26.11,
+        22.11,
+        -56.71,
+        -39.29,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PPU",
+      "label": "RP2C02G-0",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2674.9898958902527,
+      "bounds": [
+        -29.5,
+        19.5,
+        -30.0,
+        -16.0,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PPU",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PPUPins",
+      "label": "Through-hole DIP leadframe study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 880,
+      "volume": 28.488739097373816,
+      "bounds": [
+        -28.69,
+        18.69,
+        -31.724999999999998,
+        -14.275,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PPUPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PPUMark",
+      "label": "RP2C02G-001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 175,
+      "volume": 0.18294967422723304,
+      "bounds": [
+        -28.22177023422819,
+        -12.603800235570468,
+        -23.741342381879196,
+        -21.597449564429528,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PPUMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PPUSolderPads",
+      "label": "Underside through-hole solder lands001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 160,
+      "volume": 1.1281459219040921,
+      "bounds": [
+        -29.11,
+        19.11,
+        -31.71,
+        -14.290000000000001,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PPUSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRAM",
+      "label": "LH5216D",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 904.3898958902523,
+      "bounds": [
+        -35.5,
+        -6.5,
+        0.0,
+        8.0,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRAM",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRAMPins",
+      "label": "Through-hole DIP leadframe study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 24,
+      "faces": 528,
+      "volume": 17.093243458424308,
+      "bounds": [
+        -34.690000000000005,
+        -7.31,
+        -1.7250000000000003,
+        9.725,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRAMPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRAMMark",
+      "label": "LH5216D001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 125,
+      "volume": 0.14933136868757504,
+      "bounds": [
+        -34.221770134228194,
+        -21.570201242281875,
+        3.2586576181208056,
+        5.40255043557047,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRAMMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRAMSolderPads",
+      "label": "Underside through-hole solder lands002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 24,
+      "faces": 96,
+      "volume": 0.6768875531424561,
+      "bounds": [
+        -35.11,
+        -6.89,
+        -1.7099999999999995,
+        9.709999999999999,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRAMSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAM",
+      "label": "LH5216D002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 904.3898958902523,
+      "bounds": [
+        5.5,
+        34.5,
+        0.0,
+        8.0,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAM",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMPins",
+      "label": "Through-hole DIP leadframe study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 24,
+      "faces": 528,
+      "volume": 17.09324345842428,
+      "bounds": [
+        6.31,
+        33.690000000000005,
+        -1.7250000000000003,
+        9.725,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMMark",
+      "label": "LH5216D003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 125,
+      "volume": 0.14933136868757502,
+      "bounds": [
+        6.778229865771812,
+        19.429798757718125,
+        3.2586576181208056,
+        5.40255043557047,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMSolderPads",
+      "label": "Underside through-hole solder lands003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 24,
+      "faces": 96,
+      "volume": 0.6768875531424562,
+      "bounds": [
+        5.89,
+        34.11,
+        -1.7099999999999995,
+        9.709999999999999,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer0",
+      "label": "TC40H368P",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 483.18989589025216,
+      "bounds": [
+        -30.0,
+        -10.0,
+        -75.1,
+        -68.9,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer0Pins",
+      "label": "Through-hole DIP leadframe study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 352,
+      "volume": 11.395495638949516,
+      "bounds": [
+        -29.19,
+        -10.81,
+        -76.825,
+        -67.175,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer0Pins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer0Mark",
+      "label": "TC40H368P001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 188,
+      "volume": 0.19912242906893524,
+      "bounds": [
+        -29.008305369127516,
+        -12.704957953691272,
+        -72.74134238187919,
+        -70.59744956442954,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer0Mark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer0SolderPads",
+      "label": "Underside through-hole solder lands004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 64,
+      "volume": 0.4512583687616385,
+      "bounds": [
+        -29.61,
+        -10.39,
+        -76.81,
+        -67.19,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer0SolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer1",
+      "label": "TC40H368P002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 483.1898958902521,
+      "bounds": [
+        1.9999999999999996,
+        22.0,
+        -75.1,
+        -68.9,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer1Pins",
+      "label": "Through-hole DIP leadframe study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 352,
+      "volume": 11.395495638949507,
+      "bounds": [
+        2.81,
+        21.19,
+        -76.825,
+        -67.175,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer1Pins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer1Mark",
+      "label": "TC40H368P003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 188,
+      "volume": 0.19912242906893526,
+      "bounds": [
+        2.9916946308724834,
+        19.29504204630873,
+        -72.74134238187919,
+        -70.59744956442954,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer1Mark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Buffer1SolderPads",
+      "label": "Underside through-hole solder lands005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 64,
+      "volume": 0.45125836876163844,
+      "bounds": [
+        2.39,
+        21.61,
+        -76.81,
+        -67.19,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Buffer1SolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Decoder",
+      "label": "74LS139",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 459.0098958902525,
+      "bounds": [
+        26.5,
+        45.5,
+        -49.1,
+        -42.9,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Decoder",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DecoderPins",
+      "label": "Through-hole DIP leadframe study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 352,
+      "volume": 11.39549563894948,
+      "bounds": [
+        27.31,
+        44.690000000000005,
+        -50.825,
+        -41.175,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DecoderPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DecoderMark",
+      "label": "74LS140",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 134,
+      "volume": 0.1342703570146069,
+      "bounds": [
+        27.73255033557047,
+        39.68794473087249,
+        -46.7413423818792,
+        -44.59744956442953,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DecoderMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DecoderSolderPads",
+      "label": "Underside through-hole solder lands006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 64,
+      "volume": 0.4512583687616379,
+      "bounds": [
+        26.89,
+        45.11,
+        -50.81,
+        -41.19,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DecoderSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Latch",
+      "label": "74LS373",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 545.5898958902525,
+      "bounds": [
+        26.0,
+        46.0,
+        -25.5,
+        -18.5,
+        16.1,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Latch",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LatchPins",
+      "label": "Through-hole DIP leadframe study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 20,
+      "faces": 440,
+      "volume": 14.24436954868693,
+      "bounds": [
+        26.81,
+        45.190000000000005,
+        -27.224999999999998,
+        -16.775000000000002,
+        14.000000000000002,
+        18.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LatchPins",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LatchMark",
+      "label": "74LS374",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 134,
+      "volume": 0.1284500395343976,
+      "bounds": [
+        27.23255033557047,
+        39.160260167114096,
+        -22.741342381879196,
+        -20.597449564429528,
+        20.0199999,
+        20.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LatchMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LatchSolderPads",
+      "label": "Underside through-hole solder lands007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 20,
+      "faces": 80,
+      "volume": 0.5640729609520471,
+      "bounds": [
+        26.39,
+        45.61,
+        -27.21,
+        -16.79,
+        13.96,
+        13.995000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LatchSolderPads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MasterCrystal",
+      "label": "Master oscillator metal can",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 307.2576944093241,
+      "bounds": [
+        -45.1,
+        -38.9,
+        -28.5,
+        -15.5,
+        16.2,
+        20.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MasterCrystal",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CrystalMark",
+      "label": "XTAL",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 45,
+      "volume": 0.05094047551595433,
+      "bounds": [
+        -44.430914429530205,
+        -38.84706375838926,
+        -22.7,
+        -21.008724832214764,
+        20.24,
+        20.258
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CrystalMark",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap0",
+      "label": "Radial electrolytic capacitor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 75.39822368615503,
+      "bounds": [
+        -44.0,
+        -40.0,
+        -48.0,
+        -44.0,
+        16.1,
+        22.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap0Top",
+      "label": "Capacitor aluminum vent face",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293312,
+      "bounds": [
+        -43.85,
+        -40.15,
+        -47.85,
+        -44.15,
+        22.14,
+        22.26
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap0Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap0Leads",
+      "label": "Radial component leads",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041146,
+      "bounds": [
+        -43.0,
+        -41.0,
+        -46.2,
+        -45.8,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap0Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap1",
+      "label": "Radial electrolytic capacitor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 60.31857894892404,
+      "bounds": [
+        -43.0,
+        -39.0,
+        1.0,
+        5.0,
+        16.1,
+        20.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap1Top",
+      "label": "Capacitor aluminum vent face001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293317,
+      "bounds": [
+        -42.85,
+        -39.15,
+        1.15,
+        4.85,
+        20.94,
+        21.060000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap1Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap1Leads",
+      "label": "Radial component leads001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041145,
+      "bounds": [
+        -42.0,
+        -40.0,
+        2.8,
+        3.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap1Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap2",
+      "label": "Radial electrolytic capacitor002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 75.39822368615505,
+      "bounds": [
+        -45.0,
+        -41.0,
+        16.0,
+        20.0,
+        16.1,
+        22.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap2Top",
+      "label": "Capacitor aluminum vent face002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293314,
+      "bounds": [
+        -44.85,
+        -41.15,
+        16.15,
+        19.85,
+        22.14,
+        22.26
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap2Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap2Leads",
+      "label": "Radial component leads002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041136,
+      "bounds": [
+        -44.0,
+        -42.0,
+        17.8,
+        18.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap2Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap3",
+      "label": "Radial electrolytic capacitor003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 60.318578948924035,
+      "bounds": [
+        -30.0,
+        -26.0,
+        17.0,
+        21.0,
+        16.1,
+        20.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap3Top",
+      "label": "Capacitor aluminum vent face003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293317,
+      "bounds": [
+        -29.85,
+        -26.15,
+        17.15,
+        20.85,
+        20.94,
+        21.060000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap3Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap3Leads",
+      "label": "Radial component leads003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041133,
+      "bounds": [
+        -29.0,
+        -27.0,
+        18.8,
+        19.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap3Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap4",
+      "label": "Radial electrolytic capacitor004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 75.39822368615503,
+      "bounds": [
+        -15.0,
+        -11.0,
+        17.0,
+        21.0,
+        16.1,
+        22.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap4Top",
+      "label": "Capacitor aluminum vent face004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293317,
+      "bounds": [
+        -14.85,
+        -11.15,
+        17.15,
+        20.85,
+        22.14,
+        22.26
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap4Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap4Leads",
+      "label": "Radial component leads004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041126,
+      "bounds": [
+        -14.0,
+        -12.0,
+        18.8,
+        19.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap4Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap5",
+      "label": "Radial electrolytic capacitor005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 60.31857894892404,
+      "bounds": [
+        2.0,
+        6.0,
+        17.0,
+        21.0,
+        16.1,
+        20.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap5Top",
+      "label": "Capacitor aluminum vent face005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293314,
+      "bounds": [
+        2.15,
+        5.85,
+        17.15,
+        20.85,
+        20.94,
+        21.060000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap5Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap5Leads",
+      "label": "Radial component leads005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041129,
+      "bounds": [
+        3.0,
+        5.0,
+        18.8,
+        19.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap5Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap6",
+      "label": "Radial electrolytic capacitor006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 75.39822368615503,
+      "bounds": [
+        18.0,
+        22.0,
+        17.0,
+        21.0,
+        16.1,
+        22.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap6Top",
+      "label": "Capacitor aluminum vent face006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293314,
+      "bounds": [
+        18.15,
+        21.85,
+        17.15,
+        20.85,
+        22.14,
+        22.26
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap6Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap6Leads",
+      "label": "Radial component leads006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041133,
+      "bounds": [
+        19.0,
+        21.0,
+        18.8,
+        19.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap6Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap7",
+      "label": "Radial electrolytic capacitor007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 60.31857894892404,
+      "bounds": [
+        34.0,
+        38.0,
+        17.0,
+        21.0,
+        16.1,
+        20.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap7",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap7Top",
+      "label": "Capacitor aluminum vent face007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293317,
+      "bounds": [
+        34.15,
+        37.85,
+        17.15,
+        20.85,
+        20.94,
+        21.060000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap7Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap7Leads",
+      "label": "Radial component leads007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041136,
+      "bounds": [
+        35.0,
+        37.0,
+        18.8,
+        19.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap7Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap8",
+      "label": "Radial electrolytic capacitor008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 75.39822368615505,
+      "bounds": [
+        44.0,
+        48.0,
+        1.0,
+        5.0,
+        16.1,
+        22.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap8",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap8Top",
+      "label": "Capacitor aluminum vent face008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.2902521028293314,
+      "bounds": [
+        44.15,
+        47.85,
+        1.15,
+        4.85,
+        22.14,
+        22.26
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap8Top",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicCap8Leads",
+      "label": "Radial component leads008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.7037167544041145,
+      "bounds": [
+        45.0,
+        47.0,
+        2.8,
+        3.2,
+        13.700000000000001,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicCap8Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor0",
+      "label": "Axial resistor body study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        -29.7,
+        -26.3,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor0Leads",
+      "label": "Formed axial component leads",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218849884204,
+      "bounds": [
+        -31.87,
+        -24.13,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor0Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor0Bands",
+      "label": "Resistor band geometry study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048304,
+      "bounds": [
+        -28.85,
+        -27.35,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor0Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor1",
+      "label": "Axial resistor body study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880593,
+      "bounds": [
+        -18.7,
+        -15.299999999999999,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor1Leads",
+      "label": "Formed axial component leads001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312188269132727,
+      "bounds": [
+        -20.87,
+        -13.13,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor1Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor1Bands",
+      "label": "Resistor band geometry study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048315,
+      "bounds": [
+        -17.85,
+        -16.35,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor1Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor2",
+      "label": "Axial resistor body study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880592,
+      "bounds": [
+        -7.7,
+        -4.300000000000001,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor2Leads",
+      "label": "Formed axial component leads002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218781115684,
+      "bounds": [
+        -9.87,
+        -2.13,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor2Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor2Bands",
+      "label": "Resistor band geometry study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048051,
+      "bounds": [
+        -6.85,
+        -5.35,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor2Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor3",
+      "label": "Axial resistor body study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880592,
+      "bounds": [
+        3.3,
+        6.699999999999999,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor3Leads",
+      "label": "Formed axial component leads003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218604041023,
+      "bounds": [
+        1.13,
+        8.87,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor3Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor3Bands",
+      "label": "Resistor band geometry study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.0671515429704804,
+      "bounds": [
+        4.15,
+        5.65,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor3Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor4",
+      "label": "Axial resistor body study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        14.3,
+        17.7,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor4Leads",
+      "label": "Formed axial component leads004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312186835673278,
+      "bounds": [
+        12.13,
+        19.87,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor4Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor4Bands",
+      "label": "Resistor band geometry study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048309,
+      "bounds": [
+        15.15,
+        16.65,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor4Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor5",
+      "label": "Axial resistor body study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        25.3,
+        28.7,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor5Leads",
+      "label": "Formed axial component leads005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312185582430882,
+      "bounds": [
+        23.13,
+        30.87,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor5Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor5Bands",
+      "label": "Resistor band geometry study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048304,
+      "bounds": [
+        26.15,
+        27.65,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor5Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor6",
+      "label": "Axial resistor body study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        37.3,
+        40.699999999999996,
+        -83.7,
+        -82.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor6Leads",
+      "label": "Formed axial component leads006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218785816634,
+      "bounds": [
+        35.129999999999995,
+        42.870000000000005,
+        -83.17,
+        -82.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor6Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontResistor6Bands",
+      "label": "Resistor band geometry study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297047313,
+      "bounds": [
+        38.15,
+        39.650000000000006,
+        -83.725,
+        -82.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontResistor6Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor0",
+      "label": "Axial resistor body study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        -37.7,
+        -34.300000000000004,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor0Leads",
+      "label": "Formed axial component leads007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312187808664373,
+      "bounds": [
+        -39.870000000000005,
+        -32.129999999999995,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor0Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor0Bands",
+      "label": "Resistor band geometry study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297047335,
+      "bounds": [
+        -36.85,
+        -35.349999999999994,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor0Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor1",
+      "label": "Axial resistor body study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        -25.7,
+        -22.3,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor1Leads",
+      "label": "Formed axial component leads008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312190221682995,
+      "bounds": [
+        -27.87,
+        -20.13,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor1Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor1Bands",
+      "label": "Resistor band geometry study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048406,
+      "bounds": [
+        -24.85,
+        -23.35,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor1Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor2",
+      "label": "Axial resistor body study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880593,
+      "bounds": [
+        -13.7,
+        -10.299999999999999,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor2Leads",
+      "label": "Formed axial component leads009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218929316333,
+      "bounds": [
+        -15.87,
+        -8.13,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor2Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor2Bands",
+      "label": "Resistor band geometry study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048412,
+      "bounds": [
+        -12.85,
+        -11.350000000000001,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor2Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor3",
+      "label": "Axial resistor body study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880593,
+      "bounds": [
+        -1.7,
+        1.7,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor3Leads",
+      "label": "Formed axial component leads010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312190221683109,
+      "bounds": [
+        -3.87,
+        3.87,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor3Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor3Bands",
+      "label": "Resistor band geometry study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048209,
+      "bounds": [
+        -0.85,
+        0.65,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor3Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor4",
+      "label": "Axial resistor body study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880593,
+      "bounds": [
+        10.3,
+        13.700000000000001,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor4Leads",
+      "label": "Formed axial component leads011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312189522018218,
+      "bounds": [
+        8.13,
+        15.87,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor4Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor4Bands",
+      "label": "Resistor band geometry study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048417,
+      "bounds": [
+        11.15,
+        12.649999999999999,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor4Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor5",
+      "label": "Axial resistor body study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        22.3,
+        25.7,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor5Leads",
+      "label": "Formed axial component leads012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.0312190221682995,
+      "bounds": [
+        20.13,
+        27.87,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor5Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor5Bands",
+      "label": "Resistor band geometry study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297048406,
+      "bounds": [
+        23.15,
+        24.65,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor5Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor6",
+      "label": "Axial resistor body study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.233893360880591,
+      "bounds": [
+        34.3,
+        37.699999999999996,
+        -35.7,
+        -34.3,
+        16.7,
+        18.099999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor6Leads",
+      "label": "Formed axial component leads013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 12,
+      "volume": 1.031218729164931,
+      "bounds": [
+        32.129999999999995,
+        39.870000000000005,
+        -35.17,
+        -34.83,
+        13.599999999999998,
+        17.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor6Leads",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LogicResistor6Bands",
+      "label": "Resistor band geometry study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 12,
+      "volume": 0.06715154297047335,
+      "bounds": [
+        35.15,
+        36.650000000000006,
+        -35.725,
+        -34.275,
+        16.674999999999997,
+        18.125
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LogicResistor6Bands",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicCap0",
+      "label": "Ceramic disc capacitor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.293379060212149,
+      "bounds": [
+        -31.45,
+        -28.55,
+        -60.0,
+        -59.35,
+        16.35,
+        19.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicCap0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicLeads0",
+      "label": "Ceramic capacitor leads",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.6273132210688097,
+      "bounds": [
+        -30.76,
+        -29.24,
+        -59.86,
+        -59.540000000000006,
+        13.6,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicLeads0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicCap1",
+      "label": "Ceramic disc capacitor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.293379060212149,
+      "bounds": [
+        -13.45,
+        -10.55,
+        -60.0,
+        -59.35,
+        16.35,
+        19.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicCap1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicLeads1",
+      "label": "Ceramic capacitor leads001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.6273132210688099,
+      "bounds": [
+        -12.76,
+        -11.24,
+        -59.86,
+        -59.540000000000006,
+        13.6,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicLeads1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicCap2",
+      "label": "Ceramic disc capacitor002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.293379060212149,
+      "bounds": [
+        4.55,
+        7.45,
+        -60.0,
+        -59.35,
+        16.35,
+        19.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicCap2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicLeads2",
+      "label": "Ceramic capacitor leads002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.6273132210688097,
+      "bounds": [
+        5.24,
+        6.76,
+        -59.86,
+        -59.540000000000006,
+        13.6,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicLeads2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicCap3",
+      "label": "Ceramic disc capacitor003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.293379060212149,
+      "bounds": [
+        22.55,
+        25.45,
+        -60.0,
+        -59.35,
+        16.35,
+        19.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicCap3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicLeads3",
+      "label": "Ceramic capacitor leads003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.6273132210688097,
+      "bounds": [
+        23.24,
+        24.76,
+        -59.86,
+        -59.540000000000006,
+        13.6,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicLeads3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicCap4",
+      "label": "Ceramic disc capacitor004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.293379060212148,
+      "bounds": [
+        40.55,
+        43.45,
+        -60.0,
+        -59.35,
+        16.35,
+        19.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicCap4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "fcresistor",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CeramicLeads4",
+      "label": "Ceramic capacitor leads004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 6,
+      "volume": 0.627313221068808,
+      "bounds": [
+        41.24,
+        42.76,
+        -59.86,
+        -59.540000000000006,
+        13.6,
+        17.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CeramicLeads4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/famicom/output/iterations/07_ricoh_cpu_ppu_memory_and_through_hole_parts.FCStd",
+  "views": [
+    "devices/famicom/output/previews/07_ricoh_cpu_ppu_memory_and_through_hole_parts_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
