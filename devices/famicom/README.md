@@ -6,7 +6,7 @@
 
 ## 交付状态
 
-整套 CAD、STEP、12 页图纸与九种网页视图已完成本地验收，作为模型库的第九款设备交付。
+整套 CAD、STEP、12 页图纸与九种网页视图已完成验收，并作为模型库的第九款设备发布。15 个线上文件与本地哈希一致，桌面和手机预览通过，见 [线上文件核对](output/reports/live_delivery_audit.json) 与 [交互核对](output/reports/live_ui_checks.json)。
 
 [在线 3D 预览](https://tiansongyu.github.io/open-console-cad/?device=famicom&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=famicom&view=internal#viewer) · [二号手柄](https://tiansongyu.github.io/open-console-cad/?device=famicom&view=controller2#viewer)
 

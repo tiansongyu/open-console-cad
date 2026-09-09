@@ -20,5 +20,5 @@ Validate component solids and actual assembly interference, fresh source rebuild
 
 - Reference and runtime checks started. FreeCAD 1.1.3 is available through neka-nat/freecad-mcp on the existing GUI session.
 - Game Boy: 15 stages; 410 components / 768 solids. Complete/exploded CAD, STEP, component inventory, 12 A3 PDF/native pages and nine web views pass local verification. Published as device eight; 14 live files match the release commit and desktop/mobile UI checks pass.
-- Famicom: 16 stages; 634 components / 1,457 solids. Full fresh rebuild, all 1,568 interference candidates, three STEP round trips, 28 model measurements, 13 native dimensions and 12 Kami PDF pages pass. Nine local web views and desktop/mobile layouts verified; included as device nine. Live release verification follows Pages deployment.
+- Famicom: 16 stages; 634 components / 1,457 solids. Full fresh rebuild, all 1,568 interference candidates, three STEP round trips, 28 model measurements, 13 native dimensions and 12 Kami PDF pages pass. Published as device nine. All 15 live files match the release commit; nine live views and desktop/mobile layouts verified.
 - Atari 2600, PlayStation and PlayStation 2: further version-specific source review and construction pending.
