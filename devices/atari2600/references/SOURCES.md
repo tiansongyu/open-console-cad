@@ -6,3 +6,7 @@
 The model targets the original 1977 NTSC Heavy Sixer, with a fixed RF lead and the early joystick style. It does not use the later four-switch, light-sixer or 2600+ enclosure. Sources distinguish production revisions; the project is an approximate geometry study, not a reconstruction of an electrical schematic.
 
 No original dimensioned housing drawing or physical specimen has been verified. The working envelope of approximately 346 × 232 × 89 mm and every local wall, interface and board dimension are study assumptions, explicitly marked approximate in parameters and part metadata. Photographs are retained locally for reference and are not redistributed. The bundled DejaVu Sans font uses the existing root font licence; original project content follows the root MIT licence.
+
+The original service-manual parts list identifies the 78M05 regulator and axial 2200 µF / 16 V filter capacitor. Switch contact and RF-package geometry is a schematic layout; it does not define terminal pinouts or an electrical netlist.
+
+- [Best Electronics firsthand CX10/CX40 parts comparison](https://www.best-electronics-ca.com/CX40%20Suiper%20Handle%2027.htm): early CX10 uses a rigid lower stick ring, four directional springs and a separate actuator plate; the fire button adds its own spring. This is the selected joystick mechanism rather than the later CX40 flexing shaft. Reference photograph retained locally.

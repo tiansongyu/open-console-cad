@@ -176,7 +176,9 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-九个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy` 和 `famicom`。共享工具位于 `tools/`，重建时请保留仓库结构。
+已发布的九个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy` 和 `famicom`。共享工具位于 `tools/`，重建时请保留仓库结构。
+
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)，其中 [Atari 2600](devices/atari2600/README.md) 已提供主机阶段源码与验证记录。
 
 ## 验证记录
 

@@ -1,8 +1,19 @@
 # Atari 2600 construction iterations
 
-Development in progress. These stages were executed through freecad-mcp in FreeCAD 1.1.3. All dimensions are approximate study dimensions.
+Development in progress. These stages were executed through freecad-mcp in FreeCAD 1.1.3. All dimensions are approximate study dimensions. Earlier fit reports retain their findings; later stages explicitly correct those findings. Historical native binaries can be regenerated from the numbered scripts.
 
 | Stage | Change | Components |
 | --- | --- | ---: |
 | 1 | 建立原生草图与双重圆角的厚壁底壳、独立顶板、空心斜面控制台、木纹色前饰板和四个脚垫；全部尺寸标记为近似学习尺寸。 | 8 |
 | 2 | 加入六个金属操作杆及各自孔位、防尘垫、斜面卡带口、橙色铭牌边线和功能标识，并补齐横向筋槽与几何木纹印刷层。 | 39 |
+| 3 | 加入两组 DE-9 插座与 18 个独立接点、3.5 mm 电源口、固定 RF 线及护套、凸起后部接口标识和双侧底部散热孔，保留初代后面板特征。 | 69 |
+| 4 | 建立窄长主逻辑板、独立斜置 U 形开关板、厚铸铝屏蔽底座和可拆上盖，加入板件垫圈、四处安装螺钉及屏蔽罩固定耳。 | 90 |
+| 5 | 补齐 6507、6532 RIOT、TIA 与 CD4050 封装、独立引脚和焊盘，以及陶瓷电容、电阻、晶振与色彩调节件；修正四处屏蔽盖螺钉的微小轴向干涉。 | 177 |
+| 6 | 建立倾斜卡带导向口、24 个独立弹性接点与板端引脚，补齐双板之间的 12 芯排线、连接器和穿孔，并为卡座留出铸铝壳体空间。 | 241 |
+| 7 | 补齐六个开关的金属盖、导向套、传动柱和接点，加入 SELECT/RESET 回位弹簧与 DE-9 板端引脚；下调一枚电阻并让排线绕过开关板后缘。 | 273 |
+| 8 | 补齐原始开关板上的 2200 µF 轴向滤波电容、78M05 与散热片、独立引脚和安装件，加入可拆 RF 金属罩、调谐线圈、晶体管和电容示意。 | 301 |
+| 9 | 用连续切向的分段曲线限定排线弯曲范围，绕过电路板后缘并保留机壳间隙；为轴向电容端封补齐引线穿孔。 | 301 |
+| 10 | 加入斜面主板支柱、六处机壳紧固件、内部 RF/DC 线束和端子，补齐底部学习标签及前部标识；线束仅说明空间布局，不定义电气网络。 | 330 |
+| 11 | 为排线端部保留 0.15 mm 展示间隙，避免共面端盖造成求交歧义；将 RF 内线末段沿护套轴线拉直，核对入口配合。 | 330 |
+| 12 | 将两条 DC 线分层并从支柱前方绕行，RF 线先平直离开电路板再沿侧壁布置；补齐支柱引脚避让和铸件螺钉孔深。 | 330 |
+| 13 | 改用精确圆弧弯管构造排线和内部 RF/DC 线，消除扫掠曲面的自相交问题；调整 DC 末端走向，所有新线段均通过严格布尔几何检查。 | 330 |
