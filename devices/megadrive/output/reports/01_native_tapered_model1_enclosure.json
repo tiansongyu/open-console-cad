@@ -1,0 +1,204 @@
+{
+  "iteration": 1,
+  "slug": "native_tapered_model1_enclosure",
+  "summary": "建立初代大机型的原生剖面草图、渐变上下空心壳、偏右圆形卡带台、亮面环带和四个脚垫。",
+  "physical_components": 7,
+  "objects": [
+    {
+      "name": "LowerHousing",
+      "label": "Tapered Model 1 lower shell",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 141521.00033058994,
+      "bounds": [
+        -140.0000001,
+        140.0000001,
+        -106.0000001,
+        106.0000001,
+        1.4999999,
+        18.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut",
+      "label": "Sloping Model 1 upper shell002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 346260.39216200134,
+      "bounds": [
+        -140.0000001,
+        140.0000001,
+        -106.0000001,
+        106.0000001,
+        18.349999899999997,
+        69.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DeckRing",
+      "label": "Glossy annular cartridge-deck inlay",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1697.734262918766,
+      "bounds": [
+        -54.45,
+        122.45,
+        -81.45,
+        95.45,
+        69.2,
+        69.62
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DeckRing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "gloss",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Lower shell elastomer foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        -120.5,
+        -107.5,
+        -87.5,
+        -78.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Lower shell elastomer foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        107.5,
+        120.5,
+        -87.5,
+        -78.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Lower shell elastomer foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        -120.5,
+        -107.5,
+        78.5,
+        87.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Lower shell elastomer foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        107.5,
+        120.5,
+        78.5,
+        87.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/megadrive/output/iterations/01_native_tapered_model1_enclosure.FCStd",
+  "views": [
+    "devices/megadrive/output/previews/01_native_tapered_model1_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

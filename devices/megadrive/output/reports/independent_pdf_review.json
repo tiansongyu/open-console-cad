@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "review_type": "Fresh isolated Kami contract and PDF visual review",
+  "reviewer": "megadrive_pdf_review isolated agent",
+  "reviewed_at_utc": "2026-09-09T16:24:22.313324+00:00",
+  "artifact": "devices/megadrive/output/drawings/MegaDrive_Drawings.pdf",
+  "artifact_sha256": "9c13aa4428ab56daac6e1c242eb4ef830fae69e4474ed39eec9522f94626ca4b",
+  "contract": "devices/megadrive/output/drawings/content.json",
+  "pass": true,
+  "verdict": "PASS within the stated PDF review scope; no P0 or P1 findings.",
+  "scope": {
+    "independence": "Reviewer did not author, edit or re-render the PDF or CAD. The review started from the content contract and inspected every supplied final page image.",
+    "performed": [
+      "Read the Kami and PDF skills and Kami anti-pattern checklist.",
+      "Read the complete content contract.",
+      "Viewed all 12 final PNG page images at 1819 × 1287 pixels.",
+      "Read PDF metadata and checked every page MediaBox using PyMuPDF.",
+      "Re-ran the read-only Kami content and font checks.",
+      "Read existing dimension and native drawing audits, source notes and component CSV."
+    ],
+    "not_performed": [
+      "No independent rasterization; visual findings apply to the supplied final PNG evidence.",
+      "No CAD rebuild, BRep geometry recomputation, native GUI operation, STEP roundtrip or web testing.",
+      "No independent authentication of historical source photographs, official specifications or electrical behavior.",
+      "Style, placeholders and density were reported passed by the parent; these gates were not re-run in this isolated review."
+    ]
+  },
+  "mechanical_checks": {
+    "pdf_page_count": 12,
+    "all_pages_a3_landscape": true,
+    "page_size_points": [
+      1190.5511474609375,
+      841.8897705078125
+    ],
+    "page_size_mm_approx": [
+      420,
+      297
+    ],
+    "content_coverage": {
+      "pass": true,
+      "atomic_values_present": 27,
+      "prose_fields_not_held_verbatim": 23,
+      "basis": "Independent read-only Kami --check-content execution."
+    },
+    "font_check": {
+      "pass": true,
+      "cjk_body_font": "TsangerJinKai02",
+      "ideographs": 3788,
+      "basis": "Independent read-only Kami --check-fonts execution."
+    },
+    "component_csv": {
+      "entries": 825,
+      "solids": 1209,
+      "path": "devices/megadrive/output/COMPONENTS.csv"
+    }
+  },
+  "acceptance_checks": [
+    {
+      "item": "12 pages of A3 landscape",
+      "status": "pass_independently_checked",
+      "evidence": "All 12 PDF MediaBoxes match 420 × 297 mm; all page images display the matching sequence and A3 footer."
+    },
+    {
+      "item": "all dimensions derived from saved BReps",
+      "status": "supported_by_existing_audit",
+      "evidence": "devices/megadrive/output/reports/drawing_checks.json",
+      "note": "Read model endpoints and values for 14 dimensions; visual labels and approximate notation are consistent. Underlying BReps were not independently recomputed."
+    },
+    {
+      "item": "all pages visually inspected",
+      "status": "pass_independently_checked",
+      "evidence": "All page images listed in reviewed_pages were opened and visually assessed."
+    },
+    {
+      "item": "Kami font and content checks",
+      "status": "pass_independently_checked",
+      "evidence": "27 atomic content values present; CJK body font TsangerJinKai02."
+    },
+    {
+      "item": "native TechDraw pages and measurable dimensions",
+      "status": "supported_by_existing_audit",
+      "evidence": "devices/megadrive/output/reports/native_drawings_audit.json",
+      "note": "Existing audit reports 12 pages and 14 passing native dimension references. No native application testing was performed by this reviewer."
+    }
+  ],
+  "preserve_checks": [
+    {
+      "item": "Official body reference and approximate local dimensions remain distinct",
+      "pass": true,
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        12
+      ],
+      "note": "Official 280 × 212 × 70 mm reference is named in explanatory copy, while drawing dimensions use approximate symbols and scope notes."
+    },
+    {
+      "item": "Component identifiers",
+      "pass": true,
+      "evidence_pages": [
+        7,
+        11,
+        12
+      ],
+      "note": "MEGADRIVE-0103, non-contiguous identifier ranges and the COMPONENTS.csv lookup are retained. Full cross-format identity was outside this PDF review."
+    },
+    {
+      "item": "Original three-button controller and Japanese connection layout",
+      "pass": true,
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        4,
+        10
+      ],
+      "note": "SJ-3500 direction/START/ABC control layout, front two DE-9 ports and headphone socket, rear interfaces and DIN-to-dual-RCA connection are presented consistently with the contract."
+    }
+  ],
+  "reviewed_pages": [
+    {
+      "page": 1,
+      "title": "初代日版主机总装与尺寸参考",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-01.png",
+      "image_sha256": "b2a8558cff077c09fccb9b640267963729312dce5b3179c5f108aabacb254e1c",
+      "visual_result": "pass",
+      "observations": "Isometric and top views are clearly separated; approximate 280 and 212 dimensions and extension lines are fully visible. Opening copy distinguishes official 280 × 212 × 70 mm from model details and explicitly identifies VA2 as a study reference."
+    },
+    {
+      "page": 2,
+      "title": "前后接口与接点细节",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-02.png",
+      "image_sha256": "b21f655e6933ae8f6dbcaf02f2d87eb8ddb38b96f5750d15367686e162e9ac8b",
+      "visual_result": "pass",
+      "observations": "Front and rear projections and three connector details are legible. The approximate 70.03 left dimension has a visible outer margin; approximate 25 detail dimension is unobstructed. Japanese rear connection layout is retained in the presented study."
+    },
+    {
+      "page": 3,
+      "title": "初代 SJ-3500 三键手柄外观",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-03.png",
+      "image_sha256": "04f965fa4688405740a1c04dded9c96bddf7906d6753ec5fdad48e756f395708",
+      "visual_result": "pass",
+      "observations": "ABC, START and direction controls are readable in the main views. Approximate 152 and 89.97 dimensions fit within the page; rear view shows six fixings and has a separate caption."
+    },
+    {
+      "page": 4,
+      "title": "手柄触点、板件与线束",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-04.png",
+      "image_sha256": "c7123f3a79c763111181e3f9002ba474add46b5aa2d981c340bfd88baf91b0a9",
+      "visual_result": "pass",
+      "observations": "Large board and button/rubber views are readable; approximate 132 and 51 dimensions are clear. The smaller exploded strip provides an assembly overview with its own scale and does not collide with the explanatory text."
+    },
+    {
+      "page": 5,
+      "title": "主体剖面与卡带插入空间",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-05.png",
+      "image_sha256": "defc49236c4c595e229c4d092fb3348a72208e785a140ce6659377b4a7e7226d",
+      "visual_result": "pass",
+      "observations": "A-A Y=0 and B-B Y=35 are separately titled; cut material is visible in a light fill. Shell, board and connector section lines and captions are not clipped or overlapped."
+    },
+    {
+      "page": 6,
+      "title": "主机与手柄的分层装配",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-06.png",
+      "image_sha256": "fb7ac552ec1edec2fd8afc3e838db96ffb33b9e05b96b8f187c51df77741d291",
+      "visual_result": "pass",
+      "observations": "Exploded drawing occupies a substantial central area; upper/lower shells, mainboard, cartridge layers and controller layers are distinguishable. Drawing and caption are contained above the text block. Cable omission is expressly disclosed."
+    },
+    {
+      "page": 7,
+      "title": "主板与主要集成电路（VA2）",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-07.png",
+      "image_sha256": "ac5362efaf55576e92e575e8a9fa438889a00831e66076b2d9bdccea9ecd17b8",
+      "visual_result": "pass",
+      "observations": "Mainboard and enlarged package views are clear. Approximate 245, 182 and 83 dimension labels are visible. MEGADRIVE-0103 is retained and the title, lead and board marking communicate the VA2 study scope."
+    },
+    {
+      "page": 8,
+      "title": "卡带触点、散热片与控制传动",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-08.png",
+      "image_sha256": "0f37a6c4acbb14abb10d23fda869b0eedff014d2170f37d01bd9e0b08d9f93e7",
+      "visual_result": "pass",
+      "observations": "Two contact rows, heat spreader and control mechanism views are distinct with separate captions. Approximate 105 is visible. Simplified mechanism scope is disclosed."
+    },
+    {
+      "page": 9,
+      "title": "空白卡带与外接适配器",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-09.png",
+      "image_sha256": "0ce91b9a069418ea19a46dbbc889f2a3f61fa9578b157d36c418525d9cf63027",
+      "visual_result": "pass",
+      "observations": "Blank cartridge and adapter views are legible; approximate 110 and 69 labels have margins. Study labels and no-game-data/electrical-design limitations are visible."
+    },
+    {
+      "page": 10,
+      "title": "原始连接线与插头结构",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-10.png",
+      "image_sha256": "a1b26d6cf28e05fd1e3dd1b34da2598f8f832164612fb0b15010c0b65406c7df",
+      "visual_result": "pass",
+      "observations": "DIN-to-two-RCA arrangement and DE-9/DC plug details have separate readable captions and scales. Displayed cable geometry is expressly described as stored positioning and short segments, not original cable length."
+    },
+    {
+      "page": 11,
+      "title": "组件与显示材料索引",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-11.png",
+      "image_sha256": "8aaa18afa5eebb5e069eaf445c65872e36b563b07e743368d8e04d4dce7ade4b",
+      "visual_result": "pass",
+      "observations": "All nine table rows, quantities, display-material roles and non-contiguous component identifier ranges are readable without clipping. The 825 component / 1209 solid total is present."
+    },
+    {
+      "page": 12,
+      "title": "版本依据、近似边界与验证入口",
+      "image": "devices/megadrive/output/drawings/MegaDrive_Drawings-visual/page-12.png",
+      "image_sha256": "819fc2bcd5c47679465b4149c5fbb32736bb6cce274b9ce4decf1eeb66a19953",
+      "visual_result": "pass",
+      "observations": "Source/version, dimension scope, validation records and reproduction paths are visible and distinct. VA2 versus earliest VA0 and local study approximations are explicitly stated. Appendix paths and footer fit within the page."
+    }
+  ],
+  "findings": [],
+  "finding_counts": {
+    "P0": 0,
+    "P1": 0
+  },
+  "remaining_scope_limits": [
+    "This is an explicitly approximate VA2-based educational model and drawing set; this review does not establish manufacturing accuracy or a functioning circuit."
+  ]
+}

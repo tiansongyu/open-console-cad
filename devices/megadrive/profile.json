@@ -1,0 +1,67 @@
+{
+  "id": "megadrive",
+  "title": "Sega Mega Drive",
+  "prefix": "MegaDrive",
+  "model": "HAA-2510 · Japanese Model 1",
+  "family": "console",
+  "width": 280,
+  "height": 212,
+  "closed_depth": 70,
+  "base_depth": 16,
+  "default_opening": 180,
+  "color": [
+    0.075,
+    0.08,
+    0.09
+  ],
+  "stages": 13,
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "CardReader",
+    "Internal",
+    "Power"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Controller"
+  ],
+  "internal_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "CardReader",
+    "Internal",
+    "Power"
+  ],
+  "internal_exclude": [
+    "UpperHousing",
+    "CartridgeFlap",
+    "DeckRing",
+    "RedPowerField",
+    "BitBadge",
+    "BitTitle",
+    "SegaTitle",
+    "MegaDriveTitle",
+    "PowerOnLegend"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.5,
+    2.4
+  ],
+  "sources": [
+    {
+      "url": "https://www.sega.jp/history/hard/megadrive/index.html",
+      "role": "Official hardware overview and dimensions"
+    }
+  ],
+  "parameter_basis": "Published body envelope; local details approximate",
+  "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+  "envelope_basis": "SEGA Model 1 official body reference 280 x 212 x 70 mm; applied labels and connector protrusions may extend the study envelope. Local details are approximate."
+}

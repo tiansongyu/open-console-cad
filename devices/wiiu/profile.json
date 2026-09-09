@@ -1,0 +1,63 @@
+{
+  "id": "wiiu",
+  "title": "Nintendo Wii U",
+  "prefix": "WiiU",
+  "model": "WUP-001 · launch white Basic",
+  "family": "console",
+  "width": 172,
+  "height": 268.5,
+  "closed_depth": 46,
+  "base_depth": 16,
+  "default_opening": 180,
+  "color": [
+    0.9,
+    0.9,
+    0.88
+  ],
+  "stages": 0,
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Controller"
+  ],
+  "internal_groups": [
+    "Body",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power",
+    "Ports",
+    "Controls"
+  ],
+  "internal_exclude": [
+    "UpperHousing",
+    "DiscLid",
+    "MainShield",
+    "CartridgeDeck"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.5,
+    2.4
+  ],
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/specs/index.html",
+      "role": "Official hardware overview and dimensions"
+    }
+  ],
+  "parameter_basis": "Published body envelope; local details approximate",
+  "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals"
+}

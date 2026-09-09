@@ -1,0 +1,63 @@
+{
+  "id": "n64",
+  "title": "Nintendo 64",
+  "prefix": "Nintendo64",
+  "model": "NUS-001 · original charcoal",
+  "family": "console",
+  "width": 260,
+  "height": 190,
+  "closed_depth": 73,
+  "base_depth": 16,
+  "default_opening": 180,
+  "color": [
+    0.19,
+    0.2,
+    0.21
+  ],
+  "stages": 0,
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Controller"
+  ],
+  "internal_groups": [
+    "Body",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power",
+    "Ports",
+    "Controls"
+  ],
+  "internal_exclude": [
+    "UpperHousing",
+    "DiscLid",
+    "MainShield",
+    "CartridgeDeck"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.5,
+    2.4
+  ],
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/n01/n64/hardware/index.html",
+      "role": "Official hardware overview and dimensions"
+    }
+  ],
+  "parameter_basis": "Published body envelope; local details approximate",
+  "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals"
+}

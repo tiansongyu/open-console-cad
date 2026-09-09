@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scope": "Local full CAD, STEP, native/Kami drawings and web delivery; live verification follows deployment.",
+  "components": 825,
+  "solids": 1209,
+  "stages": 13,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "final_interference_audit.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "files": [
+    {
+      "path": "devices/megadrive/output/MegaDrive_Complete.FCStd",
+      "bytes": 4551321,
+      "sha256": "ac724c7bc3d1304a30d8333911c554d731bb1aef2deaf2a563dd8d0c7dcadd84"
+    },
+    {
+      "path": "devices/megadrive/output/MegaDrive_Exploded.FCStd",
+      "bytes": 2985017,
+      "sha256": "0174ebdf6d9f76a5e1e7b8d227dd9dc33b198400c695d155f9b6664d24c80997"
+    },
+    {
+      "path": "devices/megadrive/output/MegaDrive_FullKit.step",
+      "bytes": 18211074,
+      "sha256": "13bfe266ba713b9699080669cd9c66718740bdcd2ceff3866cc2d2de41eaec19"
+    },
+    {
+      "path": "devices/megadrive/output/MegaDrive_Console.step",
+      "bytes": 15660862,
+      "sha256": "408d24270bd70ab896903f0c6d50322da976cc755216f2cf94731a1885ea38e3"
+    },
+    {
+      "path": "devices/megadrive/output/MegaDrive_Exploded.step",
+      "bytes": 18210779,
+      "sha256": "24053b74d55961d38f4478bc8d8ed034992310dce5fe09c20d83e68fa89aeaad"
+    },
+    {
+      "path": "devices/megadrive/output/MegaDrive_Drawings.FCStd",
+      "bytes": 410459,
+      "sha256": "a5335f54c908a23216bd0d0b40f1ec07e975c494440b06aa7aa674d036da1f35"
+    },
+    {
+      "path": "devices/megadrive/output/drawings/MegaDrive_Drawings.pdf",
+      "bytes": 684768,
+      "sha256": "9c13aa4428ab56daac6e1c242eb4ef830fae69e4474ed39eec9522f94626ca4b"
+    },
+    {
+      "path": "devices/megadrive/output/COMPONENTS.csv",
+      "bytes": 151833,
+      "sha256": "3388f3f9da63c84fe7baaa2918e6e4cf975efe5863d54b453cd8445b8f807673"
+    },
+    {
+      "path": "site/public/models/megadrive.glb",
+      "bytes": 16851388,
+      "sha256": "1048dfd9f00c110e7d51f4eaee54291df2e688eb00a9f1200d66a41644d3a4aa"
+    }
+  ],
+  "live_verified": false
+}

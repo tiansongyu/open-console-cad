@@ -2226,5 +2226,238 @@
         "控制器、卡带与电视附件"
       ]
     ]
+  },
+  {
+    "id": "megadrive",
+    "title": "Sega Mega Drive",
+    "prefix": "MegaDrive",
+    "model": "HAA-2510 · 初代日版",
+    "count": 825,
+    "iterations": 13,
+    "pages": 12,
+    "bytes": 16851388,
+    "family": "console",
+    "views": {
+      "assembled": {
+        "label": "主机与手柄",
+        "description": "日版初代大机型与 SJ-3500 三键手柄，保留空心外壳、接口和分组组件。",
+        "groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Controller",
+          "Internal",
+          "Power"
+        ]
+      },
+      "console": {
+        "label": "主机",
+        "description": "单独观察圆形卡带台、音量滑块、蓝色 RESET 与日版接口。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "CardReader",
+          "Internal",
+          "Power"
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开上壳及表面标识，观察 VA2 主板、卡座、散热片和开关传动示意。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "CardReader",
+          "Internal",
+          "Power"
+        ],
+        "exclude": [
+          "UpperHousing",
+          "CartridgeFlap",
+          "DeckRing",
+          "RedPowerField",
+          "BitBadge",
+          "BitTitle",
+          "SegaTitle",
+          "MegaDriveTitle",
+          "PowerOnLegend"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "按零件层次展开主机，展示位移不表示真实拆卸路径。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "CardReader",
+          "Internal",
+          "Power"
+        ],
+        "explode": 1,
+        "normal": [
+          1.4,
+          -0.4,
+          0.6
+        ]
+      },
+      "controller": {
+        "label": "三键手柄",
+        "description": "原始 SJ-3500 的曲线机壳、方向圆盘、ABC、蓝色 START、线缆与插头。",
+        "groups": [
+          "Controller"
+        ]
+      },
+      "mechanism": {
+        "label": "手柄内部",
+        "description": "观察主板、八组硅胶与碳膜接点、九芯导线和六处紧固。",
+        "groups": [
+          "Controller"
+        ],
+        "exclude": [
+          "PadFront",
+          "PadDDisc",
+          "PadDPad",
+          "PadABC0",
+          "PadABC1",
+          "PadABC2",
+          "PadABCMark0",
+          "PadABCMark1",
+          "PadABCMark2",
+          "PadStart",
+          "PadStartMark",
+          "PadSega"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "mainboard": {
+        "label": "VA2 主板",
+        "description": "原始 Model 1 系列的 VA2 布局研究，包括 68000、Z80 和主要处理器封装。",
+        "groups": [
+          "Mainboard"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "cardreader": {
+        "label": "卡座与开关",
+        "description": "两排共 64 个卡带触点、导向框、防尘门以及音量和电源传动。",
+        "groups": [
+          "CardReader",
+          "Controls"
+        ]
+      },
+      "cartridge": {
+        "label": "空白卡带",
+        "description": "原创学习卡带、双面金手指及内部封装，不包含游戏数据。",
+        "groups": [
+          "Accessories"
+        ],
+        "exclude": [
+          "AdapterLower",
+          "AdapterUpper",
+          "TransformerCore",
+          "TransformerBobbin",
+          "AdapterLabel",
+          "AdapterMark",
+          "AdapterStudyMark",
+          "ACBlade0",
+          "ACBlade1",
+          "AVCable",
+          "DINGrip",
+          "DINShield",
+          "DINPin0",
+          "DINPin1",
+          "DINPin2",
+          "DINPin3",
+          "DINPin4",
+          "DINPin5",
+          "DINPin6",
+          "DINPin7",
+          "DINInsert",
+          "AVSplit",
+          "AVBranch0",
+          "RCAGrip0",
+          "RCAShield0",
+          "RCAPin0",
+          "AVBranch1",
+          "RCAGrip1",
+          "RCAShield1",
+          "RCAPin1",
+          "AdapterLead",
+          "DCPlugGrip",
+          "DCPlugBarrel"
+        ]
+      },
+      "accessories": {
+        "label": "附件",
+        "description": "空白卡带、外接变压器式电源和 DIN 转双 RCA 连接线。",
+        "groups": [
+          "Accessories"
+        ]
+      },
+      "fullkit": {
+        "label": "整套模型",
+        "description": "全部 825 个组件的完整展示，可进一步展开各层。",
+        "groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Controller",
+          "Internal",
+          "Power",
+          "Accessories"
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "主机与三键手柄"
+      ],
+      [
+        "front",
+        "初代机身外观"
+      ],
+      [
+        "internal",
+        "主板与内部结构"
+      ],
+      [
+        "exploded",
+        "分层爆炸"
+      ],
+      [
+        "accessories",
+        "空白卡带与连接附件"
+      ]
+    ],
+    "gzip": {
+      "bytes": 4155183,
+      "sha256": "3db89e052c35723e475a185bb8495bac752cdfe61073affa005255c460bf3bdc",
+      "decoded_sha256": "1048dfd9f00c110e7d51f4eaee54291df2e688eb00a9f1200d66a41644d3a4aa",
+      "lossless": true
+    }
   }
 ]

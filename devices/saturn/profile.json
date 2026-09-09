@@ -1,0 +1,65 @@
+{
+  "id": "saturn",
+  "title": "Sega Saturn",
+  "prefix": "Saturn",
+  "model": "HST-3200 · original Japanese grey",
+  "family": "console",
+  "width": 260,
+  "height": 230,
+  "closed_depth": 83,
+  "base_depth": 16,
+  "default_opening": 180,
+  "color": [
+    0.52,
+    0.54,
+    0.54
+  ],
+  "stages": 0,
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Controller"
+  ],
+  "internal_groups": [
+    "Body",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Internal",
+    "Power",
+    "Ports",
+    "Controls"
+  ],
+  "internal_exclude": [
+    "UpperHousing",
+    "DiscLid",
+    "MainShield",
+    "CartridgeDeck"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.5,
+    2.4
+  ],
+  "sources": [
+    {
+      "url": "https://www.sega.jp/history/hard/segasaturn/index.html",
+      "role": "Official HST-3210 family dimensions; not original HST-3200 internals"
+    }
+  ],
+  "parameter_basis": "Approximate HST-3200 study; 260 x 230 x 83 mm from official HST-3210 family specification",
+  "exterior_fidelity": "Approximate original Japanese exterior",
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+  "envelope_kind": "approximate",
+  "envelope_basis": "Approximate HST-3200 exterior using later HST-3210 official family dimensions"
+}

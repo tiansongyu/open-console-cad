@@ -1,0 +1,13 @@
+"""Open the self-contained assembled, exploded and drawing documents."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parent/'output'
+for name in ['MegaDrive_Complete.FCStd','MegaDrive_Exploded.FCStd','MegaDrive_Drawings.FCStd']:
+    path=str(root/name)
+    document=next((d for d in App.listDocuments().values() if d.FileName==path),None)
+    if document is None:document=App.openDocument(path)
+    if name=='MegaDrive_Complete.FCStd':main=document
+App.setActiveDocument(main.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

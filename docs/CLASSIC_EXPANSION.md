@@ -1,6 +1,6 @@
 # Classic console expansion
 
-The user requested five more devices at the existing model-delivery standard. The final collection must contain twelve working device entries. The existing seven verified models remain part of the collection.
+The original five-classic expansion is followed by a second user-requested batch: Mega Drive, Nintendo 64, Wii, Wii U and Sega Saturn. The final collection must contain seventeen working device entries. The original seven verified models and all prior work remain in scope.
 
 | Device | Selected version | Distinctive required details |
 | --- | --- | --- |
@@ -9,6 +9,18 @@ The user requested five more devices at the existing model-delivery standard. Th
 | Game Boy | DMG-01 grey (1989) | Monochrome LCD, D-pad/AB/select/start, contrast/volume wheels, cartridge well, four AA cells, separate front/main/power/jack boards |
 | PlayStation | SCPH-1000 grey launch-family console | Top-loading CD mechanism, two controller and memory-card ports, original digital controller, optical pickup and main/power boards |
 | PlayStation 2 | SCPH-10000 Japanese black fat model | Tray-loading DVD, original front interfaces, PC CARD rear layout, DualShock 2, optical drive, power/cooling and major electronics |
+
+## Additional five-device batch
+
+| Device | Selected version | Distinctive required details |
+| --- | --- | --- |
+| Mega Drive | Original Japanese large case / Model 1 | Circular cartridge deck, headphone jack and volume slider, two controller ports, three-button controller |
+| Nintendo 64 | Original charcoal NUS-001 family | Four controller ports, cartridge flaps, Jumper Pak bay, removable PSU, three-prong controller |
+| Wii | White RVL-001 | Slot-loading drive, blue slot surround, GameCube ports and memory-card doors, SD flap, Remote and Nunchuk |
+| Wii U | Launch white Basic family | Rounded horizontal console, front flap, rear ports, disc drive, GamePad with twin sticks and display |
+| Sega Saturn | Original Japanese grey case, oval buttons | Top-loading CD, cartridge bay, two controller ports, blue controls, six-button controller |
+
+Exact model-specific sources and study dimensions are recorded separately as reference review progresses.
 
 ## Acceptance contract
 
@@ -24,3 +36,7 @@ Validate component solids and actual assembly interference, fresh source rebuild
 - Atari 2600: 23 source stages; complete console, two CX10 joysticks, CX30-04 paddle pair, blank cartridge, adapter and TV/GAME box. 684 components / 1,511 solids. Full source rebuild, 2,016 assembly candidates, two native assembly files and three STEP round trips pass. Twelve A3 Kami/native pages, 33 measurements and 15 native dimensions pass; all PDF pages were visually reviewed, including a separate reviewer. Published as device ten: fifteen live files match release `c100791`, and all eleven live views pass. The measured study envelope is approximate, not a manufacturer specification. README gallery retains three devices per row.
 - PlayStation SCPH-1000: fifteen stages, 726 traced components and 3,700 solids now include the native enclosure, original interfaces, optical and geared-lid mechanisms, PU-7 major and discrete electronics, separate PSU, seven-core harness, layered shields and mechanical fixings. All 2,213 assembly candidates and a fresh fifteen-stage source reconstruction pass. The original SCPH-1010 digital controller, accessories and final drawing/web delivery remain in progress.
 - PlayStation 2 SCPH-10000: further version-specific source review and construction pending.
+
+- Additional batch: version-specific reference review started for Mega Drive, Nintendo 64, Wii, Wii U and Saturn. Final target is seventeen; the live catalog stays at ten until each new delivery passes its checks.
+
+- Mega Drive HAA-2510: thirteen source stages, 825 components. Original exterior, VA2 study mainboard, SJ-3500 three-button controller and blank cartridge/adapter/connection accessories are built. Fresh source reconstruction and 1,769 assembly candidate checks pass. Two native assemblies and three STEP round trips, twelve Kami/native A3 pages with fourteen dimensions, independent PDF review and eleven local web views pass. Publication and live checks follow.

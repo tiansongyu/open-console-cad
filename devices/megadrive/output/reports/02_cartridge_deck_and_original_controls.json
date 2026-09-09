@@ -1,0 +1,1204 @@
+{
+  "iteration": 2,
+  "slug": "cartridge_deck_and_original_controls",
+  "summary": "加入日版卡带口和防尘门、耳机音量滑块、卡带锁联动电源、蓝色 RESET、16-BIT 标识及左侧贯穿散热槽。",
+  "physical_components": 44,
+  "objects": [
+    {
+      "name": "LowerHousing",
+      "label": "Tapered Model 1 lower shell",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 141521.00033058994,
+      "bounds": [
+        -140.0000001,
+        140.0000001,
+        -106.0000001,
+        106.0000001,
+        1.4999999,
+        18.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut005",
+      "label": "Sloping Model 1 upper shell007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 157,
+      "volume": 312390.6258932827,
+      "bounds": [
+        -140.0000001,
+        140.0000001,
+        -106.0000001,
+        106.0000001,
+        18.349999899999997,
+        69.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DeckRing",
+      "label": "Glossy annular cartridge-deck inlay",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1697.734262918766,
+      "bounds": [
+        -54.45,
+        122.45,
+        -81.45,
+        95.45,
+        69.2,
+        69.62
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DeckRing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "gloss",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Lower shell elastomer foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        -120.5,
+        -107.5,
+        -87.5,
+        -78.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Lower shell elastomer foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        107.5,
+        120.5,
+        -87.5,
+        -78.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Lower shell elastomer foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        -120.5,
+        -107.5,
+        78.5,
+        87.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Lower shell elastomer foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.9929188601028,
+      "bounds": [
+        107.5,
+        120.5,
+        78.5,
+        87.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeFlap",
+      "label": "Spring-return cartridge dust door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2545.649396453286,
+      "bounds": [
+        -27.750000000000004,
+        95.75,
+        26.2,
+        43.8,
+        67.9,
+        69.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeFlap",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapPivot_1",
+      "label": "Dust-door hinge stub",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.268140296446372,
+      "bounds": [
+        -25.0,
+        -19.0,
+        42.1,
+        43.9,
+        65.5,
+        67.30000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapPivot-1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapPivot1",
+      "label": "Dust-door hinge stub001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.268140296446372,
+      "bounds": [
+        93.0,
+        99.0,
+        42.1,
+        43.9,
+        65.5,
+        67.30000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapPivot1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlPanelCut",
+      "label": "Glossy power/volume/reset inset001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 2142.807663042968,
+      "bounds": [
+        -131.7,
+        -60.3,
+        -92.7,
+        -29.3,
+        61.3,
+        61.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlPanel",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "gloss",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeTrack",
+      "label": "Headphone slider recess",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 258.7883185307178,
+      "bounds": [
+        -121.9,
+        -114.1,
+        -79.75,
+        -38.25,
+        59.6,
+        60.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeTrack",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeSlider",
+      "label": "Headphone volume slider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 152.2125749205957,
+      "bounds": [
+        -121.7,
+        -114.3,
+        -76.5,
+        -67.5,
+        60.6,
+        62.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeSlider",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeMark",
+      "label": "Red slider index",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.35291327412287044,
+      "bounds": [
+        -121.4,
+        -114.6,
+        -72.325,
+        -71.675,
+        62.94,
+        63.019999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdred",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSlider",
+      "label": "Cartridge-lock power slider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 389.1225660691707,
+      "bounds": [
+        -99.9,
+        -74.1,
+        -47.4,
+        -36.6,
+        60.6,
+        62.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSlider",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblack",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "Power slider red index",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5153132741228681,
+      "bounds": [
+        -89.375,
+        -88.625,
+        -46.300000000000004,
+        -37.699999999999996,
+        62.04,
+        62.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdred",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "Blue RESET pushbutton",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 359.17592894744615,
+      "bounds": [
+        -99.0,
+        -75.0,
+        -84.0,
+        -74.0,
+        60.6,
+        62.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip0",
+      "label": "Reset button moulded grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646865,
+      "bounds": [
+        -95.5,
+        -94.5,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip1",
+      "label": "Reset button moulded grip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646866,
+      "bounds": [
+        -92.8,
+        -91.8,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip2",
+      "label": "Reset button moulded grip002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646865,
+      "bounds": [
+        -90.1,
+        -89.1,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip3",
+      "label": "Reset button moulded grip003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646866,
+      "bounds": [
+        -87.4,
+        -86.4,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip4",
+      "label": "Reset button moulded grip004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646866,
+      "bounds": [
+        -84.7,
+        -83.7,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip4",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip5",
+      "label": "Reset button moulded grip005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646865,
+      "bounds": [
+        -82.0,
+        -81.0,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip5",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetGrip6",
+      "label": "Reset button moulded grip006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8376823001646863,
+      "bounds": [
+        -79.3,
+        -78.3,
+        -82.5,
+        -75.5,
+        62.15,
+        62.269999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetGrip6",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "mdblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale0",
+      "label": "Volume scale tick",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.027945061929829585,
+      "bounds": [
+        -109.25,
+        -106.75,
+        -79.14,
+        -78.86,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale0",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale1",
+      "label": "Volume scale tick001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01562506192982967,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -75.34,
+        -75.06,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale1",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale2",
+      "label": "Volume scale tick002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01562506192982967,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -71.54,
+        -71.26,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale2",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale3",
+      "label": "Volume scale tick003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01562506192982967,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -67.74,
+        -67.46,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale3",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale4",
+      "label": "Volume scale tick004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01562506192982967,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -63.94,
+        -63.66,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale4",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale5",
+      "label": "Volume scale tick005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.02794506192982959,
+      "bounds": [
+        -109.25,
+        -106.75,
+        -60.14,
+        -59.86,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale5",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale6",
+      "label": "Volume scale tick006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015625061929829674,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -56.34,
+        -56.06,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale6",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale7",
+      "label": "Volume scale tick007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015625061929829674,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -52.540000000000006,
+        -52.260000000000005,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale7",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale8",
+      "label": "Volume scale tick008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015625061929829674,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -48.74,
+        -48.46,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale8",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale9",
+      "label": "Volume scale tick009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.015625061929829674,
+      "bounds": [
+        -108.7,
+        -107.3,
+        -44.940000000000005,
+        -44.660000000000004,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale9",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeScale10",
+      "label": "Volume scale tick010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.027945061929829585,
+      "bounds": [
+        -109.25,
+        -106.75,
+        -41.14,
+        -40.86,
+        61.94,
+        61.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeScale10",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeTitle",
+      "label": "PHONES VOL",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 141,
+      "volume": 0.12622024036246798,
+      "bounds": [
+        -129.78500429463088,
+        -115.80286073825503,
+        -90.03194640872482,
+        -88.37530191342283,
+        61.9399999,
+        61.9580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetTitle",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.06696504262346799,
+      "bounds": [
+        -93.78500429463087,
+        -86.97359479865771,
+        -89.03194640872482,
+        -87.37530191342283,
+        61.9399999,
+        61.9580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerTitle",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.0805915610568298,
+      "bounds": [
+        -93.78500429463087,
+        -85.94639251744967,
+        -63.031946408724835,
+        -61.37530191342282,
+        61.9399999,
+        61.9580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LockTitle",
+      "label": "CARTRIDGE LOCK",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 212,
+      "volume": 0.10757027259597993,
+      "bounds": [
+        -102.90231763355705,
+        -87.71747902684564,
+        -58.02536922751678,
+        -56.709798557718116,
+        61.9399999,
+        61.9580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LockTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BitBadge",
+      "label": "Black 16-bit badge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 658.0685834705771,
+      "bounds": [
+        4.0,
+        64.0,
+        -59.0,
+        -15.0,
+        69.73,
+        69.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BitBadge",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "gloss",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BitTitle",
+      "label": "16-BIT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 89,
+      "volume": 2.295192688688919,
+      "bounds": [
+        13.486472315436242,
+        55.172881711409396,
+        -35.19731553624161,
+        -24.965100571140937,
+        70.00999990000001,
+        70.0280001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BitTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "letter",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SegaTitle",
+      "label": "SEGA",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 81,
+      "volume": 0.45327002560696067,
+      "bounds": [
+        102.40771802080538,
+        118.80805369127516,
+        -91.09020144228187,
+        -86.41261734966443,
+        64.0299999,
+        64.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SegaTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MegaDriveTitle",
+      "label": "MEGA DRIVE",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 136,
+      "volume": 0.4004347146806497,
+      "bounds": [
+        66.37940436241611,
+        90.2945889261745,
+        -92.05637593892617,
+        -89.13288580604028,
+        64.0299999,
+        64.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MegaDriveTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLED",
+      "label": "Original red power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7.963937376850131,
+      "bounds": [
+        32.7,
+        35.3,
+        -67.3,
+        -64.7,
+        68.35,
+        69.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLED",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "red",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/megadrive/output/iterations/02_cartridge_deck_and_original_controls.FCStd",
+  "views": [
+    "devices/megadrive/output/previews/02_cartridge_deck_and_original_controls_hero.png",
+    "devices/megadrive/output/previews/02_cartridge_deck_and_original_controls_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
