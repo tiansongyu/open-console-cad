@@ -14,7 +14,7 @@
 - [FreeCAD 图纸](output/Nintendo3DS_Drawings.FCStd)
 - [12 页 A3 PDF 图册](output/drawings/Nintendo3DS_Drawings.pdf)
 - [整套 STEP](output/Nintendo3DS_FullKit.step) · [主机 STEP](output/Nintendo3DS_Handheld.step) · [闭合 STEP](output/Nintendo3DS_Closed.step) · [爆炸 STEP](output/Nintendo3DS_Exploded.step)
-- [零件清单](output/COMPONENTS.csv) · [检查报告](output/reports/) · [迭代源码](scripts/)
+- [零件清单](output/COMPONENTS.csv) · [检查报告](output/reports/) · [迭代源码](scripts/) · [逐轮记录](ITERATIONS.md)
 
 ## 使用与重建
 

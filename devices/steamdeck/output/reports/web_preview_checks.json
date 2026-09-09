@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "device": "steamdeck",
+  "local_url": "http://localhost:5173/?device=steamdeck&view=assembled#viewer",
+  "view_checks": [
+    {
+      "view": "assembled",
+      "expected_components": 491,
+      "observed_canvas_components": 491,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "expected_components": 491,
+      "observed_canvas_components": 491,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "expected_components": 470,
+      "observed_canvas_components": 470,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "expected_components": 491,
+      "observed_canvas_components": 491,
+      "passed": true
+    },
+    {
+      "view": "controls",
+      "expected_components": 144,
+      "observed_canvas_components": 144,
+      "passed": true
+    },
+    {
+      "view": "touchpads",
+      "expected_components": 36,
+      "observed_canvas_components": 36,
+      "passed": true
+    },
+    {
+      "view": "cooling",
+      "expected_components": 82,
+      "observed_canvas_components": 82,
+      "passed": true
+    },
+    {
+      "view": "electronics",
+      "expected_components": 125,
+      "observed_canvas_components": 125,
+      "passed": true
+    },
+    {
+      "view": "battery",
+      "expected_components": 13,
+      "observed_canvas_components": 13,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "expected_components": 7,
+      "observed_canvas_components": 7,
+      "passed": true
+    }
+  ],
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "mobile_overflow": false,
+  "mobile_viewer_top_px": 19.90625,
+  "desktop_viewer_top_px": 20.03125,
+  "hinge_control_hidden": true,
+  "exploded_slider_percent": 100,
+  "touchpads_slider_percent": 45,
+  "device_card_switch_to_switch2": {
+    "components": 579,
+    "viewer_top_px": 20.03125,
+    "passed": true
+  },
+  "browser_errors": [],
+  "visually_reviewed": [
+    "assembled",
+    "rear",
+    "internal desktop/mobile",
+    "exploded",
+    "touchpads",
+    "cooling"
+  ],
+  "release_live_verification": "Recorded separately after Pages deployment"
+}

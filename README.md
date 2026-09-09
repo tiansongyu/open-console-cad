@@ -4,7 +4,7 @@
 
 [在线 3D 模型库](https://tiansongyu.github.io/open-console-cad/) · [下载整个仓库](https://github.com/tiansongyu/open-console-cad/archive/refs/heads/main.zip) · [MIT 协议](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)
 
-目前已完成 Nintendo Switch、Nintendo Switch 2、Nintendo 3DS、Nintendo DS、Sony PSP-1000 和 PlayStation Vita 六个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
+目前已完成 Nintendo Switch、Nintendo Switch 2、Nintendo 3DS、Nintendo DS、Sony PSP-1000、PlayStation Vita 和 Steam Deck LCD 七个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
 
 ## 点击设备，直接预览
 
@@ -36,7 +36,7 @@
 | Nintendo DS NTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=nds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=nds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=nds&view=exploded#viewer) | [设备说明](devices/nds/README.md) · [A3 图册](devices/nds/output/drawings/NintendoDS_Drawings.pdf) |
 | Sony PSP-1000 | [整机](https://tiansongyu.github.io/open-console-cad/?device=psp&view=assembled#viewer) · [UMD 光驱](https://tiansongyu.github.io/open-console-cad/?device=psp&view=drive#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=psp&view=exploded#viewer) | [设备说明](devices/psp/README.md) · [A3 图册](devices/psp/output/drawings/PSP1000_Drawings.pdf) |
 | PS Vita PCH-1000 Wi-Fi OLED | [整机](https://tiansongyu.github.io/open-console-cad/?device=psv&view=assembled#viewer) · [后触控](https://tiansongyu.github.io/open-console-cad/?device=psv&view=rear-touch#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=psv&view=exploded#viewer) | [设备说明](devices/psv/README.md) · [A3 图册](devices/psv/output/drawings/PSVita_Drawings.pdf) |
-| Steam Deck LCD（2022） | 制作中 | [参考与配置](devices/steamdeck/profile.json) |
+| Steam Deck LCD（2022） | [整机](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=assembled#viewer) · [触控板](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=touchpads#viewer) · [散热](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=cooling#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=exploded#viewer) | [设备说明](devices/steamdeck/README.md) · [A3 图册](devices/steamdeck/output/drawings/SteamDeck_Drawings.pdf) |
 
 [![Nintendo 3DS 可开合模型](site/public/images/3ds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer)
 
@@ -46,7 +46,9 @@
 
 [![PS Vita 初代模型](site/public/images/psv/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=psv&view=assembled#viewer)
 
-目标是七款设备。只有完成几何、图纸和预览核验的设备才加入线上目录，阶段进展见 [扩展计划](docs/SEVEN_DEVICE_PLAN.md)。
+[![Steam Deck LCD 模型](site/public/images/steamdeck/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=assembled#viewer)
+
+七款设备合计 **3,328 个组件、4,467 个实体、84 页 A3 图纸**，保留 101 轮建模源码。版本和验收范围见 [扩展记录](docs/SEVEN_DEVICE_PLAN.md)。
 
 ## 怎么使用网页
 
@@ -82,7 +84,7 @@ open-console-cad/
 │   ├── nds/               # NTR-001；含双卡槽与开合宏
 │   ├── psp/               # PSP-1000；含 UMD 光驱与介质
 │   ├── psv/               # PCH-1000 Wi-Fi OLED；含后触控与双摇杆
-│   └── steamdeck/         # 2022 LCD，制作中
+│   └── steamdeck/         # 2022 LCD；含触控板反馈、背键与单风机散热
 ├── site/
 │   ├── index.html
 │   ├── src/               # Three.js 交互逻辑与响应式样式

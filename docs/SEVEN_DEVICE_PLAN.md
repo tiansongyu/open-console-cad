@@ -39,4 +39,4 @@ Additional corrective stages are recorded when inspection finds defects; the lis
 | Nintendo DS | 15 stages / 321 components; native, STEP, 12-page drawings and live hinged web preview verified at 3ec3907 |
 | PSP-1000 | 14 stages / 346 components; native, STEP, twelve A3 sheets and live detailed web preview verified at 14e228a |
 | PS Vita PCH-1000 | 14 stages / 386 components; native, STEP, 12-page A3 drawings and live web preview verified at bf1fa75 |
-| Steam Deck LCD | Native shell and hollow rear grips stage 1 built; controls and cooling system next |
+| Steam Deck LCD | 16 stages / 498 components / 575 solids; native, STEP, source rebuild and twelve A3 sheets verified; seven-device Pages release in final verification |

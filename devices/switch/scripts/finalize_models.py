@@ -65,6 +65,6 @@ manifest={'project':'Nintendo Switch standard HAC-001 study','design_iterations'
 with (OUT/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:
     w=csv.writer(f);w.writerow(['Part number','Part ID','Label','Assembly','Material','Solid count','Volume mm3','X mm','Y mm','Z mm','Fidelity'])
     for o in C.values():
-        bb=o.Shape.BoundBox;w.writerow([o.PartNumber,o.PartID,o.Label,o.Assembly,o.MaterialDescription,len(o.Shape.Solids),o.Shape.Volume,bb.XLength,bb.YLength,bb.ZLength,o.Fidelity])
+        bb=o.Shape.optimalBoundingBox(False,False);w.writerow([o.PartNumber,o.PartID,o.Label,o.Assembly,o.MaterialDescription,len(o.Shape.Solids),o.Shape.Volume,bb.XLength,bb.YLength,bb.ZLength,o.Fidelity])
 App.setActiveDocument(D.Name);visible(HANDHELD_GROUPS);camera((-.45,-.4,2),target=(0,0,7),span=165)
 RESULT={k:v for k,v in manifest.items() if k not in ['objects','exploded_objects','offsets','views']}

@@ -432,3 +432,85 @@ def stage13(m):
     m.checkpoint(13,'input_stack_and_shell_clearances','根据实体相交结果修正 LCD/边框层叠、USB 接口让位、后移扳机、摇杆螺钉长度、SSD 屏蔽套开口和相邻键位，并加入前部斜向握把分界。')
 
 STAGES[13]=stage13
+
+
+
+def stage14(m):
+    for side,index in [(-1,2),(1,3)]:
+        m.cut('Bumper'+str(side),Part.makeCylinder(1.3,7,V(side*111,52.7,30.0)),'View/Menu plunger edge clearance')
+        m.cut('TriggerBracket'+str(side),m.parts['Trigger'+str(side)].Shape,'Rounded trigger bracket seating relief')
+        _move(m,'TriggerSensor'+str(side),(side*11,-4,0))
+        for j,y in enumerate([9,-20]):
+            region=Part.makeBox(22,18,14.7,V(side*119-11,y-9,-.1))
+            m.cut('RearGrip'+str(side),region,'Rear paddle through-window')
+        pcb=m.parts['TrackpadPCB'+str(side)].Shape.copy()
+        for i,(dx,dy) in enumerate([(-17,-17),(17,-17),(-17,17),(17,17)]):
+            x,y=side*109+dx,-4+dy
+            pcb=pcb.fuse(Part.makeCylinder(2.1,.6,V(x,y,29.0)))
+            pcb=pcb.cut(Part.makeCylinder(.76,1.0,V(x,y,28.8)))
+            _move(m,f'TrackpadScrew{side}_{i}',(0,0,-.35))
+            m.cut('ControlPCB'+str(side),Part.makeCylinder(.76,1.3,V(x,y,26.3)),'Trackpad mount through input PCB')
+            m.ring(f'TrackpadSpacer{side}_{i}','Trackpad fixing spacer',1.5,.76,1.45,(x,y,27.45),'Touchpads',1,'metal',internal=True)
+        _replace(m,'TrackpadPCB'+str(side),pcb.removeSplitter())
+        m.cut('SpeakerFrame'+str(side),m.parts['SpeakerFlex'+str(side)].Shape,'Speaker flex exit notch')
+    # Keep the reader at the bottom slot height and reserve a real space below the cell.
+    outer=m.rr(107,38.5,8.4,(-45,-27.75,17.2),2).fuse(m.rr(37,50,8.4,(-80,16.2,17.2),2)).removeSplitter()
+    inner=[m.rr(104,35.5,7.1,(-45,-27.75,17.85),1.4),m.rr(34,46,7.1,(-80,16.2,17.85),1.4)]
+    _replace(m,'BatteryPouch',outer.cut(Part.makeCompound(inner)))
+    _replace(m,'BatteryCellLower',m.rr(103.6,35.1,6.6,(-45,-27.75,18.1),1.2))
+    _replace(m,'BatteryAdhesiveLower',m.rr(95,28,.15,(-45,-27.75,16.95),1.0))
+    reader=m.parts['MicroSDCarrier']
+    reader.Base.Shape=m.rr(16.8,9,2.3,(-72,-52.8,21.9),.8)
+    reader.Tool.Shape=m.rr(12,9,1.15,(-72,-54,22.6),.4)
+    for i in range(8):_move(m,'MicroSDContact'+str(i),(0,-5.8,0))
+    m.doc.recompute()
+    m.cut('MicroSDCarrier',[m.parts['MicroSDContact'+str(i)].Shape for i in range(8)],'Reader spring contact seats')
+    for key in ['Passive5','Passive5End-1','Passive5End1']:_move(m,key,(0,-6,0))
+    outlet=m.rr(70,12,11,(-33.5,55.4,20.2),.1)
+    for key in ['FanHousing','FanRearPlate']:m.cut(key,outlet,'Fan outlet to fin-stack clearance')
+    m.cut('FinBase',m.parts['Heatpipe'].Shape,'Copper heatpipe seating channel')
+    m.cut('EMIShield',m.parts['Heatpipe'].Shape,'Shield heatpipe exit passage')
+    m.profile['internal_exclude']+=['BatteryAdhesiveLower','BatteryAdhesiveUpper']
+    m.doc.recompute();m.profile['stages']=14
+    m.checkpoint(14,'thermal_reader_and_mounting_fit','修正风机出口与鳍片边界、热管座与罩板通道、microSD 与电池布局，补足触控板固定耳和安装柱，并打通背键窗口。')
+
+STAGES[14]=stage14
+
+
+
+def stage15(m):
+    m.cut('MainFrame',m.rr(17.0,9.2,2.5,(-72,-52.8,21.8),.8),'microSD carrier perimeter mounting pocket')
+    for side in [-1,1]:
+        x=side*123
+        m.box('BumperPCB'+str(side),'Shoulder switch carrier',8,4.5,.4,(x,54.0,27.5),'ControlsInternal',1,'deckpcb',.7,True)
+        m.box('BumperSwitch'+str(side),'L1/R1 tactile switch',6,2.6,1.5,(x,54.9,28.5),'ControlsInternal',2,'metal',.4,True)
+        m.box('BumperPlunger'+str(side),'Shoulder-key transmission tab',2,2,.3,(x,55,30.1),'ControlsInternal',3,'black',.3,True)
+        m.box('AntennaFoil'+str(side),'Dual-band antenna foil study',16,2.5,.12,(side*55,54.4,31.0),'Internal',1,'copper',.3,True)
+    # Shielded antenna routing is schematic, laid above the main electronic modules.
+    for key,points in [('AntennaCoaxRight',[(55,-26,31.5),(55,52.8,31.5)]),('AntennaCoaxLeft',[(53,-26,31.3),(-51,-26,31.3),(-55,-22,31.3),(-55,52.8,31.3)])]:
+        vectors=[V(*p) for p in points]
+        if len(vectors)==2:path=Part.Wire([Part.makeLine(*vectors)])
+        else:path=Part.Wire([Part.makeLine(vectors[0],vectors[1]),Part.Arc(vectors[1],V(-53.8284271,-24.8284271,31.3),vectors[2]).toShape(),Part.makeLine(vectors[2],vectors[3])])
+        profile=Part.Wire(Part.makeCircle(.22,vectors[0],vectors[1]-vectors[0]));shape=path.makePipeShell([profile],True,False)
+        m.feature(key,'Antenna coaxial route study',shape,'Internal',1,'black',True)
+    m.doc.recompute();m.profile['stages']=15
+    m.checkpoint(15,'reader_perimeter_and_secondary_inputs','为 microSD 卡座增加周框内侧安装口袋，并补齐肩键开关小板、传动片、双频天线薄片与示意同轴走线。')
+
+STAGES[15]=stage15
+
+
+
+def stage16(m):
+    # Sweep the flattened section directly. Scaling a circular pipe after sweeping
+    # produced a native-valid surface whose seam failed STEP re-import validation.
+    z=19.2;a,b,c,d=V(45,13,z),V(45,38,z),V(35,48,z),V(-32,48,z)
+    path=Part.Wire([Part.makeLine(a,b),Part.Arc(b,V(42.0710678118655,45.0710678118655,z),c).toShape(),Part.makeLine(c,d)])
+    ellipse=Part.Ellipse(V(),2.8,.98).toShape();ellipse.rotate(V(),V(1,0,0),90);ellipse.translate(a)
+    pipe=path.makePipeShell([Part.Wire([ellipse])],True,False)
+    _replace(m,'Heatpipe',pipe)
+    for label in ['Copper heatpipe seating channel · tool','Shield heatpipe exit passage · tool']:
+        next(o for o in m.doc.Objects if o.Label.startswith(label)).Shape=pipe.copy()
+    m.doc.recompute();m.profile['stages']=16
+    m.checkpoint(16,'elliptical_heatpipe_exchange_geometry','将热管改为直接扫掠椭圆截面，同步更新冷却底板座和屏蔽罩通道，消除 STEP 回读中的曲面接缝无效问题。')
+
+STAGES[16]=stage16

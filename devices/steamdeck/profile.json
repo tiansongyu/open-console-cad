@@ -25,7 +25,7 @@
     0.135
   ],
   "battery_mah": 5200,
-  "stages": 13,
+  "stages": 16,
   "sources": [
     {
       "url": "https://cdn.cloudflare.steamstatic.com/steamdeck/images/press/techspecs/steamdeck_techspecs.pdf",
@@ -35,5 +35,34 @@
       "url": "https://www.ifixit.com/News/57101/steam-deck-teardown",
       "role": "Firsthand exterior and internal layout reference"
     }
+  ],
+  "envelope_basis": "Published complete handheld envelope includes controls; 37 mm shell datum is a model construction parameter.",
+  "internal_exclude": [
+    "RearPlate",
+    "RearGrip-1",
+    "RearGrip1",
+    "RearPaddle-1_0",
+    "RearPaddle-1_1",
+    "RearPaddle1_0",
+    "RearPaddle1_1",
+    "ValveRearMark",
+    "RearModelMark",
+    "EMIShield",
+    "IntakeMesh",
+    "RearScrew0",
+    "RearScrew1",
+    "RearScrew2",
+    "RearScrew3",
+    "RearScrew4",
+    "RearScrew5",
+    "RearScrew6",
+    "RearScrew7",
+    "BatteryAdhesiveLower",
+    "BatteryAdhesiveUpper"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.3,
+    -2
   ]
 }

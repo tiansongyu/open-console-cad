@@ -28,3 +28,5 @@
 ## 许可
 
 原创内容按仓库 [MIT](../../LICENSE) 授权；第三方名称、标识、字体与参考资料见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
+
+零件清单与清单报告的包络尺寸由已保存的原生 BRep 重新测量，使用 `optimalBoundingBox(False, False)`，避免把曲面控制范围计入零件外形。核对记录见 [measurement_refresh.json](output/reports/measurement_refresh.json)。

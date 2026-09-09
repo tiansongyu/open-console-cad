@@ -974,5 +974,238 @@
         "专用可拆介质"
       ]
     ]
+  },
+  {
+    "id": "steamdeck",
+    "title": "Steam Deck",
+    "prefix": "SteamDeck",
+    "model": "2022 LCD",
+    "count": 498,
+    "iterations": 16,
+    "pages": 12,
+    "bytes": 15677636,
+    "family": "slate",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "2022 年初代 LCD，双摇杆、双方形触控板、扳机与四枚背键独立建模。",
+        "groups": [
+          "Body",
+          "Display",
+          "Touchpads",
+          "Controls",
+          "ControlsInternal",
+          "Ports",
+          "Audio",
+          "Thermal",
+          "Internal",
+          "Battery",
+          "Mainboard",
+          "Storage"
+        ]
+      },
+      "rear": {
+        "label": "背部外观",
+        "description": "曲面握把、四枚背键、进风格栅和八枚维修螺钉。",
+        "groups": [
+          "Body",
+          "Display",
+          "Touchpads",
+          "Controls",
+          "ControlsInternal",
+          "Ports",
+          "Audio",
+          "Thermal",
+          "Internal",
+          "Battery",
+          "Mainboard",
+          "Storage"
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后壳和银色主板罩，观察早期 LCD 的 L 形电池、主板与单风机散热布局。",
+        "groups": [
+          "Body",
+          "Display",
+          "Touchpads",
+          "Controls",
+          "ControlsInternal",
+          "Ports",
+          "Audio",
+          "Thermal",
+          "Internal",
+          "Battery",
+          "Mainboard",
+          "Storage"
+        ],
+        "exclude": [
+          "RearPlate",
+          "RearGrip-1",
+          "RearGrip1",
+          "RearPaddle-1_0",
+          "RearPaddle-1_1",
+          "RearPaddle1_0",
+          "RearPaddle1_1",
+          "ValveRearMark",
+          "RearModelMark",
+          "EMIShield",
+          "IntakeMesh",
+          "BatteryAdhesiveLower",
+          "BatteryAdhesiveUpper",
+          "RearScrew0",
+          "RearScrew1",
+          "RearScrew2",
+          "RearScrew3",
+          "RearScrew4",
+          "RearScrew5",
+          "RearScrew6",
+          "RearScrew7"
+        ],
+        "normal": [
+          0.2,
+          -0.3,
+          -2
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "机壳、显示、操作机构、电子模块、电池和散热组件按原生偏移展开。",
+        "groups": [
+          "Body",
+          "Display",
+          "Touchpads",
+          "Controls",
+          "ControlsInternal",
+          "Ports",
+          "Audio",
+          "Thermal",
+          "Internal",
+          "Battery",
+          "Mainboard",
+          "Storage"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "controls": {
+        "label": "操作机构",
+        "description": "可拆摇杆、按钮胶垫、肩键、扳机支架与背键传动机构。",
+        "groups": [
+          "Controls",
+          "ControlsInternal"
+        ],
+        "normal": [
+          0.2,
+          -0.4,
+          2
+        ]
+      },
+      "touchpads": {
+        "label": "触控板反馈",
+        "description": "双触控板的电极、压力承托、音圈、磁体、弹片和安装件；展开查看各层。",
+        "groups": [
+          "Touchpads"
+        ],
+        "normal": [
+          0.7,
+          -0.3,
+          1.5
+        ],
+        "explode": 0.45
+      },
+      "cooling": {
+        "label": "散热系统",
+        "description": "移开鳍片底板，观察原始 LCD 离心风机、铜热管、APU 冷板与排风鳍片。",
+        "groups": [
+          "Thermal"
+        ],
+        "exclude": [
+          "IntakeMesh",
+          "FinBase"
+        ],
+        "normal": [
+          0.15,
+          -0.25,
+          -2
+        ]
+      },
+      "electronics": {
+        "label": "主板与存储",
+        "description": "早期 LCD 黑色主板、APU/内存封装、独立操作板与 M.2 2230 模块。",
+        "groups": [
+          "Mainboard",
+          "Storage"
+        ],
+        "exclude": [
+          "EMIShield",
+          "SSDShield"
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "battery": {
+        "label": "电池",
+        "description": "40 Wh / 5200 mAh L 形电池布局，电芯与保护电路为近似示意。",
+        "groups": [
+          "Battery"
+        ],
+        "exclude": [
+          "BatteryAdhesiveLower",
+          "BatteryAdhesiveUpper"
+        ],
+        "normal": [
+          0.2,
+          -0.2,
+          -2
+        ]
+      },
+      "accessories": {
+        "label": "电源附件",
+        "description": "通用 45 W USB-C 电源与线缆段的尺寸示意。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          0.3,
+          -0.5,
+          1.8
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "正面装配"
+      ],
+      [
+        "rear",
+        "背键与握把"
+      ],
+      [
+        "internal",
+        "主要内部布局"
+      ],
+      [
+        "exploded",
+        "整机分层爆炸"
+      ],
+      [
+        "cooling",
+        "风机与铜热管"
+      ]
+    ]
   }
 ]
