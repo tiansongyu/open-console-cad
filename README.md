@@ -1,140 +1,125 @@
 # Open Console CAD
 
-**用 FreeCAD 构建、可以在浏览器中拆开观察的游戏主机模型。**
+**基于 FreeCAD 的开源游戏主机模型库，提供可编辑工程、分层装配、工程图纸和交互式 3D 预览。**
 
-[在线 3D 模型库](https://tiansongyu.github.io/open-console-cad/) · [下载整个仓库](https://github.com/tiansongyu/open-console-cad/archive/refs/heads/main.zip) · [MIT 协议](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md)
+[![Build & Deploy](https://github.com/tiansongyu/open-console-cad/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/tiansongyu/open-console-cad/actions/workflows/pages.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![FreeCAD 1.1.3](https://img.shields.io/badge/FreeCAD-1.1.3-729FCF.svg)](https://www.freecad.org/)
 
-目前已完成 Nintendo Switch、Nintendo Switch 2、Nintendo 3DS、Nintendo DS、Sony PSP-1000、PlayStation Vita 和 Steam Deck LCD 七个独立设备项目：原生可编辑模型、建模源码、爆炸装配、STEP、A3 工程图和实际 CAD 效果图。网页使用 Three.js 显示从 FreeCAD 实体导出的 GLB，**无需安装 FreeCAD 即可旋转、缩放和探索装配结构**。
+[在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-## 点击设备，直接预览
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **7 款设备、3,328 个组件与 84 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
-| Nintendo Switch · HAC-001 | Nintendo Switch 2 · BEE-001 |
-| --- | --- |
-| [![Nintendo Switch 3D 预览](site/public/images/switch/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=switch&view=assembled#viewer) | [![Nintendo Switch 2 3D 预览](site/public/images/switch2/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer) |
-| [整机 3D](https://tiansongyu.github.io/open-console-cad/?device=switch&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=switch&view=internal#viewer) · [主机爆炸](https://tiansongyu.github.io/open-console-cad/?device=switch&view=exploded#viewer) | [整机 3D](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=internal#viewer) · [主机爆炸](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=exploded#viewer) |
-| [设备说明](devices/switch/README.md) · [A3 图册](devices/switch/output/drawings/Switch_Drawings.pdf) | [设备说明](devices/switch2/README.md) · [A3 图册](devices/switch2/output/drawings/Switch2_Drawings.pdf) |
+- **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
+- **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
+- **可下载与核对**：提供 STEP、PDF、SVG 和 GLB，保留组件标识及源文件哈希。
 
-网页还有手柄、底座和附件视图，底部的效果图库可点击查看大图。
+> **模型范围**：本项目为非官方学习模型。主要外形参考公开规格，局部尺寸、孔位、壁厚和内部模块为近似设计，不作为制造或电路设计依据。各型号的来源与限制见设备说明。
 
-| 项目 | Switch | Switch 2 |
-| --- | ---: | ---: |
-| 建模迭代 | 14 轮 | 15 轮 |
-| 物理组件 | 654 | 799 |
-| CAD 实体 | 835 | 963 |
-| 图册 | 12 页 A3 | 12 页 A3 |
-| 手持包络，含摇杆与扳机 | 239 × 102 × 28.4 mm | 272 × 116 × 30.7 mm |
-| 主体厚度 | 13.9 mm | 13.9 mm |
-| 网页 GLB | 约 9.9 MB | 约 13.4 MB |
+## 模型库
 
-**范围说明：**这些是非官方 CAD 学习模型。整体包络参考公开规格，局部尺寸、壁厚、孔位、安装间隙和内部模块是近似设计。主板、芯片、天线等不包含真实电路或制造资料；Switch 2 以 2025 年首发 BEE-001 为对象。参考依据在各设备的 `references/SOURCES.md`。
+点击缩略图打开对应的交互式预览；设备说明中提供完整工程、STEP、组件清单和重建方法。
 
-## 扩展设备
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=switch&amp;view=assembled#viewer"><img src="site/public/images/switch/hero.webp" width="220" height="109" alt="Nintendo Switch HAC-001 的 FreeCAD 模型预览"></a><br>
+      <strong>Nintendo Switch</strong><br>
+      <sub>HAC-001</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=switch&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/switch/README.md">设备说明</a> · <a href="devices/switch/output/drawings/Switch_Drawings.pdf">A3 图纸</a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=switch2&amp;view=assembled#viewer"><img src="site/public/images/switch2/hero.webp" width="220" height="109" alt="Nintendo Switch 2 BEE-001 的 FreeCAD 模型预览"></a><br>
+      <strong>Nintendo Switch 2</strong><br>
+      <sub>BEE-001</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=switch2&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/switch2/README.md">设备说明</a> · <a href="devices/switch2/output/drawings/Switch2_Drawings.pdf">A3 图纸</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=3ds&amp;view=assembled#viewer"><img src="site/public/images/3ds/hero.webp" width="149" height="160" alt="Nintendo 3DS CTR-001 的 FreeCAD 模型预览"></a><br>
+      <strong>Nintendo 3DS</strong><br>
+      <sub>CTR-001</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=3ds&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/3ds/README.md">设备说明</a> · <a href="devices/3ds/output/drawings/Nintendo3DS_Drawings.pdf">A3 图纸</a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=nds&amp;view=assembled#viewer"><img src="site/public/images/nds/hero.webp" width="206" height="160" alt="Nintendo DS NTR-001 的 FreeCAD 模型预览"></a><br>
+      <strong>Nintendo DS</strong><br>
+      <sub>NTR-001</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=nds&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/nds/README.md">设备说明</a> · <a href="devices/nds/output/drawings/NintendoDS_Drawings.pdf">A3 图纸</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=psp&amp;view=assembled#viewer"><img src="site/public/images/psp/hero.webp" width="206" height="160" alt="Sony PSP PSP-1000 的 FreeCAD 模型预览"></a><br>
+      <strong>Sony PSP</strong><br>
+      <sub>PSP-1000</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=psp&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/psp/README.md">设备说明</a> · <a href="devices/psp/output/drawings/PSP1000_Drawings.pdf">A3 图纸</a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=psv&amp;view=assembled#viewer"><img src="site/public/images/psv/hero.webp" width="206" height="160" alt="PlayStation Vita PCH-1000 · Wi-Fi OLED 的 FreeCAD 模型预览"></a><br>
+      <strong>PlayStation Vita</strong><br>
+      <sub>PCH-1000 · Wi-Fi OLED</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=psv&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/psv/README.md">设备说明</a> · <a href="devices/psv/output/drawings/PSVita_Drawings.pdf">A3 图纸</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer"><img src="site/public/images/steamdeck/hero.webp" width="206" height="160" alt="Steam Deck 2022 · LCD 的 FreeCAD 模型预览"></a><br>
+      <strong>Steam Deck</strong><br>
+      <sub>2022 · LCD</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/steamdeck/README.md">设备说明</a> · <a href="devices/steamdeck/output/drawings/SteamDeck_Drawings.pdf">A3 图纸</a>
+    </td>
+  </tr>
+</table>
 
-| 设备 | 状态 / 直接预览 | 模型与图纸 |
-| --- | --- | --- |
-| Nintendo 3DS CTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=exploded#viewer) | [设备说明](devices/3ds/README.md) · [A3 图册](devices/3ds/output/drawings/Nintendo3DS_Drawings.pdf) |
-| Nintendo DS NTR-001 | [展开](https://tiansongyu.github.io/open-console-cad/?device=nds&view=assembled#viewer) · [闭合](https://tiansongyu.github.io/open-console-cad/?device=nds&view=closed#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=nds&view=exploded#viewer) | [设备说明](devices/nds/README.md) · [A3 图册](devices/nds/output/drawings/NintendoDS_Drawings.pdf) |
-| Sony PSP-1000 | [整机](https://tiansongyu.github.io/open-console-cad/?device=psp&view=assembled#viewer) · [UMD 光驱](https://tiansongyu.github.io/open-console-cad/?device=psp&view=drive#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=psp&view=exploded#viewer) | [设备说明](devices/psp/README.md) · [A3 图册](devices/psp/output/drawings/PSP1000_Drawings.pdf) |
-| PS Vita PCH-1000 Wi-Fi OLED | [整机](https://tiansongyu.github.io/open-console-cad/?device=psv&view=assembled#viewer) · [后触控](https://tiansongyu.github.io/open-console-cad/?device=psv&view=rear-touch#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=psv&view=exploded#viewer) | [设备说明](devices/psv/README.md) · [A3 图册](devices/psv/output/drawings/PSVita_Drawings.pdf) |
-| Steam Deck LCD（2022） | [整机](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=assembled#viewer) · [触控板](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=touchpads#viewer) · [散热](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=cooling#viewer) · [爆炸](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=exploded#viewer) | [设备说明](devices/steamdeck/README.md) · [A3 图册](devices/steamdeck/output/drawings/SteamDeck_Drawings.pdf) |
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，以及 Steam Deck 的触控板反馈机构与散热系统。
 
-[![Nintendo 3DS 可开合模型](site/public/images/3ds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=3ds&view=assembled#viewer)
+## 快速开始
 
-[![Nintendo DS 可开合模型](site/public/images/nds/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=nds&view=assembled#viewer)
+### 在浏览器中查看
 
-[![PSP-1000 可拆组件模型](site/public/images/psp/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=psp&view=assembled#viewer)
+访问 **[在线模型库](https://tiansongyu.github.io/open-console-cad/)**，无需安装 FreeCAD。
 
-[![PS Vita 初代模型](site/public/images/psv/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=psv&view=assembled#viewer)
+鼠标拖动旋转，滚轮缩放，右键平移；手机支持触控操作。通过视图标签切换装配分组，拖动“展开程度”查看分层结构。每个视图都有可分享的链接，例如 [Steam Deck 散热系统](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=cooling#viewer)。
 
-[![Steam Deck LCD 模型](site/public/images/steamdeck/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=steamdeck&view=assembled#viewer)
+### 下载并打开 CAD 工程
 
-七款设备合计 **3,328 个组件、4,467 个实体、84 页 A3 图纸**，保留 101 轮建模源码。版本和验收范围见 [扩展记录](docs/SEVEN_DEVICE_PLAN.md)。
-
-## 怎么使用网页
-
-1. 点击设备卡片选择已发布的主机型号。
-2. 选择整机、内部结构、分层爆炸或设备提供的专属视图，如双卡槽、操作机构和附件。
-3. 鼠标拖动旋转、滚轮缩放、右键拖动平移；手机支持单指旋转、双指缩放和平移。
-4. 用“展开程度”滑块从装配状态过渡到分层状态。“主机爆炸”默认完全展开。
-5. 使用重置视角、自动旋转或全屏按钮。3DS 和 NDS 折叠设备另有开合角度滑块。画布获得焦点后可用方向键旋转、`+` / `-` 缩放。
-6. 页面提供 FreeCAD、PDF 和 GLB 下载链接。效果图始终可查看，WebGL 不可用或模型加载失败时有明确提示和重试入口。
-
-链接中的 `device` 和 `view` 参数可以分享，例如：
-
-```text
-https://tiansongyu.github.io/open-console-cad/?device=switch2&view=exploded#viewer
-```
-
-## 仓库目录
-
-```text
-open-console-cad/
-├── devices/
-│   ├── switch/
-│   │   ├── README.md / ITERATIONS.md
-│   │   ├── Open_Switch.FCMacro / Rebuild_Switch.FCMacro
-│   │   ├── scripts/       # 按轮次组织的 FreeCAD Python 源码
-│   │   ├── references/    # 来源说明、标识轮廓、CAD 字体及其许可
-│   │   └── output/        # FCStd、STEP、组件清单
-│   │       ├── drawings/  # PDF、SVG、内容数据和图纸模板
-│   │       ├── previews/  # 原生 CAD 渲染
-│   │       └── reports/   # 几何、重建、尺寸与导出检查
-│   ├── switch2/           # 同样的独立结构
-│   ├── 3ds/               # CTR-001；含开合宏
-│   ├── nds/               # NTR-001；含双卡槽与开合宏
-│   ├── psp/               # PSP-1000；含 UMD 光驱与介质
-│   ├── psv/               # PCH-1000 Wi-Fi OLED；含后触控与双摇杆
-│   └── steamdeck/         # 2022 LCD；含触控板反馈、背键与单风机散热
-├── site/
-│   ├── index.html
-│   ├── src/               # Three.js 交互逻辑与响应式样式
-│   └── public/
-│       ├── models/        # GLB 与可核对的导出清单
-│       └── images/        # 网页效果图
-├── tools/                 # FreeCAD → GLB、仓库与 glTF 检查
-├── docs/                  # 建模集成与维护说明
-├── licenses/              # 第三方许可证副本
-├── .github/workflows/pages.yml
-├── LICENSE
-└── THIRD_PARTY_NOTICES.md
-```
-
-不提交运行日志、个人机器路径、备份、虚拟环境、下载的研究照片或网页副本。历史各轮的二进制快照可通过源码重新生成；Git 中保留最终模型和全部建模阶段源码，避免持续累积大型二进制历史。
-
-## 在 FreeCAD 中打开和修改
+从上方设备说明下载所需文件，或获取完整仓库：
 
 ```bash
-git clone git@github.com:tiansongyu/open-console-cad.git
+git clone https://github.com/tiansongyu/open-console-cad.git
 cd open-console-cad
 ```
 
-推荐使用 **FreeCAD 1.1.3**，这是原模型验证使用的版本。
+也可 [下载 ZIP](https://github.com/tiansongyu/open-console-cad/archive/refs/heads/main.zip)。模型使用 **FreeCAD 1.1.3** 验证。
 
-- 在 FreeCAD 中打开相应设备目录下的 `Open_*.FCMacro`，通过“宏 → 宏 → 执行”运行，打开完整模型、爆炸装配和图纸。
-- 也可直接打开 `output/*_Complete.FCStd`。默认显示手持整机，底座和附件位于独立分组。
-- `*_Exploded.FCStd` 记录组件编号和爆炸位移，可观察各装配层。
-- `*_Drawings.FCStd` 为当前版本的自包含矢量图页和可测尺寸参考。**修改三维模型后需要重新生成图纸**，它不是自动跟随所有几何变化的完整关联工程图。
-- 各设备的 `Parameters` 参数不同：Switch 系列含 `StickProjection`，3DS / NDS 使用 `Opening` 与开合宏，PSP 保存主体宽高等参数。局部坐标与上下游装配配合修改后应重新计算并检查。
-- 运行 `Rebuild_*.FCMacro` 会按顺序执行该设备的 `iter01_*.py` 至最后一轮，在设备的 `output/rebuilt/` 中生成结果，保留交付文件。
+1. 打开 `devices/<device>/output/*_Complete.FCStd` 查看完整工程。
+2. 在 FreeCAD 中运行对应的 `Open_*.FCMacro`，可同时打开整机、爆炸装配与图纸。例如 `devices/switch/Open_Switch.FCMacro`。
+3. 运行 `Rebuild_*.FCMacro`，从逐轮源码重建模型，结果写入该设备的 `output/rebuilt/`。
 
-| 格式 | 用途 |
+部分外壳尺寸由 `Parameters` 驱动；局部孔位与装配关系仍需结合源码调整并检查。原生图纸是所交付模型的版本快照，修改三维几何后需要重新生成。
+
+### 选择文件格式
+
+| 文件 | 适用场景 |
 | --- | --- |
-| `.FCStd` | FreeCAD 原生几何、建模历史和参数，是继续设计的入口 |
-| `.step` | 通用 CAD 交换，保留实体与颜色，不保留 FreeCAD 建模历史 |
-| `.glb` | 浏览器展示网格，保留组件与颜色，不是精确 CAD 实体 |
-| `.pdf` / `.svg` | 可阅读、打印或编辑的图纸 |
-| `COMPONENTS.csv` | 零件编号、分组、材质显示角色与尺寸索引 |
+| `.FCStd` | 在 FreeCAD 中查看参数、建模历史并继续编辑 |
+| `.step` | 在其他 CAD 软件中使用实体几何与颜色 |
+| `.glb` | 在浏览器或支持 glTF 的工具中查看组件网格 |
+| `.pdf` / `.svg` | 阅读、打印或编辑工程图纸 |
+| `COMPONENTS.csv` | 检索组件编号、装配分组、材质显示角色和尺寸 |
 
-## 在本地运行网页
+## 开发与维护
 
-需要 Node.js 24 和 npm；查看网页本身不需要 FreeCAD。
+### 本地运行网页
+
+需要 **Node.js 24、npm 和 Python 3**。网页开发使用已导出的 GLB；CAD 修改与重新导出另需 FreeCAD。
 
 ```bash
 npm ci
 npm run dev
 ```
 
-打开终端显示的本地 URL。生产构建：
+打开终端显示的地址。提交网页改动前运行检查与生产构建：
 
 ```bash
 npm run check
@@ -142,49 +127,70 @@ npm run build
 npm run preview
 ```
 
-`npm run check` 检查 GLB 与 CAD 文件的 SHA-256、组件编号一致性、FCStd 压缩包完整性、必要文件、Python 语法及 Khronos glTF 验证器结果。GLB 已提交，因此 GitHub Actions **不需要安装或启动 FreeCAD**。
+`npm run check` 校验组件身份、GLB / FCStd 哈希、下载大小、原生文件完整性、源码语法和 glTF 格式。模型几何、装配配合与图纸仍需执行对应设备的 CAD 检查。
 
-## 从 FreeCAD 更新网页模型
+### 更新模型与发布
 
-先保存设备的最终 FCStd，并同步其 `output/reports/final_manifest.json`，然后在 FreeCAD 的 Python 控制台运行：
+修改几何后，应同步更新原生文件、STEP、组件清单、图纸和网页资源。在 FreeCAD Python 控制台或 [freecad-mcp](docs/MCP.md) 中执行导出器，例如：
 
 ```python
 repo = "/absolute/path/open-console-cad"
 exec(open(repo + "/tools/export_web_models.py", encoding="utf-8").read())
-export_device(repo, "switch")
-export_device(repo, "switch2")
+export_device(repo, "steamdeck", deflection=0.10, angular_deflection=0.15)
 ```
 
-也可通过 [freecad-mcp](https://github.com/neka-nat/freecad-mcp) 的 `execute_code` 执行以上代码，见 [MCP 说明](docs/MCP.md)。
+导出前需更新该设备的 `output/reports/final_manifest.json`。GLB 与其源文件哈希保存在 `site/public/models/`；网页不会自动读取改动后的 FCStd。
 
-导出器逐组件读取真实 BRep，用 MeshPart 生成网格，将 mm 转为 glTF 的 m。默认线性偏差设为 0.25 mm、角度偏差为 0.45 rad，保留颜色、组件编号、装配分组及爆炸位移。网页 GLB 的身份和源文件哈希记录在 `site/public/models/*.json`。**导出不会改写 FCStd 或 STEP。**
+推送 `main` 后，[GitHub Actions](.github/workflows/pages.yml) 自动检查、构建并将 `dist/` 发布到 GitHub Pages。Fork 后请在 **Settings → Pages → Source** 选择 **GitHub Actions**，并调整指向原仓库的链接。
 
-如果改了几何，还应重新导出 STEP、生成尺寸图并执行设备脚本中的相关 CAD 检查。图纸的 PDF 生成沿用 Kami：安装 Kami 后设置 `KAMI_HOME`，运行 Switch 设备脚本中的 `build_drawing_book.py`，或为 3DS / NDS / PSP / PS Vita 执行 `python3 tools/cadlib/build_book.py devices/<id>`，并执行其字体、内容和逐页视觉检查；单纯更新网页不需要重新生成 PDF。
+完整流程见 **[维护与新增设备指南](docs/MAINTAINING.md)**、[MCP 建模说明](docs/MCP.md) 和各设备 README。PDF 使用 Kami 管线生成，更新后需检查字体、内容与逐页渲染效果。
 
-## GitHub Pages 发布
+## 仓库结构
 
-在线地址：**https://tiansongyu.github.io/open-console-cad/**
+```text
+open-console-cad/
+├── devices/<device>/
+│   ├── README.md / ITERATIONS.md   # 型号说明与迭代记录
+│   ├── Open_*.FCMacro              # 打开交付工程
+│   ├── Rebuild_*.FCMacro           # 从源码重建
+│   ├── scripts/                   # FreeCAD Python 源码
+│   ├── references/                # 来源与第三方许可
+│   └── output/                    # 原生模型、STEP、组件清单
+│       ├── drawings/              # PDF、SVG 与图纸数据
+│       ├── previews/              # CAD 效果图
+│       └── reports/               # 模型与导出检查记录
+├── site/                          # Three.js 查看器与静态资源
+├── tools/                         # 导出与验证工具
+├── docs/                          # 维护、建模与验收说明
+├── licenses/                      # 第三方许可证
+└── .github/workflows/pages.yml     # 自动构建与发布
+```
 
-仓库的 `.github/workflows/pages.yml` 在推送 `main` 后自动检查、构建并发布 `dist/`。依赖锁定于 `package-lock.json`，Actions 固定到提交 SHA。构建使用相对资源路径，可部署在 `/open-console-cad/` 项目子目录下。
+七个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv` 和 `steamdeck`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-首次在新仓库启用时：仓库 **Settings → Pages → Build and deployment → Source → GitHub Actions**。Fork 后需要在自己的仓库启用 Pages，并修改 README 和 `site/src/main.js` 中指向原仓库的链接。
+## 验证记录
 
-更多维护与新增设备步骤见 [维护指南](docs/MAINTAINING.md)。
+仓库保留已交付版本的验证证据，涵盖原生实体有效性、源码重建、装配干涉、STEP 回读、尺寸核对与图纸检查。修改模型后应重新验证相关内容。
 
-## 模型检查记录
+| 验证范围 | 记录 |
+| --- | --- |
+| 七款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/seven_device_delivery_audit.json) |
+| 线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
+| 模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
+| 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
-原始最终 CAD 已通过实体有效性、干涉、参数修改恢复、源码重建、STEP 回读和尺寸核对。具体证据位于各设备 `output/reports/`，检查针对记录的模型版本；这些历史报告不意味着所有后续修改自动通过。
+## 参与贡献
 
-- Switch：最终检查 1,029 对候选组件，14 轮源码构建匹配；26 项模型尺寸、23 项原生图纸尺寸参考。
-- Switch 2：最终检查 1,375 对候选组件，15 轮源码构建匹配；26 项模型尺寸、22 项原生图纸尺寸参考。
-- Nintendo 3DS：13 轮、324 组件，展开与闭合检查通过，16 项模型尺寸、17 项原生图纸尺寸参考。
-- Nintendo DS：15 轮、321 组件，展开与闭合检查通过，18 项模型尺寸、18 项原生图纸尺寸参考。
-- Sony PSP-1000：14 轮、346 组件，主体和含按键尺寸分开记录；23 项模型尺寸、19 项原生图纸尺寸参考。
-- PlayStation Vita：14 轮、386 组件，Wi-Fi OLED 版本；25 项模型尺寸、17 项原生图纸尺寸参考。
-- 已发布设备的 PDF 均为 12 页 A3，已完成 Kami 构建、中文字体、内容覆盖和逐页视觉检查。
+欢迎修正模型、补充设备资料、改进文档或优化查看器。
 
-## 贡献与协议
+- **报告问题**：通过 [Issues](https://github.com/tiansongyu/open-console-cad/issues) 说明设备型号、复现步骤及预期结果。
+- **提交改进**：先阅读 [贡献指南](CONTRIBUTING.md)，在 Pull Request 中附上参考来源、前后对比和相关验证结果。
+- **新增设备**：参考 [目录与发布流程](docs/MAINTAINING.md#新增设备)，保持组件标识、来源说明与交付文件的一致性。
 
-欢迎通过 Issue 或 Pull Request 改进建模结构、补充设备和提升网页体验。请附参考来源、修改前后预览及相关验证结果，见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+## 许可证与致谢
 
-项目原创内容采用 **[MIT License](LICENSE)**。Nintendo、Sony 等名称、标识、参考材料及第三方依赖保留其原有权利，具体范围见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本项目与相关设备厂商无隶属关系。
+项目原创代码、文档及有权许可的自制模型数据采用 **[MIT License](LICENSE)**。
+
+Nintendo、Sony、Valve 等名称、商标和产品设计，以及第三方参考材料、字体与依赖，保留其原有权利。本项目与相关设备厂商无隶属、赞助或认证关系，具体范围见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+
+感谢 [FreeCAD](https://www.freecad.org/)、[Three.js](https://threejs.org/)、[freecad-mcp](https://github.com/neka-nat/freecad-mcp) 与 [Kami](https://github.com/tw93/Kami) 提供建模、可视化和文档工具。
