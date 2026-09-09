@@ -1,6 +1,6 @@
 # Atari 2600 construction iterations
 
-Development in progress. These stages were executed through freecad-mcp in FreeCAD 1.1.3. All dimensions are approximate study dimensions. Earlier fit reports retain their findings; later stages explicitly correct those findings. Historical native binaries can be regenerated from the numbered scripts.
+All stages were executed through freecad-mcp in FreeCAD 1.1.3. Historical fit reports retain the findings corrected by later stages. Complete delivery validation is recorded separately.
 
 | Stage | Change | Components |
 | --- | --- | ---: |
@@ -17,3 +17,13 @@ Development in progress. These stages were executed through freecad-mcp in FreeC
 | 11 | 为排线端部保留 0.15 mm 展示间隙，避免共面端盖造成求交歧义；将 RF 内线末段沿护套轴线拉直，核对入口配合。 | 330 |
 | 12 | 将两条 DC 线分层并从支柱前方绕行，RF 线先平直离开电路板再沿侧壁布置；补齐支柱引脚避让和铸件螺钉孔深。 | 330 |
 | 13 | 改用精确圆弧弯管构造排线和内部 RF/DC 线，消除扫掠曲面的自相交问题；调整 DC 末端走向，所有新线段均通过严格布尔几何检查。 | 330 |
+| 14 | 建立两只 CX10 的独立原生分壳、红色长行程按钮、刚性摇杆盘与四个弹簧柱、同心橡胶防尘套、橙色方向环和顶部六角标牌，保留初代无 TOP 字样的外观。 | 358 |
+| 15 | 加入两只 CX10 的专用 PCB、五组独立接点与回位弹簧、带柔性槽的传动板、弹簧杯和紧固结构，表现初代摇杆的内部传动方式。 | 424 |
+| 16 | 加入两套六芯内部线束、PCB 接线点、收纳状态的摇杆线缆和 DE-9 母插头，区分九个孔位与实际使用的六个接点；线长为展示片段。 | 470 |
+| 17 | 将六芯线束按端点横向顺序排列并交错分层，先沿 PCB 接线针轴线抬升后再弯折，消除线间交叉和焊接端部重叠。 | 470 |
+| 18 | 建立两片原生卡带壳、24 个金属接点、PCB、ROM 封装和固定结构，采用原创 VCS STUDY 标签；不包含游戏 ROM、封面或电路数据。 | 523 |
+| 19 | 建立原始 CX30-04 旋钮控制器的斜面分壳、滚花旋钮、侧面红按钮、1 MΩ 电位器内部结构和早期网球拍标识；两只控制器的共用线缆随后装配。 | 575 |
+| 20 | 补齐两只旋钮控制器的内部接线、壳体固定件、Y 形分线和共用 DE-9 插头；摇杆线束采用分层收束与错位抬升，保持端部排列顺序。 | 605 |
+| 21 | 建立同代灰色适配器分壳、扁脚与 3.5 mm 单声道 DC 插头，内部加入通用变压器、整流和滤波结构示意；尺寸与电路布局不代表原厂制造数据。 | 643 |
+| 22 | 补齐 TV/GAME 射频切换盒、天线螺钉端子、RCA 输入和双线叉形输出，并为主机固定 RF 线加入配套插头；调整适配器展示位置以避开主机。 | 684 |
+| 23 | 按金属切换盒参考图调整天线端子所在端面，校正 CX10 顶标配色，并将参数表的整体尺寸改为本模型实测学习包络；不将近似尺寸标为原厂规格。 | 684 |

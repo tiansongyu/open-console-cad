@@ -25,6 +25,7 @@ def finalize(m):
     settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','ControlsInternal','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
         if name=='controls' and p.get('controls_groups'):kw['assemblies']=p['controls_groups']
+        if name=='internal' and p.get('internal_groups'):kw['assemblies']=p['internal_groups']
         if name=='internal' and p.get('internal_exclude'):kw['exclude']=p['internal_exclude']
         if name=='internal' and p.get('internal_normal'):kw['normal']=p['internal_normal']
         kw.setdefault('assemblies',main_groups);views[name]=m.snapshot('final_'+name,**kw)
@@ -92,7 +93,9 @@ def finalize(m):
     native=[prefix+'_Complete.FCStd',prefix+'_Exploded.FCStd'];steps=[prefix+'_FullKit.step',main_step,prefix+'_Exploded.step']
     if p['family']=='clamshell':native.append(prefix+'_Closed.FCStd');steps.append(prefix+'_Closed.step')
     report={'project':p['title']+' '+p['model'],'device':p['id'],'prefix':prefix,'design_iterations':p['stages'],'physical_components':len(m.parts),'solids':sum(len(o.Shape.Solids) for o in m.parts.values()),'assemblies':dict(Counter(o.Assembly for o in m.parts.values())),'handheld_groups':main_groups,'native_files':native,'step_files':steps,'views':{k:str(Path(v).relative_to(m.repo)) for k,v in views.items()},'objects':rows,'exploded_objects':erows,'offsets':offsets,'published_envelope_mm':[p['width'],p['height'],p['closed_depth']],'envelope_pose':'closed' if p['family']=='clamshell' else 'body','measured_envelope_mm':[envelope.XLength,envelope.YLength,envelope.ZLength],'pose':{'type':'hinge' if p['family']=='clamshell' else 'fixed','group':'Lid','pivot_mm':[0,p.get('hinge_y',0),p.get('hinge_z',0)],'axis':[1,0,0],'default_opening':p.get('default_opening',180),'range':[0,p.get('default_opening',180)]},'fidelity':'Published envelope; approximate exterior details and schematic major internals','source_digest':info.SourceDigest}
-    report.update(main_step_file=main_step,envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength])
+    report.update(main_step_file=main_step,envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength],envelope_kind=p.get('envelope_kind','published'))
+    report['fidelity']=p.get('fidelity',report['fidelity'])
+    if report['envelope_kind']=='approximate':report['reference_envelope_mm']=report.pop('published_envelope_mm')
     (out/'reports/final_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     with (out/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['Part number','Part ID','Label','Assembly','Material','Solid count','Volume mm3','X mm','Y mm','Z mm','Fidelity'])

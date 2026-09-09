@@ -3,6 +3,9 @@ from pathlib import Path
 import json,html,re,sys,os
 ROOT=Path(sys.argv[1]).resolve();DRAW=ROOT/'output/drawings'
 manifest=json.loads((ROOT/'output/reports/final_manifest.json').read_text());prefix=manifest['prefix']
+approximate_envelope=manifest.get('envelope_kind')=='approximate'
+dimension_note='全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。' if approximate_envelope else '公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。'
+fidelity_note='全部尺寸为本模型近似值 · 内部为布局示意' if approximate_envelope else '局部尺寸为本模型近似值 · 内部为布局示意'
 KAMI=Path(os.environ.get('KAMI_HOME','~/.codex/skills/kami')).expanduser();sys.path.insert(0,str(KAMI/'scripts'))
 from render import render_pdf
 pages=json.loads((DRAW/'drawing_pages.json').read_text());ir=json.loads((DRAW/'content.json').read_text())
@@ -11,7 +14,7 @@ assert len(pages)==12
 for i,page in enumerate(pages[1:11]):
  ch=ir['content']['chapters'][i];ch['title']=page['title'];ch['claim']=page['notes'][0]+page['notes'][1]
  if len(ch['claim'])<40:ch['claim']+='可在原生文件中对照相同零件编号。'
- ch['paragraphs']=[page['notes'][0]+' 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。',page['notes'][1]+' 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。']
+ ch['paragraphs']=[page['notes'][0]+' 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。'+dimension_note,page['notes'][1]+' 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。']
  ch.pop('figure',None)
 # A native CAD artifact is the required visual source, so no separate external hero is needed.
 ir['brief']['required_assets']=[]
@@ -43,12 +46,12 @@ for i,page in enumerate(pages):
  if i==0:
   claim=ir['content']['summary']['claim'];notes=ir['content']['summary']['takeaways'];notes=[' '.join(notes[:2]),notes[2]]
  elif i==11:
-  claim='公开尺寸、局部近似值与内部布局示意分开记录，检查证据随工程一并交付。'
+  claim='本模型的工作尺寸和内部布局均为学习近似值，检查证据随工程一并交付。' if approximate_envelope else '公开尺寸、局部近似值与内部布局示意分开记录，检查证据随工程一并交付。'
   notes=[ir['content']['references'][0],ir['content']['references'][1]]
  else:
   ch=ir['content']['chapters'][i-1];claim=ch['claim'];notes=ch['paragraphs']
  svg=(DRAW/page['svg']).read_text().replace('rgb(0, 0, 0)','#141413').replace('#000000','#141413')
- body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">{prefix}-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">{html.escape(ir['content']['title'])}</div><div>局部尺寸为本模型近似值 · 内部为布局示意</div></div><div>单位 mm · 比例见各视图<br>CAD Study · {html.escape(ir['content']['date'])}</div><div>图号 {prefix}-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
+ body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">{prefix}-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">{html.escape(ir['content']['title'])}</div><div>{fidelity_note}</div></div><div>单位 mm · 比例见各视图<br>CAD Study · {html.escape(ir['content']['date'])}</div><div>图号 {prefix}-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
 # Resolve the copied template tokens to literal values so static content visibility is provable.
 declared=dict(re.findall(r'(--[\w-]+)\s*:\s*([^;]+);',head))
 for _ in range(8):head=re.sub(r'var\((--[\w-]+)\)',lambda m:declared.get(m.group(1),m.group(0)),head)

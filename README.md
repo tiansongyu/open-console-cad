@@ -178,7 +178,7 @@ open-console-cad/
 
 已发布的九个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy` 和 `famicom`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)，其中 [Atari 2600](devices/atari2600/README.md) 已提供主机阶段源码与验证记录。
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)，其中 [Atari 2600](devices/atari2600/README.md) 已提供完整套件 CAD、STEP 与验证记录，图册和在线预览仍在制作。
 
 ## 验证记录
 

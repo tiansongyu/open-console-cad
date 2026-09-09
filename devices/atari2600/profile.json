@@ -4,9 +4,9 @@
   "prefix": "Atari2600",
   "model": "CX2600 Heavy Sixer (1977)",
   "family": "console",
-  "width": 346,
-  "height": 232,
-  "closed_depth": 89,
+  "width": 346.0,
+  "height": 232.4430001,
+  "closed_depth": 88.30359058838891,
   "base_depth": 50.4,
   "default_opening": 180,
   "color": [
@@ -14,28 +14,50 @@
     0.135,
     0.125
   ],
-  "stages": 13,
+  "stages": 23,
   "parameter_basis": "Approximate study envelope; no original dimensional drawing verified",
   "exterior_fidelity": "Approximate exterior and envelope; photographic study",
-  "envelope_basis": "Study target about 346 x 232 x 89 mm. Heavy Sixer dimensions have not been verified against an original dimensioned drawing or a physical specimen. All geometric dimensions are approximate.",
+  "envelope_basis": "Model-measured study envelope, including applied body marks; external leads, detached controllers and accessories excluded. No manufacturer dimensioned drawing or physical measurement was verified.",
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
     "Controls",
+    "Ports",
     "Mainboard",
     "Switchboard",
     "Shield",
-    "Ports"
+    "CardReader",
+    "Wiring",
+    "PowerRF"
   ],
   "controls_groups": [
     "Controls",
-    "Switchboard"
+    "Switchboard",
+    "Controller1",
+    "Controller2"
   ],
   "internal_exclude": [
     "TopDeck",
     "ControlHump",
     "ControlBezel",
-    "ShieldLid"
+    "ControlTrim",
+    "SystemTitle",
+    "ShieldLid",
+    "RFCan",
+    "SwitchTitle0",
+    "SwitchTitle1",
+    "SwitchTitle2",
+    "SwitchTitle3",
+    "SwitchTitle4",
+    "SwitchTitle5",
+    "SwitchLegend0",
+    "SwitchLegend1",
+    "SwitchLegend2",
+    "SwitchLegend3",
+    "SwitchLegend4",
+    "SwitchLegend5",
+    "DifficultyAB2",
+    "DifficultyAB3"
   ],
   "internal_normal": [
     0.2,
@@ -51,5 +73,18 @@
       "url": "https://www.atari-computermuseum.de/2600.htm",
       "role": "Firsthand Heavy Sixer exterior, bottom, rear and opened-board photographs"
     }
+  ],
+  "envelope_kind": "approximate",
+  "fidelity": "Approximate exterior envelope and details; schematic major internals",
+  "internal_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Switchboard",
+    "Shield",
+    "CardReader",
+    "Wiring",
+    "PowerRF"
   ]
 }

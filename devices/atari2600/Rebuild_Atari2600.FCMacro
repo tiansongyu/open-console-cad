@@ -1,0 +1,11 @@
+"""Rebuild the CX2600 Heavy Sixer Atari2600 study without overwriting its delivered models."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,atari2600,deliver
+for module in [geometry,core,atari2600,deliver]:importlib.reload(module)
+model=core.Study(repo,'atari2600');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(atari2600.STAGES):atari2600.STAGES[stage](model)
+deliver.finalize(model)

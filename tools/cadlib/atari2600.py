@@ -609,3 +609,582 @@ def stage13(m):
 
 
 STAGES[13]=stage13
+
+
+def _joystick_position(number):
+    return V(-95 if number==1 else 95,-220,0)
+
+
+def _place_new_parts(m,before,offset):
+    transform=App.Placement(offset,App.Rotation())
+    for key in set(m.parts)-before:
+        obj=m.parts[key];obj.Placement=transform.multiply(obj.Placement);obj.FlatPlacement=obj.Placement
+
+
+def _joystick_shell(m,number):
+    from .psp import _polygon
+    prefix='J'+str(number);group='Controller'+str(number);before=set(m.parts)
+    m.native(prefix+'Bottom','CX10 lower cover',90,90,5,2,(0,0,2),group,-6,'atariblack')
+    m.native(prefix+'Frame','CX10 hollow base frame',90,90,5,28,(0,0,4.2),group,0,'atariblack')
+    m.cut(prefix+'Frame',m.rr(86,86,28.5,(0,0,4),3),'Joystick base inner cavity')
+    m.native(prefix+'Top','CX10 upper face',90,90,5,2.2,(0,0,32.4),group,4,'atariblack')
+    m.cut(prefix+'Top',[Part.makeCylinder(9.3,3,V(0,0,32.1)),Part.makeCylinder(7.5,3,V(-32,29,32.1))],'Stick and fire-button apertures')
+    for i,(x,y) in enumerate([(-35,-35),(35,-35),(-35,35),(35,35)]):
+        m.cyl(prefix+'Foot'+str(i),'Joystick bottom support',3.5,1.8,(x,y,0),group,-6,'rubber')
+    octagon=[(8*math.cos(i*math.pi/4),8*math.sin(i*math.pi/4)) for i in range(8)]
+    handle=_polygon(octagon,29.1,76.9).fuse(Part.makeCylinder(26,3.2,V(0,0,26)))
+    handle=handle.fuse(Part.makeCylinder(5.5,10.1,V(0,0,16.1)))
+    for x,y in [(0,-17),(0,17),(-17,0),(17,0)]:handle=handle.fuse(Part.makeCylinder(2.3,5.3,V(x,y,20.8)))
+    hexagon=[(6.5*math.cos(i*math.pi/3),6.5*math.sin(i*math.pi/3)) for i in range(6)]
+    handle=handle.cut(_polygon(hexagon,105.8,.5))
+    m.feature(prefix+'Handle','Rigid CX10 handle, lower disc and spring posts',handle,group,6,'black')
+    boot=Part.makeCone(27,9,14,V(0,0,35))
+    for z in [36,40,44,47]:
+        radius=27-(z-35)*18/14
+        boot=boot.fuse(Part.makeTorus(radius,.9,V(0,0,z)))
+    boot=boot.cut(Part.makeCone(25.8,8.4,14.2,V(0,0,34.9)))
+    boot.check(True)
+    m.feature(prefix+'Boot','Concentric flexible joystick boot',boot,group,5,'black')
+    cap=Part.makeCylinder(7.2,4.5,V(-32,29,33.4))
+    cap=cap.makeFillet(.5,[e for e in cap.Edges if e.BoundBox.ZMin>37.8])
+    cap=cap.fuse(Part.makeCylinder(2.6,6.4,V(-32,29,27.1))).fuse(Part.makeCylinder(5.5,1.1,V(-32,29,26.1)))
+    m.feature(prefix+'Fire','Long-throw red fire button and spring seat',cap,group,6,'red')
+    dashes=[]
+    for i in range(32):
+        angle=i*360/32;theta=math.radians(angle)
+        bar=m.rr(1.1,2.4,.04,r=.1)
+        bar.Placement=App.Placement(V(30.8*math.cos(theta),30.8*math.sin(theta),34.7),App.Rotation(V(0,0,1),angle))
+        dashes.append(bar)
+    m.feature(prefix+'OrangeRing','Segmented orange direction ring',Part.makeCompound(dashes),group,4,'orange')
+    badge=_polygon([(6.2*math.cos(i*math.pi/3),6.2*math.sin(i*math.pi/3)) for i in range(6)],105.9,.15)
+    m.feature(prefix+'HexBadge','Original-style hexagonal stick-top badge',badge,group,6,'metal')
+    m.label(prefix+'BadgeText','ATARI',1.7,(-3.0,-.65,106.08),group,6,'black')
+    m.cut(prefix+'Frame',Part.makeCylinder(3.4,6,V(0,42,19),V(0,1,0)),'Rear joystick cable passage')
+    m.ring(prefix+'Grommet','Joystick cable strain relief',3.1,2.05,4.5,(0,42.8,19),group,0,'rubber',axis=(0,1,0))
+    _place_new_parts(m,before,_joystick_position(number))
+
+
+def stage14(m):
+    for number in [1,2]:_joystick_shell(m,number)
+    m.profile['stages']=14
+    m.checkpoint(14,'two_original_cx10_joystick_shells','建立两只 CX10 的独立原生分壳、红色长行程按钮、刚性摇杆盘与四个弹簧柱、同心橡胶防尘套、橙色方向环和顶部六角标牌，保留初代无 TOP 字样的外观。')
+
+
+STAGES[14]=stage14
+
+
+def _helical_spring(radius,pitch,height,wire_radius):
+    # Preserve the native helix, splitting only at its spline knots so the sweep
+    # does not create a single surface with internal continuity defects.
+    edge=Part.makeHelix(pitch,height,radius).Edges[0];curve=edge.Curve
+    knots=[edge.FirstParameter]+[k for k in curve.getKnots() if edge.FirstParameter+1e-9<k<edge.LastParameter-1e-9]+[edge.LastParameter]
+    edges=[curve.toShape(a,b) for a,b in zip(knots,knots[1:])]
+    section=Part.Wire(Part.makeCircle(wire_radius,edges[0].Vertexes[0].Point,edges[0].tangentAt(edges[0].FirstParameter)))
+    spring=Part.Wire(edges).makePipeShell([section],True,True)
+    spring.check(True)
+    return spring
+
+
+def _joystick_internals(m,number):
+    prefix='J'+str(number);group='Controller'+str(number);before=set(m.parts);offset=_joystick_position(number)
+    m.colors['actuator']=(.75,.75,.65)
+    spring=_helical_spring(3.2,3.5,14,.28)
+    m.box(prefix+'PCB','CX10 five-contact circuit board study',72,70,1.6,(-5,5,7),group,-2,'pcb',2,True)
+    stations=[(0,-17),(0,17),(-17,0),(17,0),(-32,29)]
+    plate=m.rr(72,66,.8,(-4,2,10.2),3).cut(Part.makeCylinder(8.8,1.2,V(0,0,10)))
+    slots=[]
+    for i,(x,y) in enumerate(stations):
+        cup=Part.makeCylinder(4.8,3.2,V(x,y,10.95)).cut(Part.makeCylinder(3.7,3.1,V(x,y,11.2)))
+        plate=plate.fuse(cup).fuse(Part.makeCylinder(1.2,.83,V(x,y,9.42)))
+        ring=Part.makeCylinder(6.5,2,V(0,0,10)).cut(Part.makeCylinder(5.5,2.2,V(0,0,9.9)))
+        ring=ring.common(Part.makeBox(20,10,3,V(-10,-10,9.8)))
+        slot=Part.makeCompound([ring,m.rr(1,5,2,(-6,2.5,10),.2),m.rr(1,5,2,(6,2.5,10),.2)])
+        angle=[180,0,90,-90,0][i];slot.rotate(V(),V(0,0,1),angle);slot.translate(V(x,y,0));slots.append(slot)
+        wire=spring.copy();wire.translate(V(x,y,11.6))
+        m.feature(prefix+'Spring'+str(i),'CX10 directional return spring' if i<4 else 'CX10 fire-button return spring',wire,group,2,'metal',True)
+        pads=Part.makeCompound([m.rr(1.8,4,.05,(x+side*1.1,y,8.65),.2) for side in [-1,1]])
+        m.feature(prefix+'ContactPads'+str(i),'Separated fixed switch contacts',pads,group,-2,'gold',True)
+        points=[V(x-3.5,y-1.2,8.93),V(x,y-1.2,9.15),V(x+3.5,y-1.2,8.93),V(x+3.5,y-1.2,9.05),V(x,y-1.2,9.27),V(x-3.5,y-1.2,9.05)]
+        outline=Part.makePolygon(points+[points[0]])
+        m.feature(prefix+'ContactLeaf'+str(i),'Raised spring contact leaf',Part.Face(Part.Wire(outline.Edges)).extrude(V(0,2.4,0)),group,-2,'metal',True)
+    plate=plate.cut(Part.makeCompound(slots));assert len(plate.Solids)==1
+    m.feature(prefix+'ActuatorPlate','CX10 five-finger actuator plate and spring cups',plate,group,1,'actuator',True)
+    holes=[]
+    for i,(x,y) in enumerate([(-37,-26),(27,-26),(-37,36),(27,36)]):
+        m.ring(prefix+'PCBSpacer'+str(i),'Joystick PCB spacer',2.2,1.0,2.6,(x,y,4.25),group,-3,'actuator',internal=True)
+        m.screw(prefix+'PCBScrew'+str(i),(x,y,9.05),group,-2,length=4.1,radius=1.7,axis=(0,0,-1))
+        holes.append(Part.makeCylinder(1.1,2.2,V(x,y,6.8)))
+    bottom_holes=[]
+    for i,(x,y) in enumerate([(-40,-40),(40,-40),(-40,40),(40,40)]):
+        post=Part.makeCylinder(2.4,28.05,V(x,y,4.25)).cut(Part.makeCylinder(.9,21.9,V(x,y,4.1)))
+        m.feature(prefix+'CasePost'+str(i),'Joystick case screw boss',post,group,0,'atariblack',True)
+        m.screw(prefix+'CaseScrew'+str(i),(x,y,1.3),group,-6,length=22,radius=1.7)
+        bottom_holes.append(Part.makeCylinder(1.05,2.8,V(x,y,1.8)))
+        holes.append(Part.makeCylinder(2.8,2.2,V(x,y,6.8)))
+    m.cut(prefix+'PCB',holes,'PCB fastening holes and case-boss corner clearance')
+    bottom_tool=Part.makeCompound(bottom_holes);bottom_tool.translate(offset)
+    m.cut(prefix+'Bottom',bottom_tool,'Joystick bottom case screw holes')
+    _place_new_parts(m,before,offset)
+
+
+def stage15(m):
+    for number in [1,2]:_joystick_internals(m,number)
+    m.profile['stages']=15
+    m.checkpoint(15,'cx10_springs_actuator_plates_and_pcbs','加入两只 CX10 的专用 PCB、五组独立接点与回位弹簧、带柔性槽的传动板、弹簧杯和紧固结构，表现初代摇杆的内部传动方式。')
+
+
+STAGES[15]=stage15
+
+
+def _joystick_cable(m,number):
+    from .psp import _polygon
+    prefix='J'+str(number);group='Controller'+str(number);before=set(m.parts);offset=_joystick_position(number)
+    m.colors.update({'wireyellow':(.65,.58,.04),'wiregreen':(.03,.35,.12)})
+    colors=['red','black','white','blue','wiregreen','wireyellow'];bores=[]
+    for i,x in enumerate([-10,-6,-2,2,6,10]):
+        end=V([-.8,0,.8][i%3],46.9,19+(-.55 if i<3 else .55))
+        points=[V(x,36.5,9.1),V(x,39.5,9.1),V(end.x,41.5,end.z),end]
+        wire=_rounded_route(points,.7,.22);wire.check(True)
+        m.feature(prefix+'SignalWire'+str(i),'CX10 six-wire harness conductor',wire,group,-1,colors[i],True)
+        m.cyl(prefix+'HarnessPin'+str(i),'Joystick PCB solder terminal',.22,2.1,(x,36.5,6.9),group,-2,'metal',internal=True)
+        bores.append(Part.makeCylinder(.35,2.2,V(x,36.5,6.8)))
+    tool=Part.makeCompound(bores);tool.translate(offset)
+    m.cut(prefix+'PCB',tool,'Joystick six-wire solder holes')
+    route=[V(0,47.5,19),V(0,58,19),V(20,68,16),V(45,68,16),V(52,63,15),V(65.1,63,15)]
+    cable=_rounded_route(route,3,1.55);cable.check(True)
+    m.feature(prefix+'Cable','Stored joystick lead segment',cable,group,0,'black')
+    axis=V(1,0,0);orient=g.rotation((1,0,0),(0,0,1))
+    boot=Part.makeCylinder(3.4,7,V(58,63,15),axis).cut(Part.makeCylinder(1.8,7.2,V(57.9,63,15),axis))
+    grooves=[]
+    for i in range(6):
+        grooves.append(Part.makeCylinder(3.5,.5,V(58.5+i,63,15),axis).cut(Part.makeCylinder(2.9,.7,V(58.4+i,63,15),axis)))
+    m.feature(prefix+'PlugStrainRelief','Ribbed connector strain relief',boot.cut(Part.makeCompound(grooves)),group,0,'rubber')
+    housing=m.rr(34,18,16,(65,63,15),3,orient).cut(Part.makeCylinder(1.8,4,V(64.8,63,15),axis))
+    m.feature(prefix+'PlugBody','Original-style moulded joystick plug',housing,group,0,'black')
+    nose=_polygon([(-13,-5.8),(13,-5.8),(11.5,5.8),(-11.5,5.8)],0,6)
+    placement=App.Placement(V(81.2,63,15),orient);nose.Placement=placement
+    holes=[]
+    for row,count,z in [(0,5,-1.4),(1,4,1.4)]:
+        for i in range(count):
+            pin=1+row*5+i;point=placement.multVec(V((i-(count-1)/2)*2.77,z,-.3))
+            holes.append(Part.makeCylinder(.8,6.5,point,axis))
+            if pin in [1,2,3,4,6,8]:
+                point=placement.multVec(V((i-(count-1)/2)*2.77,z,.2))
+                m.ring(prefix+'PlugContact'+str(pin),'Used DE-9 female joystick contact',.7,.46,5.7,tuple(point),group,0,'metal',axis=(1,0,0),internal=True)
+    m.feature(prefix+'PlugNose','Nine-position female connector insulator',nose.cut(Part.makeCompound(holes)),group,0,'black')
+    m.label(prefix+'PlugMark','CX10',2.0,(68,61,24.05),group,0,'white')
+    _place_new_parts(m,before,offset)
+
+
+def stage16(m):
+    for number in [1,2]:_joystick_cable(m,number)
+    m.profile['stages']=16
+    m.checkpoint(16,'cx10_six_wire_harnesses_and_de9_plugs','加入两套六芯内部线束、PCB 接线点、收纳状态的摇杆线缆和 DE-9 母插头，区分九个孔位与实际使用的六个接点；线长为展示片段。')
+
+
+STAGES[16]=stage16
+
+
+def stage17(m):
+    for number in [1,2]:
+        offset=_joystick_position(number)
+        for i,x in enumerate([-10,-6,-2,2,6,10]):
+            end=V((i-2.5)*.4,46.9,19+(-.55 if i%2==0 else .55))
+            points=[V(x,36.5,9.15),V(x,36.5,11.5),V(x,39.5,11.5),V(end.x,41.5,end.z),end]
+            wire=_rounded_route(points,.7,.22);wire.check(True);wire.translate(offset)
+            obj=m.parts['J'+str(number)+'SignalWire'+str(i)]
+            obj.Placement=App.Placement();obj.Shape=wire;obj.FlatPlacement=obj.Placement
+    m.profile['stages']=17
+    m.checkpoint(17,'cx10_ordered_wire_bundle_and_solder_clearance','将六芯线束按端点横向顺序排列并交错分层，先沿 PCB 接线针轴线抬升后再弯折，消除线间交叉和焊接端部重叠。')
+
+
+STAGES[17]=stage17
+
+
+def stage18(m):
+    from .famicom import _dip,_radial_cap,_axial_resistor
+    before=set(m.parts);group='Accessories'
+    m.native('CartBack','Blank study cartridge rear cover',82,98,2.4,1.6,(0,0,0),group,-5,'atariblack')
+    m.native('CartFront','Blank study cartridge front shell',82,98,2.4,18.2,(0,0,1.8),group,4,'atariblack')
+    m.cut('CartFront',m.rr(78.4,94.4,16.6,(0,0,1.6),.8),'Cartridge interior cavity')
+    m.cut('CartFront',m.rr(53,3.4,5,(0,-47.7,8.1),.5),'Cartridge board-edge opening')
+    pcb=m.rr(60,80,1.6,(0,5,9),1.0).fuse(m.rr(50,14.1,1.6,(0,-42,9),.5))
+    m.feature('CartPCB','Generic ROM cartridge PCB and edge tab',pcb,group,-2,'pcb',True)
+    for side,z in [('Front',10.65),('Back',8.91)]:
+        for i in range(12):m.box('CartContact'+side+str(i),'Cartridge edge contact',2.8,9,.04,((i-5.5)*4,-43,z),group,-2,'gold',.12,True)
+    _dip(m,'CartROM','ROM PACKAGE',0,10,29,8,24,z=11,t=3.9,assembly=group,board='CartPCB')
+    for i,(x,y) in enumerate([(-22,20),(22,-15)]):
+        _radial_cap(m,'CartCap'+str(i),x,y,11,r=2,h=4,assembly=group,board='CartPCB')
+        m.cut('CartCap'+str(i),[Part.makeCylinder(.28,.7,V(x+side*.8,y,10.9)) for side in [-1,1]],'Capacitor lead entry clearances')
+    for i,(x,y) in enumerate([(-20,-17),(20,32)]):_axial_resistor(m,'CartResistor'+str(i),x,y,z=12.7,assembly=group,board='CartPCB')
+    post=Part.makeCylinder(3,16.25,V(0,32,1.85)).cut(Part.makeCylinder(.85,12,V(0,32,1.7)))
+    m.feature('CartCasePost','Cartridge central fixing boss',post,group,4,'atariblack',True)
+    m.cut('CartPCB',Part.makeCylinder(3.3,2,V(0,32,8.8)),'Central case boss through PCB clearance')
+    m.cut('CartBack',[Part.makeCylinder(1,1.5,V(0,32,.4)),Part.makeCylinder(1.8,.7,V(0,32,-.1))],'Recessed cartridge fixing hole')
+    m.screw('CartScrew',(0,32,.15),group,-5,length=10,radius=1.7)
+    for i,x in enumerate([-24,24]):m.cyl('CartPCBSupport'+str(i),'Cartridge PCB support',2.4,7.05,(x,-20,1.85),group,-3,'atariblack',internal=True)
+    m.box('CartLabel','Original study label without game artwork',72,73,.08,(0,9,20.03),group,4,'black',2)
+    border=m.rr(70,71,.03,(0,9,20.13),1.5).cut(m.rr(68.8,69.8,.07,(0,9,20.11),.9))
+    m.feature('CartLabelBorder','Orange cartridge label border',border,group,4,'orange')
+    for key,text,size,x,y in [('Title','VCS STUDY',6,-27,24),('Contacts','24 CONTACTS / CAD',2.4,-27,12),('Data','NO GAME DATA',3,-27,2)]:
+        m.label('Cart'+key+'Text',text,size,(x,y,20.18),group,4,'orange' if key=='Title' else 'white')
+    rear=g.rotation((0,1,0),(0,0,1))
+    m.box('CartSpineLabel','Cartridge spine study label',68,12,.06,(0,49.04,10),group,4,'black',.8,orient=rear)
+    m.label('CartSpineText','VCS STUDY',3,(17,49.13,9),group,4,'orange',rotation=rear)
+    _place_new_parts(m,before,V(-260,-160,0))
+    m.profile['stages']=18
+    m.checkpoint(18,'blank_24_contact_study_cartridge','建立两片原生卡带壳、24 个金属接点、PCB、ROM 封装和固定结构，采用原创 VCS STUDY 标签；不包含游戏 ROM、封面或电路数据。')
+
+
+STAGES[18]=stage18
+
+
+def _paddle_position(number):
+    return V(270,0 if number==1 else -120,0)
+
+
+def _paddle_body(m,number):
+    prefix='Pad'+str(number);group='Accessories';before=set(m.parts)
+    slope=11/34.5
+    outer_cut=_yz_prism([(-50,30+slope*(-50+12)),(-12,30),(-12,45),(-50,45)],-40,80)
+    inner_cut=_yz_prism([(-50,27.6+slope*(-50+12)),(-12,27.6),(-12,45),(-50,45)],-40,80)
+    m.native(prefix+'Bottom','CX30-04 paddle bottom cover',65,93,8,1.8,(0,0,0),group,-5,'atariblack')
+    m.native(prefix+'Top','CX30-04 sloping upper shell',65,93,8,28,(0,0,2),group,4,'atariblack')
+    m.cut(prefix+'Top',outer_cut,'Sloping paddle label face')
+    cavity=m.rr(61.4,89.4,25.8,(0,0,1.8),6.2).cut(inner_cut)
+    m.cut(prefix+'Top',cavity,'Following paddle shell interior')
+    m.cut(prefix+'Top',[Part.makeCylinder(4.7,5,V(0,15,27)),Part.makeCylinder(1.8,6,V(-34,8,22),V(1,0,0)),Part.makeCylinder(3.1,6,V(0,43,15),V(0,1,0))],'Knob shaft, side fire button and cable clearances')
+    m.cyl(prefix+'PotBase','Potentiometer metal base',12,.7,(0,15,8.3),group,-2,'metal',internal=True)
+    can=Part.makeCylinder(12,10,V(0,15,9.1)).cut(Part.makeCylinder(10.6,10.2,V(0,15,9)))
+    terminal_cut=m.rr(8.4,9.4,3.2,(14.8,15,9.1),.4)
+    m.feature(prefix+'PotCan','Potentiometer case with terminal opening',can.cut(terminal_cut),group,-2,'metal',True)
+    m.ring(prefix+'PotSubstrate','Potentiometer insulating substrate',10.3,3.3,.8,(0,15,9.3),group,-2,'phenolic',internal=True)
+    track=Part.makeCylinder(9.6,.06,V(0,15,10.15),V(0,0,1),300).cut(Part.makeCylinder(8.4,.1,V(0,15,10.13)))
+    track.rotate(V(0,15,0),V(0,0,1),30)
+    m.feature(prefix+'ResistanceTrack','One-megohm paddle resistive-track study',track,group,-2,'black',True)
+    m.cyl(prefix+'PotRotor','Potentiometer wiper rotor',5.8,1.2,(0,15,11),group,0,'white',internal=True)
+    arm=m.rr(7,.9,.15,(5.3,15,10.45),.2)
+    m.feature(prefix+'Wiper','Moving potentiometer contact arm',arm,group,0,'copper',True)
+    m.ring(prefix+'PotLid','Potentiometer top plate',12,3.3,.6,(0,15,19.25),group,0,'metal',internal=True)
+    m.cyl(prefix+'PotShaft','Paddle rotary shaft',3.1,24,(0,15,12.35),group,2,'metal',internal=True)
+    m.ring(prefix+'PotBushing','Potentiometer mounting bushing',4.5,3.2,7,(0,15,23),group,2,'metal',internal=True)
+    from .psp import _polygon
+    nut=_polygon([(7*math.cos(i*math.pi/3),15+7*math.sin(i*math.pi/3)) for i in range(6)],30.3,2).cut(Part.makeCylinder(4.6,2.4,V(0,15,30.1)))
+    m.feature(prefix+'MountNut','Paddle shaft hexagonal mounting nut',nut,group,4,'metal')
+    knob=Part.makeCylinder(27.5,15.5,V(0,15,32.5)).cut(Part.makeCylinder(24.5,13,V(0,15,32.3)))
+    hub=Part.makeCylinder(6.5,12.7,V(0,15,32.7)).cut(Part.makeCylinder(3.25,13,V(0,15,32.5)))
+    knob=knob.fuse(hub)
+    grips=[Part.makeCylinder(.6,13.8,V(27.55*math.cos(i*2*math.pi/48),15+27.55*math.sin(i*2*math.pi/48),33.1)) for i in range(48)]
+    knob=knob.cut(Part.makeCompound(grips)).cut(Part.makeCylinder(25.5,.6,V(0,15,47.7)))
+    m.feature(prefix+'Knob','Fluted paddle knob with recessed top',knob,group,6,'black')
+    left=g.rotation((-1,0,0),(0,0,1))
+    fire=m.rr(22,5.5,2,(-32.7,8,22),.5,left).fuse(Part.makeCylinder(1.5,7.4,V(-25.5,8,22),V(-1,0,0)))
+    fire=fire.fuse(Part.makeCylinder(3,1,V(-27,8,22),V(-1,0,0)))
+    m.feature(prefix+'Fire','Red side fire button and plunger',fire,group,6,'red')
+    switch=m.rr(10,7,7,(-22,8,18.5),.6).cut(Part.makeCylinder(1.75,3.7,V(-28,8,22),V(1,0,0)))
+    switch_holes=[Part.makeCylinder(.35,3.5,V(x,8.8,20),V(0,1,0)) for x in [-23,-20]]
+    m.feature(prefix+'FireSwitch','Paddle fire microswitch body',switch.cut(Part.makeCompound(switch_holes)),group,-2,'black',True)
+    for i,x in enumerate([-23,-20]):m.cyl(prefix+'SwitchTerminal'+str(i),'Fire microswitch solder terminal',.22,3,(x,9,20),group,-2,'metal',axis=(0,1,0),internal=True)
+    block=m.rr(8,9,2.5,(14.8,15,9.25),.4)
+    slots=[m.rr(9,.9,.5,(16,y,10.15),.1) for y in [12.2,15,17.8]]
+    m.feature(prefix+'PotTerminalBlock','Potentiometer terminal insulator',block.cut(Part.makeCompound(slots)),group,-2,'phenolic',True)
+    for i,y in enumerate([12.2,15,17.8]):m.box(prefix+'PotTerminal'+str(i),'Potentiometer solder tab',8.7,.6,.2,(16.15,y,10.3),group,-2,'metal',.04,True)
+    m.ring(prefix+'Grommet','Paddle rear cable grommet',2.8,1.5,4,(0,44.4,15),group,0,'rubber',axis=(0,1,0))
+    # Early 1977 label uses ATARI and tennis-racket graphics rather than PADDLE text.
+    q=App.Rotation(V(1,0,0),math.degrees(math.atan(slope)))
+    label_frame=App.Placement(V(0,-28,30-16*slope),q)
+    plaque=m.rr(46,20,.06,r=1);plaque.Placement=label_frame.multiply(App.Placement(V(0,0,.08),App.Rotation()))
+    m.feature(prefix+'Label','Early paddle faceplate',plaque,group,4,'black')
+    border=m.rr(45,19,.025,r=.8).cut(m.rr(43.8,17.8,.06,(0,0,-.02),.3));border.Placement=label_frame.multiply(App.Placement(V(0,0,.16),App.Rotation()))
+    m.feature(prefix+'LabelBorder','Paddle label border',border,group,4,'orange')
+    m.label(prefix+'LabelText','ATARI',2.8,tuple(label_frame.multVec(V(-20,-6,.20))),group,4,'white',rotation=q)
+    symbols=[]
+    for x,angle in [(5,-25),(15,25)]:
+        ring=Part.makeCylinder(3.8,.03).cut(Part.makeCylinder(3.0,.06,V(0,0,-.01)))
+        handle=m.rr(1.1,5.8,.03,(0,-5.8,0),.3)
+        symbol=ring.fuse(handle);symbol.rotate(V(),V(0,0,1),angle);symbol.translate(V(x,2,.2));symbols.append(symbol)
+    symbol=Part.makeCompound(symbols);symbol.Placement=label_frame.multiply(symbol.Placement)
+    m.feature(prefix+'Rackets','Early tennis-racket label graphics',symbol,group,4,'orange')
+    _place_new_parts(m,before,_paddle_position(number))
+
+
+def stage19(m):
+    for number in [1,2]:_paddle_body(m,number)
+    m.profile['stages']=19
+    m.checkpoint(19,'original_cx30_04_paddles_and_potentiometers','建立原始 CX30-04 旋钮控制器的斜面分壳、滚花旋钮、侧面红按钮、1 MΩ 电位器内部结构和早期网球拍标识；两只控制器的共用线缆随后装配。')
+
+
+STAGES[19]=stage19
+
+
+def _joystick_ordered_fan(index):
+    x=[-10,-6,-2,2,6,10][index];upper=index>=3
+    level=14 if upper else 12;lift=40.7 if upper else 42.4
+    endx=(index%3-1)*1.1;endz=19+(.55 if upper else -.55)
+    points=[V(x,36.5,9.15),V(x,36.5,level),V(endx,lift,level),V(endx,lift,endz),V(endx,46.9,endz)]
+    shape=_rounded_route(points,.7,.22);shape.check(True)
+    return shape
+
+
+def _female_de9(m,prefix,origin,used,label):
+    from .psp import _polygon
+    before=set(m.parts);group='Accessories';axis=V(1,0,0);orient=g.rotation((1,0,0),(0,0,1))
+    boot=Part.makeCylinder(3.4,7,V(-7,0,0),axis).cut(Part.makeCylinder(1.85,7.2,V(-7.1,0,0),axis))
+    m.feature(prefix+'StrainRelief','Shared cable connector strain relief',boot,group,0,'rubber')
+    body=m.rr(34,18,16,(0,0,0),3,orient).cut(Part.makeCylinder(1.85,4,V(-.2,0,0),axis))
+    m.feature(prefix+'Body','Moulded DE-9 cable connector',body,group,0,'black')
+    nose=_polygon([(-13,-5.8),(13,-5.8),(11.5,5.8),(-11.5,5.8)],0,6)
+    placement=App.Placement(V(16.2,0,0),orient);nose.Placement=placement;holes=[]
+    for row,count,z in [(0,5,-1.4),(1,4,1.4)]:
+        for i in range(count):
+            pin=1+row*5+i;point=placement.multVec(V((i-(count-1)/2)*2.77,z,-.3))
+            holes.append(Part.makeCylinder(.8,6.5,point,axis))
+            if pin in used:
+                point=placement.multVec(V((i-(count-1)/2)*2.77,z,.2))
+                m.ring(prefix+'Contact'+str(pin),'Paddle cable female contact',.7,.46,5.7,tuple(point),group,0,'metal',axis=(1,0,0),internal=True)
+    m.feature(prefix+'Nose','Nine-position cable plug insulator',nose.cut(Part.makeCompound(holes)),group,0,'black')
+    m.label(prefix+'Mark',label,2,(3,-2,9.05),group,0,'white')
+    _place_new_parts(m,before,origin)
+
+
+def stage20(m):
+    # Separate the fan-in operation from the upward bend: the two wire layers
+    # lift at different rear coordinates, so neither passes through the other.
+    prototypes=[_joystick_ordered_fan(i) for i in range(6)]
+    for number in [1,2]:
+        for i,prototype in enumerate(prototypes):
+            wire=prototype.copy();wire.translate(_joystick_position(number));obj=m.parts['J'+str(number)+'SignalWire'+str(i)]
+            obj.Placement=App.Placement();obj.Shape=wire;obj.FlatPlacement=obj.Placement
+    for number in [1,2]:
+        prefix='Pad'+str(number);offset=_paddle_position(number);before=set(m.parts);group='Accessories'
+        ends=[V(-.65,47.1,14.35),V(-.65,47.1,15.65),V(.65,47.1,14.35),V(.65,47.1,15.65)]
+        routes=[[V(-23,12.15,20),V(-23,32,18),V(-.65,42,14.35),ends[0]],
+                [V(-20,12.15,20),V(-20,32,22),V(-.65,42,15.65),ends[1]],
+                [V(20.65,12.2,10.4),V(26,12.2,10.4),V(26,33,14),V(.65,42,14.35),ends[2]],
+                [V(20.65,17.8,10.4),V(24,17.8,10.4),V(24,33,18),V(.65,42,15.65),ends[3]]]
+        for i,points in enumerate(routes):
+            wire=_rounded_route(points,.8,.22);wire.check(True)
+            m.feature(prefix+'Wire'+str(i),'Paddle internal conductor',wire,group,0,['black','white','red','blue'][i],True)
+        # Extend the mounting bushing to the potentiometer lid.
+        bushing=Part.makeCylinder(4.5,10,V(0,15,19.95)).cut(Part.makeCylinder(3.2,10.2,V(0,15,19.85)))
+        bushing.translate(offset);obj=m.parts[prefix+'PotBushing'];obj.Placement=App.Placement();obj.Shape=bushing;obj.FlatPlacement=obj.Placement
+        slope=11/34.5
+        above=_yz_prism([(-50,27.5+slope*(-50+12)),(-12,27.5),(-12,45),(-50,45)],-40,80)
+        holes=[]
+        for i,x in enumerate([-22,22]):
+            post=Part.makeCylinder(2.8,24,V(x,-30,2.05)).cut(above).cut(Part.makeCylinder(.9,15,V(x,-30,2)))
+            m.feature(prefix+'CasePost'+str(i),'Paddle shell screw boss',post,group,4,'atariblack',True)
+            m.screw(prefix+'CaseScrew'+str(i),(x,-30,.1),group,-5,length=12,radius=1.6)
+            holes.extend([Part.makeCylinder(1.05,1.8,V(x,-30,.5)),Part.makeCylinder(1.7,.7,V(x,-30,-.1))])
+        tool=Part.makeCompound(holes);tool.translate(offset);m.cut(prefix+'Bottom',tool,'Paddle lower-case fastening holes')
+        _place_new_parts(m,before,offset)
+    routes=[[V(270,47.5,15),V(270,57,15),V(315,65,16),V(325,-10,18),V(325,-42,18),V(334.9,-42,18)],
+            [V(270,-72.5,15),V(270,-61,15),V(315,-54,16),V(325,-48,18),V(334.9,-48,18)]]
+    for i,points in enumerate(routes):
+        wire=_rounded_route(points,3,1.2);wire.check(True)
+        m.feature('PaddleBranch'+str(i),'Paired paddle cable branch',wire,'Accessories',0,'black')
+    junction=m.rr(10,14,8,(340,-45,14),1.5)
+    junction=junction.cut(Part.makeCompound([Part.makeCylinder(1.4,4,V(334.8,y,18),V(1,0,0)) for y in [-42,-48]]+[Part.makeCylinder(1.75,3.3,V(342,-45,18),V(1,0,0))]))
+    m.feature('PaddleYJunction','Paddle two-to-one cable junction',junction,'Accessories',0,'rubber')
+    cable=_rounded_route([V(345.1,-45,18),V(351,-45,18),V(359,-25,18),V(386.1,-25,18)],3,1.6);cable.check(True)
+    m.feature('PaddleSharedCable','Shared paddle controller lead',cable,'Accessories',0,'black')
+    _female_de9(m,'PaddlePlug',V(386,-25,18),[3,4,5,7,8,9],'PADDLES')
+    m.profile['stages']=20
+    m.checkpoint(20,'paired_paddle_wiring_and_layered_joystick_fans','补齐两只旋钮控制器的内部接线、壳体固定件、Y 形分线和共用 DE-9 插头；摇杆线束采用分层收束与错位抬升，保持端部排列顺序。')
+
+
+STAGES[20]=stage20
+
+
+def stage21(m):
+    before=set(m.parts);group='Accessories';m.colors['adaptergray']=(.42,.43,.42)
+    m.native('AdapterBack','Period-style adapter rear cover',55,65,5,1.8,(0,0,0),group,-5,'adaptergray')
+    m.native('AdapterFront','Period-style adapter upper shell',55,65,5,38,(0,0,2),group,4,'adaptergray')
+    m.cut('AdapterFront',m.rr(51.4,61.4,35.6,(0,0,1.8),3.2),'Adapter case interior')
+    blade_holes=[]
+    for i,x in enumerate([-6.35,6.35]):
+        m.box('AdapterBlade'+str(i),'Flat AC input blade',6,1.3,18.5,(x,10,-15.8),group,-4,'metal',.25)
+        blade_holes.append(m.rr(6.5,1.8,2.2,(x,10,-.2),.35))
+    m.cut('AdapterBack',blade_holes,'Input blade passages')
+    core=m.rr(34,38,23,(0,0,8),1.2).cut(m.rr(16,22,23.4,(0,0,7.8),.6))
+    core=core.fuse(m.rr(6,38,23,(0,0,8),.5))
+    grooves=[]
+    for i in range(22):
+        z=8.6+i
+        grooves.append(m.rr(34.4,38.4,.12,(0,0,z),1.4).cut(m.rr(33.6,37.6,.2,(0,0,z-.04),1.0)))
+    m.feature('TransformerCore','Laminated transformer core geometry study',core.cut(Part.makeCompound(grooves)),group,-2,'metal',True)
+    axis=g.rotation((0,1,0),(0,0,1))
+    bobbin=m.rr(8,25,18,(0,-9,19.5),.7,axis).cut(m.rr(6.5,23.5,18.4,(0,-9.2,19.5),.4,axis))
+    for y in [-9.5,8.9]:
+        flange=m.rr(14,31,.6,(0,y,19.5),1.0,axis).cut(m.rr(6.5,23.5,.8,(0,y-.1,19.5),.4,axis))
+        bobbin=bobbin.fuse(flange)
+    m.feature('TransformerBobbin','Insulating transformer bobbin',bobbin,group,-2,'white',True)
+    for key,start in [('Primary',-8.1),('Secondary',.76)]:
+        turns=[]
+        for i in range(14):
+            y=start+i*.53
+            turns.append(m.rr(13,29.6,.45,(0,y,19.5),.8,axis).cut(m.rr(8.4,25.4,.65,(0,y-.1,19.5),.4,axis)))
+        m.feature('Transformer'+key,key+' winding volume study',Part.makeCompound(turns),group,-2,'copper',True)
+    m.box('AdapterPCB','Rectifier and filter board study',46,12,1.3,(0,-24.2,4.3),group,-3,'pcb',1,True)
+    pcb_holes=[]
+    for i,x in enumerate([-18,-6,6,18]):
+        m.cyl('AdapterDiode'+str(i),'Rectifier diode package study',.9,4,(x-2,-29,8),group,-2,'black',axis=(1,0,0),internal=True)
+        leads=[]
+        for side in [-1,1]:
+            lead=Part.makeCylinder(.18,1.5,V(x+side*2.1,-29,8),V(side,0,0)).fuse(Part.makeCylinder(.18,4,V(x+side*3.6,-29,4.1)))
+            leads.append(lead);pcb_holes.append(Part.makeCylinder(.28,1.8,V(x+side*3.6,-29,4.1)))
+        m.feature('AdapterDiodeLeads'+str(i),'Rectifier formed leads',Part.makeCompound(leads),group,-2,'metal',True)
+        m.ring('AdapterDiodeBand'+str(i),'Diode cathode band',.92,.9,.25,(x-1,-29,8),group,-2,'white',axis=(1,0,0),internal=True)
+    cap=Part.makeCylinder(3,9,V(0,-23.5,6)).cut(Part.makeCompound([Part.makeCylinder(.3,.65,V(side*.8,-23.5,5.8)) for side in [-1,1]]))
+    m.feature('AdapterFilterCap','Output filter capacitor study',cap,group,-2,'black',True)
+    m.cyl('AdapterCapTop','Filter capacitor top',2.85,.12,(0,-23.5,15.03),group,-2,'metal',internal=True)
+    leads=[Part.makeCylinder(.2,2.2,V(side*.8,-23.5,4.1)) for side in [-1,1]]
+    m.feature('AdapterCapLeads','Filter capacitor leads',Part.makeCompound(leads),group,-2,'metal',True)
+    pcb_holes.extend([Part.makeCylinder(.3,1.8,V(side*.8,-23.5,4.1)) for side in [-1,1]])
+    back_holes=[]
+    for i,x in enumerate([-21,21]):
+        post=Part.makeCylinder(2.5,35.2,V(x,-20,2.05)).cut(Part.makeCylinder(.9,15,V(x,-20,1.95)))
+        m.feature('AdapterPost'+str(i),'Adapter case screw boss',post,group,4,'adaptergray',True)
+        m.screw('AdapterScrew'+str(i),(x,-20,.15),group,-5,length=12,radius=1.7)
+        pcb_holes.append(Part.makeCylinder(2.8,1.8,V(x,-20,4.1)))
+        back_holes.extend([Part.makeCylinder(1.05,1.7,V(x,-20,.4)),Part.makeCylinder(1.8,.7,V(x,-20,-.1))])
+    m.cut('AdapterPCB',pcb_holes,'Board terminal holes and case post clearance')
+    m.cut('AdapterBack',back_holes,'Adapter rear fastening holes')
+    m.cut('AdapterFront',Part.makeCylinder(2.9,7,V(0,-29,12),V(0,-1,0)),'DC lead outlet')
+    m.ring('AdapterGrommet','Adapter DC lead grommet',2.6,1.6,5,(0,-30,12),group,0,'rubber',axis=(0,-1,0))
+    points=[V(0,-35.2,12),V(0,-45,12),V(18,-58,10),V(45,-58,10),V(54,-49,10),V(65.1,-49,10)]
+    cable=_rounded_route(points,3,1.4);cable.check(True)
+    m.feature('AdapterCable','Stored DC output lead',cable,group,0,'black')
+    body=Part.makeCylinder(4.4,15,V(65,-49,10),V(1,0,0)).cut(Part.makeCylinder(1.6,4,V(64.8,-49,10),V(1,0,0)))
+    m.feature('AdapterPlugBody','3.5 mm mono DC plug grip',body,group,0,'black')
+    m.cyl('AdapterPlugSleeve','DC mono plug sleeve',1.75,7,(80.2,-49,10),group,0,'metal',axis=(1,0,0))
+    m.cyl('AdapterPlugInsulator','Mono plug insulating band',1.7,.6,(87.3,-49,10),group,0,'black',axis=(1,0,0))
+    tip=Part.makeCylinder(1.75,3.8,V(88,-49,10),V(1,0,0)).fuse(Part.makeSphere(1.75,V(91.8,-49,10)))
+    m.feature('AdapterPlugTip','Rounded DC mono plug tip',tip,group,0,'metal')
+    m.box('AdapterRatingLabel','Adapter study rating label',45,47,.08,(0,0,40.04),group,4,'white',1.5)
+    for key,text,size,x,y in [('Title','AC ADAPTOR',3.7,-18,12),('Output','DC 9 V / 500 mA',2.5,-18,2),('Study','GEOMETRY STUDY',2.1,-18,-8)]:
+        m.label('Adapter'+key+'Text',text,size,(x,y,40.17),group,4,'black')
+    _place_new_parts(m,before,V(-260,20,16))
+    m.profile['stages']=21
+    m.checkpoint(21,'period_adapter_and_dc_mono_plug','建立同代灰色适配器分壳、扁脚与 3.5 mm 单声道 DC 插头，内部加入通用变压器、整流和滤波结构示意；尺寸与电路布局不代表原厂制造数据。')
+
+
+STAGES[21]=stage21
+
+
+def stage22(m):
+    # Move the complete adapter display group clear of the console side wall.
+    for key,obj in m.parts.items():
+        if key.startswith(('Adapter','Transformer')):
+            obj.Placement.Base+=V(-30,0,0);obj.FlatPlacement=obj.Placement
+    before=set(m.parts);group='Accessories'
+    m.box('TVBoxAdhesive','TV switch-box rear mounting pad',49,66,.8,(0,0,0),group,-5,'rubber',1.5)
+    m.native('TVBoxBase','TV/GAME switch-box base',55,72,2,.6,(0,0,1),group,-4,'metal')
+    m.native('TVBoxCover','TV/GAME switch-box metal cover',55,72,2,16.2,(0,0,1.8),group,4,'metal')
+    m.cut('TVBoxCover',m.rr(54,71,15.9,(0,0,1.6),1.5),'Thin switch-box shell interior')
+    m.box('TVBoxPCB','RF selector contact-board study',48,55,1.3,(0,0,4),group,-2,'phenolic',1,True)
+    m.box('TVBoxLabel','TV/GAME study face label',46,59,.07,(0,0,18.04),group,4,'black',.8)
+    openings=[Part.makeCylinder(4.3,2,V(x,-20,17.1)) for x in [-14,14]]+[m.rr(6.2,18.2,2,(0,8,17.2),.6)]
+    for key in ['TVBoxCover','TVBoxLabel']:m.cut(key,openings,'Antenna terminal and selector openings')
+    for i,x in enumerate([-14,14]):
+        m.ring('TVBoxAntennaInsulator'+str(i),'Antenna screw insulating bushing',4.1,1.2,2.2,(x,-20,17),group,4,'white')
+        m.ring('TVBoxAntennaPad'+str(i),'Antenna clamping washer',3.5,1.2,.25,(x,-20,19.35),group,4,'metal')
+        m.ring('TVBoxAntennaStud'+str(i),'Antenna threaded standoff',1.8,.8,11,(x,-20,5.5),group,-2,'metal',internal=True)
+        m.screw('TVBoxAntennaScrew'+str(i),(x,-20,20.2),group,6,length=14,radius=2.7,axis=(0,0,-1))
+        m.ring('TVBoxTerminalLand'+str(i),'Antenna PCB terminal land',3,1,.05,(x,-20,5.4),group,-2,'gold',internal=True)
+    m.box('TVBoxSelector','TV/GAME slide switch body',20,24,4,(0,8,5.5),group,-2,'black',.8,True)
+    m.box('TVBoxSlideStem','Selector transmission stem',3,3,9.7,(0,12,9.7),group,2,'metal',.3,True)
+    cap=m.rr(5.5,7,2.8,(0,12,18.4),.7).cut(m.rr(3.4,3.4,1.2,(0,12,18.25),.4))
+    m.feature('TVBoxSlider','TV/GAME slider cap',cap,group,6,'black')
+    for side in [-1,1]:
+        for i,y in enumerate([-2,8,18]):m.box('TVBoxSwitchContact'+str(side)+'_'+str(i),'RF selector fixed contact',3,4,.05,(side*5,y,5.4),group,-2,'gold',.2,True)
+    m.cut('TVBoxCover',Part.makeCylinder(3.3,9,V(0,34.8,9),V(0,1,0)),'Game RF input connector')
+    m.ring('TVBoxRCAOuter','Game input RCA outer contact',3,2.25,7,(0,35.6,9),group,0,'metal',axis=(0,1,0))
+    m.ring('TVBoxRCAInsulator','RCA input insulator',2.15,1.65,6,(0,35.8,9),group,0,'white',axis=(0,1,0))
+    m.ring('TVBoxRCASocket','RCA input centre socket',1.55,1.25,5,(0,36.6,9),group,0,'metal',axis=(0,1,0),internal=True)
+    m.ring('TVBoxRCAFlange','RCA input mounting ring',4.5,3.05,1,(0,36.2,9),group,0,'metal',axis=(0,1,0))
+    leads=[]
+    for side in [-1,1]:
+        points=[V(27.7,side*2,8),V(45,side*2,8),V(57,side*2,7),V(78,side*2,7),V(86,side*2,7),V(92,side*7,7),V(96,side*7,7)]
+        wire=_rounded_route(points,2,.8);wire.check(True);leads.append(wire)
+        lug=Part.makeCylinder(2.9,.7,V(102,side*7,6.65)).cut(Part.makeCylinder(1.4,.9,V(102,side*7,6.55)))
+        lug=lug.cut(m.rr(3.5,2.8,1,(103.7,side*7,6.5),.2)).fuse(m.rr(4.8,2.2,.7,(98.55,side*7,6.65),.3))
+        m.feature('TVBoxFork'+str(side),'Twin-lead fork terminal',lug,group,0,'metal')
+    top=[V(x,-1.4,z+.15) for x,z in [(27.7,8),(45,8),(57,7),(78,7)]]
+    bottom=[V(x,-1.4,z-.15) for x,z in reversed([(27.7,8),(45,8),(57,7),(78,7)])]
+    polygon=Part.makePolygon(top+bottom+[top[0]]);web=Part.Face(Part.Wire(polygon.Edges)).extrude(V(0,2.8,0))
+    twin=leads[0].fuse(leads[1]).fuse(web);assert twin.isValid() and len(twin.Solids)==1
+    m.feature('TVBoxTwinLead','Short flat twin-lead TV output',twin,group,0,'black')
+    m.cut('TVBoxCover',[Part.makeCylinder(1.0,4,V(26,side*2,8),V(1,0,0)) for side in [-1,1]]+[m.rr(4,3.2,.6,(27,0,7.7),.1)],'Twin-lead output slot')
+    for key,text,size,x,y in [('Title','TV/GAME SWITCH',2,-20,27),('TV','TV',2.4,-3,21),('Game','GAME',2.4,-6,-4),('Antenna','ANTENNA',1.8,-9,-29)]:
+        m.label('TVBox'+key+'Text',text,size,(x,y,18.16),group,4,'white')
+    rear=g.rotation((0,1,0),(0,0,1))
+    m.label('TVBoxInputMark','GAME',1.8,(8,36.06,13),group,4,'black',rotation=rear)
+    _place_new_parts(m,before,V(-290,125,0))
+    # Finish the console's original fixed RF lead with a mating RCA plug.
+    m.ring('RFPlugStrain','Console RF plug strain relief',3,1.95,5,(151,150,24),'Cables',0,'rubber',axis=(1,0,0))
+    body=Part.makeCylinder(4.3,12,V(156.15,150,24),V(1,0,0)).cut(Part.makeCylinder(1.95,3.2,V(155.95,150,24),V(1,0,0)))
+    m.feature('RFPlugBody','Console RCA plug grip',body,'Cables',0,'black')
+    sleeve=Part.makeCylinder(4.1,8,V(168.3,150,24),V(1,0,0)).cut(Part.makeCylinder(3.1,8.2,V(168.2,150,24),V(1,0,0)))
+    slots=[Part.makeBox(4,.6,8.6,V(172.6,149.7,19.7)),Part.makeBox(4,8.6,.6,V(172.6,145.7,23.7))]
+    m.feature('RFPlugSleeve','Slotted RCA outer sleeve',sleeve.cut(Part.makeCompound(slots)),'Cables',0,'metal')
+    m.ring('RFPlugInsulator','RCA plug centre insulator',2.9,1.25,5,(168.4,150,24),'Cables',0,'white',axis=(1,0,0))
+    pin=Part.makeCylinder(1.15,8.7,V(168.5,150,24),V(1,0,0)).fuse(Part.makeSphere(1.15,V(177.2,150,24)))
+    m.feature('RFPlugPin','RCA centre pin',pin,'Cables',0,'metal')
+    m.profile['stages']=22
+    m.checkpoint(22,'tv_game_switch_box_and_console_rca_plug','补齐 TV/GAME 射频切换盒、天线螺钉端子、RCA 输入和双线叉形输出，并为主机固定 RF 线加入配套插头；调整适配器展示位置以避开主机。')
+
+
+STAGES[22]=stage22
+
+
+def _union_into(m,key,shape,reason):
+    old=m.parts[key]
+    tool=g.part_feature(m.doc,key+'Fill',reason,shape);m.group('Construction').addObject(tool)
+    new=m.doc.addObject('Part::Fuse',key+'Fused');new.Label=old.Label;new.Base=old;new.Tool=tool;new.Refine=True
+    m.doc.recompute();assert new.Shape.isValid() and new.Shape.Solids
+    old.PhysicalPart=False
+    m.register(new,key,old.Assembly,old.ExplodeLayer,old.MaterialDescription,old.Fidelity.startswith('Schematic'),old.PoseGroup)
+    old.Visibility=False;tool.Visibility=False
+
+
+def stage23(m):
+    offset=V(-290,125,0)
+    for key,z,t in [('TVBoxCover',17.5,.5),('TVBoxLabel',18.04,.07)]:
+        plugs=Part.makeCompound([Part.makeCylinder(4.31,t,V(x,-20,z)) for x in [-14,14]]);plugs.translate(offset)
+        _union_into(m,key,plugs,'Close top holes for the end-panel antenna terminal layout')
+    front=V(0,-1,0);tools=[]
+    for i,x in enumerate([-13,13]):
+        def ring(ro,ri,length,y,direction):
+            return Part.makeCylinder(ro,length,V(x,y,9),direction).cut(Part.makeCylinder(ri,length+.2,V(x,y,9)-direction*.1,direction))
+        shapes={
+            'TVBoxAntennaInsulator'+str(i):ring(3.7,1.25,2.2,-35,front),
+            'TVBoxAntennaPad'+str(i):ring(3.3,1.25,.25,-37.35,front),
+            'TVBoxAntennaStud'+str(i):ring(1.8,.8,10.9,-34.8,V(0,1,0)),
+            'TVBoxTerminalLand'+str(i):ring(2.8,1,.05,-23.8,V(0,1,0)),
+        }
+        screw=Part.makeCylinder(2.7,.35).fuse(Part.makeCylinder(.62,14,V(0,0,.33)))
+        screw=screw.cut(Part.makeCompound([Part.makeBox(.28,4.05,.22,V(-.14,-2.025,-.02)),Part.makeBox(4.05,.28,.22,V(-2.025,-.14,-.02))]))
+        screw.rotate(V(),V(0,1,0),180);screw.rotate(V(),V(1,0,0),90);screw.translate(V(x,-38.2,9))
+        shapes['TVBoxAntennaScrew'+str(i)]=screw
+        for key,shape in shapes.items():
+            shape.translate(offset);obj=m.parts[key];obj.Placement=App.Placement();obj.Shape=shape;obj.FlatPlacement=obj.Placement
+        m.parts['TVBoxTerminalLand'+str(i)].Label='Horizontal antenna terminal support washer'
+        hole=Part.makeCylinder(3.9,5,V(x,-34.8,9),front);hole.translate(offset);tools.append(hole)
+    m.cut('TVBoxCover',tools,'Antenna terminal openings on the metal-box end panel')
+    m.colors['cx10badge']=(.025,.06,.13)
+    for n in [1,2]:
+        badge=m.parts['J'+str(n)+'HexBadge'];badge.MaterialDescription='cx10badge';g.appearance(badge,m.colors['cx10badge'])
+        text=m.parts['J'+str(n)+'BadgeText'];text.MaterialDescription='white';g.appearance(text,m.colors['white'])
+    # The working dimensions describe this approximate model, not factory specifications.
+    groups=[a for a in m.groups if a not in ['Accessories','Controller1','Controller2','Cables','Construction']]
+    shape=Part.makeCompound([o.Shape for o in m.parts.values() if o.Assembly in groups]);b=shape.optimalBoundingBox(False,False)
+    m.profile.update(width=b.XLength,height=b.YLength,closed_depth=b.ZLength,envelope_groups=groups,envelope_kind='approximate',fidelity='Approximate exterior envelope and details; schematic major internals')
+    m.profile['envelope_basis']='Model-measured study envelope, including applied body marks; external leads, detached controllers and accessories excluded. No manufacturer dimensioned drawing or physical measurement was verified.'
+    for key,value in [('Width',b.XLength),('Height',b.YLength),('ClosedDepth',b.ZLength)]:
+        cell=m.param_cells[key];m.params.set(cell,str(value)+' mm');m.params.set('C'+cell[1:],'Measured approximate study envelope; not factory specification')
+    m.profile['stages']=23
+    m.checkpoint(23,'metal_switch_box_end_panel_and_model_dimension_basis','按金属切换盒参考图调整天线端子所在端面，校正 CX10 顶标配色，并将参数表的整体尺寸改为本模型实测学习包络；不将近似尺寸标为原厂规格。')
+
+
+STAGES[23]=stage23
