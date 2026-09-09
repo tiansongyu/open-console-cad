@@ -130,7 +130,8 @@ async function loadDevice() {
   $('loading').textContent = `正在加载 ${devices[selected].title} · ${(devices[selected].bytes/1e6).toFixed(1)} MB`;
   try {
     if (!cache.has(selected)) cache.set(selected,loader.loadAsync(`./models/${selected}.glb`,e => {
-      if (token === request && e.total) $('loading').textContent = `正在加载 ${devices[selected].title} · ${Math.round(e.loaded / e.total*100)}%`;
+      const total = devices[selected].bytes || e.total;
+      if (token === request && total) $('loading').textContent = `正在加载 ${devices[selected].title} · ${Math.min(100, Math.round(e.loaded / total*100))}%`;
     }).catch(error => { cache.delete(selected); throw error; }));
     const gltf = await cache.get(selected);
     if (token !== request) return;

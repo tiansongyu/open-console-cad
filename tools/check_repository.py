@@ -10,6 +10,7 @@ for entry in catalog:
     manifest=json.loads((folder/'output/reports/final_manifest.json').read_text())
     assert entry['iterations']==manifest['design_iterations'], f'{device}: catalog iteration count is stale'
     glb=(ROOT/'site/public/models'/f'{device}.glb').read_bytes()
+    assert entry['bytes']==report['bytes']==len(glb), f'{device}: catalog download size is stale'
     magic,version,length=struct.unpack_from('<III',glb);assert magic==0x46546c67 and version==2 and length==len(glb)
     size,kind=struct.unpack_from('<II',glb,12);assert kind==0x4e4f534a
     doc=json.loads(glb[20:20+size]);assert len(doc['nodes'])==count==manifest['physical_components']==report['components']
