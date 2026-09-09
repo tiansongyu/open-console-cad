@@ -1,0 +1,36 @@
+{
+  "id": "gameboy",
+  "title": "Nintendo Game Boy",
+  "prefix": "GameBoy",
+  "model": "DMG-01 (1989)",
+  "family": "slate",
+  "width": 90,
+  "height": 148,
+  "closed_depth": 32,
+  "base_depth": 30.8,
+  "hinge_y": 0,
+  "hinge_z": 0,
+  "default_opening": 180,
+  "upper_display": [
+    47,
+    43
+  ],
+  "lower_display": [],
+  "color": [
+    0.7,
+    0.7,
+    0.67
+  ],
+  "stages": 12,
+  "envelope_basis": "Nintendo nominal 148 x 90 x 32 mm; model matches the full envelope including controls. Local split and wall thickness are approximate.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.com/de-de/Support/Fruhere-Konsolen/Technische-Daten-619585.html",
+      "role": "Original Game Boy dimensions, LCD size and battery specification"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Nintendo+Game+Boy+Teardown/122657",
+      "role": "Firsthand DMG-01 exterior and internal construction reference; board revision may vary"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "dmg_native_split_enclosure",
+  "summary": "建立 90 × 148 mm 原生外壳轮廓、前后侧壁与盖板，保留经典右下大圆角和中部分壳接缝；控制件完成后核对 32 mm 总厚度。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BackCoverBody",
+      "label": "Rear enclosure base",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15843.135354454083,
+      "bounds": [
+        -45.0,
+        45.0,
+        -74.0,
+        74.0,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearShellCut",
+      "label": "Rear enclosure skirt001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 11026.106780037197,
+      "bounds": [
+        -45.0,
+        45.0,
+        -74.0,
+        74.0,
+        1.3,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut",
+      "label": "Front enclosure skirt001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 9393.95281588697,
+      "bounds": [
+        -45.0,
+        45.0,
+        -74.0,
+        74.0,
+        16.6,
+        29.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceBody",
+      "label": "Front control and display panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15130.324538319837,
+      "bounds": [
+        -44.9,
+        44.900000000000006,
+        -73.9,
+        73.9,
+        29.65,
+        30.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/gameboy/output/iterations/01_dmg_native_split_enclosure.FCStd",
+  "views": [
+    "devices/gameboy/output/previews/01_dmg_native_split_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
