@@ -1,6 +1,6 @@
 # Famicom construction iterations
 
-Development checkpoints; the complete device is still in progress. Historical native binaries can be regenerated from the numbered scripts.
+All sixteen source stages have passed a fresh rebuild and final CAD, drawing and local web verification. The complete release is linked from README.md. Historical native binaries can be regenerated from the numbered scripts.
 
 | Stage | Change | Components |
 | --- | --- | ---: |
