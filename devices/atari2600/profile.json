@@ -1,0 +1,55 @@
+{
+  "id": "atari2600",
+  "title": "Atari 2600",
+  "prefix": "Atari2600",
+  "model": "CX2600 Heavy Sixer (1977)",
+  "family": "console",
+  "width": 346,
+  "height": 232,
+  "closed_depth": 89,
+  "base_depth": 50.4,
+  "default_opening": 180,
+  "color": [
+    0.14,
+    0.135,
+    0.125
+  ],
+  "stages": 2,
+  "parameter_basis": "Approximate study envelope; no original dimensional drawing verified",
+  "exterior_fidelity": "Approximate exterior and envelope; photographic study",
+  "envelope_basis": "Study target about 346 x 232 x 89 mm. Heavy Sixer dimensions have not been verified against an original dimensioned drawing or a physical specimen. All geometric dimensions are approximate.",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Mainboard",
+    "Switchboard",
+    "Shield",
+    "Ports"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Switchboard"
+  ],
+  "internal_exclude": [
+    "TopDeck",
+    "ControlHump",
+    "ControlBezel",
+    "ShieldLid"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.5,
+    2.4
+  ],
+  "sources": [
+    {
+      "url": "https://www.atarimania.com/2600/files/vcs_domestic_field_service_manual.pdf",
+      "role": "Atari factory service manual, original two-board 2600 and controller construction"
+    },
+    {
+      "url": "https://www.atari-computermuseum.de/2600.htm",
+      "role": "Firsthand Heavy Sixer exterior, bottom, rear and opened-board photographs"
+    }
+  ]
+}

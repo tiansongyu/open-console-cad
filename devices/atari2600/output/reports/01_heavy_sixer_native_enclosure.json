@@ -1,0 +1,231 @@
+{
+  "iteration": 1,
+  "slug": "heavy_sixer_native_enclosure",
+  "summary": "建立原生草图与双重圆角的厚壁底壳、独立顶板、空心斜面控制台、木纹色前饰板和四个脚垫；全部尺寸标记为近似学习尺寸。",
+  "physical_components": 8,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Heavy rounded lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 1102191.0331786089,
+      "bounds": [
+        -173.0,
+        173.0,
+        -115.75,
+        115.75,
+        7.999999999999998,
+        48.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopDeckCut",
+      "label": "Horizontal ribbed deck foundation001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 94477.5786907891,
+      "bounds": [
+        -162.8,
+        162.8,
+        -105.55,
+        105.55,
+        48.15,
+        50.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlHumpCut001",
+      "label": "Raised sloping control enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 72036.41307259144,
+      "bounds": [
+        -155.0,
+        155.00000000000003,
+        9.0,
+        104.0,
+        50.6,
+        86.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlHump",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WoodFasciaBody",
+      "label": "Printed woodgrain front fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1537.8244208893589,
+      "bounds": [
+        -159.5,
+        159.5,
+        -116.10000000000001,
+        -115.92,
+        19.700000000000003,
+        46.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WoodFascia",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "wood",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Recessed rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        -143.5,
+        -130.5,
+        -91.5,
+        -78.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Recessed rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        130.5,
+        143.5,
+        -91.5,
+        -78.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Recessed rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        -143.5,
+        -130.5,
+        78.5,
+        91.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Recessed rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        130.5,
+        143.5,
+        78.5,
+        91.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/atari2600/output/iterations/01_heavy_sixer_native_enclosure.FCStd",
+  "views": [
+    "devices/atari2600/output/previews/01_heavy_sixer_native_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

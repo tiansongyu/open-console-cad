@@ -1,0 +1,8 @@
+# Atari VCS / CX2600 Heavy Sixer — sources
+
+- [Atari Domestic VCS Field Service Manual, revision 02](https://www.atarimania.com/2600/files/vcs_domestic_field_service_manual.pdf): original 2600 section describes two PCBs, a 12-conductor ribbon and a heavy cast-aluminium motherboard enclosure. The switchboard carries six option switches, regulator and RF modulator. Later 2600A single-board revisions are separately identified. Original manufacturer document, hosted by Atarimania; reviewed 2026-09-09.
+- [Atarimuseum firsthand hardware photographs](https://www.atari-computermuseum.de/2600.htm): the selected early unit has a broadly rounded lower housing, thick side walls, woodgrain fascia, six front switches and raised rear-port surrounds. Photographs `2600_1`, `_side`, `_back`, `_bottom`, `_open` and `_inside` establish the reference variant. The main PCB is narrow and longitudinal, beneath a cast shield; the wide switchboard is elevated across the rear.
+
+The model targets the original 1977 NTSC Heavy Sixer, with a fixed RF lead and the early joystick style. It does not use the later four-switch, light-sixer or 2600+ enclosure. Sources distinguish production revisions; the project is an approximate geometry study, not a reconstruction of an electrical schematic.
+
+No original dimensioned housing drawing or physical specimen has been verified. The working envelope of approximately 346 × 232 × 89 mm and every local wall, interface and board dimension are study assumptions, explicitly marked approximate in parameters and part metadata. Photographs are retained locally for reference and are not redistributed. The bundled DejaVu Sans font uses the existing root font licence; original project content follows the root MIT licence.

@@ -1,0 +1,1069 @@
+{
+  "iteration": 2,
+  "slug": "six_switches_ribs_and_fascia",
+  "summary": "加入六个金属操作杆及各自孔位、防尘垫、斜面卡带口、橙色铭牌边线和功能标识，并补齐横向筋槽与几何木纹印刷层。",
+  "physical_components": 39,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Heavy rounded lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 1102191.0331786089,
+      "bounds": [
+        -173.0,
+        173.0,
+        -115.75,
+        115.75,
+        7.999999999999998,
+        48.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopDeckCut001",
+      "label": "Horizontal ribbed deck foundation002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 261,
+      "volume": 84404.14534657805,
+      "bounds": [
+        -162.8,
+        162.8,
+        -105.55,
+        105.55,
+        48.15,
+        50.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopDeck",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlHumpCut008",
+      "label": "Raised sloping control enclosure009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 68608.64075171776,
+      "bounds": [
+        -155.0,
+        155.00000000000003,
+        9.0,
+        104.0,
+        50.6,
+        86.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlHump",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "atariblack",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WoodFasciaBody",
+      "label": "Printed woodgrain front fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1537.8244208893589,
+      "bounds": [
+        -159.5,
+        159.5,
+        -116.10000000000001,
+        -115.92,
+        19.700000000000003,
+        46.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WoodFascia",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "wood",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Recessed rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        -143.5,
+        -130.5,
+        -91.5,
+        -78.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Recessed rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        130.5,
+        143.5,
+        -91.5,
+        -78.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Recessed rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        -143.5,
+        -130.5,
+        78.5,
+        91.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Recessed rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1035.3118589905162,
+      "bounds": [
+        130.5,
+        143.5,
+        78.5,
+        91.5,
+        0.0,
+        7.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlTrim",
+      "label": "Orange control-bezel pinstripe",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 50.317592894746895,
+      "bounds": [
+        -148.0,
+        148.0,
+        13.609604601019718,
+        71.26733334283412,
+        53.19305129547868,
+        84.23598086457113
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlTrim",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlBezelCut006",
+      "label": "Printed black control faceplate007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 2033.0680589400931,
+      "bounds": [
+        -147.1,
+        147.1,
+        14.392941919950104,
+        70.4745297118925,
+        53.61903533598463,
+        83.82761468253055
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlBezel",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher0",
+      "label": "Switch actuator dust washer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377945,
+      "bounds": [
+        -131.5,
+        -120.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever0",
+      "label": "Metal power switch lever",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.82026099901424,
+      "bounds": [
+        -128.35,
+        -123.65,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever0",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle0",
+      "label": "power",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 94,
+      "volume": 0.1147216353452514,
+      "bounds": [
+        -132.7191276167785,
+        -123.43644285302014,
+        58.55202800112284,
+        60.65482646675594,
+        77.49064666522102,
+        78.63178695356562
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle0",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend0",
+      "label": "on / off",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 100,
+      "volume": 0.054606125026619316,
+      "bounds": [
+        -133.8791318114094,
+        -126.20909385973155,
+        53.657337704932,
+        55.31011211540271,
+        74.8606638657752,
+        75.76000013791314
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend0",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher1",
+      "label": "Switch actuator dust washer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377945,
+      "bounds": [
+        -102.5,
+        -91.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever1",
+      "label": "Metal tv type switch lever",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.82026099901424,
+      "bounds": [
+        -99.35,
+        -94.65,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever1",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle1",
+      "label": "tv type",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 110,
+      "volume": 0.12067827495720493,
+      "bounds": [
+        -103.91694640872483,
+        -93.22889251744968,
+        58.55202800112284,
+        61.046439535462675,
+        77.49064666522102,
+        78.84220591585581
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle1",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend1",
+      "label": "color / b-w",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 128,
+      "volume": 0.07846836583967286,
+      "bounds": [
+        -104.8791318114094,
+        -93.58867869127516,
+        53.657337704932,
+        55.31011211540271,
+        74.8606638657752,
+        75.76000013791314
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend1",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher2",
+      "label": "Switch actuator dust washer002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377947,
+      "bounds": [
+        -73.5,
+        -62.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever2",
+      "label": "Metal left switch lever",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.8202609990142,
+      "bounds": [
+        -70.35,
+        -65.65,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever2",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle2",
+      "label": "left",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 68,
+      "volume": 0.06733481307936383,
+      "bounds": [
+        -74.70855704697986,
+        -70.0665099671141,
+        59.07985431111887,
+        61.19967943191314,
+        77.77425483178605,
+        78.92454377066501
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle2",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend2",
+      "label": "difficulty",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 167,
+      "volume": 0.08268634032920874,
+      "bounds": [
+        -75.8791318114094,
+        -66.5632171818792,
+        53.43220738668997,
+        55.31011211540271,
+        74.7396982753765,
+        75.76000013791314
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend2",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DifficultyAB2",
+      "label": "a / b",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 59,
+      "volume": 0.03507797066650867,
+      "bounds": [
+        -61.860696408724834,
+        -56.972382450335566,
+        36.02907406140848,
+        37.778569332447454,
+        65.38876101253867,
+        66.34006670229539
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DifficultyAB2",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher3",
+      "label": "Switch actuator dust washer003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377944,
+      "bounds": [
+        62.5,
+        73.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever3",
+      "label": "Metal right switch lever",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.8202609990142,
+      "bounds": [
+        65.65,
+        70.35,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever3",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle3",
+      "label": "right",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 97,
+      "volume": 0.09150768802868926,
+      "bounds": [
+        61.28087238322148,
+        68.18852358993288,
+        58.55202800112284,
+        61.19967943191314,
+        77.49064666522102,
+        78.92454377066501
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle3",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend3",
+      "label": "difficulty001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 167,
+      "volume": 0.08268634032920891,
+      "bounds": [
+        60.120868188590606,
+        69.4367828181208,
+        53.43220738668997,
+        55.31011211540271,
+        74.7396982753765,
+        75.76000013791314
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend3",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DifficultyAB3",
+      "label": "a / b001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 59,
+      "volume": 0.03507797066650866,
+      "bounds": [
+        74.13930359127518,
+        79.02761754966443,
+        36.02907406140848,
+        37.778569332447454,
+        65.38876101253867,
+        66.34006670229539
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DifficultyAB3",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher4",
+      "label": "Switch actuator dust washer004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377945,
+      "bounds": [
+        91.5,
+        102.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher4",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever4",
+      "label": "Metal game switch lever",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.82026099901424,
+      "bounds": [
+        94.65,
+        99.35,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever4",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle4",
+      "label": "game",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 112,
+      "volume": 0.10883305279604187,
+      "bounds": [
+        90.17063748389262,
+        98.61271822080536,
+        58.55202800112284,
+        60.65482646675594,
+        77.49064666522102,
+        78.63178695356562
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle4",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend4",
+      "label": "select",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 120,
+      "volume": 0.054724370753497224,
+      "bounds": [
+        89.11872892684565,
+        95.45187090536912,
+        53.80608435627049,
+        55.31011201540271,
+        74.94058739336006,
+        75.76000003791314
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend4",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchWasher5",
+      "label": "Switch actuator dust washer005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 64.91787059377945,
+      "bounds": [
+        120.5,
+        131.5,
+        37.096576513360034,
+        47.212382709819195,
+        66.24341421542326,
+        72.24268945254869
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchWasher5",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLever5",
+      "label": "Metal game switch lever001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 356.82026099901407,
+      "bounds": [
+        123.65,
+        128.35,
+        30.825682668925346,
+        44.2387774492874,
+        68.10433338496684,
+        88.30359058838891
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLever5",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchTitle5",
+      "label": "game001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 112,
+      "volume": 0.10883305279604195,
+      "bounds": [
+        119.17063748389262,
+        127.61271822080536,
+        58.55202800112284,
+        60.65482646675594,
+        77.49064666522102,
+        78.63178695356562
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchTitle5",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SwitchLegend5",
+      "label": "reset",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 110,
+      "volume": 0.04679470033300002,
+      "bounds": [
+        118.19895124228188,
+        123.4889178852349,
+        53.80608435627049,
+        55.2015671887503,
+        74.94058739336006,
+        75.70167749075664
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SwitchLegend5",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "orange",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SystemTitle",
+      "label": "video computer system",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 20,
+      "faces": 397,
+      "volume": 0.7989476109957468,
+      "bounds": [
+        -39.86950503355705,
+        11.349555469127514,
+        58.315546679440025,
+        62.0628362560554,
+        77.36358207446608,
+        79.38832952692056
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SystemTitle",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WoodgrainPrint",
+      "label": "Printed woodgrain study pattern",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 936,
+      "volume": 12.150000000000906,
+      "bounds": [
+        -151.0,
+        149.0,
+        -116.14,
+        -116.115,
+        22.803311228106246,
+        43.77574329864936
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WoodgrainPrint",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "grain",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AtariWord",
+      "label": "ATARI",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 67,
+      "volume": 0.41907643085211227,
+      "bounds": [
+        126.04530201342281,
+        141.74641359060405,
+        -116.1680001,
+        -116.14999990000001,
+        24.4999999,
+        28.72818801946309
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AtariWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Approximate exterior and envelope; photographic study",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/atari2600/output/iterations/02_six_switches_ribs_and_fascia.FCStd",
+  "views": [
+    "devices/atari2600/output/previews/02_six_switches_ribs_and_fascia_hero.png",
+    "devices/atari2600/output/previews/02_six_switches_ribs_and_fascia_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

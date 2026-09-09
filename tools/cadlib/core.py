@@ -19,6 +19,7 @@ class Study:
         self.params.set('A1','Parameter');self.params.set('B1','Value');self.params.set('C1','Basis')
         self.param_cells={}
         for i,(key,val,note) in enumerate([('Width',self.profile['width'],'Published closed/body envelope'),('Height',self.profile['height'],'Published closed/body envelope'),('ClosedDepth',self.profile['closed_depth'],'Published closed/body envelope'),('BaseDepth',self.profile['base_depth'],'Approximate internal split'),('Opening',self.profile.get('default_opening',180),'Presentation opening; use pose macro'),('Wall',1.25,'Approximate shell thickness')],2):
+            if key in ['Width','Height','ClosedDepth']:note=self.profile.get('parameter_basis',note)
             self.params.set(f'A{i}',key);self.params.set(f'B{i}',str(val)+('' if key=='Opening' else ' mm'));self.params.setAlias(f'B{i}',key);self.params.set(f'C{i}',note);self.param_cells[key]=f'B{i}'
         self.params.setColumnWidth('A',145);self.params.setColumnWidth('B',95);self.params.setColumnWidth('C',285)
         self.doc.recompute();self.opening=180
@@ -29,7 +30,7 @@ class Study:
         for prop,typ in [('PartID','App::PropertyString'),('Assembly','App::PropertyString'),('ExplodeLayer','App::PropertyInteger'),('MaterialDescription','App::PropertyString'),('PhysicalPart','App::PropertyBool'),('Fidelity','App::PropertyString'),('PoseGroup','App::PropertyString'),('FlatPlacement','App::PropertyPlacement')]:
             if prop not in o.PropertiesList:o.addProperty(typ,prop,'Study')
         o.PartID=key;o.Assembly=assembly;o.ExplodeLayer=layer;o.MaterialDescription=material;o.PhysicalPart=True;o.PoseGroup=pose;o.FlatPlacement=o.Placement
-        o.Fidelity='Schematic internal layout' if internal else 'Published envelope; approximate local detail'
+        o.Fidelity='Schematic internal layout' if internal else self.profile.get('exterior_fidelity','Published envelope; approximate local detail')
         self.group(assembly).addObject(o);self.parts[key]=o;g.appearance(o,self.colors[material]);return o
     def feature(self,key,label,shape,assembly='Body',layer=0,material='shell',internal=False,pose='Base'):
         assert key not in self.parts,key
