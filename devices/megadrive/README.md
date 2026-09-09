@@ -42,6 +42,8 @@ SJ-3500 保留曲线双握柄、浮动方向圆盘、斜列 ABC、蓝色 START�
 - [图纸尺寸](output/reports/drawing_checks.json) · [原生图页](output/reports/native_drawings_audit.json) · [保存后重开](output/reports/native_drawings_reload.json)：12 页及 14 个原生尺寸引用。
 - [图册视觉验收](output/reports/visual_acceptance.json) · [独立复核](output/reports/independent_pdf_review.json) · [网页检查](output/reports/web_preview_checks.json)。
 
+- [14 个线上文件核对](output/reports/live_delivery_audit.json) · [线上桌面与手机视图](output/reports/live_ui_checks.json)：发布资源与提交一致，十一种在线视图已核对。
+
 早期阶段的记录保留了当时发现的问题，交付以最终验证报告为准。原生图页和 PDF 是当前模型的快照，修改三维几何后需重新生成。
 
 原创代码和有权许可的模型内容采用根目录 MIT 协议。第三方名称、产品设计、字体与参考材料保留各自权利，见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
