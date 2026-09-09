@@ -20,41 +20,39 @@
 
 <table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=switch&amp;view=assembled#viewer"><img src="site/public/images/switch/hero.webp" width="220" height="109" alt="Nintendo Switch HAC-001 的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo Switch</strong><br>
       <sub>HAC-001</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=switch&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/switch/README.md">设备说明</a> · <a href="devices/switch/output/drawings/Switch_Drawings.pdf">A3 图纸</a>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=switch2&amp;view=assembled#viewer"><img src="site/public/images/switch2/hero.webp" width="220" height="109" alt="Nintendo Switch 2 BEE-001 的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo Switch 2</strong><br>
       <sub>BEE-001</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=switch2&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/switch2/README.md">设备说明</a> · <a href="devices/switch2/output/drawings/Switch2_Drawings.pdf">A3 图纸</a>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=3ds&amp;view=assembled#viewer"><img src="site/public/images/3ds/hero.webp" width="149" height="160" alt="Nintendo 3DS CTR-001 的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo 3DS</strong><br>
       <sub>CTR-001</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=3ds&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/3ds/README.md">设备说明</a> · <a href="devices/3ds/output/drawings/Nintendo3DS_Drawings.pdf">A3 图纸</a>
     </td>
-    <td align="center" width="50%">
+  </tr>
+  <tr>
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=nds&amp;view=assembled#viewer"><img src="site/public/images/nds/hero.webp" width="206" height="160" alt="Nintendo DS NTR-001 的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo DS</strong><br>
       <sub>NTR-001</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=nds&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/nds/README.md">设备说明</a> · <a href="devices/nds/output/drawings/NintendoDS_Drawings.pdf">A3 图纸</a>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=psp&amp;view=assembled#viewer"><img src="site/public/images/psp/hero.webp" width="206" height="160" alt="Sony PSP PSP-1000 的 FreeCAD 模型预览"></a><br>
       <strong>Sony PSP</strong><br>
       <sub>PSP-1000</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=psp&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/psp/README.md">设备说明</a> · <a href="devices/psp/output/drawings/PSP1000_Drawings.pdf">A3 图纸</a>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=psv&amp;view=assembled#viewer"><img src="site/public/images/psv/hero.webp" width="206" height="160" alt="PlayStation Vita PCH-1000 · Wi-Fi OLED 的 FreeCAD 模型预览"></a><br>
       <strong>PlayStation Vita</strong><br>
       <sub>PCH-1000 · Wi-Fi OLED</sub><br>
@@ -62,21 +60,19 @@
     </td>
   </tr>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer"><img src="site/public/images/steamdeck/hero.webp" width="206" height="160" alt="Steam Deck 2022 · LCD 的 FreeCAD 模型预览"></a><br>
       <strong>Steam Deck</strong><br>
       <sub>2022 · LCD</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/steamdeck/README.md">设备说明</a> · <a href="devices/steamdeck/output/drawings/SteamDeck_Drawings.pdf">A3 图纸</a>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=gameboy&amp;view=assembled#viewer"><img src="site/public/images/gameboy/hero.webp" width="206" height="160" alt="Nintendo Game Boy DMG-01 的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo Game Boy</strong><br>
       <sub>DMG-01 · 初代灰色</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=gameboy&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/gameboy/README.md">设备说明</a> · <a href="devices/gameboy/output/drawings/GameBoy_Drawings.pdf">A3 图纸</a>
     </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
+    <td align="center" width="33%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=famicom&amp;view=assembled#viewer"><img src="site/public/images/famicom/hero.webp" width="206" height="160" alt="Nintendo Famicom HVC-001 圆形按键红白机的 FreeCAD 模型预览"></a><br>
       <strong>Nintendo Famicom</strong><br>
       <sub>HVC-001 · 圆形按键红白机</sub><br>
