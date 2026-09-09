@@ -1,0 +1,29 @@
+{
+  "id": "famicom",
+  "title": "Nintendo Famicom",
+  "prefix": "Famicom",
+  "model": "HVC-001 round-button",
+  "family": "console",
+  "width": 150,
+  "height": 220,
+  "closed_depth": 60,
+  "base_depth": 53,
+  "default_opening": 180,
+  "color": [
+    0.78,
+    0.77,
+    0.66
+  ],
+  "stages": 3,
+  "envelope_basis": "Nintendo original-manual body dimensions: width150 x depth220 x height60 mm. Controller cables and separately displayed accessories excluded. Local shape and wall dimensions approximate.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.com/jp/famicom/hardware/index.html",
+      "role": "Original-manual specifications, front/rear interfaces and distinct player I/II controllers"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Nintendo+Family+Computer+(Famicom)+Teardown/3199",
+      "role": "Firsthand round-button HVC-001 teardown; HVC-CPU-GPM-02 reference board revision"
+    }
+  ]
+}

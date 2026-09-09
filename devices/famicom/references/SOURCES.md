@@ -1,0 +1,6 @@
+# Nintendo Famicom HVC-001 — sources
+
+- [Nintendo original hardware and manual specifications](https://www.nintendo.com/jp/famicom/hardware/index.html): HVC-001 body width 150 mm, depth 220 mm, height 60 mm; DC 10 V / 850 mA adapter, approximately 4 W; RF, AC, channel/mode switches and front expansion connector. First controller has START/SELECT; second has microphone and volume. Official product photographs used to establish body axes. Reviewed 2026-09-09.
+- [iFixit firsthand teardown, guide 3199](https://www.ifixit.com/Teardown/Nintendo+Family+Computer+(Famicom)+Teardown/3199): red/cream HVC-001, round-button controllers, six bottom screws, eject linkage, motherboard and power/RF sections. The photographed HVC-CPU-GPM-02 board is a reference revision, not a claim to reproduce the earliest 1983 electronics.
+
+The model uses the familiar round-button original housing rather than the initial square-button controller revision, AV Famicom, NES or Mini. The published body envelope sets the CAD axes (X across the front; Y front to rear; Z vertical). Wall thickness, sloping faces, fasteners, connectors and electronic packages are approximate study dimensions. Research photographs remain local and are not redistributed. DejaVu Sans retains the root font license.

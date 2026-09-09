@@ -1,0 +1,204 @@
+{
+  "iteration": 1,
+  "slug": "native_sloping_red_cream_shell",
+  "summary": "建立 150 × 220 mm 红白分壳、原生草图与圆角、前后斜面、两侧手柄收纳槽和阶梯卡带区域；退卡与控制件完成后核对 60 mm 总高。",
+  "physical_components": 7,
+  "objects": [
+    {
+      "name": "BottomCoverBody",
+      "label": "Burgundy bottom cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 72552.78759594743,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        2.4,
+        4.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut",
+      "label": "Burgundy lower enclosure skirt001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 13847.52102020994,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        4.7,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut001",
+      "label": "Sloping cream upper enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 75,
+      "volume": 114685.7747024764,
+      "bounds": [
+        -75.0,
+        75.00000000000001,
+        -110.0,
+        110.0,
+        15.4,
+        53.00000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Bottom support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Bottom support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Bottom support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Bottom support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/famicom/output/iterations/01_native_sloping_red_cream_shell.FCStd",
+  "views": [
+    "devices/famicom/output/previews/01_native_sloping_red_cream_shell_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

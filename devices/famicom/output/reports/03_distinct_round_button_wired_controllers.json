@@ -1,0 +1,1770 @@
+{
+  "iteration": 3,
+  "slug": "distinct_round_button_wired_controllers",
+  "summary": "建立两只独立的圆形按键手柄、金色面板、分壳与螺钉；一号配置 START/SELECT，二号配置麦克风格栅和音量滑块，并竖放在两侧收纳槽中。",
+  "physical_components": 65,
+  "objects": [
+    {
+      "name": "BottomCoverBody",
+      "label": "Burgundy bottom cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 72552.78759594743,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        2.4,
+        4.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut002",
+      "label": "Burgundy lower enclosure skirt003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 9408.72102021002,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        4.7,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut008",
+      "label": "Sloping cream upper enclosure009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 213,
+      "volume": 87090.33106395176,
+      "bounds": [
+        -75.0,
+        75.00000000000001,
+        -110.0,
+        110.0,
+        15.4,
+        53.00000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Bottom support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Bottom support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Bottom support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Bottom support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDustFlapBody",
+      "label": "Burgundy cartridge dust flap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5371.5545482457455,
+      "bounds": [
+        -58.3,
+        58.3,
+        20.6,
+        49.4,
+        46.2,
+        47.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDustFlap",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlapRearRidge",
+      "label": "Cartridge-flap hinge ridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 161.70265482457458,
+      "bounds": [
+        -57.8,
+        57.8,
+        47.4,
+        48.800000000000004,
+        47.9,
+        48.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlapRearRidge",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectWellFloorCut",
+      "label": "Eject well floor001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2956.228672105405,
+      "bounds": [
+        -20.2,
+        20.2,
+        -74.7,
+        -11.3,
+        49.0,
+        50.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectWellFloor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectLever",
+      "label": "Raised burgundy eject handle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 2965.550000000001,
+      "bounds": [
+        -18.5,
+        18.5,
+        -74.0,
+        -60.0,
+        51.4,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectLever",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCapBody",
+      "label": "Power burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        -45.8,
+        -30.2,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetCapBody",
+      "label": "Reset burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        30.2,
+        45.8,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerFingerRidge",
+      "label": "Power slide raised grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 100.28495559215385,
+      "bounds": [
+        -45.0,
+        -31.0,
+        -78.5,
+        -75.5,
+        54.85,
+        57.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerFingerRidge",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontNameplate",
+      "label": "Famicom burgundy nameplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 207.98626548245784,
+      "bounds": [
+        -65.0,
+        65.0,
+        -104.03314331970495,
+        -92.22503173226441,
+        35.630425205339066,
+        46.57432977671376
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontNameplate",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FamilyComputerWord",
+      "label": "FAMILY COMPUTER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 201,
+      "volume": 1.4652167133823715,
+      "bounds": [
+        -44.392953020134236,
+        12.312483321476494,
+        -99.57583094369933,
+        -96.13137428930885,
+        39.8695226651125,
+        43.06071862189622
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FamilyComputerWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.12127551380709951,
+      "bounds": [
+        42.25293624161075,
+        53.572734999328866,
+        -101.29824794601205,
+        -99.82046688072155,
+        38.27469210741554,
+        39.64489214836596
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "POWERMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.11154541322744628,
+      "bounds": [
+        -54.74706385838926,
+        -45.5251676852349,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "POWERMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RESETMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.09268518010168608,
+      "bounds": [
+        48.25293614161074,
+        56.266359060402685,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RESETMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.08070866825396496,
+      "bounds": [
+        -4.747063758389261,
+        2.3965604026845635,
+        -79.51543634161074,
+        -77.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSeat_1",
+      "label": "Lower controller support shelf",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2279.4766721054034,
+      "bounds": [
+        -73.10000000000001,
+        -58.7,
+        -44.5,
+        87.5,
+        5.3,
+        6.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSeat-1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSeat1",
+      "label": "Lower controller support shelf001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2279.4766721054034,
+      "bounds": [
+        58.7,
+        73.10000000000001,
+        -44.5,
+        87.5,
+        5.3,
+        6.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSeat1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BackCut003",
+      "label": "Controller 1 rear cover004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7813.61362227158,
+      "bounds": [
+        -60.0,
+        -58.8,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Back",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1FrameCut",
+      "label": "Controller middle shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6274.733057183243,
+      "bounds": [
+        -70.3,
+        -60.099999999999994,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Frame",
+      "assembly": "Controller1",
+      "layer": 0,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1FrontCut004",
+      "label": "Controller front cover005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 48,
+      "volume": 7668.133083784479,
+      "bounds": [
+        -71.7,
+        -70.39999999999999,
+        -41.4,
+        84.4,
+        7.1,
+        58.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Front",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1GoldPlateCut003",
+      "label": "Gold control faceplate004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 362.0555928509103,
+      "bounds": [
+        -71.9,
+        -71.78,
+        -37.5,
+        80.5,
+        11.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1GoldPlate",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1DPad",
+      "label": "Controller cross directional pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 234.33194677087445,
+      "bounds": [
+        -73.2,
+        -72.2,
+        55.5,
+        75.5,
+        17.0,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1DPad",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BRim",
+      "label": "Burgundy action-button rim",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.21256516484015,
+      "bounds": [
+        -72.57000000000001,
+        -71.91999999999999,
+        -13.600000000000009,
+        -1.4000000000000004,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1BRim",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1B",
+      "label": "Round B button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.637843302345125,
+      "bounds": [
+        -73.39999999999999,
+        -72.05,
+        -12.8,
+        -2.2,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1B",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1BMark",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.044337414795558035,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        -8.640520234228187,
+        -6.841463826174496,
+        33.5999999,
+        36.136912851677856
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1BMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1ARim",
+      "label": "Burgundy action-button rim001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840157,
+      "bounds": [
+        -72.57000000000001,
+        -71.91999999999999,
+        -31.6,
+        -19.4,
+        18.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1ARim",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1A",
+      "label": "Round A button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.63784330234515,
+      "bounds": [
+        -73.39999999999999,
+        -72.05,
+        -30.8,
+        -20.2,
+        19.7,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1A",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1AMark",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.03520088772641195,
+      "bounds": [
+        -71.938,
+        -71.92,
+        -26.851174496644294,
+        -24.52718120805369,
+        33.6,
+        36.136912751677855
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1AMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Number",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.05441300842304479,
+      "bounds": [
+        -71.938,
+        -71.92,
+        73.6963087248322,
+        75.93372483221476,
+        46.5,
+        50.258389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Number",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Select",
+      "label": "Select rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.591007675795026,
+      "bounds": [
+        -73.19999999999999,
+        -72.1,
+        30.4,
+        40.6,
+        22.8,
+        27.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Select",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1SelectMark",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.0994417477323669,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        30.794714765100668,
+        40.33011754966443,
+        33.76241600738255,
+        35.71140949597315
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1SelectMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Start",
+      "label": "Start rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.591007675795026,
+      "bounds": [
+        -73.19999999999999,
+        -72.1,
+        9.4,
+        19.6,
+        22.8,
+        27.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Start",
+      "assembly": "Controller1",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1StartMark",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.08706970289908231,
+      "bounds": [
+        -71.9380001,
+        -71.91999990000001,
+        11.53968120805369,
+        19.33011754966443,
+        33.76241600738255,
+        35.71140949597315
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1StartMark",
+      "assembly": "Controller1",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        -61.83,
+        -59.0,
+        72.15,
+        74.85,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw0",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.7877413896875805,
+      "bounds": [
+        -61.83,
+        -59.0,
+        -31.85,
+        -29.15,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw1",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.787741389687579,
+      "bounds": [
+        -61.83,
+        -59.0,
+        72.15,
+        74.85,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw2",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1Screw3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        -61.83,
+        -59.0,
+        -31.85,
+        -29.15,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1Screw3",
+      "assembly": "Controller1",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P1CableGrommet",
+      "label": "Wired-controller strain relief",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.02654221687297,
+      "bounds": [
+        -67.5,
+        -63.099999999999994,
+        84.5,
+        89.5,
+        40.8,
+        45.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P1CableGrommet",
+      "assembly": "Controller1",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BackCut003",
+      "label": "Controller 2 rear cover004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7813.61362227158,
+      "bounds": [
+        58.8,
+        60.0,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Back",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2FrameCut",
+      "label": "Controller middle shell003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6274.733057183243,
+      "bounds": [
+        60.099999999999994,
+        70.3,
+        -41.5,
+        84.5,
+        7.0,
+        59.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Frame",
+      "assembly": "Controller2",
+      "layer": 0,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2FrontCut004",
+      "label": "Controller front cover011",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 71,
+      "volume": 7653.38801281267,
+      "bounds": [
+        70.39999999999999,
+        71.7,
+        -41.4,
+        84.4,
+        7.1,
+        58.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Front",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2GoldPlateCut004",
+      "label": "Gold control faceplate010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 69,
+      "volume": 407.9270290445592,
+      "bounds": [
+        71.78,
+        71.9,
+        -37.5,
+        80.5,
+        11.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2GoldPlate",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2DPad",
+      "label": "Controller cross directional pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 234.33194677087448,
+      "bounds": [
+        72.2,
+        73.2,
+        55.5,
+        75.5,
+        29.0,
+        49.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2DPad",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BRim",
+      "label": "Burgundy action-button rim002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840143,
+      "bounds": [
+        71.91999999999999,
+        72.57000000000001,
+        -13.600000000000009,
+        -1.4000000000000004,
+        34.9,
+        47.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2BRim",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2B",
+      "label": "Round B button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.63784330234515,
+      "bounds": [
+        72.05,
+        73.39999999999999,
+        -12.8,
+        -2.2,
+        35.7,
+        46.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2B",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2BMark",
+      "label": "B001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.04433741479555806,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        -8.640520234228187,
+        -6.841463826174496,
+        29.863087148322144,
+        32.4000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2BMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2ARim",
+      "label": "Burgundy action-button rim003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 14.212565164840171,
+      "bounds": [
+        71.91999999999999,
+        72.57000000000001,
+        -31.6,
+        -19.4,
+        34.9,
+        47.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2ARim",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2A",
+      "label": "Round A button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 60.63784330234515,
+      "bounds": [
+        72.05,
+        73.39999999999999,
+        -30.8,
+        -20.2,
+        35.7,
+        46.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2A",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2AMark",
+      "label": "A001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.035200887726411965,
+      "bounds": [
+        71.92,
+        71.938,
+        -26.851174496644294,
+        -24.52718120805369,
+        29.863087248322145,
+        32.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2AMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Number",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.0644878220857177,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        73.73657708120805,
+        76.12248332147651,
+        15.677181108053693,
+        19.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Number",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2MicMesh",
+      "label": "Player-II microphone backing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 7.972530964914909,
+      "bounds": [
+        69.89999999999999,
+        70.1,
+        26.8,
+        34.8,
+        38.0,
+        43.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2MicMesh",
+      "assembly": "Controller2",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeTrack",
+      "label": "Microphone volume track",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 22.472743338823072,
+      "bounds": [
+        70.0,
+        70.25,
+        -1.5000000000000004,
+        20.5,
+        38.949999999999996,
+        43.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeTrack",
+      "assembly": "Controller2",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeSlider",
+      "label": "Player-II microphone volume knob",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 23.10755742875645,
+      "bounds": [
+        72.0,
+        73.4,
+        7.3,
+        11.7,
+        39.1,
+        42.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeSlider",
+      "assembly": "Controller2",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2MicMark",
+      "label": "MIC.",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 47,
+      "volume": 0.05440403089247166,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        31.175,
+        36.24706375838926,
+        30.288590504026846,
+        32.23758399261745
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2MicMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2VolumeMark",
+      "label": "VOLUME",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 80,
+      "volume": 0.09553553154362537,
+      "bounds": [
+        71.91999990000001,
+        71.9380001,
+        10.9390855704698,
+        20.481879194630874,
+        30.479731443624164,
+        32.23382560335571
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2VolumeMark",
+      "assembly": "Controller2",
+      "layer": 4,
+      "material": "fcink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw0",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.787741389687579,
+      "bounds": [
+        59.0,
+        61.83,
+        72.15,
+        74.85,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw0",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw1",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.7877413896875805,
+      "bounds": [
+        59.0,
+        61.83,
+        -31.85,
+        -29.15,
+        48.65,
+        51.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw1",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw2",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.78774138968758,
+      "bounds": [
+        59.0,
+        61.83,
+        72.15,
+        74.85,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw2",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2Screw3",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 4.787741389687581,
+      "bounds": [
+        59.0,
+        61.83,
+        -31.85,
+        -29.15,
+        14.65,
+        17.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2Screw3",
+      "assembly": "Controller2",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "P2CableGrommet",
+      "label": "Wired-controller strain relief001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.02654221687303,
+      "bounds": [
+        63.099999999999994,
+        67.5,
+        84.5,
+        89.5,
+        20.8,
+        25.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "P2CableGrommet",
+      "assembly": "Controller2",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/famicom/output/iterations/03_distinct_round_button_wired_controllers.FCStd",
+  "views": [
+    "devices/famicom/output/previews/03_distinct_round_button_wired_controllers_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,556 @@
+{
+  "iteration": 2,
+  "slug": "top_controls_and_cartridge_cover",
+  "summary": "加入红色卡槽防尘盖、退卡滑槽与抬高把手、POWER/RESET 独立按钮、随斜面放置的铭牌，以及后部散热槽。",
+  "physical_components": 20,
+  "objects": [
+    {
+      "name": "BottomCoverBody",
+      "label": "Burgundy bottom cover",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 72552.78759594743,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        2.4,
+        4.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut",
+      "label": "Burgundy lower enclosure skirt001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 13847.52102020994,
+      "bounds": [
+        -75.0,
+        75.0,
+        -110.0,
+        110.0,
+        4.7,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut006",
+      "label": "Sloping cream upper enclosure007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 210,
+      "volume": 99350.91073904894,
+      "bounds": [
+        -75.0,
+        75.00000000000001,
+        -110.0,
+        110.0,
+        15.4,
+        53.00000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Bottom support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Bottom support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        -96.4,
+        -87.6,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Bottom support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        -63.4,
+        -54.6,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Bottom support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 133.80671430169645,
+      "bounds": [
+        54.6,
+        63.4,
+        85.6,
+        94.4,
+        0.0,
+        2.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDustFlapBody",
+      "label": "Burgundy cartridge dust flap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5371.5545482457455,
+      "bounds": [
+        -58.3,
+        58.3,
+        20.6,
+        49.4,
+        46.2,
+        47.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDustFlap",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlapRearRidge",
+      "label": "Cartridge-flap hinge ridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 161.70265482457458,
+      "bounds": [
+        -57.8,
+        57.8,
+        47.4,
+        48.800000000000004,
+        47.9,
+        48.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlapRearRidge",
+      "assembly": "CardReader",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectWellFloorCut",
+      "label": "Eject well floor001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2956.228672105405,
+      "bounds": [
+        -20.2,
+        20.2,
+        -74.7,
+        -11.3,
+        49.0,
+        50.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectWellFloor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectLever",
+      "label": "Raised burgundy eject handle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 2965.550000000001,
+      "bounds": [
+        -18.5,
+        18.5,
+        -74.0,
+        -60.0,
+        51.4,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectLever",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCapBody",
+      "label": "Power burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        -45.8,
+        -30.2,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetCapBody",
+      "label": "Reset burgundy cap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 387.61592894744615,
+      "bounds": [
+        30.2,
+        45.8,
+        -83.3,
+        -66.7,
+        53.2,
+        54.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerFingerRidge",
+      "label": "Power slide raised grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 100.28495559215385,
+      "bounds": [
+        -45.0,
+        -31.0,
+        -78.5,
+        -75.5,
+        54.85,
+        57.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerFingerRidge",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontNameplate",
+      "label": "Famicom burgundy nameplate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 207.98626548245784,
+      "bounds": [
+        -65.0,
+        65.0,
+        -104.03314331970495,
+        -92.22503173226441,
+        35.630425205339066,
+        46.57432977671376
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontNameplate",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcred",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FamilyComputerWord",
+      "label": "FAMILY COMPUTER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 201,
+      "volume": 1.4652167133823715,
+      "bounds": [
+        -44.392953020134236,
+        12.312483321476494,
+        -99.57583094369933,
+        -96.13137428930885,
+        39.8695226651125,
+        43.06071862189622
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FamilyComputerWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.12127551380709951,
+      "bounds": [
+        42.25293624161075,
+        53.572734999328866,
+        -101.29824794601205,
+        -99.82046688072155,
+        38.27469210741554,
+        39.64489214836596
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fcgold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "POWERMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.11154541322744628,
+      "bounds": [
+        -54.74706385838926,
+        -45.5251676852349,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "POWERMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RESETMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.09268518010168608,
+      "bounds": [
+        48.25293614161074,
+        56.266359060402685,
+        -76.03758399261744,
+        -74.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RESETMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.08070866825396496,
+      "bounds": [
+        -4.747063758389261,
+        2.3965604026845635,
+        -79.51543634161074,
+        -77.08859050402685,
+        53.0179999,
+        53.0360001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "fccream",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/famicom/output/iterations/02_top_controls_and_cartridge_cover.FCStd",
+  "views": [
+    "devices/famicom/output/previews/02_top_controls_and_cartridge_cover_hero.png",
+    "devices/famicom/output/previews/02_top_controls_and_cartridge_cover_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
