@@ -183,6 +183,7 @@ open-console-cad/
 | 八款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
 | 首批七款：线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
 | 首批七款：模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
+| 新增 Game Boy：14 个线上文件与桌面/手机预览 | [文件核对](devices/gameboy/output/reports/live_delivery_audit.json) · [交互核对](devices/gameboy/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献
