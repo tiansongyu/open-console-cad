@@ -1,0 +1,2068 @@
+{
+  "iteration": 5,
+  "slug": "rear_cartridge_bay_battery_door_and_fasteners",
+  "summary": "建立后部卡带入口、滑动导轨、电池盖与卡扣、六枚三角槽机壳螺钉、安装柱和后壳横向防滑纹。",
+  "physical_components": 76,
+  "objects": [
+    {
+      "name": "BackCoverCut012",
+      "label": "Rear enclosure base013",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 1002,
+      "volume": 8458.825854861765,
+      "bounds": [
+        -45.0000001,
+        45.0000001,
+        -74.0,
+        74.0000001,
+        -1e-07,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearShellCut006",
+      "label": "Rear enclosure skirt007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 230,
+      "volume": 10117.124669085482,
+      "bounds": [
+        -45.0,
+        45.0,
+        -74.0,
+        74.0,
+        1.3,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainFrameCut002",
+      "label": "Front enclosure skirt003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 31,
+      "volume": 9343.997985067163,
+      "bounds": [
+        -45.0,
+        45.0,
+        -74.0,
+        74.0,
+        16.6,
+        29.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainFrame",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFaceCut007",
+      "label": "Front control and display panel008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 113,
+      "volume": 9122.493878223951,
+      "bounds": [
+        -44.9,
+        44.900000000000006,
+        -73.9,
+        73.9,
+        29.65,
+        30.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFace",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayBezelCut",
+      "label": "Dark-grey display surround001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 1784.4528893977133,
+      "bounds": [
+        -38.5,
+        38.5,
+        6.249999999999998,
+        63.75,
+        30.0,
+        30.76
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayBezel",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "dmgbezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDBackplate",
+      "label": "LCD backing plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1055.0111325603639,
+      "bounds": [
+        -29.0,
+        29.0,
+        9.799999999999995,
+        61.8,
+        25.0,
+        25.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDBackplate",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCD",
+      "label": "Reflective monochrome LCD module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9795.67362697409,
+      "bounds": [
+        -28.0,
+        28.0,
+        10.799999999999997,
+        60.8,
+        25.6,
+        29.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCD",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDPolarizer",
+      "label": "LCD polarizer study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 242.51356194490262,
+      "bounds": [
+        -23.5,
+        23.5,
+        14.299999999999997,
+        57.3,
+        30.38,
+        30.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDPolarizer",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "dmglcd",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "47 x 43 mm display window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 363.77034291735265,
+      "bounds": [
+        -23.5,
+        23.5,
+        14.299999999999997,
+        57.3,
+        30.6,
+        30.78
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 7,
+      "material": "dmglcd",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryLED",
+      "label": "Battery indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.3769911184307761,
+      "bounds": [
+        -33.0,
+        -31.0,
+        39.0,
+        41.0,
+        30.6,
+        30.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryLED",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "red",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryLEDMark",
+      "label": "BATTERY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 110,
+      "volume": 0.07540762627695737,
+      "bounds": [
+        -35.50397451275168,
+        -26.96948196308725,
+        35.5999999,
+        37.05637593892618,
+        30.777999899999998,
+        30.7960001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryLEDMark",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayTechnologyMark",
+      "label": "DOT MATRIX WITH STEREO SOUND",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 24,
+      "faces": 375,
+      "volume": 0.2610580048591935,
+      "bounds": [
+        -11.810297918791946,
+        21.733892717449663,
+        59.97181198053691,
+        61.433557146979865,
+        30.777999899999998,
+        30.7960001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayTechnologyMark",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayRedLineLeft",
+      "label": "Upper burgundy bezel rule",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.10076137166941296,
+      "bounds": [
+        -34.3,
+        -14.3,
+        60.86,
+        61.14,
+        30.778,
+        30.796
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayRedLineLeft",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "dmgline",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayBlueLineLeft",
+      "label": "Lower blue bezel rule",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.07917527786842424,
+      "bounds": [
+        -34.300000000000004,
+        -14.3,
+        59.64,
+        59.86,
+        30.778,
+        30.796
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayBlueLineLeft",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayRedLineRight",
+      "label": "Upper burgundy bezel rule001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.03675337166941205,
+      "bounds": [
+        29.05,
+        36.35,
+        60.86,
+        61.14,
+        30.778,
+        30.796
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayRedLineRight",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "dmgline",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayBlueLineRight",
+      "label": "Lower blue bezel rule001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0288832778684237,
+      "bounds": [
+        29.050000000000004,
+        36.35,
+        59.64,
+        59.86,
+        30.778,
+        30.796
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayBlueLineRight",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoFrontWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.3504862349025007,
+      "bounds": [
+        -37.570008389261744,
+        -18.32635057114094,
+        -2.563892717449664,
+        0.8315437241610734,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoFrontWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GameBoyFrontWord",
+      "label": "GAME BOY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 122,
+      "volume": 0.6220050785283535,
+      "bounds": [
+        -15.203334831543623,
+        12.425574664429528,
+        -2.5770470798657716,
+        1.418389361744966,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GameBoyFrontWord",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadCut008",
+      "label": "Original cross directional pad009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 95,
+      "volume": 257.0014816981583,
+      "bounds": [
+        -37.0,
+        -15.0,
+        -37.0,
+        -15.0,
+        30.95,
+        31.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem0",
+      "label": "Directional plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        -27.4,
+        -24.6,
+        -21.4,
+        -18.6,
+        28.35,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem0",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem1",
+      "label": "Directional plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        -21.4,
+        -18.6,
+        -27.4,
+        -24.6,
+        28.35,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem2",
+      "label": "Directional plunger002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538183,
+      "bounds": [
+        -27.4,
+        -24.6,
+        -33.4,
+        -30.6,
+        28.35,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem2",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem3",
+      "label": "Directional plunger003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.085927922538179,
+      "bounds": [
+        -33.4,
+        -30.6,
+        -27.4,
+        -24.6,
+        28.35,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem3",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 112.57387999220626,
+      "bounds": [
+        27.4,
+        38.6,
+        -25.6,
+        -14.4,
+        30.85,
+        32.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "dmgbutton",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemA",
+      "label": "Action-button plunger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 22.64302905074843,
+      "bounds": [
+        31.45,
+        34.55,
+        -21.55,
+        -18.45,
+        27.65,
+        30.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemA",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "dmgbutton",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.04060898021661521,
+      "bounds": [
+        35.31750878845115,
+        37.78873129239742,
+        -30.98766181584851,
+        -27.901987090173535,
+        30.818,
+        30.836000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 112.57387999220626,
+      "bounds": [
+        12.399999900000001,
+        23.6,
+        -32.6,
+        -21.4,
+        30.85,
+        32.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "dmgbutton",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemB",
+      "label": "Action-button plunger001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 22.64302905074843,
+      "bounds": [
+        16.45,
+        19.55,
+        -28.55,
+        -25.45,
+        27.65,
+        30.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemB",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "dmgbutton",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.05114919868733101,
+      "bounds": [
+        19.680831269684525,
+        22.3413482760006,
+        -37.8450016615969,
+        -34.84531482002858,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectKey",
+      "label": "Select rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.1415756426833,
+      "bounds": [
+        -17.496362061233636,
+        -6.503637938766367,
+        -51.58578843631463,
+        -44.41421156368537,
+        30.65,
+        31.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectMark",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.1149173697232165,
+      "bounds": [
+        -17.21783729407418,
+        -7.89411927803145,
+        -55.24092417033792,
+        -49.15988353428787,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartKey",
+      "label": "Start rubber button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.141575642683296,
+      "bounds": [
+        -1.496362061233635,
+        9.496362061233635,
+        -51.58578843631463,
+        -44.41421156368537,
+        30.65,
+        31.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartKey",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartMark",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.10061992541275193,
+      "bounds": [
+        -1.2178372940741786,
+        6.405793295950136,
+        -55.24092417033792,
+        -49.95264732057328,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SpeakerMesh",
+      "label": "Speaker acoustic mesh",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 128.73056030632478,
+      "bounds": [
+        7.5,
+        42.500000000000036,
+        -72.4,
+        -40.0,
+        29.35,
+        29.470000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SpeakerMesh",
+      "assembly": "Audio",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ContrastWheelCut",
+      "label": "Contrast adjustment wheel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 83,
+      "volume": 121.95303525142909,
+      "bounds": [
+        -44.997099609375,
+        -34.602900390624995,
+        29.802900390624433,
+        40.197099609375,
+        20.7,
+        22.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ContrastWheel",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ContrastSpindle",
+      "label": "Potentiometer spindle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.031857894892402,
+      "bounds": [
+        -40.599999999999994,
+        -39.0,
+        34.2,
+        35.8,
+        19.5,
+        22.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ContrastSpindle",
+      "assembly": "ControlsInternal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ContrastPot",
+      "label": "Rotary potentiometer body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 105.24402604182056,
+      "bounds": [
+        -43.55,
+        -36.05,
+        31.25,
+        38.75,
+        22.55,
+        24.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ContrastPot",
+      "assembly": "ControlsInternal",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeWheelCut",
+      "label": "Volume adjustment wheel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 83,
+      "volume": 121.95303525147813,
+      "bounds": [
+        34.60290039062492,
+        44.997099609375,
+        13.802900390625,
+        24.197099609375567,
+        10.7,
+        12.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeWheel",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeSpindle",
+      "label": "Potentiometer spindle001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.031857894892401,
+      "bounds": [
+        39.0,
+        40.599999999999994,
+        18.2,
+        19.8,
+        9.5,
+        12.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeSpindle",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumePot",
+      "label": "Rotary potentiometer body001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 105.2440260418206,
+      "bounds": [
+        36.05,
+        43.55,
+        15.25,
+        22.75,
+        12.549999999999999,
+        14.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumePot",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPortShell",
+      "label": "Original large Game Link receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 164.75675809027996,
+      "bounds": [
+        39.4,
+        44.9,
+        39.6,
+        44.4,
+        2.3,
+        14.700000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPortShell",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPortTongue",
+      "label": "Link port insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 21.588949089234745,
+      "bounds": [
+        40.4,
+        44.7,
+        41.7,
+        42.3,
+        4.3,
+        12.700000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPortTongue",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin0",
+      "label": "Game Link contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        38.199999999999996,
+        38.300000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin0",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin1",
+      "label": "Game Link contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        39.699999999999996,
+        39.800000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin1",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin2",
+      "label": "Game Link contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        41.199999999999996,
+        41.300000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin2",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin3",
+      "label": "Game Link contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        42.699999999999996,
+        42.800000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin3",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin4",
+      "label": "Game Link contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        44.199999999999996,
+        44.300000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin4",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkPin5",
+      "label": "Game Link contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.17490123859659198,
+      "bounds": [
+        41.1,
+        44.300000000000004,
+        45.699999999999996,
+        45.800000000000004,
+        8.625,
+        9.175
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPin5",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCJack",
+      "label": "6 V DC adapter socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 59.8426276619052,
+      "bounds": [
+        -44.9,
+        -39.5,
+        32.5,
+        37.5,
+        6.1,
+        11.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJack",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCJackContact",
+      "label": "DC socket center contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.5162275775303784,
+      "bounds": [
+        -44.300000000000004,
+        -40.6,
+        34.45,
+        35.55,
+        8.049999999999999,
+        9.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCJackContact",
+      "assembly": "Ports",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeadphoneJack",
+      "label": "Bottom 3.5 mm headphone socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 53.85962153277609,
+      "bounds": [
+        -2.5,
+        2.5,
+        -74.0,
+        -68.5,
+        6.800000000000001,
+        11.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeadphoneJack",
+      "assembly": "Ports",
+      "layer": -4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSliderCut004",
+      "label": "Top on-off slider005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 55,
+      "volume": 31.338075116534043,
+      "bounds": [
+        -32.75,
+        -21.25,
+        73.3,
+        74.0,
+        20.0,
+        24.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSlider",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchBody",
+      "label": "Slide power switch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 191.1690616886749,
+      "bounds": [
+        -33.0,
+        -21.0,
+        65.0,
+        70.0,
+        18.6,
+        21.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchBody",
+      "assembly": "ControlsInternal",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchLink",
+      "label": "Power switch transmission tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15.629451271946698,
+      "bounds": [
+        -28.6,
+        -25.4,
+        70.0,
+        73.80000000000001,
+        21.2,
+        22.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchLink",
+      "assembly": "ControlsInternal",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "OFF  -  ON",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 78,
+      "volume": 0.09113377742387861,
+      "bounds": [
+        -34.86252107315436,
+        -22.733125,
+        69.96429520201343,
+        71.81583902617449,
+        30.8179999,
+        30.836000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryDoorCut",
+      "label": "Four-AA battery cover and latch001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 106,
+      "volume": 3959.9910819103725,
+      "bounds": [
+        -35.0,
+        35.0,
+        -72.45,
+        -6.9,
+        0.15,
+        3.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryDoor",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew0",
+      "label": "Tri-point case fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410504,
+      "bounds": [
+        -37.75,
+        -34.25,
+        59.25,
+        62.75,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss0",
+      "label": "Rear case screw boss",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.89130135119032,
+      "bounds": [
+        -38.9,
+        -33.1,
+        58.1,
+        63.9,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss0",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew1",
+      "label": "Tri-point case fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410504,
+      "bounds": [
+        34.25,
+        37.75,
+        59.25,
+        62.75,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss1",
+      "label": "Rear case screw boss001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.89130135119032,
+      "bounds": [
+        33.1,
+        38.9,
+        58.1,
+        63.9,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss1",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew2",
+      "label": "Tri-point case fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410504,
+      "bounds": [
+        -37.75,
+        -34.25,
+        9.25,
+        12.75,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss2",
+      "label": "Rear case screw boss002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.8913013511903,
+      "bounds": [
+        -38.9,
+        -33.1,
+        8.1,
+        13.9,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss2",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew3",
+      "label": "Tri-point case fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410504,
+      "bounds": [
+        34.25,
+        37.75,
+        9.25,
+        12.75,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss3",
+      "label": "Rear case screw boss003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.8913013511903,
+      "bounds": [
+        33.1,
+        38.9,
+        8.1,
+        13.9,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss3",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew4",
+      "label": "Tri-point case fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410486,
+      "bounds": [
+        -35.75,
+        -32.25,
+        -67.75,
+        -64.25,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew4",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss4",
+      "label": "Rear case screw boss004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.89130135119032,
+      "bounds": [
+        -36.9,
+        -31.1,
+        -68.9,
+        -63.1,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss4",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseScrew5",
+      "label": "Tri-point case fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 19.552206947410486,
+      "bounds": [
+        32.25,
+        35.75,
+        -67.75,
+        -64.25,
+        0.1,
+        8.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseScrew5",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CaseBoss5",
+      "label": "Rear case screw boss005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 176.89130135119032,
+      "bounds": [
+        31.1,
+        36.9,
+        -68.9,
+        -63.1,
+        1.3,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CaseBoss5",
+      "assembly": "Internal",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearModel",
+      "label": "MODEL NO. DMG-01",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 199,
+      "volume": 0.44145014301023905,
+      "bounds": [
+        -4.53192953020135,
+        28.671182885906042,
+        33.951140839597315,
+        36.4848323147651,
+        -1e-07,
+        0.018000099999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearModel",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgbezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearNintendo",
+      "label": "Nintendo GAME BOY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 265,
+      "volume": 0.3408123864125322,
+      "bounds": [
+        -0.4290373322147695,
+        28.71544672818792,
+        27.95771802080537,
+        30.20469808657718,
+        -1e-07,
+        0.018000099999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearNintendo",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgbezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRating",
+      "label": "DC 6V  /  4 x AA",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 134,
+      "volume": 0.19493664248885306,
+      "bounds": [
+        5.89370805369127,
+        28.715446828187922,
+        21.734228187919463,
+        24.1503356704698,
+        -1e-07,
+        0.018000099999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRating",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgbezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearStudy",
+      "label": "1989  /  CAD STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 239,
+      "volume": 0.23089863028410854,
+      "bounds": [
+        3.404614093959733,
+        28.716862416107382,
+        15.763758389261746,
+        17.911409495973157,
+        -1e-07,
+        0.018000099999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearStudy",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgbezel",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeLeftGuide",
+      "label": "Cartridge guide rail",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1007.7719464091416,
+      "bounds": [
+        -31.5,
+        -29.299999999999997,
+        11.0,
+        73.0,
+        1.4,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeLeftGuide",
+      "assembly": "CardReader",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeRightGuide",
+      "label": "Cartridge guide rail001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1007.7719464091416,
+      "bounds": [
+        29.299999999999997,
+        31.5,
+        11.0,
+        73.0,
+        1.4,
+        8.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeRightGuide",
+      "assembly": "CardReader",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeStop",
+      "label": "Cartridge lower stop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 231.72530964914876,
+      "bounds": [
+        -29.0,
+        29.0,
+        10.2,
+        12.2,
+        2.0,
+        4.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeStop",
+      "assembly": "CardReader",
+      "layer": -4,
+      "material": "dmgcase",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgePowerLock",
+      "label": "Power-linked cartridge retention tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 39.2978406140636,
+      "bounds": [
+        -27.5,
+        -24.5,
+        66.0,
+        72.0,
+        5.0,
+        7.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgePowerLock",
+      "assembly": "CardReader",
+      "layer": -4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/gameboy/output/iterations/05_rear_cartridge_bay_battery_door_and_fasteners.FCStd",
+  "views": [
+    "devices/gameboy/output/previews/05_rear_cartridge_bay_battery_door_and_fasteners_hero.png",
+    "devices/gameboy/output/previews/05_rear_cartridge_bay_battery_door_and_fasteners_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
