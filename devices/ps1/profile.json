@@ -1,0 +1,53 @@
+{
+  "id": "ps1",
+  "title": "Sony PlayStation",
+  "prefix": "PlayStation",
+  "model": "SCPH-1000 · Japanese original",
+  "family": "console",
+  "width": 270.0,
+  "height": 188.0,
+  "closed_depth": 60.0,
+  "base_depth": 14.0,
+  "default_opening": 180,
+  "color": [
+    0.59,
+    0.6,
+    0.62
+  ],
+  "stages": 2,
+  "parameter_basis": "Approximate SCPH-1000 study; 270 x 60 x 188 mm comes from later SCPH-5500 official family manual",
+  "exterior_fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+  "envelope_kind": "approximate",
+  "envelope_basis": "Approximate original-body study using family dimensions from Sony SCPH-5500 manual. No original SCPH-1000 dimensioned drawing or direct measurement verified. Separate controller/accessories excluded.",
+  "fidelity": "Approximate exterior envelope and details; schematic major internals",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Power",
+    "Wiring"
+  ],
+  "controls_groups": [
+    "Controls",
+    "Controller"
+  ],
+  "internal_exclude": [
+    "UpperHousing",
+    "DiscLid",
+    "MainShield"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ifixit.com/Teardown/Sony+PlayStation+Teardown/128089",
+      "role": "Firsthand SCPH-1000 exterior, rear interfaces, PU-7 board and optical/power teardown"
+    },
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps-docs/JA_SCPH-5500_WEB.pdf",
+      "role": "Later original-family body dimension reference only; not SCPH-1000 electronics"
+    }
+  ]
+}

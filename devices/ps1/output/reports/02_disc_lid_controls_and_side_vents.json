@@ -1,0 +1,448 @@
+{
+  "iteration": 2,
+  "slug": "disc_lid_controls_and_side_vents",
+  "summary": "加入原生圆形光盘盖、上盖开口、POWER/RESET/OPEN 三键和标识、狭长电源灯，以及两侧贯穿散热槽；保留独立可编辑圆盖与圆角历史。",
+  "physical_components": 16,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Original grey lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 108897.67875376306,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        1.4,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut007",
+      "label": "Original grey upper enclosure008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 408,
+      "volume": 110436.27265637922,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        14.18,
+        56.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscLidCut",
+      "label": "Circular hinged disc lid001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 32441.586034041666,
+      "bounds": [
+        -85.0,
+        85.0,
+        -81.0,
+        89.0,
+        57.0,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscLid",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "POWER button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710622,
+      "bounds": [
+        -126.2,
+        -93.7999999,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.12297881808325956,
+      "bounds": [
+        -113.23441704630872,
+        -103.55142607449665,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenButton",
+      "label": "OPEN button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710617,
+      "bounds": [
+        93.8,
+        126.2000001,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenLegend",
+      "label": "OPEN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 62,
+      "volume": 0.0926771395050489,
+      "bounds": [
+        107.35195040335572,
+        114.4271182885906,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psblue",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "RESET button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 393.68420498277334,
+      "bounds": [
+        -117.4,
+        -102.5999999,
+        -31.4,
+        -16.6,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetLegend",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.04541573824982593,
+      "bounds": [
+        -112.12294473087248,
+        -106.51354865771812,
+        -24.826308824832218,
+        -23.46201332281879,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Narrow power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.090342917352883,
+      "bounds": [
+        -111.0,
+        -109.0,
+        -93.05000000000001,
+        -83.94999999999999,
+        56.3,
+        56.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SonyMark",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.3137386357033507,
+      "bounds": [
+        -8.660234999328859,
+        5.347818791946308,
+        55.9248321147651,
+        59.82281889194631,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SonyMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PlayStationMark",
+      "label": "PlayStation",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 218,
+      "volume": 0.40890590744647753,
+      "bounds": [
+        -12.582655301342282,
+        10.613271912080533,
+        -32.88590614026846,
+        -28.766442953020135,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PlayStationMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps1/output/iterations/02_disc_lid_controls_and_side_vents.FCStd",
+  "views": [
+    "devices/ps1/output/previews/02_disc_lid_controls_and_side_vents_hero.png",
+    "devices/ps1/output/previews/02_disc_lid_controls_and_side_vents_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

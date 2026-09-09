@@ -1,0 +1,177 @@
+{
+  "iteration": 1,
+  "slug": "original_grey_native_enclosure",
+  "summary": "建立 270 × 188 mm 原生参数草图、上下空心壳、侧翼分界和四个脚垫；包络依据为同系列后期说明书，SCPH-1000 的尺寸明确标记为学习近似。",
+  "physical_components": 6,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Original grey lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 108897.67875376306,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        1.4,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut001",
+      "label": "Original grey upper enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 51,
+      "volume": 172245.67548273675,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        14.18,
+        56.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps1/output/iterations/01_original_grey_native_enclosure.FCStd",
+  "views": [
+    "devices/ps1/output/previews/01_original_grey_native_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
