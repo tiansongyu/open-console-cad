@@ -1,0 +1,124 @@
+{
+  "review_type": "Kami isolated fresh PDF review",
+  "reviewed_at_utc": "2026-09-09T08:18:03.279382+00:00",
+  "pdf": "devices/famicom/output/drawings/Famicom_Drawings.pdf",
+  "pdf_sha256": "21976d9c37f5128b48e7a2a4725afc0b718d4087acae21f0a8ebacf4713db17f",
+  "verdict": "PASS",
+  "p0_count": 0,
+  "p1_count": 0,
+  "findings": [],
+  "pages_actually_viewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "render_paths_actually_viewed": [
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-01.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-02.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-03.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-04.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-05.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-06.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-07.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-08.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-09.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-10.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-11.png",
+    "devices/famicom/output/drawings/Famicom_Drawings-visual/page-12.png"
+  ],
+  "contract_review": [
+    {
+      "item": "Chinese HVC-001 round-button Famicom study drawings",
+      "result": "PASS",
+      "evidence": "Chinese headings and technical descriptions throughout; page 1 states HVC-001 round-button revision; page 3 distinctly shows controller I START/SELECT and controller II MIC/VOLUME with round A/B buttons."
+    },
+    {
+      "item": "12 A3 landscape sheets",
+      "result": "PASS",
+      "evidence": "Independently read every PDF page rectangle: all 12 are 1190.55 x 841.89 points; all rendered pages carry consistent 1–12 numbering."
+    },
+    {
+      "item": "Published body envelope preserved",
+      "result": "PASS",
+      "evidence": "Pages 1 and 2 show width 150, depth 220 and height 60 mm; pages 1 and 12 repeat the published 150 × 220 × 60 mm envelope and distinguish cables/accessories. drawing_checks.json reports all three model envelope checks passed."
+    },
+    {
+      "item": "Local dimensions marked approximate",
+      "result": "PASS",
+      "evidence": "Page 3 ≈126; page 4 ≈121; page 7 ≈104 and ≈137; page 8 ≈96 and ≈57; page 10 ≈108 and ≈72. Every sheet carries the local-approximation boundary in the footer. Page 12 explicitly lists approximation scope."
+    },
+    {
+      "item": "Model-derived dimensions and native TechDraw objects",
+      "result": "PASS_WITH_EVIDENCE_SCOPE",
+      "evidence": "Reviewed drawing_checks.json and both native drawing audit reports. All 13 reported dimension references pass. Independently read Famicom_Drawings.FCStd Document.xml and counted 12 TechDraw::DrawPage and 13 TechDraw::DrawViewDimension objects."
+    },
+    {
+      "item": "True section presentation",
+      "result": "PASS_WITH_EVIDENCE_SCOPE",
+      "evidence": "Page 5 visibly presents A-A at Y=-23 and B-B at Y=35 with cut material fills and internal layer profiles; page 9 presents C-C at Y=-34. Section origin/method is explicitly disclosed. Reviewed drawing_checks.json statement of planar cross sections; no independent CAD intersection computation was performed."
+    },
+    {
+      "item": "Component, material and source indexing",
+      "result": "PASS",
+      "evidence": "Page 11 gives 13 assembly groups with display-material roles, noncontinuous component number bounds, and COMPONENTS.csv reference; page 12 gives source and maintenance paths. Independently counted CSV totals: 634 component entries and 1457 solids; all 13 assembly counts match the page 11 table. Page 7 component captions FAMICOM-0099, -0163 and -0194 plus page 9 FAMICOM-0183 match CSV identities."
+    },
+    {
+      "item": "Readable figures, captions and safe layout",
+      "result": "PASS",
+      "evidence": "Viewed all 12 supplied final page PNGs. No clipped headings or figures, overlapping captions, missing glyphs, stranded headings, split table rows, or illegible principal dimensions found. Fine CAD details retain sufficient separation for the drawing-sheet context; page 11 table is readable; page 12 is intentionally less dense as the closing reference sheet."
+    },
+    {
+      "item": "Kami content and font checks",
+      "result": "PASS_FROM_REVIEWED_LOGS",
+      "evidence": ".local/famicom16_kami_content.txt records valid long-doc content and all 27 atomic values present, with 23 prose fields rephrased. .local/famicom16_kami_visual.txt records 12 page renders and TsangerJinKai02 for 3436 CJK ideographs."
+    }
+  ],
+  "preserve_boundaries": {
+    "published_overall_dimensions": "Preserved: 150 × 220 × 60 mm, external cables and separate accessories excluded.",
+    "component_identifiers": "Preserved in observed captions and grouped index; sampled caption identities match COMPONENTS.csv.",
+    "local_dimensions_marked_approximate": "Preserved by visible ≈ symbols, repeated local-approximation footer and revision/scope statement on page 12."
+  },
+  "page_observations": {
+    "1": "Assembly isometric and top view, published 150/220 dimensions and body-envelope note readable.",
+    "2": "Front/rear interfaces and enlarged connector details readable; 60 mm height shown.",
+    "3": "Controller I/II distinction and approximate 126 mm dimensions clear.",
+    "4": "Separate controller PCB/input figures and controller II exploded assembly readable.",
+    "5": "Two labeled filled planar section profiles visible, captions distinct from geometry.",
+    "6": "Whole-system exploded view fits inside sheet with separated controller groups and clear scale caption.",
+    "7": "Mainboard view and connector/CPU details readable with component identifiers and approximate dimensions.",
+    "8": "RF/power board, removable shield and regulator/heatsink details readable.",
+    "9": "Eject linkage, helical spring and guide cross-section legible and separated.",
+    "10": "Approximate cartridge dimensions, adapter and RF accessories clearly shown; geometry-only/no-game-data limits visible.",
+    "11": "All 13 index rows and totals fit on one sheet without overlap; totals independently match CSV.",
+    "12": "Sources, revision scope, approximation limits and maintenance entry paths readable."
+  },
+  "evidence_files_read": [
+    "/home/ubuntu/.codex/skills/kami/SKILL.md",
+    "/home/ubuntu/.codex/skills/kami/references/anti-patterns.md",
+    "devices/famicom/output/drawings/content.json",
+    ".local/famicom16_kami_content.txt",
+    ".local/famicom16_kami_visual.txt",
+    "devices/famicom/output/reports/drawing_checks.json",
+    "devices/famicom/output/reports/native_drawings_audit.json",
+    "devices/famicom/output/reports/native_drawings_reload.json",
+    "devices/famicom/output/COMPONENTS.csv",
+    "devices/famicom/references/SOURCES.md",
+    "devices/famicom/output/Famicom_Drawings.FCStd:Document.xml"
+  ],
+  "scope_limits": [
+    "This was an isolated contract/content/visual review of the final PDF and its supplied rendered pages, plus read-only inspection of local evidence. No CAD, PDF, script or browser state was edited.",
+    "The model dimensions, planar intersections, STEP round trips and interference results were not recomputed in this review; geometry acceptance uses the explicitly identified existing audit evidence.",
+    "Source indexing and consistency were checked locally; cited external webpages and original hardware were not independently remeasured or revalidated in this review.",
+    "Material names on page 11 are display roles, as labeled, and this review does not certify real material grades, tolerances, electrical behavior, thermal performance or manufacture readiness.",
+    "The pass applies to the recorded PDF SHA256 and the 12 supplied final PNGs actually viewed."
+  ]
+}

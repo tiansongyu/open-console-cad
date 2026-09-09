@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "device": "famicom",
+  "checked_at_unix": 1788942618.7551382,
+  "local_url": "http://localhost:5174/?device=famicom&view=assembled#viewer",
+  "source_sha256": "dbc6daec9849c5953052ceaba128d21315065fb798b3d50efb12ab91a9bc8848",
+  "glb_sha256": "96b7c355cd73c7b87eb849e28129362c3f9903927ec6c8ddf8e7d7a09af5fada",
+  "view_checks": [
+    {
+      "view": "assembled",
+      "expected_components": 510,
+      "observed_canvas_components": 510,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "expected_components": 495,
+      "observed_canvas_components": 495,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "expected_components": 510,
+      "observed_canvas_components": 510,
+      "passed": true
+    },
+    {
+      "view": "controller1",
+      "expected_components": 69,
+      "observed_canvas_components": 69,
+      "passed": true
+    },
+    {
+      "view": "controller2",
+      "expected_components": 69,
+      "observed_canvas_components": 69,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "expected_components": 204,
+      "observed_canvas_components": 204,
+      "passed": true
+    },
+    {
+      "view": "eject",
+      "expected_components": 15,
+      "observed_canvas_components": 15,
+      "passed": true
+    },
+    {
+      "view": "rf",
+      "expected_components": 77,
+      "observed_canvas_components": 77,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "expected_components": 124,
+      "observed_canvas_components": 124,
+      "passed": true
+    }
+  ],
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "mobile_overflow": false,
+  "mobile_viewer_top_px": 19.90625,
+  "error_panel_hidden": true,
+  "loading_panel_hidden": true,
+  "controller2_default_explode_percent": 15,
+  "controller2_slider_end_percent": 100,
+  "controller2_keyboard_rotation": true,
+  "per_view_up_visually_checked": [
+    "controller1",
+    "controller2"
+  ],
+  "visually_reviewed": [
+    "assembled desktop/mobile",
+    "internal desktop/mobile",
+    "exploded desktop",
+    "controller1 desktop",
+    "controller2 desktop",
+    "accessories desktop"
+  ],
+  "gzip_bytes": 37849042,
+  "gzip_decodes_to_original_glb": true,
+  "release_live_verification": "Recorded separately after Pages deployment",
+  "existing_device_regression": {
+    "device": "switch2",
+    "view": "assembled",
+    "visible_components": 579,
+    "total_components": 799,
+    "raw_glb_loaded": true,
+    "error_panel_hidden": true,
+    "visually_reviewed": true
+  }
+}

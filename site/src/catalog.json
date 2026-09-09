@@ -1414,5 +1414,225 @@
         "空白 Game Pak 卡带"
       ]
     ]
+  },
+  {
+    "id": "famicom",
+    "title": "Nintendo Famicom",
+    "prefix": "Famicom",
+    "model": "HVC-001 · 圆形按键",
+    "count": 634,
+    "iterations": 16,
+    "pages": 12,
+    "bytes": 80850500,
+    "family": "console",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "原版红白机圆形按键版本，双有线手柄收纳于两侧，保留卡槽盖、退卡把手及 RF 接口。",
+        "groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Controller1",
+          "Controller2",
+          "Ports",
+          "PowerRF",
+          "Cables",
+          "Mainboard",
+          "Mechanism",
+          "Wiring",
+          "Internal"
+        ],
+        "normal": [
+          -0.8,
+          -1,
+          2.4
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开上壳和射频罩，查看参考修订版主板、退卡传动、固定手柄线和电源/RF 模块。",
+        "groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Controller1",
+          "Controller2",
+          "Ports",
+          "PowerRF",
+          "Cables",
+          "Mainboard",
+          "Mechanism",
+          "Wiring",
+          "Internal"
+        ],
+        "exclude": [
+          "UpperShell",
+          "CartridgeDustFlap",
+          "DustFlapRearRidge",
+          "FrontNameplate",
+          "FamilyComputerWord",
+          "NintendoWord",
+          "POWERMark",
+          "RESETMark",
+          "EjectMark",
+          "RearPortPlate",
+          "RearDCMark",
+          "RearModeMark",
+          "RearCHMark",
+          "RearRFMark",
+          "RFShield"
+        ],
+        "normal": [
+          0.4,
+          -0.3,
+          2.4
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "主机沿厚度方向展开，两只手柄按各自面板法向分层。爆炸位移用于结构观察。",
+        "groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Controller1",
+          "Controller2",
+          "Ports",
+          "PowerRF",
+          "Cables",
+          "Mainboard",
+          "Mechanism",
+          "Wiring",
+          "Internal"
+        ],
+        "explode": 1,
+        "normal": [
+          1.4,
+          -1,
+          1.1
+        ]
+      },
+      "controller1": {
+        "label": "一号手柄",
+        "description": "原版 I 手柄，保留十字键、圆形 A/B 键、START/SELECT 与金色面板。",
+        "groups": [
+          "Controller1"
+        ],
+        "normal": [
+          -2,
+          -0.2,
+          0.2
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "controller2": {
+        "label": "二号手柄",
+        "description": "原版 II 手柄，带孔阵麦克风和音量滑块；展开查看胶囊、PCB 与操作机构。",
+        "groups": [
+          "Controller2"
+        ],
+        "normal": [
+          2,
+          -0.8,
+          0.5
+        ],
+        "explode": 0.15,
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "mainboard": {
+        "label": "主逻辑板",
+        "description": "HVC-CPU-GPM-02 布局参考：Ricoh CPU/PPU、两块 RAM、穿孔元件与 60 接点卡座。",
+        "groups": [
+          "Mainboard",
+          "CardReader"
+        ],
+        "exclude": [
+          "CartridgeDustFlap",
+          "DustFlapRearRidge"
+        ],
+        "normal": [
+          0.2,
+          -0.3,
+          2.4
+        ]
+      },
+      "eject": {
+        "label": "退卡机构",
+        "description": "两侧导轨、横梁滑架、抬升斜面、金属拉杆和真实螺旋回位弹簧。",
+        "groups": [
+          "Mechanism"
+        ],
+        "normal": [
+          0.6,
+          -0.5,
+          1.8
+        ]
+      },
+      "rf": {
+        "label": "电源与 RF",
+        "description": "独立后部电路板、稳压器、折弯散热片与调谐件，移开金属罩观察内部。",
+        "groups": [
+          "PowerRF",
+          "Ports"
+        ],
+        "exclude": [
+          "RFShield"
+        ],
+        "normal": [
+          0.4,
+          -0.3,
+          2.4
+        ]
+      },
+      "accessories": {
+        "label": "卡带与附件",
+        "description": "空白 FC 卡带、10 V 电源、RF 转接盒和天线转换器；不包含游戏数据。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          -0.4,
+          -0.8,
+          2.4
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "整机立体外观"
+      ],
+      [
+        "front",
+        "俯视与手柄收纳"
+      ],
+      [
+        "internal",
+        "主板与退卡机构"
+      ],
+      [
+        "exploded",
+        "主机和手柄爆炸"
+      ],
+      [
+        "accessories",
+        "卡带及电源/RF 附件"
+      ]
+    ],
+    "gzip": {
+      "bytes": 37849042,
+      "sha256": "bb998543c5d7f9506836161369b954c1aacab955788f784f8964c7d7b8109776",
+      "decoded_sha256": "96b7c355cd73c7b87eb849e28129362c3f9903927ec6c8ddf8e7d7a09af5fada",
+      "lossless": true
+    }
   }
 ]

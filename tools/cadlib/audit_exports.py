@@ -45,7 +45,7 @@ def bbox(s):
     return [b.XMin,b.YMin,b.ZMin,b.XMax,b.YMax,b.ZMax]
 
 handheld=[r for r in manifest['objects'] if r['assembly'] in manifest['handheld_groups']]
-exports=[(prefix+'_FullKit.step',manifest['objects'],'objects'),(prefix+'_Handheld.step',handheld,'objects'),(prefix+'_Exploded.step',manifest['exploded_objects'],'exploded_objects')]
+exports=[(prefix+'_FullKit.step',manifest['objects'],'objects'),(manifest.get('main_step_file',prefix+'_Handheld.step'),handheld,'objects'),(prefix+'_Exploded.step',manifest['exploded_objects'],'exploded_objects')]
 if 'closed_objects' in docs:exports.append((prefix+'_Closed.step',handheld,'closed_objects'))
 for filename,rows,key in exports:
     s=Part.read(str(out/filename))

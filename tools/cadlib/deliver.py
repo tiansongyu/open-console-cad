@@ -10,7 +10,7 @@ V=g.vec
 
 
 def finalize(m):
-    p=m.profile;out=m.out;prefix=p['prefix'];main_groups=[a for a in m.groups if a not in ['Accessories','Cradle','Construction']]
+    p=m.profile;out=m.out;prefix=p['prefix'];main_step=prefix+'_'+p.get('main_step_suffix','Handheld')+'.step';main_groups=[a for a in m.groups if a not in ['Accessories','Cradle','Construction']]
     for i,o in enumerate(m.parts.values(),1):
         if 'PartNumber' not in o.PropertiesList:o.addProperty('App::PropertyString','PartNumber','Study')
         o.PartNumber=p['id'].upper()+f'-{i:04d}';o.Label=o.PartNumber+' · '+re.sub(r'^\S+-\d{4} · ','',o.Label)
@@ -24,6 +24,7 @@ def finalize(m):
     views={}
     settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','ControlsInternal','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
+        if name=='controls' and p.get('controls_groups'):kw['assemblies']=p['controls_groups']
         if name=='internal' and p.get('internal_exclude'):kw['exclude']=p['internal_exclude']
         if name=='internal' and p.get('internal_normal'):kw['normal']=p['internal_normal']
         kw.setdefault('assemblies',main_groups);views[name]=m.snapshot('final_'+name,**kw)
@@ -53,7 +54,8 @@ def finalize(m):
         else:
             z={-6:-350,-5:-250,-4:-140,-3:-100,-2:-40,0:0,1:30,2:70,3:110,4:210,5:270,6:300,7:410}.get(layer,layer*60)
             z={'MainFrame':0,'Mainboard':-40,'EMIShield':-200,'RearSupportPlate':-250,'BackCover':-350,'LowerLCDBackplate':40,'LowerLCD':110,'FrontDeck':210,'LowerDisplaySurround':270,'LowerTouchDigitizer':340,'LowerGlass':410}.get(key,z)
-            delta=V(0,0,z)
+            delta=V(*p.get('explode_axes',{}).get(src.Assembly,[0,0,1]))*z
+            delta+=V(*p.get('explode_group_offsets',{}).get(src.Assembly,[0,0,0]))
         if src.Assembly=='Cradle':delta+=V(0,-70,0)
         if src.Assembly=='Accessories':delta+=V(-50,0,0)
         if p['family']!='clamshell' and src.Assembly=='UMD':
@@ -82,15 +84,15 @@ def finalize(m):
         if 'UMD' in main_groups:views['exploded_drive']=render_exploded('exploded_drive',['UMD'])
     render_exploded('exploded',main_groups);exploded.saveAs(str(out/(prefix+'_Exploded.FCStd')))
     ImportGui.export(list(m.parts.values()),str(out/(prefix+'_FullKit.step')))
-    ImportGui.export([o for o in m.parts.values() if o.Assembly in main_groups],str(out/(prefix+'_Handheld.step')))
+    ImportGui.export([o for o in m.parts.values() if o.Assembly in main_groups],str(out/main_step))
     ImportGui.export(list(ec.values()),str(out/(prefix+'_Exploded.step')))
     rows=g.audit_objects(list(m.parts.values()));erows=g.audit_objects(list(ec.values()))
     for row,o in zip(rows,m.parts.values()):row.update(part_id=o.PartID,part_number=o.PartNumber,assembly=o.Assembly,layer=o.ExplodeLayer,material=o.MaterialDescription,fidelity=o.Fidelity,pose_group=o.PoseGroup)
     for row,o in zip(erows,ec.values()):row.update(part_id=o.PartID,part_number=o.PartNumber,assembly=o.Assembly,explode_offset=offsets[o.PartID])
-    native=[prefix+'_Complete.FCStd',prefix+'_Exploded.FCStd'];steps=[prefix+'_FullKit.step',prefix+'_Handheld.step',prefix+'_Exploded.step']
+    native=[prefix+'_Complete.FCStd',prefix+'_Exploded.FCStd'];steps=[prefix+'_FullKit.step',main_step,prefix+'_Exploded.step']
     if p['family']=='clamshell':native.append(prefix+'_Closed.FCStd');steps.append(prefix+'_Closed.step')
     report={'project':p['title']+' '+p['model'],'device':p['id'],'prefix':prefix,'design_iterations':p['stages'],'physical_components':len(m.parts),'solids':sum(len(o.Shape.Solids) for o in m.parts.values()),'assemblies':dict(Counter(o.Assembly for o in m.parts.values())),'handheld_groups':main_groups,'native_files':native,'step_files':steps,'views':{k:str(Path(v).relative_to(m.repo)) for k,v in views.items()},'objects':rows,'exploded_objects':erows,'offsets':offsets,'published_envelope_mm':[p['width'],p['height'],p['closed_depth']],'envelope_pose':'closed' if p['family']=='clamshell' else 'body','measured_envelope_mm':[envelope.XLength,envelope.YLength,envelope.ZLength],'pose':{'type':'hinge' if p['family']=='clamshell' else 'fixed','group':'Lid','pivot_mm':[0,p.get('hinge_y',0),p.get('hinge_z',0)],'axis':[1,0,0],'default_opening':p.get('default_opening',180),'range':[0,p.get('default_opening',180)]},'fidelity':'Published envelope; approximate exterior details and schematic major internals','source_digest':info.SourceDigest}
-    report.update(envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength])
+    report.update(main_step_file=main_step,envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength])
     (out/'reports/final_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     with (out/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['Part number','Part ID','Label','Assembly','Material','Solid count','Volume mm3','X mm','Y mm','Z mm','Fidelity'])

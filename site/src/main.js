@@ -85,7 +85,15 @@ function fit(reset = true) {
   const center = bounds.getCenter(new THREE.Vector3()), size = bounds.getSize(new THREE.Vector3());
   const radius = size.length()/2;
   let normal;
-  if (reset) normal = new THREE.Vector3(...(devices[device].views[view].normal || [.5,.35,2.5]));
+  if (reset) {
+    normal = new THREE.Vector3(...(devices[device].views[view].normal || [.5,.35,2.5]));
+    const up=new THREE.Vector3(...(devices[device].views[view].up || [0,1,0]));
+    if (!camera.up.equals(up)) {
+      const autoRotate=controls.autoRotate; controls.dispose(); camera.up.copy(up);
+      controls=new OrbitControls(camera,$('canvas'));
+      controls.enableDamping=true; controls.dampingFactor=.09; controls.autoRotateSpeed=.7; controls.autoRotate=autoRotate;
+    }
+  }
   else normal = camera.position.clone().sub(controls.target);
   const fov = THREE.MathUtils.degToRad(camera.fov);
   normal.normalize();
@@ -122,17 +130,40 @@ function applyView(reset = true) {
 function failure(message) {
   ready = false; $('loading').hidden = true; errors.hidden = false; $('error-message').textContent = message; $('explode').disabled = true;
 }
+function compressedPreview(d) {
+  return Boolean(d.gzip && typeof DecompressionStream === 'function' && typeof TransformStream === 'function');
+}
+async function loadModel(selected,token) {
+  const d=devices[selected],packed=compressedPreview(d),total=packed ? d.gzip.bytes : d.bytes;
+  const progress=loaded => {
+    if (token===request && total) $('loading').textContent=`正在加载 ${d.title} · ${Math.min(100,Math.round(loaded/total*100))}%`;
+  };
+  if (!packed) return loader.loadAsync(`./models/${selected}.glb`,e=>progress(e.loaded));
+  const response=await fetch(`./models/${selected}.glb.gz`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  let loaded=0;
+  const stream=response.body?.pipeThrough(new TransformStream({transform(chunk,controller) {
+    loaded+=chunk.byteLength;progress(loaded);controller.enqueue(chunk);
+  }}));
+  const encoded=await (stream ? new Response(stream) : response).arrayBuffer();
+  if (token===request) $('loading').textContent=`正在解析 ${d.title}…`;
+  const signature=new Uint8Array(encoded,0,Math.min(encoded.byteLength,2));
+  // Some hosts apply HTTP content decoding; inspect the bytes before decompressing.
+  const data=signature[0]===0x1f && signature[1]===0x8b
+    ? await new Response(new Blob([encoded]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
+    : encoded;
+  if (data.byteLength!==d.bytes) throw new Error('模型数据长度与清单不一致');
+  return loader.parseAsync(data,'./models/');
+}
 async function loadDevice() {
   const token = ++request, selected = device;
   ready = false; $('loading').hidden = false; errors.hidden = true; updateLinks();
   if (root) { scene.remove(root); root = null; meshes = []; }
   if (!renderer) { failure('当前浏览器无法创建 WebGL 画布。请启用硬件加速或更换浏览器；下方效果图与下载仍可使用。'); return; }
-  $('loading').textContent = `正在加载 ${devices[selected].title} · ${(devices[selected].bytes/1e6).toFixed(1)} MB`;
+  const transferBytes=compressedPreview(devices[selected]) ? devices[selected].gzip.bytes : devices[selected].bytes;
+  $('loading').textContent = `正在加载 ${devices[selected].title} · ${(transferBytes/1e6).toFixed(1)} MB`;
   try {
-    if (!cache.has(selected)) cache.set(selected,loader.loadAsync(`./models/${selected}.glb`,e => {
-      const total = devices[selected].bytes || e.total;
-      if (token === request && total) $('loading').textContent = `正在加载 ${devices[selected].title} · ${Math.min(100, Math.round(e.loaded / total*100))}%`;
-    }).catch(error => { cache.delete(selected); throw error; }));
+    if (!cache.has(selected)) cache.set(selected,loadModel(selected,token).catch(error => { cache.delete(selected); throw error; }));
     const gltf = await cache.get(selected);
     if (token !== request) return;
     root = gltf.scene; meshes = []; poseData = gltf.asset?.extras?.pose || null;
@@ -158,10 +189,11 @@ try {
   controls = new OrbitControls(camera,$('canvas')); controls.enableDamping = true; controls.dampingFactor = .09; controls.autoRotateSpeed = .7;
   $('canvas').addEventListener('keydown',e => {
     if (['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)) {
-      const spherical = new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls.target));
+      const orientation=new THREE.Quaternion().setFromUnitVectors(camera.up,new THREE.Vector3(0,1,0));
+      const spherical = new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls.target).applyQuaternion(orientation));
       spherical.theta += e.key === 'ArrowLeft' ? -.12 : e.key === 'ArrowRight' ? .12 : 0;
       spherical.phi += e.key === 'ArrowUp' ? -.12 : e.key === 'ArrowDown' ? .12 : 0;
-      spherical.makeSafe(); camera.position.setFromSpherical(spherical).add(controls.target); e.preventDefault();
+      spherical.makeSafe(); camera.position.setFromSpherical(spherical).applyQuaternion(orientation.invert()).add(controls.target); e.preventDefault();
     }
     if (e.key === '+' || e.key === '=') { camera.position.sub(controls.target).multiplyScalar(.9).add(controls.target); e.preventDefault(); }
     if (e.key === '-') { camera.position.sub(controls.target).multiplyScalar(1.1).add(controls.target); e.preventDefault(); }

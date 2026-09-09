@@ -1,6 +1,6 @@
 """Check publishable assets, GLB identity/structure, CAD archives and source syntax."""
 from pathlib import Path
-import ast, hashlib, json, struct, zipfile
+import ast, gzip, hashlib, json, struct, zipfile
 ROOT=Path(__file__).resolve().parents[1]
 catalog=json.loads((ROOT/'site/src/catalog.json').read_text())
 assert len({entry['id'] for entry in catalog})==len(catalog), 'Duplicate device in catalog'
@@ -17,6 +17,11 @@ for entry in catalog:
     assert {n['extras']['partId'] for n in doc['nodes']}=={r['part_id'] for r in manifest['objects']}
     for n in doc['nodes']:assert len(n['extras']['explodeOffset'])==3 and len(n['translation'])==3
     assert hashlib.sha256(glb).hexdigest()==report['sha256']
+    if entry.get('gzip') or report.get('gzip'):
+        assert entry.get('gzip')==report.get('gzip'), f'{device}: compressed preview metadata is stale'
+        packed=(ROOT/'site/public/models'/f'{device}.glb.gz').read_bytes();compression=report['gzip']
+        assert len(packed)==compression['bytes'] and hashlib.sha256(packed).hexdigest()==compression['sha256']
+        assert gzip.decompress(packed)==glb and compression['decoded_sha256']==report['sha256'] and compression['lossless'] is True
     source=ROOT/report['source'];assert hashlib.sha256(source.read_bytes()).hexdigest()==report['source_sha256']
     for p in (folder/'output').glob('*.FCStd'):
         with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()

@@ -13,7 +13,7 @@
 3. 重新执行相应的几何、干涉、参数与 STEP 检查。明确记录检查对象版本。
 4. 更新图纸时使用 `drawing_geometry.py` 和 Kami 的 `build_drawing_book.py`，按 Kami 流程检查字体、内容、布局及每页渲染。
 5. 通过 FreeCAD / MCP 运行 `tools/export_web_models.py`，更新 GLB 和哈希清单。
-6. 更新 `site/public/images/<device>/` 中的自制效果图及设备说明。
+6. 如使用 gzip 预览，重新运行压缩工具并同步 `catalog.json` 中的 `gzip` 元数据；更新 `site/public/images/<device>/` 中的自制效果图及设备说明。
 7. 执行 `npm ci && npm run check && npm run build`；在浏览器测试整机、内部、爆炸、底座、设备切换和手机布局。
 8. 提交到 `main`，等待 Pages 工作流成功后验证线上地址。
 
@@ -31,7 +31,8 @@
 
 - GitHub Pages 只发布构建后的 `dist/`；FCStd、STEP 与 PDF 通过仓库链接下载。
 - 网页 GLB 提交在 Git 中，不使用 Git LFS，避免 Pages 读取到 LFS 指针。
-- 当前每个网页模型约 3–20 MB，实际大小记录在目录与导出清单中。新增设备时先调整网格偏差，再检查视觉质量；不要直接发布 CAD 默认显示缓存生成的过密网格。
+- 网页模型大小记录在目录与导出清单中。复杂线圈和线束会增加网格体积；可使用 `python3 tools/compress_web_models.py <device>` 生成无损 gzip 传输文件，并将返回的 `gzip` 字段同步到目录。CI 会校验压缩文件哈希及解压后的逐字节一致性。
+- 查看器在支持 `DecompressionStream` 的浏览器中加载压缩副本，否则加载原始 GLB。继续设计和其他软件导入仍使用原始 CAD / GLB 文件。
 - 原始毫米几何在网页导出时转换为米；不要再次在 JavaScript 中缩放 1/1000。
 - 二进制历史阶段、构建缓存和虚拟环境不提交。将最终文件与源码保存即可。
 

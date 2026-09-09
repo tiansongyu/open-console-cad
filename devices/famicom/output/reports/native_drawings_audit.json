@@ -1,0 +1,101 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 13,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 150.0,
+      "measured_mm": 150.0,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 219.99999999999997,
+      "measured_mm": 220.00000000000003,
+      "pass": true
+    },
+    {
+      "sheet": 2,
+      "dimension": "Dimension02_1",
+      "expected_mm": 60.000000000000014,
+      "measured_mm": 60.00000000000001,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_1",
+      "expected_mm": 125.99999999999999,
+      "measured_mm": 126.0,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_2",
+      "expected_mm": 125.99999999999999,
+      "measured_mm": 126.0,
+      "pass": true
+    },
+    {
+      "sheet": 4,
+      "dimension": "Dimension04_1",
+      "expected_mm": 121.0,
+      "measured_mm": 121.0,
+      "pass": true
+    },
+    {
+      "sheet": 4,
+      "dimension": "Dimension04_2",
+      "expected_mm": 121.0,
+      "measured_mm": 121.0,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_1",
+      "expected_mm": 103.99999999999999,
+      "measured_mm": 104.0,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_2",
+      "expected_mm": 137.00000000000003,
+      "measured_mm": 137.0,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_1",
+      "expected_mm": 96.0000002,
+      "measured_mm": 96.0000002,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_2",
+      "expected_mm": 57.000000199999995,
+      "measured_mm": 57.000000199999995,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_1",
+      "expected_mm": 108.0,
+      "measured_mm": 108.0,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_2",
+      "expected_mm": 72.0,
+      "measured_mm": 72.0,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/famicom/output/Famicom_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}
