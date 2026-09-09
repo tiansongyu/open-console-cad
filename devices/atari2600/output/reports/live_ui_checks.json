@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "device": "atari2600",
+  "release_commit": "c1007919d932373d04e24262d3a4d18e8c2d39d4",
+  "checked_at_unix": 1788957800.1560655,
+  "url": "https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=assembled#viewer",
+  "view_checks": [
+    {
+      "view": "assembled",
+      "expected_components": 475,
+      "observed_canvas_components": 475,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "expected_components": 335,
+      "observed_canvas_components": 335,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "expected_components": 308,
+      "observed_canvas_components": 308,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "expected_components": 475,
+      "observed_canvas_components": 475,
+      "passed": true
+    },
+    {
+      "view": "joysticks",
+      "expected_components": 140,
+      "observed_canvas_components": 140,
+      "passed": true
+    },
+    {
+      "view": "mechanism",
+      "expected_components": 37,
+      "observed_canvas_components": 37,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "expected_components": 135,
+      "observed_canvas_components": 135,
+      "passed": true
+    },
+    {
+      "view": "power",
+      "expected_components": 79,
+      "observed_canvas_components": 79,
+      "passed": true
+    },
+    {
+      "view": "paddles",
+      "expected_components": 82,
+      "observed_canvas_components": 82,
+      "passed": true
+    },
+    {
+      "view": "cartridge",
+      "expected_components": 53,
+      "observed_canvas_components": 53,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "expected_components": 209,
+      "observed_canvas_components": 209,
+      "passed": true
+    }
+  ],
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "mobile_overflow": false,
+  "mobile_viewer_top_px": 19.90625,
+  "error_panel_hidden": true,
+  "loading_panel_hidden": true,
+  "fresh_gzip_load_observed_mb": 38.8,
+  "visually_reviewed": [
+    "assembled desktop",
+    "assembled mobile",
+    "internal mobile"
+  ],
+  "local_extended_controls_checks": "web_preview_checks.json",
+  "live_asset_identity": "live_delivery_audit.json",
+  "notes": [
+    "All eleven live view counts matched the manifest after fresh download.",
+    "Viewport dimensions were read from the tested page; all temporary overrides were reset."
+  ]
+}

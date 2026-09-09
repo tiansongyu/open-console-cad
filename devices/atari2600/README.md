@@ -38,6 +38,7 @@
 - [尺寸与投影核对](output/reports/drawing_checks.json)：33 项模型测量；[原生图纸](output/reports/native_drawings_audit.json) 含 12 页和 15 个尺寸引用，[保存后重开](output/reports/native_drawings_reload.json) 与打开宏均通过。
 - [PDF 视觉验收](output/reports/visual_acceptance.json) · [独立审阅](output/reports/independent_pdf_review.json)：Kami 字体、内容、样式、密度和占位符检查通过，全部 12 页完成逐页审阅。独立审阅的范围和限制见报告。
 - [网页预览核对](output/reports/web_preview_checks.json) · [完整交付核对](output/reports/completion_audit.json)。
+- [15 个线上文件核对](output/reports/live_delivery_audit.json) · [线上桌面与手机视图](output/reports/live_ui_checks.json)：部署文件与发布版本一致，十一种视图均通过核对。
 
 早期阶段的检查记录保留了当时发现的问题，后续轮次明确记录修正。修改模型后需重新执行相关验证。原生工程保留草图、约束、凸台、圆角和布尔加工历史；局部结构仍由源码坐标控制，调整参数后需要重新检查装配。
 
