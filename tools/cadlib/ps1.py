@@ -838,3 +838,290 @@ def stage15(m):
 
 
 STAGES[15]=stage15
+
+
+def _controller_point(x,y,z):
+    return V(x,y-240,z)
+
+
+def _controller_outline(inset=0):
+    # Photographic outline of the compact original digital controller. These
+    # are study control points, not measured production coordinates.
+    right=[(0,27),(24,27),(27,31),(45,32),(59,25),(67,12),(69,-3),(65,-19),(67,-39),(60,-51),(50,-51),(42,-43),(29,-23),(23,-17),(0,-16)]
+    points=right+[(-x,y) for x,y in reversed(right[1:-1])]
+    if not inset:return points
+    shifted=[]
+    for i,(x,y) in enumerate(points):
+        previous=V(*points[i-1],0);here=V(x,y,0);following=V(*points[(i+1)%len(points)],0)
+        a=(here-previous).normalize();b=(following-here).normalize()
+        na=V(a.y,-a.x,0);nb=V(b.y,-b.x,0);direction=(na+nb).normalize()
+        point=here+direction*(inset/direction.dot(na));shifted.append((point.x,point.y))
+    return shifted
+
+
+def _controller_loft(m,key,profiles):
+    sketches=[]
+    for i,(sx,sy,z) in enumerate(profiles):
+        sk=m.doc.addObject('Sketcher::SketchObject',key+'Profile'+str(i));sk.Label=key+' · editable closed outline '+str(i+1)
+        for curve in _controller_profile_curves(sx,sy,1.2 if 'InnerLoft' in key else 0):sk.addGeometry(curve,False)
+        sk.Placement=App.Placement(_controller_point(0,0,z),App.Rotation())
+        m.group('Construction').addObject(sk);sketches.append(sk)
+    loft=m.doc.addObject('Part::Loft',key);loft.Sections=sketches;loft.Solid=True;loft.Ruled=False;loft.Closed=False;loft.MaxDegree=3
+    m.doc.recompute();assert not loft.Shape.isNull() and loft.Shape.isValid() and len(loft.Shape.Solids)==1 and loft.Shape.Volume>0,key
+    loft.Shape.check(True)
+    m.group('Construction').addObject(loft)
+    for sk in sketches:sk.Visibility=False
+    loft.Visibility=False
+    return loft
+
+
+def _controller_profile_curves(sx,sy,inset):
+    # A symmetric chain with explicit horizontal bridge segments. Local tangent
+    # directions avoid the long-span oscillation of a single interpolating curve.
+    points=[(0,27),(24,27),(31,31),(47,31),(68,7),(64,-19),(66,-39),(54,-52),(42,-43),(27,-20),(20,-16),(0,-16)]
+    tangents=[(1,0),(1,0),(1,0),(1,-.25),(0,-1),(0,-1),(-.3,-1),(-1,0),(-.6,.8),(-.7,.7),(-1,0),(-1,0)]
+    nodes=[V(x,y,0) for x,y in points];directions=[V(x,y,0).normalize() for x,y in tangents]
+    lengths=[]
+    for i,p in enumerate(nodes):
+        before=(p-nodes[i-1]).Length if i else (nodes[1]-p).Length
+        after=(nodes[i+1]-p).Length if i+1<len(nodes) else before
+        lengths.append(.32*min(before,after))
+    segments=[]
+    for i in range(len(nodes)-1):
+        a,b=nodes[i],nodes[i+1];ta,tb=directions[i],directions[i+1]
+        na,nb=V(ta.y,-ta.x,0)*inset,V(tb.y,-tb.x,0)*inset
+        poles=[a+na,a+ta*lengths[i]+na,b-tb*lengths[i+1]+nb,b+nb]
+        segments.append(poles)
+    segments += [[V(-p.x,p.y,0) for p in reversed(poles)] for poles in reversed(segments)]
+    curves=[]
+    for poles in segments:
+        bezier=Part.BezierCurve();bezier.setPoles([V(p.x*sx,p.y*sy,0) for p in poles]);curves.append(bezier.toBSpline())
+    return curves
+
+
+def _controller_shell(m,key,outer,inner,layer):
+    outside=_controller_loft(m,key+'OuterLoft',outer);inside=_controller_loft(m,key+'InnerLoft',inner)
+    shell=m.doc.addObject('Part::Cut',key);shell.Base=outside;shell.Tool=inside;shell.Refine=True;shell.Label=key+' · hollow ergonomic shell'
+    m.doc.recompute();assert not shell.Shape.isNull() and shell.Shape.isValid() and len(shell.Shape.Solids)==1 and shell.Shape.Volume>0,key
+    shell.Shape.check(True)
+    outside.Visibility=False;inside.Visibility=False
+    return m.register(shell,key,'Controller',layer,'psgrey')
+
+
+def stage16(m):
+    _controller_shell(m,'CtrlBack',[(.89,.90,1),(.96,.96,4),(1,1,11),(1,1,17.8)],[(.83,.84,3.3),(.92,.92,6),(.967,.966,12),(.967,.966,18.05)],-5)
+    _controller_shell(m,'CtrlFront',[(1,1,18.1),(.994,.992,23),(.960,.955,28)],[(.966,.966,17.95),(.957,.950,23),(.935,.925,25.7)],4)
+    cheeks=[];front_hoods=[];rear_hoods=[]
+    for side in [-1,1]:
+        x=side*43
+        cheek=Part.makeCylinder(22.7,2.0,_controller_point(x,6,27.7))
+        edges=[e for e in cheek.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>29.6]
+        cheek=cheek.makeFillet(.8,edges);cheeks.append(cheek)
+        front_hoods.append(m.rr(22,12,10,tuple(_controller_point(x,31.5,18.1)),2))
+        rear_hoods.append(m.rr(22,12,7.2,tuple(_controller_point(x,31.5,10.6)),2))
+    additions=cheeks[0].multiFuse(cheeks[1:]+front_hoods).removeSplitter();additions.check(True)
+    _add_shape(m,'CtrlFront',additions,'Integral circular control faces and upper shoulder housings')
+    _add_shape(m,'CtrlBack',Part.makeCompound(rear_hoods),'Integral lower shoulder housings')
+    # Keep a visible parting gap between the two editable lofted covers.
+    m.profile['stages']=16
+    m.checkpoint(16,'scph1010_native_lofted_controller_shell','建立初代 SCPH-1010 数字手柄的原生闭合曲线草图、上下空心放样壳、圆形按键面和分层肩键罩；手柄尺寸为照片指导的学习近似，不加入模拟摇杆。')
+
+
+STAGES[16]=stage16
+
+
+def _controller_symbol(m,key,kind,x,y,z,material):
+    from .psp import _polygon
+    x,y,z=tuple(_controller_point(x,y,z))
+    if kind=='Triangle':
+        shape=_polygon([(x,y+2.15),(x-2,y-1.5),(x+2,y-1.5)],z,.025).cut(_polygon([(x,y+1.48),(x-1.42,y-1.18),(x+1.42,y-1.18)],z-.01,.05))
+    elif kind=='Circle':shape=Part.makeCylinder(2,.025,V(x,y,z)).cut(Part.makeCylinder(1.7,.05,V(x,y,z-.01)))
+    elif kind=='Square':shape=m.rr(3.7,3.7,.025,(x,y,z),.08).cut(m.rr(3.1,3.1,.05,(x,y,z-.01),.04))
+    else:
+        strips=[]
+        for angle in [-45,45]:
+            strip=m.rr(.32,4.8,.025,(x,y,z),.04);strip.rotate(V(x,y,z),V(0,0,1),angle);strips.append(strip)
+        shape=strips[0].fuse(strips[1])
+    m.feature(key,kind+' face-button symbol',shape,'Controller',6,material)
+
+
+def stage17(m):
+    from .psp import _polygon
+    m.colors.update({'ctrlcyan':(.20,.69,.63),'ctrlcoral':(.79,.34,.29),'ctrlblue':(.20,.51,.77),'ctrlpurple':(.74,.35,.60)})
+    apertures=[]
+    points=[(-2.8,2.4),(2.8,2.4),(3.6,9),(0,11),(-3.6,9)]
+    pivot=_controller_point(-43,6,0)
+    for name,angle in [('Up',0),('Right',-90),('Down',180),('Left',90)]:
+        shape=_polygon([(-43+x,-234+y) for x,y in points],29.05,2.25)
+        edges=[e for e in shape.Edges if e.BoundBox.ZLength>2.24];shape=shape.makeFillet(.4,edges)
+        shape=shape.fuse(Part.makeCylinder(1.7,3.65,_controller_point(-43,12.2,25.5)))
+        shape.rotate(pivot,V(0,0,1),angle)
+        m.feature('CtrlDPad'+name,'Original separated '+name.lower()+' directional key',shape,'Controller',5,'black')
+        hole=_polygon([(-43+x*1.085,-234+y*1.085) for x,y in points],25.2,6.8);hole.rotate(pivot,V(0,0,1),angle);apertures.append(hole)
+        mark=_polygon([(-44.1,-218),(-43.8,-218.2),(-43,-217.2),(-42.2,-218.2),(-41.9,-218),(-43,-216.8)],29.735,.025)
+        mark.rotate(pivot,V(0,0,1),angle);m.feature('CtrlDirection'+name,'Directional-key embossed marker',mark,'Controller',6,'psdark')
+    for name,dx,dy,mat in [('Triangle',0,10,'ctrlcyan'),('Circle',10,0,'ctrlcoral'),('Cross',0,-10,'ctrlblue'),('Square',-10,0,'ctrlpurple')]:
+        x,y=43+dx,6+dy;pos=_controller_point(x,y,29.1)
+        cap=Part.makeCylinder(4.35,2.4,pos)
+        cap=cap.makeFillet(.35,[e for e in cap.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>31.4])
+        cap=cap.fuse(Part.makeCylinder(1.5,3.7,_controller_point(x,y,25.5)))
+        m.feature('CtrlButton'+name,name+' digital face button',cap,'Controller',5,'black')
+        _controller_symbol(m,'CtrlSymbol'+name,name,x,y,31.535,mat)
+        apertures.append(Part.makeCylinder(4.65,6.3,_controller_point(x,y,25.7)))
+    select=m.rr(6.2,3.6,1.4,tuple(_controller_point(-9.5,-7.5,27.6)),.65)
+    select=select.fuse(Part.makeCylinder(1.2,2.45,_controller_point(-9.5,-7.5,25.3)))
+    m.feature('CtrlSelect','SELECT button and plunger',select,'Controller',5,'black')
+    apertures.append(m.rr(6.7,4.1,4.6,tuple(_controller_point(-9.5,-7.5,25.0)),.75))
+    start=_polygon([(7.1,-249.4),(7.1,-245.6),(12.5,-247.5)],27.6,1.4)
+    start=start.fuse(Part.makeCylinder(1.0,2.45,_controller_point(9.0,-7.5,25.3)))
+    m.feature('CtrlStart','Triangular START button and plunger',start,'Controller',5,'black')
+    apertures.append(_polygon([(6.8,-249.8),(6.8,-245.2),(13,-247.5)],25.0,4.6))
+    m.cut('CtrlFront',apertures,'Directional, face-button and menu apertures')
+    m.label('CtrlSelectMark','SELECT',1.25,tuple(_controller_point(-14.5,-13,28.04)),'Controller',6,'psdark')
+    m.label('CtrlStartMark','START',1.25,tuple(_controller_point(5,-13,28.04)),'Controller',6,'psdark')
+    m.label('CtrlSonyMark','SONY',3.7,tuple(_controller_point(-9,17,28.04)),'Controller',6,'psdark')
+    m.label('CtrlPSMark','PS',3.4,tuple(_controller_point(-3.5,6,28.04)),'Controller',6,'psdark')
+    m.label('CtrlPlayStationMark','PlayStation',1.6,tuple(_controller_point(-8.5,1.8,28.04)),'Controller',6,'psdark')
+    rear=g.rotation((0,1,0),(0,0,1))
+    for side in [-1,1]:
+        x=side*43;name='L' if side<0 else 'R'
+        for tier,z in [(1,23.5),(2,14)]:
+            shell='CtrlFront' if tier==1 else 'CtrlBack'
+            m.cut(shell,m.rr(18.2,6.8,6,tuple(_controller_point(x,32.8,z)),.85,rear),'Shoulder button '+name+str(tier)+' aperture')
+            m.box('Ctrl'+name+str(tier),name+str(tier)+' shoulder key',17.6,6.2,2,tuple(_controller_point(x,35.8,z)),'Controller',4,'black',.75,orient=rear)
+            m.label('Ctrl'+name+str(tier)+'Mark',str(tier),2,tuple(_controller_point(x+.5,37.84,z-.7)),'Controller',5,'psgrey',rotation=rear)
+        m.label('CtrlShoulder'+name,name,2.3,tuple(_controller_point(x-.8,32.7,28.14)),'Controller',5,'psdark')
+    m.profile['stages']=17
+    m.checkpoint(17,'digital_keys_and_two_tier_shoulders','补齐四个独立方向键、四色几何符号面键、SELECT/START 与上下两层 L/R 肩键；为真实凸出的键帽和传动杆开设对应孔位。')
+
+
+STAGES[17]=stage17
+
+
+def _controller_membrane(m,key,centres,central,base_radius,roof=25.4):
+    shapes=[Part.makeCylinder(base_radius,.45,_controller_point(x,y,22.05)) for x,y in centres]
+    shape=shapes[0].multiFuse(shapes[1:]+[Part.makeCylinder(central[2],.45,_controller_point(central[0],central[1],22.05))])
+    for i,(x,y) in enumerate(centres):
+        shape=shape.cut(Part.makeCylinder(4.1,.8,_controller_point(x,y,21.9)))
+        cone=Part.makeCone(4.3,3.0,2.6,_controller_point(x,y,22.5)).fuse(Part.makeCylinder(3,.3,_controller_point(x,y,25.1)))
+        cone=cone.cut(Part.makeCone(3.7,2.4,2.72,_controller_point(x,y,22.38)))
+        shape=shape.fuse(cone)
+        m.cyl(key+'Pill'+str(i),'Moving carbon switch contact',2.0,.20,tuple(_controller_point(x,y,24.85)),'Controller',2,'black',internal=True)
+        pad=Part.makeCylinder(2.3,.04,_controller_point(x,y,21.75)).cut(Part.makeBox(.35,5,.10,_controller_point(x-.175,y-2.5,21.72)))
+        m.feature(key+'Fixed'+str(i),'Split fixed carbon contact',pad,'Controller',1,'black',True)
+    m.feature(key,'Four-key silicone membrane',shape.removeSplitter(),'Controller',2,'rubber',True)
+
+
+def stage18(m):
+    from .psp import _polygon
+    outline=[(-57,22),(-27,22),(-23,23),(23,23),(27,22),(57,22),(61,9),(58,-10),(25,-10),(22,-12),(-22,-12),(-25,-10),(-58,-10),(-61,9)]
+    pcb=_polygon([(x,y-240) for x,y in outline],20.5,1.2)
+    m.feature('CtrlPCB','Original-family phenolic controller board',pcb,'Controller',0,'phenolic',True)
+    dpad=[(-43,12.2),(-36.8,6),(-43,-.2),(-49.2,6)]
+    face=[(43,16),(53,6),(43,-4),(33,6)]
+    _controller_membrane(m,'CtrlDPadMembrane',dpad,(-43,6,4),5.1)
+    _controller_membrane(m,'CtrlFaceMembrane',face,(43,6,7.3),5.1)
+    guide=Part.makeCylinder(3,.45,_controller_point(-43,6,26.15)).cut(Part.makeCylinder(1.3,.7,_controller_point(-43,6,26)))
+    arms=[]
+    for a in [45,-45]:
+        arm=m.rr(1.2,21,.45,tuple(_controller_point(-43,6,26.15)),.1);arm.rotate(_controller_point(-43,6,0),V(0,0,1),a);arms.append(arm)
+    guide=guide.multiFuse(arms).removeSplitter()
+    m.feature('CtrlDPadGuide','Rigid diagonal directional-key guide',guide,'Controller',3,'black',True)
+    m.cut('CtrlFront',Part.makeCylinder(12,1.3,_controller_point(-43,6,25.7)),'Directional guide pocket below the front face')
+    menu=m.rr(26,8,.45,tuple(_controller_point(0,-7.5,22.05)),1.5)
+    for i,x in enumerate([-9.5,9.0]):
+        menu=menu.cut(Part.makeCylinder(2.25,.8,_controller_point(x,-7.5,21.9)))
+        dome=Part.makeCone(2.5,1.7,2.3,_controller_point(x,-7.5,22.5)).fuse(Part.makeCylinder(1.7,.4,_controller_point(x,-7.5,24.8)))
+        dome=dome.cut(Part.makeCone(2.0,1.2,2.4,_controller_point(x,-7.5,22.4)))
+        menu=menu.fuse(dome)
+        m.cyl('CtrlMenuPill'+str(i),'Menu-key moving carbon pill',1.1,.18,tuple(_controller_point(x,-7.5,24.58)),'Controller',2,'black',internal=True)
+        pad=Part.makeCylinder(1.6,.04,_controller_point(x,-7.5,21.75)).cut(Part.makeBox(.3,4,.1,_controller_point(x-.15,-9.5,21.72)))
+        m.feature('CtrlMenuFixed'+str(i),'Menu-key fixed carbon contacts',pad,'Controller',1,'black',True)
+    m.feature('CtrlMenuMembrane','SELECT and START silicone membrane',menu.removeSplitter(),'Controller',2,'rubber',True)
+    m.box('CtrlLogicPackage','Controller logic package study',8,9,1.6,tuple(_controller_point(0,10,21.95)),'Controller',1,'black',.3,True)
+    terminals=[]
+    for side in [-1,1]:
+        for i in range(8):terminals.append(Part.makeBox(.3,.8,.18,_controller_point(-3.25+i*.93,10+side*5.0-.4,21.82)))
+    m.feature('CtrlLogicLeads','Controller logic-package lead study',Part.makeCompound(terminals),'Controller',1,'metal',True)
+    m.cyl('CtrlBoardCap','Controller board capacitor package',1.2,7,tuple(_controller_point(-13,17,18.25)),'Controller',0,'black',axis=(1,0,0),internal=True)
+    m.feature('CtrlBoardCapEnds','Controller capacitor end caps',Part.makeCompound([Part.makeCylinder(1.21,.3,_controller_point(x,17,18.25),V(1,0,0)) for x in [-13.4,-5.9]]),'Controller',0,'metal',True)
+    rear=g.rotation((0,1,0),(0,0,1))
+    for side in [-1,1]:
+        x=side*43;name='L' if side<0 else 'R'
+        cavity=m.rr(19.6,15.4,8.5,tuple(_controller_point(x,26,19)),.6,rear)
+        for shell in ['CtrlBack','CtrlFront']:m.cut(shell,cavity,'Shoulder assembly interior')
+        m.box('Ctrl'+name+'PCB','Two-level shoulder contact board',16.8,14,.8,tuple(_controller_point(x,30,19)),'Controller',1,'phenolic',.3,True,orient=rear)
+        carrier=m.rr(18.4,15.2,1.2,tuple(_controller_point(x,27.6,19)),.5,rear).cut(m.rr(14,11.8,1.6,tuple(_controller_point(x,27.4,19)),.3,rear))
+        m.feature('Ctrl'+name+'Carrier','Shoulder contact-board retainer',carrier,'Controller',0,'psgrey',True)
+        for tier,z in [(1,23.5),(2,14)]:
+            pos=_controller_point(x,31.4,z)
+            rubber=Part.makeCone(2.4,1.4,1.75,pos,V(0,1,0)).fuse(Part.makeCylinder(1.4,.30,_controller_point(x,33.15,z),V(0,1,0)))
+            rubber=rubber.cut(Part.makeCone(1.9,.9,1.9,_controller_point(x,31.25,z),V(0,1,0)))
+            m.feature('Ctrl'+name+str(tier)+'Dome','Shoulder-key silicone dome',rubber,'Controller',2,'rubber',True)
+            m.cyl('Ctrl'+name+str(tier)+'Pill','Shoulder-key moving carbon pill',.8,.16,tuple(_controller_point(x,32.88,z)),'Controller',2,'black',axis=(0,1,0),internal=True)
+            m.cyl('Ctrl'+name+str(tier)+'Pad','Shoulder-key fixed carbon contact',1.8,.04,tuple(_controller_point(x,30.86,z)),'Controller',1,'black',axis=(0,1,0),internal=True)
+            stem=m.rr(3,2.8,2.35,tuple(_controller_point(x,33.55,z)),.2,rear)
+            _add_shape(m,'Ctrl'+name+str(tier),stem,'Shoulder-key internal plunger')
+    m.profile['stages']=18
+    m.checkpoint(18,'controller_boards_membranes_and_contact_mechanisms','加入棕色主板、分离碳接点、硅胶按键穹顶、方向键导架、菜单键胶垫与两侧肩键小板及传动柱；控制逻辑封装仅作结构示意。')
+
+
+STAGES[18]=stage18
+
+
+def stage19(m):
+    from .atari2600 import _rounded_route
+    mounts=[(-55,20),(-27,24),(-27,-5),(-57,-40),(27,24),(55,20),(27,-5),(57,-40)]
+    _add_shape(m,'CtrlFront',Part.makeCompound([Part.makeCylinder(2.1,20.6,_controller_point(x,y,5.5)) for x,y in mounts]),'Eight controller case fixing posts')
+    m.cut('CtrlFront',[Part.makeCylinder(.85,16.5,_controller_point(x,y,5.3)) for x,y in mounts],'Controller screw-pilot bores')
+    m.cut('CtrlPCB',[Part.makeCylinder(2.4,2,_controller_point(x,y,20.2)) for x,y in mounts],'Controller case-post clearances in the board')
+    rear_tools=[]
+    for i,(x,y) in enumerate(mounts):
+        rear_tools.extend([Part.makeCylinder(1.0,18,_controller_point(x,y,.5)),Part.makeCylinder(1.85,3.2,_controller_point(x,y,.5)),Part.makeCylinder(2.4,12.5,_controller_point(x,y,5.3))])
+        m.screw('CtrlCaseScrew'+str(i),tuple(_controller_point(x,y,3.0)),'Controller',-5,length=15.5,radius=1.5)
+    m.cut('CtrlBack',rear_tools,'Eight recessed rear screw seats and upper-post reliefs')
+    grommet=Part.makeCylinder(2.8,12,_controller_point(0,24,17.5),V(0,1,0))
+    for i in range(5):grommet=grommet.fuse(Part.makeCylinder(3.1,.5,_controller_point(0,29+i*1.2,17.5),V(0,1,0)))
+    grommet=grommet.cut(Part.makeCylinder(1.9,12.4,_controller_point(0,23.8,17.5),V(0,1,0)))
+    m.feature('CtrlCableGrommet','Ribbed controller cable strain relief',grommet,'Controller',0,'black',True)
+    for shell in ['CtrlBack','CtrlFront']:m.cut(shell,Part.makeCylinder(3.3,15,_controller_point(0,23,17.5),V(0,1,0)),'Central controller cable exit')
+    path=[_controller_point(*p) for p in [(0,36.2,17.5),(0,49,17.5),(60,65,12),(91,39,11),(91,-5,10),(120,-5,10)]]
+    m.feature('CtrlCable','Original digital-controller cable study',_rounded_route(path,6,1.75),'Controller',0,'black')
+    # Internal seven-wire termination; unused motor/interrupt positions are not populated.
+    wire_holes=[]
+    for i,mat in enumerate(['ctrlcyan','ctrlcoral','white','psdark','coil','ctrlblue','yellow']):
+        sx=(i-3)*.55;tx=(i-3)*1.1
+        points=[_controller_point(sx,23.8,17.5),_controller_point(sx,21.5,17.5),_controller_point(tx,18,19.7),_controller_point(tx,16,20.35)]
+        m.feature('CtrlInternalLead'+str(i),'Digital-controller internal lead '+str(i+1),_rounded_route(points,.4,.20),'Controller',0,mat,True)
+        axis=(points[-1]-points[-2]).normalize();wire_holes.append(Part.makeCylinder(.32,2.3,points[-1]-axis*.4,axis))
+    m.cut('CtrlPCB',wire_holes,'Wire solder-entry clearances')
+    for side in [-1,1]:
+        name='L' if side<0 else 'R'
+        for i in range(3):
+            points=[_controller_point(side*(43+(i-1)*1.2),29.8,19),_controller_point(side*(54+.9*i),24-.8*i,17),_controller_point(side*(58+.6*i),2+i,17),_controller_point(side*(58+.6*i),-7,17),_controller_point(side*(55+.8*i),-7,20.2)]
+            m.feature('Ctrl'+name+'Wire'+str(i),'Shoulder contact-board wire',_rounded_route(points,.45,.18),'Controller',0,'black',True)
+    # Detached nine-position plug, with the seven digital-controller contacts.
+    normal=g.rotation((1,0,0),(0,0,1))
+    body=m.rr(42,12,20,tuple(_controller_point(122,-5,10)),2,normal)
+    body=body.cut(m.rr(39,9,18,tuple(_controller_point(123,-5,10)),1.2,normal))
+    body=body.cut(m.rr(40.3,7.5,4,tuple(_controller_point(140.8,-5,10)),1.4,normal))
+    m.feature('CtrlPlugBody','Original rectangular controller plug housing',body,'Controller',0,'psgrey')
+    relief=Part.makeCone(2.4,4.8,11.8,_controller_point(110,-5,10),V(1,0,0)).cut(Part.makeCylinder(1.85,12.2,_controller_point(109.8,-5,10),V(1,0,0)))
+    m.feature('CtrlPlugRelief','Plug cable strain relief',relief,'Controller',0,'black')
+    active={0,1,3,4,5,6,8}
+    for group in range(3):
+        yy=-5+(group-1)*13
+        nose=m.rr(12.2,5.2,5,tuple(_controller_point(141.5,yy,10)),1.3,normal)
+        for i in range(3):
+            y=yy+(i-1)*3.6;number=group*3+i
+            nose=nose.cut(Part.makeCylinder(.55,6,_controller_point(141,y,10),V(1,0,0)))
+            if number in active:m.cyl('CtrlPlugPin'+str(number),'Controller plug pin '+str(number+1),.38,7.3,tuple(_controller_point(140.8,y,10)),'Controller',0,'metal',axis=(1,0,0),internal=True)
+        m.feature('CtrlPlugTriplet'+str(group),'Three-position plug nose',nose,'Controller',0,'black')
+    m.label('CtrlPlugMark','SONY',2.1,tuple(_controller_point(127,-9,16.035)),'Controller',1,'psdark')
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('CtrlRearModel','SCPH-1010',1.8,tuple(_controller_point(9,5,.96)),'Controller',-5,'psdark',rotation=reverse)
+    m.profile['stages']=19
+    m.checkpoint(19,'controller_fasteners_and_seven_wire_plug','加入八处后壳螺钉、固定柱、主线与肩键线束、应力释放套及九位置七接点插头；保留初代数字控制器的空缺接点与型号标识。')
+
+
+STAGES[19]=stage19
