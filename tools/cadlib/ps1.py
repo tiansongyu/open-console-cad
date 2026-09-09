@@ -443,3 +443,398 @@ def stage08(m):
 
 
 STAGES[8]=stage08
+
+
+def _fit_package_marks(m):
+    from .clamshell import _replace
+    for key,body in list(m.parts.items()):
+        if key+'Mark' not in m.parts or key+'Leads' not in m.parts:continue
+        mark=m.parts[key+'Mark'];b=body.Shape.optimalBoundingBox(False,False);old=mark.Shape
+        bb=old.optimalBoundingBox(False,False)
+        scale=min(1,(b.XLength-1.6)/bb.XLength,(b.YLength-1.6)/bb.YLength)
+        matrix=App.Matrix();matrix.A11=scale;matrix.A22=scale
+        matrix.A14=b.Center.x-scale*bb.Center.x;matrix.A24=b.Center.y-scale*bb.Center.y
+        fitted=old.transformGeometry(matrix);fb=fitted.optimalBoundingBox(False,False)
+        assert abs(fb.Center.x-b.Center.x)<1e-6 and abs(fb.Center.y-b.Center.y)<1e-6
+        assert abs(fb.ZMin-bb.ZMin)<1e-6 and abs(fb.ZMax-bb.ZMax)<1e-6
+        _replace(m,key+'Mark',fitted)
+
+
+def _smd_cap(m,key,x,y,r=3.1,h=4.2,mark='220'):
+    m.box(key+'Base','Surface-mount capacitor base',2*r+.8,2*r+.8,.5,(x,y,10.2),'Mainboard',0,'black',.35,True)
+    m.cyl(key+'Can','Electrolytic capacitor can',r,h,(x,y,10.78),'Mainboard',0,'metal',internal=True)
+    m.cyl(key+'Top','Capacitor end seal',r-.12,.12,(x,y,10.82+h),'Mainboard',0,'metal',internal=True)
+    terminals=Part.makeCompound([Part.makeBox(.55,1.7,.14,V(x+side*(r+.68)-.275,y-.85,10.035)) for side in [-1,1]])
+    m.feature(key+'Terminals','Capacitor solder terminals',terminals,'Mainboard',0,'metal',True)
+    if mark:m.label(key+'Mark',mark,.92,(x-1.25,y-.40,10.98+h),'Mainboard',0,'black')
+
+
+def _passive(m,key,x,y,material='thermal'):
+    m.box(key,'Chip resistor' if material=='black' else 'Ceramic decoupling capacitor',1.4,1.2,.6,(x,y,10.18),'Mainboard',0,material,.08,True)
+    ends=Part.makeCompound([Part.makeBox(.38,1.2,.55,V(x+side*.91-.19,y-.6,10.2)) for side in [-1,1]])
+    m.feature(key+'Ends','Surface-mount metal end caps',ends,'Mainboard',0,'metal',True)
+
+
+def _fpc_socket(m,key,x,y,pins,side=1):
+    shell=m.rr(14,5.2,3.2,(x,y,10.1),.55)
+    shell=shell.cut(m.rr(12.8,4,.6,(x,y+side*2.3,12.2),.10))
+    m.feature(key,'Flat flexible-circuit connector',shell,'Mainboard',0,'white',True)
+    pitch=10.0/(pins-1)
+    for i in range(pins):
+        m.box(key+'Contact'+str(i),'FPC contact '+str(i+1),.45,2.4,.08,(x+(i-(pins-1)/2)*pitch,y+side*1.5,12.69),'Mainboard',0,'gold',.025,True)
+
+
+def stage09(m):
+    _fit_package_marks(m)
+    for row,y in enumerate([63,75]):
+        for col,x in enumerate([-67,-55,-39,-27]):_smd_cap(m,'RearFilter'+str(row*4+col),x,y)
+    for i,(x,y) in enumerate([(36,39),(44,39),(36,47),(44,47),(53,48)]):_smd_cap(m,'AudioFilter'+str(i),x,y,1.65,3.0,mark='')
+    locations=[(x,y) for x in [82,124] for y in [-26,-18,-10,-2]]
+    locations += [(x,y) for x in [42,80] for y in [-32,-23,-14]]
+    locations += [(x,y) for x in [-68,-31] for y in [17,25,33]]
+    for i,(x,y) in enumerate(locations):_passive(m,'Decoupling'+str(i),x,y)
+    for row,y in enumerate([50,61]):
+        for col,x in enumerate([66,73,80,87,94,101,108,115]):_passive(m,'ParallelResistor'+str(row*8+col),x,y,'black')
+    for key,x,y,caption in [('CPUClock',86,-38,'67.737'),('GPUClock',50,-46,'53.69')]:
+        m.box(key+'Base','Clock-can insulating base',8.2,5.2,.4,(x,y,10.2),'Mainboard',0,'black',.5,True)
+        m.box(key,'Crystal oscillator can',8,5,2.1,(x,y,10.68),'Mainboard',0,'metal',.8,True)
+        m.label(key+'Mark',caption,.9,(x-2.7,y-.4,12.81),'Mainboard',0,'black')
+    _fpc_socket(m,'PickupSocket',0,6,10)
+    _fpc_socket(m,'FrontPortSocket',38,-53,12,side=-1)
+    ribbon=_yz_strip(32,12,[(-65.4,16.25),(-60,16.25),(-60,12.6),(-54.5,12.6),(-54.5,12.4),(-60.2,12.4),(-60.2,16.05),(-65.4,16.05)])
+    m.feature('FrontPortFlex','Shared front-port flexible circuit',ribbon,'Wiring',1,'flex',True)
+    for i in range(12):
+        trace=_yz_strip(32.75+i*.93,.5,[(-65.4,16.275),(-59.975,16.275),(-59.975,12.625),(-54.5,12.625),(-54.5,12.647),(-59.953,12.647),(-59.953,16.297),(-65.4,16.297)])
+        m.feature('FrontPortFlexTrace'+str(i),'Front-port flex conductor '+str(i+1),trace,'Wiring',1,'copper',True)
+    socket=m.rr(6.6,5,4,(56,29.5,10.1),.55)
+    for i,dx in enumerate([-.8,.8]):
+        y=80-3*i;z=26+1.2*i;axis=(V(56+dx,31,12.5)-V(56+dx,y,z)).normalize();end=V(56+dx,31,12.5)
+        socket=socket.cut(Part.makeCylinder(.74,6,end-axis*3,axis))
+        m.ring('OpticalPowerContact'+str(i),'Motor-power connector contact sleeve',.63,.49,1.2,tuple(end-axis*.3),'Mainboard',0,'metal',axis=tuple(axis),internal=True)
+    m.feature('OpticalPowerSocket','Two-way motor-power connector',socket,'Mainboard',0,'white',True)
+    m.profile['stages']=9
+    m.checkpoint(9,'filters_discretes_and_flexible_circuit_headers','按功能区域加入滤波电容、去耦器件、并口电阻与时钟封装，补齐光驱和前接口排线连接座；按实际几何边界缩放、居中小型芯片标识。')
+
+
+STAGES[9]=stage09
+
+
+def _power_radial(m,key,x,y,r,h,holes):
+    body=Part.makeCylinder(r,h,V(x,y,14.2));base=Part.makeCylinder(r-.15,.6,V(x,y,13.5))
+    leads=[]
+    for side in [-1,1]:
+        xx=x+side*min(3.75,r*.42)
+        bore=Part.makeCylinder(.58,1.3,V(xx,y,13.3));body=body.cut(bore);base=base.cut(bore)
+        leads.append(Part.makeCylinder(.43,2.9,V(xx,y,11.4)))
+        holes.append(Part.makeCylinder(.64,2.3,V(xx,y,11.3)))
+    m.feature(key,'Power-board radial capacitor',body,'Power',1,'black',True)
+    m.feature(key+'Seal','Radial capacitor base seal',base,'Power',1,'rubber',True)
+    m.feature(key+'Leads','Radial capacitor formed leads',Part.makeCompound(leads),'Power',1,'metal',True)
+    top=Part.makeCylinder(r-.15,.20,V(x,y,14.25+h))
+    top=top.cut(Part.makeCompound([Part.makeBox(.22,1.2*r,.11,V(x-.11,y-.6*r,14.37+h)),Part.makeBox(1.2*r,.22,.11,V(x-.6*r,y-.11,14.37+h))]))
+    m.feature(key+'Vent','Scored capacitor end cover',top,'Power',1,'metal',True)
+
+
+def _power_control_ic(m,key,x,y,pins,holes):
+    m.box(key,'Power-control package study',5.2,4.2,1.8,(x,y,13.8),'Power',1,'black',.35,True)
+    feet=[]
+    for side in [-1,1]:
+        for i in range(pins//2):
+            xx=x+(i-(pins//2-1)/2)*1.05;yy=y+side*3.1
+            foot=Part.makeBox(.35,.35,2.8,V(xx-.175,yy-.175,11.4))
+            run=Part.makeBox(.35,1.0,.24,V(xx-.175,min(yy,y+side*2.2),13.97))
+            feet.append(foot.fuse(run));holes.append(Part.makeCylinder(.44,2.3,V(xx,yy,11.3)))
+    m.feature(key+'Pins','Power-control package leads',Part.makeCompound(feet),'Power',1,'metal',True)
+
+
+def stage10(m):
+    from .atari2600 import _rounded_route
+    m.colors.update({'phenolic':(.61,.41,.16),'glass':(.58,.72,.73),'coil':(.81,.43,.18)})
+    m.native('PowerBoard','Separate Japanese power-supply PCB',44,163,1.5,1.6,(-107,.5,11.8),'Power',-1,'phenolic')
+    holes=[]
+    # Extend the two already-modelled AC contacts to their through-board tails.
+    inlet_bores=[]
+    for i,dx in enumerate([-4.05,4.05]):
+        xx=-100+dx
+        tail=Part.makeBox(.75,8,.75,V(xx-.375,77.5,23.625)).fuse(Part.makeBox(.75,.75,12.7,V(xx-.375,77.5,11.4)))
+        _add_shape(m,'ACPin'+str(i),tail,'Bent AC contact tail')
+        inlet_bores.append(Part.makeBox(1.25,5,1.25,V(xx-.625,80.8,23.375)))
+        holes.append(Part.makeCylinder(.72,2.3,V(xx,77.875,11.3)))
+    m.cut('ACInlet',inlet_bores,'Rear AC contact-tail exits')
+    m.ring('InputFuseGlass','Input fuse glass tube',2.1,1.75,17.8,(-122,56.1,17),'Power',1,'glass',axis=(0,1,0),internal=True)
+    for i,y in enumerate([53.8,74]):m.cyl('InputFuseCap'+str(i),'Input fuse metal end cap',2.15,2.2,(-122,y,17),'Power',1,'metal',axis=(0,1,0),internal=True)
+    m.cyl('InputFuseElement','Fuse filament study',.09,17.9,(-122,56.05,17),'Power',1,'metal',axis=(0,1,0),internal=True)
+    for i,y in enumerate([54.75,75.25]):
+        cradle=Part.makeCylinder(2.7,.9,V(-122,y-.45,17),V(0,1,0)).cut(Part.makeCylinder(2.2,1.1,V(-122,y-.55,17),V(0,1,0)))
+        cradle=cradle.common(Part.makeBox(8,2,5,V(-126,y-1,12)))
+        clip=cradle.fuse(Part.makeBox(.5,.5,3,V(-122.25,y-.25,11.4)))
+        m.feature('FuseClip'+str(i),'Fuse spring cradle and solder leg',clip,'Power',1,'metal',True)
+        holes.append(Part.makeCylinder(.48,2.3,V(-122,y,11.3)))
+    # The photographed input choke uses two bobbins on a rectangular ferrite core.
+    cx,cy=-104,58
+    core_shape=m.rr(14,18,5,(cx,cy,14.5),.35).cut(m.rr(10,14,5.4,(cx,cy,14.3),.15))
+    m.feature('InputChokeCore','Rectangular common-mode choke ferrite',core_shape,'Power',1,'psdark',True)
+    for bank,sign in enumerate([-1,1]):
+        yy=cy+sign*8
+        bobbin=m.rr(9,2.4,5.4,(cx,yy,14.3),.08).cut(m.rr(9.4,2.1,5.1,(cx,yy,14.45),.04))
+        m.feature('InputChokeBobbin'+str(bank),'Input-filter insulating bobbin',bobbin,'Power',1,'white',True)
+        turns=[]
+        for xx in [-3.6,-1.8,0,1.8,3.6]:
+            points=[V(cx+xx,yy,14),V(cx+xx,yy-1.6,14),V(cx+xx,yy-1.6,20),V(cx+xx,yy+1.6,20),V(cx+xx,yy+1.6,14),V(cx+xx,yy,14)]
+            turns.append(_rounded_route(points,.5,.25))
+        m.feature('InputChokeWinding'+str(bank),'Common-mode winding study',Part.makeCompound(turns),'Power',1,'copper' if bank==0 else 'coil',True)
+    _power_radial(m,'PrimaryBulkCap',-108,32,9,24,holes)
+    m.label('PrimaryBulkCapRating','150 uF',1.3,(-112,30,38.50),'Power',1,'black')
+    for i,(x,y) in enumerate([(-94,70),(-94,59),(-120,41),(-120,29)]):
+        m.cyl('Rectifier'+str(i),'Input rectifier diode',1.0,4,(x,y-2,15.5),'Power',1,'black',axis=(0,1,0),internal=True)
+        m.ring('RectifierBand'+str(i),'Diode polarity band',1.05,1.015,.45,(x,y-1.55,15.5),'Power',1,'metal',axis=(0,1,0),internal=True)
+        legs=[]
+        for side in [-1,1]:
+            yy=y+side*5.2
+            horizontal=Part.makeCylinder(.26,3.1,V(x,min(yy,y+side*2.1),15.5),V(0,1,0))
+            vertical=Part.makeCylinder(.26,4.2,V(x,yy,11.4));legs.append(horizontal.fuse(vertical))
+            holes.append(Part.makeCylinder(.45,2.3,V(x,yy,11.3)))
+        m.feature('RectifierLeads'+str(i),'Rectifier bent leads',Part.makeCompound(legs),'Power',1,'metal',True)
+    # Ferrite, bobbin and the two winding packs remain separate inspectable shapes.
+    tx,ty=-108,0
+    ferrite=m.rr(27,26,2,(tx,ty,14.5),.5)
+    ferrite=ferrite.fuse(m.rr(6,16,19,(tx,ty,16.5),.25))
+    for side in [-1,1]:ferrite=ferrite.fuse(m.rr(4,16,19,(tx+side*11.5,ty,16.5),.25))
+    ferrite=ferrite.fuse(m.rr(27,26,2,(tx,ty,35.5),.5)).removeSplitter()
+    m.feature('TransformerCore','Closed transformer ferrite core',ferrite,'Power',1,'psdark',True)
+    bobbin=m.rr(10,20,18.4,(tx,ty,16.8),.2).cut(m.rr(6.6,16.6,19,(tx,ty,16.5),.1))
+    for z in [16.7,25,34.2]:
+        flange=m.rr(18.8,24.8,.6,(tx,ty,z),.25).cut(m.rr(6.6,16.6,.9,(tx,ty,z-.1),.1));bobbin=bobbin.fuse(flange)
+    m.feature('TransformerBobbin','Three-flange transformer bobbin',bobbin.removeSplitter(),'Power',1,'white',True)
+    for key,z,mat in [('Primary',17.4,'copper'),('Secondary',26,'coil')]:
+        winding=m.rr(18,24,7.2,(tx,ty,z),.5).cut(m.rr(10.6,20.6,7.6,(tx,ty,z-.2),.3))
+        m.feature('Transformer'+key,'Transformer '+key.lower()+' winding pack',winding,'Power',1,mat,True)
+    points=[(-14.2,13.8),(-14.2,38.2),(14.2,38.2),(14.2,13.8),(13.8,13.8),(13.8,37.8),(-13.8,37.8),(-13.8,13.8)]
+    wire=Part.makePolygon([V(tx+x,-1.15,z) for x,z in points]+[V(tx+points[0][0],-1.15,points[0][1])])
+    m.feature('TransformerClip','Transformer retaining strap',Part.Face(Part.Wire(wire.Edges)).extrude(V(0,2.3,0)),'Power',1,'metal',True)
+    m.label('TransformerMark','T001',2,(-114,4,37.53),'Power',1,'white')
+    for i,(x,y,r,h) in enumerate([(-121,-32,4,12),(-108,-39,5,14),(-95,-34,4,12),(-121,-48,3,8),(-94,-49,3.5,10)]):_power_radial(m,'OutputCap'+str(i),x,y,r,h,holes)
+    _power_control_ic(m,'PowerControlIC',-122,-64,8,holes)
+    _power_control_ic(m,'FeedbackOptocoupler',-94,-20,4,holes)
+    # A small power transistor and folded radiator correspond to the board photo.
+    front=g.rotation((0,-1,0),(0,0,1))
+    transistor=m.rr(9,10,3,(-118,20.8,22.5),.5,front)
+    leads=[]
+    for dx in [-2.2,0,2.2]:
+        xx=-118+dx;bore=Part.makeCylinder(.57,1.2,V(xx,18.5,17.2));transistor=transistor.cut(bore)
+        leads.append(Part.makeBox(.5,.5,6.6,V(xx-.25,18.25,11.4)));holes.append(Part.makeCylinder(.5,2.3,V(xx,18.5,11.3)))
+    m.feature('PowerTransistor','Power transistor package study',transistor,'Power',1,'black',True)
+    m.feature('PowerTransistorLeads','Power transistor leads',Part.makeCompound(leads),'Power',1,'metal',True)
+    tab=Part.makeBox(9,.5,14,V(-122.5,21,18)).cut(Part.makeCylinder(.85,2,V(-118,20.5,30),V(0,1,0)))
+    radiator=Part.makeBox(14,.6,21,V(-125,21.6,14)).fuse(Part.makeBox(14,8,.6,V(-125,13.8,14)))
+    radiator=radiator.cut(Part.makeCylinder(.85,2,V(-118,21,30),V(0,1,0)))
+    m.feature('PowerTransistorTab','Power transistor heat-transfer tab',tab,'Power',1,'metal',True)
+    m.feature('PowerRadiator','Folded power-transistor radiator',radiator,'Power',1,'metal',True)
+    screw=Part.makeCylinder(1.4,.6,V(-118,17.35,30),V(0,1,0)).fuse(Part.makeCylinder(.65,4.9,V(-118,17.9,30),V(0,1,0)))
+    screw=screw.cut(Part.makeCompound([Part.makeBox(.30,.35,1.8,V(-118.15,17.3,29.1)),Part.makeBox(1.8,.35,.3,V(-118.9,17.3,29.85))]))
+    m.feature('PowerRadiatorScrew','Power-transistor retaining screw',screw,'Power',1,'metal',True)
+    m.cut('PowerBoard',holes,'Power-board through-hole lead clearances')
+    m.label('PowerBoardMark','PSU STUDY',1.2,(-127,-15,13.425),'Power',-1,'white')
+    m.profile['stages']=10
+    m.checkpoint(10,'separate_power_supply_and_filtering','建立日版独立电源板、输入保险管、矩形磁芯双绕组滤波器、整流器、大电容、分体变压器、输出滤波与功率器件；为引脚和 AC 接点预留穿板、穿壳孔，电气布局明确为学习示意。')
+
+
+STAGES[10]=stage10
+
+
+def stage11(m):
+    from .atari2600 import _rounded_route
+    m.colors['lightpipe']=(.40,.68,.46)
+    holes=[]
+    switch=m.rr(12,12,12,(-110,-58,13.8),.8)
+    pins=[]
+    for x in [-115,-105]:
+        for y in [-63,-53]:
+            switch=switch.cut(Part.makeCylinder(.61,1.2,V(x,y,13.5)))
+            pins.append(Part.makeBox(.55,.55,3,V(x-.275,y-.275,11.4)))
+            holes.append(Part.makeCylinder(.61,2.3,V(x,y,11.3)))
+    m.feature('PowerSwitch','Latching power-switch housing',switch,'Power',1,'black',True)
+    m.feature('PowerSwitchPins','Power-switch through-board terminals',Part.makeCompound(pins),'Power',1,'metal',True)
+    m.cyl('PowerSwitchPusher','Power-switch actuator',2.3,5.1,(-110,-58,25.9),'Controls',3,'white',internal=True)
+    m.cyl('PowerButtonStem','Long power-button transmission stem',2.0,23.65,(-110,-58,31.1),'Controls',4,'psgrey',internal=True)
+    m.box('ResetSwitch','Reset-switch package study',5.5,5.5,4,(-110,-24,13.8),'Power',1,'black',.4,True)
+    m.cyl('ResetPusher','Reset-switch actuator',1.3,.7,(-110,-24,17.9),'Controls',3,'white',internal=True)
+    m.cyl('ResetStem','Reset-button transmission stem',1.1,36.0,(-110,-24,18.7),'Controls',4,'psgrey',internal=True)
+    m.cyl('PowerLEDBase','Power LED insulating base',2.8,3.3,(-110,-76,13.5),'Power',1,'black',internal=True)
+    led=Part.makeSphere(2.8,V(-110,-76,16.9)).common(Part.makeCylinder(2.75,3.0,V(-110,-76,16.9)))
+    m.feature('PowerLED','Power-indicator LED lens',led,'Power',1,'psgreen',True)
+    light=Part.makeBox(1.8,3,36,V(-110.9,-90,20)).fuse(Part.makeBox(1.8,14,1.8,V(-110.9,-89.25,20)))
+    m.feature('PowerLightGuide','Bent power-indicator light guide',light,'Controls',4,'lightpipe',True)
+    # Seven conductors are retained for this early power-board family. The
+    # colours distinguish study geometry, not an electrical wiring prescription.
+    psu=m.rr(10,16,6.3,(-91,-65,13.7),.65).cut(Part.makeBox(8,14.8,3.2,V(-93,-72.4,15.4)))
+    board=m.rr(6,17,4,(-72,-65,10.1),.6)
+    for i in range(7):
+        y=-71+2*i
+        board=board.cut(Part.makeCylinder(.74,8,V(-76,y,12.5),V(1,0,0)))
+        m.ring('PSUOutputContact'+str(i),'Early PSU connector contact '+str(i+1),.63,.48,6.2,(-92,y,17),'Power',1,'metal',axis=(1,0,0),internal=True)
+        m.ring('MainPowerContact'+str(i),'Mainboard power connector contact '+str(i+1),.63,.49,3.5,(-74.6,y,12.5),'Mainboard',0,'metal',axis=(1,0,0),internal=True)
+        route=[V(-85.7,y,17),V(-82.8,y,17),V(-79,y,12.5),V(-74,y,12.5),V(-71.5,y,12.5)]
+        wire=_rounded_route(route,.65,.43)
+        m.feature('PowerHarness'+str(i),'Seven-core power/reset harness conductor '+str(i+1),wire,'Wiring',0,['white','psdark','coil','psgrey','white','red','psdark'][i],True)
+    m.feature('PSUOutputConnector','Seven-position PSU connector',psu,'Power',1,'white',True)
+    m.feature('MainPowerConnector','Seven-position mainboard power connector',board,'Mainboard',0,'white',True)
+    m.cut('PowerBoard',holes,'Power-switch solder-terminal bores')
+    m.profile['stages']=11
+    m.checkpoint(11,'seven_wire_supply_and_system_actuators','补齐早期七芯电源/复位线束和两端插座、POWER/RESET 传动杆、功率开关及指示灯导光件；线束按固定间距分开布置，颜色仅用于区分学习模型。')
+
+
+STAGES[11]=stage11
+
+
+def stage12(m):
+    from .clamshell import _replace
+    from .psp import _polygon
+    import math
+    m.cut('UpperHousing',m.rr(2.2,3.4,1.1,(-110,-88.5,54.5),.2),'Light-guide passage through the roof')
+    m.cut('PowerRadiator',m.rr(6,1.3,1.1,(-118,18.5,13.8),.2),'Power-device lead clearance in the radiator foot')
+    m.box('LowerShield','Lower mainboard shield',204,169,.6,(24,1,4.3),'Shield',-4,'metal',1.5,True)
+    m.box('PowerInsulator','Power-board insulating sheet',43,161,.45,(-107,.5,10.7),'Power',-2,'thermal',1.3,True)
+    shield=m.rr(207,171,.7,(24,1,22.3),2.0)
+    clearances=[m.rr(134,20,1.4,(0,-84,22),1.0),m.rr(122,14,1.4,(0,87.8,22),1.0),m.rr(64.5,11,1.4,(100,88,22),1.0),m.rr(13.4,1.2,1.4,(0,18.08,22),.25),m.rr(8,14,1.4,(56,65,22),.7)]
+    shield=shield.cut(Part.makeCompound(clearances))
+    m.feature('MainShield','Raised mainboard shield with interface and cable clearances',shield,'Shield',2,'metal',True)
+    guard=Part.makeBox(.6,170,21,V(-82,-84,4.5)).cut(Part.makeBox(1.2,18,7,V(-82.3,-74,11.5)))
+    m.feature('PowerGuard','Power-board side shield and harness aperture',guard,'Shield',1,'metal',True)
+    all_mounts=[(-75,-80),(123,-80),(-75,81),(123,81),(53,-80),(123,15),(78,75)]
+    tall=[p for p in all_mounts if p!=(53,-80)]
+    m.cut('Mainboard',Part.makeCylinder(1.55,2.3,V(78,75,8.1)),'Additional shield mounting hole')
+    m.ring('BoardMountPad6','Shield fixing ground land',2.8,1.7,.025,(78,75,10.025),'Mainboard',-1,'gold',internal=True)
+    lower_holes=[];upper_holes=[]
+    for i,(x,y) in enumerate(all_mounts):
+        m.ring('BoardPedestal'+str(i),'Mainboard lower insulating pedestal',3.0,1.0,5.0,(x,y,3.3),'Internal',-3,'psgrey',internal=True)
+        lower_holes.append(Part.makeCylinder(3.25,1.2,V(x,y,4.0)))
+        if (x,y) in tall:
+            radius=1.8 if (x,y)==(123,81) else 2.6
+            m.ring('ShieldSpacer'+str(i),'Mainboard shield spacer',radius,.9,11.8,(x,y,10.2),'Internal',1,'metal',internal=True)
+            m.ring('ShieldWasher'+str(i),'Shield screw washer',1.9,.85,.15,(x,y,23.03),'Internal',2,'metal',internal=True)
+            m.screw('ShieldScrew'+str(i),(x,y,23.55),'Internal',2,length=19,radius=1.7,axis=(0,0,-1))
+            upper_holes.append(Part.makeCylinder(1.15,1.4,V(x,y,22)))
+        else:
+            m.ring('FrontBoardWasher','Low front mounting washer',2.3,.85,.10,(x,y,10.08),'Internal',-1,'metal',internal=True)
+            m.screw('FrontBoardScrew',(x,y,10.6),'Internal',-1,length=6,radius=1.7,axis=(0,0,-1))
+    for i,(x,y) in enumerate([(-44,-4),(44,8),(-42,62)]):
+        _add_shape(m,'OpticalPeg'+str(i),Part.makeCylinder(1.0,1.35,V(x,y,21.7)),'Optical support stud through the shield')
+        upper_holes.append(Part.makeCylinder(1.2,1.4,V(x,y,22)))
+        pts=[(x+2.05*math.cos(math.pi*j/3),y+2.05*math.sin(math.pi*j/3)) for j in range(6)]
+        nut=_polygon(pts,21.3,.8).cut(Part.makeCylinder(1.12,1.2,V(x,y,21.1)))
+        m.feature('OpticalPegNut'+str(i),'Optical support retaining nut',nut,'Internal',1,'metal',True)
+    m.cut('LowerShield',lower_holes+[Part.makeCylinder(5.8,1.2,V(47,3,4.0))],'Pedestal and centre clearances in the lower shield')
+    m.cut('MainShield',upper_holes,'Shield fixing and optical stud holes')
+    # The separate front interface cover has five retaining positions.
+    front=m.rr(125,16,.6,(0,-82.5,42.0),1.0)
+    front=front.fuse(Part.makeBox(.6,16,25.6,V(-62.5,-90.5,17))).fuse(Part.makeBox(.6,16,25.6,V(61.9,-90.5,17)))
+    front_mounts=[(-63.5,-86.5),(-63.5,-77),(63.5,-86.5),(63.5,-77),(0,-80)]
+    front_holes=[];post_clear=[]
+    _add_shape(m,'LowerHousing',Part.makeCompound([Part.makeCylinder(1.8,38.8,V(x,y,3.0)) for x,y in front_mounts]),'Front connector-cover fixing posts')
+    m.cut('LowerHousing',[Part.makeCylinder(.85,38,V(x,y,4.0)) for x,y in front_mounts],'Front cover screw-pilot holes')
+    for i,(x,y) in enumerate(front_mounts):
+        front=front.fuse(Part.makeCylinder(2.3,.6,V(x,y,42)))
+        front_holes.append(Part.makeCylinder(.95,1.1,V(x,y,41.8)))
+        post_clear.append(Part.makeCylinder(2.05,20,V(x,y,3.8)))
+        m.ring('FrontShieldWasher'+str(i),'Front-cover screw washer',1.8,.85,.12,(x,y,42.63),'Internal',3,'metal',internal=True)
+        m.screw('FrontShieldScrew'+str(i),(x,y,43.15),'Internal',3,length=38,radius=1.6,axis=(0,0,-1))
+    front=front.cut(Part.makeCompound(front_holes))
+    m.feature('FrontIOShield','Folded controller and memory-card shielding cover',front,'Shield',3,'metal',True)
+    for key in ['Mainboard','LowerShield','FrontPortPCB']:m.cut(key,post_clear,'Front connector-cover post clearances')
+    m.cut('DiscWell',m.rr(126.2,16.8,1,(0,-82.5,41.8),1.0),'Front interface-cover seat under the disc well')
+    power_mounts=[(-125,-76),(-89,-76),(-125,78),(-89,78)]
+    board_holes=[];insulator_holes=[]
+    for i,(x,y) in enumerate(power_mounts):
+        m.ring('PowerPedestal'+str(i),'Power-board insulating support',2.4,.95,8.2,(x,y,3.3),'Internal',-2,'psgrey',internal=True)
+        board_holes.append(Part.makeCylinder(1.15,2.3,V(x,y,11.5)))
+        insulator_holes.append(Part.makeCylinder(2.65,1.1,V(x,y,10.4)))
+        if y>0:
+            m.ring('PowerWasher'+str(i),'Power-board retaining washer',2,.85,.1,(x,y,13.45),'Internal',1,'metal',internal=True)
+            m.screw('PowerScrew'+str(i),(x,y,13.95),'Internal',1,length=9,radius=1.6,axis=(0,0,-1))
+    m.cut('PowerBoard',board_holes,'Power-board support and retaining holes')
+    m.cut('PowerInsulator',insulator_holes,'Power-board pedestal clearance in the insulation')
+    for i,(x,y) in enumerate([(-112,-73),(112,-73),(-112,73),(112,73)]):
+        _replace(m,'Foot'+str(i),m.rr(18,11.2,1.2,(x,y,0),1.0))
+        collar=m.rr(22,15.2,.9,(x,y,.7),1.3).cut(m.rr(18.4,11.6,1.1,(x,y,.6),1.1))
+        _add_shape(m,'LowerHousing',collar,'Raised rectangular foot surround')
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Internal']))
+    m.profile['stages']=12
+    m.checkpoint(12,'shield_layers_supports_and_rectangular_feet','补齐上下主板屏蔽、电源隔板、前接口折弯罩与独立绝缘支撑，建立六处主罩固定、五处前罩固定和两处电源固定；为线束、排线和支柱开孔，并按参考改为矩形支脚。')
+
+
+STAGES[12]=stage12
+
+
+def stage13(m):
+    # The five front-cover posts also need relief in the folded side walls.
+    front_mounts=[(-63.5,-86.5),(-63.5,-77),(63.5,-86.5),(63.5,-77),(0,-80)]
+    m.cut('FrontIOShield',[Part.makeCylinder(2.05,25,V(x,y,16.8)) for x,y in front_mounts],'Side-wall clearance around front-cover posts')
+    # Six asymmetric case positions follow the bottom-view reference. Their
+    # study coordinates, diameters and screw lengths are intentionally approximate.
+    case_mounts=[(-126,87),(128,68),(128,27),(-126,-85),(0,-88),(126,-85)]
+    upper_clear=[];lower_clear=[]
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    _add_shape(m,'UpperHousing',Part.makeCompound([Part.makeCylinder(2.4,49.15,V(x,y,5.8)) for x,y in case_mounts]),'Upper enclosure screw bosses')
+    m.cut('UpperHousing',[Part.makeCylinder(.92,14.4,V(x,y,5.6)) for x,y in case_mounts],'Upper enclosure screw-pilot bores')
+    _add_shape(m,'LowerHousing',Part.makeCompound([Part.makeCylinder(2.8,4.2,V(x,y,1.4)) for x,y in case_mounts]),'Recessed case-screw seats')
+    case_bores=[shape for x,y in case_mounts for shape in [Part.makeCylinder(.98,5.2,V(x,y,1.2)),Part.makeCylinder(2.2,2,V(x,y,1.2))]]
+    m.cut('LowerHousing',case_bores,'Case-screw shaft bores and recessed head seats')
+    for i,(x,y) in enumerate(case_mounts):
+        m.screw('CaseScrew'+str(i),(x,y,2.6),'Internal',-6,length=12,radius=1.75)
+        screw=m.parts['CaseScrew'+str(i)];screw.MaterialDescription='black';g.appearance(screw,m.colors['black'])
+        m.label('CaseScrewArrow'+str(i),'↑',3.0,(x+1.0,y-6,1.35),'Body',-6,'psdark',rotation=reverse)
+        upper_clear.append(Part.makeCylinder(2.7,24,V(x,y,3.8)))
+        lower_clear.append(Part.makeCylinder(3.1,1.2,V(x,y,4.0)))
+    for key in ['Mainboard','MainShield','FrontPortPCB','FrontIOShield','PowerBoard','PowerInsulator']:m.cut(key,upper_clear,'Case-boss clearance through the installed layer')
+    m.cut('LowerShield',lower_clear,'Case-screw seat clearance in the lower shield')
+    vents=[m.rr(20.5,1.7,6,(x,-21+6*j,1),.65) for x in [70,104] for j in range(11)]
+    vents += [m.rr(14.5,1.7,6,(x,-50+6*j,1),.65) for x in [-18,-43] for j in range(6)]
+    for key in ['LowerHousing','LowerShield']:m.cut(key,vents,'Two large and two small underside ventilation banks')
+    m.box('BottomLabel','Original-family underside label study',80,34,.06,(0,55,1.36),'Body',-6,'black',1.0,orient=reverse)
+    m.label('BottomSony','SONY',4.2,(30,63,1.275),'Body',-6,'white',rotation=reverse)
+    m.label('BottomModel','SCPH-1000',3.0,(30,54,1.275),'Body',-6,'white',rotation=reverse)
+    m.label('BottomStudy','OPEN CONSOLE CAD',1.65,(32,43,1.275),'Body',-6,'white',rotation=reverse)
+    # The opened original lid has one toothed hinge/rotary-resistance mechanism;
+    # the other side is a plain retained pivot, without a second return spring.
+    spring=m.parts.pop('LidTorsionSpring0');spring.PhysicalPart=False;spring.Visibility=False
+    sector=_gear(m,0,0,0,5.4,6.0,1.8,24)
+    sector.Placement=App.Placement(V(49.9,78,51.8),App.Rotation(V(0,0,1),V(1,0,0)))
+    sector=sector.common(Part.makeBox(4,16,9,V(49,70,44.5)))
+    sector=sector.fuse(Part.makeCylinder(1.4,2.8,V(48.9,78,51.8),V(1,0,0)))
+    _add_shape(m,'DiscLid',sector,'Integral toothed lid hinge sector')
+    m.cut('DiscLid',Part.makeCylinder(1.03,5,V(48,78,51.8),V(1,0,0)),'Hinge-sector pivot bore')
+    m.cut('HingeBracket1',Part.makeCylinder(6.35,2.6,V(49.5,78,51.8),V(1,0,0)),'Hinge-sector running clearance')
+    _add_shape(m,'HingeBracket1',m.rr(6,9,1.8,(55,78,40),.4),'Rotary resistance-unit mounting shelf')
+    m.cut('HingeBracket1',[Part.makeCylinder(.9,4,V(51.8,78,43.7),V(1,0,0)),Part.makeCylinder(3,3.3,V(54.2,78,43.7),V(1,0,0))],'Resistance-unit shaft and housing seat')
+    pinion=_gear(m,0,0,0,1.55,2.0,1.7,12)
+    pinion.Placement=App.Placement(V(50,78,43.7),App.Rotation(V(0,0,1),V(1,0,0)))
+    pinion=pinion.fuse(Part.makeCylinder(.65,3.4,V(51.6,78,43.7),V(1,0,0)))
+    m.feature('LidResistancePinion','Lid resistance-unit pinion and spindle',pinion,'Optical',6,'black',True)
+    m.ring('LidResistanceUnit','Rotary lid-resistance housing study',2.8,.9,2.7,(54.4,78,43.7),'Optical',5,'black',axis=(1,0,0),internal=True)
+    m.profile['stages']=13
+    m.checkpoint(13,'case_fixings_underside_and_toothed_lid_hinge','根据初代底面补齐六处非对称机壳固定、沉孔、箭头、通风槽和学习铭牌；增加单侧盖板齿扇及旋转阻力单元，并修正前接口罩与固定支柱的避让。')
+
+
+STAGES[13]=stage13
+
+
+def stage14(m):
+    m.cut('MainShield',m.rr(134,8,1.4,(0,-70.5,22),.7),'Extended front-terminal and solder-leg clearance')
+    m.cut('DiscWell',Part.makeCylinder(2.1,1,V(0,-80,42.5)),'Centre front-cover screw-head pocket')
+    case_mounts=[(-126,87),(128,68),(128,27),(-126,-85),(0,-88),(126,-85)]
+    m.cut('FrontIOShield',[Part.makeCylinder(2.7,46,V(x,y,3.8)) for x,y in case_mounts],'Full-height case-boss clearance through the front shield')
+    m.profile['stages']=14
+    m.checkpoint(14,'front_terminal_and_case_boss_fit','根据装配求交扩大前接口焊接脚的屏蔽开口，增加中央前罩螺钉沉槽，并将机壳固定柱的前罩避让延伸到完整高度。')
+
+
+STAGES[14]=stage14
+
+
+def stage15(m):
+    m.cut('HingeBracket1',Part.makeCylinder(2.25,2.2,V(49.7,78,43.7),V(1,0,0)),'Rotary pinion running pocket')
+    m.profile['stages']=15
+    m.checkpoint(15,'rotary_pinion_running_clearance','为单侧开盖阻力齿轮增加完整转动口袋，清除小齿轮与固定铰链座底部的接触体积。')
+
+
+STAGES[15]=stage15
