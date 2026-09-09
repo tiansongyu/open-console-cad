@@ -1,0 +1,11 @@
+"""Rebuild the original DMG-01 Game Boy study without overwriting its delivered models."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,gameboy,deliver
+for module in [geometry,core,gameboy,deliver]:importlib.reload(module)
+model=core.Study(repo,'gameboy');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(gameboy.STAGES):gameboy.STAGES[stage](model)
+deliver.finalize(model)

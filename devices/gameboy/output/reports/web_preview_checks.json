@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "device": "gameboy",
+  "local_url": "http://localhost:5174/?device=gameboy&view=assembled#viewer",
+  "view_checks": [
+    {
+      "view": "assembled",
+      "expected_components": 367,
+      "observed_canvas_components": 367,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "expected_components": 367,
+      "observed_canvas_components": 367,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "expected_components": 353,
+      "observed_canvas_components": 353,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "expected_components": 367,
+      "observed_canvas_components": 367,
+      "passed": true
+    },
+    {
+      "view": "display",
+      "expected_components": 18,
+      "observed_canvas_components": 18,
+      "passed": true
+    },
+    {
+      "view": "controls",
+      "expected_components": 87,
+      "observed_canvas_components": 87,
+      "passed": true
+    },
+    {
+      "view": "electronics",
+      "expected_components": 86,
+      "observed_canvas_components": 86,
+      "passed": true
+    },
+    {
+      "view": "battery",
+      "expected_components": 32,
+      "observed_canvas_components": 32,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "expected_components": 43,
+      "observed_canvas_components": 43,
+      "passed": true
+    }
+  ],
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "mobile_overflow": false,
+  "mobile_viewer_top_px": 19.90625,
+  "desktop_viewer_top_px": 20.03125,
+  "hinge_control_hidden": true,
+  "exploded_slider_percent": 100,
+  "display_slider_percent": 40,
+  "error_panel_hidden": true,
+  "visually_reviewed": [
+    "assembled desktop/mobile",
+    "internal desktop/mobile",
+    "exploded",
+    "electronics",
+    "battery",
+    "accessories"
+  ],
+  "release_live_verification": "Recorded separately after Pages deployment"
+}

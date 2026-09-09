@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **7 款设备、3,328 个组件与 84 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **8 款设备、3,738 个组件与 96 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -62,16 +62,22 @@
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="2">
+    <td align="center" width="50%">
       <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer"><img src="site/public/images/steamdeck/hero.webp" width="206" height="160" alt="Steam Deck 2022 · LCD 的 FreeCAD 模型预览"></a><br>
       <strong>Steam Deck</strong><br>
       <sub>2022 · LCD</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=steamdeck&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/steamdeck/README.md">设备说明</a> · <a href="devices/steamdeck/output/drawings/SteamDeck_Drawings.pdf">A3 图纸</a>
     </td>
+    <td align="center" width="50%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=gameboy&amp;view=assembled#viewer"><img src="site/public/images/gameboy/hero.webp" width="206" height="160" alt="Nintendo Game Boy DMG-01 的 FreeCAD 模型预览"></a><br>
+      <strong>Nintendo Game Boy</strong><br>
+      <sub>DMG-01 · 初代灰色</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=gameboy&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/gameboy/README.md">设备说明</a> · <a href="devices/gameboy/output/drawings/GameBoy_Drawings.pdf">A3 图纸</a>
+    </td>
   </tr>
 </table>
 
-网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，以及 Steam Deck 的触控板反馈机构与散热系统。
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，以及 Game Boy 的四节 AA 电池和空白卡带。
 
 ## 快速开始
 
@@ -166,7 +172,7 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-七个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv` 和 `steamdeck`。共享工具位于 `tools/`，重建时请保留仓库结构。
+八个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck` 和 `gameboy`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
 ## 验证记录
 
@@ -174,9 +180,9 @@ open-console-cad/
 
 | 验证范围 | 记录 |
 | --- | --- |
-| 七款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/seven_device_delivery_audit.json) |
-| 线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
-| 模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
+| 八款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
+| 首批七款：线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
+| 首批七款：模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献

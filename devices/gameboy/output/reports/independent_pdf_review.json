@@ -1,0 +1,90 @@
+{
+  "review_type": "Kami isolated fresh PDF review",
+  "artifact": "devices/gameboy/output/drawings/GameBoy_Drawings.pdf",
+  "sha256": "ded9f62fc68ad63b326d5c3b4257e30885f15b8722f74ee336a3e3f53094436d",
+  "pages_actually_viewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "rendered_evidence": "devices/gameboy/output/drawings/GameBoy_Drawings-visual/page-01.png through page-12.png; each image opened and visually inspected",
+  "page_sizes_points": [
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ],
+    [
+      1190.55,
+      841.89
+    ]
+  ],
+  "contract_checks": {
+    "12_A3_landscape_pages": true,
+    "readable_dimensions_and_captions": "PASS: dimensions on pages 1-4, 7-8, 10 and all view captions are legible; no material clipping or overlap observed.",
+    "dimensions_checked_against_model": "PASS on saved evidence: drawing_checks.json records 26 passing model measurements and 14 model-derived drawing dimensions; this review did not reopen CAD.",
+    "native_TechDraw_pages_and_dimensions": "PASS on saved evidence: native_drawings_audit.json and native_drawings_reload.json record 12 pages and 14 passing native dimension references.",
+    "Kami_content_coverage": "PASS on saved evidence: .local/gameboy_kami_content.txt reports all 29 atomic values present.",
+    "Kami_font_and_visual": "PASS: .local/gameboy_kami_visual.txt records TsangerJinKai02 for 3520 CJK body ideographs; independent perceptual review completed on all 12 pages.",
+    "actual_sections": "PASS in PDF evidence: page 4 shows the Y=-26 section; page 5 shows the Y=35.8 and Y=-40 sections, including four AA cell cross sections. BRep provenance stated; generation was not rerun in this review.",
+    "materials_index_source_notes": "PASS: page 11 provides group counts, material display roles and identifier ranges; page 12 distinguishes published specifications, approximations and source references."
+  },
+  "preserve_checks": {
+    "published_overall_dimensions": "PASS: 90 and 148 on page 1, 32 on page 2, with 90 × 148 × 32 mm restated on pages 1 and 12.",
+    "component_identifiers": "PASS at PDF scope: GAMEBOY identifiers are readable on pages 3, 8 and 11; page 11 explicitly marks ranges as non-continuous and points to COMPONENTS.csv.",
+    "local_dimensions_marked_approximate": "PASS: local dimension callouts use ≈, and every page retains a local-approximation footer; page 12 explains the approximation boundary."
+  },
+  "findings": [],
+  "P0_count": 0,
+  "P1_count": 0,
+  "verdict": "PASS — no P0/P1 findings in the reviewed PDF",
+  "scope_limit": "Single-artifact read-only PDF review plus saved mechanical evidence. No CAD, browser, PDF or script modifications; only this report was written."
+}

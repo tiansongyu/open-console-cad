@@ -6,15 +6,20 @@ identity of all delivered files. Device-specific rebuild, interference, STEP and
 PDF review evidence remains in each device's reports folder.
 """
 from pathlib import Path
-import csv,hashlib,json,os,re,subprocess,sys,time,zipfile
+import argparse,csv,hashlib,json,os,re,subprocess,sys,time,zipfile
 import xml.etree.ElementTree as ET
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 import FreeCAD as App
 import Part,Sketcher
 ROOT=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--expected-devices',type=int,help='Require the complete intended collection size')
+parser.add_argument('--output',type=Path,default=ROOT/'docs/collection_delivery_audit.json')
+args=parser.parse_args()
 CAT=json.loads((ROOT/'site/src/catalog.json').read_text())
-assert {c['id'] for c in CAT}=={'switch','switch2','3ds','nds','psp','psv','steamdeck'}
-result={'passed':False,'scope':'Seven independent device projects, current saved native geometry and delivery evidence','started_unix':time.time(),'manifest_bbox_tolerance_mm':1e-5,'devices':[]}
+assert CAT and len({c['id'] for c in CAT})==len(CAT), 'Empty or duplicate device catalog'
+if args.expected_devices is not None:assert len(CAT)==args.expected_devices,(len(CAT),args.expected_devices)
+result={'passed':False,'scope':'All catalog device projects, current saved native geometry and delivery evidence','expected_devices':args.expected_devices,'started_unix':time.time(),'manifest_bbox_tolerance_mm':1e-5,'devices':[]}
 def read(path):return json.loads(path.read_text())
 def passed(d):return d.get('passed',d.get('pass',d.get('cad_complete',d.get('complete',False)))) is True
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -63,6 +68,6 @@ for entry in CAT:
     assert web['source_sha256']==sha(ROOT/web['source']) and web['sha256']==sha(glb)
     row['files'][glb.name]=sha(glb);row['passed']=True;result['devices'].append(row)
     print(json.dumps({'device':slug,'components':row['components'],'native_geometry_valid':True,'editable_history':row['editable_history'],'pdf_pages':12}),flush=True)
-result.update(passed=True,total_devices=len(CAT),total_components=sum(d['components'] for d in result['devices']),total_solids=sum(d['solids'] for d in result['devices']),total_pdf_pages=84,elapsed_seconds=time.time()-result['started_unix'])
-path=ROOT/'docs/seven_device_delivery_audit.json';path.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+result.update(passed=True,total_devices=len(CAT),total_components=sum(d['components'] for d in result['devices']),total_solids=sum(d['solids'] for d in result['devices']),total_pdf_pages=sum(d['pdf_pages'] for d in result['devices']),elapsed_seconds=time.time()-result['started_unix'])
+args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in result.items() if k!='devices'}),flush=True)

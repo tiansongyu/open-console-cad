@@ -1207,5 +1207,212 @@
         "风机与铜热管"
       ]
     ]
+  },
+  {
+    "id": "gameboy",
+    "title": "Nintendo Game Boy",
+    "prefix": "GameBoy",
+    "model": "DMG-01 (1989)",
+    "count": 410,
+    "iterations": 15,
+    "pages": 12,
+    "bytes": 19581512,
+    "family": "slate",
+    "views": {
+      "assembled": {
+        "label": "整机",
+        "description": "初代灰色 DMG-01，单色屏幕、十字键与酒红色 A/B 键独立建模。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "ControlsInternal",
+          "Audio",
+          "Mainboard",
+          "Ports",
+          "Internal",
+          "CardReader",
+          "Battery",
+          "Power",
+          "Flex"
+        ],
+        "normal": [
+          0.35,
+          -0.2,
+          2.5
+        ]
+      },
+      "rear": {
+        "label": "背部外观",
+        "description": "查看后部卡带凹槽、可拆电池盖、握持纹和三角槽机壳螺钉。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "ControlsInternal",
+          "Audio",
+          "Mainboard",
+          "Ports",
+          "Internal",
+          "CardReader",
+          "Battery",
+          "Power",
+          "Flex"
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开后壳与电池盖，观察主板、独立小板、四节 AA 电池和焊接互连的布局示意。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "ControlsInternal",
+          "Audio",
+          "Mainboard",
+          "Ports",
+          "Internal",
+          "CardReader",
+          "Battery",
+          "Power",
+          "Flex"
+        ],
+        "exclude": [
+          "BackCover",
+          "RearShell",
+          "BatteryDoor",
+          "RearModel",
+          "RearNintendo",
+          "RearRating",
+          "RearStudy",
+          "CaseScrew0",
+          "CaseScrew1",
+          "CaseScrew2",
+          "CaseScrew3",
+          "CaseScrew4",
+          "CaseScrew5",
+          "CartridgeWellBacker"
+        ],
+        "normal": [
+          0.2,
+          -0.3,
+          -2
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "外壳、显示、前后电路板、按键与电池按原生偏移分层展开。",
+        "groups": [
+          "Body",
+          "Display",
+          "Controls",
+          "ControlsInternal",
+          "Audio",
+          "Mainboard",
+          "Ports",
+          "Internal",
+          "CardReader",
+          "Battery",
+          "Power",
+          "Flex"
+        ],
+        "explode": 1,
+        "normal": [
+          1.7,
+          -0.2,
+          -1
+        ]
+      },
+      "display": {
+        "label": "单色显示",
+        "description": "独立 LCD、偏光层、背板与固定框，保留原机非背光显示形式。",
+        "groups": [
+          "Display"
+        ],
+        "explode": 0.4,
+        "normal": [
+          1.5,
+          -0.2,
+          1
+        ]
+      },
+      "controls": {
+        "label": "按键机构",
+        "description": "查看十字键、A/B 胶垫、START/SELECT 传动件和前电路板。",
+        "groups": [
+          "Controls",
+          "ControlsInternal"
+        ],
+        "normal": [
+          0.3,
+          -0.4,
+          2
+        ]
+      },
+      "electronics": {
+        "label": "主板与小板",
+        "description": "主逻辑板、CPU/RAM 封装、电源小板和耳机小板采用参考修订版的近似布局。",
+        "groups": [
+          "Mainboard",
+          "Power"
+        ],
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "battery": {
+        "label": "四节 AA 电池",
+        "description": "四节交错安装的 AA 电池、弹簧触点、隔条与电池仓。",
+        "groups": [
+          "Battery"
+        ],
+        "normal": [
+          0.2,
+          -0.2,
+          -2
+        ]
+      },
+      "accessories": {
+        "label": "空白卡带",
+        "description": "Game Pak 分壳、PCB、32 接点和 ROM 封装示意；不包含游戏数据。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          0.25,
+          -0.2,
+          2
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "正面装配"
+      ],
+      [
+        "rear",
+        "卡带槽与电池盖"
+      ],
+      [
+        "internal",
+        "主板与四节 AA 电池"
+      ],
+      [
+        "exploded",
+        "整机分层爆炸"
+      ],
+      [
+        "cartridge",
+        "空白 Game Pak 卡带"
+      ]
+    ]
   }
 ]
