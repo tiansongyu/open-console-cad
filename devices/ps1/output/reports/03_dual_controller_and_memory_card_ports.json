@@ -1,0 +1,2040 @@
+{
+  "iteration": 3,
+  "slug": "dual_controller_and_memory_card_ports",
+  "summary": "建立共享前接口 PCB、两个独立记忆卡防尘门、8 接点卡槽，以及按三组三孔分区的 9 接点手柄插座；插针带真实 PCB 腿并预留穿板和外壳孔。",
+  "physical_components": 75,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Original grey lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 108897.67875376306,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        1.4,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut009",
+      "label": "Original grey upper enclosure010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 424,
+      "volume": 105251.99613650671,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        14.18,
+        56.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscLidCut",
+      "label": "Circular hinged disc lid001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 32441.586034041666,
+      "bounds": [
+        -85.0,
+        85.0,
+        -81.0,
+        89.0,
+        57.0,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscLid",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "POWER button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710622,
+      "bounds": [
+        -126.2,
+        -93.7999999,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.12297881808325956,
+      "bounds": [
+        -113.23441704630872,
+        -103.55142607449665,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenButton",
+      "label": "OPEN button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710617,
+      "bounds": [
+        93.8,
+        126.2000001,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenLegend",
+      "label": "OPEN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 62,
+      "volume": 0.0926771395050489,
+      "bounds": [
+        107.35195040335572,
+        114.4271182885906,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psblue",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "RESET button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 393.68420498277334,
+      "bounds": [
+        -117.4,
+        -102.5999999,
+        -31.4,
+        -16.6,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetLegend",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.04541573824982593,
+      "bounds": [
+        -112.12294473087248,
+        -106.51354865771812,
+        -24.826308824832218,
+        -23.46201332281879,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Narrow power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.090342917352883,
+      "bounds": [
+        -111.0,
+        -109.0,
+        -93.05000000000001,
+        -83.94999999999999,
+        56.3,
+        56.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SonyMark",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.3137386357033507,
+      "bounds": [
+        -8.660234999328859,
+        5.347818791946308,
+        55.9248321147651,
+        59.82281889194631,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SonyMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PlayStationMark",
+      "label": "PlayStation",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 218,
+      "volume": 0.40890590744647753,
+      "bounds": [
+        -12.582655301342282,
+        10.613271912080533,
+        -32.88590614026846,
+        -28.766442953020135,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PlayStationMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPortPCBCut",
+      "label": "Shared controller and memory-card PCB001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 28,
+      "volume": 3037.8192939358287,
+      "bounds": [
+        -65.5,
+        65.5,
+        -83.0,
+        -65.0,
+        14.7,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPortPCB",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "pcb",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Frame",
+      "label": "Controller 1 and memory-card front frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 1924.3606822173829,
+      "bounds": [
+        -61.2,
+        -11.8,
+        -94.1,
+        -91.09999999999998,
+        14.8,
+        43.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Frame",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CaseCut",
+      "label": "Insulated dual connector housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 91,
+      "volume": 3612.227153770814,
+      "bounds": [
+        -60.0,
+        -13.0,
+        -90.9,
+        -76.0,
+        16.1,
+        41.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psdark",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Shutter",
+      "label": "Memory-card hinged dust shutter",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 260.34093800988126,
+      "bounds": [
+        -58.5,
+        -14.5,
+        -91.6,
+        -90.8,
+        32.8,
+        40.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Shutter",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardMark",
+      "label": "MEMORY CARD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.2576150714005736,
+      "bounds": [
+        -47.72177013422819,
+        -26.760402584563753,
+        -91.6580001,
+        -91.6399999,
+        35.658657618120806,
+        37.802550435570474
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardMark",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterPin",
+      "label": "Memory-card shutter pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.75175778466835,
+      "bounds": [
+        -58.3,
+        -14.699999999999996,
+        -90.76,
+        -90.04,
+        40.34,
+        41.06
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardTongue",
+      "label": "Eight-contact memory-card tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9158760800515,
+      "bounds": [
+        -56.5,
+        -16.5,
+        -89.0,
+        -79.0,
+        33.8,
+        34.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardTongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact0",
+      "label": "Memory-card contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -52.875,
+        -51.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact1",
+      "label": "Memory-card contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -48.375,
+        -47.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact2",
+      "label": "Memory-card contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -43.875,
+        -42.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact3",
+      "label": "Memory-card contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -39.375,
+        -38.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact4",
+      "label": "Memory-card contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        -34.875,
+        -33.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact5",
+      "label": "Memory-card contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        -30.375,
+        -29.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact6",
+      "label": "Memory-card contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -25.875,
+        -24.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact7",
+      "label": "Memory-card contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -21.375,
+        -20.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet0",
+      "label": "Three-way controller socket insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.5668668246927,
+      "bounds": [
+        -55.7,
+        -43.3,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact0",
+      "label": "Controller contact 1 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609675,
+      "bounds": [
+        -53.74,
+        -52.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact1",
+      "label": "Controller contact 2 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609549,
+      "bounds": [
+        -50.14,
+        -48.78,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact2",
+      "label": "Controller contact 3 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610192,
+      "bounds": [
+        -46.54,
+        -45.18,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet1",
+      "label": "Three-way controller socket insulator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.5668668246927,
+      "bounds": [
+        -42.7,
+        -30.299999999999997,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact3",
+      "label": "Controller contact 4 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609729,
+      "bounds": [
+        -40.74,
+        -39.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact4",
+      "label": "Controller contact 5 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610352,
+      "bounds": [
+        -37.14,
+        -35.78,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact5",
+      "label": "Controller contact 6 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609995,
+      "bounds": [
+        -33.54,
+        -32.18,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet2",
+      "label": "Three-way controller socket insulator002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469265,
+      "bounds": [
+        -29.700000000000003,
+        -17.299999999999997,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact6",
+      "label": "Controller contact 7 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.19392335961033,
+      "bounds": [
+        -27.740000000000002,
+        -26.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact7",
+      "label": "Controller contact 8 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.19392335961033,
+      "bounds": [
+        -24.14,
+        -22.779999999999998,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact8",
+      "label": "Controller contact 9 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610038,
+      "bounds": [
+        -20.54,
+        -19.179999999999996,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber1",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.054413008423044716,
+      "bounds": [
+        -37.23372483221476,
+        -34.99630872483221,
+        -94.043,
+        -94.025,
+        46.0,
+        49.758389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterGrip_1",
+      "label": "Shutter finger marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901949,
+      "bounds": [
+        -56.66,
+        -56.34,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterGrip-1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterGrip1",
+      "label": "Shutter finger marking001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901982,
+      "bounds": [
+        -16.66,
+        -16.34,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterGrip1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Frame",
+      "label": "Controller 2 and memory-card front frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 1924.360682217383,
+      "bounds": [
+        11.8,
+        61.2,
+        -94.1,
+        -91.09999999999998,
+        14.8,
+        43.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Frame",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CaseCut",
+      "label": "Insulated dual connector housing003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 91,
+      "volume": 3612.227153770813,
+      "bounds": [
+        13.0,
+        60.0,
+        -90.9,
+        -76.0,
+        16.1,
+        41.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psdark",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Shutter",
+      "label": "Memory-card hinged dust shutter001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 260.34093800988126,
+      "bounds": [
+        14.5,
+        58.5,
+        -91.6,
+        -90.8,
+        32.8,
+        40.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Shutter",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardMark",
+      "label": "MEMORY CARD001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.25761507140057344,
+      "bounds": [
+        25.278229865771813,
+        46.23959741543624,
+        -91.6580001,
+        -91.6399999,
+        35.658657618120806,
+        37.802550435570474
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardMark",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterPin",
+      "label": "Memory-card shutter pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.75175778466835,
+      "bounds": [
+        14.7,
+        58.3,
+        -90.76,
+        -90.04,
+        40.34,
+        41.06
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardTongue",
+      "label": "Eight-contact memory-card tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9158760800514,
+      "bounds": [
+        16.5,
+        56.5,
+        -89.0,
+        -79.0,
+        33.8,
+        34.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardTongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact0",
+      "label": "Memory-card contact 001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        20.125,
+        21.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact1",
+      "label": "Memory-card contact 002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        24.625,
+        25.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact2",
+      "label": "Memory-card contact 003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        29.125,
+        30.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact3",
+      "label": "Memory-card contact 004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        33.625,
+        34.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact4",
+      "label": "Memory-card contact 005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        38.125,
+        39.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact5",
+      "label": "Memory-card contact 006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        42.625,
+        43.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact6",
+      "label": "Memory-card contact 007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        47.125,
+        48.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact7",
+      "label": "Memory-card contact 008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        51.625,
+        52.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet0",
+      "label": "Three-way controller socket insulator003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469265,
+      "bounds": [
+        17.299999999999997,
+        29.700000000000003,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact0",
+      "label": "Controller contact 1 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610297,
+      "bounds": [
+        19.259999999999998,
+        20.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact1",
+      "label": "Controller contact 2 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610325,
+      "bounds": [
+        22.86,
+        24.220000000000002,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact2",
+      "label": "Controller contact 3 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610116,
+      "bounds": [
+        26.46,
+        27.820000000000004,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet1",
+      "label": "Three-way controller socket insulator004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469268,
+      "bounds": [
+        30.299999999999997,
+        42.7,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact3",
+      "label": "Controller contact 4 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610178,
+      "bounds": [
+        32.26,
+        33.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact4",
+      "label": "Controller contact 5 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609919,
+      "bounds": [
+        35.86,
+        37.22,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact5",
+      "label": "Controller contact 6 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609549,
+      "bounds": [
+        39.46,
+        40.82,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet2",
+      "label": "Three-way controller socket insulator005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469268,
+      "bounds": [
+        43.3,
+        55.7,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact6",
+      "label": "Controller contact 7 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609519,
+      "bounds": [
+        45.26,
+        46.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact7",
+      "label": "Controller contact 8 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610379,
+      "bounds": [
+        48.86,
+        50.22,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact8",
+      "label": "Controller contact 9 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610059,
+      "bounds": [
+        52.46,
+        53.82,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber2",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.06448782208571764,
+      "bounds": [
+        35.57751667852349,
+        37.96342291879195,
+        -94.0430001,
+        -94.02499990000001,
+        45.9999999,
+        49.82281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterGrip_1",
+      "label": "Shutter finger marking002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901982,
+      "bounds": [
+        16.34,
+        16.66,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterGrip-1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterGrip1",
+      "label": "Shutter finger marking003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901949,
+      "bounds": [
+        56.34,
+        56.66,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterGrip1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps1/output/iterations/03_dual_controller_and_memory_card_ports.FCStd",
+  "views": [
+    "devices/ps1/output/previews/03_dual_controller_and_memory_card_ports_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

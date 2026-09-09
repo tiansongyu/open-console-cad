@@ -1,0 +1,5848 @@
+{
+  "iteration": 5,
+  "slug": "disc_well_hinges_and_release_linkage",
+  "summary": "加入锥形光盘仓、盖板一体轴耳、钢轴与回位弹簧、底部锁钩和 OPEN 联动滑块，并用独立几何轮廓补充初代彩色标识；为铰链与联动预留真实空隙。",
+  "physical_components": 216,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Original grey lower housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 108897.67875376306,
+      "bounds": [
+        -135.0,
+        135.0,
+        -94.0,
+        94.0,
+        1.4,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut022",
+      "label": "Original grey upper enclosure023",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 607,
+      "volume": 97493.40141093348,
+      "bounds": [
+        -135.0,
+        135.0000001,
+        -94.0,
+        94.0000001,
+        14.1799999,
+        56.9000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        -77.5,
+        -68.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        -116.5,
+        -107.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 76.34070148223196,
+      "bounds": [
+        107.5,
+        116.5,
+        68.5,
+        77.5,
+        0.0,
+        1.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscLidCut003",
+      "label": "Circular hinged disc lid007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 44,
+      "volume": 33195.20510093321,
+      "bounds": [
+        -85.0,
+        85.0,
+        -81.0,
+        89.0,
+        50.1999999,
+        60.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscLid",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "POWER button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710622,
+      "bounds": [
+        -126.2,
+        -93.7999999,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLegend",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.12297881808325956,
+      "bounds": [
+        -113.23441704630872,
+        -103.55142607449665,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenButton",
+      "label": "OPEN button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1891.9070995710617,
+      "bounds": [
+        93.8,
+        126.2000001,
+        -74.2000001,
+        -41.799999899999996,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenLegend",
+      "label": "OPEN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 62,
+      "volume": 0.0926771395050489,
+      "bounds": [
+        107.35195040335572,
+        114.4271182885906,
+        -58.83946318724832,
+        -56.793020034228185,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psblue",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "RESET button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 393.68420498277334,
+      "bounds": [
+        -117.4,
+        -102.5999999,
+        -31.4,
+        -16.6,
+        54.85,
+        57.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetLegend",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.04541573824982593,
+      "bounds": [
+        -112.12294473087248,
+        -106.51354865771812,
+        -24.826308824832218,
+        -23.46201332281879,
+        57.1699999,
+        57.188000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetLegend",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Narrow power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.090342917352883,
+      "bounds": [
+        -111.0,
+        -109.0,
+        -93.05000000000001,
+        -83.94999999999999,
+        56.3,
+        56.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SonyMark",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.3137386357033507,
+      "bounds": [
+        -8.660234999328859,
+        5.347818791946308,
+        55.9248321147651,
+        59.82281889194631,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SonyMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PlayStationMark",
+      "label": "PlayStation",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 218,
+      "volume": 0.40890590744647753,
+      "bounds": [
+        -12.582655301342282,
+        10.613271912080533,
+        -32.88590614026846,
+        -28.766442953020135,
+        60.0249999,
+        60.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PlayStationMark",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPortPCBCut",
+      "label": "Shared controller and memory-card PCB001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 28,
+      "volume": 3037.8192939358287,
+      "bounds": [
+        -65.5,
+        65.5,
+        -83.0,
+        -65.0,
+        14.7,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPortPCB",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "pcb",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Frame",
+      "label": "Controller 1 and memory-card front frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 1924.3606822173829,
+      "bounds": [
+        -61.2,
+        -11.8,
+        -94.1,
+        -91.09999999999998,
+        14.8,
+        43.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Frame",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CaseCut001",
+      "label": "Insulated dual connector housing004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 95,
+      "volume": 3596.0548605608797,
+      "bounds": [
+        -60.0,
+        -13.0,
+        -90.9000001,
+        -76.0,
+        16.1,
+        41.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psdark",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Shutter",
+      "label": "Memory-card hinged dust shutter",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 260.34093800988126,
+      "bounds": [
+        -58.5,
+        -14.5,
+        -91.6,
+        -90.8,
+        32.8,
+        40.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Shutter",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardMark",
+      "label": "MEMORY CARD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.2576150714005736,
+      "bounds": [
+        -47.72177013422819,
+        -26.760402584563753,
+        -91.6580001,
+        -91.6399999,
+        35.658657618120806,
+        37.802550435570474
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardMark",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterPin",
+      "label": "Memory-card shutter pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.75175778466835,
+      "bounds": [
+        -58.3,
+        -14.699999999999996,
+        -90.76,
+        -90.04,
+        40.34,
+        41.06
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardTongue",
+      "label": "Eight-contact memory-card tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9158760800515,
+      "bounds": [
+        -56.5,
+        -16.5,
+        -89.0,
+        -79.0,
+        33.8,
+        34.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardTongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact0",
+      "label": "Memory-card contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -52.875,
+        -51.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact1",
+      "label": "Memory-card contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -48.375,
+        -47.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact2",
+      "label": "Memory-card contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -43.875,
+        -42.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact3",
+      "label": "Memory-card contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -39.375,
+        -38.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact4",
+      "label": "Memory-card contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        -34.875,
+        -33.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact5",
+      "label": "Memory-card contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        -30.375,
+        -29.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact6",
+      "label": "Memory-card contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -25.875,
+        -24.625,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact7",
+      "label": "Memory-card contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        -21.375,
+        -20.125,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet0",
+      "label": "Three-way controller socket insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.5668668246927,
+      "bounds": [
+        -55.7,
+        -43.3,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact0",
+      "label": "Controller contact 1 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609675,
+      "bounds": [
+        -53.74,
+        -52.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact1",
+      "label": "Controller contact 2 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609549,
+      "bounds": [
+        -50.14,
+        -48.78,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact2",
+      "label": "Controller contact 3 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610192,
+      "bounds": [
+        -46.54,
+        -45.18,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet1",
+      "label": "Three-way controller socket insulator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.5668668246927,
+      "bounds": [
+        -42.7,
+        -30.299999999999997,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact3",
+      "label": "Controller contact 4 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609729,
+      "bounds": [
+        -40.74,
+        -39.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact4",
+      "label": "Controller contact 5 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610352,
+      "bounds": [
+        -37.14,
+        -35.78,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact5",
+      "label": "Controller contact 6 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609995,
+      "bounds": [
+        -33.54,
+        -32.18,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet2",
+      "label": "Three-way controller socket insulator002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469265,
+      "bounds": [
+        -29.700000000000003,
+        -17.299999999999997,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact6",
+      "label": "Controller contact 7 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.19392335961033,
+      "bounds": [
+        -27.740000000000002,
+        -26.38,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact7",
+      "label": "Controller contact 8 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.19392335961033,
+      "bounds": [
+        -24.14,
+        -22.779999999999998,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact8",
+      "label": "Controller contact 9 with PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610038,
+      "bounds": [
+        -20.54,
+        -19.179999999999996,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber1",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.054413008423044716,
+      "bounds": [
+        -37.23372483221476,
+        -34.99630872483221,
+        -94.043,
+        -94.025,
+        46.0,
+        49.758389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterGrip_1",
+      "label": "Shutter finger marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901949,
+      "bounds": [
+        -56.66,
+        -56.34,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterGrip-1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterGrip1",
+      "label": "Shutter finger marking001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901982,
+      "bounds": [
+        -16.66,
+        -16.34,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterGrip1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Frame",
+      "label": "Controller 2 and memory-card front frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 1924.360682217383,
+      "bounds": [
+        11.8,
+        61.2,
+        -94.1,
+        -91.09999999999998,
+        14.8,
+        43.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Frame",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CaseCut001",
+      "label": "Insulated dual connector housing005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 95,
+      "volume": 3596.0548605608838,
+      "bounds": [
+        13.0,
+        60.0,
+        -90.9000001,
+        -76.0,
+        16.1,
+        41.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psdark",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Shutter",
+      "label": "Memory-card hinged dust shutter001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 260.34093800988126,
+      "bounds": [
+        14.5,
+        58.5,
+        -91.6,
+        -90.8,
+        32.8,
+        40.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Shutter",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardMark",
+      "label": "MEMORY CARD001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.25761507140057344,
+      "bounds": [
+        25.278229865771813,
+        46.23959741543624,
+        -91.6580001,
+        -91.6399999,
+        35.658657618120806,
+        37.802550435570474
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardMark",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterPin",
+      "label": "Memory-card shutter pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.75175778466835,
+      "bounds": [
+        14.7,
+        58.3,
+        -90.76,
+        -90.04,
+        40.34,
+        41.06
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardTongue",
+      "label": "Eight-contact memory-card tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9158760800514,
+      "bounds": [
+        16.5,
+        56.5,
+        -89.0,
+        -79.0,
+        33.8,
+        34.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardTongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact0",
+      "label": "Memory-card contact 001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        20.125,
+        21.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact1",
+      "label": "Memory-card contact 002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        24.625,
+        25.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact2",
+      "label": "Memory-card contact 003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.941291362456248,
+      "bounds": [
+        29.125,
+        30.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact3",
+      "label": "Memory-card contact 004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        33.625,
+        34.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact4",
+      "label": "Memory-card contact 005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        38.125,
+        39.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact5",
+      "label": "Memory-card contact 006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        42.625,
+        43.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact6",
+      "label": "Memory-card contact 007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        47.125,
+        48.375,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact7",
+      "label": "Memory-card contact 008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.9412913624562482,
+      "bounds": [
+        51.625,
+        52.875,
+        -89.35,
+        -78.65,
+        34.62,
+        34.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet0",
+      "label": "Three-way controller socket insulator003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469265,
+      "bounds": [
+        17.299999999999997,
+        29.700000000000003,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact0",
+      "label": "Controller contact 1 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610297,
+      "bounds": [
+        19.259999999999998,
+        20.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact1",
+      "label": "Controller contact 2 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610325,
+      "bounds": [
+        22.86,
+        24.220000000000002,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact2",
+      "label": "Controller contact 3 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610116,
+      "bounds": [
+        26.46,
+        27.820000000000004,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet1",
+      "label": "Three-way controller socket insulator004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469268,
+      "bounds": [
+        30.299999999999997,
+        42.7,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact3",
+      "label": "Controller contact 4 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610178,
+      "bounds": [
+        32.26,
+        33.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact4",
+      "label": "Controller contact 5 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609919,
+      "bounds": [
+        35.86,
+        37.22,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact5",
+      "label": "Controller contact 6 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609549,
+      "bounds": [
+        39.46,
+        40.82,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet2",
+      "label": "Three-way controller socket insulator005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 241.56686682469268,
+      "bounds": [
+        43.3,
+        55.7,
+        -91.0,
+        -87.0,
+        19.8,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact6",
+      "label": "Controller contact 7 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359609519,
+      "bounds": [
+        45.26,
+        46.62,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact7",
+      "label": "Controller contact 8 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610379,
+      "bounds": [
+        48.86,
+        50.22,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact8",
+      "label": "Controller contact 9 with PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 8.193923359610059,
+      "bounds": [
+        52.46,
+        53.82,
+        -90.5,
+        -68.76,
+        14.6,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber2",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.06448782208571764,
+      "bounds": [
+        35.57751667852349,
+        37.96342291879195,
+        -94.0430001,
+        -94.02499990000001,
+        45.9999999,
+        49.82281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterGrip_1",
+      "label": "Shutter finger marking002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901982,
+      "bounds": [
+        16.34,
+        16.66,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterGrip-1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterGrip1",
+      "label": "Shutter finger marking003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04601561944901949,
+      "bounds": [
+        56.34,
+        56.66,
+        -91.67,
+        -91.64,
+        34.1,
+        38.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterGrip1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialShell",
+      "label": "Serial rectangular connector shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 288.89123708937757,
+      "bounds": [
+        35.3,
+        54.7,
+        82.1,
+        94.1,
+        20.599999999999998,
+        29.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialTongue",
+      "label": "Serial insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 192.15384061406357,
+      "bounds": [
+        36.9,
+        53.1,
+        83.6,
+        92.39999999999999,
+        23.724999999999994,
+        25.075
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact0",
+      "label": "Serial contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        38.15,
+        38.65,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact1",
+      "label": "Serial contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        40.035714285714285,
+        40.535714285714285,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact2",
+      "label": "Serial contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        41.92142857142857,
+        42.42142857142857,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact3",
+      "label": "Serial contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        43.80714285714286,
+        44.30714285714286,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact4",
+      "label": "Serial contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        45.69285714285714,
+        46.19285714285714,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact5",
+      "label": "Serial contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        47.57857142857143,
+        48.07857142857143,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact6",
+      "label": "Serial contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        49.464285714285715,
+        49.964285714285715,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SerialContact7",
+      "label": "Serial contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        51.35,
+        51.85,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SerialContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVShell",
+      "label": "MultiAV rectangular connector shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 288.8912370893775,
+      "bounds": [
+        -57.7,
+        -38.3,
+        82.1,
+        94.1,
+        20.599999999999998,
+        29.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVTongue",
+      "label": "MultiAV insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 192.1538406140636,
+      "bounds": [
+        -56.1,
+        -39.9,
+        83.6,
+        92.39999999999999,
+        23.724999999999994,
+        25.075
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact0",
+      "label": "MultiAV contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -54.85,
+        -54.35,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact1",
+      "label": "MultiAV contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -53.65,
+        -53.15,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact2",
+      "label": "MultiAV contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -52.45,
+        -51.95,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact3",
+      "label": "MultiAV contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -51.25,
+        -50.75,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact4",
+      "label": "MultiAV contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -50.05,
+        -49.55,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact5",
+      "label": "MultiAV contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        -48.85,
+        -48.35,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact6",
+      "label": "MultiAV contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        -47.65,
+        -47.15,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact7",
+      "label": "MultiAV contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -46.45,
+        -45.95,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact8",
+      "label": "MultiAV contact 9",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228526,
+      "bounds": [
+        -45.25,
+        -44.75,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact9",
+      "label": "MultiAV contact 10",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -44.05,
+        -43.55,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact10",
+      "label": "MultiAV contact 11",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -42.85,
+        -42.35,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiAVContact11",
+      "label": "MultiAV contact 12",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5880298660228527,
+      "bounds": [
+        -41.65,
+        -41.15,
+        84.8,
+        92.2,
+        25.119999999999997,
+        25.279999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiAVContact11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioRHousing",
+      "label": "AudioR RCA jack support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 564.1871624855912,
+      "bounds": [
+        18.799999999999997,
+        31.200000000000003,
+        81.6,
+        89.39999999999999,
+        18.699999999999996,
+        30.700000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioRHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioRBarrel",
+      "label": "AudioR RCA outer shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 139.08427580046174,
+      "bounds": [
+        20.4,
+        29.6,
+        85.4,
+        94.4,
+        20.1,
+        29.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioRBarrel",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioRInsulator",
+      "label": "AudioR RCA colour insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 266.9599773314463,
+      "bounds": [
+        21.0,
+        29.0,
+        88.3,
+        94.7,
+        20.7,
+        28.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioRInsulator",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioRContact",
+      "label": "AudioR RCA centre socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 37.491766727940586,
+      "bounds": [
+        23.5,
+        26.5,
+        84.4,
+        94.80000000000001,
+        23.2,
+        26.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioRContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioLHousing",
+      "label": "AudioL RCA jack support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 564.1871624855912,
+      "bounds": [
+        3.799999999999999,
+        16.200000000000003,
+        81.6,
+        89.39999999999999,
+        18.699999999999996,
+        30.700000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioLHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioLBarrel",
+      "label": "AudioL RCA outer shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 139.08427580046174,
+      "bounds": [
+        5.4,
+        14.6,
+        85.4,
+        94.4,
+        20.1,
+        29.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioLBarrel",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioLInsulator",
+      "label": "AudioL RCA colour insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 266.95997733144634,
+      "bounds": [
+        6.0,
+        14.0,
+        88.3,
+        94.7,
+        20.7,
+        28.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioLInsulator",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioLContact",
+      "label": "AudioL RCA centre socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 37.491766727940586,
+      "bounds": [
+        8.5,
+        11.5,
+        84.4,
+        94.80000000000001,
+        23.2,
+        26.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioLContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoHousing",
+      "label": "Video RCA jack support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 564.1871624855912,
+      "bounds": [
+        -17.200000000000003,
+        -4.799999999999999,
+        81.6,
+        89.39999999999999,
+        18.699999999999996,
+        30.700000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoBarrel",
+      "label": "Video RCA outer shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 139.08427580046174,
+      "bounds": [
+        -15.6,
+        -6.4,
+        85.4,
+        94.4,
+        20.1,
+        29.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoBarrel",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoInsulator",
+      "label": "Video RCA colour insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 266.95997733144634,
+      "bounds": [
+        -15.0,
+        -7.0,
+        88.3,
+        94.7,
+        20.7,
+        28.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoInsulator",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "yellow",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoContact",
+      "label": "Video RCA centre socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 37.491766727940586,
+      "bounds": [
+        -12.5,
+        -9.5,
+        84.4,
+        94.80000000000001,
+        23.2,
+        26.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFUDCHousing",
+      "label": "RFU 2.5 mm DC socket housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 93.08853191851915,
+      "bounds": [
+        -3.5,
+        1.5,
+        85.8,
+        94.2,
+        27.8,
+        32.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFUDCHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFUDCContact",
+      "label": "RFU DC socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 29.097116998283294,
+      "bounds": [
+        -2.48,
+        0.48,
+        85.6,
+        93.8,
+        28.82,
+        31.78
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFUDCContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoShield",
+      "label": "SCPH-1000 dedicated S-video shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 182.85011721688738,
+      "bounds": [
+        -32.8,
+        -21.2,
+        82.4,
+        94.0,
+        19.2,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoInsulator",
+      "label": "Keyed four-pin S-video insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 441.1742058499363,
+      "bounds": [
+        -32.1,
+        -21.9,
+        87.0,
+        93.0,
+        19.9,
+        30.06458290484024
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoInsulator",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoContact0",
+      "label": "S-video socket contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2.6580701282757864,
+      "bounds": [
+        -29.48,
+        -28.52,
+        86.2,
+        92.5,
+        25.919999999999998,
+        26.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoContact1",
+      "label": "S-video socket contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2.6580701282757864,
+      "bounds": [
+        -25.48,
+        -24.52,
+        86.2,
+        92.5,
+        25.919999999999998,
+        26.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoContact2",
+      "label": "S-video socket contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2.6580701282757873,
+      "bounds": [
+        -30.080000000000002,
+        -29.12,
+        86.2,
+        92.5,
+        23.419999999999998,
+        24.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SVideoContact3",
+      "label": "S-video socket contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 2.6580701282757864,
+      "bounds": [
+        -24.88,
+        -23.919999999999998,
+        86.2,
+        92.5,
+        23.419999999999998,
+        24.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SVideoContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelHousing",
+      "label": "68-contact parallel expansion housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 2304.9049347542873,
+      "bounds": [
+        70.0,
+        130.0,
+        83.0,
+        92.0,
+        16.799999999999997,
+        31.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelTongue",
+      "label": "Parallel connector centre tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1159.7483007072913,
+      "bounds": [
+        72.0,
+        128.0,
+        84.3,
+        91.7,
+        22.599999999999998,
+        25.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact0",
+      "label": "Parallel I/O contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        73.37499999999999,
+        73.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact1",
+      "label": "Parallel I/O contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        74.975,
+        75.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact2",
+      "label": "Parallel I/O contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        76.57499999999999,
+        77.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact3",
+      "label": "Parallel I/O contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        78.175,
+        78.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact4",
+      "label": "Parallel I/O contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        79.77499999999999,
+        80.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact5",
+      "label": "Parallel I/O contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        81.37499999999999,
+        81.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact6",
+      "label": "Parallel I/O contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        82.975,
+        83.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact7",
+      "label": "Parallel I/O contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        84.57499999999999,
+        85.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact8",
+      "label": "Parallel I/O contact 9",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        86.175,
+        86.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact9",
+      "label": "Parallel I/O contact 10",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        87.77499999999999,
+        88.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact10",
+      "label": "Parallel I/O contact 11",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        89.37499999999999,
+        89.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact11",
+      "label": "Parallel I/O contact 12",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        90.975,
+        91.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact12",
+      "label": "Parallel I/O contact 13",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        92.57499999999999,
+        93.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact12",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact13",
+      "label": "Parallel I/O contact 14",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        94.175,
+        94.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact13",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact14",
+      "label": "Parallel I/O contact 15",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        95.77499999999999,
+        96.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact14",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact15",
+      "label": "Parallel I/O contact 16",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        97.37499999999999,
+        97.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact15",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact16",
+      "label": "Parallel I/O contact 17",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        98.975,
+        99.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact16",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact17",
+      "label": "Parallel I/O contact 18",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        100.57499999999999,
+        101.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact17",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact18",
+      "label": "Parallel I/O contact 19",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        102.175,
+        102.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact18",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact19",
+      "label": "Parallel I/O contact 20",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        103.77499999999999,
+        104.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact19",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact20",
+      "label": "Parallel I/O contact 21",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        105.37499999999999,
+        105.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact20",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact21",
+      "label": "Parallel I/O contact 22",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        106.975,
+        107.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact21",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact22",
+      "label": "Parallel I/O contact 23",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        108.57499999999999,
+        109.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact22",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact23",
+      "label": "Parallel I/O contact 24",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        110.175,
+        110.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact23",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact24",
+      "label": "Parallel I/O contact 25",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        111.77499999999999,
+        112.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact24",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact25",
+      "label": "Parallel I/O contact 26",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        113.37499999999999,
+        113.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact25",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact26",
+      "label": "Parallel I/O contact 27",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        114.975,
+        115.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact26",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact27",
+      "label": "Parallel I/O contact 28",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        116.57499999999999,
+        117.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact27",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact28",
+      "label": "Parallel I/O contact 29",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        118.175,
+        118.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact28",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact29",
+      "label": "Parallel I/O contact 30",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        119.77499999999999,
+        120.22500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact29",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact30",
+      "label": "Parallel I/O contact 31",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        121.37499999999999,
+        121.825,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact30",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact31",
+      "label": "Parallel I/O contact 32",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        122.975,
+        123.42500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact31",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact32",
+      "label": "Parallel I/O contact 33",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        124.57499999999999,
+        125.025,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact32",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact33",
+      "label": "Parallel I/O contact 34",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        126.175,
+        126.62500000000001,
+        84.9,
+        91.60000000000001,
+        21.685,
+        21.915
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact33",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact34",
+      "label": "Parallel I/O contact 35",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        73.37499999999999,
+        73.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact34",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact35",
+      "label": "Parallel I/O contact 36",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        74.975,
+        75.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact35",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact36",
+      "label": "Parallel I/O contact 37",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        76.57499999999999,
+        77.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact36",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact37",
+      "label": "Parallel I/O contact 38",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        78.175,
+        78.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact37",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact38",
+      "label": "Parallel I/O contact 39",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        79.77499999999999,
+        80.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact38",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact39",
+      "label": "Parallel I/O contact 40",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        81.37499999999999,
+        81.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact39",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact40",
+      "label": "Parallel I/O contact 41",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        82.975,
+        83.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact40",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact41",
+      "label": "Parallel I/O contact 42",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        84.57499999999999,
+        85.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact41",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact42",
+      "label": "Parallel I/O contact 43",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        86.175,
+        86.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact42",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact43",
+      "label": "Parallel I/O contact 44",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        87.77499999999999,
+        88.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact43",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact44",
+      "label": "Parallel I/O contact 45",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        89.37499999999999,
+        89.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact44",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact45",
+      "label": "Parallel I/O contact 46",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        90.975,
+        91.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact45",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact46",
+      "label": "Parallel I/O contact 47",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        92.57499999999999,
+        93.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact46",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact47",
+      "label": "Parallel I/O contact 48",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        94.175,
+        94.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact47",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact48",
+      "label": "Parallel I/O contact 49",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        95.77499999999999,
+        96.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact48",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact49",
+      "label": "Parallel I/O contact 50",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        97.37499999999999,
+        97.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact49",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact50",
+      "label": "Parallel I/O contact 51",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        98.975,
+        99.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact50",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact51",
+      "label": "Parallel I/O contact 52",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        100.57499999999999,
+        101.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact51",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact52",
+      "label": "Parallel I/O contact 53",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        102.175,
+        102.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact52",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact53",
+      "label": "Parallel I/O contact 54",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369026,
+      "bounds": [
+        103.77499999999999,
+        104.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact53",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact54",
+      "label": "Parallel I/O contact 55",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        105.37499999999999,
+        105.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact54",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact55",
+      "label": "Parallel I/O contact 56",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        106.975,
+        107.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact55",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact56",
+      "label": "Parallel I/O contact 57",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        108.57499999999999,
+        109.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact56",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact57",
+      "label": "Parallel I/O contact 58",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        110.175,
+        110.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact57",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact58",
+      "label": "Parallel I/O contact 59",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        111.77499999999999,
+        112.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact58",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact59",
+      "label": "Parallel I/O contact 60",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        113.37499999999999,
+        113.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact59",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact60",
+      "label": "Parallel I/O contact 61",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        114.975,
+        115.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact60",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact61",
+      "label": "Parallel I/O contact 62",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        116.57499999999999,
+        117.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact61",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact62",
+      "label": "Parallel I/O contact 63",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        118.175,
+        118.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact62",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact63",
+      "label": "Parallel I/O contact 64",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369027,
+      "bounds": [
+        119.77499999999999,
+        120.22500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact63",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact64",
+      "label": "Parallel I/O contact 65",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        121.37499999999999,
+        121.825,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact64",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact65",
+      "label": "Parallel I/O contact 66",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        122.975,
+        123.42500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact65",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact66",
+      "label": "Parallel I/O contact 67",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        124.57499999999999,
+        125.025,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact66",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelContact67",
+      "label": "Parallel I/O contact 68",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6898554192369029,
+      "bounds": [
+        126.175,
+        126.62500000000001,
+        84.9,
+        91.60000000000001,
+        26.084999999999997,
+        26.314999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelContact67",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelCover",
+      "label": "Removable parallel I/O dust cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1128.3092915845666,
+      "bounds": [
+        69.3,
+        130.70000000000002,
+        93.1,
+        94.1,
+        14.8,
+        33.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ParallelCoverArrow",
+      "label": "<",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 0.03766257613325467,
+      "bounds": [
+        70.19893036912751,
+        73.02212667785236,
+        94.15,
+        94.168,
+        20.70671140939597,
+        23.121476510067115
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ParallelCoverArrow",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Japanese two-pin nonpolarized AC inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 17,
+      "volume": 2520.721792995222,
+      "bounds": [
+        -112.4,
+        -87.6,
+        84.0,
+        94.0,
+        16.699999999999996,
+        31.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin0",
+      "label": "AC inlet contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 19.446475280881657,
+      "bounds": [
+        -104.97,
+        -103.13,
+        85.2,
+        92.82000000000001,
+        23.08,
+        24.92
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin0",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin1",
+      "label": "AC inlet contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 19.446475280881657,
+      "bounds": [
+        -96.87,
+        -95.03,
+        85.2,
+        92.82000000000001,
+        23.08,
+        24.92
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin1",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearSerialLegend",
+      "label": "SERIAL",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.0762346918699215,
+      "bounds": [
+        40.242210570469794,
+        47.97135286845637,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearSerialLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearAudioRLegend",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.01665669607387678,
+      "bounds": [
+        24.01811231610738,
+        25.298680888590606,
+        94.02499990000001,
+        94.0430001,
+        40.4999999,
+        42.14429540201343
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearAudioRLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearAudioLLegend",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.009290751261204575,
+      "bounds": [
+        9.275767617449663,
+        10.298680788590604,
+        94.025,
+        94.043,
+        40.5,
+        42.144295302013425
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearAudioLLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearRFULegend",
+      "label": "DC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 36,
+      "volume": 0.03019170246886353,
+      "bounds": [
+        -3.1505936402684567,
+        -0.18131911140939597,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearRFULegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearVideoLegend",
+      "label": "VIDEO",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 63,
+      "volume": 0.0691744614294771,
+      "bounds": [
+        -15.418131391946309,
+        -8.417617449664428,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearVideoLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearSVideoLegend",
+      "label": "S-VIDEO",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 99,
+      "volume": 0.08517268664886848,
+      "bounds": [
+        -32.49222535167785,
+        -23.508647131543622,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearSVideoLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMultiAVLegend",
+      "label": "AV MULTI",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 77,
+      "volume": 0.09032833079797865,
+      "bounds": [
+        -53.85353817114095,
+        -43.85761744966443,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.14429540201343
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMultiAVLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearParallelLegend",
+      "label": "PARALLEL I/O",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 137,
+      "volume": 0.13250546299404056,
+      "bounds": [
+        91.48428471543625,
+        106.0186808885906,
+        94.02499990000001,
+        94.0430001,
+        40.29328859060403,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearParallelLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearACLegend",
+      "label": "AC IN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 51,
+      "volume": 0.05268756566922118,
+      "bounds": [
+        -103.32863884228189,
+        -97.41761744966443,
+        94.02499990000001,
+        94.0430001,
+        40.46711399395973,
+        42.17248332147651
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearACLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "psdark",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscWellCut002",
+      "label": "Tapered disc recess with optical-mechanism opening003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 32,
+      "volume": 46246.475323319355,
+      "bounds": [
+        -84.8,
+        84.8,
+        -80.8,
+        88.8,
+        41.9999999,
+        56.6000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscWell",
+      "assembly": "Optical",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeBracket0",
+      "label": "Fixed disc-cover hinge support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 1461.3998000457148,
+      "bounds": [
+        -54.0,
+        -38.0,
+        72.5,
+        83.5,
+        41.5,
+        53.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeBracket0",
+      "assembly": "Optical",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidHingePin0",
+      "label": "Disc-cover steel pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 37.952449874662996,
+      "bounds": [
+        -53.8,
+        -38.199999999999996,
+        77.12,
+        78.88,
+        50.919999999999995,
+        52.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidHingePin0",
+      "assembly": "Optical",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidTorsionSpring0",
+      "label": "Disc-cover return spring study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 3.2020137834534057,
+      "bounds": [
+        -49.469606011807464,
+        -46.730393988192525,
+        76.42996682851303,
+        79.57003317148717,
+        50.22999989999999,
+        53.36999894753389
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidTorsionSpring0",
+      "assembly": "Optical",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HingeBracket1",
+      "label": "Fixed disc-cover hinge support001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 1461.3998000457148,
+      "bounds": [
+        38.0,
+        54.0,
+        72.5,
+        83.5,
+        41.5,
+        53.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HingeBracket1",
+      "assembly": "Optical",
+      "layer": 5,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidHingePin1",
+      "label": "Disc-cover steel pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 37.95244987466299,
+      "bounds": [
+        38.2,
+        53.800000000000004,
+        77.12,
+        78.88,
+        50.919999999999995,
+        52.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidHingePin1",
+      "assembly": "Optical",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidTorsionSpring1",
+      "label": "Disc-cover return spring study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 3.202013783453406,
+      "bounds": [
+        42.530393988192536,
+        45.269606011807475,
+        76.42996682851303,
+        79.57003317148717,
+        50.22999989999999,
+        53.36999894753389
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidTorsionSpring1",
+      "assembly": "Optical",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenReleaseSlider",
+      "label": "L-shaped OPEN button and latch transmission",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 515.45095432609,
+      "bounds": [
+        64.4,
+        112.0,
+        -60.0,
+        -44.0,
+        51.2,
+        54.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenReleaseSlider",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "psdark",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenSliderGuide",
+      "label": "Latch-slider guide channel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 294.7748667764616,
+      "bounds": [
+        89.0,
+        97.0,
+        -51.0,
+        -41.0,
+        49.5,
+        54.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenSliderGuide",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "psgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenReturnSpring",
+      "label": "OPEN button compression return spring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.139133846319906,
+      "bounds": [
+        106.83000598600785,
+        113.1700001,
+        -61.169991615397365,
+        -54.82997197489152,
+        53.330085957615665,
+        54.769914042384336
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenReturnSpring",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSBadgeRed",
+      "label": "Original-family red P badge study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.9191700000000095,
+      "bounds": [
+        -1.4000000000000004,
+        5.8,
+        -27.8,
+        -15.0,
+        60.025,
+        60.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSBadgeRed",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "red",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSBadgeYellow",
+      "label": "Original-family yellow badge band",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.4292892184195632,
+      "bounds": [
+        -9.0000001,
+        1e-07,
+        -28.0000001,
+        -22.03651846388095,
+        60.02499989999998,
+        60.04300010000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSBadgeYellow",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "yellow",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSBadgeGreen",
+      "label": "Japanese-family green badge band",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.4252993698247064,
+      "bounds": [
+        -1.0000002153832667e-07,
+        9.000000100000001,
+        -28.0000001,
+        -22.01857593000027,
+        60.02499989999998,
+        60.04300010000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSBadgeGreen",
+      "assembly": "Optical",
+      "layer": 8,
+      "material": "psgreen",
+      "fidelity": "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps1/output/iterations/05_disc_well_hinges_and_release_linkage.FCStd",
+  "views": [
+    "devices/ps1/output/previews/05_disc_well_hinges_and_release_linkage_hero.png",
+    "devices/ps1/output/previews/05_disc_well_hinges_and_release_linkage_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

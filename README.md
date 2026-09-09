@@ -188,7 +188,7 @@ open-console-cad/
 
 已发布的十个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom` 和 `atari2600`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。Game Boy、Famicom 和 Atari 2600 已提供完整模型、图册与在线预览；PlayStation 和 PlayStation 2 正在扩展计划中。
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。Game Boy、Famicom 和 Atari 2600 已提供完整模型、图册与在线预览；[PlayStation](devices/ps1/README.md) 正在建模，PlayStation 2 尚待扩展。
 
 ## 验证记录
 
