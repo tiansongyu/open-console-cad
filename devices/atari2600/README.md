@@ -1,6 +1,8 @@
 # Atari 2600 · CX2600 Heavy Sixer
 
-本模型以 1977 年木纹六开关 VCS 为研究对象，经过 **23 轮建模，包含 684 个组件条目、1,511 个实体**。整套几何已完成源码重建、原生文件和 STEP 回读，以及装配求交验证。
+本模型以 1977 年木纹六开关 VCS 为研究对象，经过 **23 轮建模，包含 684 个组件条目、1,511 个实体**，提供可编辑工程、12 页 A3 图纸与十一种交互式视图。
+
+[在线 3D 预览](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=internal#viewer) · [CX10 摇杆机构](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=mechanism#viewer) · [A3 图册](output/drawings/Atari2600_Drawings.pdf)
 
 <a href="output/previews/final_hero.png"><img src="output/previews/final_hero.png" width="280" alt="Atari 2600 主机与两只 CX10 摇杆"></a>
 <a href="output/previews/final_internal.png"><img src="output/previews/final_internal.png" width="280" alt="Atari 2600 双板与内部结构"></a>
@@ -8,12 +10,13 @@
 ## 文件与使用
 
 - [完整 FreeCAD 工程](output/Atari2600_Complete.FCStd) · [爆炸装配](output/Atari2600_Exploded.FCStd)
+- [12 页 A3 PDF](output/drawings/Atari2600_Drawings.pdf) · [FreeCAD 原生图纸](output/Atari2600_Drawings.FCStd) · [SVG 图页与图纸数据](output/drawings/)
 - [整套 STEP](output/Atari2600_FullKit.step) · [主机与双摇杆 STEP](output/Atari2600_Console.step) · [爆炸 STEP](output/Atari2600_Exploded.step)
 - [组件清单](output/COMPONENTS.csv) · [逐轮记录](ITERATIONS.md) · [几何交付核对](output/reports/geometry_delivery_audit.json)
 
-用 FreeCAD 1.1.3 打开原生工程。运行 [Rebuild_Atari2600.FCMacro](Rebuild_Atari2600.FCMacro) 可执行全部源码并重建 CAD 和 STEP，输出写入 `output/rebuilt/`，保留正式文件。入口位于 `scripts/iterNN_*.py`，实现位于 `../../tools/cadlib/atari2600.py`；请保留完整仓库结构。
+用 FreeCAD 1.1.3 打开原生工程，或运行 [Open_Atari2600.FCMacro](Open_Atari2600.FCMacro) 同时打开整机、爆炸装配和图纸。运行 [Rebuild_Atari2600.FCMacro](Rebuild_Atari2600.FCMacro) 可执行全部源码并重建 CAD 和 STEP，输出写入 `output/rebuilt/`，保留正式文件。入口位于 `scripts/iterNN_*.py`，实现位于 `../../tools/cadlib/atari2600.py`；请保留完整仓库结构。
 
-**12 页 A3 图册、原生图页和交互式网页仍在制作，尚未加入在线模型目录。** 当前下载范围为已验证的几何模型与 STEP。
+网页模型由完整原生工程导出，保留全部 684 个组件及装配身份。可切换主机、双摇杆、内部结构、分层爆炸、摇杆机构、主逻辑板、开关与电源、旋钮控制器、空白卡带和整套附件；网页使用无损 gzip 传输，原始 GLB 仍可单独下载。
 
 ## 模型内容
 
@@ -32,6 +35,9 @@
 - [完整源码重建](output/reports/rebuild_verification.json)：从新工程执行 23 轮，逐项核对 684 个组件的有效性、实体数、包围盒和体积。
 - [整套装配求交](output/reports/final_interference_audit.json)：2,016 对候选组件完成检查，无超过 0.000001 mm³ 的干涉。
 - [原生与 STEP 回读](output/reports/export_roundtrip_audit.json)：两份原生工程及三份 STEP 通过，STEP 实体逐一匹配；曲面体积积分差异以双向布尔差集进一步核对。
+- [尺寸与投影核对](output/reports/drawing_checks.json)：33 项模型测量；[原生图纸](output/reports/native_drawings_audit.json) 含 12 页和 15 个尺寸引用，[保存后重开](output/reports/native_drawings_reload.json) 与打开宏均通过。
+- [PDF 视觉验收](output/reports/visual_acceptance.json) · [独立审阅](output/reports/independent_pdf_review.json)：Kami 字体、内容、样式、密度和占位符检查通过，全部 12 页完成逐页审阅。独立审阅的范围和限制见报告。
+- [网页预览核对](output/reports/web_preview_checks.json) · [完整交付核对](output/reports/completion_audit.json)。
 
 早期阶段的检查记录保留了当时发现的问题，后续轮次明确记录修正。修改模型后需重新执行相关验证。原生工程保留草图、约束、凸台、圆角和布尔加工历史；局部结构仍由源码坐标控制，调整参数后需要重新检查装配。
 

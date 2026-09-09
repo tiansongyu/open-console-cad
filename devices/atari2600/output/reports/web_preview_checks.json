@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "device": "atari2600",
+  "checked_at_unix": 1788957092.1255107,
+  "local_url": "http://localhost:5174/?device=atari2600&view=assembled#viewer",
+  "source_sha256": "0d72d298190bdda4598a86b1069afe826cb2231b20e6c99aa55f1dcb2f5ec25d",
+  "glb_sha256": "25d7b707df8e70a12600dd2ca766f3e23775c7b662a1ecd4ced996ac3cca46dc",
+  "view_checks": [
+    {
+      "view": "assembled",
+      "expected_components": 475,
+      "observed_canvas_components": 475,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "expected_components": 335,
+      "observed_canvas_components": 335,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "expected_components": 308,
+      "observed_canvas_components": 308,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "expected_components": 475,
+      "observed_canvas_components": 475,
+      "passed": true
+    },
+    {
+      "view": "joysticks",
+      "expected_components": 140,
+      "observed_canvas_components": 140,
+      "passed": true
+    },
+    {
+      "view": "mechanism",
+      "expected_components": 37,
+      "observed_canvas_components": 37,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "expected_components": 135,
+      "observed_canvas_components": 135,
+      "passed": true
+    },
+    {
+      "view": "power",
+      "expected_components": 79,
+      "observed_canvas_components": 79,
+      "passed": true
+    },
+    {
+      "view": "paddles",
+      "expected_components": 82,
+      "observed_canvas_components": 82,
+      "passed": true
+    },
+    {
+      "view": "cartridge",
+      "expected_components": 53,
+      "observed_canvas_components": 53,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "expected_components": 209,
+      "observed_canvas_components": 209,
+      "passed": true
+    }
+  ],
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "mobile_viewport": [
+    375,
+    812
+  ],
+  "mobile_overflow": false,
+  "mobile_viewer_top_px": 19.90625,
+  "error_panel_hidden": true,
+  "loading_panel_hidden": true,
+  "captured_console_warnings_or_errors": [],
+  "mechanism_slider_end_percent": 100,
+  "mechanism_keyboard_rotation_visually_checked": true,
+  "reset_button_checked": true,
+  "exploded_default_percent": 100,
+  "visually_reviewed": [
+    "assembled desktop/mobile",
+    "internal desktop/mobile",
+    "exploded desktop",
+    "joysticks desktop",
+    "mechanism desktop before/after slider and keyboard",
+    "paddles desktop",
+    "accessories desktop"
+  ],
+  "gzip_bytes": 38845859,
+  "gzip_decodes_to_original_glb": true,
+  "release_live_verification": "Recorded separately after Pages deployment"
+}

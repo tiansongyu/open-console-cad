@@ -1,0 +1,458 @@
+{
+  "review_type": "isolated Kami fresh review of final PDF artifact",
+  "reviewed_at_utc": "2026-09-09T12:20:09.449387+00:00",
+  "reviewer_independence": "Separate reviewer; did not create or edit the PDF, HTML, geometry, drawings scripts, or browser. Only this report was written in the repository.",
+  "artifact": {
+    "path": "devices/atari2600/output/drawings/Atari2600_Drawings.pdf",
+    "sha256": "4f54d71f4718d327cc047f3e0f00782c9ce5bc49d334ed84ac4c9846ec95b743",
+    "expected_sha256_matched": true,
+    "page_count": 12,
+    "pages_actually_viewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "page_size_mm": [
+      420,
+      297
+    ],
+    "page_size_verified_from_pdf_mediabox": true,
+    "language": "cn",
+    "metadata_creator": "Kami",
+    "metadata_producer": "Kami"
+  },
+  "review_guidance": [
+    "installed-skill:kami/SKILL.md, Step 5 Fresh review and Perceptual verify",
+    "installed-skill:kami/references/anti-patterns.md"
+  ],
+  "contract_source": "devices/atari2600/output/drawings/content.json",
+  "contract": {
+    "audience": "FreeCAD 建模学习者与游戏机结构观察者",
+    "job": "用实际 CAD 投影、剖面与尺寸解释初代 Atari 六开关主机、CX10、早期旋钮和附件的结构",
+    "template": "long-doc",
+    "formats": [
+      "html",
+      "pdf"
+    ],
+    "page_target": 12,
+    "narrative": "总装与接口、操控机构、剖面和爆炸、板件与附件、组件索引和来源",
+    "required_facts": [
+      "CX2600 Heavy Sixer",
+      "全部尺寸为本模型近似值",
+      "684 个组件条目"
+    ],
+    "required_assets": [],
+    "acceptance_checks": [
+      "12 pages of A3 landscape",
+      "all dimensions derived from saved BReps",
+      "all pages visually inspected",
+      "Kami font and content checks",
+      "native TechDraw pages and measurable dimensions"
+    ],
+    "preserve": [
+      "approximate envelope and local dimensions clearly distinguished from manufacturer specifications",
+      "component identifiers",
+      "original-version controller features"
+    ],
+    "explicit_deviations": [
+      "A3 landscape technical-drawing adaptation of the existing Kami long-doc template",
+      "Native CAD vector projections and real BRep sections replace generic editorial diagrams",
+      "Cover combined with assembly drawing; final appendix records sources and validation",
+      "Companion SVG and FreeCAD native pages are CAD artifacts beyond the Kami document-format list"
+    ]
+  },
+  "verdict": "PASS_FOR_PDF_HANDOFF_WITH_EXPLICIT_REVIEW_SCOPE",
+  "pass": true,
+  "severity_counts": {
+    "P0": 0,
+    "P1": 0
+  },
+  "findings": [],
+  "acceptance_checks": [
+    {
+      "item": "12 Chinese A3 landscape pages",
+      "status": "pass_independently_verified",
+      "evidence": "Final PDF contains 12 pages, each 1190.551147 x 841.889771 pt; all 12 Chinese page images were viewed."
+    },
+    {
+      "item": "All dimensions are clearly model approximations",
+      "status": "pass_independently_verified_for_published_text",
+      "evidence": "Every page footer says all dimensions are approximate model values; all 15 model dimension labels have ≈; pages 1 and 12 explicitly distinguish model geometry from factory drawings or real-unit measurements."
+    },
+    {
+      "item": "All dimensions derived from saved BReps",
+      "status": "supported_by_supplied_audit_not_independently_recomputed",
+      "evidence": "drawing_checks.json reports 15 endpoint-based dimensions and all model measurements passing; all 15 expected approximate labels are present in the final PDF. The reviewer did not load saved BReps."
+    },
+    {
+      "item": "All pages visually inspected",
+      "status": "pass_independently_verified",
+      "evidence": "Pages 1-12 actually viewed at 1819 x 1287 pixels; every supplied image is pixel-identical to an in-memory 110 dpi render from the reviewed PDF hash."
+    },
+    {
+      "item": "Kami font and content checks",
+      "status": "pass_with_split_evidence",
+      "evidence": "Independently inspected PDF spans: all 3681 CJK ideographs use TsangerJinKai02. Supplied content log reports valid long-doc IR and all 23 atomic values present, with 27 prose fields exempt from verbatim matching."
+    },
+    {
+      "item": "Native TechDraw pages and measurable dimensions",
+      "status": "supported_by_supplied_audit_not_independently_reloaded",
+      "evidence": "native_drawings_audit.json reports 12 pages and 15 passing native dimension references, no invalid entries. Native FreeCAD reload remains outside this PDF review."
+    },
+    {
+      "item": "684 components, 1511 solids and 23 stages",
+      "status": "pass_for_internal_PDF_consistency_only",
+      "evidence": "Page 11 row counts independently sum to 684. 1511 solids and 23 stages are consistently printed on pages 1 and 12, but were not independently counted from native files or source history."
+    },
+    {
+      "item": "Original CX2600/CX10/CX30-04 distinctions",
+      "status": "pass_for_visible_presentation_only",
+      "evidence": "Six top switches and rear interface layout on pages 1-2; CX10 hexagonal badge without TOP on page 3 and spring/actuator view on page 4; early ATARI/racket paddle markings on page 9. Historical source correctness was not checked in this isolated review."
+    },
+    {
+      "item": "Legible layout, captions, sections, and exploded offsets",
+      "status": "pass_for_visible_presentation",
+      "evidence": "No P0/P1 clipping, label collision, missing-glyph boxes, broken table or stranded captions found. Page 5 shows two identified filled-material sections; pages 4 and 6 show separated exploded geometry. BRep intersection and native-offset provenance are not independently established by a PDF image."
+    },
+    {
+      "item": "Traceable component identifiers",
+      "status": "pass_for_visible_identifiers_and_index",
+      "evidence": "Pages 7-8 retain individual component IDs; page 11 gives non-contiguous group ID ranges and points to COMPONENTS.csv. Actual CSV/native object identity mappings were outside the supplied review scope."
+    }
+  ],
+  "preserve_checks": [
+    {
+      "boundary": "approximate envelope and local dimensions clearly distinguished from manufacturer specifications",
+      "status": "preserved_in_final_PDF",
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "boundary": "component identifiers",
+      "status": "preserved_in_final_PDF_visible_ids",
+      "evidence_pages": [
+        7,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "boundary": "original-version controller features",
+      "status": "preserved_in_final_PDF_presentation",
+      "evidence_pages": [
+        3,
+        4,
+        9,
+        12
+      ]
+    }
+  ],
+  "independent_checks": {
+    "pdf_hash_match": true,
+    "all_page_images_pixel_match_final_pdf": true,
+    "render_dpi": 110,
+    "all_dimension_labels_present": true,
+    "approximate_dimension_count": 15,
+    "cjk_font_ideograph_counts": {
+      "TsangerJinKai02": 3681
+    },
+    "text_spans_outside_pdf_page_count": 0,
+    "component_table_rows": 13,
+    "component_table_sum": 684,
+    "manual_visual_review_pages": 12
+  },
+  "supplied_mechanical_evidence": [
+    {
+      "path": ".local/atari_pdf_content.log",
+      "result": "pass: valid IR; 23 atomic values present; 27 prose fields not held verbatim",
+      "reliance": "Log read; coverage tool not rerun, HTML not reviewed."
+    },
+    {
+      "path": ".local/atari_pdf_visual.log",
+      "result": "pass: 12 page images; TsangerJinKai02 for 3681 CJK ideographs",
+      "reliance": "Log read; independently viewed every image and verified image/PDF correspondence and font spans."
+    },
+    {
+      "path": ".local/atari_pdf_style.log",
+      "result": "pass: no style drift",
+      "reliance": "Log read; HTML style check not rerun."
+    },
+    {
+      "path": ".local/atari_pdf_density.log",
+      "result": "pass: no density issues",
+      "reliance": "Log read; manual drawing-layout review completed. Technical A3 adaptation and closing-page exemption considered."
+    },
+    {
+      "path": ".local/atari_pdf_placeholders.log",
+      "result": "pass: no placeholders",
+      "reliance": "Log read; no visible placeholder found during manual page inspection."
+    },
+    {
+      "path": "devices/atari2600/output/reports/drawing_checks.json",
+      "result": {
+        "pass": true,
+        "dimensions": 15,
+        "model_measurements": 33,
+        "envelope_kind": "approximate"
+      },
+      "reliance": "Endpoints and model measurements read from supplied report; PDF label correspondence independently checked; source BReps not recomputed."
+    },
+    {
+      "path": "devices/atari2600/output/reports/native_drawings_audit.json",
+      "result": {
+        "pass": true,
+        "pages": 12,
+        "native_dimension_references": 15,
+        "invalid_count": 0
+      },
+      "reliance": "Supplied audit read; native FreeCAD file not reloaded by this reviewer."
+    }
+  ],
+  "page_reviews": [
+    {
+      "page": 1,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-01.png",
+      "image_sha256": "73c9e27b5d5a2a830ff98382107e6bea8dae9b66198fb84a1d9bd3f0d458352d",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 346",
+        "≈ 232.44"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Assembly axonometric and top views are complete, with approximate width/depth arrows, individual scale captions and explicit 684-component, 1,511-solid, 23-stage study-model scope."
+    },
+    {
+      "page": 2,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-02.png",
+      "image_sha256": "2fdc5df14bec26d891ae9b9bd2bb5f604376aafa35253d63722d2311df8ea49d",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 88.3"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Front/rear views and DE-9, 3.5 mm power and RCA detail views fit cleanly; approximate height label and captions remain separate from geometry."
+    },
+    {
+      "page": 3,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-03.png",
+      "image_sha256": "5198767157dec0f201fa95057ea00418cd76bdbe6d380eb19a9ec8f7b9fea018",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 106.1",
+        "≈ 90"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "CX10 hexagonal ATARI top badge, single-button housing, ring and boot are legible; no TOP label is visible. Overall height and base width retain approximation signs."
+    },
+    {
+      "page": 4,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-04.png",
+      "image_sha256": "a38a46454e2b42d0e7511f3476647bf09c324a72a527f27ba6620adc58ce36be",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 72",
+        "≈ 70",
+        "≈ 14.55"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Internal PCB/actuator view, helical spring detail and horizontal exploded view are distinguishable, with three readable approximate dimensions and a native-displacement caption."
+    },
+    {
+      "page": 5,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-05.png",
+      "image_sha256": "18b126ef127b3994c81881d2779f0980515e58dd7462cf8c45da3ba98234edb6",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Two distinct filled-material sections are visible and titled A-A at Y=-31 and B-B at Y=43. The text explicitly calls them study-model BRep sections, with readable individual scales."
+    },
+    {
+      "page": 6,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-06.png",
+      "image_sha256": "a44e9013e9370531e78513e3a96d9f29384f1df72eb0ee8ddf40334a496d4af9",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Console and two CX10 exploded assemblies have visible layer separation. The tall composition leaves side whitespace but is not clipped; the caption distinguishes observation offsets from a real removal path."
+    },
+    {
+      "page": 7,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-07.png",
+      "image_sha256": "4e70d51050c63ae99b7f6bb3a157ece529ca6ae33cf35e0df39a4e1ef86419cb",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 96",
+        "≈ 202"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Logic PCB, exposed cartridge socket and CPU package views are readable. Approximate 96/202 mm dimensions and component IDs ATARI2600-0070 and ATARI2600-0095 survive in captions."
+    },
+    {
+      "page": 8,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-08.png",
+      "image_sha256": "6125266a96a8b4bd85a824e051ecf76df66d62758c6bb41edd39d525073c511d",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 284",
+        "≈ 66"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Separate U-shaped switchboard, regulator/heatsink and discrete RF parts are distinguishable. Approximate 284/66 mm dimensions and ATARI2600-0072 caption are readable."
+    },
+    {
+      "page": 9,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-09.png",
+      "image_sha256": "910326c213f5cb4ef5e1a35b7849634e7f3353de0ec3e56efe17860e7718f176",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 65"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "CX30-04 exterior shows early ATARI/racket markings; potentiometer and shared junction/DE-9 detail fit within the page. Approximate width and the sourced nominal 1 MΩ statement are distinguished."
+    },
+    {
+      "page": 10,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-10.png",
+      "image_sha256": "bd51bf116e1d8cdaa903d8ee3377896814e122c9a002f00b16a79104e8d11c2a",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [
+        "≈ 82",
+        "≈ 98"
+      ],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Blank study cartridge, adapter and TV/GAME switchbox fit cleanly. Cartridge says NO GAME DATA; approximate 82/98 mm labels are legible and study/diagram limitations are explicit."
+    },
+    {
+      "page": 11,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-11.png",
+      "image_sha256": "ccd19e4d0332c60dc28c575d44819d2fecfa2572f31a049fcc4f53561adbf6b8",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "All 13 index rows and their component ID ranges are readable. Header explicitly marks ranges as non-contiguous. Independently summed row counts equal the printed 684 total."
+    },
+    {
+      "page": 12,
+      "actually_viewed": true,
+      "image": "devices/atari2600/output/drawings/Atari2600_Drawings-visual/page-12.png",
+      "image_sha256": "35bbbbe3b3fc9908ae7aaa851cd48e87f96bf9656090613cfc30ecd540fe8d43",
+      "size_pixels": [
+        1819,
+        1287
+      ],
+      "pixel_identical_to_final_pdf_render_at_110_dpi": true,
+      "approximate_dimension_labels": [],
+      "dimension_labels_present": true,
+      "text_spans_outside_page": 0,
+      "visual_verdict": "pass",
+      "observed_evidence": "Version/source categories, model-only dimensions, lack of verified factory measurements, 23-stage/684-component/1,511-solid claims and portable maintenance paths are readable. This closing appendix has no clipped block."
+    }
+  ],
+  "scope_limits": [
+    "This verdict approves the reviewed PDF presentation and its consistency with the supplied brief and evidence. It is not independent certification of underlying CAD geometry, manufacturability, electrical function, or historical replica accuracy.",
+    "Saved BRep derivation, native explode offsets, native TechDraw usability, solid count, build-stage count and component-ID mapping require the parent task's separate native/source checks.",
+    "Primary historical sources and their URLs were not opened; this review is restricted to the final PDF, its brief, page images and listed supplied reports.",
+    "CAD-native English labels are intentional within this Chinese technical drawing adaptation. Repeated approximation/footer text was treated as a page-level scope statement.",
+    "The closing appendix is intentionally text-led; side whitespace around the tall explosion on page 6 does not obstruct the drawing or captions."
+  ],
+  "remaining_P0_P1_before_PDF_handoff": []
+}
