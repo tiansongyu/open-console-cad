@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scope": "Local full CAD, STEP, native/Kami drawings and web delivery; live verification follows deployment.",
+  "components": 747,
+  "solids": 1352,
+  "stages": 15,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "strict_bop_audit.json",
+    "final_interference_audit.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "files": [
+    {
+      "path": "devices/n64/output/Nintendo64_Complete.FCStd",
+      "bytes": 7911699,
+      "sha256": "b1f4076977f001afb08ed05d12f47cec55f2ba8c8119acf78b6b8cbe0449f1cd"
+    },
+    {
+      "path": "devices/n64/output/Nintendo64_Exploded.FCStd",
+      "bytes": 3592907,
+      "sha256": "c312e649214e7991b4f7d1eeb6fd7e1b24c1c50ee21427c5fee1960b076eddfd"
+    },
+    {
+      "path": "devices/n64/output/Nintendo64_Drawings.FCStd",
+      "bytes": 425035,
+      "sha256": "37de2bc0a7741d7125c173582a320078ba2f1fdef50e4f769e97b04e0efe7ff8"
+    },
+    {
+      "path": "devices/n64/output/Nintendo64_FullKit.step",
+      "bytes": 21187114,
+      "sha256": "f1ce46ccc1b61febf8d7dd0c23c98021827f5c749e0ee5a99a45b4db226b5185"
+    },
+    {
+      "path": "devices/n64/output/Nintendo64_Console.step",
+      "bytes": 17822034,
+      "sha256": "e6c27cb19c989b83782f5ce0d1142aea1db3582a23d362bca5878f7275e14583"
+    },
+    {
+      "path": "devices/n64/output/Nintendo64_Exploded.step",
+      "bytes": 21187040,
+      "sha256": "368e699968c309a737d372cf22b212e20d057838da7ba9edee895f8bd2d8904f"
+    },
+    {
+      "path": "devices/n64/output/drawings/Nintendo64_Drawings.pdf",
+      "bytes": 678730,
+      "sha256": "3a271abd7ae0554abdc4ef10dc85fc31aac4bad29d9188361f0e7b2051e82f3b"
+    },
+    {
+      "path": "devices/n64/output/COMPONENTS.csv",
+      "bytes": 132776,
+      "sha256": "2f43ff24889c84eae57b80359c845ef3e74f0d8eccf479cb68bd5db1be07a665"
+    },
+    {
+      "path": "site/public/models/n64.glb",
+      "bytes": 23963676,
+      "sha256": "c926de6d892053ef7324be445594de67fb3b6c316ad80a1c2ef44aa99a273372"
+    }
+  ],
+  "live_verified": false
+}

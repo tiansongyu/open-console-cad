@@ -1,0 +1,7251 @@
+{
+  "iteration": 6,
+  "slug": "game_pak_bus_and_original_jumper_pak",
+  "summary": "加入两排 50 位卡带连接器、36 位内存接口及原始 Jumper Pak，分别表示弹片、终端板、金手指和电阻网络，避免混用后期扩展内存模块。",
+  "physical_components": 268,
+  "objects": [
+    {
+      "name": "LowerHousingCut008",
+      "label": "Rounded lower enclosure with corner pods010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 174,
+      "volume": 121470.69865470781,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        2.0,
+        26.000000000000018
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut010",
+      "label": "Original transverse arched upper enclosure013",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 80,
+      "volume": 106138.51257230052,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        26.299999999999986,
+        73.00000010011115
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Corner support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Corner support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Corner support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Corner support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup1Cut",
+      "label": "Controller 1 grey socket body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 2196.0408464366087,
+      "bounds": [
+        -89.5,
+        -62.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert1",
+      "label": "Three-position connector insert",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947017,
+      "bounds": [
+        -85.85820895522389,
+        -66.14179104477611,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_0Fuse",
+      "label": "Three-wire controller socket contact012",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.9269332384867,
+      "bounds": [
+        -82.2,
+        -79.39999999999999,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_1Fuse",
+      "label": "Three-wire controller socket contact013",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.926933238487575,
+      "bounds": [
+        -77.4,
+        -74.6,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_2Fuse",
+      "label": "Three-wire controller socket contact014",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848757,
+      "bounds": [
+        -72.60000000000001,
+        -69.8,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot1_0",
+      "label": "Controller index dot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        -76.55,
+        -75.45,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup2Cut",
+      "label": "Controller 2 grey socket body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 2196.0408464366087,
+      "bounds": [
+        -56.5,
+        -29.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert2",
+      "label": "Three-position connector insert001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947017,
+      "bounds": [
+        -52.85820895522388,
+        -33.14179104477612,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_0Fuse",
+      "label": "Three-wire controller socket contact015",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.926933238487642,
+      "bounds": [
+        -49.199999999999996,
+        -46.4,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_1Fuse",
+      "label": "Three-wire controller socket contact016",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.926933238487635,
+      "bounds": [
+        -44.4,
+        -41.6,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_2Fuse",
+      "label": "Three-wire controller socket contact017",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848764,
+      "bounds": [
+        -39.6,
+        -36.800000000000004,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_0",
+      "label": "Controller index dot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -44.699999999999996,
+        -43.6,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_1",
+      "label": "Controller index dot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -42.4,
+        -41.300000000000004,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup3Cut",
+      "label": "Controller 3 grey socket body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 2196.0408464366087,
+      "bounds": [
+        29.5,
+        56.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert3",
+      "label": "Three-position connector insert002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947017,
+      "bounds": [
+        33.14179104477612,
+        52.85820895522388,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_0Fuse",
+      "label": "Three-wire controller socket contact018",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.926933238487443,
+      "bounds": [
+        36.800000000000004,
+        39.6,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_1Fuse",
+      "label": "Three-wire controller socket contact019",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848744,
+      "bounds": [
+        41.6,
+        44.4,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_2Fuse",
+      "label": "Three-wire controller socket contact020",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848744,
+      "bounds": [
+        46.4,
+        49.199999999999996,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_0",
+      "label": "Controller index dot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        40.150000000000006,
+        41.25,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_1",
+      "label": "Controller index dot004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        42.45,
+        43.55,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_2",
+      "label": "Controller index dot005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        44.75,
+        45.849999999999994,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup4Cut",
+      "label": "Controller 4 grey socket body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 2196.0408464366087,
+      "bounds": [
+        62.5,
+        89.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert4",
+      "label": "Three-position connector insert003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947017,
+      "bounds": [
+        66.14179104477611,
+        85.85820895522389,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_0Fuse",
+      "label": "Three-wire controller socket contact021",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848757,
+      "bounds": [
+        69.8,
+        72.60000000000001,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_1Fuse",
+      "label": "Three-wire controller socket contact022",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.926933238487575,
+      "bounds": [
+        74.6,
+        77.4,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_2Fuse",
+      "label": "Three-wire controller socket contact023",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 21.92693323848757,
+      "bounds": [
+        79.39999999999999,
+        82.2,
+        -89.4,
+        -67.7599999,
+        8.3,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_0",
+      "label": "Controller index dot006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        72.0,
+        73.1,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_1",
+      "label": "Controller index dot007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        74.3,
+        75.39999999999999,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_2",
+      "label": "Controller index dot008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        76.60000000000001,
+        77.7,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_3",
+      "label": "Controller index dot009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        78.9,
+        80.0,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadge",
+      "label": "Central black front badge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 769.0938009881562,
+      "bounds": [
+        -29.0,
+        29.0,
+        -89.51,
+        -89.06,
+        39.0,
+        69.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadge",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Nintendo64Title",
+      "label": "NINTENDO 64",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 143,
+      "volume": 0.6792331279971463,
+      "bounds": [
+        -23.532067953020135,
+        8.772936241610743,
+        -89.5580001,
+        -89.53999990000001,
+        59.230469698657714,
+        62.83610748255033
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Nintendo64Title",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark0",
+      "label": "N64 colour study mark",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 10.00000000000052,
+      "bounds": [
+        -12.0,
+        8.0,
+        -89.59,
+        -89.55,
+        37.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ngreen",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark1",
+      "label": "N64 colour study mark001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 2.88000000000015,
+      "bounds": [
+        8.0,
+        12.0,
+        -89.59,
+        -89.55,
+        37.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark2",
+      "label": "N64 colour study mark002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.6000000000000312,
+      "bounds": [
+        -12.0,
+        -3.0,
+        -89.59,
+        -89.55,
+        55.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nyellow",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Small front power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8.88194671058465,
+      "bounds": [
+        -3.8,
+        3.8,
+        -89.55,
+        -89.05,
+        14.75,
+        17.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDeckCut001",
+      "label": "D-shaped curved top cartridge insert002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 144,
+      "volume": 16218.122464492162,
+      "bounds": [
+        -73.0000001000002,
+        73.00000010000005,
+        -24.000000100000022,
+        82.0000001,
+        62.49999989999996,
+        72.90000009999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDeck",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlap0",
+      "label": "Opposed grey cartridge dust door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1372.0396447372325,
+      "bounds": [
+        -61.0,
+        61.0,
+        32.4,
+        41.800000000000004,
+        63.2,
+        64.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlap0",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark0__1",
+      "label": "Cartridge door moulding line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        -48.12,
+        -47.88,
+        33.0,
+        41.2,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark0_-1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark0_1",
+      "label": "Cartridge door moulding line001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        47.88,
+        48.12,
+        33.0,
+        41.2,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark0_1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlap1",
+      "label": "Opposed grey cartridge dust door001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1372.0396447372325,
+      "bounds": [
+        -61.0,
+        61.0,
+        42.199999999999996,
+        51.6,
+        63.2,
+        64.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlap1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark1__1",
+      "label": "Cartridge door moulding line002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        -48.12,
+        -47.88,
+        42.8,
+        51.0,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark1_-1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark1_1",
+      "label": "Cartridge door moulding line003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        47.88,
+        48.12,
+        42.8,
+        51.0,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark1_1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopNintendo",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.2913644219215424,
+      "bounds": [
+        -11.607948825503355,
+        5.9377391939597315,
+        69.94174486644296,
+        73.03758399261744,
+        73.03999990000001,
+        73.0580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopNintendo",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryCoverCut",
+      "label": "Curved memory expansion cover001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 4818.940969519193,
+      "bounds": [
+        -33.10000010000004,
+        33.1000001,
+        -80.6000001,
+        -37.3999999,
+        69.3572673998877,
+        72.90000009999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryTitle",
+      "label": "MEMORY EXPANSION",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 15,
+      "faces": 235,
+      "volume": 0.2752154994432823,
+      "bounds": [
+        -15.7597105704698,
+        9.360297818791945,
+        -71.03570479798657,
+        -69.18416097382551,
+        72.97999990000001,
+        72.9980001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot0",
+      "label": "Memory-cover finger index",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        -6.6,
+        -5.4,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot1",
+      "label": "Memory-cover finger index001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169536,
+      "bounds": [
+        -2.6,
+        -1.4,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot2",
+      "label": "Memory-cover finger index002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        1.4,
+        2.6000000000000005,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot3",
+      "label": "Memory-cover finger index003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        5.4,
+        6.6,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot3",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerWell",
+      "label": "Power recessed switch surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 658.4849350939937,
+      "bounds": [
+        -81.2,
+        -62.8,
+        -79.7,
+        -40.3,
+        57.3,
+        58.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerWell",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power control cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1495.5276479870204,
+      "bounds": [
+        -79.65,
+        -64.35,
+        -75.5,
+        -44.5,
+        58.4,
+        61.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerTitle",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.1349699500052098,
+      "bounds": [
+        -77.72177023422819,
+        -67.5776844637584,
+        -68.04134238187919,
+        -65.89744956442954,
+        61.9299999,
+        61.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetWell",
+      "label": "Reset recessed switch surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 658.4849350939937,
+      "bounds": [
+        62.8,
+        81.2,
+        -79.7,
+        -40.3,
+        57.3,
+        58.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetWell",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "Reset control cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1495.5276479870201,
+      "bounds": [
+        64.35,
+        79.65,
+        -75.5,
+        -44.5,
+        58.4,
+        61.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetTitle",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.11214906792303989,
+      "bounds": [
+        66.27822976577181,
+        75.09299496644296,
+        -68.04134238187919,
+        -65.89744956442954,
+        61.9299999,
+        61.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerGrip",
+      "label": "Power slider raised grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 92.3371669411541,
+      "bounds": [
+        -78.5,
+        -65.5,
+        -57.85,
+        -54.15,
+        61.93,
+        63.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerGrip",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSULowerCut",
+      "label": "Removable NUS-002 power module lower shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 11108.38855525546,
+      "bounds": [
+        57.1,
+        118.9,
+        57.1,
+        96.9,
+        5.4,
+        26.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSULower",
+      "assembly": "Power",
+      "layer": -3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUUpperArched",
+      "label": "Removable NUS-002 power module upper shell002",
+      "type": "Part::Common",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 21,
+      "volume": 12002.938349879736,
+      "bounds": [
+        57.1,
+        118.9000001,
+        57.09999989999993,
+        96.9000001,
+        26.699999899999998,
+        51.70000010000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUUpper",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSURelease",
+      "label": "Power module release latch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 153.98102592124337,
+      "bounds": [
+        81.5,
+        94.5,
+        87.0,
+        97.0,
+        52.0,
+        53.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSURelease",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutHousing",
+      "label": "Nintendo Multi Out insulated housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 853.9597651604339,
+      "bounds": [
+        -71.0,
+        -45.0,
+        80.0,
+        89.0,
+        18.0,
+        28.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutTongue",
+      "label": "Multi Out contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 155.63393797973725,
+      "bounds": [
+        -68.9,
+        -47.1,
+        81.25,
+        87.75,
+        21.8,
+        22.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_0",
+      "label": "Multi Out contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -66.2,
+        -64.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_1",
+      "label": "Multi Out contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -63.2,
+        -61.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_2",
+      "label": "Multi Out contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -60.2,
+        -58.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_3",
+      "label": "Multi Out contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -57.2,
+        -55.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_4",
+      "label": "Multi Out contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -54.2,
+        -52.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_5",
+      "label": "Multi Out contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -51.2,
+        -49.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_0",
+      "label": "Multi Out contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -66.2,
+        -64.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_1",
+      "label": "Multi Out contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -63.2,
+        -61.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_2",
+      "label": "Multi Out contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -60.2,
+        -58.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_3",
+      "label": "Multi Out contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -57.2,
+        -55.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_4",
+      "label": "Multi Out contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -54.2,
+        -52.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_5",
+      "label": "Multi Out contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -51.2,
+        -49.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutTitle",
+      "label": "MULTI OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 99,
+      "volume": 0.181156790801198,
+      "bounds": [
+        -86.91544043624161,
+        -71.29087667785234,
+        89.0299999,
+        89.0480001,
+        31.956778423489933,
+        34.19812090536913
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSocketCut",
+      "label": "Six-position power connector body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2111.235410522582,
+      "bounds": [
+        76.0,
+        100.0,
+        45.0,
+        53.0,
+        14.0,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_0",
+      "label": "Detachable PSU socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.026990214100156,
+      "bounds": [
+        80.89999999999999,
+        82.7,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_1",
+      "label": "Detachable PSU socket contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        87.1,
+        88.9,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_2",
+      "label": "Detachable PSU socket contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        93.3,
+        95.10000000000001,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_0",
+      "label": "Detachable PSU socket contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.026990214100156,
+      "bounds": [
+        80.89999999999999,
+        82.7,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_1",
+      "label": "Detachable PSU socket contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        87.1,
+        88.9,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_2",
+      "label": "Detachable PSU socket contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        93.3,
+        95.10000000000001,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainPCBCut",
+      "label": "NUS-CPU-04 reference mainboard study001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 28,
+      "volume": 38290.39645942999,
+      "bounds": [
+        -83.0,
+        101.0,
+        -69.0,
+        77.0,
+        8.5,
+        10.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainPCB",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPU",
+      "label": "CPU-NUS QFP package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2690.4154335088083,
+      "bounds": [
+        -53.5,
+        -22.5,
+        -18.5,
+        12.5,
+        11.2,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPU",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUMark",
+      "label": "CPU-NUS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 118,
+      "volume": 0.11811073812131359,
+      "bounds": [
+        -52.35528533489933,
+        -41.03171130939597,
+        -4.03758399261745,
+        -2.088590504026846,
+        14.0299999,
+        14.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULeads0",
+      "label": "QFP terminal bank 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 180,
+      "volume": 3.6960000000000144,
+      "bounds": [
+        -52.64,
+        -23.36,
+        12.55,
+        14.55,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULeads0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULeads1",
+      "label": "QFP terminal bank 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 180,
+      "volume": 3.6960000000000144,
+      "bounds": [
+        -55.550000000000004,
+        -53.55,
+        -17.64,
+        11.64,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULeads2",
+      "label": "QFP terminal bank 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 180,
+      "volume": 3.6960000000000126,
+      "bounds": [
+        -52.64,
+        -23.36,
+        -20.550000000000004,
+        -18.549999999999997,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULeads2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULeads3",
+      "label": "QFP terminal bank 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 180,
+      "volume": 3.696000000000007,
+      "bounds": [
+        -22.450000000000003,
+        -20.449999999999996,
+        -17.64,
+        11.639999999999997,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULeads3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCP",
+      "label": "RCP-NUS QFP package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3628.415433508808,
+      "bounds": [
+        -12.000000000000002,
+        24.0,
+        -7.000000000000002,
+        29.0,
+        11.2,
+        14.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCP",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCPMark",
+      "label": "RCP-NUS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 127,
+      "volume": 0.12064028534750838,
+      "bounds": [
+        -10.74706385838926,
+        0.18909405973154375,
+        9.96241600738255,
+        11.911409495973153,
+        14.0299999,
+        14.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCPMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCPLeads0",
+      "label": "QFP terminal bank 001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 240,
+      "volume": 4.928000000000019,
+      "bounds": [
+        -11.14,
+        23.14,
+        29.05,
+        31.05,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCPLeads0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCPLeads1",
+      "label": "QFP terminal bank 002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 240,
+      "volume": 4.928000000000012,
+      "bounds": [
+        -14.050000000000004,
+        -12.049999999999997,
+        -6.139999999999997,
+        28.140000000000004,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCPLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCPLeads2",
+      "label": "QFP terminal bank 003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 240,
+      "volume": 4.928000000000012,
+      "bounds": [
+        -11.140000000000004,
+        23.139999999999997,
+        -9.050000000000004,
+        -7.049999999999997,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCPLeads2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RCPLeads3",
+      "label": "QFP terminal bank 004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 40,
+      "faces": 240,
+      "volume": 4.928000000000017,
+      "bounds": [
+        24.049999999999997,
+        26.050000000000004,
+        -6.140000000000004,
+        28.139999999999997,
+        11.899999999999999,
+        12.12
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RCPLeads3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM0",
+      "label": "RDRAM18 low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 455.21072118011665,
+      "bounds": [
+        -5.5,
+        17.5,
+        -30.5,
+        -19.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM0Mark",
+      "label": "RDRAM18",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 141,
+      "volume": 0.10791796919223234,
+      "bounds": [
+        -4.285004294630872,
+        6.17270563691275,
+        -25.731946408724834,
+        -24.075301913422816,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM0Mark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM0Leads_1",
+      "label": "SOP lead bank",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 96,
+      "volume": 1.2543999999999944,
+      "bounds": [
+        -4.64,
+        16.64,
+        -31.94,
+        -30.540000000000003,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM0Leads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM0Leads1",
+      "label": "SOP lead bank001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 96,
+      "volume": 1.2543999999999937,
+      "bounds": [
+        -4.64,
+        16.64,
+        -19.46,
+        -18.060000000000002,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM0Leads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM1",
+      "label": "RDRAM18 low-profile package001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 455.21072118011665,
+      "bounds": [
+        -5.5,
+        17.5,
+        -45.5,
+        -34.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM1Mark",
+      "label": "RDRAM001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 141,
+      "volume": 0.10791796919223227,
+      "bounds": [
+        -4.285004294630872,
+        6.17270563691275,
+        -40.73194640872484,
+        -39.07530191342282,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM1Mark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM1Leads_1",
+      "label": "SOP lead bank002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 96,
+      "volume": 1.2543999999999944,
+      "bounds": [
+        -4.64,
+        16.64,
+        -46.94,
+        -45.54,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM1Leads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAM1Leads1",
+      "label": "SOP lead bank003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 96,
+      "volume": 1.254399999999994,
+      "bounds": [
+        -4.64,
+        16.64,
+        -34.46,
+        -33.06,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAM1Leads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoDAC",
+      "label": "VDC-NUS low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 336.4107211801165,
+      "bounds": [
+        39.5,
+        50.5,
+        5.5,
+        22.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoDAC",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoDACMark",
+      "label": "VDC-NUS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 109,
+      "volume": 0.08749612290682042,
+      "bounds": [
+        40.517114093959734,
+        50.5127433885906,
+        13.26805359127517,
+        14.924698086577182,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoDACMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoDACLeads_1",
+      "label": "SOP lead bank004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 72,
+      "volume": 0.9408000000000006,
+      "bounds": [
+        40.36,
+        49.64,
+        4.0600000000000005,
+        5.460000000000001,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoDACLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoDACLeads1",
+      "label": "SOP lead bank005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 72,
+      "volume": 0.9407999999999999,
+      "bounds": [
+        40.36,
+        49.64,
+        22.54,
+        23.939999999999998,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoDACLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoAmp",
+      "label": "VIDEO AMP low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 158.21072118011656,
+      "bounds": [
+        58.0,
+        66.0,
+        11.5,
+        22.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoAmp",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoAmpMark",
+      "label": "VIDEO AMP",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 109,
+      "volume": 0.04796695551934455,
+      "bounds": [
+        59.01118568232662,
+        67.02101986137211,
+        16.27911995965697,
+        17.361894208873977,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoAmpMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoAmpLeads_1",
+      "label": "SOP lead bank006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 42,
+      "volume": 0.5488000000000002,
+      "bounds": [
+        58.86,
+        65.14,
+        10.06,
+        11.46,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoAmpLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VideoAmpLeads1",
+      "label": "SOP lead bank007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 42,
+      "volume": 0.5487999999999996,
+      "bounds": [
+        58.86,
+        65.14,
+        22.54,
+        23.939999999999998,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VideoAmpLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDAC",
+      "label": "AUDIO DAC low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 194.2107211801166,
+      "bounds": [
+        57.5,
+        66.5,
+        -14.0,
+        -1.9999999999999996,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDAC",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDACMark",
+      "label": "AUDIO DAC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 118,
+      "volume": 0.05908441586312177,
+      "bounds": [
+        58.51258389261745,
+        67.60449884161073,
+        -8.723490032885906,
+        -7.505369027516777,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDACMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDACLeads_1",
+      "label": "SOP lead bank008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 48,
+      "volume": 0.6272000000000004,
+      "bounds": [
+        58.36,
+        65.64,
+        -15.44,
+        -14.04,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDACLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDACLeads1",
+      "label": "SOP lead bank009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 48,
+      "volume": 0.6272000000000002,
+      "bounds": [
+        58.36,
+        65.64,
+        -1.96,
+        -0.56,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDACLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PIF",
+      "label": "PIF-NUS low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 316.6107211801167,
+      "bounds": [
+        48.0,
+        64.0,
+        -46.5,
+        -35.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PIF",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PIFMark",
+      "label": "PIF-NUS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 100,
+      "volume": 0.0764222985846824,
+      "bounds": [
+        49.21499570536912,
+        57.52495815369128,
+        -41.73194640872484,
+        -40.07530191342282,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PIFMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PIFLeads_1",
+      "label": "SOP lead bank010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 84,
+      "volume": 1.0976,
+      "bounds": [
+        48.86,
+        63.14,
+        -47.94,
+        -46.54,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PIFLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PIFLeads1",
+      "label": "SOP lead bank011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 84,
+      "volume": 1.0976,
+      "bounds": [
+        48.86,
+        63.14,
+        -35.46,
+        -34.06,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PIFLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockBuffer",
+      "label": "CLOCK low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 86.21072118011658,
+      "bounds": [
+        34.0,
+        42.0,
+        -17.0,
+        -11.0,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockBuffer",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockBufferMark",
+      "label": "CLOCK",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 79,
+      "volume": 0.06274349977624616,
+      "bounds": [
+        35.12300745033557,
+        42.40626677852349,
+        -14.73194640872483,
+        -13.075301913422818,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockBufferMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockBufferLeads_1",
+      "label": "SOP lead bank012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 24,
+      "volume": 0.31359999999999977,
+      "bounds": [
+        34.86,
+        41.14,
+        -18.44,
+        -17.040000000000003,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockBufferLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockBufferLeads1",
+      "label": "SOP lead bank013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 24,
+      "volume": 0.3136000000000002,
+      "bounds": [
+        34.86,
+        41.14,
+        -10.96,
+        -9.56,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockBufferLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CICLogic",
+      "label": "LOGIC low-profile package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 88.01072118011656,
+      "bounds": [
+        65.5,
+        72.5,
+        -61.5,
+        -54.5,
+        11.2,
+        13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CICLogic",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CICLogicMark",
+      "label": "LOGIC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 76,
+      "volume": 0.05854557325521719,
+      "bounds": [
+        66.71499580536913,
+        73.12265530134228,
+        -58.73194640872484,
+        -57.07530191342282,
+        13.0299999,
+        13.0480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CICLogicMark",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CICLogicLeads_1",
+      "label": "SOP lead bank014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 48,
+      "volume": 0.6271999999999995,
+      "bounds": [
+        66.36,
+        71.64,
+        -62.94,
+        -61.54,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CICLogicLeads-1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CICLogicLeads1",
+      "label": "SOP lead bank015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 48,
+      "volume": 0.6271999999999994,
+      "bounds": [
+        66.36,
+        71.64,
+        -54.46,
+        -53.06,
+        11.649999999999999,
+        11.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CICLogicLeads1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardRevision",
+      "label": "NUS-CPU-04 / STUDY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 16,
+      "faces": 247,
+      "volume": 0.334797869153632,
+      "bounds": [
+        -73.70912332214766,
+        -43.1204739932886,
+        69.728322147651,
+        72.19812090536912,
+        10.129999900000001,
+        10.1480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardRevision",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakSocketCut",
+      "label": "Game Pak connector housing001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 6292.741432242747,
+      "bounds": [
+        -41.5,
+        41.5,
+        37.0,
+        47.0,
+        11.6,
+        24.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakSocket",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_0",
+      "label": "Edge-connector leaf contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0080000000000013,
+      "bounds": [
+        -33.949999999999996,
+        -33.24999999999999,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_0",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_1",
+      "label": "Edge-connector leaf contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -31.15,
+        -30.45,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_1",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_2",
+      "label": "Edge-connector leaf contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -28.35,
+        -27.650000000000002,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_2",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_3",
+      "label": "Edge-connector leaf contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -25.55,
+        -24.85,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_3",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_4",
+      "label": "Edge-connector leaf contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -22.75,
+        -22.05,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_4",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_5",
+      "label": "Edge-connector leaf contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -19.95,
+        -19.25,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_5",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_6",
+      "label": "Edge-connector leaf contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -17.15,
+        -16.45,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_6",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_7",
+      "label": "Edge-connector leaf contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -14.35,
+        -13.65,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_7",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_8",
+      "label": "Edge-connector leaf contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -11.549999999999999,
+        -10.85,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_8",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_9",
+      "label": "Edge-connector leaf contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -8.749999999999998,
+        -8.049999999999999,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_9",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_10",
+      "label": "Edge-connector leaf contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -5.949999999999999,
+        -5.249999999999999,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_10",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_11",
+      "label": "Edge-connector leaf contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -3.15,
+        -2.45,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_11",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_12",
+      "label": "Edge-connector leaf contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -0.35,
+        0.35,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_12",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_13",
+      "label": "Edge-connector leaf contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        2.4499999999999997,
+        3.1499999999999995,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_13",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_14",
+      "label": "Edge-connector leaf contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        5.25,
+        5.95,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_14",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_15",
+      "label": "Edge-connector leaf contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        8.049999999999999,
+        8.749999999999998,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_15",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_16",
+      "label": "Edge-connector leaf contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        10.85,
+        11.549999999999999,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_16",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_17",
+      "label": "Edge-connector leaf contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        13.65,
+        14.35,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_17",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_18",
+      "label": "Edge-connector leaf contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        16.449999999999996,
+        17.149999999999995,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_18",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_19",
+      "label": "Edge-connector leaf contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        19.249999999999996,
+        19.949999999999996,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_19",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_20",
+      "label": "Edge-connector leaf contact020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        22.049999999999997,
+        22.749999999999996,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_20",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_21",
+      "label": "Edge-connector leaf contact021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        24.849999999999998,
+        25.549999999999997,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_21",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_22",
+      "label": "Edge-connector leaf contact022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        27.65,
+        28.349999999999998,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_22",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_23",
+      "label": "Edge-connector leaf contact023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        30.449999999999996,
+        31.149999999999995,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_23",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact_1_24",
+      "label": "Edge-connector leaf contact024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0080000000000011,
+      "bounds": [
+        33.24999999999999,
+        33.949999999999996,
+        39.22,
+        40.85,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact-1_24",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_0",
+      "label": "Edge-connector leaf contact025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0080000000000016,
+      "bounds": [
+        -33.949999999999996,
+        -33.24999999999999,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_0",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_1",
+      "label": "Edge-connector leaf contact026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -31.15,
+        -30.45,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_1",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_2",
+      "label": "Edge-connector leaf contact027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -28.35,
+        -27.650000000000002,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_2",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_3",
+      "label": "Edge-connector leaf contact028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -25.55,
+        -24.85,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_3",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_4",
+      "label": "Edge-connector leaf contact029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -22.75,
+        -22.05,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_4",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_5",
+      "label": "Edge-connector leaf contact030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -19.95,
+        -19.25,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_5",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_6",
+      "label": "Edge-connector leaf contact031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -17.15,
+        -16.45,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_6",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_7",
+      "label": "Edge-connector leaf contact032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999991,
+      "bounds": [
+        -14.35,
+        -13.65,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_7",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_8",
+      "label": "Edge-connector leaf contact033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -11.549999999999999,
+        -10.85,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_8",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_9",
+      "label": "Edge-connector leaf contact034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -8.749999999999998,
+        -8.049999999999999,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_9",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_10",
+      "label": "Edge-connector leaf contact035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -5.949999999999999,
+        -5.249999999999999,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_10",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_11",
+      "label": "Edge-connector leaf contact036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -3.15,
+        -2.45,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_11",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_12",
+      "label": "Edge-connector leaf contact037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -0.35,
+        0.35,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_12",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_13",
+      "label": "Edge-connector leaf contact038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        2.4499999999999997,
+        3.1499999999999995,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_13",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_14",
+      "label": "Edge-connector leaf contact039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        5.25,
+        5.95,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_14",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_15",
+      "label": "Edge-connector leaf contact040",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        8.049999999999999,
+        8.749999999999998,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_15",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_16",
+      "label": "Edge-connector leaf contact041",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        10.85,
+        11.549999999999999,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_16",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_17",
+      "label": "Edge-connector leaf contact042",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        13.65,
+        14.35,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_17",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_18",
+      "label": "Edge-connector leaf contact043",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        16.449999999999996,
+        17.149999999999995,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_18",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_19",
+      "label": "Edge-connector leaf contact044",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        19.249999999999996,
+        19.949999999999996,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_19",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_20",
+      "label": "Edge-connector leaf contact045",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        22.049999999999997,
+        22.749999999999996,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_20",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_21",
+      "label": "Edge-connector leaf contact046",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        24.849999999999998,
+        25.549999999999997,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_21",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_22",
+      "label": "Edge-connector leaf contact047",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        27.65,
+        28.349999999999998,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_22",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_23",
+      "label": "Edge-connector leaf contact048",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        30.449999999999996,
+        31.149999999999995,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_23",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakContact1_24",
+      "label": "Edge-connector leaf contact049",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0080000000000016,
+      "bounds": [
+        33.24999999999999,
+        33.949999999999996,
+        43.15,
+        44.78,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakContact1_24",
+      "assembly": "CardReader",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakMountCut001",
+      "label": "Cartridge connector mounting plate002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 1023.3720008440414,
+      "bounds": [
+        -53.0,
+        53.0,
+        35.0,
+        49.0,
+        11.0,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakMount",
+      "assembly": "CardReader",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GamePakGuide",
+      "label": "Upper cartridge guide beneath the shutters",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 3169.5114857512885,
+      "bounds": [
+        -62.5,
+        62.5,
+        30.0,
+        54.0,
+        51.0,
+        61.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GamePakGuide",
+      "assembly": "CardReader",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemorySocketCut",
+      "label": "36-position memory expansion connector001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 3701.626861597141,
+      "bounds": [
+        -24.0,
+        24.0,
+        -61.0,
+        -51.0,
+        11.6,
+        24.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemorySocket",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_0",
+      "label": "Edge-connector leaf contact050",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -19.475,
+        -18.775000000000002,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_0",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_1",
+      "label": "Edge-connector leaf contact051",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -17.225,
+        -16.525000000000002,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_1",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_2",
+      "label": "Edge-connector leaf contact052",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -14.975,
+        -14.275,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_2",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_3",
+      "label": "Edge-connector leaf contact053",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -12.725,
+        -12.025,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_3",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_4",
+      "label": "Edge-connector leaf contact054",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -10.475,
+        -9.775,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_4",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_5",
+      "label": "Edge-connector leaf contact055",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -8.225,
+        -7.5249999999999995,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_5",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_6",
+      "label": "Edge-connector leaf contact056",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -5.975,
+        -5.2749999999999995,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_6",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_7",
+      "label": "Edge-connector leaf contact057",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -3.725,
+        -3.0250000000000004,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_7",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_8",
+      "label": "Edge-connector leaf contact058",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -1.475,
+        -0.7750000000000001,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_8",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_9",
+      "label": "Edge-connector leaf contact059",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        0.775,
+        1.475,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_9",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_10",
+      "label": "Edge-connector leaf contact060",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        3.025,
+        3.7249999999999996,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_10",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_11",
+      "label": "Edge-connector leaf contact061",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        5.275,
+        5.9750000000000005,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_11",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_12",
+      "label": "Edge-connector leaf contact062",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        7.525,
+        8.225,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_12",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_13",
+      "label": "Edge-connector leaf contact063",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        9.775,
+        10.475,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_13",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_14",
+      "label": "Edge-connector leaf contact064",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        12.025,
+        12.725,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_14",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_15",
+      "label": "Edge-connector leaf contact065",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        14.275,
+        14.975,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_15",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_16",
+      "label": "Edge-connector leaf contact066",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        16.525,
+        17.224999999999998,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_16",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact_1_17",
+      "label": "Edge-connector leaf contact067",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        18.775,
+        19.474999999999998,
+        -58.78,
+        -57.15,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact-1_17",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_0",
+      "label": "Edge-connector leaf contact068",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -19.475,
+        -18.775000000000002,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_0",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_1",
+      "label": "Edge-connector leaf contact069",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -17.225,
+        -16.525000000000002,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_1",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_2",
+      "label": "Edge-connector leaf contact070",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        -14.975,
+        -14.275,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_2",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_3",
+      "label": "Edge-connector leaf contact071",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -12.725,
+        -12.025,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_3",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_4",
+      "label": "Edge-connector leaf contact072",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -10.475,
+        -9.775,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_4",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_5",
+      "label": "Edge-connector leaf contact073",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -8.225,
+        -7.5249999999999995,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_5",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_6",
+      "label": "Edge-connector leaf contact074",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        -5.975,
+        -5.2749999999999995,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_6",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_7",
+      "label": "Edge-connector leaf contact075",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -3.725,
+        -3.0250000000000004,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_7",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_8",
+      "label": "Edge-connector leaf contact076",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999993,
+      "bounds": [
+        -1.475,
+        -0.7750000000000001,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_8",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_9",
+      "label": "Edge-connector leaf contact077",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        0.775,
+        1.475,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_9",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_10",
+      "label": "Edge-connector leaf contact078",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999998,
+      "bounds": [
+        3.025,
+        3.7249999999999996,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_10",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_11",
+      "label": "Edge-connector leaf contact079",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        5.275,
+        5.9750000000000005,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_11",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_12",
+      "label": "Edge-connector leaf contact080",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        7.525,
+        8.225,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_12",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_13",
+      "label": "Edge-connector leaf contact081",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        9.775,
+        10.475,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_13",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_14",
+      "label": "Edge-connector leaf contact082",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.008,
+      "bounds": [
+        12.025,
+        12.725,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_14",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_15",
+      "label": "Edge-connector leaf contact083",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        14.275,
+        14.975,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_15",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_16",
+      "label": "Edge-connector leaf contact084",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        16.525,
+        17.224999999999998,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_16",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryContact1_17",
+      "label": "Edge-connector leaf contact085",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 1.0079999999999996,
+      "bounds": [
+        18.775,
+        19.474999999999998,
+        -54.85,
+        -53.22,
+        15.8,
+        23.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryContact1_17",
+      "assembly": "Memory",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperPCB",
+      "label": "Original terminator PCB",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1209.1364600329396,
+      "bounds": [
+        -21.0,
+        21.0,
+        -56.6,
+        -55.4,
+        22.0,
+        46.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperPCB",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperShell",
+      "label": "Original black Jumper Pak shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 4331.471021618719,
+      "bounds": [
+        -23.0,
+        23.0,
+        -61.0,
+        -51.0,
+        28.0,
+        52.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperShell",
+      "assembly": "Memory",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperLid",
+      "label": "Jumper Pak upper cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 515.3625122371575,
+      "bounds": [
+        -22.75,
+        22.75,
+        -60.75,
+        -51.25,
+        52.2,
+        53.400000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperLid",
+      "assembly": "Memory",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_0",
+      "label": "Terminator PCB edge contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941385,
+      "bounds": [
+        -19.775,
+        -18.475,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_0",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_1",
+      "label": "Terminator PCB edge contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        -17.525,
+        -16.225,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_1",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_2",
+      "label": "Terminator PCB edge contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -15.275,
+        -13.975,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_2",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_3",
+      "label": "Terminator PCB edge contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -13.025,
+        -11.725,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_3",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_4",
+      "label": "Terminator PCB edge contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -10.775,
+        -9.475,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_4",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_5",
+      "label": "Terminator PCB edge contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -8.525,
+        -7.225,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_5",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_6",
+      "label": "Terminator PCB edge contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -6.275,
+        -4.975,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_6",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_7",
+      "label": "Terminator PCB edge contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -4.025,
+        -2.725,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_7",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_8",
+      "label": "Terminator PCB edge contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -1.7750000000000001,
+        -0.4749999999999999,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_8",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_9",
+      "label": "Terminator PCB edge contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941386,
+      "bounds": [
+        0.4749999999999999,
+        1.7750000000000001,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_9",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_10",
+      "label": "Terminator PCB edge contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        2.725,
+        4.025,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_10",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_11",
+      "label": "Terminator PCB edge contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        4.975,
+        6.275,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_11",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_12",
+      "label": "Terminator PCB edge contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        7.225,
+        8.525,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_12",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_13",
+      "label": "Terminator PCB edge contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        9.475,
+        10.775,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_13",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_14",
+      "label": "Terminator PCB edge contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        11.725,
+        13.025,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_14",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_15",
+      "label": "Terminator PCB edge contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        13.975,
+        15.275,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_15",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_16",
+      "label": "Terminator PCB edge contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        16.225,
+        17.525,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_16",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger_1_17",
+      "label": "Terminator PCB edge contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        18.475,
+        19.775,
+        -56.682500000000005,
+        -56.6275,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger-1_17",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_0",
+      "label": "Terminator PCB edge contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        -19.775,
+        -18.475,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_0",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_1",
+      "label": "Terminator PCB edge contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941385,
+      "bounds": [
+        -17.525,
+        -16.225,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_1",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_2",
+      "label": "Terminator PCB edge contact020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -15.275,
+        -13.975,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_2",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_3",
+      "label": "Terminator PCB edge contact021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -13.025,
+        -11.725,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_3",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_4",
+      "label": "Terminator PCB edge contact022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -10.775,
+        -9.475,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_4",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_5",
+      "label": "Terminator PCB edge contact023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -8.525,
+        -7.225,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_5",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_6",
+      "label": "Terminator PCB edge contact024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -6.275,
+        -4.975,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_6",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_7",
+      "label": "Terminator PCB edge contact025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        -4.025,
+        -2.725,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_7",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_8",
+      "label": "Terminator PCB edge contact026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        -1.7750000000000001,
+        -0.4749999999999999,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_8",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_9",
+      "label": "Terminator PCB edge contact027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        0.4749999999999999,
+        1.7750000000000001,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_9",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_10",
+      "label": "Terminator PCB edge contact028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        2.725,
+        4.025,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_10",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_11",
+      "label": "Terminator PCB edge contact029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        4.975,
+        6.275,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_11",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_12",
+      "label": "Terminator PCB edge contact030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        7.225,
+        8.525,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_12",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_13",
+      "label": "Terminator PCB edge contact031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        9.475,
+        10.775,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_13",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_14",
+      "label": "Terminator PCB edge contact032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941389,
+      "bounds": [
+        11.725,
+        13.025,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_14",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_15",
+      "label": "Terminator PCB edge contact033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941387,
+      "bounds": [
+        13.975,
+        15.275,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_15",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_16",
+      "label": "Terminator PCB edge contact034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        16.225,
+        17.525,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_16",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperFinger1_17",
+      "label": "Terminator PCB edge contact035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5716137166941384,
+      "bounds": [
+        18.475,
+        19.775,
+        -55.3725,
+        -55.317499999999995,
+        22.3,
+        30.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperFinger1_17",
+      "assembly": "Memory",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperResistor0",
+      "label": "Terminator resistor network",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 23.922743338823082,
+      "bounds": [
+        -16.0,
+        -10.0,
+        -55.32,
+        -54.32,
+        38.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperResistor0",
+      "assembly": "Memory",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperResistor1",
+      "label": "Terminator resistor network001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 23.922743338823086,
+      "bounds": [
+        -7.300000000000001,
+        -1.2999999999999998,
+        -55.32,
+        -54.32,
+        38.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperResistor1",
+      "assembly": "Memory",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperResistor2",
+      "label": "Terminator resistor network002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 23.922743338823086,
+      "bounds": [
+        1.2999999999999998,
+        7.300000000000001,
+        -55.32,
+        -54.32,
+        38.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperResistor2",
+      "assembly": "Memory",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperResistor3",
+      "label": "Terminator resistor network003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 23.92274333882308,
+      "bounds": [
+        10.0,
+        16.0,
+        -55.32,
+        -54.32,
+        38.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperResistor3",
+      "assembly": "Memory",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "JumperTitle",
+      "label": "JUMPER PAK",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 144,
+      "volume": 0.1747147510388067,
+      "bounds": [
+        -12.133389361744966,
+        3.5535234899328842,
+        -56.01543634161074,
+        -53.620805269127516,
+        53.4299999,
+        53.4480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "JumperTitle",
+      "assembly": "Memory",
+      "layer": 3,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/n64/output/iterations/06_game_pak_bus_and_original_jumper_pak.FCStd",
+  "views": [
+    "devices/n64/output/previews/06_game_pak_bus_and_original_jumper_pak_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

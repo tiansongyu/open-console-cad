@@ -1,0 +1,2391 @@
+{
+  "iteration": 4,
+  "slug": "multi_out_and_removable_rear_power_module",
+  "summary": "加入原始 Multi Out 十二接点接口、后右侧可拆电源模块、六位电源连接器和两侧通风孔，保留电源模块上下空心壳。",
+  "physical_components": 88,
+  "objects": [
+    {
+      "name": "LowerHousingCut008",
+      "label": "Rounded lower enclosure with corner pods010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 174,
+      "volume": 121470.69865471005,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        2.0,
+        26.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut010",
+      "label": "Original transverse arched upper enclosure013",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 82,
+      "volume": 103907.98150698788,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        26.3,
+        73.00000010011038
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Corner support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Corner support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Corner support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Corner support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup1",
+      "label": "Controller 1 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        -89.5,
+        -62.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert1",
+      "label": "Three-position connector insert",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947021,
+      "bounds": [
+        -85.85820895522389,
+        -66.14179104477611,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_0",
+      "label": "Three-wire controller socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -82.2,
+        -79.39999999999999,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_1",
+      "label": "Three-wire controller socket contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -77.4,
+        -74.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_2",
+      "label": "Three-wire controller socket contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -72.60000000000001,
+        -69.8,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot1_0",
+      "label": "Controller index dot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        -76.55,
+        -75.45,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup2",
+      "label": "Controller 2 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        -56.5,
+        -29.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert2",
+      "label": "Three-position connector insert001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947018,
+      "bounds": [
+        -52.85820895522388,
+        -33.14179104477612,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_0",
+      "label": "Three-wire controller socket contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -49.199999999999996,
+        -46.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_1",
+      "label": "Three-wire controller socket contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -44.4,
+        -41.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_2",
+      "label": "Three-wire controller socket contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271948,
+      "bounds": [
+        -39.6,
+        -36.800000000000004,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_0",
+      "label": "Controller index dot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -44.699999999999996,
+        -43.6,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_1",
+      "label": "Controller index dot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -42.4,
+        -41.300000000000004,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup3",
+      "label": "Controller 3 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        29.5,
+        56.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert3",
+      "label": "Three-position connector insert002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947018,
+      "bounds": [
+        33.14179104477612,
+        52.85820895522388,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_0",
+      "label": "Three-wire controller socket contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        36.800000000000004,
+        39.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_1",
+      "label": "Three-wire controller socket contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        41.6,
+        44.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_2",
+      "label": "Three-wire controller socket contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271948,
+      "bounds": [
+        46.4,
+        49.199999999999996,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_0",
+      "label": "Controller index dot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        40.150000000000006,
+        41.25,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_1",
+      "label": "Controller index dot004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        42.45,
+        43.55,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_2",
+      "label": "Controller index dot005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        44.75,
+        45.849999999999994,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup4",
+      "label": "Controller 4 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        62.5,
+        89.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert4",
+      "label": "Three-position connector insert003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947021,
+      "bounds": [
+        66.14179104477611,
+        85.85820895522389,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_0",
+      "label": "Three-wire controller socket contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        69.8,
+        72.60000000000001,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_1",
+      "label": "Three-wire controller socket contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        74.6,
+        77.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_2",
+      "label": "Three-wire controller socket contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        79.39999999999999,
+        82.2,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_0",
+      "label": "Controller index dot006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        72.0,
+        73.1,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_1",
+      "label": "Controller index dot007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        74.3,
+        75.39999999999999,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_2",
+      "label": "Controller index dot008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        76.60000000000001,
+        77.7,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_3",
+      "label": "Controller index dot009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        78.9,
+        80.0,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadge",
+      "label": "Central black front badge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 769.0938009881562,
+      "bounds": [
+        -29.0,
+        29.0,
+        -89.51,
+        -89.06,
+        39.0,
+        69.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadge",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Nintendo64Title",
+      "label": "NINTENDO 64",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 143,
+      "volume": 0.6792331279971463,
+      "bounds": [
+        -23.532067953020135,
+        8.772936241610743,
+        -89.5580001,
+        -89.53999990000001,
+        59.230469698657714,
+        62.83610748255033
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Nintendo64Title",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark0",
+      "label": "N64 colour study mark",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 10.00000000000052,
+      "bounds": [
+        -12.0,
+        8.0,
+        -89.59,
+        -89.55,
+        37.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ngreen",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark1",
+      "label": "N64 colour study mark001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 2.88000000000015,
+      "bounds": [
+        8.0,
+        12.0,
+        -89.59,
+        -89.55,
+        37.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark2",
+      "label": "N64 colour study mark002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.6000000000000312,
+      "bounds": [
+        -12.0,
+        -3.0,
+        -89.59,
+        -89.55,
+        55.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nyellow",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Small front power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8.881946710584653,
+      "bounds": [
+        -3.8,
+        3.8,
+        -89.55,
+        -89.05,
+        14.75,
+        17.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDeckCut001",
+      "label": "D-shaped curved top cartridge insert002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 144,
+      "volume": 16218.122464492197,
+      "bounds": [
+        -73.0000001000002,
+        73.00000010000005,
+        -24.000000100000022,
+        82.0000001,
+        62.49999989999996,
+        72.90000009999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDeck",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlap0",
+      "label": "Opposed grey cartridge dust door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1372.0396447372325,
+      "bounds": [
+        -61.0,
+        61.0,
+        32.4,
+        41.800000000000004,
+        63.2,
+        64.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlap0",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark0__1",
+      "label": "Cartridge door moulding line",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        -48.12,
+        -47.88,
+        33.0,
+        41.2,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark0_-1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark0_1",
+      "label": "Cartridge door moulding line001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        47.88,
+        48.12,
+        33.0,
+        41.2,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark0_1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustFlap1",
+      "label": "Opposed grey cartridge dust door001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1372.0396447372325,
+      "bounds": [
+        -61.0,
+        61.0,
+        42.199999999999996,
+        51.6,
+        63.2,
+        64.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustFlap1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark1__1",
+      "label": "Cartridge door moulding line002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        -48.12,
+        -47.88,
+        42.8,
+        51.0,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark1_-1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapMark1_1",
+      "label": "Cartridge door moulding line003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04914634954085274,
+      "bounds": [
+        47.88,
+        48.12,
+        42.8,
+        51.0,
+        64.43,
+        64.45500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapMark1_1",
+      "assembly": "CardReader",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopNintendo",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.2913644219215424,
+      "bounds": [
+        -11.607948825503355,
+        5.9377391939597315,
+        69.94174486644296,
+        73.03758399261744,
+        73.03999990000001,
+        73.0580001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopNintendo",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryCoverCut",
+      "label": "Curved memory expansion cover001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 4818.940969519198,
+      "bounds": [
+        -33.10000010000004,
+        33.1000001,
+        -80.6000001,
+        -37.3999999,
+        69.3572673998877,
+        72.90000009999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryTitle",
+      "label": "MEMORY EXPANSION",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 15,
+      "faces": 235,
+      "volume": 0.2752154994432823,
+      "bounds": [
+        -15.7597105704698,
+        9.360297818791945,
+        -71.03570479798657,
+        -69.18416097382551,
+        72.97999990000001,
+        72.9980001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot0",
+      "label": "Memory-cover finger index",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        -6.6,
+        -5.4,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot1",
+      "label": "Memory-cover finger index001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169536,
+      "bounds": [
+        -2.6,
+        -1.4,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot2",
+      "label": "Memory-cover finger index002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        1.4,
+        2.6000000000000005,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDot3",
+      "label": "Memory-cover finger index003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.04523893421169535,
+      "bounds": [
+        5.4,
+        6.6,
+        -48.6,
+        -47.4,
+        73.03,
+        73.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDot3",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerWell",
+      "label": "Power recessed switch surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 658.4849350939937,
+      "bounds": [
+        -81.2,
+        -62.8,
+        -79.7,
+        -40.3,
+        57.3,
+        58.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerWell",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power control cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1495.5276479870204,
+      "bounds": [
+        -79.65,
+        -64.35,
+        -75.5,
+        -44.5,
+        58.4,
+        61.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerTitle",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.1349699500052098,
+      "bounds": [
+        -77.72177023422819,
+        -67.5776844637584,
+        -68.04134238187919,
+        -65.89744956442954,
+        61.9299999,
+        61.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetWell",
+      "label": "Reset recessed switch surround",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 658.4849350939937,
+      "bounds": [
+        62.8,
+        81.2,
+        -79.7,
+        -40.3,
+        57.3,
+        58.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetWell",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "Reset control cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1495.5276479870206,
+      "bounds": [
+        64.35,
+        79.65,
+        -75.5,
+        -44.5,
+        58.4,
+        61.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetTitle",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.11214906792303989,
+      "bounds": [
+        66.27822976577181,
+        75.09299496644296,
+        -68.04134238187919,
+        -65.89744956442954,
+        61.9299999,
+        61.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetTitle",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerGrip",
+      "label": "Power slider raised grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 92.3371669411541,
+      "bounds": [
+        -78.5,
+        -65.5,
+        -57.85,
+        -54.15,
+        61.93,
+        63.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerGrip",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSULowerCut",
+      "label": "Removable NUS-002 power module lower shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 11108.38855525546,
+      "bounds": [
+        57.1,
+        118.9,
+        57.1,
+        96.9,
+        5.4,
+        26.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSULower",
+      "assembly": "Power",
+      "layer": -3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUUpperCut",
+      "label": "Removable NUS-002 power module upper shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 12502.283063151846,
+      "bounds": [
+        57.1,
+        118.9,
+        57.1,
+        96.9,
+        26.7,
+        51.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUUpper",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSURelease",
+      "label": "Power module release latch",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 153.98102592124334,
+      "bounds": [
+        81.5,
+        94.5,
+        87.0,
+        97.0,
+        52.0,
+        53.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSURelease",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutHousing",
+      "label": "Nintendo Multi Out insulated housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 853.9597651604344,
+      "bounds": [
+        -71.0,
+        -45.0,
+        80.0,
+        89.0,
+        17.999999999999996,
+        28.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutHousing",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutTongue",
+      "label": "Multi Out contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 155.63393797973725,
+      "bounds": [
+        -68.9,
+        -47.1,
+        81.25,
+        87.75,
+        21.8,
+        22.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_0",
+      "label": "Multi Out contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -66.2,
+        -64.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_1",
+      "label": "Multi Out contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -63.2,
+        -61.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_2",
+      "label": "Multi Out contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -60.2,
+        -58.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_3",
+      "label": "Multi Out contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -57.2,
+        -55.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_4",
+      "label": "Multi Out contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -54.2,
+        -52.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact0_5",
+      "label": "Multi Out contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -51.2,
+        -49.8,
+        81.6,
+        87.4,
+        21.65,
+        21.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact0_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_0",
+      "label": "Multi Out contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -66.2,
+        -64.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_1",
+      "label": "Multi Out contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -63.2,
+        -61.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_2",
+      "label": "Multi Out contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -60.2,
+        -58.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_3",
+      "label": "Multi Out contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -57.2,
+        -55.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_4",
+      "label": "Multi Out contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -54.2,
+        -52.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutContact1_5",
+      "label": "Multi Out contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8114506192983029,
+      "bounds": [
+        -51.2,
+        -49.8,
+        81.6,
+        87.4,
+        23.0,
+        23.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MultiOutTitle",
+      "label": "MULTI OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 99,
+      "volume": 0.18115679080119798,
+      "bounds": [
+        -86.91544043624161,
+        -71.29087667785234,
+        89.0299999,
+        89.0480001,
+        31.956778423489933,
+        34.19812090536913
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MultiOutTitle",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSocketCut",
+      "label": "Six-position power connector body001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2111.235410522582,
+      "bounds": [
+        76.0,
+        100.0,
+        45.0,
+        53.0,
+        14.0,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_0",
+      "label": "Detachable PSU socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.026990214100156,
+      "bounds": [
+        80.89999999999999,
+        82.7,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_1",
+      "label": "Detachable PSU socket contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        87.1,
+        88.9,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact0_2",
+      "label": "Detachable PSU socket contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        93.3,
+        95.10000000000001,
+        45.0,
+        52.8,
+        16.1,
+        17.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_0",
+      "label": "Detachable PSU socket contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.026990214100156,
+      "bounds": [
+        80.89999999999999,
+        82.7,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_1",
+      "label": "Detachable PSU socket contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        87.1,
+        88.9,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerContact1_2",
+      "label": "Detachable PSU socket contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 11.02699021410016,
+      "bounds": [
+        93.3,
+        95.10000000000001,
+        45.0,
+        52.8,
+        21.1,
+        22.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/n64/output/iterations/04_multi_out_and_removable_rear_power_module.FCStd",
+  "views": [
+    "devices/n64/output/previews/04_multi_out_and_removable_rear_power_module_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

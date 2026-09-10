@@ -1,0 +1,1150 @@
+{
+  "iteration": 2,
+  "slug": "four_three_contact_controller_ports",
+  "summary": "加入四个圆形灰色手柄接口、三路触点与定位圆点，补齐正面徽标和独立电源指示灯，保留上下壳的接口开孔历史。",
+  "physical_components": 42,
+  "objects": [
+    {
+      "name": "LowerHousingCut005",
+      "label": "Rounded lower enclosure with corner pods007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 126864.66281730498,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        2.0,
+        26.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut004",
+      "label": "Original transverse arched upper enclosure007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 151833.84583020085,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        26.3,
+        73.00000010000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Corner support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Corner support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Corner support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Corner support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup1",
+      "label": "Controller 1 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        -89.5,
+        -62.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert1",
+      "label": "Three-position connector insert",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947021,
+      "bounds": [
+        -85.85820895522389,
+        -66.14179104477611,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_0",
+      "label": "Three-wire controller socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -82.2,
+        -79.39999999999999,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_1",
+      "label": "Three-wire controller socket contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -77.4,
+        -74.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact1_2",
+      "label": "Three-wire controller socket contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -72.60000000000001,
+        -69.8,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot1_0",
+      "label": "Controller index dot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        -76.55,
+        -75.45,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup2",
+      "label": "Controller 2 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        -56.5,
+        -29.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert2",
+      "label": "Three-position connector insert001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947018,
+      "bounds": [
+        -52.85820895522388,
+        -33.14179104477612,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_0",
+      "label": "Three-wire controller socket contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -49.199999999999996,
+        -46.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_1",
+      "label": "Three-wire controller socket contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        -44.4,
+        -41.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact2_2",
+      "label": "Three-wire controller socket contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271948,
+      "bounds": [
+        -39.6,
+        -36.800000000000004,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact2_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_0",
+      "label": "Controller index dot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -44.699999999999996,
+        -43.6,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot2_1",
+      "label": "Controller index dot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        -42.4,
+        -41.300000000000004,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup3",
+      "label": "Controller 3 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        29.5,
+        56.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert3",
+      "label": "Three-position connector insert002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947018,
+      "bounds": [
+        33.14179104477612,
+        52.85820895522388,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_0",
+      "label": "Three-wire controller socket contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        36.800000000000004,
+        39.6,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_1",
+      "label": "Three-wire controller socket contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        41.6,
+        44.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact3_2",
+      "label": "Three-wire controller socket contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271948,
+      "bounds": [
+        46.4,
+        49.199999999999996,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_0",
+      "label": "Controller index dot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        40.150000000000006,
+        41.25,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_1",
+      "label": "Controller index dot004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        42.45,
+        43.55,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot3_2",
+      "label": "Controller index dot005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168725,
+      "bounds": [
+        44.75,
+        45.849999999999994,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot3_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortCup4",
+      "label": "Controller 4 grey socket body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2197.058722456367,
+      "bounds": [
+        62.5,
+        89.5,
+        -90.75,
+        -73.0,
+        13.5,
+        40.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortCup4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortInsert4",
+      "label": "Three-position connector insert003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 839.7745065947021,
+      "bounds": [
+        66.14179104477611,
+        85.85820895522389,
+        -89.3,
+        -85.0,
+        21.3,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortInsert4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_0",
+      "label": "Three-wire controller socket contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        69.8,
+        72.60000000000001,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_1",
+      "label": "Three-wire controller socket contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        74.6,
+        77.4,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortContact4_2",
+      "label": "Three-wire controller socket contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 16.16349420271947,
+      "bounds": [
+        79.39999999999999,
+        82.2,
+        -89.4,
+        -83.4,
+        24.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortContact4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_0",
+      "label": "Controller index dot006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        72.0,
+        73.1,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_1",
+      "label": "Controller index dot007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        74.3,
+        75.39999999999999,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_2",
+      "label": "Controller index dot008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        76.60000000000001,
+        77.7,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortDot4_3",
+      "label": "Controller index dot009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.0760265422168726,
+      "bounds": [
+        78.9,
+        80.0,
+        -90.88,
+        -90.8,
+        16.849999999999998,
+        17.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortDot4_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "portgrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadge",
+      "label": "Central black front badge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 769.0938009881562,
+      "bounds": [
+        -29.0,
+        29.0,
+        -89.51,
+        -89.06,
+        39.0,
+        69.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadge",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Nintendo64Title",
+      "label": "NINTENDO 64",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 143,
+      "volume": 0.6792331279971463,
+      "bounds": [
+        -23.532067953020135,
+        8.772936241610743,
+        -89.5580001,
+        -89.53999990000001,
+        59.230469698657714,
+        62.83610748255033
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Nintendo64Title",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark0",
+      "label": "N64 colour study mark",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 10.00000000000052,
+      "bounds": [
+        -12.0,
+        8.0,
+        -89.59,
+        -89.55,
+        37.0,
+        55.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ngreen",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark1",
+      "label": "N64 colour study mark001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 2.88000000000015,
+      "bounds": [
+        8.0,
+        12.0,
+        -89.59,
+        -89.55,
+        37.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nblue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ColourMark2",
+      "label": "N64 colour study mark002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.6000000000000312,
+      "bounds": [
+        -12.0,
+        -3.0,
+        -89.59,
+        -89.55,
+        55.0,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ColourMark2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "nyellow",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Small front power indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8.881946710584653,
+      "bounds": [
+        -3.8,
+        3.8,
+        -89.55,
+        -89.05,
+        14.75,
+        17.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/n64/output/iterations/02_four_three_contact_controller_ports.FCStd",
+  "views": [
+    "devices/n64/output/previews/02_four_three_contact_controller_ports_hero.png",
+    "devices/n64/output/previews/02_four_three_contact_controller_ports_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

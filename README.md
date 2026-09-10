@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **11 款设备、5,881 个组件与 132 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **12 款设备、6,628 个组件与 144 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -92,13 +92,18 @@
       <sub>HAA-2510 · 初代日版</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=megadrive&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/megadrive/README.md">设备说明</a> · <a href="devices/megadrive/output/drawings/MegaDrive_Drawings.pdf">A3 图纸</a>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=n64&amp;view=assembled#viewer"><img src="site/public/images/n64/hero.webp" width="206" height="160" alt="Nintendo 64 NUS-001 初代灰色主机与三叉手柄的 FreeCAD 模型"></a><br>
+      <strong>Nintendo 64</strong><br>
+      <sub>NUS-001 · 初代灰色</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=n64&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/n64/README.md">设备说明</a> · <a href="devices/n64/output/drawings/Nintendo64_Drawings.pdf">A3 图纸</a>
+    </td>
   </tr>
 </table>
 
-网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，以及 Mega Drive 的三键手柄、VA2 主板与原始连接附件。
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，以及 Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源。
 
-制作进度：PlayStation、PlayStation 2、Nintendo 64、Wii、Wii U 与 Sega Saturn 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
+制作进度：PlayStation、PlayStation 2、Wii、Wii U 与 Sega Saturn 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
 
 ## 快速开始
 
@@ -193,9 +198,9 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-已发布的十个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom` 和 `atari2600`。共享工具位于 `tools/`，重建时请保留仓库结构。
+已收录的十二个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive` 和 `n64`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。Game Boy、Famicom 和 Atari 2600 已提供完整模型、图册与在线预览；[PlayStation](devices/ps1/README.md) 正在建模，PlayStation 2 尚待扩展。
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。Game Boy、Famicom、Atari 2600、Mega Drive 和 Nintendo 64 已提供完整模型、图册与在线预览；[PlayStation](devices/ps1/README.md) 正在建模，PlayStation 2、Wii、Wii U 和 Saturn 继续扩展。
 
 ## 验证记录
 
@@ -203,12 +208,14 @@ open-console-cad/
 
 | 验证范围 | 记录 |
 | --- | --- |
-| 十款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
+| 十二款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
 | 首批七款：线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
 | 首批七款：模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
 | 新增 Game Boy：14 个线上文件与桌面/手机预览 | [文件核对](devices/gameboy/output/reports/live_delivery_audit.json) · [交互核对](devices/gameboy/output/reports/live_ui_checks.json) |
 | 新增 Famicom：15 个线上文件、九种视图与桌面/手机预览 | [文件核对](devices/famicom/output/reports/live_delivery_audit.json) · [交互核对](devices/famicom/output/reports/live_ui_checks.json) |
 | 新增 Atari 2600：15 个线上文件、十一种视图与桌面/手机预览 | [文件核对](devices/atari2600/output/reports/live_delivery_audit.json) · [交互核对](devices/atari2600/output/reports/live_ui_checks.json) |
+| 新增 Mega Drive：十一种视图与完整交付 | [交付核对](devices/megadrive/output/reports/completion_audit.json) · [线上核对](devices/megadrive/output/reports/live_delivery_audit.json) |
+| 新增 Nintendo 64：十五种视图、光学摇杆与 12 页图纸 | [交付核对](devices/n64/output/reports/completion_audit.json) · [预览核对](devices/n64/output/reports/web_preview_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献

@@ -14,7 +14,7 @@
     0.2,
     0.21
   ],
-  "stages": 0,
+  "stages": 15,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -22,9 +22,10 @@
     "Ports",
     "Mainboard",
     "Shield",
-    "Optical",
     "Internal",
-    "Power"
+    "Power",
+    "CardReader",
+    "Memory"
   ],
   "controls_groups": [
     "Controls",
@@ -32,19 +33,30 @@
   ],
   "internal_groups": [
     "Body",
+    "Controls",
+    "Ports",
     "Mainboard",
     "Shield",
-    "Optical",
     "Internal",
     "Power",
-    "Ports",
-    "Controls"
+    "CardReader",
+    "Memory"
   ],
   "internal_exclude": [
     "UpperHousing",
-    "DiscLid",
+    "CartridgeDeck",
+    "MemoryCover",
     "MainShield",
-    "CartridgeDeck"
+    "HeatCrossbar",
+    "DustFlap0",
+    "DustFlap1",
+    "FrontBadge",
+    "Nintendo64Title",
+    "TopNintendo",
+    "MemoryTitle",
+    "ColourMark0",
+    "ColourMark1",
+    "ColourMark2"
   ],
   "internal_normal": [
     0.2,
@@ -59,5 +71,6 @@
   ],
   "parameter_basis": "Published body envelope; local details approximate",
   "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
-  "fidelity": "Published envelope; approximate exterior details and schematic major internals"
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+  "envelope_basis": "Nintendo official NUS-001 body reference 260 x 190 x 73 mm; local details and internal layouts are approximate. External cables and detached controller/accessories are excluded."
 }

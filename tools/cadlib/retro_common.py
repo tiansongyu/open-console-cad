@@ -54,11 +54,11 @@ def loft_shell(m,key,label,outer,inner,assembly='Body',layer=0,material='accent'
     return m.register(shell,key,assembly,layer,material)
 
 
-def fuse_feature(m,key,shape,label):
+def fuse_feature(m,key,shape,label,refine=True):
     old=m.parts[key]
     tool=g.part_feature(m.doc,key+'AddTool',label,shape)
     m.group('Construction').addObject(tool)
-    obj=m.doc.addObject('Part::Fuse',key+'Fuse');obj.Base=old;obj.Tool=tool;obj.Refine=True
+    obj=m.doc.addObject('Part::Fuse',key+'Fuse');obj.Base=old;obj.Tool=tool;obj.Refine=refine
     m.doc.recompute();assert obj.Shape.isValid() and obj.Shape.Solids,key
     obj.Shape.check(True);old.PhysicalPart=False
     m.register(obj,key,old.Assembly,old.ExplodeLayer,old.MaterialDescription)

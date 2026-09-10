@@ -1,0 +1,177 @@
+{
+  "iteration": 1,
+  "slug": "native_arch_and_four_corner_pods",
+  "summary": "建立 260 × 190 mm 整体范围的上下空心壳、四角低台与脚垫，使用可编辑圆柱曲面生成初代 N64 的横向拱形顶盖。",
+  "physical_components": 6,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Rounded lower enclosure with corner pods002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 128893.12659456662,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        2.0,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut",
+      "label": "Original transverse arched upper enclosure003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 154171.18380685005,
+      "bounds": [
+        -130.0,
+        130.0,
+        -95.0,
+        95.0,
+        26.3,
+        73.00000010000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "n64grey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Corner support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Corner support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        -124.0,
+        -92.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Corner support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        -89.0,
+        -57.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Corner support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1367.2211228422775,
+      "bounds": [
+        92.0,
+        124.0,
+        57.0,
+        89.0,
+        0.0,
+        1.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/n64/output/iterations/01_native_arch_and_four_corner_pods.FCStd",
+  "views": [
+    "devices/n64/output/previews/01_native_arch_and_four_corner_pods_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

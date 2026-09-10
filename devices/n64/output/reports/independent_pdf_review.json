@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "review_type": "fresh_isolated_kami_pdf_review",
+  "reviewer": "n64_pdf_review",
+  "reviewed_at_utc": "2026-09-10T02:14:01.720670+00:00",
+  "artifact": "devices/n64/output/drawings/Nintendo64_Drawings.pdf",
+  "artifact_sha256": "3a271abd7ae0554abdc4ef10dc85fc31aac4bad29d9188361f0e7b2051e82f3b",
+  "contract": "devices/n64/output/drawings/content.json",
+  "result": "pass",
+  "passed": true,
+  "p0_count": 0,
+  "p1_count": 0,
+  "findings": [],
+  "review_scope": "Independent read-only review of the locked contract, final PDF metadata, all 12 supplied page PNGs, content/font gate results and existing geometry/native-dimension evidence. Only this report was written; PDF, renders and CAD were not edited or re-rendered.",
+  "acceptance_checks": [
+    {
+      "item": "12 pages of A3 landscape",
+      "result": "pass",
+      "evidence": {
+        "page_count": 12,
+        "all_pages_same_size": true,
+        "page_size_points": [
+          1190.551,
+          841.89
+        ],
+        "page_size_mm": [
+          420,
+          297
+        ]
+      }
+    },
+    {
+      "item": "all dimensions derived from saved BReps",
+      "result": "pass_from_existing_evidence",
+      "evidence": "devices/n64/output/reports/drawing_checks.json",
+      "detail": "Reviewed all 14 dimension endpoint/value entries and the saved-BRep projection/section method. The visual review did not recompute CAD geometry."
+    },
+    {
+      "item": "all pages visually inspected",
+      "result": "pass",
+      "evidence": "All 12 individually opened page PNGs are listed in reviewed_pages."
+    },
+    {
+      "item": "Kami font and content checks",
+      "result": "pass",
+      "evidence": {
+        "independently_rerun": [
+          "--check-content",
+          "--check-fonts"
+        ],
+        "content_contract_valid": true,
+        "atomic_content_values_present": 25,
+        "prose_fields_not_required_verbatim": 25,
+        "cjk_body_family": "TsangerJinKai02",
+        "cjk_ideographs": 3761,
+        "builder_reported_pass": [
+          "style",
+          "placeholders",
+          "density",
+          "visual export"
+        ]
+      }
+    },
+    {
+      "item": "native TechDraw pages and measurable dimensions",
+      "result": "pass_from_existing_evidence",
+      "evidence": [
+        "devices/n64/output/reports/native_drawings_audit.json",
+        "devices/n64/output/reports/native_drawings_reload.json"
+      ],
+      "detail": "Reviewed reports of 12 native pages and 14 measured native dimension references, all passing after saved-file reload. Native GUI execution belongs to the separate native verification."
+    }
+  ],
+  "preserve_boundaries": [
+    {
+      "item": "Official console dimensions and approximate study details stay distinct",
+      "result": "pass",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "detail": "Official 260 × 190 × 73 mm appears as a sourced reference; model labels use the approximation symbol and explanatory copy/footer rejects manufacturing-tolerance or circuit-design interpretation."
+    },
+    {
+      "item": "Original Jumper Pak and three-prong optical controller",
+      "result": "pass",
+      "pages": [
+        3,
+        4,
+        8
+      ],
+      "detail": "Three-prong shell and optical mechanism are visible; Jumper Pak is consistently named as the original termination module without additional RAM."
+    },
+    {
+      "item": "Component identifiers across CAD and drawings",
+      "result": "pass_from_visual_and_existing_evidence",
+      "pages": [
+        7,
+        11,
+        12
+      ],
+      "detail": "Mainboard component identifier, grouped non-contiguous identifier ranges and companion component-list references are readable. Cross-format identifier integrity is covered by the separate CAD/export verification."
+    }
+  ],
+  "visual_verdict": {
+    "readability": "pass at the supplied 1819 × 1287 full-page previews; clear hierarchy and legible dimensions/captions",
+    "clipping": "no P0/P1 clipping observed on any page",
+    "overlap": "no P0/P1 text, dimension-label or caption overlap observed",
+    "pagination": "consistent 01–12 drawing identifiers and 1–12 footer numbering",
+    "version_boundary": "NUS-001 and NUS-005 remain identified; NUS-CPU-04 is explicitly an internal-layout reference, not a first-run board recreation",
+    "style": "Consistent parchment background, restrained ink-blue labels and readable CJK typography; CAD linework fits the declared A3 technical-drawing adaptation."
+  },
+  "reviewed_pages": [
+    {
+      "page": 1,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-01.png",
+      "sha256": "f11f3f627c2b59d53cf2de114e12e0c1d35b3173523630d37c594409a8d97ed1",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Assembly and top views are complete. Approximate 260 and 190 mm dimension labels are legible. Official 260 × 190 × 73 mm reference and study-only interior boundary are stated separately."
+    },
+    {
+      "page": 2,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-02.png",
+      "sha256": "109e24169c5174d0fc987a91ddeb900d735be432b4fb34a82d146f0e16a28394",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Front and rear views and three connector details are distinct and complete. Dimensions and captions have clear space; connectors are identified as approximate study geometry."
+    },
+    {
+      "page": 3,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-03.png",
+      "sha256": "f5b10f0f76a1e80ee6e49dd11965c33da7293907aa289069a23e16f87dcc52d2",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Three-prong controller is recognizable in perspective, top and rear views. Rear Z button and fixing points are visible. Width/depth labels and captions remain unobstructed."
+    },
+    {
+      "page": 4,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-04.png",
+      "sha256": "5c219ddbd5edef49863747c7096cea98a50b019958ebad66e5798fd643914480",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Optical mechanism, centering spring and Z-button side view are visibly separated. Spring dimension is readable. Text states that local support, gear and electronic details are approximations without dynamic/electrical validation."
+    },
+    {
+      "page": 5,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-05.png",
+      "sha256": "e0b4fb6894f9ab2a74c7308287679511e21bdf2d5038e06463115291c9fc4449",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Two material sections are visible and individually labeled with Y-plane positions. Section silhouettes, captions and lower explanatory text are not clipped or overlapped."
+    },
+    {
+      "page": 6,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-06.png",
+      "sha256": "7e322a513720da4391f20152020ac70c27fc4d99ce0d5045492c2c1906b527aa",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Exploded overview fits the page. Principal shell, board and controller layers can be followed. Text states that cables are omitted and offsets do not represent actual disassembly paths."
+    },
+    {
+      "page": 7,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-07.png",
+      "sha256": "3fa4548b77328d3ebe2b3b3f8d7fec86b3f92c22e39c5d4aa6d773aa649dfb57",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Mainboard and isolated CPU/RDRAM details are legible. Title, board marking and description identify NUS-CPU-04; the text explicitly avoids a first-production-board or original-circuit claim."
+    },
+    {
+      "page": 8,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-08.png",
+      "sha256": "c07a800e89a792c8fa7c76522d962e83a6741d914a3cdbdfc5c44b7d96b47e10",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Game Pak and memory connectors, Jumper Pak exterior and termination board are separate readable views. Title and description identify the original terminating Jumper Pak and state that it adds no RAM."
+    },
+    {
+      "page": 9,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-09.png",
+      "sha256": "8dc837b7c29cd65433904759c40a4aed997b416cb7f6ad5d5a7e1244912fb4ce",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Three individual heat blocks are visible on the shield. Removable power-module exterior and interior views are clear. The power-module circuitry is explicitly a structural study."
+    },
+    {
+      "page": 10,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-10.png",
+      "sha256": "3d87968cd8d89dff728213a6d0f5bf96c8b564a5cedfb4dec986d452395797c0",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Blank cartridge, optional Controller Pak, AV adapter and AC plug are complete. Cartridge lettering and dimensions are clear. No-game-data and display-length boundaries are stated."
+    },
+    {
+      "page": 11,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-11.png",
+      "sha256": "04ebf983c8979afbcb7f15ee8155007e76df0a5c23b06e50886415473df57d23",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Component table has consistent alignment and readable rows without clipping. Non-contiguous identifier ranges, 747 component entries and 1352 solids are distinguished; materials are display labels."
+    },
+    {
+      "page": 12,
+      "image": "devices/n64/output/drawings/Nintendo64_Drawings-visual/page-12.png",
+      "sha256": "b970fed2c42c0c0d8cd169de597a428c65f8bfa1eb7807b1282cb3c006c00c01",
+      "pixels": [
+        1819,
+        1287
+      ],
+      "visually_reviewed": true,
+      "verdict": "pass",
+      "observations": "Source/version, dimensional boundary, validation record and revision-entry sections are readable. NUS-CPU-04 scope, official dimensions, local approximations and non-circuit-design limitations remain explicit."
+    }
+  ],
+  "limitations": [
+    "This is a PDF contract and visual review, not a manufacturing-accuracy, electrical-safety or circuit-function certification.",
+    "Saved-BRep provenance and native measurable-dimension acceptance use the named existing audit reports; no CAD rebuild or GUI test was performed by this reviewer."
+  ]
+}
