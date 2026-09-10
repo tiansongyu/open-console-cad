@@ -215,7 +215,7 @@ open-console-cad/
 | 新增 Famicom：15 个线上文件、九种视图与桌面/手机预览 | [文件核对](devices/famicom/output/reports/live_delivery_audit.json) · [交互核对](devices/famicom/output/reports/live_ui_checks.json) |
 | 新增 Atari 2600：15 个线上文件、十一种视图与桌面/手机预览 | [文件核对](devices/atari2600/output/reports/live_delivery_audit.json) · [交互核对](devices/atari2600/output/reports/live_ui_checks.json) |
 | 新增 Mega Drive：十一种视图与完整交付 | [交付核对](devices/megadrive/output/reports/completion_audit.json) · [线上核对](devices/megadrive/output/reports/live_delivery_audit.json) |
-| 新增 Nintendo 64：十五种视图、光学摇杆与 12 页图纸 | [交付核对](devices/n64/output/reports/completion_audit.json) · [预览核对](devices/n64/output/reports/web_preview_checks.json) |
+| 新增 Nintendo 64：十五种视图、光学摇杆与 12 页图纸 | [交付核对](devices/n64/output/reports/completion_audit.json) · [线上预览核对](devices/n64/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献
