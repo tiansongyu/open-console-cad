@@ -1,0 +1,2230 @@
+{
+  "iteration": 5,
+  "slug": "rear_mains_av_communication_and_service_cover",
+  "summary": "补齐上壳八字电源座、下壳 AV 与通信接口、独立后部电池扩展盖，以及侧面和底部通风槽；接口触点与局部尺寸保留学习近似说明。",
+  "physical_components": 82,
+  "objects": [
+    {
+      "name": "LowerHousingCut007",
+      "label": "HST-3200 lower enclosure008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 517,
+      "volume": 145488.62076094456,
+      "bounds": [
+        -130.0,
+        130.0,
+        -115.0,
+        115.0,
+        2.0,
+        25.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut014",
+      "label": "Raised central deck and sloped side shoulders015",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 299,
+      "volume": 216027.6173446743,
+      "bounds": [
+        -130.0000001,
+        130.0000001,
+        -115.0000001,
+        115.0000001,
+        25.24999989999999,
+        83.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Lower rubber support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        -112.5,
+        -95.5,
+        -100.0,
+        -88.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Lower rubber support001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        -112.5,
+        -95.5,
+        88.0,
+        100.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Lower rubber support002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        95.5,
+        112.5,
+        -100.0,
+        -88.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Lower rubber support003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        95.5,
+        112.5,
+        88.0,
+        100.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscLid",
+      "label": "Native curved-front Saturn disc lid",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 41223.10773408419,
+      "bounds": [
+        -82.10660181779821,
+        82.10660181779821,
+        -92.00000009999998,
+        61.106601817798214,
+        79.09999989999999,
+        82.90000010000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscLid",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscWell",
+      "label": "Deep optical-disc well and pickup passage",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 45060.107529333174,
+      "bounds": [
+        -79.6015957827749,
+        79.60159578277488,
+        -89.2875816993464,
+        58.81730195868828,
+        60.5,
+        78.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscWell",
+      "assembly": "Optical",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeDeck",
+      "label": "Rear cartridge-bay black liner",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2112.512369649734,
+      "bounds": [
+        -62.0,
+        62.0,
+        71.5,
+        90.5,
+        79.4,
+        82.80000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeDeck",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeFlap0",
+      "label": "Spring-loaded cartridge dust flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1058.0582653618794,
+      "bounds": [
+        -59.300000000000004,
+        -0.3000000000000007,
+        74.1,
+        87.9,
+        81.2,
+        82.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeFlap0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeFlap1",
+      "label": "Spring-loaded cartridge dust flap001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1058.0582653618796,
+      "bounds": [
+        0.3000000000000007,
+        59.300000000000004,
+        74.1,
+        87.9,
+        81.2,
+        82.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeFlap1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidSega",
+      "label": "SEGA",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 81,
+      "volume": 0.9639857315425812,
+      "bounds": [
+        -12.405411173825502,
+        11.511744966442954,
+        29.868456275838923,
+        36.68993298590604,
+        82.9399999,
+        82.95800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidSega",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SaturnTitle",
+      "label": "SEGA SATURN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 187,
+      "volume": 1.9420053365854737,
+      "bounds": [
+        -30.464870066442955,
+        25.75840184563758,
+        -24.118389361744967,
+        -17.979060302684562,
+        82.9399999,
+        82.95800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SaturnTitle",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidAccent",
+      "label": "Dark curved disc-lid accent",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 12.046986634549029,
+      "bounds": [
+        -2.000000000000007,
+        66.0,
+        1.0,
+        9.026706508981007,
+        82.95,
+        82.985
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidAccent",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "darkpanel",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidGripMark0",
+      "label": "Three short lid grip marks",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1262477796077082,
+      "bounds": [
+        -12.069794694796114,
+        -7.930205305203886,
+        -69.71433908080235,
+        -62.28566091919765,
+        82.95,
+        83.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidGripMark0",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidGripMark1",
+      "label": "Three short lid grip marks001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1262477796077084,
+      "bounds": [
+        -3.069794694796113,
+        1.0697946947961132,
+        -69.71433908080235,
+        -62.28566091919765,
+        82.95,
+        83.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidGripMark1",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LidGripMark2",
+      "label": "Three short lid grip marks002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1262477796077084,
+      "bounds": [
+        5.930205305203887,
+        10.069794694796114,
+        -69.71433908080235,
+        -62.28566091919765,
+        82.95,
+        83.07000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LidGripMark2",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlPanelCut004",
+      "label": "Dark curved front control panel005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 45,
+      "volume": 2491.514486069739,
+      "bounds": [
+        -98.07106791186547,
+        98.07106791186547,
+        -110.42857152857142,
+        -62.99999989999999,
+        61.99999989981295,
+        83.00000010000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "darkpanel",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original blue Power key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 661.6194272499314,
+      "bounds": [
+        -90.3042067929352,
+        -65.6957931745191,
+        -99.55023381314736,
+        -82.44976616058017,
+        76.13140133073071,
+        83.30000009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturnblue",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.42511197273946705,
+      "bounds": [
+        -84.93588936174497,
+        -72.02523479932887,
+        -92.05261754966442,
+        -89.32402674563758,
+        83.3149999,
+        83.3500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetButton",
+      "label": "Original blue Reset key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 661.6193873481756,
+      "bounds": [
+        65.69579317942724,
+        90.30420682548088,
+        -99.55023380022062,
+        -82.44976616058015,
+        76.95529578864375,
+        83.30000011084509
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturnblue",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.35323352196470564,
+      "bounds": [
+        71.06411063825503,
+        82.28290268456375,
+        -92.05261754966442,
+        -89.32402674563758,
+        83.3149999,
+        83.3500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetMark",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenButton",
+      "label": "Original blue Open key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 1232.4461904439117,
+      "bounds": [
+        -21.500000100000015,
+        21.5000001,
+        -110.0000001,
+        -97.9999999,
+        61.09999989999998,
+        81.07777787777776
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturnblue",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpenMark",
+      "label": "OPEN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 64,
+      "volume": 0.3203654194019441,
+      "bounds": [
+        -11.407399428859064,
+        -1.9738421818791967,
+        -105.05261754966442,
+        -102.3240267456376,
+        73.1887180208054,
+        76.32330360484711
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpenMark",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Front Power indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.8013271108436517,
+      "bounds": [
+        -48.1,
+        -45.9,
+        -105.1,
+        -102.9,
+        73.61111111111111,
+        74.61111111111111
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "led",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCaption",
+      "label": "POWER001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.3388995195083702,
+      "bounds": [
+        -53.68382979798658,
+        -42.15645963154362,
+        -101.04697996577181,
+        -98.61073815503356,
+        77.40724449358687,
+        80.14917981662937
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCaption",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AccessLens",
+      "label": "Front Access indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 3.8013271108436517,
+      "bounds": [
+        45.9,
+        48.1,
+        -105.1,
+        -102.9,
+        73.61111111111111,
+        74.61111111111111
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AccessLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "red",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AccessCaption",
+      "label": "ACCESS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 127,
+      "volume": 0.3288542932093989,
+      "bounds": [
+        40.0251676852349,
+        52.59039439530202,
+        -101.04697996577181,
+        -98.61073815503356,
+        77.40724449358687,
+        80.14917981662938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AccessCaption",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1",
+      "label": "Original Saturn nine-position controller socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 2366.741943334419,
+      "bounds": [
+        -54.5,
+        -23.5,
+        -114.8,
+        -100.8,
+        16.0,
+        28.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerTongue1",
+      "label": "Controller contact carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 190.73046900494066,
+      "bounds": [
+        -52.25,
+        -25.75,
+        -113.0,
+        -105.0,
+        20.4,
+        21.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerTongue1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_0",
+      "label": "Controller spring contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        -50.25,
+        -49.349999999999994,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_1",
+      "label": "Controller spring contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        -47.550000000000004,
+        -46.65,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_2",
+      "label": "Controller spring contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        -44.85,
+        -43.949999999999996,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_3",
+      "label": "Controller spring contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        -42.150000000000006,
+        -41.25,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_4",
+      "label": "Controller spring contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579605,
+      "bounds": [
+        -39.45,
+        -38.55,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_5",
+      "label": "Controller spring contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        -36.75,
+        -35.849999999999994,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_6",
+      "label": "Controller spring contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579607,
+      "bounds": [
+        -34.050000000000004,
+        -33.15,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_7",
+      "label": "Controller spring contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579587,
+      "bounds": [
+        -31.349999999999998,
+        -30.45,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_8",
+      "label": "Controller spring contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579587,
+      "bounds": [
+        -28.65,
+        -27.75,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerIndex1",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.054413008423044695,
+      "bounds": [
+        -39.433724832214764,
+        -37.196308724832214,
+        -115.048,
+        -115.03,
+        32.0,
+        35.758389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerIndex1",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2",
+      "label": "Original Saturn nine-position controller socket001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 2366.741943334419,
+      "bounds": [
+        23.5,
+        54.5,
+        -114.8,
+        -100.8,
+        16.0,
+        28.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerTongue2",
+      "label": "Controller contact carrier001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 190.73046900494066,
+      "bounds": [
+        25.75,
+        52.25,
+        -113.0,
+        -105.0,
+        20.4,
+        21.299999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerTongue2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_0",
+      "label": "Controller spring contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579587,
+      "bounds": [
+        27.75,
+        28.65,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_1",
+      "label": "Controller spring contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579587,
+      "bounds": [
+        30.45,
+        31.349999999999998,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_2",
+      "label": "Controller spring contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579607,
+      "bounds": [
+        33.15,
+        34.050000000000004,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_3",
+      "label": "Controller spring contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        35.849999999999994,
+        36.75,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_4",
+      "label": "Controller spring contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579605,
+      "bounds": [
+        38.55,
+        39.45,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_5",
+      "label": "Controller spring contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579605,
+      "bounds": [
+        41.25,
+        42.150000000000006,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_6",
+      "label": "Controller spring contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579607,
+      "bounds": [
+        43.949999999999996,
+        44.85,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_7",
+      "label": "Controller spring contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579607,
+      "bounds": [
+        46.65,
+        47.550000000000004,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_8",
+      "label": "Controller spring contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7553407431579606,
+      "bounds": [
+        49.349999999999994,
+        50.25,
+        -112.5,
+        -105.5,
+        21.45,
+        21.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerIndex2",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.06448782208571764,
+      "bounds": [
+        38.377516678523484,
+        40.763422918791946,
+        -115.0480001,
+        -115.0299999,
+        31.9999999,
+        35.82281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerIndex2",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Original figure-eight mains inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1812.4271877407577,
+      "bounds": [
+        -106.60000000000001,
+        -75.39999999999999,
+        111.5,
+        114.5,
+        35.9,
+        58.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInletPin0",
+      "label": "Mains inlet pin study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.268140296446404,
+      "bounds": [
+        -95.60000000000001,
+        -93.8,
+        107.7,
+        113.7,
+        46.1,
+        47.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInletPin0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInletPin1",
+      "label": "Mains inlet pin study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 15.268140296446404,
+      "bounds": [
+        -88.2,
+        -86.39999999999999,
+        107.7,
+        113.7,
+        46.1,
+        47.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInletPin1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACFixing0",
+      "label": "Rear mains-inlet fixing head",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 4.321486315913917,
+      "bounds": [
+        -104.6,
+        -101.4,
+        114.65,
+        115.25,
+        45.4,
+        48.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACFixing0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACFixing1",
+      "label": "Rear mains-inlet fixing head001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 4.321486315913917,
+      "bounds": [
+        -80.6,
+        -77.4,
+        114.65,
+        115.25,
+        45.4,
+        48.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACFixing1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACFixing2",
+      "label": "Rear mains-inlet fixing head002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 4.321486315913917,
+      "bounds": [
+        -92.6,
+        -89.4,
+        114.65,
+        115.25,
+        28.4,
+        31.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACFixing2",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVShell",
+      "label": "AV mini-DIN metal sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 342.8105903597177,
+      "bounds": [
+        -97.6,
+        -84.4,
+        103.3,
+        114.3,
+        10.4,
+        23.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVCarrier",
+      "label": "AV contact insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 238.91812130550392,
+      "bounds": [
+        -96.5,
+        -85.5,
+        108.0,
+        111.0,
+        11.5,
+        22.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact0",
+      "label": "AV mini-DIN socket contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559437,
+      "bounds": [
+        -94.81,
+        -93.59,
+        108.2,
+        112.7,
+        18.39,
+        19.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact1",
+      "label": "AV mini-DIN socket contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559437,
+      "bounds": [
+        -91.61,
+        -90.39,
+        108.2,
+        112.7,
+        18.39,
+        19.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact2",
+      "label": "AV mini-DIN socket contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.3250616645594393,
+      "bounds": [
+        -88.41,
+        -87.19,
+        108.2,
+        112.7,
+        18.39,
+        19.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact3",
+      "label": "AV mini-DIN socket contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559437,
+      "bounds": [
+        -95.61,
+        -94.39,
+        108.2,
+        112.7,
+        16.39,
+        17.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact4",
+      "label": "AV mini-DIN socket contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.3250616645594393,
+      "bounds": [
+        -93.01,
+        -91.79,
+        108.2,
+        112.7,
+        16.39,
+        17.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact5",
+      "label": "AV mini-DIN socket contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.3250616645594393,
+      "bounds": [
+        -90.21,
+        -88.99,
+        108.2,
+        112.7,
+        16.39,
+        17.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact6",
+      "label": "AV mini-DIN socket contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559437,
+      "bounds": [
+        -87.61,
+        -86.39,
+        108.2,
+        112.7,
+        16.39,
+        17.61
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact7",
+      "label": "AV mini-DIN socket contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559441,
+      "bounds": [
+        -94.61,
+        -93.39,
+        108.2,
+        112.7,
+        14.09,
+        15.309999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact8",
+      "label": "AV mini-DIN socket contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559441,
+      "bounds": [
+        -91.61,
+        -90.39,
+        108.2,
+        112.7,
+        14.09,
+        15.309999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact9",
+      "label": "AV mini-DIN socket contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.325061664559441,
+      "bounds": [
+        -88.61,
+        -87.39,
+        108.2,
+        112.7,
+        14.09,
+        15.309999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationShell",
+      "label": "Rear communication connector shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 444.6522113490004,
+      "bounds": [
+        -63.1,
+        -38.9,
+        104.5,
+        114.5,
+        12.399999999999997,
+        21.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationTongue",
+      "label": "Communication port insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 102.8459203371761,
+      "bounds": [
+        -61.5,
+        -40.5,
+        106.5,
+        113.5,
+        16.0,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin0",
+      "label": "Communication connector study contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633996,
+      "bounds": [
+        -60.175,
+        -59.425,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin1",
+      "label": "Communication connector study contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633996,
+      "bounds": [
+        -57.975,
+        -57.225,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin2",
+      "label": "Communication connector study contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -55.775,
+        -55.025,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin3",
+      "label": "Communication connector study contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -53.575,
+        -52.825,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin4",
+      "label": "Communication connector study contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -51.375,
+        -50.625,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin5",
+      "label": "Communication connector study contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -49.175,
+        -48.425,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin6",
+      "label": "Communication connector study contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633996,
+      "bounds": [
+        -46.975,
+        -46.225,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin7",
+      "label": "Communication connector study contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -44.775,
+        -44.025,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CommunicationPin8",
+      "label": "Communication connector study contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4497853981633995,
+      "bounds": [
+        -42.575,
+        -41.825,
+        107.0,
+        113.0,
+        16.85,
+        16.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CommunicationPin8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ServiceDoor",
+      "label": "Removable rear battery / expansion cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 4153.299468070466,
+      "bounds": [
+        15.899999999999999,
+        108.1,
+        113.5,
+        114.9,
+        6.899999999999999,
+        39.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ServiceDoor",
+      "assembly": "Body",
+      "layer": -4,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/saturn/output/iterations/05_rear_mains_av_communication_and_service_cover.FCStd",
+  "views": [
+    "devices/saturn/output/previews/05_rear_mains_av_communication_and_service_cover_hero.png",
+    "devices/saturn/output/previews/05_rear_mains_av_communication_and_service_cover_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

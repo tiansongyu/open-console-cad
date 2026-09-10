@@ -1,0 +1,177 @@
+{
+  "iteration": 1,
+  "slug": "native_tapered_shell_and_raised_central_deck",
+  "summary": "按 HST-3200 灰色初代照片建立独立上下空心壳、倾斜侧肩与原生多截面抬高中央台；260 × 230 × 83 mm 仅作为近似学习包络，家族规格依据另行注明。",
+  "physical_components": 6,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "HST-3200 lower enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 155823.73832524318,
+      "bounds": [
+        -130.0,
+        130.0,
+        -115.0,
+        115.0,
+        2.0,
+        25.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut",
+      "label": "Raised central deck and sloped side shoulders001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 61,
+      "volume": 285712.7158250969,
+      "bounds": [
+        -130.0000001,
+        130.0000001,
+        -115.0000001,
+        115.0000001,
+        25.2499999,
+        83.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "saturngrey",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Lower rubber support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        -112.5,
+        -95.5,
+        -100.0,
+        -88.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Lower rubber support001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        -112.5,
+        -95.5,
+        88.0,
+        100.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Lower rubber support002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        95.5,
+        112.5,
+        -100.0,
+        -88.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Lower rubber support003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 394.540172808288,
+      "bounds": [
+        95.5,
+        112.5,
+        88.0,
+        100.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Approximate original Japanese exterior",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/saturn/output/iterations/01_native_tapered_shell_and_raised_central_deck.FCStd",
+  "views": [
+    "devices/saturn/output/previews/01_native_tapered_shell_and_raised_central_deck_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

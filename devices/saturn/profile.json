@@ -14,7 +14,7 @@
     0.54,
     0.54
   ],
-  "stages": 0,
+  "stages": 10,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -44,7 +44,9 @@
     "UpperHousing",
     "DiscLid",
     "MainShield",
-    "CartridgeDeck"
+    "CartridgeDeck",
+    "ControlPanel",
+    "ServiceDoor"
   ],
   "internal_normal": [
     0.2,
@@ -59,7 +61,7 @@
   ],
   "parameter_basis": "Approximate HST-3200 study; 260 x 230 x 83 mm from official HST-3210 family specification",
   "exterior_fidelity": "Approximate original Japanese exterior",
-  "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+  "fidelity": "Approximate original HST-3200 exterior and schematic internals; family envelope is a study reference",
   "envelope_kind": "approximate",
   "envelope_basis": "Approximate HST-3200 exterior using later HST-3210 official family dimensions"
 }
