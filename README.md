@@ -133,7 +133,7 @@
 
 网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，以及 PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动。
 
-制作进度：PlayStation 2 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
+制作进度：[PlayStation 2](devices/ps2/README.md) 已完成外观与原始接口，内部结构及附件继续制作，完成最终验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
 
 ## 快速开始
 

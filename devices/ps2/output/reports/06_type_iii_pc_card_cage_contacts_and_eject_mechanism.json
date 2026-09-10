@@ -1,0 +1,5847 @@
+{
+  "iteration": 6,
+  "slug": "type_iii_pc_card_cage_contacts_and_eject_mechanism",
+  "summary": "加入初代 PC CARD Type III 金属导向笼、两排 68 接点、原版保护盖与导向臂，以及弹出按钮、推杆和下部杠杆；此处保留 PC CARD 架构，局部几何为学习近似。",
+  "physical_components": 216,
+  "objects": [
+    {
+      "name": "LowerHousingCut007",
+      "label": "Asymmetric stepped lower enclosure008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 740,
+      "volume": 106566.32077699667,
+      "bounds": [
+        -144.5,
+        116.5,
+        -85.5,
+        85.5,
+        1.4,
+        32.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut010",
+      "label": "Original wide upper enclosure011",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 441,
+      "volume": 141929.67289592832,
+      "bounds": [
+        -150.5,
+        150.5,
+        -91.0,
+        91.0,
+        33.3,
+        78.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rectangular rubber case pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        -139.0,
+        -131.0,
+        -77.5,
+        -66.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rectangular rubber case pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        102.0,
+        110.0,
+        -77.5,
+        -66.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rectangular rubber case pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        -139.0,
+        -131.0,
+        66.5,
+        77.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rectangular rubber case pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        102.0,
+        110.0,
+        66.5,
+        77.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS2P",
+      "label": "Geometric PS2 P mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 1.64524499999963,
+      "bounds": [
+        -13.525000000000011,
+        13.524999999999997,
+        19.474999999999998,
+        50.525000000000006,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS2P",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS2S",
+      "label": "Geometric PS2 S mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1538449999994367,
+      "bounds": [
+        -13.525000000000004,
+        13.525000000000006,
+        -17.524999999999995,
+        17.525,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS2S",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2cyan",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS22",
+      "label": "Geometric PS2 2 mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 2.2122450000000846,
+      "bounds": [
+        -13.524999999999995,
+        13.525000000000013,
+        -50.525000000000006,
+        -19.474999999999998,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS22",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopWordmark",
+      "label": "PlayStation 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 241,
+      "volume": 0.8049741001841224,
+      "bounds": [
+        -21.18120815369128,
+        -15.688590604026846,
+        -18.68348164362417,
+        17.570562180536914,
+        78.02499990000001,
+        78.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopWordmark",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPortPCBCut",
+      "label": "Original shared controller and memory-card board001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 44,
+      "volume": 3348.199655956583,
+      "bounds": [
+        -139.0,
+        -14.999999999999996,
+        -74.0,
+        -53.0,
+        40.5,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPortPCB",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "pcb",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CaseCut",
+      "label": "Original dual-level connector housing002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 193,
+      "volume": 4648.418592267755,
+      "bounds": [
+        -128.0,
+        -80.0,
+        -91.2,
+        -72.5,
+        42.5,
+        69.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Shutter",
+      "label": "Memory-card shutter with integral hinge ears",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 264.2142546076758,
+      "bounds": [
+        -126.0,
+        -82.0,
+        -91.7,
+        -89.7,
+        59.75,
+        67.85000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Shutter",
+      "assembly": "FrontIO",
+      "layer": 4,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterPin",
+      "label": "Memory-card shutter steel pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.286802071937082,
+      "bounds": [
+        -127.8,
+        -80.19999999999999,
+        -90.74000000000001,
+        -90.06,
+        66.81,
+        67.49000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ShutterSpring",
+      "label": "Shutter return spring study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.5359527641558485,
+      "bounds": [
+        -123.69944191315115,
+        -121.70055808684883,
+        -91.10000076683656,
+        -89.69999852665696,
+        66.44999852665703,
+        67.85000147334306
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ShutterSpring",
+      "assembly": "FrontIO",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardTongue",
+      "label": "Eight-contact memory-card support tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9381946710581,
+      "bounds": [
+        -124.0,
+        -84.0,
+        -89.0,
+        -79.0,
+        60.8,
+        61.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardTongue",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact0",
+      "label": "Card contact with rear route and PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.27120000000026,
+      "bounds": [
+        -120.35,
+        -119.14999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact1",
+      "label": "Card contact with rear route and PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000109,
+      "bounds": [
+        -115.85,
+        -114.64999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact2",
+      "label": "Card contact with rear route and PCB leg002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000052,
+      "bounds": [
+        -111.35,
+        -110.14999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact3",
+      "label": "Card contact with rear route and PCB leg003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000103,
+      "bounds": [
+        -106.85,
+        -105.64999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact4",
+      "label": "Card contact with rear route and PCB leg004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000208,
+      "bounds": [
+        -102.35,
+        -101.14999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact5",
+      "label": "Card contact with rear route and PCB leg005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000161,
+      "bounds": [
+        -97.85,
+        -96.64999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact6",
+      "label": "Card contact with rear route and PCB leg006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000161,
+      "bounds": [
+        -93.35,
+        -92.14999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1CardContact7",
+      "label": "Card contact with rear route and PCB leg007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000106,
+      "bounds": [
+        -88.85,
+        -87.64999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet0",
+      "label": "Three-position controller socket insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.802867138194,
+      "bounds": [
+        -123.2,
+        -110.8,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact0",
+      "label": "Controller socket contact and PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569499916,
+      "bounds": [
+        -121.22,
+        -119.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact1",
+      "label": "Controller socket contact and PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569501165,
+      "bounds": [
+        -117.62,
+        -116.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact2",
+      "label": "Controller socket contact and PCB leg002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500884,
+      "bounds": [
+        -114.02000000000001,
+        -112.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet1",
+      "label": "Three-position controller socket insulator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.802867138194,
+      "bounds": [
+        -110.2,
+        -97.8,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact3",
+      "label": "Controller socket contact and PCB leg003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500884,
+      "bounds": [
+        -108.22,
+        -106.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact4",
+      "label": "Controller socket contact and PCB leg004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500087,
+      "bounds": [
+        -104.62,
+        -103.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact5",
+      "label": "Controller socket contact and PCB leg005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569499916,
+      "bounds": [
+        -101.02000000000001,
+        -99.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Triplet2",
+      "label": "Three-position controller socket insulator002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.8028671381941,
+      "bounds": [
+        -97.2,
+        -84.8,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact6",
+      "label": "Controller socket contact and PCB leg006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569501051,
+      "bounds": [
+        -95.22,
+        -93.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact7",
+      "label": "Controller socket contact and PCB leg007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500941,
+      "bounds": [
+        -91.62,
+        -90.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1ControllerContact8",
+      "label": "Controller socket contact and PCB leg008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.65605756950105,
+      "bounds": [
+        -88.02000000000001,
+        -86.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1MemoryLegend",
+      "label": "MEMORY CARD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.17245306432600394,
+      "bounds": [
+        -115.37235738255033,
+        -98.22214755100671,
+        -91.0430001,
+        -91.02499990000001,
+        70.16617439664431,
+        71.92026855637583
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1MemoryLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port1Number",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.02125508141525185,
+      "bounds": [
+        -104.64607802013423,
+        -103.24769295302013,
+        -91.043,
+        -91.025,
+        55.9,
+        58.248993288590604
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port1Number",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CaseCut",
+      "label": "Original dual-level connector housing005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 193,
+      "volume": 4648.418592267771,
+      "bounds": [
+        -74.0,
+        -26.0,
+        -91.2,
+        -72.5,
+        42.5,
+        69.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Case",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Shutter",
+      "label": "Memory-card shutter with integral hinge ears001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 264.21425460767574,
+      "bounds": [
+        -72.0,
+        -28.0,
+        -91.7,
+        -89.7,
+        59.75,
+        67.85000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Shutter",
+      "assembly": "FrontIO",
+      "layer": 4,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterPin",
+      "label": "Memory-card shutter steel pivot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.28680207193708,
+      "bounds": [
+        -73.8,
+        -26.199999999999996,
+        -90.74000000000001,
+        -90.06,
+        66.81,
+        67.49000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterPin",
+      "assembly": "FrontIO",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ShutterSpring",
+      "label": "Shutter return spring study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.5359527641558485,
+      "bounds": [
+        -69.69944191315115,
+        -67.70055808684883,
+        -91.10000076683656,
+        -89.69999852665696,
+        66.44999852665703,
+        67.85000147334306
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ShutterSpring",
+      "assembly": "FrontIO",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardTongue",
+      "label": "Eight-contact memory-card support tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 319.9381946710581,
+      "bounds": [
+        -70.0,
+        -30.0,
+        -89.0,
+        -79.0,
+        60.8,
+        61.599999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardTongue",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact0",
+      "label": "Card contact with rear route and PCB leg008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999994,
+      "bounds": [
+        -66.35,
+        -65.14999999999999,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact1",
+      "label": "Card contact with rear route and PCB leg009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999963,
+      "bounds": [
+        -61.85,
+        -60.65,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact2",
+      "label": "Card contact with rear route and PCB leg010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999937,
+      "bounds": [
+        -57.35,
+        -56.15,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact3",
+      "label": "Card contact with rear route and PCB leg011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000014,
+      "bounds": [
+        -52.85,
+        -51.65,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact4",
+      "label": "Card contact with rear route and PCB leg012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999988,
+      "bounds": [
+        -48.35,
+        -47.15,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact5",
+      "label": "Card contact with rear route and PCB leg013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271200000000015,
+      "bounds": [
+        -43.85,
+        -42.65,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact6",
+      "label": "Card contact with rear route and PCB leg014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999933,
+      "bounds": [
+        -39.35,
+        -38.15,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2CardContact7",
+      "label": "Card contact with rear route and PCB leg015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 7.271199999999933,
+      "bounds": [
+        -34.85,
+        -33.65,
+        -89.2,
+        -64.39999999999999,
+        41.6,
+        61.87
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2CardContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet0",
+      "label": "Three-position controller socket insulator003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.8028671381941,
+      "bounds": [
+        -69.2,
+        -56.8,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact0",
+      "label": "Controller socket contact and PCB leg009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.65605756950056,
+      "bounds": [
+        -67.22,
+        -65.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact1",
+      "label": "Controller socket contact and PCB leg010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569501101,
+      "bounds": [
+        -63.62,
+        -62.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact2",
+      "label": "Controller socket contact and PCB leg011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569499845,
+      "bounds": [
+        -60.019999999999996,
+        -58.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet1",
+      "label": "Three-position controller socket insulator004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.802867138194,
+      "bounds": [
+        -56.2,
+        -43.8,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact3",
+      "label": "Controller socket contact and PCB leg012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569501069,
+      "bounds": [
+        -54.22,
+        -52.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact4",
+      "label": "Controller socket contact and PCB leg013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500561,
+      "bounds": [
+        -50.62,
+        -49.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact5",
+      "label": "Controller socket contact and PCB leg014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500526,
+      "bounds": [
+        -47.019999999999996,
+        -45.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact5",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Triplet2",
+      "label": "Three-position controller socket insulator005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 292.80286713819396,
+      "bounds": [
+        -43.2,
+        -30.799999999999997,
+        -91.6,
+        -86.8,
+        46.099999999999994,
+        51.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Triplet2",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact6",
+      "label": "Controller socket contact and PCB leg015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.6560575695005,
+      "bounds": [
+        -41.22,
+        -39.88,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact6",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact7",
+      "label": "Controller socket contact and PCB leg016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500822,
+      "bounds": [
+        -37.62,
+        -36.28,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact7",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2ControllerContact8",
+      "label": "Controller socket contact and PCB leg017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 8.656057569500561,
+      "bounds": [
+        -34.019999999999996,
+        -32.68,
+        -91.3,
+        -66.46000000000001,
+        41.6,
+        49.419999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2ControllerContact8",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2MemoryLegend",
+      "label": "MEMORY CARD001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 172,
+      "volume": 0.17245306432600357,
+      "bounds": [
+        -61.37235738255034,
+        -44.222147551006714,
+        -91.0430001,
+        -91.02499990000001,
+        70.16617439664431,
+        71.92026855637583
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2MemoryLegend",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Port2Number",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.02519055550223346,
+      "bounds": [
+        -50.76405211342282,
+        -49.27286063825503,
+        -91.0430001,
+        -91.02499990000001,
+        55.8999999,
+        58.28926184496644
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Port2Number",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BlueIOPanel",
+      "label": "Original blue USB and i.LINK field",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 83.34624426315294,
+      "bounds": [
+        -143.0,
+        -95.0,
+        -85.61,
+        -85.53,
+        4.75,
+        32.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BlueIOPanel",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "io_blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Shield",
+      "label": "USB Type-A metal receptacle shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 176.22559686829226,
+      "bounds": [
+        -135.15,
+        -120.85,
+        -86.0,
+        -75.0,
+        9.849999999999998,
+        16.550000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Contact0",
+      "label": "USB contact and plated-through-board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 2.132800000000007,
+      "bounds": [
+        -132.1,
+        -131.4,
+        -83.8,
+        -71.89999999999999,
+        7.1,
+        12.959999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Contact0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Contact1",
+      "label": "USB contact and plated-through-board leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 2.1327999999999774,
+      "bounds": [
+        -129.6,
+        -128.9,
+        -83.8,
+        -71.89999999999999,
+        7.1,
+        12.959999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Contact1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Contact2",
+      "label": "USB contact and plated-through-board leg002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 2.1328000000000396,
+      "bounds": [
+        -127.1,
+        -126.39999999999999,
+        -83.8,
+        -71.89999999999999,
+        7.1,
+        12.959999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Contact2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Contact3",
+      "label": "USB contact and plated-through-board leg003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 2.1328000000000547,
+      "bounds": [
+        -124.6,
+        -123.89999999999999,
+        -83.8,
+        -71.89999999999999,
+        7.1,
+        12.959999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Contact3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tongue",
+      "label": "USB carrier and insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 55,
+      "volume": 222.3574167815339,
+      "bounds": [
+        -134.6,
+        -121.39999999999999,
+        -85.0,
+        -75.3,
+        10.399999999999999,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tongue",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Shield",
+      "label": "USB Type-A metal receptacle shell001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 176.22559686829226,
+      "bounds": [
+        -135.15,
+        -120.85,
+        -86.0,
+        -75.0,
+        20.849999999999998,
+        27.550000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Contact0",
+      "label": "USB contact and plated-through-board leg004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 4.094400000000178,
+      "bounds": [
+        -132.1,
+        -131.4,
+        -83.8,
+        -69.1,
+        7.1,
+        23.96
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Contact0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Contact1",
+      "label": "USB contact and plated-through-board leg005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 4.094400000000023,
+      "bounds": [
+        -129.6,
+        -128.9,
+        -83.8,
+        -69.1,
+        7.1,
+        23.96
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Contact1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Contact2",
+      "label": "USB contact and plated-through-board leg006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 4.094400000000125,
+      "bounds": [
+        -127.1,
+        -126.39999999999999,
+        -83.8,
+        -69.1,
+        7.1,
+        23.96
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Contact2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Contact3",
+      "label": "USB contact and plated-through-board leg007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 4.094400000000046,
+      "bounds": [
+        -124.6,
+        -123.89999999999999,
+        -83.8,
+        -69.1,
+        7.1,
+        23.96
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Contact3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tongue",
+      "label": "USB carrier and insulating tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 55,
+      "volume": 222.35741678153386,
+      "bounds": [
+        -134.6,
+        -121.39999999999999,
+        -85.0,
+        -75.3,
+        21.4,
+        27.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tongue",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkShield",
+      "label": "Four-pin i.LINK receptacle shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 107.79805268652774,
+      "bounds": [
+        -109.8,
+        -102.2,
+        -86.0,
+        -75.0,
+        10.399999999999999,
+        16.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkShield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkContact0",
+      "label": "i.LINK signal contact and PCB leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1.0248500000000476,
+      "bounds": [
+        -107.34,
+        -107.06,
+        -83.8,
+        -69.60000000000001,
+        7.1,
+        13.41
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkContact0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkContact1",
+      "label": "i.LINK signal contact and PCB leg001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1.0248500000000191,
+      "bounds": [
+        -106.54,
+        -106.26,
+        -83.8,
+        -69.60000000000001,
+        7.1,
+        13.41
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkContact1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkContact2",
+      "label": "i.LINK signal contact and PCB leg002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1.0248500000000054,
+      "bounds": [
+        -105.74,
+        -105.46,
+        -83.8,
+        -69.60000000000001,
+        7.1,
+        13.41
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkContact2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkContact3",
+      "label": "i.LINK signal contact and PCB leg003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1.0248500000000471,
+      "bounds": [
+        -104.94,
+        -104.66,
+        -83.8,
+        -69.60000000000001,
+        7.1,
+        13.41
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkContact3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkCarrier",
+      "label": "Keyed i.LINK insulator with four-contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 65,
+      "volume": 85.14122905297666,
+      "bounds": [
+        -109.2,
+        -102.8,
+        -85.0,
+        -75.3,
+        10.95,
+        15.399999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkCarrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBLabel",
+      "label": "USB",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 73,
+      "volume": 0.0501864954099764,
+      "bounds": [
+        -131.29840614026844,
+        -126.90305359127518,
+        -85.6530001,
+        -85.63499990000001,
+        29.766174396644296,
+        31.52026855637584
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBLabel",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ILinkLabel",
+      "label": "i.LINK",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 57,
+      "volume": 0.050063880706453734,
+      "bounds": [
+        -110.79963296979867,
+        -104.89236996644296,
+        -85.653,
+        -85.635,
+        27.8,
+        29.416778523489935
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ILinkLabel",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "S400Label",
+      "label": "S400",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 82,
+      "volume": 0.0745661240625432,
+      "bounds": [
+        -109.83011754966442,
+        -103.61870795369128,
+        -85.6530001,
+        -85.63499990000001,
+        20.46241600738255,
+        22.411409495973157
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "S400Label",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscTrayFuse",
+      "label": "Native optical-disc loading tray002",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 31313.50090465059,
+      "bounds": [
+        -2.5,
+        125.5,
+        -91.2,
+        55.00000000000001,
+        54.5,
+        58.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscTray",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayBezelCut",
+      "label": "Separate ribbed optical-tray front cover001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2521.3834489234387,
+      "bounds": [
+        -3.5,
+        126.5,
+        -92.9,
+        -91.2,
+        52.0,
+        64.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayBezel",
+      "assembly": "Optical",
+      "layer": 4,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayFamilyLabel",
+      "label": "PlayStation 001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 241,
+      "volume": 0.15010105897028272,
+      "bounds": [
+        72.24028932953021,
+        87.89544473087247,
+        -92.94300009999999,
+        -92.9249999,
+        55.98993278590604,
+        58.361744966442956
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayFamilyLabel",
+      "assembly": "Optical",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControlPCB",
+      "label": "Original narrow power and eject board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 524.8626548245744,
+      "bounds": [
+        131.5,
+        146.5,
+        -78.0,
+        -76.99999999999999,
+        40.0,
+        75.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControlPCB",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "RESET button with internal operating stem",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 363.1919115460402,
+      "bounds": [
+        132.0,
+        146.0,
+        -92.2,
+        -80.0,
+        65.75,
+        73.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Power status light-guide study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.42867210540317,
+      "bounds": [
+        142.6,
+        144.20000000000002,
+        -92.5,
+        -89.8,
+        68.7,
+        70.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "led",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCaption",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.03915948859296216,
+      "bounds": [
+        134.164408457047,
+        139.37313338926174,
+        -92.24300009999999,
+        -92.2249999,
+        68.97557036979866,
+        70.24241620738255
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCaption",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitch",
+      "label": "Tactile switch and actuator study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 52.10139804282012,
+      "bounds": [
+        135.0,
+        141.0,
+        -79.85000000000001,
+        -78.05,
+        66.5,
+        72.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitch",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSwitchPads",
+      "label": "Four tactile-switch PCB lands",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 40,
+      "volume": 0.07645061929830285,
+      "bounds": [
+        134.14999999999998,
+        141.85000000000002,
+        -78.05000000000001,
+        -78.025,
+        67.15,
+        71.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSwitchPads",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "OPEN button with internal operating stem",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 363.1919115460401,
+      "bounds": [
+        132.0,
+        146.0,
+        -92.2,
+        -80.0,
+        40.75,
+        48.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectLens",
+      "label": "Eject status light-guide study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 5.428672105403165,
+      "bounds": [
+        142.6,
+        144.20000000000002,
+        -92.5,
+        -89.8,
+        43.7,
+        45.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectSymbol",
+      "label": "Outlined eject triangle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.053391600000000705,
+      "bounds": [
+        135.89999999999998,
+        139.5,
+        -92.243,
+        -92.225,
+        43.2,
+        46.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectSymbol",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "ps2blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectSwitch",
+      "label": "Tactile switch and actuator study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 52.10139804282013,
+      "bounds": [
+        135.0,
+        141.0,
+        -79.85000000000001,
+        -78.05,
+        41.5,
+        47.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectSwitch",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectSwitchPads",
+      "label": "Four tactile-switch PCB lands001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 40,
+      "volume": 0.07645061929830287,
+      "bounds": [
+        134.14999999999998,
+        141.85000000000002,
+        -78.05000000000001,
+        -78.025,
+        42.150000000000006,
+        46.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectSwitchPads",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EmblemRotor",
+      "label": "Rotatable front emblem disc and axle study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 56.66019430381871,
+      "bounds": [
+        -19.0,
+        -10.0,
+        -92.2,
+        -87.0,
+        53.5,
+        62.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EmblemRotor",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadgeRed",
+      "label": "Swivel PS emblem colour study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 0.16995453300000213,
+      "bounds": [
+        -15.102,
+        -12.006,
+        -92.243,
+        -92.225,
+        55.506,
+        61.010000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadgeRed",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "red",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadgeYellow",
+      "label": "Swivel PS emblem colour study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.07938595502167256,
+      "bounds": [
+        -18.370000100000002,
+        -14.4999999,
+        -92.24300009999999,
+        -92.2249999,
+        55.41999989999999,
+        57.9842971175312
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadgeYellow",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "yellow",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadgeGreen",
+      "label": "Swivel PS emblem colour study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.07863785347628893,
+      "bounds": [
+        -14.5000001,
+        -10.6299999,
+        -92.24300009999999,
+        -92.2249999,
+        55.41999989999999,
+        57.992012407099885
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadgeGreen",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "emblemgreen",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBadgeBrown",
+      "label": "Swivel PS emblem colour study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 9,
+      "volume": 0.058338422852212996,
+      "bounds": [
+        -16.8650001,
+        -12.1349999,
+        -92.24300009999999,
+        -92.2249999,
+        56.118033936046544,
+        57.30196606395346
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBadgeBrown",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "emblembrown",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Original nonpolarized figure-eight AC inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 2786.419803818592,
+      "bounds": [
+        -130.60000000000002,
+        -105.4,
+        80.8,
+        91.9,
+        37.4,
+        51.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Power",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin0",
+      "label": "Rounded AC inlet pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 25.701369499018114,
+      "bounds": [
+        -122.9,
+        -121.1,
+        80.5,
+        90.9,
+        43.5,
+        45.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin0",
+      "assembly": "Power",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin1",
+      "label": "Rounded AC inlet pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 25.701369499018114,
+      "bounds": [
+        -114.9,
+        -113.1,
+        80.5,
+        90.9,
+        43.5,
+        45.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin1",
+      "assembly": "Power",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsSwitchHousing",
+      "label": "Rear mains-rocker support frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 1736.6977140414122,
+      "bounds": [
+        -129.75,
+        -106.25,
+        79.0,
+        92.0,
+        57.49999999999999,
+        70.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsSwitchHousing",
+      "assembly": "Power",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsRocker",
+      "label": "Original tilted mains rocker",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 711.5638934211695,
+      "bounds": [
+        -127.9,
+        -108.1,
+        87.29318490819657,
+        92.50681509180345,
+        59.2654474887428,
+        68.7345525112572
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsRocker",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsSymbol0",
+      "label": "I",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.008598261339580372,
+      "bounds": [
+        -117.90713087248324,
+        -117.65293624161073,
+        91.47675177396357,
+        91.75610994328696,
+        65.47014721193402,
+        67.33355876565493
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsSymbol0",
+      "assembly": "Power",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsSymbol1",
+      "label": "O",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 0.022311746528875166,
+      "bounds": [
+        -119.28380882483222,
+        -117.54471466510068,
+        92.05679526924008,
+        92.34586773420094,
+        61.27380309446135,
+        63.20633423016153
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsSymbol1",
+      "assembly": "Power",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsTerminal0",
+      "label": "Mains switch terminal study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5.772926010528487,
+      "bounds": [
+        -123.15,
+        -120.85,
+        75.0,
+        79.2,
+        63.699999999999996,
+        64.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsTerminal0",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainsTerminal1",
+      "label": "Mains switch terminal study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5.772926010528487,
+      "bounds": [
+        -115.15,
+        -112.85,
+        75.0,
+        79.2,
+        63.699999999999996,
+        64.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainsTerminal1",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiShell",
+      "label": "Twelve-position AV MULTI output shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 281.2505301811615,
+      "bounds": [
+        -125.4,
+        -106.6,
+        75.3,
+        86.3,
+        15.199999999999996,
+        23.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiShell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiTongue",
+      "label": "AV MULTI insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 192.15384061406357,
+      "bounds": [
+        -124.10000000000001,
+        -107.89999999999999,
+        76.5,
+        85.3,
+        17.924999999999997,
+        19.275000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiTongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact0",
+      "label": "AV MULTI signal contact 1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -122.85,
+        -122.35,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact1",
+      "label": "AV MULTI signal contact 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729085,
+      "bounds": [
+        -121.65,
+        -121.15,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact2",
+      "label": "AV MULTI signal contact 3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -120.45,
+        -119.95,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact3",
+      "label": "AV MULTI signal contact 4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -119.25,
+        -118.75,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact4",
+      "label": "AV MULTI signal contact 5",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -118.05,
+        -117.55,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact4",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact5",
+      "label": "AV MULTI signal contact 6",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -116.85,
+        -116.35,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact5",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact6",
+      "label": "AV MULTI signal contact 7",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729085,
+      "bounds": [
+        -115.65,
+        -115.15,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact6",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact7",
+      "label": "AV MULTI signal contact 8",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -114.45,
+        -113.95,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact7",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact8",
+      "label": "AV MULTI signal contact 9",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729085,
+      "bounds": [
+        -113.25,
+        -112.75,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact8",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact9",
+      "label": "AV MULTI signal contact 10",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729085,
+      "bounds": [
+        -112.05,
+        -111.55,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact9",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact10",
+      "label": "AV MULTI signal contact 11",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729084,
+      "bounds": [
+        -110.85,
+        -110.35,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact10",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVMultiContact11",
+      "label": "AV MULTI signal contact 12",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5862830070729085,
+      "bounds": [
+        -109.65,
+        -109.15,
+        78.0,
+        85.4,
+        19.419999999999998,
+        19.580000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVMultiContact11",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputHousing",
+      "label": "Square optical digital-output module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 654.065805208364,
+      "bounds": [
+        -92.4,
+        -83.6,
+        75.2,
+        86.2,
+        14.499999999999996,
+        23.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputHousing",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputDoor",
+      "label": "Optical-output dust shutter",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.051823001646897,
+      "bounds": [
+        -90.75,
+        -85.25,
+        85.8,
+        86.1,
+        16.45,
+        21.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputDoor",
+      "assembly": "Ports",
+      "layer": 2,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputLens",
+      "label": "Optical-emitter window study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.9424777960769346,
+      "bounds": [
+        -89.0,
+        -87.0,
+        80.5,
+        80.8,
+        18.2,
+        20.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputLens",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "red",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputPin0",
+      "label": "Optical-module board pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.610066234964762,
+      "bounds": [
+        -90.25,
+        -89.75,
+        76.35,
+        76.85,
+        7.1,
+        15.299999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputPin1",
+      "label": "Optical-module board pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.610066234964762,
+      "bounds": [
+        -88.25,
+        -87.75,
+        76.35,
+        76.85,
+        7.1,
+        15.299999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalOutputPin2",
+      "label": "Optical-module board pin002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.610066234964762,
+      "bounds": [
+        -86.25,
+        -85.75,
+        76.35,
+        76.85,
+        7.1,
+        15.299999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalOutputPin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearAC",
+      "label": "AC IN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 51,
+      "volume": 0.04404250387369981,
+      "bounds": [
+        -121.18046979865773,
+        -115.77610738255034,
+        91.02499990000001,
+        91.0430001,
+        34.66993278590604,
+        36.22912761677853
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearAC",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMains",
+      "label": "MAIN POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 136,
+      "volume": 0.09401784236830653,
+      "bounds": [
+        -125.95909405973154,
+        -114.25705536912751,
+        91.02499990000001,
+        91.0430001,
+        73.77369117516778,
+        75.1379866771812
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMains",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearAV",
+      "label": "AV MULTI OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 121,
+      "volume": 0.11092166148822272,
+      "bounds": [
+        -125.03735570469799,
+        -110.64010738255033,
+        85.52499990000001,
+        85.5430001,
+        10.769932785906041,
+        12.329127616778523
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearAV",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearOptical",
+      "label": "DIGITAL OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 127,
+      "volume": 0.06345504937928682,
+      "bounds": [
+        -94.39701132550336,
+        -84.30808505100673,
+        85.52499990000001,
+        85.5430001,
+        10.776509967114094,
+        11.994630972483222
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearOptical",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardCage",
+      "label": "Type III PC CARD metal guide cage and mounting feet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 66,
+      "volume": 6881.099704289681,
+      "bounds": [
+        35.5,
+        98.5,
+        0.0,
+        83.0,
+        11.8,
+        25.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardCage",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact0",
+      "label": "PC CARD contact 1 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705274,
+      "bounds": [
+        45.865,
+        46.225,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact1",
+      "label": "PC CARD contact 2 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705123,
+      "bounds": [
+        47.135,
+        47.495,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact2",
+      "label": "PC CARD contact 3 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.637069767270545,
+      "bounds": [
+        48.405,
+        48.765,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact3",
+      "label": "PC CARD contact 4 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705603,
+      "bounds": [
+        49.675000000000004,
+        50.035000000000004,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact4",
+      "label": "PC CARD contact 5 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672704635,
+      "bounds": [
+        50.945,
+        51.305,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact5",
+      "label": "PC CARD contact 6 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705283,
+      "bounds": [
+        52.214999999999996,
+        52.574999999999996,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact6",
+      "label": "PC CARD contact 7 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672704972,
+      "bounds": [
+        53.485,
+        53.845,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact7",
+      "label": "PC CARD contact 8 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672704795,
+      "bounds": [
+        54.755,
+        55.115,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact8",
+      "label": "PC CARD contact 9 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705434,
+      "bounds": [
+        56.025,
+        56.385,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact9",
+      "label": "PC CARD contact 10 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672704964,
+      "bounds": [
+        57.295,
+        57.655,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact10",
+      "label": "PC CARD contact 11 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705132,
+      "bounds": [
+        58.565,
+        58.925,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact11",
+      "label": "PC CARD contact 12 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705274,
+      "bounds": [
+        59.835,
+        60.195,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact12",
+      "label": "PC CARD contact 13 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705123,
+      "bounds": [
+        61.105,
+        61.464999999999996,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact12",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact13",
+      "label": "PC CARD contact 14 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.637069767270563,
+      "bounds": [
+        62.375,
+        62.735,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact13",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact14",
+      "label": "PC CARD contact 15 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.63706976727049,
+      "bounds": [
+        63.645,
+        64.00500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact14",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact15",
+      "label": "PC CARD contact 16 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705488,
+      "bounds": [
+        64.91499999999999,
+        65.275,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact15",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact16",
+      "label": "PC CARD contact 17 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705816,
+      "bounds": [
+        66.18499999999999,
+        66.545,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact16",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact17",
+      "label": "PC CARD contact 18 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705496,
+      "bounds": [
+        67.455,
+        67.81500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact17",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact18",
+      "label": "PC CARD contact 19 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672706127,
+      "bounds": [
+        68.725,
+        69.08500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact18",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact19",
+      "label": "PC CARD contact 20 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672706136,
+      "bounds": [
+        69.99499999999999,
+        70.355,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact19",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact20",
+      "label": "PC CARD contact 21 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705186,
+      "bounds": [
+        71.26499999999999,
+        71.625,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact20",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact21",
+      "label": "PC CARD contact 22 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672706127,
+      "bounds": [
+        72.535,
+        72.89500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact21",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact22",
+      "label": "PC CARD contact 23 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705816,
+      "bounds": [
+        73.80499999999999,
+        74.165,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact22",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact23",
+      "label": "PC CARD contact 24 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.637069767270644,
+      "bounds": [
+        75.07499999999999,
+        75.435,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact23",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact24",
+      "label": "PC CARD contact 25 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705807,
+      "bounds": [
+        76.345,
+        76.70500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact24",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact25",
+      "label": "PC CARD contact 26 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705816,
+      "bounds": [
+        77.615,
+        77.97500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact25",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact26",
+      "label": "PC CARD contact 27 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705816,
+      "bounds": [
+        78.88499999999999,
+        79.245,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact26",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact27",
+      "label": "PC CARD contact 28 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672706447,
+      "bounds": [
+        80.155,
+        80.51500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact27",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact28",
+      "label": "PC CARD contact 29 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705816,
+      "bounds": [
+        81.425,
+        81.78500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact28",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact29",
+      "label": "PC CARD contact 30 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705496,
+      "bounds": [
+        82.695,
+        83.055,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact29",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact30",
+      "label": "PC CARD contact 31 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705807,
+      "bounds": [
+        83.96499999999999,
+        84.325,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact30",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact31",
+      "label": "PC CARD contact 32 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672706447,
+      "bounds": [
+        85.23499999999999,
+        85.595,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact31",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact32",
+      "label": "PC CARD contact 33 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672704857,
+      "bounds": [
+        86.505,
+        86.86500000000001,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact32",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact33",
+      "label": "PC CARD contact 34 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 2.6370697672705496,
+      "bounds": [
+        87.77499999999999,
+        88.135,
+        -6.0,
+        8.299999999999999,
+        7.1,
+        18.220000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact33",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact34",
+      "label": "PC CARD contact 35 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705587,
+      "bounds": [
+        45.865,
+        46.225,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact34",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact35",
+      "label": "PC CARD contact 36 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270523,
+      "bounds": [
+        47.135,
+        47.495,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact35",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact36",
+      "label": "PC CARD contact 37 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270523,
+      "bounds": [
+        48.405,
+        48.765,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact36",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact37",
+      "label": "PC CARD contact 38 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270557,
+      "bounds": [
+        49.675000000000004,
+        50.035000000000004,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact37",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact38",
+      "label": "PC CARD contact 39 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705054,
+      "bounds": [
+        50.945,
+        51.305,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact38",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact39",
+      "label": "PC CARD contact 40 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705924,
+      "bounds": [
+        52.214999999999996,
+        52.574999999999996,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact39",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact40",
+      "label": "PC CARD contact 41 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270518,
+      "bounds": [
+        53.485,
+        53.845,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact40",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact41",
+      "label": "PC CARD contact 42 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270484,
+      "bounds": [
+        54.755,
+        55.115,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact41",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact42",
+      "label": "PC CARD contact 43 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270619,
+      "bounds": [
+        56.025,
+        56.385,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact42",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact43",
+      "label": "PC CARD contact 44 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705622,
+      "bounds": [
+        57.295,
+        57.655,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact43",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact44",
+      "label": "PC CARD contact 45 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705427,
+      "bounds": [
+        58.565,
+        58.925,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact44",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact45",
+      "label": "PC CARD contact 46 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270541,
+      "bounds": [
+        59.835,
+        60.195,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact45",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact46",
+      "label": "PC CARD contact 47 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270578,
+      "bounds": [
+        61.105,
+        61.464999999999996,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact46",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact47",
+      "label": "PC CARD contact 48 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705764,
+      "bounds": [
+        62.375,
+        62.735,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact47",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact48",
+      "label": "PC CARD contact 49 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706812,
+      "bounds": [
+        63.645,
+        64.00500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact48",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact49",
+      "label": "PC CARD contact 50 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706137,
+      "bounds": [
+        64.91499999999999,
+        65.275,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact49",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact50",
+      "label": "PC CARD contact 51 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270653,
+      "bounds": [
+        66.18499999999999,
+        66.545,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact50",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact51",
+      "label": "PC CARD contact 52 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706137,
+      "bounds": [
+        67.455,
+        67.81500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact51",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact52",
+      "label": "PC CARD contact 53 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706493,
+      "bounds": [
+        68.725,
+        69.08500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact52",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact53",
+      "label": "PC CARD contact 54 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672707274,
+      "bounds": [
+        69.99499999999999,
+        70.355,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact53",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact54",
+      "label": "PC CARD contact 55 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706137,
+      "bounds": [
+        71.26499999999999,
+        71.625,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact54",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact55",
+      "label": "PC CARD contact 56 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672705764,
+      "bounds": [
+        72.535,
+        72.89500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact55",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact56",
+      "label": "PC CARD contact 57 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706155,
+      "bounds": [
+        73.80499999999999,
+        74.165,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact56",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact57",
+      "label": "PC CARD contact 58 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270651,
+      "bounds": [
+        75.07499999999999,
+        75.435,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact57",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact58",
+      "label": "PC CARD contact 59 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706155,
+      "bounds": [
+        76.345,
+        76.70500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact58",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact59",
+      "label": "PC CARD contact 60 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270651,
+      "bounds": [
+        77.615,
+        77.97500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact59",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact60",
+      "label": "PC CARD contact 61 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270539,
+      "bounds": [
+        78.88499999999999,
+        79.245,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact60",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact61",
+      "label": "PC CARD contact 62 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.07770976727069,
+      "bounds": [
+        80.155,
+        80.51500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact61",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact62",
+      "label": "PC CARD contact 63 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270502,
+      "bounds": [
+        81.425,
+        81.78500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact62",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact63",
+      "label": "PC CARD contact 64 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270651,
+      "bounds": [
+        82.695,
+        83.055,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact63",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact64",
+      "label": "PC CARD contact 65 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672706137,
+      "bounds": [
+        83.96499999999999,
+        84.325,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact64",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact65",
+      "label": "PC CARD contact 66 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.07770976727069,
+      "bounds": [
+        85.23499999999999,
+        85.595,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact65",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact66",
+      "label": "PC CARD contact 67 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.077709767270539,
+      "bounds": [
+        86.505,
+        86.86500000000001,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact66",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardContact67",
+      "label": "PC CARD contact 68 and board leg",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 3.0777097672707647,
+      "bounds": [
+        87.77499999999999,
+        88.135,
+        -8.4,
+        8.299999999999999,
+        7.1,
+        20.02
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardContact67",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardHeader",
+      "label": "Two-row 68-position PC CARD insulating header",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 554,
+      "volume": 3282.207319324889,
+      "bounds": [
+        41.0,
+        93.0,
+        -3.200000000000001,
+        4.4,
+        14.599999999999998,
+        23.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardHeader",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardProtector",
+      "label": "Original PC CARD protector with internal guide arms",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 1148.256460032938,
+      "bounds": [
+        39.9,
+        94.1,
+        9.0,
+        86.3,
+        14.799999999999999,
+        25.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardProtector",
+      "assembly": "Ports",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardEjectGuide",
+      "label": "PC CARD eject-rod guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 941.0442872687108,
+      "bounds": [
+        99.0,
+        103.0,
+        5.999999999999999,
+        80.0,
+        17.499999999999982,
+        22.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardEjectGuide",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardEjectRod",
+      "label": "PC CARD push rod and driving finger",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 415.1477645258699,
+      "bounds": [
+        99.2,
+        102.8,
+        3.0,
+        83.9,
+        11.5,
+        21.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardEjectRod",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardEjectButton",
+      "label": "Original PC CARD eject button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 93.57292006587699,
+      "bounds": [
+        98.75,
+        103.25,
+        84.0,
+        87.0,
+        16.499999999999996,
+        23.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardEjectButton",
+      "assembly": "Ports",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardEjectLever",
+      "label": "Under-cage eject lever study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 74.2668319736492,
+      "bounds": [
+        70.0,
+        102.0,
+        1.2,
+        5.2,
+        10.7,
+        11.299999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardEjectLever",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardEjectPivot",
+      "label": "Eject-lever pivot pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.031857894892407,
+      "bounds": [
+        94.7,
+        96.3,
+        2.4000000000000004,
+        4.0,
+        9.4,
+        12.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardEjectPivot",
+      "assembly": "Ports",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCardLabel",
+      "label": "PC CARD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 112,
+      "volume": 0.09294024384881447,
+      "bounds": [
+        60.2786576181208,
+        70.27235748255033,
+        85.52499990000001,
+        85.5430001,
+        8.766174396644297,
+        10.52026855637584
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCardLabel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps2/output/iterations/06_type_iii_pc_card_cage_contacts_and_eject_mechanism.FCStd",
+  "views": [
+    "devices/ps2/output/previews/06_type_iii_pc_card_cage_contacts_and_eject_mechanism_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
