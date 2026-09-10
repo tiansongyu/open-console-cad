@@ -1,35 +1,51 @@
-# Sony PlayStation · SCPH-1000
+# Sony PlayStation — SCPH-1000
 
-初代日版灰色 PlayStation 的结构学习模型。当前保留 **25 轮源码、929 个组件条目、4,149 个实体**，已制作主机、SCPH-1010 数字手柄、SCPH-1020 记忆卡、电源与AV视频线及空白光盘。最终 STEP、图册和网页交付仍在进行。
+初代日版灰色 PlayStation 的 FreeCAD 结构学习模型，包含 **SCPH-1010 数字手柄、SCPH-1020 记忆卡、电源线、AV视频线和空白 12 cm 光盘**。提供完整工程、分层爆炸、彩色 STEP、12 页 A3 图纸和十八种交互视图。
 
-<a href="output/previews/25_preserved_trimmed_surfaces_and_analytic_badge_ellipses_hero.png"><img src="output/previews/25_preserved_trimmed_surfaces_and_analytic_badge_ellipses_hero.png" width="240" alt="SCPH-1000 主机与原版连接套件"></a>
-<a href="output/previews/10_power_supply.png"><img src="output/previews/10_power_supply.png" width="240" alt="独立电源板的输入滤波、变压器与输出电容"></a>
-<a href="output/previews/09_pu7_populated.png"><img src="output/previews/09_pu7_populated.png" width="240" alt="PU-7 芯片、滤波器件与排线连接座"></a>
+模型包含 **929 个组件条目、4,149 个实体与 25 轮建模源码**。组件条目与实体数量分开统计；一个组件可以包含多枚触点、引脚或文字实体。
 
-- [当前阶段 FreeCAD 工程](output/PlayStation_Study.FCStd)
-- [从源码重建当前阶段](Rebuild_PlayStation.FCMacro) · [逐轮记录](ITERATIONS.md)
-- [前十五轮主机装配检查](output/reports/stage15_interference.json) · [前十五轮源码重建核对](output/reports/stage15_rebuild.json)
-- [参考来源与版本边界](references/SOURCES.md)
+[在线 3D](https://tiansongyu.github.io/open-console-cad/?device=ps1&view=assembled#viewer) · [读取机构](https://tiansongyu.github.io/open-console-cad/?device=ps1&view=optical#viewer) · [原版数字手柄](https://tiansongyu.github.io/open-console-cad/?device=ps1&view=controller#viewer) · [A3 图册](output/drawings/PlayStation_Drawings.pdf)
 
-使用 FreeCAD 1.1.3 打开工程。原生模型保留草图、凸台、圆角、布尔加工及盖板轴耳的融合历史。重建宏将输出写入 `output/rebuilt/`；需保留完整仓库结构。
+<a href="output/previews/final_hero.png"><img src="output/previews/final_hero.png" width="280" alt="初代日版 PlayStation、数字手柄与记忆卡"></a>
+<a href="output/previews/final_internal.png"><img src="output/previews/final_internal.png" width="280" alt="PU-7 主板、独立电源和光驱读取机构"></a>
 
-<a href="output/previews/20_controller_fit_review.png"><img src="output/previews/20_controller_fit_review.png" width="280" alt="SCPH-1010 原始数字手柄"></a>
+## 交付文件
 
-## 当前模型内容
+- [完整 FreeCAD 工程](output/PlayStation_Complete.FCStd) · [爆炸装配](output/PlayStation_Exploded.FCStd)
+- [12 页 A3 PDF](output/drawings/PlayStation_Drawings.pdf) · [原生图纸](output/PlayStation_Drawings.FCStd) · [SVG 与排版源码](output/drawings/)
+- [整套 STEP](output/PlayStation_FullKit.step) · [主机、手柄与记忆卡 STEP](output/PlayStation_Console.step) · [爆炸 STEP](output/PlayStation_Exploded.step)
+- [组件清单](output/COMPONENTS.csv) · [逐轮记录](ITERATIONS.md) · [资料来源](references/SOURCES.md)
 
-- **前后接口**：两个独立记忆卡防尘门、8 接点卡槽、9 接点手柄插座，以及日版初代的 S-Video、RCA、RFU DC、串口、AV Multi、68 接点并口与非极性 AC 输入。
-- **光盘机构**：圆盖、锁钩、OPEN 联动滑块、铰链与回位弹簧；三点橡胶悬挂光驱、主轴、夹盘球、双导轨激光头、进给电机、蜗杆、减速轮、齿条和软排线。
-- **PU-7 主板**：CPU、GPU、SPU、四片主内存、双显存、音视频转换及 CD 芯片；底面保留 CD 控制器、缓冲 RAM 与电机/伺服驱动。20 个主要封装均带独立引脚、焊盘及标识。
-- **分立元件与供电**：主板滤波、去耦与接口电阻，独立电源 PCB、保险管、矩形磁芯输入滤波、变压器、整流及输出滤波；七芯线束、两端插座与 POWER/RESET 传动。
-- **机械固定**：上下屏蔽、电源隔板、前接口罩、绝缘支撑与固定螺钉；底壳保留六处非对称沉孔、四组通风槽、矩形脚垫与学习铭牌，盖板增加单侧齿扇和旋转阻力机构。
+## 版本与尺寸依据
 
-前十五轮主机完成 **2,213 对装配候选的求交检查**，该阶段无剩余干涉；前十五轮在新工程中完整重建，726 个组件的实体数量、边界和体积逐项一致。同类固定柱采用批量构造以减少重建开销。历史报告保留轴座、锁钩、齿轮、线束和屏蔽配合的修正过程，该记录不覆盖第十六轮之后新增的手柄。
+外观选择初代日版 **SCPH-1000**：灰色侧翼外壳、圆形光驱盖、独立 POWER / RESET / OPEN，以及原版前后接口。手柄选择紧凑的 **SCPH-1010 数字控制器**，保留分离方向键、四色符号面键、SELECT / START、双层肩键和八处后壳固定。
 
-主机包络以同系列 SCPH-5500 官方说明书的 270 × 188 × 60 mm 为参考；尚未取得 SCPH-1000 原厂尺寸图，所有尺寸均为学习近似，外伸接口和标识另计。SCPH-1010 手柄已包含曲面上下壳、方向键、四色符号键、肩键、PCB 与硅胶接点、八处螺钉、七芯线束和插头。[第十九轮诊断](output/reports/stage19_controller_diagnostic.json) 发现的方向键、板边和线束干涉已在第 20–21 轮修正；[第 21 轮手柄检查](output/reports/stage21_controller_diagnostic.json) 的 217 对候选通过。SCPH-1020 记忆卡保留滑动后盖、两处固定、大板家族内构及空白标签，局部尺寸和封装为学习近似。最终源码重建与全部格式回读、12 页图册和网页发布仍待完成。
+Sony 官方说明书中的 **270 × 188 × 60 mm** 对应后期 **SCPH-5500 家族规格**，本项目将其作为 SCPH-1000 的近似包络参考。当前主机包含外伸接口和标识的模型包络约 **270 × 188.9 × 60.043 mm**；手柄、记忆卡与连接线另计。图纸中的局部数字均为当前模型测量值。
 
-<a href="output/previews/24_memory_card_internal_review.png"><img src="output/previews/24_memory_card_internal_review.png" width="220" alt="原版记忆卡的接点、板件与侧边固定"></a>
-<a href="output/previews/23_connection_kit_review.png"><img src="output/previews/23_connection_kit_review.png" width="220" alt="记忆卡、电源、AV视频线及空白光盘"></a>
+- **前后接口**：双层记忆卡与手柄接口、独立防尘门及转轴，保留 8 接点卡槽、9 位置手柄插座，以及 S-Video、三路 RCA、RFU DC、串口、AV MULTI、68 接点并口和非极性 AC 输入。
+- **圆盖与开盖机构**：原生圆盖、一体轴耳和锁钩、钢轴、回位弹簧、单侧齿扇、旋转阻力件与 OPEN 释放滑块。
+- **读取机构**：三点橡胶悬挂、主轴与夹盘球、双导轨光头、进给电机、蜗杆、减速齿轮、齿条和软排线。
+- **PU-7 双面主板**：CPU、GPU、SPU、主内存、显存、音视频转换、CD 控制与伺服相关封装，配有独立引脚、焊盘、滤波和接口器件。
+- **供电与固定**：独立电源板、玻璃保险管、输入磁芯与线圈、变压器、整流和输出滤波、七芯供电线束；分层屏蔽、绝缘支承、六处非对称机壳固定和底部通风。
+- **数字手柄**：原生曲线草图与空心放样壳、按键传动柱、硅胶膜、分离碳膜接点、方向键导架、两块肩键小板及分层线束。九位置插头保留数字手柄使用的七个接点。
+- **记忆卡与连接附件**：SCPH-1020 滑动后盖、两处固定、八枚金手指及大板家族内构；日式两片电源插头、八字设备端、十二位置 AV MULTI 转三 RCA 线，以及不含游戏数据的空白 CD。
 
-第 25 轮的 [929 个组件严格几何检查](output/reports/stage25_strict_bop.json) 全部通过。[整套装配基线](output/reports/stage24_interference.json) 覆盖 2,503 对候选；[第 25 轮增量复核](output/reports/stage25_incremental_interference.json) 确认 921 个未改组件的 BRep 完全一致，并重新求交涉及修改的 114 对组合，当前无干涉。完整源码重建正在核对，尚未完成最终交付。
+主板参考实物 PU-7 `1-655-322-13A`。SCPH-1020 的同一型号存在不同大小的 PCB，本模型选择大板作为内部参考，其生产日期未作确定归属。手柄与记忆卡尺寸、孔位、壁厚、引脚、电子器件及线束均为学习近似，不复现制造公差或生产电路，也不执行机械运动、光学读写或电气仿真。详见 [SOURCES.md](references/SOURCES.md)。
 
-原创代码和有权许可的模型内容采用根目录 MIT 协议。第三方名称、设计与参考材料保留各自权利，见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
+## 查看与重建
+
+使用 FreeCAD 1.1.3 打开工程，或运行 [Open_PlayStation.FCMacro](Open_PlayStation.FCMacro) 打开完整装配、爆炸模型和原生图纸。通过装配分组切换可见性，并查看原生草图、凸台、圆角、放样与布尔历史。
+
+保留仓库结构，运行 [Rebuild_PlayStation.FCMacro](Rebuild_PlayStation.FCMacro)，可按 25 轮源码重新生成 CAD / STEP，结果写入 `output/rebuilt/`。图纸和网页网格按仓库 [README](../../README.md) 的交付流程另行更新。主要源码为 [ps1.py](../../tools/cadlib/ps1.py)。
+
+## 验证范围
+
+- [完整源码重建](output/reports/rebuild_verification.json)：新工程执行全部源码，逐组件核对有效性、实体数量、边界和体积；数值积分差异使用双向布尔差集确认。
+- [严格 BRep](output/reports/strict_bop_audit.json) · [装配求交](output/reports/final_interference_audit.json)：检查保存模型的实体与装配间隙。
+- [原生与 STEP 回读](output/reports/export_roundtrip_audit.json)：两份原生装配、三份 STEP 逐实体匹配，并核对彩色实体记录。
+- [图纸尺寸](output/reports/drawing_checks.json) · [原生图页](output/reports/native_drawings_audit.json) · [保存后重开](output/reports/native_drawings_reload.json)。
+- [图册视觉检查](output/reports/visual_acceptance.json) · [独立复核](output/reports/independent_pdf_review.json) · [网页预览检查](output/reports/web_preview_checks.json)。
+
+检查结果对应当前保存的交付文件；历史阶段报告保留修正过程。建模通过 neka-nat/freecad-mcp 在 FreeCAD 主线程执行，网页网格直接由组件 BRep 导出；修改几何后需重新生成并核对交付文件。
+
+本设备随仓库采用 [MIT 许可证](../../LICENSE)。本项目为非官方学习项目，第三方名称与标识归相应权利人所有。

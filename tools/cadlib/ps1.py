@@ -1329,3 +1329,12 @@ def stage25(m):
 
 
 STAGES[25]=stage25
+
+
+def finalize(model):
+    from .deliver import finalize as shared_finalize
+    result=shared_finalize(model)
+    model.snapshot('final_front',normal=(.2,-1.5,.7),assemblies=model.profile['envelope_groups'])
+    model.snapshot('final_hero',normal=(.3,-.7,2.3),assemblies=result[0]['handheld_groups'])
+    model.doc.save()
+    return result

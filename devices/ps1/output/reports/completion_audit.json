@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment is checked separately.",
+  "components": 929,
+  "solids": 4149,
+  "stages": 25,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "strict_bop_audit.json",
+    "final_interference_audit.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "files": [
+    {
+      "path": "devices/ps1/output/PlayStation_Complete.FCStd",
+      "bytes": 16173183,
+      "sha256": "9ac44a577d4bc526893394bb974d772868f8214c4c548f5b88d47f15aa68770b"
+    },
+    {
+      "path": "devices/ps1/output/PlayStation_Exploded.FCStd",
+      "bytes": 7735685,
+      "sha256": "423a65e2bff3dd57c7cf50a64e48e8991bc8e0245e430811bca4d5638bbc664a"
+    },
+    {
+      "path": "devices/ps1/output/PlayStation_Drawings.FCStd",
+      "bytes": 578199,
+      "sha256": "16d7de9c348e0a4a09ef2cc40fbea6d1bbe127e1613620af64dd9c80021ea51d"
+    },
+    {
+      "path": "devices/ps1/output/PlayStation_FullKit.step",
+      "bytes": 63175968,
+      "sha256": "6673373fe42ea41af2a4078f6382df08dbb2fb48bc46d180407046f1a3af49b1"
+    },
+    {
+      "path": "devices/ps1/output/PlayStation_Console.step",
+      "bytes": 62492134,
+      "sha256": "6973fa666780a0a3eb6624c034a28a0abb24de1b9d038a64b0f945f2f08a4211"
+    },
+    {
+      "path": "devices/ps1/output/PlayStation_Exploded.step",
+      "bytes": 63172236,
+      "sha256": "e59949a34307475d6e75b3ee92fc9ec2c64b7c06bc375542b200d04fa026e6ff"
+    },
+    {
+      "path": "devices/ps1/output/drawings/PlayStation_Drawings.pdf",
+      "bytes": 857294,
+      "sha256": "0fc2d810b1b0a7ec3ef34b6bc1b934742bdfab9a4e54f961bb8af21cbad9580c"
+    },
+    {
+      "path": "devices/ps1/output/COMPONENTS.csv",
+      "bytes": 170562,
+      "sha256": "31a176134e2b295ec233c66d03515febc77c44a66f36803b246ad9ade4150b38"
+    },
+    {
+      "path": "site/public/models/ps1.glb",
+      "bytes": 41237316,
+      "sha256": "9daea66b84da97076e0f0b7c0400def8fb3289e030cdd728e76599047299b796"
+    }
+  ],
+  "live_verified": false
+}

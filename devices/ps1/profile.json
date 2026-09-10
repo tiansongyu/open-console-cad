@@ -34,13 +34,50 @@
     "Internal"
   ],
   "controls_groups": [
-    "Controls",
     "Controller"
   ],
   "internal_exclude": [
     "UpperHousing",
+    "ControllerNumber1",
+    "ControllerNumber2",
+    "ParallelCover",
+    "ParallelCoverArrow",
+    "RearSerialLegend",
+    "RearAudioRLegend",
+    "RearAudioLLegend",
+    "RearRFULegend",
+    "RearVideoLegend",
+    "RearSVideoLegend",
+    "RearMultiAVLegend",
+    "RearParallelLegend",
+    "RearACLegend",
+    "CaseScrewArrow0",
+    "CaseScrewArrow1",
+    "CaseScrewArrow2",
+    "CaseScrewArrow3",
+    "CaseScrewArrow4",
+    "CaseScrewArrow5",
+    "BottomLabel",
+    "BottomSony",
+    "BottomModel",
+    "BottomStudy",
     "DiscLid",
-    "MainShield"
+    "SonyMark",
+    "PlayStationMark",
+    "DiscWell",
+    "MainShield",
+    "FrontIOShield",
+    "PowerGuard",
+    "PSBadgeRed",
+    "PSBadgeYellow",
+    "PSBadgeGreen",
+    "PSBadgeBrown",
+    "PowerButton",
+    "PowerLegend",
+    "OpenButton",
+    "OpenLegend",
+    "ResetButton",
+    "ResetLegend"
   ],
   "sources": [
     {
@@ -50,6 +87,51 @@
     {
       "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps-docs/JA_SCPH-5500_WEB.pdf",
       "role": "Later original-family body dimension reference only; not SCPH-1000 electronics"
+    },
+    {
+      "url": "https://digandrescue.com/hardware/sony/sony-playstation-scph-1000/",
+      "role": "Firsthand original enclosure, shield, lid and fixing assembly"
+    },
+    {
+      "url": "https://digandrescue.com/hardware/sony/sony-playstation-scph-1010-controller/",
+      "role": "Original compact digital controller and eight rear fixings"
+    },
+    {
+      "url": "https://digandrescue.com/hardware/sony/sony-playstation-scph-1020-memorycard/",
+      "role": "Original grey card and two board-size variants; larger board used as an approximate internal-family reference"
+    },
+    {
+      "url": "https://psx-spx.consoledev.net/pinouts/",
+      "role": "Firsthand reverse-engineering pinouts for original connector families"
     }
-  ]
+  ],
+  "internal_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Shield",
+    "Optical",
+    "Power",
+    "Wiring",
+    "FrontIO",
+    "Internal"
+  ],
+  "internal_normal": [
+    0.3,
+    -0.6,
+    2.2
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -110,
+      0
+    ],
+    "MemoryCard": [
+      70,
+      -30,
+      0
+    ]
+  }
 }

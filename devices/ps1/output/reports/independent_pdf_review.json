@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "artifact_sha256": "0fc2d810b1b0a7ec3ef34b6bc1b934742bdfab9a4e54f961bb8af21cbad9580c",
+  "artifact": "devices/ps1/output/drawings/PlayStation_Drawings.pdf",
+  "reviewed_at": "2026-09-10T09:37:39.941457+00:00",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "findings": [],
+  "methods": {
+    "scope": "Independent read-only PDF review under Kami and PDF skills; no source, CAD, PDF or page PNG modified.",
+    "contract": [
+      "references/DRAWING_CONTRACT.md",
+      "output/drawings/content.json"
+    ],
+    "visual": "Viewed all 12 existing page PNGs individually: no P0/P1 clipping, overlap, broken glyph, illegible table, or content-preservation defect.",
+    "page_geometry": "PyMuPDF verified 12 pages, each 420 x 297 mm (A3 landscape).",
+    "kami_content": "PASS: valid long-doc content; all 20 atomic values present; 30 prose fields not required verbatim.",
+    "kami_style": "PASS: no style drift.",
+    "kami_placeholders": "PASS: no placeholders.",
+    "kami_density": "PASS: no density issues.",
+    "kami_fonts": "PASS: TsangerJinKai02 drew 3985 CJK body ideographs.",
+    "manifest": "Verified 25 stages, 929 objects/components, 4149 summed solids; 13 assembly counts sum to 929 and agree with page 11.",
+    "preserve_evidence": [
+      "Pages 1 and 12 explicitly distinguish the later SCPH-5500 family envelope from approximate SCPH-1000 dimensions and unverified internal geometry.",
+      "Page 2 preserves Japanese-original rear S-Video, RCA, RFU DC, serial, AV MULTI, parallel and AC interfaces.",
+      "Pages 3 and 6 show the original digital SCPH-1010 without analog sticks; page 3 shows eight rear fixings.",
+      "Page 4 exposes the pinion and return spring; its text explicitly disclaims verified motion.",
+      "Page 5 labels the actual model sections and cut planes; page 6 explains display offsets and omitted dense details.",
+      "Page 8 exposes the pickup, worm, reduction gear and rack; page 9 exposes shoulder contacts.",
+      "Page 10 shows grey SCPH-1020 card, two fixing positions and eight fingers, with sliding-cover text; pages 10 and 12 leave larger-board dating uncertain.",
+      "Page 10 preserves shortened display cables and a blank CD; page 12 excludes game data and production circuits.",
+      "Page 11 preserves component identifiers and separate component/solid counts; index text is legible."
+    ],
+    "supporting_audits": "Read drawing_checks.json (PASS; BRep projections, model endpoints and physical planar sections) and native_drawings_audit.json (PASS; 12 pages, 15 native dimension references). Native save/reopen and cross-export validation remain the parent workflow responsibility.",
+    "hash_guard": "PDF SHA256 matched the requested artifact before review and immediately before report creation."
+  }
+}

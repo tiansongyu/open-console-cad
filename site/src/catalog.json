@@ -5018,5 +5018,621 @@
       "lossless": true
     },
     "exposure": 0.62
+  },
+  {
+    "id": "ps1",
+    "title": "Sony PlayStation",
+    "prefix": "PlayStation",
+    "model": "SCPH-1000 · 初代日版灰色",
+    "count": 929,
+    "iterations": 25,
+    "pages": 12,
+    "bytes": 41237316,
+    "family": "console",
+    "exposure": 0.55,
+    "views": {
+      "assembled": {
+        "label": "主机与原配",
+        "description": "初代日版主机、SCPH-1010 数字手柄和 SCPH-1020 记忆卡。",
+        "groups": [
+          "Body",
+          "Optical",
+          "Controls",
+          "FrontIO",
+          "Ports",
+          "Power",
+          "Wiring",
+          "Mainboard",
+          "Shield",
+          "Internal",
+          "Controller",
+          "MemoryCard"
+        ],
+        "normal": [
+          0.3,
+          -0.7,
+          2.3
+        ]
+      },
+      "console": {
+        "label": "日版主机",
+        "description": "圆形光驱盖、左右侧翼、POWER / RESET / OPEN 和原始接口。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Power",
+          "Wiring",
+          "FrontIO",
+          "Internal"
+        ],
+        "normal": [
+          0.2,
+          -1.5,
+          0.85
+        ]
+      },
+      "internal": {
+        "label": "主机内部",
+        "description": "移开上壳、光盘仓和上部屏蔽，观察 PU-7、独立电源与读取机构。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Power",
+          "Wiring",
+          "FrontIO",
+          "Internal"
+        ],
+        "exclude": [
+          "UpperHousing",
+          "ControllerNumber1",
+          "ControllerNumber2",
+          "ParallelCover",
+          "ParallelCoverArrow",
+          "RearSerialLegend",
+          "RearAudioRLegend",
+          "RearAudioLLegend",
+          "RearRFULegend",
+          "RearVideoLegend",
+          "RearSVideoLegend",
+          "RearMultiAVLegend",
+          "RearParallelLegend",
+          "RearACLegend",
+          "CaseScrewArrow0",
+          "CaseScrewArrow1",
+          "CaseScrewArrow2",
+          "CaseScrewArrow3",
+          "CaseScrewArrow4",
+          "CaseScrewArrow5",
+          "BottomLabel",
+          "BottomSony",
+          "BottomModel",
+          "BottomStudy",
+          "DiscLid",
+          "SonyMark",
+          "PlayStationMark",
+          "DiscWell",
+          "MainShield",
+          "FrontIOShield",
+          "PowerGuard",
+          "PSBadgeRed",
+          "PSBadgeYellow",
+          "PSBadgeGreen",
+          "PSBadgeBrown",
+          "PowerButton",
+          "PowerLegend",
+          "OpenButton",
+          "OpenLegend",
+          "ResetButton",
+          "ResetLegend"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "exploded": {
+        "label": "主机爆炸",
+        "description": "按交付的展示位移分开圆盖、读取机构、板件和屏蔽。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Power",
+          "Wiring",
+          "FrontIO",
+          "Internal"
+        ],
+        "explode": 1,
+        "normal": [
+          0.5,
+          -0.45,
+          1.3
+        ]
+      },
+      "controller": {
+        "label": "原版数字手柄",
+        "description": "SCPH-1010：分离方向键、四色符号键、双层肩键和原始插头。",
+        "groups": [
+          "Controller"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "controller-internal": {
+        "label": "手柄内部",
+        "description": "硅胶与碳膜接点、主板、肩键小板、八处固定和内部导线。",
+        "groups": [
+          "Controller"
+        ],
+        "exclude": [
+          "CtrlBack",
+          "CtrlFront",
+          "CtrlDPadUp",
+          "CtrlDirectionUp",
+          "CtrlDPadRight",
+          "CtrlDirectionRight",
+          "CtrlDPadDown",
+          "CtrlDirectionDown",
+          "CtrlDPadLeft",
+          "CtrlDirectionLeft",
+          "CtrlButtonTriangle",
+          "CtrlSymbolTriangle",
+          "CtrlButtonCircle",
+          "CtrlSymbolCircle",
+          "CtrlButtonCross",
+          "CtrlSymbolCross",
+          "CtrlButtonSquare",
+          "CtrlSymbolSquare",
+          "CtrlSelect",
+          "CtrlStart",
+          "CtrlSelectMark",
+          "CtrlStartMark",
+          "CtrlSonyMark",
+          "CtrlPSMark",
+          "CtrlPlayStationMark",
+          "CtrlL1",
+          "CtrlL1Mark",
+          "CtrlL2",
+          "CtrlL2Mark",
+          "CtrlShoulderL",
+          "CtrlR1",
+          "CtrlR1Mark",
+          "CtrlR2",
+          "CtrlR2Mark",
+          "CtrlShoulderR",
+          "CtrlCable",
+          "CtrlPlugBody",
+          "CtrlPlugRelief",
+          "CtrlPlugTriplet0",
+          "CtrlPlugTriplet1",
+          "CtrlPlugTriplet2",
+          "CtrlPlugMark",
+          "CtrlRearModel"
+        ],
+        "normal": [
+          0.3,
+          -0.5,
+          2.4
+        ]
+      },
+      "controller-exploded": {
+        "label": "手柄爆炸",
+        "description": "展开上下曲面壳、独立按键、硅胶膜、接点和板件。",
+        "groups": [
+          "Controller"
+        ],
+        "exclude": [
+          "CtrlCableGrommet",
+          "CtrlCable",
+          "CtrlInternalLead0",
+          "CtrlInternalLead1",
+          "CtrlInternalLead2",
+          "CtrlInternalLead3",
+          "CtrlInternalLead4",
+          "CtrlInternalLead5",
+          "CtrlInternalLead6",
+          "CtrlLWire0",
+          "CtrlLWire1",
+          "CtrlLWire2",
+          "CtrlRWire0",
+          "CtrlRWire1",
+          "CtrlRWire2",
+          "CtrlPlugBody",
+          "CtrlPlugRelief",
+          "CtrlPlugPin0",
+          "CtrlPlugPin1",
+          "CtrlPlugTriplet0",
+          "CtrlPlugPin3",
+          "CtrlPlugPin4",
+          "CtrlPlugPin5",
+          "CtrlPlugTriplet1",
+          "CtrlPlugPin6",
+          "CtrlPlugPin8",
+          "CtrlPlugTriplet2",
+          "CtrlPlugMark"
+        ],
+        "explode": 1,
+        "normal": [
+          0.3,
+          -0.7,
+          1.3
+        ]
+      },
+      "inputs": {
+        "label": "硅胶与接点",
+        "description": "三组输入硅胶膜、分离碳膜接点及方向键导架。",
+        "groups": [
+          "Controller"
+        ],
+        "exclude": [
+          "CtrlBack",
+          "CtrlFront",
+          "CtrlDPadUp",
+          "CtrlDirectionUp",
+          "CtrlDPadRight",
+          "CtrlDirectionRight",
+          "CtrlDPadDown",
+          "CtrlDirectionDown",
+          "CtrlDPadLeft",
+          "CtrlDirectionLeft",
+          "CtrlButtonTriangle",
+          "CtrlSymbolTriangle",
+          "CtrlButtonCircle",
+          "CtrlSymbolCircle",
+          "CtrlButtonCross",
+          "CtrlSymbolCross",
+          "CtrlButtonSquare",
+          "CtrlSymbolSquare",
+          "CtrlSelect",
+          "CtrlStart",
+          "CtrlSelectMark",
+          "CtrlStartMark",
+          "CtrlSonyMark",
+          "CtrlPSMark",
+          "CtrlPlayStationMark",
+          "CtrlL1",
+          "CtrlL1Mark",
+          "CtrlL2",
+          "CtrlL2Mark",
+          "CtrlShoulderL",
+          "CtrlR1",
+          "CtrlR1Mark",
+          "CtrlR2",
+          "CtrlR2Mark",
+          "CtrlShoulderR",
+          "CtrlPCB",
+          "CtrlLogicPackage",
+          "CtrlLogicLeads",
+          "CtrlBoardCap",
+          "CtrlBoardCapEnds",
+          "CtrlLPCB",
+          "CtrlLCarrier",
+          "CtrlL1Dome",
+          "CtrlL1Pill",
+          "CtrlL1Pad",
+          "CtrlL2Dome",
+          "CtrlL2Pill",
+          "CtrlL2Pad",
+          "CtrlRPCB",
+          "CtrlRCarrier",
+          "CtrlR1Dome",
+          "CtrlR1Pill",
+          "CtrlR1Pad",
+          "CtrlR2Dome",
+          "CtrlR2Pill",
+          "CtrlR2Pad",
+          "CtrlCaseScrew0",
+          "CtrlCaseScrew1",
+          "CtrlCaseScrew2",
+          "CtrlCaseScrew3",
+          "CtrlCaseScrew4",
+          "CtrlCaseScrew5",
+          "CtrlCaseScrew6",
+          "CtrlCaseScrew7",
+          "CtrlCableGrommet",
+          "CtrlCable",
+          "CtrlInternalLead0",
+          "CtrlInternalLead1",
+          "CtrlInternalLead2",
+          "CtrlInternalLead3",
+          "CtrlInternalLead4",
+          "CtrlInternalLead5",
+          "CtrlInternalLead6",
+          "CtrlLWire0",
+          "CtrlLWire1",
+          "CtrlLWire2",
+          "CtrlRWire0",
+          "CtrlRWire1",
+          "CtrlRWire2",
+          "CtrlPlugBody",
+          "CtrlPlugRelief",
+          "CtrlPlugPin0",
+          "CtrlPlugPin1",
+          "CtrlPlugTriplet0",
+          "CtrlPlugPin3",
+          "CtrlPlugPin4",
+          "CtrlPlugPin5",
+          "CtrlPlugTriplet1",
+          "CtrlPlugPin6",
+          "CtrlPlugPin8",
+          "CtrlPlugTriplet2",
+          "CtrlPlugMark",
+          "CtrlRearModel"
+        ],
+        "normal": [
+          0.4,
+          -0.7,
+          1.5
+        ]
+      },
+      "mainboard": {
+        "label": "PU-7 正面",
+        "description": "CPU、GPU、SPU、内存、音视频转换和接口器件的学习布局。",
+        "groups": [
+          "Mainboard"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "mainboard-underside": {
+        "label": "PU-7 背面",
+        "description": "从另一面查看 CD 控制、缓冲和伺服驱动相关封装。",
+        "groups": [
+          "Mainboard"
+        ],
+        "normal": [
+          0,
+          0,
+          -2.4
+        ]
+      },
+      "optical": {
+        "label": "读取机构",
+        "description": "移开上盖，观察橡胶悬挂、主轴夹盘、双导轨光头、蜗杆、齿轮与齿条。",
+        "groups": [
+          "Optical"
+        ],
+        "exclude": [
+          "DiscLid",
+          "SonyMark",
+          "PlayStationMark",
+          "DiscWell",
+          "HingeBracket0",
+          "LidHingePin0",
+          "HingeBracket1",
+          "LidHingePin1",
+          "LidTorsionSpring1",
+          "PSBadgeRed",
+          "PSBadgeYellow",
+          "PSBadgeGreen",
+          "PSBadgeBrown",
+          "LaserWarningLabel",
+          "LaserWarningText",
+          "LidResistancePinion",
+          "LidResistanceUnit",
+          "OpticalDeck"
+        ],
+        "normal": [
+          0.3,
+          -0.7,
+          2.4
+        ]
+      },
+      "lid-mechanism": {
+        "label": "开盖机构",
+        "description": "从内侧观察一体轴耳、齿扇、回位弹簧、阻力件和 OPEN 联动。",
+        "groups": [
+          "Optical",
+          "Controls"
+        ],
+        "exclude": [
+          "PowerButton",
+          "PowerLegend",
+          "OpenLegend",
+          "ResetButton",
+          "ResetLegend",
+          "PowerLens",
+          "SonyMark",
+          "PlayStationMark",
+          "DiscWell",
+          "PSBadgeRed",
+          "PSBadgeYellow",
+          "PSBadgeGreen",
+          "PSBadgeBrown",
+          "OpticalBase",
+          "OpticalPeg0",
+          "OpticalGrommet0",
+          "OpticalPeg1",
+          "OpticalGrommet1",
+          "OpticalPeg2",
+          "OpticalGrommet2",
+          "SpindleMotor",
+          "SpindleMotorCap",
+          "SpindleShaft",
+          "SpindleHub",
+          "SpindleClipSpring0",
+          "SpindleBall0",
+          "SpindleClipSpring1",
+          "SpindleBall1",
+          "SpindleClipSpring2",
+          "SpindleBall2",
+          "SpindleCrown",
+          "OpticalDeck",
+          "PickupRail-1",
+          "PickupRail1",
+          "PickupCarriage",
+          "LensHolder",
+          "LensBarrel",
+          "ObjectiveLens",
+          "SledMotor",
+          "SledMotorCap",
+          "SledMotorShaft",
+          "SledWorm",
+          "FeedReductionGear",
+          "FeedGearAxle",
+          "PickupRack",
+          "OpticalMotorPCB",
+          "OpticalTerminal",
+          "OpticalTerminalPin0",
+          "OpticalTerminalPin1",
+          "OpticalTerminalPin2",
+          "OpticalTerminalPin3",
+          "LaserWarningLabel",
+          "LaserWarningText",
+          "PowerSwitchPusher",
+          "PowerButtonStem",
+          "ResetPusher",
+          "ResetStem",
+          "PowerLightGuide"
+        ],
+        "normal": [
+          0.4,
+          0.7,
+          -1.8
+        ]
+      },
+      "power": {
+        "label": "独立电源",
+        "description": "输入滤波、保险管、变压器、整流与输出器件的结构学习模型。",
+        "groups": [
+          "Power"
+        ],
+        "exclude": [
+          "ResetSwitch"
+        ],
+        "normal": [
+          0.4,
+          -0.7,
+          2
+        ]
+      },
+      "memory-card": {
+        "label": "原版记忆卡",
+        "description": "SCPH-1020 灰色卡体、空白标签、插入箭头和滑动后盖。",
+        "groups": [
+          "MemoryCard"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "memory-card-internal": {
+        "label": "记忆卡内部",
+        "description": "移开后盖，查看八枚金手指、两侧固定与大板家族的近似内构。",
+        "groups": [
+          "MemoryCard"
+        ],
+        "exclude": [
+          "CardRear",
+          "CardRearModel",
+          "CardCapacity",
+          "CardScrew0",
+          "CardScrew1"
+        ],
+        "normal": [
+          0.1,
+          0.3,
+          -2.4
+        ]
+      },
+      "memory-card-exploded": {
+        "label": "记忆卡爆炸",
+        "description": "分开卡体、后盖、PCB、接点及电子器件的展示层。",
+        "groups": [
+          "MemoryCard"
+        ],
+        "explode": 0.7,
+        "normal": [
+          0.3,
+          -0.7,
+          1.3
+        ]
+      },
+      "accessories": {
+        "label": "记忆卡与连接附件",
+        "description": "原版记忆卡、日式电源线、AV MULTI 转三 RCA 与空白 12 cm CD。",
+        "groups": [
+          "MemoryCard",
+          "Accessories"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "fullkit": {
+        "label": "整套模型",
+        "description": "全部主机、手柄、记忆卡、连接附件与空白媒体。",
+        "groups": [
+          "Body",
+          "Optical",
+          "Controls",
+          "FrontIO",
+          "Ports",
+          "Power",
+          "Wiring",
+          "Mainboard",
+          "Shield",
+          "Internal",
+          "Controller",
+          "MemoryCard",
+          "Accessories"
+        ],
+        "normal": [
+          0.3,
+          -0.6,
+          2.4
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "主机与原版数字手柄、记忆卡"
+      ],
+      [
+        "front",
+        "日版灰色原始外观"
+      ],
+      [
+        "internal",
+        "PU-7、电源与读取机构"
+      ],
+      [
+        "exploded",
+        "主机与原配分层爆炸"
+      ],
+      [
+        "accessories",
+        "原版连接线与空白媒体"
+      ]
+    ],
+    "gzip": {
+      "bytes": 14078917,
+      "sha256": "8bc816bb3c347493069579d1eaf6196ebc2e6ba2104398bc0a4a3a6aa2313dc7",
+      "decoded_sha256": "9daea66b84da97076e0f0b7c0400def8fb3289e030cdd728e76599047299b796",
+      "lossless": true
+    }
   }
 ]

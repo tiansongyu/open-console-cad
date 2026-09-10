@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **15 款设备、8,704 个组件与 180 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **16 款设备、9,633 个组件与 192 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -119,11 +119,21 @@
       <a href="https://tiansongyu.github.io/open-console-cad/?device=saturn&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/saturn/README.md">设备说明</a> · <a href="devices/saturn/output/drawings/Saturn_Drawings.pdf">A3 图纸</a>
     </td>
   </tr>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=ps1&amp;view=assembled#viewer"><img src="site/public/images/ps1/hero.webp" width="206" height="160" alt="初代日版 PlayStation、数字手柄与记忆卡的 FreeCAD 模型"></a><br>
+      <strong>Sony PlayStation</strong><br>
+      <sub>SCPH-1000 · 初代日版灰色</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=ps1&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/ps1/README.md">设备说明</a> · <a href="devices/ps1/output/drawings/PlayStation_Drawings.pdf">A3 图纸</a>
+    </td>
+    <td width="33%"></td>
+    <td width="33%"></td>
+  </tr>
 </table>
 
-网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，以及土星的上壳电源、盖板机构和原版六键手柄。
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，以及 PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动。
 
-制作进度：PlayStation 与 PlayStation 2 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
+制作进度：PlayStation 2 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
 
 ## 快速开始
 
@@ -220,7 +230,7 @@ open-console-cad/
 
 已收录的十三个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64` 和 `wii`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。Game Boy、Famicom、Atari 2600、Mega Drive、Nintendo 64 和 Wii 已提供完整模型、图册与在线预览；[PlayStation](devices/ps1/README.md) 正在建模，PlayStation 2、Wii U 和 Saturn 继续扩展。
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。上方模型库中的设备均提供完整模型、图册与在线预览；PlayStation 2 继续扩展。
 
 ## 验证记录
 
