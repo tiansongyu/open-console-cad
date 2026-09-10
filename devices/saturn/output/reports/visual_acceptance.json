@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "pdf": "devices/saturn/output/drawings/Saturn_Drawings.pdf",
+  "pdf_sha256": "d2dc8aff247e38da46dee5f63ca418a768f4ebf727a5969c3e20eaee91ff17f9",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_atomic_values": 21,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "visual_findings": [],
+  "corrections": [
+    "Include feet in the height view",
+    "Use orthographic dust-door width and a separate enlarged spring detail",
+    "Separate exploded layers with revised view normals",
+    "Expose the transport PCB",
+    "Expose the CR2032 label in the battery detail",
+    "Explain coplanar native feature seams in the overview"
+  ],
+  "scope": "CAD-derived drawing review; official body envelopes remain distinct from local study dimensions."
+}

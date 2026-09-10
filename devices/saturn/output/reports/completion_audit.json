@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment is checked separately.",
+  "components": 715,
+  "solids": 2558,
+  "stages": 22,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "strict_bop_audit.json",
+    "final_interference_audit.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "files": [
+    {
+      "path": "devices/saturn/output/Saturn_Complete.FCStd",
+      "bytes": 18023313,
+      "sha256": "5cc505b1e54c205aa9531b95a37e27b1a90da245c5bcb73071ced513ed167020"
+    },
+    {
+      "path": "devices/saturn/output/Saturn_Exploded.FCStd",
+      "bytes": 5377756,
+      "sha256": "a57fb0f552baca79346503f3e71c66e21be4b7676b604379c86236611673cf32"
+    },
+    {
+      "path": "devices/saturn/output/Saturn_Drawings.FCStd",
+      "bytes": 434476,
+      "sha256": "02f237a92d61af249e39395fdffdf36fc6dc252488ff48cc77f5d0b9c51dd0a0"
+    },
+    {
+      "path": "devices/saturn/output/Saturn_FullKit.step",
+      "bytes": 34407415,
+      "sha256": "853b8069bd459bdb8cf30168b500945d2cca66ad41fff0ada429b0f36178ba33"
+    },
+    {
+      "path": "devices/saturn/output/Saturn_Console.step",
+      "bytes": 33909413,
+      "sha256": "046f69300ee41de108c5bdcf32703fe67aa40931d86c8548b67e106ffbe76f4d"
+    },
+    {
+      "path": "devices/saturn/output/Saturn_Exploded.step",
+      "bytes": 34405427,
+      "sha256": "23db38c566f72494047bc55d59462b482ef3d3c9f61ae2b1b4f4f2e1377052cf"
+    },
+    {
+      "path": "devices/saturn/output/drawings/Saturn_Drawings.pdf",
+      "bytes": 673332,
+      "sha256": "d2dc8aff247e38da46dee5f63ca418a768f4ebf727a5969c3e20eaee91ff17f9"
+    },
+    {
+      "path": "devices/saturn/output/COMPONENTS.csv",
+      "bytes": 125213,
+      "sha256": "b79175427227a8c980ab29dec35fda8ca9471ddc0200362a348cd0b35833e8c4"
+    },
+    {
+      "path": "site/public/models/saturn.glb",
+      "bytes": 39113072,
+      "sha256": "815e7d20e1bde34f0a8cbcdf1b765dcb23ae47eae7d2b80e10771af377531c73"
+    }
+  ],
+  "live_verified": false
+}

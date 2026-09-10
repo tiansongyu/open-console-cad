@@ -11,3 +11,7 @@ Native geometry, local dimensions and internal layout are original study approxi
 - [Plutiedev I/O connector work](https://www.plutiedev.com/io-pinout): Saturn controller's single row of nine connections.
 
 Sources checked on 2026-09-10. HST-3200 mainboard photos show a MAIN VA0.5 layout and a separate CD subsystem board. These are study references, not a claim of production netlist or pinout accuracy.
+
+The HSS-0101 teardown includes the later mist-grey colour scheme as well as the original grey pad. The original grey front/rear photographs define this model's exterior; the shared board and silicone construction is used only as a family-level internal reference. The finished model uses black ABC and blue XYZ/START keys. The controller's local dimensions are study estimates.
+
+All harness routes, spring/gear dimensions, adapter contacts and cartridge contact shapes are original CAD study geometry. Blank 12 cm media contains no game data or copyrighted game image. The electronics do not implement a circuit netlist, electrical behaviour or tested motion.

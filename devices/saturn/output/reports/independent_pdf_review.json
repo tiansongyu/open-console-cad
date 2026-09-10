@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "artifact": "devices/saturn/output/drawings/Saturn_Drawings.pdf",
+  "artifact_sha256": "d2dc8aff247e38da46dee5f63ca418a768f4ebf727a5969c3e20eaee91ff17f9",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "page_count": 12,
+  "page_format": "A3 landscape, 420 x 297 mm on every page",
+  "findings": {
+    "P0": [],
+    "P1": []
+  },
+  "brief_checks": {
+    "visual": "All 12 existing page PNGs inspected at full-page resolution: readable annotations, complete arrows, consistent margins, no clipping or P0/P1 overlaps. PDF text spans also remain within page bounds.",
+    "corrected_details": "Page 2 height includes feet; page 4 dust-door width is orthographic with separate spring detail; page 6 exploded layers are legible; page 8 transport PCB is visible; page 9 CR2032 label is visible.",
+    "counts": "Pages 1, 11 and 12 agree with final_manifest.json: 715 components, 2558 solids; 22 stages on page 12. Independently summed 715 manifest objects, 2558 object solids, 715 assembly entries and 715 CSV rows.",
+    "source_boundaries": "Pages 1 and 12 distinguish HST-3210 family dimensions from approximate HST-3200 geometry. Pages 3 and 12 specify original grey HSS-0101 exterior and use later pale photos only as internal-family reference. Study dimensions, mechanisms and electronics are explicitly approximate.",
+    "preserve": "Original console controls, grey six-button controller specification, upper-housing PSU, separate CD subsystem, single dust door and blank study media retained.",
+    "content": "Kami check-content passed: all 21 atomic values present; 29 prose fields are not held verbatim. Required facts and approximation boundaries also checked in PDF text and page images.",
+    "style_placeholders_density": "Independent Kami checks passed: no style drift, no placeholders, no density issues.",
+    "fonts": "Independent Kami check-fonts passed: TsangerJinKai02 rendered 4003 CJK ideographs, matching the existing visual-check log.",
+    "cad_and_native_evidence": "drawing_checks.json contains 15 model-derived dimensions and 12 sheets; existing native_drawings_audit.json and native_drawings_reload.json both pass with 12 pages and 15 dimensions. CAD validity and rebuild checks were reviewed as existing evidence, not rerun by this PDF reviewer."
+  },
+  "method": "Isolated read-only review from content.json brief, DRAWING_CONTRACT.md, SOURCES.md, all page-01.png through page-12.png in Saturn_Drawings-visual, PDF metadata/text and existing CAD reports. Reran only Kami content/style/placeholders/density/font checks; did not rebuild or edit PDF/CAD/source.",
+  "evidence": [
+    "devices/saturn/output/drawings/content.json",
+    "devices/saturn/references/DRAWING_CONTRACT.md",
+    "devices/saturn/references/SOURCES.md",
+    "devices/saturn/output/drawings/Saturn_Drawings-visual",
+    "devices/saturn/output/reports/final_manifest.json",
+    "devices/saturn/output/reports/drawing_checks.json",
+    "devices/saturn/output/reports/native_drawings_reload.json"
+  ]
+}

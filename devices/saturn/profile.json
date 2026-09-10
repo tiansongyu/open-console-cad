@@ -14,7 +14,7 @@
     0.54,
     0.54
   ],
-  "stages": 10,
+  "stages": 22,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -46,7 +46,24 @@
     "MainShield",
     "CartridgeDeck",
     "ControlPanel",
-    "ServiceDoor"
+    "ServiceDoor",
+    "DiscWell",
+    "CartridgeFlap0",
+    "PSUBracket",
+    "LidSega",
+    "SaturnTitle",
+    "LidAccent",
+    "LidGripMark0",
+    "LidGripMark1",
+    "LidGripMark2",
+    "PowerButton",
+    "ResetButton",
+    "OpenButton",
+    "PowerMark",
+    "ResetMark",
+    "OpenMark",
+    "PowerCaption",
+    "AccessCaption"
   ],
   "internal_normal": [
     0.2,
@@ -63,5 +80,12 @@
   "exterior_fidelity": "Approximate original Japanese exterior",
   "fidelity": "Approximate original HST-3200 exterior and schematic internals; family envelope is a study reference",
   "envelope_kind": "approximate",
-  "envelope_basis": "Approximate HST-3200 exterior using later HST-3210 official family dimensions"
+  "envelope_basis": "Approximate HST-3200 exterior using later HST-3210 official family dimensions",
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -80,
+      0
+    ]
+  }
 }
