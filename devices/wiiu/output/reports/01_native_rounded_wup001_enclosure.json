@@ -1,0 +1,204 @@
+{
+  "iteration": 1,
+  "slug": "native_rounded_wup001_enclosure",
+  "summary": "按 172 × 268.5 × 46 mm 塑料主体建立原生圆角截面、长向拉伸、空心壳及上下分件，保留独立前面板和外伸脚垫。",
+  "physical_components": 7,
+  "objects": [
+    {
+      "name": "LowerHousing",
+      "label": "WUP-001 lower rounded shell",
+      "type": "Part::Common",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 92733.89220657511,
+      "bounds": [
+        -86.0,
+        86.0,
+        -129.25,
+        134.25,
+        -6.039613253960852e-14,
+        22.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousing",
+      "label": "WUP-001 upper rounded shell",
+      "type": "Part::Common",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 94726.44220657507,
+      "bounds": [
+        -86.0,
+        86.0,
+        -129.25,
+        134.25,
+        22.25,
+        46.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelCut",
+      "label": "Separate rounded Wii U faceplate001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 15359.945251651327,
+      "bounds": [
+        -86.0,
+        86.0,
+        -134.25,
+        -129.5,
+        -1.7763568394002505e-15,
+        46.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber placement pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        -73.0,
+        -65.0,
+        -117.5,
+        -102.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber placement pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        65.0,
+        73.0,
+        -117.5,
+        -102.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber placement pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        -73.0,
+        -65.0,
+        102.5,
+        117.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber placement pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        65.0,
+        73.0,
+        102.5,
+        117.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/wiiu/output/iterations/01_native_rounded_wup001_enclosure.FCStd",
+  "views": [
+    "devices/wiiu/output/previews/01_native_rounded_wup001_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

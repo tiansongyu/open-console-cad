@@ -1,0 +1,1204 @@
+{
+  "iteration": 2,
+  "slug": "front_disc_slot_controls_sd_and_dual_usb",
+  "summary": "加入吸入式光盘槽、电源与退盘控制、外露红色同步键，以及独立前门内的九接点 SD 卡座与双 USB 接口。",
+  "physical_components": 44,
+  "objects": [
+    {
+      "name": "LowerHousing",
+      "label": "WUP-001 lower rounded shell",
+      "type": "Part::Common",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 92733.89220657511,
+      "bounds": [
+        -86.0,
+        86.0,
+        -129.25,
+        134.25,
+        -6.039613253960852e-14,
+        22.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousing",
+      "label": "WUP-001 upper rounded shell",
+      "type": "Part::Common",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 94726.44220657507,
+      "bounds": [
+        -86.0,
+        86.0,
+        -129.25,
+        134.25,
+        22.25,
+        46.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelCut007",
+      "label": "Separate rounded Wii U faceplate008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 40,
+      "volume": 11302.279447868184,
+      "bounds": [
+        -86.0,
+        86.0,
+        -134.25,
+        -129.5,
+        -1.7763568394002505e-15,
+        46.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber placement pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        -73.0,
+        -65.0,
+        -117.5,
+        -102.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber placement pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        65.0,
+        73.0,
+        -117.5,
+        -102.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber placement pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        -73.0,
+        -65.0,
+        102.5,
+        117.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rubber placement pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 141.98102592124323,
+      "bounds": [
+        65.0,
+        73.0,
+        102.5,
+        117.5,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscSlotTrim",
+      "label": "Dark optical slot liner",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 430.5191859073105,
+      "bounds": [
+        -58.7,
+        72.7,
+        -134.05,
+        -132.75,
+        29.550000000000004,
+        35.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscSlotTrim",
+      "assembly": "Optical",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power faceplate control",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 99.71415082493999,
+      "bounds": [
+        -72.6,
+        -63.4,
+        -134.4,
+        -132.9,
+        6.9,
+        16.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Eject faceplate control",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 99.71415082493999,
+      "bounds": [
+        -72.6,
+        -63.4,
+        -134.4,
+        -132.9,
+        28.1,
+        37.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SyncButton",
+      "label": "Sync faceplate control",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 34.353315667004395,
+      "bounds": [
+        -37.2,
+        -31.8,
+        -134.4,
+        -132.9,
+        8.8,
+        14.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SyncButton",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "red",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLED",
+      "label": "Front indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.3392920065877024,
+      "bounds": [
+        -68.6,
+        -67.4,
+        -134.4,
+        -134.1,
+        19.2,
+        20.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLED",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "ublue",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscLED",
+      "label": "Front indicator lens001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.3392920065877023,
+      "bounds": [
+        -68.6,
+        -67.4,
+        -134.4,
+        -134.1,
+        39.699999999999996,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscLED",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSymbol",
+      "label": "Power icon",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 14,
+      "volume": 0.20777632184703854,
+      "bounds": [
+        -70.5,
+        -65.5,
+        -134.47,
+        -134.44,
+        9.0,
+        14.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSymbol",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectSymbol",
+      "label": "Optical eject icon",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 11,
+      "volume": 0.1860000000000025,
+      "bounds": [
+        -70.0,
+        -66.0,
+        -134.47,
+        -134.44,
+        31.400000000000002,
+        34.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectSymbol",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.09035178471423144,
+      "bounds": [
+        -71.77235748255033,
+        -63.47265090671141,
+        -134.3080001,
+        -134.2899999,
+        4.766174396644295,
+        6.5202685563758385
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.06537402128571136,
+      "bounds": [
+        -71.77235738255034,
+        -65.3430956375839,
+        -134.3080001,
+        -134.2899999,
+        25.236107282550332,
+        27.420268556375838
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SyncMark",
+      "label": "SYNC",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 73,
+      "volume": 0.05872524778339166,
+      "bounds": [
+        -37.84710580469799,
+        -31.881736477181207,
+        -134.3080001,
+        -134.2899999,
+        4.766174396644295,
+        6.5202685563758385
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SyncMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WiiUWord",
+      "label": "Wii U",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 55,
+      "volume": 0.5734180572876862,
+      "bounds": [
+        60.25671140939597,
+        79.2098155362416,
+        -134.3080001,
+        -134.2899999,
+        9.887248222147651,
+        15.879194630872483
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WiiUWord",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiigrey",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFlap",
+      "label": "Front SD and dual-USB cover",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1553.6548667764616,
+      "bounds": [
+        -29.200000000000003,
+        57.2,
+        -134.15,
+        -132.9,
+        4.499999999999999,
+        18.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFlap",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiiuwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontIOPCB",
+      "label": "Front SD and USB interface board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1511.4506192982972,
+      "bounds": [
+        -28.000000000000004,
+        56.0,
+        -127.0,
+        -109.0,
+        6.0,
+        7.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontIOPCB",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDPort",
+      "label": "Front nine-contact SD reader",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1155.1164594300526,
+      "bounds": [
+        -21.0,
+        7.0,
+        -130.0,
+        -116.0,
+        8.799999999999999,
+        15.200000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDPort",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDTongue",
+      "label": "SD contact carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 143.97939822368613,
+      "bounds": [
+        -19.0,
+        5.000000000000001,
+        -128.0,
+        -118.0,
+        10.25,
+        10.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact0",
+      "label": "SD reader spring contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552914,
+      "bounds": [
+        -17.375,
+        -16.625,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact1",
+      "label": "SD reader spring contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552915,
+      "bounds": [
+        -14.875,
+        -14.125,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact2",
+      "label": "SD reader spring contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552915,
+      "bounds": [
+        -12.375,
+        -11.625,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact3",
+      "label": "SD reader spring contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552915,
+      "bounds": [
+        -9.875,
+        -9.125,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact4",
+      "label": "SD reader spring contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552915,
+      "bounds": [
+        -7.375,
+        -6.625,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact5",
+      "label": "SD reader spring contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552914,
+      "bounds": [
+        -4.875,
+        -4.125,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact6",
+      "label": "SD reader spring contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552914,
+      "bounds": [
+        -2.375,
+        -1.625,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact7",
+      "label": "SD reader spring contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552914,
+      "bounds": [
+        0.125,
+        0.875,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SDContact8",
+      "label": "SD reader spring contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5996909733552914,
+      "bounds": [
+        2.625,
+        3.375,
+        -127.0,
+        -119.0,
+        10.93,
+        11.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SDContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSB0",
+      "label": "Front USB-A shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 342.55263657912593,
+      "bounds": [
+        16.5,
+        31.5,
+        -129.8,
+        -116.0,
+        8.5,
+        15.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSB0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTongue0",
+      "label": "USB contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 106.12274333882307,
+      "bounds": [
+        18.099999999999998,
+        29.900000000000002,
+        -127.5,
+        -118.5,
+        10.6,
+        11.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTongue0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin0_0",
+      "label": "USB-A spring contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        19.9,
+        20.6,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin0_1",
+      "label": "USB-A spring contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        22.4,
+        23.1,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin0_2",
+      "label": "USB-A spring contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        24.9,
+        25.6,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin0_3",
+      "label": "USB-A spring contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        27.4,
+        28.1,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSB1",
+      "label": "Front USB-A shield001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 342.552636579126,
+      "bounds": [
+        38.5,
+        53.5,
+        -129.8,
+        -116.0,
+        8.5,
+        15.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSB1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTongue1",
+      "label": "USB contact tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 106.12274333882308,
+      "bounds": [
+        40.1,
+        51.9,
+        -127.5,
+        -118.5,
+        10.6,
+        11.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTongue1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin1_0",
+      "label": "USB-A spring contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.48969097335529227,
+      "bounds": [
+        41.9,
+        42.6,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin1_1",
+      "label": "USB-A spring contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        44.4,
+        45.1,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin1_2",
+      "label": "USB-A spring contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        46.9,
+        47.6,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBPin1_3",
+      "label": "USB-A spring contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4896909733552923,
+      "bounds": [
+        49.4,
+        50.1,
+        -126.5,
+        -119.5,
+        11.67,
+        11.77
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBPin1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/wiiu/output/iterations/02_front_disc_slot_controls_sd_and_dual_usb.FCStd",
+  "views": [
+    "devices/wiiu/output/previews/02_front_disc_slot_controls_sd_and_dual_usb_hero.png",
+    "devices/wiiu/output/previews/02_front_disc_slot_controls_sd_and_dual_usb_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

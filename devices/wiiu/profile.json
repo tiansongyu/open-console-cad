@@ -14,7 +14,7 @@
     0.9,
     0.88
   ],
-  "stages": 0,
+  "stages": 16,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -24,27 +24,35 @@
     "Shield",
     "Optical",
     "Internal",
-    "Power"
+    "Cooling",
+    "Wireless"
   ],
   "controls_groups": [
     "Controls",
-    "Controller"
+    "Controller",
+    "Display"
   ],
   "internal_groups": [
     "Body",
+    "Controls",
+    "Ports",
     "Mainboard",
     "Shield",
     "Optical",
     "Internal",
-    "Power",
-    "Ports",
-    "Controls"
+    "Cooling",
+    "Wireless"
   ],
   "internal_exclude": [
     "UpperHousing",
-    "DiscLid",
+    "FrontFlap",
     "MainShield",
-    "CartridgeDeck"
+    "DriveTopShield",
+    "DriveLidRib0",
+    "DriveLidRib1",
+    "DriveLidRib2",
+    "DriveLidRib3",
+    "DriveLidRib4"
   ],
   "internal_normal": [
     0.2,
@@ -55,6 +63,14 @@
     {
       "url": "https://www.nintendo.co.jp/hardware/wiiu/specs/index.html",
       "role": "Official hardware overview and dimensions"
+    },
+    {
+      "url": "https://www.nintendo.co.jp/corporate/release/2012/120913.html",
+      "role": "Launch Basic 8 GB package contents"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Nintendo+Wii+U+Teardown/11796",
+      "role": "Direct teardown and WUP-CPU-01/GamePad layout references"
     }
   ],
   "parameter_basis": "Published body envelope; local details approximate",
