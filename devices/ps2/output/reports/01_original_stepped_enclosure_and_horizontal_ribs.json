@@ -1,0 +1,285 @@
+{
+  "iteration": 1,
+  "slug": "original_stepped_enclosure_and_horizontal_ribs",
+  "summary": "根据 SCPH-10000 官方包络建立原生上下空心壳、非对称底部阶梯、七层横向沟槽、四个脚垫与几何化顶面标识；局部壳体分割、壁厚和条纹为照片指导的学习近似。",
+  "physical_components": 10,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "Asymmetric stepped lower enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 112419.3840652644,
+      "bounds": [
+        -144.5,
+        116.5,
+        -85.5,
+        85.5,
+        1.4,
+        32.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut001",
+      "label": "Original wide upper enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 117,
+      "volume": 150326.40589443463,
+      "bounds": [
+        -150.5,
+        150.5,
+        -91.0,
+        91.0,
+        33.3,
+        78.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rectangular rubber case pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        -139.0,
+        -131.0,
+        -77.5,
+        -66.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rectangular rubber case pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        102.0,
+        110.0,
+        -77.5,
+        -66.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rectangular rubber case pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        -139.0,
+        -131.0,
+        66.5,
+        77.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Rectangular rubber case pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 122.89955742875644,
+      "bounds": [
+        102.0,
+        110.0,
+        66.5,
+        77.5,
+        0.0,
+        1.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS2P",
+      "label": "Geometric PS2 P mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 1.64524499999963,
+      "bounds": [
+        -13.525000000000011,
+        13.524999999999997,
+        19.474999999999998,
+        50.525000000000006,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS2P",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS2S",
+      "label": "Geometric PS2 S mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1538449999994367,
+      "bounds": [
+        -13.525000000000004,
+        13.525000000000006,
+        -17.524999999999995,
+        17.525,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS2S",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2cyan",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPS22",
+      "label": "Geometric PS2 2 mark study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 2.2122450000000846,
+      "bounds": [
+        -13.524999999999995,
+        13.525000000000013,
+        -50.525000000000006,
+        -19.474999999999998,
+        78.025,
+        78.043
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPS22",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2blue",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopWordmark",
+      "label": "PlayStation 2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 241,
+      "volume": 0.8049741001841224,
+      "bounds": [
+        -21.18120815369128,
+        -15.688590604026846,
+        -18.68348164362417,
+        17.570562180536914,
+        78.02499990000001,
+        78.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopWordmark",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps2word",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps2/output/iterations/01_original_stepped_enclosure_and_horizontal_ribs.FCStd",
+  "views": [
+    "devices/ps2/output/previews/01_original_stepped_enclosure_and_horizontal_ribs_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

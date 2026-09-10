@@ -1,0 +1,11 @@
+"""Rebuild the currently available original SCPH-10000 study stages."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,ps2
+for module in [geometry,core,ps2]:importlib.reload(module)
+model=core.Study(repo,'ps2');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(ps2.STAGES):ps2.STAGES[stage](model)
+model.visible();model.doc.recompute();model.doc.saveAs(str(model.out/'PlayStation2_Study.FCStd'))
