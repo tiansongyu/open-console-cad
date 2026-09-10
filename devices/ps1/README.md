@@ -1,8 +1,8 @@
 # Sony PlayStation · SCPH-1000
 
-初代日版灰色 PlayStation 的建模进行中。当前保留 **19 轮源码、843 个组件条目、3,879 个实体**。主机前十五轮已通过验证，新增 SCPH-1010 数字手柄处于装配修正阶段。
+初代日版灰色 PlayStation 的结构学习模型。当前保留 **25 轮源码、929 个组件条目、4,149 个实体**，已制作主机、SCPH-1010 数字手柄、SCPH-1020 记忆卡、电源与AV视频线及空白光盘。最终 STEP、图册和网页交付仍在进行。
 
-<a href="output/previews/15_rotary_pinion_running_clearance_hero.png"><img src="output/previews/15_rotary_pinion_running_clearance_hero.png" width="240" alt="SCPH-1000 第十五轮整机模型"></a>
+<a href="output/previews/25_preserved_trimmed_surfaces_and_analytic_badge_ellipses_hero.png"><img src="output/previews/25_preserved_trimmed_surfaces_and_analytic_badge_ellipses_hero.png" width="240" alt="SCPH-1000 主机与原版连接套件"></a>
 <a href="output/previews/10_power_supply.png"><img src="output/previews/10_power_supply.png" width="240" alt="独立电源板的输入滤波、变压器与输出电容"></a>
 <a href="output/previews/09_pu7_populated.png"><img src="output/previews/09_pu7_populated.png" width="240" alt="PU-7 芯片、滤波器件与排线连接座"></a>
 
@@ -13,7 +13,7 @@
 
 使用 FreeCAD 1.1.3 打开工程。原生模型保留草图、凸台、圆角、布尔加工及盖板轴耳的融合历史。重建宏将输出写入 `output/rebuilt/`；需保留完整仓库结构。
 
-<a href="output/previews/19_controller_kit.png"><img src="output/previews/19_controller_kit.png" width="280" alt="制作中的 SCPH-1010 原始数字手柄"></a>
+<a href="output/previews/20_controller_fit_review.png"><img src="output/previews/20_controller_fit_review.png" width="280" alt="SCPH-1010 原始数字手柄"></a>
 
 ## 当前模型内容
 
@@ -25,6 +25,11 @@
 
 前十五轮主机完成 **2,213 对装配候选的求交检查**，该阶段无剩余干涉；前十五轮在新工程中完整重建，726 个组件的实体数量、边界和体积逐项一致。同类固定柱采用批量构造以减少重建开销。历史报告保留轴座、锁钩、齿轮、线束和屏蔽配合的修正过程，该记录不覆盖第十六轮之后新增的手柄。
 
-主机包络以同系列 SCPH-5500 官方说明书的 270 × 188 × 60 mm 为参考；尚未取得 SCPH-1000 原厂尺寸图，所有尺寸均为学习近似，外伸接口和标识另计。SCPH-1010 手柄已包含曲面上下壳、方向键、四色符号键、肩键、PCB 与硅胶接点、八处螺钉、七芯线束和插头。[第十九轮诊断](output/reports/stage19_controller_diagnostic.json) 发现 31 处手柄局部干涉，仍需修正按键、板边和肩键线束。记忆卡等附件及最终 STEP、图册和网页交付尚未完成。
+主机包络以同系列 SCPH-5500 官方说明书的 270 × 188 × 60 mm 为参考；尚未取得 SCPH-1000 原厂尺寸图，所有尺寸均为学习近似，外伸接口和标识另计。SCPH-1010 手柄已包含曲面上下壳、方向键、四色符号键、肩键、PCB 与硅胶接点、八处螺钉、七芯线束和插头。[第十九轮诊断](output/reports/stage19_controller_diagnostic.json) 发现的方向键、板边和线束干涉已在第 20–21 轮修正；[第 21 轮手柄检查](output/reports/stage21_controller_diagnostic.json) 的 217 对候选通过。SCPH-1020 记忆卡保留滑动后盖、两处固定、大板家族内构及空白标签，局部尺寸和封装为学习近似。最终源码重建与全部格式回读、12 页图册和网页发布仍待完成。
+
+<a href="output/previews/24_memory_card_internal_review.png"><img src="output/previews/24_memory_card_internal_review.png" width="220" alt="原版记忆卡的接点、板件与侧边固定"></a>
+<a href="output/previews/23_connection_kit_review.png"><img src="output/previews/23_connection_kit_review.png" width="220" alt="记忆卡、电源、AV视频线及空白光盘"></a>
+
+第 25 轮的 [929 个组件严格几何检查](output/reports/stage25_strict_bop.json) 全部通过。[整套装配基线](output/reports/stage24_interference.json) 覆盖 2,503 对候选；[第 25 轮增量复核](output/reports/stage25_incremental_interference.json) 确认 921 个未改组件的 BRep 完全一致，并重新求交涉及修改的 114 对组合，当前无干涉。完整源码重建正在核对，尚未完成最终交付。
 
 原创代码和有权许可的模型内容采用根目录 MIT 协议。第三方名称、设计与参考材料保留各自权利，见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。

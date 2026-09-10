@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "complete": true,
+  "components": 929,
+  "source_sha256": "9aca11e586fa43e4c42ae1ccfb7fd4520d33199cc2c3300c3b7357272d4ceb90",
+  "baseline_sha256": "cb07c7053135049d92a5cd19991ada782d807da2eb65e753006f0ecc834abfd9",
+  "baseline_report": "stage24_interference.json",
+  "baseline_candidate_pairs": 2503,
+  "method": "Exact serialized BRep equality confirms unchanged components; the complete baseline audit covers every unchanged pair. Recompute every current candidate pair involving any changed BRep.",
+  "unchanged_brep_byte_matches": 921,
+  "changed_components": [
+    "Port1Case",
+    "Port2Case",
+    "RearParallelLegend",
+    "PSBadgeYellow",
+    "PSBadgeGreen",
+    "PSBadgeBrown",
+    "DiscLid",
+    "CtrlBack"
+  ],
+  "candidate_pairs": 2503,
+  "checked_changed_pairs": 114,
+  "reused_unchanged_pairs": 2389,
+  "threshold_mm3": 1e-06,
+  "clashes": [],
+  "elapsed_seconds": 12.645976543426514
+}

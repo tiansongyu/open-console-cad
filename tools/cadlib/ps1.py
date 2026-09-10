@@ -1125,3 +1125,207 @@ def stage19(m):
 
 
 STAGES[19]=stage19
+
+
+def stage20(m):
+    from .atari2600 import _rounded_route
+    pivot=_controller_point(-43,6,0)
+    for name,angle in [('Up',0),('Right',-90),('Down',180),('Left',90)]:
+        # Trim the inner corners of each separate key; preserve the stem below.
+        trim=Part.makeBox(30,15,4,_controller_point(-58,-5.95,29.0))
+        trim.rotate(pivot,V(0,0,1),angle)
+        m.cut('CtrlDPad'+name,trim,'Running gap between the four independent directional keys')
+    m.cut('CtrlPCB',[m.rr(6.5,7.5,2,tuple(_controller_point(side*58.75,20.5,20.15)),.45) for side in [-1,1]],'Controller board corner clearance beneath the sloping shell')
+    for side in [-1,1]:
+        name='L' if side<0 else 'R'
+        for i in range(3):
+            x=43+(i-1)*1.2;lane=49+.9*i;y=-4+i
+            points=[_controller_point(side*x,29.8,19),_controller_point(side*x,27,19),_controller_point(side*x,24,17),_controller_point(side*lane,16-i,17),_controller_point(side*lane,y,17),_controller_point(side*(55+.8*i),y,20.2)]
+            shape=_rounded_route(points,.45,.18);shape.check(True)
+            m.parts['Ctrl'+name+'Wire'+str(i)].Shape=shape
+    m.profile['stages']=20
+    m.checkpoint(20,'controller_key_gaps_board_corners_and_separated_wire_routes','修正四个方向键中央运行间隙、斜壳下的主板边角，并将两侧肩键线束分别沿内腔走线，避开壳壁、固定柱和螺钉。')
+
+
+STAGES[20]=stage20
+
+
+def stage21(m):
+    from .atari2600 import _rounded_route
+    pt=_controller_point
+    for side in [-1,1]:
+     name='L' if side<0 else 'R'
+     for i in range(3):
+      x=41.8+1.2*i;lane=49+1.2*i;y=-4+i;z=16.8+.65*i
+      points=[pt(side*x,29.8,19),pt(side*x,27,19),pt(side*x,24,z),pt(side*lane,16,z),pt(side*lane,y,z),pt(side*(55+1.2*i),y,20.2)]
+      shape=_rounded_route(points,.45,.18);shape.check(True);m.parts['Ctrl'+name+'Wire'+str(i)].Shape=shape
+    for shell in ['CtrlBack','CtrlFront']:
+     m.cut(shell,[m.rr(4,2,2.4,tuple(pt(side*43,25.6,17.0)),.25) for side in [-1,1]],'Shoulder-wire feed slot between the main and shoulder cavities')
+    m.profile['stages']=21
+    m.checkpoint(21,'shoulder_feed_slots_and_layered_internal_wires','为肩键与主腔之间加入独立走线口，并将每条线束分层布置；逐条求交确认线束避开壳体、固定件及相邻导线。')
+
+
+STAGES[21]=stage21
+
+
+def _memory_card_chip(m,key,w,h,pins,x,y):
+    # Packages face the removable rear cover; these are schematic study parts.
+    m.box(key,'Memory-card '+key+' package',w,h,1.1,(x,y,1.55),'MemoryCard',0,'black',.25,True)
+    leads=[];pads=[];per=pins//2
+    for side in [-1,1]:
+        for i in range(per):
+            yy=y+(i-(per-1)/2)*(h-1.5)/(per-1)
+            leads.append(Part.makeBox(1.25,.28,.15,V(x+side*(w/2+.75)-.625,yy-.14,2.69)))
+            pads.append(Part.makeBox(.75,.36,.025,V(x+side*(w/2+1.05)-.375,yy-.18,2.85)))
+    m.feature(key+'Leads',str(pins)+' formed card-package leads',Part.makeCompound(leads),'MemoryCard',0,'metal',True)
+    m.feature(key+'Pads',str(pins)+' card-package landing pads',Part.makeCompound(pads),'MemoryCard',0,'gold',True)
+
+
+def stage22(m):
+    from .psp import _polygon
+    x,y=205,-150
+    # 42 x 57 x 7.6 mm is a local study envelope, not an official specification.
+    m.native('CardFront','SCPH-1020 front enclosure',42,57,1.2,5.95,(x,y,1.65),'MemoryCard',4,'psgrey')
+    m.native('CardRear','Sliding memory-card rear cover',42,57,1.2,1.25,(x,y,0),'MemoryCard',-4,'psgrey')
+    corners=[]
+    for side in [-1,1]:
+        cx=x+side*14;cy=y-21.5
+        box=Part.makeBox(7.2,7.2,8,V(x-21.1 if side<0 else x+13.9,y-28.6,-.1))
+        corners.append(box.cut(Part.makeCylinder(7,8.2,V(cx,cy,-.2))))
+    for shell in ['CardFront','CardRear']:m.cut(shell,corners,'Large rounded lower corners of the original card')
+    m.cut('CardFront',m.rr(39.4,54.4,5.15,(x,y,1.35),5.4),'Hollow front enclosure with a 1.1 mm front skin')
+    m.cut('CardFront',m.rr(35.4,8,5.35,(x,y+27,1.4),.5),'Recessed eight-contact connector mouth')
+    posts=[(x-17.4,y+21.6),(x+17.4,y+21.6)]
+    _add_shape(m,'CardFront',Part.makeCompound([Part.makeCylinder(1.8,5.3,V(px,py,1.35)) for px,py in posts]),'Two original card fixing columns')
+    m.cut('CardFront',[Part.makeCylinder(.77,4.7,V(px,py,1.2)) for px,py in posts],'Rear-fixing pilot bores')
+    m.cut('CardRear',[Part.makeCylinder(.95,1.8,V(px,py,-.1)) for px,py in posts]+[Part.makeCylinder(1.6,.85,V(px,py,-.1)) for px,py in posts],'Two recessed rear screw seats')
+    for i,(px,py) in enumerate(posts):m.screw('CardScrew'+str(i),(px,py,.20),'MemoryCard',-4,length=4.8,radius=1.35)
+    rails=[m.rr(.6,31,.7,(x+side*19.3,y-1,1.20),.1) for side in [-1,1]]
+    _add_shape(m,'CardRear',Part.makeCompound(rails),'Sliding rear-cover side rails')
+    board=m.rr(37.8,50.2,1.15,(x,y+2.4,2.9),.7)
+    board=board.cut(Part.makeCompound([Part.makeCylinder(2.15,1.7,V(px,py,2.7)) for px,py in posts]))
+    m.feature('CardPCB','Larger original-family memory-card board study',board,'MemoryCard',1,'pcb',True)
+    for i in range(8):
+        m.box('CardFinger'+str(i),'Memory-card edge finger '+str(i+1),2.8,7.4,.025,(x+(i-3.5)*4.5,y+23.6,2.85),'MemoryCard',1,'gold',.15,True)
+    _memory_card_chip(m,'CardLogic',13,12,32,x,y+7)
+    _memory_card_chip(m,'CardStorage',14,9.5,32,x,y-11)
+    for i,(dx,dy) in enumerate([(-13,11),(-13,5),(-13,-2),(-13,-9),(12.8,14),(12.8,7),(12.8,0),(12.8,-8)]):
+        m.box('CardDiscrete'+str(i),'Memory-card passive package study',1.4,2.4,.65,(x+dx,y+dy,2.1),'MemoryCard',0,'black' if i%2 else 'shell',.10,True)
+        caps=[m.rr(1.4,.35,.65,(x+dx,y+dy+side*1.40,2.1),.06) for side in [-1,1]]
+        m.feature('CardDiscreteEnds'+str(i),'Card passive end caps',Part.makeCompound(caps),'MemoryCard',0,'metal',True)
+    # A recessed blank label field and original exterior legends.
+    m.cut('CardFront',m.rr(36,19,.3,(x,y-9,7.4),1.1),'Recessed write-on label field')
+    m.box('CardLabel','Blank memory-card write-on field',35.5,18.5,.075,(x,y-9,7.425),'MemoryCard',5,'psgrey',.9)
+    arrow=_polygon([(x-5,y+23),(x,y+25.7),(x+5,y+23)],7.625,.018)
+    m.feature('CardInsertionArrow','Card insertion-direction arrow',arrow,'MemoryCard',5,'psdark')
+    for key,caption,size,px,py in [('PS','PS',3.8,x-2.5,y+16),('PlayStation','PlayStation',2.2,x-8,y+11),('Memory','MEMORY CARD',2.5,x-12,y+4),('Sony','SONY',3.0,x-5.4,y-25)]:
+        m.label('Card'+key+'Mark',caption,size,(px,py,7.625),'MemoryCard',5,'psdark')
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('CardRearModel','SCPH-1020',1.75,(x+6.8,y+8,-.025),'MemoryCard',-5,'psdark',rotation=reverse)
+    m.label('CardCapacity','1 Mbit / 15 blocks',1.5,(x+11.5,y-5,-.025),'MemoryCard',-5,'psdark',rotation=reverse)
+    m.profile['stages']=22
+    m.checkpoint(22,'original_scph1020_memory_card','制作 SCPH-1020 灰色记忆卡：滑动后盖、两处固定、八枚金手指、大板家族内构与空白标签；外形及封装尺寸为照片指导的学习近似，容量标注为 1 Mbit。')
+
+
+STAGES[22]=stage22
+
+
+def stage23(m):
+    from .atari2600 import _rounded_route
+    # Original Japanese two-blade AC cord and figure-eight device connector.
+    m.box('ACWallPlug','Japanese two-blade AC plug',23,17,11,(220,100,0),'Accessories',0,'black',1.7)
+    for i,x in enumerate([213.8,226.2]):m.box('ACWallBlade'+str(i),'Flat AC blade',1.4,6.2,12.5,(x,100,11.1),'Accessories',0,'metal',.1)
+    points=[V(220,91.3,5.5),V(220,55,5.5),V(320,55,8),V(320,20,8),V(292.2,20,8)]
+    m.feature('ACCord','Mains cord display length',_rounded_route(points,7,1.8),'Accessories',0,'black')
+    m.box('ACDeviceGrip','Figure-eight connector grip',24,12,10,(280,20,3),'Accessories',0,'black',1.3)
+    head=Part.makeCylinder(4,10,V(267.8,16.7,8),V(-1,0,0)).fuse(Part.makeCylinder(4,10,V(267.8,23.3,8),V(-1,0,0)))
+    holes=[Part.makeCylinder(1.25,10.5,V(268,y,8),V(-1,0,0)) for y in [16.7,23.3]]
+    m.feature('ACDeviceHead','C7-style two-position connector study',head.cut(Part.makeCompound(holes)),'Accessories',0,'black')
+    for i,y in enumerate([16.7,23.3]):m.ring('ACDeviceContact'+str(i),'Device mains socket contact',1,.7,6,(265.5,y,8),'Accessories',0,'metal',axis=(-1,0,0))
+    # Original single-row twelve-contact AV MULTI plug, not a DIN connector.
+    front=g.rotation((0,1,0),(0,0,1))
+    m.box('AVPlugGrip','PlayStation AV MULTI connector grip',20.8,10,25,(220,-28,8),'Accessories',0,'black',1.2,orient=front)
+    shield=m.rr(17.8,6.6,8.4,(220,-2.7,8),.65,front).cut(m.rr(16.8,5.6,9,(220,-2.9,8),.35,front))
+    m.feature('AVPlugShield','Rectangular AV MULTI metal sleeve',shield,'Accessories',0,'metal')
+    m.box('AVPlugCarrier','AV MULTI insulating tongue',16,1.3,6.3,(220,-2.6,8),'Accessories',0,'black',.15,True,orient=front)
+    for i in range(12):
+        m.box('AVPlugContact'+str(i),'AV MULTI contact '+str(i+1),.5,.14,6,(220+(i-5.5)*1.25,-1.8,8.78),'Accessories',0,'gold',.03,True,orient=front)
+    points=[V(220,-28.2,8),V(220,-65,8),V(310,-65,8),V(310,-119.8,8)]
+    m.feature('AVCable','AV cable display length',_rounded_route(points,7,1.9),'Accessories',0,'black')
+    m.box('AVSplitter','Three-way AV cable splitter',14,8,10,(310,-124,3),'Accessories',0,'black',1)
+    m.colors['yellow']=(.92,.75,.12)
+    for i,(x,color) in enumerate([(282,'yellow'),(310,'white'),(338,'red')]):
+        sx=307+i*3;points=[V(sx,-128.2,8),V(sx,-137,8),V(x,-146,8),V(x,-157.8,8)]
+        m.feature('AVBranch'+str(i),'Individual RCA lead',_rounded_route(points,2,1.1),'Accessories',0,'black')
+        m.cyl('RCAGrip'+str(i),'RCA connector grip',4.8,20,(x,-158,8),'Accessories',0,'black',axis=(0,-1,0))
+        m.ring('RCAColor'+str(i),'RCA function-color ring',5.2,4.85,3,(x,-170,8),'Accessories',0,color,axis=(0,-1,0))
+        m.ring('RCAGround'+str(i),'RCA ground sleeve',3.7,2.5,7,(x,-178.2,8),'Accessories',0,'metal',axis=(0,-1,0))
+        m.cyl('RCACenter'+str(i),'RCA signal contact',.9,9,(x,-178.2,8),'Accessories',0,'gold',axis=(0,-1,0))
+    m.ring('BlankDisc','Blank 12 cm optical study medium',60,7.5,1.2,(240,-300,0),'Accessories',0,'metal')
+    m.ring('BlankDiscHub','Transparent disc hub study',17,7.55,.04,(240,-300,1.24),'Accessories',0,'white')
+    m.label('BlankDiscMark','BLANK CD',3,(227,-277,1.30),'Accessories',0,'black')
+    m.profile['stages']=23
+    m.checkpoint(23,'original_power_av_connections_and_blank_cd','补齐日式两片电源插头、八字设备端、十二接点 AV MULTI 转三 RCA 线与空白 12 cm 光盘；连接线以缩短的展示长度建模。')
+
+
+STAGES[23]=stage23
+
+
+def stage24(m):
+    x,y=205,-150
+    posts=[(x-19,y+21.6),(x+19,y+21.6)]
+    # Original card columns sit beside the edge fingers. Retain the native tools.
+    replacements={
+        'Two original card fixing columns · additive tool':Part.makeCompound([Part.makeCylinder(1.55,5.3,V(px,py,1.35)) for px,py in posts]),
+        'Rear-fixing pilot bores · tool':Part.makeCompound([Part.makeCylinder(.77,4.7,V(px,py,1.2)) for px,py in posts]),
+        'Two recessed rear screw seats · tool':Part.makeCompound([Part.makeCylinder(.95,1.8,V(px,py,-.1)) for px,py in posts]+[Part.makeCylinder(1.6,.85,V(px,py,-.1)) for px,py in posts]),
+    }
+    for label,shape in replacements.items():
+        objects=[o for o in m.doc.Objects if o.TypeId=='Part::Feature' and o.Label==label]
+        assert len(objects)==1,label
+        objects[0].Shape=shape
+    for i,side in enumerate([-1,1]):
+        obj=m.parts['CardScrew'+str(i)];obj.Placement.Base+=V(side*1.6,0,0);obj.FlatPlacement=obj.Placement
+    board=m.rr(37.8,50.2,1.15,(x,y+2.4,2.9),.7)
+    tools=[Part.makeCylinder(1.8,1.7,V(px,py,2.7)) for px,py in posts]
+    tools += [Part.makeBox(4,5,1.8,V(x-21.35 if side<0 else x+17.35,y+24.3,2.6)) for side in [-1,1]]
+    m.parts['CardPCB'].Shape=board.cut(Part.makeCompound(tools)).removeSplitter()
+    m.cut('CardFront',[Part.makeCylinder(.85,.3,V(px,py,7.45)) for px,py in posts],'Shallow front moulding marks above the fixing columns')
+    m.profile['stages']=24
+    m.checkpoint(24,'memory_card_column_and_connector_shoulder_clearances','将记忆卡固定柱移至金手指两侧，并为连接器肩部修整 PCB 外缘，保留螺钉沉槽和原生加工历史。')
+
+
+STAGES[24]=stage24
+
+
+def stage25(m):
+    # Preserve the original trimmed faces across the native Boolean history.
+    for obj in m.doc.Objects:
+        if 'PartID' in obj.PropertiesList and obj.PartID in ['Port1Case','Port2Case','DiscLid','CtrlBack'] and 'Refine' in obj.PropertiesList:
+            obj.Refine=False
+    m.doc.recompute()
+    def ellipse(rx,ry):
+        wire=Part.Wire(Part.Ellipse(V(0,-25,60.025),rx,ry).toShape())
+        return Part.Face(wire).extrude(V(0,0,.018))
+    ring=ellipse(9,3).cut(ellipse(5.58,1.86));red=m.parts['PSBadgeRed'].Shape
+    m.parts['PSBadgeYellow'].Shape=ring.common(Part.makeBox(12,10,.1,V(-12,-30,60))).cut(red)
+    m.parts['PSBadgeGreen'].Shape=ring.common(Part.makeBox(12,10,.1,V(0,-30,60))).cut(red)
+    m.parts['PSBadgeBrown'].Shape=ellipse(5.5,1.4).cut(red)
+    # Give this small rear legend explicit letter spacing to avoid touching glyphs.
+    font=m.root/'references/DejaVuSans.ttf';shapes=[];cursor=0
+    for char in 'PARALLEL I/O':
+        if char==' ':cursor+=.8;continue
+        wires=Part.makeWireString(char,str(font.parent)+'/',font.name,1.75)
+        faces=[face for glyph in wires if glyph for face in Part.makeFace(glyph,'Part::FaceMakerBullseye').Faces]
+        shape=Part.makeCompound([face.extrude(V(0,0,.018)) for face in faces])
+        bounds=shape.BoundBox;shape.translate(V(cursor-bounds.XMin,0,0));shapes.append(shape);cursor+=bounds.XLength+.32
+    obj=m.parts['RearParallelLegend'];obj.Shape=Part.makeCompound(shapes)
+    obj.Placement=App.Placement(V(100+cursor/2,94.025,40.5),g.rotation((0,1,0),(0,0,1)));obj.FlatPlacement=obj.Placement
+    m.doc.recompute()
+    for key in ['Port1Case','Port2Case','DiscLid','CtrlBack','RearParallelLegend','PSBadgeYellow','PSBadgeGreen','PSBadgeBrown']:
+        m.parts[key].Shape.check(True)
+    m.profile['stages']=25
+    m.checkpoint(25,'preserved_trimmed_surfaces_and_analytic_badge_ellipses','保留接口壳、光盘盖和手柄下壳的原始修剪曲面，使用解析椭圆重建彩色标识，并为后部并口文字设置独立字距；修正严格布尔检查发现的曲线和字形问题。')
+
+
+STAGES[25]=stage25
