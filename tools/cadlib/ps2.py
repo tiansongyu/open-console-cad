@@ -307,6 +307,275 @@ def stage06(m):
 STAGES[6]=stage06
 
 
+def _spaced_text_shape(m,text,size):
+    """Explicit glyph spacing avoids touching A/M outlines in small legends."""
+    font=m.root/'references/DejaVuSans.ttf';shapes=[];cursor=0
+    for char in text:
+        if char==' ':cursor+=size*.55;continue
+        wires=Part.makeWireString(char,str(font.parent)+'/',font.name,size)
+        faces=[face for glyph in wires if glyph for face in Part.makeFace(glyph,'Part::FaceMakerBullseye').Faces]
+        shape=Part.makeCompound([face.extrude(V(0,0,.018)) for face in faces]);bounds=shape.BoundBox
+        shape.translate(V(cursor-bounds.XMin,0,0));shapes.append(shape);cursor+=bounds.XLength+size*.16
+    result=Part.makeCompound(shapes);result.check(True);return result
+
+
+def _bga_package(m,key,caption,x,y,w,h,grid,void,metal_lid=True):
+    m.box(key+'Substrate',caption+' package substrate',w,h,.95,(x,y,9.45),'Mainboard',1,'packagegreen',.45,True)
+    m.box(key+'Body',caption+' moulded package',w-1.2,h-1.2,2.30,(x,y,10.45),'Mainboard',1,'black',.5,True)
+    if metal_lid:m.box(key+'Lid',caption+' metal heat spreader',w-2.2,h-2.2,.70,(x,y,12.80),'Mainboard',2,'metal',.4,True)
+    count,pitch=grid;balls=[];pads=[];low=(count-void)//2
+    for i in range(count):
+        for j in range(count):
+            if low<=i<low+void and low<=j<low+void:continue
+            xx=x+(i-(count-1)/2)*pitch;yy=y+(j-(count-1)/2)*pitch
+            balls.append(Part.makeSphere(.28,V(xx,yy,9.13)))
+            pads.append(Part.makeCylinder(.31,.025,V(xx,yy,8.825)))
+    m.feature(key+'Balls',caption+' schematic BGA ball array',Part.makeCompound(balls),'Mainboard',0,'metal',True)
+    m.feature(key+'Pads',caption+' schematic board land array',Part.makeCompound(pads),'Mainboard',0,'gold',True)
+    m.label(key+'Mark',caption,min(2.4,(w-4)/(len(caption)*.65)),(x-w/2+2,y-1.2,13.525 if metal_lid else 12.775),'Mainboard',2,'ps2word' if metal_lid else 'white')
+
+
+def stage07(m):
+    from .psp import _polygon
+    m.colors.update({'packagegreen':(.12,.24,.18),'boardtan':(.43,.47,.25)})
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Mainboard']))
+    m.native('Mainboard','GH-001 original-family main circuit board',248,157,1.2,1.6,(-10,0,7.2),'Mainboard',0,'boardtan')
+    notch=_polygon([(-18,79.5),(-14,74.3),(10,74.3),(14,79.5)],7,2)
+    holes=[notch]
+    mounts=[(-129,73),(110,-72),(-120,-58),(-85.5,37.8),(-36,55.3),(-36,-.8),(-75.5,-31.6),(-10,-72),(34,73)]
+    holes += [Part.makeCylinder(1.6,2,V(x,y,7)) for x,y in mounts]
+    holes += [Part.makeCylinder(1.3,2,V(x,y,7)) for x in [38,96] for y in [7,74]]
+    # Keep every existing terminal on its own drilled entry into the main PCB.
+    for n in range(2):
+        for i in range(4):holes.append(Part.makeCylinder(.46,2,V(-128+(i-1.5)*2.5,-72.1+n*2.8,7)))
+    for i in range(4):holes.append(Part.makeCylinder(.36,2,V(-106+(i-1.5)*.8,-69.75,7)))
+    for row in range(2):
+        for i in range(34):holes.append(Part.makeCylinder(.42,2,V(67+(i-16.5)*1.27,-6-row*2.4+.18,7)))
+    for dx in [-2,0,2]:holes.append(Part.makeCylinder(.40,2,V(-88+dx,76.6,7)))
+    for i in range(12):
+        xx=-116+(i-5.5)*1.2;obj=m.parts['AVMultiContact'+str(i)]
+        run=Part.makeBox(.4,4.7,.16,V(xx-.2,73.5,19.42))
+        leg=Part.makeBox(.4,.35,12.48,V(xx-.2,73.5,7.1))
+        obj.Shape=obj.Shape.fuse(run).fuse(leg).removeSplitter();obj.FlatPlacement=obj.Placement
+        holes.append(Part.makeCylinder(.44,2,V(xx,73.675,7)))
+    m.cut('Mainboard',holes,'GH-001 edge notch, mounting and connector-terminal holes').Refine=False
+    for i,(x,y) in enumerate(mounts):m.ring('MainGround'+str(i),'Mainboard mounting ground land',2.65,1.7,.025,(x,y,8.825),'Mainboard',0,'copper',internal=True)
+    _bga_package(m,'EE','EE / CXD9542GB',-66.5,-6.5,45,42.5,(24,1.45),6)
+    _bga_package(m,'GS','GS / CXD2934GB',-61,42,40.5,40,(22,1.3),10)
+    for i,y in enumerate([8,-19]):
+        x=-108;key='RDRAM'+str(i)
+        m.box(key,'RDRAM package study',17,13,1.1,(x,y,9.45),'Mainboard',1,'black',.35,True)
+        m.box(key+'Spread','RDRAM heat-spreader study',13.5,10,.45,(x,y,10.6),'Mainboard',2,'metal',.25,True)
+        balls=[Part.makeSphere(.22,V(x+(a-3.5)*1.45,y+(b-3.5)*1.1,9.12)) for a in range(8) for b in range(8)]
+        pads=[Part.makeCylinder(.25,.025,V(x+(a-3.5)*1.45,y+(b-3.5)*1.1,8.825)) for a in range(8) for b in range(8)]
+        m.feature(key+'Balls','Schematic RDRAM ball array',Part.makeCompound(balls),'Mainboard',0,'metal',True)
+        m.feature(key+'Pads','Schematic RDRAM landing array',Part.makeCompound(pads),'Mainboard',0,'gold',True)
+        mark=_spaced_text_shape(m,'RDRAM',1.2);mark.translate(V(x-3,y-.4,11.075))
+        m.feature(key+'Mark','RDRAM',mark,'Mainboard',2,'ps2word')
+    m.label('MainboardMark','GH-001 / SCPH-10000 STUDY',2.1,(-51,-67,8.85),'Mainboard',0,'copper')
+    m.profile['stages']=7
+    m.checkpoint(7,'gh001_native_mainboard_ee_gs_and_rdram','建立 GH-001 原生主板、安装地环与已有接口穿板孔，加入 EE、GS 金属顶盖封装及两片 RDRAM；BGA 数量和排布仅描述结构学习模型，不构成引脚网络。')
+
+
+STAGES[7]=stage07
+
+
+def _board_ic(m,key,caption,x,y,w,h,pins,qfp=False,angle=0,underside=False):
+    """Reuse formed-lead construction at this board's 8.8 mm top datum."""
+    from .ps1 import _ic_package
+    before=set(m.parts)
+    m.colors.setdefault('psdark',(.12,.13,.15))
+    _ic_package(m,key,caption,caption,x,y,w,h,pins,height=1.8,qfp=qfp,angle=angle)
+    if h<=6:
+        dot=Part.makeCylinder(.25,.015,V(x-w/2+.6,y+h/2-.6,12.225))
+        if angle:dot.rotate(V(x,y,9.2),V(0,0,1),angle)
+        obj=m.parts[key+'PinOne'];obj.Shape=dot;obj.FlatPlacement=obj.Placement
+    if 'RAM' in caption:
+        obj=m.parts[key+'Mark'];placement=obj.Placement
+        obj.Shape=_spaced_text_shape(m,caption,min(1.3,(w-2)/(len(caption)*.85)));obj.Placement=placement;obj.FlatPlacement=placement
+    for name in set(m.parts)-before:
+        obj=m.parts[name];obj.Placement.Base.z-=1.2;obj.FlatPlacement=obj.Placement
+        if underside:
+            turn=App.Placement(V(),App.Rotation(V(1,0,0),180),V(x,y,8.0))
+            obj.Placement=turn.multiply(obj.Placement);obj.FlatPlacement=obj.Placement
+
+
+def _board_cap(m,key,x,y,r=3.1,h=4.2,mark=''):
+    from .ps1 import _smd_cap
+    before=set(m.parts);_smd_cap(m,key,x,y,r,h,mark)
+    for name in set(m.parts)-before:
+        obj=m.parts[name];obj.Placement.Base.z-=1.2;obj.FlatPlacement=obj.Placement
+
+
+def _board_passive(m,key,x,y,material='thermal'):
+    from .ps1 import _passive
+    before=set(m.parts);_passive(m,key,x,y,material)
+    for name in set(m.parts)-before:
+        obj=m.parts[name];obj.Placement.Base.z-=1.2;obj.FlatPlacement=obj.Placement
+
+
+def stage08(m):
+    # Positions follow the photographed GH-001 component face. Small package
+    # lead arrays represent construction, not an electrical pin map or BOM.
+    _bga_package(m,'IOP','IOP',-73,-52,26,26,(18,1.1),6,metal_lid=False)
+    for data in [
+        ('IOPRAM','IOP RAM',-110,-46,28,10,40,False,0),
+        ('SPU2','SPU2',55,-55,22,22,100,True,0),
+        ('SPURAM','AUDIO RAM',55,-30,26,10,40,False,0),
+        ('ROMStudy','ROM STUDY',87,-48,29,12,40,False,90),
+        ('VideoEncoder','VIDEO',-123,50,10,10,48,True,0),
+        ('VideoDAC','DAC',-99,39,8,8,32,True,0),
+    ]:_board_ic(m,*data)
+    m.colors.update({'inductorblue':(.09,.27,.42),'capviolet':(.43,.31,.61),'ceramic':(.66,.52,.33)})
+    inductors=[(-12,31),(20,33),(6,50),(-17,-25),(21,-25),(-2,-15),(10,-15)]
+    for i,(x,y) in enumerate(inductors):
+        key='BuckInductor'+str(i);r=4.5 if i in [5,6] else 5.2
+        m.box(key+'Base','Voltage-regulator inductor moulded base',2*r+1,2*r+1,.6,(x,y,8.98),'Mainboard',1,'black',.65,True)
+        m.cyl(key+'Drum','Shielded regulator inductor study',r,5.0,(x,y,9.65),'Mainboard',1,'inductorblue',internal=True)
+        m.cyl(key+'Top','Inductor ferrite top',r-.55,.2,(x,y,14.7),'Mainboard',1,'black',internal=True)
+        m.label(key+'Mark','100',1.25,(x-1.6,y-.6,14.925),'Mainboard',2,'white')
+        ends=[Part.makeBox(.7,2,.12,V(x+side*(r+.4)-.35,y-1,8.85)) for side in [-1,1]]
+        m.feature(key+'Ends','Inductor solder terminals',Part.makeCompound(ends),'Mainboard',0,'metal',True)
+    for i,(x,y) in enumerate([(-1,18),(11,18),(23,18),(-4,-28),(9,-28)]):
+        key='BuckBulk'+str(i);_board_cap(m,key,x,y,3.8,4.8)
+        m.colors.setdefault('capviolet',(.43,.31,.61))
+        g.appearance(m.parts[key+'Top'],m.colors['capviolet']);m.parts[key+'Top'].MaterialDescription='capviolet'
+    small=[(-17,9),(-8,7),(1,7),(10,7),(25,3),(-19,-6),(20,-9),(27,52),(20,63),(-19,52),(-19,-38),(30,-39)]
+    small += [(-125,64),(-115,64),(-105,64),(-104,54),(-115,31),(-127,25),(-127,36)]
+    for i,(x,y) in enumerate(small):_board_cap(m,'FilterCap'+str(i),x,y,2.5,3.5)
+    for i,(x,y) in enumerate([(-2,37),(21,45),(-2,-38),(10,-38),(23,-38)]):
+        _board_ic(m,'Regulator'+str(i),'REG',x,y,5.5,4.5,8)
+    locations=[(x,y) for x in [-31,-25] for y in [-47,-40,-33,-25,-18,-10,3,12,21,31,41,50,62]]
+    locations += [(x,y) for x in [-127,-122] for y in [-29,-19,-9,1,10,18]]
+    locations += [(x,y) for x in [38,72,103] for y in [-66,-58,-50,-42,-18]]
+    for i,(x,y) in enumerate(locations):_board_passive(m,'BoardDecoupling'+str(i),x,y,'black' if i%3==0 else 'ceramic')
+    # Retained coin cell and separate contact tabs; no simulated electrical use.
+    x,y=20,-61
+    holder=Part.makeCylinder(11.2,1.0,V(x,y,8.95)).fuse(Part.makeCylinder(11.2,3.1,V(x,y,9.9)).cut(Part.makeCylinder(10.4,3.3,V(x,y,9.8))))
+    holder=holder.cut(Part.makeBox(25,3.2,4,V(x-12.5,y-1.6,9.7)))
+    holder=holder.cut(Part.makeCompound([Part.makeBox(1.5,2.6,1.3,V(x+side*11.4-.75,y-1.3,8.8)) for side in [-1,1]]))
+    m.feature('RTCStock','Coin-cell holder with access for opposing contacts',holder,'Mainboard',1,'black',True)
+    m.cyl('RTCCell','CR2032 clock battery study',10,3.2,(x,y,10.03),'Mainboard',2,'metal',internal=True)
+    m.label('RTCMark','CR2032',1.7,(x-4.5,y-.7,13.255),'Mainboard',2,'ps2word')
+    bores=[]
+    for i,side in enumerate([-1,1]):
+        xx=x+side*11.4
+        tab=Part.makeBox(1.1,2.2,4.3,V(xx-.55,y-1.1,9.15))
+        top=Part.makeBox(2.7,2.2,.18,V(x+side*10.0-1.35,y-1.1,13.27))
+        leg=Part.makeBox(.5,.6,2.2,V(xx-.25,y-.3,7.0))
+        m.feature('RTCContact'+str(i),'Clock battery retaining terminal',tab.fuse(top).fuse(leg).removeSplitter(),'Mainboard',1,'metal',True)
+        bores.append(Part.makeCylinder(.5,2.1,V(xx,y,6.95)))
+    x,y=-12,64
+    housing=m.rr(22,10,8,(x,y,8.95),.7).cut(m.rr(20,8,6.1,(x,y,11),.4))
+    for i in range(4):
+        xx=x+(i-1.5)*5
+        housing=housing.cut(Part.makeBox(1.5,1.5,8.4,V(xx-.75,y-.75,8.75)))
+        pin=Part.makeBox(1.2,1.2,15.2,V(xx-.6,y-.6,7.0))
+        m.feature('PSUBoardContact'+str(i),'Mainboard power-header blade study',pin,'Mainboard',2,'metal',True)
+        bores.append(Part.makeCylinder(.95,2.1,V(xx,y,6.95)))
+    m.feature('PSUBoardSocket','Four-position motherboard power header',housing,'Mainboard',1,'white',True)
+    m.cut('Mainboard',bores,'RTC terminal and four power-header board passages').Refine=False
+    m.profile['stages']=8
+    m.checkpoint(8,'gh001_iop_audio_regulators_and_clock_battery','补齐 GH-001 可见面的 IOP、音频和存储封装，中央调节器、电感和滤波电容，CR2032 电池座及四位电源连接器；小封装和元件排布为照片指导的结构示意，不提供电气网络。')
+
+
+STAGES[8]=stage08
+
+
+def _board_fpc(m,key,x,y,pins,width,underside=False,side=-1):
+    before=set(m.parts)
+    housing=m.rr(width+3,4.8,2.4,(x,y,8.98),.35)
+    mouth=m.rr(width+1,3.0,.65,(x,y+side*1.5,10.1),.1)
+    m.feature(key,'Flat-circuit connector housing study',housing.cut(mouth),'Mainboard',0,'white',True)
+    m.box(key+'Latch','Separate flat-circuit connector lock',width+1,1,.45,(x,y+side*3.0,10.82),'Mainboard',0,'black',.12,True)
+    contacts=[];pads=[]
+    for i in range(pins):
+        xx=x+(i-(pins-1)/2)*(width-.8)/(pins-1)
+        contacts.append(Part.makeBox(.22,2.6,.09,V(xx-.11,y-1.3,10.17)))
+        pads.append(Part.makeBox(.28,.75,.025,V(xx-.14,y-side*2.85-.375,8.835)))
+    # Separate contact slots retain positive clearance from the insulating body.
+    slots=[Part.makeBox(.38,2.8,.26,V(x+(i-(pins-1)/2)*(width-.8)/(pins-1)-.19,y-1.4,10.08)) for i in range(pins)]
+    m.cut(key,slots,'Individual flat-circuit contact slots').Refine=False
+    m.feature(key+'Contacts','Flat-circuit connector contact comb',Part.makeCompound(contacts),'Mainboard',0,'gold',True)
+    m.feature(key+'Pads','Flat-circuit connector board lands',Part.makeCompound(pads),'Mainboard',0,'gold',True)
+    if underside:
+        turn=App.Placement(V(),App.Rotation(V(1,0,0),180),V(x,y,8.0))
+        for name in set(m.parts)-before:
+            obj=m.parts[name];obj.Placement=turn.multiply(obj.Placement);obj.FlatPlacement=obj.Placement
+
+
+def stage09(m):
+    # Opposite-face locations follow Dig and Rescue photo004. Its package
+    # identities cannot all be read, so labels deliberately remain descriptive.
+    for data in [
+        ('UnderLogicA','LOGIC A',70,60,28,16,64,False,0),
+        ('UnderLogicB','LOGIC B',53,30,13,13,64,True,0),
+        ('UnderLogicC','LOGIC C',8,27,14,12,48,True,0),
+        ('UnderLogicD','LOGIC D',-4,3,11,11,48,True,0),
+        ('UnderLogicE','LOGIC E',-108,54,13,13,64,True,0),
+        ('UnderLogicF','LOGIC F',-72,-55,25,23,100,True,0),
+        ('UnderBuffer','BUFFER STUDY',24,61,18,7,28,False,0),
+    ]:_board_ic(m,*data,underside=True)
+    m.colors['thermalpink']=(.73,.54,.59)
+    for i,(x,y,w,h) in enumerate([(70,60,26,14),(8,27,12,10),(-72,-55,23,21)]):
+        m.box('UnderThermal'+str(i),'Underside package thermal pad study',w,h,.55,(x,y,4.35),'Mainboard',-1,'thermalpink',.3,True)
+    _board_fpc(m,'UnderRearFlex',25,72,24,14,underside=True,side=-1)
+    _board_fpc(m,'UnderFrontFlex',-18,-66,30,18,underside=True,side=1)
+    _board_fpc(m,'TopDriveFlex',35,-5,20,12,side=-1)
+    _board_fpc(m,'TopControlFlex',-48,-72,18,11,side=1)
+    _board_fpc(m,'TopOpticalFlex',-10,-52,24,14,side=-1)
+    points=[(x,y) for x in [33,37] for y in [-48,-37,-25,-12,0,12,24,39,49]]
+    points += [(x,y) for x in [-43,-49] for y in [-34,-23,-12,0,12,25,38,49]]
+    for i,(x,y) in enumerate(points):
+        before=set(m.parts);_board_passive(m,'UnderPassive'+str(i),x,y,'black' if i%3==0 else 'ceramic')
+        turn=App.Placement(V(),App.Rotation(V(1,0,0),180),V(x,y,8.0))
+        for name in set(m.parts)-before:
+            obj=m.parts[name];obj.Placement=turn.multiply(obj.Placement);obj.FlatPlacement=obj.Placement
+    # Three-position fan header, as visible in the close-up source photo006.
+    x,y=-28,70
+    block=m.rr(5.3,4.8,4.2,(x,y,9.0),.35).cut(m.rr(3.9,3.4,3.4,(x,y,10),.2))
+    bores=[]
+    for i,dx in enumerate([-1.15,0,1.15]):
+        block=block.cut(Part.makeCylinder(.42,4.6,V(x+dx,y,8.8)))
+        m.cyl('FanHeaderPin'+str(i),'Fan supply connector terminal study',.28,6.6,(x+dx,y,7.0),'Mainboard',1,'metal',internal=True)
+        bores.append(Part.makeCylinder(.42,2.1,V(x+dx,y,6.95)))
+    m.feature('FanHeader','Three-position fan-power header',block,'Mainboard',1,'white',True)
+    m.cut('Mainboard',bores,'Three fan-connector terminal passages').Refine=False
+    m.box('TimingCan','Low-profile timing oscillator can study',7,3.8,1.3,(-43,-46,8.98),'Mainboard',1,'metal',1.0,True)
+    m.profile['stages']=9
+    m.checkpoint(9,'opposite_board_face_thermal_pads_and_flex_connectors','依据背面照片加入七组逻辑封装、三处导热垫与背面阻容，补充上下表面排线插座、风扇电源座和时钟罐体；无法从照片确认的背面芯片仅使用位置描述标识。')
+
+
+STAGES[9]=stage09
+
+
+def stage10(m):
+    from .ps1 import _add_shape
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Shielding']))
+    m.native('LowerShield','Native lower EMI enclosure sheet',244,153,1.4,.45,(-10,0,3.65),'Shielding',-3,'metal')
+    fingers=[]
+    for x in range(-126,109,13):
+        for y in [-76.55,76.2]:fingers.append(Part.makeBox(4,.35,2.45,V(x-2,y,3.95)))
+    for y in range(-64,65,13):
+        for x in [-132.05,111.7]:fingers.append(Part.makeBox(.35,4,2.45,V(x,y-2,3.95)))
+    _add_shape(m,'LowerShield',Part.makeCompound(fingers),'Turned-up peripheral shield contact fingers').Refine=False
+    mounts=[(-128,71),(-127,-68),(108,71),(108,-68)]
+    cuts=[Part.makeCylinder(1.1,1.1,V(x,y,3.4)) for x,y in mounts]
+    cuts += [m.rr(22,8,1.1,(-18,-66,3.4),.5),m.rr(18,8,1.1,(25,72,3.4),.5)]
+    m.cut('LowerShield',cuts,'Four shield fixing holes and underside flex access windows').Refine=False
+    for i,(x,y,w,h) in enumerate([(70,60,26,14),(8,27,12,10),(-72,-55,23,21)]):
+        _add_shape(m,'LowerShield',m.rr(w-2,h-2,.3,(x,y,4.0),.4),'Shallow thermal contact emboss '+str(i)).Refine=False
+    for i,(x,y) in enumerate(mounts):
+        m.ring('ShieldSupport'+str(i),'Lower-shell shield support boss',2.2,.8,.6,(x,y,3.0),'Shielding',-4,'ps2black',internal=True)
+        m.screw('ShieldScrew'+str(i),(x,y,4.6),'Shielding',-2,length=2.5,radius=2.0,axis=(0,0,-1))
+    m.cut('LowerHousing',[Part.makeCylinder(.8,1.7,V(x,y,1.65)) for x,y in mounts],'Blind bores for the four lower shield fasteners').Refine=False
+    m.profile['stages']=10
+    m.checkpoint(10,'native_lower_shield_fingers_and_four_fixings','建立原生下部屏蔽板、周边折起接触指、排线检修开口及三处浅压凸接触区，加入四组支座与盲孔螺钉；板料和折边尺寸为装配学习近似。')
+
+
+STAGES[10]=stage10
+
+
 def rear_snapshot(m,name='rear_review',assemblies=None,exclude=(),normal=(.2,1.8,.45)):
     """Keep +Z upright while inspecting the positive-Y rear face."""
     import FreeCADGui as Gui
