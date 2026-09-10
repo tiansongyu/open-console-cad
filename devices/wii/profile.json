@@ -14,7 +14,7 @@
     0.9,
     0.88
   ],
-  "stages": 0,
+  "stages": 15,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -24,27 +24,34 @@
     "Shield",
     "Optical",
     "Internal",
-    "Power"
+    "GameCube",
+    "Cooling",
+    "Wireless"
   ],
   "controls_groups": [
     "Controls",
-    "Controller"
+    "Controller",
+    "Nunchuk"
   ],
   "internal_groups": [
     "Body",
+    "Controls",
+    "Ports",
     "Mainboard",
     "Shield",
     "Optical",
     "Internal",
-    "Power",
-    "Ports",
-    "Controls"
+    "GameCube",
+    "Cooling",
+    "Wireless"
   ],
   "internal_exclude": [
     "UpperHousing",
-    "DiscLid",
-    "MainShield",
-    "CartridgeDeck"
+    "GameCubeDoor",
+    "MemoryDoor",
+    "SDFlap",
+    "DriveTopShield",
+    "MainShield"
   ],
   "internal_normal": [
     0.2,
@@ -55,9 +62,17 @@
     {
       "url": "https://www.nintendo.co.jp/wii/console/index.html",
       "role": "Official hardware overview and dimensions"
+    },
+    {
+      "url": "https://www.nintendo.co.jp/wii/support/pdf/wiimanual_setup.pdf",
+      "role": "Official interface layout, pp. 26-27"
+    },
+    {
+      "url": "https://www.ifixit.com/Guide/Nintendo+Wii+Motherboard+Replacement/3460",
+      "role": "Board/radio layout photographs; includes RVL-CPU-40, not a first-production PCB recreation"
     }
   ],
-  "parameter_basis": "Published body envelope; local details approximate",
+  "parameter_basis": "Official RVL-001 envelope in horizontal coordinates; protrusions and local details are study approximations",
   "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
   "fidelity": "Published envelope; approximate exterior details and schematic major internals"
 }

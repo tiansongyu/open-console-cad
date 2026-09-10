@@ -1,0 +1,13 @@
+"""Open the Wii assemblies and native drawing pages."""
+from pathlib import Path
+import FreeCAD as App,FreeCADGui as Gui
+root=Path(__file__).resolve().parent
+opened={}
+for variant in ['Complete','Exploded','Drawings']:
+    path=root/'output'/f'Wii_{variant}.FCStd'
+    if path.exists():
+        opened[variant]=next((d for d in App.listDocuments().values() if Path(d.FileName)==path),None) or App.openDocument(str(path))
+main=opened.get('Complete')
+if main is None:main=App.openDocument(str(root/'output/Wii_Study.FCStd'))
+App.setActiveDocument(main.Name);Gui.activateView('Gui::View3DInventor',True)
+Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()

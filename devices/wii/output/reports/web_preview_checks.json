@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "label": "主机与控制器",
+      "visible_components": 537,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "label": "主机",
+      "visible_components": 406,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "label": "内部结构",
+      "visible_components": 400,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "label": "分层爆炸",
+      "visible_components": 406,
+      "passed": true
+    },
+    {
+      "view": "remote",
+      "label": "原版遥控器",
+      "visible_components": 94,
+      "passed": true
+    },
+    {
+      "view": "remote-internal",
+      "label": "遥控器内部",
+      "visible_components": 68,
+      "passed": true
+    },
+    {
+      "view": "nunchuk",
+      "label": "双节棍",
+      "visible_components": 37,
+      "passed": true
+    },
+    {
+      "view": "nunchuk-internal",
+      "label": "双节棍内部",
+      "visible_components": 20,
+      "passed": true
+    },
+    {
+      "view": "optical",
+      "label": "吸入式光驱",
+      "visible_components": 49,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "label": "主板",
+      "visible_components": 161,
+      "passed": true
+    },
+    {
+      "view": "cooling",
+      "label": "散热与风扇",
+      "visible_components": 12,
+      "passed": true
+    },
+    {
+      "view": "wireless",
+      "label": "无线模块",
+      "visible_components": 15,
+      "passed": true
+    },
+    {
+      "view": "gamecube",
+      "label": "GameCube 接口",
+      "visible_components": 64,
+      "passed": true
+    },
+    {
+      "view": "power",
+      "label": "适配器内部",
+      "visible_components": 14,
+      "passed": true
+    },
+    {
+      "view": "sensor",
+      "label": "感应条",
+      "visible_components": 44,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "label": "附件",
+      "visible_components": 117,
+      "passed": true
+    },
+    {
+      "view": "fullkit",
+      "label": "整套模型",
+      "visible_components": 654,
+      "passed": true
+    }
+  ],
+  "desktop": {
+    "width": 1280,
+    "height": 900,
+    "screenshot_width": 1265,
+    "horizontal_overflow_observed": false,
+    "visually_reviewed": true
+  },
+  "mobile": {
+    "width": 375,
+    "height": 812,
+    "screenshot_width": 360,
+    "horizontal_overflow_observed": false,
+    "visually_reviewed": true,
+    "controls_and_gallery_reviewed": true
+  },
+  "slider": {
+    "min": 0,
+    "max": 100,
+    "keyboard_verified": true
+  },
+  "source_sha256": "562eade4da624cd26a1c994e22e509a0b498b1e3eb30ca25588f46c0474c049c",
+  "glb_sha256": "71ff358edf15baa48f079678d4c874f362ece90ccd2a80c7341bb7683f6c6956",
+  "live_verified": false,
+  "exposure": 0.72,
+  "scope": "Local Vite: all seventeen rendered accessibility counts compared with native manifest, full-page desktop/mobile screenshots visually reviewed, gallery lazy images checked after scrolling and slider endpoints confirmed through visible status. Layout checks are visual; no physical-device performance claim.",
+  "existing_device_regression": {
+    "device": "n64",
+    "view": "assembled",
+    "visible_components": 607,
+    "default_exposure": 1.1,
+    "visually_reviewed": true
+  }
+}

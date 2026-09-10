@@ -111,6 +111,7 @@ function fit(reset = true) {
 }
 function applyView(reset = true) {
   if (!ready) return;
+  renderer.toneMappingExposure = devices[device].exposure ?? 1.1;
   const definition=devices[device].views[view], allowed=definition.groups, excluded=new Set(definition.exclude||[]);
   const hinge=poseData?.type==='hinge';
   const pivot=new THREE.Vector3(...(hinge ? poseData.pivot_mm.map(v=>v/1000) : [0,0,0]));

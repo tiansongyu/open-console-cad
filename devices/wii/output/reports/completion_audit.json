@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment is checked separately.",
+  "components": 654,
+  "solids": 883,
+  "stages": 15,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "strict_bop_audit.json",
+    "final_interference_audit.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "files": [
+    {
+      "path": "devices/wii/output/Wii_Complete.FCStd",
+      "bytes": 6609567,
+      "sha256": "562eade4da624cd26a1c994e22e509a0b498b1e3eb30ca25588f46c0474c049c"
+    },
+    {
+      "path": "devices/wii/output/Wii_Exploded.FCStd",
+      "bytes": 2575653,
+      "sha256": "dc26e5d39d252a96c569b5d4fef00d96f962a03d67c38dd604927b6e0f9eb1a8"
+    },
+    {
+      "path": "devices/wii/output/Wii_Drawings.FCStd",
+      "bytes": 324662,
+      "sha256": "12e721ae859a940a8136c0c1b9e950fa035b1b629c6e74957e12fe2dfd232669"
+    },
+    {
+      "path": "devices/wii/output/Wii_FullKit.step",
+      "bytes": 14842571,
+      "sha256": "a0473b69978a8556a3bcdbefbd70c9fdee952ab0379f9cbfa3a04d25771f4ddc"
+    },
+    {
+      "path": "devices/wii/output/Wii_Console.step",
+      "bytes": 12501313,
+      "sha256": "fbabd97294ff950136615217fb45547cbf4c880978862cd8e39b87a0a1df44ca"
+    },
+    {
+      "path": "devices/wii/output/Wii_Exploded.step",
+      "bytes": 14843580,
+      "sha256": "8a28c799b0cdf27b68e69f1d1138faf9047d66941b5b4e1121533f61dd9d6ec4"
+    },
+    {
+      "path": "devices/wii/output/drawings/Wii_Drawings.pdf",
+      "bytes": 555145,
+      "sha256": "6323d18ad73ab34ed62fc7a27077a96fcf1c99ca7720e7f80434181babe2185c"
+    },
+    {
+      "path": "devices/wii/output/COMPONENTS.csv",
+      "bytes": 109907,
+      "sha256": "343a2f4be5b47b5ff1366a1d07489cebaf58a6a3d05713f5d8d05959a12af55b"
+    },
+    {
+      "path": "site/public/models/wii.glb",
+      "bytes": 35164880,
+      "sha256": "71ff358edf15baa48f079678d4c874f362ece90ccd2a80c7341bb7683f6c6956"
+    }
+  ],
+  "live_verified": false
+}

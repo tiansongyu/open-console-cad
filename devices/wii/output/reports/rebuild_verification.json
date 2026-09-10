@@ -1,0 +1,5241 @@
+{
+  "passed": true,
+  "iterations": 15,
+  "components": 654,
+  "method": "Fresh Study through all fifteen source stages; compare per-part validity, solid count, bounds and volume, with bidirectional Boolean residuals for integration differences. Final source stage strictly checks every BRep.",
+  "source_sha256": "02d4b5108eca365b668d0a74423aa4b51dece20a1bb867f39d2bd4e475220543",
+  "checks": [
+    {
+      "part_id": "LowerHousing",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 8.731149137020111e-11,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "UpperHousing",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.820766091346741e-11,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FrontBezel",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.4210854715202004e-14,
+      "volume_delta_mm3": 3.637978807091713e-12,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Foot0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Foot1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Foot2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Foot3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DiscLightGuide",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DiscSlotFrame",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.684341886080802e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SlotLEDPCB0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SlotLED0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SlotLEDPCB1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SlotLED1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 8.881784197001252e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PowerButton",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PowerSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.7763568394002505e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PowerMark",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ResetButton",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ResetSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.7763568394002505e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "EjectButton",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "EjectSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.7763568394002505e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "EjectMark",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PowerIndicator",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WiiFrontMark",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDFlap",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.4210854715202004e-14,
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDHinge-31",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDHinge31",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDPortPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDPort",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 4.547473508864641e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDInsulator",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SDContact8",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SyncSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SyncButton",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PowerLabel",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 8.881784197001252e-16,
+      "volume_delta_mm3": 1.8041124150158794e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ResetLabel",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 8.881784197001252e-16,
+      "volume_delta_mm3": 1.5265566588595902e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "EjectLabel",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 7.105427357601002e-15,
+      "volume_delta_mm3": 6.245004513516506e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Shell",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 3.979039320256561e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Tongue",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Contact0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Contact1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Contact2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB0Contact3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Shell",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 1.7053025658242404e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Tongue",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Contact0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Contact1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Contact2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "USB1Contact3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVShell",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVTongue",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.6653345369377348e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.6653345369377348e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact0_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.6653345369377348e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.6653345369377348e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVContact1_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DCSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DCPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DCPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearDCMark",
+      "valid": true,
+      "solids": 3,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 6.938893903907228e-18,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GameCubeDoor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 4.263256414560601e-14,
+      "volume_delta_mm3": 1.0913936421275139e-11,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GameCubeHinge0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GameCubeHinge1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MemoryDoor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 2.842170943040401e-14,
+      "volume_delta_mm3": 4.547473508864641e-12,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MemoryHinge0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MemoryHinge1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPort1",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCShield1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin1_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCInsert1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPort2",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCShield2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin2_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCInsert2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPort3",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCShield3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin3_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCInsert3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPort4",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCShield4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCPin4_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCInsert4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemory1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryCarrier1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_8",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_9",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_10",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin1_11",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemory2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryCarrier2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_8",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_9",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_10",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCMemoryPin2_11",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MainPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 8.881784197001252e-16,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GroundStrip-1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GroundStrip1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "HollywoodSubstrate",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Hollywood",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "HollywoodInterconnect",
+      "valid": true,
+      "solids": 25,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "HollywoodMark",
+      "valid": true,
+      "solids": 9,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.7755575615628914e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BroadwaySubstrate",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Broadway",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BroadwayInterconnect",
+      "valid": true,
+      "solids": 25,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BroadwayMark",
+      "valid": true,
+      "solids": 8,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NAND",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NANDMark",
+      "valid": true,
+      "solids": 4,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NANDLeads-1",
+      "valid": true,
+      "solids": 24,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.3322676295501878e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NANDLeads1",
+      "valid": true,
+      "solids": 24,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 4.440892098500626e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVEncoder",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVEncoderMark",
+      "valid": true,
+      "solids": 9,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.3877787807814457e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVEncoderLeads-1",
+      "valid": true,
+      "solids": 16,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 6.661338147750939e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVEncoderLeads1",
+      "valid": true,
+      "solids": 16,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MEM2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MEM2Mark",
+      "valid": true,
+      "solids": 4,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.3877787807814457e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Regulator0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Inductor0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Cap0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CapTop0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Regulator1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Inductor1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Cap1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CapTop1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Regulator2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Inductor2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Cap2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CapTop2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCap5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RearCapTop5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_2_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_3_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_4_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_5_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_5_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_5_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_6_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_6_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_6_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_7_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_7_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_7_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_8_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_8_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD0_8_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_2_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_3_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_4_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_5_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_5_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_5_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_6_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_6_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_6_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_7_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_7_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD1_7_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_2_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_3_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_4_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_5_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_5_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_5_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_6_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_6_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_6_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_7_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_7_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 1.1102230246251565e-16,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD2_7_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_2_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_3_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_4_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_5_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_5_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD3_5_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.220446049250313e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_5_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1102230246251565e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SMD4_5_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveData",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveDataLatch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DrivePower",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DrivePowerLatch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothSocketLatch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 3.552713678800501e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiSocketLatch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.7763568394002505e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMark",
+      "valid": true,
+      "solids": 12,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "HollywoodThermalPad",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BroadwayThermalPad",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Heatsink",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanFrame",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 1.8189894035458565e-12,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanRotor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanMotorPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanStrut0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.6645352591003757e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanStrut1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 2.6645352591003757e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanStrut2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.6645352591003757e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanStrut3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 7.105427357601002e-15,
+      "volume_delta_mm3": 1.7763568394002505e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiIC",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiShield",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiCoax0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.7763568394002505e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiCoax1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.7763568394002505e-15,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothIC",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothShield",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "BluetoothAntenna",
+      "valid": true,
+      "solids": 4,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveBase",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveFrame",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 9.094947017729282e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SpindleMotor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SpindleShaft",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "Turntable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "TurntablePilot",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PickupRail0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PickupRail1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PickupCarriage",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PickupPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LensHolder",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PickupLens",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SledScrew",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SledThread",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SledNut",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SledMotor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadShaft",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadRoller0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadRoller1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1368683772161603e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadBearing0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadBearing1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGear0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGearAxle0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGear1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGearAxle1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGear2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGearAxle2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGear3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadGearAxle3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LoadingMotor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DiscGuideArm0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GuidePivot0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GuideWheel0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DiscGuideArm1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GuidePivot1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GuideWheel1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveTopShield",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DiscClamp",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ClampBridge",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ClampPin",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DrivePCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveController",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "LowerShield",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "MainShield",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "PCBMount6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveMount0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveMount1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveMount2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveMount3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CaseMount0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CaseMount1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CaseMount2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "CaseMount3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteBack",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteFront",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteIRWindow",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteDPad",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePower",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteA",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.0816681711721685e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMinus",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMinusMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 8.673617379884035e-19,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteHome",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePlus",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePlusMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteOne",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteOneMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 6.938893903907228e-18,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteTwo",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteTwoMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePowerSymbol",
+      "valid": true,
+      "solids": 2,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 5.551115123125783e-17,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteHomeSymbol",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLED1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLEDMark1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.6020852139652106e-18,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLED2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 4.440892098500626e-16,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLEDMark2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.734723475976807e-18,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLED3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLEDMark3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 1.734723475976807e-18,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLED4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteLEDMark4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteBatteryDoor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtension",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 1.1368683772161603e-13,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionTongue",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteExtensionPin5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteBluetooth",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAccelerometer",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteEEPROM",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive8",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive9",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive10",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePassive11",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteIRBoard",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteIRCamera",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteIRLens",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteSpeaker",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteSpeakerMagnet",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteSpeakerCone",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMotor",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteEccentric",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMotorShaft",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAA0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAANegative0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAAPositive0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAASpring0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAARail0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAA1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAANegative1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAAPositive1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAASpring1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAARail1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteAASeparator",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteDPadCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteDPadRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteACarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteARubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMinusCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteMinusRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteHomeCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteHomeRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePlusCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePlusRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteOneCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteOneRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteTwoCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteTwoRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePowerCarbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemotePowerRubber",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteBPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteBSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukBack",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukFront",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukStick",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukThumb",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukC",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukCMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukZ",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukZMark",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukStickBase",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPotX",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPotY",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukController",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukAccelerometer",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPassive7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukTriggerPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukCSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukZSwitch",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukRelief",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukCable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlug",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugHead",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukPlugPin5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLower",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorUpper",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorWindow-1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPCB-1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter-1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter-1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter-1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter-1_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter-1_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead-1_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorWindow1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPCB1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_2_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_2_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter1_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_3_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_3_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorEmitter1_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_4_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorLead1_4_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorCable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPlug",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPlugTip",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPlugPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorPlugPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorStandBase",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorStandPost",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "SensorStandCradle",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "ConsoleStand",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "StandAuxPlate",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "StandPad0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "StandPad1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "StandPad2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "StandPad3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterLower",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterUpper",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterPCB",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterTransformer",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterWinding",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterBulkCap",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterOutputCap",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterOutputCoil",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterInputCoil",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterRectifier",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterHeatPlate",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterScrew0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterScrew1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterScrew2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterScrew3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterMark",
+      "valid": true,
+      "solids": 12,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterACCable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterACPlug",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterACBlade0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterACBlade1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterDCCable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterDCPlug",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterDCHead",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterDCPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AdapterDCPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlug",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugShell",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugTongue",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin0_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_6",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVPlugPin1_7",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVCable",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVSplitter",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVBranch0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGrip0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAColor0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGround0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAPin0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVBranch1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGrip1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAColor1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGround1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAPin1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "AVBranch2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGrip2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAColor2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAGround2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RCAPin2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WiiDisc",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WiiDiscHub",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WiiDiscMark",
+      "valid": true,
+      "solids": 10,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCDisc",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCDiscHub",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "GCDiscMark",
+      "valid": true,
+      "solids": 10,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteCaseScrew0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteCaseScrew1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteCaseScrew2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "RemoteCaseScrew3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukCaseScrew0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "NunchukCaseScrew1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveRibbon",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire2",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire3",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire4",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "DriveWire5",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FrontLEDSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FrontLEDWire0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FrontLEDWire1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanSocket",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanWire0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "FanWire1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiCable0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiAntenna0",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiAntennaTrace0",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiCable1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiAntenna1",
+      "valid": true,
+      "solids": 1,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    },
+    {
+      "part_id": "WifiAntennaTrace1",
+      "valid": true,
+      "solids": 5,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "boolean_residual_mm3": null
+    }
+  ]
+}

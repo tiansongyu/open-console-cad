@@ -3053,5 +3053,545 @@
       "decoded_sha256": "c926de6d892053ef7324be445594de67fb3b6c316ad80a1c2ef44aa99a273372",
       "lossless": true
     }
+  },
+  {
+    "id": "wii",
+    "title": "Nintendo Wii",
+    "prefix": "Wii",
+    "model": "RVL-001 · 初代白色",
+    "count": 654,
+    "iterations": 15,
+    "pages": 12,
+    "bytes": 35164880,
+    "family": "console",
+    "views": {
+      "assembled": {
+        "label": "主机与控制器",
+        "description": "初代白色 RVL-001 与原版遥控器、双节棍，保留独立装配组件。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Optical",
+          "Ports",
+          "GameCube",
+          "Mainboard",
+          "Cooling",
+          "Wireless",
+          "Shield",
+          "Internal",
+          "Controller",
+          "Nunchuk"
+        ],
+        "normal": [
+          0.5,
+          -1.6,
+          1.4
+        ]
+      },
+      "console": {
+        "label": "主机",
+        "description": "观察蓝色光盘槽、前门、GameCube 接口仓和后部连接。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "GameCube",
+          "Cooling",
+          "Wireless"
+        ],
+        "normal": [
+          0.2,
+          -1.5,
+          0.9
+        ]
+      },
+      "internal": {
+        "label": "内部结构",
+        "description": "移开顶壳、接口盖和大面积上屏蔽，观察光驱与板件的层次。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "GameCube",
+          "Cooling",
+          "Wireless"
+        ],
+        "exclude": [
+          "UpperHousing",
+          "GameCubeDoor",
+          "MemoryDoor",
+          "SDFlap",
+          "MainShield",
+          "DriveTopShield"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "exploded": {
+        "label": "分层爆炸",
+        "description": "按交付的装配位移展开主机，位移用于观察层次。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "GameCube",
+          "Cooling",
+          "Wireless"
+        ],
+        "explode": 1,
+        "normal": [
+          1.4,
+          -0.4,
+          0.6
+        ]
+      },
+      "remote": {
+        "label": "原版遥控器",
+        "description": "RVL-003 的红外窗口、按键、玩家指示灯、背部 B 键与电池门。",
+        "groups": [
+          "Controller"
+        ],
+        "normal": [
+          0.3,
+          -0.5,
+          2.4
+        ]
+      },
+      "remote-internal": {
+        "label": "遥控器内部",
+        "description": "控制板、红外相机、扬声器、偏心振动机构及两节 AA 电池。",
+        "groups": [
+          "Controller"
+        ],
+        "exclude": [
+          "RemoteBack",
+          "RemoteFront",
+          "RemoteBatteryDoor",
+          "RemoteDPad",
+          "RemoteA",
+          "RemoteMinus",
+          "RemoteHome",
+          "RemotePlus",
+          "RemoteOne",
+          "RemoteTwo",
+          "RemotePower",
+          "RemoteB",
+          "RemoteIRWindow",
+          "RemoteAMark",
+          "RemoteMinusMark",
+          "RemotePlusMark",
+          "RemoteOneMark",
+          "RemoteTwoMark",
+          "RemotePowerSymbol",
+          "RemoteHomeSymbol",
+          "RemoteLEDMark1",
+          "RemoteLEDMark2",
+          "RemoteLEDMark3",
+          "RemoteLEDMark4",
+          "RemoteBPCB",
+          "RemoteBSwitch"
+        ],
+        "normal": [
+          0.3,
+          -0.5,
+          -2.4
+        ]
+      },
+      "nunchuk": {
+        "label": "双节棍",
+        "description": "曲面握柄、凹面模拟摇杆帽、C/Z 触发键及原始扩展线。",
+        "groups": [
+          "Nunchuk"
+        ],
+        "normal": [
+          0.4,
+          -0.7,
+          2.2
+        ]
+      },
+      "nunchuk-internal": {
+        "label": "双节棍内部",
+        "description": "模拟机构、双轴电位器、加速度计和触发小板的学习布局。",
+        "groups": [
+          "Nunchuk"
+        ],
+        "exclude": [
+          "NunchukBack",
+          "NunchukFront",
+          "NunchukThumb",
+          "NunchukC",
+          "NunchukZ",
+          "NunchukCMark",
+          "NunchukZMark",
+          "NunchukCable",
+          "NunchukPlug",
+          "NunchukPlugHead",
+          "NunchukRelief",
+          "NunchukPlugPin0",
+          "NunchukPlugPin1",
+          "NunchukPlugPin2",
+          "NunchukPlugPin3",
+          "NunchukPlugPin4",
+          "NunchukPlugPin5"
+        ],
+        "normal": [
+          0.6,
+          -0.7,
+          2
+        ]
+      },
+      "optical": {
+        "label": "吸入式光驱",
+        "description": "移开上屏蔽，查看滚轮、齿轮、主轴、压盘与导轨光头。",
+        "groups": [
+          "Optical"
+        ],
+        "exclude": [
+          "DriveTopShield"
+        ],
+        "normal": [
+          0.3,
+          -0.7,
+          2.4
+        ]
+      },
+      "mainboard": {
+        "label": "主板",
+        "description": "Broadway / Hollywood、存储器与分区器件；内部布局为学习近似。",
+        "groups": [
+          "Mainboard"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "cooling": {
+        "label": "散热与风扇",
+        "description": "共用鳍片散热器、导热垫、后排风扇与供电线。",
+        "groups": [
+          "Cooling"
+        ],
+        "normal": [
+          0.6,
+          -0.8,
+          1.4
+        ]
+      },
+      "wireless": {
+        "label": "无线模块",
+        "description": "独立 Wi-Fi、蓝牙板和侧面天线的空间关系。",
+        "groups": [
+          "Wireless"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "gamecube": {
+        "label": "GameCube 接口",
+        "description": "初代四个六接点手柄口与两个十二接点存储卡槽。",
+        "groups": [
+          "GameCube"
+        ],
+        "normal": [
+          -2.4,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "power": {
+        "label": "适配器内部",
+        "description": "RVL-002 供电板、变压器和滤波器件的结构学习示意。",
+        "groups": [
+          "Accessories"
+        ],
+        "exclude": [
+          "SensorLower",
+          "SensorUpper",
+          "SensorWindow-1",
+          "SensorPCB-1",
+          "SensorEmitter-1_0",
+          "SensorLead-1_0_0",
+          "SensorLead-1_0_1",
+          "SensorEmitter-1_1",
+          "SensorLead-1_1_0",
+          "SensorLead-1_1_1",
+          "SensorEmitter-1_2",
+          "SensorLead-1_2_0",
+          "SensorLead-1_2_1",
+          "SensorEmitter-1_3",
+          "SensorLead-1_3_0",
+          "SensorLead-1_3_1",
+          "SensorEmitter-1_4",
+          "SensorLead-1_4_0",
+          "SensorLead-1_4_1",
+          "SensorWindow1",
+          "SensorPCB1",
+          "SensorEmitter1_0",
+          "SensorLead1_0_0",
+          "SensorLead1_0_1",
+          "SensorEmitter1_1",
+          "SensorLead1_1_0",
+          "SensorLead1_1_1",
+          "SensorEmitter1_2",
+          "SensorLead1_2_0",
+          "SensorLead1_2_1",
+          "SensorEmitter1_3",
+          "SensorLead1_3_0",
+          "SensorLead1_3_1",
+          "SensorEmitter1_4",
+          "SensorLead1_4_0",
+          "SensorLead1_4_1",
+          "SensorCable",
+          "SensorPlug",
+          "SensorPlugTip",
+          "SensorPlugPin0",
+          "SensorPlugPin1",
+          "SensorStandBase",
+          "SensorStandPost",
+          "SensorStandCradle",
+          "ConsoleStand",
+          "StandAuxPlate",
+          "StandPad0",
+          "StandPad1",
+          "StandPad2",
+          "StandPad3",
+          "AVPlug",
+          "AVPlugShell",
+          "AVPlugTongue",
+          "AVPlugPin0_0",
+          "AVPlugPin0_1",
+          "AVPlugPin0_2",
+          "AVPlugPin0_3",
+          "AVPlugPin0_4",
+          "AVPlugPin0_5",
+          "AVPlugPin0_6",
+          "AVPlugPin0_7",
+          "AVPlugPin1_0",
+          "AVPlugPin1_1",
+          "AVPlugPin1_2",
+          "AVPlugPin1_3",
+          "AVPlugPin1_4",
+          "AVPlugPin1_5",
+          "AVPlugPin1_6",
+          "AVPlugPin1_7",
+          "AVCable",
+          "AVSplitter",
+          "AVBranch0",
+          "RCAGrip0",
+          "RCAColor0",
+          "RCAGround0",
+          "RCAPin0",
+          "AVBranch1",
+          "RCAGrip1",
+          "RCAColor1",
+          "RCAGround1",
+          "RCAPin1",
+          "AVBranch2",
+          "RCAGrip2",
+          "RCAColor2",
+          "RCAGround2",
+          "RCAPin2",
+          "WiiDisc",
+          "WiiDiscHub",
+          "WiiDiscMark",
+          "GCDisc",
+          "GCDiscHub",
+          "GCDiscMark",
+          "AdapterUpper",
+          "AdapterMark",
+          "AdapterACCable",
+          "AdapterDCCable",
+          "AdapterACPlug",
+          "AdapterACBlade0",
+          "AdapterACBlade1",
+          "AdapterDCPlug",
+          "AdapterDCHead",
+          "AdapterDCPin0",
+          "AdapterDCPin1"
+        ],
+        "normal": [
+          0.4,
+          -0.7,
+          2
+        ]
+      },
+      "sensor": {
+        "label": "感应条",
+        "description": "原版双五灯红外感应条及支架；拖动滑块查看内部。",
+        "groups": [
+          "Accessories"
+        ],
+        "exclude": [
+          "ConsoleStand",
+          "StandAuxPlate",
+          "StandPad0",
+          "StandPad1",
+          "StandPad2",
+          "StandPad3",
+          "AdapterLower",
+          "AdapterUpper",
+          "AdapterPCB",
+          "AdapterTransformer",
+          "AdapterWinding",
+          "AdapterBulkCap",
+          "AdapterOutputCap",
+          "AdapterOutputCoil",
+          "AdapterInputCoil",
+          "AdapterRectifier",
+          "AdapterHeatPlate",
+          "AdapterScrew0",
+          "AdapterScrew1",
+          "AdapterScrew2",
+          "AdapterScrew3",
+          "AdapterMark",
+          "AdapterACCable",
+          "AdapterACPlug",
+          "AdapterACBlade0",
+          "AdapterACBlade1",
+          "AdapterDCCable",
+          "AdapterDCPlug",
+          "AdapterDCHead",
+          "AdapterDCPin0",
+          "AdapterDCPin1",
+          "AVPlug",
+          "AVPlugShell",
+          "AVPlugTongue",
+          "AVPlugPin0_0",
+          "AVPlugPin0_1",
+          "AVPlugPin0_2",
+          "AVPlugPin0_3",
+          "AVPlugPin0_4",
+          "AVPlugPin0_5",
+          "AVPlugPin0_6",
+          "AVPlugPin0_7",
+          "AVPlugPin1_0",
+          "AVPlugPin1_1",
+          "AVPlugPin1_2",
+          "AVPlugPin1_3",
+          "AVPlugPin1_4",
+          "AVPlugPin1_5",
+          "AVPlugPin1_6",
+          "AVPlugPin1_7",
+          "AVCable",
+          "AVSplitter",
+          "AVBranch0",
+          "RCAGrip0",
+          "RCAColor0",
+          "RCAGround0",
+          "RCAPin0",
+          "AVBranch1",
+          "RCAGrip1",
+          "RCAColor1",
+          "RCAGround1",
+          "RCAPin1",
+          "AVBranch2",
+          "RCAGrip2",
+          "RCAColor2",
+          "RCAGround2",
+          "RCAPin2",
+          "WiiDisc",
+          "WiiDiscHub",
+          "WiiDiscMark",
+          "GCDisc",
+          "GCDiscHub",
+          "GCDiscMark"
+        ],
+        "normal": [
+          0.35,
+          -0.9,
+          1.8
+        ]
+      },
+      "accessories": {
+        "label": "附件",
+        "description": "感应条、支架、电源、视频线与两种空白光盘。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "fullkit": {
+        "label": "整套模型",
+        "description": "全部 654 个组件，保留零件编号、显示材料和装配层次。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Optical",
+          "Ports",
+          "GameCube",
+          "Mainboard",
+          "Cooling",
+          "Wireless",
+          "Shield",
+          "Internal",
+          "Controller",
+          "Nunchuk",
+          "Accessories"
+        ],
+        "normal": [
+          0.3,
+          -0.6,
+          2.4
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "主机与原版控制器"
+      ],
+      [
+        "front",
+        "初代白色机身"
+      ],
+      [
+        "internal",
+        "光驱与内部结构"
+      ],
+      [
+        "exploded",
+        "分层爆炸"
+      ],
+      [
+        "accessories",
+        "支架、感应条与附件"
+      ]
+    ],
+    "gzip": {
+      "bytes": 15000595,
+      "sha256": "4226371af10942571510d8bfbc51bd16ffadbf199547a7d8d9c5ae5058a611bd",
+      "decoded_sha256": "71ff358edf15baa48f079678d4c874f362ece90ccd2a80c7341bb7683f6c6956",
+      "lossless": true
+    },
+    "exposure": 0.72
   }
 ]

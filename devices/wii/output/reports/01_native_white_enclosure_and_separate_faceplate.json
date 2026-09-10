@@ -1,0 +1,204 @@
+{
+  "iteration": 1,
+  "slug": "native_white_enclosure_and_separate_faceplate",
+  "summary": "建立初代白色 RVL-001 的原生草图、拉伸与圆角外壳，独立前面板及四个横放脚垫；按 157 × 215.4 × 44 mm 横放坐标建模。",
+  "physical_components": 7,
+  "objects": [
+    {
+      "name": "LowerHousingCut",
+      "label": "RVL-001 lower enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 73706.98444919208,
+      "bounds": [
+        -78.5,
+        78.5,
+        -102.7,
+        107.7,
+        1.5,
+        21.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "wiiwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut",
+      "label": "RVL-001 upper enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 74306.86187806408,
+      "bounds": [
+        -78.5,
+        78.5,
+        -102.7,
+        107.7,
+        21.25,
+        44.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "wiiwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontBezelCut",
+      "label": "Separate original Wii faceplate001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 13861.595517084914,
+      "bounds": [
+        -78.5,
+        78.5,
+        -107.70000000000002,
+        -102.94999999999999,
+        1.5,
+        44.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontBezel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "wiiwhite",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Horizontal placement rubber pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 178.14584013175397,
+      "bounds": [
+        -71.0,
+        -63.0,
+        -94.5,
+        -79.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Horizontal placement rubber pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 178.14584013175397,
+      "bounds": [
+        63.0,
+        71.0,
+        -94.5,
+        -79.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Horizontal placement rubber pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 178.14584013175397,
+      "bounds": [
+        -71.0,
+        -63.0,
+        81.5,
+        96.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Horizontal placement rubber pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 178.14584013175397,
+      "bounds": [
+        63.0,
+        71.0,
+        81.5,
+        96.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published envelope; approximate photographic exterior detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/wii/output/iterations/01_native_white_enclosure_and_separate_faceplate.FCStd",
+  "views": [
+    "devices/wii/output/previews/01_native_white_enclosure_and_separate_faceplate_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
