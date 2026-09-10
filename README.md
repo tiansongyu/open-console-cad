@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **13 款设备、7,282 个组件与 156 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **14 款设备、7,989 个组件与 168 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -106,14 +106,19 @@
       <sub>RVL-001 · 初代白色</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=wii&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/wii/README.md">设备说明</a> · <a href="devices/wii/output/drawings/Wii_Drawings.pdf">A3 图纸</a>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=wiiu&amp;view=assembled#viewer"><img src="site/public/images/wiiu/hero.webp" width="206" height="160" alt="Nintendo Wii U 首发白色 Basic 主机与原版 GamePad 的 FreeCAD 模型"></a><br>
+      <strong>Nintendo Wii U</strong><br>
+      <sub>WUP-001 · 首发白色 Basic</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=wiiu&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/wiiu/README.md">设备说明</a> · <a href="devices/wiiu/output/drawings/WiiU_Drawings.pdf">A3 图纸</a>
+    </td>
     <td width="33%"></td>
   </tr>
 </table>
 
-网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，以及 Wii 的吸入式光驱、原版遥控器、双节棍和感应条。
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，以及 Wii U 的双芯片主板、GamePad 内部与双电源附件。
 
-制作进度：PlayStation、PlayStation 2、Wii U 与 Sega Saturn 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
+制作进度：PlayStation、PlayStation 2 与 Sega Saturn 正在扩展清单中，完成验证后加入模型库。详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。
 
 ## 快速开始
 

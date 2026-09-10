@@ -3593,5 +3593,622 @@
       "lossless": true
     },
     "exposure": 0.72
+  },
+  {
+    "exposure": 0.72,
+    "id": "wiiu",
+    "title": "Nintendo Wii U",
+    "prefix": "WiiU",
+    "model": "WUP-001 · 首发白色 Basic",
+    "count": 707,
+    "iterations": 22,
+    "pages": 12,
+    "bytes": 39003224,
+    "family": "console",
+    "views": {
+      "assembled": {
+        "label": "主机与 GamePad",
+        "description": "首发白色 Basic 8 GB 主机与原版 WUP-010 GamePad。",
+        "groups": [
+          "Body",
+          "Optical",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Cooling",
+          "Wireless",
+          "Shield",
+          "Internal",
+          "Controller",
+          "Display",
+          "PadInternal"
+        ],
+        "normal": [
+          0.25,
+          -0.7,
+          2.5
+        ]
+      },
+      "console": {
+        "label": "主机",
+        "description": "圆角长壳、吸入式光盘槽、前 SD / USB 门和背部接口。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "Cooling",
+          "Wireless"
+        ],
+        "normal": [
+          0.2,
+          -1.5,
+          0.9
+        ]
+      },
+      "internal": {
+        "label": "主机内部",
+        "description": "移开上壳、上部屏蔽与光驱顶盖，观察内部装配层次。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "Cooling",
+          "Wireless"
+        ],
+        "exclude": [
+          "UpperHousing",
+          "FrontFlap",
+          "MainShield",
+          "DriveTopShield",
+          "DriveLidRib0",
+          "DriveLidRib1",
+          "DriveLidRib2",
+          "DriveLidRib3",
+          "DriveLidRib4"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "exploded": {
+        "label": "主机爆炸",
+        "description": "按交付位移分开主机壳体、光驱、板件与散热部件。",
+        "groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Shield",
+          "Optical",
+          "Internal",
+          "Cooling",
+          "Wireless"
+        ],
+        "explode": 1,
+        "normal": [
+          1.4,
+          -0.4,
+          0.6
+        ]
+      },
+      "gamepad": {
+        "label": "GamePad",
+        "description": "原版曲面双握柄、6.2 英寸触摸屏、双摇杆、按键与独立电池盖。",
+        "groups": [
+          "Controller",
+          "Display",
+          "PadInternal"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "gamepad-internal": {
+        "label": "GamePad 内部",
+        "description": "主板、按键板、无线和 NFC、原版 1500 mAh 电池与线束。",
+        "groups": [
+          "PadInternal"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          -2.4
+        ]
+      },
+      "gamepad-exploded": {
+        "label": "GamePad 爆炸",
+        "description": "分开曲面前后壳、显示层、控制机构与内部板件。",
+        "groups": [
+          "Controller",
+          "Display",
+          "PadInternal"
+        ],
+        "explode": 1,
+        "normal": [
+          1.4,
+          -0.4,
+          0.6
+        ]
+      },
+      "analog": {
+        "label": "双摇杆机构",
+        "description": "回中弹簧、电位器、支承、轴与凹面帽盖的学习结构。",
+        "groups": [
+          "Controller",
+          "PadInternal"
+        ],
+        "exclude": [
+          "PadBack",
+          "PadFront",
+          "PadDPad",
+          "PadA",
+          "PadAMark",
+          "PadB",
+          "PadBMark",
+          "PadX",
+          "PadXMark",
+          "PadY",
+          "PadYMark",
+          "PadPlus",
+          "PadPlusMark",
+          "PadMinus",
+          "PadMinusMark",
+          "PadHome",
+          "PadTV",
+          "PadTVMark",
+          "PadPower",
+          "HomeLightRing",
+          "HomeSymbol",
+          "PadPowerSymbol",
+          "CameraIRWindow",
+          "CameraLens",
+          "NFCMark",
+          "PadBrand",
+          "MicHoleInsert",
+          "BatteryLampInsert",
+          "SpeakerOpening-1",
+          "SpeakerOpening1",
+          "PadBatteryDoor",
+          "PadL",
+          "PadLMark",
+          "PadZL",
+          "PadR",
+          "PadRMark",
+          "PadZR",
+          "PadVolume",
+          "PadAudioJack",
+          "PadChargeSocket",
+          "PadChargePin0",
+          "PadChargePin1",
+          "PadExtension",
+          "PadExtensionTongue",
+          "PadExtensionPin0",
+          "PadExtensionPin1",
+          "PadExtensionPin2",
+          "PadExtensionPin3",
+          "PadExtensionPin4",
+          "PadExtensionPin5",
+          "PadExtensionPin6",
+          "PadExtensionPin7",
+          "PadExtensionPin8",
+          "PadExtensionPin9",
+          "PadExtensionPin10",
+          "PadExtensionPin11",
+          "PadDockPad-1",
+          "PadDockPad1",
+          "PadMainPCB",
+          "UIC",
+          "UICMark",
+          "DRC",
+          "DRCMark",
+          "TouchIC",
+          "TouchICMark",
+          "PadAudioIC",
+          "PadAudioICMark",
+          "PadGyro",
+          "PadGyroMark",
+          "PadSMD0",
+          "PadSMD1",
+          "PadSMD2",
+          "PadSMD3",
+          "PadSMD4",
+          "PadSMD5",
+          "PadSMD6",
+          "PadSMD7",
+          "PadSMD8",
+          "PadSMD9",
+          "PadSMD10",
+          "PadSMD11",
+          "PadSMD12",
+          "PadSMD13",
+          "PadSMD14",
+          "PadSMD15",
+          "PadSMD16",
+          "PadSMD17",
+          "PadRadioPCB",
+          "PadRadioIC",
+          "PadRadioShield",
+          "PadNFCPCB",
+          "PadNFCIC",
+          "PadNFCAntenna",
+          "PadBattery",
+          "PadBatteryLabel",
+          "PadBatteryText",
+          "PadButtonPCB-1",
+          "PadSpeaker-1",
+          "PadSpeakerCone-1",
+          "PadSpeakerMagnet-1",
+          "PadButtonPCB1",
+          "PadSpeaker1",
+          "PadSpeakerCone1",
+          "PadSpeakerMagnet1",
+          "PadBottomPCB",
+          "PadCameraPCB",
+          "PadCamera",
+          "PadIREmitter-1",
+          "PadIREmitter1",
+          "PadMicrophone",
+          "PadDPadCarbon",
+          "PadDPadDome",
+          "PadACarbon",
+          "PadADome",
+          "PadBCarbon",
+          "PadBDome",
+          "PadXCarbon",
+          "PadXDome",
+          "PadYCarbon",
+          "PadYDome",
+          "PadPlusCarbon",
+          "PadPlusDome",
+          "PadMinusCarbon",
+          "PadMinusDome",
+          "PadHomeCarbon",
+          "PadHomeDome",
+          "PadTVCarbon",
+          "PadTVDome",
+          "PadPowerCarbon",
+          "PadPowerDome",
+          "PadCarrierDirection",
+          "PadCarrierABXY",
+          "PadShoulderPCB-1",
+          "PadShoulderSwitch-1",
+          "PadRearTriggerPCB-1",
+          "PadRearTriggerSwitch-1",
+          "PadShoulderPCB1",
+          "PadShoulderSwitch1",
+          "PadRearTriggerPCB1",
+          "PadRearTriggerSwitch1",
+          "PadRumbleMotor",
+          "PadRumbleWeight",
+          "PadCaseScrew0",
+          "PadCaseScrew1",
+          "PadCaseScrew2",
+          "PadCaseScrew3",
+          "PadCaseScrew4",
+          "PadCaseScrew5",
+          "PadCaseScrew6",
+          "PadCaseScrew7",
+          "PadBatteryScrew0",
+          "PadBatteryScrew1",
+          "PadBoardScrew0",
+          "PadBoardStandoff0",
+          "PadBoardScrew1",
+          "PadBoardStandoff1",
+          "PadBoardScrew2",
+          "PadBoardStandoff2",
+          "PadBoardScrew3",
+          "PadBoardStandoff3",
+          "PadControlSocket-1",
+          "PadButtonFlex-1",
+          "PadControlSocket1",
+          "PadButtonFlex1",
+          "PadDisplaySocket",
+          "PadBottomSocket",
+          "PadBottomFlex",
+          "PadNFCFlex",
+          "PadBatterySocket",
+          "PadBatteryLead0",
+          "PadBatteryLead1",
+          "PadBatteryLead2",
+          "PadBatteryLead3",
+          "PadSpeakerLead-1_0",
+          "PadSpeakerLead-1_1",
+          "PadSpeakerLead1_0",
+          "PadSpeakerLead1_1",
+          "PadMicrophoneLead0",
+          "PadMicrophoneLead1",
+          "PadAntenna-1",
+          "PadRadioLead-1",
+          "PadAntenna1",
+          "PadRadioLead1"
+        ],
+        "normal": [
+          0.6,
+          -1,
+          1.4
+        ]
+      },
+      "display": {
+        "label": "显示与触摸",
+        "description": "LCD 背板、框架、显示层、触摸层与独立软排线。",
+        "groups": [
+          "Display"
+        ],
+        "normal": [
+          0.5,
+          -0.8,
+          2
+        ],
+        "explode": 0.35
+      },
+      "mainboard": {
+        "label": "Basic 主板",
+        "description": "多芯片载板、四枚 DDR3L、8 GB eMMC 和分区器件的学习布局。",
+        "groups": [
+          "Mainboard"
+        ],
+        "normal": [
+          0,
+          0,
+          2.4
+        ]
+      },
+      "optical": {
+        "label": "吸入式光驱",
+        "description": "滚轮、齿轮、主轴、压盘、双导轨光头和连接线。",
+        "groups": [
+          "Optical"
+        ],
+        "exclude": [
+          "DriveTopShield",
+          "DriveLidRib0",
+          "DriveLidRib1",
+          "DriveLidRib2",
+          "DriveLidRib3",
+          "DriveLidRib4"
+        ],
+        "normal": [
+          0.3,
+          -0.7,
+          2.4
+        ]
+      },
+      "cooling": {
+        "label": "散热与风道",
+        "description": "共用鳍片散热器、偏置风道与七叶后排风扇。",
+        "groups": [
+          "Cooling"
+        ],
+        "normal": [
+          0.6,
+          -0.8,
+          1.4
+        ]
+      },
+      "wireless": {
+        "label": "三组无线模块",
+        "description": "主板背侧三块无线模块、独立屏蔽罩与天线线。",
+        "groups": [
+          "Wireless"
+        ],
+        "normal": [
+          0,
+          0,
+          -2.4
+        ]
+      },
+      "power": {
+        "label": "双电源内部",
+        "description": "主机与 GamePad 的独立供电结构；器件和尺寸为学习示意。",
+        "groups": [
+          "Accessories"
+        ],
+        "exclude": [
+          "StylusBarrel",
+          "StylusTip",
+          "StylusCap",
+          "HDMICable",
+          "HDMIGrip0",
+          "HDMIRelief0",
+          "HDMIHead0",
+          "HDMIPlugTongue0",
+          "HDMIPlugPin0_0_0",
+          "HDMIPlugPin0_0_1",
+          "HDMIPlugPin0_0_2",
+          "HDMIPlugPin0_0_3",
+          "HDMIPlugPin0_0_4",
+          "HDMIPlugPin0_0_5",
+          "HDMIPlugPin0_0_6",
+          "HDMIPlugPin0_0_7",
+          "HDMIPlugPin0_0_8",
+          "HDMIPlugPin0_0_9",
+          "HDMIPlugPin0_1_0",
+          "HDMIPlugPin0_1_1",
+          "HDMIPlugPin0_1_2",
+          "HDMIPlugPin0_1_3",
+          "HDMIPlugPin0_1_4",
+          "HDMIPlugPin0_1_5",
+          "HDMIPlugPin0_1_6",
+          "HDMIPlugPin0_1_7",
+          "HDMIPlugPin0_1_8",
+          "HDMIGrip1",
+          "HDMIRelief1",
+          "HDMIHead1",
+          "HDMIPlugTongue1",
+          "HDMIPlugPin1_0_0",
+          "HDMIPlugPin1_0_1",
+          "HDMIPlugPin1_0_2",
+          "HDMIPlugPin1_0_3",
+          "HDMIPlugPin1_0_4",
+          "HDMIPlugPin1_0_5",
+          "HDMIPlugPin1_0_6",
+          "HDMIPlugPin1_0_7",
+          "HDMIPlugPin1_0_8",
+          "HDMIPlugPin1_0_9",
+          "HDMIPlugPin1_1_0",
+          "HDMIPlugPin1_1_1",
+          "HDMIPlugPin1_1_2",
+          "HDMIPlugPin1_1_3",
+          "HDMIPlugPin1_1_4",
+          "HDMIPlugPin1_1_5",
+          "HDMIPlugPin1_1_6",
+          "HDMIPlugPin1_1_7",
+          "HDMIPlugPin1_1_8",
+          "ConsoleACUpper",
+          "ConsoleACMark",
+          "ConsoleACRelief-1",
+          "ConsoleACRelief1",
+          "GamePadACUpper",
+          "GamePadACMark",
+          "GamePadACRelief-1",
+          "GamePadACRelief1",
+          "ConsoleACCord",
+          "ConsoleACPlug",
+          "ConsoleACPlugBlade0",
+          "ConsoleACPlugBlade1",
+          "ConsoleACDCCord",
+          "ConsoleACDCGrip",
+          "ConsoleACDCHead",
+          "ConsoleACDCPin0",
+          "ConsoleACDCPin1",
+          "GamePadACCord",
+          "GamePadACPlug",
+          "GamePadACPlugBlade0",
+          "GamePadACPlugBlade1",
+          "GamePadACDCCord",
+          "GamePadACDCGrip",
+          "GamePadACDCHead",
+          "GamePadACDCPin0",
+          "GamePadACDCPin1",
+          "HDMIGrip0",
+          "HDMIRelief0",
+          "HDMIHead0",
+          "HDMIPlugTongue0",
+          "HDMIPlugPin0_0_0",
+          "HDMIPlugPin0_0_1",
+          "HDMIPlugPin0_0_2",
+          "HDMIPlugPin0_0_3",
+          "HDMIPlugPin0_0_4",
+          "HDMIPlugPin0_0_5",
+          "HDMIPlugPin0_0_6",
+          "HDMIPlugPin0_0_7",
+          "HDMIPlugPin0_0_8",
+          "HDMIPlugPin0_0_9",
+          "HDMIPlugPin0_1_0",
+          "HDMIPlugPin0_1_1",
+          "HDMIPlugPin0_1_2",
+          "HDMIPlugPin0_1_3",
+          "HDMIPlugPin0_1_4",
+          "HDMIPlugPin0_1_5",
+          "HDMIPlugPin0_1_6",
+          "HDMIPlugPin0_1_7",
+          "HDMIPlugPin0_1_8",
+          "HDMIGrip1",
+          "HDMIRelief1",
+          "HDMIHead1",
+          "HDMIPlugTongue1",
+          "HDMIPlugPin1_0_0",
+          "HDMIPlugPin1_0_1",
+          "HDMIPlugPin1_0_2",
+          "HDMIPlugPin1_0_3",
+          "HDMIPlugPin1_0_4",
+          "HDMIPlugPin1_0_5",
+          "HDMIPlugPin1_0_6",
+          "HDMIPlugPin1_0_7",
+          "HDMIPlugPin1_0_8",
+          "HDMIPlugPin1_0_9",
+          "HDMIPlugPin1_1_0",
+          "HDMIPlugPin1_1_1",
+          "HDMIPlugPin1_1_2",
+          "HDMIPlugPin1_1_3",
+          "HDMIPlugPin1_1_4",
+          "HDMIPlugPin1_1_5",
+          "HDMIPlugPin1_1_6",
+          "HDMIPlugPin1_1_7",
+          "HDMIPlugPin1_1_8"
+        ],
+        "normal": [
+          0.4,
+          -0.7,
+          2
+        ]
+      },
+      "accessories": {
+        "label": "Basic 附件",
+        "description": "两块原装形式电源、HDMI 线与触控笔，线缆为展示长度。",
+        "groups": [
+          "Accessories"
+        ],
+        "normal": [
+          0.2,
+          -0.5,
+          2.4
+        ]
+      },
+      "fullkit": {
+        "label": "整套模型",
+        "description": "全部 707 个组件，保留编号、材料分色及装配分组。",
+        "groups": [
+          "Body",
+          "Optical",
+          "Controls",
+          "Ports",
+          "Mainboard",
+          "Cooling",
+          "Wireless",
+          "Shield",
+          "Internal",
+          "Controller",
+          "Display",
+          "PadInternal",
+          "Accessories"
+        ],
+        "normal": [
+          0.3,
+          -0.6,
+          2.4
+        ]
+      }
+    },
+    "gallery": [
+      [
+        "hero",
+        "主机与原版 GamePad"
+      ],
+      [
+        "front",
+        "首发白色机身"
+      ],
+      [
+        "internal",
+        "光驱与内部结构"
+      ],
+      [
+        "exploded",
+        "分层爆炸"
+      ],
+      [
+        "accessories",
+        "双电源、HDMI 与触控笔"
+      ]
+    ],
+    "gzip": {
+      "bytes": 16684778,
+      "sha256": "5cc31c27ac5bd1873123859539b0557b546aa92a7a2f5b4ad69e1694ac4f8373",
+      "decoded_sha256": "d717ee48151802586926435e74c176aa88c6e75c25d48dc9c905f78734eb244b",
+      "lossless": true
+    }
   }
 ]

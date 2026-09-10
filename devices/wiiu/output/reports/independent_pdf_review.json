@@ -1,0 +1,265 @@
+{
+  "passed": true,
+  "artifact": "devices/wiiu/output/drawings/WiiU_Drawings.pdf",
+  "artifact_sha256": "a73c31a5ed7d0ac8c5d5685aeb15f71b9b5f0060c3ac23895dccccc73edb65f3",
+  "reviewed_at_utc": "2026-09-10T06:02:50.929727+00:00",
+  "reviewer_role": "Isolated independent PDF reviewer; separate from document builder",
+  "review_scope": "Read-only review of the delivered PDF, existing page renders, content contract and supporting source/inventory/native drawing evidence. No PDF or CAD regeneration; only this report was authored.",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "page_count": 12,
+  "page_format": {
+    "name": "A3 landscape",
+    "width_mm": 420,
+    "height_mm": 297,
+    "all_pages_match": true
+  },
+  "findings": [],
+  "p0_findings": 0,
+  "p1_findings": 0,
+  "method": [
+    "Read Kami and PDF skills, content.json brief, SOURCES.md and DRAWING_CONTRACT.md; independently viewed all 12 existing rendered PNGs.",
+    "Direct PDF page/text/font analysis; read-only Kami content, font, style, placeholder and density gates rerun.",
+    "CSV totals and stage entry files independently counted; native archive structure and existing dimension readback evidence reviewed.",
+    "Nintendo primary specifications and launch package, plus original iFixit teardown, checked; final PDF SHA-256 remained unchanged."
+  ],
+  "checks": {
+    "contract": {
+      "passed": true,
+      "brief": "devices/wiiu/output/drawings/content.json",
+      "drawing_contract": "devices/wiiu/references/DRAWING_CONTRACT.md",
+      "language": "cn",
+      "template": "Kami long-doc, existing A3 landscape adaptation",
+      "page_target": 12
+    },
+    "visual": {
+      "passed": true,
+      "all_pages_independently_viewed": true,
+      "clipped_main_text": false,
+      "blocking_figure_overlap": false,
+      "missing_glyphs_observed": false,
+      "consistent_headers_footers_and_numbering": true,
+      "evidence": [
+        {
+          "page": 1,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-01.png",
+          "passed": true
+        },
+        {
+          "page": 2,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-02.png",
+          "passed": true
+        },
+        {
+          "page": 3,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-03.png",
+          "passed": true
+        },
+        {
+          "page": 4,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-04.png",
+          "passed": true
+        },
+        {
+          "page": 5,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-05.png",
+          "passed": true
+        },
+        {
+          "page": 6,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-06.png",
+          "passed": true
+        },
+        {
+          "page": 7,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-07.png",
+          "passed": true
+        },
+        {
+          "page": 8,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-08.png",
+          "passed": true
+        },
+        {
+          "page": 9,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-09.png",
+          "passed": true
+        },
+        {
+          "page": 10,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-10.png",
+          "passed": true
+        },
+        {
+          "page": 11,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-11.png",
+          "passed": true
+        },
+        {
+          "page": 12,
+          "image": "devices/wiiu/output/drawings/WiiU_Drawings-visual/page-12.png",
+          "passed": true
+        }
+      ]
+    },
+    "font": {
+      "passed": true,
+      "kami_check_fonts_rerun": true,
+      "cjk_family": "TsangerJinKai02",
+      "cjk_ideographs": 3919,
+      "independent_pdf_span_result": {
+        "TsangerJinKai02": 3919
+      },
+      "text_spans_outside_page": 0
+    },
+    "content_coverage": {
+      "passed": true,
+      "kami_check_content_rerun": true,
+      "atomic_values_present": 20,
+      "prose_fields_not_required_verbatim": 30,
+      "required_model_identifiers_present": [
+        "WUP-001",
+        "WUP-010",
+        "WUP-002",
+        "WUP-011"
+      ],
+      "summary_totals_present_on_pages": [
+        1,
+        11,
+        12
+      ]
+    },
+    "style_placeholders_density": {
+      "passed": true,
+      "style": "No style drift",
+      "placeholders": "No placeholders",
+      "density": "No density issues",
+      "all_three_gates_rerun": true
+    },
+    "component_inventory": {
+      "passed": true,
+      "csv": "devices/wiiu/output/COMPONENTS.csv",
+      "component_rows": 707,
+      "summed_solids": 1039,
+      "iteration_script_count": 22,
+      "iteration_range": [
+        1,
+        22
+      ],
+      "page_11_assembly_counts": [
+        16,
+        59,
+        7,
+        80,
+        170,
+        14,
+        30,
+        2,
+        15,
+        76,
+        7,
+        127,
+        104
+      ],
+      "counts_match_pdf": true
+    },
+    "official_envelopes_and_study_estimates": {
+      "passed": true,
+      "console_body_mm": [
+        172,
+        268.5,
+        46
+      ],
+      "gamepad_body_mm": [
+        255.4,
+        133.4,
+        41
+      ],
+      "excludes_protrusions": true,
+      "official_envelope_text_pages": [
+        1,
+        3,
+        12
+      ],
+      "local_and_accessory_approximation_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "local_numeric_annotations_marked_approximate": true,
+      "source": "https://www.nintendo.co.jp/hardware/wiiu/specs/index.html"
+    },
+    "selected_version_and_package": {
+      "passed": true,
+      "selected_version": "Launch white Basic 8 GB WUP-001 with original WUP-010 GamePad",
+      "original_battery_mah": 1500,
+      "included_accessories": [
+        "WUP-002 console adapter",
+        "WUP-011 GamePad adapter",
+        "HDMI cable",
+        "WUP-015 stylus"
+      ],
+      "premium_stands_excluded": true,
+      "sources": [
+        "https://www.nintendo.co.jp/corporate/release/2012/120913.html",
+        "https://www.ifixit.com/Teardown/Nintendo+Wii+U+Teardown/11796"
+      ],
+      "evidence_pages": [
+        1,
+        4,
+        10,
+        12
+      ]
+    },
+    "saved_brep_projection_and_sections": {
+      "passed": true,
+      "source_files": [
+        "devices/wiiu/scripts/drawing_geometry.py",
+        "tools/cadlib/drawings.py"
+      ],
+      "view_metadata": "devices/wiiu/output/drawings/drawing_pages.json",
+      "dimension_evidence": "devices/wiiu/output/reports/drawing_checks.json",
+      "reviewed_evidence": "Code opens saved CAD Shapes for projections and sections; view metadata records components, poses and cut planes; all 14 dimension values agree with measurement evidence.",
+      "kernel_operations_rerun_by_reviewer": false
+    },
+    "native_techdraw": {
+      "passed": true,
+      "artifact": "devices/wiiu/output/WiiU_Drawings.FCStd",
+      "archive_page_object_count": 12,
+      "archive_dimension_object_count": 14,
+      "readback_report": "devices/wiiu/output/reports/native_drawings_audit.json",
+      "readback_dimension_checks_passed": 14,
+      "max_readback_error_mm": 1e-09,
+      "evidence_boundary": "Native archive structure independently inspected; numerical measurement results reviewed from the native audit, not recomputed in this PDF review."
+    },
+    "identity_and_scope": {
+      "passed": true,
+      "part_number_scheme": "WIIU-0001 through WIIU-0707",
+      "pdf_index_and_csv_agree": true,
+      "display_materials_are_not_manufacturing_grades": true,
+      "internal_geometry_is_not_a_production_pcb_or_kinematic_validation": true,
+      "web_and_full_cad_functionality": "Outside this bounded PDF review; checked separately by the main task."
+    }
+  }
+}

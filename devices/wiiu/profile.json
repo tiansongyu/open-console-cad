@@ -14,7 +14,7 @@
     0.9,
     0.88
   ],
-  "stages": 16,
+  "stages": 22,
   "main_step_suffix": "Console",
   "envelope_groups": [
     "Body",
@@ -75,5 +75,23 @@
   ],
   "parameter_basis": "Published body envelope; local details approximate",
   "exterior_fidelity": "Published envelope; approximate photographic exterior detail",
-  "fidelity": "Published envelope; approximate exterior details and schematic major internals"
+  "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -90,
+      0
+    ],
+    "PadInternal": [
+      0,
+      -90,
+      0
+    ],
+    "Display": [
+      0,
+      -90,
+      0
+    ]
+  },
+  "envelope_basis": "Published plastic body 172 × 268.5 × 46 mm; protruding feet and controls measured separately"
 }

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "pdf": "devices/wiiu/output/drawings/WiiU_Drawings.pdf",
+  "pdf_sha256": "a73c31a5ed7d0ac8c5d5685aeb15f71b9b5f0060c3ac23895dccccc73edb65f3",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_atomic_values": 20,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "visual_findings": [],
+  "corrections": [
+    "Separate the LCD and touch layers in the detail view",
+    "Expose analog spring and two-axis feedback components",
+    "Use oblique ABXY view to show control stems and domes",
+    "Enlarge one rear trigger assembly",
+    "Show the rear fan alongside the offset duct and heatsink"
+  ],
+  "scope": "CAD-derived drawing review; official body envelopes remain distinct from local study dimensions."
+}

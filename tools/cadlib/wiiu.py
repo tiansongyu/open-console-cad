@@ -532,4 +532,221 @@ def stage16(m):
     m.profile['stages']=16
     m.checkpoint(16,'case_column_fit_and_native_surface_continuity','依据全装配求交移动下部螺柱并补齐按键板和支承框的通孔；保留壳体分段曲面以避免自动合并损坏曲线，并执行全部组件严格实体检查。')
 
-STAGES=[stage01,stage02,stage03,stage04,stage05,stage06,stage07,stage08,stage09,stage10,stage11,stage12,stage13,stage14,stage15,stage16]
+
+def stage17(m):
+    from .atari2600 import _rounded_route
+    from .ps1 import _yz_strip
+    # Connector locations and conductor counts are study approximations.
+    for key in ['DriveData','DriveDataLatch']:
+        obj=m.parts[key];obj.Placement.Base+=V(27,0,0);obj.FlatPlacement=obj.Placement
+    m.box('DriveDataEnd','Drive underside ribbon connector',20,4,1,(-8,-94,20.45),'Optical',1,'cream',.4,True)
+    polygon=[(-108,10.55),(-104,10.55),(-100,14.3),(-96,14.3),(-96,20.2),(-94,20.2),(-94,20.4),(-96.2,20.4),(-96.2,14.5),(-100.1,14.5),(-104.1,10.75),(-108,10.75)]
+    m.feature('DriveRibbon','Folded optical data flex study',_yz_strip(-17,18,polygon),'Optical',1,'copper',True)
+    m.cut('MainShield',m.rr(20,5,1,(-8,-96,15.7),.5),'Data flex shield passage')
+    m.box('DrivePowerEnd','Drive underside power connector',8,4,1,(24,-94,20.45),'Optical',1,'cream',.4,True)
+    for i in range(4):
+        x=-64.4+i*1.2;end=22.2+i*1.2;y=-117-i*.8
+        pts=[V(x,-112,10.55),V(x,-112,14.0),V(x,y,14),V(end,y,14),V(end,-99,14),V(end,-99,20.0),V(end,-94,20.0)]
+        m.feature('DrivePowerLead'+str(i),'Optical power lead study',_rounded_route(pts,.3,.18),'Optical',1,'black' if i%2 else 'red',True)
+    m.cut('MainShield',m.rr(7,3,1,(24,-99,15.7),.5),'Drive power lead shield passage')
+    for i in range(2):
+        x=-70+i*.9;y=117+i*.8
+        pts=[V(x,106,10.55),V(x,106,14.5),V(x,y,14.5),V(-49-i*.8,y,14.5),V(-49-i*.8,y,23+i),V(-49-i*.8,126,23+i),V(-46.4,126,23+i)]
+        m.feature('FanLead'+str(i),'Rear cooling fan power lead',_rounded_route(pts,.3,.16),'Cooling',1,'red' if i==0 else 'black',True)
+    # Three radio assemblies, each with a schematic pair of miniature coax leads.
+    for bank,(key,x,y,w,h) in enumerate([('Wifi',-52,-80,31,24),('Stream',50,-64,34,25),('Bluetooth',-52,65,28,22)]):
+        side=1 if x>0 else -1
+        for i,xx in enumerate([x-w/2+3,x+w/2-3]):
+            yy=y+h/2-3;z=5.2+i*.4;endx=side*(81+i*.9);endy=y-5+i*11
+            # The socket centre is open; a board bore carries the lead to the upper side.
+            m.cut(key+'PCB',Part.makeCylinder(.5,1,V(xx,yy,3.8)),'Coax socket conductor passage')
+            pts=[V(xx,yy,3.35),V(xx,yy,z),V(xx,y+h/2+1+i,z),V(endx,y+h/2+1+i,z),V(endx,endy,z),V(endx,endy,13)]
+            m.feature(key+'Lead'+str(i),'Radio antenna coax study',_rounded_route(pts,.18,.13),'Wireless',-1,'black' if i==0 else 'wiiuwhite',True)
+            m.box(key+'Antenna'+str(i),'Case-side antenna foil study',.035,7,4,(endx,endy,13.2),'Wireless',0,'copper',.01,True)
+    m.doc.recompute()
+    m.profile['stages']=17
+    m.checkpoint(17,'console_data_power_fan_and_radio_harnesses','加入主机光驱数据软排线、独立供电导线、后排风扇线束与三组无线模块天线线，并在屏蔽板和无线小板保留走线通道；接点数量与局部走线为学习近似。')
+
+
+def _xz_flex(y,width,points):
+    return Part.Face(Part.makePolygon([V(x,y,z) for x,z in points+[points[0]]])).extrude(V(0,width,0))
+
+
+def stage18(m):
+    from .atari2600 import _rounded_route
+    from .ps1 import _yz_strip
+    cy=-275
+    # Independent broad flexes preserve the visibly separate button / display boards.
+    for side in [-1,1]:
+        x=side*66
+        m.box('PadControlSocket'+str(side),'Mainboard button-flex connector',10,7,.9,(x,cy+3,27.1),'PadInternal',1,'cream',.3,True)
+        points=[(side*66,28.15),(side*83,28.15),(side*89,29.55),(side*98,29.55),(side*98,29.75),(side*88.95,29.75),(side*82.95,28.35),(side*66,28.35)]
+        m.feature('PadButtonFlex'+str(side),'Blue button-board flexible interconnect',_xz_flex(cy,6,points),'PadInternal',1,'ublue',True)
+    m.box('PadDisplaySocket','Mainboard display-flex connector',22,5,.9,(17,cy+14,27.1),'PadInternal',1,'cream',.3,True)
+    pts=[(cy+14,28.15),(cy+2.8,28.15),(cy+2.8,33.85),(cy+12,33.85),(cy+12,33.65),(cy+3,33.65),(cy+3,28.35),(cy+14,28.35)]
+    m.feature('PadDisplayFlex','Folded LCD display flex',_yz_strip(8,18,pts),'Display',0,'copper',True)
+    m.cut('DisplaySupport',m.rr(20,3,2,(17,cy+3,31.1),.4),'Display flex support-frame passage')
+    m.box('PadBottomSocket','Mainboard lower-button flex connector',9,4,.9,(62,cy-10,27.1),'PadInternal',1,'cream',.3,True)
+    pts=[(cy-10,28.15),(cy-48,28.15),(cy-48,29.65),(cy-52,29.65),(cy-52,29.85),(cy-47.8,29.85),(cy-47.8,28.35),(cy-10,28.35)]
+    m.feature('PadBottomFlex','HOME and television control flex',_yz_strip(58,8,pts),'PadInternal',1,'wiiuwhite',True)
+    nfc=[(-98,cy-30),(-89,cy-30),(-76,cy-18),(-67,cy-18),(-67,cy-14),(-77.5,cy-14),(-90.5,cy-26),(-98,cy-26)]
+    m.feature('PadNFCFlex','NFC board flex study',_poly(nfc,28.55,.18),'PadInternal',1,'ublue',True)
+    m.box('PadBatterySocket','Four-position battery connector study',7,4,2.1,(43,cy+15,23.65),'PadInternal',0,'cream',.4,True)
+    for i in range(4):
+        y=cy-20+i*.65;x=31+i*.55
+        pts=[V(27.25,y,17.5),V(x,y,17.5),V(x,y,21.3+i*.25),V(x,cy+15+i*.65,21.3+i*.25),V(41+i*1.2,cy+15+i*.65,21.3+i*.25),V(41+i*1.2,cy+15+i*.65,23.45)]
+        m.feature('PadBatteryLead'+str(i),'Battery power / sensing lead study',_rounded_route(pts,.2,.12),'PadInternal',-1,['red','black','white','yellow'][i],True)
+    for side in [-1,1]:
+        for i in range(2):
+            sx=side*65;edge=side*(82+i*.8);ex=-98 if side<0 else 107;ey=cy-49 if side<0 else cy-43
+            y=cy-18-i*.7 if side<0 else cy-10-i*.7
+            pts=[V(sx,y,28.3),V(edge,y,28.3),V(edge,ey+i*.65,28.3),V(side*(90+i*.8),ey+i*.65,28.3),V(side*(90+i*.8),ey+i*.65,35.1),V(ex,ey+i*.65,35.1)]
+            m.feature('PadSpeakerLead'+str(side)+'_'+str(i),'Stereo speaker lead',_rounded_route(pts,.2,.13),'PadInternal',1,'red' if i==0 else 'black',True)
+    for i in range(2):
+        pts=[V(-20+i*.7,cy-53,36.2),V(-20+i*.7,cy-49,36.2),V(-20+i*.7,cy-49,29.15),V(5+i*.7,cy-49,29.15),V(5+i*.7,cy-53,29.15)]
+        m.feature('PadMicrophoneLead'+str(i),'Microphone interconnect lead',_rounded_route(pts,.2,.11),'PadInternal',1,'black' if i else 'red',True)
+    for side in [-1,1]:
+        x=side*83
+        m.box('PadAntenna'+str(side),'GamePad side antenna study',.04,16,4,(x,cy+31,22),'PadInternal',-1,'copper',.01,True)
+        pts=[V(-67+side*4,cy-3,25),V(-67+side*4,cy+5,25),V(-67+side*4,cy+5,21),V(x,cy+5,21),V(x,cy+31,21),V(x,cy+31,21.8)]
+        m.feature('PadRadioLead'+str(side),'GamePad radio coax lead',_rounded_route(pts,.15,.12),'PadInternal',-1,'black' if side<0 else 'wiiuwhite',True)
+    m.profile['stages']=18
+    m.checkpoint(18,'gamepad_flex_cables_battery_audio_and_radio_wiring','加入显示、双侧按键、底部控制与 NFC 软排线，补齐电池、立体声扬声器、麦克风和无线天线连接；保留独立组件及显示支架通道，线数和局部路径为示意。')
+
+
+def stage19(m):
+    from .atari2600 import _rounded_route
+    for i in range(4):
+        x=-64.4+i*1.2;end=22.2+i*1.2;y=-105-i*.8;z=14.0+i*.4
+        pts=[V(x,-112,10.55),V(x,-112,z),V(x,y,z),V(end,y,z),V(end,-99,z),V(end,-99,20.0),V(end,-94,20.0)]
+        obj=m.parts['DrivePowerLead'+str(i)];obj.Shape=_rounded_route(pts,.3,.18);obj.FlatPlacement=obj.Placement
+    for i in range(2):
+        x=-70+i*.9;y=117+i*.8;z=14.5+i*.5
+        pts=[V(x,106,10.55),V(x,106,z),V(x,y,z),V(-49-i*.8,y,z),V(-49-i*.8,y,23+i),V(-49-i*.8,126,23+i),V(-46.4,126,23+i)]
+        obj=m.parts['FanLead'+str(i)];obj.Shape=_rounded_route(pts,.3,.16);obj.FlatPlacement=obj.Placement
+    m.profile['stages']=19
+    m.checkpoint(19,'front_io_and_fan_harness_clearances','将光驱电源线移至前置接口之后并错层布线，避让 SD 卡座、USB 及前缘支柱；同步分层风扇线，消除导线之间的实体相交。')
+
+
+def _power_adapter(m,key,model,cx,cy,w,h,t):
+    # Local adapter dimensions / circuit envelopes are photographic study estimates.
+    split=t/2
+    m.native(key+'Lower',model+' lower housing',w,h,2.6,split-.12,(cx,cy,0),'Accessories',-4,'wiigrey')
+    m.cut(key+'Lower',m.rr(w-3.4,h-3.4,split,(cx,cy,1.7),1.3),'Power brick lower cavity')
+    m.native(key+'Upper',model+' upper housing',w,h,2.6,split-.12,(cx,cy,split+.12),'Accessories',4,'wiigrey')
+    m.cut(key+'Upper',m.rr(w-3.4,h-3.4,split-1.4,(cx,cy,split+.0),1.3),'Power brick upper cavity')
+    m.box(key+'PCB','Power converter structural study board',w-12,h-12,1,(cx,cy,5),'Accessories',0,'pcb',1.2,True)
+    corew=w*.19;coreh=h*.53;coret=t*.56
+    m.box(key+'Transformer','Ferrite transformer core study',corew,coreh,coret,(cx,cy,8),'Accessories',0,'black',1.1,True)
+    m.cut(key+'Transformer',m.rr(corew*.8,coreh+1,coret*.48,(cx,cy,8+coret*.25),.7),'Transformer winding seat')
+    m.box(key+'Winding','Insulated transformer winding envelope',corew*.77,coreh+.4,coret*.45,(cx,cy,8+coret*.265),'Accessories',0,'cream',.7,True)
+    for suffix,dx,dy,r,depth,color in [('BulkCap',-.31,-.16,h*.125,t*.53,'black'),('OutputCap',.30,.18,h*.09,t*.38,'metal'),('InputCoil',-.32,.23,h*.09,t*.24,'cream'),('OutputCoil',.30,-.21,h*.09,t*.24,'copper')]:
+        m.cyl(key+suffix,'Power conversion study component',r,depth,(cx+w*dx,cy+h*dy,7),'Accessories',0,color,internal=True)
+    m.box(key+'Rectifier','Rectifier package study',w*.10,h*.14,2.6,(cx-w*.17,cy+h*.31,7),'Accessories',0,'black',.4,True)
+    m.box(key+'HeatPlate','Power device heat spreader',.8,h*.55,t*.55,(cx+w*.16,cy,7),'Accessories',0,'metal',.1,True)
+    posts=[]
+    for i,(x,y) in enumerate([(cx+dx*(w/2-9),cy+dy*(h/2-9)) for dx in [-1,1] for dy in [-1,1]]):
+        m.cut(key+'PCB',Part.makeCylinder(1,1.4,V(x,y,4.8)),'Adapter board screw passage')
+        posts.append(Part.makeCylinder(2,3.15,V(x,y,1.65)).cut(Part.makeCylinder(.8,3.5,V(x,y,1.5))))
+        m.screw(key+'Screw'+str(i),(x,y,6.45),'Accessories',0,length=3.1,radius=1.65,axis=(0,0,-1))
+    fuse_feature(m,key+'Lower',Part.makeCompound(posts),'Four adapter-board support columns')
+    for shell in [key+'Lower',key+'Upper']:
+        for side,z,r in [(-1,t*.30,2.25),(1,t*.54,1.95)]:
+            m.cut(shell,Part.makeCylinder(r,7,V(cx+side*(w/2-3),cy,z),V(side,0,0)),'Fixed cable strain-relief opening')
+    m.label(key+'Mark',model+' STUDY',min(4,w/35),(cx-w*.28,cy-1.5,t+.03),'Accessories',4,'black')
+    for side,z,r in [(-1,t*.3,2.15),(1,t*.54,1.85)]:
+        m.cyl(key+'Relief'+str(side),'Moulded cord strain relief',r,7,(cx+side*(w/2+.1),cy,z),'Accessories',0,'wiigrey',axis=(side,0,0))
+
+
+def _ac_plug(m,key,x,y):
+    m.box(key,'Japanese two-blade AC plug',23,17,11,(x,y,0),'Accessories',0,'wiigrey',1.7)
+    for i,xx in enumerate([x-6.2,x+6.2]):m.box(key+'Blade'+str(i),'Flat AC plug blade',1.4,6.2,12.5,(xx,y,11.1),'Accessories',0,'metal',.1)
+
+
+def stage20(m):
+    from .atari2600 import _rounded_route
+    side=g.rotation((-1,0,0),(0,0,1))
+    _power_adapter(m,'ConsoleAC','WUP-002',255,70,171,73,50)
+    _power_adapter(m,'GamePadAC','WUP-011',235,-110,96,35,28)
+    configs=[('ConsoleAC',[V(162.2,70,15),V(145,70,15),V(145,125,15),V(265,125,15),V(265,155.2,5.5)],265,164,
+               [V(347.8,70,27),V(368,70,27),V(368,-10,27),V(318,-10,10),V(290.2,-10,10)],278,-10,14,10,'yellow'),
+             ('GamePadAC',[V(179.7,-110,8.4),V(155,-110,8.4),V(155,-155,8.4),V(230,-155,8.4),V(230,-173.2,5.5)],230,-182,
+               [V(290.3,-110,15.12),V(330,-110,15.12),V(330,-50,15.12),V(291,-50,10),V(272.2,-50,10)],260,-50,7,4.8,'wiigrey')]
+    for key,ac,x,y,dc,px,py,pw,ph,color in configs:
+        m.feature(key+'Cord','AC cord display length',_rounded_route(ac,2,1.8),'Accessories',0,'wiigrey')
+        _ac_plug(m,key+'Plug',x,y)
+        m.feature(key+'DCCord','DC cord display length',_rounded_route(dc,2,1.5),'Accessories',0,'wiigrey')
+        m.box(key+'DCGrip','Device DC plug grip',24,12,8,(px,py,6),'Accessories',0,'wiigrey',1.3)
+        sh=m.rr(pw,ph,8,(px-12.2,py,10),.6,side).cut(m.rr(pw-2,ph-1.8,8.4,(px-12,py,10),.35,side))
+        m.feature(key+'DCHead','Dedicated keyed two-position DC plug',sh,'Accessories',0,color)
+        for i,yy in enumerate([py-pw*.23,py+pw*.23]):m.box(key+'DCPin'+str(i),'DC connector contact study',5,.6,.4,(px-16.5,yy,9.8),'Accessories',0,'gold',.06)
+    m.profile['stages']=20
+    m.checkpoint(20,'basic_console_and_gamepad_power_adapters','加入 Basic 套装的 WUP-002 主机电源和 WUP-011 GamePad 电源，分别绘制空心壳、线缆、日式插头、专用双接点端头及内部结构示意；适配器局部尺寸为照片近似。')
+
+
+def stage21(m):
+    from .atari2600 import _rounded_route
+    from .ps1 import _yz_strip
+    cy=-275
+    m.parts['PadBottomSocket'].Shape=m.rr(8,4,.9,(73,cy-2,27.1),.3)
+    pts=[(cy-2,28.15),(cy-48,28.15),(cy-48,29.65),(cy-52,29.65),(cy-52,29.85),(cy-47.8,29.85),(cy-47.8,28.35),(cy-2,28.35)]
+    m.parts['PadBottomFlex'].Shape=_yz_strip(69,8,pts)
+    m.cut('PadNFCFlex',Part.makeCylinder(2.5,.6,V(-69,cy-13,28.35)),'Flex clearance around display-support standoff')
+    for side in [-1,1]:
+        x=side*83
+        pts=[V(-67+side*4,cy+13,25),V(-67+side*4,cy+16,25),V(-67+side*4,cy+16,21),V(x,cy+16,21),V(x,cy+31,21),V(x,cy+31,21.8)]
+        m.parts['PadRadioLead'+str(side)].Shape=_rounded_route(pts,.15,.12)
+        for i in range(2):
+            sx=side*65;edge=side*(82+i*.8);ex=-98 if side<0 else 107;ey=cy-49 if side<0 else cy-43
+            y=cy-18-i*.7 if side<0 else cy-14-i*.7;z=27.5+i*.35
+            pts=[V(sx,y,z),V(edge,y,z),V(edge,ey+i*.65,z),V(side*(90+i*.8),ey+i*.65,z),V(side*(90+i*.8),ey+i*.65,35.1+i*.4),V(ex,ey+i*.65,35.1+i*.4)]
+            m.parts['PadSpeakerLead'+str(side)+'_'+str(i)].Shape=_rounded_route(pts,.2,.13)
+    for key in ['PadBottomSocket','PadBottomFlex']+[f'PadRadioLead{s}' for s in [-1,1]]+[f'PadSpeakerLead{s}_{i}' for s in [-1,1] for i in range(2)]:m.parts[key].FlatPlacement=m.parts[key].Placement
+    # Included HDMI cable, arranged beside the GamePad rather than through a socket.
+    pts=[V(250,-258.2,6),V(250,-337,6),V(350,-337,6),V(350,-258.2,6)]
+    m.feature('HDMICable','HDMI cable display length',_rounded_route(pts,14,2.4),'Accessories',0,'black')
+    for i,x in enumerate([250,350]):
+        m.box('HDMIGrip'+str(i),'HDMI connector overmould',20,24,10,(x,-246,1),'Accessories',0,'black',2)
+        m.cyl('HDMIRelief'+str(i),'HDMI cable strain relief',2.7,6,(x,-258.1,6),'Accessories',0,'black',axis=(0,-1,0))
+        # Relief sleeves surround a short part of the cable; remove the shared material.
+        m.cut('HDMIRelief'+str(i),Part.makeCylinder(2.45,6.4,V(x,-257.9,6),V(0,-1,0)),'Strain-relief cable bore')
+        outer=_hdmi_shape(14,5,9);inner=_hdmi_shape(12.8,3.8,9.4);inner.translate(V(0,0,-.2));sh=outer.cut(inner);sh.Placement=App.Placement(V(x,-233.8,6),REAR)
+        m.feature('HDMIHead'+str(i),'HDMI Type A metal plug shell',sh,'Accessories',0,'metal')
+        m.box('HDMIPlugTongue'+str(i),'HDMI plug contact carrier',10.9,7,.6,(x,-229,5.7),'Accessories',0,'black',.2)
+        for row,n in enumerate([10,9]):
+            for j in range(n):m.box(f'HDMIPlugPin{i}_{row}_{j}','HDMI Type A plug contact',.32,5,.06,(x+(j-(n-1)/2)*1.02,-229,5.56 if row==0 else 6.39),'Accessories',0,'gold',.03)
+    m.profile['stages']=21
+    m.checkpoint(21,'gamepad_harness_fit_and_dual_hdmi_plugs','修正 GamePad 线束与螺柱、屏蔽罩和其他线束的间隙；加入 Basic 套装 HDMI 线、两端梯形金属插头、十九接点及带内孔的护线套。')
+
+
+def stage22(m):
+    from .atari2600 import _rounded_route
+    from .ps1 import _yz_strip
+    cy=-275
+    m.parts['PadBottomSocket'].Shape=m.rr(8,4,.9,(74,cy-5,27.1),.3)
+    pts=[(cy-5,28.15),(cy-48,28.15),(cy-48,29.65),(cy-52,29.65),(cy-52,29.85),(cy-47.8,29.85),(cy-47.8,28.35),(cy-5,28.35)]
+    m.parts['PadBottomFlex'].Shape=_yz_strip(70,8,pts)
+    for side in [-1,1]:
+        for i in range(2):
+            sx=side*65;edge=side*(82+i*.8);ex=-98 if side<0 else 107;ey=cy-49 if side<0 else cy-43
+            y=cy-18-i*.7 if side<0 else cy-14-i*.7;z=27.5+i*.35;endz=34.9+i*.25
+            pts=[V(sx,y,z),V(edge,y,z),V(edge,ey+i*.65,z),V(side*(90+i*.8),ey+i*.65,z),V(side*(90+i*.8),ey+i*.65,endz),V(ex,ey+i*.65,endz)]
+            obj=m.parts['PadSpeakerLead'+str(side)+'_'+str(i)];obj.Shape=_rounded_route(pts,.2,.13);obj.FlatPlacement=obj.Placement
+    m.parts['ConsoleACCord'].Shape=_rounded_route([V(162.2,70,15),V(145,70,15),V(145,125,15),V(265,125,15),V(265,148,5.5),V(265,155.3,5.5)],2,1.8)
+    for key in ['PadBottomSocket','PadBottomFlex','ConsoleACCord']:m.parts[key].FlatPlacement=m.parts[key].Placement
+    m.doc.recompute()
+    for obj in m.parts.values():obj.Shape.check(True)
+    m.profile['stages']=22
+    m.checkpoint(22,'final_connector_speaker_and_power_cord_fit','根据全部装配求交结果微调底部排线、扬声器引线与电源插头的终端路径，并对完整套装每个组件执行严格实体检查。')
+
+STAGES=[stage01,stage02,stage03,stage04,stage05,stage06,stage07,stage08,stage09,stage10,stage11,stage12,stage13,stage14,stage15,stage16,stage17,stage18,stage19,stage20,stage21,stage22]
+
+
+def finalize(model):
+    """Shared complete kit plus exterior views of the launch console and GamePad."""
+    from .deliver import finalize as shared_finalize
+    result=shared_finalize(model)
+    model.snapshot('final_front',normal=(.2,-1.5,.65),assemblies=model.profile['envelope_groups'])
+    model.snapshot('final_hero',normal=(.25,-.7,2.5),assemblies=result[0]['handheld_groups'])
+    model.doc.save()
+    return result

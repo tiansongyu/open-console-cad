@@ -14,3 +14,11 @@ Checked on 2026-09-10. The actual white teardown photographs define the selected
 Public envelopes and named major functions are distinguished from local study geometry. Wall thickness, locations, supports, contact counts where not specified, device packages, passive banks, internal wiring and mechanism details are approximate CAD studies. This is not a production PCB reconstruction, circuit/netlist, manufacturing-tolerance model or tested kinematic mechanism. The component count describes the CAD inventory.
 
 Reference photographs remain in a local research cache and are not redistributed. DejaVu Sans supplies CAD markings under its repository license. Final document production follows the shared Kami workflow.
+
+Additional accessory references checked on 2026-09-10:
+
+- [Nintendo GamePad AC adapter](https://onlineshop.nintendo.co.jp/item-detail/1230105): original inline power-brick appearance, two fixed cords and dedicated GamePad plug. Photos remain in the local research cache.
+- [Nintendo hardware and accessory model-number guide](https://en-americas-support.nintendo.com/app/answers/detail/a_id/1771/p/603/c/286): manufacturer model identifiers.
+- [Nintendo Wii U parts](https://www.nintendo.co.jp/hardware/wiiu/parts/index.html): original controls, NFC, volume, headphone port and stylus-holder identification.
+
+The model includes the Basic kit's two adapters, HDMI cable and stylus. Adapter envelopes (171 × 73 × 50 mm and 96 × 35 × 28 mm), adapter internal components, cable lengths, wire counts and accessory contact layouts are explicitly study estimates. They are not manufacturer dimension claims or a circuit/pinout specification.
