@@ -34,3 +34,7 @@ The internal frame dimensions, support ribs, screw lengths, seven-blade rotor sh
 - [PS2 Developer Wiki, CDVD Drive](https://www.psdevwiki.com/ps2/CDVD_Drive): the early A-chassis family uses the KHS-400A pickup and a separate GM-038 board with Sony CXA2605R RF amplifier and thermal interface. The study retains those early architectural features.
 
 Reviewed 2026-09-15. The exact small-board outline, package leads, optical-block internals, gearing, belt profile, rack pitch, motor dimensions and fastening geometry are schematic reconstruction choices. The assembly shows a closed tray; it does not simulate focus, tray motion, electrical behavior or laser operation. Later KHS-400C mechanisms and later all-on-mainboard drive electronics are not used as substitutes for the selected version.
+
+## Wiring and case attachment
+
+Dig and Rescue and Secret Base Manager assembly photographs guide the fan lead, shared controller/card-board ribbon, optical connection, control-button harness and its ferrite/guide posts. Ten underside case fixings, two longer rear-side fixings, four rubber feet and six removable screw covers are represented. Local cable paths, pin selections, conductor spacing, fixing dimensions and snap geometry are study approximations. The wiring shows physical routing and component relationships; it is not a service wiring diagram or electrical netlist. The lower model label explicitly identifies this as a CAD study.

@@ -1044,6 +1044,206 @@ def stage20(m):
 STAGES[20]=stage20
 
 
+def _fit_one_mark(m,key,body_key,margin=.8):
+    obj=m.parts[key];shape=obj.Shape;box=shape.optimalBoundingBox(False,False)
+    body=m.parts[body_key].Shape.optimalBoundingBox(False,False)
+    scale=min(1,(body.XLength-2*margin)/box.XLength,(body.YLength-2*margin)/box.YLength)
+    matrix=App.Matrix();matrix.A11=scale;matrix.A22=scale
+    matrix.A14=body.Center.x-scale*box.Center.x;matrix.A24=body.Center.y-scale*box.Center.y
+    fitted=shape.transformGeometry(matrix);fitted.check(True);obj.Shape=fitted;obj.FlatPlacement=obj.Placement
+
+
+def stage21(m):
+    from .atari2600 import _rounded_route
+    from .ps1 import _add_shape
+    _fit_one_mark(m,'DriveRFAmpMark','DriveRFAmp')
+    # Move the provisional board header forward to clear the plugged cable.
+    for key in ['FanHeader','FanHeaderPin0','FanHeaderPin1','FanHeaderPin2']:
+        obj=m.parts[key];obj.Placement.Base.y-=5;obj.FlatPlacement=obj.Placement
+    for obj in m.doc.Objects:
+        if obj.TypeId=='Part::Feature' and 'fan-connector terminal passages' in obj.Label:
+            shape=obj.Shape.copy();shape.translate(V(0,-5,0));obj.Shape=shape
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Wiring']))
+    m.colors['wiregray']=(.48,.49,.47)
+    # Three-position fan connector and a parallel, routed motor harness.
+    plug=m.rr(3.4,2.9,6,(-28,65,10.15),.25)
+    for i,dx in enumerate([-1.15,0,1.15]):
+        plug=plug.cut(Part.makeCylinder(.48,6.4,V(-28+dx,65,9.95)))
+        m.ring('FanPlugContact'+str(i),'Fan harness socket terminal',.40,.31,4.9,(-28+dx,65,10.25),'Wiring',1,'metal',internal=True)
+        points=[V(-28+dx,65,16.5),V(-28+dx,60,18),V(-27+dx,61,24),V(-32+dx,63,31),V(-48+dx,64,43),V(-51+dx,70.1,48)]
+        m.feature('FanHarness'+str(i),'Rear fan motor harness lead',_rounded_route(points,.75,.22),'Wiring',2,'wiregray',True)
+    m.feature('FanHarnessPlug','Fan cable plug insulator',plug,'Wiring',1,'white',True)
+    # A seven-way button/light harness follows the side of the drive and
+    # passes through a dedicated frame aperture and retained ferrite bead.
+    rear=g.rotation((0,1,0),(0,0,1))
+    board_socket=m.rr(8,3.8,4,(104,-63,9),.4)
+    control_socket=m.rr(8,4,3.2,(139,-76.7,57.5),.4,rear);holes=[]
+    for i in range(7):
+        dx=(i-3)*.7;bundle=(i-3)*.45
+        board_socket=board_socket.cut(Part.makeCylinder(.27,4.4,V(104+dx,-63,8.8)))
+        control_socket=control_socket.cut(Part.makeCylinder(.27,3.7,V(139+dx,-76.9,57.5),V(0,1,0)))
+        m.cyl('ControlMainPin'+str(i),'Button harness mainboard terminal',.16,6.3,(104+dx,-63,7),'Wiring',0,'metal',internal=True)
+        m.cyl('ControlBoardPin'+str(i),'Button board harness terminal',.16,3.5,(139+dx,-76.8,57.5),'Wiring',2,'metal',axis=(0,1,0),internal=True)
+        holes.append(Part.makeCylinder(.30,2.2,V(104+dx,-63,6.8)))
+        points=[V(139+dx,-73.15,57.5),V(140+bundle,-70,57.5),V(140+bundle,-63+bundle,50),V(140+bundle,-63+bundle,34.6),V(110+bundle,-63+bundle,34.6),V(110+bundle,-63+bundle,20),V(104+dx,-63,13.4)]
+        m.feature('ControlHarness'+str(i),'Power/eject and status-light harness lead',_rounded_route(points,.7,.12),'Wiring',2,'wiregray',True)
+    m.feature('ControlMainSocket','Seven-position control harness mainboard socket',board_socket,'Wiring',1,'white',True)
+    m.feature('ControlBoardSocket','Power/eject board cable socket',control_socket,'Wiring',2,'white',True)
+    m.cut('Mainboard',holes,'Control harness terminal holes').Refine=False
+    m.cut('MiddleFrame',m.rr(6,5,3.0,(140,-63,33.4),.7),'Control harness passage beside optical drive').Refine=False
+    m.cut('MiddleFrame',m.rr(34,5,1.4,(125,-63,33.9),.4),'Horizontal control harness channel through frame').Refine=False
+    m.ring('ControlFerrite','Retained control-harness ferrite bead',3.3,2.2,5,(140,-63,38.5),'Wiring',2,'black',internal=True)
+    posts=[Part.makeCylinder(1.2,4.1,V(x,y,35.9)) for x in [136,144] for y in [-67.5,-58.5]]
+    _add_shape(m,'MiddleFrame',Part.makeCompound(posts),'Four harness retention guide posts').Refine=False
+    paths=[
+        [(-114,80.15,44.4),(-109,73,43),(-110,64,44),(-114.5,58,48),(-114.5,52,47)],
+        [(-122,80.15,44.4),(-132,73,46),(-134,70,58),(-122,74.4,64)],
+        [(-114,74.4,64),(-104,69,63),(-110,61,60),(-119.5,57,54),(-119.5,52,47)],
+    ]
+    for i,path in enumerate(paths):m.feature('InternalACHarness'+str(i),'AC inlet, rocker and PSU connection study',_rounded_route([V(*p) for p in path],.6,.4),'Wiring',3,'wiregray',True)
+    m.profile['stages']=21
+    m.checkpoint(21,'fan_control_and_mains_harnesses_with_frame_guides','补齐风扇、电源与出仓控制及内部 AC 连接线束，加入独立端子、绝缘插头、磁环和四个导向柱；同时将光驱 RF 芯片文字限制在封装表面内。')
+
+
+STAGES[21]=stage21
+
+
+def _flat_ribbon(points,width,thickness=.12,bend=.3):
+    """Thin ruled strip with constant X width and rounded Y/Z-plane bends.
+
+    Skew X runs are allowed, but no segment may run only along X. This keeps
+    the section orientation explicit instead of twisting a wide pipe profile.
+    """
+    import math
+    points=[V(*p) for p in points];edges=[];last=points[0]
+    for previous,current,following in zip(points,points[1:],points[2:]):
+        incoming=(current-previous).normalize();outgoing=(following-current).normalize()
+        angle=math.acos(max(-1,min(1,incoming.dot(outgoing))))
+        if angle<1e-6:continue
+        trim=bend*math.tan(angle/2);assert trim<.45*min((current-previous).Length,(following-current).Length)
+        entry=current-incoming*trim;leave=current+outgoing*trim
+        center=current+(outgoing-incoming).normalize()*(bend/math.cos(angle/2))
+        middle=center+(current-center).normalize()*bend
+        edges.extend([Part.makeLine(last,entry),Part.Arc(entry,middle,leave).toShape()]);last=leave
+    edges.append(Part.makeLine(last,points[-1]));sections=[]
+    for ei,edge in enumerate(edges):
+        count=4 if isinstance(edge.Curve,Part.Circle) else 1
+        for i in range(count+1):
+            if ei and i==0:continue
+            parameter=edge.FirstParameter+(edge.LastParameter-edge.FirstParameter)*i/count
+            center=edge.valueAt(parameter);tangent=edge.tangentAt(parameter)
+            normal=V(0,-tangent.z,tangent.y);assert normal.Length>1e-7;normal.normalize()
+            wide=V(width/2,0,0);thin=normal*(thickness/2)
+            corners=[center-wide-thin,center+wide-thin,center+wide+thin,center-wide+thin]
+            sections.append(Part.Wire(Part.makePolygon(corners+[corners[0]]).Edges))
+    shape=Part.makeLoft(sections,True,True);assert shape.isValid() and shape.Solids
+    shape.check(True);return shape
+
+
+def _change_electronics_group(m,names,assembly,z=0,flip=None):
+    for key in names:
+        obj=m.parts[key];m.group(obj.Assembly).removeObject(obj);m.group(assembly).addObject(obj);obj.Assembly=assembly
+        obj.Placement.Base.z+=z
+        if flip:obj.Placement=App.Placement(V(),App.Rotation(V(1,0,0),180),V(*flip)).multiply(obj.Placement)
+        obj.FlatPlacement=obj.Placement
+
+
+def stage22(m):
+    before=set(m.parts);_board_fpc(m,'FrontPortFlex',-48,-58,18,11,side=1)
+    _change_electronics_group(m,set(m.parts)-before,'FrontIO',33.0)
+    controller=[(-48,-56.5,43.42),(-48,-51,43.42),(-48,-51,40.3),(-48,-80,40.3),(-48,-80,12.2),(-48,-66.5,12.2),(-48,-66.5,10.45),(-48,-70.5,10.45)]
+    m.feature('ControllerRibbon','Shared controller/card board flat cable',_flat_ribbon(controller,10.2),'Wiring',2,'white',True)
+    m.cut('MiddleFrame',m.rr(12,3,3.0,(-48,-80,33.4),.5),'Front interface ribbon route through frame').Refine=False
+    before=set(m.parts);_board_fpc(m,'PickupFlex',63,24,16,10,side=1)
+    _change_electronics_group(m,set(m.parts)-before,'Optical',38.25,(63,24,46.775))
+    pickup=[(63,17,43.55),(63,20,43.55),(63,20,44.92),(63,22.6,44.92)]
+    m.feature('PickupRibbon','Pickup-to-GM-038 flat cable',_flat_ribbon(pickup,9.4,bend=.25),'Wiring',4,'white',True)
+    main=[(63,41,43.55),(63,37,43.55),(82,10,43.55),(82,10,31),(-10,-40,31),(-10,-46,15),(-10,-58,15),(-10,-58,10.45),(-10,-52.8,10.45)]
+    m.feature('OpticalMainRibbon','GM-038-to-mainboard flat cable study',_flat_ribbon(main,13.4,bend=.5),'Wiring',2,'white',True)
+    m.cut('DriveHousing',m.rr(15,5,2.2,(82,10,37.1),.5),'Optical board ribbon passage below drive').Refine=False
+    m.profile['stages']=22
+    m.checkpoint(22,'controller_and_optical_flat_cables_with_real_passages','加入共享手柄接口板排线、光头到 GM-038 的短排线及光驱板到主板的长排线，补齐连接器与穿过中框和光驱底壳的实际通道。')
+
+
+STAGES[22]=stage22
+
+
+CASE_FIXINGS=[(-135,-72),(106,-72),(-135,72),(106,72),(-15,76),(-80,-79),(-15,-79),(62,-79),(20,79),(112,79)]
+
+
+def stage23(m):
+    from .ps1 import _add_shape
+    # Separate the rear shield fixing from the original foot-position case screw.
+    for key in ['ShieldSupport2','ShieldScrew2']:
+        obj=m.parts[key];obj.Placement.Base+=V(2,-4,0);obj.FlatPlacement=obj.Placement
+    for obj in m.doc.Objects:
+        if obj.TypeId=='Part::Feature' and obj.Label.startswith(('Four shield fixing holes and underside flex access windows','Blind bores for the four lower shield fasteners')):
+            shapes=list(obj.Shape.Solids)
+            for shape in shapes:
+                center=shape.BoundBox.Center
+                if abs(center.x-108)<1e-5 and abs(center.y-71)<1e-5:shape.translate(V(2,-4,0))
+            obj.Shape=Part.makeCompound(shapes)
+    posts=[];floor_tools=[];board_tools=[]
+    for i,(x,y) in enumerate(CASE_FIXINGS):
+        long=i in [2,4];radius=1.6 if long else 1.25;height=45 if long else 31.8
+        post=Part.makeCylinder(radius,height,V(x,y,3.2)).cut(Part.makeCylinder(.8,height+.4,V(x,y,3.0)))
+        rear=82 if y>0 else -82
+        bridge=Part.makeBox(4,abs(rear-y)+1,1.2,V(x-2,min(y,rear)-.5,33.8))
+        posts.append(post.fuse(bridge).cut(Part.makeCylinder(.8,46,V(x,y,3.0))))
+        m.screw('CaseScrew'+str(i),(x,y,1.6),'Body',-4,length=42 if long else 28,radius=2.1)
+        floor_tools += [Part.makeCylinder(.95,2.3,V(x,y,1.2)),Part.makeCylinder(2.3,1.05,V(x,y,1.2))]
+        board_tools.append(Part.makeCylinder(radius+.2,2.2,V(x,y,7.0)))
+        if i>=4:m.cyl('CasePlug'+str(i),'Removable lower case screw cover',2.55,.95,(x,y,.35),'Body',-5,'ps2black')
+    _add_shape(m,'MiddleFrame',Part.makeCompound(posts),'Ten case attachment pillars and perimeter ties').Refine=False
+    m.cut('MiddleFrame',[Part.makeCylinder(.8,46,V(x,y,3.0)) for x,y in CASE_FIXINGS],'Case screw pilot bores through existing frame ties').Refine=False
+    m.cut('LowerHousing',floor_tools,'Ten lower case screw bores and head recesses').Refine=False
+    m.cut('Mainboard',board_tools,'Outer case pillar passages at mainboard edges').Refine=False
+    m.cut('LowerShield',[Part.makeCylinder((1.6 if i in [2,4] else 1.25)+.2,3.4,V(x,y,3.4)) for i,(x,y) in enumerate(CASE_FIXINGS)],'Outer case pillar passages through lower shielding').Refine=False
+    # Native upper-shell snap tongues engage the middle-frame perimeter.
+    clips=[]
+    for side in [-1,1]:
+        for y in [-40,40]:
+            beam=Part.makeBox(4,6,1,V(145,y-3,39.5))
+            stem=Part.makeBox(1,4,6.2,V(145,y-2,33.4))
+            hook=Part.makeBox(2,4,.3,V(144,y-2,33.4))
+            clip=beam.multiFuse([stem,hook])
+            if side<0:clip.rotate(V(),V(0,0,1),180)
+            clips.append(clip)
+    _add_shape(m,'UpperHousing',Part.makeCompound(clips),'Four upper-shell snap tongues').Refine=False
+    m.cut('MiddleFrame',[m.rr(1.4,5,4.4,(side*145.5,y,33.1),.25) for side in [-1,1] for y in [-40,40]],'Snap-tongue clearance notches').Refine=False
+    m.profile['stages']=23
+    m.checkpoint(23,'ten_case_fixings_screw_covers_and_native_snap_tongues','补齐十组底部机壳固定件和内部支柱，其中后侧两根较长；四个脚垫位置保留，另加六个螺钉盖，并在原生上壳加入四个卡扣与中框避让槽。')
+
+
+STAGES[23]=stage23
+
+
+def stage24(m):
+    from .atari2600 import _rounded_route
+    starts=[
+        [(46.5,-18,44.95),(46.5,-43,45),(110,-44,45)],
+        [(76.5,-18,44.95),(78,-41,45.5),(111,-42,45.5)],
+        [(101,78,48.5),(112,78,48.5),(114,70,42.3),(114,-22,42.3)],
+        [(105,78.3,49),(113,78.3,49),(115,69,42.8),(115,-21,42.8)],
+        [(17.5,-66,46.85),(13,-60,47),(13,-47,44),(108,-45,43.5)],
+        [(22.5,-66,46.85),(25,-59,47),(25,-45,44.5),(109,-43,44.5)],
+    ]
+    for i,start in enumerate(starts):
+        x=109+i*.6;y=-26+i;dx=(1+i*3-9.5)*11.2/19
+        path=start+[(x,y,40+i*.8),(x,y,30),(35+dx,-12,20),(35+dx,-11,10.5),(35+dx,-6,10.5)]
+        m.feature('DriveMotorHarness'+str(i),'Spindle, feed and tray motor harness study',_rounded_route([V(*p) for p in path],.45,.16),'Wiring',3,'wiregray',True)
+    m.cut('DriveHousing',m.rr(6,9,2.2,(110.5,-23.5,37.1),.4),'Drive motor harness outlet below mechanism').Refine=False
+    bottom=g.rotation((0,0,-1),(0,1,0));m.colors['labelblack']=(.09,.10,.11)
+    m.box('BottomStudyLabel','Lower-housing model identification label',110,36,.05,(-45,0,1.35),'Body',-5,'labelblack',1,orient=bottom)
+    m.label('BottomModelMark','SCPH-10000 / CAD STUDY',2.2,(-10,-4,1.275),'Body',-5,'white',rotation=bottom)
+    m.label('BottomStudyMark','OPEN CONSOLE CAD',1.8,(-20,4,1.275),'Body',-5,'white',rotation=bottom)
+    m.profile['stages']=24
+    m.checkpoint(24,'optical_motor_harness_and_model_identification','补齐主轴、光头进给和装载电机到主板的示意线束及底壳型号标签；连接数量和布线作为非功能性结构学习模型，标识明确注明 CAD STUDY。')
+
+
+STAGES[24]=stage24
+
+
 def rear_snapshot(m,name='rear_review',assemblies=None,exclude=(),normal=(.2,1.8,.45)):
     """Keep +Z upright while inspecting the positive-Y rear face."""
     import FreeCADGui as Gui
