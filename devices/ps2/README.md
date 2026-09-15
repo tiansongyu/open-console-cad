@@ -1,18 +1,18 @@
 # Sony PlayStation 2 · SCPH-10000
 
-初代日版 PlayStation 2 正在建模。当前完成 **15 轮源码、870 个组件条目与 5,698 个实体**，包括原生阶梯外壳、前后接口、盘托与控制键、双面主板、屏蔽、中框、散热和内部电源板。光驱内构、内部线束、DualShock 2 与配套附件继续制作。
+初代日版 PlayStation 2 正在建模。当前完成 **20 轮源码、989 个组件条目与 6,040 个实体**，包括原生阶梯外壳、前后接口、盘托与控制键、双面主板、屏蔽、中框、散热、内部电源板和初代光驱内构。内部线束、DualShock 2 与配套附件继续制作。
 
 <table>
 <tr>
-<td align="center" width="33%"><a href="output/previews/15_internal_review.png"><img src="output/previews/15_internal_review.png" width="206" height="160" alt="PS2 内部装配结构"></a><br>内部装配</td>
-<td align="center" width="33%"><a href="output/previews/15_cooling_review.png"><img src="output/previews/15_cooling_review.png" width="206" height="160" alt="热管与风扇散热结构"></a><br>散热结构</td>
-<td align="center" width="33%"><a href="output/previews/15_power_review.png"><img src="output/previews/15_power_review.png" width="206" height="160" alt="独立内部电源板"></a><br>内部电源</td>
+<td align="center" width="33%"><a href="output/previews/20_optical_review.png"><img src="output/previews/20_optical_review.png" width="206" height="160" alt="光驱导杆、主轴与装载传动"></a><br>光驱内构</td>
+<td align="center" width="33%"><a href="output/previews/20_drive_cover_review.png"><img src="output/previews/20_drive_cover_review.png" width="206" height="160" alt="网格光驱上盖与盘托"></a><br>光驱总成</td>
+<td align="center" width="33%"><a href="output/previews/20_rfboard_review.png"><img src="output/previews/20_rfboard_review.png" width="206" height="160" alt="独立光驱 RF 板"></a><br>光驱电路板</td>
 </tr>
 </table>
 
 - [当前 FreeCAD 工程](output/PlayStation2_Study.FCStd)
 - [重建当前阶段](Rebuild_PlayStation2.FCMacro) · [逐轮记录](ITERATIONS.md)
-- [十五轮完整重建](output/reports/stage15_rebuild.json) · [严格实体检查](output/reports/stage15_strict_bop.json) · [装配检查](output/reports/stage15_interference.json)
+- [二十轮完整重建](output/reports/stage20_rebuild.json) · [严格实体检查](output/reports/stage20_strict_bop.json) · [装配检查](output/reports/stage20_interference.json)
 - [官方资料与建模边界](references/SOURCES.md)
 
 使用 FreeCAD 1.1.3 打开工程。原生草图、凸台、圆角与布尔加工保留在模型树中，重建宏将生成文件写入 `output/rebuilt/`。
@@ -34,8 +34,11 @@
 - 散热系统：芯片导热界面、金属均热板、成对弯曲热管、鳍片组、七叶后排风扇与固定结构。
 - 内部电源板：独立原生 PCB、输入扼流圈、变压器、滤波电容、玻璃保险丝、功率器件、输入和主板耦合接点。
 
+- 初代光驱：长开口盘托、纵向导轨与齿条、皮带及减速传动、主轴电机、KHS-400A 结构示意光头、进给丝杆、四组隔振安装件、网格上盖和磁性夹盘。
+- 独立光驱板：GM-038 系列板体、底面 CXA2605R 示意封装、热窗口、排线插座及安装件。
+
 主板的局部尺寸、器件选择和封装引脚排布为照片指导的结构示意。背面无法确认的芯片使用描述性标识，右下角 ROM 的识别保留来源中的不确定性；模型不含电气网络或可用于维修的 PCB 设计。
 
-全部 870 个组件的严格 BRep 检查和 2,258 对装配候选通过；十五轮源码重建记录见上方报告。完整 CAD / STEP、12 页图册和网页预览在完成其余结构及最终交付验证后加入模型库。机构目前只表示静态装配关系。
+全部 989 个组件的严格 BRep 检查、2,612 对装配候选和二十轮源码重建通过，记录见上方报告。完整 CAD / STEP、12 页图册和网页预览在完成其余结构及最终交付验证后加入模型库。机构目前只表示静态装配关系。
 
 本设备随仓库采用 [MIT 许可证](../../LICENSE)，第三方名称与标识归相应权利人所有。

@@ -834,6 +834,216 @@ def stage15(m):
 STAGES[15]=stage15
 
 
+def stage16(m):
+    from .ps1 import _add_shape
+    front=g.rotation((0,-1,0),(0,0,1));x=61.5
+    m.native('DriveHousing','Native original-family optical drive housing',136,164,1.3,29.8,(x,-1,37.4),'Optical',3,'ps2black')
+    m.cut('DriveHousing',m.rr(132.8,160.8,29.1,(x,-1,38.9),.7),'Open optical mechanism cavity').Refine=False
+    cuts=[m.rr(130,8,6,(x,-79,56.5),.5,front),Part.makeBox(13,21,5.8,V(-10.5,53.5,37.1))]
+    m.cut('DriveHousing',cuts,'Tray mouth and original power-coupling corner relief').Refine=False
+    # The early tray has a long keyhole rather than only a spindle bore.
+    keyhole=Part.makeCylinder(22.5,3.5,V(x,-18,54.1)).fuse(Part.makeBox(45,66,3.5,V(x-22.5,-18,54.1)))
+    m.cut('DiscTray',keyhole,'Original tray pickup and spindle access opening').Refine=False
+    for i,xx in enumerate([-.2,123.2]):
+        rail=Part.makeBox(2.8,137,2.1,V(xx-1.4,-79,51.9))
+        m.feature('TrayGuideRail'+str(i),'Longitudinal tray support rail',rail,'Optical',3,'ps2black',True)
+        shoe=m.rr(3.5,10,1.8,(xx,-45,54.3),.4)
+        m.feature('TrayGuideShoe'+str(i),'Tray sliding guide shoe',shoe,'Optical',4,'white',True)
+    m.cut('DiscTray',[m.rr(4,10.6,2.2,(xx,-45,54.1),.5) for xx in [-.2,123.2]],'Tray guide-shoe locating pockets').Refine=False
+    # Four compliant supports isolate the stamped optical deck from the case.
+    mounts=[(21,-35),(103,-35),(21,62),(103,62)]
+    for i,(xx,yy) in enumerate(mounts):
+        m.ring('DriveIsolator'+str(i),'Optical deck elastomer isolator',4.0,1.2,3.5,(xx,yy,39.05),'Optical',3,'rubber',internal=True)
+        m.ring('DriveMountSleeve'+str(i),'Optical deck mounting sleeve',1.0,.65,4.2,(xx,yy,39.1),'Optical',3,'metal',internal=True)
+    m.native('OpticalDeck','Native stamped pickup and spindle deck',91,108,1.2,1.2,(62,13.5,42.7),'Optical',4,'metal')
+    openings=[m.rr(58,62,1.7,(61.5,25,42.45),.8),Part.makeCylinder(14,1.7,V(61.5,-18,42.45))]
+    openings += [Part.makeCylinder(1.4,1.7,V(xx,yy,42.45)) for xx,yy in mounts]
+    m.cut('OpticalDeck',openings,'Deck pickup well, spindle aperture and isolator fixing holes').Refine=False
+    for i,(xx,yy) in enumerate(mounts):
+        m.screw('DeckScrew'+str(i),(xx,yy,44.5),'Optical',4,length=4.6,radius=2.5,axis=(0,0,-1))
+    # Two original case fixing ears and four cover fixings remain separate.
+    ears=[]
+    for xx,yy in [(-9.5,-59),(132.5,47)]:
+        ear=m.rr(9,12,2.0,(xx,yy,37.5),.7).cut(Part.makeCylinder(1.3,2.5,V(xx,yy,37.25)));ears.append(ear)
+    _add_shape(m,'DriveHousing',Part.makeCompound(ears),'Two optical drive mounting ears').Refine=False
+    m.profile['stages']=16
+    m.checkpoint(16,'native_optical_housing_keyhole_tray_and_isolated_deck','建立原生光驱外壳、初代长钥匙孔盘托、纵向托盘导轨与滑块、带窗口的金属光学底架及四组隔振安装件，并保留两处整机固定耳。')
+
+
+STAGES[16]=stage16
+
+
+def stage17(m):
+    from .atari2600 import _helical_spring
+    from .ps1 import _gear
+    # Spindle axis is the same as the native tray recess; the pickup sits aft.
+    x,y=61.5,-18
+    pcb=Part.makeCylinder(16,.65,V(x,y,44.05)).cut(Part.makeCylinder(3.1,1,V(x,y,43.9)))
+    m.feature('SpindlePCB','Original-family spindle motor circuit board',pcb,'Optical',4,'pcb',True)
+    motor=Part.makeCylinder(12.8,5.6,V(x,y,44.85)).cut(Part.makeCylinder(1.15,6,V(x,y,44.65)))
+    m.feature('SpindleMotor','Optical disc spindle motor can',motor,'Optical',4,'metal',True)
+    m.cyl('SpindleShaft','Spindle motor shaft',.85,9.8,(x,y,46.1),'Optical',4,'metal',internal=True)
+    hub=Part.makeCylinder(13,5.75,V(x,y,51.0)).fuse(Part.makeCone(8,6.8,1.4,V(x,y,56.7)))
+    hub=hub.cut(Part.makeCylinder(1.05,7.8,V(x,y,50.8)))
+    m.feature('DiscTurntable','Disc support turntable and centring cone',hub,'Optical',5,'black',True)
+    m.ring('DiscGripRing','Disc support elastomer ring',12.5,8.3,.5,(x,y,56.8),'Optical',5,'rubber',internal=True)
+    for i,xx in enumerate([33,91]):
+        m.cyl('PickupGuide'+str(i),'Polished optical pickup guide rod',1.5,74,(xx,-12,48.5),'Optical',4,'metal',axis=(0,1,0),internal=True)
+        for j,yy in enumerate([-12,62]):
+            bracket=m.rr(8,8,7,(xx,yy,44.1),.7).cut(Part.makeCylinder(1.75,9,V(xx,yy-4.5,48.5),V(0,1,0)))
+            bracket=bracket.cut(Part.makeCylinder(.95,7.5,V(xx+2.5,yy,43.9)))
+            m.feature('GuideBracket'+str(i)+'_'+str(j),'Guide rod end bearing support',bracket,'Optical',4,'black',True)
+    # A bridged carriage provides two bored guide sleeves and a central optic.
+    carrier=m.rr(53,24,3,(62,20,49.2),1.1)
+    sleeves=[]
+    for xx in [33,91]:
+        sleeves.append(Part.makeCylinder(2.6,21,V(xx,9.5,48.5),V(0,1,0)).cut(Part.makeCylinder(1.7,21.4,V(xx,9.3,48.5),V(0,1,0))))
+    bridges=[Part.makeBox(9,5,2.3,V(xx,yy,49.3)) for xx in [32.5,83] for yy in [10,25]]
+    carriage=carrier.multiFuse(sleeves+bridges)
+    carriage=carriage.cut(Part.makeBox(17,15,3.6,V(53,12.5,49)))
+    carriage=carriage.cut(Part.makeCompound([Part.makeCylinder(1.7,25,V(xx,7.5,48.5),V(0,1,0)) for xx in [33,91]]))
+    carriage=carriage.cut(Part.makeCylinder(2.7,5.1,V(61.5,27.8,50),V(0,1,0)))
+    m.feature('PickupCarriage','KHS-400A-family pickup carriage study',carriage,'Optical',5,'metal',True)
+    m.box('PickupPCB','Optical pickup local circuit board',24,21,.55,(61.5,20,46.5),'Optical',4,'pcb',.7,True)
+    optic=m.rr(15.8,13.8,4,(61.5,20,48.6),.9).cut(Part.makeCylinder(3.6,4.5,V(61.5,20,48.4)))
+    m.feature('OpticalBlock','Pickup optical block and objective aperture',optic,'Optical',5,'black',True)
+    lens=Part.makeSphere(4.6,V(61.5,20,52.1)).common(Part.makeCylinder(3.3,1.2,V(61.5,20,55.25)))
+    m.feature('ObjectiveLens','Convex objective lens study',lens,'Optical',6,'blue',True)
+    m.ring('ObjectiveHolder','Objective lens suspension ring',4.2,3.45,1.4,(61.5,20,53.8),'Optical',6,'black',internal=True)
+    for i,dx in enumerate([-6.3,6.3]):
+        m.box('FocusMagnet'+str(i),'Focus actuator magnet',2.1,8,2,(61.5+dx,20,52.8),'Optical',5,'black',.2,True)
+        for j,dy in enumerate([-4.5,4.5]):
+            m.cyl('FocusSuspension'+str(i)+'_'+str(j),'Objective suspension wire',.1,3.4,(61.5+dx,20+dy,53.5),'Optical',5,'metal',axis=(-1 if dx>0 else 1,0,0),internal=True)
+    m.cyl('PickupLaserCan','Enclosed laser diode package study',2.5,4.5,(61.5,28,50.0),'Optical',5,'metal',axis=(0,1,0),internal=True)
+    m.label('PickupMark','KHS-400A STUDY',1.1,(37.5,9,52.225),'Optical',5,'black')
+    # Separate feed motor, threaded shaft and the carriage follower.
+    m.cyl('FeedMotor','Pickup feed motor can',4.5,12,(103,65.5,48.5),'Optical',4,'metal',axis=(0,1,0),internal=True)
+    m.cyl('FeedShaft','Pickup feed screw core',.65,69.5,(103,-4,48.5),'Optical',4,'metal',axis=(0,1,0),internal=True)
+    helix=_helical_spring(.85,2.1,51,.15);helix.Placement=App.Placement(V(103,-2,48.5),App.Rotation(V(0,0,1),V(0,1,0)))
+    m.feature('FeedThread','Helical pickup feed screw thread',helix,'Optical',4,'metal',True)
+    follower=m.rr(9,6,3.5,(98.5,20,46.75),.6).cut(Part.makeCylinder(1.25,6.5,V(103,16.75,48.5),V(0,1,0)))
+    m.feature('FeedFollower','Carriage feed-screw follower arm',follower,'Optical',5,'white',True)
+    m.profile['stages']=17
+    m.checkpoint(17,'spindle_motor_pickup_guides_optics_and_feed_screw','加入主轴电机与盘片定心台、两根光头导杆、带导套的光头滑架、镜片与悬挂件，以及独立进给电机、螺旋丝杆和随动臂；KHS-400A 封装内部为结构示意。')
+
+
+STAGES[17]=stage17
+
+
+def stage18(m):
+    from .ps1 import _gear,_add_shape
+    m.cyl('LoadMotor','Tray loading motor can',5.4,7.4,(20,-66,39.1),'Optical',3,'metal',internal=True)
+    m.cyl('LoadMotorAxle','Tray loading motor shaft',.65,4.5,(20,-66,46.6),'Optical',4,'metal',internal=True)
+    for i,x in enumerate([20,102]):
+        pulley=Part.makeCylinder(2.55,.9,V(x,-66,49.7))
+        pulley=pulley.multiFuse([Part.makeCylinder(3.4,.2,V(x,-66,49.45)),Part.makeCylinder(3.4,.2,V(x,-66,50.65))])
+        # A short hub connects the flanges, leaving the belt channel recessed.
+        pulley=pulley.fuse(Part.makeCylinder(1.6,1.4,V(x,-66,49.45))).cut(Part.makeCylinder(.9,1.8,V(x,-66,49.3)))
+        m.feature('LoadPulley'+str(i),'Grooved tray-loading belt pulley',pulley,'Optical',4,'white',True)
+    belt=m.rr(88.4,6.4,.8,(61,-66,49.75),3.19).cut(m.rr(87.4,5.4,1.2,(61,-66,49.55),2.69))
+    m.feature('LoadBelt','Tray motor rubber drive belt',belt,'Optical',4,'rubber',True)
+    for i,x in enumerate([102,115.7]):
+        gear=_gear(m,x,-66,46.75,6.4,7.1,1.5,30)
+        if i:gear.rotate(V(x,-66,0),V(0,0,1),6)
+        hub=Part.makeCylinder(1.9,1.2,V(x,-66,48.15))
+        gear=gear.fuse(hub).cut(Part.makeCylinder(1.0,4.3,V(x,-66,46.5)))
+        m.feature('LoadGear'+str(i),'Tray loading reduction gear study',gear,'Optical',4,'white',True)
+        m.cyl('LoadGearAxle'+str(i),'Loading gear pivot pin',.75,13.8,(x,-66,39.05),'Optical',3,'metal',internal=True)
+    pinion=_gear(m,115.7,-66,50.85,2.8,3.5,1.3,14).cut(Part.makeCylinder(1.0,1.7,V(115.7,-66,50.65)))
+    m.feature('TrayPinion','Tray rack drive pinion',pinion,'Optical',5,'white',True)
+    backbone=Part.makeBox(1.2,117,3.7,V(119.8,-73,50.9))
+    teeth=[Part.makeBox(1.2,.6,1.2,V(118.6,-72.7+i*1.6,50.9)) for i in range(73)]
+    _add_shape(m,'DiscTray',backbone.multiFuse(teeth),'Original tray longitudinal underside rack').Refine=False
+    # End-position microswitch with an independent spring lever.
+    m.box('TrayEndSwitch','Tray end-position switch body',8,5,3,(12,-53,39.1),'Optical',3,'black',.5,True)
+    lever=Part.makeBox(.35,12,.3,V(14.4,-58,42.25))
+    m.feature('TrayEndLever','Tray position-sensing spring lever',lever,'Optical',4,'metal',True)
+    for i,xx in enumerate([9.5,12,14.5]):m.cyl('TrayEndPin'+str(i),'Tray limit-switch solder terminal',.23,2.0,(xx,-55.7,39.3),'Optical',3,'metal',internal=True)
+    m.cut('TrayEndSwitch',[Part.makeCylinder(.35,2.5,V(xx,-55.7,39.0)) for xx in [9.5,12,14.5]],'Limit-switch terminal passages').Refine=False
+    m.profile['stages']=18
+    m.checkpoint(18,'tray_loading_motor_belt_reduction_gears_and_rack','加入盘托装载电机、带槽皮带轮、橡胶传动带、减速齿轮与盘托下方纵向齿条，并补充行程检测开关和弹片；齿形为静态装配学习近似。')
+
+
+STAGES[18]=stage18
+
+
+def _move_optical_electronics(m,names,z_offset,flip_center=None):
+    for key in names:
+        obj=m.parts[key];m.group('Mainboard').removeObject(obj);m.group('Optical').addObject(obj);obj.Assembly='Optical';obj.ExplodeLayer=3
+        obj.Placement.Base.z+=z_offset
+        if flip_center:
+            obj.Placement=App.Placement(V(),App.Rotation(V(1,0,0),180),V(*flip_center)).multiply(obj.Placement)
+        obj.FlatPlacement=obj.Placement
+
+
+def stage19(m):
+    # Early A-chassis retains the separate GM-038 RF board. Package pin
+    # geometry and board outline remain schematic, as with the main PCB.
+    m.native('DriveRFPCB','Native GM-038-family optical RF board',52,38,.8,.8,(63,31,41.1),'Optical',3,'pcb')
+    mounts=[(40,15),(86,15),(40,47),(86,47)]
+    m.cut('DriveRFPCB',[Part.makeCylinder(1.1,1.3,V(x,y,40.85)) for x,y in mounts],'Optical RF board mounting holes').Refine=False
+    before=set(m.parts);_board_ic(m,'DriveRFAmp','CXA2605R',63,30,9,9,48,qfp=True)
+    _move_optical_electronics(m,set(m.parts)-before,33.1,(63,30,41.5))
+    m.cut('DriveHousing',m.rr(14,14,2.1,(63,30,37.2),.5),'Original RF amplifier thermal window').Refine=False
+    m.box('DriveRFThermal','RF amplifier thermal pad',8,8,1.0,(63,30,37.8),'Optical',2,'thermalpink',.3,True)
+    for key,x,y,pins,width,side in [('RFMainFlex',63,43,24,14,-1),('RFPickupFlex',63,16,16,10,1)]:
+        before=set(m.parts);_board_fpc(m,key,x,y,pins,width,side=side)
+        _move_optical_electronics(m,set(m.parts)-before,33.1)
+    for i,(x,y) in enumerate([(x,y) for x in [44,82] for y in [22,28,34,40]]):
+        before=set(m.parts);_board_passive(m,'RFPassive'+str(i),x,y,'black' if i%2 else 'ceramic')
+        _move_optical_electronics(m,set(m.parts)-before,33.1)
+    for i,(x,y) in enumerate(mounts):
+        m.ring('RFBoardPillar'+str(i),'RF board mounting standoff',1.9,.8,1.8,(x,y,39.1),'Optical',3,'ps2black',internal=True)
+        m.screw('RFBoardScrew'+str(i),(x,y,42.4),'Optical',4,length=2.6,radius=1.8,axis=(0,0,-1))
+    m.label('DriveRFMark','GM-038 STUDY',1.35,(52,47.1,41.925),'Optical',3,'white')
+    m.profile['stages']=19
+    m.checkpoint(19,'separate_gm038_rf_board_and_thermal_interface','加入初代 GM-038 独立光驱板、底面 CXA2605R 放大器封装及热窗口、导热垫、两组排线插座和周边阻容元件，保留独立安装柱与螺钉。')
+
+
+STAGES[19]=stage19
+
+
+def stage20(m):
+    from .ps1 import _add_shape
+    x=61.5;mounts=[(-2,-76),(125,-76),(-2,74),(125,74)]
+    m.native('DriveCover','Native grid-ribbed original optical cover',136,164,1.2,1.4,(x,-1,68.0),'Optical',7,'ps2black')
+    cuts=[Part.makeCylinder(15.3,1.9,V(x,-18,67.75))]
+    cuts += [Part.makeCylinder(1.2,1.9,V(xx,yy,67.75)) for xx,yy in mounts]
+    label_field=m.rr(78,26,1,(x,52,68.9),.7)
+    grid=[Part.makeBox(.35,161,.45,V(xx,-81.5,69.15)) for xx in range(-2,127,10)]
+    grid += [Part.makeBox(133,.35,.45,V(-5,yy,69.15)) for yy in range(-76,76,10)]
+    cuts.append(Part.makeCompound(grid).cut(label_field))
+    m.cut('DriveCover',cuts,'Original grid pattern, clamp opening and four lid screw holes').Refine=False
+    pillars=[]
+    for i,(xx,yy) in enumerate(mounts):
+        pillar=Part.makeCylinder(2.4,7.3,V(xx,yy,60.5)).cut(Part.makeCylinder(.9,7.7,V(xx,yy,60.3)))
+        edge=-5.9 if xx<0 else 128.9
+        bridge=Part.makeBox(abs(edge-xx)+1.0,3.6,5,V(min(xx,edge)-.5,yy-1.8,60.5))
+        pillars.append(pillar.fuse(bridge).cut(Part.makeCylinder(.9,7.7,V(xx,yy,60.3))))
+        m.screw('DriveCoverScrew'+str(i),(xx,yy,70),'Optical',8,length=6.2,radius=2.3,axis=(0,0,-1))
+    _add_shape(m,'DriveHousing',Part.makeCompound(pillars),'Four cover support pillars and side ties').Refine=False
+    m.ring('ClampSeat','Optical cover clamp locating ring',15,10,.8,(x,-18,68.1),'Optical',7,'black',internal=True)
+    cap=Part.makeCylinder(15.5,.8,V(x,-18,69.65)).cut(Part.makeCylinder(1.1,1.2,V(x,-18,69.45)))
+    m.feature('ClampTopCap','Circular optical-cover clamp cap',cap,'Optical',8,'black')
+    clamp=Part.makeCylinder(13,1.8,V(x,-18,58.9)).cut(Part.makeCylinder(1.15,2.2,V(x,-18,58.7)))
+    m.feature('MagneticClamp','Optical disc magnetic clamping disc',clamp,'Optical',6,'black',True)
+    m.ring('ClampGrip','Clamp lower grip ring',12.7,8,.25,(x,-18,58.6),'Optical',6,'rubber',internal=True)
+    m.ring('ClampMagnet','Disc clamp magnet',6,1.05,.7,(x,-18,60.75),'Optical',6,'metal',internal=True)
+    m.ring('ClampHub','Clamp support hub',4,1.0,6.45,(x,-18,61.5),'Optical',7,'black',internal=True)
+    m.cyl('ClampAxle','Clamp locating axle',.85,8.8,(x,-18,60.8),'Optical',7,'metal',internal=True)
+    m.label('DriveCoverLabel','OPTICAL DRIVE',1.7,(48,53,69.425),'Optical',8,'ps2word')
+    m.label('DriveMediaLabel','DVD / CD',2.2,(51,47.5,69.425),'Optical',8,'ps2word')
+    for i,(xx,yy) in enumerate([(-9.5,-59),(132.5,47)]):
+        m.ring('DriveCaseSpacer'+str(i),'Drive-to-middle-frame spacer',2.5,.9,1.3,(xx,yy,36.1),'Frame',3,'ps2black',internal=True)
+        m.screw('DriveCaseScrew'+str(i),(xx,yy,40.05),'Optical',4,length=5.5,radius=2.4,axis=(0,0,-1))
+    m.cut('MiddleFrame',[Part.makeCylinder(.85,2.7,V(xx,yy,33.8)) for xx,yy in [(-9.5,-59),(132.5,47)]],'Two optical assembly fixing pilots').Refine=False
+    m.profile['stages']=20
+    m.checkpoint(20,'native_grid_cover_magnetic_clamp_and_drive_fixings','建立带原版网格纹理的原生光驱上盖、四个盖板固定件和独立盘片磁性夹持结构，补充两组光驱到中框的安装件；装配保持关闭托盘的静态展示位置。')
+
+
+STAGES[20]=stage20
+
+
 def rear_snapshot(m,name='rear_review',assemblies=None,exclude=(),normal=(.2,1.8,.45)):
     """Keep +Z upright while inspecting the positive-Y rear face."""
     import FreeCADGui as Gui
