@@ -1,8 +1,8 @@
 {
-  "iteration": 10,
-  "slug": "native_lower_shield_fingers_and_four_fixings",
-  "summary": "建立原生下部屏蔽板、周边折起接触指、排线检修开口及三处浅压凸接触区，加入四组支座与盲孔螺钉；板料和折边尺寸为装配学习近似。",
-  "physical_components": 696,
+  "iteration": 14,
+  "slug": "native_power_board_chokes_transformer_and_filter_caps",
+  "summary": "建立原版布局指导的独立电源板、两组输入扼流圈、双大电容、变压器、两片竖直散热板及五个输出滤波电容，并加入四位主板耦合接点和安装件。",
+  "physical_components": 817,
   "objects": [
     {
       "name": "LowerHousingCut008",
@@ -3758,14 +3758,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "PCCardCage",
-      "label": "Type III PC CARD metal guide cage and mounting feet",
-      "type": "Part::Feature",
+      "name": "PCCardCageCut",
+      "label": "Type III PC CARD metal guide cage and mounting feet001",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 66,
-      "volume": 6881.099704289681,
+      "faces": 76,
+      "volume": 6872.459959784598,
       "bounds": [
         35.5,
         98.5,
@@ -18795,13 +18795,3279 @@
       "material": "metal",
       "fidelity": "Schematic internal layout",
       "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut002",
+      "label": "Native original-family middle frame005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 173,
+      "volume": 26409.540568878147,
+      "bounds": [
+        -146.0,
+        146.0,
+        -86.0,
+        86.0,
+        8.9,
+        37.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew0",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854355,
+      "bounds": [
+        -131.5,
+        -126.5,
+        70.5,
+        75.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew1",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.93105630485434,
+      "bounds": [
+        107.5,
+        112.5,
+        -74.5,
+        -69.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew2",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854344,
+      "bounds": [
+        -122.5,
+        -117.5,
+        -60.5,
+        -55.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew3",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -87.55,
+        -83.45,
+        35.75,
+        39.849999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew4",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -38.05,
+        -33.95,
+        53.25,
+        57.349999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew4",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew5",
+      "label": "Cross-head fastener009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475564,
+      "bounds": [
+        -38.05,
+        -33.95,
+        -2.8499999999999996,
+        1.2499999999999998,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew5",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew6",
+      "label": "Cross-head fastener010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475571,
+      "bounds": [
+        -77.55,
+        -73.45,
+        -33.65,
+        -29.55,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew6",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew7",
+      "label": "Cross-head fastener011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475568,
+      "bounds": [
+        -12.05,
+        -7.95,
+        -74.05,
+        -69.95,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew7",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew8",
+      "label": "Cross-head fastener012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.75531246947557,
+      "bounds": [
+        31.95,
+        36.05,
+        70.95,
+        75.05,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew8",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer0",
+      "label": "PC CARD cage mounting spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew0",
+      "label": "Cross-head fastener013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533308,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew0",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer1Cut",
+      "label": "PC CARD cage mounting spacer002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 27.378404316326293,
+      "bounds": [
+        93.85,
+        98.15,
+        5.349999999999995,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew1",
+      "label": "Cross-head fastener014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533301,
+      "bounds": [
+        93.85,
+        98.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew1",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer2",
+      "label": "PC CARD cage mounting spacer003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505045,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew2",
+      "label": "Cross-head fastener015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533304,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew2",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer3",
+      "label": "PC CARD cage mounting spacer004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew3",
+      "label": "Cross-head fastener016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533294,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew3",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EEThermal",
+      "label": "Processor-to-spreader thermal interface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2490.820801896615,
+      "bounds": [
+        -86.0,
+        -47.0,
+        -24.75,
+        11.75,
+        13.56,
+        15.31
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EEThermal",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GSThermal",
+      "label": "Processor-to-spreader thermal interface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2052.445801896616,
+      "bounds": [
+        -78.25,
+        -43.75,
+        25.0,
+        59.0,
+        13.56,
+        15.31
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GSThermal",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAMThermal0",
+      "label": "Memory-to-spreader thermal interface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 453.158349420272,
+      "bounds": [
+        -114.0,
+        -102.0,
+        3.4999999999999996,
+        12.5,
+        11.1,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAMThermal0",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAMThermal1",
+      "label": "Memory-to-spreader thermal interface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 453.158349420272,
+      "bounds": [
+        -114.0,
+        -102.0,
+        -23.5,
+        -14.5,
+        11.1,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAMThermal1",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatSpreaderCut002",
+      "label": "Native processor heat-spreader plate003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 8718.64364215085,
+      "bounds": [
+        -129.00000000000148,
+        -32.999999999999964,
+        -71.5,
+        71.50000000000011,
+        15.4,
+        16.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatSpreader",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatPipe0",
+      "label": "Curved original-family heat-pipe study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 1282.135453831572,
+      "bounds": [
+        -100.6500001,
+        -37.0,
+        -44.6500001,
+        56.0,
+        16.8499999,
+        20.1500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatPipe0",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatPipe1",
+      "label": "Curved original-family heat-pipe study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 1115.6713522494358,
+      "bounds": [
+        -94.6500001,
+        -36.58770126861407,
+        -38.597657584120384,
+        56.0,
+        16.8499999,
+        20.1500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatPipe1",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FinBaseCut001",
+      "label": "Native front heat-sink collector004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 219,
+      "volume": 11371.951297856036,
+      "bounds": [
+        -136.5,
+        -25.5,
+        -56.0,
+        -34.99999999999995,
+        18.099999999999998,
+        35.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FinBase",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkBracket0",
+      "label": "Heat-sink shield attachment tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 52.779071022409646,
+      "bounds": [
+        -111.0,
+        -103.0,
+        -56.8,
+        -56.099999999999994,
+        16.1,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkBracket0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkWasher0",
+      "label": "Heat-sink attachment washer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.958406743523138,
+      "bounds": [
+        -109.35,
+        -104.65,
+        -57.5,
+        -57.2,
+        21.65,
+        26.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkWasher0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkScrew0",
+      "label": "Heat-sink shield fixing study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10.910041967805771,
+      "bounds": [
+        -108.85,
+        -105.15,
+        -58.1,
+        -55.4,
+        22.15,
+        25.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkScrew0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkBracket1",
+      "label": "Heat-sink shield attachment tab001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 52.779071022409646,
+      "bounds": [
+        -48.0,
+        -40.0,
+        -56.8,
+        -56.099999999999994,
+        16.1,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkBracket1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkWasher1",
+      "label": "Heat-sink attachment washer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.9584067435231325,
+      "bounds": [
+        -46.35,
+        -41.65,
+        -57.5,
+        -57.2,
+        21.65,
+        26.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkWasher1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkScrew1",
+      "label": "Heat-sink shield fixing study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10.91004196780576,
+      "bounds": [
+        -45.85,
+        -42.15,
+        -58.1,
+        -55.4,
+        22.15,
+        25.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkScrew1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanFrameFuse",
+      "label": "Original-family rear axial fan casing001",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 14639.547307821962,
+      "bounds": [
+        -80.0,
+        -22.0,
+        69.2,
+        83.60000000000001,
+        14.999999999999996,
+        73.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanFrame",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanRotorCut",
+      "label": "Seven-blade rear fan rotor study001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 39,
+      "volume": 3435.51450359471,
+      "bounds": [
+        -76.77769328050547,
+        -24.839492445250624,
+        72.4,
+        80.4,
+        17.65320641867339,
+        70.20653275369826
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanRotor",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanPCB",
+      "label": "Fan motor support circuit board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 166.6300743464031,
+      "bounds": [
+        -60.1,
+        -41.9,
+        70.3,
+        70.95,
+        34.9,
+        53.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanPCB",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanAxle",
+      "label": "Fan rotor axle study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.672211228422777,
+      "bounds": [
+        -51.8,
+        -50.2,
+        69.5,
+        76.3,
+        43.2,
+        44.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanAxle",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanMount0",
+      "label": "Rear fan supporting mounting ear",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 101.98261074831606,
+      "bounds": [
+        -79.2,
+        -72.2,
+        66.7,
+        69.0,
+        15.8,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanMount0",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanFixing0",
+      "label": "Rear fan through-fixing study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 51.48913279600989,
+      "bounds": [
+        -77.9,
+        -73.5,
+        66.0,
+        83.0,
+        17.1,
+        21.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanFixing0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanMount1",
+      "label": "Rear fan supporting mounting ear001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 101.98261074831606,
+      "bounds": [
+        -29.8,
+        -22.8,
+        66.7,
+        69.0,
+        65.2,
+        72.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanMount1",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanFixing1",
+      "label": "Rear fan through-fixing study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 51.489132796009876,
+      "bounds": [
+        -28.5,
+        -24.1,
+        66.0,
+        83.0,
+        66.5,
+        70.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanFixing1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerPCBCut",
+      "label": "Native original-family internal power-supply board002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 60,
+      "volume": 17959.96566695605,
+      "bounds": [
+        -129.0,
+        0.0,
+        -41.0,
+        69.0,
+        39.0,
+        40.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerPCB",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "psutan",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk0SealCut",
+      "label": "Radial capacitor lower seal001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 201.85719259407674,
+      "bounds": [
+        -110.6,
+        -91.4,
+        -27.6,
+        -8.4,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk0Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk0",
+      "label": "Radial electrolytic capacitor study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6283.185307179587,
+      "bounds": [
+        -111.0,
+        -91.0,
+        -28.0,
+        -8.0,
+        41.6,
+        61.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "psublue",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk0Top",
+      "label": "Scored capacitor top seal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 42.259310547971694,
+      "bounds": [
+        -110.5,
+        -91.5,
+        -27.5,
+        -8.5,
+        61.78,
+        61.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk0Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk0Leg0",
+      "label": "Capacitor board lead",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098143,
+      "bounds": [
+        -104.78,
+        -104.22,
+        -18.28,
+        -17.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk0Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk0Leg1",
+      "label": "Capacitor board lead001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098143,
+      "bounds": [
+        -97.78,
+        -97.22,
+        -18.28,
+        -17.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk0Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk1SealCut",
+      "label": "Radial capacitor lower seal003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 201.8571925940767,
+      "bounds": [
+        -110.6,
+        -91.4,
+        21.4,
+        40.6,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk1Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk1",
+      "label": "Radial electrolytic capacitor study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6283.185307179587,
+      "bounds": [
+        -111.0,
+        -91.0,
+        21.0,
+        41.0,
+        41.6,
+        61.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "psublue",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk1Top",
+      "label": "Scored capacitor top seal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 42.259310547971694,
+      "bounds": [
+        -110.5,
+        -91.5,
+        21.5,
+        40.5,
+        61.78,
+        61.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk1Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk1Leg0",
+      "label": "Capacitor board lead002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098143,
+      "bounds": [
+        -104.78,
+        -104.22,
+        30.72,
+        31.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk1Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PrimaryBulk1Leg1",
+      "label": "Capacitor board lead003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098143,
+      "bounds": [
+        -97.78,
+        -97.22,
+        30.72,
+        31.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PrimaryBulk1Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter0SealCut",
+      "label": "Radial capacitor lower seal005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.84840104110449,
+      "bounds": [
+        -30.3,
+        -21.7,
+        -32.3,
+        -23.7,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter0Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter0",
+      "label": "Radial electrolytic capacitor study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1110.3645074847766,
+      "bounds": [
+        -30.7,
+        -21.3,
+        -32.7,
+        -23.3,
+        41.6,
+        57.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter0Top",
+      "label": "Scored capacitor top seal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 8.185754161398565,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -32.2,
+        -23.8,
+        57.78,
+        57.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter0Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter0Leg0",
+      "label": "Capacitor board lead004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098161,
+      "bounds": [
+        -27.925,
+        -27.365,
+        -28.28,
+        -27.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter0Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter0Leg1",
+      "label": "Capacitor board lead005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098163,
+      "bounds": [
+        -24.635,
+        -24.075,
+        -28.28,
+        -27.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter0Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter1SealCut",
+      "label": "Radial capacitor lower seal007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.84840104110448,
+      "bounds": [
+        -30.3,
+        -21.7,
+        -14.3,
+        -5.7,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter1Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter1",
+      "label": "Radial electrolytic capacitor study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1110.3645074847764,
+      "bounds": [
+        -30.7,
+        -21.3,
+        -14.7,
+        -5.3,
+        41.6,
+        57.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter1Top",
+      "label": "Scored capacitor top seal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 8.185754161398565,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -14.2,
+        -5.8,
+        57.78,
+        57.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter1Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter1Leg0",
+      "label": "Capacitor board lead006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098157,
+      "bounds": [
+        -27.925,
+        -27.365,
+        -10.28,
+        -9.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter1Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter1Leg1",
+      "label": "Capacitor board lead007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098157,
+      "bounds": [
+        -24.635,
+        -24.075,
+        -10.28,
+        -9.72,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter1Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter2SealCut",
+      "label": "Radial capacitor lower seal009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.84840104110448,
+      "bounds": [
+        -30.3,
+        -21.7,
+        3.7,
+        12.3,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter2Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter2",
+      "label": "Radial electrolytic capacitor study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1110.3645074847764,
+      "bounds": [
+        -30.7,
+        -21.3,
+        3.3,
+        12.7,
+        41.6,
+        57.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter2",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter2Top",
+      "label": "Scored capacitor top seal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 8.185754161398565,
+      "bounds": [
+        -30.2,
+        -21.8,
+        3.8,
+        12.2,
+        57.78,
+        57.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter2Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter2Leg0",
+      "label": "Capacitor board lead008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098154,
+      "bounds": [
+        -27.925,
+        -27.365,
+        7.72,
+        8.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter2Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter2Leg1",
+      "label": "Capacitor board lead009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098154,
+      "bounds": [
+        -24.635,
+        -24.075,
+        7.72,
+        8.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter2Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter3SealCut",
+      "label": "Radial capacitor lower seal011",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.84840104110449,
+      "bounds": [
+        -30.3,
+        -21.7,
+        21.7,
+        30.3,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter3Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter3",
+      "label": "Radial electrolytic capacitor study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1110.3645074847766,
+      "bounds": [
+        -30.7,
+        -21.3,
+        21.3,
+        30.7,
+        41.6,
+        57.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter3",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter3Top",
+      "label": "Scored capacitor top seal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 8.185754161398565,
+      "bounds": [
+        -30.2,
+        -21.8,
+        21.8,
+        30.2,
+        57.78,
+        57.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter3Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter3Leg0",
+      "label": "Capacitor board lead010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098161,
+      "bounds": [
+        -27.925,
+        -27.365,
+        25.72,
+        26.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter3Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter3Leg1",
+      "label": "Capacitor board lead011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098163,
+      "bounds": [
+        -24.635,
+        -24.075,
+        25.72,
+        26.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter3Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter4SealCut",
+      "label": "Radial capacitor lower seal013",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 39.84840104110449,
+      "bounds": [
+        -30.3,
+        -21.7,
+        39.7,
+        48.3,
+        40.8,
+        41.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter4Seal",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter4",
+      "label": "Radial electrolytic capacitor study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1110.3645074847764,
+      "bounds": [
+        -30.7,
+        -21.3,
+        39.3,
+        48.7,
+        41.6,
+        57.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter4",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter4Top",
+      "label": "Scored capacitor top seal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 8.185754161398565,
+      "bounds": [
+        -30.2,
+        -21.8,
+        39.8,
+        48.2,
+        57.78,
+        57.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter4Top",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter4Leg0",
+      "label": "Capacitor board lead012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098166,
+      "bounds": [
+        -27.925,
+        -27.365,
+        43.72,
+        44.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter4Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SecondaryFilter4Leg1",
+      "label": "Capacitor board lead013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6526972897098168,
+      "bounds": [
+        -24.635,
+        -24.075,
+        43.72,
+        44.28,
+        38.8,
+        41.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SecondaryFilter4Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0BaseCut",
+      "label": "Input choke insulating carrier001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 314.26757549333854,
+      "bounds": [
+        -127.0,
+        -113.0,
+        -22.5,
+        -3.4999999999999996,
+        40.8,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Base",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Core",
+      "label": "Input choke ferrite frame",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1587.7592894744628,
+      "bounds": [
+        -126.5,
+        -113.5,
+        -21.5,
+        -4.499999999999999,
+        42.1,
+        54.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Core",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Winding0",
+      "label": "Input-filter copper winding study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 144,
+      "volume": 63.797236585317336,
+      "bounds": [
+        -127.7,
+        -121.89999999999999,
+        -18.89705627484771,
+        -7.10294372515229,
+        42.8,
+        51.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Winding0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Winding1",
+      "label": "Input-filter copper winding study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 144,
+      "volume": 63.79723658531709,
+      "bounds": [
+        -118.10000000000001,
+        -112.3,
+        -18.89705627484771,
+        -7.10294372515229,
+        42.8,
+        51.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Winding1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Leg0",
+      "label": "Choke board terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061726,
+      "bounds": [
+        -124.4,
+        -123.6,
+        -20.4,
+        -19.6,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Leg1",
+      "label": "Choke board terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061726,
+      "bounds": [
+        -116.4,
+        -115.6,
+        -20.4,
+        -19.6,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Leg2",
+      "label": "Choke board terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061721,
+      "bounds": [
+        -124.4,
+        -123.6,
+        -6.4,
+        -5.6,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Leg2",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke0Leg3",
+      "label": "Choke board terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061721,
+      "bounds": [
+        -116.4,
+        -115.6,
+        -6.4,
+        -5.6,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke0Leg3",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1BaseCut",
+      "label": "Input choke insulating carrier003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 314.26757549333854,
+      "bounds": [
+        -127.0,
+        -113.0,
+        13.5,
+        32.5,
+        40.8,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Base",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Core",
+      "label": "Input choke ferrite frame001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1587.7592894744625,
+      "bounds": [
+        -126.5,
+        -113.5,
+        14.5,
+        31.5,
+        42.1,
+        54.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Core",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Winding0",
+      "label": "Input-filter copper winding study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 144,
+      "volume": 63.797236585341,
+      "bounds": [
+        -127.7,
+        -121.89999999999999,
+        17.10294372515229,
+        28.89705627484771,
+        42.8,
+        51.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Winding0",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Winding1",
+      "label": "Input-filter copper winding study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 144,
+      "volume": 63.79723658531709,
+      "bounds": [
+        -118.10000000000001,
+        -112.3,
+        17.10294372515229,
+        28.89705627484771,
+        42.8,
+        51.449999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Winding1",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "copper",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Leg0",
+      "label": "Choke board terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061721,
+      "bounds": [
+        -124.4,
+        -123.6,
+        15.6,
+        16.4,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Leg0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Leg1",
+      "label": "Choke board terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061721,
+      "bounds": [
+        -116.4,
+        -115.6,
+        15.6,
+        16.4,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Leg1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Leg2",
+      "label": "Choke board terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061726,
+      "bounds": [
+        -124.4,
+        -123.6,
+        29.6,
+        30.4,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Leg2",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LineChoke1Leg3",
+      "label": "Choke board terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.0555751316061726,
+      "bounds": [
+        -116.4,
+        -115.6,
+        29.6,
+        30.4,
+        38.8,
+        40.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LineChoke1Leg3",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerBobbinCut",
+      "label": "Switching transformer bobbin001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 1538.52115128812,
+      "bounds": [
+        -73.0,
+        -47.0,
+        -32.0,
+        -1.9999999999999993,
+        40.9,
+        42.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerBobbin",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerCore",
+      "label": "Power transformer ferrite core",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 7247.638934211687,
+      "bounds": [
+        -72.0,
+        -48.0,
+        -30.5,
+        -3.4999999999999996,
+        43.0,
+        63.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerCore",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerWrap",
+      "label": "Insulated transformer winding pack",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 4505.7153888186485,
+      "bounds": [
+        -67.0,
+        -53.0,
+        -26.0,
+        -7.999999999999998,
+        44.0,
+        62.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerWrap",
+      "assembly": "Power",
+      "layer": 3,
+      "material": "transformercream",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerMark",
+      "label": "TRANSFORMER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 199,
+      "volume": 0.06822687425105532,
+      "bounds": [
+        -66.1,
+        -55.4331836248322,
+        -18.0206712409396,
+        -16.948724732214764,
+        62.0249999,
+        62.0430001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerMark",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin0",
+      "label": "Transformer pin study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231033,
+      "bounds": [
+        -68.80000000000001,
+        -68.0,
+        -30.4,
+        -29.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin1",
+      "label": "Transformer pin study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737230977,
+      "bounds": [
+        -64.60000000000001,
+        -63.8,
+        -30.4,
+        -29.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin2",
+      "label": "Transformer pin study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231026,
+      "bounds": [
+        -60.4,
+        -59.6,
+        -30.4,
+        -29.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin2",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin3",
+      "label": "Transformer pin study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231022,
+      "bounds": [
+        -56.199999999999996,
+        -55.4,
+        -30.4,
+        -29.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin3",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin4",
+      "label": "Transformer pin study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231022,
+      "bounds": [
+        -52.0,
+        -51.2,
+        -30.4,
+        -29.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin4",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin5",
+      "label": "Transformer pin study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231026,
+      "bounds": [
+        -68.80000000000001,
+        -68.0,
+        -4.4,
+        -3.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin5",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin6",
+      "label": "Transformer pin study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737230975,
+      "bounds": [
+        -64.60000000000001,
+        -63.800000000000004,
+        -4.4,
+        -3.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin6",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin7",
+      "label": "Transformer pin study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.507964473723102,
+      "bounds": [
+        -60.4,
+        -59.6,
+        -4.4,
+        -3.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin7",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin8",
+      "label": "Transformer pin study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231017,
+      "bounds": [
+        -56.199999999999996,
+        -55.4,
+        -4.4,
+        -3.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin8",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TransformerPin9",
+      "label": "Transformer pin study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 1.5079644737231017,
+      "bounds": [
+        -52.0,
+        -51.2,
+        -4.4,
+        -3.6,
+        38.8,
+        41.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TransformerPin9",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUHeatSink0",
+      "label": "Power transistor vertical heat-sink plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 2766.400000000002,
+      "bounds": [
+        -85.5,
+        -78.5,
+        -38.0,
+        53.0,
+        40.8,
+        67.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUHeatSink0",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUHeatSink1",
+      "label": "Power transistor vertical heat-sink plate001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 2766.400000000002,
+      "bounds": [
+        -41.5,
+        -34.5,
+        -38.0,
+        53.0,
+        40.8,
+        67.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUHeatSink1",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCouplingContact0",
+      "label": "Four-way motherboard coupling socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 38.788750000000306,
+      "bounds": [
+        -20.45,
+        -18.55,
+        63.05,
+        64.95,
+        18.95,
+        40.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCouplingContact0",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCouplingContact1",
+      "label": "Four-way motherboard coupling socket001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 38.78875000000042,
+      "bounds": [
+        -15.45,
+        -13.549999999999999,
+        63.05,
+        64.95,
+        18.95,
+        40.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCouplingContact1",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCouplingContact2",
+      "label": "Four-way motherboard coupling socket002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 38.78875000000042,
+      "bounds": [
+        -10.45,
+        -8.549999999999999,
+        63.05,
+        64.95,
+        18.95,
+        40.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCouplingContact2",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCouplingContact3",
+      "label": "Four-way motherboard coupling socket003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 38.7887500000004,
+      "bounds": [
+        -5.45,
+        -3.5500000000000003,
+        63.05,
+        64.95,
+        18.95,
+        40.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCouplingContact3",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCouplingHousing",
+      "label": "Motherboard power-coupling insulating housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 4088.0191123253867,
+      "bounds": [
+        -23.0,
+        -0.9999999999999993,
+        59.0,
+        69.0,
+        18.05,
+        38.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCouplingHousing",
+      "assembly": "Power",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUSpacer0",
+      "label": "Power-board insulating standoff",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 28.863382504856208,
+      "bounds": [
+        -127.5,
+        -122.5,
+        52.5,
+        57.5,
+        37.1,
+        38.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUSpacer0",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUScrew0",
+      "label": "Cross-head fastener017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.959919305515816,
+      "bounds": [
+        -127.4,
+        -122.6,
+        52.6,
+        57.4,
+        35.77,
+        41.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUScrew0",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUSpacer1",
+      "label": "Power-board insulating standoff001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 28.863382504856208,
+      "bounds": [
+        -127.5,
+        -122.5,
+        -39.5,
+        -34.5,
+        37.1,
+        38.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUSpacer1",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUScrew1",
+      "label": "Cross-head fastener018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.959919305515813,
+      "bounds": [
+        -127.4,
+        -122.6,
+        -39.4,
+        -34.6,
+        35.77,
+        41.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUScrew1",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUSpacer2",
+      "label": "Power-board insulating standoff002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 28.863382504856226,
+      "bounds": [
+        -25.5,
+        -20.5,
+        52.5,
+        57.5,
+        37.1,
+        38.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUSpacer2",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUScrew2",
+      "label": "Cross-head fastener019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.959919305515813,
+      "bounds": [
+        -25.4,
+        -20.6,
+        52.6,
+        57.4,
+        35.77,
+        41.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUScrew2",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUSpacer3",
+      "label": "Power-board insulating standoff003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 28.863382504856226,
+      "bounds": [
+        -25.5,
+        -20.5,
+        -39.5,
+        -34.5,
+        37.1,
+        38.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUSpacer3",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PSUScrew3",
+      "label": "Cross-head fastener020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.95991930551581,
+      "bounds": [
+        -25.4,
+        -20.6,
+        -39.4,
+        -34.6,
+        35.77,
+        41.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PSUScrew3",
+      "assembly": "Power",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/ps2/output/iterations/10_native_lower_shield_fingers_and_four_fixings.FCStd",
+  "file": "devices/ps2/output/iterations/14_native_power_board_chokes_transformer_and_filter_caps.FCStd",
   "views": [
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_hero.png",
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_front.png"
+    "devices/ps2/output/previews/14_native_power_board_chokes_transformer_and_filter_caps_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 180

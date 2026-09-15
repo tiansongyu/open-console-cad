@@ -21,3 +21,9 @@ The original manual page 15 places PC CARD on the lower rear, separate from the 
 - Dig and Rescue photos 004, 006, 014 and 015 additionally guide the opposite board face, three-position fan connection, flat-circuit connections, lower shield contact fingers and four shield fixings. Unreadable underside IC identities remain descriptive labels, not asserted part numbers.
 
 The 248 × 157 mm board outline, component positions, mounting pattern, all small package outlines and leads, passive-component selection, wiring clearances, shield thickness and bends are local study approximations. Native connector passages are modeled individually. The BGA patterns and visible package leads describe assembly structure only; they do not reconstruct a PCB netlist, production BOM or repair-ready board. Reference imagery is not bundled with the MIT model assets.
+
+## Frame, cooling and internal power board
+
+Dig and Rescue photos 001, 002, 005, 007, 008, 011 and 015 were visually reviewed for the middle frame, folded heat-spreader assembly, curved heat pipes, fin bank, rear axial fan, transformer, twin primary capacitors, filter chokes and original power-board corner coupling. Reviewed 2026-09-15. The study preserves these separate assemblies. Nine mainboard fixings and the pair of washer-equipped heat-sink fixings follow the documented assembly sequence.
+
+The internal frame dimensions, support ribs, screw lengths, seven-blade rotor shape, fin count and thickness, heat-pipe paths, power-board dimensions, coupling length and small electrical-package selection are local reconstruction choices, not manufacturer measurements. Electrical markings are descriptive and the PSU has no electrical netlist. No claim is made for thermal performance, mains safety or repair interchangeability. All locally modeled clearances are checked as CAD assembly relationships.

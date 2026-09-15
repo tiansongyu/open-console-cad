@@ -519,7 +519,7 @@ def stage09(m):
     m.colors['thermalpink']=(.73,.54,.59)
     for i,(x,y,w,h) in enumerate([(70,60,26,14),(8,27,12,10),(-72,-55,23,21)]):
         m.box('UnderThermal'+str(i),'Underside package thermal pad study',w,h,.55,(x,y,4.35),'Mainboard',-1,'thermalpink',.3,True)
-    _board_fpc(m,'UnderRearFlex',25,72,24,14,underside=True,side=-1)
+    _board_fpc(m,'UnderRearFlex',22,72,24,14,underside=True,side=-1)
     _board_fpc(m,'UnderFrontFlex',-18,-66,30,18,underside=True,side=1)
     _board_fpc(m,'TopDriveFlex',35,-5,20,12,side=-1)
     _board_fpc(m,'TopControlFlex',-48,-72,18,11,side=1)
@@ -561,7 +561,7 @@ def stage10(m):
     _add_shape(m,'LowerShield',Part.makeCompound(fingers),'Turned-up peripheral shield contact fingers').Refine=False
     mounts=[(-128,71),(-127,-68),(108,71),(108,-68)]
     cuts=[Part.makeCylinder(1.1,1.1,V(x,y,3.4)) for x,y in mounts]
-    cuts += [m.rr(22,8,1.1,(-18,-66,3.4),.5),m.rr(18,8,1.1,(25,72,3.4),.5)]
+    cuts += [m.rr(22,8,1.1,(-18,-66,3.4),.5),m.rr(18,8,1.1,(22,72,3.4),.5)]
     m.cut('LowerShield',cuts,'Four shield fixing holes and underside flex access windows').Refine=False
     for i,(x,y,w,h) in enumerate([(70,60,26,14),(8,27,12,10),(-72,-55,23,21)]):
         _add_shape(m,'LowerShield',m.rr(w-2,h-2,.3,(x,y,4.0),.4),'Shallow thermal contact emboss '+str(i)).Refine=False
@@ -574,6 +574,264 @@ def stage10(m):
 
 
 STAGES[10]=stage10
+
+
+BOARD_MOUNTS=[(-129,73),(110,-72),(-120,-58),(-85.5,37.8),(-36,55.3),(-36,-.8),(-75.5,-31.6),(-10,-72),(34,73)]
+
+
+def stage11(m):
+    from .ps1 import _add_shape
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Frame']))
+    m.native('MiddleFrame','Native original-family middle frame',292,172,1.4,2.2,(0,0,33.8),'Frame',2,'ps2black')
+    openings=[m.rr(127,156,2.7,(-75,0,33.55),1.0),m.rr(135,156,2.7,(65,0,33.55),1.0)]
+    m.cut('MiddleFrame',openings,'Separate power and optical carrier bays').Refine=False
+    # Cross ties and nine pillars belong to the frame, with clear screw bores.
+    ties=[]
+    for i,(x,y) in enumerate(BOARD_MOUNTS):
+        r=2.7 if i<3 else 2.35
+        post=Part.makeCylinder(r,25,V(x,y,8.9)).cut(Part.makeCylinder(1.15,25.3,V(x,y,8.75)))
+        ties.append(post)
+        edge=-142 if x<0 else 140
+        ties.append(Part.makeBox(abs(edge-x)+1.4,3.2,1.7,V(min(x,edge)-.7,y-1.6,34.1)))
+    _add_shape(m,'MiddleFrame',Part.makeCompound(ties),'Nine board pillars and radial frame ties').Refine=False
+    # The rear axial fan, front connector block and original power connector
+    # retain explicit frame openings; no solid plate covers the cooling path.
+    cuts=[Part.makeBox(61,20,24,V(-81.5,67,20)),m.rr(25,15,4,(-12,64,33.5),1)]
+    cuts += [Part.makeCylinder(1.15,27,V(x,y,8.7)) for x,y in BOARD_MOUNTS]
+    cuts.append(Part.makeBox(5.4,10.4,1,V(35.3,68.8,11.6)))
+    cuts.append(Part.makeCylinder(2.4,5.1,V(38,74,8.65)))
+    m.cut('MiddleFrame',cuts,'Rear fan relief, power-header route and pillar pilot holes').Refine=False
+    for i,(x,y) in enumerate(BOARD_MOUNTS):
+        m.screw('MainboardScrew'+str(i),(x,y,6.8),'Frame',0,length=6.2,radius=2.5 if i<3 else 2.05)
+    for i,(x,y) in enumerate([(38,7),(96,7),(38,74),(96,74)]):
+        m.ring('PCCageSpacer'+str(i),'PC CARD cage mounting spacer',2.15,1.1,2.8,(x,y,8.9),'Frame',0,'metal',internal=True)
+        if i==1:m.cut('PCCageSpacer1',Part.makeBox(6,2,3.2,V(93,3.35,8.7)),'Flat side beside the eject lever').Refine=False
+        m.screw('PCCageScrew'+str(i),(x,y,12.95),'Frame',1,length=5.7,radius=2.15,axis=(0,0,-1))
+    m.cut('PCCardCage',[Part.makeCylinder(2.35,.8,V(x,y,12.5)) for x,y in [(38,7),(96,7),(38,74),(96,74)]],'Cage wall relief beside mounting screw heads').Refine=False
+    m.profile['stages']=11
+    m.checkpoint(11,'native_middle_frame_board_pillars_and_card_fixings','建立原生中框及电源与光驱分区，补充九个主板安装柱、由底面固定的螺钉和 PC CARD 笼支撑件；局部支柱和筋条按当前装配关系构建。')
+
+
+STAGES[11]=stage11
+
+
+def stage12(m):
+    from .ps1 import _add_shape
+    from .atari2600 import _rounded_route
+    m.profile['envelope_groups']=list(dict.fromkeys(m.profile['envelope_groups']+['Cooling']))
+    for key,x,y,w,h in [('EE',-66.5,-6.5,39,36.5),('GS',-61,42,34.5,34)]:
+        m.box(key+'Thermal','Processor-to-spreader thermal interface',w,h,1.75,(x,y,13.56),'Cooling',1,'thermalpink',.45,True)
+    for i,y in enumerate([8,-19]):
+        m.box('RDRAMThermal'+str(i),'Memory-to-spreader thermal interface',12,9,4.2,(-108,y,11.1),'Cooling',1,'thermalpink',.35,True)
+    m.native('HeatSpreader','Native processor heat-spreader plate',96,143,1.1,.65,(-81,0,15.4),'Cooling',2,'metal')
+    openings=[Part.makeCylinder(3.2,1.2,V(x,y,15.15)) for x,y in BOARD_MOUNTS]
+    openings += [Part.makeCylinder(.6,1.2,V(-128+(i-1.5)*2.5,-69.3,15.15)) for i in range(4)]
+    m.cut('HeatSpreader',openings,'Mainboard pillar clearance through thermal spreader').Refine=False
+    # Paired curved heat pipes follow the original folded-plate arrangement;
+    # their local route and section are an assembly study, not thermal sizing.
+    for i,x in enumerate([-99,-93]):
+        path=([V(x,56,18.5),V(x,-28,18.5),V(x+22,-43,18.5),V(-37,-43,18.5)] if i==0 else
+              [V(x,56,18.5),V(x,-14,18.5),V(-68,-29,18.5),V(-37,-37,18.5)])
+        pipe=_rounded_route(path,7,1.65)
+        m.feature('HeatPipe'+str(i),'Curved original-family heat-pipe study',pipe,'Cooling',2,'metal',True)
+    m.native('FinBase','Native front heat-sink collector',111,21,1.0,2.2,(-81,-45.5,21.0),'Cooling',3,'metal')
+    saddles=[Part.makeBox(5,4,3.0,V(x,y,18.1)) for x in [-65,-45] for y in [-45,-39]]
+    pipe_relief=[m.parts['HeatPipe'+str(i)].Shape for i in range(2)]
+    saddle=Part.makeCompound(saddles).cut(Part.makeCompound(pipe_relief))
+    _add_shape(m,'FinBase',saddle,'Collector saddle blocks around heat pipes').Refine=False
+    # Fins stand above the collector, immediately behind the front port board.
+    fins=[Part.makeBox(.7,20,12.5,V(-134+i*3.15,-55.5,23.15)) for i in range(35)]
+    _add_shape(m,'FinBase',Part.makeCompound(fins),'Thirty-five upright heat-sink fins').Refine=False
+    m.cut('FinBase',[Part.makeCylinder(1.1,3.5,V(x,-57.2,24),V(0,1,0)) for x in [-107,-44]],'Two heat-sink fixing pilot holes').Refine=False
+    m.cut('FinBase',[Part.makeCylinder(3.0,18.5,V(x,y,17.5)) for x,y in BOARD_MOUNTS],'Heat-sink pillar clearance').Refine=False
+    for i,x in enumerate([-107,-44]):
+        bracket=Part.makeBox(8,.7,9.9,V(x-4,-56.8,16.1))
+        bracket=bracket.cut(Part.makeCylinder(1.1,1.2,V(x,-57,24),V(0,1,0)))
+        m.feature('SinkBracket'+str(i),'Heat-sink shield attachment tab',bracket,'Cooling',3,'metal',True)
+        washer=Part.makeCylinder(2.35,.3,V(x,-57.2,24),V(0,-1,0)).cut(Part.makeCylinder(1.15,.5,V(x,-57.1,24),V(0,-1,0)))
+        m.feature('SinkWasher'+str(i),'Heat-sink attachment washer',washer,'Cooling',3,'metal',True)
+        screw=Part.makeCylinder(1.85,.6,V(x,-58.1,24),V(0,1,0)).fuse(Part.makeCylinder(.85,2.2,V(x,-57.6,24),V(0,1,0)))
+        slot=Part.makeBox(.38,.4,2.7,V(x-.19,-58.2,22.65))
+        m.feature('SinkScrew'+str(i),'Heat-sink shield fixing study',screw.cut(slot),'Cooling',3,'metal',True)
+    m.profile['stages']=12
+    m.checkpoint(12,'processor_spreader_paired_heat_pipes_and_fins','加入 EE、GS 和内存导热界面、原生金属均热板、成对弯曲热管、前侧鳍片组及两组带垫圈的固定结构；热管及鳍片尺寸为结构学习近似。')
+
+
+STAGES[12]=stage12
+
+
+def stage13(m):
+    import math
+    from .ps1 import _add_shape
+    rear=g.rotation((0,1,0),(0,0,1));x,y,z=-51,69.2,44
+    outer=m.rr(58,58,14.4,(x,y,z),2.8,rear)
+    bore=Part.makeCylinder(27.2,14.8,V(x,y-.2,z),V(0,1,0))
+    bores=[Part.makeCylinder(1.35,15,V(x+dx,y-.3,z+dz),V(0,1,0)) for dx in [-24.7,24.7] for dz in [-24.7,24.7]]
+    m.feature('RearFanFrame','Original-family rear axial fan casing',outer.cut(bore).cut(Part.makeCompound(bores)),'Cooling',3,'black',True)
+    hub=Part.makeCylinder(10,8,V(x,72.4,z),V(0,1,0));blades=[]
+    for i in range(7):
+        a=2*math.pi*i/7
+        points=[V(x+r*math.cos(a+t),76,z+r*math.sin(a+t)) for r,t in [(9.5,-.28),(26.35,-.12),(26.35,.24),(9.5,.33)]]
+        blades.append(Part.Face(Part.makePolygon(points+[points[0]])).extrude(V(0,1.1,0)))
+    m.feature('RearFanRotor','Seven-blade rear fan rotor study',hub.multiFuse(blades).removeSplitter(),'Cooling',3,'black',True)
+    pcb=Part.makeCylinder(9.1,.65,V(x,70.3,z),V(0,1,0)).cut(Part.makeCylinder(1.1,1,V(x,70.1,z),V(0,1,0)))
+    m.feature('RearFanPCB','Fan motor support circuit board',pcb,'Cooling',3,'pcb',True)
+    arms=[]
+    for i in range(4):
+        arm=Part.makeBox(19,.7,1.8,V(x+8.5,71.15,z-.9));arm.rotate(V(x,71.15,z),V(0,1,0),90*i);arms.append(arm)
+    _add_shape(m,'RearFanFrame',Part.makeCompound(arms),'Four radial motor support struts').Refine=False
+    m.cyl('FanAxle','Fan rotor axle study',.8,6.8,(x,69.5,z),'Cooling',3,'metal',axis=(0,1,0),internal=True)
+    # Keep the axle inside a genuine bore in the rotor.
+    m.cut('RearFanRotor',Part.makeCylinder(1.0,8.5,V(x,72.2,z),V(0,1,0)),'Rotor axle clearance').Refine=False
+    m.cut('HeatSpreader',Part.makeBox(61,5,1.4,V(-81.5,68.8,15.1)),'Rear-fan lower frame clearance').Refine=False
+    m.cut('HeatSpreader',Part.makeBox(7.4,3.0,1.4,V(-79.4,66.5,15.1)),'Lower fan mounting ear clearance').Refine=False
+    for i,(dx,dz) in enumerate([(-24.7,-24.7),(24.7,24.7)]):
+        xx,zz=x+dx,z+dz
+        foot=m.rr(7,7,2.3,(xx,66.7,zz),1.0,rear).cut(Part.makeCylinder(1.1,2.8,V(xx,66.4,zz),V(0,1,0)))
+        m.feature('FanMount'+str(i),'Rear fan supporting mounting ear',foot,'Frame',3,'ps2black',True)
+        shaft=Part.makeCylinder(.9,16.4,V(xx,66.6,zz),V(0,1,0))
+        head=Part.makeCylinder(2.2,.65,V(xx,66.0,zz),V(0,1,0))
+        m.feature('FanFixing'+str(i),'Rear fan through-fixing study',shaft.fuse(head),'Cooling',3,'metal',True)
+    m.profile['stages']=13
+    m.checkpoint(13,'rear_axial_fan_rotor_motor_support_and_mounts','建立后排七叶轴流风扇、带安装孔的框体、独立转子与轴孔、电机支板和四根支撑臂，并加入两处固定耳及穿孔螺钉。')
+
+
+STAGES[13]=stage13
+
+
+def _psu_cap(m,key,x,y,r,h,holes,blue=False):
+    m.cyl(key+'Seal','Radial capacitor lower seal',r-.4,.7,(x,y,40.8),'Power',3,'black',internal=True)
+    m.cut(key+'Seal',[Part.makeCylinder(.43,1,V(x+dx,y,40.65)) for dx in [-r*.35,r*.35]],'Capacitor lead insulation passages').Refine=False
+    m.cyl(key,'Radial electrolytic capacitor study',r,h,(x,y,41.6),'Power',3,'psublue' if blue else 'metal',internal=True)
+    cap=Part.makeCylinder(r-.5,.15,V(x,y,41.78+h))
+    cap=cap.cut(Part.makeBox(.3,1.5*r,.09,V(x-.15,y-.75*r,41.87+h)))
+    m.feature(key+'Top','Scored capacitor top seal',cap,'Power',4,'metal',True)
+    for i,dx in enumerate([-r*.35,r*.35]):
+        m.cyl(key+'Leg'+str(i),'Capacitor board lead',.28,2.65,(x+dx,y,38.8),'Power',2,'metal',internal=True)
+        holes.append(Part.makeCylinder(.43,2.1,V(x+dx,y,38.75)))
+
+
+def stage14(m):
+    from .ps1 import _add_shape
+    m.colors.update({'psutan':(.57,.39,.19),'psublue':(.08,.35,.58),'transformercream':(.85,.80,.59)})
+    m.native('PowerPCB','Native original-family internal power-supply board',110,100,1.2,1.6,(-74,9,39),'Power',3,'psutan')
+    _add_shape(m,'PowerPCB',m.rr(23,14,1.6,(-11.5,62,39),.5),'Rear corner tab for motherboard power coupling').Refine=False
+    mounts=[(-125,55),(-125,-37),(-23,55),(-23,-37)]
+    holes=[Part.makeCylinder(1.5,2.1,V(x,y,38.75)) for x,y in mounts]
+    for i,y in enumerate([-18,31]):_psu_cap(m,'PrimaryBulk'+str(i),-101,y,10,20,holes,True)
+    for i,y in enumerate([-28,-10,8,26,44]):_psu_cap(m,'SecondaryFilter'+str(i),-26,y,4.7,16,holes)
+    for i,y in enumerate([-13,23]):
+        x=-120;key='LineChoke'+str(i)
+        m.box(key+'Base','Input choke insulating carrier',14,19,1.2,(x,y,40.8),'Power',3,'black',.6,True)
+        core=m.rr(13,17,12,(x,y,42.1),1.2).cut(m.rr(8,11,12.4,(x,y,41.9),.8))
+        m.feature(key+'Core','Input choke ferrite frame',core,'Power',3,'black',True)
+        for row,xx in enumerate([x-4.8,x+4.8]):
+            loops=[]
+            for turn in range(6):
+                zz=42.8+turn*1.6
+                loop=m.rr(5.8,12,.65,(xx,y,zz),1.8).cut(m.rr(4.4,10.6,1.1,(xx,y,zz-.2),1.1))
+                # Coil clears the ferrite with a study insulation gap.
+                loops.append(loop.cut(core))
+            m.feature(key+'Winding'+str(row),'Input-filter copper winding study',Part.makeCompound(loops),'Power',3,'copper',True)
+        for k,(dx,dy) in enumerate([(-4,-7),(4,-7),(-4,7),(4,7)]):
+            m.cyl(key+'Leg'+str(k),'Choke board terminal',.4,2.1,(x+dx,y+dy,38.8),'Power',2,'metal',internal=True)
+            holes.append(Part.makeCylinder(.55,2.1,V(x+dx,y+dy,38.75)))
+        m.cut(key+'Base',[Part.makeCylinder(.55,1.6,V(x+dx,y+dy,40.6)) for dx,dy in [(-4,-7),(4,-7),(-4,7),(4,7)]],'Choke terminal passages').Refine=False
+    x,y=-60,-17
+    m.box('TransformerBobbin','Switching transformer bobbin',26,30,2,(x,y,40.9),'Power',3,'black',1.2,True)
+    outer=m.rr(24,27,20,(x,y,43),1.1);inner=m.rr(15,19,20.4,(x,y,42.8),.7)
+    m.feature('TransformerCore','Power transformer ferrite core',outer.cut(inner),'Power',3,'black',True)
+    m.box('TransformerWrap','Insulated transformer winding pack',14,18,18,(x,y,44),'Power',3,'transformercream',1.4,True)
+    mark=_spaced_text_shape(m,'TRANSFORMER',1.1);mark.translate(V(x-6.1,y-1,62.025))
+    m.feature('TransformerMark','TRANSFORMER',mark,'Power',4,'black')
+    for row,dy in enumerate([-13,13]):
+        for i in range(5):
+            xx=x+(i-2)*4.2
+            m.cyl('TransformerPin'+str(row*5+i),'Transformer pin study',.4,3.0,(xx,y+dy,38.8),'Power',2,'metal',internal=True)
+            holes.append(Part.makeCylinder(.55,2.1,V(xx,y+dy,38.75)))
+    m.cut('TransformerBobbin',[Part.makeCylinder(.55,2.4,V(x+(i-2)*4.2,y+dy,40.7)) for dy in [-13,13] for i in range(5)],'Transformer terminal insulation passages').Refine=False
+    for i,x in enumerate([-82,-38]):
+        plate=Part.makeBox(1.0,91,26,V(x-.5,-38,41.0))
+        foot=Part.makeBox(7,91,.7,V(x-3.5,-38,40.8))
+        m.feature('PSUHeatSink'+str(i),'Power transistor vertical heat-sink plate',plate.fuse(foot),'Power',4,'metal',True)
+    # Original corner coupling is represented as four individual long sockets.
+    x,y=-12,64
+    housing=m.rr(22,10,20.8,(x,y,18.05),.7);bores=[]
+    for i in range(4):
+        xx=x+(i-1.5)*5
+        housing=housing.cut(Part.makeBox(2.4,2.4,21.2,V(xx-1.2,y-1.2,17.9)))
+        sleeve=Part.makeBox(1.9,1.9,21.7,V(xx-.95,y-.95,18.95)).cut(Part.makeBox(1.35,1.35,22.1,V(xx-.675,y-.675,18.75)))
+        m.feature('PowerCouplingContact'+str(i),'Four-way motherboard coupling socket',sleeve,'Power',2,'metal',True)
+        holes.append(Part.makeCylinder(1.45,2.1,V(xx,y,38.75)))
+    m.feature('PowerCouplingHousing','Motherboard power-coupling insulating housing',housing,'Power',2,'white',True)
+    m.cut('PowerPCB',holes,'Power board mounting and individually drilled terminal holes').Refine=False
+    support_tabs=[]
+    for i,(x,y) in enumerate(mounts):
+        anchor=-143 if x<-100 else -8
+        tab=Part.makeBox(abs(anchor-x)+6,6,1.2,V(min(x,anchor)-3,y-3,35.85))
+        support_tabs.append(tab.cut(Part.makeCylinder(1.0,1.6,V(x,y,35.65))))
+        m.ring('PSUSpacer'+str(i),'Power-board insulating standoff',2.5,1.0,1.75,(x,y,37.1),'Frame',3,'ps2black',internal=True)
+        m.screw('PSUScrew'+str(i),(x,y,41.1),'Power',4,length=5.0,radius=2.4,axis=(0,0,-1))
+    _add_shape(m,'MiddleFrame',Part.makeCompound(support_tabs),'Four raised power-board mounting shelves').Refine=False
+    m.cut('MiddleFrame',[Part.makeCylinder(1.0,3.4,V(x,y,33.9)) for x,y in mounts],'Power-board fixing pilot holes through existing ties').Refine=False
+    m.profile['stages']=14
+    m.checkpoint(14,'native_power_board_chokes_transformer_and_filter_caps','建立原版布局指导的独立电源板、两组输入扼流圈、双大电容、变压器、两片竖直散热板及五个输出滤波电容，并加入四位主板耦合接点和安装件。')
+
+
+STAGES[14]=stage14
+
+
+def stage15(m):
+    from .ps1 import _power_control_ic
+    m.colors['fuseglass']=(.55,.67,.70);holes=[]
+    for i,(x,y) in enumerate([(-62,23),(-61,40)]):
+        before=set(m.parts);local=[];_power_control_ic(m,'PowerControl'+str(i),x,y,8,local)
+        for name in set(m.parts)-before:
+            obj=m.parts[name];obj.Placement.Base.z+=27.2;obj.FlatPlacement=obj.Placement
+        for shape in local:shape.translate(V(0,0,27.2));holes.append(shape)
+    for i,(x,y) in enumerate([(-70,9),(-53,9),(-70,52)]):_psu_cap(m,'PowerSmallCap'+str(i),x,y,2.5,6,holes)
+    x,y,z=-105,52,45
+    m.ring('PowerFuseGlass','Input fuse glass barrel',1.8,1.5,15.6,(x,y,z),'Power',3,'fuseglass',axis=(1,0,0),internal=True)
+    m.cyl('PowerFuseWire','Fuse element study',.07,15.8,(x-.1,y,z),'Power',3,'metal',axis=(1,0,0),internal=True)
+    for i,xx in enumerate([x-2.2,x+15.8]):
+        m.cyl('PowerFuseCap'+str(i),'Fuse metal end cap',1.85,2,(xx,y,z),'Power',3,'metal',axis=(1,0,0),internal=True)
+        xx+=1
+        cradle=Part.makeCylinder(2.25,.65,V(xx-.325,y,z),V(1,0,0)).cut(Part.makeCylinder(1.9,.9,V(xx-.45,y,z),V(1,0,0)))
+        cradle=cradle.common(Part.makeBox(1,5,3.3,V(xx-.5,y-2.5,z-3.4)))
+        leg=Part.makeBox(.35,.45,4.0,V(xx-.175,y-.225,38.8))
+        m.feature('PowerFuseClip'+str(i),'Fuse cradle and through-board terminal',cradle.fuse(leg),'Power',3,'metal',True)
+        holes.append(Part.makeCylinder(.45,2.1,V(xx,y,38.75)))
+    # Input socket and two primary heat-sink mounted devices.
+    x,y=-117,52
+    housing=m.rr(10,7,5.5,(x,y,40.8),.7).cut(m.rr(8,5,4.2,(x,y,42.3),.4))
+    for i,dx in enumerate([-2.5,2.5]):
+        housing=housing.cut(Part.makeCylinder(.55,5.9,V(x+dx,y,40.6)))
+        m.cyl('PowerInputPin'+str(i),'Power input board pin',.4,7.5,(x+dx,y,38.8),'Power',3,'metal',internal=True)
+        holes.append(Part.makeCylinder(.55,2.1,V(x+dx,y,38.75)))
+    m.feature('PowerInputSocket','Two-position AC input connector',housing,'Power',3,'white',True)
+    for i,(x,y,side) in enumerate([(-84.5,8,-1),(-35.5,9,1),(-35.5,34,1)]):
+        case=m.rr(8,10,2,(x,y,46.6),.5,g.rotation((side,0,0),(0,0,1)))
+        m.feature('PowerSwitchDevice'+str(i),'Heat-sink mounted power-device package',case,'Power',4,'black',True)
+        for pin in range(3):
+            yy=y+(pin-1)*2.3
+            leg=Part.makeBox(.45,.45,2.7,V(x-.225,yy-.225,38.8))
+            m.feature('PowerDeviceLead'+str(i)+'_'+str(pin),'Power device board terminal',leg,'Power',3,'metal',True)
+            holes.append(Part.makeCylinder(.55,2.1,V(x,yy,38.75)))
+        m.cut('PSUHeatSink'+str(0 if i==0 else 1),[Part.makeCylinder(.55,1.2,V(x,y+(pin-1)*2.3,40.6)) for pin in range(3)],'Power-device lead clearance through heat-sink foot').Refine=False
+    for i,(x,y) in enumerate([(-73,1),(-68,34),(-54,34),(-52,52)]):
+        m.cyl('PowerResistor'+str(i),'Axial resistor body study',1.0,5,(x-2.5,y,43.4),'Power',3,'transformercream',axis=(1,0,0),internal=True)
+        for end,side in enumerate([-1,1]):
+            xx=x+side*4.0
+            lead=Part.makeCylinder(.2,1.35,V(x+side*2.6,y,43.4),V(side,0,0)).fuse(Part.makeCylinder(.2,4.6,V(xx,y,38.8)))
+            m.feature('PowerResistorLead'+str(i)+'_'+str(end),'Formed resistor lead',lead,'Power',3,'metal',True)
+            holes.append(Part.makeCylinder(.35,2.1,V(xx,y,38.75)))
+    m.cut('PowerPCB',holes,'Fuse, control IC, input and power-device terminal holes').Refine=False
+    m.label('PowerBoardMark','SCPH-10000 / PSU STUDY',1.5,(-78,56.3,40.625),'Power',3,'white')
+    m.profile['stages']=15
+    m.checkpoint(15,'power_input_fuse_control_and_switching_components','补齐独立电源板的玻璃保险丝与夹座、输入连接器、控制封装、小电容、散热板侧功率器件和轴向电阻；接点保持独立穿板孔，电路为非功能性结构示意。')
+
+
+STAGES[15]=stage15
 
 
 def rear_snapshot(m,name='rear_review',assemblies=None,exclude=(),normal=(.2,1.8,.45)):

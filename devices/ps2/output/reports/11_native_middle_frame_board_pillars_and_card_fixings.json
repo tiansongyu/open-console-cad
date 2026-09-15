@@ -1,8 +1,8 @@
 {
-  "iteration": 10,
-  "slug": "native_lower_shield_fingers_and_four_fixings",
-  "summary": "建立原生下部屏蔽板、周边折起接触指、排线检修开口及三处浅压凸接触区，加入四组支座与盲孔螺钉；板料和折边尺寸为装配学习近似。",
-  "physical_components": 696,
+  "iteration": 11,
+  "slug": "native_middle_frame_board_pillars_and_card_fixings",
+  "summary": "建立原生中框及电源与光驱分区，补充九个主板安装柱、由底面固定的螺钉和 PC CARD 笼支撑件；局部支柱和筋条按当前装配关系构建。",
+  "physical_components": 714,
   "objects": [
     {
       "name": "LowerHousingCut008",
@@ -3758,14 +3758,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "PCCardCage",
-      "label": "Type III PC CARD metal guide cage and mounting feet",
-      "type": "Part::Feature",
+      "name": "PCCardCageCut",
+      "label": "Type III PC CARD metal guide cage and mounting feet001",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 66,
-      "volume": 6881.099704289681,
+      "faces": 76,
+      "volume": 6872.459959784598,
       "bounds": [
         35.5,
         98.5,
@@ -18795,13 +18795,498 @@
       "material": "metal",
       "fidelity": "Schematic internal layout",
       "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut001",
+      "label": "Native original-family middle frame003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 140,
+      "volume": 25805.698421126508,
+      "bounds": [
+        -146.0,
+        146.0,
+        -86.0,
+        86.0,
+        8.9,
+        36.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew0",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854355,
+      "bounds": [
+        -131.5,
+        -126.5,
+        70.5,
+        75.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew1",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.93105630485434,
+      "bounds": [
+        107.5,
+        112.5,
+        -74.5,
+        -69.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew2",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854344,
+      "bounds": [
+        -122.5,
+        -117.5,
+        -60.5,
+        -55.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew3",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -87.55,
+        -83.45,
+        35.75,
+        39.849999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew4",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -38.05,
+        -33.95,
+        53.25,
+        57.349999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew4",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew5",
+      "label": "Cross-head fastener009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475564,
+      "bounds": [
+        -38.05,
+        -33.95,
+        -2.8499999999999996,
+        1.2499999999999998,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew5",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew6",
+      "label": "Cross-head fastener010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475571,
+      "bounds": [
+        -77.55,
+        -73.45,
+        -33.65,
+        -29.55,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew6",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew7",
+      "label": "Cross-head fastener011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475568,
+      "bounds": [
+        -12.05,
+        -7.95,
+        -74.05,
+        -69.95,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew7",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew8",
+      "label": "Cross-head fastener012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.75531246947557,
+      "bounds": [
+        31.95,
+        36.05,
+        70.95,
+        75.05,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew8",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer0",
+      "label": "PC CARD cage mounting spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew0",
+      "label": "Cross-head fastener013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533308,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew0",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer1Cut",
+      "label": "PC CARD cage mounting spacer002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 27.378404316326293,
+      "bounds": [
+        93.85,
+        98.15,
+        5.349999999999995,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew1",
+      "label": "Cross-head fastener014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533301,
+      "bounds": [
+        93.85,
+        98.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew1",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer2",
+      "label": "PC CARD cage mounting spacer003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505045,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew2",
+      "label": "Cross-head fastener015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533304,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew2",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer3",
+      "label": "PC CARD cage mounting spacer004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew3",
+      "label": "Cross-head fastener016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533294,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew3",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/ps2/output/iterations/10_native_lower_shield_fingers_and_four_fixings.FCStd",
+  "file": "devices/ps2/output/iterations/11_native_middle_frame_board_pillars_and_card_fixings.FCStd",
   "views": [
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_hero.png",
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_front.png"
+    "devices/ps2/output/previews/11_native_middle_frame_board_pillars_and_card_fixings_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 180

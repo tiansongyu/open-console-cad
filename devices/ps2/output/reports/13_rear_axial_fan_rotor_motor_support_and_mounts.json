@@ -1,8 +1,8 @@
 {
-  "iteration": 10,
-  "slug": "native_lower_shield_fingers_and_four_fixings",
-  "summary": "建立原生下部屏蔽板、周边折起接触指、排线检修开口及三处浅压凸接触区，加入四组支座与盲孔螺钉；板料和折边尺寸为装配学习近似。",
-  "physical_components": 696,
+  "iteration": 13,
+  "slug": "rear_axial_fan_rotor_motor_support_and_mounts",
+  "summary": "建立后排七叶轴流风扇、带安装孔的框体、独立转子与轴孔、电机支板和四根支撑臂，并加入两处固定耳及穿孔螺钉。",
+  "physical_components": 736,
   "objects": [
     {
       "name": "LowerHousingCut008",
@@ -3758,14 +3758,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "PCCardCage",
-      "label": "Type III PC CARD metal guide cage and mounting feet",
-      "type": "Part::Feature",
+      "name": "PCCardCageCut",
+      "label": "Type III PC CARD metal guide cage and mounting feet001",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 66,
-      "volume": 6881.099704289681,
+      "faces": 76,
+      "volume": 6872.459959784598,
       "bounds": [
         35.5,
         98.5,
@@ -18795,13 +18795,1092 @@
       "material": "metal",
       "fidelity": "Schematic internal layout",
       "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut001",
+      "label": "Native original-family middle frame003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 140,
+      "volume": 25805.698421126508,
+      "bounds": [
+        -146.0,
+        146.0,
+        -86.0,
+        86.0,
+        8.9,
+        36.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "ps2black",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew0",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854355,
+      "bounds": [
+        -131.5,
+        -126.5,
+        70.5,
+        75.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew1",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.93105630485434,
+      "bounds": [
+        107.5,
+        112.5,
+        -74.5,
+        -69.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew2",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 13.931056304854344,
+      "bounds": [
+        -122.5,
+        -117.5,
+        -60.5,
+        -55.5,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew3",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -87.55,
+        -83.45,
+        35.75,
+        39.849999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew4",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475566,
+      "bounds": [
+        -38.05,
+        -33.95,
+        53.25,
+        57.349999999999994,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew4",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew5",
+      "label": "Cross-head fastener009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475564,
+      "bounds": [
+        -38.05,
+        -33.95,
+        -2.8499999999999996,
+        1.2499999999999998,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew5",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew6",
+      "label": "Cross-head fastener010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475571,
+      "bounds": [
+        -77.55,
+        -73.45,
+        -33.65,
+        -29.55,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew6",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew7",
+      "label": "Cross-head fastener011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.755312469475568,
+      "bounds": [
+        -12.05,
+        -7.95,
+        -74.05,
+        -69.95,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew7",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardScrew8",
+      "label": "Cross-head fastener012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.75531246947557,
+      "bounds": [
+        31.95,
+        36.05,
+        70.95,
+        75.05,
+        6.8,
+        13.33
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardScrew8",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer0",
+      "label": "PC CARD cage mounting spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew0",
+      "label": "Cross-head fastener013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533308,
+      "bounds": [
+        35.85,
+        40.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew0",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer1Cut",
+      "label": "PC CARD cage mounting spacer002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 27.378404316326293,
+      "bounds": [
+        93.85,
+        98.15,
+        5.349999999999995,
+        9.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew1",
+      "label": "Cross-head fastener014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533301,
+      "bounds": [
+        93.85,
+        98.15,
+        4.85,
+        9.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew1",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer2",
+      "label": "PC CARD cage mounting spacer003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505045,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew2",
+      "label": "Cross-head fastener015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533304,
+      "bounds": [
+        35.85,
+        40.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew2",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageSpacer3",
+      "label": "PC CARD cage mounting spacer004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 30.01791780505046,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        8.9,
+        11.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageSpacer3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PCCageScrew3",
+      "label": "Cross-head fastener016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.596512481533294,
+      "bounds": [
+        93.85,
+        98.15,
+        71.85,
+        76.15,
+        6.919999999999999,
+        12.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PCCageScrew3",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EEThermal",
+      "label": "Processor-to-spreader thermal interface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2490.820801896615,
+      "bounds": [
+        -86.0,
+        -47.0,
+        -24.75,
+        11.75,
+        13.56,
+        15.31
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EEThermal",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GSThermal",
+      "label": "Processor-to-spreader thermal interface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2052.445801896616,
+      "bounds": [
+        -78.25,
+        -43.75,
+        25.0,
+        59.0,
+        13.56,
+        15.31
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GSThermal",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAMThermal0",
+      "label": "Memory-to-spreader thermal interface",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 453.158349420272,
+      "bounds": [
+        -114.0,
+        -102.0,
+        3.4999999999999996,
+        12.5,
+        11.1,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAMThermal0",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RDRAMThermal1",
+      "label": "Memory-to-spreader thermal interface001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 453.158349420272,
+      "bounds": [
+        -114.0,
+        -102.0,
+        -23.5,
+        -14.5,
+        11.1,
+        15.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RDRAMThermal1",
+      "assembly": "Cooling",
+      "layer": 1,
+      "material": "thermalpink",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatSpreaderCut002",
+      "label": "Native processor heat-spreader plate003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 8718.64364215085,
+      "bounds": [
+        -129.00000000000148,
+        -32.999999999999964,
+        -71.5,
+        71.50000000000011,
+        15.4,
+        16.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatSpreader",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatPipe0",
+      "label": "Curved original-family heat-pipe study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 1282.135453831572,
+      "bounds": [
+        -100.6500001,
+        -37.0,
+        -44.6500001,
+        56.0,
+        16.8499999,
+        20.1500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatPipe0",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HeatPipe1",
+      "label": "Curved original-family heat-pipe study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 1115.6713522494358,
+      "bounds": [
+        -94.6500001,
+        -36.58770126861407,
+        -38.597657584120384,
+        56.0,
+        16.8499999,
+        20.1500001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HeatPipe1",
+      "assembly": "Cooling",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FinBaseCut001",
+      "label": "Native front heat-sink collector004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 219,
+      "volume": 11371.951297856036,
+      "bounds": [
+        -136.5,
+        -25.5,
+        -56.0,
+        -34.99999999999995,
+        18.099999999999998,
+        35.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FinBase",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Published body envelope; approximate local exterior detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkBracket0",
+      "label": "Heat-sink shield attachment tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 52.779071022409646,
+      "bounds": [
+        -111.0,
+        -103.0,
+        -56.8,
+        -56.099999999999994,
+        16.1,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkBracket0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkWasher0",
+      "label": "Heat-sink attachment washer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.958406743523138,
+      "bounds": [
+        -109.35,
+        -104.65,
+        -57.5,
+        -57.2,
+        21.65,
+        26.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkWasher0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkScrew0",
+      "label": "Heat-sink shield fixing study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10.910041967805771,
+      "bounds": [
+        -108.85,
+        -105.15,
+        -58.1,
+        -55.4,
+        22.15,
+        25.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkScrew0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkBracket1",
+      "label": "Heat-sink shield attachment tab001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 52.779071022409646,
+      "bounds": [
+        -48.0,
+        -40.0,
+        -56.8,
+        -56.099999999999994,
+        16.1,
+        26.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkBracket1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkWasher1",
+      "label": "Heat-sink attachment washer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 3.9584067435231325,
+      "bounds": [
+        -46.35,
+        -41.65,
+        -57.5,
+        -57.2,
+        21.65,
+        26.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkWasher1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SinkScrew1",
+      "label": "Heat-sink shield fixing study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 10.91004196780576,
+      "bounds": [
+        -45.85,
+        -42.15,
+        -58.1,
+        -55.4,
+        22.15,
+        25.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SinkScrew1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanFrameFuse",
+      "label": "Original-family rear axial fan casing001",
+      "type": "Part::Fuse",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 14639.547307821962,
+      "bounds": [
+        -80.0,
+        -22.0,
+        69.2,
+        83.60000000000001,
+        14.999999999999996,
+        73.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanFrame",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanRotorCut",
+      "label": "Seven-blade rear fan rotor study001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 39,
+      "volume": 3435.51450359471,
+      "bounds": [
+        -76.77769328050547,
+        -24.839492445250624,
+        72.4,
+        80.4,
+        17.65320641867339,
+        70.20653275369826
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanRotor",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFanPCB",
+      "label": "Fan motor support circuit board",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 166.6300743464031,
+      "bounds": [
+        -60.1,
+        -41.9,
+        70.3,
+        70.95,
+        34.9,
+        53.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFanPCB",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanAxle",
+      "label": "Fan rotor axle study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 13.672211228422777,
+      "bounds": [
+        -51.8,
+        -50.2,
+        69.5,
+        76.3,
+        43.2,
+        44.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanAxle",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanMount0",
+      "label": "Rear fan supporting mounting ear",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 101.98261074831606,
+      "bounds": [
+        -79.2,
+        -72.2,
+        66.7,
+        69.0,
+        15.8,
+        22.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanMount0",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanFixing0",
+      "label": "Rear fan through-fixing study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 51.48913279600989,
+      "bounds": [
+        -77.9,
+        -73.5,
+        66.0,
+        83.0,
+        17.1,
+        21.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanFixing0",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanMount1",
+      "label": "Rear fan supporting mounting ear001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 101.98261074831606,
+      "bounds": [
+        -29.8,
+        -22.8,
+        66.7,
+        69.0,
+        65.2,
+        72.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanMount1",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps2black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanFixing1",
+      "label": "Rear fan through-fixing study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 51.489132796009876,
+      "bounds": [
+        -28.5,
+        -24.1,
+        66.0,
+        83.0,
+        66.5,
+        70.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanFixing1",
+      "assembly": "Cooling",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
     }
   ],
   "invalid_features": [],
-  "file": "devices/ps2/output/iterations/10_native_lower_shield_fingers_and_four_fixings.FCStd",
+  "file": "devices/ps2/output/iterations/13_rear_axial_fan_rotor_motor_support_and_mounts.FCStd",
   "views": [
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_hero.png",
-    "devices/ps2/output/previews/10_native_lower_shield_fingers_and_four_fixings_front.png"
+    "devices/ps2/output/previews/13_rear_axial_fan_rotor_motor_support_and_mounts_hero.png"
   ],
   "geometry_audit_pose": "flat / opening 180 degrees",
   "saved_pose": 180
