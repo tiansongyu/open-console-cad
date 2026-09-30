@@ -1,0 +1,88 @@
+{
+  "id": "ps5",
+  "title": "Sony PlayStation 5",
+  "prefix": "PlayStation5",
+  "model": "CFI-1000A family · original disc edition",
+  "family": "console",
+  "width": 390.0,
+  "height": 260.0,
+  "closed_depth": 104.0,
+  "base_depth": 54.0,
+  "default_opening": 180,
+  "color": [
+    0.88,
+    0.89,
+    0.91
+  ],
+  "stages": 4,
+  "parameter_basis": "Sony historical launch FAQ: approximate 390 x 104 x 260 mm (W x H x D), excluding Base",
+  "exterior_fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+  "envelope_kind": "published",
+  "envelope_basis": "2020 original disc-console approximate envelope, excluding its Base. Horizontal presentation uses X width, Y depth, Z height.",
+  "fidelity": "Approximate original enclosure study with schematic internals",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Frame",
+    "FrontIO",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Controls"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Optical",
+    "Storage"
+  ],
+  "internal_exclude": [],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -100,
+      0
+    ],
+    "Stand": [
+      0,
+      0,
+      -70
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://blog.playstation.com/2020/11/09/ps5-the-ultimate-faq/",
+      "role": "Historical launch FAQ: approximate console/controller dimensions, original port set and boxed kit; no present-day firmware claims"
+    },
+    {
+      "url": "https://blog.playstation.com/2020/10/07/ps5-teardown-an-inside-look-at-our-most-transformative-console-yet/",
+      "role": "Official original-console construction and removable stand/cover demonstration"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/PlayStation+5+Teardown/138280",
+      "role": "Firsthand original 2020 console and DualSense teardown, chip-side layout and mechanisms"
+    },
+    {
+      "url": "https://www.ifixit.com/Guide/PlayStation+5+Optical+Drive+Laser+Replacement/159080",
+      "role": "Original-enclosure-family optical mechanism; not proof of exact first-run board revision"
+    },
+    {
+      "url": "https://manuals.playstation.net/document/pdf/CFI-1015A-1.0_1.pdf",
+      "role": "Original CFI-1015A quick-start pages 2–3: rotating Base, screw/cap storage and rear-edge hooks"
+    }
+  ]
+}

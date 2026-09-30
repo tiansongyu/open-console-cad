@@ -32,14 +32,14 @@
 | 顺序 | 平台 | 全球累计 | 数据日期 / 性质 | 代表版本与进度 |
 | --- | --- | --- | --- | --- |
 | 1 | PlayStation 4 | >117 | 2022-06-30，Sony 官方 sell-in | CUH-1000A 黑色原版；完整本地交付通过，公开部署待核对 |
-| 2 | PlayStation 5 | >95 | 2026-06-30，Sony 官方 sell-in | 原版光驱机；待建模 |
+| 2 | PlayStation 5 | >95 | 2026-06-30，Sony 官方 sell-in | CFI-1000A 原版光驱机；外壳、接口及底座 4 轮、145 组件，内部结构待继续 |
 | 3 | PlayStation 3 | >87.4 | 2017-03-31，Sony 官方 sell-in | 原版厚机；待建模 |
 | 4 | Xbox 360 | >84 | 2014-06-09，Microsoft 官方供货至零售 | 原版白色；待建模 |
 | 5 | Game Boy Advance | 81.51 | Nintendo 历史累计，2026-06-30 统计表 | AGB-001；待建模 |
 | 6 | Xbox One | 57.96 | VGChartz 平台累计估算，2026-10-01 查询 | 原版黑色；待建模 |
 | 7 | Super Nintendo / Super Famicom | 49.10 | Nintendo 历史累计，2026-06-30 统计表 | SHVC-001；待建模 |
 | 8 | Game & Watch | 43.40 | Nintendo 官方历史系列累计 | 双屏 Donkey Kong DK-52 代表系列；待建模 |
-| 9 | Xbox Series X / S | 35.21 | VGChartz 截至 2026-08-01 的零售估算 | Series X 原版光驱机；待建模 |
+| 9 | Xbox Series X / S | 35.21 | VGChartz 截至 2026-08-01 的零售估算 | Series X CFI-1000A 原版光驱机；外壳、接口及底座 4 轮、145 组件，内部结构待继续 |
 | 10 | Xbox | >24 | 2006-05-09，Microsoft 官方累计 | 原版黑色；待建模 |
 
 数据来源：

@@ -1,0 +1,11 @@
+"""Rebuild every implemented PS5 stage; delivery finalization follows later."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,ps5
+for module in [geometry,core,ps5]:importlib.reload(module)
+model=core.Study(repo,'ps5');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(ps5.STAGES):ps5.STAGES[stage](model)
+model.doc.saveAs(str(model.out/'PlayStation5_Study.FCStd'))
