@@ -1,0 +1,4471 @@
+{
+  "iteration": 5,
+  "slug": "inner_cover_and_open_air_paths",
+  "summary": "建立原版上部内罩、上下贯通风扇口、同心金属护网、六组支柱和固定螺丝、除尘口与空 M.2 检修开口；光驱仓向下贯通，后续布置板件、风扇与光驱。内部尺寸和固定关系为学习近似。",
+  "physical_components": 165,
+  "objects": [
+    {
+      "name": "UpperCoverLoft",
+      "label": "Continuous white non-drive cover",
+      "type": "Part::Loft",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 238068.84811107648,
+      "bounds": [
+        -195.0000001,
+        195.0000001,
+        -130.0000001,
+        130.00000010000002,
+        81.5340778408167,
+        104.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperCover",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "ps5white",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerCoverCut",
+      "label": "Asymmetric white drive-side cover001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 237397.04429279352,
+      "bounds": [
+        -195.00000010000002,
+        195.0000001,
+        -130.0000001,
+        130.00000010000005,
+        0.06623095180279949,
+        31.905492888367498
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "ps5white",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CoreFrameCut016",
+      "label": "Original black central chassis017",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 478,
+      "volume": 204975.61846279836,
+      "bounds": [
+        -182.0000001,
+        176.0,
+        -117.5000001,
+        117.5,
+        21.9999999,
+        81.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CoreFrame",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "ps5gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush0",
+      "label": "Opposed disc dust brush",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 136.49699557428772,
+      "bounds": [
+        -164.0,
+        -33.99999999999999,
+        -108.5,
+        -105.5,
+        24.45,
+        24.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush1",
+      "label": "Opposed disc dust brush001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 136.49699557428772,
+      "bounds": [
+        -164.0,
+        -33.99999999999999,
+        -108.5,
+        -105.5,
+        28.0,
+        28.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power front control",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 66.59911485751282,
+      "bounds": [
+        -171.0,
+        -159.0,
+        -118.6,
+        -116.6,
+        51.6,
+        54.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Eject front control",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 66.59911485751282,
+      "bounds": [
+        -150.0,
+        -138.0,
+        -118.6,
+        -116.6,
+        51.6,
+        54.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontStatusGuide",
+      "label": "Blue status light guide above the glossy spine",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 102.59446530723861,
+      "bounds": [
+        -138.5,
+        148.5,
+        -118.17500000000001,
+        -117.625,
+        80.1,
+        80.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontStatusGuide",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "ps5blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBShield",
+      "label": "USB Type-A formed metal shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 182.00042088168755,
+      "bounds": [
+        13.799999999999999,
+        28.2,
+        -116.8,
+        -104.8,
+        54.65,
+        61.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBShield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBRearCarrierCut",
+      "label": "USB rear insulator003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 34,
+      "volume": 61.18036073760025,
+      "bounds": [
+        14.45,
+        27.55,
+        -105.925,
+        -105.075,
+        55.25,
+        60.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBRearCarrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTongue",
+      "label": "USB connector tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 112.70772012644099,
+      "bounds": [
+        14.9,
+        27.1,
+        -115.45,
+        -106.64999999999999,
+        57.5,
+        58.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTongue",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact0",
+      "label": "USB legacy contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        16.925,
+        17.575,
+        -115.10000000000001,
+        -110.49999999999999,
+        58.62,
+        58.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact1",
+      "label": "USB legacy contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        19.425,
+        20.075,
+        -115.10000000000001,
+        -110.49999999999999,
+        58.62,
+        58.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact2",
+      "label": "USB legacy contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        21.925,
+        22.575,
+        -115.10000000000001,
+        -110.49999999999999,
+        58.62,
+        58.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact3",
+      "label": "USB legacy contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        24.425,
+        25.075,
+        -115.10000000000001,
+        -110.49999999999999,
+        58.62,
+        58.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTail0",
+      "label": "USB board terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        19.285,
+        19.565,
+        -105.14999999999999,
+        -102.64999999999999,
+        55.15,
+        55.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTail0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTail1",
+      "label": "USB board terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        20.335,
+        20.615000000000002,
+        -105.14999999999999,
+        -102.64999999999999,
+        55.15,
+        55.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTail1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTail2",
+      "label": "USB board terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        21.384999999999998,
+        21.665,
+        -105.14999999999999,
+        -102.64999999999999,
+        55.15,
+        55.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTail2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTail3",
+      "label": "USB board terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        22.435,
+        22.715,
+        -105.14999999999999,
+        -102.64999999999999,
+        55.15,
+        55.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTail3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Shield",
+      "label": "USB Type-A formed metal shield001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 182.0004208816872,
+      "bounds": [
+        -126.2,
+        -111.8,
+        104.8,
+        116.8,
+        48.15,
+        54.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Shield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0RearCarrierCut",
+      "label": "USB rear insulator004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 64,
+      "volume": 61.16170216466643,
+      "bounds": [
+        -125.55,
+        -112.45,
+        105.075,
+        105.925,
+        48.75,
+        54.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0RearCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tongue",
+      "label": "USB connector tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 112.70772012644096,
+      "bounds": [
+        -125.10000000000001,
+        -112.89999999999999,
+        106.64999999999999,
+        115.45,
+        51.0,
+        52.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact0",
+      "label": "USB legacy contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -123.075,
+        -122.425,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact1",
+      "label": "USB legacy contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -120.575,
+        -119.925,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact2",
+      "label": "USB legacy contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -118.075,
+        -117.425,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact3",
+      "label": "USB legacy contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -115.575,
+        -114.925,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed0",
+      "label": "USB additional data contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -123.22,
+        -122.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed1",
+      "label": "USB additional data contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -121.22,
+        -120.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed2",
+      "label": "USB additional data contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -119.22,
+        -118.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed3",
+      "label": "USB additional data contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -117.22,
+        -116.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed4",
+      "label": "USB additional data contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08573025440310458,
+      "bounds": [
+        -115.22,
+        -114.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail0",
+      "label": "USB board terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -123.34,
+        -123.06,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail1",
+      "label": "USB board terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -122.29,
+        -122.01,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail2",
+      "label": "USB board terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -121.24,
+        -120.96,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail3",
+      "label": "USB board terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        -120.19,
+        -119.91,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail4",
+      "label": "USB board terminal008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -119.14,
+        -118.86,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail5",
+      "label": "USB board terminal009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -118.09,
+        -117.81,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail6",
+      "label": "USB board terminal010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -117.04,
+        -116.76,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail7",
+      "label": "USB board terminal011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -115.99,
+        -115.71,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail8",
+      "label": "USB board terminal012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        -114.94,
+        -114.66,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Shield",
+      "label": "USB Type-A formed metal shield002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 182.0004208816872,
+      "bounds": [
+        -93.2,
+        -78.8,
+        104.8,
+        116.8,
+        48.15,
+        54.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Shield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1RearCarrierCut",
+      "label": "USB rear insulator005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 64,
+      "volume": 61.16170216466643,
+      "bounds": [
+        -92.55,
+        -79.45,
+        105.075,
+        105.925,
+        48.75,
+        54.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1RearCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tongue",
+      "label": "USB connector tongue002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 112.70772012644099,
+      "bounds": [
+        -92.10000000000001,
+        -79.89999999999999,
+        106.64999999999999,
+        115.45,
+        51.0,
+        52.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact0",
+      "label": "USB legacy contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -90.075,
+        -89.425,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact1",
+      "label": "USB legacy contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195015,
+      "bounds": [
+        -87.575,
+        -86.925,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact2",
+      "label": "USB legacy contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -85.075,
+        -84.425,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact3",
+      "label": "USB legacy contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127195026,
+      "bounds": [
+        -82.575,
+        -81.925,
+        110.49999999999999,
+        115.10000000000001,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed0",
+      "label": "USB additional data contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -90.22,
+        -89.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed1",
+      "label": "USB additional data contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08573025440310458,
+      "bounds": [
+        -88.22,
+        -87.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed2",
+      "label": "USB additional data contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -86.22,
+        -85.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed3",
+      "label": "USB additional data contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -84.22,
+        -83.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed4",
+      "label": "USB additional data contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        -82.22,
+        -81.78,
+        108.2,
+        109.7,
+        52.12,
+        52.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail0",
+      "label": "USB board terminal013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -90.34,
+        -90.06,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail1",
+      "label": "USB board terminal014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -89.29,
+        -89.01,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail2",
+      "label": "USB board terminal015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        -88.24,
+        -87.96,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail3",
+      "label": "USB board terminal016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -87.19,
+        -86.91,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail4",
+      "label": "USB board terminal017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -86.14,
+        -85.86,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail5",
+      "label": "USB board terminal018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -85.09,
+        -84.81,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail6",
+      "label": "USB board terminal019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -84.04,
+        -83.76,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail7",
+      "label": "USB board terminal020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -82.99,
+        -82.71,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail8",
+      "label": "USB board terminal021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        -81.94,
+        -81.66,
+        102.64999999999999,
+        105.14999999999999,
+        48.65,
+        48.93
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCTube",
+      "label": "Front reversible USB-C shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 75.536501577071,
+      "bounds": [
+        -9.6,
+        -0.40000000000000013,
+        -117.1,
+        -107.1,
+        56.199999999999996,
+        59.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCTube",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCInsulator",
+      "label": "USB-C rear carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.789053890925533,
+      "bounds": [
+        -9.05,
+        -0.9500000000000002,
+        -108.02499999999999,
+        -107.27499999999999,
+        56.7,
+        59.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCInsulator",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCTongue",
+      "label": "USB-C central tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 28.959398223686176,
+      "bounds": [
+        -8.45,
+        -1.5499999999999998,
+        -115.8,
+        -108.8,
+        57.7,
+        58.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCTongue",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_0",
+      "label": "USB-C independent contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -7.87,
+        -7.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_1",
+      "label": "USB-C independent contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -7.37,
+        -7.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_2",
+      "label": "USB-C independent contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -6.87,
+        -6.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_3",
+      "label": "USB-C independent contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -6.37,
+        -6.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_4",
+      "label": "USB-C independent contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -5.87,
+        -5.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_5",
+      "label": "USB-C independent contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -5.37,
+        -5.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_6",
+      "label": "USB-C independent contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -4.87,
+        -4.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_7",
+      "label": "USB-C independent contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -4.37,
+        -4.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_8",
+      "label": "USB-C independent contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -3.87,
+        -3.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_9",
+      "label": "USB-C independent contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -3.37,
+        -3.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_9",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_10",
+      "label": "USB-C independent contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0921325309649143,
+      "bounds": [
+        -2.87,
+        -2.63,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_10",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact_1_11",
+      "label": "USB-C independent contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0921325309649143,
+      "bounds": [
+        -2.37,
+        -2.13,
+        -115.5,
+        -110.69999999999999,
+        57.58,
+        57.66
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact-1_11",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_0",
+      "label": "USB-C independent contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -7.87,
+        -7.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_1",
+      "label": "USB-C independent contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -7.37,
+        -7.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_2",
+      "label": "USB-C independent contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -6.87,
+        -6.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_3",
+      "label": "USB-C independent contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -6.37,
+        -6.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_4",
+      "label": "USB-C independent contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -5.87,
+        -5.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_5",
+      "label": "USB-C independent contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -5.37,
+        -5.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_6",
+      "label": "USB-C independent contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -4.87,
+        -4.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_7",
+      "label": "USB-C independent contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -4.37,
+        -4.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_8",
+      "label": "USB-C independent contact020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0921325309649143,
+      "bounds": [
+        -3.87,
+        -3.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_9",
+      "label": "USB-C independent contact021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.09213253096491429,
+      "bounds": [
+        -3.37,
+        -3.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_9",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_10",
+      "label": "USB-C independent contact022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0921325309649143,
+      "bounds": [
+        -2.87,
+        -2.63,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_10",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBCContact1_11",
+      "label": "USB-C independent contact023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0921325309649143,
+      "bounds": [
+        -2.37,
+        -2.13,
+        -115.5,
+        -110.69999999999999,
+        58.34,
+        58.42
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBCContact1_11",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANShield",
+      "label": "Ethernet folded shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 547.0421855181894,
+      "bounds": [
+        -56.0,
+        -40.0,
+        104.5,
+        116.9,
+        44.5,
+        58.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANCarrier",
+      "label": "Ethernet insulating rear wall",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 163.33595568258693,
+      "bounds": [
+        -55.05,
+        -40.95,
+        104.6,
+        105.6,
+        45.7,
+        57.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact0",
+      "label": "Ethernet spring contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965149,
+      "bounds": [
+        -52.9,
+        -52.550000000000004,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact1",
+      "label": "Ethernet spring contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.603434106096515,
+      "bounds": [
+        -51.55,
+        -51.2,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact2",
+      "label": "Ethernet spring contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965149,
+      "bounds": [
+        -50.199999999999996,
+        -49.85,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact3",
+      "label": "Ethernet spring contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.603434106096515,
+      "bounds": [
+        -48.849999999999994,
+        -48.5,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact4",
+      "label": "Ethernet spring contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965152,
+      "bounds": [
+        -47.5,
+        -47.150000000000006,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact5",
+      "label": "Ethernet spring contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965149,
+      "bounds": [
+        -46.15,
+        -45.800000000000004,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact6",
+      "label": "Ethernet spring contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965149,
+      "bounds": [
+        -44.8,
+        -44.45,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact7",
+      "label": "Ethernet spring contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965152,
+      "bounds": [
+        -43.449999999999996,
+        -43.1,
+        107.25,
+        114.75,
+        47.8,
+        48.029999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANLight0",
+      "label": "Ethernet status indicator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.1984955592153885,
+      "bounds": [
+        -54.95,
+        -53.45,
+        116.4,
+        117.4,
+        55.3,
+        56.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANLight0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "led",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANLight1",
+      "label": "Ethernet status indicator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.1984955592153885,
+      "bounds": [
+        -42.55,
+        -41.05,
+        116.4,
+        117.4,
+        55.3,
+        56.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANLight1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "led",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIShield",
+      "label": "Original HDMI formed shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 205.92000000000004,
+      "bounds": [
+        -7.8,
+        7.8,
+        104.2,
+        117.0,
+        48.2,
+        54.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMICarrier",
+      "label": "HDMI back insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 46.03879644737252,
+      "bounds": [
+        -6.0,
+        6.0,
+        104.3,
+        105.10000000000001,
+        49.1,
+        53.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMICarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMITongue",
+      "label": "HDMI nineteen-contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 73.2729778357909,
+      "bounds": [
+        -5.85,
+        5.85,
+        106.85000000000001,
+        115.55,
+        51.14,
+        51.86
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMITongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_0",
+      "label": "HDMI independent contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867662,
+      "bounds": [
+        -5.090000000000001,
+        -4.81,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_1",
+      "label": "HDMI independent contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676638,
+      "bounds": [
+        -3.9900000000000007,
+        -3.7100000000000004,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_2",
+      "label": "HDMI independent contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676638,
+      "bounds": [
+        -2.89,
+        -2.61,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_3",
+      "label": "HDMI independent contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867663,
+      "bounds": [
+        -1.79,
+        -1.5100000000000002,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_4",
+      "label": "HDMI independent contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867663,
+      "bounds": [
+        -0.6900000000000001,
+        -0.41000000000000003,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_5",
+      "label": "HDMI independent contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676632,
+      "bounds": [
+        0.41000000000000003,
+        0.6900000000000001,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_6",
+      "label": "HDMI independent contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676632,
+      "bounds": [
+        1.5100000000000002,
+        1.79,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_7",
+      "label": "HDMI independent contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676638,
+      "bounds": [
+        2.61,
+        2.89,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_8",
+      "label": "HDMI independent contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676638,
+      "bounds": [
+        3.7100000000000004,
+        3.9900000000000007,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1_9",
+      "label": "HDMI independent contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867662,
+      "bounds": [
+        4.81,
+        5.090000000000001,
+        108.4,
+        114.4,
+        51.9,
+        51.99
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1_9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_0",
+      "label": "HDMI independent contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867662,
+      "bounds": [
+        -4.540000000000001,
+        -4.26,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_1",
+      "label": "HDMI independent contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676635,
+      "bounds": [
+        -3.4400000000000004,
+        -3.16,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_2",
+      "label": "HDMI independent contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676638,
+      "bounds": [
+        -2.3400000000000003,
+        -2.06,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_3",
+      "label": "HDMI independent contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676632,
+      "bounds": [
+        -1.2400000000000002,
+        -0.9600000000000001,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_4",
+      "label": "HDMI independent contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1511517145867663,
+      "bounds": [
+        -0.14,
+        0.14,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_5",
+      "label": "HDMI independent contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676635,
+      "bounds": [
+        0.9600000000000001,
+        1.2400000000000002,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_6",
+      "label": "HDMI independent contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676635,
+      "bounds": [
+        2.06,
+        2.3400000000000003,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_7",
+      "label": "HDMI independent contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676635,
+      "bounds": [
+        3.16,
+        3.4400000000000004,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact_1_8",
+      "label": "HDMI independent contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15115171458676618,
+      "bounds": [
+        4.26,
+        4.540000000000001,
+        108.4,
+        114.4,
+        51.01,
+        51.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact-1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Twin-well figure-eight AC insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 1702.8982689026857,
+      "bounds": [
+        66.0,
+        86.0,
+        105.0,
+        117.0,
+        46.099999999999994,
+        56.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin0",
+      "label": "Independent AC inlet pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.492387895187946,
+      "bounds": [
+        71.0,
+        72.6,
+        105.7,
+        114.4,
+        50.7,
+        52.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACTerminal0",
+      "label": "AC internal blade terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3.4619784061406373,
+      "bounds": [
+        70.89999999999999,
+        72.7,
+        101.05,
+        104.55,
+        51.225,
+        51.775
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACTerminal0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin1",
+      "label": "Independent AC inlet pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.492387895187946,
+      "bounds": [
+        79.4,
+        81.0,
+        105.7,
+        114.4,
+        50.7,
+        52.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACTerminal1",
+      "label": "AC internal blade terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3.461978406140637,
+      "bounds": [
+        79.3,
+        81.10000000000001,
+        101.05,
+        104.55,
+        51.225,
+        51.775
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACTerminal1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandBaseCut001",
+      "label": "StandBaseBody002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 128596.16288078453,
+      "bounds": [
+        -80.0,
+        64.0,
+        -37.0,
+        107.0,
+        -20.0,
+        -12.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandBase",
+      "assembly": "Stand",
+      "layer": -8,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandRotorCut",
+      "label": "Rotating upper Base cone001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 68961.53597313084,
+      "bounds": [
+        -77.0,
+        61.0,
+        -34.0,
+        104.0,
+        -11.8,
+        -6.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandRotor",
+      "assembly": "Stand",
+      "layer": -7,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandPivot",
+      "label": "Base central pivot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 892.8406321502194,
+      "bounds": [
+        -15.0,
+        -1.0,
+        28.0,
+        42.0,
+        -14.8,
+        -9.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandPivot",
+      "assembly": "Stand",
+      "layer": -7,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandFootRing",
+      "label": "Underside non-slip ring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1900.0352368911117,
+      "bounds": [
+        -73.0,
+        57.0,
+        -30.0,
+        100.0,
+        -21.3,
+        -20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandFootRing",
+      "assembly": "Stand",
+      "layer": -9,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandStoredScrew",
+      "label": "Coin-slot vertical-mount screw stored in Base",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 9,
+      "volume": 79.4785215330395,
+      "bounds": [
+        29.5,
+        39.35,
+        32.0,
+        38.0,
+        -19.0,
+        -13.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandStoredScrew",
+      "assembly": "Stand",
+      "layer": -8,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandSaddle",
+      "label": "Horizontal-position upper saddle study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 56619.19418874881,
+      "bounds": [
+        -60.5,
+        44.5,
+        -24.0,
+        94.0,
+        -6.6,
+        -1.8999999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandSaddle",
+      "assembly": "Stand",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandSupport0",
+      "label": "Contoured saddle support study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1516.0578332192752,
+      "bounds": [
+        -55.0,
+        -41.0,
+        -13.0,
+        3.0,
+        -1.7,
+        5.309883262635693
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandSupport0",
+      "assembly": "Stand",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandPad0",
+      "label": "Cover contact rubber pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 420.6286677646163,
+      "bounds": [
+        -54.9,
+        -41.1,
+        -12.9,
+        2.9000000000000004,
+        5.409883262635693,
+        7.409883262635693
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandPad0",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandSupport1",
+      "label": "Contoured saddle support study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2710.803727472239,
+      "bounds": [
+        25.0,
+        39.0,
+        -13.0,
+        3.0,
+        -1.7,
+        10.834098146603935
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandSupport1",
+      "assembly": "Stand",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandPad1",
+      "label": "Cover contact rubber pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 420.6286677646164,
+      "bounds": [
+        25.099999999999998,
+        38.9,
+        -12.9,
+        2.9000000000000004,
+        10.934098146603935,
+        12.934098146603935
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandPad1",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandSupport2",
+      "label": "Contoured saddle support study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1723.9537507750802,
+      "bounds": [
+        -55.0,
+        -41.0,
+        67.0,
+        83.0,
+        -1.7,
+        6.271143500149299
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandSupport2",
+      "assembly": "Stand",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandPad2",
+      "label": "Cover contact rubber pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 420.62866776461635,
+      "bounds": [
+        -54.9,
+        -41.1,
+        67.1,
+        82.9,
+        6.3711435001493,
+        8.3711435001493
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandPad2",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandSupport3",
+      "label": "Contoured saddle support study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2636.128544493303,
+      "bounds": [
+        25.0,
+        39.0,
+        67.0,
+        83.0,
+        -1.7,
+        10.488818234566047
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandSupport3",
+      "assembly": "Stand",
+      "layer": -6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandPad3",
+      "label": "Cover contact rubber pad003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 420.6286677646164,
+      "bounds": [
+        25.099999999999998,
+        38.9,
+        67.1,
+        82.9,
+        10.588818234566046,
+        12.588818234566046
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandPad3",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandHook0Cut",
+      "label": "Rear cover edge hook001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 1321.225735450758,
+      "bounds": [
+        -49.0000001,
+        -40.9999999,
+        87.9999999,
+        127.0000001,
+        -1.6000001000000001,
+        20.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandHook0",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandHook1Cut",
+      "label": "Rear cover edge hook003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1379.1999999999998,
+      "bounds": [
+        25.0,
+        33.0,
+        88.0,
+        127.0,
+        -1.6,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandHook1",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BaseHoleCap",
+      "label": "Removable original Base mounting-hole cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 90.07574456372667,
+      "bounds": [
+        -182.4,
+        -179.6,
+        -3.2,
+        3.2,
+        47.8,
+        54.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BaseHoleCap",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StandHookBridge",
+      "label": "Crossbar between the rear edge hooks",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 653.1682300164699,
+      "bounds": [
+        -41.0,
+        25.000000000000004,
+        123.6,
+        126.9,
+        17.0,
+        20.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StandHookBridge",
+      "assembly": "Stand",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "InnerUpperFrameCut013",
+      "label": "Removable original internal upper cover014",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 32,
+      "volume": 113106.55064098047,
+      "bounds": [
+        -178.0,
+        172.0,
+        -111.5,
+        111.5,
+        74.0,
+        75.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "InnerUpperFrame",
+      "assembly": "Frame",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost0",
+      "label": "Hollow internal cover standoff",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522547,
+      "bounds": [
+        -164.5,
+        -157.5,
+        -103.5,
+        -96.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost0",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105446,
+      "bounds": [
+        -162.9,
+        -159.1,
+        -101.9,
+        -98.1,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew0",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost1",
+      "label": "Hollow internal cover standoff001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522535,
+      "bounds": [
+        -23.5,
+        -16.5,
+        -103.5,
+        -96.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost1",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105431,
+      "bounds": [
+        -21.9,
+        -18.1,
+        -101.9,
+        -98.1,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew1",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost2",
+      "label": "Hollow internal cover standoff002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522547,
+      "bounds": [
+        153.5,
+        160.5,
+        -105.5,
+        -98.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost2",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105446,
+      "bounds": [
+        155.1,
+        158.9,
+        -103.9,
+        -100.1,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew2",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost3",
+      "label": "Hollow internal cover standoff003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522547,
+      "bounds": [
+        -164.5,
+        -157.5,
+        95.5,
+        102.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost3",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105446,
+      "bounds": [
+        -162.9,
+        -159.1,
+        97.1,
+        100.9,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew3",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost4",
+      "label": "Hollow internal cover standoff004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522535,
+      "bounds": [
+        -23.5,
+        -16.5,
+        95.5,
+        102.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost4",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew4",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105431,
+      "bounds": [
+        -21.9,
+        -18.1,
+        97.1,
+        100.9,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew4",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FramePost5",
+      "label": "Hollow internal cover standoff005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1737.0368436522547,
+      "bounds": [
+        153.5,
+        160.5,
+        93.5,
+        100.5,
+        24.0,
+        73.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FramePost5",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrameScrew5",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 10.162922120105446,
+      "bounds": [
+        155.1,
+        158.9,
+        95.1,
+        98.9,
+        70.47,
+        76.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrameScrew5",
+      "assembly": "Frame",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperFanGuard",
+      "label": "Concentric metal intake grille with six radial spokes",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 123,
+      "volume": 2909.0068164804325,
+      "bounds": [
+        42.0,
+        168.0,
+        -48.0,
+        78.0,
+        76.09999999999997,
+        76.80000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperFanGuard",
+      "assembly": "Cooling",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanGuardScrew0",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 9.076056725669508,
+      "bounds": [
+        56.1,
+        59.9,
+        -33.9,
+        -30.1,
+        72.32000000000001,
+        77.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanGuardScrew0",
+      "assembly": "Cooling",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanGuardScrew1",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 9.076056725669508,
+      "bounds": [
+        56.1,
+        59.9,
+        60.1,
+        63.9,
+        72.32000000000001,
+        77.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanGuardScrew1",
+      "assembly": "Cooling",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanGuardScrew2",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 9.076056725669519,
+      "bounds": [
+        150.1,
+        153.9,
+        -33.9,
+        -30.1,
+        72.32000000000001,
+        77.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanGuardScrew2",
+      "assembly": "Cooling",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FanGuardScrew3",
+      "label": "Cross-head fastener009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 9.07605672566952,
+      "bounds": [
+        150.1,
+        153.9,
+        60.1,
+        63.9,
+        72.32000000000001,
+        77.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FanGuardScrew3",
+      "assembly": "Cooling",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustAccessCollar0",
+      "label": "Dust-access internal collar study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 597.8322343792862,
+      "bounds": [
+        -21.5,
+        -2.5,
+        54.0,
+        72.0,
+        71.0,
+        73.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustAccessCollar0",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DustAccessCollar1",
+      "label": "Dust-access internal collar study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 597.8322343792863,
+      "bounds": [
+        25.5,
+        44.5,
+        -77.0,
+        -59.0,
+        71.0,
+        73.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DustAccessCollar1",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps5/output/iterations/05_inner_cover_and_open_air_paths.FCStd",
+  "views": [
+    "devices/ps5/output/previews/05_inner_cover_and_open_air_paths_hero.png",
+    "devices/ps5/output/previews/05_inner_cover_and_open_air_paths_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
