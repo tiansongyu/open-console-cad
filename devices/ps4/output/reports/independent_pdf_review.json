@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "artifact": "devices/ps4/output/drawings/PlayStation4_Drawings.pdf",
+  "artifact_sha256": "cb9bdf9a6c1f5116a4cd08bf146532902ca8fec240da8de4c2cf87c46b0c2ac9",
+  "reviewed_at_utc": "2026-09-30T19:06:35.462309+00:00",
+  "reviewer": "independent isolated PS4 PDF reviewer",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "review_method": "Read Kami fresh-review requirement, content.json brief, READY coverage log, then independently opened every full page PNG with view_image. Read PDF page boxes, manifest and saved native drawing audit. No CAD or source edits.",
+  "contract_verdict": "PASS: 12 A3 landscape pages, required facts and preservation boundaries visible, no P0/P1 visual or content findings.",
+  "acceptance_checks": [
+    {
+      "check": "12 pages of A3 landscape",
+      "passed": true,
+      "evidence": "PDF page boxes on all 12 pages: 1190.5511474609375 × 841.8897705078125 pt, approximately 420 × 297 mm."
+    },
+    {
+      "check": "CAD-derived projections and physical sections",
+      "passed": true,
+      "evidence": "Pages 1–10 show CAD linework; page 5 explicitly marks A-A Y=-55 and B-B Y=-230 sections. drawing_checks.json records BRep projections and planar cross sections. CAD generation was not rerun in this PDF-only review."
+    },
+    {
+      "check": "native model-derived dimensions reload correctly",
+      "passed": true,
+      "evidence": "native_drawings_audit.json passes all 11 dimension references after saved-native audit, including 275, 304.490566, 53, 162.359999, 97.359686 and page 10 USB-A width 12 mm. Displayed rounded values agree."
+    },
+    {
+      "check": "Kami content style placeholders density and font checks",
+      "passed": true,
+      "evidence": ".local/ps4_kami_deliver.log: READY, 0 errors, 1 orphan warning category, 0 data gaps; content coverage, style, fonts and density OK."
+    },
+    {
+      "check": "all pages inspected visually and reviewed independently",
+      "passed": true,
+      "evidence": "Reviewer opened page-01.png through page-12.png separately in batches using view_image; all 12 were visually inspected."
+    }
+  ],
+  "preserve_checks": [
+    {
+      "boundary": "Original CUH-1000A slanted console and removable hard-drive cover",
+      "passed": true,
+      "evidence": "Page 1 identifies CUH-1000A and shows slanted body with separate top cover; pages 4 and 6 show storage and separated construction."
+    },
+    {
+      "boundary": "First-generation CUH-ZCT1 controller with opaque touchpad and rear lightbar",
+      "passed": true,
+      "evidence": "Page 3 identifies CUH-ZCT1, shows opaque touchpad with no later-model strip, and includes rear-lightbar / Micro-USB detail."
+    },
+    {
+      "boundary": "2013 official kit includes AC HDMI USB and mono headset",
+      "passed": true,
+      "evidence": "Pages 1 and 10 name all four accessories; page 10 depicts the four shortened accessory assemblies."
+    },
+    {
+      "boundary": "Later headset guide is not a launch-console construction source",
+      "passed": true,
+      "evidence": "Page 10 explicitly attributes MIC switch and separate clip to a later same-family guide and marks internal parts approximate. Page 12 repeats that the later guide only informs local headset appearance."
+    },
+    {
+      "boundary": "Shortened display cables and schematic nonfunctional internals",
+      "passed": true,
+      "evidence": "Pages 1 and 10 state shortened display paths; pages 7, 8 and 12 state nonfunctional, approximate internal layout and absence of manufacturing tolerances or validated motion."
+    },
+    {
+      "boundary": "Stable component identities across CAD STEP drawings and web",
+      "passed": true,
+      "evidence": "Page 11 shows stable PS4 component ranges and COMPONENTS.csv reference; counts and all 14 group totals match final_manifest.json. Cross-format identity implementation is outside this visual-review scope and relies on the separate delivery audit."
+    }
+  ],
+  "required_facts": {
+    "CUH-1000A": "visible page 1",
+    "CUH-ZCT1": "visible pages 1 and 3",
+    "1039 component entries": "visible pages 1, 11, 12; matches manifest object count and group sum",
+    "1133 solids": "visible pages 1, 11, 12; matches manifest solid sum"
+  },
+  "visual_checks": {
+    "font_and_glyphs": "PASS: CJK and Latin text legible and consistent; no missing-glyph boxes observed; font gate passes.",
+    "clipping_and_page_breaks": "PASS: headings, captions, notes and footers contained on all pages; no stranded heading at page bottom; page 11 table fits intact.",
+    "dimensions_and_captions": "PASS: dimension labels and arrowheads visible, captions separated from figures and notes. Page 10 frontal USB-A detail exposes four contacts; TRRS plug is horizontally legible.",
+    "alignment_density_and_rules": "PASS: consistent margins and footer alignment, figures occupy coherent drawing fields, neutral table rules; final source page intentionally sparse."
+  },
+  "findings": [
+    {
+      "severity": "INFO",
+      "id": "KAMI_ORPHAN_WARNING_REVIEWED",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "evidence": "Kami flags short Chinese sheet titles as one-word orphan candidates. In the inspected pages these titles sit at the top with their introductory text and figures, not stranded at page bottoms.",
+      "disposition": "Accepted; no visual orphan defect found."
+    },
+    {
+      "severity": "INFO",
+      "id": "APPROXIMATION_BOUNDARIES_RETAINED",
+      "pages": [
+        1,
+        3,
+        7,
+        8,
+        10,
+        12
+      ],
+      "evidence": "Public envelope specifications are distinguished from model-derived local dimensions; schematic internals and later headset-reference limitation are visible.",
+      "disposition": "Contract preservation satisfied; no factory-level fidelity claim inferred."
+    }
+  ],
+  "p0_findings": 0,
+  "p1_findings": 0,
+  "limitations": [
+    "This is a document and visual review, not independent physical measurement or reproduction of all CAD/STEP/web verification. Saved technical audits were read as evidence."
+  ],
+  "files_modified": [
+    "devices/ps4/output/reports/independent_pdf_review.json"
+  ]
+}

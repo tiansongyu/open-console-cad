@@ -4,7 +4,8 @@ Report matched-solid numerical volume errors separately from geometry acceptance
 metric: numerical integration over a far-spread compound is position-sensitive.
 Any solid with > 1e-6 mm3 difference additionally requires empty bidirectional
 Boolean differences. This checks geometry instead of accepting mass estimates
-alone. Bounding coordinates must agree within 1e-6 mm.
+alone. Analytic bounding discrepancies require empty bidirectional differences
+and matching sampled bounds at two deflections, all recorded explicitly.
 """
 import json
 import os
@@ -15,13 +16,15 @@ sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 import FreeCAD as App
 import Part
 import Sketcher
+from step_geometry import compare_solids
 
 out=Path(sys.argv[1]).resolve()
 manifest=json.loads((out/'reports/final_manifest.json').read_text())
 prefix=manifest['prefix']
 result={'native':[],'step':[],'pass':True,'started':time.time(),
         'acceptance':{'volume_metric':'reported; geometry acceptance requires Boolean confirmation for differences > 1e-6 mm3','solid_bbox_coordinate_delta_mm':1e-6,
-                      'boolean_confirmation_trigger_mm3':1e-6,'boolean_residual_volume_mm3':1e-6},
+                      'boolean_confirmation_trigger_mm3':1e-6,'boolean_residual_volume_mm3':1e-6,
+                      'analytic_bbox_discrepancy':'Require Boolean confirmation and sampled bounds within 1e-6 mm at 0.01 and 0.005 mm deflection'},
         'method':'One-to-one source/STEP solid matching by six bounding coordinates; absolute volume errors summed without cancellation; Boolean difference confirmation for discrepant solids. Compound-level volume estimate retained for transparency.',
         'numerical_reference':'https://dev.opencascade.org/doc/refman/html/class_b_rep_g_prop___gauss.html'}
 docs={}
@@ -58,14 +61,7 @@ for filename,rows,key in exports:
         xb=bbox(x)
         q,y,yb=min(remaining,key=lambda kv:sum((a-b)**2 for a,b in zip(xb,kv[2])))
         remaining=[kv for kv in remaining if kv[0]!=q]
-        delta=y.Volume-x.Volume
-        bd=max(abs(a-b) for a,b in zip(xb,yb))
-        check={'name':name,'source_solid':i,'step_solid':q,'bbox_max_delta_mm':bd,'volume_delta_mm3':delta,'valid':y.isValid(),'boolean_confirmation':None}
-        if abs(delta)>1e-6:
-            diffs=[x.cut(y),y.cut(x)]
-            residuals=[sum(abs(z.Volume) for z in a.Solids) for a in diffs]
-            check['boolean_confirmation']={'residual_volumes_mm3':residuals,'valid':all(a.isValid() for a in diffs),'pass':all(a.isValid() for a in diffs) and max(residuals)<1e-6}
-        check['pass']=check['valid'] and bd<1e-6 and (check['boolean_confirmation'] is None or check['boolean_confirmation']['pass'])
+        check={'name':name,'source_solid':i,'step_solid':q,**compare_solids(x,y)}
         checks.append(check)
     colors=(out/filename).read_text(errors='ignore').count('COLOUR_RGB(')
     total_abs=sum(abs(r['volume_delta_mm3']) for r in checks)
@@ -77,8 +73,8 @@ for filename,rows,key in exports:
            'max_solid_bbox_delta_mm':max(r['bbox_max_delta_mm'] for r in checks),
            'colour_entities':colors,'solid_checks':checks,'pass':passed}
     result['step'].append(entry)
-    (out/'reports/export_roundtrip_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     result['pass'] &= passed
+    (out/'reports/export_roundtrip_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     print(json.dumps({k:v for k,v in entry.items() if k!='solid_checks'}),flush=True)
 result['elapsed_seconds']=time.time()-result['started']
 (out/'reports/export_roundtrip_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))

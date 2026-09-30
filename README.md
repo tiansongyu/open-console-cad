@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **17 款设备、10,985 个组件与 204 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **18 款设备、12,024 个组件与 216 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -132,13 +132,18 @@
       <sub>SCPH-10000 · 初代日版黑色</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=ps2&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/ps2/README.md">设备说明</a> · <a href="devices/ps2/output/drawings/PlayStation2_Drawings.pdf">A3 图纸</a>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=ps4&amp;view=assembled#viewer"><img src="site/public/images/ps4/hero.webp" width="206" height="160" alt="初代 PlayStation 4、DualShock 4 与原配附件的 FreeCAD 模型"></a><br>
+      <strong>Sony PlayStation 4</strong><br>
+      <sub>CUH-1000A · 初代黑色</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=ps4&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/ps4/README.md">设备说明</a> · <a href="devices/ps4/output/drawings/PlayStation4_Drawings.pdf">A3 图纸</a>
+    </td>
   </tr>
 </table>
 
-网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动，以及 PlayStation 2 的 GH-001 双面主板、初代 PC CARD、双热管散热、DualShock 2 输入机构和振动电机。
+网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动，以及 PlayStation 2 的 GH-001 双面主板、初代 PC CARD、双热管散热、DualShock 2 输入机构和振动电机，以及 PlayStation 4 的双面显存主板、硬盘、离心散热、吸入光驱与 DualShock 4。
 
-原有十七个平台均已完成原生模型与配套交付，详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。后续按全球累计硬件销量新增十个平台，见 [扩充计划](docs/SALES_EXPANSION_PLAN.md)。
+原有十七个平台均已完成原生模型与配套交付，详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。按全球累计硬件销量新增十个平台的工作已完成首款 PS4，见 [扩充计划](docs/SALES_EXPANSION_PLAN.md)。
 
 ## 快速开始
 
@@ -233,9 +238,9 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-已收录的十三个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64` 和 `wii`。共享工具位于 `tools/`，重建时请保留仓库结构。
+已收录的十八个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64`、`wii`、`wiiu`、`saturn`、`ps1`、`ps2` 和 `ps4`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
-经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。上方模型库中的设备均提供完整模型、图册与在线预览；PlayStation 2 继续扩展。
+经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。上方模型库中的设备均提供完整模型、图册与在线预览；销量扩充批次继续推进。
 
 ## 验证记录
 
@@ -243,7 +248,7 @@ open-console-cad/
 
 | 验证范围 | 记录 |
 | --- | --- |
-| 十三款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
+| 十八款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
 | 首批七款：线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
 | 首批七款：模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
 | 新增 Game Boy：14 个线上文件与桌面/手机预览 | [文件核对](devices/gameboy/output/reports/live_delivery_audit.json) · [交互核对](devices/gameboy/output/reports/live_ui_checks.json) |
@@ -252,6 +257,11 @@ open-console-cad/
 | 新增 Mega Drive：十一种视图与完整交付 | [交付核对](devices/megadrive/output/reports/completion_audit.json) · [线上核对](devices/megadrive/output/reports/live_delivery_audit.json) |
 | 新增 Nintendo 64：十五种视图、光学摇杆与 12 页图纸 | [交付核对](devices/n64/output/reports/completion_audit.json) · [线上预览核对](devices/n64/output/reports/live_ui_checks.json) |
 | 新增 Wii：十七种视图、原版控制器与 12 页图纸 | [交付核对](devices/wii/output/reports/completion_audit.json) · [线上预览核对](devices/wii/output/reports/live_ui_checks.json) |
+| 新增 Wii U：16 种视图与 12 页图纸 | [交付核对](devices/wiiu/output/reports/completion_audit.json) · [线上预览核对](devices/wiiu/output/reports/live_ui_checks.json) |
+| 新增 Sega Saturn：16 种视图与 12 页图纸 | [交付核对](devices/saturn/output/reports/completion_audit.json) · [线上预览核对](devices/saturn/output/reports/live_ui_checks.json) |
+| 新增 PlayStation：18 种视图与 12 页图纸 | [交付核对](devices/ps1/output/reports/completion_audit.json) · [线上预览核对](devices/ps1/output/reports/live_ui_checks.json) |
+| 新增 PlayStation 2：21 种视图与 12 页图纸 | [交付核对](devices/ps2/output/reports/completion_audit.json) · [线上预览核对](devices/ps2/output/reports/live_ui_checks.json) |
+| 新增 PlayStation 4：20 种视图与 12 页图纸 | [交付核对](devices/ps4/output/reports/completion_audit.json) · [线上预览核对](devices/ps4/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献

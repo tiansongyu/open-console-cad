@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment checked separately.",
+  "components": 1039,
+  "solids": 1133,
+  "stages": 29,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "step_geometry_validation.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full rebuild, strict BRep and 2225-pair interference checks use the saved Study. delivery_geometry_audit proves every Study part geometrically equivalent to saved Complete; export audit checks saved native and each STEP solid.",
+  "files": [
+    {
+      "path": "devices/ps4/output/PlayStation4_Complete.FCStd",
+      "bytes": 12942993,
+      "sha256": "9b363ce5e37b72b8942d4702ff9387077237914e2dc54ec71e6b74d3d558d170"
+    },
+    {
+      "path": "devices/ps4/output/PlayStation4_Exploded.FCStd",
+      "bytes": 4098590,
+      "sha256": "6837ae37d2bcd6ea1ba1737cdbf5facb483dddbf545ac7620a6ec2e03cb4d56a"
+    },
+    {
+      "path": "devices/ps4/output/PlayStation4_Drawings.FCStd",
+      "bytes": 363397,
+      "sha256": "9fef0578c44ff99b37d39e9617d74711ce01443770c1926ee5ec5dc1f70facde"
+    },
+    {
+      "path": "devices/ps4/output/PlayStation4_FullKit.step",
+      "bytes": 24195702,
+      "sha256": "a3ba7cd5da2bdd6b780853fc1b9f48605d0318c4556b97e5f2b0f072a1a393f9"
+    },
+    {
+      "path": "devices/ps4/output/PlayStation4_Console.step",
+      "bytes": 22589781,
+      "sha256": "0b906e748f5ad8d5e5e4594c69e02b53e987f60656103191fcaa7e4694c1ab88"
+    },
+    {
+      "path": "devices/ps4/output/PlayStation4_Exploded.step",
+      "bytes": 24197221,
+      "sha256": "9942c70cfe9d7d52ae69fcd052a6e96c3870001af5b1e6bf9f61ae5c52df9390"
+    },
+    {
+      "path": "devices/ps4/output/drawings/PlayStation4_Drawings.pdf",
+      "bytes": 660772,
+      "sha256": "cb9bdf9a6c1f5116a4cd08bf146532902ca8fec240da8de4c2cf87c46b0c2ac9"
+    },
+    {
+      "path": "devices/ps4/output/drawings/PlayStation4_Drawings.html",
+      "bytes": 1485512,
+      "sha256": "ffd87f98c90fb2dc17afa72b968c4c6a1df2791b2efd4e7df640a489667175da"
+    },
+    {
+      "path": "devices/ps4/output/COMPONENTS.csv",
+      "bytes": 182220,
+      "sha256": "6484e71a0a5ab532912d344d0159dd20eda0c31f5abe709669d71cb52d922cc7"
+    },
+    {
+      "path": "site/public/models/ps4.glb",
+      "bytes": 10708996,
+      "sha256": "e5e93e5643934f3f70cf9c68d87d098b9366dd0ec481fa1c0cada0797d4f4de3"
+    }
+  ],
+  "live_verified": false
+}

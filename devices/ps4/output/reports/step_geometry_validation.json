@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "actual_trimmed_shell",
+      "expected_acceptance": true,
+      "check": {
+        "bbox_max_delta_mm": 0.8580919466058106,
+        "volume_delta_mm3": 0.03796513846464222,
+        "valid": true,
+        "boolean_confirmation": {
+          "residual_volumes_mm3": [
+            0,
+            0
+          ],
+          "valid": true,
+          "pass": true
+        },
+        "sampled_bounds_confirmation": {
+          "pass": true,
+          "checks": [
+            {
+              "deflection_mm": 0.01,
+              "source_bounds_mm": [
+                -81.17983216451,
+                -299.1198451059968,
+                1.0,
+                81.17983216451,
+                -201.76031436139007,
+                22.000000000000004
+              ],
+              "step_bounds_mm": [
+                -81.1798321645074,
+                -299.1198451059764,
+                1.0,
+                81.17983216451003,
+                -201.7603143613,
+                22.0
+              ],
+              "source_vertices": 60323,
+              "step_vertices": 60290,
+              "max_delta_mm": 9.00683971849503e-11,
+              "pass": true
+            },
+            {
+              "deflection_mm": 0.005,
+              "source_bounds_mm": [
+                -81.17974404858904,
+                -299.11987434400055,
+                1.0,
+                81.17974404858904,
+                -201.76031436139007,
+                22.000000000000004
+              ],
+              "step_bounds_mm": [
+                -81.17974404858623,
+                -299.1198743439791,
+                1.0,
+                81.17974404858904,
+                -201.7603143613,
+                22.0
+              ],
+              "source_vertices": 137101,
+              "step_vertices": 137204,
+              "max_delta_mm": 9.00683971849503e-11,
+              "pass": true
+            }
+          ],
+          "basis": "Analytic bounds discrepancy additionally requires empty bidirectional Boolean differences and sampled-bound agreement at both deflections."
+        },
+        "pass": true
+      },
+      "passed": true
+    },
+    {
+      "case": "identical_box",
+      "expected_acceptance": true,
+      "check": {
+        "bbox_max_delta_mm": 0.0,
+        "volume_delta_mm3": 0.0,
+        "valid": true,
+        "boolean_confirmation": null,
+        "sampled_bounds_confirmation": null,
+        "pass": true
+      },
+      "passed": true
+    },
+    {
+      "case": "translated_box",
+      "expected_acceptance": false,
+      "check": {
+        "bbox_max_delta_mm": 0.01,
+        "volume_delta_mm3": 1.1368683772161603e-13,
+        "valid": true,
+        "boolean_confirmation": {
+          "residual_volumes_mm3": [
+            0.9999999999999999,
+            0.9999999999999787
+          ],
+          "valid": true,
+          "pass": false
+        },
+        "sampled_bounds_confirmation": null,
+        "pass": false
+      },
+      "passed": true
+    },
+    {
+      "case": "same_bounds_missing_material",
+      "expected_acceptance": false,
+      "check": {
+        "bbox_max_delta_mm": 0.0,
+        "volume_delta_mm3": -12.56637061435913,
+        "valid": true,
+        "boolean_confirmation": {
+          "residual_volumes_mm3": [
+            12.56637061435917,
+            0
+          ],
+          "valid": true,
+          "pass": false
+        },
+        "sampled_bounds_confirmation": null,
+        "pass": false
+      },
+      "passed": true
+    }
+  ]
+}
