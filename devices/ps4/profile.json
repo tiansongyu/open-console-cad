@@ -1,0 +1,80 @@
+{
+  "id": "ps4",
+  "title": "Sony PlayStation 4",
+  "prefix": "PlayStation4",
+  "model": "CUH-1000A · original Jet Black",
+  "family": "console",
+  "width": 275.0,
+  "height": 305.0,
+  "closed_depth": 53.0,
+  "base_depth": 23.2,
+  "default_opening": 180,
+  "color": [
+    0.085,
+    0.09,
+    0.1
+  ],
+  "stages": 8,
+  "parameter_basis": "Sony June 2013 CUH-1000A announcement: approximate 275 x 53 x 305 mm (W x H x D), tentative, excluding largest projection",
+  "exterior_fidelity": "Published approximate body envelope; photo-estimated local geometry",
+  "envelope_kind": "published",
+  "envelope_basis": "Original CUH-1000A approximate announced envelope. Slopes, split positions and walls are photographic study estimates.",
+  "fidelity": "Approximate original body study with schematic internals",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "FrontIO",
+    "Ports",
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Optical",
+    "Storage",
+    "Wiring"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Optical",
+    "Storage",
+    "Ports",
+    "Wiring"
+  ],
+  "internal_exclude": [
+    "UpperShield",
+    "DiskCover",
+    "PSUCover"
+  ],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -100,
+      0
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://sonyinteractive.com/en/press-releases/2013/playstation4-ps4-design-and-price-unveiled-available-at-399-in-us-and-at-399-in-europe/",
+      "role": "Original CUH-1000A approximate dimensions, interfaces, included kit and CUH-ZCT1 controller specifications"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/PlayStation+4+Teardown/19493",
+      "role": "Firsthand November 2013 North American launch-family exterior and internal layout"
+    },
+    {
+      "url": "https://www.ifixit.com/Guide/Disassembling+DualShock+4+Motherboard+Assembly/22679",
+      "role": "First-generation CUH-ZCT1 / JDM-001 controller construction reference"
+    }
+  ]
+}

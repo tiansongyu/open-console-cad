@@ -1,0 +1,231 @@
+{
+  "iteration": 1,
+  "slug": "original_slanted_enclosure",
+  "summary": "建立原生下壳、亮面硬盘盖、磨砂上盖、内凹中框、脚垫及顶面状态灯；保持公开近似包络，斜角、分割及壁厚为照片指导的学习估计。接口及内部结构尚待后续构建。",
+  "physical_components": 8,
+  "objects": [
+    {
+      "name": "LowerHousingCut001",
+      "label": "Original oblique lower enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 162222.0159999999,
+      "bounds": [
+        -137.5,
+        137.5,
+        -151.99056603773587,
+        142.3792452830189,
+        1.4999999999999964,
+        23.200000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCoverCut001",
+      "label": "Removable glossy hard-drive cover002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 58109.85158930841,
+      "bounds": [
+        -137.5,
+        -47.19999999999999,
+        -142.65094339622644,
+        152.5,
+        28.999999999999996,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut001",
+      "label": "Original matte upper enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 106950.81158931108,
+      "bounds": [
+        -44.80000000000001,
+        137.5,
+        -142.65094339622644,
+        152.5,
+        28.999999999999996,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut001",
+      "label": "Recessed inter-layer perimeter002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15677.200000000288,
+      "bounds": [
+        -135.5,
+        135.5,
+        -144.41698113207548,
+        144.07735849056607,
+        23.799999999999986,
+        28.20000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        -118.5,
+        -103.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        89.5,
+        104.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 155.67809724509615,
+      "bounds": [
+        107.0,
+        115.0,
+        92.5,
+        105.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IndicatorLens",
+      "label": "Recessed blue top status light guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 270.7808141502218,
+      "bounds": [
+        -46.675000000000004,
+        -45.324999999999996,
+        -111.0,
+        125.0,
+        51.95,
+        52.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IndicatorLens",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "ps4blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps4/output/iterations/01_original_slanted_enclosure.FCStd",
+  "views": [
+    "devices/ps4/output/previews/01_original_slanted_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

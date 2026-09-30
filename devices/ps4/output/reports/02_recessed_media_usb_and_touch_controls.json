@@ -1,0 +1,1528 @@
+{
+  "iteration": 2,
+  "slug": "recessed_media_usb_and_touch_controls",
+  "summary": "在内凹横向接缝加工吸入式光盘入口和双 USB 3.0 开口，加入金属壳、绝缘舌片、九接点及独立端子；补齐初代纵向电源与出仓触控条和前部标识。局部尺寸和电气布局为学习近似。",
+  "physical_components": 56,
+  "objects": [
+    {
+      "name": "LowerHousingCut004",
+      "label": "Original oblique lower enclosure005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 31,
+      "volume": 162143.40160921897,
+      "bounds": [
+        -137.5,
+        137.5,
+        -151.99056603773587,
+        142.3792452830189,
+        1.4999999999999964,
+        23.200000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCoverCut001",
+      "label": "Removable glossy hard-drive cover002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 58109.85158930841,
+      "bounds": [
+        -137.5,
+        -47.19999999999999,
+        -142.65094339622644,
+        152.5,
+        28.999999999999996,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut003",
+      "label": "Original matte upper enclosure004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 106901.97519997496,
+      "bounds": [
+        -44.80000000000001,
+        137.5,
+        -142.65094339622644,
+        152.5,
+        28.999999999999986,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut004",
+      "label": "Recessed inter-layer perimeter005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 28,
+      "volume": 13463.098407346755,
+      "bounds": [
+        -135.5,
+        135.5,
+        -144.41698113207548,
+        144.07735849056607,
+        23.799999999999986,
+        28.200000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        -118.5,
+        -103.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        89.5,
+        104.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 155.67809724509615,
+      "bounds": [
+        107.0,
+        115.0,
+        92.5,
+        105.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IndicatorLens",
+      "label": "Recessed blue top status light guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 270.7808141502218,
+      "bounds": [
+        -46.675000000000004,
+        -45.324999999999996,
+        -111.0,
+        125.0,
+        51.95,
+        52.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IndicatorLens",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "ps4blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush0",
+      "label": "Opposed media dust brush study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 97.01567362697403,
+      "bounds": [
+        -130.0,
+        -3.9999999999999973,
+        -142.5,
+        -140.3,
+        24.5,
+        24.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush1",
+      "label": "Opposed media dust brush study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 97.01567362697403,
+      "bounds": [
+        -130.0,
+        -3.9999999999999973,
+        -142.5,
+        -140.3,
+        27.05,
+        27.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Shield",
+      "label": "USB Type-A stamped metal shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 215.74220497323805,
+      "bounds": [
+        22.799999999999997,
+        37.2,
+        -143.5,
+        -129.5,
+        22.6,
+        29.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Carrier",
+      "label": "USB rear insulating carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 84.14430581842839,
+      "bounds": [
+        23.4,
+        36.6,
+        -130.95000000000002,
+        -129.85,
+        23.2,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Carrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tongue",
+      "label": "Nine-contact USB 3.0 insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 139.4232847743433,
+      "bounds": [
+        23.75,
+        36.25,
+        -141.04999999999998,
+        -131.35,
+        25.1,
+        26.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy0",
+      "label": "USB legacy contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.475699557428757,
+      "bounds": [
+        25.91,
+        26.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy1",
+      "label": "USB legacy contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287571,
+      "bounds": [
+        28.41,
+        29.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy2",
+      "label": "USB legacy contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287571,
+      "bounds": [
+        30.91,
+        31.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy3",
+      "label": "USB legacy contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        33.41,
+        34.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed0",
+      "label": "USB additional SuperSpeed contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.134207716754404,
+      "bounds": [
+        25.76,
+        26.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed1",
+      "label": "USB additional SuperSpeed contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440402,
+      "bounds": [
+        27.76,
+        28.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed2",
+      "label": "USB additional SuperSpeed contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440402,
+      "bounds": [
+        29.76,
+        30.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed3",
+      "label": "USB additional SuperSpeed contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440432,
+      "bounds": [
+        31.76,
+        32.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed4",
+      "label": "USB additional SuperSpeed contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440463,
+      "bounds": [
+        33.76,
+        34.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail0",
+      "label": "USB solder terminal tail",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        25.650000000000002,
+        25.95,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail1",
+      "label": "USB solder terminal tail001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        26.700000000000003,
+        27.0,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail2",
+      "label": "USB solder terminal tail002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        27.75,
+        28.049999999999997,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail3",
+      "label": "USB solder terminal tail003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        28.8,
+        29.099999999999998,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail4",
+      "label": "USB solder terminal tail004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        29.85,
+        30.15,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail5",
+      "label": "USB solder terminal tail005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        30.900000000000002,
+        31.2,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail6",
+      "label": "USB solder terminal tail006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        31.950000000000003,
+        32.25000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail7",
+      "label": "USB solder terminal tail007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184304,
+      "bounds": [
+        32.99999999999999,
+        33.300000000000004,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail8",
+      "label": "USB solder terminal tail008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184304,
+      "bounds": [
+        34.05,
+        34.35000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Shield",
+      "label": "USB Type-A stamped metal shell001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 215.742204973238,
+      "bounds": [
+        66.8,
+        81.2,
+        -143.5,
+        -129.5,
+        22.6,
+        29.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Carrier",
+      "label": "USB rear insulating carrier001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 84.14430581842835,
+      "bounds": [
+        67.39999999999999,
+        80.60000000000001,
+        -130.95000000000002,
+        -129.85,
+        23.2,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Carrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tongue",
+      "label": "Nine-contact USB 3.0 insulator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 139.4232847743433,
+      "bounds": [
+        67.75,
+        80.25,
+        -141.04999999999998,
+        -131.35,
+        25.1,
+        26.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy0",
+      "label": "USB legacy contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        69.91,
+        70.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy1",
+      "label": "USB legacy contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        72.41,
+        73.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy2",
+      "label": "USB legacy contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        74.91,
+        75.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy3",
+      "label": "USB legacy contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        77.41,
+        78.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed0",
+      "label": "USB additional SuperSpeed contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440335,
+      "bounds": [
+        69.75999999999999,
+        70.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed1",
+      "label": "USB additional SuperSpeed contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440335,
+      "bounds": [
+        71.75999999999999,
+        72.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed2",
+      "label": "USB additional SuperSpeed contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        73.75999999999999,
+        74.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed3",
+      "label": "USB additional SuperSpeed contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        75.75999999999999,
+        76.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed4",
+      "label": "USB additional SuperSpeed contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        77.75999999999999,
+        78.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail0",
+      "label": "USB solder terminal tail009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        69.64999999999999,
+        69.95,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail1",
+      "label": "USB solder terminal tail010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        70.69999999999999,
+        71.0,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail2",
+      "label": "USB solder terminal tail011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        71.75,
+        72.05000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail3",
+      "label": "USB solder terminal tail012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184349,
+      "bounds": [
+        72.8,
+        73.10000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail4",
+      "label": "USB solder terminal tail013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        73.85,
+        74.15,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail5",
+      "label": "USB solder terminal tail014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184349,
+      "bounds": [
+        74.89999999999999,
+        75.2,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail6",
+      "label": "USB solder terminal tail015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        75.94999999999999,
+        76.25,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail7",
+      "label": "USB solder terminal tail016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        77.0,
+        77.30000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail8",
+      "label": "USB solder terminal tail017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        78.05,
+        78.35000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power capacitive front strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 11.41775008158104,
+      "bounds": [
+        -46.65,
+        -45.35,
+        -140.81205767254855,
+        -136.51714571163538,
+        36.79215126203749,
+        47.46511467904882
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Eject capacitive front strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.337750081581037,
+      "bounds": [
+        -46.65,
+        -45.35,
+        -150.33953184996423,
+        -146.68778474176688,
+        8.739032850757953,
+        17.518233090328362
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontSony",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.20079272685016017,
+      "bounds": [
+        -126.72818801946308,
+        -115.52174496644295,
+        -138.31723113620856,
+        -137.29736788249124,
+        41.94305990647695,
+        44.90159396856127
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontSony",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPS4",
+      "label": "PS4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 64,
+      "volume": 0.2833547598168616,
+      "bounds": [
+        106.5817532557047,
+        116.77372483221477,
+        -138.32569155977447,
+        -136.86709491256704,
+        41.9181486593106,
+        46.168508824449255
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPS4",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps4/output/iterations/02_recessed_media_usb_and_touch_controls.FCStd",
+  "views": [
+    "devices/ps4/output/previews/02_recessed_media_usb_and_touch_controls_hero.png",
+    "devices/ps4/output/previews/02_recessed_media_usb_and_touch_controls_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

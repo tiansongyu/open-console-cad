@@ -1,0 +1,7359 @@
+{
+  "iteration": 6,
+  "slug": "native_emi_plates_spacers_and_memory_thermal_interfaces",
+  "summary": "补齐原生上下屏蔽板、硬盘区避让、APU 热窗口、通孔与散热开口、八组主板固定结构和显存导热垫；结构厚度、紧固件及局部开孔为学习近似。",
+  "physical_components": 272,
+  "objects": [
+    {
+      "name": "LowerHousingCut008",
+      "label": "Original oblique lower enclosure009",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 791,
+      "volume": 155177.13662292773,
+      "bounds": [
+        -137.5,
+        137.5,
+        -151.99056603773587,
+        142.3792452830189,
+        1.4999999999999964,
+        23.200000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerHousing",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCoverCut003",
+      "label": "Removable glossy hard-drive cover004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 344,
+      "volume": 55278.07151885727,
+      "bounds": [
+        -137.5,
+        -47.19999999999999,
+        -142.65094339622644,
+        152.5,
+        28.999999999999996,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCover",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperHousingCut009",
+      "label": "Original matte upper enclosure010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 344,
+      "volume": 103635.35091720571,
+      "bounds": [
+        -44.80000000000001,
+        137.5,
+        -142.65094339622644,
+        152.5,
+        28.999999999999986,
+        53.000000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperHousing",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "ps4matte",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MiddleFrameCut004",
+      "label": "Recessed inter-layer perimeter005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 28,
+      "volume": 13463.098407346755,
+      "bounds": [
+        -135.5,
+        135.5,
+        -144.41698113207548,
+        144.07735849056607,
+        23.799999999999986,
+        28.200000000000014
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MiddleFrame",
+      "assembly": "Frame",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Rubber support pad",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        -118.5,
+        -103.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Rubber support pad001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.17809724509615,
+      "bounds": [
+        -49.5,
+        -42.5,
+        89.5,
+        104.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Rubber support pad002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 155.67809724509615,
+      "bounds": [
+        107.0,
+        115.0,
+        92.5,
+        105.5,
+        0.0,
+        1.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IndicatorLens",
+      "label": "Recessed blue top status light guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 270.7808141502218,
+      "bounds": [
+        -46.675000000000004,
+        -45.324999999999996,
+        -111.0,
+        125.0,
+        51.95,
+        52.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IndicatorLens",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "ps4blue",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush0",
+      "label": "Opposed media dust brush study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 97.01567362697403,
+      "bounds": [
+        -130.0,
+        -3.9999999999999973,
+        -142.5,
+        -140.3,
+        24.5,
+        24.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush1",
+      "label": "Opposed media dust brush study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 97.01567362697403,
+      "bounds": [
+        -130.0,
+        -3.9999999999999973,
+        -142.5,
+        -140.3,
+        27.05,
+        27.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Shield",
+      "label": "USB Type-A stamped metal shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 215.74220497323805,
+      "bounds": [
+        22.799999999999997,
+        37.2,
+        -143.5,
+        -129.5,
+        22.6,
+        29.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Carrier",
+      "label": "USB rear insulating carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 84.14430581842839,
+      "bounds": [
+        23.4,
+        36.6,
+        -130.95000000000002,
+        -129.85,
+        23.2,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Carrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tongue",
+      "label": "Nine-contact USB 3.0 insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 139.4232847743433,
+      "bounds": [
+        23.75,
+        36.25,
+        -141.04999999999998,
+        -131.35,
+        25.1,
+        26.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy0",
+      "label": "USB legacy contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.475699557428757,
+      "bounds": [
+        25.91,
+        26.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy1",
+      "label": "USB legacy contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287571,
+      "bounds": [
+        28.41,
+        29.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy2",
+      "label": "USB legacy contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287571,
+      "bounds": [
+        30.91,
+        31.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Legacy3",
+      "label": "USB legacy contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        33.41,
+        34.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Legacy3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed0",
+      "label": "USB additional SuperSpeed contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.134207716754404,
+      "bounds": [
+        25.76,
+        26.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed1",
+      "label": "USB additional SuperSpeed contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440402,
+      "bounds": [
+        27.76,
+        28.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed2",
+      "label": "USB additional SuperSpeed contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440402,
+      "bounds": [
+        29.76,
+        30.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed3",
+      "label": "USB additional SuperSpeed contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440432,
+      "bounds": [
+        31.76,
+        32.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0SuperSpeed4",
+      "label": "USB additional SuperSpeed contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440463,
+      "bounds": [
+        33.76,
+        34.24,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0SuperSpeed4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail0",
+      "label": "USB solder terminal tail",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        25.650000000000002,
+        25.95,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail1",
+      "label": "USB solder terminal tail001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        26.700000000000003,
+        27.0,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail2",
+      "label": "USB solder terminal tail002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        27.75,
+        28.049999999999997,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail3",
+      "label": "USB solder terminal tail003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        28.8,
+        29.099999999999998,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail4",
+      "label": "USB solder terminal tail004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        29.85,
+        30.15,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail5",
+      "label": "USB solder terminal tail005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        30.900000000000002,
+        31.2,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail6",
+      "label": "USB solder terminal tail006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184303,
+      "bounds": [
+        31.950000000000003,
+        32.25000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail7",
+      "label": "USB solder terminal tail007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184304,
+      "bounds": [
+        32.99999999999999,
+        33.300000000000004,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB0Tail8",
+      "label": "USB solder terminal tail008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184304,
+      "bounds": [
+        34.05,
+        34.35000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB0Tail8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Shield",
+      "label": "USB Type-A stamped metal shell001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 215.742204973238,
+      "bounds": [
+        66.8,
+        81.2,
+        -143.5,
+        -129.5,
+        22.6,
+        29.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Shield",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Carrier",
+      "label": "USB rear insulating carrier001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 84.14430581842835,
+      "bounds": [
+        67.39999999999999,
+        80.60000000000001,
+        -130.95000000000002,
+        -129.85,
+        23.2,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Carrier",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tongue",
+      "label": "Nine-contact USB 3.0 insulator001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 139.4232847743433,
+      "bounds": [
+        67.75,
+        80.25,
+        -141.04999999999998,
+        -131.35,
+        25.1,
+        26.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tongue",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy0",
+      "label": "USB legacy contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        69.91,
+        70.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy1",
+      "label": "USB legacy contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        72.41,
+        73.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy2",
+      "label": "USB legacy contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        74.91,
+        75.59,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Legacy3",
+      "label": "USB legacy contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.4756995574287587,
+      "bounds": [
+        77.41,
+        78.09,
+        -140.9,
+        -135.9,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Legacy3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed0",
+      "label": "USB additional SuperSpeed contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440335,
+      "bounds": [
+        69.75999999999999,
+        70.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed0",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed1",
+      "label": "USB additional SuperSpeed contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13420771675440335,
+      "bounds": [
+        71.75999999999999,
+        72.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed1",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed2",
+      "label": "USB additional SuperSpeed contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        73.75999999999999,
+        74.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed2",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed3",
+      "label": "USB additional SuperSpeed contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        75.75999999999999,
+        76.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed3",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1SuperSpeed4",
+      "label": "USB additional SuperSpeed contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1342077167544034,
+      "bounds": [
+        77.75999999999999,
+        78.24000000000001,
+        -135.5,
+        -133.5,
+        26.3,
+        26.44
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1SuperSpeed4",
+      "assembly": "FrontIO",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail0",
+      "label": "USB solder terminal tail009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        69.64999999999999,
+        69.95,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail0",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail1",
+      "label": "USB solder terminal tail010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        70.69999999999999,
+        71.0,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail1",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail2",
+      "label": "USB solder terminal tail011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        71.75,
+        72.05000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail2",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail3",
+      "label": "USB solder terminal tail012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184349,
+      "bounds": [
+        72.8,
+        73.10000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail3",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail4",
+      "label": "USB solder terminal tail013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        73.85,
+        74.15,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail4",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail5",
+      "label": "USB solder terminal tail014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2968969911184349,
+      "bounds": [
+        74.89999999999999,
+        75.2,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail5",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail6",
+      "label": "USB solder terminal tail015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        75.94999999999999,
+        76.25,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail6",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail7",
+      "label": "USB solder terminal tail016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        77.0,
+        77.30000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail7",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USB1Tail8",
+      "label": "USB solder terminal tail017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.296896991118435,
+      "bounds": [
+        78.05,
+        78.35000000000001,
+        -129.25,
+        -125.94999999999999,
+        24.0,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USB1Tail8",
+      "assembly": "FrontIO",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power capacitive front strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 11.41775008158104,
+      "bounds": [
+        -46.65,
+        -45.35,
+        -140.81205767254855,
+        -136.51714571163538,
+        36.79215126203749,
+        47.46511467904882
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Eject capacitive front strip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 9.337750081581037,
+      "bounds": [
+        -46.65,
+        -45.35,
+        -150.33953184996423,
+        -146.68778474176688,
+        8.739032850757953,
+        17.518233090328362
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontSony",
+      "label": "SONY",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 71,
+      "volume": 0.20079272685016017,
+      "bounds": [
+        -126.72818801946308,
+        -115.52174496644295,
+        -138.31723113620856,
+        -137.29736788249124,
+        41.94305990647695,
+        44.90159396856127
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontSony",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPS4",
+      "label": "PS4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 64,
+      "volume": 0.2833547598168616,
+      "bounds": [
+        106.5817532557047,
+        116.77372483221477,
+        -138.32569155977447,
+        -136.86709491256704,
+        41.9181486593106,
+        46.168508824449255
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPS4",
+      "assembly": "Body",
+      "layer": 6,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalBody",
+      "label": "Optical audio receptacle body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 359.1630528372498,
+      "bounds": [
+        67.0,
+        77.0,
+        138.0,
+        148.0,
+        34.0,
+        44.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalBody",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalShutter",
+      "label": "Optical port dust shutter",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 33.347621556370626,
+      "bounds": [
+        68.25,
+        75.75,
+        146.85,
+        147.45000000000002,
+        35.25,
+        42.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalShutter",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalLens",
+      "label": "Optical transmission lens study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 8.042477193189876,
+      "bounds": [
+        70.4,
+        73.6,
+        139.3,
+        140.3,
+        37.4,
+        40.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalLens",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIShield",
+      "label": "Rear HDMI connector metal shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 192.11999999999998,
+      "bounds": [
+        38.25,
+        53.75,
+        135.7,
+        147.7,
+        35.8,
+        42.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIRear",
+      "label": "HDMI keyed insulating stop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 70.72999999999998,
+      "bounds": [
+        38.9,
+        53.1,
+        135.95,
+        136.95,
+        36.45,
+        41.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIRear",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMITongue",
+      "label": "HDMI keyed insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 126.5470486677646,
+      "bounds": [
+        39.25,
+        52.75,
+        137.65,
+        145.15,
+        38.4,
+        39.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMITongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact0",
+      "label": "HDMI signal contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        42.95,
+        43.2,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1",
+      "label": "HDMI signal contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        42.95,
+        43.2,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact2",
+      "label": "HDMI signal contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737147,
+      "bounds": [
+        43.6,
+        43.85,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact3",
+      "label": "HDMI signal contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        43.6,
+        43.85,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact4",
+      "label": "HDMI signal contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        44.25,
+        44.5,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact4",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact5",
+      "label": "HDMI signal contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        44.25,
+        44.5,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact5",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact6",
+      "label": "HDMI signal contact study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        44.9,
+        45.15,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact6",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact7",
+      "label": "HDMI signal contact study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        44.9,
+        45.15,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact7",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact8",
+      "label": "HDMI signal contact study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        45.55,
+        45.8,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact8",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact9",
+      "label": "HDMI signal contact study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        45.55,
+        45.8,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact9",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact10",
+      "label": "HDMI signal contact study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        46.2,
+        46.45,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact10",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact11",
+      "label": "HDMI signal contact study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        46.2,
+        46.45,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact11",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact12",
+      "label": "HDMI signal contact study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737142,
+      "bounds": [
+        46.85,
+        47.1,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact12",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact13",
+      "label": "HDMI signal contact study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737142,
+      "bounds": [
+        46.85,
+        47.1,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact13",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact14",
+      "label": "HDMI signal contact study014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        47.5,
+        47.75,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact14",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact15",
+      "label": "HDMI signal contact study015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        47.5,
+        47.75,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact15",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact16",
+      "label": "HDMI signal contact study016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        48.15,
+        48.4,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact16",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact17",
+      "label": "HDMI signal contact study017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        48.15,
+        48.4,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact17",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact18",
+      "label": "HDMI signal contact study018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        48.8,
+        49.05,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact18",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetShield",
+      "label": "Rear Ethernet connector metal shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 276.5118899770613,
+      "bounds": [
+        12.0,
+        28.0,
+        135.7,
+        147.7,
+        32.15,
+        45.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetRear",
+      "label": "Rear Ethernet insulating stop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 187.58425057106732,
+      "bounds": [
+        12.55,
+        27.45,
+        135.95,
+        136.95,
+        32.7,
+        45.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetRear",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact0",
+      "label": "LAN spring contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.4199999999999989,
+      "bounds": [
+        15.485,
+        15.764999999999999,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact1",
+      "label": "LAN spring contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        16.735,
+        17.015,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact2",
+      "label": "LAN spring contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        17.985,
+        18.265,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact3",
+      "label": "LAN spring contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        19.235,
+        19.515,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact4",
+      "label": "LAN spring contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        20.485,
+        20.765,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact4",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact5",
+      "label": "LAN spring contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        21.735,
+        22.015,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact5",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact6",
+      "label": "LAN spring contact study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        22.985,
+        23.265,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact6",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact7",
+      "label": "LAN spring contact study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.42000000000000154,
+      "bounds": [
+        24.235,
+        24.515,
+        138.0,
+        143.7236607605469,
+        40.34787914004598,
+        42.634923155196475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact7",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXShield",
+      "label": "Rear AUX connector metal shell",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 170.9118899770614,
+      "bounds": [
+        -12.75,
+        -1.2499999999999996,
+        135.7,
+        147.7,
+        35.4,
+        42.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXRear",
+      "label": "Rear AUX insulating stop",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 63.36459749869134,
+      "bounds": [
+        -12.2,
+        -1.7999999999999998,
+        135.95,
+        136.95,
+        35.95,
+        42.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXRear",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXTongue",
+      "label": "AUX keyed insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 89.04704866776461,
+      "bounds": [
+        -11.75,
+        -2.25,
+        137.65,
+        145.15,
+        38.4,
+        39.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXTongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact0",
+      "label": "AUX signal contact study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -10.1,
+        -9.85,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact1",
+      "label": "AUX signal contact study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -10.1,
+        -9.85,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact2",
+      "label": "AUX signal contact study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        -9.25,
+        -9.0,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact3",
+      "label": "AUX signal contact study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        -9.25,
+        -9.0,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact4",
+      "label": "AUX signal contact study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -8.4,
+        -8.15,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact4",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact5",
+      "label": "AUX signal contact study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -8.4,
+        -8.15,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact5",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact6",
+      "label": "AUX signal contact study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        -7.55,
+        -7.3,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact6",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact7",
+      "label": "AUX signal contact study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737144,
+      "bounds": [
+        -7.55,
+        -7.3,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact7",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact8",
+      "label": "AUX signal contact study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -6.7,
+        -6.45,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact8",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact9",
+      "label": "AUX signal contact study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737145,
+      "bounds": [
+        -6.7,
+        -6.45,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact9",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact10",
+      "label": "AUX signal contact study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737147,
+      "bounds": [
+        -5.85,
+        -5.6,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact10",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact11",
+      "label": "AUX signal contact study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737147,
+      "bounds": [
+        -5.85,
+        -5.6,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact11",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact12",
+      "label": "AUX signal contact study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737147,
+      "bounds": [
+        -5.0,
+        -4.75,
+        140.0,
+        144.0,
+        38.2,
+        38.32
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact12",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AUXContact13",
+      "label": "AUX signal contact study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.11995879644737147,
+      "bounds": [
+        -5.0,
+        -4.75,
+        140.0,
+        144.0,
+        39.72,
+        39.839999999999996
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AUXContact13",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Non-polarised two-lobe AC inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 922.2053506454695,
+      "bounds": [
+        95.5,
+        112.5,
+        130.0,
+        142.0,
+        7.4999999999999964,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin0",
+      "label": "AC inlet contact pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 19.942830164988017,
+      "bounds": [
+        98.98,
+        100.82000000000001,
+        131.5,
+        139.0,
+        11.08,
+        12.92
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin0",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin1",
+      "label": "AC inlet contact pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 19.942830164988017,
+      "bounds": [
+        107.17999999999999,
+        109.02,
+        131.5,
+        139.0,
+        11.08,
+        12.92
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin1",
+      "assembly": "Power",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDBaseCut006",
+      "label": "2.5-inch hard-drive aluminium enclosure007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 9196.611815747874,
+      "bounds": [
+        -125.9,
+        -56.1,
+        -127.0,
+        -27.0,
+        42.0,
+        48.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDBase",
+      "assembly": "Storage",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiskCover",
+      "label": "Thin hard-drive metal lid",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3110.368938009889,
+      "bounds": [
+        -125.7,
+        -56.3,
+        -126.8,
+        -27.200000000000003,
+        48.15,
+        48.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiskCover",
+      "assembly": "Storage",
+      "layer": 5,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDPlatter",
+      "label": "Blank magnetic storage platter",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1204.2001101363212,
+      "bounds": [
+        -121.8,
+        -60.2,
+        -116.8,
+        -55.2,
+        44.4,
+        44.82
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDPlatter",
+      "assembly": "Storage",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMotor",
+      "label": "Disk spindle motor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 221.16812281272155,
+      "bounds": [
+        -99.0,
+        -83.0,
+        -94.0,
+        -78.0,
+        43.1,
+        44.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMotor",
+      "assembly": "Storage",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHub",
+      "label": "Platter hub",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 122.48441437815893,
+      "bounds": [
+        -96.7,
+        -85.3,
+        -91.7,
+        -80.3,
+        44.3,
+        45.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHub",
+      "assembly": "Storage",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew0",
+      "label": "Spindle clamp fixing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -87.95,
+        -86.85000000000001,
+        -86.55,
+        -85.45,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew0",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew1",
+      "label": "Spindle clamp fixing001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -89.75,
+        -88.65,
+        -83.43230854637602,
+        -82.33230854637603,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew1",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew2",
+      "label": "Spindle clamp fixing002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -93.35,
+        -92.25,
+        -83.43230854637602,
+        -82.33230854637603,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew2",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew3",
+      "label": "Spindle clamp fixing003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -95.14999999999999,
+        -94.05,
+        -86.55,
+        -85.45,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew3",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew4",
+      "label": "Spindle clamp fixing004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -93.35,
+        -92.25,
+        -89.66769145362397,
+        -88.56769145362398,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew4",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHubScrew5",
+      "label": "Spindle clamp fixing005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.28509953331327365,
+      "bounds": [
+        -89.75,
+        -88.65,
+        -89.66769145362397,
+        -88.56769145362398,
+        45.55,
+        45.849999999999994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHubScrew5",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDPivot",
+      "label": "Actuator pivot carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 105.6203450136888,
+      "bounds": [
+        -116.1,
+        -107.9,
+        -50.1,
+        -41.9,
+        43.2,
+        45.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDPivot",
+      "assembly": "Storage",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDActuator",
+      "label": "Single-platter actuator arm study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 7,
+      "volume": 58.399999999999956,
+      "bounds": [
+        -115.0,
+        -101.0,
+        -67.0,
+        -43.0,
+        45.35,
+        45.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDActuator",
+      "assembly": "Storage",
+      "layer": 4,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDHead",
+      "label": "Read-write head study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.40552778684233876,
+      "bounds": [
+        -103.00000000000001,
+        -101.8,
+        -65.85000000000001,
+        -64.14999999999999,
+        45.05,
+        45.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDHead",
+      "assembly": "Storage",
+      "layer": 3,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMagnetCut",
+      "label": "Actuator magnet enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 410.16713889357993,
+      "bounds": [
+        -117.0,
+        -101.0,
+        -46.5,
+        -31.5,
+        43.2,
+        45.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMagnet",
+      "assembly": "Storage",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDPCBBody",
+      "label": "Hard-drive underside controller board",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2303.5793804002587,
+      "bounds": [
+        -123.0,
+        -59.0,
+        -67.0,
+        -31.0,
+        40.6,
+        41.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDPCB",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "pcb",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDController",
+      "label": "Disk Controller package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 120.9656637061436,
+      "bounds": [
+        -108.5,
+        -97.5,
+        -58.5,
+        -47.5,
+        39.45,
+        40.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDController",
+      "assembly": "Storage",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCache",
+      "label": "Disk Cache package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 81.5708141502221,
+      "bounds": [
+        -85.0,
+        -73.0,
+        -58.0,
+        -50.0,
+        39.6,
+        40.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCache",
+      "assembly": "Storage",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMotorDriver",
+      "label": "Disk MotorDriver package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 51.17253096491481,
+      "bounds": [
+        -95.0,
+        -87.0,
+        -43.0,
+        -35.0,
+        39.650000000000006,
+        40.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMotorDriver",
+      "assembly": "Storage",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATADataCarrier",
+      "label": "SATA Data keyed insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 218.34978317023507,
+      "bounds": [
+        -111.0,
+        -97.0,
+        -31.0,
+        -25.0,
+        40.8,
+        43.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATADataCarrier",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData0",
+      "label": "SATA Data contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -108.025,
+        -107.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData0",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData1",
+      "label": "SATA Data contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -106.775,
+        -106.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData1",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData2",
+      "label": "SATA Data contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -105.525,
+        -104.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData2",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData3",
+      "label": "SATA Data contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -104.275,
+        -103.725,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData3",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData4",
+      "label": "SATA Data contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -103.025,
+        -102.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData4",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData5",
+      "label": "SATA Data contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -101.775,
+        -101.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData5",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAData6",
+      "label": "SATA Data contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.26395879644737225,
+      "bounds": [
+        -100.525,
+        -99.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAData6",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPowerCarrier",
+      "label": "SATA Power keyed insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 389.94978317023515,
+      "bounds": [
+        -92.5,
+        -67.5,
+        -31.0,
+        -25.0,
+        40.8,
+        43.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPowerCarrier",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower0",
+      "label": "SATA Power contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -89.025,
+        -88.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower0",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower1",
+      "label": "SATA Power contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -87.775,
+        -87.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower1",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower2",
+      "label": "SATA Power contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -86.525,
+        -85.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower2",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower3",
+      "label": "SATA Power contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -85.275,
+        -84.725,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower3",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower4",
+      "label": "SATA Power contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -84.025,
+        -83.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower4",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower5",
+      "label": "SATA Power contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -82.775,
+        -82.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower5",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower6",
+      "label": "SATA Power contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -81.525,
+        -80.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower6",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower7",
+      "label": "SATA Power contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -80.275,
+        -79.725,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower7",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower8",
+      "label": "SATA Power contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -79.025,
+        -78.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower8",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower9",
+      "label": "SATA Power contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -77.775,
+        -77.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower9",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower10",
+      "label": "SATA Power contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -76.525,
+        -75.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower10",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower11",
+      "label": "SATA Power contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -75.275,
+        -74.725,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower11",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower12",
+      "label": "SATA Power contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -74.025,
+        -73.475,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower12",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower13",
+      "label": "SATA Power contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -72.775,
+        -72.225,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower13",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SATAPower14",
+      "label": "SATA Power contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2639587964473722,
+      "bounds": [
+        -71.525,
+        -70.975,
+        -29.6,
+        -25.6,
+        43.45,
+        43.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SATAPower14",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCaddyCut",
+      "label": "Removable hard-drive tray base001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 2236.9830279107673,
+      "bounds": [
+        -128.0,
+        -54.0,
+        -129.0,
+        -25.0,
+        38.4,
+        39.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCaddy",
+      "assembly": "Storage",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCaddySide_1Cut001",
+      "label": "Folded hard-drive tray side002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 707.5429385524759,
+      "bounds": [
+        -127.75000000000001,
+        -127.05,
+        -128.0,
+        -25.999999999999996,
+        39.05,
+        49.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCaddySide-1",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMount_1_0",
+      "label": "Drive caddy retaining screw",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 17.724865751553637,
+      "bounds": [
+        -128.75,
+        -124.19999999999999,
+        -114.2,
+        -109.8,
+        42.8,
+        47.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMount-1_0",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMount_1_1",
+      "label": "Drive caddy retaining screw001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 17.72486575155365,
+      "bounds": [
+        -128.75,
+        -124.19999999999999,
+        -44.2,
+        -39.8,
+        42.8,
+        47.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMount-1_1",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDCaddySide1Cut001",
+      "label": "Folded hard-drive tray side005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 707.5429385524808,
+      "bounds": [
+        -54.95,
+        -54.25,
+        -128.0,
+        -25.999999999999996,
+        39.05,
+        49.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDCaddySide1",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMount1_0",
+      "label": "Drive caddy retaining screw002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 17.724865751553587,
+      "bounds": [
+        -57.8,
+        -53.25,
+        -114.2,
+        -109.8,
+        42.8,
+        47.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMount1_0",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDMount1_1",
+      "label": "Drive caddy retaining screw003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 5,
+      "volume": 17.7248657515536,
+      "bounds": [
+        -57.8,
+        -53.25,
+        -44.2,
+        -39.8,
+        42.8,
+        47.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDMount1_1",
+      "assembly": "Storage",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDPullTab",
+      "label": "Drive tray extraction tab",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 58.70385837720214,
+      "bounds": [
+        -98.0,
+        -84.0,
+        -134.0,
+        -128.0,
+        39.0,
+        39.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDPullTab",
+      "assembly": "Storage",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainPCBCut001",
+      "label": "Original launch-family L-shaped mainboard002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 20,
+      "volume": 91846.61186766168,
+      "bounds": [
+        -130.0,
+        130.0,
+        -125.0,
+        132.0,
+        30.0,
+        31.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainPCB",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "pcb",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop0",
+      "label": "Exposed PCB ground annulus",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077116,
+      "bounds": [
+        -124.2,
+        -117.8,
+        118.8,
+        125.2,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom0",
+      "label": "Exposed PCB ground annulus001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077119,
+      "bounds": [
+        -124.2,
+        -117.8,
+        118.8,
+        125.2,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop1",
+      "label": "Exposed PCB ground annulus002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077116,
+      "bounds": [
+        117.8,
+        124.2,
+        118.8,
+        125.2,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom1",
+      "label": "Exposed PCB ground annulus003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077119,
+      "bounds": [
+        117.8,
+        124.2,
+        118.8,
+        125.2,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop2",
+      "label": "Exposed PCB ground annulus004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077116,
+      "bounds": [
+        117.8,
+        124.2,
+        -118.2,
+        -111.8,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom2",
+      "label": "Exposed PCB ground annulus005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077119,
+      "bounds": [
+        117.8,
+        124.2,
+        -118.2,
+        -111.8,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop3",
+      "label": "Exposed PCB ground annulus006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.319468914507712,
+      "bounds": [
+        -37.2,
+        -30.8,
+        -118.2,
+        -111.8,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom3",
+      "label": "Exposed PCB ground annulus007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.319468914507712,
+      "bounds": [
+        -37.2,
+        -30.8,
+        -118.2,
+        -111.8,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop4",
+      "label": "Exposed PCB ground annulus008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.319468914507712,
+      "bounds": [
+        -37.2,
+        -30.8,
+        -10.2,
+        -3.8,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom4",
+      "label": "Exposed PCB ground annulus009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077123,
+      "bounds": [
+        -37.2,
+        -30.8,
+        -10.2,
+        -3.8,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop5",
+      "label": "Exposed PCB ground annulus010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077116,
+      "bounds": [
+        -124.2,
+        -117.8,
+        -3.2,
+        3.2,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom5",
+      "label": "Exposed PCB ground annulus011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077119,
+      "bounds": [
+        -124.2,
+        -117.8,
+        -3.2,
+        3.2,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop6",
+      "label": "Exposed PCB ground annulus012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077123,
+      "bounds": [
+        8.8,
+        15.2,
+        72.8,
+        79.2,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom6",
+      "label": "Exposed PCB ground annulus013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077123,
+      "bounds": [
+        8.8,
+        15.2,
+        72.8,
+        79.2,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundTop7",
+      "label": "Exposed PCB ground annulus014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077114,
+      "bounds": [
+        101.8,
+        108.2,
+        59.8,
+        66.2,
+        31.62,
+        31.68
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundTop7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardGroundBottom7",
+      "label": "Exposed PCB ground annulus015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 1.3194689145077116,
+      "bounds": [
+        101.8,
+        108.2,
+        59.8,
+        66.2,
+        29.92,
+        29.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardGroundBottom7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUSubstrate",
+      "label": "AMD Jaguar / Radeon APU substrate study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3839.8145840131747,
+      "bounds": [
+        40.0,
+        80.0,
+        0.0,
+        40.0,
+        27.4,
+        29.799999999999997
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUSubstrate",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUDie",
+      "label": "APU exposed silicon die study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 339.9835829595002,
+      "bounds": [
+        50.0,
+        70.0,
+        10.0,
+        30.0,
+        26.4,
+        27.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUDie",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_0",
+      "label": "APU package bypass capacitor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440422,
+      "bounds": [
+        46.55,
+        48.25,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_1",
+      "label": "APU package bypass capacitor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440422,
+      "bounds": [
+        50.15,
+        51.85,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_2",
+      "label": "APU package bypass capacitor002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440422,
+      "bounds": [
+        53.75,
+        55.45,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_3",
+      "label": "APU package bypass capacitor003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440422,
+      "bounds": [
+        57.35,
+        59.050000000000004,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_4",
+      "label": "APU package bypass capacitor004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440422,
+      "bounds": [
+        60.949999999999996,
+        62.65,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_5",
+      "label": "APU package bypass capacitor005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440408,
+      "bounds": [
+        64.55000000000001,
+        66.25,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_6",
+      "label": "APU package bypass capacitor006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440409,
+      "bounds": [
+        68.15,
+        69.85,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap_1_7",
+      "label": "APU package bypass capacitor007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440408,
+      "bounds": [
+        71.75,
+        73.44999999999999,
+        3.55,
+        4.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap-1_7",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_0",
+      "label": "APU package bypass capacitor008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440432,
+      "bounds": [
+        46.55,
+        48.25,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_1",
+      "label": "APU package bypass capacitor009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440432,
+      "bounds": [
+        50.15,
+        51.85,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_2",
+      "label": "APU package bypass capacitor010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440432,
+      "bounds": [
+        53.75,
+        55.45,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_3",
+      "label": "APU package bypass capacitor011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440432,
+      "bounds": [
+        57.35,
+        59.050000000000004,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_4",
+      "label": "APU package bypass capacitor012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440432,
+      "bounds": [
+        60.949999999999996,
+        62.65,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_4",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_5",
+      "label": "APU package bypass capacitor013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440419,
+      "bounds": [
+        64.55000000000001,
+        66.25,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_5",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_6",
+      "label": "APU package bypass capacitor014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440419,
+      "bounds": [
+        68.15,
+        69.85,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_6",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "APUCap1_7",
+      "label": "APU package bypass capacitor015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5335771675440419,
+      "bounds": [
+        71.75,
+        73.44999999999999,
+        35.55,
+        36.45,
+        26.95,
+        27.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "APUCap1_7",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom0",
+      "label": "512 MB GDDR5 package, underside study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013205,
+      "bounds": [
+        32.0,
+        48.0,
+        -20.0,
+        -7.999999999999999,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom0",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top0",
+      "label": "512 MB GDDR5 package, upper side study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132072,
+      "bounds": [
+        32.0,
+        48.0,
+        -20.0,
+        -7.999999999999999,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top0",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom1",
+      "label": "512 MB GDDR5 package, underside study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132046,
+      "bounds": [
+        52.0,
+        68.0,
+        -20.0,
+        -7.999999999999999,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom1",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top1",
+      "label": "512 MB GDDR5 package, upper side study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013207,
+      "bounds": [
+        52.0,
+        68.0,
+        -20.0,
+        -7.999999999999999,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top1",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom2",
+      "label": "512 MB GDDR5 package, underside study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132046,
+      "bounds": [
+        72.0,
+        88.0,
+        -20.0,
+        -7.999999999999999,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom2",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top2",
+      "label": "512 MB GDDR5 package, upper side study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013207,
+      "bounds": [
+        72.0,
+        88.0,
+        -20.0,
+        -7.999999999999999,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top2",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom3",
+      "label": "512 MB GDDR5 package, underside study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132052,
+      "bounds": [
+        32.0,
+        48.0,
+        48.0,
+        60.0,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom3",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top3",
+      "label": "512 MB GDDR5 package, upper side study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132075,
+      "bounds": [
+        32.0,
+        48.0,
+        48.0,
+        60.0,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top3",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom4",
+      "label": "512 MB GDDR5 package, underside study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013205,
+      "bounds": [
+        52.0,
+        68.0,
+        48.0,
+        60.0,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom4",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top4",
+      "label": "512 MB GDDR5 package, upper side study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132072,
+      "bounds": [
+        52.0,
+        68.0,
+        48.0,
+        60.0,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top4",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom5",
+      "label": "512 MB GDDR5 package, underside study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132046,
+      "bounds": [
+        72.0,
+        88.0,
+        48.0,
+        60.0,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom5",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top5",
+      "label": "512 MB GDDR5 package, upper side study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013207,
+      "bounds": [
+        72.0,
+        88.0,
+        48.0,
+        60.0,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top5",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom6",
+      "label": "512 MB GDDR5 package, underside study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132046,
+      "bounds": [
+        92.0,
+        108.0,
+        3.9999999999999996,
+        16.0,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom6",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top6",
+      "label": "512 MB GDDR5 package, upper side study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013207,
+      "bounds": [
+        92.0,
+        108.0,
+        3.9999999999999996,
+        16.0,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top6",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Bottom7",
+      "label": "512 MB GDDR5 package, underside study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.35014370132046,
+      "bounds": [
+        92.0,
+        108.0,
+        24.0,
+        36.0,
+        28.55,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Bottom7",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GDDR5Top7",
+      "label": "512 MB GDDR5 package, upper side study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.3501437013207,
+      "bounds": [
+        92.0,
+        108.0,
+        24.0,
+        36.0,
+        31.85,
+        33.050000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GDDR5Top7",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Secondary",
+      "label": "Low-power network processor study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 677.5610626427665,
+      "bounds": [
+        -69.0,
+        -47.0,
+        26.0,
+        48.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Secondary",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DDR3",
+      "label": "Secondary processor memory study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.96106264276673,
+      "bounds": [
+        -97.5,
+        -82.5,
+        33.5,
+        44.5,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DDR3",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Flash",
+      "label": "Serial flash package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 123.1610626427668,
+      "bounds": [
+        -111.5,
+        -100.5,
+        68.0,
+        76.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Flash",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetLogic",
+      "label": "Ethernet controller study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 274.36106264276674,
+      "bounds": [
+        10.0,
+        24.0,
+        96.0,
+        110.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetLogic",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMILogic",
+      "label": "HDMI communication package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 274.36106264276674,
+      "bounds": [
+        42.0,
+        56.0,
+        95.0,
+        109.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMILogic",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "WirelessLogic",
+      "label": "WLAN / Bluetooth package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 201.56106264276676,
+      "bounds": [
+        -90.0,
+        -78.0,
+        93.0,
+        105.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WirelessLogic",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBHub",
+      "label": "USB 3.0 hub controller study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 201.56106264276679,
+      "bounds": [
+        42.0,
+        54.0,
+        -110.0,
+        -98.0,
+        31.85,
+        33.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBHub",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke0",
+      "label": "APU power regulation inductor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        -16.0,
+        -6.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke0",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower0",
+      "label": "Power stage package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351142,
+      "bounds": [
+        -14.0,
+        -8.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower0",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap0",
+      "label": "Power regulation capacitor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.0194526365569,
+      "bounds": [
+        -14.2,
+        -7.8,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap0",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke1",
+      "label": "APU power regulation inductor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        6.0,
+        16.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke1",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower1",
+      "label": "Power stage package001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351142,
+      "bounds": [
+        8.0,
+        14.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower1",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap1",
+      "label": "Power regulation capacitor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.0194526365569,
+      "bounds": [
+        7.8,
+        14.2,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap1",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke2",
+      "label": "APU power regulation inductor002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        28.0,
+        38.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke2",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower2",
+      "label": "Power stage package002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351143,
+      "bounds": [
+        30.0,
+        36.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower2",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap2",
+      "label": "Power regulation capacitor002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.0194526365569,
+      "bounds": [
+        29.8,
+        36.2,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap2",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke3",
+      "label": "APU power regulation inductor003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        50.0,
+        60.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke3",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower3",
+      "label": "Power stage package003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351142,
+      "bounds": [
+        52.0,
+        58.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower3",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap3",
+      "label": "Power regulation capacitor003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.0194526365569,
+      "bounds": [
+        51.8,
+        58.2,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap3",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke4",
+      "label": "APU power regulation inductor004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        72.0,
+        82.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke4",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower4",
+      "label": "Power stage package004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351142,
+      "bounds": [
+        74.0,
+        80.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower4",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap4",
+      "label": "Power regulation capacitor004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.01945263655693,
+      "bounds": [
+        73.8,
+        80.2,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap4",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMChoke5",
+      "label": "APU power regulation inductor005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 548.3003534541078,
+      "bounds": [
+        94.0,
+        104.0,
+        -82.0,
+        -72.0,
+        31.85,
+        37.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMChoke5",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMPower5",
+      "label": "Power stage package005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 54.57143220351142,
+      "bounds": [
+        96.0,
+        102.0,
+        -97.5,
+        -90.5,
+        31.85,
+        33.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMPower5",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VRMCap5",
+      "label": "Power regulation capacitor005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 193.01945263655696,
+      "bounds": [
+        95.8,
+        102.2,
+        -62.2,
+        -55.8,
+        31.85,
+        37.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VRMCap5",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShieldCut",
+      "label": "Lower mainboard EMI and thermal plate001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 28,
+      "volume": 25585.214616771653,
+      "bounds": [
+        -130.0,
+        130.0,
+        -125.0,
+        132.0,
+        25.7,
+        26.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShield",
+      "assembly": "Shielding",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldCut",
+      "label": "Upper perforated motherboard shield001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 220,
+      "volume": 25422.727465458956,
+      "bounds": [
+        -130.0,
+        130.0,
+        -125.0,
+        132.0,
+        40.0,
+        40.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShield",
+      "assembly": "Shielding",
+      "layer": 3,
+      "material": "metal",
+      "fidelity": "Published approximate body envelope; photo-estimated local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff0",
+      "label": "Lower shield mainboard spacer",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.7626006198135,
+      "bounds": [
+        -124.35,
+        -117.65,
+        118.65,
+        125.35,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff0",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518681,
+      "bounds": [
+        -122.25,
+        -119.75,
+        120.75,
+        123.25,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew0",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer0",
+      "label": "Upper shield sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.35812347589743,
+      "bounds": [
+        -124.35,
+        -117.65,
+        118.65,
+        125.35,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer0",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff1",
+      "label": "Lower shield mainboard spacer001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.7626006198135,
+      "bounds": [
+        117.65,
+        124.35,
+        118.65,
+        125.35,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff1",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518681,
+      "bounds": [
+        119.75,
+        122.25,
+        120.75,
+        123.25,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew1",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer1",
+      "label": "Upper shield sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.35812347589746,
+      "bounds": [
+        117.65,
+        124.35,
+        118.65,
+        125.35,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer1",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff2",
+      "label": "Lower shield mainboard spacer002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.7626006198135,
+      "bounds": [
+        117.65,
+        124.35,
+        -118.35,
+        -111.65,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff2",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.77925264151868,
+      "bounds": [
+        119.75,
+        122.25,
+        -116.25,
+        -113.75,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew2",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer2",
+      "label": "Upper shield sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.35812347589746,
+      "bounds": [
+        117.65,
+        124.35,
+        -118.35,
+        -111.65,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer2",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff3",
+      "label": "Lower shield mainboard spacer003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.76260061981343,
+      "bounds": [
+        -37.35,
+        -30.65,
+        -118.35,
+        -111.65,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff3",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518685,
+      "bounds": [
+        -35.25,
+        -32.75,
+        -116.25,
+        -113.75,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew3",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer3",
+      "label": "Upper shield sleeve003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.3581234758973,
+      "bounds": [
+        -37.35,
+        -30.65,
+        -118.35,
+        -111.65,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer3",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff4",
+      "label": "Lower shield mainboard spacer004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.76260061981341,
+      "bounds": [
+        -37.35,
+        -30.65,
+        -10.35,
+        -3.65,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff4",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew4",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.7792526415186884,
+      "bounds": [
+        -35.25,
+        -32.75,
+        -8.25,
+        -5.75,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew4",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer4",
+      "label": "Upper shield sleeve004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.35812347589726,
+      "bounds": [
+        -37.35,
+        -30.65,
+        -10.35,
+        -3.65,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer4",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff5",
+      "label": "Lower shield mainboard spacer005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.76260061981348,
+      "bounds": [
+        -124.35,
+        -117.65,
+        -3.35,
+        3.35,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff5",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew5",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518685,
+      "bounds": [
+        -122.25,
+        -119.75,
+        -1.25,
+        1.25,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew5",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer5",
+      "label": "Upper shield sleeve005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.3581234758974,
+      "bounds": [
+        -124.35,
+        -117.65,
+        -3.35,
+        3.35,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer5",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff6",
+      "label": "Lower shield mainboard spacer006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.76260061981343,
+      "bounds": [
+        8.65,
+        15.35,
+        72.65,
+        79.35,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff6",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew6",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518685,
+      "bounds": [
+        10.75,
+        13.25,
+        74.75,
+        77.25,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew6",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer6",
+      "label": "Upper shield sleeve006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.3581234758973,
+      "bounds": [
+        8.65,
+        15.35,
+        72.65,
+        79.35,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer6",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff7",
+      "label": "Lower shield mainboard spacer007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 117.7626006198135,
+      "bounds": [
+        101.65,
+        108.35,
+        59.65,
+        66.35,
+        26.2,
+        29.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff7",
+      "assembly": "Frame",
+      "layer": -1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew7",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 7.779252641518685,
+      "bounds": [
+        103.75,
+        106.25,
+        61.75,
+        64.25,
+        26.57,
+        32.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew7",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldSpacer7",
+      "label": "Upper shield sleeve007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 213.35812347589743,
+      "bounds": [
+        101.65,
+        108.35,
+        59.65,
+        66.35,
+        32.2,
+        39.900000000000006
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShieldSpacer7",
+      "assembly": "Frame",
+      "layer": 2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal0",
+      "label": "GDDR5 thermal pad study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.822309679293,
+      "bounds": [
+        33.0,
+        47.0,
+        -19.0,
+        -9.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal0",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal1",
+      "label": "GDDR5 thermal pad study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.8223096792931,
+      "bounds": [
+        53.0,
+        67.0,
+        -19.0,
+        -9.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal1",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal2",
+      "label": "GDDR5 thermal pad study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.822309679293,
+      "bounds": [
+        73.0,
+        87.0,
+        -19.0,
+        -9.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal2",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal3",
+      "label": "GDDR5 thermal pad study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.8223096792931,
+      "bounds": [
+        33.0,
+        47.0,
+        49.0,
+        59.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal3",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal4",
+      "label": "GDDR5 thermal pad study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.8223096792931,
+      "bounds": [
+        53.0,
+        67.0,
+        49.0,
+        59.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal4",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal5",
+      "label": "GDDR5 thermal pad study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.8223096792931,
+      "bounds": [
+        73.0,
+        87.0,
+        49.0,
+        59.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal5",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal6",
+      "label": "GDDR5 thermal pad study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.822309679293,
+      "bounds": [
+        93.0,
+        107.0,
+        5.0,
+        15.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal6",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryThermal7",
+      "label": "GDDR5 thermal pad study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.822309679293,
+      "bounds": [
+        93.0,
+        107.0,
+        25.0,
+        35.0,
+        26.2,
+        28.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryThermal7",
+      "assembly": "Cooling",
+      "layer": -2,
+      "material": "thermal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps4/output/iterations/06_native_emi_plates_spacers_and_memory_thermal_interfaces.FCStd",
+  "views": [
+    "devices/ps4/output/previews/06_native_emi_plates_spacers_and_memory_thermal_interfaces_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
