@@ -14,7 +14,7 @@
     0.09,
     0.1
   ],
-  "stages": 8,
+  "stages": 24,
   "parameter_basis": "Sony June 2013 CUH-1000A announcement: approximate 275 x 53 x 305 mm (W x H x D), tentative, excluding largest projection",
   "exterior_fidelity": "Published approximate body envelope; photo-estimated local geometry",
   "envelope_kind": "published",
@@ -31,7 +31,9 @@
     "Power",
     "Optical",
     "Storage",
-    "Wiring"
+    "Wiring",
+    "Controls",
+    "Shielding"
   ],
   "controls_groups": [
     "Controller"
@@ -49,7 +51,11 @@
   "internal_exclude": [
     "UpperShield",
     "DiskCover",
-    "PSUCover"
+    "PSUCover",
+    "DriveCover",
+    "DriveMedia",
+    "DriveClamp",
+    "DriveClampMagnet"
   ],
   "internal_normal": [
     0.3,
