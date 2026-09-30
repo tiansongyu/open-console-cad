@@ -29,6 +29,12 @@
 | 23 | 充电、触摸与按键排线，扬声器引线及通道 | 890 |
 | 24 | 四组控制器固定柱与螺钉、触摸按下机构、型号标识 | 899 |
 
+| 25 | 时钟电池固定、触控电极、灯条板与 AC 内部连接 | 921 |
+| 26 | 光驱装载电机、三级齿轮、支承与线束 | 935 |
+| 27 | 电源线与双端十九接点 HDMI 线 | 990 |
+| 28 | USB-A 四接点至 Micro-B 五接点充电线 | 1010 |
+| 29 | 单耳扬声器、MIC 滑动开关、独立线夹与四段插头 | 1039 |
+
 [当前原生工程](output/PlayStation4_Study.FCStd) · [打开宏](Open_PlayStation4.FCMacro) · [重建已实现阶段](Rebuild_PlayStation4.FCMacro)
 
 原生几何通过 FreeCAD MCP GUI 线程生成。实体交集检查保存在 `output/reports/stageNN_interference.json`；完整源码重建、STEP 和图纸验收在模型完成后执行。
@@ -52,3 +58,7 @@
 第二十二轮 823 个组件、1,796 组装配候选通过；第二十三轮 890 个组件、1,900 组候选通过：[接口检查](output/reports/stage22_interference.json) · [排线检查](output/reports/stage23_interference.json)。第二十四轮全部 899 个组件通过严格 BRep：[严格检查](output/reports/stage24_strict_bop.json)。
 
 第二十四轮 899 个组件的全部 2,046 组装配候选通过：[装配检查](output/reports/stage24_interference.json)。控制器部分和主机现有装配均无已知实体穿插；完整交付仍待末端结构、附件和最终验收。
+
+第二十五至二十八轮分别通过 2,096、2,142、2,189、2,204 组装配候选求交检查，报告保存在对应 `stageNN_interference.json`。
+
+第二十九轮 1,039 个组件通过严格 BRep 和全部 2,225 组装配候选求交：[严格检查](output/reports/stage29_strict_bop.json) · [装配检查](output/reports/stage29_interference.json)。MIC 推杆通道与线夹下方线缆路径的穿插已修正，完整源码重建和交付文件验收继续进行。

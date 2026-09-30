@@ -1089,3 +1089,223 @@ def stage24(m):
 
 
 STAGES[24]=stage24
+
+
+def stage25(m):
+    from .atari2600 import _rounded_route
+    x,y=-83,73
+    m.cyl('RTCBase','Coin-cell insulating support',11,.4,(x,y,34.85),'Mainboard',1,'black',internal=True)
+    holder=Part.makeCylinder(11,3.8,V(x,y,35.25)).cut(Part.makeCylinder(10.2,4.2,V(x,y,35.05)))
+    holder=holder.cut(m.rr(1.2,3,4.4,(x+10.6,y,35.05),.1))
+    m.feature('RTCHolder','Open coin-cell retention ring study',holder,'Mainboard',2,'black',True)
+    m.cyl('RTCCell','RTC backup coin-cell envelope study',10,3.2,(x,y,35.3),'Mainboard',2,'metal',internal=True)
+    leg=Part.makeBox(.25,2.5,3.5,V(x+10.475,y-1.25,35.3))
+    arm=Part.makeBox(2.8,2.5,.15,V(x+8,y-1.25,38.75))
+    m.feature('RTCClip','Coin-cell retaining contact study',leg.fuse(arm),'Mainboard',3,'metal',True)
+    m.label('RTCMark','RTC',2.2,(x-3,y-1,38.525),'Mainboard',3,'black')
+    angled=g.rotation((0,-1,SLOPE),(0,0,1))
+    for name,z,inset,endx,endy in [('Power',42,1.2,-39,-119),('Eject',13,2,-41,-120)]:
+        yy=-152.5+z*SLOPE+inset
+        m.box(name+'Sensor','Front capacitive electrode study',1.2,7,.12,(-46,yy,z),'Controls',1,'copper',.12,True,orient=angled)
+        path=[V(-46,yy+.18,z),V(endx,-132,z)]
+        if name=='Eject':path += [V(endx,-132,35.8),V(endx,endy,35.8)]
+        else:path += [V(endx,endy,z)]
+        path += [V(endx,endy,34.85)]
+        m.feature(name+'SensorLead','Front control lead study',_rounded_route(path,.25,.15),'Wiring',0,'black',True)
+        m.box(name+'SensorPad','Front-control board connection pad study',1,1,.05,(endx,endy,34.65),'Mainboard',1,'gold',.1,True)
+    m.native('StatusPCB','Native top-status indicator strip board',1.1,16,.2,.5,(-46,-20,49.1),'Controls',3,'pcb')
+    m.box('StatusLED','Top status LED package study',.8,1.2,.2,(-46,-20,49.65),'Controls',4,'white',.1,True)
+    m.box('StatusGuide','Internal status-light guide study',.9,14,1.9,(-46,-20,49.85),'Controls',5,'white',.15,True)
+    for i,(xx,yy) in enumerate([(-39,-20),(-40,-21)]):
+        m.cut('UpperShield',Part.makeCylinder(.35,1,V(xx,yy,42.8)),'Status-light lead shield passage '+str(i)).Refine=False
+        path=[V(xx,yy,34.85),V(xx,yy,48.9),V(-46,yy,48.9)]
+        m.feature('StatusLead'+str(i),'Status-light board lead study',_rounded_route(path,.35,.08),'Wiring',0,'red' if i else 'black',True)
+        m.box('StatusPad'+str(i),'Status-light mainboard pad study',.65,.65,.05,(xx,yy,34.65),'Mainboard',1,'gold',.08,True)
+    for i,xx in enumerate([99.9,108.1]):
+        path=[V(xx,131.2,12),V(xx,127,12),V(xx,127,8.5),V(xx,126,7.9)]
+        m.feature('ACInputLead'+str(i),'AC inlet to power-board connection study',_rounded_route(path,.35,.25),'Wiring',-2,'white' if i else 'black',True)
+        m.box('ACInputPad'+str(i),'Input power board solder pad study',1.4,1.4,.05,(xx,126,7.55),'Power',-2,'gold',.1,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=25
+    m.checkpoint(25,'rtc_retention_front_touch_status_and_ac_connections','补齐主板 RTC 电池包络与卡座、前部电容触控电极和引线、顶灯原生小板与导光件，以及 AC 插座到电源板的结构示意连接。电气位置与走线均为近似，不构成电路设计。')
+    m.snapshot('25_console_electrical_review',assemblies=['Mainboard','Controls','Wiring','Power'],exclude=['PSUCover'],normal=(.2,-.5,2))
+
+
+STAGES[25]=stage25
+
+
+def stage26(m):
+    from .saturn import _yz_gear
+    from .atari2600 import _rounded_route
+    motor=Part.makeCylinder(5,14,V(-3,-113,15),V(1,0,0)).cut(Part.makeCylinder(.9,14.4,V(-3.2,-113,15),V(1,0,0)))
+    m.feature('LoadingMotor','Media-loading drive motor envelope study',motor,'Optical',-2,'metal',True)
+    m.cyl('LoadingMotorShaft','Loading motor output shaft',.6,10,(-12,-113,15),'Optical',-1,'metal',axis=(1,0,0),internal=True)
+    m.parts['LoadingShaft'].Shape=Part.makeCylinder(.85,116,V(-124,-123,23.1),V(1,0,0))
+    for i,(y,z,root,outer,teeth,bore) in enumerate([(-113,15,2.2,2.7,14,.9),(-117.2,19.1,2.5,3,16,.9),(-123,23.1,3.5,4,20,1.1)]):
+        gear=_yz_gear(-11,y,z,root,outer,teeth,1.6)
+        gear=gear.cut(Part.makeCylinder(bore,2,V(-11.2,y,z),V(1,0,0)))
+        m.feature('LoadingGear'+str(i),'Loading drive gear study with static tip clearance',gear,'Optical',0,'white',True)
+    m.cut('OpticalTray',Part.makeCylinder(4.3,2,V(-11.2,-123,23.1),V(1,0,0)),'Intake gear front-wall relief').Refine=False
+    support=m.rr(3,5,11.9,(-7.6,-117.2,6.1),.4).fuse(Part.makeCylinder(1.6,3,V(-9.1,-117.2,19.1),V(1,0,0)))
+    support=support.cut(Part.makeCylinder(.85,3.4,V(-9.3,-117.2,19.1),V(1,0,0)))
+    m.feature('LoadingIdlerSupport','Loading idler pedestal and bearing',support,'Optical',-2,'black',True)
+    m.cyl('LoadingIdlerPin','Loading idler axle',.6,6,(-11.6,-117.2,19.1),'Optical',-1,'metal',axis=(1,0,0),internal=True)
+    body=m.rr(4.8,3,2.5,(8,-3.5,7.6),.2)
+    for i,x in enumerate([7,9]):
+        body=body.cut(Part.makeCylinder(.45,3.4,V(x,-5.2,8.6),V(0,1,0)))
+        m.ring('LoadingContact'+str(i),'Loading motor connector terminal',.4,.26,2,(x,-4.5,8.6),'Optical',0,'metal',axis=(0,1,0),internal=True)
+        yy=-14+2*i;xx=13+.6*i
+        points=[V(11.2,-112-i,15),V(xx,-112-i,15),V(xx,yy,9.7),V(x,yy,9.7),V(x,-7,8.6),V(x,-3.8,8.6)]
+        m.feature('LoadingLead'+str(i),'Loading motor routed lead study',_rounded_route(points,.35,.2),'Wiring',0,'red' if i else 'black',True)
+        m.box('LoadingPad'+str(i),'Loading motor board pad study',.65,1.1,.05,(x,-2.1,7.35),'Optical',0,'gold',.05,True)
+    m.feature('LoadingHeader','Two-position intake-motor connector study',body,'Optical',0,'white',True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=26
+    m.checkpoint(26,'optical_loading_motor_gear_train_and_harness','补齐吸入滚轮驱动电机、输出轴、三级齿轮示意、惰轮支座与轴销，延伸滚轮轴并加工前壁齿轮避让；加入驱动板连接器与两根引线。齿形、传动比和运动均不作为实机设计或运动仿真。')
+    m.snapshot('26_optical_loading_review',assemblies=['Optical','Wiring'],exclude=['DriveCover','DriveMedia','DriveClamp','DriveClampMagnet'],normal=(.2,-.5,2))
+
+
+STAGES[26]=stage26
+
+
+def stage27(m):
+    from .atari2600 import _rounded_route
+    from .wiiu import _hdmi_shape
+    rear=g.rotation((0,1,0),(0,0,1))
+    m.box('ACWallPlug','Two-flat-blade AC plug study',23,17,11,(220,100,0),'Accessories',0,'black',1.7)
+    for i,x in enumerate([213.8,226.2]):m.box('ACWallBlade'+str(i),'Flat AC blade study',1.4,6.2,12.5,(x,100,11.1),'Accessories',0,'metal',.1)
+    points=[V(220,91.3,5.5),V(220,55,5.5),V(320,55,8),V(320,20,8),V(292.2,20,8)]
+    m.feature('ACCord','Mains cord display length',_rounded_route(points,7,1.8),'Accessories',0,'black')
+    m.box('ACDeviceGrip','Figure-eight connector grip',24,12,10,(280,20,3),'Accessories',0,'black',1.3)
+    lobes=[Part.makeCylinder(3.15,10,V(267.8,y,8),V(-1,0,0)) for y in [15.9,24.1]]
+    bridge=Part.makeBox(1.2,8.2,5.4,V(266.6,15.9,5.3))
+    head=bridge.multiFuse(lobes)
+    holes=[Part.makeCylinder(1.25,10.5,V(268,y,8),V(-1,0,0)) for y in [15.9,24.1]]
+    m.feature('ACDeviceHead','C7-style two-position connector study',head.cut(Part.makeCompound(holes)),'Accessories',0,'black')
+    for i,y in enumerate([15.9,24.1]):m.ring('ACDeviceContact'+str(i),'Device mains socket contact study',1.15,1.02,6,(265.5,y,8),'Accessories',0,'metal',axis=(-1,0,0))
+    points=[V(250,-258.2,6),V(250,-337,6),V(350,-337,6),V(350,-258.2,6)]
+    m.feature('HDMICable','HDMI cable display length',_rounded_route(points,14,2.4),'Accessories',0,'black')
+    for i,x in enumerate([250,350]):
+        m.box('HDMIGrip'+str(i),'HDMI connector overmould',20,24,10,(x,-246,1),'Accessories',0,'black',2)
+        m.cyl('HDMIRelief'+str(i),'HDMI cable strain relief',2.7,6,(x,-258.1,6),'Accessories',0,'black',axis=(0,-1,0))
+        m.cut('HDMIRelief'+str(i),Part.makeCylinder(2.45,6.4,V(x,-257.9,6),V(0,-1,0)),'Strain-relief cable bore').Refine=False
+        outer=_hdmi_shape(14,5,9);inner=_hdmi_shape(12.8,3.8,9.4);inner.translate(V(0,0,-.2))
+        shape=outer.cut(inner);shape.Placement=App.Placement(V(x,-233.8,6),rear)
+        m.feature('HDMIHead'+str(i),'HDMI Type A metal plug shell',shape,'Accessories',0,'metal')
+        m.box('HDMIPlugTongue'+str(i),'HDMI plug contact carrier',10.9,7,.6,(x,-229,5.7),'Accessories',0,'black',.2)
+        for row,n in enumerate([10,9]):
+            for j in range(n):m.box(f'HDMIPlugPin{i}_{row}_{j}','HDMI Type A plug contact',.32,5,.06,(x+(j-(n-1)/2)*1.02,-229,5.56 if row==0 else 6.39),'Accessories',0,'gold',.03)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=27
+    m.checkpoint(27,'original_ac_cord_and_nineteen_contact_hdmi_cable','补齐原配双片电源插头与八字设备端、两端十九接点 HDMI 连接线及独立护线套。沿用已验证的同系列连接结构，并使电源端示意针距与本机插口一致；线长为展示近似。')
+    m.snapshot('27_ac_hdmi_accessories_review',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+STAGES[27]=stage27
+
+
+def stage28(m):
+    from .atari2600 import _rounded_route
+    rear=g.rotation((0,1,0),(0,0,1))
+    points=[V(190,-91.7,6),V(190,-177,6),V(220,-177,6),V(220,-91.7,6)]
+    m.feature('USBChargeCable','USB-A to Micro-B cable display length',_rounded_route(points,7,1.5),'Accessories',0,'black')
+    m.box('USBAPlugGrip','USB-A charging-cable overmould',18,23,10,(190,-80,1),'Accessories',0,'black',1.6)
+    m.box('MicroUSBPlugGrip','Micro-B charging-cable overmould',12,19,8,(220,-82,2),'Accessories',0,'black',1.3)
+    for i,x in enumerate([190,220]):
+        relief=Part.makeCylinder(1.9,6,V(x,-91.6,6),V(0,-1,0)).cut(Part.makeCylinder(1.55,6.4,V(x,-91.4,6),V(0,-1,0)))
+        m.feature('USBChargeRelief'+str(i),'Charging cable strain-relief sleeve',relief,'Accessories',0,'black')
+    shield=m.rr(12,4.5,12,(190,-68.3,6),.3,rear).cut(m.rr(11.4,3.9,12.4,(190,-68.5,6),.15,rear))
+    m.feature('USBAPlugShield','USB-A plug metal shell',shield,'Accessories',0,'metal')
+    m.box('USBAPlugStop','USB-A rear insulating stop',10.8,.65,3.3,(190,-67.9,4.35),'Accessories',0,'black',.15,True)
+    m.box('USBAPlugTongue','USB-A four-contact tongue',9.2,7,1,(190,-62.7,5),'Accessories',0,'black',.15)
+    for i in range(4):m.box('USBAPlugContact'+str(i),'USB-A charging-cable contact',.85,5,.1,(190+(i-1.5)*2,-62.7,6.1),'Accessories',0,'gold',.05,True)
+    outer=_keyed_rear_port(7.1,2.4,7,220,-72.3,6,.6)
+    inner=_keyed_rear_port(6.5,1.8,7.4,220,-72.5,6,.45)
+    m.feature('MicroUSBPlugShield','Micro-B keyed plug shell',outer.cut(inner),'Accessories',0,'metal')
+    m.feature('MicroUSBPlugStop','Micro-B insulating rear stop',_keyed_rear_port(6,1.3,.65,220,-71.9,6,.3),'Accessories',0,'black',True)
+    m.box('MicroUSBPlugTongue','Micro-B contact carrier',5.8,4,.45,(220,-68.5,5.65),'Accessories',0,'black',.1)
+    for i in range(5):m.box('MicroUSBPlugContact'+str(i),'Micro-B charging-cable contact',.25,3.5,.08,(220+(i-2)*.65,-68.3,6.2),'Accessories',0,'gold',.025,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=28
+    m.checkpoint(28,'original_usb_a_to_micro_b_charging_cable','加入原配 USB-A 至 Micro-B 充电线、双端包胶与护线套、独立金属壳和绝缘件、四及五接点。插头和线长为缩短展示的结构近似。')
+    m.snapshot('28_usb_charging_accessory_review',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+STAGES[28]=stage28
+
+
+def stage29(m):
+    from .atari2600 import _rounded_route,_helical_spring
+    cup=Part.makeCylinder(6.5,7,V(310,-30,8)).fuse(Part.makeCylinder(2,9,V(310,-35,11),V(0,-1,0)))
+    cup=cup.cut(Part.makeCylinder(5.5,6.3,V(310,-30,9))).cut(Part.makeCylinder(1,9.4,V(310,-34.9,11),V(0,-1,0)))
+    m.feature('MonoEarCase','Single-ear speaker housing and cable stem study',cup,'Accessories',0,'black')
+    m.cyl('MonoEarMagnet','Earbud magnetic circuit study',3.4,2,(310,-30,9.15),'Accessories',0,'metal',internal=True)
+    m.ring('MonoEarFrame','Earbud speaker frame',5.2,4.85,3.3,(310,-30,11.2),'Accessories',0,'metal',internal=True)
+    m.ring('MonoEarCoil','Earbud voice-coil envelope study',2.5,2.25,1.5,(310,-30,13),'Accessories',0,'copper',internal=True)
+    m.cyl('MonoEarDiaphragm','Earbud diaphragm',4.8,.12,(310,-30,14.6),'Accessories',0,'black',internal=True)
+    grille=Part.makeCylinder(6.2,.7,V(310,-30,15.2))
+    grille=grille.cut(Part.makeCompound([Part.makeCylinder(.45,1,V(310+x,-30+y,15.05)) for x in [-3,-1.5,0,1.5,3] for y in [-3,-1.5,0,1.5,3]]))
+    m.feature('MonoEarGrille','Perforated single-ear grille',grille,'Accessories',0,'black')
+    m.ring('MonoEarRim','Soft earbud perimeter',7.1,6.45,1,(310,-30,15.1),'Accessories',0,'rubber')
+    upper=[V(310,-44.2,11),V(310,-62,11),V(300,-72,7),V(300,-80.8,7)]
+    m.feature('MonoUpperCord','Earbud to microphone cable display length',_rounded_route(upper,3,.8),'Accessories',0,'black')
+    m.native('MonoMicCase','Native inline microphone and switch case',7,24,1.4,5,(300,-93,4),'Accessories',0,'black')
+    m.cut('MonoMicCase',m.rr(5,22,4.3,(300,-93,5),1),'Open inline microphone cavity').Refine=False
+    m.cut('MonoMicCase',Part.makeBox(2.0,7.4,4,V(295.6,-100.7,5.5)),'Side microphone switch aperture').Refine=False
+    m.box('MonoMicLid','Inline microphone cover',6.8,23.8,.55,(300,-93,9.15),'Accessories',0,'black',1.2)
+    m.cut('MonoMicLid',Part.makeCylinder(.7,.9,V(300,-88,9)),'Microphone acoustic opening').Refine=False
+    m.native('MonoMicPCB','Native inline microphone circuit plate study',4.6,20,.4,.6,(300,-93,5.2),'Accessories',0,'pcb')
+    m.cyl('MonoMicrophone','Electret microphone capsule envelope',1.5,1,(300,-88,7.3),'Accessories',0,'metal',internal=True)
+    switch=m.rr(4,4,1.2,(300,-97,6),.3).cut(Part.makeBox(4.5,1.7,.7,V(297.8,-97.85,6.2)))
+    m.feature('MonoMicSwitch','Microphone slide-switch body study',switch,'Accessories',0,'black',True)
+    slider=Part.makeBox(.8,5,3.2,V(295.9,-99.5,5.8)).fuse(Part.makeBox(3.9,1.2,.35,V(296.6,-97.6,6.35)))
+    m.feature('MonoMicSlider','Side MIC switch slider and actuator',slider,'Accessories',0,'black')
+    m.label('MonoMicMark','MIC',1,(298.7,-85.4,9.725),'Accessories',0,'white')
+    lower=[V(300,-105.2,7),V(300,-134,7),V(338,-144,7),V(338,-173.8,7)]
+    m.feature('MonoLowerCord','Microphone to four-pole plug cable display length',_rounded_route(lower,4,.8),'Accessories',0,'black')
+    m.cyl('MonoPlugGrip','Four-pole headset plug overmould',3.2,19,(338,-174,7),'Accessories',0,'black',axis=(0,-1,0))
+    m.ring('MonoPlugRelief','Headset plug strain-relief sleeve',1.3,.85,5,(338,-173.9,7),'Accessories',0,'black',axis=(0,1,0))
+    contacts=[('Sleeve',-193.2,3.3),('Ring2',-197.35,2.4),('Ring1',-200.6,2.4),('Tip',-203.85,2.4)]
+    for name,y,length in contacts:
+        shape=Part.makeCylinder(1.65,length,V(338,y,7),V(0,-1,0))
+        if name=='Tip':shape=shape.makeFillet(.6,[e for e in shape.Edges if e.BoundBox.YLength<1e-6 and e.BoundBox.YMin<-206.2])
+        m.feature('MonoPlug'+name,'Headset '+name.lower()+' contact study',shape,'Accessories',0,'metal')
+    for i,y in enumerate([-196.6,-199.85,-203.1]):m.cyl('MonoPlugInsulator'+str(i),'Four-pole plug insulating separator',1.65,.65,(338,y,7),'Accessories',0,'black',axis=(0,-1,0))
+    # A separate cable clip follows the official family-guide arrangement.
+    upper_jaw=m.rr(8,18,1,(306,-119,8.2),.7)
+    cable_ring=Part.makeCylinder(1.3,6,V(300,-122,7),V(0,1,0)).cut(Part.makeCylinder(.85,6.4,V(300,-122.2,7),V(0,1,0)))
+    neck=Part.makeBox(2,4,.7,V(301,-120,6.3));tab=Part.makeBox(1.2,4,2.5,V(302,-120,5.8))
+    upper_hinge=Part.makeCylinder(1.8,3.4,V(304.3,-111,5.5),V(1,0,0)).fuse(Part.makeBox(3.4,3,1.5,V(304.3,-112.5,7)))
+    upper_jaw=upper_jaw.multiFuse([cable_ring,neck,tab,upper_hinge])
+    upper_jaw=upper_jaw.cut(Part.makeCylinder(.7,3.8,V(304.1,-111,5.5),V(1,0,0))).cut(Part.makeCylinder(1.5,1.6,V(305.2,-111,5.5),V(1,0,0)))
+    m.feature('MonoClipUpper','Cable clip upper jaw and bored cord clamp',upper_jaw,'Accessories',0,'black')
+    lower_jaw=_prism_yz([(-128,7.5),(-112,3.5),(-110,3.5),(-110,2.5),(-128,6.5)],302,8)
+    for x in [302,308]:
+        lug=Part.makeCylinder(1.8,2,V(x,-111,5.5),V(1,0,0)).fuse(Part.makeBox(2,3,1,V(x,-112.5,3.4)))
+        lower_jaw=lower_jaw.fuse(lug)
+    lower_jaw=lower_jaw.cut(Part.makeCylinder(.7,8.4,V(301.8,-111,5.5),V(1,0,0)))
+    m.feature('MonoClipLower','Cable clip opposing tapered jaw',lower_jaw,'Accessories',0,'black')
+    m.cyl('MonoClipPin','Cable clip hinge pin',.55,8.4,(301.8,-111,5.5),'Accessories',0,'metal',axis=(1,0,0),internal=True)
+    spring=_helical_spring(1,.35,1.2,.10);spring.Placement=App.Placement(V(305.4,-111,5.5),App.Rotation(V(0,0,1),V(1,0,0)))
+    m.feature('MonoClipSpring','Cable clip spring-coil study',spring,'Accessories',0,'metal',True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=29
+    m.checkpoint(29,'mono_headset_speaker_mic_switch_clip_and_four_pole_plug','补齐单耳扬声器分件、带侧向 MIC 开关的原生麦克风线控、独立铰接线夹与弹簧、四段接点插头和缩短线缆。套装身份依据 2013 官方 FAQ；耳机局部构造以较晚同系列官方示意为指导，内部尺寸为学习近似。')
+    m.snapshot('29_complete_accessories_review',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+STAGES[29]=stage29
+
+
+def finalize(model):
+    from .deliver import finalize as shared_finalize
+    result=shared_finalize(model)
+    model.snapshot("final_front",normal=(.2,-1.5,.7),assemblies=model.profile["envelope_groups"])
+    model.snapshot("final_hero",normal=(.3,-.7,2.3),assemblies=result[0]["handheld_groups"])
+    model.doc.save()
+    return result
