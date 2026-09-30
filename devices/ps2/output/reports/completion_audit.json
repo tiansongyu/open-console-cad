@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment checked separately.",
+  "components": 1352,
+  "solids": 6992,
+  "stages": 34,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_verification.json",
+    "stage34_strict_bop.json",
+    "stage34_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full rebuild, strict BRep and 5049-pair interference checks use the saved Study. delivery_geometry_audit proves every Study part geometrically equivalent to saved Complete; export audit checks saved native and each STEP solid.",
+  "files": [
+    {
+      "path": "devices/ps2/output/PlayStation2_Complete.FCStd",
+      "bytes": 16132358,
+      "sha256": "964c02f17ff505059e03e253cabea7446e240771d36a0b5e134ac5c3b33d3c97"
+    },
+    {
+      "path": "devices/ps2/output/PlayStation2_Exploded.FCStd",
+      "bytes": 9589784,
+      "sha256": "64acbf4b33e60e6269ff12f16461bf6ae81efcc35fb44a24bb02f400fdc87845"
+    },
+    {
+      "path": "devices/ps2/output/PlayStation2_Drawings.FCStd",
+      "bytes": 709355,
+      "sha256": "a0aeb16b9e44dae470c8ab90966800becdbe91b91edcae7bb25832bf7d4dd497"
+    },
+    {
+      "path": "devices/ps2/output/PlayStation2_FullKit.step",
+      "bytes": 78697542,
+      "sha256": "d1b6b70110bcd0c86860ec8949e1ee589a0c77a8961d06162b8c1e3985d0c56d"
+    },
+    {
+      "path": "devices/ps2/output/PlayStation2_Console.step",
+      "bytes": 78014992,
+      "sha256": "6a2c9dd351b43582732e9e956c8bbdde35ea23a9d9d3ae9fd48920c5463c22f5"
+    },
+    {
+      "path": "devices/ps2/output/PlayStation2_Exploded.step",
+      "bytes": 78695356,
+      "sha256": "610eea626412f96a4a1de5c684de7ee1707624355871a9532d376db234304a77"
+    },
+    {
+      "path": "devices/ps2/output/drawings/PlayStation2_Drawings.pdf",
+      "bytes": 1070810,
+      "sha256": "402b4d64e189649eb06b1fcfec821dd3a648d40e7e2957d799aa79d2cf456324"
+    },
+    {
+      "path": "devices/ps2/output/drawings/PlayStation2_Drawings.html",
+      "bytes": 3455327,
+      "sha256": "55721218dbaaaf93431c529090eac4de78765b4eb18191983c573d501fe871a3"
+    },
+    {
+      "path": "devices/ps2/output/COMPONENTS.csv",
+      "bytes": 242707,
+      "sha256": "6b41df78a60bab4a9d7b47c5482f71ec45ca4119c926cc603492feebdac0892c"
+    },
+    {
+      "path": "site/public/models/ps2.glb",
+      "bytes": 39213632,
+      "sha256": "57d1fe0fdcbb48da3ce425c168821a26cf212639bb951c875001357a67b96908"
+    }
+  ],
+  "live_verified": false
+}

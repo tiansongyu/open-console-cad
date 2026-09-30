@@ -2,8 +2,8 @@
 
 - [Sony SCPH-10000 official manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10000_WEB.pdf): approximately 301 × 78 × 182 mm (width/height/depth), original front controller/card interfaces, USB and i.LINK S400, rear PC CARD Type III and protector. The included kit identifies a DualShock 2, 8 MB card, AC/AV connections and utility disc. Reviewed 2026-09-10.
 - [Dig and Rescue firsthand SCPH-10000 assembly](https://digandrescue.com/hardware/sony/sony-playstation2-scph-10000/): GH-001 family, middle frame and heatsink, separate power supply, optical assembly, ten outer case fixings, four rubber pads and PC CARD protector. Photos 001–005, 007, 009, 013, 016–018, 020–022, 024 and 025 reviewed. The metal heat-spreader plate and curved heat pipes are recorded for the next internal stages.
-- [Sony SCPH-10010 DualShock 2 manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10010_WEB.pdf): original controller family and controls; detailed model-specific internal reference review remains pending.
-- [Sony SCPH-10020 memory-card manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10020_WEB.pdf): original 8 MB memory-card identity; detailed construction remains pending.
+- [Sony SCPH-10010 DualShock 2 manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10010_WEB.pdf): original controller family and controls; the later-family internal reference and its limits are documented below.
+- [Sony SCPH-10020 memory-card manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10020_WEB.pdf): original 8 MB memory-card identity; family-level construction references and their limits are documented below.
 
 The study selects the Japanese SCPH-10000 with PC CARD, not a later EXPANSION BAY case. X runs across the front, Y towards the rear and Z upwards. The stepped lower-body split, wall thickness, ribs, markings and later component locations are photographic study estimates. The official overall body dimensions do not establish production wall or hole tolerances.
 
@@ -38,3 +38,17 @@ Reviewed 2026-09-15. The exact small-board outline, package leads, optical-block
 ## Wiring and case attachment
 
 Dig and Rescue and Secret Base Manager assembly photographs guide the fan lead, shared controller/card-board ribbon, optical connection, control-button harness and its ferrite/guide posts. Ten underside case fixings, two longer rear-side fixings, four rubber feet and six removable screw covers are represented. Local cable paths, pin selections, conductor spacing, fixing dimensions and snap geometry are study approximations. The wiring shows physical routing and component relationships; it is not a service wiring diagram or electrical netlist. The lower model label explicitly identifies this as a CAD study.
+
+## DualShock 2 controller
+
+- [Sony SCPH-10010 manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10010_WEB.pdf): model identity and controls. This source does not establish the local shell dimensions used here.
+- [awgs Foundry, firsthand SCPH-10010 disassembly](https://awgsfoundry.com/blog-entry-262.html): the author's controller came with a later SCPH-30000 console. Photographs guide the split ergonomic shell, six rear screws, white carrier, contact film and shoulder folds, silicone pads, two potentiometer sticks and unequal rumble motors. Selected original photographs were visually reviewed locally; they are not redistributed.
+
+Reviewed 2026-09-30. The controller represents this documented family construction, not a proven launch-batch board revision. Shell loft sections, membrane and gimbal geometry, motor interiors, wiring and terminal dimensions are approximate structural studies. MCU and motor-driver markings are descriptive; there is no electrical netlist or working pressure, analogue or vibration simulation. The cable uses a shortened presentation route. Strict solid and assembly checks address the modeled static geometry only.
+
+## 8 MB memory card and connections
+
+- [Sony SCPH-10020 manual](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10020_WEB.pdf): original 8 MB memory-card identity.
+- [RHMVY, firsthand SCPH-10020 photographs](https://rhmvy.tistory.com/entry/PS2-PlayStation-2-%EC%A0%84%EC%9A%A9-Memory-Card%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%B9%B4%EB%93%9C-8MB-%E3%80%8CSCPH-10020%E3%80%8D): visually reviewed exterior legends, recessed label field, keyed board edge, eight contact fingers, NAND package and controller package. The photographed coloured cards are later units; they establish a family layout only, not the launch black card's exact board revision.
+
+Reviewed 2026-09-30. The modeled black shell uses an approximate 41 × 55 × 7 mm envelope, explicitly not a Sony manufacturing dimension. Board outline, snap tongues, locating pins, packages and lead counts are schematic. The original Japanese AC cord, AV MULTI to composite/audio RCA cable and blank 12 cm medium follow the included-kit categories in the console manual. Cable lengths are reduced for presentation, and the blank medium contains no software, disc image or reproduced disc artwork.

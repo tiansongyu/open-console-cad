@@ -14,7 +14,7 @@
     0.15,
     0.17
   ],
-  "stages": 24,
+  "stages": 34,
   "parameter_basis": "Sony SCPH-10000 official manual: approximately301 x78 x182 mm (width/height/depth)",
   "exterior_fidelity": "Published body envelope; approximate local exterior detail",
   "envelope_kind": "published",
@@ -46,6 +46,59 @@
     {
       "url": "https://www.copetti.org/writings/consoles/playstation-2/",
       "role": "Author-owned GH-001 photograph and annotated chip-location overview; smaller internal geometry remains approximate"
+    },
+    {
+      "url": "https://awgsfoundry.com/blog-entry-262.html",
+      "role": "Firsthand later SCPH-10010 family controller construction; not proof of launch-batch electronics"
+    },
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps2-docs/JA_SCPH-10020_WEB.pdf",
+      "role": "Original 8 MB memory-card identity; internal geometry remains schematic"
     }
-  ]
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Ports",
+    "FrontIO",
+    "Optical",
+    "Wiring"
+  ],
+  "internal_exclude": [
+    "DriveCover",
+    "DriveCoverLabel",
+    "DriveMediaLabel",
+    "ClampTopCap",
+    "ClampSeat",
+    "MagneticClamp",
+    "ClampGrip",
+    "ClampMagnet",
+    "ClampHub",
+    "ClampAxle",
+    "DiscTray",
+    "TrayBezel",
+    "TrayFamilyLabel"
+  ],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -110,
+      0
+    ],
+    "MemoryCard": [
+      -40,
+      -30,
+      0
+    ]
+  }
 }

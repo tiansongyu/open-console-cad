@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "pdf": "devices/ps2/output/drawings/PlayStation2_Drawings.pdf",
+  "pdf_sha256": "402b4d64e189649eb06b1fcfec821dd3a648d40e7e2957d799aa79d2cf456324",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "revised_geometry_pages_reviewed": [
+    2,
+    4,
+    6,
+    9
+  ],
+  "independent_final_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "kami_verdict": "READY: 0 errors, 1 warning(s), 0 data gap(s)",
+  "warning_review": "Short Chinese titles were flagged as orphans; all are attached to page content, with no visible stranded headings.",
+  "corrections": [
+    "Chinese-first headings and subtitle",
+    "Include lens and focus parts in optical pickup detail",
+    "Omit the card-slot protector in isolated cage detail",
+    "Use an oblique view to show motor cylinders and eccentric weights"
+  ],
+  "scope": "CAD-derived projections and sections; original console identity and later-family accessory limitations retained. No manufacturing accuracy claim."
+}

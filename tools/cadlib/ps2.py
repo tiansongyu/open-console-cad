@@ -1244,6 +1244,492 @@ def stage24(m):
 STAGES[24]=stage24
 
 
+def _ds2_point(x,y,z):
+    return V(x,y-240,z)
+
+
+def _ds2_loft(m,key,profiles):
+    from .ps1 import _controller_profile_curves
+    sketches=[]
+    for i,(sx,sy,z) in enumerate(profiles):
+        sk=m.doc.addObject('Sketcher::SketchObject',key+'Profile'+str(i));sk.Label='DualShock 2 editable shell section '+str(i+1)
+        for curve in _controller_profile_curves(sx*1.09,sy*1.07,1.2 if 'Inner' in key else 0):sk.addGeometry(curve,False)
+        sk.Placement=App.Placement(_ds2_point(0,0,z),App.Rotation());m.group('Construction').addObject(sk);sketches.append(sk)
+    loft=m.doc.addObject('Part::Loft',key);loft.Sections=sketches;loft.Solid=True;loft.Ruled=False;loft.Closed=False;loft.MaxDegree=3
+    m.doc.recompute();assert loft.Shape.isValid() and len(loft.Shape.Solids)==1 and loft.Shape.Volume>0;loft.Shape.check(True)
+    m.group('Construction').addObject(loft)
+    for sk in sketches:sk.Visibility=False
+    loft.Visibility=False;return loft
+
+
+def _ds2_shell(m,key,outer,inner,layer):
+    a=_ds2_loft(m,key+'Outer',outer);b=_ds2_loft(m,key+'Inner',inner)
+    obj=m.doc.addObject('Part::Cut',key);obj.Base=a;obj.Tool=b;obj.Refine=False
+    m.doc.recompute();assert obj.Shape.isValid() and len(obj.Shape.Solids)==1 and obj.Shape.Volume>0;obj.Shape.check(True)
+    a.Visibility=False;b.Visibility=False
+    return m.register(obj,key,'Controller',layer,'ps2black')
+
+
+def stage25(m):
+    from .ps1 import _add_shape
+    _ds2_shell(m,'DS2Back',[(.89,.90,1),(.96,.96,5),(1,1,12),(1,1,19.8)],[(.83,.84,3.3),(.92,.92,7),(.967,.966,13),(.967,.966,20.05)],-4)
+    _ds2_shell(m,'DS2Front',[(1,1,20.1),(.994,.992,26),(.960,.955,31)],[(.966,.966,19.95),(.957,.950,26),(.935,.925,28.7)],4)
+    front=[];back=[];inner_front=[];inner_back=[];openings=[]
+    for side in [-1,1]:
+        x=side*23
+        back.append(Part.makeCylinder(17,15.8,_ds2_point(x,-23,4)))
+        front.append(Part.makeCylinder(17,12.4,_ds2_point(x,-23,20.1)))
+        inner_back.append(Part.makeCylinder(15.5,14.7,_ds2_point(x,-23,5.5)))
+        inner_front.append(Part.makeCylinder(15.5,11.25,_ds2_point(x,-23,19.95)))
+        openings.append(Part.makeCylinder(12.1,2.6,_ds2_point(x,-23,30.8)))
+        face=Part.makeCylinder(24,2.0,_ds2_point(side*47,7,30.7))
+        face=face.makeFillet(.7,[e for e in face.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>32.6]);front.append(face)
+        front.append(m.rr(23,13,11,tuple(_ds2_point(side*47,34,20.1)),2))
+        back.append(m.rr(23,13,7.8,tuple(_ds2_point(side*47,34,12.0)),2))
+    _add_shape(m,'DS2Back',Part.makeCompound(back),'Integral lower analogue-stick cups and shoulder housings').Refine=False
+    m.cut('DS2Back',inner_back,'Hollow lower analogue-stick cups').Refine=False
+    _add_shape(m,'DS2Front',front[0].multiFuse(front[1:]).removeSplitter(),'Integral upper analogue-stick pods and circular control faces').Refine=False
+    m.cut('DS2Front',inner_front+openings,'Analogue-stick pod cavities and real stick openings').Refine=False
+    m.profile['stages']=25
+    m.checkpoint(25,'dualshock2_native_lofted_shell_and_analogue_pods','建立 DualShock 2 的上下原生曲线放样壳、双摇杆杯形舱、圆形按键面与两层肩键罩；保留壳体分缝和真正贯穿的摇杆开孔，局部尺寸为照片指导的学习近似。')
+
+
+STAGES[25]=stage25
+
+
+def _ds2_symbol(m,key,kind,x,y,z,material):
+    from .psp import _polygon
+    x,y,z=tuple(_ds2_point(x,y,z))
+    if kind=='Triangle':
+        shape=_polygon([(x,y+3),(x-2.8,y-2.1),(x+2.8,y-2.1)],z,.025).cut(_polygon([(x,y+2.22),(x-2.15,y-1.72),(x+2.15,y-1.72)],z-.01,.05))
+    elif kind=='Circle':shape=Part.makeCylinder(3,.025,V(x,y,z)).cut(Part.makeCylinder(2.6,.05,V(x,y,z-.01)))
+    elif kind=='Square':shape=m.rr(5.6,5.6,.025,(x,y,z),.08).cut(m.rr(4.8,4.8,.05,(x,y,z-.01),.04))
+    else:
+        strips=[]
+        for angle in [-45,45]:
+            strip=m.rr(.42,7,.025,(x,y,z),.06);strip.rotate(V(x,y,z),V(0,0,1),angle);strips.append(strip)
+        shape=strips[0].fuse(strips[1])
+    m.feature(key,kind+' face-button symbol',shape,'Controller',6,material)
+
+
+def stage26(m):
+    from .psp import _polygon
+    from .ps1 import _add_shape
+    m.colors.update({'buttonblack':(.17,.18,.20),'ctrlcyan':(.20,.69,.63),'ctrlcoral':(.79,.34,.29),'ctrlblue':(.27,.57,.84),'ctrlpurple':(.74,.35,.60),'stickrubber':(.10,.11,.12)})
+    _add_shape(m,'DS2Front',m.rr(16,13,10.9,tuple(_ds2_point(0,-18,20.1)),1),'Central analogue-button bridge').Refine=False
+    m.cut('DS2Front',m.rr(13,10,8.75,tuple(_ds2_point(0,-18,19.95)),.7),'Central bridge interior').Refine=False
+    _add_shape(m,'DS2Back',m.rr(16,13,15.8,tuple(_ds2_point(0,-18,4)),1),'Lower central bridge').Refine=False
+    m.cut('DS2Back',m.rr(13,10,14.7,tuple(_ds2_point(0,-18,5.5)),.7),'Lower bridge interior').Refine=False
+    caps=[];holes=[];pivot=_ds2_point(-47,7,0)
+    outline=[(-3,2.4),(3,2.4),(4.1,9.5),(0,12),(-4.1,9.5)]
+    for name,angle in [('Up',0),('Right',-90),('Down',180),('Left',90)]:
+        cap=_polygon([(-47+x,-233+y) for x,y in outline],32.05,2.75)
+        cap=cap.makeFillet(.4,[e for e in cap.Edges if e.BoundBox.ZLength>2.74])
+        cap=cap.fuse(Part.makeCylinder(1.8,5.7,_ds2_point(-47,13.8,26.5)))
+        cap.rotate(pivot,V(0,0,1),angle);caps.append(cap)
+        hole=_polygon([(-47+x*1.09,-233+y*1.09) for x,y in outline],28.4,7);hole.rotate(pivot,V(0,0,1),angle);holes.append(hole)
+    cross=Part.makeBox(5,23,.8,_ds2_point(-49.5,-4.5,26.6)).fuse(Part.makeBox(23,5,.8,_ds2_point(-58.5,4.5,26.6)))
+    cross=cross.fuse(Part.makeCylinder(2.4,1.4,_ds2_point(-47,7,25.3)))
+    m.feature('DS2DPad','Linked four-way directional rocker',cross.multiFuse(caps),'Controller',5,'buttonblack')
+    for name,dx,dy,mat in [('Triangle',0,11,'ctrlcyan'),('Circle',11,0,'ctrlcoral'),('Cross',0,-11,'ctrlblue'),('Square',-11,0,'ctrlpurple')]:
+        x,y=47+dx,7+dy
+        cap=Part.makeCylinder(4.5,5.4,_ds2_point(x,y,29.3))
+        cap=cap.makeFillet(.35,[e for e in cap.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>34.6])
+        cap=cap.fuse(Part.makeCylinder(1.55,2.9,_ds2_point(x,y,26.5)))
+        cap=cap.multiFuse([Part.makeBox(1.7,2,.6,_ds2_point(x+3.8,y-1,29.4)),Part.makeBox(1.7,2,.6,_ds2_point(x-5.5,y-1,29.4))])
+        m.feature('DS2Button'+name,name+' pressure-button cap and locating ears',cap,'Controller',5,'buttonblack')
+        _ds2_symbol(m,'DS2Symbol'+name,name,x,y,34.735,mat)
+        holes += [Part.makeCylinder(4.8,7.3,_ds2_point(x,y,28.2)),Part.makeCylinder(5.8,2.2,_ds2_point(x,y,28.3))]
+    for key,x,y,w,h in [('Select',-11.5,4,7,3.8),('Analog',0,-11,6.8,3.8)]:
+        cap=m.rr(w,h,1.5,tuple(_ds2_point(x,y,30.8)),.6).fuse(Part.makeCylinder(1.2,4.4,_ds2_point(x,y,26.5)))
+        m.feature('DS2'+key,key.upper()+' button',cap,'Controller',5,'buttonblack')
+        holes.append(m.rr(w+.6,h+.6,7.1 if key=='Analog' else 5.2,tuple(_ds2_point(x,y,26.1 if key=='Analog' else 28)),.7))
+    cap=_polygon([(8.2,-238.1),(8.2,-233.9),(14.4,-236)],30.8,1.5).fuse(Part.makeCylinder(1.2,4.4,_ds2_point(11.0,4,26.5)))
+    m.feature('DS2Start','Triangular START button',cap,'Controller',5,'buttonblack')
+    holes.append(_polygon([(7.9,-238.5),(7.9,-233.5),(15.0,-236)],28,5.2))
+    holes.append(m.rr(3.4,1.6,3.0,tuple(_ds2_point(0,-18,28.5)),.2))
+    m.cut('DS2Front',holes,'Directional, face, menu and indicator openings').Refine=False
+    m.box('DS2AnalogLED','Analogue-mode indicator lens',2.8,1.1,.25,tuple(_ds2_point(0,-18,31.05)),'Controller',6,'red',.15)
+    for key,text,size,x,y in [('Sony','SONY',3.6,-9,22),('PS','PS',3.2,-3.3,13),('Family','PlayStation',1.6,-10,9),('Select','SELECT',1.25,-18,-1.7),('Start','START',1.25,7,-1.7),('Analog','ANALOG',1.3,-7.5,-7)]:
+        m.label('DS2'+key+'Mark',text,size,tuple(_ds2_point(x,y,31.025)),'Controller',6,'white')
+    rear=g.rotation((0,1,0),(0,0,1))
+    for side in [-1,1]:
+        x=side*47;name='L' if side<0 else 'R'
+        for tier,z in [(1,25.5),(2,16)]:
+            shell='DS2Front' if tier==1 else 'DS2Back'
+            m.cut(shell,m.rr(19.2,7.2,16,tuple(_ds2_point(x,27.1,z)),.85,rear),name+str(tier)+' shoulder actuator opening').Refine=False
+            cap=m.rr(18.4,6.4,2.2,tuple(_ds2_point(x,39,z)),.75,rear)
+            stem=m.rr(4,3,8.1,tuple(_ds2_point(x,31,z)),.25,rear)
+            m.feature('DS2'+name+str(tier),name+str(tier)+' shoulder key and stem',cap.fuse(stem),'Controller',5,'buttonblack')
+            m.label('DS2'+name+str(tier)+'Mark',str(tier),2,tuple(_ds2_point(x+.5,41.225,z-.7)),'Controller',6,'white',rotation=rear)
+        m.label('DS2Shoulder'+name,name,2.0,tuple(_ds2_point(x-.7,36,31.125)),'Controller',6,'white')
+    for i,x in enumerate([-23,23]):
+        center=_ds2_point(x,-23,25)
+        dome=Part.makeSphere(12,center).cut(Part.makeSphere(10.6,center)).common(Part.makeBox(30,30,9.6,_ds2_point(x-15,-38,22.5)))
+        dome=dome.multiFuse([Part.makeCylinder(10,.45,_ds2_point(x,-23,31.9)),Part.makeCylinder(3,9.3,_ds2_point(x,-23,24))])
+        dome=dome.cut(Part.makeCylinder(2.0,6.3,_ds2_point(x,-23,23.8)))
+        m.feature('DS2StickDome'+str(i),'Analogue stick hard dome and keyed stem study',dome,'Controller',5,'buttonblack')
+        crown=Part.makeSphere(16,_ds2_point(x,-23,22.8)).common(Part.makeCylinder(11.05,5,_ds2_point(x,-23,34.4)))
+        cap=Part.makeCylinder(10.7,1,_ds2_point(x,-23,33.5)).fuse(crown)
+        m.feature('DS2StickCap'+str(i),'Convex rubber analogue thumb cap',cap,'Controller',6,'stickrubber')
+    m.profile['stages']=26
+    m.checkpoint(26,'dualshock2_directional_face_shoulder_and_analogue_controls','补齐联动方向键、四个带定位耳的符号面键、菜单与 ANALOG 键、模式灯、两层肩键及双摇杆球罩和凸面胶帽，并加工对应孔位。')
+
+
+STAGES[26]=stage26
+
+
+def stage27(m):
+    from .ps1 import _add_shape
+    from .psp import _polygon
+    m.colors.update({'ctrlcream':(.79,.80,.66),'ctrlflex':(.16,.47,.37)})
+    m.native('DS2PCB','Native DualShock 2 family circuit board',84,30,.8,.8,tuple(_ds2_point(0,8,13)),'Controller',0,'pcb')
+    extensions=[m.rr(10,12,.8,tuple(_ds2_point(0,-13,13)),.4)]
+    for x in [-23,23]:
+        extensions += [Part.makeCylinder(12,.8,_ds2_point(x,-23,13)),m.rr(24,19,.8,tuple(_ds2_point(x,-15.5,13)),.5)]
+    _add_shape(m,'DS2PCB',extensions[0].multiFuse(extensions[1:]).removeSplitter(),'Two analogue module lobes and indicator tongue').Refine=False
+    mounts=[(-35,18),(35,18),(-35,-4),(35,-4),(0,18)]
+    m.cut('DS2PCB',[Part.makeCylinder(1.0,1.3,_ds2_point(x,y,12.75)) for x,y in mounts],'Carrier locating pin and retaining screw holes').Refine=False
+    before=set(m.parts);_board_ic(m,'DS2MCU','MCU STUDY',-16,-228,10,10,44,qfp=True)
+    _change_electronics_group(m,set(m.parts)-before,'Controller',5.0,(-16,-228,13.4));_fit_one_mark(m,'DS2MCUMark','DS2MCU')
+    before=set(m.parts);_board_ic(m,'DS2MotorDriver','RUMBLE',28,-230,7,5,8)
+    _change_electronics_group(m,set(m.parts)-before,'Controller',5.0,(28,-230,13.4));_fit_one_mark(m,'DS2MotorDriverMark','DS2MotorDriver')
+    before=set(m.parts);_board_fpc(m,'DS2FilmSocket',18,-224,20,24,side=-1)
+    _change_electronics_group(m,set(m.parts)-before,'Controller',5.0,(18,-224,13.4))
+    for i,(x,y) in enumerate([(-30,8),(-26,8),(-7,8),(-3,8),(8,8),(12,8),(27,-2),(32,-2)]):
+        before=set(m.parts);_board_passive(m,'DS2Passive'+str(i),x,y-240,'black' if i%2 else 'ceramic')
+        _change_electronics_group(m,set(m.parts)-before,'Controller',5.0,(x,y-240,13.4))
+    outline=[(-55,26),(55,26),(64,17),(63,-5),(56,-11),(38,-11),(34,-17),(11,-17),(5,-13),(5,-20),(-5,-20),(-5,-13),(-11,-17),(-34,-17),(-38,-11),(-56,-11),(-63,-5),(-64,17)]
+    carrier=_polygon([(x,y-240) for x,y in outline],20.5,1.2)
+    wells=[Part.makeCylinder(17.4,1.8,_ds2_point(x,-23,20.2)) for x in [-23,23]]
+    m.feature('DS2Carrier','White moulded button-film and board carrier',carrier.cut(Part.makeCompound(wells)),'Controller',1,'ctrlcream',True)
+    posts=[]
+    for i,(x,y) in enumerate(mounts):
+        post=Part.makeCylinder(2.4 if i==4 else 1.6,6.6,_ds2_point(x,y,13.95))
+        if i==4:post=post.cut(Part.makeCylinder(.9,8,_ds2_point(x,y,13.7)))
+        else:post=post.fuse(Part.makeCylinder(.8,1.3,_ds2_point(x,y,12.8)))
+        posts.append(post)
+    _add_shape(m,'DS2Carrier',Part.makeCompound(posts),'Carrier support posts and board locating pins').Refine=False
+    m.cut('DS2Carrier',Part.makeCylinder(.9,8.5,_ds2_point(0,18,13.5)),'Board retaining screw pilot through carrier').Refine=False
+    m.screw('DS2BoardScrew',tuple(_ds2_point(0,18,11.9)),'Controller',0,length=8.5,radius=1.7)
+    film=_polygon([(x*.985,(y-8)*.985+8-240) for x,y in outline],21.83,.08)
+    film=film.cut(Part.makeCompound([Part.makeCylinder(17.6,.5,_ds2_point(x,-23,21.6)) for x in [-23,23]]))
+    m.feature('DS2Flex','Pressure-button flexible contact film',film,'Controller',2,'ctrlflex',True)
+    slot=m.rr(24.4,1.2,2.2,tuple(_ds2_point(18,24.5,20.3)),.25)
+    for key in ['DS2Carrier','DS2Flex']:m.cut(key,slot,'Flexible tail fold through the rear carrier slot').Refine=False
+    ribbon=[(18,-222.5,11.4),(18,-215.5,11.4),(18,-215.5,22.4),(18,-217.8,22.4),(18,-217.8,21.88)]
+    _add_shape(m,'DS2Flex',_flat_ribbon(ribbon,23,bend=.14),'Folded flexible-film tail into board socket').Refine=False
+    light_hole=m.rr(2.8,1.4,2.2,tuple(_ds2_point(0,-18,20.2)),.15)
+    for key in ['DS2Carrier','DS2Flex']:m.cut(key,light_hole,'Analogue indicator light-guide passage').Refine=False
+    m.box('DS2LEDPackage','Analogue indicator LED package',2,.8,.6,tuple(_ds2_point(0,-18,14)),'Controller',1,'red',.15,True)
+    m.box('DS2LightGuide','Analogue indicator internal light guide',2.4,.8,16.0,tuple(_ds2_point(0,-18,14.8)),'Controller',2,'white',.12,True)
+    m.profile['stages']=27
+    m.checkpoint(27,'dualshock2_native_board_carrier_and_contact_film','加入带双摇杆支部的原生主板、背面控制与振动驱动封装、白色承托架、柔性接点膜及折回板端的排线，并加入模式灯和导光件。')
+
+
+STAGES[27]=stage27
+
+
+def _ds2_membrane(m,key,centres,web,material,small=False):
+    radius=4.2 if small else 5.2;outer=3.2 if small else 4.6;top=2.2 if small else 3.0
+    disks=[Part.makeCylinder(radius,.4,_ds2_point(x,y,22.1)) for x,y in centres]
+    base=disks[0].multiFuse(disks[1:]+web)
+    domes=[]
+    for i,(x,y) in enumerate(centres):
+        base=base.cut(Part.makeCylinder(outer-.2,.8,_ds2_point(x,y,21.95)))
+        dome=Part.makeCone(outer,top,3.5,_ds2_point(x,y,22.48)).fuse(Part.makeCylinder(top,.45,_ds2_point(x,y,25.95)))
+        dome=dome.cut(Part.makeCone(outer-.6,top-.6,3.55,_ds2_point(x,y,22.3)));domes.append(dome)
+        m.cyl(key+'Pill'+str(i),'Moving carbon button contact',1.5 if small else 2.0,.2,tuple(_ds2_point(x,y,25.6)),'Controller',3,'black',internal=True)
+        fixed=Part.makeCylinder(1.8 if small else 2.3,.04,_ds2_point(x,y,21.95)).cut(Part.makeBox(.3,5,.1,_ds2_point(x-.15,y-2.5,21.92)))
+        m.feature(key+'Fixed'+str(i),'Split fixed film contact',fixed,'Controller',2,'black',True)
+    shape=base.multiFuse(domes).removeSplitter()
+    if key=='DS2DPadMembrane':shape=shape.cut(Part.makeCylinder(2.0,1.0,_ds2_point(-47,7,21.9)))
+    m.feature(key,'Shaped silicone button membrane',shape,'Controller',3,material,True)
+
+
+def stage28(m):
+    from .ps1 import _add_shape
+    m.colors.update({'ctrlmint':(.58,.76,.67),'ctrlpad':(.82,.75,.49)})
+    dpad=[(-47,13.8),(-40.2,7),(-47,.2),(-53.8,7)]
+    face=[(47,18),(58,7),(47,-4),(36,7)]
+    _ds2_membrane(m,'DS2DPadMembrane',dpad,[Part.makeCylinder(4.5,.4,_ds2_point(-47,7,22.1))],'ctrlpad')
+    _ds2_membrane(m,'DS2FaceMembrane',face,[Part.makeCylinder(8,.4,_ds2_point(47,7,22.1))],'ctrlmint')
+    web=[Part.makeBox(30,4,.4,_ds2_point(-15,2,22.1)),Part.makeBox(4,15,.4,_ds2_point(-2,-11,22.1))]
+    _ds2_membrane(m,'DS2MenuMembrane',[(-11.5,4),(11,4),(0,-11)],web,'rubber',True)
+    pivot=Part.makeCylinder(1.8,2.45,_ds2_point(-47,7,21.75)).fuse(Part.makeCylinder(2.7,1.05,_ds2_point(-47,7,24.1)))
+    m.feature('DS2DPadPivot','Directional rocker pivot support',pivot,'Controller',3,'ctrlcream',True)
+    rear=g.rotation((0,1,0),(0,0,1));supports=[];film_tabs=[]
+    for side in [-1,1]:
+        x=side*47;name='L' if side<0 else 'R'
+        supports.append(m.rr(11,18,.45,tuple(_ds2_point(x,25.6,20.75)),.5,rear))
+        tab=m.rr(10,17,.08,tuple(_ds2_point(x,26.1,20.75)),.4,rear)
+        tab=tab.fuse(Part.makeBox(10,.68,.08,_ds2_point(x-5,25.5,21.83)));film_tabs.append(tab)
+        for tier,z in [(1,25.5),(2,16)]:
+            key='DS2Shoulder'+name+str(tier)
+            base=Part.makeCylinder(3.7,.25,_ds2_point(x,26.35,z),V(0,1,0)).cut(Part.makeCylinder(2.9,.7,_ds2_point(x,26.2,z),V(0,1,0)))
+            dome=Part.makeCone(3.1,2.6,3.62,_ds2_point(x,26.58,z),V(0,1,0)).fuse(Part.makeCylinder(2.6,.65,_ds2_point(x,30.15,z),V(0,1,0)))
+            dome=dome.cut(Part.makeCone(2.65,2.15,3.75,_ds2_point(x,26.5,z),V(0,1,0)))
+            m.feature(key+'Membrane','Shoulder-key silicone dome',base.fuse(dome),'Controller',3,'ctrlpad',True)
+            m.cyl(key+'Pill','Shoulder moving carbon contact',1.8,.18,tuple(_ds2_point(x,30,z)),'Controller',3,'black',axis=(0,1,0),internal=True)
+            fixed=Part.makeCylinder(1.9,.04,_ds2_point(x,26.23,z),V(0,1,0)).cut(Part.makeBox(.3,.1,5,_ds2_point(x-.15,26.20,z-2.5)))
+            m.feature(key+'Fixed','Shoulder fixed film contact',fixed,'Controller',2,'black',True)
+    _add_shape(m,'DS2Carrier',Part.makeCompound(supports),'Two vertical shoulder-contact supports').Refine=False
+    _add_shape(m,'DS2Flex',Part.makeCompound(film_tabs),'Folded contact-film shoulder wings').Refine=False
+    m.profile['stages']=28
+    m.checkpoint(28,'dualshock2_silicone_membranes_and_pressure_contacts','建立方向键、面键与菜单键硅胶膜及独立动静碳接点，加入方向键支点、两侧肩键竖向支架、接点膜折翼和四个肩键胶碗。')
+
+
+STAGES[28]=stage28
+
+
+def _ds2_joystick(m,index,x,y):
+    from .atari2600 import _helical_spring
+    key='DS2Joy'+str(index);y-=240;holes=[]
+    m.box(key+'Base','Joystick insulating base',16,16,1.4,(x,y,14.1),'Controller',1,'black',.6,True)
+    cage=m.rr(17.5,17.5,6.4,(x,y,15.6),.7).cut(m.rr(16.3,16.3,6.8,(x,y,15.4),.2))
+    roof=m.rr(17.5,17.5,.55,(x,y,21.45),.7).cut(Part.makeCylinder(6.2,1,V(x,y,21.2)))
+    feet=[Part.makeBox(.6,.6,2.9,V(x+dx-.3,y+dy-.3,12.85)) for dx in [-7.9,7.9] for dy in [-7.9,7.9]]
+    cage=cage.multiFuse([roof]+feet)
+    cage=cage.cut(Part.makeCompound([Part.makeCylinder(1.15,21,V(x-10,y,19.2),V(1,0,0)),Part.makeCylinder(.95,21,V(x,y-10,19.9),V(0,1,0))]))
+    m.feature(key+'Frame','Stamped joystick cage, cap and board legs',cage,'Controller',2,'metal',True)
+    outer=m.rr(13,11,2,(x,y,18.2),.45).cut(m.rr(10.8,8.8,2.4,(x,y,18),.3))
+    outer=outer.multiFuse([Part.makeCylinder(1,3.5,V(x-8.6,y,19.2),V(1,0,0)),Part.makeCylinder(1,5.25,V(x+5.1,y,19.2),V(1,0,0))])
+    outer=outer.cut(Part.makeCylinder(.95,21,V(x,y-10,19.9),V(0,1,0)))
+    m.feature(key+'OuterGimbal','X-axis gimbal and potentiometer axle',outer,'Controller',2,'ctrlcream',True)
+    inner=m.rr(9.5,8.5,1.5,(x,y,19.15),.4).cut(m.rr(7,6.2,1.9,(x,y,18.95),.2))
+    inner=inner.multiFuse([Part.makeCylinder(.75,4.8,V(x,y-7.9,19.9),V(0,1,0)),Part.makeCylinder(.75,7.3,V(x,y+3.05,19.9),V(0,1,0))])
+    inner=inner.cut(Part.makeCylinder(1.0,11,V(x-5.5,y,20),V(1,0,0)))
+    m.feature(key+'InnerGimbal','Y-axis gimbal and potentiometer axle',inner,'Controller',2,'ctrlcream',True)
+    shaft=Part.makeSphere(2.2,V(x,y,20.8)).fuse(Part.makeCylinder(1.75,8.55,V(x,y,21.3)))
+    shaft=shaft.fuse(Part.makeCylinder(.8,9.2,V(x-4.6,y,20),V(1,0,0)))
+    m.feature(key+'Shaft','Joystick pivot ball, cross pin and cap shaft',shaft,'Controller',3,'metal',True)
+    spring=_helical_spring(1.2,.6,1.8,.12);spring.translate(V(x,y,15.8))
+    m.feature(key+'ClickSpring','Joystick push-click return spring study',spring,'Controller',1,'metal',True)
+    m.box(key+'ClickSwitch','L3/R3 click switch body',3,3,1.5,(x-5,y,15.8),'Controller',1,'black',.3,True)
+    m.cyl(key+'ClickActuator','L3/R3 switch actuator',.8,.4,(x-5,y,17.4),'Controller',2,'black',internal=True)
+    m.box(key+'ClickLever','Joystick click transfer lever',6,1.2,.2,(x-2.5,y,17.9),'Controller',2,'metal',.12,True)
+    base_bores=[]
+    for dx in [-7.9,7.9]:
+        for dy in [-7.9,7.9]:
+            holes.append(Part.makeCylinder(.5,1.4,V(x+dx,y+dy,12.7)))
+            base_bores.append(Part.makeCylinder(.55,1.9,V(x+dx,y+dy,13.9)))
+    for i,dx in enumerate([-6.7,-3.3]):
+        m.cyl(key+'ClickPin'+str(i),'Click-switch board terminal',.2,3.15,(x+dx,y,12.85),'Controller',1,'metal',internal=True)
+        holes.append(Part.makeCylinder(.35,1.4,V(x+dx,y,12.7)));base_bores.append(Part.makeCylinder(.35,1.9,V(x+dx,y,13.9)))
+    m.cut(key+'Base',base_bores,'Joystick anchor and click terminal passages').Refine=False
+    m.colors['potcyan']=(.06,.52,.59)
+    for axis,z in [((1,0,0),19.2),((0,1,0),19.9)]:
+        suffix='X' if axis[0] else 'Y';normal=V(*axis);q=g.rotation(axis,(0,0,1));origin=V(x,y,18.95)+normal*8.95
+        body=m.rr(6.8,6.4,2.3,tuple(origin),.4,q)
+        center=V(x,y,z)
+        body=body.cut(Part.makeCylinder(2.65,1.5,center+normal*10.0,normal)).cut(Part.makeCylinder(1.15,2.9,center+normal*8.7,normal))
+        pinholes=[]
+        for i,offset in enumerate([-2.2,0,2.2]):
+            xx=x+10.2 if axis[0] else x+offset;yy=y+offset if axis[0] else y+10.2
+            m.cyl(key+suffix+'Pin'+str(i),'Potentiometer board terminal',.2,3.1,(xx,yy,12.85),'Controller',1,'metal',internal=True)
+            holes.append(Part.makeCylinder(.35,1.4,V(xx,yy,12.7)));pinholes.append(Part.makeCylinder(.35,.8,V(xx,yy,15.5)))
+        m.feature(key+suffix+'Pot','Cyan potentiometer housing',body.cut(Part.makeCompound(pinholes)),'Controller',2,'potcyan',True)
+        rotor=Part.makeCylinder(2.3,.25,center+normal*10.35,normal).cut(Part.makeCylinder(1.05,.5,center+normal*10.2,normal))
+        m.feature(key+suffix+'Rotor','Potentiometer rotor disc',rotor,'Controller',2,'ctrlcream',True)
+        m.ring(key+suffix+'Track','Potentiometer resistive track',2.25,1.7,.035,tuple(center+normal*10.68),'Controller',2,'black',axis=axis,internal=True)
+        wiper=m.rr(.35,2.6,.05,tuple(center+normal*10.80),.05,q)
+        m.feature(key+suffix+'Wiper','Potentiometer moving wiper study',wiper,'Controller',2,'metal',True)
+    return holes
+
+
+def stage29(m):
+    holes=[]
+    for i,x in enumerate([-23,23]):holes += _ds2_joystick(m,i,x,-23)
+    m.cut('DS2PCB',holes,'Analogue-module anchors, potentiometer and click-switch terminal holes').Refine=False
+    m.profile['stages']=29
+    m.checkpoint(29,'dualshock2_two_axis_gimbals_potentiometers_and_clicks','建立两个摇杆的金属框架、双轴万向支架、球轴与摇杆杆、两侧电位器、电阻轨道和触点，并加入 L3/R3 按下开关、回位弹簧及独立穿板端子。')
+
+
+STAGES[29]=stage29
+
+
+def stage30(m):
+    """Provide real assembly passages around the controller's moving parts."""
+    from .psp import _polygon
+    pivot=_ds2_point(-47,7,0)
+    tools=[]
+    outline=[(-3.5,1.9),(3.5,1.9),(4.7,10),(0,12.7),(-4.7,10)]
+    for angle in [0,-90,180,90]:
+        hole=_polygon([(-47+x,-233+y) for x,y in outline],31.8,3.5)
+        hole.rotate(pivot,V(0,0,1),angle);tools.append(hole)
+    tools.append(m.rr(13,19,8.8,tuple(_ds2_point(0,-14,19.95)),.7))
+    tools.append(m.rr(17,6,2.7,tuple(_ds2_point(0,-13,19.95)),.4))
+    for x in [-47,47]:
+        tools.append(m.rr(12,3.4,18.8,tuple(_ds2_point(x,26.2,11)),.5))
+    m.cut('DS2Front',tools,'Directional key root, analogue membrane and shoulder-film clearances').Refine=False
+    m.cut('DS2Back',[m.rr(25,20,1.5,tuple(_ds2_point(x,-15.5,12.65)),.5) for x in [-23,23]]+[m.rr(11,12.5,1.5,tuple(_ds2_point(0,-13,12.65)),.4)],'Analogue PCB lobe passages into the lower stick cups').Refine=False
+    for key in [key for key in m.parts if key.startswith('DS2MotorDriver')]:
+        obj=m.parts[key];obj.Placement.Base+=V(0,-2.0,0);obj.FlatPlacement=obj.Placement
+    m.cut('DS2Flex',Part.makeCylinder(2.0,.5,_ds2_point(-47,7,21.6)),'Directional rocker pivot passage through contact film').Refine=False
+    m.cut('DS2Carrier',[Part.makeBox(12,1.0,.3,_ds2_point(x-6,25.4,21.75)) for x in [-47,47]],'Shoulder-film fold seats in the carrier supports').Refine=False
+    m.profile['stages']=30
+    m.checkpoint(30,'dualshock2_verified_membrane_board_and_shoulder_clearances','修正方向键根部、ANALOG 胶膜、肩键接点膜支架和双摇杆主板支部的装配通道，分离电机驱动引脚与排线座，并为方向键支点增加穿膜孔。')
+
+
+STAGES[30]=stage30
+
+
+def stage31(m):
+    """Unequal grip motors; internal rotor geometry is a structural study."""
+    from .atari2600 import _rounded_route
+    axis=V(0,-1,0)
+    for side,radius in [(-1,9.0),(1,6.2)]:
+        key='DS2Rumble'+('L' if side<0 else 'R');x=side*56;z=15
+        def point(y):return _ds2_point(x,y,z)
+        can=Part.makeCylinder(radius,16,point(-13),axis).cut(Part.makeCylinder(radius-.55,16.4,point(-12.8),axis))
+        m.feature(key+'Can','Unequal rumble motor steel can',can,'Controller',0,'metal',True)
+        for name,y in [('Rear',-12.2),('Front',-29.2)]:
+            disc=Part.makeCylinder(radius-.15,.6,point(y),axis).cut(Part.makeCylinder(1.2,1,point(y+.2),axis))
+            m.feature(key+name+'Cap','Motor bearing end cap',disc,'Controller',0,'black' if name=='Rear' else 'metal',True)
+        m.cyl(key+'Shaft','Rumble motor shaft',.85,26,tuple(point(-11.8)),'Controller',0,'metal',axis=(0,-1,0),internal=True)
+        m.ring(key+'Magnet','Motor stator magnet study',radius-.8,radius-2.2,13,tuple(point(-14)),'Controller',0,'black',axis=(0,-1,0),internal=True)
+        m.ring(key+'Rotor','Motor armature study',radius-2.5,1.05,10,tuple(point(-15.5)),'Controller',0,'copper',axis=(0,-1,0),internal=True)
+        counter=Part.makeCylinder(radius,5,point(-32),axis).common(Part.makeBox(2*radius+1,6,radius+1,_ds2_point(x-radius-.5,-37.5,z-.5)))
+        counter=counter.cut(Part.makeCylinder(1.0,5.5,point(-31.8),axis))
+        m.feature(key+'Weight','Eccentric rumble counterweight',counter,'Controller',0,'metal',True)
+        seat=Part.makeCylinder(radius+1.05,12,point(-15),axis).cut(Part.makeCylinder(radius+.25,12.4,point(-14.8),axis))
+        seat=seat.common(Part.makeBox(25,14,13,_ds2_point(x-12.5,-28,2)))
+        m.feature(key+'Seat','Moulded grip motor saddle study',seat,'Controller',-1,'ctrlcream',True)
+        for i,material in enumerate(['red','black']):
+            xx=x+(-2 if i==0 else 2)
+            points=[_ds2_point(xx,-11.4,15+i*.8),_ds2_point(xx,-8-i,15+i*.8),_ds2_point(side*(44+i),-8-i,15+i*.8),_ds2_point(side*(39+i),-4-i,14.3+i*.8)]
+            m.feature(key+'Wire'+str(i),'Motor power lead study',_rounded_route(points,.65,.23),'Controller',0,material,True)
+    m.profile['stages']=31
+    m.checkpoint(31,'dualshock2_unequal_rumble_motors_weights_and_wires','补齐两侧不同尺寸的振动电机、金属外套、端盖、转轴、偏心配重、支座及分离引线；电机内部磁环和转子为非功能性结构示意。')
+
+
+STAGES[31]=stage31
+
+
+def stage32(m):
+    from .ps1 import _add_shape
+    from .atari2600 import _rounded_route
+    mounts=[(-61,17),(61,17),(0,22),(0,-21),(-58,-43),(58,-43)]
+    posts=[Part.makeCylinder(2.1,24.2,_ds2_point(x,y,5.5)) for x,y in mounts]
+    _add_shape(m,'DS2Front',Part.makeCompound(posts),'Six controller fixing pillars').Refine=False
+    m.cut('DS2Front',[Part.makeCylinder(.85,23,_ds2_point(x,y,5.3)) for x,y in mounts],'Six blind controller screw pilots').Refine=False
+    for key in ['DS2PCB','DS2Carrier','DS2Flex']:
+        m.cut(key,[Part.makeCylinder(2.4,25,_ds2_point(x,y,5.0)) for x,y in mounts],'Controller case pillar passages').Refine=False
+    bores=[]
+    for i,(x,y) in enumerate(mounts):
+        bores += [Part.makeCylinder(1.0,18,_ds2_point(x,y,.5)),Part.makeCylinder(1.9,3.2,_ds2_point(x,y,.5)),Part.makeCylinder(2.4,14.6,_ds2_point(x,y,5.3))]
+        m.screw('DS2CaseScrew'+str(i),tuple(_ds2_point(x,y,3.0)),'Controller',-5,length=22,radius=1.5)
+    m.cut('DS2Back',bores,'Six rear screw recesses and front-pillar seats').Refine=False
+    relief=Part.makeCylinder(2.7,12,_ds2_point(0,26,18),V(0,1,0))
+    for i in range(5):relief=relief.fuse(Part.makeCylinder(3,.5,_ds2_point(0,30+i*1.4,18),V(0,1,0)))
+    relief=relief.cut(Part.makeCylinder(1.9,12.4,_ds2_point(0,25.8,18),V(0,1,0)))
+    m.feature('DS2CableRelief','Ribbed cable strain relief',relief,'Controller',0,'black')
+    for key in ['DS2Back','DS2Front','DS2Carrier']:
+        m.cut(key,Part.makeCylinder(3.2,16,_ds2_point(0,23,18),V(0,1,0)),'Cable exit and strain-relief seat').Refine=False
+    points=[_ds2_point(*p) for p in [(0,27,18),(0,51,18),(65,70,14),(106,44,12),(106,20,12),(148,20,12)]]
+    m.feature('DS2Cable','DualShock 2 cable routing study',_rounded_route(points,6,1.75),'Controller',0,'black')
+    for i,material in enumerate(['red','black','white','blue','gold','ctrlcyan','ctrlpurple','ctrlcoral']):
+        x=-7-i*.65;z=16.5+i*.43
+        path=[_ds2_point(0,26.7,z),_ds2_point(0,25.3,z),_ds2_point(x,25.3,z),_ds2_point(x,14,z),_ds2_point(x,12,14.1)]
+        m.feature('DS2CableLead'+str(i),'Controller internal cable lead study',_rounded_route(path,.45,.13),'Controller',0,material,True)
+    normal=g.rotation((1,0,0),(0,0,1))
+    plug=m.rr(42,12,20,tuple(_ds2_point(150,20,12)),2,normal)
+    plug=plug.cut(m.rr(39,9,18,tuple(_ds2_point(151,20,12)),1.2,normal)).cut(m.rr(40.3,7.5,4,tuple(_ds2_point(168.8,20,12)),1.4,normal))
+    m.feature('DS2Plug','Nine-position DualShock 2 plug housing',plug,'Controller',0,'ps2black')
+    relief=Part.makeCone(2.4,4.8,11.8,_ds2_point(138,20,12),V(1,0,0)).cut(Part.makeCylinder(1.85,12.2,_ds2_point(137.8,20,12),V(1,0,0)))
+    m.feature('DS2PlugRelief','Plug strain relief',relief,'Controller',0,'black')
+    for block in range(3):
+        y=20+(block-1)*13
+        nose=m.rr(12.2,5.2,5,tuple(_ds2_point(169.5,y,12)),1.3,normal)
+        for i in range(3):
+            yy=y+(i-1)*3.6;number=block*3+i
+            nose=nose.cut(Part.makeCylinder(.55,6,_ds2_point(169,yy,12),V(1,0,0)))
+            if number!=7:m.cyl('DS2PlugPin'+str(number),'Controller plug terminal study',.38,7.3,tuple(_ds2_point(168.8,yy,12)),'Controller',0,'metal',axis=(1,0,0),internal=True)
+        m.feature('DS2PlugTriplet'+str(block),'Three-position plug insulator',nose,'Controller',0,'black')
+    m.label('DS2PlugMark','SONY',2.1,tuple(_ds2_point(155,16,18.035)),'Controller',1,'white')
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('DS2RearModel','SCPH-10010 / CAD STUDY',1.3,tuple(_ds2_point(15,3,.96)),'Controller',-5,'white',rotation=reverse)
+    m.profile['stages']=32
+    m.checkpoint(32,'dualshock2_six_fixings_cable_and_controller_plug','加入六组后壳固定螺钉与上壳柱、穿板避让孔、带应力释放套的控制器线缆、八条内部引线、九位置八接点插头和 CAD STUDY 型号标识。')
+
+
+STAGES[32]=stage32
+
+
+def stage33(m):
+    """Black SCPH-10020 exterior with explicitly approximate family internals."""
+    from .ps1 import _add_shape
+    from .psp import _polygon
+    x,y=-112,-235
+    m.native('CardRear','Native 8 MB memory-card lower cover',41,55,1.5,3.5,(x,y,0),'MemoryCard',-4,'ps2black')
+    m.cut('CardRear',m.rr(38.6,52.6,3,(x,y,1),.8),'Lower memory-card cavity').Refine=False
+    m.native('CardFront','Native 8 MB memory-card upper cover',41,55,1.5,3.3,(x,y,3.7),'MemoryCard',4,'ps2black')
+    m.cut('CardFront',m.rr(38.6,52.6,2.45,(x,y,3.65),.8),'Upper memory-card cavity').Refine=False
+    for key in ['CardRear','CardFront']:
+        m.cut(key,m.rr(36.5,9,4,(x,y+25,1.5),.3),'Exposed eight-contact connector mouth').Refine=False
+    m.native('CardPCB','Native memory-card family board',36,47,.7,1,(x,y+2.5,2),'MemoryCard',0,'pcb')
+    m.cut('CardPCB',m.rr(1.3,7.5,1.5,(x-4.5,y+23,1.8),.3),'Memory-card board edge key notch').Refine=False
+    mounts=[(x+dx,y+dy) for dx in [-16,16] for dy in [-17,16]]
+    supports=[]
+    for px,py in mounts:
+        support=Part.makeCylinder(1.25,.95,V(px,py,.95)).fuse(Part.makeCylinder(.65,2.15,V(px,py,.95)))
+        supports.append(support)
+    _add_shape(m,'CardRear',Part.makeCompound(supports),'Four board locating pins and shoulders').Refine=False
+    m.cut('CardPCB',[Part.makeCylinder(.85,1.5,V(px,py,1.8)) for px,py in mounts],'Memory-card board locating bores').Refine=False
+    clips=[];seats=[]
+    for side in [-1,1]:
+        for dy in [-16,0,15]:
+            clips.append(m.rr(.7,2.6,3.05,(x+side*18.5,y+dy,3.1),.1))
+            seats.append(m.rr(1.2,3.0,.9,(x+side*18.5,y+dy,2.9),.15))
+    _add_shape(m,'CardFront',Part.makeCompound(clips),'Six upper-cover snap tongues').Refine=False
+    m.cut('CardRear',seats,'Snap-tongue seats in lower cover').Refine=False
+    for i in range(8):
+        m.box('CardFinger'+str(i),'Eight-contact memory-card edge finger',2.6,6,.025,(x+(i-3.5)*4.5,y+23,3.025),'MemoryCard',1,'gold',.1,True)
+    for key,caption,px,py,w,h,pins,qfp in [('CardNAND','8 MB NAND',x,y-12,20,11,48,False),('CardLogic','CARD LOGIC',x-4,y+7,8,8,48,True)]:
+        before=set(m.parts);_board_ic(m,key,caption,px,py,w,h,pins,qfp=qfp)
+        _change_electronics_group(m,set(m.parts)-before,'MemoryCard',-5.8);_fit_one_mark(m,key+'Mark',key)
+    for i,(dx,dy) in enumerate([(-13,5),(-13,12),(11,3),(11,10),(13,-12),(-13,-12)]):
+        before=set(m.parts);_board_passive(m,'CardPassive'+str(i),x+dx,y+dy,'ceramic' if i%2 else 'black')
+        _change_electronics_group(m,set(m.parts)-before,'MemoryCard',-5.8)
+    m.cut('CardFront',m.rr(35,17,.35,(x,y-10,6.8),.8),'Recessed blank label field').Refine=False
+    m.feature('CardArrow','Moulded card insertion arrow',_polygon([(x-3,y+24),(x,y+25.5),(x+3,y+24)],7.025,.018),'MemoryCard',5,'ps2word')
+    for key,caption,size,px,py in [('Family','PlayStation 2',2.2,x-14,y+17),('Capacity','8 MB',4,x-7,y+9),('Memory','MEMORY CARD',1.6,x-12,y+4),('MagicGate','MagicGate',1.8,x-9,y),('Sony','SONY',2.6,x-5.5,y-24)]:
+        m.label('Card'+key+'Mark',caption,size,(px,py,7.025),'MemoryCard',5,'white')
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('CardModel','SCPH-10020 / CAD STUDY',1.1,(x+13,y+2,-.025),'MemoryCard',-5,'ps2word',rotation=reverse)
+    m.profile['stages']=33
+    m.checkpoint(33,'scph10020_native_memory_card_and_family_electronics','建立黑色 8 MB 记忆卡的原生分体外壳、卡扣、定位柱、带键槽主板、八枚金手指及 NAND 和控制封装；外形与内部尺寸为学习近似，板型不宣称首发批次对应关系。')
+
+
+STAGES[33]=stage33
+
+
+def stage34(m):
+    from .ps1 import stage23 as shared_original_connections
+    # Both original Japanese consoles use the same AC / composite AV family.
+    checkpoint=m.checkpoint
+    try:
+        m.checkpoint=lambda *args:None
+        shared_original_connections(m)
+    finally:
+        m.checkpoint=checkpoint
+    m.parts['BlankDisc'].Label='Blank utility-disc study medium'
+    m.profile['stages']=34
+    m.checkpoint(34,'original_ac_av_connections_and_blank_utility_medium','复用同系列日式电源线和 AV MULTI 转三 RCA 连接器的已验证结构，加入空白光盘作为初代套装介质占位；线长为展示近似，不含任何软件或光盘内容。')
+
+
+STAGES[34]=stage34
+
+
+def finalize(model):
+    from .deliver import finalize as shared_finalize
+    result=shared_finalize(model)
+    model.snapshot('final_front',normal=(.2,-1.5,.7),assemblies=model.profile['envelope_groups'])
+    model.snapshot('final_hero',normal=(.3,-.7,2.3),assemblies=result[0]['handheld_groups'])
+    model.doc.save()
+    return result
+
+
 def rear_snapshot(m,name='rear_review',assemblies=None,exclude=(),normal=(.2,1.8,.45)):
     """Keep +Z upright while inspecting the positive-Y rear face."""
     import FreeCADGui as Gui
