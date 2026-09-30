@@ -272,7 +272,7 @@ open-console-cad/
 | 新增 PlayStation：18 种视图与 12 页图纸 | [交付核对](devices/ps1/output/reports/completion_audit.json) · [线上预览核对](devices/ps1/output/reports/live_ui_checks.json) |
 | 新增 PlayStation 2：21 种视图与 12 页图纸 | [交付核对](devices/ps2/output/reports/completion_audit.json) · [线上预览核对](devices/ps2/output/reports/live_ui_checks.json) |
 | 新增 PlayStation 4：20 种视图与 12 页图纸 | [交付核对](devices/ps4/output/reports/completion_audit.json) · [线上预览核对](devices/ps4/output/reports/live_ui_checks.json) |
-| 新增 PlayStation 5：21 种视图与 12 页图纸 | [交付核对](devices/ps5/output/reports/completion_audit.json) |
+| 新增 PlayStation 5：21 种视图与 12 页图纸 | [交付核对](devices/ps5/output/reports/completion_audit.json) · [线上预览核对](devices/ps5/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献
