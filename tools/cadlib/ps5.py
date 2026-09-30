@@ -676,3 +676,833 @@ def stage14(m):
 
 
 STAGES[14]=stage14
+
+
+def stage15(m):
+    from .ps1 import _gear
+    m.cut('OpticalDeck',Part.makeCylinder(4.8,10,V(-151,-62,18.4)),'Loading motor clearance in the floating deck').Refine=False
+    m.ring('LoadingMotorCan','Optical loading motor steel housing',4.5,3.7,8,(-151,-62,18.8),'Optical',-1,'metal',internal=True)
+    m.cyl('LoadingMotorRotor','Loading motor rotor envelope',3.3,6.6,(-151,-62,19.4),'Optical',-1,'copper',internal=True)
+    m.cyl('LoadingMotorShaft','Loading motor output shaft',.65,1.5,(-151,-62,27),'Optical',0,'metal',internal=True)
+    gears=[(-151,-62,2,2.5,12),(-151,-71,5.8,6.3,26),(-151,-84,5.8,6.3,26),(-156,-93,1.9,2.4,12)]
+    for i,(x,y,root,outer,n) in enumerate(gears):
+        sh=_gear(m,x,y,27.4,root,outer,1.3,n).cut(Part.makeCylinder(.85,2,V(x,y,27.1)))
+        m.feature('LoadingGear'+str(i),'Separate schematic loading spur gear',sh,'Optical',0,'white',True)
+        if i:m.cyl('LoadingGearAxle'+str(i),'Loading gear pivot',.65,1.9 if i==3 else 3.5,(x,y,27 if i==3 else 25.4),'Optical',0,'metal',internal=True)
+    m.cyl('FeedRollerShaft','Lower optical feed roller shaft',.7,112,(-157,-93,23.35),'Optical',0,'metal',axis=(1,0,0),internal=True)
+    for i,x in enumerate([-142,-128,-114,-100,-86,-72]):
+        m.ring('FeedRoller'+str(i),'Segmented rubber disc-loading roller',2.8,.9,10,(x,-93,23.35),'Optical',0,'rubber',axis=(1,0,0),internal=True)
+    for i,x in enumerate([-154.5,-48.5]):
+        block=Part.makeBox(3,7,6,V(x,-96.5,20.5)).cut(Part.makeCylinder(.95,4,V(x-.5,-93,23.35),V(1,0,0)))
+        m.feature('FeedBearing'+str(i),'Lower roller bearing block',block,'Optical',0,'white',True)
+    sh=_gear(m,0,0,0,2.6,3.2,1.5,16).cut(Part.makeCylinder(.95,2,V(0,0,-.2)))
+    sh.rotate(V(),V(0,1,0),90);sh.translate(V(-156.5,-93,23.35))
+    m.feature('FeedTransferGear','Orthogonal roller transfer gear study',sh,'Optical',0,'white',True)
+    m.cyl('PinchShaft','Upper disc pinch-roller shaft',.5,98,(-149,-93,28.25),'Optical',0,'metal',axis=(1,0,0),internal=True)
+    for i,x in enumerate([-143,-119,-95,-71]):
+        m.ring('PinchRoller'+str(i),'Upper disc pinch roller',1.8,.7,12,(x,-93,28.25),'Optical',0,'rubber',axis=(1,0,0),internal=True)
+    for i,x in enumerate([-148,-52]):
+        arm=m.rr(4,6,9.9,(x,-93,20.5),.4)
+        if i==0:arm=arm.cut(Part.makeCylinder(6.5,1.8,V(-151,-84,27.2)))
+        cuts=[Part.makeCylinder(r,5,V(x-2.5,-93,z),V(1,0,0)) for r,z in [(1,23.35),(.75,28.25)]]
+        m.feature('PinchSupport'+str(i),'Pinch roller support arm',arm.cut(Part.makeCompound(cuts)),'Optical',0,'black',True)
+    m.box('PinchBridge','Upper pinch-roller support bridge',104,4,.7,(-100,-93,30.5),'Optical',0,'metal',.4,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=15
+    m.checkpoint(15,'slot_loading_motor_and_rollers','加入吸入/退出电机、独立齿轮和轴、分段橡胶进盘辊、上压辊及支架；齿形和传动间隙仅为静态结构示意，不声称运动学啮合验证。')
+    m.snapshot('15_loading_mechanism',assemblies=['Optical'],exclude=['DriveTopCover','DriveHousing']+['DriveCoverScrew'+str(i) for i in range(4)],normal=(.3,-.6,1.7))
+
+
+STAGES[15]=stage15
+
+
+def stage16(m):
+    m.native('DriveControllerPCB','Optical-drive controller PCB',84,18,1,.8,(-100,-52,18.6),'Optical',-2,'pcb')
+    for i,(x,y) in enumerate([(-137,-58),(-137,-46),(-63,-58),(-63,-46)]):
+        m.cut('DriveControllerPCB',Part.makeCylinder(2,2,V(x,y,18.1)),'Controller board fixing post clearance').Refine=False
+        m.ring('DrivePCBPost'+str(i),'Controller board screw post',1.8,.9,2,(x,y,18.5),'Optical',-2,'white',internal=True)
+        m.screw('DrivePCBScrew'+str(i),(x,y,21.25),'Optical',-1,length=2.2,radius=1.7,axis=(0,0,-1))
+    for key,x,w,d in [('DriveController',-104,12,9),('DriveRAM',-82,9,8),('DriveMotorIC',-125,6,6),('DriveInterfaceIC',-67,6,6)]:
+        m.box(key,'Optical-drive electronic package study',w,d,1.3,(x,-52,19.6),'Optical',-1,'black',.25,True)
+    for i,x in enumerate([-130,-124,-118,-112,-92,-86,-80,-74]):
+        for j,y in enumerate([-59.7,-44.4]):
+            m.box('DriveDiscrete'+str(i)+'_'+str(j),'Representative drive-board discrete',1.4,.7,.45,(x,y,19.6),'Optical',-1,'white',.05,True)
+    sh=m.rr(12,3,1.3,(-101,-58.5,19.6),.2).cut(m.rr(10.6,1.8,1,(-101,-58.5,20.1),.1))
+    m.feature('DriveFlexSocket','Optical controller flex connector',sh,'Optical',-1,'white',True)
+    for i in range(12):m.box('DriveFlexContact'+str(i),'Drive flex connector contact',.25,1.2,.12,(-105.4+i*.8,-58.5,20.35),'Optical',-1,'gold',.02,True)
+    # A cam plate and limit switch show the loading sequence's independent mechanical pieces.
+    cam=Part.makeCylinder(7,1.2,V(-151,-47,23.3)).cut(Part.makeCylinder(1,2,V(-151,-47,23)))
+    cam=cam.cut(m.rr(2,6,2,(-148,-47,23),.6))
+    m.feature('LoadingCam','Slotted loading sequence cam study',cam,'Optical',0,'white',True)
+    m.cyl('LoadingCamAxle','Loading cam pivot',.75,2.4,(-151,-47,23),'Optical',0,'metal',internal=True)
+    m.box('CamFollowerArm','Loading cam follower link',12,3,.5,(-140,-47,24.7),'Optical',0,'white',.4,True)
+    m.ring('CamFollowerPivot','Follower retaining washer',2,1,.5,(-135,-47,25.3),'Optical',0,'metal',internal=True)
+    m.box('DriveLimitPCB','Optical mechanism limit-switch board',10,7,.7,(-148,-39,18.6),'Optical',-2,'pcb',.3,True)
+    m.box('DriveLimitSwitch','Loading position switch',4,3,1.5,(-148,-39,19.5),'Optical',-1,'black',.3,True)
+    m.box('DriveSensorPCB','Disc-entry detector board',6,5,.8,(-147,-99,22.9),'Optical',0,'pcb',.3,True)
+    sensor=m.rr(3,5,4,(-147,-99,24),.2).cut(Part.makeBox(1.6,6,1.9,V(-147.8,-102,25.5)))
+    m.feature('DiscEntrySensor','Disc-entry optical interrupter housing',sensor,'Optical',0,'black',True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=16
+    m.checkpoint(16,'drive_electronics_cam_and_detection','光驱加入原生控制板、主要芯片、连接器及触点、加载顺序凸轮、随动连杆、限位开关和入口光电检测件。逻辑电路与控制时序为结构示意，排线与线束将在整机接线轮次补齐。')
+    m.snapshot('16_optical_complete_mechanisms',assemblies=['Optical'],exclude=['DriveTopCover','DriveHousing']+['DriveCoverScrew'+str(i) for i in range(4)],normal=(.3,-.6,1.7))
+
+
+STAGES[16]=stage16
+
+
+def stage17(m):
+    upper_z,lower_z=56.55,48.1
+    m.native('UpperEMIShield','Upper stamped motherboard shield',313,212,3,.5,(-12.5,3,upper_z),'Shielding',2,'metal')
+    m.native('LowerEMIShield','Lower stamped motherboard shield',313,212,3,.4,(-12.5,3,lower_z),'Shielding',-2,'metal')
+    holes=[Part.makeCylinder(65,12,V(105,15,47))]
+    holes += [Part.makeCylinder(4,12,V(x,y,47)) for x,y in [(-161,-100),(-20,-100),(-161,99),(-20,99)]]
+    for key in ['RearUSB0Shield','RearUSB1Shield','LANShield','HDMIShield','ACInlet']:
+        b=m.parts[key].Shape.optimalBoundingBox(False,False)
+        holes.append(Part.makeBox(b.XLength+.8,b.YLength+.8,12,V(b.XMin-.4,b.YMin-.4,47)))
+    for key in ['UpperEMIShield','LowerEMIShield']:m.cut(key,holes,'Shield apertures around fan, pillars and rear connectors').Refine=False
+    upper=[m.rr(34,165,2,(-120,8,56),2),Part.makeCylinder(10.7,2,V(126,-99,56))]
+    for key in ['OpticalFFCHousing','FrontFFCHousing','FanSocketHousing','PowerSocketHousing']:
+        b=m.parts[key].Shape.optimalBoundingBox(False,False)
+        upper.append(Part.makeBox(b.XLength+.8,b.YLength+.8,2,V(b.XMin-.4,b.YMin-.4,56)))
+    m.cut('UpperEMIShield',upper,'Tall power components, clock cell and cable socket access').Refine=False
+    m.cut('LowerEMIShield',m.rr(54,54,2,(-60,25,47.8),2),'Open APU and liquid-metal containment perimeter').Refine=False
+    for i,(x,y,angle) in enumerate([(-91,-10,45),(-61,-18,0),(-31,-10,-45),(-19,25,0),(-31,60,45),(-61,70,0),(-91,60,-45),(-103,25,0)]):
+        sh=m.rr(13.8,11.8,1,(x,y,55.38),.2);sh.rotate(V(x,y,0),V(0,0,1),angle)
+        m.feature('MemoryThermalPad'+str(i),'Memory-to-shield thermal pad study',sh,'Cooling',2,'thermal',True)
+    for side,z,h in [('Top',55.7,.8),('Bottom',48.6,1.15)]:
+        for i,y in enumerate([-50,-21,8]):
+            m.box('NANDThermal'+side+str(i),'NAND thermal pad study',17.4,12.4,h,(-144,y,z),'Cooling',2 if side=='Top' else -2,'thermal',.2,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=17
+    m.checkpoint(17,'board_shields_and_thermal_contacts','加入上下两块原生可编辑屏蔽板、风扇/APU/高器件和接口开口，以及八组显存和双面 NAND 导热垫；局部接触层厚度与冲压细节为结构近似。')
+    m.snapshot('17_shield_and_memory_interfaces',assemblies=['Mainboard','Shielding','Cooling'],exclude=['UpperFanGuard']+['FanGuardScrew'+str(i) for i in range(4)],normal=(.3,-.6,1.7))
+
+
+STAGES[17]=stage17
+
+
+def stage18(m):
+    from .ps1 import _add_shape
+    m.native('M2Bay','Original empty expansion bay metal tray',116,23.2,1.2,11.7,(94,-86,61.5),'Storage',2,'metal')
+    m.cut('M2Bay',m.rr(114,21.2,11.5,(94,-86,62.2),.6),'Empty original expansion cavity').Refine=False
+    m.cut('M2Bay',m.rr(20,19,3.5,(35,-68,70.7),3.3),'Upper corner clearance around the dust-access collar').Refine=False
+    m.native('M2Cover','Removable expansion bay cover',118,25,2,.8,(94,-86,76),'Storage',5,'metal')
+    _add_shape(m,'M2Cover',Part.makeCylinder(3.2,.8,V(155,-86,76)),'Expansion cover screw tab').Refine=False
+    m.cut('M2Cover',Part.makeCylinder(1.05,1.4,V(155,-86,75.7)),'Expansion cover screw clearance').Refine=False
+    m.cut('InnerUpperFrame',Part.makeCylinder(1.05,3,V(155,-86,73.5)),'Expansion cover screw clearance through the inner cover').Refine=False
+    m.ring('M2CoverBoss','Expansion cover fixing boss',2.3,1.05,11,(155,-86,62.7),'Storage',3,'black',internal=True)
+    m.screw('M2CoverScrew',(155,-86,77.2),'Storage',6,length=5.4,radius=1.8,axis=(0,0,-1))
+    for i,x in enumerate([70,82,100,120,149]):
+        m.ring('M2Mount'+str(i),'Alternative module-length mounting seat study',1.7,.85,2.1,(x,-86,62.35),'Storage',3,'metal',internal=True)
+    m.ring('M2StoredSpacer','Stored module fixing spacer',1.9,.9,.6,(149,-86,64.6),'Storage',3,'metal',internal=True)
+    m.screw('M2StoredScrew',(149,-86,65.65),'Storage',4,length=3,radius=1.7,axis=(0,0,-1))
+    socket=m.rr(6,20.8,4.4,(40.2,-86,62.4),.25)
+    socket=socket.cut(Part.makeBox(5,19.8,1.2,V(39,-95.9,64.6)))
+    key=m.rr(4.2,1.6,1.2,(41.5,-92,64.6),.06)
+    socket=socket.fuse(key).removeSplitter()
+    m.feature('M2Socket','Keyed M.2 expansion socket housing study',socket,'Storage',3,'black',True)
+    for side,count,z in [('Lower',38,64.72),('Upper',37,65.55)]:
+        for i in range(count):
+            if i in [5,6,7,8]:continue
+            m.box('M2Contact'+side+str(i),'Separate expansion socket spring contact',3.1,.22,.1,(41.75,-95.25+i*.5,z),'Storage',3,'gold',.025,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=18
+    m.checkpoint(18,'empty_original_m2_expansion_bay','建立原版空 M.2 扩展仓、可拆盖板及固定螺钉、不同长度的示意固定座、收纳螺丝/垫柱和含 67 个独立触点的带键连接器。保持原包装未加装 SSD 的状态；座位与接点尺寸为学习近似。')
+    m.snapshot('18_empty_m2_bay',assemblies=['Storage'],exclude=['M2Cover','M2CoverScrew'],normal=(.3,-.6,1.7))
+
+
+STAGES[18]=stage18
+
+
+def stage19(m):
+    m.native('FrontInterfacePCB','Original front USB interface PCB study',52,12.4,1,.6,(7,-108.6,54),'FrontIO',1,'pcb')
+    m.cut('FrontInterfacePCB',Part.makeCylinder(3.8,1.2,V(-20,-100,53.7)),'Front chassis pillar clearance beside the interface board').Refine=False
+    for i,(x,y) in enumerate([(-15,-113),(31,-106)]):
+        m.cut('FrontInterfacePCB',Part.makeCylinder(1.8,1.2,V(x,y,53.7)),'Front interface fixing post clearance').Refine=False
+        m.ring('FrontPCBPost'+str(i),'Front interface PCB fixing post',1.6,.8,1.9,(x,y,53.9),'FrontIO',1,'black',internal=True)
+        m.screw('FrontPCBScrew'+str(i),(x,y,56.2),'FrontIO',2,length=2,radius=1.3,axis=(0,0,-1))
+    for i,(x,y,w,d) in enumerate([(-15,-108,4,4),(6,-107,6,4),(8,-113,5,3)]):
+        m.box('FrontInterfaceIC'+str(i),'Front interface logic package study',w,d,.9,(x,y,54.8),'FrontIO',1,'black',.2,True)
+    terminals=[]
+    for row,y,z in [('Lower',-106.3,57.58),('Upper',-104.9,58.34)]:
+        for i in range(12):
+            x=-5+(i-5.5)*.5
+            foot=Part.makeBox(.18,1,.16,V(x-.09,y-.5,54.7))
+            stem=Part.makeBox(.18,.18,z+.08-54.8,V(x-.09,y-.09,54.8))
+            arm=Part.makeBox(.18,y+.09+110.6,.08,V(x-.09,-110.6,z))
+            sh=foot.fuse(stem).fuse(arm).removeSplitter()
+            m.feature('USBCBoardTail'+row+str(i),'Separate formed USB-C PCB terminal',sh,'FrontIO',1,'gold',True);terminals.append(sh)
+    m.cut('USBCInsulator',terminals,'Moulded channels for the independent USB-C board terminals').Refine=False
+    socket=m.rr(8,2.4,1.4,(-12,-104.6,54.8),.2).cut(m.rr(6.8,1.3,1.2,(-12,-104.6,55.3),.1))
+    m.feature('FrontBoardSocket','Front interface ribbon socket',socket,'FrontIO',1,'white',True)
+    for i in range(12):m.box('FrontBoardContact'+str(i),'Front interface ribbon contact',.22,1,.1,(-14.75+i*.5,-104.6,55.45),'FrontIO',1,'gold',.02,True)
+    front=g.rotation((0,-1,0),(0,0,1))
+    m.box('ButtonPCB','Separate power and eject switch board',39,8,.8,(-154.5,-111.5,53),'Controls',1,'pcb',.5,True,orient=front)
+    for key,x in [('Power',-165),('Eject',-144)]:
+        m.box(key+'Switch','Front tactile switch package',4,2.2,3,(x,-113.8,51.5),'Controls',1,'metal',.3,True)
+        m.cyl(key+'Plunger','Tactile switch plunger',.7,.7,(x,-115.8,53),'Controls',1,'black',axis=(0,1,0),internal=True)
+        m.cyl(key+'Stem','Separate front button actuator stem',.6,.6,(x,-116.5,53),'Controls',1,'black',axis=(0,1,0),internal=True)
+        for i,dx in enumerate([-2.7,2.7]):
+            for j,z in enumerate([51.8,54]):m.box(key+'SwitchTerminal'+str(i)+'_'+str(j),'Tactile switch solder tab',.25,.9,.25,(x+dx,-113.3,z),'Controls',1,'gold',.03,True)
+    m.box('ButtonController','Front control logic package study',6,2,3.2,(-154.5,-113.4,51.4),'Controls',1,'black',.2,True)
+    m.box('ButtonConnector','Button-board cable connector study',5,3,3,(-154.5,-110,51.5),'Controls',1,'white',.3,True)
+    m.native('StatusLightPCB','Status-light emitter strip study',285,3,.7,.8,(5,-112,78.4),'Controls',4,'pcb')
+    for i,x in enumerate([-110,-55,0,55,110]):
+        m.box('StatusLED'+str(i),'Blue status emitter package',1.4,1.2,.35,(x,-112,79.35),'Controls',4,'ps5blue',.1,True)
+        m.cut('CoreFrame',Part.makeBox(3.4,8,.9,V(x-1.7,-118,79.7)),'Status light transmission aperture').Refine=False
+        m.box('StatusLightPipe'+str(i),'Status light internal guide',3,6,.5,(x,-114.6,79.9),'Controls',4,'ps5blue',.12,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=19
+    m.checkpoint(19,'front_boards_switches_and_status_lighting','补齐前置 USB 电路板与独立 Type-C 成形端子、电源/出仓按钮电路板和触动件，以及状态灯条、电路板和透光通道。电子封装、局部尺寸与连接方式为结构学习近似。')
+    m.snapshot('19_front_electronics',assemblies=['FrontIO','Controls'],normal=(.3,-.8,1.8))
+
+
+STAGES[19]=stage19
+
+
+def _folded_ribbon(points,width,thickness=.16):
+    parts=[]
+    points=[V(*p) for p in points]
+    for a,b in zip(points,points[1:]):
+        delta=b-a;normal=V(0,-delta.z,delta.y)
+        assert normal.Length>1e-7
+        normal.normalize();wide=V(width/2,0,0);thin=normal*(thickness/2)
+        corners=[a-wide-thin,a+wide-thin,a+wide+thin,a-wide+thin]
+        parts.append(Part.Face(Part.makePolygon(corners+[corners[0]])).extrude(delta))
+    sh=parts[0].multiFuse(parts[1:]).removeSplitter()
+    assert len(sh.Solids)==1 and sh.isValid()
+    sh.check(True);return sh
+
+
+def stage20(m):
+    from .atari2600 import _rounded_route
+    m.cut('DriveFlexSocket',Part.makeBox(6.6,1.8,.7,V(-104.3,-60.8,20.3)),'Drive ribbon exit through the connector lip').Refine=False
+    m.cut('DriveHousing',Part.makeBox(6,9,.6,V(-171,-90,30.7)),'Optical ribbon exit at the left enclosure edge').Refine=False
+    m.cut('OpticalFFCHousing',Part.makeBox(6.6,1.8,3.2,V(-152.3,-84.3,55.15)),'Optical ribbon entry lip clearance').Refine=False
+    optical=[(-101,-58.5,20.65),(-101,-62,20.65),(-137,-88,20.65),(-137,-88,31),(-175,-85,31),(-175,-85,58.2),(-149,-90,58.2),(-149,-84,58.2),(-149,-82.7,55.45)]
+    m.feature('OpticalRibbon','Continuous drive-to-mainboard signal ribbon study',_folded_ribbon(optical,6,.16),'Wiring',1,'white',True)
+    m.cut('FrontFFCHousing',Part.makeBox(6.6,1.5,3,V(-65.3,-98,55.35)),'Front interface ribbon entry lip clearance').Refine=False
+    m.cut('UpperEMIShield',Part.makeBox(7,7.1,2,V(-65.5,-99.2,56)),'Front ribbon approach through the upper shield').Refine=False
+    front=[(-12,-104.6,55.7),(-12,-105.3,58),(-62,-106.2,58),(-62,-99,58),(-62,-96.5,55.6)]
+    m.feature('FrontInterfaceRibbon','Front USB board signal ribbon study',_folded_ribbon(front,6,.16),'Wiring',2,'white',True)
+    socket=m.rr(5,3,2.8,(-34,-87,54),.25).cut(m.rr(3.8,1.8,2.5,(-34,-87,54.9),.12))
+    m.feature('ButtonMainSocket','Mainboard front-button wire socket',socket,'Mainboard',1,'white',True)
+    m.cut('ButtonMainSocket',Part.makeBox(3.1,1,2,V(-35.55,-88.8,55.2)),'Button harness entry through the socket lip').Refine=False
+    m.cut('UpperEMIShield',m.rr(5.8,3.8,2,(-34,-87,56),.3),'Button harness socket clearance').Refine=False
+    for i,dx in enumerate([-.8,0,.8]):
+        m.box('ButtonMainContact'+str(i),'Button harness socket contact',.2,1.2,.15,(-34+dx,-87,55.1),'Mainboard',1,'gold',.03,True)
+        points=[(-154.5+dx,-107.85,53),(-154.5+dx,-106.3+(i-1)*.7,61.2-i*.7),(-36+dx,-102+(i-1)*.7,61.2-i*.7),(-34+dx,-90,61.2-i*.7),(-34+dx,-88,56),(-34+dx,-87.5,55.5)]
+        m.feature('ButtonHarness'+str(i),'Separate insulated front-button wire study',_rounded_route([V(*p) for p in points],.35,.22),'Wiring',2,'red' if i==0 else 'black',True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=20
+    m.checkpoint(20,'optical_front_and_button_signal_routes','建立绕过主板边缘的连续光驱排线、前置 USB 板排线及按钮线束，并加工对应壳体、连接器及屏蔽层开口。排线路径避开空盘通道，折线过渡和线径为静态学习近似。')
+    m.snapshot('20_signal_routes',assemblies=['Mainboard','FrontIO','Controls','Wiring'],normal=(.3,-.6,1.7))
+
+
+STAGES[20]=stage20
+
+
+def stage21(m):
+    from .atari2600 import _rounded_route
+    def cable(key,label,points,r,material):
+        sh=_rounded_route([V(*p) for p in points],.7 if r>.3 else .35,r)
+        sh.check(True)
+        return m.feature(key,label,sh,'Wiring',2,material,True)
+    m.cut('MainPCB',Part.makeBox(24,9,3,V(64,98,51.4)),'AC lead departure clearance behind the rear inlet').Refine=False
+    for i,(startx,endx) in enumerate([(71.8,-147.76),(80.2,-142.24)]):
+        y=90.5+i*1.3;z=49.3+i*1.6
+        for key in ['LowerEMIShield','PowerLid']:
+            m.cut(key,Part.makeCylinder(.9,20,V(endx,94,33)),'Insulated mains lead feedthrough').Refine=False
+        cable('MainsHarness'+str(i),'Independent insulated mains lead study',[(startx,100.25,51.5),(startx,y,z),(endx,y,z),(endx,94,z),(endx,94,33.6)],.55,'black')
+    for i,x in enumerate([11.32,18.68]):
+        for key in ['PowerLid','LowerEMIShield','MainPCB','UpperEMIShield']:
+            m.cut(key,Part.makeCylinder(1.05,35,V(x,49,32)),'Insulated low-voltage power feedthrough').Refine=False
+        targetx=15+(-1.5 if i==0 else 1.5)*17/3
+        m.cut('PowerSocketHousing',Part.makeBox(2.2,3,4,V(targetx-1.1,87,54.5)),'Low-voltage lead connector entry').Refine=False
+        cable('DCHarness'+str(i),'Independent low-voltage supply lead study',[(x,49,33.65),(x,49,60.5),(targetx,83,60.5),(targetx,87.5,60.5),(targetx,90,56.15)],.65,'red' if i==0 else 'black')
+    m.cut('FanHousing',Part.makeBox(4,7,.85,V(103,-49,29.32)),'Fan motor cable exit below the rotating impeller').Refine=False
+    m.cut('FanSocketHousing',Part.makeBox(6.1,3.5,4,V(33.95,-67,55)),'Fan harness entry through the front connector lip').Refine=False
+    for i in range(4):
+        dx=(i-1.5)*.55;enddx=(i-1.5)*5/3;y=-47.5+(i-1.5)*.65
+        cable('FanHarness'+str(i),'Separate four-wire fan lead study',[(105+dx,0,29.75),(105+dx,y,29.75),(105+dx,y,58.8+(i-1.5)*.6),(37+enddx,-68-(i-1.5)*.65,58.8+(i-1.5)*.6),(37+enddx,-64.5,58.8+(i-1.5)*.6),(37+enddx,-63.25,55.65)],.18,['red','black','blue','white'][i])
+    socket=m.rr(5,3,2.8,(-6,-87,54),.25).cut(m.rr(3.8,1.8,2.5,(-6,-87,54.9),.12))
+    m.feature('StatusMainSocket','Mainboard status-light wire socket',socket,'Mainboard',1,'white',True)
+    m.cut('StatusMainSocket',Part.makeBox(3.1,1,2,V(-7.55,-88.8,55.2)),'Status lead entry through the socket lip').Refine=False
+    m.cut('UpperEMIShield',m.rr(5.8,3.8,2,(-6,-87,56),.3),'Status-light socket clearance').Refine=False
+    m.cut('InnerUpperFrame',Part.makeBox(5,3,5,V(2.5,-110.4,73)),'Status strip harness passage through the upper frame').Refine=False
+    for i,dx in enumerate([-.8,0,.8]):
+        m.box('StatusMainContact'+str(i),'Status harness socket contact',.2,1.2,.15,(-6+dx,-87,55.1),'Mainboard',1,'gold',.03,True)
+        cable('StatusHarness'+str(i),'Independent status-light lead study',[(5+dx,-110,78),(5+dx,-108+(i-1)*.65,60),(-6+dx,-94+(i-1)*.65,60),(-6+dx,-90,60),(-6+dx,-88,56),(-6+dx,-87.5,55.5)],.2,'blue' if i==0 else 'black')
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=21
+    m.checkpoint(21,'power_fan_and_status_harnesses','加入市电输入、低压供电、四线风扇及状态灯的独立绝缘线束，并加工穿板孔及接插件入口。线束走向、截面和内部连接为静态拆解学习近似。')
+    m.snapshot('21_console_harnesses',assemblies=['Wiring','Power','Mainboard','Controls'],exclude=['PowerLid'],normal=(.3,-.6,1.7))
+
+
+STAGES[21]=stage21
+
+
+def stage22(m):
+    from .atari2600 import _rounded_route
+    for i,(x,y) in enumerate([(-164,-25),(-10,-30),(0,75),(140,88)]):
+        for key in ['MainPCB','UpperEMIShield','LowerEMIShield']:
+            m.cut(key,Part.makeCylinder(3,12,V(x,y,47)),'Through-stack shield fixing clearance').Refine=False
+        m.ring('BoardStackPost'+str(i),'Mainboard and EMI shield spacing post',2.8,.85,9.5,(x,y,48),'Shielding',1,'metal',internal=True)
+        m.screw('BoardStackScrew'+str(i),(x,y,58.1),'Shielding',3,length=7.8,radius=1.7,axis=(0,0,-1))
+    for i,(x,y) in enumerate([(-173,-40),(169,-58)]):
+        m.native('AntennaPCB'+str(i),'Separate wireless antenna substrate study',7.2,24,.7,.55,(x,y,77.1),'Wireless',4,'pcb')
+        pattern=m.rr(5.8,21,.08,(x,y,77.8),.4).cut(m.rr(3.8,16,.2,(x,y,77.75),.3))
+        m.feature('AntennaTrace'+str(i),'Wireless printed radiator envelope study',pattern,'Wireless',4,'gold',True)
+        m.cut('InnerUpperFrame',Part.makeCylinder(.7,5,V(x,y-10,73)),'Wireless coaxial lead passage').Refine=False
+    paths=[[(121,-79,55.95),(121,-79,60),(121,-104.1,60),(121,-104.1,62),(-173,-104.1,62),(-173,-50,62),(-173,-50,77)],[(125,-79,55.95),(125,-69,60.3),(169,-69,60.3),(169,-68,77)]]
+    for i,path in enumerate(paths):
+        sh=_rounded_route([V(*p) for p in path],.4,.22);sh.check(True)
+        m.feature('AntennaCoax'+str(i),'Wireless antenna coaxial lead study',sh,'Wiring',3,'black',True)
+        passage=_rounded_route([V(*p) for p in path],.4,.42)
+        m.cut('UpperEMIShield',passage,'Antenna cable insulated shield passage').Refine=False
+    # Short independent retainers show the removable cover's sliding engagement.
+    for i,(x,y,z) in enumerate([(-145,-105,79),(-90,102,80),(12,103,80),(128,-106,83)]):
+        hook=m.rr(5,3,3,(x,y,z),.35).fuse(m.rr(5,5,.7,(x,y+1,z+2.8),.25)).removeSplitter()
+        m.feature('UpperCoverHook'+str(i),'Upper white-cover sliding hook study',hook,'Frame',5,'ps5white',True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=22
+    m.checkpoint(22,'board_fixings_antennas_and_cover_retainers','补充屏蔽层与主板的贯穿固定柱/螺钉、两片独立天线与同轴线、上罩滑扣；孔位、天线图案和局部固定方式为静态结构近似。')
+    m.snapshot('22_console_detail_review',assemblies=['Frame','Shielding','Wireless','Wiring'],normal=(.3,-.6,1.7))
+
+
+STAGES[22]=stage22
+
+
+def _sense_point(x,y,z):return V(x,y-285,z)
+
+
+def _sense_curves(sx,sy):
+    points=[(0,49),(31,49),(47,45),(63,35),(75,11),(80,-14),(77,-40),(70,-57),(62,-51),(47,-21),(30,-11),(0,-11)]
+    tangents=[(1,0),(1,0),(1,-.3),(.7,-.7),(.2,-1),(0,-1),(-.2,-1),(-1,0),(-.55,.8),(-.6,.8),(-1,0),(-1,0)]
+    nodes=[V(x,y) for x,y in points];directions=[V(x,y).normalize() for x,y in tangents]
+    lengths=[.30*min((p-nodes[i-1]).Length if i else (nodes[1]-p).Length,(nodes[i+1]-p).Length if i+1<len(nodes) else (p-nodes[i-1]).Length) for i,p in enumerate(nodes)]
+    segments=[[a,a+directions[i]*lengths[i],b-directions[i+1]*lengths[i+1],b] for i,(a,b) in enumerate(zip(nodes,nodes[1:]))]
+    segments += [[V(-p.x,p.y) for p in reversed(seg)] for seg in reversed(segments)]
+    curves=[]
+    for seg in segments:
+        c=Part.BezierCurve();c.setPoles([V(p.x*sx,p.y*sy) for p in seg]);curves.append(c.toBSpline())
+    return curves
+
+
+def _sense_loft(m,key,profiles):
+    sketches=[]
+    for i,(sx,sy,z) in enumerate(profiles):
+        sk=m.doc.addObject('Sketcher::SketchObject',key+'Section'+str(i));sk.Label='DualSense editable curved section '+str(i+1)
+        sk.addGeometry(_sense_curves(sx,sy),False);sk.Placement=App.Placement(_sense_point(0,0,z),App.Rotation())
+        m.group('Construction').addObject(sk);sketches.append(sk)
+    loft=m.doc.addObject('Part::Loft',key);loft.Sections=sketches;loft.Solid=True;loft.Ruled=False;loft.Closed=False;loft.MaxDegree=3
+    m.doc.recompute();assert loft.Shape.isValid() and len(loft.Shape.Solids)==1;loft.Shape.check(True)
+    m.group('Construction').addObject(loft)
+    for sk in sketches:sk.Visibility=False
+    loft.Visibility=False;return loft
+
+
+def _sense_shell(m,key,outer,inner,layer):
+    a=_sense_loft(m,key+'Outer',outer);b=_sense_loft(m,key+'Inner',inner)
+    o=m.doc.addObject('Part::Cut',key);o.Base=a;o.Tool=b;o.Refine=False
+    m.doc.recompute();assert o.Shape.isValid() and len(o.Shape.Solids)==1;o.Shape.check(True)
+    a.Visibility=False;b.Visibility=False
+    return m.register(o,key,'Controller',layer,'ps5white')
+
+
+def stage23(m):
+    from .ps1 import _add_shape
+    _sense_shell(m,'SenseBack',[(.88,.89,1),(.96,.97,9),(1,1,21),(1,1,28)],[(.84,.85,3),(.925,.932,10),(.970,.965,21),(.970,.965,28.3)],-4)
+    _sense_shell(m,'SenseFront',[(1,1,28.3),(.982,.982,39),(.94,.94,47)],[(.970,.965,28.1),(.947,.943,39),(.913,.900,44.6)],4)
+    back=[];back_inner=[]
+    for x in [-28,28]:
+        back.append(Part.makeCylinder(16.7,16,_sense_point(x,-12,12)))
+        back_inner.append(Part.makeCylinder(14.9,14.4,_sense_point(x,-12,13.8)))
+    _add_shape(m,'SenseBack',back[0].fuse(back[1]),'Integrated lower analogue-stick pods').Refine=False
+    m.cut('SenseBack',back_inner,'Hollow lower analogue-stick pods').Refine=False
+    # Black central removable trim follows the front shell and extends around both stick cups.
+    poly=[(-71,-56),(-47,-15),(-38,12),(38,12),(47,-15),(71,-56),(61,-56),(42,-22),(30,-16),(-30,-16),(-42,-22),(-61,-56)]
+    p=[_sense_point(x,y,27.8) for x,y in poly];mask=Part.Face(Part.makePolygon(p+[p[0]])).extrude(V(0,0,24))
+    trim=m.parts['SenseFront'].Shape.common(mask)
+    pods=[Part.makeCylinder(16.7,20.7,_sense_point(x,-12,28.3)) for x in [-28,28]]
+    trim=trim.multiFuse(pods).removeSplitter()
+    cavities=[Part.makeCylinder(14.9,18.5,_sense_point(x,-12,28.1)) for x in [-28,28]]
+    openings=[Part.makeCylinder(12,4,_sense_point(x,-12,46.4)) for x in [-28,28]]
+    trim=trim.cut(Part.makeCompound(cavities+openings))
+    m.feature('SenseTrim','Removable black central trim and upper stick cups',trim,'Controller',5,'black')
+    m.cut('SenseFront',mask,'Separate removable black central trim boundary').Refine=False
+    m.cut('SenseFront',pods,'Upper stick-pod boundary in the white face').Refine=False
+    m.cut('SenseFront',m.rr(62,33,13,tuple(_sense_point(0,29,39)),4),'Large white touchpad and edge-light aperture').Refine=False
+    m.doc.recompute()
+    for key in ['SenseBack','SenseFront','SenseTrim']:
+        sh=m.parts[key].Shape;sh.check(True);assert len(sh.Solids)==1,(key,len(sh.Solids))
+    m.profile['stages']=23
+    m.checkpoint(23,'dualsense_native_white_shell_and_black_trim','建立初代 DualSense 独立原生曲面上下白壳、长握柄、可拆黑色中央饰板与双摇杆杯。轮廓与内部壳厚为照片指导近似，后续补齐按键和反馈机构。')
+    m.snapshot('23_dualsense_shell',assemblies=['Controller'],normal=(.2,-.5,2))
+
+
+STAGES[23]=stage23
+
+
+def stage24(m):
+    from .ps2 import _ds2_symbol
+    m.colors.update(senseclear=(.68,.72,.76),sensegrey=(.25,.28,.32),sensegrip=(.075,.08,.09))
+    m.cut('SenseFront',m.rr(26,26,2.4,tuple(_sense_point(-50,24,43)),2),'Directional rocker underside clearance').Refine=False
+    for i,(x,y) in enumerate([(-50,33.5),(-59.5,24),(-50,14.5),(-40.5,24)]):
+        w,h=(6.2,8) if i in [0,2] else (8,6.2)
+        m.cut('SenseFront',m.rr(w+.5,h+.5,9,tuple(_sense_point(x,y,41)),1),'Directional key through aperture').Refine=False
+        m.box('SenseDirection'+str(i),'Translucent directional key',w,h,6,tuple(_sense_point(x,y,45.3)),'Controller',5,'senseclear',.9)
+    m.box('SenseDirectionLinkX','Directional rocker horizontal link',23,4,.7,tuple(_sense_point(-50,24,43.7)),'Controller',3,'white',.4,True)
+    m.box('SenseDirectionLinkY','Directional rocker vertical link',4,23,.7,tuple(_sense_point(-50,24,44.5)),'Controller',3,'white',.4,True)
+    for kind,x,y in [('Triangle',50,33.5),('Circle',59.5,24),('Cross',50,14.5),('Square',40.5,24)]:
+        m.cut('SenseFront',Part.makeCylinder(4.85,9,_sense_point(x,y,41)),'Action button through aperture').Refine=False
+        m.cut('SenseFront',Part.makeCylinder(5.7,4.3,_sense_point(x,y,41)),'Action button retaining flange relief').Refine=False
+        cap=Part.makeCylinder(4.6,6.2,_sense_point(x,y,45)).fuse(Part.makeCylinder(5.5,.7,_sense_point(x,y,44.4)))
+        m.feature('SenseButton'+kind,'Translucent '+kind+' face key',cap,'Controller',5,'senseclear')
+        _ds2_symbol(m,'SenseSymbol'+kind,kind,x,y-45,51.225,'sensegrey')
+    m.box('SenseTouchLight','Blue light guide around the touch surface',61.5,32.5,.75,tuple(_sense_point(0,29,47.2)),'Controller',5,'ps5blue',3.8)
+    m.box('SenseTouchpad','Large white capacitive touch surface',60.3,31.3,2.2,tuple(_sense_point(0,29,48.05)),'Controller',6,'ps5white',3.3)
+    m.native('SenseTouchPCB','Native touch-sensing circuit board',57.5,28.5,2.5,.75,tuple(_sense_point(0,29,45.2)),'Controller',4,'pcb')
+    for key,x in [('Create',-35),('Options',35)]:
+        m.cut('SenseFront',m.rr(3.4,8.6,8,tuple(_sense_point(x,36,41)),1.4),key+' key aperture').Refine=False
+        m.box('Sense'+key,key+' slim key',2.9,8.1,4.5,tuple(_sense_point(x,36,46.1)),'Controller',5,'ps5white',1.25)
+    for key,w,h,y in [('PS',5.8,5.8,-.5),('Mute',8,2.5,-7)]:
+        m.cut('SenseTrim',m.rr(w+.5,h+.5,8,tuple(_sense_point(0,y,42)),.8),key+' control opening').Refine=False
+        m.box('Sense'+key,key+' system control',w,h,3.6,tuple(_sense_point(0,y,46.4)),'Controller',6,'sensegrey' if key=='PS' else 'white',.7)
+    m.label('SensePSMark','PS',2.2,tuple(_sense_point(-2,-1.8,50.025)),'Controller',7,'black')
+    m.box('SenseMuteLED','Mute indicator window',4.5,.45,.1,tuple(_sense_point(0,-7,50.025)),'Controller',7,'gold',.1)
+    holes=[Part.makeCylinder(.55,8,_sense_point(x,y,41)) for x in [-4.5,-1.5,1.5,4.5] for y in [5,7.5,10]]
+    m.cut('SenseTrim',holes,'Open speaker grille in the removable centre trim').Refine=False
+    for i,x in enumerate([-28,28]):
+        dome=Part.makeSphere(12.2,_sense_point(x,-12,54)).common(Part.makeBox(27,27,9.15,_sense_point(x-13.5,-25.5,53)))
+        stem=Part.makeCylinder(2.2,18.5,_sense_point(x,-12,35.8))
+        m.feature('SenseStickDome'+str(i),'Analogue thumbstick dome and shaft',dome.fuse(stem),'Controller',6,'black')
+        cap=Part.makeCylinder(10.6,3.6,_sense_point(x,-12,62.3)).cut(Part.makeSphere(11.5,_sense_point(x,-12,76.7)))
+        m.feature('SenseStickCap'+str(i),'Concave textured-rubber thumb cap study',cap,'Controller',7,'sensegrip')
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=24
+    m.checkpoint(24,'dualsense_touchpad_translucent_controls_and_sticks','补齐白色触摸板、蓝色边缘导光、灰色符号透明按键、CREATE/OPTIONS、PS 与静音键、扬声器贯通孔，以及独立凹面摇杆帽。透明材质以浅灰学习模型表达。')
+    m.snapshot('24_dualsense_controls',assemblies=['Controller'],normal=(.2,-.5,2))
+
+
+STAGES[24]=stage24
+
+
+def stage25(m):
+    from .ps1 import _add_shape
+    from .ps4 import _ds4_joystick
+    m.colors.update(sensepcb=(.075,.22,.18),ctrlcream=(.72,.73,.70))
+    m.native('SensePCB','Native original DualSense circuit-board layout study',106,50,1.5,1.1,tuple(_sense_point(0,15,21)),'Controller',0,'sensepcb')
+    _add_shape(m,'SensePCB',Part.makeCompound([Part.makeCylinder(14.3,1.1,_sense_point(x,-12,21)) for x in [-28,28]]),'Integral analogue module board lobes').Refine=False
+    m.cut('SenseBack',m.rr(108,52,1.7,tuple(_sense_point(0,15,20.7)),1.8),'Mainboard passage through the rear stick-pod walls').Refine=False
+    for key,x,y,w,h in [('MCU',0,25,10,10),('Wireless',-19,23,7,7),('Motion',17,24,5,5),('Audio',-7,8,5,4),('HapticDriver',33,22,5,5),('TriggerDriver',-34,21,5,5)]:
+        m.box('Sense'+key,key+' electronic package study',w,h,1.1,tuple(_sense_point(x,y,22.3)),'Controller',1,'black',.2,True)
+    for i,x in enumerate([-38,-31,-24,-17,17,24,31,38]):
+        for j,y in enumerate([33,37]):m.box('SenseBypass'+str(i)+'_'+str(j),'Controller representative discrete',1.7,.85,.55,tuple(_sense_point(x,y,22.3)),'Controller',1,'metal',.07,True)
+    m.box('SenseCrystal','Controller oscillator package',3.6,2.6,.8,tuple(_sense_point(8,23,22.3)),'Controller',1,'metal',.2,True)
+    holes=[]
+    # DualSense retains this potentiometer/gimbal architecture; relocate and relabel the shared mechanism.
+    for i,x in enumerate([-28,28]):
+        before=set(m.parts);bores=_ds4_joystick(m,i,x,-12)
+        for key in set(m.parts)-before:
+            o=m.parts.pop(key);newkey=key.replace('DS4Joy','SenseJoy');o.PartID=newkey;m.parts[newkey]=o
+            place=o.Placement;place.Base+=V(0,-40,8);o.Placement=place;o.FlatPlacement=place
+        for sh in bores:sh.translate(V(0,-40,8));holes.append(sh)
+        m.cut('SenseStickDome'+str(i),Part.makeCylinder(1.9,2.5,_sense_point(x,-12,35.6)),'Keyed analogue shaft cavity in the thumbstick stem').Refine=False
+    m.cut('SensePCB',holes,'Joystick anchor and potentiometer terminal bores').Refine=False
+    for i,(x,y) in enumerate([(-44,5),(44,5),(0,37)]):
+        m.cut('SensePCB',Part.makeCylinder(1,1.6,_sense_point(x,y,20.8)),'Main controller board fixing bore').Refine=False
+        m.ring('SenseBoardGround'+str(i),'Controller mounting ground annulus',2,1.1,.05,tuple(_sense_point(x,y,22.12)),'Controller',0,'gold',internal=True)
+        m.ring('SenseBoardPost'+str(i),'Controller mainboard spacing pillar',2,.8,6.5,tuple(_sense_point(x,y,14.3)),'Controller',-1,'ctrlcream',internal=True)
+        m.screw('SenseBoardScrew'+str(i),tuple(_sense_point(x,y,23.1)),'Controller',1,length=6,radius=1.5,axis=(0,0,-1))
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=25
+    m.checkpoint(25,'dualsense_board_gimbals_and_control_electronics','加入初代 DualSense 主板、逻辑/无线/音频/反馈驱动封装、两组双轴摇杆笼与电位器、L3/R3 开关、独立穿板端子及固定件。电子布局和封装为非功能性结构近似。')
+    m.snapshot('25_dualsense_mainboard',assemblies=['Controller'],exclude=['SenseFront','SenseBack','SenseTrim','SenseTouchpad','SenseTouchLight','SenseTouchPCB','SenseStickDome0','SenseStickDome1','SenseStickCap0','SenseStickCap1'],normal=(.2,-.5,2))
+
+
+STAGES[25]=stage25
+
+
+def stage26(m):
+    m.colors.update(senseflex=(.16,.33,.22),sensesilicone=(.64,.67,.69))
+    carrier=m.rr(108,14,1.6,tuple(_sense_point(0,24,36.5)),1)
+    film=m.rr(106,12,.12,tuple(_sense_point(0,24,38.3)),.8)
+    for x in [-50,50]:
+        carrier=carrier.fuse(Part.makeCylinder(18.5,1.6,_sense_point(x,24,36.5)))
+        film=film.fuse(Part.makeCylinder(17.7,.12,_sense_point(x,24,38.3)))
+    carrier=carrier.fuse(m.rr(20,28,1.6,tuple(_sense_point(0,11,36.5)),1))
+    film=film.fuse(m.rr(18,27,.12,tuple(_sense_point(0,11,38.3)),.7))
+    opening=m.rr(15,8,4,tuple(_sense_point(0,8.2,36)),1)
+    shoulders=Part.makeCompound([m.rr(20,12,10,tuple(_sense_point(x,45,35)),1) for x in [-52,52]])
+    m.feature('SenseContactCarrier','Moulded button-film support carrier',carrier.cut(opening).common(m.doc.getObject('SenseFrontInner').Shape).cut(shoulders),'Controller',2,'ctrlcream',True)
+    m.feature('SenseContactFilm','Flexible directional and action contact film',film.cut(opening).common(m.doc.getObject('SenseFrontInner').Shape).cut(shoulders),'Controller',3,'senseflex',True)
+    groups=[('Direction',-50,24,[(-50,33.5),(-59.5,24),(-50,14.5),(-40.5,24)]),('Action',50,24,[(50,33.5),(59.5,24),(50,14.5),(40.5,24)]),('System',0,-.5,[(0,-.5)])]
+    for name,cx,cy,keys in groups:
+        membrane=Part.makeCylinder(16.8 if len(keys)>1 else 4.3,.6,_sense_point(cx,cy,38.7))
+        for i,(x,y) in enumerate(keys):
+            membrane=membrane.cut(Part.makeCylinder(3.4,.9,_sense_point(x,y,38.55)))
+            dome=Part.makeCone(4,2.6,3.8,_sense_point(x,y,39.3)).cut(Part.makeCone(3.5,2.15,3.45,_sense_point(x,y,39.25)))
+            membrane=membrane.fuse(dome)
+            m.cyl('Sense'+name+'Carbon'+str(i),'Moving carbon contact pill',1.8,.15,tuple(_sense_point(x,y,42.52)),'Controller',4,'black',internal=True)
+            fixed=Part.makeCylinder(2.5,.05,_sense_point(x,y,38.46)).cut(Part.makeBox(.3,6,.15,_sense_point(x-.15,y-3,38.41)))
+            m.feature('Sense'+name+'Fixed'+str(i),'Split fixed conductive film contact',fixed,'Controller',3,'black',True)
+        m.feature('Sense'+name+'Membrane','Hollow silicone button-return domes',membrane.common(m.doc.getObject('SenseFrontInner').Shape).cut(shoulders),'Controller',4,'sensesilicone',True)
+    for key,x,y,w,h in [('Create',-35,36,3.5,5),('Options',35,36,3.5,5),('Mute',0,-7,6,2.2)]:
+        m.box('Sense'+key+'Switch','Small controller tactile switch',w,h,1.5,tuple(_sense_point(x,y,41)),'Controller',3,'black',.3,True)
+        m.box('Sense'+key+'Actuator','Tactile switch independent actuator',w*.6,h*.6,3.4,tuple(_sense_point(x,y,42.6)),'Controller',4,'ctrlcream',.25,True)
+    basket=m.rr(13,6,4.6,tuple(_sense_point(0,8.2,39)),.9).cut(m.rr(11.5,4.5,4.1,tuple(_sense_point(0,8.2,39.7)),.6))
+    m.feature('SenseSpeakerBasket','Controller loudspeaker basket',basket,'Controller',3,'metal',True)
+    m.box('SenseSpeakerMagnet','Loudspeaker magnetic circuit',10,3.5,1.1,tuple(_sense_point(0,8.2,39.85)),'Controller',3,'black',.5,True)
+    m.box('SenseSpeakerDiaphragm','Thin loudspeaker diaphragm',11.2,4.2,.08,tuple(_sense_point(0,8.2,43.3)),'Controller',4,'black',.5,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=26
+    m.checkpoint(26,'dualsense_contact_film_membranes_and_speaker','加入独立按键接点膜、支架、空心硅胶回弹结构和碳粒、控制轻触开关，以及扬声器篮架、磁路和振膜。保持未按下接点的静态间隙。')
+    m.snapshot('26_dualsense_contacts',assemblies=['Controller'],exclude=['SenseFront','SenseBack','SenseTrim','SenseTouchpad','SenseTouchLight','SenseTouchPCB','SenseStickDome0','SenseStickDome1','SenseStickCap0','SenseStickCap1'],normal=(.2,-.5,2))
+
+
+STAGES[26]=stage26
+
+
+def stage27(m):
+    front=g.rotation((0,1,0),(0,0,1))
+    for side,name in [(-1,'Left'),(1,'Right')]:
+        x=side*52;key='Sense'+name
+        aperture=m.rr(21,34,20,tuple(_sense_point(x,33,25)),2,front)
+        for shell in ['SenseFront','SenseBack']:
+            m.cut(shell,aperture,'Shoulder trigger and bumper opening').Refine=False
+        m.cut('SensePCB',m.rr(20,26,2,tuple(_sense_point(x,30,20.6)),1),'Adaptive-trigger module board-edge clearance').Refine=False
+        # Narrow vertical side carrier leaves the gear train and trigger pivot separately removable.
+        housing=m.rr(9,23,25,tuple(_sense_point(x,31.5,10)),1).cut(m.rr(6.8,20.8,25.5,tuple(_sense_point(x,31.5,10.7)),.6))
+        housing=housing.cut(Part.makeCylinder(1.05,14,_sense_point(x-7,41,24),V(1,0,0)))
+        housing=housing.cut(m.rr(10,10,4,tuple(_sense_point(x,39.5,31.3)),.4))
+        housing=housing.cut(m.rr(10,3,13,tuple(_sense_point(x,43.2,13.5)),.25))
+        m.feature(key+'TriggerCarrier','Adaptive-trigger mechanism open carrier',housing,'Controller',0,'black',True)
+        cap=m.rr(17,12,6,tuple(_sense_point(x,42,20)),2,front).cut(m.rr(14.4,9.4,4.8,tuple(_sense_point(x,41.8,20)),1.2,front))
+        arms=[m.rr(2,4,4,tuple(_sense_point(x+dx,41,22)),.35) for dx in [-7,7]]
+        cap=cap.multiFuse(arms).removeSplitter().cut(Part.makeCylinder(1.05,20,_sense_point(x-10,41,24),V(1,0,0)))
+        m.feature(key+'Trigger','Independent adaptive-trigger finger paddle',cap,'Controller',4,'black')
+        m.cyl(key+'TriggerAxle','Trigger steel pivot axle',.85,19,tuple(_sense_point(x-9.5,41,24)),'Controller',2,'metal',axis=(1,0,0),internal=True)
+        for j,dx in enumerate([-9.3,8.8]):m.ring(key+'PivotWasher'+str(j),'Trigger pivot retaining washer',1.7,1.05,.35,tuple(_sense_point(x+dx,41,24)),'Controller',2,'metal',axis=(1,0,0),internal=True)
+        bumper=m.rr(18,7,7,tuple(_sense_point(x,40,38)),1.7,front)
+        m.feature(key+'Bumper','Independent L1/R1 shoulder button',bumper,'Controller',5,'black')
+        m.box(key+'BumperStem','Shoulder button force-transfer stem',3,7,.45,tuple(_sense_point(x,40,33.95)),'Controller',3,'white',.4,True)
+        m.box(key+'BumperSwitch','Shoulder tactile switch body',5,4,1.7,tuple(_sense_point(x,38,31.8)),'Controller',2,'black',.4,True)
+        m.box(key+'BumperActuator','Shoulder switch actuator',2.6,2.6,.3,tuple(_sense_point(x,38,33.6)),'Controller',3,'white',.3,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=27
+    m.checkpoint(27,'dualsense_trigger_carriers_paddles_and_shoulders','建立左右自适应扳机的独立安装架、带转轴孔的指托、钢轴和限位垫圈，以及 L1/R1 按键、传力杆和开关。扳机驱动齿轮及电机下一轮补齐。')
+    m.snapshot('27_dualsense_shoulders',assemblies=['Controller'],normal=(.2,.6,1.6))
+
+
+STAGES[27]=stage27
+
+
+def stage28(m):
+    from .ps1 import _gear
+    from .atari2600 import _helical_spring
+    for side,name in [(-1,'Left'),(1,'Right')]:
+        x=side*52;key='Sense'+name;q=App.Rotation(V(0,0,1),V(1,0,0))
+        def axial(shape,y,z,xoffset=0):
+            sh=shape.copy();sh.Placement=App.Placement(_sense_point(x+xoffset,y,z),q).multiply(sh.Placement);return sh
+        for target in [key+'TriggerCarrier']:
+            m.cut(target,Part.makeCylinder(1.1,12,_sense_point(x-6,31,23),V(1,0,0)),'Adaptive gear axle passage').Refine=False
+            m.cut(target,Part.makeCylinder(.8,6,_sense_point(x,18,14.7),V(0,1,0)),'Trigger motor spindle entry').Refine=False
+        gear=axial(_gear(m,0,0,0,6.3,6.8,2,24).cut(Part.makeCylinder(1.1,2.4,V(0,0,-.2))),31,23,-1)
+        m.feature(key+'ReductionGear','Adaptive-trigger reduction gear study',gear,'Controller',2,'white',True)
+        m.cyl(key+'GearAxle','Adaptive gear independent pivot',.85,9,tuple(_sense_point(x-4.5,31,23)),'Controller',1,'metal',axis=(1,0,0),internal=True)
+        # Worm uses a segmented exact helix with a continuous central core.
+        worm=_helical_spring(.65,1.4,12,.15).fuse(Part.makeCylinder(.55,12)).removeSplitter()
+        worm.Placement=App.Placement(_sense_point(x,25.1,14.7),App.Rotation(V(0,0,1),V(0,1,0)))
+        m.feature(key+'Worm','Helical adaptive-trigger worm study',worm,'Controller',1,'white',True)
+        m.ring(key+'MotorCan','Adaptive-trigger motor can',3.5,3.1,8.2,tuple(_sense_point(x,11.2,14.7)),'Controller',0,'metal',axis=(0,1,0),internal=True)
+        m.ring(key+'MotorMagnet','Trigger motor permanent-magnet ring',2.95,2.55,7,tuple(_sense_point(x,12,14.7)),'Controller',0,'black',axis=(0,1,0),internal=True)
+        m.ring(key+'MotorCoil','Trigger motor winding envelope',2.4,2.2,6.5,tuple(_sense_point(x,12.2,14.7)),'Controller',0,'copper',axis=(0,1,0),internal=True)
+        m.ring(key+'MotorRotor','Trigger motor rotor core',2.1,.6,7,tuple(_sense_point(x,12,14.7)),'Controller',0,'metal',axis=(0,1,0),internal=True)
+        m.cyl(key+'MotorShaft','Trigger motor output spindle',.45,14,tuple(_sense_point(x,11,14.7)),'Controller',0,'metal',axis=(0,1,0),internal=True)
+        for j,y in enumerate([10.6,19.5]):m.ring(key+'MotorEnd'+str(j),'Trigger motor end bearing cap',3.45,.7,.4,tuple(_sense_point(x,y,14.7)),'Controller',0,'black',axis=(0,1,0),internal=True)
+        # A separate cam and follower illustrate the variable-resistance force path.
+        cam=Part.makeCylinder(5,1.3).cut(Part.makeCylinder(1.1,1.6,V(0,0,-.1)))
+        cam=cam.cut(Part.makeBox(12,5,2,V(-6,-6,-.2)))
+        m.feature(key+'ResistanceCam','Adaptive resistance cam study',axial(cam,31,23,1.3),'Controller',2,'black',True)
+        arm=m.rr(1.2,7,.9,tuple(_sense_point(x+2,37,27.5)),.25)
+        m.feature(key+'FeedbackArm','Trigger resistance follower arm study',arm,'Controller',3,'white',True)
+        spring=_helical_spring(1.5,.5,1.4,.15)
+        spring=axial(spring,41,24,-2.8)
+        clearance=Part.makeCylinder(1.9,2.1,_sense_point(x-3.1,41,24),V(1,0,0))
+        for target in [key+'Trigger',key+'TriggerCarrier']:m.cut(target,clearance,'Torsion-return spring seat clearance').Refine=False
+        m.feature(key+'ReturnSpring','Trigger torsion-return spring study',spring,'Controller',3,'metal',True)
+        # The side sensing board is independently removable from the gear carrier.
+        m.box(key+'SensorPCB','Adaptive trigger sensing PCB',14,19,.7,tuple(_sense_point(x+6.4,31,23)),'Controller',2,'sensepcb',.5,True,orient=g.rotation((1,0,0),(0,0,1)))
+        m.ring(key+'AngleSensor','Trigger angle sensor housing study',3.3,1.15,1.5,tuple(_sense_point(x+4.7,31,23)),'Controller',2,'black',axis=(1,0,0),internal=True)
+        m.cyl(key+'SensorRotor','Angle sensor internal rotor',.95,1.1,tuple(_sense_point(x+4.9,31,23)),'Controller',2,'white',axis=(1,0,0),internal=True)
+        for j,(y,z) in enumerate([(26,16),(31,16),(32.5,30)]):
+            m.box(key+'SensorIC'+str(j),'Trigger-board electronic package study',3,2,.8,tuple(_sense_point(x+7.3,y,z)),'Controller',2,'black',.2,True,orient=g.rotation((1,0,0),(0,0,1)))
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=28
+    m.checkpoint(28,'dualsense_adaptive_trigger_motors_worms_and_sensors','补齐左右自适应扳机电机、独立转子/线圈/磁体、连续螺旋蜗杆、减速齿轮、阻力凸轮、随动臂、回位弹簧和传感器板。齿形、传动间隙与布置为静态学习示意，不声称完成运动学或力反馈验证。')
+    m.snapshot('28_dualsense_adaptive_triggers',assemblies=['Controller'],exclude=['SenseFront','SenseBack','SenseTrim','SenseTouchpad','SenseTouchLight','SenseTouchPCB'],normal=(.2,.5,1.7))
+
+
+STAGES[28]=stage28
+
+
+def stage29(m):
+    from .atari2600 import _rounded_route
+    m.native('SenseBatteryTray','Native rechargeable-cell support tray',52,34,2,13.2,tuple(_sense_point(0,20,4.2)),'Controller',-3,'ctrlcream')
+    m.cut('SenseBatteryTray',m.rr(49.8,31.8,13,tuple(_sense_point(0,20,5.2)),1.5),'Open battery cradle').Refine=False
+    m.cut('SenseBatteryTray',[Part.makeCylinder(17.1,14,_sense_point(x,-12,4)) for x in [-28,28]]+[Part.makeCylinder(2.3,4,_sense_point(0,37,13.8))],'Battery cradle clearance around stick pods and rear board post').Refine=False
+    m.native('SenseBattery','1500 mAh original battery envelope study',48,30,2,10.5,tuple(_sense_point(0,20,5.4)),'Controller',-2,'battery')
+    m.label('SenseBatteryMark','1500 mAh STUDY',2,tuple(_sense_point(-19,19,15.925)),'Controller',-1,'white')
+    m.box('SenseBatteryStrap','Battery retaining strap study',5,29,.4,tuple(_sense_point(0,20,16.2)),'Controller',-1,'black',.3,True)
+    socket=m.rr(5,3,2.5,tuple(_sense_point(25,10,22.3)),.3).cut(m.rr(3.8,1.8,2.2,tuple(_sense_point(25,10,23)),.15))
+    m.feature('SenseBatterySocket','Controller battery connector body',socket,'Controller',1,'white',True)
+    for i,dx in enumerate([-.6,.6]):
+        m.box('SenseBatteryContact'+str(i),'Separate battery socket contact',.25,1,.15,tuple(_sense_point(25+dx,10,23.25)),'Controller',1,'gold',.03,True)
+        m.cut('SensePCB',Part.makeCylinder(.5,2,_sense_point(25+dx,9,20.5)),'Battery lead insulated board passage').Refine=False
+        m.cut('SenseBatterySocket',Part.makeCylinder(.5,2,_sense_point(25+dx,9,22)),'Battery lead passage into the connector').Refine=False
+        points=[_sense_point(22+dx,30,16.2),_sense_point(25+dx,30,18.5),_sense_point(25+dx,9,18.5),_sense_point(25+dx,9,23.8)]
+        sh=_rounded_route(points,.5,.3);sh.check(True)
+        m.feature('SenseBatteryLead'+str(i),'Insulated rechargeable-cell lead',sh,'Controller',0,'red' if i==0 else 'black',True)
+    for side,name in [(-1,'Left'),(1,'Right')]:
+        key='Sense'+name+'Haptic';n=V(side*.25,-.95,-.18);n.normalize();p=_sense_point(side*55,-9,20)
+        def pos(t):return tuple(p+n*t)
+        axis=tuple(n)
+        m.ring(key+'Can','Voice-coil haptic actuator outer can',6.9,6.5,22.8,pos(.6),'Controller',-2,'metal',axis=axis,internal=True)
+        for j,t in enumerate([0,23.5]):m.cyl(key+'End'+str(j),'Haptic actuator end plate',6.7,.5,pos(t),'Controller',-2,'metal',axis=axis,internal=True)
+        m.ring(key+'Magnet','Haptic actuator magnetic circuit',5.8,3.8,18,pos(3),'Controller',-2,'black',axis=axis,internal=True)
+        m.ring(key+'Coil','Haptic voice-coil winding envelope',3.5,2.5,13,pos(5),'Controller',-2,'copper',axis=axis,internal=True)
+        m.cyl(key+'Mass','Independent haptic moving mass study',2.2,13.8,pos(5),'Controller',-2,'metal',axis=axis,internal=True)
+        for j,t in enumerate([2,22]):m.ring(key+'Spring'+str(j),'Haptic suspension diaphragm study',5.9,2.3,.12,pos(t),'Controller',-2,'metal',axis=axis,internal=True)
+        for j,t in enumerate([6,17]):m.ring(key+'Band'+str(j),'Haptic actuator damping band',7.3,7,1.4,pos(t),'Controller',-2,'rubber',axis=axis,internal=True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=29
+    m.checkpoint(29,'dualsense_battery_and_two_voice_coil_haptics','加入原版 1500 mAh 电池包络、原生托架、固定带和独立接线；两侧握柄建立音圈反馈执行器、磁路、线圈、动子、悬置片和减振圈。内部截面为工作原理学习近似。')
+    m.snapshot('29_dualsense_power_haptics',assemblies=['Controller'],exclude=['SenseBack','SenseFront','SenseTrim','SenseTouchpad','SenseTouchLight','SenseTouchPCB'],normal=(.2,-.5,2))
+
+
+STAGES[29]=stage29
+
+
+def stage30(m):
+    rear=g.rotation((0,1,0),(0,0,1));front=g.rotation((0,-1,0),(0,0,1))
+    aperture=m.rr(10,4.5,12,tuple(_sense_point(0,39,29)),1.8,rear)
+    for key in ['SenseFront','SenseBack']:m.cut(key,aperture,'Rear USB-C receptacle opening').Refine=False
+    shield=m.rr(9.2,3.6,8,tuple(_sense_point(0,41,29)),1.7,rear).cut(m.rr(8.5,2.9,8.4,tuple(_sense_point(0,40.8,29)),1.35,rear))
+    m.feature('SenseUSBShield','Controller USB-C metal receptacle',shield,'Controller',2,'metal')
+    m.box('SenseUSBCarrier','USB-C rear insulating carrier',8.1,2.6,.7,tuple(_sense_point(0,41,29)),'Controller',2,'black',1.2,True,orient=rear)
+    m.box('SenseUSBTongue','Controller reversible USB-C tongue',6.9,5.7,.6,tuple(_sense_point(0,45,28.7)),'Controller',2,'black',.2)
+    for side in [-1,1]:
+        for i in range(12):
+            m.box('SenseUSBContact'+str(side)+'_'+str(i),'Separate controller USB-C contact',.24,3.8,.08,tuple(_sense_point((i-5.5)*.5,45.8,29.34 if side==1 else 28.54)),'Controller',2,'gold',.02,True)
+    m.native('SenseUSBPCB','Rear interface board envelope study',16,9,1,.8,tuple(_sense_point(0,40,24)),'Controller',1,'sensepcb')
+    for i,x in enumerate([-5.6,5.6]):
+        m.box('SenseUSBMount'+str(i),'USB receptacle mounting foot',.45,2.2,2.1,tuple(_sense_point(x,41,24.9)),'Controller',1,'metal',.08,True)
+    jack=m.rr(6,6,9,tuple(_sense_point(0,-5,29)),.8,front).cut(Part.makeCylinder(1.85,9.5,_sense_point(0,-4.8,29),V(0,-1,0)))
+    m.feature('SenseAudioJack','Controller four-pole headset socket',jack,'Controller',1,'black',True)
+    m.ring('SenseAudioRim','Headset socket front rim',2.6,1.85,1.1,tuple(_sense_point(0,-15.2,29)),'Controller',2,'metal',axis=(0,1,0))
+    for key in ['SenseFront','SenseBack','SenseTrim']:
+        m.cut(key,m.rr(6.5,6.5,12,tuple(_sense_point(0,-4,29)),1,front),'Headset socket front-edge aperture').Refine=False
+    for i,(x,z) in enumerate([(-1.4,29),(1.4,29),(0,27.6),(0,30.4)]):
+        m.cyl('SenseAudioContact'+str(i),'Independent headset spring-contact tip',.15,1.3,tuple(_sense_point(x,-12.8+i*1.8,z)),'Controller',1,'gold',axis=(0,1,0),internal=True)
+    for i,x in enumerate([-5,5]):
+        m.cut('SenseBack',m.rr(2,3.2,3,tuple(_sense_point(x,-10,28.8)),.3,front),'Charging contact aperture').Refine=False
+        m.box('SenseChargeContact'+str(i),'Bottom charging contact',1.5,.3,2.5,tuple(_sense_point(x,-12.4,27.5)),'Controller',2,'gold',.1)
+    for i,(x,y,z) in enumerate([(0,-4.5,43.8),(14,5,3.25)]):
+        m.box('SenseMicrophone'+str(i),'Controller MEMS microphone study',2,2,.6,tuple(_sense_point(x,y,z)),'Controller',2,'metal',.2,True)
+    m.cut('SenseTrim',Part.makeCylinder(.4,7,_sense_point(0,-4.5,43)),'Front microphone acoustic opening').Refine=False
+    m.cut('SenseBack',Part.makeCylinder(.45,3.3,_sense_point(14,5,0)),'Underside microphone acoustic opening').Refine=False
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=30
+    m.checkpoint(30,'dualsense_usbc_audio_charging_and_microphones','补齐手柄 USB-C 外壳、舌片与 24 个独立触点、接口板及安装脚、耳机插座及弹片、底部充电触点和前后麦克风开口。接口内部尺寸与板层为学习近似。')
+    m.snapshot('30_dualsense_interfaces',assemblies=['Controller'],normal=(.2,.6,1.6))
+
+
+STAGES[30]=stage30
+
+
+def stage31(m):
+    from .atari2600 import _rounded_route
+    def socket(key,x,y,width,count,z=22.3):
+        body=m.rr(width,3,2.4,tuple(_sense_point(x,y,z)),.25).cut(m.rr(width-1.2,1.8,2,tuple(_sense_point(x,y,z+.7)),.12))
+        m.feature(key,'Separate controller harness socket',body,'Controller',2,'white',True)
+        for i in range(count):
+            m.box(key+'Contact'+str(i),'Independent controller socket contact',.2,1,.15,tuple(_sense_point(x+(i-(count-1)/2)*(width-2)/max(1,count-1),y,z+.85)),'Controller',2,'gold',.02,True)
+    socket('SenseTouchMainSocket',0,32,8,8)
+    socket('SenseFilmMainSocket',-10,30,7,6)
+    touch=[(0,32,23.65),(0,32,34),(0,44,34),(0,44,43.3),(0,42,44.8)]
+    film=[(-10,30,23.65),(-10,30,34),(-10,24,35.8)]
+    for key,points,width,endx,endy,z in [('Touch',touch,6,0,42,42.7),('Film',film,4.8,-10,24,34.0)]:
+        world=[tuple(_sense_point(*p)) for p in points]
+        m.feature('Sense'+key+'Ribbon','Continuous controller '+key.lower()+' flex study',_folded_ribbon(world,width,.14),'Controller',3,'white',True)
+        socket('Sense'+key+'EndSocket',endx,endy,width+1.5,6,z)
+        m.cut('Sense'+key+'EndSocket',_folded_ribbon(world,width+.5,.5),'Controller ribbon approach clearance').Refine=False
+    for side,name in [(-1,'Left'),(1,'Right')]:
+        socket('Sense'+name+'TriggerSocket',side*39,29,7,6)
+        points=[(side*39,29,23.65),(side*39,29,35.5),(side*52+8.5,29,35.5),(side*52+8.5,29,28.5),(side*52+7.5,29,28.5)]
+        world=[_sense_point(*p) for p in points]
+        ribbon=_folded_ribbon([(p.y,-p.x,p.z) for p in world],4,.14);ribbon.rotate(V(),V(0,0,1),90)
+        m.feature('Sense'+name+'TriggerRibbon','Adaptive-trigger signal flex study',ribbon,'Controller',3,'white',True)
+        passage=_folded_ribbon([(p.y,-p.x,p.z) for p in world],4.4,.4);passage.rotate(V(),V(0,0,1),90)
+        m.cut('Sense'+name+'TriggerSocket',passage,'Trigger flex entry clearance').Refine=False
+        socket('Sense'+name+'HapticSocket',side*40,4.5,5,2)
+        for i,dx in enumerate([-.6,.6]):
+            z=31.2+i*.7
+            points=[_sense_point(side*55+dx,-8,27.6),_sense_point(side*55+dx,-3+side*(i-.5)*.7,z),_sense_point(side*40+dx,2.5+side*(i-.5)*.7,z),_sense_point(side*40+dx,2.5+side*(i-.5)*.7,25.4),_sense_point(side*40+dx,4.5,25.4),_sense_point(side*40+dx,4.5,23.65)]
+            sh=_rounded_route(points,.4,.22);sh.check(True)
+            m.feature('Sense'+name+'HapticLead'+str(i),'Separate insulated haptic actuator lead',sh,'Controller',2,'red' if i==0 else 'black',True)
+    # The small interface-board flex approaches the main PCB from its clear central rear edge.
+    points=[tuple(_sense_point(6.5,40,23.7)),tuple(_sense_point(6.5,40,22.9)),tuple(_sense_point(6.5,37.5,22.9))]
+    m.feature('SenseUSBBoardFlex','Rear interface board interconnect study',_folded_ribbon(points,2.5,.12),'Controller',1,'white',True)
+    # Keep screw heads in exposed local pockets; preserve all housing construction history.
+    for i,(x,y,z) in enumerate([(-67,-40,15),(67,-40,15),(-39,37,12),(39,37,12)]):
+        hole=Part.makeCylinder(1,22,_sense_point(x,y,z-1))
+        for key in ['SenseBack','SenseFront']:m.cut(key,hole,'Controller case fixing shaft clearance').Refine=False
+        m.cut('SenseBack',Part.makeCylinder(1.9,z+.8,_sense_point(x,y,0)),'Rear screw-head access counterbore').Refine=False
+        m.ring('SenseCasePost'+str(i),'Controller case screw post',2.2,.85,6,tuple(_sense_point(x,y,z+1)),'Controller',-2,'ctrlcream',internal=True)
+        m.screw('SenseCaseScrew'+str(i),tuple(_sense_point(x,y,z+.35)),'Controller',-3,length=6.2,radius=1.65)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=31
+    m.checkpoint(31,'dualsense_flexes_haptic_leads_and_case_fixings','补齐触摸板、按键膜、左右扳机和接口板排线、板端插座与独立触点、音圈线束及四组外壳固定件。线路径与固定细节为静态结构学习近似。')
+    m.snapshot('31_dualsense_connected_internals',assemblies=['Controller'],exclude=['SenseBack','SenseFront','SenseTrim','SenseTouchpad','SenseTouchLight'],normal=(.2,-.5,2))
+
+
+STAGES[31]=stage31
+
+
+def stage32(m):
+    from .atari2600 import _rounded_route
+    from .wiiu import _hdmi_shape
+    rear=g.rotation((0,1,0),(0,0,1))
+    m.box('ACWallPlug','Two-flat-blade AC plug study',23,17,11,(220,100,0),'Accessories',0,'black',1.7)
+    for i,x in enumerate([213.8,226.2]):m.box('ACWallBlade'+str(i),'Flat AC blade study',1.4,6.2,12.5,(x,100,11.1),'Accessories',0,'metal',.1)
+    points=[V(220,91.3,5.5),V(220,55,5.5),V(320,55,8),V(320,20,8),V(292.2,20,8)]
+    m.feature('ACCord','Mains cord display length',_rounded_route(points,7,1.8),'Accessories',0,'black')
+    m.box('ACDeviceGrip','Figure-eight connector grip',24,12,10,(280,20,3),'Accessories',0,'black',1.3)
+    lobes=[Part.makeCylinder(3.15,10,V(267.8,y,8),V(-1,0,0)) for y in [15.8,24.2]]
+    bridge=Part.makeBox(1.2,8.4,5.4,V(266.6,15.8,5.3))
+    head=bridge.multiFuse(lobes)
+    holes=[Part.makeCylinder(1.25,10.5,V(268,y,8),V(-1,0,0)) for y in [15.8,24.2]]
+    m.feature('ACDeviceHead','C7-style two-position connector study',head.cut(Part.makeCompound(holes)),'Accessories',0,'black')
+    for i,y in enumerate([15.8,24.2]):m.ring('ACDeviceContact'+str(i),'Device mains socket contact study',1.15,1.02,6,(265.5,y,8),'Accessories',0,'metal',axis=(-1,0,0))
+    points=[V(250,-258.2,6),V(250,-337,6),V(350,-337,6),V(350,-258.2,6)]
+    m.feature('HDMICable','HDMI cable display length',_rounded_route(points,14,2.4),'Accessories',0,'black')
+    for i,x in enumerate([250,350]):
+        m.box('HDMIGrip'+str(i),'HDMI connector overmould',20,24,10,(x,-246,1),'Accessories',0,'black',2)
+        m.cyl('HDMIRelief'+str(i),'HDMI cable strain relief',2.7,6,(x,-258.1,6),'Accessories',0,'black',axis=(0,-1,0))
+        m.cut('HDMIRelief'+str(i),Part.makeCylinder(2.45,6.4,V(x,-257.9,6),V(0,-1,0)),'Strain-relief cable bore').Refine=False
+        outer=_hdmi_shape(14,5,9);inner=_hdmi_shape(12.8,3.8,9.4);inner.translate(V(0,0,-.2))
+        shape=outer.cut(inner);shape.Placement=App.Placement(V(x,-233.8,6),rear)
+        m.feature('HDMIHead'+str(i),'HDMI Type A metal plug shell',shape,'Accessories',0,'metal')
+        m.box('HDMIPlugTongue'+str(i),'HDMI plug contact carrier',10.9,7,.6,(x,-229,5.7),'Accessories',0,'black',.2)
+        for row,n in enumerate([10,9]):
+            for j in range(n):m.box(f'HDMIPlugPin{i}_{row}_{j}','HDMI Type A plug contact',.32,5,.06,(x+(j-(n-1)/2)*1.02,-229,5.56 if row==0 else 6.39),'Accessories',0,'gold',.03)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=32
+    m.checkpoint(32,'original_ac_cord_and_nineteen_contact_hdmi_cable','补齐原配双片电源插头与八字设备端、两端十九接点 HDMI 连接线及独立护线套。沿用已验证的同系列连接结构，并使电源端示意针距与本机插口一致；线长为展示近似。')
+    m.snapshot('32_ac_hdmi_accessories_review',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+
+STAGES[32]=stage32
+
+
+def stage33(m):
+    from .atari2600 import _rounded_route
+    rear=g.rotation((0,1,0),(0,0,1))
+    points=[V(230,-91.7,6),V(230,-177,6),V(270,-177,6),V(270,-91.7,6)]
+    m.feature('USBChargeCable','Original USB-A to USB-C cable display length',_rounded_route(points,7,1.5),'Accessories',0,'black')
+    m.box('USBAPlugGrip','USB-A cable overmould',18,23,10,(230,-80,1),'Accessories',0,'black',1.6)
+    m.box('USBCPlugGrip','USB-C cable overmould',12,19,8,(270,-82,2),'Accessories',0,'black',1.3)
+    for i,x in enumerate([230,270]):
+        sh=Part.makeCylinder(1.9,6,V(x,-91.6,6),V(0,-1,0)).cut(Part.makeCylinder(1.55,6.4,V(x,-91.4,6),V(0,-1,0)))
+        m.feature('USBChargeRelief'+str(i),'Charging cable strain-relief sleeve',sh,'Accessories',0,'black')
+    sh=m.rr(12,4.5,12,(230,-68.3,6),.3,rear).cut(m.rr(11.4,3.9,12.4,(230,-68.5,6),.15,rear))
+    m.feature('USBAPlugShield','USB-A cable plug metal shell',sh,'Accessories',0,'metal')
+    m.box('USBAPlugStop','USB-A rear insulating stop',10.8,.65,3.3,(230,-67.9,4.35),'Accessories',0,'black',.15,True)
+    m.box('USBAPlugTongue','USB-A four-contact tongue',9.2,7,1,(230,-62.7,5),'Accessories',0,'black',.15)
+    for i in range(4):m.box('USBAPlugContact'+str(i),'Separate USB-A plug contact',.85,5,.1,(230+(i-1.5)*2,-62.7,6.1),'Accessories',0,'gold',.05,True)
+    sh=m.rr(8.3,2.5,7,(270,-72.3,6),1.2,rear).cut(m.rr(7.7,1.9,7.4,(270,-72.5,6),.9,rear))
+    m.feature('USBCPlugShield','Reversible USB-C cable plug shell',sh,'Accessories',0,'metal')
+    m.box('USBCPlugStop','USB-C plug rear insulator',7.3,1.5,.65,(270,-71.9,6),'Accessories',0,'black',.65,True,orient=rear)
+    for side,z,cz in [('Lower',5.15,5.5),('Upper',6.55,6.42)]:
+        m.box('USBCPlugRail'+side,'USB-C plug insulating contact rail',6.3,4.8,.3,(270,-68.4,z),'Accessories',0,'black',.1,True)
+        for i in range(12):m.box('USBCPlugContact'+side+str(i),'Separate USB-C cable plug contact',.21,3.8,.08,(270+(i-5.5)*.5,-68.4,cz),'Accessories',0,'gold',.02,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=33
+    m.checkpoint(33,'original_usb_a_to_usb_c_accessory','加入原配 USB-A 至 USB-C 连接线，建立双端包胶、护线套、独立金属壳、绝缘件和 4/24 个分离触点。原版套装包含底座、DualSense、AC、HDMI 和 USB 线；不加入未附送的耳机。线长为缩短展示近似。')
+    m.snapshot('33_original_connection_kit',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+STAGES[33]=stage33
+
+
+def finalize(model):
+    from .deliver import finalize as shared_finalize
+    # Preserve trimming pcurves: otherwise two thin, pipe-cut fins lose STEP fidelity.
+    settings=App.ParamGet('User parameter:BaseApp/Preferences/Mod/Part/General')
+    previous=settings.GetInt('WriteSurfaceCurveMode',1)
+    Part.setStaticValue('write.surfacecurve.mode',1)
+    try:
+        result=shared_finalize(model)
+        model.snapshot("final_front",normal=(.2,-1.5,.7),assemblies=model.profile["envelope_groups"])
+        model.snapshot("final_hero",normal=(.3,-.7,2.3),assemblies=result[0]["handheld_groups"])
+        model.doc.save()
+        return result
+    finally:
+        Part.setStaticValue('write.surfacecurve.mode',previous)
+
+
+def stage34(m):
+    from .atari2600 import _rounded_route
+    tails=[]
+    for row,y,z in [('Lower',40.4,28.54),('Upper',39.6,29.34)]:
+        for i in range(12):
+            x=(i-5.5)*.5
+            foot=Part.makeBox(.18,.6,.14,_sense_point(x-.09,y-.3,24.95))
+            stem=Part.makeBox(.18,.18,z+.06-25.03,_sense_point(x-.09,y-.09,25.03))
+            arm=Part.makeBox(.18,43.8-y+.09,.08,_sense_point(x-.09,y-.09,z))
+            sh=foot.fuse(stem).fuse(arm).removeSplitter()
+            m.feature('SenseUSBTail'+row+str(i),'Separate formed USB-C board terminal',sh,'Controller',2,'gold',True);tails.append(sh)
+    m.cut('SenseUSBCarrier',tails,'USB-C board-terminal moulded channels').Refine=False
+    m.cut('SenseTouchLight',m.rr(58,29,1.1,tuple(_sense_point(0,29,47)),2.8),'Open central touch-click mechanism inside the edge light guide').Refine=False
+    m.box('SenseTouchClickSwitch','Touchpad tactile-click switch',6,4,1,tuple(_sense_point(0,29,46.1)),'Controller',4,'black',.4,True)
+    m.cyl('SenseTouchClickActuator','Touchpad click actuator',.8,.5,tuple(_sense_point(0,29,47.2)),'Controller',5,'white',internal=True)
+    for i,x in enumerate([-30,30]):m.box('SenseTouchLED'+str(i),'Touchpad edge-light emitter study',.8,2,.5,tuple(_sense_point(x,29,46.3)),'Controller',4,'ps5blue',.1,True)
+    socket=m.rr(4,3,2.4,tuple(_sense_point(0,8,22.3)),.25).cut(m.rr(2.8,1.8,2,tuple(_sense_point(0,8,23)),.12))
+    m.feature('SenseSpeakerSocket','Controller speaker wire socket',socket,'Controller',2,'white',True)
+    passages=[]
+    for i,x in enumerate([-1,1]):
+        m.box('SenseSpeakerContact'+str(i),'Independent speaker socket contact',.2,1,.15,tuple(_sense_point(x,8,23.15)),'Controller',2,'gold',.02,True)
+        points=[_sense_point(x,4.8,41),_sense_point(x,3.5,36),_sense_point(x,3.5,25),_sense_point(x,8,23.8)]
+        sh=_rounded_route(points,.35,.18);sh.check(True)
+        m.feature('SenseSpeakerLead'+str(i),'Separate insulated loudspeaker lead',sh,'Controller',2,'red' if i==0 else 'black',True)
+        passages.append(_rounded_route(points,.55,.42))
+    for key in ['SenseContactCarrier','SenseContactFilm','SenseSpeakerSocket']:m.cut(key,passages,'Loudspeaker lead passage through the button carrier and socket').Refine=False
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=34
+    m.checkpoint(34,'dualsense_terminal_tails_touch_click_and_speaker_connection','补齐 USB-C 成形焊接端子、触摸板按下开关、边缘发光器件和独立扬声器线束，并加工接点膜支架的穿线通道。完成主机、底座、DualSense 与原配连接线的结构建模，随后执行完整交付验证。')
+    m.snapshot('34_dualsense_complete',assemblies=['Controller'],normal=(.2,-.5,2.4))
+
+
+STAGES[34]=stage34

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "geometry_source_unchanged": true,
+  "executed_source_sha256": "c813cc309e641c681b127e2611d11e563b7f2a7ab387fd7a907563e0ad23c8ff",
+  "delivery_source_sha256": "4d556c18a3662bedabcc305f460cca57b6885b2d8b407b8e233cafcc9ab5d1ac",
+  "geometry_ast_sha256": "fe98d569eb9880f6d85a639d44e59b701692ea9431ec74e58be90f96eafe5d3c",
+  "changed_function": "finalize",
+  "change": "Write STEP trimming pcurves explicitly, then restore the configured interface mode.",
+  "basis": "The module AST excluding finalize is identical to the version that executed all 34 stages in an empty document. No geometry stage or helper changed.",
+  "reference": "https://github.com/FreeCAD/FreeCAD/blob/main/src/Mod/Part/App/STEP/ImportExportSettings.cpp"
+}

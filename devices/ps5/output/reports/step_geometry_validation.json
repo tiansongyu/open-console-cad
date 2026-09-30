@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "CoolingFinMain20",
+      "expected_acceptance": true,
+      "check": {
+        "bbox_max_delta_mm": 1.6058265828178264e-12,
+        "volume_delta_mm3": 6.832578947069123e-11,
+        "valid": true,
+        "boolean_confirmation": null,
+        "sampled_bounds_confirmation": null,
+        "pass": true
+      },
+      "residual_volumes_mm3": [
+        1.666933258093195e-11,
+        0
+      ],
+      "boolean_results_valid": [
+        false,
+        true
+      ],
+      "surface_area_delta_mm2": 1.9099388737231493e-10,
+      "surface_samples": [
+        {
+          "direction": "native_to_step",
+          "deflection_mm": 0.01,
+          "sampled_points": 2688,
+          "max_surface_distance_mm": 8.167610708024337e-12,
+          "passed": true
+        },
+        {
+          "direction": "native_to_step",
+          "deflection_mm": 0.005,
+          "sampled_points": 7779,
+          "max_surface_distance_mm": 8.169869689684387e-12,
+          "passed": true
+        },
+        {
+          "direction": "step_to_native",
+          "deflection_mm": 0.01,
+          "sampled_points": 2688,
+          "max_surface_distance_mm": 8.167610708024337e-12,
+          "passed": true
+        },
+        {
+          "direction": "step_to_native",
+          "deflection_mm": 0.005,
+          "sampled_points": 7779,
+          "max_surface_distance_mm": 8.167610708024337e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "CoolingFinMain21",
+      "expected_acceptance": true,
+      "check": {
+        "bbox_max_delta_mm": 1.0373923942097463e-12,
+        "volume_delta_mm3": 2.3874235921539366e-11,
+        "valid": true,
+        "boolean_confirmation": null,
+        "sampled_bounds_confirmation": null,
+        "pass": true
+      },
+      "residual_volumes_mm3": [
+        325.5331169778725,
+        0
+      ],
+      "boolean_results_valid": [
+        false,
+        true
+      ],
+      "surface_area_delta_mm2": 1.659827830735594e-10,
+      "surface_samples": [
+        {
+          "direction": "native_to_step",
+          "deflection_mm": 0.01,
+          "sampled_points": 1976,
+          "max_surface_distance_mm": 6.534181286447757e-12,
+          "passed": true
+        },
+        {
+          "direction": "native_to_step",
+          "deflection_mm": 0.005,
+          "sampled_points": 6788,
+          "max_surface_distance_mm": 6.951116510719706e-12,
+          "passed": true
+        },
+        {
+          "direction": "step_to_native",
+          "deflection_mm": 0.01,
+          "sampled_points": 1976,
+          "max_surface_distance_mm": 6.534181286447757e-12,
+          "passed": true
+        },
+        {
+          "direction": "step_to_native",
+          "deflection_mm": 0.005,
+          "sampled_points": 6788,
+          "max_surface_distance_mm": 6.964685383552785e-12,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "identical_box",
+      "expected_acceptance": true,
+      "check": {
+        "bbox_max_delta_mm": 0.0,
+        "volume_delta_mm3": 0.0,
+        "valid": true,
+        "boolean_confirmation": null,
+        "sampled_bounds_confirmation": null,
+        "pass": true
+      },
+      "passed": true
+    },
+    {
+      "case": "translated_box",
+      "expected_acceptance": false,
+      "check": {
+        "bbox_max_delta_mm": 0.01,
+        "volume_delta_mm3": 1.1368683772161603e-13,
+        "valid": true,
+        "boolean_confirmation": {
+          "residual_volumes_mm3": [
+            0.9999999999999999,
+            0.9999999999999787
+          ],
+          "valid": true,
+          "pass": false
+        },
+        "sampled_bounds_confirmation": null,
+        "pass": false
+      },
+      "passed": true
+    },
+    {
+      "case": "same_bounds_missing_material",
+      "expected_acceptance": false,
+      "check": {
+        "bbox_max_delta_mm": 0.0,
+        "volume_delta_mm3": -12.56637061435913,
+        "valid": true,
+        "boolean_confirmation": {
+          "residual_volumes_mm3": [
+            12.56637061435917,
+            0
+          ],
+          "valid": true,
+          "pass": false
+        },
+        "sampled_bounds_confirmation": null,
+        "pass": false
+      },
+      "passed": true
+    }
+  ],
+  "step_has_pcurves": true,
+  "native_sha256": "ff4f1149d9d41130dcce413d2b439d98b892fa574a55753848ecd216ea38a323",
+  "step_sha256": "a44d226bc5a96c4f3e37de948362a1d55470054320e55f8dc912ff5f45c6629c",
+  "basis": "PS5 finalization explicitly writes trimming pcurves. The two curved pipe-cut fins have unstable invalid Boolean differences at coincident trimmed surfaces. Preserve these raw diagnostics and additionally require matching face counts, surface area within 1e-6 mm2 and bidirectional point-to-surface distance below 1e-6 mm at two tessellation deflections, alongside the unchanged per-solid volume and bounds checks. This is sampled surface verification, not an exact Boolean certificate."
+}

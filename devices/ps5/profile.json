@@ -14,7 +14,7 @@
     0.89,
     0.91
   ],
-  "stages": 14,
+  "stages": 34,
   "parameter_basis": "Sony historical launch FAQ: approximate 390 x 104 x 260 mm (W x H x D), excluding Base",
   "exterior_fidelity": "Published approximate body envelope; photo-estimated local curves and details",
   "envelope_kind": "published",
@@ -33,19 +33,28 @@
     "Storage",
     "Shielding",
     "Wiring",
-    "Controls"
+    "Controls",
+    "Wireless"
   ],
   "controls_groups": [
     "Controller"
   ],
   "internal_groups": [
-    "Mainboard",
     "Cooling",
     "Power",
     "Optical",
-    "Storage"
+    "Storage",
+    "Ports",
+    "Wireless",
+    "Wiring"
   ],
-  "internal_exclude": [],
+  "internal_exclude": [
+    "PowerLid",
+    "DriveHousing",
+    "DriveTopCover",
+    "UpperFanGuard",
+    "M2Cover"
+  ],
   "internal_normal": [
     0.3,
     -0.7,

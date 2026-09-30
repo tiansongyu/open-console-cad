@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery. Public deployment checked separately.",
+  "components": 1635,
+  "solids": 1709,
+  "stages": 34,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "source_export_update.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "step_geometry_validation.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full rebuild, strict BRep and 5504-pair interference checks use the saved Study. delivery_geometry_audit proves every Study part geometrically equivalent to saved Complete; export audit checks saved native and each STEP solid.",
+  "files": [
+    {
+      "path": "devices/ps5/output/PlayStation5_Complete.FCStd",
+      "bytes": 17102516,
+      "sha256": "ff4f1149d9d41130dcce413d2b439d98b892fa574a55753848ecd216ea38a323"
+    },
+    {
+      "path": "devices/ps5/output/PlayStation5_Exploded.FCStd",
+      "bytes": 6323351,
+      "sha256": "61d66d7b625a54f47f52c90aff9dc3be10e2553474ab2ee2ac9db581859e53ed"
+    },
+    {
+      "path": "devices/ps5/output/PlayStation5_Drawings.FCStd",
+      "bytes": 467427,
+      "sha256": "0927d7ee1138a4813fcd18b37c8b7ea89105b0f61fa7bd5f03daf8f55ea142bf"
+    },
+    {
+      "path": "devices/ps5/output/PlayStation5_FullKit.step",
+      "bytes": 79196077,
+      "sha256": "a44d226bc5a96c4f3e37de948362a1d55470054320e55f8dc912ff5f45c6629c"
+    },
+    {
+      "path": "devices/ps5/output/PlayStation5_Console.step",
+      "bytes": 75586443,
+      "sha256": "1dfbb33a4ffc255e44d266e4812207cf45d5de593909dc5ee20c235f662869d5"
+    },
+    {
+      "path": "devices/ps5/output/PlayStation5_Exploded.step",
+      "bytes": 79212609,
+      "sha256": "69970933c0d6ded8133251da765f70817dcd743ad5fd229bf8090f0c315fcaed"
+    },
+    {
+      "path": "devices/ps5/output/drawings/PlayStation5_Drawings.pdf",
+      "bytes": 786591,
+      "sha256": "c2f91bb9c2be60e2ee5915bfe0f9a26b74fa5d95157669471cdb273f7e7c7761"
+    },
+    {
+      "path": "devices/ps5/output/drawings/PlayStation5_Drawings.html",
+      "bytes": 1916944,
+      "sha256": "161e88d1c25461043b5d46c2912a72a09a9eaf9877cb56a4a424a0a955833e8b"
+    },
+    {
+      "path": "devices/ps5/output/COMPONENTS.csv",
+      "bytes": 305310,
+      "sha256": "3ca473a86010f825df6b7fb29681f7c89cab6b1a150e937e11697c403605dd32"
+    },
+    {
+      "path": "site/public/models/ps5.glb",
+      "bytes": 15553080,
+      "sha256": "ac409f211d9fe5d68120555774f3ab8792f2258588cac470e44cf7c6cd593be2"
+    }
+  ],
+  "live_verified": false
+}
