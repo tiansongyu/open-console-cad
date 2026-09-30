@@ -1,0 +1,89 @@
+{
+  "id": "ps3",
+  "title": "Sony PlayStation 3",
+  "prefix": "PlayStation3",
+  "model": "CECHA00 · original Japanese 60 GB",
+  "family": "console",
+  "width": 325.0,
+  "height": 274.0,
+  "closed_depth": 98.0,
+  "base_depth": 42.0,
+  "default_opening": 180,
+  "color": [
+    0.035,
+    0.04,
+    0.05
+  ],
+  "stages": 14,
+  "parameter_basis": "Sony CECHA00 original manual: approximate 325 x 98 x 274 mm (W x H x D), excluding greatest projections",
+  "exterior_fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+  "envelope_kind": "published",
+  "envelope_basis": "Japanese original 60 GB CECHA00 horizontal body: X width, Y depth, Z height; maximum projections excluded from official dimensions.",
+  "fidelity": "Approximate original enclosure and early-family internal structure study",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Frame",
+    "FrontIO",
+    "Ports",
+    "Controls",
+    "Mainboard",
+    "Cooling",
+    "Power",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "Power",
+    "Optical",
+    "Cooling",
+    "Storage",
+    "Wireless",
+    "Wiring"
+  ],
+  "internal_exclude": [
+    "PowerLid",
+    "DriveTopCover"
+  ],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -100,
+      0
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps3-docs/JA_PS3-00-1.0_1_WEB.pdf",
+      "role": "Sony CECHA00 original manual, published body envelope and 60 GB / four USB / card interfaces / controller battery"
+    },
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps3-docs/JA_PS3-00-1.0_2_WEB.pdf",
+      "role": "Sony original quick reference, boxed AC / AV / USB / LAN kit and exterior controls"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/PlayStation+3+Teardown/1260",
+      "role": "Firsthand original 60 GB CECHA01 teardown; regional internal-layout study, not exact CECHA00 manufacturing geometry"
+    },
+    {
+      "url": "https://daxhordes.org/forum/viewtopic.php?t=5",
+      "role": "Firsthand early SIXAXIS vs DualShock 3 comparison; use motorless SIXAXIS and separate motion sensor board, exact board revision unasserted"
+    },
+    {
+      "url": "https://documents.cdn.ifixit.com/6wdEAkIyJYsjXkBP.pdf",
+      "role": "Sony CECHA00/A01 service manual third edition, May 2007: COK-001 and original exploded subsystem layouts, not measured local CAD dimensions"
+    }
+  ]
+}

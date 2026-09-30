@@ -1,0 +1,204 @@
+{
+  "iteration": 1,
+  "slug": "native_arched_launch_enclosure",
+  "summary": "以日本 CECHA00 首发 60GB 外观建立 325×274×98 mm 参考包络，独立亮面弧形顶盖、内罩、原生下壳和端壁；曲面采用可编辑草图放样，局部曲率和壁厚为照片指导近似。后续加工四 USB、读卡盖、吸入盘口和后部接口。",
+  "physical_components": 7,
+  "objects": [
+    {
+      "name": "LowerCaseCut",
+      "label": "Original stepped lower case001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 272644.105530836,
+      "bounds": [
+        -154.5,
+        154.5,
+        -123.5,
+        123.5,
+        0.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCase",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GlossCrownLoft",
+      "label": "Removable continuous glossy arched top",
+      "type": "Part::Loft",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 177704.0000000011,
+      "bounds": [
+        -162.5000001,
+        162.5000001,
+        -137.0000001,
+        137.0000001,
+        46.9999999,
+        98.0056819181818
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GlossCrown",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ps3gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "InnerHoodLoft",
+      "label": "Separate arched inner enclosure",
+      "type": "Part::Loft",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 151329.60000007247,
+      "bounds": [
+        -159.000000100075,
+        159.000000100075,
+        -132.5000001,
+        132.5000001,
+        43.399999900000005,
+        94.10569486082005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "InnerHood",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftEndWallExtrusion",
+      "label": "LeftEndWallExtrusion",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 14671.800000000034,
+      "bounds": [
+        -154.20000010015,
+        -152.39999990015,
+        -123.5000001,
+        123.5000001,
+        42.4999999,
+        90.00574722643677
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftEndWall",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightEndWallExtrusion",
+      "label": "RightEndWallExtrusion",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 14671.800000000034,
+      "bounds": [
+        152.399999899975,
+        154.200000099975,
+        -123.5000001,
+        123.5000001,
+        42.4999999,
+        90.00574722643677
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightEndWall",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaBody",
+      "label": "Upper slot-loading front fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 7242.952564803109,
+      "bounds": [
+        -151.0,
+        151.0,
+        -134.8,
+        -132.8,
+        40.5,
+        52.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps3gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaBody",
+      "label": "Upper rear closure",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2414.3175216010363,
+      "bounds": [
+        -151.0,
+        151.0,
+        128.4,
+        130.4,
+        40.5,
+        44.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps3/output/iterations/01_native_arched_launch_enclosure.FCStd",
+  "views": [
+    "devices/ps3/output/previews/01_native_arched_launch_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

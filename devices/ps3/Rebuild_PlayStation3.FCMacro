@@ -1,0 +1,12 @@
+"""Rebuild the current original PS3 study."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,ps3
+for module in [geometry,core,ps3]:importlib.reload(module)
+model=core.Study(repo,'ps3');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(ps3.STAGES):ps3.STAGES[stage](model)
+model.doc.saveAs(str(model.out/'PlayStation3_Study.FCStd'))
+if hasattr(ps3,'finalize'):ps3.finalize(model)

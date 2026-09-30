@@ -1,0 +1,556 @@
+{
+  "iteration": 2,
+  "slug": "launch_card_flap_ports_and_open_vents",
+  "summary": "从原生弧形上盖分出首发读卡盖，加入镀铬前缘、吸入盘口与防尘唇、触控面和状态窗；加工四 USB、原版后部接口、侧置 HDD 仓及贯通前/侧/后通风孔。局部尺寸为结构近似，接插件和内部器件分轮补齐。",
+  "physical_components": 20,
+  "objects": [
+    {
+      "name": "LowerCaseCut014",
+      "label": "Original stepped lower case015",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 467,
+      "volume": 255138.18905635382,
+      "bounds": [
+        -154.5,
+        154.5,
+        -123.5,
+        123.5,
+        0.0,
+        42.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerCase",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GlossCrownCut",
+      "label": "Removable continuous glossy arched top001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 165224.08000000176,
+      "bounds": [
+        -162.5000001,
+        162.5000001,
+        -137.0000001,
+        137.0000001,
+        46.9999999,
+        98.0056819181818
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GlossCrown",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ps3gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "InnerHoodCut",
+      "label": "Separate arched inner enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 141453.00000007247,
+      "bounds": [
+        -159.000000100075,
+        159.000000100075,
+        -132.5000001,
+        132.5000001,
+        43.399999900000005,
+        94.10569486082005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "InnerHood",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftEndWallExtrusion",
+      "label": "LeftEndWallExtrusion",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 14671.800000000034,
+      "bounds": [
+        -154.20000010015,
+        -152.39999990015,
+        -123.5000001,
+        123.5000001,
+        42.4999999,
+        90.00574722643677
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftEndWall",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightEndWallExtrusion",
+      "label": "RightEndWallExtrusion",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 14671.800000000034,
+      "bounds": [
+        152.399999899975,
+        154.200000099975,
+        -123.5000001,
+        123.5000001,
+        42.4999999,
+        90.00574722643677
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightEndWall",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaCut",
+      "label": "Upper slot-loading front fascia001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 6430.770618092524,
+      "bounds": [
+        -151.0,
+        151.0,
+        -134.8,
+        -132.8,
+        40.5,
+        52.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Frame",
+      "layer": 3,
+      "material": "ps3gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaBody",
+      "label": "Upper rear closure",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2414.3175216010363,
+      "bounds": [
+        -151.0,
+        151.0,
+        128.4,
+        130.4,
+        40.5,
+        44.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Frame",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CardReaderFlap",
+      "label": "Original curved card-reader flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 12345.759999999987,
+      "bounds": [
+        -146.9000001,
+        -26.09999989999998,
+        -137.0000001,
+        -85.89999990000001,
+        52.9999999,
+        81.32892865240022
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CardReaderFlap",
+      "assembly": "FrontIO",
+      "layer": 8,
+      "material": "ps3gloss",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontChrome",
+      "label": "Original chrome front edge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1799.5793804002592,
+      "bounds": [
+        -150.0,
+        150.0,
+        -136.55,
+        -135.05,
+        38.8,
+        42.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontChrome",
+      "assembly": "Frame",
+      "layer": 4,
+      "material": "chrome",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush0",
+      "label": "Opposed slot dust lip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 124.99570796326796,
+      "bounds": [
+        14.5,
+        139.5,
+        -133.7,
+        -131.7,
+        46.4,
+        46.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush0",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush1",
+      "label": "Opposed slot dust lip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 124.99570796326796,
+      "bounds": [
+        14.5,
+        139.5,
+        -133.7,
+        -131.7,
+        48.55,
+        49.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush1",
+      "assembly": "FrontIO",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDDoor",
+      "label": "Separate side HDD access door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2758.108405839193,
+      "bounds": [
+        -154.85,
+        -153.35,
+        -93.0,
+        6.0,
+        8.6,
+        27.200000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDDoor",
+      "assembly": "Body",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerTouchSurface",
+      "label": "Power capacitive-control marking plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3.6235351232759507,
+      "bounds": [
+        142.1,
+        147.9,
+        -135.15,
+        -134.85,
+        50.2,
+        52.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerTouchSurface",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "chrome",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectTouchSurface",
+      "label": "Eject capacitive-control marking plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 3.6235351232759507,
+      "bounds": [
+        142.1,
+        147.9,
+        -135.15,
+        -134.85,
+        44.3,
+        46.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectTouchSurface",
+      "assembly": "Controls",
+      "layer": 4,
+      "material": "chrome",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontStatus0",
+      "label": "Original front status-light window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7826251223715741,
+      "bounds": [
+        -31.85,
+        -30.15,
+        -124.0,
+        -123.6,
+        22.0,
+        23.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontStatus0",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "led",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontStatus1",
+      "label": "Original front status-light window001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7826251223715741,
+      "bounds": [
+        -25.85,
+        -24.15,
+        -124.0,
+        -123.6,
+        22.0,
+        23.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontStatus1",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "red",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Separate rubber enclosure foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 221.12920065876975,
+      "bounds": [
+        -127.0,
+        -111.0,
+        -98.0,
+        -86.0,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -7,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Separate rubber enclosure foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 221.12920065876975,
+      "bounds": [
+        111.0,
+        127.0,
+        -98.0,
+        -86.0,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -7,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Separate rubber enclosure foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 221.12920065876975,
+      "bounds": [
+        -127.0,
+        -111.0,
+        86.0,
+        98.0,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -7,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Separate rubber enclosure foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 221.12920065876975,
+      "bounds": [
+        111.0,
+        127.0,
+        86.0,
+        98.0,
+        -1.2,
+        0.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -7,
+      "material": "rubber",
+      "fidelity": "Published approximate body envelope; photo-estimated local curves and details",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/ps3/output/iterations/02_launch_card_flap_ports_and_open_vents.FCStd",
+  "views": [
+    "devices/ps3/output/previews/02_launch_card_flap_ports_and_open_vents_hero.png",
+    "devices/ps3/output/previews/02_launch_card_flap_ports_and_open_vents_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
