@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "pdf": "devices/xbox360/output/drawings/Xbox360_Drawings.pdf",
+  "pdf_sha256": "cfd4a9ae5deb6826902e238f3efd5b3671f076ac1ebf50b00355777be550367d",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "revised_geometry_pages_reviewed": [
+    7,
+    8,
+    9
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "kami_verdict": "READY: 0 errors, 1 warning(s), 0 data gap(s)",
+  "warning_review": "Short Chinese heading warnings inspected; headings remain attached to their drawing sheets, without stranded lines.",
+  "corrections": [
+    "Chinese-first page7 heading for atomic content coverage",
+    "Remove external power-supply label from internal board projection",
+    "Show front joystick and rear radio/controller board faces separately"
+  ],
+  "scope": "Original white Xenon and early dual-AA controller; North-American ordinary Premium accessories. All model dimensions approximate and power-supply internal construction nonfunctional and explicitly schematic."
+}

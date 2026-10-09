@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 7,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 309.0000000000001,
+      "measured_mm": 309.00000000000006,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 259.53800010000003,
+      "measured_mm": 259.5380001,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_1",
+      "expected_mm": 154.43824692327868,
+      "measured_mm": 154.43824692327865,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_2",
+      "expected_mm": 105.31797436658736,
+      "measured_mm": 105.31797436658734,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_1",
+      "expected_mm": 274.0,
+      "measured_mm": 274.0,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_2",
+      "expected_mm": 226.0,
+      "measured_mm": 226.0,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_1",
+      "expected_mm": 65.99999999999997,
+      "measured_mm": 66.0,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/xbox360/output/Xbox360_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

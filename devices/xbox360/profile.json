@@ -1,0 +1,93 @@
+{
+  "id": "xbox360",
+  "title": "Microsoft Xbox 360",
+  "prefix": "Xbox360",
+  "model": "Original white Premium 20 GB · Xenon · North America",
+  "family": "console",
+  "width": 309.0,
+  "height": 258.0,
+  "closed_depth": 83.0,
+  "base_depth": 40.0,
+  "default_opening": 180,
+  "color": [
+    0.78,
+    0.79,
+    0.77
+  ],
+  "stages": 35,
+  "parameter_basis": "Approximate 309 x 258 x 83 mm study envelope; local curves and proportions from original hardware photographs",
+  "exterior_fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+  "envelope_kind": "approximate",
+  "envelope_basis": "Horizontal study orientation: X width, Y depth, Z height; removable HDD extends beyond body",
+  "fidelity": "Approximate original console and wireless controller structure study",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Frame",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Wireless",
+    "Wiring"
+  ],
+  "internal_exclude": [],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -100,
+      0
+    ],
+    "Accessories": [
+      230,
+      0,
+      0
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://download.microsoft.com/download/2/8/c/28cdbb94-1c41-4131-8e03-1b91765d382e/emeaconsolefullendaswnofi.pdf",
+      "role": "Microsoft original 2005 setup manual; original body and region-specific kit illustrations"
+    },
+    {
+      "url": "https://www.copetti.org/writings/consoles/xbox-360/",
+      "role": "Author photographed own 2005 Xenon motherboard and original enclosure"
+    },
+    {
+      "url": "https://www.benheck.com/Games/Xbox360/x360_page_1.htm",
+      "role": "Firsthand June 2006 stock board photo before laptop modifications"
+    }
+  ],
+  "handheld_groups": [
+    "Body",
+    "Frame",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless",
+    "Controller"
+  ]
+}

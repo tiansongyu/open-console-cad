@@ -1,0 +1,96 @@
+{
+  "iteration": 1,
+  "slug": "native_concave_white_enclosure",
+  "summary": "根据原版白色 Xenon 外观建立独立的上下凹曲面壳和可拆前面板，均保留草图曲线与原生拉伸；309×258×83 mm 为暂定学习包络，局部曲率为照片指导近似。开孔、侧格栅、内部机构与无线控制器后续分轮加入。",
+  "physical_components": 3,
+  "objects": [
+    {
+      "name": "UpperShellExtrusion",
+      "label": "Original white concave upper shell",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 161834.39999999228,
+      "bounds": [
+        -152.0000000000002,
+        152.0,
+        -126.49999999999999,
+        127.00000000000001,
+        74.20000000000005,
+        82.80000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellExtrusion",
+      "label": "Original white concave lower shell",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 161834.39999999257,
+      "bounds": [
+        -152.0000000000002,
+        152.0,
+        -126.5,
+        127.0,
+        0.2,
+        8.799999999999955
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FaceplateExtrusion",
+      "label": "Original removable white faceplate",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 45936.104470502396,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        -129.0,
+        -126.99999999999999,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Faceplate",
+      "assembly": "Body",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox360/output/iterations/01_native_concave_white_enclosure.FCStd",
+  "views": [
+    "devices/xbox360/output/previews/01_native_concave_white_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

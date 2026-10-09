@@ -1,0 +1,4174 @@
+{
+  "iteration": 8,
+  "slug": "original_ana_southbridge_nand_and_io_logic",
+  "summary": "加入原版 ANA 模拟视频编码器、系统桥、16 MB NAND 外形与独立成形引脚，补齐以太网、音频、系统管理和时钟器件。布局及封装为非功能性近似，明确不混入后期 HDMI/HANA 方案。",
+  "physical_components": 154,
+  "objects": [
+    {
+      "name": "UpperShellCut",
+      "label": "Original white concave upper shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 192,
+      "volume": 158507.1737034106,
+      "bounds": [
+        -152.0000001000002,
+        152.0000001,
+        -126.50000009999998,
+        127.00000010000001,
+        74.19999990000005,
+        82.80000010000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut",
+      "label": "Original white concave lower shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 192,
+      "volume": 158507.1737025701,
+      "bounds": [
+        -152.0000001000002,
+        152.0000001,
+        -126.5000001,
+        127.0000001,
+        0.19999990000002282,
+        8.800000099999954
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FaceplateCut007",
+      "label": "Original removable white faceplate008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 49,
+      "volume": 35908.41465654813,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        -129.0,
+        -126.99999999999999,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Faceplate",
+      "assembly": "Body",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DVDTrayFace",
+      "label": "Original Premium chrome DVD tray face",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2900.5168026350707,
+      "bounds": [
+        -137.0,
+        7.0,
+        -129.79999999999998,
+        -128.6,
+        49.5,
+        66.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DVDTrayFace",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor0",
+      "label": "Separate original memory-unit door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -132.0,
+        -88.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor0",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor1",
+      "label": "Separate original memory-unit door001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -78.0,
+        -34.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor1",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBFrontDoor",
+      "label": "Original dual-USB access flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 473.4477796076923,
+      "bounds": [
+        113.0,
+        145.0,
+        -129.79999999999998,
+        -128.6,
+        35.5,
+        48.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBFrontDoor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRWindow",
+      "label": "Separate infrared receiver window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 144.3292006587693,
+      "bounds": [
+        -147.0,
+        -139.0,
+        -129.79999999999998,
+        -128.6,
+        23.0,
+        39.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRWindow",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original circular console power button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 566.190394400566,
+      "bounds": [
+        65.2,
+        90.8,
+        -129.79999999999998,
+        -128.7,
+        29.2,
+        54.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRingCarrier",
+      "label": "Ring-of-light separator carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 300.68968685671337,
+      "bounds": [
+        61.65,
+        94.35,
+        -129.65,
+        -128.65,
+        25.65,
+        58.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRingCarrier",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant0",
+      "label": "Separate player-status light quadrant",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.81004145532257,
+      "bounds": [
+        78.8333125646508,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.7705298150655
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant1",
+      "label": "Separate player-status light quadrant001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322597,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.77052981506551
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant2",
+      "label": "Separate player-status light quadrant002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322583,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.1666874353492
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant2",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant3",
+      "label": "Separate player-status light quadrant003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322573,
+      "bounds": [
+        78.83331256465078,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.166687435349196
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant3",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SyncButton",
+      "label": "Original wireless synchronisation button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 39.94849218304775,
+      "bounds": [
+        18.6,
+        25.4,
+        -129.79999999999998,
+        -128.7,
+        26.6,
+        33.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SyncButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Original drive eject button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 73.12371060495589,
+      "bounds": [
+        -148.6,
+        -139.4,
+        -129.79999999999998,
+        -128.7,
+        53.4,
+        62.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayMark",
+      "label": "XBOX 360",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 149,
+      "volume": 0.49960443314673947,
+      "bounds": [
+        -93.85415268456376,
+        -69.89916936308725,
+        -129.8380001,
+        -129.8199999,
+        56.42859050402684,
+        60.131677952348994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayMark",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark0",
+      "label": "MEMORY UNIT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.13513710567627973,
+      "bounds": [
+        -123.79132760067114,
+        -108.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark1",
+      "label": "MEMORY UNIT001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.1351371056762796,
+      "bounds": [
+        -69.79132760067114,
+        -54.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkArc",
+      "label": "Power-button ring marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.1844900285820631,
+      "bounds": [
+        73.7,
+        82.3,
+        -129.838,
+        -129.82,
+        37.7,
+        45.522353790442665
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkArc",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkStem",
+      "label": "Power-button stem marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04124548667764667,
+      "bounds": [
+        77.75,
+        78.25,
+        -129.838,
+        -129.82,
+        42.699999999999996,
+        47.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkStem",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftEndGrilleCut",
+      "label": "Separate original gray end ventilation grille001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 400,
+      "volume": 22322.41645137551,
+      "bounds": [
+        -153.9,
+        -152.5,
+        -125.0,
+        125.0,
+        2.4999999999999964,
+        80.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftEndGrille",
+      "assembly": "Body",
+      "layer": -1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightEndGrilleCut",
+      "label": "Separate original gray end ventilation grille003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 400,
+      "volume": 22322.416451375564,
+      "bounds": [
+        152.5,
+        153.9,
+        -125.0,
+        125.0,
+        2.4999999999999964,
+        80.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightEndGrille",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Independent lower rubber support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        -141.0,
+        -129.0,
+        -102.0,
+        -92.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Independent lower rubber support001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        -141.0,
+        -129.0,
+        92.0,
+        102.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Independent lower rubber support002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        129.0,
+        141.0,
+        -102.0,
+        -92.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Independent lower rubber support003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        129.0,
+        141.0,
+        92.0,
+        102.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCaseCut003",
+      "label": "Original non-HDMI rear closure004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 273,
+      "volume": 32703.705115413246,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        127.19999999999999,
+        129.00000000000003,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCase",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearStudyPlate",
+      "label": "Rear identification study plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42.62283185307402,
+      "bounds": [
+        101.5,
+        142.5,
+        129.05,
+        129.13000000000002,
+        51.5,
+        64.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearStudyPlate",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearStudyMark",
+      "label": "XENON / CAD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 125,
+      "volume": 0.2120705617407465,
+      "bounds": [
+        119.09919453087248,
+        137.91556208053692,
+        129.1499999,
+        129.1680001,
+        57.74013422818792,
+        60.10255043557047
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearStudyMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChassisCut005",
+      "label": "Editable folded steel chassis floor007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 362,
+      "volume": 115955.12483056153,
+      "bounds": [
+        -144.0,
+        144.0000001,
+        -119.0000001,
+        121.0,
+        10.7,
+        72.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Chassis",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff0",
+      "label": "Separate motherboard support and screw guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        -128.0,
+        -122.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff0",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084644,
+      "bounds": [
+        -126.7,
+        -123.3,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew0",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff1",
+      "label": "Separate motherboard support and screw guide001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        -128.0,
+        -122.0,
+        87.0,
+        93.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff1",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084648,
+      "bounds": [
+        -126.7,
+        -123.3,
+        88.3,
+        91.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew1",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff2",
+      "label": "Separate motherboard support and screw guide002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        -58.0,
+        -52.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff2",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084648,
+      "bounds": [
+        -56.7,
+        -53.3,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew2",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff3",
+      "label": "Separate motherboard support and screw guide003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        12.0,
+        18.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff3",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.94086002508465,
+      "bounds": [
+        13.3,
+        16.7,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew3",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff4",
+      "label": "Separate motherboard support and screw guide004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        107.0,
+        113.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff4",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew4",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084639,
+      "bounds": [
+        108.3,
+        111.7,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew4",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff5",
+      "label": "Separate motherboard support and screw guide005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967814,
+      "bounds": [
+        127.0,
+        133.0,
+        17.0,
+        23.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff5",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew5",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084659,
+      "bounds": [
+        128.3,
+        131.7,
+        18.3,
+        21.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew5",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff6",
+      "label": "Separate motherboard support and screw guide006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        107.0,
+        113.0,
+        89.0,
+        95.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff6",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew6",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084644,
+      "bounds": [
+        108.3,
+        111.7,
+        90.3,
+        93.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew6",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff7",
+      "label": "Separate motherboard support and screw guide007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        22.0,
+        28.0,
+        67.0,
+        73.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff7",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew7",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.94086002508464,
+      "bounds": [
+        23.3,
+        26.7,
+        68.3,
+        71.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew7",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff8",
+      "label": "Separate motherboard support and screw guide008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967817,
+      "bounds": [
+        -58.0,
+        -52.0,
+        62.0,
+        68.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff8",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew8",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084646,
+      "bounds": [
+        -56.7,
+        -53.3,
+        63.3,
+        66.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew8",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainPCBCut001",
+      "label": "Original Xenon mainboard outline study002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 31,
+      "volume": 80146.29373068105,
+      "bounds": [
+        -137.0,
+        137.0,
+        -112.0,
+        114.0,
+        17.1,
+        18.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainPCB",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "pcb",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand0",
+      "label": "Independent plated mounting land study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        -127.3,
+        -122.7,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand0",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand1",
+      "label": "Independent plated mounting land study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        -127.3,
+        -122.7,
+        87.7,
+        92.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand1",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand2",
+      "label": "Independent plated mounting land study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872414,
+      "bounds": [
+        -57.3,
+        -52.7,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand2",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand3",
+      "label": "Independent plated mounting land study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872413,
+      "bounds": [
+        12.7,
+        17.300000000000004,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand3",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand4",
+      "label": "Independent plated mounting land study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        107.7,
+        112.3,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand4",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand5",
+      "label": "Independent plated mounting land study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.627690212187241,
+      "bounds": [
+        127.7,
+        132.3,
+        17.7,
+        22.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand5",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand6",
+      "label": "Independent plated mounting land study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        107.7,
+        112.3,
+        89.7,
+        94.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand6",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand7",
+      "label": "Independent plated mounting land study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        22.7,
+        27.3,
+        67.7,
+        72.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand7",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand8",
+      "label": "Independent plated mounting land study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872414,
+      "bounds": [
+        -57.3,
+        -52.7,
+        62.7,
+        67.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand8",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStudyMark",
+      "label": "XENON / CAD001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 125,
+      "volume": 0.25238149496419404,
+      "bounds": [
+        -18.907885906040267,
+        1.6190605026845606,
+        -104.2834899328859,
+        -101.70630862483222,
+        18.5199999,
+        18.5380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStudyMark",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "XenonCPU",
+      "label": "Separate Xenon CPU package envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1271.5150176727063,
+      "bounds": [
+        28.0,
+        62.0,
+        -37.0,
+        -3.0,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "XenonCPU",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "ventgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "XenonCPUSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363077,
+      "bounds": [
+        30.31,
+        59.69,
+        -34.69,
+        -5.31,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "XenonCPUSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUExposedDie",
+      "label": "Xenon exposed die study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 388.7587964473722,
+      "bounds": [
+        36.0,
+        54.0,
+        -29.0,
+        -11.0,
+        20.15,
+        21.349999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUExposedDie",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "XenosGPU",
+      "label": "Separate Xenos GPU and eDRAM package envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1801.7150176727062,
+      "bounds": [
+        -58.0,
+        -16.0,
+        -39.5,
+        -0.5,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "XenosGPU",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "ventgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "XenosGPUSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363093,
+      "bounds": [
+        -55.69,
+        -18.31,
+        -37.19,
+        -2.81,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "XenosGPUSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GPUExposedDie",
+      "label": "Xenos main die study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 532.3622300767582,
+      "bounds": [
+        -48.0,
+        -26.0,
+        -37.0,
+        -15.0,
+        20.15,
+        21.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GPUExposedDie",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EDRAMDie",
+      "label": "Separate eDRAM die on Xenos package",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 92.37875441817637,
+      "bounds": [
+        -43.0,
+        -31.0,
+        -11.5,
+        -4.5,
+        20.15,
+        21.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EDRAMDie",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop0",
+      "label": "Upper-side GDDR3 package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.21501767270544,
+      "bounds": [
+        -85.5,
+        -72.5,
+        -17.5,
+        -6.5,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop0SolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363073,
+      "bounds": [
+        -83.19,
+        -74.81,
+        -15.19,
+        -8.81,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop0SolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottom0",
+      "label": "Reverse-side GDDR3 package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.262230076758,
+      "bounds": [
+        -85.5,
+        -72.5,
+        -17.5,
+        -6.5,
+        15.5,
+        16.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottom0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottomSolder0",
+      "label": "Simplified reverse memory attachment grid",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 30,
+      "volume": 0.6173857882834667,
+      "bounds": [
+        -83.545,
+        -74.455,
+        -15.57,
+        -8.43,
+        16.659999999999997,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottomSolder0",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop1",
+      "label": "Upper-side GDDR3 package study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.21501767270544,
+      "bounds": [
+        -85.5,
+        -72.5,
+        -49.5,
+        -38.5,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop1SolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.838778368936315,
+      "bounds": [
+        -83.19,
+        -74.81,
+        -47.19,
+        -40.81,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop1SolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottom1",
+      "label": "Reverse-side GDDR3 package study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.262230076758,
+      "bounds": [
+        -85.5,
+        -72.5,
+        -49.5,
+        -38.5,
+        15.5,
+        16.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottom1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottomSolder1",
+      "label": "Simplified reverse memory attachment grid001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 30,
+      "volume": 0.6173857882834675,
+      "bounds": [
+        -83.545,
+        -74.455,
+        -47.57,
+        -40.43,
+        16.659999999999997,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottomSolder1",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop2",
+      "label": "Upper-side GDDR3 package study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.21501767270541,
+      "bounds": [
+        -54.5,
+        -41.5,
+        -73.5,
+        -62.5,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop2SolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.838778368936297,
+      "bounds": [
+        -52.19,
+        -43.81,
+        -71.19,
+        -64.81,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop2SolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottom2",
+      "label": "Reverse-side GDDR3 package study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.26223007675802,
+      "bounds": [
+        -54.5,
+        -41.5,
+        -73.5,
+        -62.5,
+        15.5,
+        16.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottom2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottomSolder2",
+      "label": "Simplified reverse memory attachment grid002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 30,
+      "volume": 0.6173857882834658,
+      "bounds": [
+        -52.545,
+        -43.455,
+        -71.57000000000001,
+        -64.42999999999999,
+        16.659999999999997,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottomSolder2",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop3",
+      "label": "Upper-side GDDR3 package study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.21501767270541,
+      "bounds": [
+        -22.5,
+        -9.5,
+        -73.5,
+        -62.5,
+        19.0,
+        20.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMTop3SolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363033,
+      "bounds": [
+        -20.19,
+        -11.81,
+        -71.19,
+        -64.81,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMTop3SolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottom3",
+      "label": "Reverse-side GDDR3 package study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 157.262230076758,
+      "bounds": [
+        -22.5,
+        -9.5,
+        -73.5,
+        -62.5,
+        15.5,
+        16.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottom3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RAMBottomSolder3",
+      "label": "Simplified reverse memory attachment grid003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 30,
+      "faces": 30,
+      "volume": 0.6173857882834658,
+      "bounds": [
+        -20.545,
+        -11.455,
+        -71.57000000000001,
+        -64.42999999999999,
+        16.659999999999997,
+        17.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RAMBottomSolder3",
+      "assembly": "Mainboard",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Southbridge",
+      "label": "Original Xenon southbridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 709.7188805057643,
+      "bounds": [
+        -118.0,
+        -92.0,
+        12.0,
+        38.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Southbridge",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SouthbridgeSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363095,
+      "bounds": [
+        -115.69,
+        -94.31,
+        14.31,
+        35.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SouthbridgeSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ANA",
+      "label": "Original ANA analog video encoder",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 268.71888050576433,
+      "bounds": [
+        -63.0,
+        -47.0,
+        45.0,
+        61.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ANA",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ANASolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.838778368936309,
+      "bounds": [
+        -60.69,
+        -49.31,
+        47.31,
+        58.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ANASolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPHY",
+      "label": "Ethernet controller study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 125.91888050576425,
+      "bounds": [
+        -126.0,
+        -114.0,
+        67.0,
+        77.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPHY",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPHYSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363024,
+      "bounds": [
+        -123.69,
+        -116.31,
+        69.31,
+        74.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPHYSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDAC",
+      "label": "Separate audio DAC study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 67.11888050576424,
+      "bounds": [
+        -102.0,
+        -94.0,
+        69.0,
+        77.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDAC",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AudioDACSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363018,
+      "bounds": [
+        -99.69,
+        -96.31,
+        71.31,
+        74.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AudioDACSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SMC",
+      "label": "System management package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 151.11888050576425,
+      "bounds": [
+        -16.0,
+        -4.0,
+        49.0,
+        61.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SMC",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SMCSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363166,
+      "bounds": [
+        -13.69,
+        -6.31,
+        51.31,
+        58.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SMCSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBLogic",
+      "label": "Front USB support package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 83.91888050576425,
+      "bounds": [
+        15.0,
+        25.0,
+        29.0,
+        37.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBLogic",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBLogicSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363162,
+      "bounds": [
+        17.31,
+        22.69,
+        31.31,
+        34.69,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBLogicSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDLogic",
+      "label": "Storage support package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 50.318880505764255,
+      "bounds": [
+        -107.0,
+        -99.0,
+        -82.0,
+        -76.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDLogic",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDDLogicSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363022,
+      "bounds": [
+        -104.69,
+        -101.31,
+        -80.69,
+        -77.31,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDDLogicSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryLogic",
+      "label": "Memory-unit support package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 67.11888050576425,
+      "bounds": [
+        -81.0,
+        -73.0,
+        -88.0,
+        -80.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryLogic",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryLogicSolderGrid",
+      "label": "Simplified BGA support balls; not a physical pinout013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 64,
+      "faces": 64,
+      "volume": 1.8387783689363022,
+      "bounds": [
+        -78.69,
+        -75.31,
+        -85.69,
+        -82.31,
+        18.57,
+        18.950000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryLogicSolderGrid",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlash",
+      "label": "NAND flash package study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.94366701789187,
+      "bounds": [
+        -110.5,
+        -99.5,
+        -59.0,
+        -39.0,
+        19.0,
+        20.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlash",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_0",
+      "label": "Separate formed flash lead study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -57.19,
+        -56.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_1",
+      "label": "Separate formed flash lead study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -56.49,
+        -56.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_2",
+      "label": "Separate formed flash lead study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -55.79,
+        -55.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_3",
+      "label": "Separate formed flash lead study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -55.09,
+        -54.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_4",
+      "label": "Separate formed flash lead study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -54.39,
+        -54.11,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_5",
+      "label": "Separate formed flash lead study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -53.69,
+        -53.41,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_6",
+      "label": "Separate formed flash lead study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -52.99,
+        -52.71,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_7",
+      "label": "Separate formed flash lead study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -52.29,
+        -52.01,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_8",
+      "label": "Separate formed flash lead study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -51.59,
+        -51.31,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_9",
+      "label": "Separate formed flash lead study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -50.89,
+        -50.61,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_10",
+      "label": "Separate formed flash lead study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -50.19,
+        -49.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_11",
+      "label": "Separate formed flash lead study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -49.49,
+        -49.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_12",
+      "label": "Separate formed flash lead study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -48.79,
+        -48.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_13",
+      "label": "Separate formed flash lead study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -48.09,
+        -47.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_14",
+      "label": "Separate formed flash lead study014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -47.39,
+        -47.11,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_15",
+      "label": "Separate formed flash lead study015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -46.69,
+        -46.41,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_16",
+      "label": "Separate formed flash lead study016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -45.99,
+        -45.71,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_17",
+      "label": "Separate formed flash lead study017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -45.29,
+        -45.01,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_18",
+      "label": "Separate formed flash lead study018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -44.59,
+        -44.31,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_19",
+      "label": "Separate formed flash lead study019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -43.89,
+        -43.61,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_20",
+      "label": "Separate formed flash lead study020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -43.19,
+        -42.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_21",
+      "label": "Separate formed flash lead study021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -42.49,
+        -42.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_22",
+      "label": "Separate formed flash lead study022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -41.79,
+        -41.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead_1_23",
+      "label": "Separate formed flash lead study023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999943,
+      "bounds": [
+        -112.02000000000001,
+        -110.56,
+        -41.09,
+        -40.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead-1_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_0",
+      "label": "Separate formed flash lead study024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999946,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -57.19,
+        -56.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_1",
+      "label": "Separate formed flash lead study025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -56.49,
+        -56.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_2",
+      "label": "Separate formed flash lead study026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -55.79,
+        -55.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_3",
+      "label": "Separate formed flash lead study027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -55.09,
+        -54.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_4",
+      "label": "Separate formed flash lead study028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -54.39,
+        -54.11,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_5",
+      "label": "Separate formed flash lead study029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -53.69,
+        -53.41,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_6",
+      "label": "Separate formed flash lead study030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -52.99,
+        -52.71,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_7",
+      "label": "Separate formed flash lead study031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -52.29,
+        -52.01,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_8",
+      "label": "Separate formed flash lead study032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999946,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -51.59,
+        -51.31,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_9",
+      "label": "Separate formed flash lead study033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -50.89,
+        -50.61,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_10",
+      "label": "Separate formed flash lead study034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -50.19,
+        -49.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_11",
+      "label": "Separate formed flash lead study035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -49.49,
+        -49.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_12",
+      "label": "Separate formed flash lead study036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -48.79,
+        -48.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_13",
+      "label": "Separate formed flash lead study037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -48.09,
+        -47.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_14",
+      "label": "Separate formed flash lead study038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -47.39,
+        -47.11,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_15",
+      "label": "Separate formed flash lead study039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -46.69,
+        -46.41,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_16",
+      "label": "Separate formed flash lead study040",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -45.99,
+        -45.71,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_17",
+      "label": "Separate formed flash lead study041",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -45.29,
+        -45.01,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_18",
+      "label": "Separate formed flash lead study042",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -44.59,
+        -44.31,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_19",
+      "label": "Separate formed flash lead study043",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -43.89,
+        -43.61,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_20",
+      "label": "Separate formed flash lead study044",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -43.19,
+        -42.91,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_21",
+      "label": "Separate formed flash lead study045",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -42.49,
+        -42.21,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_22",
+      "label": "Separate formed flash lead study046",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999946,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -41.79,
+        -41.51,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDFlashLead1_23",
+      "label": "Separate formed flash lead study047",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08780799999999944,
+      "bounds": [
+        -99.44,
+        -97.97999999999999,
+        -41.09,
+        -40.81,
+        18.72,
+        19.38
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDFlashLead1_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockCrystal",
+      "label": "Separate oscillator can",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 56.590512960621595,
+      "bounds": [
+        -79.0,
+        -71.0,
+        46.5,
+        49.5,
+        19.05,
+        21.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockCrystal",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ClockFoot",
+      "label": "Oscillator insulating foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 8.901823001646932,
+      "bounds": [
+        -79.25,
+        -70.75,
+        46.25,
+        49.75,
+        18.6,
+        18.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ClockFoot",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUMark",
+      "label": "XENON",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.08778002510845624,
+      "bounds": [
+        32.069085570469795,
+        40.12272651006712,
+        -33.03382560335571,
+        -31.27973144362416,
+        20.1199999,
+        20.138000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUMark",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GPUMark",
+      "label": "XENOS",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.08282165695499456,
+      "bounds": [
+        -54.930914429530205,
+        -47.0414931885906,
+        -36.03382560335571,
+        -34.27973144362416,
+        20.1199999,
+        20.138000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GPUMark",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ANAMark",
+      "label": "ANA",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 38,
+      "volume": 0.05115585252775834,
+      "bounds": [
+        -58.98187919463088,
+        -54.11281879194631,
+        52.0,
+        53.691275167785236,
+        20.12,
+        20.138
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ANAMark",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NANDMark",
+      "label": "NAND",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 53,
+      "volume": 0.07405308824278829,
+      "bounds": [
+        -108.77235738255034,
+        -102.2965099671141,
+        -49.0000001,
+        -47.30872473221476,
+        20.0699999,
+        20.088000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NANDMark",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox360/output/iterations/08_original_ana_southbridge_nand_and_io_logic.FCStd",
+  "views": [
+    "devices/xbox360/output/previews/08_original_ana_southbridge_nand_and_io_logic_hero.png",
+    "devices/xbox360/output/previews/08_original_ana_southbridge_nand_and_io_logic_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,1635 @@
+{
+  "iteration": 6,
+  "slug": "native_xenon_board_outline_and_mounting",
+  "summary": "建立原生 Xenon 主板与后部双风扇凹口，保留九组机壳固定孔、CPU/GPU 独立夹具通道及安装焊盘。板外形和孔位为照片指导近似，不提供制造 Gerber 或实际电路。",
+  "physical_components": 60,
+  "objects": [
+    {
+      "name": "UpperShellCut",
+      "label": "Original white concave upper shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 192,
+      "volume": 158507.1737034106,
+      "bounds": [
+        -152.0000001000002,
+        152.0000001,
+        -126.50000009999998,
+        127.00000010000001,
+        74.19999990000005,
+        82.80000010000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellCut",
+      "label": "Original white concave lower shell001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 192,
+      "volume": 158507.1737025701,
+      "bounds": [
+        -152.0000001000002,
+        152.0000001,
+        -126.5000001,
+        127.0000001,
+        0.19999990000002282,
+        8.800000099999954
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FaceplateCut007",
+      "label": "Original removable white faceplate008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 49,
+      "volume": 35908.41465654813,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        -129.0,
+        -126.99999999999999,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Faceplate",
+      "assembly": "Body",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DVDTrayFace",
+      "label": "Original Premium chrome DVD tray face",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2900.5168026350707,
+      "bounds": [
+        -137.0,
+        7.0,
+        -129.79999999999998,
+        -128.6,
+        49.5,
+        66.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DVDTrayFace",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor0",
+      "label": "Separate original memory-unit door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -132.0,
+        -88.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor0",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor1",
+      "label": "Separate original memory-unit door001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -78.0,
+        -34.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor1",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBFrontDoor",
+      "label": "Original dual-USB access flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 473.4477796076923,
+      "bounds": [
+        113.0,
+        145.0,
+        -129.79999999999998,
+        -128.6,
+        35.5,
+        48.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBFrontDoor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRWindow",
+      "label": "Separate infrared receiver window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 144.3292006587693,
+      "bounds": [
+        -147.0,
+        -139.0,
+        -129.79999999999998,
+        -128.6,
+        23.0,
+        39.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRWindow",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original circular console power button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 566.190394400566,
+      "bounds": [
+        65.2,
+        90.8,
+        -129.79999999999998,
+        -128.7,
+        29.2,
+        54.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRingCarrier",
+      "label": "Ring-of-light separator carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 300.68968685671337,
+      "bounds": [
+        61.65,
+        94.35,
+        -129.65,
+        -128.65,
+        25.65,
+        58.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRingCarrier",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant0",
+      "label": "Separate player-status light quadrant",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.81004145532257,
+      "bounds": [
+        78.8333125646508,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.7705298150655
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant1",
+      "label": "Separate player-status light quadrant001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322597,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.77052981506551
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant2",
+      "label": "Separate player-status light quadrant002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322583,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.1666874353492
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant2",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant3",
+      "label": "Separate player-status light quadrant003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322573,
+      "bounds": [
+        78.83331256465078,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.166687435349196
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant3",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SyncButton",
+      "label": "Original wireless synchronisation button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 39.94849218304775,
+      "bounds": [
+        18.6,
+        25.4,
+        -129.79999999999998,
+        -128.7,
+        26.6,
+        33.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SyncButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Original drive eject button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 73.12371060495589,
+      "bounds": [
+        -148.6,
+        -139.4,
+        -129.79999999999998,
+        -128.7,
+        53.4,
+        62.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayMark",
+      "label": "XBOX 360",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 149,
+      "volume": 0.49960443314673947,
+      "bounds": [
+        -93.85415268456376,
+        -69.89916936308725,
+        -129.8380001,
+        -129.8199999,
+        56.42859050402684,
+        60.131677952348994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayMark",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark0",
+      "label": "MEMORY UNIT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.13513710567627973,
+      "bounds": [
+        -123.79132760067114,
+        -108.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark1",
+      "label": "MEMORY UNIT001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.1351371056762796,
+      "bounds": [
+        -69.79132760067114,
+        -54.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkArc",
+      "label": "Power-button ring marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.1844900285820631,
+      "bounds": [
+        73.7,
+        82.3,
+        -129.838,
+        -129.82,
+        37.7,
+        45.522353790442665
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkArc",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkStem",
+      "label": "Power-button stem marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04124548667764667,
+      "bounds": [
+        77.75,
+        78.25,
+        -129.838,
+        -129.82,
+        42.699999999999996,
+        47.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkStem",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftEndGrilleCut",
+      "label": "Separate original gray end ventilation grille001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 400,
+      "volume": 22322.41645137551,
+      "bounds": [
+        -153.9,
+        -152.5,
+        -125.0,
+        125.0,
+        2.4999999999999964,
+        80.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftEndGrille",
+      "assembly": "Body",
+      "layer": -1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightEndGrilleCut",
+      "label": "Separate original gray end ventilation grille003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 400,
+      "volume": 22322.416451375564,
+      "bounds": [
+        152.5,
+        153.9,
+        -125.0,
+        125.0,
+        2.4999999999999964,
+        80.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightEndGrille",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Independent lower rubber support",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        -141.0,
+        -129.0,
+        -102.0,
+        -92.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Independent lower rubber support001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        -141.0,
+        -129.0,
+        92.0,
+        102.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Independent lower rubber support002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        129.0,
+        141.0,
+        -102.0,
+        -92.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Independent lower rubber support003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 160.48893571891068,
+      "bounds": [
+        129.0,
+        141.0,
+        92.0,
+        102.0,
+        -0.6273588988919672,
+        0.7726411011080327
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearCaseCut003",
+      "label": "Original non-HDMI rear closure004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 273,
+      "volume": 32703.705115413246,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        127.19999999999999,
+        129.00000000000003,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearCase",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearStudyPlate",
+      "label": "Rear identification study plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42.62283185307402,
+      "bounds": [
+        101.5,
+        142.5,
+        129.05,
+        129.13000000000002,
+        51.5,
+        64.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearStudyPlate",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearStudyMark",
+      "label": "XENON / CAD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 125,
+      "volume": 0.2120705617407465,
+      "bounds": [
+        119.09919453087248,
+        137.91556208053692,
+        129.1499999,
+        129.1680001,
+        57.74013422818792,
+        60.10255043557047
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearStudyMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChassisCut005",
+      "label": "Editable folded steel chassis floor007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 362,
+      "volume": 115955.12483056153,
+      "bounds": [
+        -144.0,
+        144.0000001,
+        -119.0000001,
+        121.0,
+        10.7,
+        72.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Chassis",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff0",
+      "label": "Separate motherboard support and screw guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        -128.0,
+        -122.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff0",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew0",
+      "label": "Cross-head fastener",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084644,
+      "bounds": [
+        -126.7,
+        -123.3,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew0",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff1",
+      "label": "Separate motherboard support and screw guide001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        -128.0,
+        -122.0,
+        87.0,
+        93.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff1",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew1",
+      "label": "Cross-head fastener001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084648,
+      "bounds": [
+        -126.7,
+        -123.3,
+        88.3,
+        91.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew1",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff2",
+      "label": "Separate motherboard support and screw guide002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        -58.0,
+        -52.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff2",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew2",
+      "label": "Cross-head fastener002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084648,
+      "bounds": [
+        -56.7,
+        -53.3,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew2",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff3",
+      "label": "Separate motherboard support and screw guide003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        12.0,
+        18.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff3",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew3",
+      "label": "Cross-head fastener003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.94086002508465,
+      "bounds": [
+        13.3,
+        16.7,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew3",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff4",
+      "label": "Separate motherboard support and screw guide004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        107.0,
+        113.0,
+        -96.0,
+        -90.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff4",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew4",
+      "label": "Cross-head fastener004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084639,
+      "bounds": [
+        108.3,
+        111.7,
+        -94.7,
+        -91.3,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew4",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff5",
+      "label": "Separate motherboard support and screw guide005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967814,
+      "bounds": [
+        127.0,
+        133.0,
+        17.0,
+        23.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff5",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew5",
+      "label": "Cross-head fastener005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084659,
+      "bounds": [
+        128.3,
+        131.7,
+        18.3,
+        21.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew5",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff6",
+      "label": "Separate motherboard support and screw guide006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.5978879896782,
+      "bounds": [
+        107.0,
+        113.0,
+        89.0,
+        95.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff6",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew6",
+      "label": "Cross-head fastener006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084644,
+      "bounds": [
+        108.3,
+        111.7,
+        90.3,
+        93.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew6",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff7",
+      "label": "Separate motherboard support and screw guide007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967823,
+      "bounds": [
+        22.0,
+        28.0,
+        67.0,
+        73.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff7",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew7",
+      "label": "Cross-head fastener007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.94086002508464,
+      "bounds": [
+        23.3,
+        26.7,
+        68.3,
+        71.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew7",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStandoff8",
+      "label": "Separate motherboard support and screw guide008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 120.59788798967817,
+      "bounds": [
+        -58.0,
+        -52.0,
+        62.0,
+        68.0,
+        11.7,
+        16.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStandoff8",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardScrew8",
+      "label": "Cross-head fastener008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 11.940860025084646,
+      "bounds": [
+        -56.7,
+        -53.3,
+        63.3,
+        66.7,
+        10.15,
+        17.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardScrew8",
+      "assembly": "Frame",
+      "layer": -5,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainPCBCut001",
+      "label": "Original Xenon mainboard outline study002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 31,
+      "volume": 80146.29373068105,
+      "bounds": [
+        -137.0,
+        137.0,
+        -112.0,
+        114.0,
+        17.1,
+        18.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainPCB",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "pcb",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand0",
+      "label": "Independent plated mounting land study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        -127.3,
+        -122.7,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand0",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand1",
+      "label": "Independent plated mounting land study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        -127.3,
+        -122.7,
+        87.7,
+        92.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand1",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand2",
+      "label": "Independent plated mounting land study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872414,
+      "bounds": [
+        -57.3,
+        -52.7,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand2",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand3",
+      "label": "Independent plated mounting land study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872413,
+      "bounds": [
+        12.7,
+        17.300000000000004,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand3",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand4",
+      "label": "Independent plated mounting land study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        107.7,
+        112.3,
+        -95.3,
+        -90.7,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand4",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand5",
+      "label": "Independent plated mounting land study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.627690212187241,
+      "bounds": [
+        127.7,
+        132.3,
+        17.7,
+        22.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand5",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand6",
+      "label": "Independent plated mounting land study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        107.7,
+        112.3,
+        89.7,
+        94.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand6",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand7",
+      "label": "Independent plated mounting land study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872412,
+      "bounds": [
+        22.7,
+        27.3,
+        67.7,
+        72.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand7",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardMountLand8",
+      "label": "Independent plated mounting land study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.6276902121872414,
+      "bounds": [
+        -57.3,
+        -52.7,
+        62.7,
+        67.3,
+        18.52,
+        18.58
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardMountLand8",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardStudyMark",
+      "label": "XENON / CAD001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 125,
+      "volume": 0.25238149496419404,
+      "bounds": [
+        -18.907885906040267,
+        1.6190605026845606,
+        -104.2834899328859,
+        -101.70630862483222,
+        18.5199999,
+        18.5380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardStudyMark",
+      "assembly": "Mainboard",
+      "layer": -1,
+      "material": "white",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox360/output/iterations/06_native_xenon_board_outline_and_mounting.FCStd",
+  "views": [
+    "devices/xbox360/output/previews/06_native_xenon_board_outline_and_mounting_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "artifact": "devices/xbox360/output/drawings/Xbox360_Drawings.pdf",
+  "artifact_sha256": "cfd4a9ae5deb6826902e238f3efd5b3671f076ac1ebf50b00355777be550367d",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "isolated reviewer agent /root/ps3_pdf_review, fresh Xbox 360 review",
+  "review_scope": {
+    "method": "Independently read content.json brief/preserve and Kami delivery coverage log, opened all 12 page PNGs using view_image, and inspected PDF page sizes and actual SHA256. No desktop actions, CAD changes or regeneration.",
+    "inputs": [
+      ".local/kami-runtime/skills/kami/SKILL.md",
+      "devices/xbox360/output/drawings/content.json",
+      ".local/xbox360-isolated/kami_delivery.log",
+      "devices/xbox360/output/drawings/Xbox360_Drawings-visual/page-01.png through page-12.png"
+    ],
+    "limitations": "Presentation and consistency with supplied brief only. Native CAD reload, BRep section-generation correctness, full component-ID correspondence across CAD/STEP/web, and historical hardware/source accuracy were not independently reproduced or re-audited."
+  },
+  "acceptance_results": {
+    "page_contract": "12 pages; all 1190.55 × 841.89 pt (A3 landscape).",
+    "delivery_log": "READY, 0 errors, 1 orphan warning, 0 gaps. Content coverage, fonts, density, placeholders and page count reported OK.",
+    "visual": "All pages individually inspected. No P0/P1 clipping, label overlap, missing glyphs, stranded headings, split tables, or blocking unreadability observed. Dimensions and captions fit their panels.",
+    "preserve": "Visible text/figures retain original non-HDMI Xenon, removable 20 GB drive, 2005 wireless controller with separate RF board, unequal motors and two AA cells, controller-end headset volume/mute adapter, 203 W supply, six-RCA AV cable, LAN and grounded North-American AC. Short display cables and approximate/nonfunctional internals are clearly stated.",
+    "counts": "35 source stages, 2005 component entries and 3141 solids are consistent on pages 1 and 12; page 11 keeps entries distinct from solids.",
+    "specific_checks": "Page 7 title and motherboard views are unobstructed. Page 8 power-supply internals and dimension are visible. Page 9 separately captions and shows controller front input and rear control/RF views.",
+    "geometry_limit": "CAD-derived projections and physical sections are presented and labeled, but native model-derived dimension reload was not re-tested in this visual review."
+  },
+  "findings": [
+    {
+      "severity": "P3",
+      "page": 10,
+      "element": "Upper-right cable overview",
+      "finding": "At the labeled 0.142:1 scale, cable connector details are small relative to available panel area. Cable families and six RCA ends remain distinguishable, and the AV connector is enlarged separately below; nonblocking for this study booklet."
+    },
+    {
+      "severity": "INFO",
+      "page": [
+        6,
+        11,
+        12
+      ],
+      "element": "Orphan warnings in delivery log",
+      "finding": "The flagged titles/table header are visibly attached to their page content. No stranded heading or split table was found."
+    }
+  ],
+  "p0_p1_findings": 0
+}

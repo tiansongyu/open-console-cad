@@ -1,0 +1,583 @@
+{
+  "iteration": 2,
+  "slug": "original_faceplate_doors_and_ring_of_light",
+  "summary": "加工原版 DVD 托盘、双记忆单元门、双 USB 翻门、红外窗、配对与出盘键，建立独立电源键及四分区导光。Premium 镀铬托盘和细标识独立建模；门后插座和电子板后续补齐。",
+  "physical_components": 21,
+  "objects": [
+    {
+      "name": "UpperShellExtrusion",
+      "label": "Original white concave upper shell",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 161834.39999999228,
+      "bounds": [
+        -152.0000000000002,
+        152.0,
+        -126.49999999999999,
+        127.00000000000001,
+        74.20000000000005,
+        82.80000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShellExtrusion",
+      "label": "Original white concave lower shell",
+      "type": "Part::Extrusion",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 161834.39999999257,
+      "bounds": [
+        -152.0000000000002,
+        152.0,
+        -126.5,
+        127.0,
+        0.2,
+        8.799999999999955
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FaceplateCut007",
+      "label": "Original removable white faceplate008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 49,
+      "volume": 35908.41465654813,
+      "bounds": [
+        -154.50000000000003,
+        154.50000000000003,
+        -129.0,
+        -126.99999999999999,
+        0.0,
+        83.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Faceplate",
+      "assembly": "Body",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DVDTrayFace",
+      "label": "Original Premium chrome DVD tray face",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2900.5168026350707,
+      "bounds": [
+        -137.0,
+        7.0,
+        -129.79999999999998,
+        -128.6,
+        49.5,
+        66.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DVDTrayFace",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor0",
+      "label": "Separate original memory-unit door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -132.0,
+        -88.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor0",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryDoor1",
+      "label": "Separate original memory-unit door001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 511.5185789489224,
+      "bounds": [
+        -78.0,
+        -34.0,
+        -129.79999999999998,
+        -128.6,
+        25.0,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryDoor1",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "USBFrontDoor",
+      "label": "Original dual-USB access flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 473.4477796076923,
+      "bounds": [
+        113.0,
+        145.0,
+        -129.79999999999998,
+        -128.6,
+        35.5,
+        48.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "USBFrontDoor",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRWindow",
+      "label": "Separate infrared receiver window",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 144.3292006587693,
+      "bounds": [
+        -147.0,
+        -139.0,
+        -129.79999999999998,
+        -128.6,
+        23.0,
+        39.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRWindow",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original circular console power button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 566.190394400566,
+      "bounds": [
+        65.2,
+        90.8,
+        -129.79999999999998,
+        -128.7,
+        29.2,
+        54.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRingCarrier",
+      "label": "Ring-of-light separator carrier",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 300.68968685671337,
+      "bounds": [
+        61.65,
+        94.35,
+        -129.65,
+        -128.65,
+        25.65,
+        58.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRingCarrier",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant0",
+      "label": "Separate player-status light quadrant",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.81004145532257,
+      "bounds": [
+        78.8333125646508,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.7705298150655
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant1",
+      "label": "Separate player-status light quadrant001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322597,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        42.8333125646508,
+        57.77052981506551
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant2",
+      "label": "Separate player-status light quadrant002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322583,
+      "bounds": [
+        62.2294701849345,
+        77.1666874353492,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.1666874353492
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant2",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerQuadrant3",
+      "label": "Separate player-status light quadrant003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 29.810041455322573,
+      "bounds": [
+        78.83331256465078,
+        93.7705298150655,
+        -130.37,
+        -129.72,
+        26.2294701849345,
+        41.166687435349196
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerQuadrant3",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "xboxgreen",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SyncButton",
+      "label": "Original wireless synchronisation button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 39.94849218304775,
+      "bounds": [
+        18.6,
+        25.4,
+        -129.79999999999998,
+        -128.7,
+        26.6,
+        33.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SyncButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "ivory",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Original drive eject button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 73.12371060495589,
+      "bounds": [
+        -148.6,
+        -139.4,
+        -129.79999999999998,
+        -128.7,
+        53.4,
+        62.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayMark",
+      "label": "XBOX 360",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 149,
+      "volume": 0.49960443314673947,
+      "bounds": [
+        -93.85415268456376,
+        -69.89916936308725,
+        -129.8380001,
+        -129.8199999,
+        56.42859050402684,
+        60.131677952348994
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayMark",
+      "assembly": "Optical",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark0",
+      "label": "MEMORY UNIT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.13513710567627973,
+      "bounds": [
+        -123.79132760067114,
+        -108.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark0",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryMark1",
+      "label": "MEMORY UNIT001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 10,
+      "faces": 142,
+      "volume": 0.1351371056762796,
+      "bounds": [
+        -69.79132760067114,
+        -54.91917994966443,
+        -129.8380001,
+        -129.8199999,
+        29.3689931885906,
+        30.976912851677852
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryMark1",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkArc",
+      "label": "Power-button ring marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.1844900285820631,
+      "bounds": [
+        73.7,
+        82.3,
+        -129.838,
+        -129.82,
+        37.7,
+        45.522353790442665
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkArc",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMarkStem",
+      "label": "Power-button stem marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.04124548667764667,
+      "bounds": [
+        77.75,
+        78.25,
+        -129.838,
+        -129.82,
+        42.699999999999996,
+        47.300000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMarkStem",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "ventgray",
+      "fidelity": "Approximate original white Xenon enclosure, not manufacturing dimensions",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox360/output/iterations/02_original_faceplate_doors_and_ring_of_light.FCStd",
+  "views": [
+    "devices/xbox360/output/previews/02_original_faceplate_doors_and_ring_of_light_hero.png",
+    "devices/xbox360/output/previews/02_original_faceplate_doors_and_ring_of_light_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

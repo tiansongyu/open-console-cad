@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "method": "Exact NURBS surface conversion for selected STEP export proxies; native CAD remains unchanged. Final exported files require independent full round-trip audit.",
+  "conversions": [
+    {
+      "file": "Xbox360_FullKit.step",
+      "part_id": "CPUHeatpipe",
+      "checks": [
+        {
+          "bbox_max_delta_mm": 1.0000017525158e-07,
+          "volume_delta_mm3": 12.429250470564511,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "file": "Xbox360_Console.step",
+      "part_id": "CPUHeatpipe",
+      "checks": [
+        {
+          "bbox_max_delta_mm": 1.0000017525158e-07,
+          "volume_delta_mm3": 12.429250470564511,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "file": "Xbox360_Exploded.step",
+      "part_id": "CPUHeatpipe",
+      "checks": [
+        {
+          "bbox_max_delta_mm": 1.0000017525158e-07,
+          "volume_delta_mm3": 12.429250471178193,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

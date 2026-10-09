@@ -1,0 +1,21 @@
+"""Rebuild the current original Xbox 360 study."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+if str(repo/'tools') not in sys.path:sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,geometry,xbox360
+for module in [geometry,core,xbox360]:importlib.reload(module)
+model=core.Study(repo,'xbox360');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for stage in sorted(xbox360.STAGES):xbox360.STAGES[stage](model)
+model.doc.saveAs(str(model.out/'Xbox360_Study.FCStd'))
+if hasattr(xbox360,'finalize'):xbox360.finalize(model)
+
+# Preserve the swept heatpipe exactly through STEP serialization.
+from export_step_nurbs import export_device
+export_device(repo,'xbox360',['CPUHeatpipe'],output_dir=model.out)
+from compact_step import compact
+import json
+formatted=[compact(model.out/name) for name in ['Xbox360_FullKit.step','Xbox360_Console.step','Xbox360_Exploded.step']]
+for row in formatted: row['file']=str(Path(row['file']).relative_to(repo))
+(model.out/'reports/step_formatting.json').write_text(json.dumps(dict(passed=True,scope='Whitespace formatting only; run full STEP geometry audit separately.',files=formatted),indent=2)+'\n')
