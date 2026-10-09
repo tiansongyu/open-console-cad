@@ -1,0 +1,72 @@
+{
+  "id": "gamewatch",
+  "title": "Nintendo Game & Watch Donkey Kong",
+  "prefix": "GameWatchDK52",
+  "model": "DK-52 · Original 1982",
+  "family": "clamshell",
+  "width": 115,
+  "height": 73,
+  "closed_depth": 23,
+  "base_depth": 11.2,
+  "hinge_y": 34,
+  "hinge_z": 11.5,
+  "default_opening": 170,
+  "color": [
+    0.78,
+    0.28,
+    0.055
+  ],
+  "stages": 15,
+  "parameter_basis": "Museums Victoria measured specimen HT38633; approximate reference envelope, not factory dimensions",
+  "exterior_fidelity": "Museum specimen envelope; approximate local geometry",
+  "sources": [
+    {
+      "url": "https://collections.museumsvictoria.com.au/items/2095501",
+      "role": "Primary museum measured closed and open specimen dimensions, three photographs"
+    },
+    {
+      "url": "https://damntechnology.blogspot.com/2010/09/how-to-disassemble-and-clean-game-watch.html",
+      "role": "Firsthand 58-photo teardown, published 2012-01-18"
+    },
+    {
+      "url": "https://ameblo.jp/duddyfinger/entry-12693603626.html",
+      "role": "Firsthand repair photographs: PCB, LCD retainer, battery contacts and piezo"
+    },
+    {
+      "url": "https://www.toyheaven.ca/products/1982-vintage-nintendo-donkey-kong-game-and-watch-dk-52",
+      "role": "Photographed surviving battery cover and exterior"
+    },
+    {
+      "url": "https://www.nintendo.co.jp/hardware/gamewatch/history.html",
+      "role": "Official 1982 original Donkey Kong release and D-pad history"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mamedev/mame/master/src/mame/handheld/hh_sm510.cpp",
+      "role": "Primary reverse-engineering MCU attribution: DK-52 SM510"
+    }
+  ],
+  "envelope_kind": "approximate",
+  "envelope_basis": "Museums Victoria HT38633 measured specimen; not factory drawing",
+  "fidelity": "Reference measured specimen envelope; reconstructed local geometry and nonfunctional internal study",
+  "controls_groups": [
+    "Controls",
+    "ControlsInternal"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "Battery",
+    "Audio",
+    "Internal",
+    "LidInternal",
+    "Wiring",
+    "Hinge"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.3,
+    -2
+  ],
+  "accessories_groups": [
+    "Battery"
+  ]
+}

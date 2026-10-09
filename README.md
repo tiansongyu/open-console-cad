@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **24 款设备、21,744 个组件与 288 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **25 款设备、22,336 个组件与 300 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -179,6 +179,16 @@
       <a href="https://tiansongyu.github.io/open-console-cad/?device=sfc&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/sfc/README.md">设备说明</a> · <a href="devices/sfc/output/drawings/SuperFamicom_Drawings.pdf">A3 图纸</a>
     </td>
   </tr>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=gamewatch&amp;view=assembled#viewer"><img src="site/public/images/gamewatch/hero.webp" width="206" height="160" alt="原版橙色 Game & Watch Donkey Kong DK-52 双屏模型"></a><br>
+      <strong>Nintendo Game & Watch</strong><br>
+      <sub>DK-52 · Donkey Kong · Original 1982</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=gamewatch&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/gamewatch/README.md">设备说明</a> · <a href="devices/gamewatch/output/drawings/GameWatchDK52_Drawings.pdf">A3 图纸</a>
+    </td>
+    <td width="33%"></td>
+    <td width="33%"></td>
+  </tr>
 </table>
 
 网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动，以及 PlayStation 2 的 GH-001 双面主板、初代 PC CARD、双热管散热、DualShock 2 输入机构和振动电机，以及 PlayStation 4 的双面显存主板、硬盘、离心散热、吸入光驱与 DualShock 4。
@@ -278,7 +288,7 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-已收录的二十四个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64`、`wii`、`wiiu`、`saturn`、`ps1`、`ps2`、`ps4`、`ps5`、`ps3`、`xbox360`、`gba`、`xboxone` 和 `sfc`。共享工具位于 `tools/`，重建时请保留仓库结构。
+已收录的二十五个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64`、`wii`、`wiiu`、`saturn`、`ps1`、`ps2`、`ps4`、`ps5`、`ps3`、`xbox360`、`gba`、`xboxone`、`sfc` 和 `gamewatch`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
 经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。上方模型库中的设备均提供完整模型、图册与在线预览；销量扩充批次继续推进。
 
@@ -329,3 +339,5 @@ GBA：[完整交付核对](devices/gba/output/reports/completion_audit.json) · 
 Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.json) · [线上预览核对](devices/xboxone/output/reports/live_ui_checks.json)。
 
 Super Famicom：[完整交付核对](devices/sfc/output/reports/completion_audit.json) · [线上预览核对](devices/sfc/output/reports/live_ui_checks.json)。
+
+Game & Watch：[完整交付核对](devices/gamewatch/output/reports/completion_audit.json) · [线上预览核对](devices/gamewatch/output/reports/live_ui_checks.json)。

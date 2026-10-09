@@ -25,6 +25,7 @@ def finalize(m):
     settings=[('hero',dict()),('front',dict(normal=(0,0,1))),('back',dict(normal=(0,0,-1))),('internal',dict(normal=(.2,-.3,-2),exclude=['BackCover','BatteryDoor','BatteryDoorScrew','RearSupportPlate','EMIShield','LidBackCover','RearModelMark','UpperModelMark','UpperPanelIcon0','UpperPanelIcon1'])),('controls',dict(normal=(0,0,1),assemblies=['Controls','ControlsInternal','Internal'])),('accessories',dict(assemblies=['Accessories','Cradle'],normal=(-.4,-.8,2)))]
     for name,kw in settings:
         if name=='controls' and p.get('controls_groups'):kw['assemblies']=p['controls_groups']
+        if name=='accessories' and p.get('accessories_groups'):kw['assemblies']=p['accessories_groups']
         if name=='internal' and p.get('internal_groups'):kw['assemblies']=p['internal_groups']
         if name=='internal' and p.get('internal_exclude'):kw['exclude']=p['internal_exclude']
         if name=='internal' and p.get('internal_normal'):kw['normal']=p['internal_normal']

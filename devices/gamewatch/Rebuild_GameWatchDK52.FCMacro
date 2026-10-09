@@ -1,0 +1,12 @@
+"""Rebuild original DK-52 from all staged source."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,gamewatch,deliver
+importlib.reload(gamewatch)
+model=core.Study(repo,'gamewatch');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for i in sorted(gamewatch.STAGES):gamewatch.STAGES[i](model)
+gamewatch.finalize(model)
+model.doc.saveAs(str(model.out/'GameWatchDK52_Study.FCStd'))

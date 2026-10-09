@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 592,
+  "solids": 778,
+  "stages": 15,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Study.FCStd",
+      "bytes": 3109496,
+      "sha256": "b539ec48d42616938069820d3d7152892491bf046260d9ca0c8c2367725f93a4"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Complete.FCStd",
+      "bytes": 3109533,
+      "sha256": "3bc143d437c1eed20bda525ca0009712d281fbb557712a563baf16c6fd18e035"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Exploded.FCStd",
+      "bytes": 2476554,
+      "sha256": "71316fb4d2ac8c79b7ef669f3e0d169c1063f9101aeb034bbc8654f696e9f55b"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Closed.FCStd",
+      "bytes": 3105936,
+      "sha256": "ca67e3a93eebb46453856ff249630db2925d879b6851d18be912fffdbebcb048"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Drawings.FCStd",
+      "bytes": 369412,
+      "sha256": "d91361e4f71e75a69d628856b12e54cbc30c35d5783a1a99ec1da5f053add388"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_FullKit.step",
+      "bytes": 39137300,
+      "sha256": "6e0a6d1ec5f76ea731460382051f94960fc5b4fce96fc60484178308f0ab23ca"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Handheld.step",
+      "bytes": 39137300,
+      "sha256": "9ecdbb4245f19c520aaff26632f53af56501460f90b2552515450fa61eb85dc7"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Exploded.step",
+      "bytes": 39153684,
+      "sha256": "b88bc484425c2f0243bce3544226c33a2066cd25c14240d3b6876fb8b5cea55e"
+    },
+    {
+      "path": "devices/gamewatch/output/GameWatchDK52_Closed.step",
+      "bytes": 39132474,
+      "sha256": "eab3f89bb1448c06f5eefaa2400c87b11bf58a30add5b2d938c8f6559492d304"
+    },
+    {
+      "path": "devices/gamewatch/output/drawings/GameWatchDK52_Drawings.pdf",
+      "bytes": 681874,
+      "sha256": "8279b7878ac43e29deddb2866e046ad8273cd27e45c952177c10dbdde44b4d50"
+    },
+    {
+      "path": "devices/gamewatch/output/drawings/GameWatchDK52_Drawings.html",
+      "bytes": 1618596,
+      "sha256": "71bef758657d2ca03b6b440575b2eafd086848c416f9fe20f8db67b8cdad78e3"
+    },
+    {
+      "path": "devices/gamewatch/output/COMPONENTS.csv",
+      "bytes": 117253,
+      "sha256": "1b54289a59f6882873e9267ed93882b06557332bf8d8e1b0f91a7402e975d775"
+    },
+    {
+      "path": "site/public/models/gamewatch.glb",
+      "bytes": 4918304,
+      "sha256": "ccd4cb837fbdcf0e9d19161048851c3202d650dd1f2465864be34bfb8088bf87"
+    },
+    {
+      "path": "site/public/models/gamewatch.glb.gz",
+      "bytes": 1062950,
+      "sha256": "0e1d3eaa6a6058b961bf9e297b60efaac94116a8f2b10fcd3a0c6d11feaab4c5"
+    }
+  ],
+  "live_verified": false
+}

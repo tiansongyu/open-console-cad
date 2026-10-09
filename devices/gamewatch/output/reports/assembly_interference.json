@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "source_sha256": "b539ec48d42616938069820d3d7152892491bf046260d9ca0c8c2367725f93a4",
+  "candidate_pairs": 5088,
+  "poses": [
+    {
+      "opening": 0,
+      "candidate_pairs": 1062,
+      "checked_pairs": 1062,
+      "passed": true,
+      "report": "assembly_pose_0.json"
+    },
+    {
+      "opening": 90,
+      "candidate_pairs": 1062,
+      "checked_pairs": 1062,
+      "passed": true,
+      "report": "assembly_pose_90.json"
+    },
+    {
+      "opening": 170,
+      "candidate_pairs": 1902,
+      "checked_pairs": 1902,
+      "passed": true,
+      "report": "assembly_pose_170.json"
+    },
+    {
+      "opening": 180,
+      "candidate_pairs": 1062,
+      "checked_pairs": 1062,
+      "passed": true,
+      "report": "assembly_pose_180.json"
+    }
+  ],
+  "scope": "All physical components independently reloaded and intersected at0,90,170,180degrees. Each pair checked; flex bridge is mechanical-clearance study, not fatigue certification."
+}

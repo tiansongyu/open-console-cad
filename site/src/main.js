@@ -106,7 +106,7 @@ function fit(reset = true) {
   }
   distance *= 1.15;
   controls.target.copy(center); camera.position.copy(center).add(normal.normalize().multiplyScalar(distance));
-  camera.near = Math.max(.0001,distance / 2000); camera.far = distance*30; camera.updateProjectionMatrix();
+  camera.near = Math.max(.0001,distance * (devices[device].nearClipRatio ?? .0005)); camera.far = distance*30; camera.updateProjectionMatrix();
   controls.minDistance = Math.max(.005,radius*.15); controls.maxDistance = distance*5; controls.update();
 }
 function applyView(reset = true) {
