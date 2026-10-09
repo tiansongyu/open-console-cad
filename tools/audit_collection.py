@@ -62,7 +62,9 @@ for entry in CAT:
         data=read(reports/(name+'.json'));assert passed(data),(slug,name);row['reports'][name+'.json']=sha(reports/(name+'.json'))
     visual=reports/'visual_acceptance.json'
     if visual.exists():
-        data=read(visual);assert passed(data) and data['pdf_sha256']==sha(pdf);row['reports'][visual.name]=sha(visual)
+        data=read(visual);reviewed_pdf_sha=data.get('pdf_sha256',data.get('artifact_sha256'))
+        assert passed(data) and reviewed_pdf_sha==sha(pdf),(slug,'visual PDF identity')
+        row['reports'][visual.name]=sha(visual)
     else:assert read(reports/'completion_audit.json')['pdf_checks'] is True
     glb=ROOT/'site/public/models'/f'{slug}.glb';web=read(glb.with_suffix('.json'))
     assert web['source_sha256']==sha(ROOT/web['source']) and web['sha256']==sha(glb)

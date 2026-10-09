@@ -308,7 +308,9 @@ open-console-cad/
 
 | 验证范围 | 记录 |
 | --- | --- |
-| 十八款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
+| 全部 27 款设备的原生几何、建模历史与交付文件 | [整库交付核对](docs/collection_delivery_audit.json) |
+| 全部 27 款：615 次线上文件下载与 SHA-256 一致性核对 | [整库线上文件核对](docs/collection_live_delivery_audit.json) |
+| 全部 27 款：412 个视图、下载链接、图库、键盘控制及三种屏幕布局 | [整库线上交互核对](docs/collection_live_ui_checks.json) |
 | 首批七款：线上 GLB、预览图、原生 CAD 与 PDF 的文件一致性 | [35 个线上文件的哈希核对](docs/seven_device_live_audit.json) |
 | 首批七款：模型加载、折叠状态与手机布局 | [线上交互核对](docs/seven_device_live_ui.json) |
 | 新增 Game Boy：14 个线上文件与桌面/手机预览 | [文件核对](devices/gameboy/output/reports/live_delivery_audit.json) · [交互核对](devices/gameboy/output/reports/live_ui_checks.json) |
@@ -326,6 +328,20 @@ open-console-cad/
 | 新增 PlayStation 3：21 种视图与 12 页图纸 | [交付核对](devices/ps3/output/reports/completion_audit.json) · [线上预览核对](devices/ps3/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
+Xbox 360：[完整交付核对](devices/xbox360/output/reports/completion_audit.json) · [线上预览核对](devices/xbox360/output/reports/live_ui_checks.json)。
+
+GBA：[完整交付核对](devices/gba/output/reports/completion_audit.json) · [线上预览核对](devices/gba/output/reports/live_ui_checks.json)。
+
+Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.json) · [线上预览核对](devices/xboxone/output/reports/live_ui_checks.json)。
+
+Super Famicom：[完整交付核对](devices/sfc/output/reports/completion_audit.json) · [线上预览核对](devices/sfc/output/reports/live_ui_checks.json)。
+
+Game & Watch：[完整交付核对](devices/gamewatch/output/reports/completion_audit.json) · [线上预览核对](devices/gamewatch/output/reports/live_ui_checks.json)。
+
+Xbox Series X：[完整交付核对](devices/seriesx/output/reports/completion_audit.json) · [线上预览核对](devices/seriesx/output/reports/live_ui_checks.json)。
+
+原版 Xbox：[完整交付核对](devices/xbox/output/reports/completion_audit.json) · [线上预览核对](devices/xbox/output/reports/live_ui_checks.json)。
+
 ## 参与贡献
 
 欢迎修正模型、补充设备资料、改进文档或优化查看器。
@@ -341,17 +357,3 @@ open-console-cad/
 Nintendo、Sony、Valve 等名称、商标和产品设计，以及第三方参考材料、字体与依赖，保留其原有权利。本项目与相关设备厂商无隶属、赞助或认证关系，具体范围见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
 感谢 [FreeCAD](https://www.freecad.org/)、[Three.js](https://threejs.org/)、[freecad-mcp](https://github.com/neka-nat/freecad-mcp) 与 [Kami](https://github.com/tw93/Kami) 提供建模、可视化和文档工具。
-
-Xbox 360：[完整交付核对](devices/xbox360/output/reports/completion_audit.json) · [线上预览核对](devices/xbox360/output/reports/live_ui_checks.json)。
-
-GBA：[完整交付核对](devices/gba/output/reports/completion_audit.json) · [线上预览核对](devices/gba/output/reports/live_ui_checks.json)。
-
-Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.json) · [线上预览核对](devices/xboxone/output/reports/live_ui_checks.json)。
-
-Super Famicom：[完整交付核对](devices/sfc/output/reports/completion_audit.json) · [线上预览核对](devices/sfc/output/reports/live_ui_checks.json)。
-
-Game & Watch：[完整交付核对](devices/gamewatch/output/reports/completion_audit.json) · [线上预览核对](devices/gamewatch/output/reports/live_ui_checks.json)。
-
-Xbox Series X：[完整交付核对](devices/seriesx/output/reports/completion_audit.json) · [线上预览核对](devices/seriesx/output/reports/live_ui_checks.json)。
-
-原版 Xbox：[完整交付核对](devices/xbox/output/reports/completion_audit.json) · [线上预览核对](devices/xbox/output/reports/live_ui_checks.json)。
