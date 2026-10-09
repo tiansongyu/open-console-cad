@@ -1,0 +1,12 @@
+"""Rebuild the current original Model1540 study from source."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,xboxone,deliver
+importlib.reload(xboxone)
+model=core.Study(repo,'xboxone');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for i in sorted(xboxone.STAGES):xboxone.STAGES[i](model)
+xboxone.finalize(model)
+model.doc.saveAs(str(model.out/'XboxOne_Study.FCStd'))

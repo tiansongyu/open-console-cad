@@ -1,0 +1,312 @@
+{
+  "iteration": 1,
+  "slug": "original_native_split_black_enclosure",
+  "summary": "采用 Microsoft 官方原版一列 343×263×80 mm 包络建立原生底壳、分离的左侧亮面顶盖与右侧通风顶盖、侧壁、前后面板及四个支脚；保留可编辑草图与拉伸。局部几何为结构学习近似，通风、接口与内部构造后续逐轮加入。",
+  "physical_components": 11,
+  "objects": [
+    {
+      "name": "BottomShellBody",
+      "label": "Original lower case · editable width",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 162373.97500815813,
+      "bounds": [
+        -171.5,
+        171.5,
+        -131.5,
+        131.5,
+        2.0,
+        3.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GlossTopBody",
+      "label": "Separate glossy left top panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 80733.35771669408,
+      "bounds": [
+        -171.10000000000002,
+        -0.29999999999999716,
+        -131.3,
+        131.3,
+        78.2,
+        80.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GlossTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VentTopBody",
+      "label": "Separate matte right top grille panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 81111.50171669408,
+      "bounds": [
+        -0.29999999999999716,
+        171.3,
+        -131.3,
+        131.3,
+        78.2,
+        80.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VentTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftSide",
+      "label": "Original separate side grille wall",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42142.835555740596,
+      "bounds": [
+        -171.50000000000003,
+        -169.29999999999998,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightSide",
+      "label": "Original separate side grille wall001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42142.8355557406,
+      "bounds": [
+        169.29999999999998,
+        171.50000000000003,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFascia",
+      "label": "Original front fascia",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 55202.035555740586,
+      "bounds": [
+        -169.1,
+        169.1,
+        -131.50000000000003,
+        -129.29999999999998,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFascia",
+      "label": "Original rear closure",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 55202.035555740586,
+      "bounds": [
+        -169.1,
+        169.1,
+        129.29999999999998,
+        131.50000000000003,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Independent lower rubber foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Independent lower rubber foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Independent lower rubber foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Independent lower rubber foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xboxone/output/iterations/01_original_native_split_black_enclosure.FCStd",
+  "views": [
+    "devices/xboxone/output/previews/01_original_native_split_black_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,3822 @@
+{
+  "iteration": 4,
+  "slug": "original_rear_io_and_separate_contacts",
+  "summary": "按原版背面照片加入 DC、HDMI 输出与输入、光纤音频、双 USB 3.0、专用 Kinect、IR 与网口；独立接口内腔、触点、光纤挡片及状态灯均不与外壳重叠。Kinect 为 5+8 触点分区学习近似，不作为电气引脚图。",
+  "physical_components": 141,
+  "objects": [
+    {
+      "name": "BottomShellBody",
+      "label": "Original lower case · editable width",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 162373.97500815813,
+      "bounds": [
+        -171.5,
+        171.5,
+        -131.5,
+        131.5,
+        2.0,
+        3.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Independent lower rubber foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Independent lower rubber foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Independent lower rubber foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Independent lower rubber foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SlotUpperTrim",
+      "label": "Separate silver optical slot lip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 43.48841150082331,
+      "bounds": [
+        -156.5,
+        -11.5,
+        -131.4,
+        -130.8,
+        42.8,
+        43.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SlotUpperTrim",
+      "assembly": "Optical",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SlotLowerTrim",
+      "label": "Separate silver optical slot lip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 43.488411500823325,
+      "bounds": [
+        -156.5,
+        -11.5,
+        -131.4,
+        -130.8,
+        38.7,
+        39.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SlotLowerTrim",
+      "assembly": "Optical",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLight",
+      "label": "Front capacitive power light",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 21.205750411731376,
+      "bounds": [
+        138.5,
+        153.5,
+        -131.42000000000002,
+        -131.3,
+        47.5,
+        62.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLight",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerX",
+      "label": "Power light cross study marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 0.8692685834696734,
+      "bounds": [
+        140.76489719263483,
+        151.23510280736517,
+        -131.459,
+        -131.441,
+        49.76489719263484,
+        60.23510280736516
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerX",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectTouch",
+      "label": "Separate capacitive eject marker",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.18760938009881784,
+      "bounds": [
+        -7.75,
+        -4.25,
+        -131.488,
+        -131.47,
+        40.5,
+        43.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectTouch",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaCut003",
+      "label": "Original front fascia004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 53196.340675772924,
+      "bounds": [
+        -169.1,
+        169.1,
+        -131.50000000000003,
+        -129.29999999999998,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopStudyMark",
+      "label": "XBOX ONE",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 117,
+      "volume": 0.6225014302516192,
+      "bounds": [
+        -157.8426384228188,
+        -130.60893875838926,
+        -117.07704707986576,
+        -113.08161063825504,
+        79.9819999,
+        80.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopStudyMark",
+      "assembly": "Body",
+      "layer": 8,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GlossTopCut",
+      "label": "Separate glossy left top panel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 124,
+      "volume": 80732.73521526379,
+      "bounds": [
+        -171.10000010000002,
+        -0.29999989999999715,
+        -131.3000001,
+        131.3000001,
+        78.2,
+        80.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GlossTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VentTopCut",
+      "label": "Separate matte right top grille panel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 316,
+      "volume": 49247.39340529266,
+      "bounds": [
+        -0.29999999999999716,
+        171.3,
+        -131.3,
+        131.3,
+        78.2,
+        80.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VentTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftSideCut",
+      "label": "Original separate side grille wall002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 150,
+      "volume": 35212.835555740676,
+      "bounds": [
+        -171.50000000000003,
+        -169.29999999999995,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightSideCut",
+      "label": "Original separate side grille wall003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 190,
+      "volume": 33232.83555574067,
+      "bounds": [
+        169.29999999999995,
+        171.50000000000003,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaCut005",
+      "label": "Original rear closure006",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 522,
+      "volume": 48824.60102814459,
+      "bounds": [
+        -169.1,
+        169.1,
+        129.29999999999998,
+        131.50000000000003,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutShield",
+      "label": "HDMIOut formed shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 193.7499999999994,
+      "bounds": [
+        97.2,
+        112.8,
+        118.3,
+        130.8,
+        22.699999999999996,
+        29.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutCarrier",
+      "label": "HDMIOut insulating back",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.987292006587914,
+      "bounds": [
+        99.0,
+        111.0,
+        118.39999999999999,
+        119.2,
+        23.6,
+        28.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutTongue",
+      "label": "HDMIOut contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 73.28261946710579,
+      "bounds": [
+        99.15,
+        110.85,
+        120.95,
+        129.65,
+        25.64,
+        26.36
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_0",
+      "label": "Separate HDMI contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        99.91,
+        100.19,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_1",
+      "label": "Separate HDMI contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        101.01,
+        101.29,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_2",
+      "label": "Separate HDMI contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        102.11,
+        102.39,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_3",
+      "label": "Separate HDMI contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        103.21,
+        103.49,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_4",
+      "label": "Separate HDMI contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        104.31,
+        104.59,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_5",
+      "label": "Separate HDMI contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        105.41,
+        105.69,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_6",
+      "label": "Separate HDMI contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        106.51,
+        106.79,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_7",
+      "label": "Separate HDMI contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        107.61,
+        107.89,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_8",
+      "label": "Separate HDMI contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        108.71,
+        108.99,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact0_9",
+      "label": "Separate HDMI contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        109.81,
+        110.09,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact0_9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_0",
+      "label": "Separate HDMI contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        100.46,
+        100.74,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_1",
+      "label": "Separate HDMI contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        101.56,
+        101.84,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_2",
+      "label": "Separate HDMI contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        102.66,
+        102.94,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_3",
+      "label": "Separate HDMI contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        103.76,
+        104.04,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_4",
+      "label": "Separate HDMI contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        104.86,
+        105.14,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_5",
+      "label": "Separate HDMI contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        105.96,
+        106.24,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_6",
+      "label": "Separate HDMI contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        107.06,
+        107.34,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_7",
+      "label": "Separate HDMI contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        108.16,
+        108.44,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutContact1_8",
+      "label": "Separate HDMI contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        109.26,
+        109.54,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutContact1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInShield",
+      "label": "HDMIIn formed shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 14,
+      "volume": 193.74999999999937,
+      "bounds": [
+        47.2,
+        62.800000000000004,
+        118.3,
+        130.8,
+        22.699999999999996,
+        29.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInCarrier",
+      "label": "HDMIIn insulating back",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 45.98729200658792,
+      "bounds": [
+        49.0,
+        61.0,
+        118.39999999999999,
+        119.2,
+        23.6,
+        28.400000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInTongue",
+      "label": "HDMIIn contact tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 73.28261946710582,
+      "bounds": [
+        49.15,
+        60.85,
+        120.95,
+        129.65,
+        25.64,
+        26.36
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_0",
+      "label": "Separate HDMI contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        49.91,
+        50.19,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_1",
+      "label": "Separate HDMI contact020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        51.01,
+        51.29,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_2",
+      "label": "Separate HDMI contact021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        52.11,
+        52.39,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_3",
+      "label": "Separate HDMI contact022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        53.21,
+        53.49,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_4",
+      "label": "Separate HDMI contact023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        54.31,
+        54.59,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_5",
+      "label": "Separate HDMI contact024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        55.41,
+        55.69,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_6",
+      "label": "Separate HDMI contact025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        56.51,
+        56.79,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_7",
+      "label": "Separate HDMI contact026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        57.61,
+        57.89,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_8",
+      "label": "Separate HDMI contact027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        58.71,
+        58.99,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact0_9",
+      "label": "Separate HDMI contact028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        59.81,
+        60.09,
+        122.39999999999999,
+        128.4,
+        26.4,
+        26.49
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact0_9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_0",
+      "label": "Separate HDMI contact029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        50.46,
+        50.74,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_1",
+      "label": "Separate HDMI contact030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        51.56,
+        51.84,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_2",
+      "label": "Separate HDMI contact031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        52.66,
+        52.94,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_3",
+      "label": "Separate HDMI contact032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        53.76,
+        54.04,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_4",
+      "label": "Separate HDMI contact033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        54.86,
+        55.14,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_5",
+      "label": "Separate HDMI contact034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        55.96,
+        56.24,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_6",
+      "label": "Separate HDMI contact035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        57.06,
+        57.34,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_7",
+      "label": "Separate HDMI contact036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552927,
+      "bounds": [
+        58.16,
+        58.44,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInContact1_8",
+      "label": "Separate HDMI contact037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.15116909733552925,
+      "bounds": [
+        59.26,
+        59.54,
+        122.39999999999999,
+        128.4,
+        25.51,
+        25.6
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInContact1_8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Shield",
+      "label": "USB Type-A formed metal shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 182.00042088168667,
+      "bounds": [
+        19.8,
+        34.2,
+        118.8,
+        130.8,
+        19.649999999999995,
+        26.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Shield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0RearCarrierCut",
+      "label": "USB rear insulator001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 64,
+      "volume": 61.16170216466641,
+      "bounds": [
+        20.45,
+        33.550000000000004,
+        119.075,
+        119.925,
+        20.25,
+        25.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0RearCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tongue",
+      "label": "USB connector tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 112.70772012644107,
+      "bounds": [
+        20.9,
+        33.1,
+        120.64999999999999,
+        129.45000000000002,
+        22.5,
+        23.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "blue",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact0",
+      "label": "USB legacy contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127194526,
+      "bounds": [
+        22.925,
+        23.575,
+        124.49999999999999,
+        129.1,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact1",
+      "label": "USB legacy contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127194526,
+      "bounds": [
+        25.425,
+        26.075,
+        124.49999999999999,
+        129.1,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact2",
+      "label": "USB legacy contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127194526,
+      "bounds": [
+        27.925,
+        28.575,
+        124.49999999999999,
+        129.1,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Contact3",
+      "label": "USB legacy contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.38852145127194526,
+      "bounds": [
+        30.425,
+        31.075,
+        124.49999999999999,
+        129.1,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Contact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed0",
+      "label": "USB additional data contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031038,
+      "bounds": [
+        22.78,
+        23.22,
+        122.2,
+        123.7,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed1",
+      "label": "USB additional data contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031038,
+      "bounds": [
+        24.78,
+        25.22,
+        122.2,
+        123.7,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed2",
+      "label": "USB additional data contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08573025440310382,
+      "bounds": [
+        26.78,
+        27.22,
+        122.2,
+        123.7,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed3",
+      "label": "USB additional data contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08573025440310382,
+      "bounds": [
+        28.78,
+        29.22,
+        122.2,
+        123.7,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0SuperSpeed4",
+      "label": "USB additional data contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08573025440310382,
+      "bounds": [
+        30.78,
+        31.22,
+        122.2,
+        123.7,
+        23.62,
+        23.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0SuperSpeed4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail0",
+      "label": "USB board terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        22.66,
+        22.94,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail1",
+      "label": "USB board terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        23.71,
+        23.990000000000002,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail2",
+      "label": "USB board terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        24.759999999999998,
+        25.04,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail3",
+      "label": "USB board terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        25.81,
+        26.09,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail4",
+      "label": "USB board terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        26.86,
+        27.14,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail5",
+      "label": "USB board terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        27.91,
+        28.19,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail6",
+      "label": "USB board terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        28.96,
+        29.240000000000002,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail7",
+      "label": "USB board terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        30.009999999999998,
+        30.29,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB0Tail8",
+      "label": "USB board terminal008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        31.06,
+        31.34,
+        116.64999999999999,
+        119.14999999999999,
+        20.15,
+        20.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB0Tail8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Shield",
+      "label": "USB Type-A formed metal shield001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 182.0004208816873,
+      "bounds": [
+        19.8,
+        34.2,
+        118.8,
+        130.8,
+        31.649999999999995,
+        38.35
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Shield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1RearCarrierCut",
+      "label": "USB rear insulator003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 64,
+      "volume": 61.16170216466641,
+      "bounds": [
+        20.45,
+        33.550000000000004,
+        119.075,
+        119.925,
+        32.25,
+        37.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1RearCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tongue",
+      "label": "USB connector tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 112.70772012644096,
+      "bounds": [
+        20.9,
+        33.1,
+        120.64999999999999,
+        129.45000000000002,
+        34.5,
+        35.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "blue",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact0",
+      "label": "USB legacy contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        22.925,
+        23.575,
+        124.49999999999999,
+        129.1,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact1",
+      "label": "USB legacy contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        25.425,
+        26.075,
+        124.49999999999999,
+        129.1,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact2",
+      "label": "USB legacy contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        27.925,
+        28.575,
+        124.49999999999999,
+        129.1,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact3",
+      "label": "USB legacy contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.3885214512719488,
+      "bounds": [
+        30.425,
+        31.075,
+        124.49999999999999,
+        129.1,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed0",
+      "label": "USB additional data contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        22.78,
+        23.22,
+        122.2,
+        123.7,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed1",
+      "label": "USB additional data contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        24.78,
+        25.22,
+        122.2,
+        123.7,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed2",
+      "label": "USB additional data contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        26.78,
+        27.22,
+        122.2,
+        123.7,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed3",
+      "label": "USB additional data contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        28.78,
+        29.22,
+        122.2,
+        123.7,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1SuperSpeed4",
+      "label": "USB additional data contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.0857302544031046,
+      "bounds": [
+        30.78,
+        31.22,
+        122.2,
+        123.7,
+        35.62,
+        35.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1SuperSpeed4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail0",
+      "label": "USB board terminal009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        22.66,
+        22.94,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail1",
+      "label": "USB board terminal010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        23.71,
+        23.990000000000002,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail2",
+      "label": "USB board terminal011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        24.759999999999998,
+        25.04,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail3",
+      "label": "USB board terminal012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        25.81,
+        26.09,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail4",
+      "label": "USB board terminal013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437872,
+      "bounds": [
+        26.86,
+        27.14,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail5",
+      "label": "USB board terminal014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        27.91,
+        28.19,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail6",
+      "label": "USB board terminal015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437878,
+      "bounds": [
+        28.96,
+        29.240000000000002,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail7",
+      "label": "USB board terminal016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        30.009999999999998,
+        30.29,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tail8",
+      "label": "USB board terminal017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19584977871437875,
+      "bounds": [
+        31.06,
+        31.34,
+        116.64999999999999,
+        119.14999999999999,
+        32.15,
+        32.43
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tail8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANShield",
+      "label": "Ethernet formed shield",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 551.2123889803863,
+      "bounds": [
+        -69.0,
+        -53.0,
+        118.3,
+        130.8,
+        20.999999999999996,
+        35.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANShield",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANCarrier",
+      "label": "Ethernet rear insulator",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 163.1616989912656,
+      "bounds": [
+        -68.05,
+        -53.949999999999996,
+        118.5,
+        119.5,
+        22.2,
+        33.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANCarrier",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact0",
+      "label": "Ethernet spring terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -65.9,
+        -65.54999999999998,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact1",
+      "label": "Ethernet spring terminal001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -64.55000000000001,
+        -64.19999999999999,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact2",
+      "label": "Ethernet spring terminal002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965184,
+      "bounds": [
+        -63.199999999999996,
+        -62.85,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact3",
+      "label": "Ethernet spring terminal003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965184,
+      "bounds": [
+        -61.849999999999994,
+        -61.5,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact4",
+      "label": "Ethernet spring terminal004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -60.5,
+        -60.150000000000006,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact5",
+      "label": "Ethernet spring terminal005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -59.15,
+        -58.800000000000004,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact6",
+      "label": "Ethernet spring terminal006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -57.8,
+        -57.45,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANContact7",
+      "label": "Ethernet spring terminal007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6034341060965185,
+      "bounds": [
+        -56.449999999999996,
+        -56.1,
+        121.05,
+        128.55,
+        24.3,
+        24.53
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANLight0",
+      "label": "Ethernet status light",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.1984955592153876,
+      "bounds": [
+        -67.95,
+        -66.45,
+        130.5,
+        131.5,
+        31.8,
+        33.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANLight0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "led",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANLight1",
+      "label": "Ethernet status light001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.1984955592153863,
+      "bounds": [
+        -55.55,
+        -54.05,
+        130.5,
+        131.5,
+        31.8,
+        33.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANLight1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "led",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalSocket",
+      "label": "TOSLINK square receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 754.7638934211695,
+      "bounds": [
+        74.0,
+        86.0,
+        118.8,
+        130.8,
+        24.999999999999996,
+        37.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalShutter",
+      "label": "Independent TOSLINK dust flap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 29.417898178469073,
+      "bounds": [
+        75.69999999999999,
+        84.30000000000001,
+        130.2,
+        130.60000000000002,
+        26.7,
+        35.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalShutter",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OpticalEmitter",
+      "label": "Separate optical emitter envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.5238934211693,
+      "bounds": [
+        78.8,
+        81.2,
+        119.8,
+        120.8,
+        29.8,
+        32.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OpticalEmitter",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "red",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRSocket",
+      "label": "Separate IR-out barrel receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 426.02352577167795,
+      "bounds": [
+        -36.3,
+        -27.7,
+        121.8,
+        130.8,
+        23.7,
+        32.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "IRSocketContact",
+      "label": "Independent IR-out sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 17.86780821729193,
+      "bounds": [
+        -33.75,
+        -30.25,
+        123.5,
+        130.5,
+        26.25,
+        29.75
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "IRSocketContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCInlet",
+      "label": "Original external-supply DC inlet",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 12,
+      "volume": 2055.286775313869,
+      "bounds": [
+        122.5,
+        145.5,
+        119.8,
+        130.8,
+        21.999999999999996,
+        34.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCInlet",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCPowerContact0",
+      "label": "Separate original DC contact envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 51.18439830861175,
+      "bounds": [
+        126.8,
+        130.2,
+        123.0,
+        130.0,
+        26.3,
+        29.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCPowerContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCPowerContact1",
+      "label": "Separate original DC contact envelope001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 51.18439830861176,
+      "bounds": [
+        137.8,
+        141.2,
+        123.0,
+        130.0,
+        26.3,
+        29.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCPowerContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectSocket",
+      "label": "Original divided Kinect proprietary receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 1155.4611446563636,
+      "bounds": [
+        -6.0,
+        12.000000000000002,
+        118.8,
+        130.8,
+        21.499999999999996,
+        34.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact0_0",
+      "label": "Separate Kinect contact envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098812,
+      "bounds": [
+        -2.05,
+        -1.5499999999999998,
+        122.5,
+        128.5,
+        31.0,
+        31.18
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact0_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact0_1",
+      "label": "Separate Kinect contact envelope001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098812,
+      "bounds": [
+        0.3500000000000001,
+        0.8500000000000001,
+        122.5,
+        128.5,
+        31.0,
+        31.18
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact0_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact0_2",
+      "label": "Separate Kinect contact envelope002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098812,
+      "bounds": [
+        2.75,
+        3.25,
+        122.5,
+        128.5,
+        31.0,
+        31.18
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact0_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact0_3",
+      "label": "Separate Kinect contact envelope003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098811,
+      "bounds": [
+        5.15,
+        5.65,
+        122.5,
+        128.5,
+        31.0,
+        31.18
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact0_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact0_4",
+      "label": "Separate Kinect contact envelope004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098817,
+      "bounds": [
+        7.55,
+        8.05,
+        122.5,
+        128.5,
+        31.0,
+        31.18
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact0_4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact1_0",
+      "label": "Separate Kinect contact envelope005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098812,
+      "bounds": [
+        -0.8499999999999996,
+        -0.34999999999999964,
+        122.5,
+        128.5,
+        26.8,
+        26.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact1_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact1_1",
+      "label": "Separate Kinect contact envelope006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098811,
+      "bounds": [
+        1.55,
+        2.05,
+        122.5,
+        128.5,
+        26.8,
+        26.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact1_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact1_2",
+      "label": "Separate Kinect contact envelope007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098811,
+      "bounds": [
+        3.95,
+        4.45,
+        122.5,
+        128.5,
+        26.8,
+        26.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact1_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact1_3",
+      "label": "Separate Kinect contact envelope008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098813,
+      "bounds": [
+        6.35,
+        6.85,
+        122.5,
+        128.5,
+        26.8,
+        26.98
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact1_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact2_0",
+      "label": "Separate Kinect contact envelope009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098812,
+      "bounds": [
+        -0.8499999999999996,
+        -0.34999999999999964,
+        122.5,
+        128.5,
+        23.7,
+        23.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact2_0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact2_1",
+      "label": "Separate Kinect contact envelope010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098811,
+      "bounds": [
+        1.55,
+        2.05,
+        122.5,
+        128.5,
+        23.7,
+        23.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact2_1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact2_2",
+      "label": "Separate Kinect contact envelope011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098811,
+      "bounds": [
+        3.95,
+        4.45,
+        122.5,
+        128.5,
+        23.7,
+        23.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact2_2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectPortContact2_3",
+      "label": "Separate Kinect contact envelope012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.5398609380098813,
+      "bounds": [
+        6.35,
+        6.85,
+        122.5,
+        128.5,
+        23.7,
+        23.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectPortContact2_3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIOutMark",
+      "label": "HDMI OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 95,
+      "volume": 0.10987330208640778,
+      "bounds": [
+        104.09531040268456,
+        115.77235738255034,
+        131.4599999,
+        131.4780001,
+        42.96617439664429,
+        44.72026855637584
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIOutMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIInMark",
+      "label": "HDMI IN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 69,
+      "volume": 0.09188252761277768,
+      "bounds": [
+        54.84801174496644,
+        63.77235738255034,
+        131.4599999,
+        131.4780001,
+        42.9999999,
+        44.69127526778524
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIInMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "KinectMark",
+      "label": "KINECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 75,
+      "volume": 0.08286599050296257,
+      "bounds": [
+        3.550343959731544,
+        11.772357382550336,
+        131.4599999,
+        131.4780001,
+        42.96617439664429,
+        44.72026855637584
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "KinectMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LANMark",
+      "label": "LAN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 33,
+      "volume": 0.04534024915825913,
+      "bounds": [
+        -61.43574664429531,
+        -57.22764261744966,
+        131.46,
+        131.478,
+        43.0,
+        44.691275167785236
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LANMark",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xboxone/output/iterations/04_original_rear_io_and_separate_contacts.FCStd",
+  "views": [
+    "devices/xboxone/output/previews/04_original_rear_io_and_separate_contacts_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

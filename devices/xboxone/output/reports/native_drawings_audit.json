@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 7,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 342.99999999999994,
+      "measured_mm": 343.0,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 263.0,
+      "measured_mm": 263.00000000000006,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_1",
+      "expected_mm": 154.30635135640927,
+      "measured_mm": 154.30635135640927,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_2",
+      "expected_mm": 108.5218133748049,
+      "measured_mm": 108.5218133748049,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_1",
+      "expected_mm": 315.0000000000013,
+      "measured_mm": 315.00000000000125,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_2",
+      "expected_mm": 237.00000000000023,
+      "measured_mm": 237.00000000000026,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_1",
+      "expected_mm": 187.99999999999997,
+      "measured_mm": 188.0,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/xboxone/output/XboxOne_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

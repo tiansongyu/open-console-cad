@@ -1,0 +1,143 @@
+{
+  "type": "long-doc",
+  "lang": "cn",
+  "brief": {
+    "audience": "FreeCAD 学习者与游戏主机结构观察者",
+    "job": "用真实原生实体投影说明原版 Xbox One 1540、1537 双板控制器、Kinect2 与首发配套机构",
+    "template": "long-doc",
+    "formats": [
+      "html",
+      "pdf"
+    ],
+    "page_target": 12,
+    "narrative": "原版总装与接口、手柄外观、光驱硬盘、实体剖面与爆炸、主板散热电源、手柄内部和Kinect附件、组件索引与边界",
+    "required_facts": [
+      "Model 1540",
+      "1791 个组件条目",
+      "1870 个实体"
+    ],
+    "required_assets": [],
+    "acceptance_checks": [
+      "12 pages of A3 landscape",
+      "CAD-derived projections and physical sections",
+      "native model-derived dimensions reload correctly",
+      "Kami content style placeholders density and font checks",
+      "all pages inspected visually and reviewed independently"
+    ],
+    "preserve": [
+      "Original black 500 GB Xbox One 1540 with external PSU",
+      "Published original console envelope 343 x 263 x 80 mm",
+      "Original 1537 controller uses two boards, four motors, two AA cells, micro-USB and proprietary headset connector",
+      "Original Kinect2 has manual tilt stand, RGB/depth optics, triple IR and four microphones",
+      "No One S/X styling, later 3.5mm jack, USB-C, game media or optional charging kit",
+      "Internal geometry and all accessory dimensions are approximate nonfunctional studies",
+      "Stable component IDs across CAD STEP drawings and web"
+    ],
+    "explicit_deviations": [
+      "Existing repository A3 landscape adaptation of Kami long-doc",
+      "Actual CAD SVG projections and BRep sections replace generic illustrations",
+      "Cover combined with an assembly sheet; final sheet records sources and approximation boundaries",
+      "Companion SVG and native FreeCAD sheets accompany HTML and PDF"
+    ]
+  },
+  "content": {
+    "title": "Microsoft Xbox One · 原版结构学习图册",
+    "subtitle": "Model 1540 / 500 GB · 1537 控制器与 Kinect2",
+    "author": "CAD Study",
+    "date": "2026-10-09",
+    "summary": {
+      "claim": "本图册通过原生实体投影、剖面和爆炸视图说明原版黑色 Xbox One 的分区机壳、三热管散热、光驱硬盘及原版 1537 双板控制器，并展示 Kinect2、外置电源和聊天耳麦；全部内部电路、光学与局部尺寸为非功能性近似。",
+      "takeaways": [
+        "28 轮建模记录，1791 个组件条目，1870 个实体；以原生编号和清单核对。",
+        "微软官方家族规格表的原版一列提供 343 × 263 × 80 mm 包络；壁厚、孔位和附件尺寸近似。",
+        "控制器采用原版双板、四组电机与双 AA；保留 Kinect2、外置电源、耳麦及 HDMI/区域 AC，不含游戏介质或可选充电套件。"
+      ]
+    },
+    "chapters": [
+      {
+        "title": "吸入式前面板与原版 HDMI 输入输出",
+        "claim": "主机侧面具有第三个 USB 3.0 和配对键，后部保留 HDMI 输入/输出、TOSLINK 与专用 Kinect。接口屏蔽、绝缘、接点和外壳开口分离；不混入 One S/X 的外观或接口删减。",
+        "paragraphs": [
+          "主机侧面具有第三个 USB 3.0 和配对键，后部保留 HDMI 输入/输出、TOSLINK 与专用 Kinect。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "接口屏蔽、绝缘、接点和外壳开口分离；不混入 One S/X 的外观或接口删减。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "原版 1537 黑色双 AA 无线控制器",
+        "claim": "微软 C3K1537 原始照片指导双板结构、四组电机、齐平电池盖和分离后握把盖。保持非对称摇杆、十字键、View/Menu、micro-USB 与专用耳麦口，未加入后期 3.5 mm 或 USB-C。",
+        "paragraphs": [
+          "微软 C3K1537 原始照片指导双板结构、四组电机、齐平电池盖和分离后握把盖。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "保持非对称摇杆、十字键、View/Menu、micro-USB 与专用耳麦口，未加入后期 3.5 mm 或 USB-C。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "吸入式 Blu-ray 与内置 500 GB 硬盘",
+        "claim": "光驱分离加载滚轮、主轴、夹盘、激光滑架、导杆与控制板，未放入游戏光盘。硬盘保留塑料托架、独立金属盖、控制板和盘片机构；内部结构近似，不表示真实数据。",
+        "paragraphs": [
+          "光驱分离加载滚轮、主轴、夹盘、激光滑架、导杆与控制板，未放入游戏光盘。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "硬盘保留塑料托架、独立金属盖、控制板和盘片机构；内部结构近似，不表示真实数据。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "来自保存实体的主机与手柄剖面",
+        "claim": "剖面由 BRep 与指定 Y 平面实际相交生成，填充只表示被切到的真实材料。主机剖面显示壳板、主板与散热器；手柄剖面展示双板、输入层与曲面空腔。",
+        "paragraphs": [
+          "剖面由 BRep 与指定 Y 平面实际相交生成，填充只表示被切到的真实材料。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "主机剖面显示壳板、主板与散热器；手柄剖面展示双板、输入层与曲面空腔。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "分层爆炸与可追溯原生装配",
+        "claim": "爆炸工程保留稳定组件编号，以展示位移分开壳盖、板件、散热、存储和输入机构。本页省略部分密集端子、长线与标识；完整原生文件、清单和网页保留所有组件。",
+        "paragraphs": [
+          "爆炸工程保留稳定组件编号，以展示位移分开壳盖、板件、散热、存储和输入机构。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "本页省略部分密集端子、长线与标识；完整原生文件、清单和网页保留所有组件。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "原版 APU、十六枚 DDR3 与双面主板",
+        "claim": "原版实机照片指导 APU、三侧 DDR3、南桥、eMMC、供电和前后连接器位置。背面主要保留无源器件；封装、线序和元件分布为非功能性结构近似，不是原厂电路或 BOM。",
+        "paragraphs": [
+          "原版实机照片指导 APU、三侧 DDR3、南桥、eMMC、供电和前后连接器位置。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "背面主要保留无源器件；封装、线序和元件分布为非功能性结构近似，不是原厂电路或 BOM。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "三热管与单风扇、外置电源离心风机",
+        "claim": "主机使用单个 112 mm 轴流风扇、三条独立铜热管、鳍片堆和背面 X 夹具。外置电源按首发拆解保留离心风机、独立导风框与金属屏蔽；电气部分仅作机构学习。",
+        "paragraphs": [
+          "主机使用单个 112 mm 轴流风扇、三条独立铜热管、鳍片堆和背面 X 夹具。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "外置电源按首发拆解保留离心风机、独立导风框与金属屏蔽；电气部分仅作机构学习。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "1537 双板、方向弹片与四组振动机构",
+        "claim": "原版 U 形摇杆板和前接点板依据微软 FCC 照片，双轴输入、电位器与板间连接器分件表达。十字键使用金属弹片，ABXY 保留导电胶；握把与扳机分别具有电机，电池为反向安装双 AA。",
+        "paragraphs": [
+          "原版 U 形摇杆板和前接点板依据微软 FCC 照片，双轴输入、电位器与板间连接器分件表达。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "十字键使用金属弹片，ABXY 保留导电胶；握把与扳机分别具有电机，电池为反向安装双 AA。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "Kinect2 光学、原版耳麦与线缆",
+        "claim": "原版 Kinect2 保留 RGB/深度光学、三分区 IR、四麦克风、后部风扇与手动俯仰底座。聊天耳麦采用专用三键手柄适配器；HDMI 与区域 AC 线缩短陈列，附件局部尺寸均近似。",
+        "paragraphs": [
+          "原版 Kinect2 保留 RGB/深度光学、三分区 IR、四麦克风、后部风扇与手动俯仰底座。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "聊天耳麦采用专用三键手柄适配器；HDMI 与区域 AC 线缩短陈列，附件局部尺寸均近似。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "组件分组、唯一编号与原生清单",
+        "claim": "每个物理组件具有稳定标识、唯一编号、装配分组和材料，可与原生树及 CSV 一一查对。一个条目可能包含多个实体，字符与绕组会增加实体数；数量不等同于工厂物料表。",
+        "paragraphs": [
+          "每个物理组件具有稳定标识、唯一编号、装配分组和材料，可与原生树及 CSV 一一查对。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。公开整体尺寸已注明来源，局部近似数字不能用作制造公差或真实电子规格。",
+          "一个条目可能包含多个实体，字符与绕组会增加实体数；数量不等同于工厂物料表。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      }
+    ],
+    "references": [
+      "资料：Microsoft 官方规格、2013 开箱说明、C3K1537 FCC 原图及 iFixit 主机/Kinect/电源实机拆解；详见 references/SOURCES.md。",
+      "边界：普通黑色版本不复制 Day One 字样；局部几何非功能性近似，不用于制造、接线或光学标定。"
+    ]
+  }
+}

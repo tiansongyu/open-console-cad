@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "pdf": "devices/xboxone/output/drawings/XboxOne_Drawings.pdf",
+  "pdf_sha256": "6a405e07fd7053770849c1dcee48f3205e33e2b9637554909e960fed4c16a43b",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "kami_verdict": "READY: 0 errors, 1 warning(s), 0 data gap(s)",
+  "warning_review": "Short Chinese headings remain attached to drawings; inspected all final page images without stranded headings.",
+  "corrections": [
+    "Original 1537 trigger caps removed from mechanism detail to reveal independent impulse motors, axles and springs",
+    "D-pad cap removed to expose metal dome assembly",
+    "Drawing-number header explicitly separated from page total and numeric title",
+    "Saved HDD power-plug placement synchronized with source Z47; re-exported all diagrams from corrected native"
+  ],
+  "scope": "Original Model1540 500GB, original1537 dual-board/four-motor controller, Kinect2 and external PSU. Internal and accessory dimensions approximate; nonfunctional study.",
+  "revision_review": "Root personally opened all12 final page PNGs after final geometric correction and Kami delivery; no clipped drawings, label collisions, missing glyphs or stranded headings."
+}

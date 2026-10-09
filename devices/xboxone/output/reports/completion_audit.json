@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 1791,
+  "solids": 1870,
+  "stages": 28,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/xboxone/output/XboxOne_Study.FCStd",
+      "bytes": 9514558,
+      "sha256": "c488c74f71eb75355b71eb9488aa42c452bdd401bc59a0738df9d6875b015288"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_Complete.FCStd",
+      "bytes": 9514560,
+      "sha256": "c35079ef73ef1ed8d7d00bca43f1a0d2c608529ced960459721aeeeebe59c433"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_Exploded.FCStd",
+      "bytes": 6051185,
+      "sha256": "3c239b862f4af5978bb573bf54ce537ccb93de20c351bdf145c566830f461117"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_Drawings.FCStd",
+      "bytes": 429320,
+      "sha256": "c6923130bc28bc7abdece8c8c7e4b548f5a770fdc8ad6f06694f5f629ef0ee4f"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_FullKit.step",
+      "bytes": 83834655,
+      "sha256": "14240c65112319911f5f3b1dd3d1679624d43785fdea7568563e8d44409a465b"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_Console.step",
+      "bytes": 76335954,
+      "sha256": "1ca195386b3f5e3a5f0b0c8b65b10e1d7c79541924eab269edefaced7eb59c24"
+    },
+    {
+      "path": "devices/xboxone/output/XboxOne_Exploded.step",
+      "bytes": 83835722,
+      "sha256": "5edecf30daefbea7baf51b64c803e5db87d12047cdf706d47c5e78818b84db29"
+    },
+    {
+      "path": "devices/xboxone/output/drawings/XboxOne_Drawings.pdf",
+      "bytes": 761671,
+      "sha256": "6a405e07fd7053770849c1dcee48f3205e33e2b9637554909e960fed4c16a43b"
+    },
+    {
+      "path": "devices/xboxone/output/drawings/XboxOne_Drawings.html",
+      "bytes": 1886990,
+      "sha256": "eb104bf022fe7f0a9fcde2095f3347201d521e62a92d288edc1c853829e80b48"
+    },
+    {
+      "path": "devices/xboxone/output/COMPONENTS.csv",
+      "bytes": 341713,
+      "sha256": "6619871237577bb7f540b89f29055f77e3222a9cfbfccf57811b02868ab3d393"
+    },
+    {
+      "path": "site/public/models/xboxone.glb",
+      "bytes": 14203732,
+      "sha256": "93fd0ebc368b71279d858142961b17f1cef7a7bc669f1b44126d4ff14a3e9127"
+    },
+    {
+      "path": "site/public/models/xboxone.glb.gz",
+      "bytes": 3211222,
+      "sha256": "39d195ebdcd4599c8d038d7a103db3380866f21a4e603777d286ab113ec0bd0a"
+    }
+  ],
+  "live_verified": false
+}

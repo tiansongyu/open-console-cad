@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "status": "passed after full 12-page inspection of final refreshed PDF",
+  "artifact": "devices/xboxone/output/drawings/XboxOne_Drawings.pdf",
+  "artifact_sha256": "6a405e07fd7053770849c1dcee48f3205e33e2b9637554909e960fed4c16a43b",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "Isolated reviewer /root/ps3_pdf_review; fresh Xbox One candidate review",
+  "review_scope": {
+    "method": "Read brief/preserve, source notes, manifest summary and Kami READY log in original independent review. Following final native HDD power-plug correction and diagram regeneration, reopened every latest page PNG 1–12 with view_image, reread latest Kami verdict and inspected actual PDF page count, sizes and CJK drawing fonts. Only this review report edited; no desktop, model or artwork changes.",
+    "limitations": "Visual and supplied-contract/source-note consistency only; no native CAD reload, physical section regeneration, external source re-verification, or full CAD/STEP/web ID audit."
+  },
+  "checks": {
+    "page_contract": {
+      "passed": true,
+      "page_count": 12,
+      "sizes_pt": [
+        [
+          1190.55,
+          841.89
+        ]
+      ]
+    },
+    "fonts": {
+      "passed": true,
+      "cjk_drawn_fonts": {
+        "TsangerJinKai02": 198
+      },
+      "visual": "No missing glyph boxes or disruptive font changes observed."
+    },
+    "kami_delivery": {
+      "passed": true,
+      "log": ".local/xboxone-isolated/kami_delivery.log",
+      "result": "Latest log read: READY 0 errors, 1 orphan warning, 0 data gaps; coverage, fonts, density and page contract OK. Latest full visual pass found no stranded headings."
+    },
+    "counts": {
+      "passed": true,
+      "manifest_components": 1791,
+      "manifest_solids": 1870,
+      "manifest_stages": 28,
+      "assembly_sum": 1791,
+      "result": "1791 component entries and 1870 solids consistent on pages 1/11/12; 28 stages on pages 1/12 and manifest."
+    },
+    "visual": {
+      "passed": true,
+      "result": "All 12 latest page images individually inspected after final regeneration. No P0/P1/P2 clipping, text collisions, unreadability or version-boundary contradictions observed. Page 9 exposed direction contacts and trigger motors/axles/springs remain visible with covers-removed caption. Counts, scales, section labels and approximation notes remain legible."
+    },
+    "preserve": {
+      "result": "Model 1540 500 GB and external PSU, official 343 × 263 × 80 envelope, original 1537 dual-board/four-motor/two-AA controls, micro-USB/proprietary headset connector, original Kinect2 and ordinary-black versus Day One distinctions retained in visible text. No later 3.5 mm, USB-C, optional charging kit or game-media addition found."
+    },
+    "approximation_and_sources": {
+      "result": "Internal/accessory dimensions and nonfunctional geometry expressly distinguished throughout and page 12. Source notes identify official specifications, FCC controller pictures and original teardowns, compatible with document content. Stale in-progress sentence has been removed."
+    },
+    "native_dimension_reload": {
+      "status": "parent-reported, not independently rerun",
+      "result": "Parent reports regenerated/reloaded native drawings: 12 pages and 7 dimensions passed."
+    },
+    "geometry_correction": {
+      "status": "parent-reported, not independently rerun",
+      "result": "Parent reports HDDPowerPlug saved placement corrected to Z47; all 1791 source shapes match, strict solids/1818 pair checks/STEP pass. This reviewer checked final PDF visuals, not native geometry."
+    }
+  },
+  "findings": [
+    {
+      "severity": "P2",
+      "page": 9,
+      "element": "Lower-left impulse trigger detail",
+      "status": "resolved",
+      "finding": "Both trigger covers conceal the internal motors in a panel labeled original independent-motor impulse triggers. Hide or separate the caps in this detail view so the internal motor structure is actually visible.",
+      "resolution": "Revised page 9 removes covers in this detail panel; motors, axles and return springs are visible. Caption states covers removed. Verified visually."
+    },
+    {
+      "severity": "P3",
+      "page": null,
+      "element": "devices/xboxone/references/SOURCES.md opening paragraph",
+      "status": "resolved",
+      "finding": "The source note still says the project is undergoing staged modeling and not delivered; update before final release to avoid a stale status statement.",
+      "resolution": "Read updated opening paragraph; now points to README and output/reports for delivery and verification status."
+    }
+  ],
+  "p0_p1_findings": 0,
+  "previous_candidate_sha256": "09ed9ca41086e3697da8ab6912830eee377085c373dcfa53616ef75481063ff1",
+  "reinspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "open_findings": [],
+  "prior_reviewed_sha256": [
+    "09ed9ca41086e3697da8ab6912830eee377085c373dcfa53616ef75481063ff1",
+    "785ca61578081961a250ca7bc6449d0d3c934a9bd685e4360ef69e556bb3e92f"
+  ]
+}

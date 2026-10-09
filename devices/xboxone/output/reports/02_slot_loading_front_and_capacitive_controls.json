@@ -1,0 +1,475 @@
+{
+  "iteration": 2,
+  "slug": "slot_loading_front_and_capacitive_controls",
+  "summary": "建立左侧吸入式光盘槽、独立银色槽边、电容出盘标识与右侧电源导光；亮面顶盖文字为结构学习标识，前面板下部接缝采用真实浅切槽。",
+  "physical_components": 17,
+  "objects": [
+    {
+      "name": "BottomShellBody",
+      "label": "Original lower case · editable width",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 162373.97500815813,
+      "bounds": [
+        -171.5,
+        171.5,
+        -131.5,
+        131.5,
+        2.0,
+        3.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GlossTopCut",
+      "label": "Separate glossy left top panel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 124,
+      "volume": 80732.73521526379,
+      "bounds": [
+        -171.10000010000002,
+        -0.29999989999999715,
+        -131.3000001,
+        131.3000001,
+        78.2,
+        80.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GlossTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VentTopBody",
+      "label": "Separate matte right top grille panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 81111.50171669408,
+      "bounds": [
+        -0.29999999999999716,
+        171.3,
+        -131.3,
+        131.3,
+        78.2,
+        80.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VentTop",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LeftSide",
+      "label": "Original separate side grille wall",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42142.835555740596,
+      "bounds": [
+        -171.50000000000003,
+        -169.29999999999998,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LeftSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RightSide",
+      "label": "Original separate side grille wall001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 42142.8355557406,
+      "bounds": [
+        169.29999999999998,
+        171.50000000000003,
+        -129.1,
+        129.1,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RightSide",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaCut003",
+      "label": "Original front fascia004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 38,
+      "volume": 53196.34067577294,
+      "bounds": [
+        -169.1,
+        169.1,
+        -131.50000000000003,
+        -129.29999999999998,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFascia",
+      "label": "Original rear closure",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 55202.035555740586,
+      "bounds": [
+        -169.1,
+        169.1,
+        129.29999999999998,
+        131.50000000000003,
+        3.9,
+        78.10000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "matte",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Independent lower rubber foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Independent lower rubber foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        -116.0,
+        -106.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Independent lower rubber foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        -158.0,
+        -144.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Independent lower rubber foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 273.1327412287183,
+      "bounds": [
+        144.0,
+        158.0,
+        106.0,
+        116.0,
+        0.0,
+        2.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Frame",
+      "layer": -8,
+      "material": "rubber",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SlotUpperTrim",
+      "label": "Separate silver optical slot lip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 43.488411500823325,
+      "bounds": [
+        -156.5,
+        -11.5,
+        -131.4,
+        -130.8,
+        42.8,
+        43.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SlotUpperTrim",
+      "assembly": "Optical",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SlotLowerTrim",
+      "label": "Separate silver optical slot lip001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 43.488411500823325,
+      "bounds": [
+        -156.5,
+        -11.5,
+        -131.4,
+        -130.8,
+        38.7,
+        39.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SlotLowerTrim",
+      "assembly": "Optical",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLight",
+      "label": "Front capacitive power light",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 21.205750411731376,
+      "bounds": [
+        138.5,
+        153.5,
+        -131.42000000000002,
+        -131.3,
+        47.5,
+        62.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLight",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerX",
+      "label": "Power light cross study marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 22,
+      "volume": 0.8692685834696736,
+      "bounds": [
+        140.76489719263483,
+        151.23510280736517,
+        -131.459,
+        -131.441,
+        49.76489719263484,
+        60.23510280736516
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerX",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "gloss",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectTouch",
+      "label": "Separate capacitive eject marker",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.18760938009881784,
+      "bounds": [
+        -7.75,
+        -4.25,
+        -131.488,
+        -131.47,
+        40.5,
+        43.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectTouch",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopStudyMark",
+      "label": "XBOX ONE",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 117,
+      "volume": 0.6225014302516192,
+      "bounds": [
+        -157.8426384228188,
+        -130.60893875838926,
+        -117.07704707986576,
+        -113.08161063825504,
+        79.9819999,
+        80.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopStudyMark",
+      "assembly": "Body",
+      "layer": 8,
+      "material": "chrome",
+      "fidelity": "Original black enclosure study; published envelope, approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xboxone/output/iterations/02_slot_loading_front_and_capacitive_controls.FCStd",
+  "views": [
+    "devices/xboxone/output/previews/02_slot_loading_front_and_capacitive_controls_hero.png",
+    "devices/xboxone/output/previews/02_slot_loading_front_and_capacitive_controls_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

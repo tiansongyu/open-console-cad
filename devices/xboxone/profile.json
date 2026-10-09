@@ -1,0 +1,104 @@
+{
+  "id": "xboxone",
+  "title": "Microsoft Xbox One",
+  "prefix": "XboxOne",
+  "model": "Original black 500 GB / Model1540 / 2013",
+  "family": "console",
+  "width": 343.0,
+  "height": 263.0,
+  "closed_depth": 80.0,
+  "base_depth": 40.0,
+  "default_opening": 180,
+  "color": [
+    0.045,
+    0.046,
+    0.049
+  ],
+  "stages": 28,
+  "parameter_basis": "Microsoft Xbox One family specification sheet, original Xbox One column:34.3x26.3x8cm; local geometry approximate",
+  "exterior_fidelity": "Original black enclosure study; published envelope, approximate local detail",
+  "envelope_kind": "published",
+  "envelope_basis": "Microsoft original Xbox One column in official family specification sheet:343x263x80mm; horizontal X width,Y depth,Z height",
+  "fidelity": "Original Xbox One 1540 structure study with approximate internals",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Frame",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless"
+  ],
+  "handheld_groups": [
+    "Body",
+    "Frame",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless",
+    "Controller",
+    "Kinect"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Wireless",
+    "Wiring"
+  ],
+  "internal_exclude": [],
+  "internal_normal": [
+    0.3,
+    -0.7,
+    1.8
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -100,
+      0
+    ],
+    "Kinect": [
+      0,
+      200,
+      0
+    ],
+    "Accessories": [
+      230,
+      0,
+      0
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://news.xbox.com/wp-content/uploads/sites/2/Xbox_One_Spec_Sheet.pdf",
+      "role": "Microsoft published original Xbox One specifications and envelope"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Xbox+One+Teardown/19718",
+      "role": "Firsthand 2013 original model1540 console teardown"
+    },
+    {
+      "url": "https://fccid.io/C3K1537/Internal-Photos/Internal-Photos-2022366.pdf",
+      "role": "Microsoft 2013 FCC C3K1537 internal photographs, all6pages verified"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Xbox+One+Kinect+Teardown/19725",
+      "role": "Firsthand original Kinect2 teardown, all34photos verified"
+    }
+  ]
+}
