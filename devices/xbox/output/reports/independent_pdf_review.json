@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "artifact": "devices/xbox/output/drawings/OriginalXbox_Drawings.pdf",
+  "artifact_sha256": "8a76c4a268194ddbd79a0336f0ba3e411939c2e27b3861db5b1c539e4b80a2dc",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "isolated agent /root/ps3_pdf_review",
+  "reviewed_at": "2026-10-09T12:05:10.790168+00:00",
+  "scope": {
+    "method": "读取content.json brief/preserve、PDF实际页尺寸/文字/中文字体、book_revised.log、drawing_checks.json、本地SOURCES.md及CSV；用view_image逐一实际打开最终12张PNG并独立审查。",
+    "limitations": "仅图册终审；未重载CAD、重算BRep或重新访问外部来源。尺寸检查报告仅读取，本次核查图上标注及其与报告/契约的一致性。",
+    "mutations": "只写本JSON，未操作桌面或修改CAD/PDF/页面图片。"
+  },
+  "checks": {
+    "page_count": 12,
+    "page_size_pt": [
+      1190.55,
+      841.89
+    ],
+    "orientation": "A3 landscape",
+    "cjk_font_observed": "TsangerJinKai02",
+    "sheet_numbers": "OriginalXbox-DWG-01 至 OriginalXbox-DWG-12，与各页页脚一致。",
+    "kami": "READY 0 errors / 1 orphan warning / 0 data gaps；实际标题和表头均未跨页孤立。",
+    "dimensions": {
+      "count": 4,
+      "labels_by_page": {
+        "2": [
+          "≈320",
+          "≈99.6",
+          "≈260.28"
+        ],
+        "4": [
+          "≈226"
+        ]
+      },
+      "existing_report_pass": true,
+      "approximation": "所有尺寸标为本模型近似值，微软原文包络亦明确approximate。"
+    },
+    "csv_components": 978,
+    "csv_solids_sum": 1007,
+    "stages_text": 18,
+    "version_scope": "2001黑色v1.0，主动GPU/被动CPU、双面四枚内存、托盘DVD和IDE硬盘；原版单板有线Duke、静态饰牌、独立碳膜和六穹顶方向键。",
+    "page_observations": [
+      {
+        "page": 1,
+        "passed": true,
+        "observation": "主机X形顶盖、四前接口及有线Duke总装完整；快速脱离线缆可见；2001黑色v1.0和官方近似包络边界明确。"
+      },
+      {
+        "page": 2,
+        "passed": true,
+        "observation": "前后顶部投影、页框及约320/99.6/260.28标注完整可读；模型实值与官方近似规格有明确区分。"
+      },
+      {
+        "page": 3,
+        "passed": true,
+        "observation": "双驱动器独立托架、主板/开放电源布局、GPU风扇与CPU被动散热器可辨，说明与图相符。"
+      },
+      {
+        "page": 4,
+        "passed": true,
+        "observation": "主板两面分开呈现，各面两枚内存与空焊位可辨；约226尺寸完整；封装与线路近似声明明确。"
+      },
+      {
+        "page": 5,
+        "passed": true,
+        "observation": "主机Y=0及Duke Y=-70剖面完整；壳壁、驱动器、单主板层次及切面材料填充可辨，无异常裁切。"
+      },
+      {
+        "page": 6,
+        "passed": true,
+        "observation": "完整爆炸图及DVD/硬盘分解放大图完整；小比例总览由放大视图补充，分层及稳定编号说明清晰。"
+      },
+      {
+        "page": 7,
+        "passed": true,
+        "observation": "空载托盘、导轨/滑架、硬盘盘片及磁头臂可辨；容量不作为模型可用存储的界限明确。"
+      },
+      {
+        "page": 8,
+        "passed": true,
+        "observation": "GPU小风扇、CPU被动散热器与后排风独立可辨，电源板/绝缘层完整；未混入后期被动GPU说明。"
+      },
+      {
+        "page": 9,
+        "passed": true,
+        "observation": "大型静态饰牌、六右键、Start/Back、非对称摇杆与单PCB/顶部卡口可辨；无现代LCD/Share/USB-C/AA的混用。"
+      },
+      {
+        "page": 10,
+        "passed": true,
+        "observation": "方向键圆形胶膜可数出六穹顶；右侧六键接点层、扳机弹簧及大小双电机可辨，AV/RCA及八字电源线完整。"
+      },
+      {
+        "page": 11,
+        "passed": true,
+        "observation": "13组材料/编号/条目表及合计全部可读，无越界；978组件/1007实体与CSV一致，非原厂BOM声明保留。"
+      },
+      {
+        "page": 12,
+        "passed": true,
+        "observation": "微软approximate包络、2001拆解与Duke资料、iFixit仅用于壳体/托架的边界完整；非功能、无制造公差说明清晰。"
+      }
+    ]
+  },
+  "findings": [],
+  "severity_counts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0
+  },
+  "conclusion": "在声明的图册审查范围内通过；全部12页已实际审阅，未发现P0/P1/P2问题。"
+}

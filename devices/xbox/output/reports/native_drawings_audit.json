@@ -1,0 +1,38 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 4,
+  "checks": [
+    {
+      "sheet": 2,
+      "dimension": "Dimension02_1",
+      "expected_mm": 320.0,
+      "measured_mm": 320.0,
+      "pass": true
+    },
+    {
+      "sheet": 2,
+      "dimension": "Dimension02_2",
+      "expected_mm": 99.60000000000007,
+      "measured_mm": 99.60000000000005,
+      "pass": true
+    },
+    {
+      "sheet": 2,
+      "dimension": "Dimension02_3",
+      "expected_mm": 260.2760002,
+      "measured_mm": 260.2760002,
+      "pass": true
+    },
+    {
+      "sheet": 4,
+      "dimension": "Dimension04_1",
+      "expected_mm": 225.99999999999997,
+      "measured_mm": 226.00000000000003,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/xbox/output/OriginalXbox_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

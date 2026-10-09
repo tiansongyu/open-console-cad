@@ -1,0 +1,231 @@
+{
+  "iteration": 1,
+  "slug": "original_black_enclosure_and_four_feet",
+  "summary": "采用微软明确标作近似的 320×260×100 mm 包络，建立可编辑下壳、独立前后面板、上盖及四个橡胶脚；局部壁厚和曲率为照片指导近似。",
+  "physical_components": 8,
+  "objects": [
+    {
+      "name": "LowerShellCut001",
+      "label": "Original Xbox lower enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 32,
+      "volume": 358285.48232167854,
+      "bounds": [
+        -160.0,
+        160.0,
+        -130.0,
+        130.0,
+        3.0,
+        92.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaBody",
+      "label": "Original front fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 61155.74733402212,
+      "bounds": [
+        -156.5,
+        156.5,
+        -129.85,
+        -127.54999999999998,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaBody",
+      "label": "Original rear fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 60373.747334022126,
+      "bounds": [
+        -154.5,
+        154.5,
+        127.54999999999998,
+        129.85,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopCoverCut",
+      "label": "Original removable upper enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 208383.48449342654,
+      "bounds": [
+        -159.75,
+        159.75,
+        -129.75,
+        129.75,
+        92.3,
+        97.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopCover",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Original rubber foot over case screw",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Original rubber foot over case screw001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Original rubber foot over case screw002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Original rubber foot over case screw003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox/output/iterations/01_original_black_enclosure_and_four_feet.FCStd",
+  "views": [
+    "devices/xbox/output/previews/01_original_black_enclosure_and_four_feet_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

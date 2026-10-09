@@ -1,0 +1,89 @@
+{
+  "id": "xbox",
+  "title": "Microsoft Xbox",
+  "prefix": "OriginalXbox",
+  "model": "Original black v1.0 / 2001 / wired Duke",
+  "family": "console",
+  "width": 320,
+  "height": 260,
+  "closed_depth": 100,
+  "base_depth": 94,
+  "default_opening": 180,
+  "color": [
+    0.075,
+    0.08,
+    0.075
+  ],
+  "stages": 18,
+  "parameter_basis": "Archived Microsoft Original Xbox Technical Specifications: dimensions approximate320x100x260mm; model XYZ320x260x100mm",
+  "exterior_fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+  "envelope_kind": "approximate",
+  "envelope_basis": "Microsoft explicitly approximate320x100x260mm; reordered XYZ320x260x100mm",
+  "fidelity": "Original2001 v1.0 structural study with activeGPU cooling and wiredDuke; approximate and nonfunctional",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Ports",
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Fan",
+    "Optical",
+    "Storage",
+    "Power",
+    "Wiring"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Fan",
+    "Optical",
+    "Storage",
+    "Power",
+    "Wiring",
+    "Ports"
+  ],
+  "internal_normal": [
+    0.6,
+    -1,
+    1.5
+  ],
+  "accessories_groups": [
+    "Accessories"
+  ],
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20101010122404/http://support.xbox.com/support/en/us/xbox/hardware/consolespecifications/consolespecifications.aspx",
+      "role": "Archived official explicitly approximate console dimensions"
+    },
+    {
+      "url": "https://www.vanshardware.com/articles/2001/november/011116_Xbox/011116_Xbox.htm",
+      "role": "2001 launch firsthand teardown, activeGPU andoriginaldrive arrangement"
+    },
+    {
+      "url": "https://www.fictiv.com/teardowns/xbox-controller-teardown",
+      "role": "Firsthand original Duke controller teardown; original section only"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Xbox+Teardown/1324",
+      "role": "Case andcaddy reference only; later passiveGPUboard notcopied"
+    }
+  ],
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -280,
+      0
+    ],
+    "Accessories": [
+      -90,
+      0,
+      0
+    ]
+  }
+}

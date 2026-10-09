@@ -1,0 +1,2283 @@
+{
+  "iteration": 4,
+  "slug": "lower_and_upper_emi_shields_and_board_posts",
+  "summary": "建立上下冲压 EMI 屏蔽、折边与主板隔柱；上盖通风孔为照片指导的结构近似，所有隔柱和板件独立可查。",
+  "physical_components": 84,
+  "objects": [
+    {
+      "name": "LowerShellCut003",
+      "label": "Original Xbox lower enclosure004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 312,
+      "volume": 322025.48232168605,
+      "bounds": [
+        -160.0,
+        160.0,
+        -130.0,
+        130.0,
+        3.0,
+        92.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaCut007",
+      "label": "Original front fascia008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 32,
+      "volume": 50013.845793589506,
+      "bounds": [
+        -156.5,
+        156.5,
+        -129.85,
+        -127.54999999999998,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaCut003",
+      "label": "Original rear fascia004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 121,
+      "volume": 52343.57649088153,
+      "bounds": [
+        -154.5,
+        154.5,
+        127.54999999999998,
+        129.85,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopCoverCut002",
+      "label": "Original removable upper enclosure003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 579,
+      "volume": 185502.2384828969,
+      "bounds": [
+        -159.75,
+        159.75,
+        -129.75,
+        129.75,
+        92.3,
+        97.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopCover",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Original rubber foot over case screw",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Original rubber foot over case screw001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Original rubber foot over case screw002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Original rubber foot over case screw003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopMoldedX",
+      "label": "Original broad X-shaped raised top ribs",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 94830.16505578457,
+      "bounds": [
+        -158.0,
+        158.0,
+        -126.00000000000001,
+        126.00000000000001,
+        97.79999999999998,
+        99.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopMoldedX",
+      "assembly": "Body",
+      "layer": 8,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopJewelBase",
+      "label": "Green original center jewel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7328.707342294265,
+      "bounds": [
+        -36.0,
+        36.0,
+        -36.0,
+        36.0,
+        97.85,
+        99.64999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopJewelBase",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "jewel",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopXboxMark",
+      "label": "XBOX",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 73,
+      "volume": 4.014317426516594,
+      "bounds": [
+        -21.4626677852349,
+        27.266023489932895,
+        -5.263087348322148,
+        8.37986587181208,
+        99.67999990000001,
+        99.6980001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopXboxMark",
+      "assembly": "Body",
+      "layer": 10,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DVDTrayFace",
+      "label": "Original DVD tray fascia",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 6368.492387171748,
+      "bounds": [
+        -142.0,
+        -9.999999999999995,
+        -130.20000000000002,
+        -128.1,
+        62.5,
+        85.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DVDTrayFace",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayXboxMark",
+      "label": "XBOX001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 73,
+      "volume": 0.5120302839944629,
+      "bounds": [
+        -89.80809563758389,
+        -72.40499161073825,
+        -130.24800009999998,
+        -130.2299999,
+        72.90604016845639,
+        77.77852358993287
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayXboxMark",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Original Eject front key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 382.268994088806,
+      "bounds": [
+        -7.8,
+        7.8,
+        -130.0,
+        -128.0,
+        47.2,
+        62.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original Power front key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 144.76458947741764,
+      "bounds": [
+        -4.8,
+        4.8,
+        -130.0,
+        -128.0,
+        26.2,
+        35.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectGreenRing",
+      "label": "Original eject status ring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 4.580442088932472,
+      "bounds": [
+        -8.25,
+        8.25,
+        -130.02,
+        -129.72,
+        46.75,
+        63.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectGreenRing",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "green",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Sleeve",
+      "label": "Original controller receptacle sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 399.37033265450464,
+      "bounds": [
+        -131.0,
+        -107.0,
+        -129.4,
+        -116.4,
+        19.499999999999993,
+        32.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Sleeve",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Tongue",
+      "label": "Original controller insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.96223007675812,
+      "bounds": [
+        -129.5,
+        -108.5,
+        -128.5,
+        -118.5,
+        25.45,
+        26.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Pin0",
+      "label": "Original controller schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -123.72500000000001,
+        -123.075,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Pin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Pin1",
+      "label": "Original controller schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -121.525,
+        -120.875,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Pin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Pin2",
+      "label": "Original controller schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -119.325,
+        -118.675,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Pin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Pin3",
+      "label": "Original controller schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894932,
+      "bounds": [
+        -117.125,
+        -116.475,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Pin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort0Pin4",
+      "label": "Original controller schematic contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -114.925,
+        -114.27499999999999,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort0Pin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortNumber0",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.05441300842304479,
+      "bounds": [
+        -119.53372483221476,
+        -117.2963087248322,
+        -130.058,
+        -130.04,
+        42.0,
+        45.758389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortNumber0",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Sleeve",
+      "label": "Original controller receptacle sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 399.3703326545042,
+      "bounds": [
+        -77.0,
+        -53.0,
+        -129.4,
+        -116.4,
+        19.499999999999993,
+        32.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Sleeve",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Tongue",
+      "label": "Original controller insulating tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.9622300767581,
+      "bounds": [
+        -75.5,
+        -54.5,
+        -128.5,
+        -118.5,
+        25.45,
+        26.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Pin0",
+      "label": "Original controller schematic contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894932,
+      "bounds": [
+        -69.72500000000001,
+        -69.075,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Pin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Pin1",
+      "label": "Original controller schematic contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -67.525,
+        -66.875,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Pin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Pin2",
+      "label": "Original controller schematic contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -65.325,
+        -64.675,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Pin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Pin3",
+      "label": "Original controller schematic contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        -63.125,
+        -62.474999999999994,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Pin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort1Pin4",
+      "label": "Original controller schematic contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894932,
+      "bounds": [
+        -60.925000000000004,
+        -60.275,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort1Pin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortNumber1",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.06448782208571767,
+      "bounds": [
+        -65.7224833214765,
+        -63.33657708120804,
+        -130.0580001,
+        -130.0399999,
+        41.9999999,
+        45.82281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortNumber1",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Sleeve",
+      "label": "Original controller receptacle sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 399.3703326545044,
+      "bounds": [
+        53.0,
+        77.0,
+        -129.4,
+        -116.4,
+        19.499999999999993,
+        32.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Sleeve",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Tongue",
+      "label": "Original controller insulating tongue002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.9622300767581,
+      "bounds": [
+        54.5,
+        75.5,
+        -128.5,
+        -118.5,
+        25.45,
+        26.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Pin0",
+      "label": "Original controller schematic contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        60.275,
+        60.925000000000004,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Pin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Pin1",
+      "label": "Original controller schematic contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894931,
+      "bounds": [
+        62.474999999999994,
+        63.125,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Pin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Pin2",
+      "label": "Original controller schematic contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        64.675,
+        65.325,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Pin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Pin3",
+      "label": "Original controller schematic contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894932,
+      "bounds": [
+        66.875,
+        67.525,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Pin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort2Pin4",
+      "label": "Original controller schematic contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894932,
+      "bounds": [
+        69.075,
+        69.72500000000001,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort2Pin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortNumber2",
+      "label": "3",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 31,
+      "volume": 0.0663378057294724,
+      "bounds": [
+        64.29261734966444,
+        66.76661083825502,
+        -130.0580001,
+        -130.0399999,
+        41.9248321147651,
+        45.82281889194631
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortNumber2",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Sleeve",
+      "label": "Original controller receptacle sleeve003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 399.3703326545046,
+      "bounds": [
+        107.0,
+        131.0,
+        -129.4,
+        -116.4,
+        19.499999999999993,
+        32.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Sleeve",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Tongue",
+      "label": "Original controller insulating tongue003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 230.96223007675812,
+      "bounds": [
+        108.5,
+        129.5,
+        -128.5,
+        -118.5,
+        25.45,
+        26.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Tongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Pin0",
+      "label": "Original controller schematic contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        114.27499999999999,
+        114.925,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Pin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Pin1",
+      "label": "Original controller schematic contact016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        116.475,
+        117.125,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Pin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Pin2",
+      "label": "Original controller schematic contact017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        118.675,
+        119.325,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Pin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Pin3",
+      "label": "Original controller schematic contact018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894933,
+      "bounds": [
+        120.875,
+        121.525,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Pin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerPort3Pin4",
+      "label": "Original controller schematic contact019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.7018351857894931,
+      "bounds": [
+        123.075,
+        123.72500000000001,
+        -128.0,
+        -119.0,
+        26.6,
+        26.720000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerPort3Pin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PortNumber3",
+      "label": "4",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 0.06920096138687509,
+      "bounds": [
+        118.151677852349,
+        120.88993288590605,
+        -130.058,
+        -130.04,
+        42.0,
+        45.758389261744966
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PortNumber3",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetShell",
+      "label": "Original rear Ethernet receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 343.98265361879965,
+      "bounds": [
+        -125.0,
+        -109.0,
+        117.6,
+        129.6,
+        17.0,
+        31.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetTongue",
+      "label": "Original Ethernet connector insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 103.96566370614357,
+      "bounds": [
+        -123.5,
+        -110.5,
+        119.2,
+        127.2,
+        23.5,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin0",
+      "label": "Original rear schematic connector contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -122.5,
+        -122.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin1",
+      "label": "Original rear schematic connector contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -121.0,
+        -120.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin2",
+      "label": "Original rear schematic connector contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -119.5,
+        -119.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin3",
+      "label": "Original rear schematic connector contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -118.0,
+        -117.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin4",
+      "label": "Original rear schematic connector contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -116.5,
+        -116.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin5",
+      "label": "Original rear schematic connector contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -115.0,
+        -114.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin6",
+      "label": "Original rear schematic connector contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -113.5,
+        -113.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetPin7",
+      "label": "Original rear schematic connector contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -112.0,
+        -111.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetPin7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVShell",
+      "label": "Original rear AV receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 523.9826536187999,
+      "bounds": [
+        -89.0,
+        -57.0,
+        117.6,
+        129.6,
+        17.5,
+        30.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVShell",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVTongue",
+      "label": "Original AV connector insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 231.96566370614354,
+      "bounds": [
+        -87.5,
+        -58.5,
+        119.2,
+        127.2,
+        23.5,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVTongue",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin0",
+      "label": "Original rear schematic connector contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -85.5,
+        -85.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin1",
+      "label": "Original rear schematic connector contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -82.0,
+        -81.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin2",
+      "label": "Original rear schematic connector contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -78.5,
+        -78.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin3",
+      "label": "Original rear schematic connector contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -75.0,
+        -74.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin4",
+      "label": "Original rear schematic connector contact012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -71.5,
+        -71.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin5",
+      "label": "Original rear schematic connector contact013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.29992274333882446,
+      "bounds": [
+        -68.0,
+        -67.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin6",
+      "label": "Original rear schematic connector contact014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -64.5,
+        -64.0,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVPin7",
+      "label": "Original rear schematic connector contact015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2999227433388245,
+      "bounds": [
+        -61.0,
+        -60.5,
+        120.2,
+        126.2,
+        24.55,
+        24.650000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVPin7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Original two-pin AC inlet body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 1037.992918860103,
+      "bounds": [
+        118.0,
+        136.0,
+        118.6,
+        129.6,
+        21.5,
+        30.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACContact0",
+      "label": "AC inlet contact pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.812830345854124,
+      "bounds": [
+        122.1,
+        123.9,
+        121.0,
+        128.0,
+        25.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACContact1",
+      "label": "AC inlet contact pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 17.812830345854078,
+      "bounds": [
+        130.1,
+        131.9,
+        121.0,
+        128.0,
+        25.1,
+        26.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LowerShieldBody",
+      "label": "Original lower EMI tray floor",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 41331.7115038379,
+      "bounds": [
+        -154.0,
+        154.0,
+        -122.0,
+        122.0,
+        7.1,
+        7.6499999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShield",
+      "assembly": "Frame",
+      "layer": -4,
+      "material": "metal",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShieldSide_1",
+      "label": "Lower EMI tray folded side",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 7470.866946861306,
+      "bounds": [
+        -153.85,
+        -153.35,
+        -120.5,
+        120.5,
+        7.8,
+        69.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShieldSide-1",
+      "assembly": "Frame",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShieldSide1",
+      "label": "Lower EMI tray folded side001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 7470.866946861305,
+      "bounds": [
+        153.35,
+        153.85,
+        -120.5,
+        120.5,
+        7.8,
+        69.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShieldSide1",
+      "assembly": "Frame",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShieldRearCut",
+      "label": "Lower EMI tray rear lip001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 38,
+      "volume": 1659.0937832305233,
+      "bounds": [
+        -152.0,
+        152.0,
+        121.15,
+        121.65,
+        7.8,
+        18.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShieldRear",
+      "assembly": "Frame",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShieldCut",
+      "label": "Original upper stamped EMI lid001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 138,
+      "volume": 31225.650444078517,
+      "bounds": [
+        -153.5,
+        153.5,
+        -121.5,
+        121.5,
+        92.0,
+        92.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShield",
+      "assembly": "Frame",
+      "layer": 6,
+      "material": "metal",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost0",
+      "label": "Motherboard screw standoff",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636829,
+      "bounds": [
+        -143.2,
+        -136.8,
+        -108.2,
+        -101.8,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost0",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost1",
+      "label": "Motherboard screw standoff001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636832,
+      "bounds": [
+        -33.2,
+        -26.8,
+        -108.2,
+        -101.8,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost1",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost2",
+      "label": "Motherboard screw standoff002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636832,
+      "bounds": [
+        75.8,
+        82.2,
+        -108.2,
+        -101.8,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost2",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost3",
+      "label": "Motherboard screw standoff003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636829,
+      "bounds": [
+        -143.2,
+        -136.8,
+        10.8,
+        17.2,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost3",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost4",
+      "label": "Motherboard screw standoff004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636835,
+      "bounds": [
+        75.8,
+        82.2,
+        10.8,
+        17.2,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost4",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost5",
+      "label": "Motherboard screw standoff005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636829,
+      "bounds": [
+        -143.2,
+        -136.8,
+        102.8,
+        109.2,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost5",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost6",
+      "label": "Motherboard screw standoff006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636832,
+      "bounds": [
+        -33.2,
+        -26.8,
+        102.8,
+        109.2,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost6",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainboardPost7",
+      "label": "Motherboard screw standoff007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 105.77742464636832,
+      "bounds": [
+        75.8,
+        82.2,
+        102.8,
+        109.2,
+        7.9,
+        11.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainboardPost7",
+      "assembly": "Frame",
+      "layer": -2,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox/output/iterations/04_lower_and_upper_emi_shields_and_board_posts.FCStd",
+  "views": [
+    "devices/xbox/output/previews/04_lower_and_upper_emi_shields_and_board_posts_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

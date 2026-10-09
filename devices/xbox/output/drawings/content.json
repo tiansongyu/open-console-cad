@@ -1,0 +1,143 @@
+{
+  "type": "long-doc",
+  "lang": "cn",
+  "brief": {
+    "audience": "FreeCAD 学习者与主机结构观察者",
+    "job": "用原生实体说明 2001 原版 v1.0 Xbox 与有线 Duke",
+    "template": "long-doc",
+    "formats": [
+      "html",
+      "pdf"
+    ],
+    "page_target": 12,
+    "narrative": "总装、近似包络、双驱动器、主板、剖面、爆炸、散热电源、Duke、附件、组件与边界",
+    "required_facts": [
+      "2001",
+      "978 个组件条目",
+      "1007 个实体"
+    ],
+    "required_assets": [],
+    "acceptance_checks": [
+      "12 pages of A3 landscape",
+      "CAD-derived projections and physical sections",
+      "native dimensions reload correctly",
+      "Kami content style placeholders density and CJK font checks",
+      "all pages visually inspected and independently reviewed"
+    ],
+    "preserve": [
+      "Original 2001 black v1.0 console with wired Duke",
+      "Microsoft explicitly approximate 320x100x260mm envelope, XYZ reordered 320x260x100mm",
+      "Active GPU cooling and passive CPU heatsink; four installed RAM chips across both board faces",
+      "Tray-loading DVD and 3.5-inch IDE drive in separate carriers",
+      "Original Duke single PCB, separate carbon film and six-dome D-pad",
+      "No modern Hyperkin screen, Share, USB-C or AA cells",
+      "Stable component identifiers across native CAD STEP drawings and web"
+    ],
+    "explicit_deviations": [
+      "Existing repository A3 landscape adaptation of Kami long-doc",
+      "CAD SVG projections and BRep sections replace generic illustrations",
+      "Cover combined with assembly sheet; finalpage records sources and boundaries",
+      "Companion SVG and native FreeCAD sheets accompany HTML and PDF"
+    ]
+  },
+  "content": {
+    "title": "Microsoft Xbox · 原版结构学习图册",
+    "subtitle": "2001 Original Black v1.0 · 主动 GPU 与原版有线 Duke",
+    "author": "CAD Study",
+    "date": "2026-10-09",
+    "summary": {
+      "claim": "本图册以原生实体投影、剖面和爆炸视图展示原版黑色 Xbox 的 X 形上盖、早期主板、CPU/GPU 散热、托盘 DVD、IDE 硬盘、开放式电源与有线 Duke；包络采用官方近似规格，局部与电路为非功能学习近似。",
+      "takeaways": [
+        "18 轮建模记录，978 个组件条目，1007 个实体；按原生编号和 CSV 查对。",
+        "微软原文明确 approximate；320 × 100 × 260 mm 按模型 XYZ 重排为 320 × 260 × 100 mm。",
+        "早期主机内部以 2001 发售期拆解为准；iFixit 后期样机仅参考外壳和托架。"
+      ]
+    },
+    "chapters": [
+      {
+        "title": "近似包络与原版接口布局",
+        "claim": "微软原文采用 approximate 320 × 100 × 260 mm；本模型按 XYZ 排列为 320 × 260 × 100 mm。以下数值读取当前模型，不等于原厂制造图；侧面格栅、接口和按钮各自保留为实体。",
+        "paragraphs": [
+          "微软原文采用 approximate 320 × 100 × 260 mm；本模型按 XYZ 排列为 320 × 260 × 100 mm。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "以下数值读取当前模型，不等于原厂制造图；侧面格栅、接口和按钮各自保留为实体。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "v1.0 主板与两层驱动器托架",
+        "claim": "主板位于下部，左侧 DVD 与右侧 3.5 英寸硬盘装在独立塑料托架中。右侧是开放式内置电源；后部风扇与 CPU 被动散热、GPU 主动散热共同占据主板后方。",
+        "paragraphs": [
+          "主板位于下部，左侧 DVD 与右侧 3.5 英寸硬盘装在独立塑料托架中。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "右侧是开放式内置电源；后部风扇与 CPU 被动散热、GPU 主动散热共同占据主板后方。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "早期主板、四枚内存与并行 ATA",
+        "claim": "发售期拆解更正指出四枚已安装内存分布于两面；模型同时保留独立空焊位。733 MHz CPU、NV2A、MCPX 与其他封装只表达布局；简化引脚、绕组和元件并非可用电路。",
+        "paragraphs": [
+          "发售期拆解更正指出四枚已安装内存分布于两面；模型同时保留独立空焊位。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "733 MHz CPU、NV2A、MCPX 与其他封装只表达布局；简化引脚、绕组和元件并非可用电路。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "实体剖面与壳内空间",
+        "claim": "剖面由实际 BRep 与切平面相交获得；剖面材料填充不表示额外零件。壳体、主板、屏蔽、驱动器和控制器层次均采用当前保存模型；壁厚为研究近似。",
+        "paragraphs": [
+          "剖面由实际 BRep 与切平面相交获得；剖面材料填充不表示额外零件。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "壳体、主板、屏蔽、驱动器和控制器层次均采用当前保存模型；壁厚为研究近似。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "主机分层爆炸与稳定组件编号",
+        "claim": "上下壳、EMI 屏蔽、主板和两个驱动器托架沿层次展开。所有爆炸位置仅用于观察；组件编号与原生工程和 COMPONENTS.csv 保持一致。",
+        "paragraphs": [
+          "上下壳、EMI 屏蔽、主板和两个驱动器托架沿层次展开。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "所有爆炸位置仅用于观察；组件编号与原生工程和 COMPONENTS.csv 保持一致。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "托盘式 DVD 与 3.5 英寸 IDE 硬盘",
+        "claim": "DVD 保留可拆上盖、空载托盘、主轴、导轨、光学滑架和并行 ATA 插座。硬盘保留铸壳、盘片、磁头臂与下部逻辑板；不将拆解样机的物理盘容量等同于用户可用容量。",
+        "paragraphs": [
+          "DVD 保留可拆上盖、空载托盘、主轴、导轨、光学滑架和并行 ATA 插座。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "硬盘保留铸壳、盘片、磁头臂与下部逻辑板；不将拆解样机的物理盘容量等同于用户可用容量。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "主动 GPU 散热与开放式内置电源",
+        "claim": "早期 v1.0 保留 GPU 上的小型主动风扇；后期被动 GPU 修订不作为本模型主板参考。散热片、风扇、电源绝缘片、磁性元件与电容用于观察空间关系，不提供热性能或电气认证。",
+        "paragraphs": [
+          "早期 v1.0 保留 GPU 上的小型主动风扇；后期被动 GPU 修订不作为本模型主板参考。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "散热片、风扇、电源绝缘片、磁性元件与电容用于观察空间关系，不提供热性能或电气认证。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "原版 Duke 操作布局与单主板",
+        "claim": "原版 Duke 采用非对称摇杆、六个右侧按键、Start / Back 和两个顶部存储卡口。绿色中心饰牌为静态结构；无现代复刻 LCD、Share、USB-C 或 AA 电池。",
+        "paragraphs": [
+          "原版 Duke 采用非对称摇杆、六个右侧按键、Start / Back 和两个顶部存储卡口。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "绿色中心饰牌为静态结构；无现代复刻 LCD、Share、USB-C 或 AA 电池。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "Duke 接点、六穹顶方向键与线缆",
+        "claim": "六个右键保留独立碳接点贴片与不带碳粒的硅胶层；方向键采用六个弹性穹顶。扳机保留压缩弹簧与电位器；两侧为大小不同的振动电机，线缆包含原版快速脱离接头。",
+        "paragraphs": [
+          "六个右键保留独立碳接点贴片与不带碳粒的硅胶层；方向键采用六个弹性穹顶。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "扳机保留压缩弹簧与电位器；两侧为大小不同的振动电机，线缆包含原版快速脱离接头。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      },
+      {
+        "title": "组件清单、分组与身份追踪",
+        "claim": "清单中的组件条目包含近似封装、引脚和多实体文字，不能等同于原厂采购 BOM。每个条目的几何、分组、编号、材料和近似说明均记录在 COMPONENTS.csv。",
+        "paragraphs": [
+          "清单中的组件条目包含近似封装、引脚和多实体文字，不能等同于原厂采购 BOM。 图中尺寸单位统一为 mm，数字对应当前模型的几何和坐标。全部尺寸均为本模型学习近似值，不能用作制造公差或真实电子规格。",
+          "每个条目的几何、分组、编号、材料和近似说明均记录在 COMPONENTS.csv。 爆炸位移用于区分装配层，缩放视图不会改变尺寸数字。每个零件编号都可在组件清单中检索，重新修改模型后应同步重建这些图纸。"
+        ]
+      }
+    ],
+    "references": [
+      "资料：微软存档规格、Van’s Hardware 2001 发售期拆解、Fictiv 原版 Duke 拆解与 iFixit 外壳/托架参考；完整链接见 references/SOURCES.md。",
+      "边界：局部尺寸、曲率、器件与线路均为学习近似，不提供功能电路、制造公差、存储容量、散热性能或电气认证。"
+    ]
+  }
+}

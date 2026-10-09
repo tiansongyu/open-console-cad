@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 978,
+  "solids": 1007,
+  "stages": 18,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/xbox/output/OriginalXbox_Study.FCStd",
+      "bytes": 9175992,
+      "sha256": "e1112fd749f3e4008aceafc2ed232834fd5709faf6028b72937353a7ff707b08"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_Complete.FCStd",
+      "bytes": 9175993,
+      "sha256": "3bd1b77255a492610c6951b4c9d97b54354e411161860db1f9ceb86be30ee9b3"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_Exploded.FCStd",
+      "bytes": 3138953,
+      "sha256": "8a2231ddc74b2385480b4391a3764654a20877feed5c57019ff21d218df7461b"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_Drawings.FCStd",
+      "bytes": 366634,
+      "sha256": "03d948e16916d1120b758ba166e4c221c3e5fc4df1410cb22df7f84df78ae79c"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_FullKit.step",
+      "bytes": 39502506,
+      "sha256": "6e189b85222d5707418d9c6475e3b9fe81684f89f9675d5d04288ac564f3cc3b"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_Console.step",
+      "bytes": 39098271,
+      "sha256": "65ff52521ce20e68e94c9ab85e6c2dee67f7c6441b3b1648d7777f944747eeb5"
+    },
+    {
+      "path": "devices/xbox/output/OriginalXbox_Exploded.step",
+      "bytes": 16536334,
+      "sha256": "1681bbb9f8621d72506a79472c6ac9dcb9a9284a16510173163fec9967fb811b"
+    },
+    {
+      "path": "devices/xbox/output/drawings/OriginalXbox_Drawings.pdf",
+      "bytes": 693526,
+      "sha256": "8a76c4a268194ddbd79a0336f0ba3e411939c2e27b3861db5b1c539e4b80a2dc"
+    },
+    {
+      "path": "devices/xbox/output/drawings/OriginalXbox_Drawings.html",
+      "bytes": 1609738,
+      "sha256": "418498a6783425fb27fb336c796570495cf3bfd708c0d9cf554d12f31811c226"
+    },
+    {
+      "path": "devices/xbox/output/COMPONENTS.csv",
+      "bytes": 175822,
+      "sha256": "341a219a01a7a54628d4e750500f89bed2e2de630a46eef419ca4a5b6f2e1278"
+    },
+    {
+      "path": "site/public/models/xbox.glb",
+      "bytes": 7366412,
+      "sha256": "cc5565113c817009b882d80d79f8cafd81029833a7c8dbce2c24873d5c629fde"
+    },
+    {
+      "path": "site/public/models/xbox.glb.gz",
+      "bytes": 1623181,
+      "sha256": "cf1bc6dfdf6e4dd9a8c1fc994193cbc0b34894cced61b684fb085bce54221aea"
+    }
+  ],
+  "live_verified": false
+}

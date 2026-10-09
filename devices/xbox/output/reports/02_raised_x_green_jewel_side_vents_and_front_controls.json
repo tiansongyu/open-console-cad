@@ -1,0 +1,448 @@
+{
+  "iteration": 2,
+  "slug": "raised_x_green_jewel_side_vents_and_front_controls",
+  "summary": "补齐原版顶部宽 X 形筋、绿色圆形饰牌、侧面竖向通风槽和顶盖三角格栅、左侧 DVD 托盘面、中央退碟键与电源键；饰牌为静态结构，不含现代显示屏。",
+  "physical_components": 16,
+  "objects": [
+    {
+      "name": "LowerShellCut003",
+      "label": "Original Xbox lower enclosure004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 312,
+      "volume": 322025.48232168605,
+      "bounds": [
+        -160.0,
+        160.0,
+        -130.0,
+        130.0,
+        3.0,
+        92.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LowerShell",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontFasciaCut003",
+      "label": "Original front fascia004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 16,
+      "volume": 53091.79779358953,
+      "bounds": [
+        -156.5,
+        156.5,
+        -129.85,
+        -127.54999999999998,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearFasciaBody",
+      "label": "Original rear fascia",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 60373.747334022126,
+      "bounds": [
+        -154.5,
+        154.5,
+        127.54999999999998,
+        129.85,
+        6.0,
+        91.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearFascia",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopCoverCut002",
+      "label": "Original removable upper enclosure003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 579,
+      "volume": 185502.2384828969,
+      "bounds": [
+        -159.75,
+        159.75,
+        -129.75,
+        129.75,
+        92.3,
+        97.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopCover",
+      "assembly": "Body",
+      "layer": 7,
+      "material": "accent",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot0",
+      "label": "Original rubber foot over case screw",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot1",
+      "label": "Original rubber foot over case screw001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        -124.0,
+        -108.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot2",
+      "label": "Original rubber foot over case screw002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        -158.0,
+        -136.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RubberFoot3",
+      "label": "Original rubber foot over case screw003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 947.1433508808226,
+      "bounds": [
+        136.0,
+        158.0,
+        108.0,
+        124.0,
+        0.1,
+        2.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RubberFoot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopMoldedX",
+      "label": "Original broad X-shaped raised top ribs",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 15,
+      "volume": 94830.16505578457,
+      "bounds": [
+        -158.0,
+        158.0,
+        -126.00000000000001,
+        126.00000000000001,
+        97.79999999999998,
+        99.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopMoldedX",
+      "assembly": "Body",
+      "layer": 8,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopJewelBase",
+      "label": "Green original center jewel",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7328.707342294265,
+      "bounds": [
+        -36.0,
+        36.0,
+        -36.0,
+        36.0,
+        97.85,
+        99.64999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopJewelBase",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "jewel",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopXboxMark",
+      "label": "XBOX",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 73,
+      "volume": 4.014317426516594,
+      "bounds": [
+        -21.4626677852349,
+        27.266023489932895,
+        -5.263087348322148,
+        8.37986587181208,
+        99.67999990000001,
+        99.6980001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopXboxMark",
+      "assembly": "Body",
+      "layer": 10,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DVDTrayFace",
+      "label": "Original DVD tray fascia",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 6368.492387171748,
+      "bounds": [
+        -142.0,
+        -9.999999999999995,
+        -130.20000000000002,
+        -128.1,
+        62.5,
+        85.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DVDTrayFace",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TrayXboxMark",
+      "label": "XBOX001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 73,
+      "volume": 0.5120302839944629,
+      "bounds": [
+        -89.80809563758389,
+        -72.40499161073825,
+        -130.24800009999998,
+        -130.2299999,
+        72.90604016845639,
+        77.77852358993287
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TrayXboxMark",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "white",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Original Eject front key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 382.268994088806,
+      "bounds": [
+        -7.8,
+        7.8,
+        -130.0,
+        -128.0,
+        47.2,
+        62.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Original Power front key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 144.76458947741764,
+      "bounds": [
+        -4.8,
+        4.8,
+        -130.0,
+        -128.0,
+        26.2,
+        35.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectGreenRing",
+      "label": "Original eject status ring",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 4.580442088932472,
+      "bounds": [
+        -8.25,
+        8.25,
+        -130.02,
+        -129.72,
+        46.75,
+        63.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectGreenRing",
+      "assembly": "Controls",
+      "layer": 3,
+      "material": "green",
+      "fidelity": "Official approximate envelope; photograph-guided original2001 local geometry",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/xbox/output/iterations/02_raised_x_green_jewel_side_vents_and_front_controls.FCStd",
+  "views": [
+    "devices/xbox/output/previews/02_raised_x_green_jewel_side_vents_and_front_controls_hero.png",
+    "devices/xbox/output/previews/02_raised_x_green_jewel_side_vents_and_front_controls_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
