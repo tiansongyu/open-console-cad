@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 779,
+  "solids": 899,
+  "stages": 17,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Study.FCStd",
+      "bytes": 7379991,
+      "sha256": "356d2b4fbf1a319247acf9232fcd41f54c87f1fd0a8c55b56a7067f932e44a53"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Complete.FCStd",
+      "bytes": 7379994,
+      "sha256": "3d8b2b7a44c39d27d1c9a9678a774d795f1d3725e4d05cb04b676ab6606496ee"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Exploded.FCStd",
+      "bytes": 3416101,
+      "sha256": "26917d486a6660bd2864abd28b6bf560b0b6b1492d9445f04ad0a652027518e4"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Drawings.FCStd",
+      "bytes": 332333,
+      "sha256": "ee1bf7296601b604d5038a1bedd0a7dae155e447e18df9d845941168329a639f"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_FullKit.step",
+      "bytes": 43143931,
+      "sha256": "ee9c679b82a5e69702fa576b7839cc16d03df0ecc26f7dc0af7cd7a3b6737dfe"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Handheld.step",
+      "bytes": 36084622,
+      "sha256": "706821b0faccc183304cbb590a8d889c99edf0fecc9ac5cd95e11a81d87c64c4"
+    },
+    {
+      "path": "devices/gba/output/GameBoyAdvance_Exploded.step",
+      "bytes": 43145887,
+      "sha256": "3a85a7872f6c709f52297744178209c3238d0aa195d7774daf514ce2283ebc08"
+    },
+    {
+      "path": "devices/gba/output/drawings/GameBoyAdvance_Drawings.pdf",
+      "bytes": 612859,
+      "sha256": "d0794c479703807f83e94967adf460347e15ba183f19cd5413b3e1d847b7c29b"
+    },
+    {
+      "path": "devices/gba/output/drawings/GameBoyAdvance_Drawings.html",
+      "bytes": 1388929,
+      "sha256": "326837acfc31932e3caf3b6995caf7fdd867406b2e44276478390cbd19eb4147"
+    },
+    {
+      "path": "devices/gba/output/COMPONENTS.csv",
+      "bytes": 149863,
+      "sha256": "64473b9c34211a0c08996feb8f0ee642484b720c3135a2a7e10a1cdaf71cfc7c"
+    },
+    {
+      "path": "site/public/models/gba.glb",
+      "bytes": 4970816,
+      "sha256": "88b0a3f314e030bd8c08a36463f5a7f7d475b56eb42fcd5b874185af4a3e6944"
+    },
+    {
+      "path": "site/public/models/gba.glb.gz",
+      "bytes": 1065294,
+      "sha256": "9837051b10ef58309db0bd04841ed805f4757b05267ada320a5c59c0742f8763"
+    }
+  ],
+  "live_verified": false
+}

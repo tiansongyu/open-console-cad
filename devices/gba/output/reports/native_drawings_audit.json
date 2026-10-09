@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 7,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 144.50000066184452,
+      "measured_mm": 144.50000066184452,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 82.00000023138678,
+      "measured_mm": 82.00000023138679,
+      "pass": true
+    },
+    {
+      "sheet": 2,
+      "dimension": "Dimension02_1",
+      "expected_mm": 24.500000200000034,
+      "measured_mm": 24.50000020000001,
+      "pass": true
+    },
+    {
+      "sheet": 5,
+      "dimension": "Dimension05_1",
+      "expected_mm": 61.199999999999996,
+      "measured_mm": 61.2,
+      "pass": true
+    },
+    {
+      "sheet": 5,
+      "dimension": "Dimension05_2",
+      "expected_mm": 40.800000000000004,
+      "measured_mm": 40.8,
+      "pass": true
+    },
+    {
+      "sheet": 6,
+      "dimension": "Dimension06_1",
+      "expected_mm": 132.00000019999996,
+      "measured_mm": 132.0000002,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_1",
+      "expected_mm": 60.00000000000001,
+      "measured_mm": 60.00000000000001,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/gba/output/GameBoyAdvance_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

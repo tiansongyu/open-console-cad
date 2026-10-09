@@ -1,0 +1,1150 @@
+{
+  "iteration": 5,
+  "slug": "rear_battery_door_and_opposed_aa_cells",
+  "summary": "建立独立背面电池盖、双 AA 舱壁/隔板与相反极性的两枚电池，分离正负端帽及卡扣；保留原版可换电池结构，不使用内置锂电池。",
+  "physical_components": 42,
+  "objects": [
+    {
+      "name": "BackCoverCut001",
+      "label": "BackCover002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 33,
+      "volume": 17339.746593984804,
+      "bounds": [
+        -72.25000017975988,
+        72.25000017975988,
+        -41.000000158442646,
+        41.00000015844265,
+        -1.0000000088817842e-07,
+        11.400000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontCoverCut009",
+      "label": "FrontCover010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 118,
+      "volume": 12629.475020899497,
+      "bounds": [
+        -72.25000033092226,
+        72.25000033092226,
+        -41.0000002313868,
+        41.0000002313868,
+        11.599999899999998,
+        23.300000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontCover",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayBezelCut",
+      "label": "Editable original grey display-lens border001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1224.797933466573,
+      "bounds": [
+        -38.3,
+        38.3,
+        -29.8,
+        32.8,
+        23.35,
+        23.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayBezel",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDMetalBack",
+      "label": "Separate LCD metal rear plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1123.1356194490197,
+      "bounds": [
+        -36.0,
+        36.0,
+        -21.5,
+        30.5,
+        17.8,
+        18.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDMetalBack",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDReflector",
+      "label": "Nonilluminated LCD rear reflector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 524.9793982236845,
+      "bounds": [
+        -35.0,
+        35.0,
+        -20.5,
+        29.5,
+        18.2,
+        18.349999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDReflector",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDModule",
+      "label": "Original reflective TFT cell module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15308.501313969355,
+      "bounds": [
+        -34.75,
+        34.75,
+        -20.25,
+        29.25,
+        18.4,
+        22.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDModule",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDPolarizer",
+      "label": "Reflective optical polarizer; no backlight",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 299.6345407431588,
+      "bounds": [
+        -30.6,
+        30.6,
+        -15.9,
+        24.9,
+        23.02,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDPolarizer",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "agblcd",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Published 61.2 x 40.8 mm display region",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 549.3299913624552,
+      "bounds": [
+        -30.6,
+        30.6,
+        -15.9,
+        24.9,
+        23.32,
+        23.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "agblcd",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AdvanceMark",
+      "label": "GAME BOY ADVANCE",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 219,
+      "volume": 0.4132532493536381,
+      "bounds": [
+        -18.326342381879197,
+        13.525201342281875,
+        -24.44510077114094,
+        -22.106308624832213,
+        23.9199999,
+        23.938000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AdvanceMark",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoMark",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.18949299032358366,
+      "bounds": [
+        -7.483829697986577,
+        6.665918724161074,
+        33.95302003422819,
+        36.4496645295302,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPad",
+      "label": "Original single cross directional cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 243.77280667857607,
+      "bounds": [
+        -63.25,
+        -42.75,
+        -9.25,
+        11.25,
+        23.35,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem0",
+      "label": "Separate directional plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -54.35,
+        -51.65,
+        5.65,
+        8.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem0",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem1",
+      "label": "Separate directional plunger study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -48.35,
+        -45.65,
+        -0.3500000000000001,
+        2.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem2",
+      "label": "Separate directional plunger study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -54.35,
+        -51.65,
+        -6.35,
+        -3.65,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem2",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem3",
+      "label": "Separate directional plunger study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -60.35,
+        -57.65,
+        -0.3500000000000001,
+        2.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem3",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A original circular action key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 174.98046505476083,
+      "bounds": [
+        52.5,
+        61.5,
+        3.5,
+        12.5,
+        21.7,
+        24.462
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.02781304709247366,
+      "bounds": [
+        56.124161073825505,
+        58.18993288590604,
+        7.0,
+        9.25503355704698,
+        24.482,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B original circular action key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 174.98046505476083,
+      "bounds": [
+        39.4999999,
+        48.5000001,
+        -4.5,
+        4.5,
+        21.7,
+        24.462
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.0350320314434039,
+      "bounds": [
+        43.403523389932886,
+        45.002684663758394,
+        -1.0000001,
+        1.2550336570469798,
+        24.481999899999998,
+        24.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStart",
+      "label": "Start original grey rubber key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 30.13324263043078,
+      "bounds": [
+        -51.72102846445393,
+        -42.27897153554607,
+        -22.328107717185357,
+        -17.671892282814643,
+        23.35,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStart",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemStart",
+      "label": "Start independent plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 28.990264939859085,
+      "bounds": [
+        -50.0,
+        -44.0,
+        -21.25,
+        -18.75,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemStart",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "silicone",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartMark",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.055724609855412624,
+      "bounds": [
+        -52.16409405973154,
+        -45.93174496644295,
+        -17.53006721409396,
+        -15.970872383221478,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSelect",
+      "label": "Select original grey rubber key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 30.133242630430782,
+      "bounds": [
+        -51.72102846445393,
+        -42.27897153554607,
+        -29.328107717185357,
+        -24.671892282814643,
+        23.35,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSelect",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemSelect",
+      "label": "Select independent plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 28.990264939859085,
+      "bounds": [
+        -50.0,
+        -44.0,
+        -28.25,
+        -25.75,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemSelect",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "silicone",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectMark",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.06364271854871484,
+      "bounds": [
+        -52.16409405973154,
+        -44.53577181208053,
+        -24.53006721409396,
+        -22.970872383221476,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLEDLens",
+      "label": "Separate original green power-status lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6234490621048945,
+      "bounds": [
+        44.95,
+        47.05,
+        24.95,
+        27.05,
+        23.32,
+        23.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLEDLens",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLEDGuide",
+      "label": "Independent power-status light guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.021238596594934,
+      "bounds": [
+        45.2,
+        46.8,
+        25.2,
+        26.8,
+        21.2,
+        23.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLEDGuide",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.0713890644655655,
+      "bounds": [
+        48.20234889328859,
+        55.57986587181208,
+        25.26993278590604,
+        26.829127616778525,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderL",
+      "label": "Original L shoulder key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 549.8883475458147,
+      "bounds": [
+        -65.0,
+        -39.0,
+        28.0,
+        37.0,
+        19.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderL",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMarkL",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.018960716859601084,
+      "bounds": [
+        -52.48382969798657,
+        -51.02252516778523,
+        31.2,
+        33.5489932885906,
+        23.02,
+        23.038
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMarkL",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderR",
+      "label": "Original R shoulder key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 549.8883475458144,
+      "bounds": [
+        39.0,
+        65.0,
+        28.0,
+        37.0,
+        19.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderR",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMarkR",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.03399325729362592,
+      "bounds": [
+        51.51617020201342,
+        53.34555379127517,
+        31.199999899999998,
+        33.5489933885906,
+        23.0199999,
+        23.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMarkR",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryDoor",
+      "label": "Independent rear battery door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2225.5970950445585,
+      "bounds": [
+        -29.0,
+        29.0,
+        -33.5,
+        1.5000000000000009,
+        0.0,
+        1.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryDoor",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AABayWallsCut",
+      "label": "Separate molded two-AA compartment wall study001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 3840.893813018364,
+      "bounds": [
+        -28.0,
+        28.0,
+        -33.0,
+        1.0000000000000009,
+        1.5,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AABayWalls",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AABayDivider",
+      "label": "Independent dual-AA divider study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 581.91929188601,
+      "bounds": [
+        -26.0,
+        26.0,
+        -16.4,
+        -15.6,
+        1.5,
+        15.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AABayDivider",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AACell0",
+      "label": "Oppositely installed AA cell envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7619.932981282046,
+      "bounds": [
+        -25.0,
+        24.5,
+        -31.0,
+        -17.0,
+        2.0,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AACell0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AAButton0",
+      "label": "Independent AA positive button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.333450789637031,
+      "bounds": [
+        24.55,
+        24.900000000000002,
+        -26.4,
+        -21.6,
+        6.6,
+        11.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AAButton0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AANegative0",
+      "label": "Independent AA negative end disk",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.24844143781592,
+      "bounds": [
+        -25.2,
+        -25.08,
+        -29.7,
+        -18.3,
+        3.3,
+        14.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AANegative0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AACell1",
+      "label": "Oppositely installed AA cell envelope001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7619.932981282046,
+      "bounds": [
+        -24.5,
+        25.0,
+        -15.0,
+        -1.0,
+        1.9999999999999998,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AACell1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AAButton1",
+      "label": "Independent AA positive button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.333450789637031,
+      "bounds": [
+        -24.900000000000002,
+        -24.55,
+        -10.4,
+        -5.6,
+        6.6,
+        11.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AAButton1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AANegative1",
+      "label": "Independent AA negative end disk001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.24844143781592,
+      "bounds": [
+        25.08,
+        25.2,
+        -13.7,
+        -2.3,
+        3.3,
+        14.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AANegative1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryLatch",
+      "label": "Separate flexible battery-door catch study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 39.35401981020073,
+      "bounds": [
+        -4.0,
+        4.0,
+        0.29999999999999993,
+        1.9000000000000004,
+        1.2,
+        4.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryLatch",
+      "assembly": "Battery",
+      "layer": -5,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/gba/output/iterations/05_rear_battery_door_and_opposed_aa_cells.FCStd",
+  "views": [
+    "devices/gba/output/previews/05_rear_battery_door_and_opposed_aa_cells_hero.png",
+    "devices/gba/output/previews/05_rear_battery_door_and_opposed_aa_cells_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

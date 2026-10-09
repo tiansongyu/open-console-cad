@@ -1,0 +1,6117 @@
+{
+  "iteration": 6,
+  "slug": "early_u_shaped_board_agb_cpu_and_ram",
+  "summary": "建立早期 AGB-CPU-02 双面 U 形主板、电池避让、安装孔与焊盘，分离 AGB 主控、外部 RAM 和引脚；芯片尺寸、端子排列为布局示意，不提供功能电路。",
+  "physical_components": 226,
+  "objects": [
+    {
+      "name": "BackCoverCut001",
+      "label": "BackCover002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 33,
+      "volume": 17339.746593984804,
+      "bounds": [
+        -72.25000017975988,
+        72.25000017975988,
+        -41.000000158442646,
+        41.00000015844265,
+        -1.0000000088817842e-07,
+        11.400000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontCoverCut009",
+      "label": "FrontCover010",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 118,
+      "volume": 12629.475020899497,
+      "bounds": [
+        -72.25000033092226,
+        72.25000033092226,
+        -41.0000002313868,
+        41.0000002313868,
+        11.599999899999998,
+        23.300000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontCover",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayBezelCut",
+      "label": "Editable original grey display-lens border001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 1224.797933466573,
+      "bounds": [
+        -38.3,
+        38.3,
+        -29.8,
+        32.8,
+        23.35,
+        23.900000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayBezel",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDMetalBack",
+      "label": "Separate LCD metal rear plate",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1123.1356194490197,
+      "bounds": [
+        -36.0,
+        36.0,
+        -21.5,
+        30.5,
+        17.8,
+        18.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDMetalBack",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDReflector",
+      "label": "Nonilluminated LCD rear reflector",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 524.9793982236845,
+      "bounds": [
+        -35.0,
+        35.0,
+        -20.5,
+        29.5,
+        18.2,
+        18.349999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDReflector",
+      "assembly": "Display",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDModule",
+      "label": "Original reflective TFT cell module",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 15308.501313969355,
+      "bounds": [
+        -34.75,
+        34.75,
+        -20.25,
+        29.25,
+        18.4,
+        22.849999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDModule",
+      "assembly": "Display",
+      "layer": 2,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LCDPolarizer",
+      "label": "Reflective optical polarizer; no backlight",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 299.6345407431588,
+      "bounds": [
+        -30.6,
+        30.6,
+        -15.9,
+        24.9,
+        23.02,
+        23.14
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LCDPolarizer",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "agblcd",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DisplayGlass",
+      "label": "Published 61.2 x 40.8 mm display region",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 549.3299913624552,
+      "bounds": [
+        -30.6,
+        30.6,
+        -15.9,
+        24.9,
+        23.32,
+        23.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DisplayGlass",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "agblcd",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AdvanceMark",
+      "label": "GAME BOY ADVANCE",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 219,
+      "volume": 0.4132532493536381,
+      "bounds": [
+        -18.326342381879197,
+        13.525201342281875,
+        -24.44510077114094,
+        -22.106308624832213,
+        23.9199999,
+        23.938000100000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AdvanceMark",
+      "assembly": "Display",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoMark",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.18949299032358366,
+      "bounds": [
+        -7.483829697986577,
+        6.665918724161074,
+        33.95302003422819,
+        36.4496645295302,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPad",
+      "label": "Original single cross directional cap",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 243.77280667857607,
+      "bounds": [
+        -63.25,
+        -42.75,
+        -9.25,
+        11.25,
+        23.35,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPad",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem0",
+      "label": "Separate directional plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -54.35,
+        -51.65,
+        5.65,
+        8.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem0",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem1",
+      "label": "Separate directional plunger study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -48.35,
+        -45.65,
+        -0.3500000000000001,
+        2.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem1",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem2",
+      "label": "Separate directional plunger study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -54.35,
+        -51.65,
+        -6.35,
+        -3.65,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem2",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DPadStem3",
+      "label": "Separate directional plunger study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 11.737382852893168,
+      "bounds": [
+        -60.35,
+        -57.65,
+        -0.3500000000000001,
+        2.35,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DPadStem3",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "agbgray",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonA",
+      "label": "A original circular action key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 174.98046505476083,
+      "bounds": [
+        52.5,
+        61.5,
+        3.5,
+        12.5,
+        21.7,
+        24.462
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkA",
+      "label": "A",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.02781304709247366,
+      "bounds": [
+        56.124161073825505,
+        58.18993288590604,
+        7.0,
+        9.25503355704698,
+        24.482,
+        24.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkA",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonB",
+      "label": "B original circular action key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 174.98046505476083,
+      "bounds": [
+        39.4999999,
+        48.5000001,
+        -4.5,
+        4.5,
+        21.7,
+        24.462
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonMarkB",
+      "label": "B",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 0.0350320314434039,
+      "bounds": [
+        43.403523389932886,
+        45.002684663758394,
+        -1.0000001,
+        1.2550336570469798,
+        24.481999899999998,
+        24.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonMarkB",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStart",
+      "label": "Start original grey rubber key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 30.13324263043078,
+      "bounds": [
+        -51.72102846445393,
+        -42.27897153554607,
+        -22.328107717185357,
+        -17.671892282814643,
+        23.35,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStart",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemStart",
+      "label": "Start independent plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 28.990264939859085,
+      "bounds": [
+        -50.0,
+        -44.0,
+        -21.25,
+        -18.75,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemStart",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "silicone",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StartMark",
+      "label": "START",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 88,
+      "volume": 0.055724609855412624,
+      "bounds": [
+        -52.16409405973154,
+        -45.93174496644295,
+        -17.53006721409396,
+        -15.970872383221478,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StartMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonSelect",
+      "label": "Select original grey rubber key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 30.133242630430782,
+      "bounds": [
+        -51.72102846445393,
+        -42.27897153554607,
+        -29.328107717185357,
+        -24.671892282814643,
+        23.35,
+        24.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonSelect",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ButtonStemSelect",
+      "label": "Select independent plunger study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 28.990264939859085,
+      "bounds": [
+        -50.0,
+        -44.0,
+        -28.25,
+        -25.75,
+        21.2,
+        23.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ButtonStemSelect",
+      "assembly": "ControlsInternal",
+      "layer": 3,
+      "material": "silicone",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SelectMark",
+      "label": "SELECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 96,
+      "volume": 0.06364271854871484,
+      "bounds": [
+        -52.16409405973154,
+        -44.53577181208053,
+        -24.53006721409396,
+        -22.970872383221476,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SelectMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLEDLens",
+      "label": "Separate original green power-status lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.6234490621048945,
+      "bounds": [
+        44.95,
+        47.05,
+        24.95,
+        27.05,
+        23.32,
+        23.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLEDLens",
+      "assembly": "Display",
+      "layer": 5,
+      "material": "led",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLEDGuide",
+      "label": "Independent power-status light guide",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 4.021238596594934,
+      "bounds": [
+        45.2,
+        46.8,
+        25.2,
+        26.8,
+        21.2,
+        23.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLEDGuide",
+      "assembly": "Display",
+      "layer": 3,
+      "material": "white",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.0713890644655655,
+      "bounds": [
+        48.20234889328859,
+        55.57986587181208,
+        25.26993278590604,
+        26.829127616778525,
+        23.3199999,
+        23.338000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderL",
+      "label": "Original L shoulder key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 549.8883475458147,
+      "bounds": [
+        -65.0,
+        -39.0,
+        28.0,
+        37.0,
+        19.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderL",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMarkL",
+      "label": "L",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 8,
+      "volume": 0.018960716859601084,
+      "bounds": [
+        -52.48382969798657,
+        -51.02252516778523,
+        31.2,
+        33.5489932885906,
+        23.02,
+        23.038
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMarkL",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderR",
+      "label": "Original R shoulder key",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 549.8883475458144,
+      "bounds": [
+        39.0,
+        65.0,
+        28.0,
+        37.0,
+        19.8,
+        23.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderR",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbgray",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ShoulderMarkR",
+      "label": "R",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 25,
+      "volume": 0.03399325729362592,
+      "bounds": [
+        51.51617020201342,
+        53.34555379127517,
+        31.199999899999998,
+        33.5489933885906,
+        23.0199999,
+        23.0380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ShoulderMarkR",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "agbink",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryDoor",
+      "label": "Independent rear battery door",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2225.5970950445585,
+      "bounds": [
+        -29.0,
+        29.0,
+        -33.5,
+        1.5000000000000009,
+        0.0,
+        1.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryDoor",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AABayWallsCut",
+      "label": "Separate molded two-AA compartment wall study001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 3840.893813018364,
+      "bounds": [
+        -28.0,
+        28.0,
+        -33.0,
+        1.0000000000000009,
+        1.5,
+        16.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AABayWalls",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AABayDivider",
+      "label": "Independent dual-AA divider study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 581.91929188601,
+      "bounds": [
+        -26.0,
+        26.0,
+        -16.4,
+        -15.6,
+        1.5,
+        15.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AABayDivider",
+      "assembly": "Battery",
+      "layer": -4,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AACell0",
+      "label": "Oppositely installed AA cell envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7619.932981282046,
+      "bounds": [
+        -25.0,
+        24.5,
+        -31.0,
+        -17.0,
+        2.0,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AACell0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AAButton0",
+      "label": "Independent AA positive button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.333450789637031,
+      "bounds": [
+        24.55,
+        24.900000000000002,
+        -26.4,
+        -21.6,
+        6.6,
+        11.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AAButton0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AANegative0",
+      "label": "Independent AA negative end disk",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.24844143781592,
+      "bounds": [
+        -25.2,
+        -25.08,
+        -29.7,
+        -18.3,
+        3.3,
+        14.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AANegative0",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AACell1",
+      "label": "Oppositely installed AA cell envelope001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 7619.932981282046,
+      "bounds": [
+        -24.5,
+        25.0,
+        -15.0,
+        -1.0,
+        1.9999999999999998,
+        16.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AACell1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "battery",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AAButton1",
+      "label": "Independent AA positive button001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 6.333450789637031,
+      "bounds": [
+        -24.900000000000002,
+        -24.55,
+        -10.4,
+        -5.6,
+        6.6,
+        11.4
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AAButton1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AANegative1",
+      "label": "Independent AA negative end disk001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.24844143781592,
+      "bounds": [
+        25.08,
+        25.2,
+        -13.7,
+        -2.3,
+        3.3,
+        14.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AANegative1",
+      "assembly": "Battery",
+      "layer": -3,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BatteryLatch",
+      "label": "Separate flexible battery-door catch study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 39.35401981020073,
+      "bounds": [
+        -4.0,
+        4.0,
+        0.29999999999999993,
+        1.9000000000000004,
+        1.2,
+        4.3
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BatteryLatch",
+      "assembly": "Battery",
+      "layer": -5,
+      "material": "indigo",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Mainboard",
+      "label": "Early AGB-CPU-02 U-shaped two-sided PCB study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 27,
+      "volume": 6631.43467610041,
+      "bounds": [
+        -66.0000001,
+        66.0000001,
+        -35.0000001,
+        35.0000001,
+        15.4999993,
+        16.5000007
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Mainboard",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "pcb",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardFixingLand0",
+      "label": "Separate board fixing copper land",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.4021631295676632,
+      "bounds": [
+        -59.4,
+        -54.6,
+        21.6,
+        26.4,
+        16.535,
+        16.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardFixingLand0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardFixingLand1",
+      "label": "Separate board fixing copper land001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.4021631295676632,
+      "bounds": [
+        54.6,
+        59.4,
+        21.6,
+        26.4,
+        16.535,
+        16.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardFixingLand1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardFixingLand2",
+      "label": "Separate board fixing copper land002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 0.4021631295676632,
+      "bounds": [
+        -57.4,
+        -52.6,
+        -27.4,
+        -22.6,
+        16.535,
+        16.57
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardFixingLand2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPU",
+      "label": "Original AGB processor package envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 303.922743338823,
+      "bounds": [
+        -9.5,
+        9.5,
+        4.0,
+        20.0,
+        16.7,
+        17.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPU",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAM",
+      "label": "Separate external RAM package envelope",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 159.5490320638069,
+      "bounds": [
+        16.0,
+        30.0,
+        6.0,
+        18.0,
+        16.7,
+        17.65
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAM",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_0",
+      "label": "Separate leaded IC terminal study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        -8.571052631578947,
+        -8.371052631578948,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_1",
+      "label": "Separate leaded IC terminal study001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -8.113157894736842,
+        -7.913157894736842,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_2",
+      "label": "Separate leaded IC terminal study002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -7.655263157894736,
+        -7.455263157894735,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_3",
+      "label": "Separate leaded IC terminal study003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -7.197368421052632,
+        -6.997368421052631,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_4",
+      "label": "Separate leaded IC terminal study004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -6.739473684210527,
+        -6.539473684210526,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_5",
+      "label": "Separate leaded IC terminal study005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -6.281578947368421,
+        -6.08157894736842,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_6",
+      "label": "Separate leaded IC terminal study006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        -5.823684210526316,
+        -5.6236842105263145,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_7",
+      "label": "Separate leaded IC terminal study007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -5.365789473684211,
+        -5.16578947368421,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_8",
+      "label": "Separate leaded IC terminal study008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -4.907894736842105,
+        -4.707894736842104,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_9",
+      "label": "Separate leaded IC terminal study009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -4.45,
+        -4.249999999999999,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_10",
+      "label": "Separate leaded IC terminal study010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        -3.992105263157894,
+        -3.792105263157894,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_11",
+      "label": "Separate leaded IC terminal study011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        -3.5342105263157895,
+        -3.3342105263157893,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_12",
+      "label": "Separate leaded IC terminal study012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        -3.0763157894736843,
+        -2.876315789473684,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_13",
+      "label": "Separate leaded IC terminal study013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        -2.6184210526315788,
+        -2.4184210526315786,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_14",
+      "label": "Separate leaded IC terminal study014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        -2.1605263157894736,
+        -1.9605263157894735,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_15",
+      "label": "Separate leaded IC terminal study015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        -1.7026315789473683,
+        -1.502631578947368,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_16",
+      "label": "Separate leaded IC terminal study016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        -1.2447368421052631,
+        -1.044736842105263,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_17",
+      "label": "Separate leaded IC terminal study017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587737,
+      "bounds": [
+        -0.7868421052631578,
+        -0.5868421052631578,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_18",
+      "label": "Separate leaded IC terminal study018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        -0.32894736842105265,
+        -0.12894736842105262,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_19",
+      "label": "Separate leaded IC terminal study019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        0.12894736842105262,
+        0.32894736842105265,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_20",
+      "label": "Separate leaded IC terminal study020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587737,
+      "bounds": [
+        0.5868421052631578,
+        0.7868421052631578,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_21",
+      "label": "Separate leaded IC terminal study021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        1.044736842105263,
+        1.2447368421052631,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_22",
+      "label": "Separate leaded IC terminal study022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        1.502631578947368,
+        1.7026315789473683,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_23",
+      "label": "Separate leaded IC terminal study023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        1.9605263157894735,
+        2.1605263157894736,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_24",
+      "label": "Separate leaded IC terminal study024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        2.4184210526315786,
+        2.6184210526315788,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_24",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_25",
+      "label": "Separate leaded IC terminal study025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        2.876315789473684,
+        3.0763157894736843,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_25",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_26",
+      "label": "Separate leaded IC terminal study026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658774,
+      "bounds": [
+        3.3342105263157893,
+        3.5342105263157895,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_26",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_27",
+      "label": "Separate leaded IC terminal study027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        3.792105263157894,
+        3.992105263157894,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_27",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_28",
+      "label": "Separate leaded IC terminal study028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        4.249999999999999,
+        4.45,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_28",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_29",
+      "label": "Separate leaded IC terminal study029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        4.707894736842104,
+        4.907894736842105,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_29",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_30",
+      "label": "Separate leaded IC terminal study030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        5.16578947368421,
+        5.365789473684211,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_30",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_31",
+      "label": "Separate leaded IC terminal study031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        5.6236842105263145,
+        5.823684210526316,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_31",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_32",
+      "label": "Separate leaded IC terminal study032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        6.08157894736842,
+        6.281578947368421,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_32",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_33",
+      "label": "Separate leaded IC terminal study033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        6.539473684210526,
+        6.739473684210527,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_33",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_34",
+      "label": "Separate leaded IC terminal study034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        6.997368421052631,
+        7.197368421052632,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_34",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_35",
+      "label": "Separate leaded IC terminal study035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        7.455263157894735,
+        7.655263157894736,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_35",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_36",
+      "label": "Separate leaded IC terminal study036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        7.913157894736842,
+        8.113157894736842,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_36",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead0_37",
+      "label": "Separate leaded IC terminal study037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        8.371052631578948,
+        8.571052631578947,
+        20.09,
+        20.81,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead0_37",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_0",
+      "label": "Separate leaded IC terminal study038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -8.571052631578947,
+        -8.371052631578948,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_1",
+      "label": "Separate leaded IC terminal study039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -8.113157894736842,
+        -7.913157894736842,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_2",
+      "label": "Separate leaded IC terminal study040",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -7.655263157894736,
+        -7.455263157894735,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_3",
+      "label": "Separate leaded IC terminal study041",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -7.197368421052632,
+        -6.997368421052631,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_4",
+      "label": "Separate leaded IC terminal study042",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -6.739473684210527,
+        -6.539473684210526,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_5",
+      "label": "Separate leaded IC terminal study043",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        -6.281578947368421,
+        -6.08157894736842,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_6",
+      "label": "Separate leaded IC terminal study044",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -5.823684210526316,
+        -5.6236842105263145,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_7",
+      "label": "Separate leaded IC terminal study045",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -5.365789473684211,
+        -5.16578947368421,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_8",
+      "label": "Separate leaded IC terminal study046",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -4.907894736842105,
+        -4.707894736842104,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_9",
+      "label": "Separate leaded IC terminal study047",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        -4.45,
+        -4.249999999999999,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_10",
+      "label": "Separate leaded IC terminal study048",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        -3.992105263157894,
+        -3.792105263157894,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_11",
+      "label": "Separate leaded IC terminal study049",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        -3.5342105263157895,
+        -3.3342105263157893,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_12",
+      "label": "Separate leaded IC terminal study050",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        -3.0763157894736843,
+        -2.876315789473684,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_13",
+      "label": "Separate leaded IC terminal study051",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        -2.6184210526315788,
+        -2.4184210526315786,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_14",
+      "label": "Separate leaded IC terminal study052",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        -2.1605263157894736,
+        -1.9605263157894735,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_15",
+      "label": "Separate leaded IC terminal study053",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        -1.7026315789473683,
+        -1.502631578947368,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_16",
+      "label": "Separate leaded IC terminal study054",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        -1.2447368421052631,
+        -1.044736842105263,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_17",
+      "label": "Separate leaded IC terminal study055",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        -0.7868421052631578,
+        -0.5868421052631578,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_18",
+      "label": "Separate leaded IC terminal study056",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        -0.32894736842105265,
+        -0.12894736842105262,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_19",
+      "label": "Separate leaded IC terminal study057",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        0.12894736842105262,
+        0.32894736842105265,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_20",
+      "label": "Separate leaded IC terminal study058",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587744,
+      "bounds": [
+        0.5868421052631578,
+        0.7868421052631578,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_21",
+      "label": "Separate leaded IC terminal study059",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        1.044736842105263,
+        1.2447368421052631,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_22",
+      "label": "Separate leaded IC terminal study060",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        1.502631578947368,
+        1.7026315789473683,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_23",
+      "label": "Separate leaded IC terminal study061",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        1.9605263157894735,
+        2.1605263157894736,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_24",
+      "label": "Separate leaded IC terminal study062",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        2.4184210526315786,
+        2.6184210526315788,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_24",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_25",
+      "label": "Separate leaded IC terminal study063",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658775,
+      "bounds": [
+        2.876315789473684,
+        3.0763157894736843,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_25",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_26",
+      "label": "Separate leaded IC terminal study064",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        3.3342105263157893,
+        3.5342105263157895,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_26",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_27",
+      "label": "Separate leaded IC terminal study065",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587748,
+      "bounds": [
+        3.792105263157894,
+        3.992105263157894,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_27",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_28",
+      "label": "Separate leaded IC terminal study066",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        4.249999999999999,
+        4.45,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_28",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_29",
+      "label": "Separate leaded IC terminal study067",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        4.707894736842104,
+        4.907894736842105,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_29",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_30",
+      "label": "Separate leaded IC terminal study068",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        5.16578947368421,
+        5.365789473684211,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_30",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_31",
+      "label": "Separate leaded IC terminal study069",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        5.6236842105263145,
+        5.823684210526316,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_31",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_32",
+      "label": "Separate leaded IC terminal study070",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        6.08157894736842,
+        6.281578947368421,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_32",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_33",
+      "label": "Separate leaded IC terminal study071",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        6.539473684210526,
+        6.739473684210527,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_33",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_34",
+      "label": "Separate leaded IC terminal study072",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        6.997368421052631,
+        7.197368421052632,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_34",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_35",
+      "label": "Separate leaded IC terminal study073",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        7.455263157894735,
+        7.655263157894736,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_35",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_36",
+      "label": "Separate leaded IC terminal study074",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        7.913157894736842,
+        8.113157894736842,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_36",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead1_37",
+      "label": "Separate leaded IC terminal study075",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587727,
+      "bounds": [
+        8.371052631578948,
+        8.571052631578947,
+        3.190000000000001,
+        3.9100000000000006,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead1_37",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_0",
+      "label": "Separate leaded IC terminal study076",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        4.976923076923076,
+        5.176923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_1",
+      "label": "Separate leaded IC terminal study077",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        5.530769230769231,
+        5.730769230769232,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_2",
+      "label": "Separate leaded IC terminal study078",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        6.084615384615383,
+        6.2846153846153845,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_3",
+      "label": "Separate leaded IC terminal study079",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        6.638461538461537,
+        6.838461538461538,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_4",
+      "label": "Separate leaded IC terminal study080",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        7.192307692307692,
+        7.392307692307693,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_5",
+      "label": "Separate leaded IC terminal study081",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        7.746153846153845,
+        7.946153846153846,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_6",
+      "label": "Separate leaded IC terminal study082",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        8.299999999999999,
+        8.499999999999998,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_7",
+      "label": "Separate leaded IC terminal study083",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        8.853846153846154,
+        9.053846153846154,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_8",
+      "label": "Separate leaded IC terminal study084",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        9.407692307692308,
+        9.607692307692307,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_9",
+      "label": "Separate leaded IC terminal study085",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        9.961538461538462,
+        10.161538461538461,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_10",
+      "label": "Separate leaded IC terminal study086",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        10.515384615384615,
+        10.715384615384615,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_11",
+      "label": "Separate leaded IC terminal study087",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        11.069230769230769,
+        11.269230769230768,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_12",
+      "label": "Separate leaded IC terminal study088",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        11.623076923076923,
+        11.823076923076922,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_13",
+      "label": "Separate leaded IC terminal study089",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        12.176923076923078,
+        12.376923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_14",
+      "label": "Separate leaded IC terminal study090",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        12.730769230769232,
+        12.930769230769231,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_15",
+      "label": "Separate leaded IC terminal study091",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        13.284615384615385,
+        13.484615384615385,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_16",
+      "label": "Separate leaded IC terminal study092",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        13.838461538461539,
+        14.038461538461538,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_17",
+      "label": "Separate leaded IC terminal study093",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        14.392307692307693,
+        14.592307692307692,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_18",
+      "label": "Separate leaded IC terminal study094",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        14.946153846153846,
+        15.146153846153846,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_19",
+      "label": "Separate leaded IC terminal study095",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        15.500000000000002,
+        15.700000000000001,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_20",
+      "label": "Separate leaded IC terminal study096",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        16.053846153846152,
+        16.253846153846155,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_21",
+      "label": "Separate leaded IC terminal study097",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        16.607692307692307,
+        16.80769230769231,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_22",
+      "label": "Separate leaded IC terminal study098",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        17.161538461538463,
+        17.361538461538466,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_23",
+      "label": "Separate leaded IC terminal study099",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        17.715384615384615,
+        17.915384615384617,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_24",
+      "label": "Separate leaded IC terminal study100",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        18.269230769230766,
+        18.46923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_24",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead2_25",
+      "label": "Separate leaded IC terminal study101",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        9.59,
+        10.309999999999999,
+        18.823076923076922,
+        19.023076923076925,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead2_25",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_0",
+      "label": "Separate leaded IC terminal study102",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        4.976923076923076,
+        5.176923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_1",
+      "label": "Separate leaded IC terminal study103",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        5.530769230769231,
+        5.730769230769232,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_2",
+      "label": "Separate leaded IC terminal study104",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        6.084615384615383,
+        6.2846153846153845,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_3",
+      "label": "Separate leaded IC terminal study105",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        6.638461538461537,
+        6.838461538461538,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_4",
+      "label": "Separate leaded IC terminal study106",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        7.192307692307692,
+        7.392307692307693,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_5",
+      "label": "Separate leaded IC terminal study107",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        7.746153846153845,
+        7.946153846153846,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_6",
+      "label": "Separate leaded IC terminal study108",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        8.299999999999999,
+        8.499999999999998,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_7",
+      "label": "Separate leaded IC terminal study109",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        8.853846153846154,
+        9.053846153846154,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_8",
+      "label": "Separate leaded IC terminal study110",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        9.407692307692308,
+        9.607692307692307,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_9",
+      "label": "Separate leaded IC terminal study111",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        9.961538461538462,
+        10.161538461538461,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_10",
+      "label": "Separate leaded IC terminal study112",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        10.515384615384615,
+        10.715384615384615,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_11",
+      "label": "Separate leaded IC terminal study113",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        11.069230769230769,
+        11.269230769230768,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_12",
+      "label": "Separate leaded IC terminal study114",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        11.623076923076923,
+        11.823076923076922,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_13",
+      "label": "Separate leaded IC terminal study115",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        12.176923076923078,
+        12.376923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_14",
+      "label": "Separate leaded IC terminal study116",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        12.730769230769232,
+        12.930769230769231,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_15",
+      "label": "Separate leaded IC terminal study117",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        13.284615384615385,
+        13.484615384615385,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_16",
+      "label": "Separate leaded IC terminal study118",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        13.838461538461539,
+        14.038461538461538,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_17",
+      "label": "Separate leaded IC terminal study119",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        14.392307692307693,
+        14.592307692307692,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_18",
+      "label": "Separate leaded IC terminal study120",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        14.946153846153846,
+        15.146153846153846,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_19",
+      "label": "Separate leaded IC terminal study121",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        15.500000000000002,
+        15.700000000000001,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_20",
+      "label": "Separate leaded IC terminal study122",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        16.053846153846152,
+        16.253846153846155,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_21",
+      "label": "Separate leaded IC terminal study123",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        16.607692307692307,
+        16.80769230769231,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_22",
+      "label": "Separate leaded IC terminal study124",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        17.161538461538463,
+        17.361538461538466,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_23",
+      "label": "Separate leaded IC terminal study125",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        17.715384615384615,
+        17.915384615384617,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_24",
+      "label": "Separate leaded IC terminal study126",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        18.269230769230766,
+        18.46923076923077,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_24",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPULead3_25",
+      "label": "Separate leaded IC terminal study127",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        -10.309999999999999,
+        -9.59,
+        18.823076923076922,
+        19.023076923076925,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPULead3_25",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_0",
+      "label": "Separate leaded IC terminal study128",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        30.09,
+        30.81,
+        6.916666666666666,
+        7.116666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_1",
+      "label": "Separate leaded IC terminal study129",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        30.09,
+        30.81,
+        7.35,
+        7.550000000000001,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_2",
+      "label": "Separate leaded IC terminal study130",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        7.783333333333333,
+        7.983333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_3",
+      "label": "Separate leaded IC terminal study131",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        8.216666666666667,
+        8.416666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_4",
+      "label": "Separate leaded IC terminal study132",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        8.65,
+        8.85,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_5",
+      "label": "Separate leaded IC terminal study133",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        9.083333333333334,
+        9.283333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_6",
+      "label": "Separate leaded IC terminal study134",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        30.09,
+        30.81,
+        9.516666666666667,
+        9.716666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_7",
+      "label": "Separate leaded IC terminal study135",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        9.950000000000001,
+        10.15,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_8",
+      "label": "Separate leaded IC terminal study136",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        10.383333333333335,
+        10.583333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_9",
+      "label": "Separate leaded IC terminal study137",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        10.816666666666666,
+        11.016666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_10",
+      "label": "Separate leaded IC terminal study138",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        11.25,
+        11.45,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_11",
+      "label": "Separate leaded IC terminal study139",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        11.683333333333334,
+        11.883333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_12",
+      "label": "Separate leaded IC terminal study140",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        30.09,
+        30.81,
+        12.116666666666667,
+        12.316666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_13",
+      "label": "Separate leaded IC terminal study141",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        12.55,
+        12.75,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_14",
+      "label": "Separate leaded IC terminal study142",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        12.983333333333334,
+        13.183333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_15",
+      "label": "Separate leaded IC terminal study143",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        13.416666666666666,
+        13.616666666666665,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_16",
+      "label": "Separate leaded IC terminal study144",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        13.85,
+        14.049999999999999,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_17",
+      "label": "Separate leaded IC terminal study145",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        14.283333333333333,
+        14.483333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_18",
+      "label": "Separate leaded IC terminal study146",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        14.716666666666667,
+        14.916666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_19",
+      "label": "Separate leaded IC terminal study147",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        15.15,
+        15.35,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_20",
+      "label": "Separate leaded IC terminal study148",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        30.09,
+        30.81,
+        15.583333333333334,
+        15.783333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_21",
+      "label": "Separate leaded IC terminal study149",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658781,
+      "bounds": [
+        30.09,
+        30.81,
+        16.016666666666666,
+        16.21666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_22",
+      "label": "Separate leaded IC terminal study150",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658781,
+      "bounds": [
+        30.09,
+        30.81,
+        16.45,
+        16.650000000000002,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead2_23",
+      "label": "Separate leaded IC terminal study151",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        30.09,
+        30.81,
+        16.883333333333333,
+        17.083333333333336,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead2_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_0",
+      "label": "Separate leaded IC terminal study152",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        6.916666666666666,
+        7.116666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_0",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_1",
+      "label": "Separate leaded IC terminal study153",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        7.35,
+        7.550000000000001,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_1",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_2",
+      "label": "Separate leaded IC terminal study154",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        7.783333333333333,
+        7.983333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_2",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_3",
+      "label": "Separate leaded IC terminal study155",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        8.216666666666667,
+        8.416666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_3",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_4",
+      "label": "Separate leaded IC terminal study156",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        8.65,
+        8.85,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_4",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_5",
+      "label": "Separate leaded IC terminal study157",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        9.083333333333334,
+        9.283333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_5",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_6",
+      "label": "Separate leaded IC terminal study158",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        9.516666666666667,
+        9.716666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_6",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_7",
+      "label": "Separate leaded IC terminal study159",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        9.950000000000001,
+        10.15,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_7",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_8",
+      "label": "Separate leaded IC terminal study160",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        10.383333333333335,
+        10.583333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_8",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_9",
+      "label": "Separate leaded IC terminal study161",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        10.816666666666666,
+        11.016666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_9",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_10",
+      "label": "Separate leaded IC terminal study162",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        11.25,
+        11.45,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_10",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_11",
+      "label": "Separate leaded IC terminal study163",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        11.683333333333334,
+        11.883333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_11",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_12",
+      "label": "Separate leaded IC terminal study164",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        12.116666666666667,
+        12.316666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_12",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_13",
+      "label": "Separate leaded IC terminal study165",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        12.55,
+        12.75,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_13",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_14",
+      "label": "Separate leaded IC terminal study166",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        12.983333333333334,
+        13.183333333333334,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_14",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_15",
+      "label": "Separate leaded IC terminal study167",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        13.416666666666666,
+        13.616666666666665,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_15",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_16",
+      "label": "Separate leaded IC terminal study168",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.01718729200658772,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        13.85,
+        14.049999999999999,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_16",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_17",
+      "label": "Separate leaded IC terminal study169",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        14.283333333333333,
+        14.483333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_17",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_18",
+      "label": "Separate leaded IC terminal study170",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        14.716666666666667,
+        14.916666666666666,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_18",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_19",
+      "label": "Separate leaded IC terminal study171",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587716,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        15.15,
+        15.35,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_19",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_20",
+      "label": "Separate leaded IC terminal study172",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587723,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        15.583333333333334,
+        15.783333333333333,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_20",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_21",
+      "label": "Separate leaded IC terminal study173",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        16.016666666666666,
+        16.21666666666667,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_21",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_22",
+      "label": "Separate leaded IC terminal study174",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        16.45,
+        16.650000000000002,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_22",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExternalRAMLead3_23",
+      "label": "Separate leaded IC terminal study175",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.017187292006587813,
+      "bounds": [
+        15.190000000000001,
+        15.91,
+        16.883333333333333,
+        17.083333333333336,
+        16.55,
+        16.67
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExternalRAMLead3_23",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CPUCode",
+      "label": "CPU AGB",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 118,
+      "volume": 0.09615907624361068,
+      "bounds": [
+        -5.869756811409396,
+        4.221644395302014,
+        11.766174396644297,
+        13.52026855637584,
+        17.719999899999998,
+        17.7380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CPUCode",
+      "assembly": "Mainboard",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BoardCode",
+      "label": "AGB-CPU-02 / CAD",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 14,
+      "faces": 226,
+      "volume": 0.11886686961056064,
+      "bounds": [
+        -18.98540268456376,
+        -1.7780871483221479,
+        28.328724832214764,
+        29.88577191208054,
+        16.5349999,
+        16.553000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BoardCode",
+      "assembly": "Mainboard",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/gba/output/iterations/06_early_u_shaped_board_agb_cpu_and_ram.FCStd",
+  "views": [
+    "devices/gba/output/previews/06_early_u_shaped_board_agb_cpu_and_ram_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

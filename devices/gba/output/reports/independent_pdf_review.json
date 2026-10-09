@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "artifact": "devices/gba/output/drawings/GameBoyAdvance_Drawings.pdf",
+  "artifact_sha256": "d0794c479703807f83e94967adf460347e15ba183f19cd5413b3e1d847b7c29b",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "Isolated reviewer /root/ps3_pdf_review; fresh GBA contract and visual review",
+  "review_scope": {
+    "method": "Read content.json and devices/gba/references/SOURCES.md; individually opened all 12 PNG page renders with view_image; inspected the actual PDF with PyMuPDF for page count, dimensions and fonts drawing Chinese text. No GUI use, artwork edits, CAD edits or PDF regeneration. Read .local/gba-isolated/kami_delivery.log. On parent instruction, corrected only content.json brief.narrative metadata; final HTML/PDF unchanged.",
+    "limitations": "Visual/document consistency review, not independent native CAD reload, BRep regeneration, full component-ID audit or fresh verification of linked external source pages. Source coverage assessed against supplied SOURCES.md."
+  },
+  "checks": {
+    "page_contract": {
+      "passed": true,
+      "count": 12,
+      "all_pages_size_pt": [
+        1190.55,
+        841.89
+      ],
+      "format": "A3 landscape"
+    },
+    "font": {
+      "passed": true,
+      "cjk_text_font": "TsangerJinKai02",
+      "cjk_text_spans": 181,
+      "pdf_font_resource": "YFJGAP+TsangerJinKai02",
+      "visual": "No missing-glyph boxes or disruptive font substitutions observed."
+    },
+    "visual": {
+      "passed": true,
+      "result": "All 12 pages inspected. Titles, dimensions, captions, table rows and footer text are legible and within page boundaries. No blocking text/figure overlap or clipped views observed. Page 4 sections and page 5 dimensioned LCD remain clear."
+    },
+    "preserve": {
+      "passed": true,
+      "result": "AGB-001 Indigo and early AGB-CPU-02 are retained in headers/text. Reflective unlit TFT, 61.2 × 40.8 mm viewing area, 144.5 × 82 × 24.5 mm published envelope, 40-position LCD connection, two opposite AA cells, mono speaker and original ports are consistently stated/shown. Optional blank Game Pak is explicitly separate from original kit and visibly says NO GAME DATA."
+    },
+    "counts": {
+      "passed": true,
+      "component_entries": 779,
+      "solids": 899,
+      "stages": 17,
+      "evidence": "Pages 1, 11 and 12 distinguish entries from solids; pages 1 and 12 state 17 stages. The 14 page-11 group counts sum to 779."
+    },
+    "approximation_boundaries": {
+      "passed": true,
+      "evidence": "Local dimensions, curves, holes, components and internals are identified as study approximations throughout and on page 12; no manufacturing tolerance or functional circuit claim. Page 10 clearly distinguishes blank cartridge and removed CR1616."
+    },
+    "source_coverage": {
+      "passed": true,
+      "evidence": "Page 12 and footer references cover Nintendo specifications/manual, iFixit and Gekkio contributor evidence. SOURCES.md provides specific URLs, early board version, 40-contact basis, optional cartridge evidence and approximation boundaries; no contradiction with these supplied notes found."
+    },
+    "native_dimension_reload": {
+      "status": "not retested",
+      "reason": "Outside isolated PDF review scope; requires native CAD verification evidence."
+    },
+    "kami_delivery": {
+      "passed": true,
+      "log": ".local/gba-isolated/kami_delivery.log",
+      "result": "Independently read READY: 0 errors, 1 orphan warning, 0 data gaps. Content coverage, fonts, density and page contract OK. All page images inspected; flagged headings are not stranded."
+    }
+  },
+  "findings": [
+    {
+      "severity": "P3",
+      "page": null,
+      "element": "content.json brief.narrative",
+      "finding": "Stale optical-drive narrative in brief metadata corrected on parent instruction to GBA-specific sequence. It never appeared in the rendered PDF. No artwork or PDF change.",
+      "status": "corrected"
+    },
+    {
+      "severity": "P3",
+      "page": 7,
+      "element": "Left membrane overview",
+      "finding": "The three silicone membranes occupy a small portion of the large left panel. Details remain readable and shoulder mechanism has a separate enlarged view, but tighter framing could improve use of the page."
+    }
+  ],
+  "p0_p1_findings": 0,
+  "metadata_correction": {
+    "file": "devices/gba/output/drawings/content.json",
+    "field": "brief.narrative",
+    "before": "总装、接口与控制器，光驱及剖面，分层爆炸，主板与内部结构，附件、索引和依据",
+    "after": "总装与原版接口，分层爆炸与实体剖面，反射液晶、早期主板、输入机构与双 AA 供电，扬声器、另附空白卡带、组件索引和资料边界"
+  }
+}

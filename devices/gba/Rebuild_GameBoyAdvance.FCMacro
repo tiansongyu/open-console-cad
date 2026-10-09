@@ -1,0 +1,12 @@
+"""Rebuild the current AGB-001 study from source."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,gba,deliver
+importlib.reload(gba)
+model=core.Study(repo,'gba');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for i in sorted(gba.STAGES):gba.STAGES[i](model)
+deliver.finalize(model)
+model.doc.saveAs(str(model.out/'GameBoyAdvance_Study.FCStd'))

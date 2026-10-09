@@ -1,0 +1,69 @@
+{
+  "iteration": 1,
+  "slug": "agb001_curved_native_shell",
+  "summary": "按原版 144.5 × 82 mm 名义包络建立前后原生曲线放样壳、独立内腔与分壳间隙；24.5 mm 厚度包络待按键完成后检查，局部曲率与壁厚近似。",
+  "physical_components": 2,
+  "objects": [
+    {
+      "name": "BackCover",
+      "label": "BackCover",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 20440.43982690061,
+      "bounds": [
+        -72.25000017975988,
+        72.25000017975988,
+        -41.000000158442646,
+        41.00000015844265,
+        -1.0000000088817842e-07,
+        11.400000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BackCover",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontCover",
+      "label": "FrontCover",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 20754.368216195515,
+      "bounds": [
+        -72.25000033092226,
+        72.25000033092226,
+        -41.0000002313868,
+        41.0000002313868,
+        11.599999899999998,
+        23.300000100000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontCover",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "indigo",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/gba/output/iterations/01_agb001_curved_native_shell.FCStd",
+  "views": [
+    "devices/gba/output/previews/01_agb001_curved_native_shell_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,63 @@
+{
+  "id": "gba",
+  "title": "Nintendo Game Boy Advance",
+  "prefix": "GameBoyAdvance",
+  "model": "AGB-001 Indigo · early AGB-CPU-02 board study",
+  "family": "slate",
+  "width": 144.5,
+  "height": 82,
+  "closed_depth": 24.5,
+  "base_depth": 23,
+  "default_opening": 180,
+  "upper_display": [
+    61.2,
+    40.8
+  ],
+  "lower_display": [],
+  "color": [
+    0.24,
+    0.22,
+    0.49
+  ],
+  "stages": 17,
+  "envelope_basis": "Nintendo original AGB-001 published 144.5 x 82 x 24.5 mm envelope; local curves, wall thickness and component dimensions approximate.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/n08/hardware/spec/index.html",
+      "role": "Original GBA column: body and screen dimensions, reflective nonilluminated TFT, two AA cells"
+    },
+    {
+      "url": "https://www.nintendo.com/eu/media/downloads/support_1/game_boy_advance_4/GBA_Manual_UK_DE_FR.pdf",
+      "role": "Original AGB-001 manual, later 2007 printing: external controls, interfaces and battery compartment"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Game+Boy+Advance+Teardown/1904",
+      "role": "Firsthand original AGB-CPU-02 teardown, 2010; shell, board, LCD, membranes, speaker and fixings"
+    },
+    {
+      "url": "https://gbhwdb.gekkio.fi/cartridges/AGB-AFZP-0/3615retro-1.html",
+      "role": "Firsthand 2001 AGB-E06-01 optional study cartridge; blank label, removed battery, no game data"
+    }
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "ControlsInternal",
+    "Audio",
+    "DisplayInterconnect",
+    "Ports",
+    "CartridgeInterface",
+    "Battery",
+    "BatteryContacts",
+    "Fixings"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.3,
+    2
+  ],
+  "controls_groups": [
+    "Controls",
+    "ControlsInternal"
+  ],
+  "main_step_suffix": "Handheld"
+}
