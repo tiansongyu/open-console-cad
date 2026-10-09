@@ -1,0 +1,134 @@
+{
+  "id": "sfc",
+  "title": "Nintendo Super Famicom",
+  "prefix": "SuperFamicom",
+  "model": "Japanese SHVC-001 / early SHVC-CPU-01 / separate SHVC-SOUND",
+  "family": "console",
+  "width": 200,
+  "height": 242,
+  "closed_depth": 74,
+  "base_depth": 29,
+  "default_opening": 180,
+  "color": [
+    0.74,
+    0.75,
+    0.76
+  ],
+  "stages": 21,
+  "parameter_basis": "Original Japanese Nintendo SHVC-001 instruction manual specification: width200 depth242 height74mm; local geometry approximate",
+  "envelope_kind": "published",
+  "envelope_basis": "Japanese SHVC-001 original manual:200x242x74mm; do not substitute UK PAL SNES72mm height",
+  "exterior_fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+  "fidelity": "Early Japanese SHVC-001 structure study; internal geometry approximate and nonfunctional",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Controls",
+    "Mainboard",
+    "CartridgeInterface",
+    "SoundModule",
+    "Power",
+    "RF",
+    "Ports",
+    "FrontPanel",
+    "Wiring",
+    "EjectMechanism",
+    "Shielding",
+    "Fixings"
+  ],
+  "handheld_groups": [
+    "Body",
+    "Controls",
+    "Mainboard",
+    "CartridgeInterface",
+    "SoundModule",
+    "Power",
+    "RF",
+    "Ports",
+    "FrontPanel",
+    "Wiring",
+    "EjectMechanism",
+    "Shielding",
+    "Fixings",
+    "Controller1",
+    "Controller2"
+  ],
+  "internal_groups": [
+    "Mainboard",
+    "CartridgeInterface",
+    "SoundModule",
+    "Power",
+    "RF",
+    "FrontPanel",
+    "Wiring",
+    "EjectMechanism"
+  ],
+  "controls_groups": [
+    "Controller1"
+  ],
+  "internal_normal": [
+    0.2,
+    -0.6,
+    1.7
+  ],
+  "explode_group_offsets": {
+    "Controller1": [
+      -100,
+      -100,
+      0
+    ],
+    "Controller2": [
+      100,
+      -100,
+      0
+    ],
+    "Accessories": [
+      200,
+      0,
+      0
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://manuals.plus/m/935db8250c899ca2991f064b1ab2e027455226b3f20d56ab841e0059be6e954a",
+      "role": "Mirror of original Japanese Nintendo SHVC-001 user manual; dimensions, original ports, two controllers, separately sold AC/AV"
+    },
+    {
+      "url": "https://documents.cdn.ifixit.com/UsnpFRnT5n2fTQrV.pdf",
+      "role": "Nintendo1992 original Japanese service manual; printed11-15 assembly and original parts, including62P cartridge connector"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Super+Famicom+Teardown/96507",
+      "role": "Firsthand Japanese SHVC001 teardown with discrete sound module, shields and eject mechanism"
+    },
+    {
+      "url": "https://www.boards.ie/discussion/2058337820/super-famicom-a-capacitance-for-greatness",
+      "role": "Firsthand SHVC CPU01 and open original sound module photographs"
+    },
+    {
+      "url": "https://shattered-blog.com/archives/40877",
+      "role": "Firsthand original SHVC005 controller; photographed PCB marked1992, dual shift registers and shoulder contact tabs"
+    },
+    {
+      "url": "https://desktopmusik.com/junk/game/family-computer-adapter",
+      "role": "Firsthand original HVC002 repair photos; two-part case, parallel AC blades, laminated transformer, small rectifier board and reservoir capacitor; only original adapter images used"
+    },
+    {
+      "url": "https://chromagi.com/nintendo/n64/shvc-008/",
+      "role": "Collector original SHVC008 product photo; grey multi-out plug and yellow/white/red RCA plugs"
+    },
+    {
+      "url": "https://www.nintendolife.com/news/2020/11/hardware_classics_super_famicom",
+      "role": "Firsthand original rear panel photo; multiout RF channel DC order"
+    }
+  ],
+  "internal_exclude": [
+    "CartridgeFlap",
+    "FlapRidge0",
+    "FlapRidge1",
+    "SoundShieldLid",
+    "SoundLidMark",
+    "RFLid",
+    "RFCanMark"
+  ]
+}

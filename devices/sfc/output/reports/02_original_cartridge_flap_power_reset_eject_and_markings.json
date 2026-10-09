@@ -1,0 +1,799 @@
+{
+  "iteration": 2,
+  "slug": "original_cartridge_flap_power_reset_eject_and_markings",
+  "summary": "加入单片卡槽防尘盖、左侧电源滑键/右侧复位键/中央退卡键、前端红色电源灯和原版四色标识；所有孔穿过灰色面板与上壳，按键最高点符合 74 mm 名义包络，局部形状近似。",
+  "physical_components": 29,
+  "objects": [
+    {
+      "name": "BottomShellCut",
+      "label": "Editable Japanese lower enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 139314.7869291339,
+      "bounds": [
+        -100.0,
+        100.0,
+        -121.0,
+        121.0,
+        2.0,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut004",
+      "label": "UpperShell005",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 75,
+      "volume": 143105.13139718812,
+      "bounds": [
+        -100.0000001,
+        100.0000001,
+        -121.0000001,
+        121.0000001,
+        29.199999899999998,
+        72.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPanelCut003",
+      "label": "Separate dark-grey original top trim004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 29463.576523669977,
+      "bounds": [
+        -85.0,
+        85.0,
+        -70.0,
+        90.0,
+        72.55,
+        73.89999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcface",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontTopPanelCut",
+      "label": "Separate front white nameplate panel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 5607.37318440285,
+      "bounds": [
+        -78.5,
+        78.5,
+        -109.0,
+        -73.0,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearTopPanelBody",
+      "label": "Separate rear white top panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2977.634954084936,
+      "bounds": [
+        -78.5,
+        78.5,
+        93.5,
+        112.5,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Original underside support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Original underside support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Original underside support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Original underside support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeFlapBody",
+      "label": "Original single grey cartridge flap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2664.9267475370043,
+      "bounds": [
+        -63.4,
+        63.4,
+        18.099999999999998,
+        35.900000000000006,
+        72.7,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeFlap",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapRidge0",
+      "label": "Raised flap finger ridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9743555261116862,
+      "bounds": [
+        -53.5,
+        -52.5,
+        21.5,
+        32.5,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapRidge0",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapRidge1",
+      "label": "Raised flap finger ridge001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9743555261116862,
+      "bounds": [
+        52.5,
+        53.5,
+        21.5,
+        32.5,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapRidge1",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCapBody",
+      "label": "Power original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2004.8102592124324,
+      "bounds": [
+        -68.5,
+        -43.5,
+        -56.5,
+        -29.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.17428970816788475,
+      "bounds": [
+        -59.783829797986584,
+        -48.25645963154363,
+        -50.04697996577181,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetCapBody",
+      "label": "Reset original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2004.8102592124326,
+      "bounds": [
+        43.5,
+        68.5,
+        -56.5,
+        -29.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.1448205939088841,
+      "bounds": [
+        52.216170202013416,
+        62.23294882550336,
+        -50.04697996577181,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectCapBody",
+      "label": "Eject original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 4254.810259212432,
+      "bounds": [
+        -28.5,
+        28.5,
+        -55.5,
+        -30.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcface",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.12610729414682012,
+      "bounds": [
+        -3.783829697986577,
+        5.145700503355705,
+        -50.64429540201343,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRidge",
+      "label": "Original raised POWER sliding grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 6.503750407905319,
+      "bounds": [
+        -66.5,
+        -45.5,
+        -39.75,
+        -36.25,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRidge",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerOnMark",
+      "label": "ON",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 30,
+      "volume": 0.04683788794705239,
+      "bounds": [
+        -77.85528533489932,
+        -74.29555369127516,
+        -35.03758399261745,
+        -33.08859050402685,
+        73.91999990000001,
+        73.9380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerOnMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerOffMark",
+      "label": "OFF",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 42,
+      "volume": 0.051650424966781516,
+      "bounds": [
+        -77.85528533489932,
+        -73.15595637583893,
+        -42.03758399261745,
+        -40.08859050402685,
+        73.91999990000001,
+        73.9380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerOffMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.7579719612943349,
+      "bounds": [
+        -68.36765939597315,
+        -40.06816265167785,
+        -94.09395983154361,
+        -89.1006710409396,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoWord",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SuperFamicomWord",
+      "label": "SUPER FAMICOM",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 202,
+      "volume": 0.5613641111479079,
+      "bounds": [
+        -68.73668214697986,
+        -36.283427013422816,
+        -101.05825513355704,
+        -98.03731533624162,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SuperFamicomWord",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Original red power-indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.052477193189883,
+      "bounds": [
+        58.25,
+        67.75,
+        -99.75,
+        -96.25,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "sfcred",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLampMark",
+      "label": "POWER001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.07138906446556552,
+      "bounds": [
+        58.20234889328859,
+        65.57986587181207,
+        -94.03006721409395,
+        -92.47087238322148,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLampMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark0",
+      "label": "Original four-color symbol lobe",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653324,
+      "bounds": [
+        60.20927442344928,
+        65.79072557655073,
+        73.07589951576662,
+        76.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgreen",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark1",
+      "label": "Original four-color symbol lobe001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653322,
+      "bounds": [
+        66.20927442344927,
+        71.79072557655073,
+        73.07589951576662,
+        76.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcred",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark2",
+      "label": "Original four-color symbol lobe002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653324,
+      "bounds": [
+        63.20927442344927,
+        68.79072557655073,
+        76.07589951576662,
+        79.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcblue",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark3",
+      "label": "Original four-color symbol lobe003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653322,
+      "bounds": [
+        63.20927442344927,
+        68.79072557655073,
+        70.07589951576662,
+        73.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark3",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcyellow",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/sfc/output/iterations/02_original_cartridge_flap_power_reset_eject_and_markings.FCStd",
+  "views": [
+    "devices/sfc/output/previews/02_original_cartridge_flap_power_reset_eject_and_markings_hero.png",
+    "devices/sfc/output/previews/02_original_cartridge_flap_power_reset_eject_and_markings_front.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

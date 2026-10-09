@@ -1,0 +1,2 @@
+from cadlib.sfc import STAGES
+STAGES[3](model)

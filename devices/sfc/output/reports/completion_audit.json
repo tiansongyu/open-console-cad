@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 1918,
+  "solids": 2224,
+  "stages": 21,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/sfc/output/SuperFamicom_Study.FCStd",
+      "bytes": 6898658,
+      "sha256": "0782e86f64006d9f5d7ff26c8f2b2d4b8288b139e27786b357a4a47bc112f9fb"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_Complete.FCStd",
+      "bytes": 6898657,
+      "sha256": "777263617704dc107ebb5742f8bcd1b00d38c6f5b52ab473d639a1b46718ecc7"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_Exploded.FCStd",
+      "bytes": 6420767,
+      "sha256": "69a7f73d35a1dca3da5cb00d1cdd1b4d0f98563bab1fc6b0ddf2a1d5b9778884"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_Drawings.FCStd",
+      "bytes": 358671,
+      "sha256": "7c05ca3bac4a33d9a239357e788a5ea980e43bc6f7dcbb7e76a7ffcd0b1c31e5"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_FullKit.step",
+      "bytes": 95739899,
+      "sha256": "8491a2eec20caea99ee173955a6aed1f1ebbd6707cf8bb598fbeba9fc88ca442"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_Console.step",
+      "bytes": 91080062,
+      "sha256": "27bd53c24855193d9136ef5b1b1b5ee98b232f6bd25fb1733935eec35ef6bf77"
+    },
+    {
+      "path": "devices/sfc/output/SuperFamicom_Exploded.step",
+      "bytes": 95743186,
+      "sha256": "133c5fdc3686a22372527674d118ceb8d959b25113c2025a336756ed034273df"
+    },
+    {
+      "path": "devices/sfc/output/drawings/SuperFamicom_Drawings.pdf",
+      "bytes": 650082,
+      "sha256": "9b3055b9a3e31fa56b2e6a5d117fbc65db28281499a8c68d8bb4820e81847b31"
+    },
+    {
+      "path": "devices/sfc/output/drawings/SuperFamicom_Drawings.html",
+      "bytes": 1616136,
+      "sha256": "5c95af37de878ee650ec7a2878d16adbb8645422df0fb2eaf36a46e4e94c19c3"
+    },
+    {
+      "path": "devices/sfc/output/COMPONENTS.csv",
+      "bytes": 375475,
+      "sha256": "168f955479f542278ae3faf4839f5e66978b88ab10691f1b30a58e3817e6538e"
+    },
+    {
+      "path": "site/public/models/sfc.glb",
+      "bytes": 12786152,
+      "sha256": "00e5a462a00d0c4fab7a295c9c570adce6716357e11381aabe12d8bf3e7fb7ba"
+    },
+    {
+      "path": "site/public/models/sfc.glb.gz",
+      "bytes": 2179636,
+      "sha256": "904ae4d358836568cdf4695b0b899d7e45a5e01284612d1f2ea6a45caba82ef4"
+    }
+  ],
+  "live_verified": false
+}

@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "artifact": "devices/sfc/output/drawings/SuperFamicom_Drawings.pdf",
+  "artifact_sha256": "9b3055b9a3e31fa56b2e6a5d117fbc65db28281499a8c68d8bb4820e81847b31",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "isolated agent /root/ps3_pdf_review",
+  "reviewed_at": "2026-10-09T09:21:54.950751+00:00",
+  "scope": {
+    "method": "依据 content.json brief/preserve，实际逐页打开全部12张最终PNG；读取PDF页数、页面尺寸、文字和中文字体；对照本地 references/SOURCES.md 的版本与来源边界。",
+    "limitations": "本次仅为独立图册终审；未重载CAD、重算实体/BRep剖面、复验源代码或重新访问外部来源。组件/实体/轮次数核查为图册内部及brief一致性，非原生几何独立计数。",
+    "mutations": "仅写本报告；未修改CAD、HTML、PDF或图像，未操作桌面。"
+  },
+  "checks": {
+    "page_count": 12,
+    "page_size_pt": [
+      1190.55,
+      841.89
+    ],
+    "orientation": "A3 landscape",
+    "cjk_font_observed": "TsangerJinKai02",
+    "clipping_overlap_readability": "全部12页实际视觉检查，未见影响阅读的裁切、文字重叠或缺字。",
+    "dimension_annotations": {
+      "count": 7,
+      "pages": {
+        "1": [
+          "200",
+          "242"
+        ],
+        "3": [
+          "≈144",
+          "≈58"
+        ],
+        "7": [
+          "≈174",
+          "≈192"
+        ],
+        "8": [
+          "≈70"
+        ]
+      },
+      "status": "已检查图上标注可读、完整；本审查不代替原生尺寸回读。"
+    },
+    "preserved_version": "SHVC-001早期SHVC-CPU-01独立声卡；1992年双移位寄存器SHVC-005；两只手柄；HVC-002/SHVC-008另售。",
+    "counts_text_consistent": {
+      "components": 1918,
+      "solids": 2224,
+      "stages": 21
+    },
+    "approximation_boundaries": "封面、技术页面页脚及末页明确局部近似、布局示意、非电气功能和非制造图。",
+    "page_observations": [
+      {
+        "page": 1,
+        "observation": "封面双视图、200/242 mm 尺寸完整；1918组件、2224实体、21轮及另售附件边界明确。"
+      },
+      {
+        "page": 2,
+        "observation": "前后接口、底盖和分离接口视图完整；未见裁切或文字遮挡。"
+      },
+      {
+        "page": 3,
+        "observation": "SHVC-005 正背及七接点插头清晰；约144/58 mm尺寸与1992年版本说明完整。"
+      },
+      {
+        "page": 4,
+        "observation": "上下62P连接器、退卡摇臂、轴及顶端控制分图清楚；动力学近似说明保留。"
+      },
+      {
+        "page": 5,
+        "observation": "A-A与B-B两剖面及其Y坐标完整；壳壁、板层和按键柱可辨。"
+      },
+      {
+        "page": 6,
+        "observation": "主机与手柄分层爆炸图完整；部分主机层在投影中互遮，但专页另有主板/声卡细节，不影响本页层次概览。"
+      },
+      {
+        "page": 7,
+        "observation": "早期SHVC-CPU-01正背布局、独立CPU/双PPU及约174/192 mm尺寸清楚。"
+      },
+      {
+        "page": 8,
+        "observation": "独立声卡S-SMP/S-DSP/双RAM/DAC可辨；RF/稳压图可见大电容；未见AMP文字越出封装，约70 mm尺寸完整。"
+      },
+      {
+        "page": 9,
+        "observation": "手柄板正背方向分明；背面两片移位寄存器、正面触点及独立胶膜/肩键可辨。"
+      },
+      {
+        "page": 10,
+        "observation": "HVC-002外观与内部、SHVC-008接头和缩短线缆完整；AC/AV另售文字明确。"
+      },
+      {
+        "page": 11,
+        "observation": "组件分组表所有行与合计完整，双控制器各210条；1918条目/2224实体说明与其他页一致。"
+      },
+      {
+        "page": 12,
+        "observation": "资料类别、早期独立声卡/不混入1CHIP边界、另售和非功能性声明及后续路径清晰。"
+      }
+    ]
+  },
+  "findings": [],
+  "conclusion": "在声明的图册审查范围内通过；未发现P0/P1/P2缺陷。"
+}

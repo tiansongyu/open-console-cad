@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "pdf": "devices/sfc/output/drawings/SuperFamicom_Drawings.pdf",
+  "pdf_sha256": "9b3055b9a3e31fa56b2e6a5d117fbc65db28281499a8c68d8bb4820e81847b31",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "kami_verdict": "READY: 0 errors, 1 warning(s), 0 data gap(s)",
+  "warning_review": "Short Chinese headings remain attached to their drawings and table; no stranded headings observed.",
+  "corrections": [
+    "Included all local mainboard capacitor envelopes in RF/power detail",
+    "Omitted overhanging amplifier display label from sound-module drawing detail",
+    "Oriented controller reverse PCB view so shift-register labels read upright",
+    "Explicit drawing number and page total in header"
+  ],
+  "scope": "Early Japanese SHVC001 and separate sound module;1992-era original dual-shift-register SHVC005 controllers;separately sold HVC002 and SHVC008;local and internal geometry approximate and nonfunctional.",
+  "revision_review": "Root inspected all12 page PNGs and reread the two revised pages8/9 after final Kami delivery. No clipped geometry, missing glyphs or interfering annotation.",
+  "cad_preview_review": [
+    "hero",
+    "front",
+    "internal",
+    "exploded",
+    "controller",
+    "accessories",
+    "review_rear",
+    "review_ac_inside"
+  ]
+}

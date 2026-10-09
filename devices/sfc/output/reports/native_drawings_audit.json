@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 7,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 200.0000001,
+      "measured_mm": 200.0000001,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 242.00000020000002,
+      "measured_mm": 242.00000020000002,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_1",
+      "expected_mm": 144.0000002,
+      "measured_mm": 144.0000002,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_2",
+      "expected_mm": 58.00000019999998,
+      "measured_mm": 58.000000199999995,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_1",
+      "expected_mm": 174.0000000000001,
+      "measured_mm": 174.00000000000009,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_2",
+      "expected_mm": 192.00000000000003,
+      "measured_mm": 192.0,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_1",
+      "expected_mm": 70.00000000000001,
+      "measured_mm": 70.0,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/sfc/output/SuperFamicom_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

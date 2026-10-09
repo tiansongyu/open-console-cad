@@ -1,0 +1,258 @@
+{
+  "iteration": 1,
+  "slug": "shvc001_native_curved_split_enclosure",
+  "summary": "依据日版 200 × 242 × 74 mm 包络建立原生下壳、分段曲面上壳和独立深灰顶面板/前后浅灰面板；上下壳保持间隙，壁厚与曲率为近似。74 mm 高度在操作件完成后复核。",
+  "physical_components": 9,
+  "objects": [
+    {
+      "name": "BottomShellCut",
+      "label": "Editable Japanese lower enclosure001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 139314.7869291339,
+      "bounds": [
+        -100.0,
+        100.0,
+        -121.0,
+        121.0,
+        2.0,
+        29.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShell",
+      "label": "UpperShell",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 35,
+      "volume": 153757.5092415241,
+      "bounds": [
+        -100.0000001,
+        100.0000001,
+        -121.0000001,
+        121.0000001,
+        29.199999899999998,
+        72.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPanelBody",
+      "label": "Separate dark-grey original top trim",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 36604.11500823457,
+      "bounds": [
+        -85.0,
+        85.0,
+        -70.0,
+        90.0,
+        72.55,
+        73.89999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcface",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontTopPanelBody",
+      "label": "Separate front white nameplate panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 5644.2743338823075,
+      "bounds": [
+        -78.5,
+        78.5,
+        -109.0,
+        -73.0,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearTopPanelBody",
+      "label": "Separate rear white top panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2977.634954084936,
+      "bounds": [
+        -78.5,
+        78.5,
+        93.5,
+        112.5,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Original underside support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Original underside support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Original underside support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Original underside support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/sfc/output/iterations/01_shvc001_native_curved_split_enclosure.FCStd",
+  "views": [
+    "devices/sfc/output/previews/01_shvc001_native_curved_split_enclosure_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

@@ -1,0 +1,1986 @@
+{
+  "iteration": 3,
+  "slug": "original_front_and_rear_interfaces",
+  "summary": "按原版背面照片布置 MULTI OUT、RF、CH1/CH2 与 DC IN；加入两只七触点手柄插座、独立接点和前后嵌入面板。接口局部尺寸近似，未声称可配接。",
+  "physical_components": 73,
+  "objects": [
+    {
+      "name": "BottomShellCut002",
+      "label": "Editable Japanese lower enclosure003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 32,
+      "volume": 129115.37013321492,
+      "bounds": [
+        -100.0000001,
+        100.0,
+        -121.0,
+        121.0000001,
+        1.9999999,
+        29.0000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomShell",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "UpperShellCut005",
+      "label": "UpperShell006",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 80,
+      "volume": 138581.25772246675,
+      "bounds": [
+        -100.0000001,
+        100.0000001,
+        -121.0000001,
+        121.00000010000002,
+        29.19999989991047,
+        72.5000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "UpperShell",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopPanelCut003",
+      "label": "Separate dark-grey original top trim004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 29463.576523669977,
+      "bounds": [
+        -85.0,
+        85.0,
+        -70.0,
+        90.0,
+        72.55,
+        73.89999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcface",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontTopPanelCut",
+      "label": "Separate front white nameplate panel001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 5607.37318440285,
+      "bounds": [
+        -78.5,
+        78.5,
+        -109.0,
+        -73.0,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearTopPanelBody",
+      "label": "Separate rear white top panel",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2977.634954084936,
+      "bounds": [
+        -78.5,
+        78.5,
+        93.5,
+        112.5,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearTopPanel",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot0",
+      "label": "Original underside support foot",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot0",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot1",
+      "label": "Original underside support foot001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        -99.0,
+        -89.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot1",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot2",
+      "label": "Original underside support foot002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        -80.0,
+        -70.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot2",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "Foot3",
+      "label": "Original underside support foot003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 149.22565104551518,
+      "bounds": [
+        70.0,
+        80.0,
+        89.0,
+        99.0,
+        0.0,
+        1.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "Foot3",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "rubber",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "CartridgeFlapBody",
+      "label": "Original single grey cartridge flap",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2664.9267475370043,
+      "bounds": [
+        -63.4,
+        63.4,
+        18.099999999999998,
+        35.900000000000006,
+        72.7,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "CartridgeFlap",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapRidge0",
+      "label": "Raised flap finger ridge",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9743555261116862,
+      "bounds": [
+        -53.5,
+        -52.5,
+        21.5,
+        32.5,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapRidge0",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FlapRidge1",
+      "label": "Raised flap finger ridge001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.9743555261116862,
+      "bounds": [
+        52.5,
+        53.5,
+        21.5,
+        32.5,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FlapRidge1",
+      "assembly": "CartridgeInterface",
+      "layer": 5,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCapBody",
+      "label": "Power original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2004.8102592124324,
+      "bounds": [
+        -68.5,
+        -43.5,
+        -56.5,
+        -29.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerMark",
+      "label": "POWER",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.17428970816788475,
+      "bounds": [
+        -59.783829797986584,
+        -48.25645963154363,
+        -50.04697996577181,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetCapBody",
+      "label": "Reset original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2004.8102592124326,
+      "bounds": [
+        43.5,
+        68.5,
+        -56.5,
+        -29.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ResetMark",
+      "label": "RESET",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 93,
+      "volume": 0.1448205939088841,
+      "bounds": [
+        52.216170202013416,
+        62.23294882550336,
+        -50.04697996577181,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ResetMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectCapBody",
+      "label": "Eject original top key",
+      "type": "PartDesign::Body",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 4254.810259212432,
+      "bounds": [
+        -28.5,
+        28.5,
+        -55.5,
+        -30.499999999999996,
+        70.9,
+        73.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectCap",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcface",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectMark",
+      "label": "EJECT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 70,
+      "volume": 0.12610729414682012,
+      "bounds": [
+        -3.783829697986577,
+        5.145700503355705,
+        -50.64429540201343,
+        -47.61073815503356,
+        73.92999990000001,
+        73.9480001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectMark",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerRidge",
+      "label": "Original raised POWER sliding grip",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 6.503750407905319,
+      "bounds": [
+        -66.5,
+        -45.5,
+        -39.75,
+        -36.25,
+        73.91,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerRidge",
+      "assembly": "Controls",
+      "layer": 6,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerOnMark",
+      "label": "ON",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 30,
+      "volume": 0.04683788794705239,
+      "bounds": [
+        -77.85528533489932,
+        -74.29555369127516,
+        -35.03758399261745,
+        -33.08859050402685,
+        73.91999990000001,
+        73.9380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerOnMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerOffMark",
+      "label": "OFF",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 42,
+      "volume": 0.051650424966781516,
+      "bounds": [
+        -77.85528533489932,
+        -73.15595637583893,
+        -42.03758399261745,
+        -40.08859050402685,
+        73.91999990000001,
+        73.9380001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerOffMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "NintendoWord",
+      "label": "Nintendo",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 9,
+      "faces": 143,
+      "volume": 0.7579719612943349,
+      "bounds": [
+        -68.36765939597315,
+        -40.06816265167785,
+        -94.09395983154361,
+        -89.1006710409396,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NintendoWord",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "SuperFamicomWord",
+      "label": "SUPER FAMICOM",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 12,
+      "faces": 202,
+      "volume": 0.5613641111479079,
+      "bounds": [
+        -68.73668214697986,
+        -36.283427013422816,
+        -101.05825513355704,
+        -98.03731533624162,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "SuperFamicomWord",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLens",
+      "label": "Original red power-indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 31.052477193189883,
+      "bounds": [
+        58.25,
+        67.75,
+        -99.75,
+        -96.25,
+        72.55,
+        73.55
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLens",
+      "assembly": "Controls",
+      "layer": 5,
+      "material": "sfcred",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerLampMark",
+      "label": "POWER001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 90,
+      "volume": 0.07138906446556552,
+      "bounds": [
+        58.20234889328859,
+        65.57986587181207,
+        -94.03006721409395,
+        -92.47087238322148,
+        73.5699999,
+        73.58800009999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerLampMark",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark0",
+      "label": "Original four-color symbol lobe",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653322,
+      "bounds": [
+        59.20927442344928,
+        64.79072557655073,
+        73.07589951576662,
+        76.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark0",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcgreen",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark1",
+      "label": "Original four-color symbol lobe001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653322,
+      "bounds": [
+        67.20927442344927,
+        72.79072557655073,
+        73.07589951576662,
+        76.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark1",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcred",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark2",
+      "label": "Original four-color symbol lobe002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653324,
+      "bounds": [
+        63.20927442344927,
+        68.79072557655073,
+        77.07589951576662,
+        80.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark2",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcblue",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FourColorMark3",
+      "label": "Original four-color symbol lobe003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 1.1607433267653322,
+      "bounds": [
+        63.20927442344927,
+        68.79072557655073,
+        69.07589951576662,
+        72.92410048423338,
+        73.92,
+        74.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FourColorMark3",
+      "assembly": "Body",
+      "layer": 5,
+      "material": "sfcyellow",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPortPanelCut003",
+      "label": "Inset original rear interface panel004",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 6076.506905920063,
+      "bounds": [
+        -90.5,
+        66.5,
+        116.5,
+        118.00000000000001,
+        15.499999999999996,
+        44.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPortPanel",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVBodyCut",
+      "label": "Original twelve-contact MULTI OUT socket001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 2070.3026862512183,
+      "bounds": [
+        26.3,
+        53.7,
+        104.4,
+        116.40000000000002,
+        24.799999999999997,
+        35.2
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVBody",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact0",
+      "label": "MULTI OUT schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897849,
+      "bounds": [
+        30.95,
+        32.05,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact0",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact1",
+      "label": "MULTI OUT schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        34.35,
+        35.449999999999996,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact1",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact2",
+      "label": "MULTI OUT schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        37.75,
+        38.849999999999994,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact2",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact3",
+      "label": "MULTI OUT schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        41.150000000000006,
+        42.25,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact3",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact4",
+      "label": "MULTI OUT schematic contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.2770371578978477,
+      "bounds": [
+        44.550000000000004,
+        45.65,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact4",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact5",
+      "label": "MULTI OUT schematic contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        47.95,
+        49.05,
+        108.2,
+        114.2,
+        28.125,
+        28.475
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact5",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact6",
+      "label": "MULTI OUT schematic contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897849,
+      "bounds": [
+        30.95,
+        32.05,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact6",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact7",
+      "label": "MULTI OUT schematic contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        34.35,
+        35.449999999999996,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact7",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact8",
+      "label": "MULTI OUT schematic contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        37.75,
+        38.849999999999994,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact8",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact9",
+      "label": "MULTI OUT schematic contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        41.150000000000006,
+        42.25,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact9",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact10",
+      "label": "MULTI OUT schematic contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.2770371578978477,
+      "bounds": [
+        44.550000000000004,
+        45.65,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact10",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "AVContact11",
+      "label": "MULTI OUT schematic contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 2.277037157897848,
+      "bounds": [
+        47.95,
+        49.05,
+        108.2,
+        114.2,
+        31.525,
+        31.875
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "AVContact11",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFSocket",
+      "label": "Original RF coaxial outer sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 238.9888071402096,
+      "bounds": [
+        -18.25,
+        -9.75,
+        109.0,
+        118.0,
+        25.75,
+        34.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFInsulator",
+      "label": "RF coaxial dielectric",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 148.20463343309848,
+      "bounds": [
+        -17.05,
+        -10.95,
+        109.0,
+        115.0,
+        26.95,
+        33.05
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFInsulator",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "white",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RFContact",
+      "label": "RF center receptacle",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 13.351768777756618,
+      "bounds": [
+        -15.1,
+        -12.9,
+        109.0,
+        114.0,
+        28.9,
+        31.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RFContact",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSwitch",
+      "label": "Original CH1 / CH2 switch body",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 397.91504320207196,
+      "bounds": [
+        -36.300000000000004,
+        -29.7,
+        108.0,
+        116.0,
+        26.199999999999996,
+        33.800000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSwitch",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ChannelSlider",
+      "label": "Channel selector slider",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 14.93904416669131,
+      "bounds": [
+        -35.2,
+        -33.2,
+        116.1,
+        118.0,
+        28.0,
+        32.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ChannelSlider",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcbutton",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCSocket",
+      "label": "Original external adapter barrel socket",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 180.95573684677203,
+      "bounds": [
+        -65.7,
+        -58.3,
+        109.0,
+        118.0,
+        26.3,
+        33.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCSocket",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "black",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DCCenter",
+      "label": "DC receptacle center contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 14.074335088082279,
+      "bounds": [
+        -62.8,
+        -61.2,
+        109.0,
+        116.0,
+        29.2,
+        30.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DCCenter",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "metal",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMarkAV",
+      "label": "MULTI OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 8,
+      "faces": 99,
+      "volume": 0.13698056015213433,
+      "bounds": [
+        39.16048657718121,
+        52.74706375838926,
+        118.0299999,
+        118.0480001,
+        18.96241600738255,
+        20.911409495973157
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMarkAV",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMarkRF",
+      "label": "RF OUT",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 5,
+      "faces": 81,
+      "volume": 0.09176025932812824,
+      "bounds": [
+        -15.59253355704698,
+        -6.252936141610738,
+        118.0299999,
+        118.0480001,
+        18.96241600738255,
+        20.911409495973157
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMarkRF",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMarkCH",
+      "label": "CH1  CH2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 6,
+      "faces": 104,
+      "volume": 0.1040143399438663,
+      "bounds": [
+        -37.13607392550336,
+        -25.14471466510067,
+        118.0299999,
+        118.0480001,
+        18.96241600738255,
+        20.911409495973157
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMarkCH",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearMarkDC",
+      "label": "DC IN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 4,
+      "faces": 54,
+      "volume": 0.07255846312525432,
+      "bounds": [
+        -60.04404362416108,
+        -53.25293614161074,
+        118.0299999,
+        118.0480001,
+        18.96241600738255,
+        20.911409495973157
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearMarkDC",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontPortPanelCut001",
+      "label": "Original front two-controller panel002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 26,
+      "volume": 2778.5729469326043,
+      "bounds": [
+        -82.0,
+        82.0,
+        -121.00000000000001,
+        -119.9,
+        7.999999999999999,
+        28.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontPortPanel",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "sfcgray",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSocket1Cut",
+      "label": "Original seven-contact controller socket001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 2795.9994819859958,
+      "bounds": [
+        -62.1,
+        -23.9,
+        -120.0,
+        -111.0,
+        13.399999999999999,
+        22.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSocket1",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_0",
+      "label": "Controller individual contact sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -55.85,
+        -54.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_0",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_1",
+      "label": "Controller individual contact sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -51.85,
+        -50.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_1",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_2",
+      "label": "Controller individual contact sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -47.85,
+        -46.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_2",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_3",
+      "label": "Controller individual contact sleeve003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -43.85,
+        -42.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_3",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_4",
+      "label": "Controller individual contact sleeve004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -37.85,
+        -36.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_4",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_5",
+      "label": "Controller individual contact sleeve005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        -33.85,
+        -32.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_5",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact1_6",
+      "label": "Controller individual contact sleeve006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105882,
+      "bounds": [
+        -29.85,
+        -28.15,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact1_6",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber1",
+      "label": "1",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 13,
+      "volume": 0.030607317237962586,
+      "bounds": [
+        -43.57529362416108,
+        -41.89723154362416,
+        -121.048,
+        -121.03,
+        11.0,
+        13.818791946308725
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber1",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerSocket2Cut",
+      "label": "Original seven-contact controller socket003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 2795.999481985996,
+      "bounds": [
+        23.9,
+        62.1,
+        -120.0,
+        -111.0,
+        13.399999999999999,
+        22.600000000000005
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerSocket2",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "black",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_0",
+      "label": "Controller individual contact sleeve007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105882,
+      "bounds": [
+        30.15,
+        31.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_0",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_1",
+      "label": "Controller individual contact sleeve008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        34.15,
+        35.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_1",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_2",
+      "label": "Controller individual contact sleeve009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        38.15,
+        39.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_2",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_3",
+      "label": "Controller individual contact sleeve010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        42.15,
+        43.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_3",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_4",
+      "label": "Controller individual contact sleeve011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        48.15,
+        49.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_4",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_5",
+      "label": "Controller individual contact sleeve012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        52.15,
+        53.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_5",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerContact2_6",
+      "label": "Controller individual contact sleeve013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 7.422012644105894,
+      "bounds": [
+        56.15,
+        57.85,
+        -119.6,
+        -114.6,
+        17.15,
+        18.85
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerContact2_6",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "gold",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ControllerNumber2",
+      "label": "2",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 0.03627439992321619,
+      "bounds": [
+        42.28313748389262,
+        44.072567214093965,
+        -121.0480001,
+        -121.0299999,
+        10.9999999,
+        13.86711419395973
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ControllerNumber2",
+      "assembly": "FrontPanel",
+      "layer": -1,
+      "material": "sfcink",
+      "fidelity": "Japanese original curved grey enclosure; published envelope and approximate local details",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/sfc/output/iterations/03_original_front_and_rear_interfaces.FCStd",
+  "views": [
+    "devices/sfc/output/previews/03_original_front_and_rear_interfaces_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}
