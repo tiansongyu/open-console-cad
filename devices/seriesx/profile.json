@@ -1,0 +1,149 @@
+{
+  "id": "seriesx",
+  "title": "Microsoft Xbox Series X",
+  "prefix": "XboxSeriesX",
+  "model": "Original Carbon Black 1 TB optical / 2020",
+  "family": "console",
+  "width": 151,
+  "height": 151,
+  "closed_depth": 301,
+  "base_depth": 150,
+  "default_opening": 180,
+  "color": [
+    0.08,
+    0.085,
+    0.09
+  ],
+  "stages": 19,
+  "parameter_basis": "Microsoft official Xbox Series X Disc design:151x151x301mm; original2020 internals referenced from contemporaneous teardown",
+  "exterior_fidelity": "Published outer envelope; approximate original2020 local geometry",
+  "envelope_kind": "published",
+  "envelope_basis": "Microsoft Xbox Series X official Disc design specification151x151x301mm",
+  "fidelity": "Original2020 optical SeriesX and original wireless controller structure study; nonfunctional approximate local geometry",
+  "main_step_suffix": "Console",
+  "envelope_groups": [
+    "Body",
+    "Frame",
+    "Controls",
+    "Ports",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless",
+    "Power",
+    "Fan"
+  ],
+  "controls_groups": [
+    "Controller"
+  ],
+  "internal_groups": [
+    "Frame",
+    "Mainboard",
+    "Cooling",
+    "Optical",
+    "Storage",
+    "Shielding",
+    "Wiring",
+    "Wireless",
+    "Power",
+    "Ports",
+    "Fan"
+  ],
+  "sources": [
+    {
+      "url": "https://www.xbox.com/en-GB/consoles/xbox-series-x",
+      "role": "Official Disc design envelope151x151x301mm; modernvariants onpage distinguished"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Xbox+Series+X+Teardown/138451",
+      "role": "Original2020 firsthand teardown34images, twinboards, vaporchamber, SSD andPSU"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2020/03/16/xbox-series-x-tech/",
+      "role": "Original launch architecture andspecifications"
+    },
+    {
+      "url": "https://news.xbox.com/en-us/2020/09/23/designing-the-next-generation-of-consoles-xbox-series-x-and-xbox-series-s/",
+      "role": "Original chassis andthermal design"
+    },
+    {
+      "url": "https://assets.xboxservices.com/assets/93/89/938909ba-732c-4299-a8fe-b2e996f02cc0.pdf?n=Xbox-Series-Controller-Repair-Instructions.pdf_2.pdf",
+      "role": "Microsoft2023 SeriesX/S controller57page serviceguide; mechanicalreference notlaunchrevisionidentity"
+    }
+  ],
+  "accessories_groups": [
+    "Accessories"
+  ],
+  "exploded_normal": [
+    1,
+    -0.6,
+    0.5
+  ],
+  "internal_normal": [
+    -1,
+    -0.45,
+    0.5
+  ],
+  "explode_axes": {
+    "Frame": [
+      1,
+      0,
+      0
+    ],
+    "Mainboard": [
+      1,
+      0,
+      0
+    ],
+    "Cooling": [
+      1,
+      0,
+      0
+    ],
+    "Optical": [
+      1,
+      0,
+      0
+    ],
+    "Storage": [
+      1,
+      0,
+      0
+    ],
+    "Shielding": [
+      1,
+      0,
+      0
+    ],
+    "Wiring": [
+      1,
+      0,
+      0
+    ],
+    "Wireless": [
+      1,
+      0,
+      0
+    ],
+    "Power": [
+      1,
+      0,
+      0
+    ],
+    "Ports": [
+      1,
+      0,
+      0
+    ]
+  },
+  "explode_group_offsets": {
+    "Controller": [
+      0,
+      -200,
+      0
+    ]
+  }
+}

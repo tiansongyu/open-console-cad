@@ -1,0 +1,4659 @@
+{
+  "iteration": 3,
+  "slug": "original_front_controls_and_rear_io",
+  "summary": "补齐原版竖向吸入式光盘槽、退碟/配对/电源键、前 USB，以及后双 USB、以太网、专用存储扩展、HDMI 和八字电源入口；接口为带空腔和触点的非功能结构示意。",
+  "physical_components": 172,
+  "objects": [
+    {
+      "name": "BaseFoot",
+      "label": "Original permanent circular stand",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 57679.6411199086,
+      "bounds": [
+        -60.0,
+        60.0,
+        -60.0,
+        60.0,
+        0.0,
+        5.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BaseFoot",
+      "assembly": "Body",
+      "layer": -8,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BottomPlateCut",
+      "label": "Vented lower enclosure plate001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 150,
+      "volume": 40906.41365213288,
+      "bounds": [
+        -75.3,
+        75.3,
+        -75.3,
+        75.3,
+        5.25,
+        7.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomPlate",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "shell",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainShellCut006",
+      "label": "Original square tower enclosure007",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 42,
+      "volume": 311569.88227091805,
+      "bounds": [
+        -75.5,
+        75.5,
+        -75.5,
+        75.5,
+        7.4,
+        297.79999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainShell",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPanelCut007",
+      "label": "Original detachable rear enclosure008",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 198,
+      "volume": 72143.79104767942,
+      "bounds": [
+        -72.55,
+        72.55,
+        73.32499999999999,
+        75.375,
+        8.05,
+        297.15000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPanel",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "TopGrilleCut002",
+      "label": "Concave original exhaust grille003",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 157,
+      "volume": 69940.60016300004,
+      "bounds": [
+        -75.5000001,
+        75.5000001,
+        -75.5000001,
+        75.5000001,
+        292.0999999,
+        301.0000001000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "TopGrille",
+      "assembly": "Body",
+      "layer": 10,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_00",
+      "label": "Green interior exhaust-hole wall",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_01",
+      "label": "Green interior exhaust-hole wall001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        -56.2,
+        -47.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_02",
+      "label": "Green interior exhaust-hole wall002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.79999999999999,
+        -43.2,
+        -34.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_03",
+      "label": "Green interior exhaust-hole wall003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        -30.2,
+        -21.8,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_04",
+      "label": "Green interior exhaust-hole wall004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        -69.2,
+        -60.8,
+        -17.2,
+        -8.8,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_05",
+      "label": "Green interior exhaust-hole wall005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -69.2,
+        -60.8,
+        -4.2,
+        4.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_06",
+      "label": "Green interior exhaust-hole wall006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        -69.2,
+        -60.8,
+        8.8,
+        17.2,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_07",
+      "label": "Green interior exhaust-hole wall007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.79999999999999,
+        21.8,
+        30.2,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_08",
+      "label": "Green interior exhaust-hole wall008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        34.8,
+        43.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_09",
+      "label": "Green interior exhaust-hole wall009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        47.8,
+        56.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent00_10",
+      "label": "Green interior exhaust-hole wall010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -69.2,
+        -60.8,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent00_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_00",
+      "label": "Green interior exhaust-hole wall011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_01",
+      "label": "Green interior exhaust-hole wall012",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -56.2,
+        -47.8,
+        297.24903619800284,
+        298.59903619800286
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_02",
+      "label": "Green interior exhaust-hole wall013",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -43.2,
+        -34.8,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_03",
+      "label": "Green interior exhaust-hole wall014",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -30.2,
+        -21.8,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_04",
+      "label": "Green interior exhaust-hole wall015",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -17.2,
+        -8.8,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_05",
+      "label": "Green interior exhaust-hole wall016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -56.2,
+        -47.8,
+        -4.2,
+        4.2,
+        293.91092957887344,
+        295.26092957887346
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_06",
+      "label": "Green interior exhaust-hole wall017",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -56.2,
+        -47.8,
+        8.8,
+        17.2,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_07",
+      "label": "Green interior exhaust-hole wall018",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -56.2,
+        -47.8,
+        21.8,
+        30.2,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_08",
+      "label": "Green interior exhaust-hole wall019",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -56.2,
+        -47.8,
+        34.8,
+        43.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_09",
+      "label": "Green interior exhaust-hole wall020",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -56.2,
+        -47.8,
+        47.8,
+        56.2,
+        297.24903619800284,
+        298.59903619800286
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent01_10",
+      "label": "Green interior exhaust-hole wall021",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -56.2,
+        -47.8,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent01_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_00",
+      "label": "Green interior exhaust-hole wall022",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_01",
+      "label": "Green interior exhaust-hole wall023",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -56.2,
+        -47.8,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_02",
+      "label": "Green interior exhaust-hole wall024",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -43.2,
+        -34.8,
+        294.32669297626745,
+        295.6766929762675
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_03",
+      "label": "Green interior exhaust-hole wall025",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -30.2,
+        -21.8,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_04",
+      "label": "Green interior exhaust-hole wall026",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -17.2,
+        -8.8,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_05",
+      "label": "Green interior exhaust-hole wall027",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -43.2,
+        -34.8,
+        -4.2,
+        4.2,
+        292.4590929593065,
+        293.8090929593065
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_06",
+      "label": "Green interior exhaust-hole wall028",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -43.2,
+        -34.8,
+        8.8,
+        17.2,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_07",
+      "label": "Green interior exhaust-hole wall029",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        21.8,
+        30.2,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_08",
+      "label": "Green interior exhaust-hole wall030",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        34.8,
+        43.2,
+        294.32669297626745,
+        295.6766929762675
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_09",
+      "label": "Green interior exhaust-hole wall031",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -43.2,
+        -34.8,
+        47.8,
+        56.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent02_10",
+      "label": "Green interior exhaust-hole wall032",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -43.2,
+        -34.8,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent02_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_00",
+      "label": "Green interior exhaust-hole wall033",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -69.2,
+        -60.8,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_01",
+      "label": "Green interior exhaust-hole wall034",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -56.2,
+        -47.8,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_02",
+      "label": "Green interior exhaust-hole wall035",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -43.2,
+        -34.8,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_03",
+      "label": "Green interior exhaust-hole wall036",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -30.2,
+        -21.8,
+        292.2521091030345,
+        293.60210910303454
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_04",
+      "label": "Green interior exhaust-hole wall037",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -17.2,
+        -8.8,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_05",
+      "label": "Green interior exhaust-hole wall038",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        -30.2,
+        -21.8,
+        -4.2,
+        4.2,
+        291.4252207185785,
+        292.7752207185785
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_06",
+      "label": "Green interior exhaust-hole wall039",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -30.2,
+        -21.8,
+        8.8,
+        17.2,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_07",
+      "label": "Green interior exhaust-hole wall040",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -30.2,
+        -21.8,
+        21.8,
+        30.2,
+        292.2521091030345,
+        293.60210910303454
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_08",
+      "label": "Green interior exhaust-hole wall041",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -30.2,
+        -21.8,
+        34.8,
+        43.2,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_09",
+      "label": "Green interior exhaust-hole wall042",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -30.2,
+        -21.8,
+        47.8,
+        56.2,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent03_10",
+      "label": "Green interior exhaust-hole wall043",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -30.2,
+        -21.8,
+        60.8,
+        69.2,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent03_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_00",
+      "label": "Green interior exhaust-hole wall044",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -69.2,
+        -60.8,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_01",
+      "label": "Green interior exhaust-hole wall045",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -56.2,
+        -47.8,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_02",
+      "label": "Green interior exhaust-hole wall046",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -43.2,
+        -34.8,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_03",
+      "label": "Green interior exhaust-hole wall047",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -30.2,
+        -21.8,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_04",
+      "label": "Green interior exhaust-hole wall048",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -17.2,
+        -8.8,
+        291.0124025315219,
+        292.3624025315219
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_05",
+      "label": "Green interior exhaust-hole wall049",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -17.2,
+        -8.8,
+        -4.2,
+        4.2,
+        290.8061493872803,
+        292.1561493872803
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_06",
+      "label": "Green interior exhaust-hole wall050",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -17.2,
+        -8.8,
+        8.8,
+        17.2,
+        291.0124025315219,
+        292.3624025315219
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_07",
+      "label": "Green interior exhaust-hole wall051",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -17.2,
+        -8.8,
+        21.8,
+        30.2,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_08",
+      "label": "Green interior exhaust-hole wall052",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -17.2,
+        -8.8,
+        34.8,
+        43.2,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_09",
+      "label": "Green interior exhaust-hole wall053",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        -17.2,
+        -8.8,
+        47.8,
+        56.2,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent04_10",
+      "label": "Green interior exhaust-hole wall054",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        -17.2,
+        -8.8,
+        60.8,
+        69.2,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent04_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_00",
+      "label": "Green interior exhaust-hole wall055",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -4.2,
+        4.2,
+        -69.2,
+        -60.8,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_01",
+      "label": "Green interior exhaust-hole wall056",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -4.2,
+        4.2,
+        -56.2,
+        -47.8,
+        293.91092957887344,
+        295.26092957887346
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_02",
+      "label": "Green interior exhaust-hole wall057",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -4.2,
+        4.2,
+        -43.2,
+        -34.8,
+        292.4590929593065,
+        293.8090929593065
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_03",
+      "label": "Green interior exhaust-hole wall058",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -4.2,
+        4.2,
+        -30.2,
+        -21.8,
+        291.4252207185785,
+        292.7752207185785
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_04",
+      "label": "Green interior exhaust-hole wall059",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -4.2,
+        4.2,
+        -17.2,
+        -8.8,
+        290.8061493872803,
+        292.1561493872803
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_05",
+      "label": "Green interior exhaust-hole wall060",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -4.2,
+        4.2,
+        -4.2,
+        4.2,
+        290.59999999999997,
+        291.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_06",
+      "label": "Green interior exhaust-hole wall061",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -4.2,
+        4.2,
+        8.8,
+        17.2,
+        290.8061493872803,
+        292.1561493872803
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_07",
+      "label": "Green interior exhaust-hole wall062",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        -4.2,
+        4.2,
+        21.8,
+        30.2,
+        291.4252207185785,
+        292.7752207185785
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_08",
+      "label": "Green interior exhaust-hole wall063",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -4.2,
+        4.2,
+        34.8,
+        43.2,
+        292.4590929593065,
+        293.8090929593065
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_09",
+      "label": "Green interior exhaust-hole wall064",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        -4.2,
+        4.2,
+        47.8,
+        56.2,
+        293.91092957887344,
+        295.26092957887346
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent05_10",
+      "label": "Green interior exhaust-hole wall065",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        -4.2,
+        4.2,
+        60.8,
+        69.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent05_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_00",
+      "label": "Green interior exhaust-hole wall066",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        8.8,
+        17.200000000000003,
+        -69.2,
+        -60.8,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_01",
+      "label": "Green interior exhaust-hole wall067",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        8.8,
+        17.2,
+        -56.2,
+        -47.8,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_02",
+      "label": "Green interior exhaust-hole wall068",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        8.8,
+        17.2,
+        -43.2,
+        -34.8,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_03",
+      "label": "Green interior exhaust-hole wall069",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.3647935398186,
+      "bounds": [
+        8.8,
+        17.2,
+        -30.2,
+        -21.8,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_04",
+      "label": "Green interior exhaust-hole wall070",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        8.8,
+        17.2,
+        -17.2,
+        -8.8,
+        291.0124025315219,
+        292.3624025315219
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_05",
+      "label": "Green interior exhaust-hole wall071",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        8.8,
+        17.2,
+        -4.2,
+        4.2,
+        290.8061493872803,
+        292.1561493872803
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_06",
+      "label": "Green interior exhaust-hole wall072",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        8.8,
+        17.2,
+        8.8,
+        17.2,
+        291.0124025315219,
+        292.3624025315219
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_07",
+      "label": "Green interior exhaust-hole wall073",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.3647935398186,
+      "bounds": [
+        8.8,
+        17.2,
+        21.8,
+        30.2,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_08",
+      "label": "Green interior exhaust-hole wall074",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        8.8,
+        17.200000000000003,
+        34.8,
+        43.2,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_09",
+      "label": "Green interior exhaust-hole wall075",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        8.8,
+        17.200000000000003,
+        47.8,
+        56.2,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent06_10",
+      "label": "Green interior exhaust-hole wall076",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        8.8,
+        17.2,
+        60.8,
+        69.2,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent06_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_00",
+      "label": "Green interior exhaust-hole wall077",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        21.8,
+        30.2,
+        -69.2,
+        -60.8,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_01",
+      "label": "Green interior exhaust-hole wall078",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        21.8,
+        30.2,
+        -56.2,
+        -47.8,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_02",
+      "label": "Green interior exhaust-hole wall079",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        21.8,
+        30.2,
+        -43.2,
+        -34.8,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_03",
+      "label": "Green interior exhaust-hole wall080",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.3647935398186,
+      "bounds": [
+        21.8,
+        30.2,
+        -30.2,
+        -21.8,
+        292.2521091030345,
+        293.60210910303454
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_04",
+      "label": "Green interior exhaust-hole wall081",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        21.8,
+        30.2,
+        -17.2,
+        -8.8,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_05",
+      "label": "Green interior exhaust-hole wall082",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        21.8,
+        30.2,
+        -4.2,
+        4.2,
+        291.4252207185785,
+        292.7752207185785
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_06",
+      "label": "Green interior exhaust-hole wall083",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        21.8,
+        30.2,
+        8.8,
+        17.2,
+        291.63178607622814,
+        292.98178607622816
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_07",
+      "label": "Green interior exhaust-hole wall084",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.3647935398186,
+      "bounds": [
+        21.8,
+        30.2,
+        21.8,
+        30.2,
+        292.2521091030345,
+        293.60210910303454
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_08",
+      "label": "Green interior exhaust-hole wall085",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        21.8,
+        30.2,
+        34.8,
+        43.2,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_09",
+      "label": "Green interior exhaust-hole wall086",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981862,
+      "bounds": [
+        21.8,
+        30.2,
+        47.8,
+        56.2,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent07_10",
+      "label": "Green interior exhaust-hole wall087",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        21.8,
+        30.2,
+        60.8,
+        69.2,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent07_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_00",
+      "label": "Green interior exhaust-hole wall088",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        34.8,
+        43.2,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_01",
+      "label": "Green interior exhaust-hole wall089",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        -56.2,
+        -47.8,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_02",
+      "label": "Green interior exhaust-hole wall090",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        -43.2,
+        -34.8,
+        294.32669297626745,
+        295.6766929762675
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_03",
+      "label": "Green interior exhaust-hole wall091",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        -30.2,
+        -21.8,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_04",
+      "label": "Green interior exhaust-hole wall092",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        34.8,
+        43.2,
+        -17.2,
+        -8.8,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_05",
+      "label": "Green interior exhaust-hole wall093",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        34.8,
+        43.2,
+        -4.2,
+        4.2,
+        292.4590929593065,
+        293.8090929593065
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_06",
+      "label": "Green interior exhaust-hole wall094",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        34.8,
+        43.2,
+        8.8,
+        17.2,
+        292.66618183827904,
+        294.01618183827907
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_07",
+      "label": "Green interior exhaust-hole wall095",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        21.8,
+        30.2,
+        293.28808021370156,
+        294.6380802137016
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_08",
+      "label": "Green interior exhaust-hole wall096",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        34.8,
+        43.2,
+        294.32669297626745,
+        295.6766929762675
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_09",
+      "label": "Green interior exhaust-hole wall097",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        34.8,
+        43.2,
+        47.8,
+        56.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent08_10",
+      "label": "Green interior exhaust-hole wall098",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        34.8,
+        43.2,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent08_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_00",
+      "label": "Green interior exhaust-hole wall099",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        47.8,
+        56.2,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_01",
+      "label": "Green interior exhaust-hole wall100",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        47.8,
+        56.2,
+        -56.2,
+        -47.8,
+        297.24903619800284,
+        298.59903619800286
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_02",
+      "label": "Green interior exhaust-hole wall101",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        47.8,
+        56.2,
+        -43.2,
+        -34.8,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_03",
+      "label": "Green interior exhaust-hole wall102",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        47.8,
+        56.2,
+        -30.2,
+        -21.8,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_04",
+      "label": "Green interior exhaust-hole wall103",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        47.8,
+        56.2,
+        -17.2,
+        -8.8,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_05",
+      "label": "Green interior exhaust-hole wall104",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        47.8,
+        56.2,
+        -4.2,
+        4.2,
+        293.91092957887344,
+        295.26092957887346
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_06",
+      "label": "Green interior exhaust-hole wall105",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        47.8,
+        56.2,
+        8.8,
+        17.2,
+        294.11875812037766,
+        295.4687581203777
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_07",
+      "label": "Green interior exhaust-hole wall106",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818614,
+      "bounds": [
+        47.8,
+        56.2,
+        21.8,
+        30.2,
+        294.7428822849105,
+        296.0928822849105
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_08",
+      "label": "Green interior exhaust-hole wall107",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        47.8,
+        56.2,
+        34.8,
+        43.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_09",
+      "label": "Green interior exhaust-hole wall108",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818606,
+      "bounds": [
+        47.8,
+        56.2,
+        47.8,
+        56.2,
+        297.24903619800284,
+        298.59903619800286
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent09_10",
+      "label": "Green interior exhaust-hole wall109",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818628,
+      "bounds": [
+        47.8,
+        56.2,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent09_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_00",
+      "label": "Green interior exhaust-hole wall110",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818663,
+      "bounds": [
+        60.8,
+        69.2,
+        -69.2,
+        -60.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_00",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_01",
+      "label": "Green interior exhaust-hole wall111",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        -56.2,
+        -47.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_01",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_02",
+      "label": "Green interior exhaust-hole wall112",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        -43.2,
+        -34.8,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_02",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_03",
+      "label": "Green interior exhaust-hole wall113",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        60.8,
+        69.2,
+        -30.2,
+        -21.8,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_03",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_04",
+      "label": "Green interior exhaust-hole wall114",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981865,
+      "bounds": [
+        60.8,
+        69.2,
+        -17.2,
+        -8.8,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_04",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_05",
+      "label": "Green interior exhaust-hole wall115",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        -4.2,
+        4.2,
+        295.7852275422745,
+        297.13522754227455
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_05",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_06",
+      "label": "Green interior exhaust-hole wall116",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.36479353981865,
+      "bounds": [
+        60.8,
+        69.2,
+        8.8,
+        17.2,
+        295.99401882819376,
+        297.3440188281938
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_06",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_07",
+      "label": "Green interior exhaust-hole wall117",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818635,
+      "bounds": [
+        60.8,
+        69.2,
+        21.8,
+        30.2,
+        296.62104015184156,
+        297.9710401518416
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_07",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_08",
+      "label": "Green interior exhaust-hole wall118",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        34.8,
+        43.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_08",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_09",
+      "label": "Green interior exhaust-hole wall119",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        47.8,
+        56.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_09",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GreenVent10_10",
+      "label": "Green interior exhaust-hole wall120",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 4,
+      "volume": 21.364793539818642,
+      "bounds": [
+        60.8,
+        69.2,
+        60.8,
+        69.2,
+        297.34999999999997,
+        298.7
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GreenVent10_10",
+      "assembly": "Body",
+      "layer": 9,
+      "material": "green",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush_0_85",
+      "label": "Optical slot flexible dust brush",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 86.2650435035156,
+      "bounds": [
+        -63.175000000000004,
+        -62.525,
+        -74.65,
+        -73.54999999999998,
+        21.0,
+        145.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush-0.85",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "DiscBrush0_85",
+      "label": "Optical slot flexible dust brush001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 86.26504350351561,
+      "bounds": [
+        -61.475,
+        -60.824999999999996,
+        -74.65,
+        -73.54999999999998,
+        21.0,
+        145.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "DiscBrush0.85",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EjectButton",
+      "label": "Eject circular front button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 14.250264276683305,
+      "bounds": [
+        -63.8,
+        -60.2,
+        -75.3,
+        -73.89999999999999,
+        152.2,
+        155.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EjectButton",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PairButton",
+      "label": "Pair circular front button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 19.396193043263413,
+      "bounds": [
+        51.9,
+        56.1,
+        -75.3,
+        -73.89999999999999,
+        45.9,
+        50.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PairButton",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerButton",
+      "label": "Power circular front button",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 89.06415172927082,
+      "bounds": [
+        -63.5,
+        -54.5,
+        -75.3,
+        -73.89999999999999,
+        268.5,
+        277.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerButton",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "white",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBShell",
+      "label": "USB-A metal sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 160.20000000000005,
+      "bounds": [
+        47.5,
+        60.5,
+        -75.15,
+        -66.15,
+        26.099999999999998,
+        31.9
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBShell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBTongue",
+      "label": "USB-A insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 78.60666414484201,
+      "bounds": [
+        48.5,
+        59.5,
+        -73.65,
+        -66.65,
+        28.487,
+        29.513
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBTongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact0",
+      "label": "USB-A schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6836541080828998,
+      "bounds": [
+        48.285714285714285,
+        49.714285714285715,
+        -73.15,
+        -67.15,
+        28.387,
+        28.467000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact1",
+      "label": "USB-A schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6836541080828998,
+      "bounds": [
+        51.61904761904762,
+        53.04761904761905,
+        -73.15,
+        -67.15,
+        28.387,
+        28.467000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact2",
+      "label": "USB-A schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6836541080828997,
+      "bounds": [
+        54.95238095238095,
+        56.38095238095238,
+        -73.15,
+        -67.15,
+        28.387,
+        28.467000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "FrontUSBContact3",
+      "label": "USB-A schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.6836541080828998,
+      "bounds": [
+        58.285714285714285,
+        59.714285714285715,
+        -73.15,
+        -67.15,
+        28.387,
+        28.467000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "FrontUSBContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCross0",
+      "label": "Power button crossed marking",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.08382831853071172,
+      "bounds": [
+        -61.56506516453633,
+        -56.43493483546367,
+        -75.345,
+        -75.325,
+        270.2769977424823,
+        275.7230022575177
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCross0",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerCross1Cut",
+      "label": "Power button crossed marking002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 2,
+      "faces": 16,
+      "volume": 0.07661073686452843,
+      "bounds": [
+        -61.56506516453633,
+        -56.43493483546367,
+        -75.345,
+        -75.325,
+        270.2769977424823,
+        275.7230022575177
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerCross1",
+      "assembly": "Controls",
+      "layer": 1,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Shell",
+      "label": "USB-A metal sleeve001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 180.00000000000009,
+      "bounds": [
+        -8.0,
+        -2.0,
+        65.2,
+        75.20000000000002,
+        90.5,
+        103.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Shell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Tongue",
+      "label": "USB-A insulating tongue001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 93.32318530717959,
+      "bounds": [
+        -7.0,
+        -3.0,
+        65.7,
+        73.7,
+        95.515,
+        98.485
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Tongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact0",
+      "label": "USB-A schematic contact004",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -6.714285714285714,
+        -6.285714285714286,
+        66.2,
+        73.2,
+        98.505,
+        98.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact1",
+      "label": "USB-A schematic contact005",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -5.714285714285714,
+        -5.285714285714286,
+        66.2,
+        73.2,
+        98.505,
+        98.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact2",
+      "label": "USB-A schematic contact006",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -4.714285714285714,
+        -4.285714285714286,
+        66.2,
+        73.2,
+        98.505,
+        98.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB1Contact3",
+      "label": "USB-A schematic contact007",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005658,
+      "bounds": [
+        -3.7142857142857144,
+        -3.2857142857142856,
+        66.2,
+        73.2,
+        98.505,
+        98.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB1Contact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Shell",
+      "label": "USB-A metal sleeve002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 180.00000000000009,
+      "bounds": [
+        -8.0,
+        -2.0,
+        65.2,
+        75.2,
+        68.5,
+        81.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Shell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Tongue",
+      "label": "USB-A insulating tongue002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 93.32318530717957,
+      "bounds": [
+        -7.0,
+        -3.0,
+        65.7,
+        73.7,
+        73.515,
+        76.485
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Tongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Contact0",
+      "label": "USB-A schematic contact008",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -6.714285714285714,
+        -6.285714285714286,
+        66.2,
+        73.2,
+        76.505,
+        76.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Contact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Contact1",
+      "label": "USB-A schematic contact009",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -5.714285714285714,
+        -5.285714285714286,
+        66.2,
+        73.2,
+        76.505,
+        76.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Contact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Contact2",
+      "label": "USB-A schematic contact010",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300566,
+      "bounds": [
+        -4.714285714285714,
+        -4.285714285714286,
+        66.2,
+        73.2,
+        76.505,
+        76.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Contact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearUSB2Contact3",
+      "label": "USB-A schematic contact011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005658,
+      "bounds": [
+        -3.7142857142857144,
+        -3.2857142857142856,
+        66.2,
+        73.2,
+        76.505,
+        76.58500000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearUSB2Contact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetShell",
+      "label": "RJ45 metal sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 275.00000000000006,
+      "bounds": [
+        -11.75,
+        1.75,
+        65.2,
+        75.2,
+        43.5,
+        58.5
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetShell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetTongue",
+      "label": "RJ45 insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 321.20318530717964,
+      "bounds": [
+        -10.75,
+        0.75,
+        65.7,
+        73.7,
+        49.245,
+        52.755
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetTongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact0",
+      "label": "RJ45 schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8375964594300457,
+      "bounds": [
+        -11.0,
+        -9.5,
+        66.2,
+        73.2,
+        52.77499999999999,
+        52.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact1",
+      "label": "RJ45 schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8375964594300456,
+      "bounds": [
+        -7.5,
+        -6.0,
+        66.2,
+        73.2,
+        52.77499999999999,
+        52.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact2",
+      "label": "RJ45 schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8375964594300457,
+      "bounds": [
+        -4.0,
+        -2.5,
+        66.2,
+        73.2,
+        52.77499999999999,
+        52.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "EthernetContact3",
+      "label": "RJ45 schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.8375964594300457,
+      "bounds": [
+        -0.5,
+        1.0,
+        66.2,
+        73.2,
+        52.77499999999999,
+        52.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "EthernetContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionShell",
+      "label": "Storage expansion metal sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 369.9999999999999,
+      "bounds": [
+        10.0,
+        16.0,
+        65.2,
+        75.2,
+        44.0,
+        76.0
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionShell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionTongue",
+      "label": "Storage expansion insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 257.48318530717955,
+      "bounds": [
+        11.0,
+        15.0,
+        65.7,
+        73.7,
+        55.95,
+        64.05000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionTongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionContact0",
+      "label": "Storage expansion schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300565,
+      "bounds": [
+        11.285714285714286,
+        11.714285714285714,
+        66.2,
+        73.2,
+        64.07,
+        64.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionContact1",
+      "label": "Storage expansion schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005647,
+      "bounds": [
+        12.285714285714286,
+        12.714285714285714,
+        66.2,
+        73.2,
+        64.07,
+        64.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionContact2",
+      "label": "Storage expansion schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005644,
+      "bounds": [
+        13.285714285714286,
+        13.714285714285714,
+        66.2,
+        73.2,
+        64.07,
+        64.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ExpansionContact3",
+      "label": "Storage expansion schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005644,
+      "bounds": [
+        14.285714285714286,
+        14.714285714285714,
+        66.2,
+        73.2,
+        64.07,
+        64.15
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ExpansionContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIShell",
+      "label": "HDMI metal sleeve",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 18,
+      "volume": 200.00000000000023,
+      "bounds": [
+        10.0,
+        16.0,
+        65.2,
+        75.2,
+        14.5,
+        29.500000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIShell",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMITongue",
+      "label": "HDMI insulating tongue",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 110.60318530717963,
+      "bounds": [
+        11.0,
+        15.0,
+        65.7,
+        73.7,
+        20.245,
+        23.755000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMITongue",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact0",
+      "label": "HDMI schematic contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300514,
+      "bounds": [
+        11.285714285714286,
+        11.714285714285714,
+        66.2,
+        73.2,
+        23.775000000000002,
+        23.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact0",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact1",
+      "label": "HDMI schematic contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.23759645943005137,
+      "bounds": [
+        12.285714285714286,
+        12.714285714285714,
+        66.2,
+        73.2,
+        23.775000000000002,
+        23.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact1",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact2",
+      "label": "HDMI schematic contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300514,
+      "bounds": [
+        13.285714285714286,
+        13.714285714285714,
+        66.2,
+        73.2,
+        23.775000000000002,
+        23.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact2",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HDMIContact3",
+      "label": "HDMI schematic contact003",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.2375964594300514,
+      "bounds": [
+        14.285714285714286,
+        14.714285714285714,
+        66.2,
+        73.2,
+        23.775000000000002,
+        23.855000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HDMIContact3",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACInlet",
+      "label": "Original figure-eight AC inlet housing",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 19,
+      "volume": 831.5717159103616,
+      "bounds": [
+        -9.0,
+        -0.9999999999999996,
+        65.2,
+        75.2,
+        13.0,
+        31.000000000000004
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACInlet",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "black",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin18",
+      "label": "AC inlet contact pin",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.063715789784805,
+      "bounds": [
+        -5.8,
+        -4.2,
+        68.0,
+        74.0,
+        17.2,
+        18.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin18",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ACPin26",
+      "label": "AC inlet contact pin001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 12.063715789784805,
+      "bounds": [
+        -5.8,
+        -4.2,
+        68.0,
+        74.0,
+        25.2,
+        26.8
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ACPin26",
+      "assembly": "Ports",
+      "layer": 1,
+      "material": "metal",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/seriesx/output/iterations/03_original_front_controls_and_rear_io.FCStd",
+  "views": [
+    "devices/seriesx/output/previews/03_original_front_controls_and_rear_io_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

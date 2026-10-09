@@ -1,0 +1,123 @@
+{
+  "iteration": 1,
+  "slug": "original_tower_enclosure_and_permanent_stand",
+  "summary": "依据官方 151×151×301 mm 包络建立原生参数化方塔壳、独立背板、底部进风板与原版固定圆形底座；壁厚与孔距按照片近似。",
+  "physical_components": 4,
+  "objects": [
+    {
+      "name": "BaseFoot",
+      "label": "Original permanent circular stand",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 57679.6411199086,
+      "bounds": [
+        -60.0,
+        60.0,
+        -60.0,
+        60.0,
+        0.0,
+        5.1
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BaseFoot",
+      "assembly": "Body",
+      "layer": -8,
+      "material": "black",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "BottomPlateCut",
+      "label": "Vented lower enclosure plate001",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 150,
+      "volume": 40906.41365213288,
+      "bounds": [
+        -75.3,
+        75.3,
+        -75.3,
+        75.3,
+        5.25,
+        7.25
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "BottomPlate",
+      "assembly": "Body",
+      "layer": -7,
+      "material": "shell",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MainShellCut001",
+      "label": "Original square tower enclosure002",
+      "type": "Part::Cut",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 23,
+      "volume": 313059.9386557763,
+      "bounds": [
+        -75.5,
+        75.5,
+        -75.5,
+        75.5,
+        7.4,
+        297.79999999999995
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MainShell",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearPanel",
+      "label": "Original detachable rear enclosure",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 85978.73015225971,
+      "bounds": [
+        -72.55,
+        72.55,
+        73.32499999999999,
+        75.375,
+        8.05,
+        297.15000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearPanel",
+      "assembly": "Body",
+      "layer": 1,
+      "material": "accent",
+      "fidelity": "Published outer envelope; approximate original2020 local geometry",
+      "pose_group": "Base"
+    }
+  ],
+  "invalid_features": [],
+  "file": "devices/seriesx/output/iterations/01_original_tower_enclosure_and_permanent_stand.FCStd",
+  "views": [
+    "devices/seriesx/output/previews/01_original_tower_enclosure_and_permanent_stand_hero.png"
+  ],
+  "geometry_audit_pose": "flat / opening 180 degrees",
+  "saved_pose": 180
+}

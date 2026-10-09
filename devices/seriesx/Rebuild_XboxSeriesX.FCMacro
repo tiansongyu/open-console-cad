@@ -1,0 +1,12 @@
+"""Rebuild original 2020 optical Series X from all staged source."""
+from pathlib import Path
+import sys,importlib
+root=Path(__file__).resolve().parent;repo=root.parents[1]
+sys.path.insert(0,str(repo/'tools'))
+from cadlib import core,seriesx,deliver
+importlib.reload(seriesx)
+model=core.Study(repo,'seriesx');model.out=root/'output/rebuilt'
+for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)
+for i in sorted(seriesx.STAGES):seriesx.STAGES[i](model)
+seriesx.finalize(model)
+model.doc.saveAs(str(model.out/'XboxSeriesX_Study.FCStd'))

@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "artifact": "devices/seriesx/output/drawings/XboxSeriesX_Drawings.pdf",
+  "artifact_sha256": "48c68d25eb01b0cc53425ff4bad5d5760a81031353924f71e141c0115934e43d",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewer": "isolated agent /root/ps3_pdf_review",
+  "reviewed_at": "2026-10-09T11:25:03.126989+00:00",
+  "scope": {
+    "method": "读取content.json brief/preserve、实际PDF文字/尺寸/字体、Kami检查日志、本地SOURCES.md及CSV；通过view_image逐一实际打开全部12张最终页面PNG，独立判断布局、可读性、投影和版本边界。",
+    "limitations": "仅图册独立终审；未重载CAD或重算BRep/尺寸，未重新访问外部来源。native_drawings_reload和drawing_checks结果仅读取，不作为本代理亲自执行的几何验证。",
+    "mutations": "仅写本报告；未修改CAD、HTML、PDF、图片或操作桌面。"
+  },
+  "checks": {
+    "pages": 12,
+    "page_size_pt": [
+      1190.55,
+      841.89
+    ],
+    "orientation": "A3 landscape",
+    "cjk_font_observed": "TsangerJinKai02",
+    "kami": "READY 0 errors / 1 orphan warning / 0 data gaps；实际各页标题均在页首，未见页底孤立标题。",
+    "dimension_count": 5,
+    "dimension_labels_by_page": {
+      "2": [
+        "≈151",
+        "≈301",
+        "≈151"
+      ],
+      "4": [
+        "≈224"
+      ],
+      "8": [
+        "≈131.84"
+      ]
+    },
+    "native_report_read": "native_drawings_reload.json passed=true pages=12 dimension_count=5；drawing_checks.json pass=true。",
+    "csv_components": 1047,
+    "csv_solids_sum": 1067,
+    "version_contract": "2020 Carbon Black 1TB光驱主机；双主板、五叶顶扇、均热板与原版光驱；Series双板/双AA/Share/USB-C/混合方向键；2023手册不证明2020首发PCB修订。",
+    "page_observations": [
+      {
+        "page": 1,
+        "observation": "主机方塔、顶部孔阵列及控制器总装完整；2020黑色1TB光驱版与2023控制器资料边界清晰，1047/1067/19轮一致。"
+      },
+      {
+        "page": 2,
+        "observation": "前、后、顶部投影完整；约151/301/151三标注可读，前后接口位置可辨，无裁切。"
+      },
+      {
+        "page": 3,
+        "observation": "中框两侧内部视图及顶部五叶风扇完整，散热侧与光驱/电源侧分别呈现。"
+      },
+      {
+        "page": 4,
+        "observation": "APU及十枚显存可辨，背面供电/2230存储视图完整，约224标注清晰。"
+      },
+      {
+        "page": 5,
+        "observation": "主机A-A Y=0与控制器B-B Y=-45剖面完整，材料填充、壳壁与板层可辨。"
+      },
+      {
+        "page": 6,
+        "observation": "左侧完整爆炸总览较小，但右侧放大图补充板件/光驱/电源/散热层次，未发现误裁切或异常投影。"
+      },
+      {
+        "page": 7,
+        "observation": "光驱独立控制板/主轴/滑架与电源内部可辨，非功能结构说明明确。"
+      },
+      {
+        "page": 8,
+        "observation": "阶梯鳍片与五叶风扇完整；约131.84尺寸清晰，未用于热性能计算的边界保留。"
+      },
+      {
+        "page": 9,
+        "observation": "近正面微倾角控制器外形及内部板件轮廓完整，未见正投影退化/条带异常；Share和混合方向键可辨，2023维修资料不证明2020首发板号的边界明确。"
+      },
+      {
+        "page": 10,
+        "observation": "双AA、两大两小电机、线缆附件视图完整；通用墙端插头不指定地区与认证的范围清晰。"
+      },
+      {
+        "page": 11,
+        "observation": "15组条目与合计完整，编号/材料列无溢出；1047组件/1067实体与CSV一致。"
+      },
+      {
+        "page": 12,
+        "observation": "官方包络、2020拆解与2023手柄维修来源区分清楚；局部近似、非电路/制造/热性能/认证说明可读。"
+      }
+    ]
+  },
+  "findings": [],
+  "conclusion": "在声明的审查范围内通过，未发现P0/P1/P2问题。"
+}

@@ -6,7 +6,7 @@
 
 [在线预览](https://tiansongyu.github.io/open-console-cad/) · [模型库](#模型库) · [快速开始](#快速开始) · [开发与维护](#开发与维护) · [参与贡献](#参与贡献)
 
-本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **25 款设备、22,336 个组件与 300 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
+本项目用于 CAD 建模学习、设备结构观察和三维可视化研究。当前收录 **26 款设备、23,383 个组件与 312 页 A3 图纸**，每款设备均有独立的源码、原生模型、组件清单和验证记录。
 
 - **可继续设计**：提供 FreeCAD 工程、草图与建模历史，以及按轮次组织的 Python 源码。
 - **可直接浏览**：网页支持旋转、缩放、组件分组和分层爆炸；3DS 与 NDS 支持开合展示。
@@ -186,7 +186,12 @@
       <sub>DK-52 · Donkey Kong · Original 1982</sub><br>
       <a href="https://tiansongyu.github.io/open-console-cad/?device=gamewatch&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/gamewatch/README.md">设备说明</a> · <a href="devices/gamewatch/output/drawings/GameWatchDK52_Drawings.pdf">A3 图纸</a>
     </td>
-    <td width="33%"></td>
+    <td align="center" width="33%">
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=seriesx&amp;view=assembled#viewer"><img src="site/public/images/seriesx/hero.webp" width="206" height="160" alt="2020 原版光驱 Xbox Series X 与 Series 控制器模型"></a><br>
+      <strong>Microsoft Xbox Series X</strong><br>
+      <sub>Original 2020 · Carbon Black 1 TB</sub><br>
+      <a href="https://tiansongyu.github.io/open-console-cad/?device=seriesx&amp;view=assembled#viewer">在线 3D</a> · <a href="devices/seriesx/README.md">设备说明</a> · <a href="devices/seriesx/output/drawings/XboxSeriesX_Drawings.pdf">A3 图纸</a>
+    </td>
     <td width="33%"></td>
   </tr>
 </table>
@@ -288,7 +293,7 @@ open-console-cad/
 └── .github/workflows/pages.yml     # 自动构建与发布
 ```
 
-已收录的二十五个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64`、`wii`、`wiiu`、`saturn`、`ps1`、`ps2`、`ps4`、`ps5`、`ps3`、`xbox360`、`gba`、`xboxone`、`sfc` 和 `gamewatch`。共享工具位于 `tools/`，重建时请保留仓库结构。
+已收录的二十六个设备目录分别为 `switch`、`switch2`、`3ds`、`nds`、`psp`、`psv`、`steamdeck`、`gameboy`、`famicom`、`atari2600`、`megadrive`、`n64`、`wii`、`wiiu`、`saturn`、`ps1`、`ps2`、`ps4`、`ps5`、`ps3`、`xbox360`、`gba`、`xboxone`、`sfc`、`gamewatch` 和 `seriesx`。共享工具位于 `tools/`，重建时请保留仓库结构。
 
 经典机型的扩展进度见 [开发记录](docs/CLASSIC_EXPANSION.md)。上方模型库中的设备均提供完整模型、图册与在线预览；销量扩充批次继续推进。
 
@@ -341,3 +346,5 @@ Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.
 Super Famicom：[完整交付核对](devices/sfc/output/reports/completion_audit.json) · [线上预览核对](devices/sfc/output/reports/live_ui_checks.json)。
 
 Game & Watch：[完整交付核对](devices/gamewatch/output/reports/completion_audit.json) · [线上预览核对](devices/gamewatch/output/reports/live_ui_checks.json)。
+
+Xbox Series X：[完整交付核对](devices/seriesx/output/reports/completion_audit.json) · [线上预览核对](devices/seriesx/output/reports/live_ui_checks.json)。
