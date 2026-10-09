@@ -36,4 +36,4 @@ Sony 日本原版手册给出主体约 **325 × 274 × 98 mm**（宽、深、高
 
 1,592 个组件已从空文档重建并逐件比对，严格实体检查、4,339 对装配候选求交、参数修改复原及三份 STEP 回读通过。STEP 的数值边界差异保留在报告中，使用逐实体匹配、布尔或采样确认，不仅比较总量。
 
-本地交付核验通过：[交付记录](output/reports/completion_audit.json)、[独立图册审阅](output/reports/independent_pdf_review.json)、[网页视图与布局](output/reports/web_preview_checks.json)。公开发布的文件和交互另行核对。
+本地交付核验通过：[交付记录](output/reports/completion_audit.json)、[独立图册审阅](output/reports/independent_pdf_review.json)、[网页视图与布局](output/reports/web_preview_checks.json)。已发布版本 `d89031b` 的 14 份线上文件哈希、21 个视图、三种屏幕布局、键盘滑块和设备切换均核对通过，见 [线上文件](output/reports/live_delivery_audit.json) 与 [线上交互](output/reports/live_ui_checks.json)。

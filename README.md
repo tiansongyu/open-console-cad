@@ -158,7 +158,7 @@
 
 网页还提供各设备的专属视图，例如 Switch 底座与手柄、PSP 的 UMD 光驱、PS Vita 后触控板，Steam Deck 的触控板反馈机构与散热系统，Game Boy 的四节 AA 电池和空白卡带，Famicom 的独立手柄与退卡机构，Atari 2600 的双板结构、CX10 摇杆机构和旋钮控制器，Mega Drive 的三键手柄、VA2 主板与原始连接附件，Nintendo 64 的光学摇杆、原始 Jumper Pak 和可拆电源，Wii 的吸入式光驱、原版遥控器、双节棍和感应条，Wii U 的双芯片主板、GamePad 内部与双电源附件，土星的上壳电源、盖板机构和原版六键手柄，PlayStation 的 PU-7 双面主板、数字手柄、原版记忆卡和光驱传动，以及 PlayStation 2 的 GH-001 双面主板、初代 PC CARD、双热管散热、DualShock 2 输入机构和振动电机，以及 PlayStation 4 的双面显存主板、硬盘、离心散热、吸入光驱与 DualShock 4。
 
-原有十七个平台均已完成原生模型与配套交付，详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。按全球累计硬件销量新增十个平台的工作已完成 PS4、PS5，PS3 正在完成发布核验，见 [扩充计划](docs/SALES_EXPANSION_PLAN.md)。
+原有十七个平台均已完成原生模型与配套交付，详见 [制作范围与进度](docs/CLASSIC_EXPANSION.md)。按全球累计硬件销量新增十个平台的工作已完成 PS4、PS5、PS3，见 [扩充计划](docs/SALES_EXPANSION_PLAN.md)。
 
 ## 快速开始
 
@@ -278,7 +278,7 @@ open-console-cad/
 | 新增 PlayStation 2：21 种视图与 12 页图纸 | [交付核对](devices/ps2/output/reports/completion_audit.json) · [线上预览核对](devices/ps2/output/reports/live_ui_checks.json) |
 | 新增 PlayStation 4：20 种视图与 12 页图纸 | [交付核对](devices/ps4/output/reports/completion_audit.json) · [线上预览核对](devices/ps4/output/reports/live_ui_checks.json) |
 | 新增 PlayStation 5：21 种视图与 12 页图纸 | [交付核对](devices/ps5/output/reports/completion_audit.json) · [线上预览核对](devices/ps5/output/reports/live_ui_checks.json) |
-| 新增 PlayStation 3：21 种视图与 12 页图纸 | [交付核对](devices/ps3/output/reports/completion_audit.json) |
+| 新增 PlayStation 3：21 种视图与 12 页图纸 | [交付核对](devices/ps3/output/reports/completion_audit.json) · [线上预览核对](devices/ps3/output/reports/live_ui_checks.json) |
 | 单款设备的详细尺寸与建模过程 | `devices/<device>/output/reports/` 与 `ITERATIONS.md` |
 
 ## 参与贡献
