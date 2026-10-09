@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "pages": 12,
+  "native_dimension_references": 7,
+  "checks": [
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_1",
+      "expected_mm": 325.0000002000002,
+      "measured_mm": 325.0000002000001,
+      "pass": true
+    },
+    {
+      "sheet": 1,
+      "dimension": "Dimension01_2",
+      "expected_mm": 274.00000020000004,
+      "measured_mm": 274.00000020000004,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_1",
+      "expected_mm": 148.81772228976646,
+      "measured_mm": 148.8177222897665,
+      "pass": true
+    },
+    {
+      "sheet": 3,
+      "dimension": "Dimension03_2",
+      "expected_mm": 96.41901033837942,
+      "measured_mm": 96.41901033837942,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_1",
+      "expected_mm": 292.0000000000005,
+      "measured_mm": 292.00000000000045,
+      "pass": true
+    },
+    {
+      "sheet": 7,
+      "dimension": "Dimension07_2",
+      "expected_mm": 224.0000000000002,
+      "measured_mm": 224.0000000000002,
+      "pass": true
+    },
+    {
+      "sheet": 8,
+      "dimension": "Dimension08_1",
+      "expected_mm": 128.0,
+      "measured_mm": 128.0,
+      "pass": true
+    }
+  ],
+  "invalid": [],
+  "file": "devices/ps3/output/PlayStation3_Drawings.FCStd",
+  "presentation": "Self-contained SVG sheets and native dimension references; rebuild sheets after edits to the 3D model."
+}

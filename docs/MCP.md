@@ -41,3 +41,9 @@ export_device(repo, "switch2")
 服务保持在本机即可。仓库不包含认证信息、个人客户端配置、上游虚拟环境或会话日志。
 
 - **建模线程**：创建/修改文档对象、重计算、保存和视图渲染使用 `execute_code`。`execute_code_async` 仅用于不接触文档和 GUI 的后台计算。
+
+## 独立虚拟桌面
+
+本项目后续自动化建模使用独立虚拟显示环境，不操作用户桌面。FreeCAD 使用独立的用户与系统配置；例如在空闲的 `:99` 显示上通过 `xvfb-run --server-num=99 --server-args='-screen 0 1920x1440x24 -nolisten tcp'` 启动 FreeCAD，并以 `--user-cfg`、`--system-cfg` 指向 `.local/` 下的专用配置文件。
+
+MCP 辅助客户端及截图、窗口检查命令也应显式使用该虚拟显示的 `DISPLAY` 和对应 `XAUTHORITY`，避免辅助脚本中的窗口聚焦或屏幕唤醒命令影响用户桌面。启动后核对 FreeCAD 进程环境与 RPC 健康状态；不要将用户现有 FreeCAD 实例当作自动化实例关闭。

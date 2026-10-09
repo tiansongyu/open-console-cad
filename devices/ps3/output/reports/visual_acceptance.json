@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "pdf": "devices/ps3/output/drawings/PlayStation3_Drawings.pdf",
+  "pdf_sha256": "26a5cdd47fc49a8f94eef630b5ebdcabf5bfe79f7e0f25a3c0700462433b472b",
+  "pages": 12,
+  "page_format": "A3 landscape",
+  "root_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "revised_geometry_pages_reviewed": [
+    2,
+    3,
+    4,
+    7,
+    9,
+    10
+  ],
+  "font": "TsangerJinKai02",
+  "font_gate_passed": true,
+  "content_coverage_passed": true,
+  "style_passed": true,
+  "placeholders_passed": true,
+  "density_passed": true,
+  "kami_verdict": "READY: 0 errors, 1 warning(s), 0 data gap(s)",
+  "warning_review": "Short Chinese headings flagged as orphans are attached to their panels; no visible stranded headings.",
+  "corrections": [
+    "Hide optical media and removable covers for mechanism study",
+    "Show Mini-B five contacts from mating end",
+    "Use early controller PCB component side and actual component IDs",
+    "Remove floating player-number marks from guide detail",
+    "Use Chinese-first headings for statically provable coverage"
+  ],
+  "scope": "CAD-derived projections and sections; published envelope distinguished from local study approximations; early motorless SIXAXIS and Japanese CECHA00 kit retained."
+}

@@ -629,3 +629,803 @@ def stage14(m):
 
 
 STAGES[14]=stage14
+
+
+def _planar_ribbon(points,width,t=.12,r=6):
+    """Constant-width XY strip with circular bends and a positive inner radius."""
+    import math
+    points=[V(*p) for p in points]
+    assert len(points)>=2 and 0<width<2*r and t>0
+    assert all(abs(p.z-points[0].z)<1e-7 for p in points)
+    edges=[];last=points[0]
+    for prev,cur,nxt in zip(points,points[1:],points[2:]):
+        inc=(cur-prev).normalize();out=(nxt-cur).normalize()
+        angle=math.acos(max(-1,min(1,inc.dot(out))))
+        if angle<1e-6:continue
+        trim=r*math.tan(angle/2)
+        assert trim<min((cur-last).Length,(nxt-cur).Length/2)
+        entry=cur-inc*trim;leave=cur+out*trim
+        center=cur+(out-inc).normalize()*(r/math.cos(angle/2))
+        middle=center+(cur-center).normalize()*r
+        edges.extend([Part.makeLine(last,entry),Part.Arc(entry,middle,leave).toShape()]);last=leave
+    edges.append(Part.makeLine(last,points[-1]));path=Part.Wire(edges)
+    tangent=(points[1]-points[0]).normalize()
+    wide=V(-tangent.y,tangent.x,0)*width/2;thin=V(0,0,t/2);p=points[0]
+    corners=[p-wide-thin,p+wide-thin,p+wide+thin,p-wide+thin]
+    section=Part.Wire(Part.makePolygon(corners+[corners[0]]).Edges)
+    shape=path.makePipeShell([section],True,False)
+    shape.check(True)
+    assert shape.isValid() and len(shape.Solids)==1
+    return shape
+
+
+def stage15(m):
+    from .ps2 import _flat_ribbon
+    from .atari2600 import _rounded_route
+    m.colors['flex']=(.52,.29,.085)
+    def socket(key,x,y,z,w,count,assembly):
+        outer=m.rr(w,5,2.2,(x,y,z),.3);inner=m.rr(w-1.2,3.8,2,(x,y,z+.5),.15)
+        m.feature(key+'Socket',key+' independent FFC carrier',outer.cut(inner),assembly,3,'white',True)
+        for i in range(count):m.box(key+'Contact'+str(i),'Separate FFC terminal study',.25,3,.12,(x+(i-(count-1)/2)*(w-2)/count,y,z+.7),assembly,3,'gold',.02,True)
+    socket('ReaderFFC',-125,-110,47.2,14,12,'FrontIO')
+    socket('DriveMainFFC',78,-86,35,27,24,'Optical')
+    # Turn the simple touch-board connector envelope into a genuinely open mouth.
+    m.cut('ControlFFC',m.rr(10.6,2.8,1.8,(116,-107.5,36.7),.15),'Touch-board FFC cavity').Refine=False
+    for i in range(12):m.box('ControlFFCContact'+str(i),'Separate control-board flex terminal',.25,2,.12,(116+(i-5.5)*.75,-107.5,36.9),'Controls',3,'gold',.02,True)
+    routes=[
+      ('WirelessRibbon',10.8,[(-48,-98,32.65),(-48,-103,32.65),(-48,-103,43),(-46.5,-77,43),(-46.5,-77,40.55)],'white'),
+      ('ControlRibbon',9.8,None,'white'),
+      ('ReaderRibbon',10,None,'white'),
+      ('OpticalMainRibbon',22,[(78,-78,32.65),(78,-83,32.65),(78,-83,35.95),(78,-86,35.95)],'white')]
+    for key,width,path,color in routes:
+        def ribbon(w,t):
+            if key=='ReaderRibbon':
+                start=_flat_ribbon([(-126,-67,32.65),(-126,-67,35),(-126,-70,35)],w,t,.3)
+                lower=_planar_ribbon([(-126,-69,35),(-126,-77,35),(-141,-77,35),(-141,-53.5,35)],w,t)
+                rise=_flat_ribbon([(-141,-54,35),(-141,-53,35),(-141,-53,48.5),(-141,-54.5,48.5)],w,t,.3)
+                upper=_planar_ribbon([(-141,-54,48.5),(-141,-95,48.5),(-125,-95,48.5),(-125,-110,48.5)],w,t)
+                result=start.fuse(lower).fuse(rise).fuse(upper).removeSplitter()
+                result.check(True)
+                assert len(result.Solids)==1
+                return result
+            if key!='ControlRibbon':return _flat_ribbon(path,w,t,.3)
+            start=_flat_ribbon([(-91,-98,32.65),(-91,-114,32.65),(-91,-114,43.5),(-91,-115,43.5)],w,t,.3)
+            middle=_planar_ribbon([(-91,-114.5,43.5),(-91,-125,43.5),(116,-125,43.5),(116,-109,43.5)],w,t)
+            end=_flat_ribbon([(116,-109.5,43.5),(116,-107.5,43.5),(116,-107.5,37.2)],w,t,.3)
+            result=start.fuse(middle).fuse(end).removeSplitter()
+            result.check(True)
+            assert len(result.Solids)==1
+            return result
+        sh=ribbon(width,.12)
+        m.feature(key,'Independent routed '+key+' study',sh,'Wiring',3,color,True)
+        clearance=ribbon(width+.5,.5)
+        # Only enclosure and carrier materials get explicit cable passages.
+        families={'WirelessRibbon':['WirelessLinkHousing','UpperBoardShield','WirelessFFCSocket'],
+                  'ControlRibbon':['ControlLinkHousing','UpperBoardShield','ControlFFC'],
+                  'ReaderRibbon':['CardLinkHousing','UpperBoardShield','ReaderFFCSocket'],
+                  'OpticalMainRibbon':['OpticalLinkHousing','DriveMainFFCSocket']}
+        for target in families[key]:m.cut(target,clearance,'Separated flex-cable mouth and passage: '+key).Refine=False
+    # Route the antenna lead around the front and right edges of the optical drive.
+    path=[(-125,-76,41.55),(-125,-76,45.7),(-140,-80,45.7),(-140,-113,45.7),(146.7,-113,45.7),(146.7,51,45.7),(146.7,51,44.05)]
+    m.feature('AntennaCoax','Independent wireless antenna coaxial cable study',_rounded_route([V(*p) for p in path],.7,.4),'Wiring',4,'black',True)
+    m.ring('AntennaTerminal','Separate antenna-end coaxial termination',.75,.45,.6,(146.7,51,43.35),'Wireless',4,'metal',internal=True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=15
+    m.checkpoint(15,'separate_board_flexes_and_routed_wireless_antenna','连接无线、触控、读卡和光驱的四条独立弯折排线，加入端部插座和接点，并在屏蔽及插座材料上保留真实通道；天线同轴线绕过光驱。路径、宽度与接点数量为静态连接示意。')
+    m.snapshot('15_board_interconnects',assemblies=['Wiring','Wireless','FrontIO','Controls'],exclude=['CardReaderFlap','WirelessShieldLid'],normal=(.2,-.5,2))
+
+
+STAGES[15]=stage15
+
+
+def stage16(m):
+    from .atari2600 import _rounded_route
+    m.colors['wiregreen']=(.08,.34,.12)
+    def wire(key,points,radius,color,targets=()):
+        pts=[V(*p) for p in points];bend=.6 if key.startswith('RTC') else (.65 if radius<.4 else 1.2);sh=_rounded_route(pts,bend,radius)
+        m.feature(key,'Independent routed '+key+' study',sh,'Wiring',2,color,True)
+        if targets:
+            tool=_rounded_route(pts,bend,radius+.22)
+            for name in targets:m.cut(name,tool,'Insulated harness passage: '+key).Refine=False
+    # The original PSU service drawing specifies a five-position control harness.
+    o=m.parts.pop('PowerLinkContact5');m.doc.removeObject(o.Name)
+    for i in range(5):
+        o=m.parts['PowerLinkContact'+str(i)]
+        sh=m.rr(.25,2.9,.17,(-90+(i-2)*2.8,20,32.3),.02)
+        o.Shape=sh;o.Placement=sh.Placement;o.FlatPlacement=o.Placement
+        start=-75.5+(i-2)*3;end=-90+(i-2)*2.8
+        path=[(start,-26,49.3),(start,-39,49.3),(start,-39,39.6),(end,20,39.6),(end,20,32.8)]
+        wire('PowerControlLead'+str(i),path,.3,['white','white','red','black','black'][i],['PowerOutputSocket','UpperBoardShield'])
+    # Independent fan wires travel under the fan and rise through matching board holes.
+    for i in range(3):
+        yy=(i-1)*.8;xx=112+i;end=127+(i-1)*8/3;top=34.8+i*.45
+        path=[(42.7,yy,8),(42.7,yy,3),(xx,yy,3),(xx,yy,top),(xx,73+2*i,top),(end,82,top),(end,82,32.8)]
+        wire('FanLead'+str(i),path,.15,['black','red','white'][i],['CoolingCarrier','LowerBoardShield','MainPCB'])
+    # Grounded AC harness: independent paths from the inlet to the PSU rear header.
+    for i,(x,z,end) in enumerate([(119,19.325,-26),(124,25.825,-22),(129,19.325,-18)]):
+        yy=104+2*i
+        path=[(x,111.8,z),(x,yy,z),(x,yy,51.8+i*1.4),(end,yy,51.8+i*1.4),(end,85,51.8+i*1.4),(end,81.6,50.95)]
+        if i==0:path=[(x,111.5,z),(120.6,109.5,z),(120.6,yy,z),(120.6,yy,51.8),(end,yy,51.8),(end,85,51.8),(end,81.6,50.95)]
+        wire('ACInternalLead'+str(i),path,.55,['black','wiregreen','white'][i],['ACSocket','LowerBoardShield','MainPCB','UpperBoardShield'])
+    # Low-current RTC harness remains separate from the five-position PSU bundle.
+    for i in range(2):
+        y=68.4+i*1.2;x=107+2*i
+        m.ring('RTCTerminal'+str(i),'Separate RTC plug terminal',.45,.25,.6,(x,69,33.7),'Mainboard',2,'metal',internal=True)
+        lane=67 if i==0 else 71
+        path=[(113.5,y,39.3),(113.5,y,41),(111.8,lane,41),(x,lane,41),(x,69,41),(x,69,34.45)]
+        wire('RTCLead'+str(i),path,.17,'red' if i else 'black',['UpperBoardShield'])
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=16
+    m.checkpoint(16,'power_control_ac_fan_and_rtc_harnesses','补齐五位电源控制线、三线风扇、接地 AC 内线和 RTC 两线，并在板料及屏蔽材料上保留独立绝缘穿越孔。端点、路径与颜色为结构学习示意，不定义真实电气接线。')
+    m.snapshot('16_power_and_fan_wiring',assemblies=['Wiring','Power','Cooling'],exclude=['PowerLid'],normal=(.2,-.5,2))
+
+
+STAGES[16]=stage16
+
+
+def _outer_apron(m,key,x):
+    c=_arch_curve(256,49,47,91.85);p=c.getPoles();bottom=42.4
+    sk=m.doc.addObject('Sketcher::SketchObject',key+'Outline')
+    sk.addGeometry([c.toBSpline(),Part.LineSegment(p[-1],V(p[-1].x,bottom)),Part.LineSegment(V(p[-1].x,bottom),V(p[0].x,bottom)),Part.LineSegment(V(p[0].x,bottom),p[0])],False)
+    sk.Placement=App.Placement(V(x,0,0),App.Rotation(V(0,1,0),V(0,0,1),V(1,0,0),'ZXY'))
+    m.group('Construction').addObject(sk)
+    ex=m.doc.addObject('Part::Extrusion',key+'Wall');ex.Base=sk;ex.DirMode='Normal';ex.LengthFwd=1.3;ex.Solid=True
+    m.doc.recompute();sk.Visibility=False
+    return m.register(ex,key,'Body',5,'ps3gloss')
+
+
+def stage17(m):
+    # Outer curved end aprons close the roof-edge gap while retaining the inset inner walls.
+    _outer_apron(m,'LeftOuterApron',-162.15);_outer_apron(m,'RightOuterApron',160.85)
+    side_vents=[Part.makeBox(4,3.5,17,V(160,y,48)) for y in range(-100,101,9)]
+    m.cut('RightOuterApron',side_vents,'Upper right-side cooling grille').Refine=False
+    for i,(x,y) in enumerate([(x,y) for x in [-145,145] for y in [-115,115]]):
+        m.ring('CasePillar'+str(i),'Separate lower case fixing pillar study',3.2,1.25,23.5,(x,y,2.5),'Frame',-4,'black',internal=True)
+        m.ring('CaseUpperSpacer'+str(i),'Case-to-frame support sleeve',2.5,1.25,10,(x,y,26.8),'Frame',0,'black',internal=True)
+        m.screw('CaseFixing'+str(i),(x,y,38.6),'Frame',3,length=34,radius=2.2,axis=(0,0,-1))
+    mounts=[(x,y) for x in [-145,145] for y in [-115,115]]
+    for key,z,h,r in [('MainPCB',29.5,2,2.8),('UpperBoardShield',36.8,1,1.5),('LowerBoardShield',26.1,1,1.5)]:
+        m.cut(key,[Part.makeCylinder(r,h,V(x,y,z)) for x,y in mounts],'Outer fixing-stack clearance').Refine=False
+    m.label('TopWordmark','PLAYSTATION 3',9,(-44,-3,98.1),'Body',8,'chrome')
+    bottom=g.rotation((0,0,-1),(0,1,0))
+    m.box('BottomModelPlate','Separate lower model-identification label',110,34,.05,(-10,22,-.02),'Body',-6,'black',1,orient=bottom)
+    m.label('BottomModelMark','CECHA00 / CAD STUDY',2.5,(18,20,-.085),'Body',-6,'white',rotation=bottom)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=17
+    m.checkpoint(17,'curved_outer_aprons_case_fixings_and_model_marks','补齐弧形外端裙、上侧贯通通风、四处独立机壳固定堆叠以及型号学习标识。原生端裙与上盖保持分件，局部轮廓和固定位置为照片指导近似。')
+    m.snapshot('17_complete_console_exterior',assemblies=['Body','Frame','FrontIO','Ports','Controls'],normal=(.25,-1.6,.85))
+
+
+STAGES[17]=stage17
+
+
+def _six_point(x,y,z):
+    return V(x,y-250,z)
+
+
+def _six_loft(m,key,profiles):
+    from .ps1 import _controller_profile_curves
+    sketches=[]
+    for i,(sx,sy,z) in enumerate(profiles):
+        sk=m.doc.addObject('Sketcher::SketchObject',key+'Profile'+str(i));sk.Label='SIXAXIS editable shell section '+str(i+1)
+        for curve in _controller_profile_curves(sx*1.09,sy*1.07,1.2 if 'Inner' in key else 0):sk.addGeometry(curve,False)
+        sk.Placement=App.Placement(_six_point(0,0,z),App.Rotation());m.group('Construction').addObject(sk);sketches.append(sk)
+    loft=m.doc.addObject('Part::Loft',key);loft.Sections=sketches;loft.Solid=True;loft.Ruled=False;loft.Closed=False;loft.MaxDegree=3
+    m.doc.recompute();assert loft.Shape.isValid() and len(loft.Shape.Solids)==1 and loft.Shape.Volume>0;loft.Shape.check(True)
+    m.group('Construction').addObject(loft)
+    for sk in sketches:sk.Visibility=False
+    loft.Visibility=False;return loft
+
+
+def _six_shell(m,key,outer,inner,layer):
+    a=_six_loft(m,key+'Outer',outer);b=_six_loft(m,key+'Inner',inner)
+    obj=m.doc.addObject('Part::Cut',key);obj.Base=a;obj.Tool=b;obj.Refine=False
+    m.doc.recompute();assert obj.Shape.isValid() and len(obj.Shape.Solids)==1 and obj.Shape.Volume>0;obj.Shape.check(True)
+    a.Visibility=False;b.Visibility=False
+    return m.register(obj,key,'Controller',layer,'sixblack')
+
+
+def stage18(m):
+    from .ps1 import _add_shape
+    m.colors['sixblack']=(.09,.10,.115)
+    _six_shell(m,'SIXBack',[(.89,.90,1),(.96,.96,5),(1,1,12),(1,1,19.8)],[(.83,.84,3.3),(.92,.92,7),(.967,.966,13),(.967,.966,20.05)],-4)
+    _six_shell(m,'SIXFront',[(1,1,20.1),(.994,.992,26),(.960,.955,31)],[(.966,.966,19.95),(.957,.950,26),(.935,.925,28.7)],4)
+    front=[];back=[];inner_front=[];inner_back=[];openings=[]
+    for side in [-1,1]:
+        x=side*23
+        back.append(Part.makeCylinder(17,15.8,_six_point(x,-23,4)))
+        front.append(Part.makeCylinder(17,12.4,_six_point(x,-23,20.1)))
+        inner_back.append(Part.makeCylinder(15.5,14.7,_six_point(x,-23,5.5)))
+        inner_front.append(Part.makeCylinder(15.5,11.25,_six_point(x,-23,19.95)))
+        openings.append(Part.makeCylinder(12.1,2.6,_six_point(x,-23,30.8)))
+        face=Part.makeCylinder(24,2.0,_six_point(side*47,7,30.7))
+        face=face.makeFillet(.7,[e for e in face.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>32.6]);front.append(face)
+        front.append(m.rr(23,13,11,tuple(_six_point(side*47,34,20.1)),2))
+        back.append(m.rr(23,13,7.8,tuple(_six_point(side*47,34,12.0)),2))
+    _add_shape(m,'SIXBack',Part.makeCompound(back),'Integral lower analogue-stick cups and shoulder housings').Refine=False
+    m.cut('SIXBack',inner_back,'Hollow lower analogue-stick cups').Refine=False
+    _add_shape(m,'SIXFront',front[0].multiFuse(front[1:]).removeSplitter(),'Integral upper analogue-stick pods and circular control faces').Refine=False
+    m.cut('SIXFront',inner_front+openings,'Analogue-stick pod cavities and real stick openings').Refine=False
+    m.snapshot('18_sixaxis_shell',assemblies=['Controller'],normal=(.3,-.6,2))
+    m.profile['stages']=18
+    m.checkpoint(18,'sixaxis_native_shell_and_analogue_pods','建立 SIXAXIS 的上下原生曲线放样壳、双摇杆杯形舱、圆形按键面与两层肩键罩；保留壳体分缝和真正贯穿的摇杆开孔，局部尺寸为照片指导的学习近似。')
+
+
+STAGES[18]=stage18
+
+
+def _six_symbol(m,key,kind,x,y,z,material):
+    from .psp import _polygon
+    x,y,z=tuple(_six_point(x,y,z))
+    if kind=='Triangle':
+        shape=_polygon([(x,y+3),(x-2.8,y-2.1),(x+2.8,y-2.1)],z,.025).cut(_polygon([(x,y+2.22),(x-2.15,y-1.72),(x+2.15,y-1.72)],z-.01,.05))
+    elif kind=='Circle':shape=Part.makeCylinder(3,.025,V(x,y,z)).cut(Part.makeCylinder(2.6,.05,V(x,y,z-.01)))
+    elif kind=='Square':shape=m.rr(5.6,5.6,.025,(x,y,z),.08).cut(m.rr(4.8,4.8,.05,(x,y,z-.01),.04))
+    else:
+        strips=[]
+        for angle in [-45,45]:
+            strip=m.rr(.42,7,.025,(x,y,z),.06);strip.rotate(V(x,y,z),V(0,0,1),angle);strips.append(strip)
+        shape=strips[0].fuse(strips[1])
+    m.feature(key,kind+' face-button symbol',shape,'Controller',6,material)
+
+
+
+
+def stage19(m):
+    from .psp import _polygon
+    from .ps1 import _add_shape
+    m.colors.update({'buttonblack':(.17,.18,.20),'ctrlcyan':(.20,.69,.63),'ctrlcoral':(.79,.34,.29),'ctrlblue':(.27,.57,.84),'ctrlpurple':(.74,.35,.60),'stickrubber':(.10,.11,.12)})
+    _add_shape(m,'SIXFront',m.rr(16,13,10.9,tuple(_six_point(0,-18,20.1)),1),'Central analogue-button bridge').Refine=False
+    m.cut('SIXFront',m.rr(13,10,8.75,tuple(_six_point(0,-18,19.95)),.7),'Central bridge interior').Refine=False
+    _add_shape(m,'SIXBack',m.rr(16,13,15.8,tuple(_six_point(0,-18,4)),1),'Lower central bridge').Refine=False
+    m.cut('SIXBack',m.rr(13,10,14.7,tuple(_six_point(0,-18,5.5)),.7),'Lower bridge interior').Refine=False
+    caps=[];holes=[];pivot=_six_point(-47,7,0)
+    outline=[(-3,2.4),(3,2.4),(4.1,9.5),(0,12),(-4.1,9.5)]
+    for name,angle in [('Up',0),('Right',-90),('Down',180),('Left',90)]:
+        cap=_polygon([(-47+x,-243+y) for x,y in outline],32.05,2.75)
+        cap=cap.makeFillet(.4,[e for e in cap.Edges if e.BoundBox.ZLength>2.74])
+        cap=cap.fuse(Part.makeCylinder(1.8,5.7,_six_point(-47,13.8,26.5)))
+        cap.rotate(pivot,V(0,0,1),angle);caps.append(cap)
+        hole=_polygon([(-47+x*1.09,-243+y*1.09) for x,y in outline],28.4,7);hole.rotate(pivot,V(0,0,1),angle);holes.append(hole)
+    cross=Part.makeBox(5,23,.8,_six_point(-49.5,-4.5,26.6)).fuse(Part.makeBox(23,5,.8,_six_point(-58.5,4.5,26.6)))
+    cross=cross.fuse(Part.makeCylinder(2.4,1.4,_six_point(-47,7,25.3)))
+    m.feature('SIXDPad','Linked four-way directional rocker',cross.multiFuse(caps),'Controller',5,'buttonblack')
+    for name,dx,dy,mat in [('Triangle',0,11,'ctrlcyan'),('Circle',11,0,'ctrlcoral'),('Cross',0,-11,'ctrlblue'),('Square',-11,0,'ctrlpurple')]:
+        x,y=47+dx,7+dy
+        cap=Part.makeCylinder(4.5,5.4,_six_point(x,y,29.3))
+        cap=cap.makeFillet(.35,[e for e in cap.Edges if e.BoundBox.ZLength<1e-7 and e.BoundBox.ZMax>34.6])
+        cap=cap.fuse(Part.makeCylinder(1.55,2.9,_six_point(x,y,26.5)))
+        cap=cap.multiFuse([Part.makeBox(1.7,2,.6,_six_point(x+3.8,y-1,29.4)),Part.makeBox(1.7,2,.6,_six_point(x-5.5,y-1,29.4))])
+        m.feature('SIXButton'+name,name+' pressure-button cap and locating ears',cap,'Controller',5,'buttonblack')
+        _six_symbol(m,'SIXSymbol'+name,name,x,y,34.735,mat)
+        holes += [Part.makeCylinder(4.8,7.3,_six_point(x,y,28.2)),Part.makeCylinder(5.8,2.2,_six_point(x,y,28.3))]
+    for key,x,y,w,h in [('Select',-11.5,4,7,3.8)]:
+        cap=m.rr(w,h,1.5,tuple(_six_point(x,y,30.8)),.6).fuse(Part.makeCylinder(1.2,4.4,_six_point(x,y,26.5)))
+        m.feature('SIX'+key,key.upper()+' button',cap,'Controller',5,'buttonblack')
+        holes.append(m.rr(w+.6,h+.6,7.1 if key=='Analog' else 5.2,tuple(_six_point(x,y,26.1 if key=='Analog' else 28)),.7))
+    cap=_polygon([(8.2,-248.1),(8.2,-243.9),(14.4,-246)],30.8,1.5).fuse(Part.makeCylinder(1.2,4.4,_six_point(11.0,4,26.5)))
+    m.feature('SIXStart','Triangular START button',cap,'Controller',5,'buttonblack')
+    holes.append(_polygon([(7.9,-248.5),(7.9,-243.5),(15.0,-246)],28,5.2))
+    cap=Part.makeCylinder(3.9,1.6,_six_point(0,-11,30.8)).fuse(Part.makeCylinder(1.2,4.4,_six_point(0,-11,26.5)))
+    m.feature('SIXPSButton','Original round PS button',cap,'Controller',5,'buttonblack')
+    holes += [Part.makeCylinder(4.25,7,_six_point(0,-11,28)),Part.makeCylinder(5.2,1.8,_six_point(0,-11,28.5))]
+    m.ring('SIXPSRetainer','Separate PS-button retaining ring',4.9,4.3,1,tuple(_six_point(0,-11,29)),'Controller',4,'white',internal=True)
+    m.label('SIXPSMark','PS',1.8,tuple(_six_point(-1.4,-11.7,32.435)),'Controller',6,'white')
+    m.cut('SIXFront',holes,'Directional, face, menu and indicator openings').Refine=False
+    for key,text,size,x,y in [('Sony','SONY',3.6,-9,22),('Select','SELECT',1.25,-18,-1.7),('Start','START',1.25,7,-1.7)]:
+        m.label('SIX'+key+'Mark',text,size,tuple(_six_point(x,y,31.025)),'Controller',6,'white')
+    rear=g.rotation((0,1,0),(0,0,1))
+    for side in [-1,1]:
+        x=side*47;name='L' if side<0 else 'R'
+        for tier,z in [(1,25.5)]:
+            shell='SIXFront' if tier==1 else 'SIXBack'
+            m.cut(shell,m.rr(19.2,7.2,16,tuple(_six_point(x,27.1,z)),.85,rear),name+str(tier)+' shoulder actuator opening').Refine=False
+            cap=m.rr(18.4,6.4,2.2,tuple(_six_point(x,39,z)),.75,rear)
+            stem=m.rr(4,3,8.1,tuple(_six_point(x,31,z)),.25,rear)
+            m.feature('SIX'+name+str(tier),name+str(tier)+' shoulder key and stem',cap.fuse(stem),'Controller',5,'buttonblack')
+            m.label('SIX'+name+str(tier)+'Mark',str(tier),2,tuple(_six_point(x+.5,41.225,z-.7)),'Controller',6,'white',rotation=rear)
+        m.label('SIXShoulder'+name,name,2.0,tuple(_six_point(x-.7,36,31.125)),'Controller',6,'white')
+    for i,x in enumerate([-23,23]):
+        center=_six_point(x,-23,25)
+        dome=Part.makeSphere(12,center).cut(Part.makeSphere(10.6,center)).common(Part.makeBox(30,30,9.6,_six_point(x-15,-38,22.5)))
+        dome=dome.multiFuse([Part.makeCylinder(10,.45,_six_point(x,-23,31.9)),Part.makeCylinder(3,9.3,_six_point(x,-23,24))])
+        dome=dome.cut(Part.makeCylinder(2.0,6.3,_six_point(x,-23,23.8)))
+        m.feature('SIXStickDome'+str(i),'Analogue stick hard dome and keyed stem study',dome,'Controller',5,'buttonblack')
+        crown=Part.makeSphere(16,_six_point(x,-23,22.8)).common(Part.makeCylinder(11.05,5,_six_point(x,-23,34.4)))
+        cap=Part.makeCylinder(10.7,1,_six_point(x,-23,33.5)).fuse(crown)
+        m.feature('SIXStickCap'+str(i),'Convex rubber analogue thumb cap',cap,'Controller',6,'stickrubber')
+    m.snapshot('19_sixaxis_controls',assemblies=['Controller'],normal=(.2,-.5,2))
+    m.profile['stages']=19
+    m.checkpoint(19,'sixaxis_directional_face_ps_and_analogue_controls','建立早期 SIXAXIS 的方向/四符号面键、SELECT / START、圆形 PS 键及独立限位环、L1/R1 与双摇杆球罩和凸面帽；无线指示、Mini-B 和转轴式 L2/R2 在后续轮次补齐，保留首发无振动结构。')
+
+
+STAGES[19]=stage19
+
+
+
+
+def stage20(m):
+    from .ps1 import _add_shape
+    from .psp import _polygon
+    m.colors.update(ctrlcream=(.79,.80,.66),ctrlflex=(.16,.47,.37))
+    m.native('SIXPCB','Early SIXAXIS mainboard layout study',84,30,.8,.8,tuple(_six_point(0,8,13)),'Controller',0,'pcb')
+    extensions=[m.rr(10,12,.8,tuple(_six_point(0,-13,13)),.4),m.rr(12,5,.8,tuple(_six_point(0,23.5,13)),.4)]
+    for x in [-23,23]:extensions += [Part.makeCylinder(12,.8,_six_point(x,-23,13)),m.rr(24,19,.8,tuple(_six_point(x,-15.5,13)),.5)]
+    _add_shape(m,'SIXPCB',extensions[0].multiFuse(extensions[1:]).removeSplitter(),'Analogue module lobes and Mini-B mounting tongue').Refine=False
+    mounts=[(-35,18),(35,18),(-35,-4),(35,-4),(0,18)]
+    m.cut('SIXPCB',[Part.makeCylinder(1,1.3,_six_point(x,y,12.75)) for x,y in mounts],'Carrier locating and retaining holes').Refine=False
+    m.box('SIXControlIC','Wireless-controller processing package study',12,12,1.5,tuple(_six_point(-16,10,11.2)),'Controller',-1,'black',.3,True)
+    for side in [-1,1]:
+        for i in range(11):
+            m.box('SIXControlLeadX'+str(side)+'_'+str(i),'Independent controller IC lead study',1,.28,.15,tuple(_six_point(-16+side*6.65,10+(i-5)*.9,12.5)),'Controller',0,'metal',.02,True)
+            m.box('SIXControlLeadY'+str(side)+'_'+str(i),'Independent controller IC lead study',.28,1,.15,tuple(_six_point(-16+(i-5)*.9,10+side*6.65,12.5)),'Controller',0,'metal',.02,True)
+    m.box('SIXChargeIC','Battery-charge control package study',7,7,1.1,tuple(_six_point(26,10,11.6)),'Controller',-1,'black',.2,True)
+    m.box('SIXCrystal','Wireless controller crystal study',5,3,1,tuple(_six_point(6,17,11.7)),'Controller',-1,'metal',.2,True)
+    for i,(x,y) in enumerate([(-30,8),(-26,8),(-7,8),(-3,8),(8,8),(12,8),(27,-4),(32,-2)]):m.box('SIXBypass'+str(i),'Separate controller bypass component',1.8,.9,.5,tuple(_six_point(x,y,12.3)),'Controller',-1,'metal',.1,True)
+    outline=[(-55,26),(55,26),(64,17),(63,-5),(56,-11),(38,-11),(34,-17),(11,-17),(5,-13),(5,-20),(-5,-20),(-5,-13),(-11,-17),(-34,-17),(-38,-11),(-56,-11),(-63,-5),(-64,17)]
+    carrier=_polygon([(x,y-250) for x,y in outline],20.5,1.2)
+    wells=[Part.makeCylinder(17.4,1.8,_six_point(x,-23,20.2)) for x in [-23,23]]
+    m.feature('SIXCarrier','Early SIXAXIS button carrier with separate sensor location',carrier.cut(Part.makeCompound(wells)),'Controller',1,'black',True)
+    posts=[]
+    for i,(x,y) in enumerate(mounts):
+        post=Part.makeCylinder(2.4 if i==4 else 1.6,6.6,_six_point(x,y,13.95))
+        if i==4:post=post.cut(Part.makeCylinder(.9,8,_six_point(x,y,13.7)))
+        else:post=post.fuse(Part.makeCylinder(.8,1.3,_six_point(x,y,12.8)))
+        posts.append(post)
+    _add_shape(m,'SIXCarrier',Part.makeCompound(posts),'Carrier support posts and mainboard locating pins').Refine=False
+    m.cut('SIXCarrier',Part.makeCylinder(.9,8.5,_six_point(0,18,13.5)),'Mainboard retaining screw pilot').Refine=False
+    m.screw('SIXBoardScrew',tuple(_six_point(0,18,11.9)),'Controller',0,length=8.5,radius=1.7)
+    film=_polygon([(x*.985,(y-8)*.985+8-250) for x,y in outline],21.83,.08)
+    film=film.cut(Part.makeCompound([Part.makeCylinder(17.6,.5,_six_point(x,-23,21.6)) for x in [-23,23]]))
+    m.feature('SIXFlex','Separate pressure-button contact film study',film,'Controller',2,'ctrlflex',True)
+    m.native('SIXMotionPCB','Early separate motion-sensor board study',8,12,.6,.7,tuple(_six_point(0,18,23)),'Controller',2,'pcb')
+    m.box('SIXMotionIC','Motion-sensor package envelope',3.5,3.5,.8,tuple(_six_point(0,18,23.9)),'Controller',3,'black',.25,True)
+    for i,x in enumerate([-2.5,0,2.5]):m.box('SIXMotionTerminal'+str(i),'Separate three-wire sensor terminal',.7,1.3,.12,tuple(_six_point(x,12.8,23.9)),'Controller',3,'gold',.1,True)
+    case=m.rr(42,30,5.5,tuple(_six_point(0,9,5.3)),1.5).cut(m.rr(40.8,28.8,4.3,tuple(_six_point(0,9,5.85)),1))
+    m.feature('SIXBatteryCase','LIP1359-family 3.7 V / 610 mAh pack enclosure study',case,'Controller',-2,'battery',True)
+    m.box('SIXBatteryCell','Separate rechargeable cell envelope',39,27,3.1,tuple(_six_point(0,9,6.2)),'Controller',-2,'metal',1,True)
+    m.box('SIXBatteryProtectionPCB','Battery protection-board envelope',30,4,.4,tuple(_six_point(0,20,9.5)),'Controller',-1,'pcb',.3,True)
+    m.box('SIXBatteryProtectionIC','Pack protection component study',3,2,.15,tuple(_six_point(0,20,9.95)),'Controller',-1,'black',.15,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.cut('SIXBack',[m.rr(25,20,1.5,tuple(_six_point(x,-15.5,12.65)),.5) for x in [-23,23]]+[m.rr(11,12.5,1.5,tuple(_six_point(0,-13,12.65)),.4)],'PCB lobe passages into the lower stick cups').Refine=False
+    m.profile['stages']=20
+    m.checkpoint(20,'sixaxis_native_board_contact_film_motion_board_and_battery','建立早期 SIXAXIS 主板、控制/充电封装、按键承托与柔性接点膜、独立运动传感器小板及 3.7V / 610mAh 电池包结构。电池参数据原版手册，局部板型与器件为照片指导示意，无振动电机。')
+    m.snapshot('20_sixaxis_electronics',assemblies=['Controller'],exclude=['SIXFront','SIXBack','SIXBatteryCase'],normal=(.2,-.5,2))
+
+
+STAGES[20]=stage20
+
+
+def _six_membrane(m,key,centres,web,material,small=False):
+    radius=4.2 if small else 5.2;outer=3.2 if small else 4.6;top=2.2 if small else 3.0
+    disks=[Part.makeCylinder(radius,.4,_six_point(x,y,22.1)) for x,y in centres]
+    base=disks[0].multiFuse(disks[1:]+web)
+    domes=[]
+    for i,(x,y) in enumerate(centres):
+        base=base.cut(Part.makeCylinder(outer-.2,.8,_six_point(x,y,21.95)))
+        dome=Part.makeCone(outer,top,3.5,_six_point(x,y,22.48)).fuse(Part.makeCylinder(top,.45,_six_point(x,y,25.95)))
+        dome=dome.cut(Part.makeCone(outer-.6,top-.6,3.55,_six_point(x,y,22.3)));domes.append(dome)
+        m.cyl(key+'Pill'+str(i),'Moving carbon button contact',1.5 if small else 2.0,.2,tuple(_six_point(x,y,25.6)),'Controller',3,'black',internal=True)
+        fixed=Part.makeCylinder(1.8 if small else 2.3,.04,_six_point(x,y,21.95)).cut(Part.makeBox(.3,5,.1,_six_point(x-.15,y-2.5,21.92)))
+        m.feature(key+'Fixed'+str(i),'Split fixed film contact',fixed,'Controller',2,'black',True)
+    shape=base.multiFuse(domes).removeSplitter()
+    if key=='SIXDPadMembrane':shape=shape.cut(Part.makeCylinder(2.0,1.0,_six_point(-47,7,21.9)))
+    m.feature(key,'Shaped silicone button membrane',shape,'Controller',3,material,True)
+
+
+def stage21(m):
+    from .ps1 import _add_shape
+    m.colors.update({'ctrlmint':(.58,.76,.67),'ctrlpad':(.82,.75,.49)})
+    dpad=[(-47,13.8),(-40.2,7),(-47,.2),(-53.8,7)]
+    face=[(47,18),(58,7),(47,-4),(36,7)]
+    _six_membrane(m,'SIXDPadMembrane',dpad,[Part.makeCylinder(4.5,.4,_six_point(-47,7,22.1))],'ctrlpad')
+    _six_membrane(m,'SIXFaceMembrane',face,[Part.makeCylinder(8,.4,_six_point(47,7,22.1))],'ctrlmint')
+    web=[Part.makeBox(30,4,.4,_six_point(-15,2,22.1)),Part.makeBox(4,15,.4,_six_point(-2,-11,22.1))]
+    _six_membrane(m,'SIXMenuMembrane',[(-11.5,4),(11,4),(0,-11)],web,'rubber',True)
+    pivot=Part.makeCylinder(1.8,2.45,_six_point(-47,7,21.75)).fuse(Part.makeCylinder(2.7,1.05,_six_point(-47,7,24.1)))
+    m.feature('SIXDPadPivot','Directional rocker pivot support',pivot,'Controller',3,'ctrlcream',True)
+    rear=g.rotation((0,1,0),(0,0,1));supports=[];film_tabs=[]
+    for side in [-1,1]:
+        x=side*47;name='L' if side<0 else 'R'
+        supports.append(m.rr(11,18,.45,tuple(_six_point(x,25.6,20.75)),.5,rear))
+        tab=m.rr(10,17,.08,tuple(_six_point(x,26.1,20.75)),.4,rear)
+        tab=tab.fuse(Part.makeBox(10,.68,.08,_six_point(x-5,25.5,21.83)));film_tabs.append(tab)
+        for tier,z in [(1,25.5),(2,16)]:
+            key='SIXShoulder'+name+str(tier)
+            base=Part.makeCylinder(3.7,.25,_six_point(x,26.35,z),V(0,1,0)).cut(Part.makeCylinder(2.9,.7,_six_point(x,26.2,z),V(0,1,0)))
+            dome=Part.makeCone(3.1,2.6,3.62,_six_point(x,26.58,z),V(0,1,0)).fuse(Part.makeCylinder(2.6,.65,_six_point(x,30.15,z),V(0,1,0)))
+            dome=dome.cut(Part.makeCone(2.65,2.15,3.75,_six_point(x,26.5,z),V(0,1,0)))
+            m.feature(key+'Membrane','Shoulder-key silicone dome',base.fuse(dome),'Controller',3,'ctrlpad',True)
+            m.cyl(key+'Pill','Shoulder moving carbon contact',1.8,.18,tuple(_six_point(x,30,z)),'Controller',3,'black',axis=(0,1,0),internal=True)
+            fixed=Part.makeCylinder(1.9,.04,_six_point(x,26.23,z),V(0,1,0)).cut(Part.makeBox(.3,.1,5,_six_point(x-.15,26.20,z-2.5)))
+            m.feature(key+'Fixed','Shoulder fixed film contact',fixed,'Controller',2,'black',True)
+    _add_shape(m,'SIXCarrier',Part.makeCompound(supports),'Two vertical shoulder-contact supports').Refine=False
+    _add_shape(m,'SIXFlex',Part.makeCompound(film_tabs),'Folded contact-film shoulder wings').Refine=False
+    from .psp import _polygon
+    pivot=_six_point(-47,7,0);root_tools=[]
+    outline=[(-3.5,1.9),(3.5,1.9),(4.7,10),(0,12.7),(-4.7,10)]
+    for angle in [0,-90,180,90]:
+        tool=_polygon([(-47+x,-243+y) for x,y in outline],31.8,3.5)
+        tool.rotate(pivot,V(0,0,1),angle);root_tools.append(tool)
+    m.cut('SIXFront',root_tools,'Separate directional rocker root clearances').Refine=False
+    # Allow the real membrane carrier and PCB lobes inside the curved shell.
+    m.cut('SIXFront',[m.rr(13,19,8.8,tuple(_six_point(0,-14,19.95)),.7),m.rr(17,6,2.7,tuple(_six_point(0,-13,19.95)),.4)]+[m.rr(12,3.4,18.8,tuple(_six_point(x,26.2,11)),.5) for x in [-47,47]],'Menu membrane and shoulder-film support clearances').Refine=False
+    m.cut('SIXFlex',Part.makeCylinder(2.0,.5,_six_point(-47,7,21.6)),'Directional rocker pivot passage through film').Refine=False
+    m.cut('SIXCarrier',[Part.makeBox(12,1.0,.3,_six_point(x-6,25.4,21.75)) for x in [-47,47]],'Shoulder-film fold seats').Refine=False
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=21
+    m.checkpoint(21,'sixaxis_silicone_membranes_and_pressure_contacts','建立方向键、面键与菜单键硅胶膜及独立动静碳接点，加入方向键支点、两侧肩键竖向支架、接点膜折翼和四个肩键胶碗。')
+
+
+
+STAGES[21]=stage21
+
+
+def _six_joystick(m,index,x,y):
+    from .atari2600 import _helical_spring
+    key='SIXJoy'+str(index);y-=250;holes=[]
+    m.box(key+'Base','Joystick insulating base',16,16,1.4,(x,y,14.1),'Controller',1,'black',.6,True)
+    cage=m.rr(17.5,17.5,6.4,(x,y,15.6),.7).cut(m.rr(16.3,16.3,6.8,(x,y,15.4),.2))
+    roof=m.rr(17.5,17.5,.55,(x,y,21.45),.7).cut(Part.makeCylinder(6.2,1,V(x,y,21.2)))
+    feet=[Part.makeBox(.6,.6,2.9,V(x+dx-.3,y+dy-.3,12.85)) for dx in [-7.9,7.9] for dy in [-7.9,7.9]]
+    cage=cage.multiFuse([roof]+feet)
+    cage=cage.cut(Part.makeCompound([Part.makeCylinder(1.15,21,V(x-10,y,19.2),V(1,0,0)),Part.makeCylinder(.95,21,V(x,y-10,19.9),V(0,1,0))]))
+    m.feature(key+'Frame','Stamped joystick cage, cap and board legs',cage,'Controller',2,'metal',True)
+    outer=m.rr(13,11,2,(x,y,18.2),.45).cut(m.rr(10.8,8.8,2.4,(x,y,18),.3))
+    outer=outer.multiFuse([Part.makeCylinder(1,3.5,V(x-8.6,y,19.2),V(1,0,0)),Part.makeCylinder(1,5.25,V(x+5.1,y,19.2),V(1,0,0))])
+    outer=outer.cut(Part.makeCylinder(.95,21,V(x,y-10,19.9),V(0,1,0)))
+    m.feature(key+'OuterGimbal','X-axis gimbal and potentiometer axle',outer,'Controller',2,'ctrlcream',True)
+    inner=m.rr(9.5,8.5,1.5,(x,y,19.15),.4).cut(m.rr(7,6.2,1.9,(x,y,18.95),.2))
+    inner=inner.multiFuse([Part.makeCylinder(.75,4.8,V(x,y-7.9,19.9),V(0,1,0)),Part.makeCylinder(.75,7.3,V(x,y+3.05,19.9),V(0,1,0))])
+    inner=inner.cut(Part.makeCylinder(1.0,11,V(x-5.5,y,20),V(1,0,0)))
+    m.feature(key+'InnerGimbal','Y-axis gimbal and potentiometer axle',inner,'Controller',2,'ctrlcream',True)
+    shaft=Part.makeSphere(2.2,V(x,y,20.8)).fuse(Part.makeCylinder(1.75,8.55,V(x,y,21.3)))
+    shaft=shaft.fuse(Part.makeCylinder(.8,9.2,V(x-4.6,y,20),V(1,0,0)))
+    m.feature(key+'Shaft','Joystick pivot ball, cross pin and cap shaft',shaft,'Controller',3,'metal',True)
+    spring=_helical_spring(1.2,.6,1.8,.12);spring.translate(V(x,y,15.8))
+    m.feature(key+'ClickSpring','Joystick push-click return spring study',spring,'Controller',1,'metal',True)
+    m.box(key+'ClickSwitch','L3/R3 click switch body',3,3,1.5,(x-5,y,15.8),'Controller',1,'black',.3,True)
+    m.cyl(key+'ClickActuator','L3/R3 switch actuator',.8,.4,(x-5,y,17.4),'Controller',2,'black',internal=True)
+    m.box(key+'ClickLever','Joystick click transfer lever',6,1.2,.2,(x-2.5,y,17.9),'Controller',2,'metal',.12,True)
+    base_bores=[]
+    for dx in [-7.9,7.9]:
+        for dy in [-7.9,7.9]:
+            holes.append(Part.makeCylinder(.5,1.4,V(x+dx,y+dy,12.7)))
+            base_bores.append(Part.makeCylinder(.55,1.9,V(x+dx,y+dy,13.9)))
+    for i,dx in enumerate([-6.7,-3.3]):
+        m.cyl(key+'ClickPin'+str(i),'Click-switch board terminal',.2,3.15,(x+dx,y,12.85),'Controller',1,'metal',internal=True)
+        holes.append(Part.makeCylinder(.35,1.4,V(x+dx,y,12.7)));base_bores.append(Part.makeCylinder(.35,1.9,V(x+dx,y,13.9)))
+    m.cut(key+'Base',base_bores,'Joystick anchor and click terminal passages').Refine=False
+    m.colors['potcyan']=(.06,.52,.59)
+    for axis,z in [((1,0,0),19.2),((0,1,0),19.9)]:
+        suffix='X' if axis[0] else 'Y';normal=V(*axis);q=g.rotation(axis,(0,0,1));origin=V(x,y,18.95)+normal*8.95
+        body=m.rr(6.8,6.4,2.3,tuple(origin),.4,q)
+        center=V(x,y,z)
+        body=body.cut(Part.makeCylinder(2.65,1.5,center+normal*10.0,normal)).cut(Part.makeCylinder(1.15,2.9,center+normal*8.7,normal))
+        pinholes=[]
+        for i,offset in enumerate([-2.2,0,2.2]):
+            xx=x+10.2 if axis[0] else x+offset;yy=y+offset if axis[0] else y+10.2
+            m.cyl(key+suffix+'Pin'+str(i),'Potentiometer board terminal',.2,3.1,(xx,yy,12.85),'Controller',1,'metal',internal=True)
+            holes.append(Part.makeCylinder(.35,1.4,V(xx,yy,12.7)));pinholes.append(Part.makeCylinder(.35,.8,V(xx,yy,15.5)))
+        m.feature(key+suffix+'Pot','Cyan potentiometer housing',body.cut(Part.makeCompound(pinholes)),'Controller',2,'potcyan',True)
+        rotor=Part.makeCylinder(2.3,.25,center+normal*10.35,normal).cut(Part.makeCylinder(1.05,.5,center+normal*10.2,normal))
+        m.feature(key+suffix+'Rotor','Potentiometer rotor disc',rotor,'Controller',2,'ctrlcream',True)
+        m.ring(key+suffix+'Track','Potentiometer resistive track',2.25,1.7,.035,tuple(center+normal*10.68),'Controller',2,'black',axis=axis,internal=True)
+        wiper=m.rr(.35,2.6,.05,tuple(center+normal*10.80),.05,q)
+        m.feature(key+suffix+'Wiper','Potentiometer moving wiper study',wiper,'Controller',2,'metal',True)
+    return holes
+
+
+def stage22(m):
+    holes=[]
+    for i,x in enumerate([-23,23]):holes += _six_joystick(m,i,x,-23)
+    m.cut('SIXPCB',holes,'Analogue-module anchors, potentiometer and click-switch terminal holes').Refine=False
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=22
+    m.checkpoint(22,'sixaxis_two_axis_gimbals_potentiometers_and_clicks','建立两个摇杆的金属框架、双轴万向支架、球轴与摇杆杆、两侧电位器、电阻轨道和触点，并加入 L3/R3 按下开关、回位弹簧及独立穿板端子。')
+
+
+
+STAGES[22]=stage22
+
+
+def stage23(m):
+    from .atari2600 import _helical_spring
+    rear=g.rotation((0,1,0),(0,0,1))
+    for side in [-1,1]:
+        x=side*47;key='SIX'+('L' if side<0 else 'R')+'2'
+        # A curved finger lever around a separate transverse axle; the study is static.
+        profile=[(35,18.5),(40.5,18.5),(43.5,14),(43,11.4),(39,12),(35,14)]
+        points=[_six_point(x-9.2,y,z) for y,z in profile]
+        cap=Part.Face(Part.Wire(Part.makePolygon(points+[points[0]]).Edges)).extrude(V(18.4,0,0))
+        cap=cap.fuse(Part.makeCylinder(1.4,18.4,_six_point(x-9.2,35,17),V(1,0,0)))
+        cap=cap.fuse(m.rr(4,4.9,2.5,tuple(_six_point(x,33.25,14.75)),.3))
+        cap=cap.cut(Part.makeCylinder(.85,20,_six_point(x-10,35,17),V(1,0,0)))
+        cap=cap.cut(Part.makeCylinder(2.1,4.2,_six_point(x-2.1,35,17),V(1,0,0)))
+        m.feature(key,'Pivoted analogue '+key[-2:]+' finger lever study',cap,'Controller',4,'buttonblack')
+        bars=[m.rr(2,8,8.4,tuple(_six_point(x+dx,34,11.1)),.35) for dx in [-11.4,11.4]]
+        bracket=bars[0].fuse(bars[1]).fuse(m.rr(24.8,2,1,tuple(_six_point(x,31,11.1)),.25))
+        bracket=bracket.cut(Part.makeCylinder(.9,27,_six_point(x-13.5,35,17),V(1,0,0)))
+        m.feature(key+'Bracket','Separate trigger axle support bracket',bracket,'Controller',2,'black',True)
+        m.cyl(key+'Axle','Independent transverse trigger hinge pin',.7,25,tuple(_six_point(x-12.5,35,17)),'Controller',3,'metal',axis=(1,0,0),internal=True)
+        spring=_helical_spring(1.7,.55,3.2,.14);spring.rotate(V(),V(0,1,0),90);spring.translate(_six_point(x-1.6,35,17))
+        m.feature(key+'Spring','Independent trigger return-coil study',spring,'Controller',3,'metal',True)
+        m.cut('SIXBack',m.rr(26,11.5,19,tuple(_six_point(x,25.5,16)),1,rear),'Independent pivoted trigger and bracket passage').Refine=False
+        m.label(key+'Mark','2',2,tuple(_six_point(x+.5,43.52,13.2)),'Controller',6,'white',rotation=rear)
+        m.cut('SIXFront',m.rr(19.4,1.8,1.1,tuple(_six_point(x,39,20.05)),.25),'Separate shoulder-divider seat').Refine=False
+        m.box(key+'Separator','Separate L1/L2 or R1/R2 divider',19,1.4,.8,tuple(_six_point(x,39,20.15)),'Controller',4,'black',.25)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=23
+    m.checkpoint(23,'sixaxis_pivoted_l2_r2_and_return_springs','补齐 SIXAXIS 的转轴式 L2/R2、独立支架、金属轴、回位簧及肩键分隔件；压敏接点承接前轮胶膜，铰接和弹簧几何为静态机构学习近似。')
+    m.snapshot('23_sixaxis_trigger_mechanism',assemblies=['Controller'],exclude=['SIXFront','SIXBack'],normal=(.3,1,1.5))
+
+
+STAGES[23]=stage23
+
+
+def stage24(m):
+    from .ps1 import _add_shape
+    rear=g.rotation((0,1,0),(0,0,1))
+    def prism(outline,y,depth):
+        pts=[_six_point(x,y,19.6+z) for x,z in outline]
+        return Part.Face(Part.Wire(Part.makePolygon(pts+[pts[0]]).Edges)).extrude(V(0,depth,0))
+    shell=prism([(-3.8,-1.7),(3.8,-1.7),(4,1.4),(-4,1.4)],25,6)
+    shell=shell.cut(prism([(-3.52,-1.43),(3.52,-1.43),(3.7,1.13),(-3.7,1.13)],24.8,6.4))
+    feet=[m.rr(.3,.6,5.5,tuple(_six_point(x,25.4,12.8)),.03) for x in [-3.7,3.7]]
+    shell=shell.multiFuse(feet).removeSplitter()
+    m.feature('SIXMiniBShell','Original five-contact Mini-B metal receptacle and board tabs',shell,'Controller',2,'metal',True)
+    carrier=m.rr(6.5,2.3,1.5,tuple(_six_point(0,25,19.5)),.25,rear)
+    tongue=m.rr(5.5,3.4,.55,tuple(_six_point(0,28.1,18.9)),.15)
+    carrier=carrier.fuse(tongue);channels=[]
+    for i in range(5):
+        x=(i-2)*.8
+        foot=m.rr(.32,1.5,.12,tuple(_six_point(x,23.8,13.95)),.03)
+        stem=m.rr(.32,.32,5.6,tuple(_six_point(x,24.1,14.0)),.03)
+        arm=m.rr(.32,5.65,.10,tuple(_six_point(x,26.775,19.49)),.03)
+        m.feature('SIXMiniBContact'+str(i),'Independent formed Mini-B contact and solder tail',foot.fuse(stem).fuse(arm).removeSplitter(),'Controller',2,'gold',True)
+        channels.append(m.rr(.45,2,.3,tuple(_six_point(x,25.8,19.4)),.03))
+    m.feature('SIXMiniBCarrier','Separate Mini-B insulating carrier and tongue',carrier.cut(Part.makeCompound(channels)),'Controller',2,'black',True)
+    m.cut('SIXPCB',[Part.makeCylinder(.46,1.4,_six_point(x,25.4,12.7)) for x in [-3.7,3.7]],'Mini-B shell anchor holes').Refine=False
+    for key in ['SIXFront','SIXBack']:m.cut(key,m.rr(8.8,4.4,10,tuple(_six_point(0,23,19.5)),.5,rear),'Open rear Mini-B receptacle').Refine=False
+    _add_shape(m,'SIXPCB',m.rr(20,5,.8,tuple(_six_point(13,24,13)),.6),'Rear four-indicator board tongue').Refine=False
+    m.cut('SIXPCB',[Part.makeCylinder(.46,1.4,_six_point(x,25.4,12.7)) for x in [-3.7,3.7]],'Preserve connector anchor holes through the indicator tongue').Refine=False
+    for key in ['SIXCarrier','SIXFlex']:m.cut(key,m.rr(9,4,4.8,tuple(_six_point(0,25.5,17.6)),.4),'Rear Mini-B clearance through the button carrier').Refine=False
+    guides=[];windows=[]
+    for i,x in enumerate([8,11,14,17],1):
+        m.box('SIXPlayerLED'+str(i),'Independent red player-index emitter',.8,1.2,.6,tuple(_six_point(x,25.5,14.0)),'Controller',1,'red',.1,True)
+        guide=m.rr(.7,.7,7.05,tuple(_six_point(x,25.5,14.75)),.1).fuse(m.rr(.7,4,.7,tuple(_six_point(x,27.2,21.45)),.1))
+        m.feature('SIXPlayerGuide'+str(i),'Separate player-index light guide',guide,'Controller',3,'white',True)
+        guides.append(m.rr(1.1,1.2,9,tuple(_six_point(x,25.5,14.3)),.1))
+        windows.append(m.rr(1.2,1.2,9,tuple(_six_point(x,24,21.8)),.15,rear))
+        m.label('SIXPlayerNumber'+str(i),str(i),1.1,tuple(_six_point(x-.4,24,31.025)),'Controller',6,'white')
+    for key in ['SIXCarrier','SIXFlex']:m.cut(key,guides,'Individual player-light guide passages').Refine=False
+    m.cut('SIXFront',windows,'Four separate rear player-indicator windows').Refine=False
+    m.box('SIXResetSwitch','Recessed controller reset switch',3,3,1,tuple(_six_point(25,18,11.7)),'Controller',-1,'black',.3,True)
+    m.cyl('SIXResetSwitchTip','Reset switch plunger',.55,.4,tuple(_six_point(25,18,11.2)),'Controller',-1,'white',internal=True)
+    reset=Part.makeCylinder(.65,7.1,_six_point(25,18,3.8)).fuse(Part.makeCylinder(1.4,.7,_six_point(25,18,3.2)))
+    m.feature('SIXResetExtension','Separate early SIXAXIS reset extension piece',reset,'Controller',-2,'white',True)
+    m.cut('SIXBack',Part.makeCylinder(1.6,3.3,_six_point(25,18,.6)),'Recessed reset access and extension-piece seat').Refine=False
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=24
+    m.checkpoint(24,'sixaxis_mini_b_player_indicators_and_reset_extension','补齐五接点 Mini-B 金属壳、绝缘舌与成形焊脚、四个独立编号指示灯和导光件，以及早期 SIXAXIS 可分离的复位延长件；接口与导光通道真实贯通。')
+    m.snapshot('24_sixaxis_rear_interfaces',assemblies=['Controller'],normal=(.3,1,.9))
+
+
+STAGES[24]=stage24
+
+
+def stage25(m):
+    from .ps1 import _add_shape
+    from .ps2 import _flat_ribbon
+    from .atari2600 import _rounded_route
+    def socket(key,x,y,z,w,h,count,pitch):
+        body=m.rr(w,h,2.1,tuple(_six_point(x,y,z)),.3).cut(m.rr(w-1.2,h-1.2,2,tuple(_six_point(x,y,z+.5)),.15))
+        m.feature(key,'Separate controller wire/film socket',body,'Controller',1,'white',True)
+        for i in range(count):m.box(key+'Contact'+str(i),'Independent socket terminal study',.25,1.3,.12,tuple(_six_point(x+(i-(count-1)/2)*pitch,y,z+.7)),'Controller',1,'gold',.02,True)
+    socket('SIXFilmSocket',18,12,14,20,5,18,1)
+    path=[tuple(_six_point(*p)) for p in [(18,12,15.25),(18,18,15.25),(18,18,22.4),(18,20,22.4),(18,20,21.88)]]
+    tail=_flat_ribbon(path,18,bend=.14)
+    m.cut('SIXCarrier',m.rr(18.6,.9,2.2,tuple(_six_point(18,18,20.3)),.2),'Folded button-film tail passage').Refine=False
+    m.cut('SIXFlex',m.rr(18.6,.9,.4,tuple(_six_point(18,18,21.7)),.2),'Film-tail fold slit').Refine=False
+    _add_shape(m,'SIXFlex',tail,'Connected flexible-film tail to the board socket').Refine=False
+    m.cut('SIXFilmSocket',_flat_ribbon(path,18.3,.22,.14),'Real film-connector mouth').Refine=False
+    socket('SIXMotionSocket',0,5,14,8,4,3,2.5)
+    sensor_passages=[]
+    for i,x in enumerate([-2.5,0,2.5]):
+        path=[_six_point(*p) for p in [(x,12.8,24.3),(x,10.5,24.3),(x,10.5,17.4),(x,5,17.4),(x,5,15.5)]]
+        m.feature('SIXMotionLead'+str(i),'Independent early three-wire motion-sensor lead',_rounded_route(path,.5,.15),'Controller',2,['red','white','black'][i],True)
+        sensor_passages.append(Part.makeCylinder(.4,3,_six_point(x,10.5,20)))
+    for key in ['SIXCarrier','SIXFlex']:m.cut(key,sensor_passages,'Three separated motion-sensor wire passages').Refine=False
+    body=m.rr(4,6,3.4,tuple(_six_point(27,0,9.1)),.3).cut(m.rr(2.8,4.8,3,tuple(_six_point(27,0,9.6)),.15))
+    paths=[]
+    for i,y in enumerate([-1.2,1.2]):
+        m.box('SIXBatteryTerminal'+str(i),'Separate two-pin battery connector contact',.3,.6,.12,tuple(_six_point(27,y,9.73)),'Controller',-1,'gold',.02,True)
+        path=[_six_point(*p) for p in [(20.8,y,8.5),(24,y,8.5),(24,y,10.1),(27,y,10.1)]]
+        m.feature('SIXBatteryLead'+str(i),'Independent insulated battery-pack lead',_rounded_route(path,.5,.22),'Controller',-1,'red' if i else 'black',True)
+        paths.append(_rounded_route(path,.5,.42))
+    m.feature('SIXBatterySocket','Two-position battery power socket',body.cut(Part.makeCompound(paths)),'Controller',-1,'white',True)
+    m.cut('SIXBatteryCase',paths,'Battery-pack insulated lead exits').Refine=False
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('SIXBatteryRating','3.7 V / 610 mAh',1.8,tuple(_six_point(13,3,5.25)),'Controller',-3,'white',rotation=reverse)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=25
+    m.checkpoint(25,'sixaxis_film_tail_motion_sensor_and_battery_connections','连接按键薄膜折尾、独立运动传感板的三条引线及电池双线与插座，分别保留载架和电池外壳穿线通道。端点、颜色与接点数量是非功能性结构示意。')
+    m.snapshot('25_sixaxis_interconnects',assemblies=['Controller'],exclude=['SIXFront','SIXBack'],normal=(.3,-.5,2))
+
+
+STAGES[25]=stage25
+
+
+def stage26(m):
+    from .ps1 import _add_shape
+    mounts=[(-61,17),(61,17),(0,-21),(-58,-43),(58,-43)]
+    posts=[Part.makeCylinder(2.1,24.2,_six_point(x,y,5.5)) for x,y in mounts]
+    _add_shape(m,'SIXFront',Part.makeCompound(posts),'Five original controller fixing pillars').Refine=False
+    m.cut('SIXFront',[Part.makeCylinder(.85,23,_six_point(x,y,5.3)) for x,y in mounts],'Five blind controller screw pilots').Refine=False
+    for key in ['SIXPCB','SIXCarrier','SIXFlex']:m.cut(key,[Part.makeCylinder(2.4,25,_six_point(x,y,5)) for x,y in mounts],'Five case-pillar passages').Refine=False
+    bores=[]
+    for i,(x,y) in enumerate(mounts):
+        bores += [Part.makeCylinder(1,18,_six_point(x,y,.5)),Part.makeCylinder(1.9,3.2,_six_point(x,y,.5)),Part.makeCylinder(2.4,14.6,_six_point(x,y,5.3))]
+        m.screw('SIXCaseScrew'+str(i),tuple(_six_point(x,y,3)),'Controller',-5,length=22,radius=1.5)
+    m.cut('SIXBack',bores,'Five rear screw recesses and upper-pillar seats').Refine=False
+    reverse=g.rotation((0,0,-1),(0,1,0))
+    m.label('SIXRearModel','SIXAXIS / CAD STUDY',1.3,tuple(_six_point(13,3,.96)),'Controller',-5,'white',rotation=reverse)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=26
+    m.checkpoint(26,'sixaxis_five_case_fixings_and_rear_identification','补齐首发无线控制器的五组后壳螺钉与上壳固定柱、穿板通道和型号学习标识；保留无振动电机的握把空间，随后核验整套静态装配。')
+    m.snapshot('26_sixaxis_complete',assemblies=['Controller'],normal=(.2,-.5,2.4))
+
+
+STAGES[26]=stage26
+
+
+def stage27(m):
+    from .atari2600 import _rounded_route
+    # Original single-row twelve-contact AV MULTI plug, not a DIN connector.
+    front=g.rotation((0,1,0),(0,0,1))
+    m.box('AVPlugGrip','PlayStation AV MULTI connector grip',20.8,10,25,(220,-28,8),'Accessories',0,'black',1.2,orient=front)
+    shield=m.rr(17.8,6.6,8.4,(220,-2.7,8),.65,front).cut(m.rr(16.8,5.6,9,(220,-2.9,8),.35,front))
+    m.feature('AVPlugShield','Rectangular AV MULTI metal sleeve',shield,'Accessories',0,'metal')
+    m.box('AVPlugCarrier','AV MULTI insulating tongue',16,1.3,6.3,(220,-2.6,8),'Accessories',0,'black',.15,True,orient=front)
+    for i in range(12):
+        m.box('AVPlugContact'+str(i),'AV MULTI contact '+str(i+1),.5,.14,6,(220+(i-5.5)*1.25,-1.8,8.78),'Accessories',0,'gold',.03,True,orient=front)
+    points=[V(220,-28.2,8),V(220,-65,8),V(310,-65,8),V(310,-119.8,8)]
+    m.feature('AVCable','AV cable display length',_rounded_route(points,7,1.9),'Accessories',0,'black')
+    m.box('AVSplitter','Three-way AV cable splitter',14,8,10,(310,-124,3),'Accessories',0,'black',1)
+    m.colors['yellow']=(.92,.75,.12)
+    for i,(x,color) in enumerate([(282,'yellow'),(310,'white'),(338,'red')]):
+        sx=307+i*3;points=[V(sx,-128.2,8),V(sx,-137,8),V(x,-146,8),V(x,-157.8,8)]
+        m.feature('AVBranch'+str(i),'Individual RCA lead',_rounded_route(points,2,1.1),'Accessories',0,'black')
+        m.cyl('RCAGrip'+str(i),'RCA connector grip',4.8,20,(x,-158,8),'Accessories',0,'black',axis=(0,-1,0))
+        m.ring('RCAColor'+str(i),'RCA function-color ring',5.2,4.85,3,(x,-170,8),'Accessories',0,color,axis=(0,-1,0))
+        m.ring('RCAGround'+str(i),'RCA ground sleeve',3.7,2.5,7,(x,-178.2,8),'Accessories',0,'metal',axis=(0,-1,0))
+        m.cyl('RCACenter'+str(i),'RCA signal contact',.9,9,(x,-178.2,8),'Accessories',0,'gold',axis=(0,-1,0))
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=27
+    m.checkpoint(27,'original_av_multi_to_three_rca_cable','加入原配 AV MULTI 至三 RCA 线，保留十二接点设备端和独立红白黄复合视频/音频端子；线长为缩短展示近似。')
+
+
+STAGES[27]=stage27
+
+
+def stage28(m):
+    from .atari2600 import _rounded_route
+    m.colors['wiregreen']=(.08,.34,.12)
+    m.box('ACWallPlug','Original Japanese two-blade AC plug study',23,17,11,(220,130,0),'Accessories',0,'black',1.7)
+    for i,x in enumerate([213.8,226.2]):m.box('ACWallBlade'+str(i),'Flat mains-plug blade',1.4,6.2,12.5,(x,130,11.1),'Accessories',0,'metal',.1)
+    points=[V(220,121.3,5.5),V(220,55,5.5),V(350,55,8),V(350,100,8),V(302.2,100,8)]
+    m.feature('ACCord','Original grounded AC cord display route',_rounded_route(points,7,1.8),'Accessories',0,'black')
+    m.box('ACDeviceGrip','Three-position appliance connector overmould',24,21,15,(290,100,.5),'Accessories',0,'black',1.5)
+    yz=[(-10,-6),(10,-6),(10,3),(6,7),(-6,7),(-10,3)]
+    points=[V(277.8,100+y,8+z) for y,z in yz]
+    head=Part.Face(Part.Wire(Part.makePolygon(points+[points[0]]).Edges)).extrude(V(-10,0,0))
+    holes=[]
+    for i,(y,z) in enumerate([(95,6),(105,6),(100,12)]):
+        holes.append(Part.makeBox(10.6,2.3,4.5,V(267.5,y-1.15,z-2.25)))
+        contact=Part.makeBox(6,1.85,4,V(269,y-.925,z-2)).cut(Part.makeBox(6.4,1.15,3.3,V(268.8,y-.575,z-1.65)))
+        m.feature('ACDeviceContact'+str(i),'Independent appliance socket spring-contact envelope',contact,'Accessories',0,'metal',True)
+    m.feature('ACDeviceHead','Three-position C13-family insulating head study',head.cut(Part.makeCompound(holes)),'Accessories',0,'black')
+    points=[V(208.3,130,5.5),V(192,130,5.5),V(192,164,5.5),V(199,164,5.5)]
+    m.feature('ACEarthLead','Separate Japanese earthing pigtail study',_rounded_route(points,3,.8),'Accessories',0,'wiregreen')
+    fork=Part.makeCylinder(3,.4,V(205,164,5.3)).cut(Part.makeCylinder(1.4,.8,V(205,164,5.1)))
+    fork=fork.cut(Part.makeBox(4,2.8,.8,V(205,162.6,5.1))).fuse(Part.makeBox(4.2,2,.4,V(199.2,163,5.3)))
+    m.feature('ACEarthFork','Independent earthing fork terminal study',fork,'Accessories',0,'metal')
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=28
+    m.checkpoint(28,'japanese_grounded_ac_cord_and_three_position_device_plug','依据日本原版快速参考的接地线说明，补齐两片日式电源插头、独立接地尾线及三位设备端插座；电缆为缩短展示路径，不提供电气制造数据。')
+
+
+STAGES[28]=stage28
+
+
+def stage29(m):
+    from .atari2600 import _rounded_route
+    rear=g.rotation((0,1,0),(0,0,1))
+    points=[V(215,-264.2,6),V(215,-324,6),V(285,-324,6),V(285,-264.2,6)]
+    m.feature('USBChargeCable','Original USB-A to Mini-B cable display length',_rounded_route(points,7,1.5),'Accessories',0,'black')
+    m.box('USBAPlugGrip','USB-A cable overmould',18,23,10,(215,-252.5,1),'Accessories',0,'black',1.6)
+    m.box('MiniBPlugGrip','Mini-B cable overmould',12,19,8,(285,-254.5,2),'Accessories',0,'black',1.3)
+    for i,x in enumerate([215,285]):
+        shape=Part.makeCylinder(1.9,6,V(x,-264.1,6),V(0,-1,0)).cut(Part.makeCylinder(1.55,6.4,V(x,-263.9,6),V(0,-1,0)))
+        m.feature('USBChargeRelief'+str(i),'Cable strain-relief sleeve',shape,'Accessories',0,'black')
+    shape=m.rr(12,4.5,12,(215,-240.8,6),.3,rear).cut(m.rr(11.4,3.9,12.4,(215,-241,6),.15,rear))
+    m.feature('USBAPlugShield','USB-A plug metal shell',shape,'Accessories',0,'metal')
+    m.box('USBAPlugStop','USB-A rear insulating stop',10.8,.65,3.3,(215,-240.4,4.35),'Accessories',0,'black',.15,True)
+    m.box('USBAPlugTongue','Four-contact USB-A tongue',9.2,7,1,(215,-235.2,5),'Accessories',0,'black',.15)
+    for i in range(4):m.box('USBAPlugContact'+str(i),'Independent USB-A plug contact',.85,5,.1,(215+(i-1.5)*2,-235.2,6.1),'Accessories',0,'gold',.05,True)
+    def prism(outline,y,length):
+        points=[V(285+x,y,6+z) for x,z in outline]
+        return Part.Face(Part.Wire(Part.makePolygon(points+[points[0]]).Edges)).extrude(V(0,length,0))
+    shell=prism([(-3.45,-1.65),(3.45,-1.65),(3.8,1.35),(-3.8,1.35)],-244.8,8)
+    shell=shell.cut(prism([(-3.16,-1.38),(3.16,-1.38),(3.49,1.08),(-3.49,1.08)],-245,8.4))
+    m.feature('MiniBPlugShield','Original Mini-B cable plug metal sleeve',shell,'Accessories',0,'metal')
+    m.box('MiniBPlugStop','Mini-B rear insulating stop',6.2,1,.7,(285,-244.4,5.9),'Accessories',0,'black',.2,True,orient=rear)
+    m.box('MiniBPlugRail','Mini-B five-contact insulating rail',5.3,5.5,.65,(285,-240.7,5.4),'Accessories',0,'black',.1,True)
+    for i in range(5):m.box('MiniBPlugContact'+str(i),'Separate Mini-B cable plug contact',.3,4.8,.08,(285+(i-2)*.8,-240.7,6.12),'Accessories',0,'gold',.02,True)
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=29
+    m.checkpoint(29,'original_usb_a_to_mini_b_connection_cable','补齐原配 USB-A 至 Mini-B 线，分别建立双端包胶、护线套、金属壳、绝缘件及 4/5 个独立触点；保留原版控制器接口，不混入后续 USB-C。')
+
+
+STAGES[29]=stage29
+
+
+def stage30(m):
+    from .atari2600 import _rounded_route
+    m.colors['clearplug']=(.68,.72,.72)
+    points=[V(215,-379.4,6),V(215,-431,6),V(290,-431,6),V(290,-379.4,6)]
+    m.feature('LANCable','Original bundled LAN cable shortened display path',_rounded_route(points,8,1.65),'Accessories',0,'black')
+    for end,x in enumerate([215,290]):
+        key='LANPlug'+str(end)
+        body=m.rr(11.7,22,8,(x,-358,2),.6)
+        channels=[]
+        for i in range(8):
+            xx=x+(i-3.5)*1.016
+            channels.append(m.rr(.68,5.3,.7,(xx,-349,9.3),.04))
+            m.box(key+'Contact'+str(i),'Independent 8P8C plug contact',.5,4.2,.30,(xx,-349,9.45),'Accessories',0,'gold',.04,True)
+        body=body.cut(Part.makeCompound(channels))
+        # Integral cantilever latch, separated above the housing along its free span.
+        outline=[(-367,9.8),(-365.8,9.8),(-352.5,11),(-352.5,11.7),(-366,10.6)]
+        vertices=[V(x-2.4,y,z) for y,z in outline]
+        latch=Part.Face(Part.Wire(Part.makePolygon(vertices+[vertices[0]]).Edges)).extrude(V(4.8,0,0))
+        m.feature(key+'Housing','Eight-position modular plug with integral latch',body.fuse(latch).removeSplitter(),'Accessories',0,'clearplug')
+        m.box(key+'Boot','Moulded modular-plug cable boot',12.4,10,9,(x,-374.2,1.5),'Accessories',0,'black',1)
+        relief=Part.makeCylinder(2.05,6,V(x,-379.3,6),V(0,-1,0)).cut(Part.makeCylinder(1.7,6.4,V(x,-379.1,6),V(0,-1,0)))
+        m.feature(key+'Relief','Independent LAN cable strain relief',relief,'Accessories',0,'black')
+    m.doc.recompute()
+    for o in m.parts.values():o.Shape.check(True)
+    m.profile['stages']=30
+    m.checkpoint(30,'bundled_lan_cable_eight_contacts_and_integral_latches','补齐原版随附 LAN 线的双端 8P8C 插头、十六个分离金属触点、卡扣、包胶与护线套，完成原配 AC / AV / USB / LAN 展示套装。线长及内部端子为结构学习近似。')
+    m.snapshot('30_original_connection_kit',assemblies=['Accessories'],normal=(.2,-.5,2))
+
+
+STAGES[30]=stage30
+
+
+def finalize(model):
+    from .deliver import finalize as shared_finalize
+    settings=App.ParamGet('User parameter:BaseApp/Preferences/Mod/Part/General')
+    previous=settings.GetInt('WriteSurfaceCurveMode',1)
+    Part.setStaticValue('write.surfacecurve.mode',1)
+    try:
+        result=shared_finalize(model)
+        model.snapshot('final_front',normal=(.2,-1.5,.7),assemblies=model.profile['envelope_groups'])
+        model.snapshot('final_controller',assemblies=['Controller'],normal=(.2,-.5,2.4))
+        model.snapshot('final_hero',normal=(.3,-.7,2.3),assemblies=result[0]['handheld_groups'])
+        model.doc.save()
+        return result
+    finally:
+        Part.setStaticValue('write.surfacecurve.mode',previous)

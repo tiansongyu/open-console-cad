@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Local complete CAD, STEP, native/Kami drawings and web delivery; public deployment checked separately.",
+  "components": 1592,
+  "solids": 1676,
+  "stages": 30,
+  "pages": 12,
+  "readme_columns": 3,
+  "verified_reports": [
+    "rebuild_execution.json",
+    "rebuild_verification.json",
+    "strict_saved_native.json",
+    "assembly_interference.json",
+    "delivery_geometry_audit.json",
+    "parameter_edit_test.json",
+    "export_roundtrip_audit.json",
+    "drawing_checks.json",
+    "native_drawings_audit.json",
+    "native_drawings_reload.json",
+    "visual_acceptance.json",
+    "independent_pdf_review.json",
+    "web_preview_checks.json"
+  ],
+  "geometry_provenance": "Full source execution and every physical component compared to saved Study; strict and full4339 candidate assembly audit use saved Study. Study-to-Complete geometry audit links exported CAD, STEP and web.",
+  "files": [
+    {
+      "path": "devices/ps3/output/PlayStation3_Study.FCStd",
+      "bytes": 12479647,
+      "sha256": "1f268ea6387f429cfd4eff11a7c69b61192b09b4d62e1d07923885a6c3aa4da0"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_Complete.FCStd",
+      "bytes": 12479582,
+      "sha256": "b73fca35dddd7c843fb3e79a403fb4b864b01cced4ef7d1060186b700c93a679"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_Exploded.FCStd",
+      "bytes": 5473088,
+      "sha256": "107d9f880e9b75acdf9945c6ef289d9e63364c2a4875cce0c10845a0f5c28c7f"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_Drawings.FCStd",
+      "bytes": 419284,
+      "sha256": "3f37ef547290b608128e8a9588fd9ac70291c838e3ce5d81b53e31f06bb8a95d"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_FullKit.step",
+      "bytes": 75778708,
+      "sha256": "2b534961ae5351102304a86cde09d5e6e29097808679cb2d3f9945f315834758"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_Console.step",
+      "bytes": 72464386,
+      "sha256": "07e6502102281ca21fb43ce88cf4b6dd4341fc722a8c3d84d8f3ba2a66504feb"
+    },
+    {
+      "path": "devices/ps3/output/PlayStation3_Exploded.step",
+      "bytes": 75777720,
+      "sha256": "7a43d7976378738babf20eea6561db6305d9f23e493d4f6068cef2263a4196bd"
+    },
+    {
+      "path": "devices/ps3/output/drawings/PlayStation3_Drawings.pdf",
+      "bytes": 782832,
+      "sha256": "26a5cdd47fc49a8f94eef630b5ebdcabf5bfe79f7e0f25a3c0700462433b472b"
+    },
+    {
+      "path": "devices/ps3/output/drawings/PlayStation3_Drawings.html",
+      "bytes": 1819655,
+      "sha256": "9e932b2b7f1f2ff42b3c3dee0266fd892bba61da52269f4428ac7e197a6ca1a4"
+    },
+    {
+      "path": "devices/ps3/output/COMPONENTS.csv",
+      "bytes": 288095,
+      "sha256": "35ffbf37c5aca143345ac358942f381760120aa47886fdd5177edf8976be7b59"
+    },
+    {
+      "path": "site/public/models/ps3.glb",
+      "bytes": 43641676,
+      "sha256": "d55bf11da04eadea62f1c1030fa91f1aa575e7b0cc834f0c703d6f3519351e63"
+    },
+    {
+      "path": "site/public/models/ps3.glb.gz",
+      "bytes": 16519226,
+      "sha256": "1258a2df83d4bf96aceb2bb23764a44110fcb567d87b554465364c4eeb4efe06"
+    }
+  ],
+  "live_verified": false
+}
