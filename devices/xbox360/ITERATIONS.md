@@ -39,3 +39,5 @@
 | 33 | original_single_ear_headset_and_controller_volume_adapter | 依据 2005 安装手册补齐单耳头戴耳机、独立扬声器内部件、可调麦克风和原版手柄端音量/静音适配器。区分 2007 手册中的后期小插头版本；内部音频结构与局部曲率均为学习示意。 |
 | 34 | original_component_hd_av_six_rca_optical_and_tv_selector | 补齐原配六 RCA Component HD AV 线，分离 Y/Pb/Pr、黄色复合视频和红白音频，保留宽 AV 端、TV/HDTV 选择器与 Toslink 光纤口。接点布局和线长为展示近似，不混入后期 HDMI 或五 RCA 改款。 |
 | 35 | bundled_ethernet_and_north_american_grounded_ac_cord | 补齐原配网线的双端八触点与独立包胶/卡扣，选择北美三脚接地电源线版本；地区范围明确，不加入北欧 SCART、第二根区域电源线或限时赠送遥控器。电缆为缩短展示长度。 |
+
+公开发布 `8b19496`：14 份线上文件、23 个网页视图和三种布局核对通过。
