@@ -321,4 +321,4 @@ Xbox 360：[完整交付核对](devices/xbox360/output/reports/completion_audit.
 
 GBA：[完整交付核对](devices/gba/output/reports/completion_audit.json) · [线上预览核对](devices/gba/output/reports/live_ui_checks.json)。
 
-Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.json)。
+Xbox One：[完整交付核对](devices/xboxone/output/reports/completion_audit.json) · [线上预览核对](devices/xboxone/output/reports/live_ui_checks.json)。
