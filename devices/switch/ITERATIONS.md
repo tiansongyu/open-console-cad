@@ -18,5 +18,6 @@
 | 14 | [iter14_strap_lock_seating.py](scripts/iter14_strap_lock_seating.py) |
 | 15 | [iter15_exterior_refinement.py](scripts/iter15_exterior_refinement.py) · 外轮廓、曲面、肩键和控制布局 |
 | 16 | [iter16_exterior_fits.py](scripts/iter16_exterior_fits.py) · 曲面装配配合与前面板细节 |
+| 17 | [iter17_public_reference_edges.py](scripts/iter17_public_reference_edges.py) · 不等宽外缘曲面、保留内腔与 7.6 mm 面键 |
 
 运行重建宏会依次生成各阶段模型。原始设计说明和最终检查见设备 README 与 output/reports/。

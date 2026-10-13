@@ -32,7 +32,7 @@ for page in pages:
     TD.saveAs(str(OUT/'Switch_Drawings.FCStd'))
     (OUT/'reports/native_drawing_progress.json').write_text(json.dumps({'stage':'saved','page':no,'time':time.time()}))
 invalid=[o.Name for o in TD.Objects if 'Invalid' in o.State];assert not invalid,invalid
-RESULT={'pass':True,'pages':12,'native_dimension_references':len(DIM_CHECKS),'checks':DIM_CHECKS,'presentation':'Self-contained SVG drawing sheets plus native measurable dimension references; full parametric 3D history is in Switch_Complete.FCStd','file':TD.FileName,'invalid':invalid}
+RESULT={'pass':True,'pages':12,'native_dimension_references':len(DIM_CHECKS),'checks':DIM_CHECKS,'presentation':'Self-contained SVG drawing sheets plus native measurable dimension references; full parametric 3D history is in Switch_Complete.FCStd','file':str(Path(TD.FileName).relative_to(ROOT.parents[1])),'invalid':invalid}
 (OUT/'reports/native_drawings_audit.json').write_text(json.dumps(RESULT,ensure_ascii=False,indent=2))
 App.setActiveDocument(D.Name);visible(HANDHELD_GROUPS)
 RESULT={k:v for k,v in RESULT.items() if k!='checks'}

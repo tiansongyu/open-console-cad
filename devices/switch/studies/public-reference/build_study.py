@@ -1,4 +1,4 @@
-"""Build an isolated exterior study in the FreeCAD GUI, without editing V16.
+"""Build an isolated exterior study in the FreeCAD GUI from retained V16 history.
 
 Run with exec(compile(path.read_bytes(), str(path), 'exec'), {'__file__': str(path)}).
 The solids are exterior envelopes, NOT hollow production shells or replacements
@@ -100,7 +100,9 @@ for front in [True, False]:
     tip, base = (13.9, 7.5) if front else (-1.3, 7.3)
     direction = 1 if front else -1
     start = tip - direction * r
-    levels = [base, start]
+    # Constrain the straight band as well as the roundover. Two widely spaced
+    # identical sections alone let the spline bow inward between them.
+    levels = [base + (start-base)*i/8 for i in range(9)]
     for angle in [10, 20, 30, 40, 50, 60, 70, 78, 84, 88, 90]:
         levels.append(start + direction * r * math.sin(math.radians(angle)))
     levels += [tip + direction * ri * (-1 + math.sin(math.radians(a)))
@@ -120,8 +122,10 @@ for front in [True, False]:
     assert not loft.Shape.isNull() and loft.Shape.isValid(), tag
     # Constrain the small interpolation overshoot with an axis-aligned envelope.
     # The tool extends beyond both end caps to avoid coincident cap faces.
-    limit = add_shape(tag + 'PlanLimit', tag + ' · 33 × 102 mm 包络限制',
-                      Part.makeBox(33, 102, 30, vec(candidate_center-16.5, -51, -10)),
+    epsilon = 1e-6  # Avoid coincident sliver faces; front rail boundary remains exact.
+    limit = add_shape(tag + 'PlanLimit', tag + ' · 名义 33 × 102 mm 包络限制',
+                      Part.makeBox(33+(epsilon if front else 2*epsilon), 102+2*epsilon, 30,
+                                   vec(candidate_center-16.5-epsilon, -51-epsilon, -10)),
                       (.6, .6, .6), False)
     candidate = doc.addObject('Part::Common', tag + 'Candidate')
     candidate.Base, candidate.Tool, candidate.Refine = loft, limit, False
@@ -140,8 +144,8 @@ for front in [True, False]:
         obj.Visibility = False
     bb = candidate.Shape.optimalBoundingBox(False, False)
     distances = []
-    for i in range(101):
-        z = tip - direction * r * i / 100
+    for i in range(201):
+        z = base + (tip-base)*i/200
         distance = abs(tip - z)
         for x in [-119.5 + setback(r, distance), -86.5 - setback(ri, distance)]:
             point = transformed(Part.Vertex(vec(x, 0, z)), candidate_center, front)
@@ -152,7 +156,7 @@ for front in [True, False]:
                  'sections': len(sections), 'chosen_outer_setback_mm': r,
                  'chosen_rail_setback_mm': ri,
                  'analytic_section_max_deviation_mm': max(distances),
-                 'deviation_scope': 'Loft versus chosen circular sections; NOT physical-device error'})
+                 'deviation_scope': 'Full straight band and roundover versus chosen sections; NOT physical-device error'})
     for center, text in [(base_center, tag.upper() + ' / V16'),
                          (candidate_center, tag.upper() + ' / STUDY')]:
         helper['printed_text'](doc, tag + 'Label', text, text, 2.3,
@@ -187,13 +191,15 @@ report = {'baseline_source': str(SOURCE.relative_to(ROOT.parents[1])),
           'baseline_source_sha256': hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
           'study_source_sha256': hashlib.sha256(native.read_bytes()).hexdigest(),
           'scope': 'Four solid exterior envelopes plus two button-diameter specimens; no production shell or complete assembly',
-          'integrated_into_main_assembly': False,
+          'study_is_complete_assembly': False,
+          'profile_integration_revision': 17,
+          'integration_report': '../../output/reports/17_interference_audit.json',
           'envelope_check_tolerance_mm': .001,
-          'section_sampling_tolerance_mm': .1,
+          'section_sampling_tolerance_mm': .02,
           'envelopes': rows,
           'passed': all(r['valid'] and r['solids'] == 1 and
                         max(abs(a-b) for a, b in zip(r['bounds_mm'][:2], [33, 102])) < .001
-                        and r['analytic_section_max_deviation_mm'] < .1 for r in rows)}
+                        and r['analytic_section_max_deviation_mm'] < .02 for r in rows)}
 (HERE / 'study-checks.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
 assert report['passed'], report
 if owned:

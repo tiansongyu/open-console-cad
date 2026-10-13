@@ -2,7 +2,7 @@
 from pathlib import Path
 import csv,hashlib,json,os,sys
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
-import FreeCAD as App,Part
+import FreeCAD as App,Part,Sketcher,PartDesign,Spreadsheet
 out=Path(__file__).resolve().parents[1]/'output'
 path=out/'reports/final_manifest.json';manifest=json.loads(path.read_text());changes=[];sources={};boxes={}
 for filename,key in [('Switch_Complete.FCStd','objects'),('Switch_Exploded.FCStd','exploded_objects')]:
@@ -13,6 +13,7 @@ for filename,key in [('Switch_Complete.FCStd','objects'),('Switch_Exploded.FCStd
         delta=max(abs(a-b) for a,b in zip(coords,row['bounds']))
         if delta>1e-7:changes.append({'file':filename,'part_id':row['part_id'],'previous_bounds':row['bounds'],'measured_bounds':coords,'max_coordinate_delta_mm':delta,'volume_delta_mm3':shape.Volume-row['volume']})
         row['bounds']=coords
+        row['volume']=shape.Volume
         if key=='objects':boxes[row['part_id']]=[b.XLength,b.YLength,b.ZLength]
     App.closeDocument(doc.Name);assert hashlib.sha256(native.read_bytes()).hexdigest()==sources[filename]
 manifest['bounds_basis']='Measured from the saved native BReps with optimalBoundingBox(False, False); refreshed after serialization.'

@@ -1,21 +1,23 @@
 {
-  "revision": 16,
+  "revision": 17,
   "date": "2026-10-13",
   "virtual_display": ":110",
   "application": "FreeCAD 1.1.3",
   "source": "devices/switch/output/Switch_Complete.FCStd",
-  "source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
+  "source_sha256": "de743ec79a77cc98815e0502a89766a10bb6bc5afd0c5e34d6ca83111b6f1033",
   "native_views_reviewed": [
     "front",
-    "back",
     "hero",
-    "Joy-Con edge detail"
+    "rear",
+    "Joy-Con edge detail",
+    "public-reference envelope comparison"
   ],
   "pdf": {
     "file": "devices/switch/output/drawings/Switch_Drawings.pdf",
     "pages_rendered_and_reviewed": 12,
     "issues_found": [],
-    "sha256": "4847e61780a48eac80b05274fc3082f02fa7f297588709a45e0c579df610b674"
+    "sha256": "39bd9b478ee3731274c2cf44e3ff9b2d094c8f870c2435ceec9a29467de2a763",
+    "view_export": "Views containing calibrated shells use bounded projected visible hard, smooth and silhouette edges at 0.01 mm drawing chordal deflection; unbounded HLR outline artifacts are omitted. Native Qt SVG rendering checked."
   },
   "repository_checks": "passed",
   "gltf_validator": {
@@ -24,6 +26,15 @@
   },
   "production_build": "passed; existing JavaScript bundle size advisory",
   "web_interaction_regression": "not performed in this virtual desktop",
-  "visual_reference": "Official Nintendo HAC-001 product images; local geometry fitted, not factory CAD",
-  "step_roundtrip": "passed; saved BRep, right rear shell sampled at kernel tolerance; numerical cord bounds independently confirmed by empty bidirectional Boolean differences"
+  "visual_reference": "Official Nintendo HAC-001 photos and Nintendo design patent D819642, figures 3/4; image-derived exterior fit, not factory CAD",
+  "step_roundtrip": "Four exports passed; saved BRep. Four calibrated casings use bidirectional corresponding-face sampling with explicit 0.001 mm conversion tolerance, maximum observed 0.000216594454 mm; not physical-device accuracy. Numerical cord bounding discrepancy confirmed with empty bidirectional Boolean differences.",
+  "full_history_recompute_tested": false,
+  "assembly": {
+    "components": 654,
+    "solids": 835,
+    "candidate_pairs": 1005,
+    "clashes": 0,
+    "invalid_features": 0,
+    "report": "17_interference_audit.json"
+  }
 }

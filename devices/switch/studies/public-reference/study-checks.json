@@ -1,42 +1,45 @@
 {
   "baseline_source": "devices/switch/output/Switch_Complete.FCStd",
   "baseline_source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
-  "study_source_sha256": "e4a76714abf3fac65c3bd06c935794d1ab5aa1cd680b133b19415c5eeab1492f",
+  "study_source_sha256": "9e0c81502225efd02b56bb559a4a14faea4a3c20b6b16068c588da48782dba0b",
   "scope": "Four solid exterior envelopes plus two button-diameter specimens; no production shell or complete assembly",
-  "integrated_into_main_assembly": false,
   "envelope_check_tolerance_mm": 0.001,
-  "section_sampling_tolerance_mm": 0.1,
+  "section_sampling_tolerance_mm": 0.02,
   "envelopes": [
     {
       "surface": "Front",
       "valid": true,
       "solids": 1,
       "bounds_mm": [
-        33.00007409811495,
-        102.00000020000002,
-        6.40000020000004
+        33.000193944563804,
+        102.00000220004716,
+        6.4000002000000435
       ],
-      "sections": 17,
+      "sections": 24,
       "chosen_outer_setback_mm": 3.5,
       "chosen_rail_setback_mm": 0.65,
-      "analytic_section_max_deviation_mm": 0.01732001886734313,
-      "deviation_scope": "Loft versus chosen circular sections; NOT physical-device error"
+      "analytic_section_max_deviation_mm": 0.003714345075254689,
+      "deviation_scope": "Full straight band and roundover versus chosen sections; NOT physical-device error"
     },
     {
       "surface": "Rear",
       "valid": true,
       "solids": 1,
       "bounds_mm": [
-        33.000382586422866,
-        102.00000020000002,
-        8.60000020000001
+        33.000362092397445,
+        102.00000220000001,
+        8.600000200000022
       ],
-      "sections": 17,
-      "chosen_outer_setback_mm": 6.0,
+      "sections": 24,
+      "chosen_outer_setback_mm": 6,
       "chosen_rail_setback_mm": 0.65,
-      "analytic_section_max_deviation_mm": 0.00943019370890701,
-      "deviation_scope": "Loft versus chosen circular sections; NOT physical-device error"
+      "analytic_section_max_deviation_mm": 0.005659966253050383,
+      "deviation_scope": "Full straight band and roundover versus chosen sections; NOT physical-device error"
     }
   ],
-  "passed": true
+  "passed": true,
+  "study_is_complete_assembly": false,
+  "profile_integration_revision": 17,
+  "integration_report": "../../output/reports/17_interference_audit.json",
+  "baseline_source_commit": "9432a241957f9c3ba7c112b11aa9737e52426cda"
 }

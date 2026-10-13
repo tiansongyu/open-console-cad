@@ -110,7 +110,7 @@ report = {
         'Line selection, shading, resampling and slight nonuniform image scaling dominate uncertainty.',
         'A low fitted-pixel residual is NOT a measured error against a physical console.',
         'Values are deliberately rounded for the study; no submillimetre hardware accuracy is certified.',
-        'The main V16 assembly remains the delivered model. The study is not assembly-fit validated.',
+        'The study itself contains solid envelopes. V17 integrates the profiles with retained cavities; numerical fit checks do not certify factory fidelity.',
     ],
 }
 (HERE / 'reference-measurements.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')

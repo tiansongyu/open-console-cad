@@ -4,7 +4,7 @@ Run with FreeCAD's Python runtime after finalize_models.py. No GUI required.
 import sys,os,json,math,hashlib,re,html
 from pathlib import Path
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
-import FreeCAD as App,Part,TechDraw
+import FreeCAD as App,Part,TechDraw,Sketcher,PartDesign,Spreadsheet
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';DRAW=OUT/'drawings';CACHE=DRAW/'projections';CACHE.mkdir(parents=True,exist_ok=True)
 M=json.loads((OUT/'reports/final_manifest.json').read_text())
 D=App.openDocument(str(OUT/'Switch_Complete.FCStd'));E=App.openDocument(str(OUT/'Switch_Exploded.FCStd'))
@@ -26,11 +26,33 @@ def bb(keys,exploded=False):
 
 def projection(keys,normal,up,center,exploded=False):
  objs=EC if exploded else C
- token=hashlib.sha256(json.dumps([keys,normal,up,center,exploded,[(k,objs[k].Shape.Volume,list(objs[k].Shape.optimalBoundingBox(False,False).Center)) for k in keys]]).encode()).hexdigest()[:20]
+ direct_edges=bool(set(keys)&{'JoyLFront','JoyLRear','JoyRFront','JoyRRear'})
+ token=hashlib.sha256(json.dumps(['direct-edge-v3' if direct_edges else 'svg',keys,normal,up,center,exploded,[(k,objs[k].Shape.Volume,list(objs[k].Shape.optimalBoundingBox(False,False).Center)) for k in keys]]).encode()).hexdigest()[:20]
  p=CACHE/(token+'.svg')
  if p.exists():return p.read_text()
  q=rot(normal,up).inverted();s=Part.makeCompound([objs[k].Shape for k in keys]);s.Placement=App.Placement(-q.multVec(App.Vector(*center)),q).multiply(s.Placement)
- raw=TechDraw.projectToSVG(s,App.Vector(0,0,1))
+ if direct_edges:
+  # projectToSVG mis-converts some high-order loft splines into enormous
+  # Bezier extensions. Use the bounded projected BRep edges themselves.
+  # Drawing-only polylines have 0.01 mm chordal deflection; CAD is untouched.
+  paths=[];limits=s.optimalBoundingBox(False,False)
+  projected_sets=TechDraw.projectEx(s,App.Vector(0,0,1))
+  # Include silhouettes of smooth faces (VO), in addition to V and V1.
+  rejected_outlines=0
+  for category in (0,1,3):
+   for edge in projected_sets[category].Edges:
+    points=edge.discretize(Deflection=.01)
+    bounded=all(limits.XMin-.02<=v.x<=limits.XMax+.02 and limits.YMin-.02<=v.y<=limits.YMax+.02 for v in points)
+    if not bounded and category==3:
+     # Unbounded HLR outline artifacts are not physical projected edges.
+     rejected_outlines+=1
+     continue
+    assert bounded, 'Projected physical edge exceeds its model envelope'
+    paths.append('<path d="M '+' L '.join(f'{v.x:.6f},{-v.y:.6f}' for v in points)+'"/>')
+  if rejected_outlines:print('Discarded unbounded HLR outline artifacts:',rejected_outlines,normal,center,flush=True)
+  raw='<g fill="none" stroke="#000000" stroke-width="0.18">'+''.join(paths)+'</g>'
+ else:
+  raw=TechDraw.projectToSVG(s,App.Vector(0,0,1))
  raw=re.sub(r'stroke-width="[^"]+"','stroke-width="0.18"',raw)
  raw=re.sub(r'id=\s*"[^"]+"','',raw)
  p.write_text(raw);print('projected',len(keys),token,flush=True);return raw
@@ -115,7 +137,7 @@ for x,label in [(56,'L 正面'),(158,'R 正面'),(259,'L 内侧'),(353,'R 背面
 s.dim(l,(-119.5,0,0),(-83.6,0,0),'x',16,published=True);s.dim(l,(-103,-51,0),(-103,51,0),'y',20,published=True)
 s.dim(r,(94.2,25.3,15.35),(109.6,25.3,15.35),'x',163,label='15.4')
 s.dim(inner,(-103,0,-5.4),(-103,0,23),'x',163,published=True)
-s.text(10,184,'摇杆帽 Ø15.8 · 面按键 Ø6.36 · 按键中心间距 7.7',3.2)
+s.text(10,184,'摇杆帽 Ø15.8 · 面按键 Ø7.6 · 按键中心间距 7.7',3.2)
 s.text(10,194,'L 摇杆中心：X=-101.9，Y=25.3，R 摇杆中心：X=101.9，Y=-3.3',3.2)
 s.text(10,204,'上述局部尺寸均为近似值，按当前模型坐标记录。',3.2)
 s.save()
@@ -216,14 +238,14 @@ s=Sheet(12,'尺寸依据与检查索引',['公开包络与本模型局部尺寸�
 for y,title,lines in [
 (16,'公开尺寸',["整机 239 × 102 × 13.9 mm，含摇杆/扳机最大厚 28.4 mm。","主机单体 173 × 101 × 13.9 mm，手柄含轨道宽 35.9 mm。","底座 173 × 104 × 54 mm。"]),
 (59,'模型范围',["局部壁厚、孔位、紧固件和安装间隙为近似设计。","电池、主板、芯片、风扇和控制器内部为主要模块布局示意。","尺寸数字描述此版模型，不能代替制造方工程资料。"]),
-(102,'验证文件',["16 轮设计源码，15-16 轮为 HAC-001 外形精修。","16_interference_audit.json：本版完整实体干涉核验。","exterior_refinement_audit.json：外形尺寸与版本检查。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
+(102,'验证文件',["17 轮设计源码，15-17 轮为 HAC-001 外形精修。","17_interference_audit.json：本版完整实体干涉核验。","exterior_refinement_audit.json：外形尺寸与版本检查。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
 (157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 2017 年 Nintendo Switch 现场拆解：主要内部模块布局。","完整链接与尺寸依据见 references/SOURCES.md。"])
 ]:
  s.text(10,y,title,4,fill='#1B365D')
  for j,line in enumerate(lines):s.text(10,y+10+j*8,line,3.2)
-s.text(385,210,'CAD STUDY · 2026.10.13 · Rev 16',3.2,'end');s.save()
+s.text(385,210,'CAD STUDY · 2026.10.13 · Rev 17',3.2,'end');s.save()
 assert len(PAGES)==12
 (DRAW/'drawing_pages.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2))
-(OUT/'reports/drawing_checks.json').write_text(json.dumps({'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))
+(OUT/'reports/drawing_checks.json').write_text(json.dumps({'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; views containing calibrated shells serialize bounded visible hard, smooth and silhouette edges with 0.01 mm chordal deflection; unbounded HLR outline artifacts are omitted; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))
 App.closeDocument(D.Name);App.closeDocument(E.Name)
 print(json.dumps({'pages':12,'dimensions':len(CHECKS),'completed':True}),flush=True)

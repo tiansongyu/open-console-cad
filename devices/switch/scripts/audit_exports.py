@@ -14,8 +14,12 @@ parameter edits or replace a separate rebuild audit.
 --surface-fallback=PartID,... uses bidirectional surface-distance sampling for
 explicitly named parts whose coincident-surface Boolean operations do not
 converge. This confirms sampled geometry, not analytical shape equality.
+--surface-distance-mm=0.001 explicitly sets a source/STEP conversion tolerance
+for those named parts; omitted means the stored kernel tolerances are used.
+Neither value is an accuracy claim relative to the physical hardware.
 """
 import json
+import math
 import hashlib
 import os
 import sys
@@ -32,9 +36,14 @@ import Spreadsheet
 out=Path(sys.argv[1]).resolve()
 recompute='--saved-geometry' not in sys.argv[2:]
 surface_fallback=set()
+surface_distance=None
 for option in sys.argv[2:]:
     if option.startswith('--surface-fallback='):
         surface_fallback.update(option.split('=',1)[1].split(','))
+    if option.startswith('--surface-distance-mm='):
+        surface_distance=float(option.split('=',1)[1])
+        assert math.isfinite(surface_distance) and 1e-6 <= surface_distance <= .02, 'Surface distance must be between 0.000001 and 0.02 mm'
+assert surface_distance is None or surface_fallback, 'Explicit surface distance requires named surface fallback parts'
 manifest=json.loads((out/'reports/final_manifest.json').read_text())
 result={'native':[],'step':[],'pass':True,'started':time.time(),
         'native_recomputed':recompute,
@@ -49,6 +58,9 @@ result={'native':[],'step':[],'pass':True,'started':time.time(),
 docs={}
 if surface_fallback:
     result['acceptance']['surface_sample_distance']='maximum stored source/STEP BRep tolerance, with a 1e-6 mm floor and a 0.02 mm upper bound'
+    if surface_distance is not None:
+        result['acceptance']['surface_sample_distance']='Explicit source/STEP conversion tolerance in mm; not physical-device accuracy'
+        result['acceptance']['surface_distance_mm']=surface_distance
     result['acceptance']['volume_metric']='reported; discrepant solids require Boolean confirmation, except named parts verified by bidirectional surface samples'
     result['method']+=' Named surface fallbacks check every vertex, seven samples per edge, and trimmed 7x7 UV grids on every face in both directions. Sampling is not an analytical equality proof.'
 for filename,key in [('Switch_Complete.FCStd','objects'),('Switch_Exploded.FCStd','exploded_objects')]:
@@ -97,7 +109,7 @@ def surface_samples(shape):
 def confirm_surfaces(a,b):
     source_tolerance=a.getTolerance(1)
     step_tolerance=b.getTolerance(1)
-    tolerance=max(1e-6,source_tolerance,step_tolerance)
+    tolerance=surface_distance if surface_distance is not None else max(1e-6,source_tolerance,step_tolerance)
     if len(a.Faces)!=len(b.Faces):
         return {'pass':False,'reason':'Face counts differ; correspondence requires manual review'}
     remaining=list(b.Faces)
@@ -120,7 +132,7 @@ def confirm_surfaces(a,b):
             if (i+1)%20==0:print(label+': '+str(i+1)+' faces',flush=True)
         directions.append({'direction':label,'samples':count,'face_grid_sample_counts':face_counts,'max_distance_mm':maximum,'pass':maximum<=tolerance and tolerance<=.02})
         print(json.dumps({k:v for k,v in directions[-1].items() if k!='face_grid_sample_counts'}),flush=True)
-    return {'method':'one-to-one face matching by six bounding coordinates; vertices, seven points per edge, trimmed 7x7 UV grids; bidirectional distances to corresponding exact BRep faces, evaluated at the stored kernel tolerance','source_tolerance_mm':source_tolerance,'step_tolerance_mm':step_tolerance,'acceptance_mm':tolerance,'matched_faces':len(pairs),'directions':directions,'pass':all(r['pass'] for r in directions)}
+    return {'method':'one-to-one face matching by six bounding coordinates; vertices, seven points per edge, trimmed 7x7 UV grids; bidirectional distances to corresponding exact BRep faces, evaluated at the recorded acceptance distance','acceptance_basis':'explicit conversion tolerance' if surface_distance is not None else 'stored kernel tolerance','source_tolerance_mm':source_tolerance,'step_tolerance_mm':step_tolerance,'acceptance_mm':tolerance,'matched_faces':len(pairs),'directions':directions,'pass':all(r['pass'] for r in directions)}
 
 handheld=[r for r in manifest['objects'] if r['assembly'] in manifest['handheld_groups']]
 dock=[r for r in manifest['objects'] if r['assembly'] in ['Dock','DockInternal']]
@@ -156,7 +168,7 @@ for filename,rows,key in [('Switch_FullKit.step',manifest['objects'],'objects'),
     colors=(out/filename).read_text(errors='ignore').count('COLOUR_RGB(')
     total_abs=sum(abs(r['volume_delta_mm3']) for r in checks)
     passed=s.isValid() and len(s.Solids)==len(native)==len(checks) and all(r['pass'] for r in checks) and colors>0
-    entry={'file':filename,'valid':s.isValid(),'solids':len(s.Solids),'expected_solids':len(native),
+    entry={'file':filename,'sha256':hashlib.sha256((out/filename).read_bytes()).hexdigest(),'valid':s.isValid(),'solids':len(s.Solids),'expected_solids':len(native),
            'compound_volume_delta_mm3':s.Volume-expected_volume,
            'matched_solid_volume_delta_mm3':sum(r['volume_delta_mm3'] for r in checks),
            'sum_absolute_solid_volume_delta_mm3':total_abs,

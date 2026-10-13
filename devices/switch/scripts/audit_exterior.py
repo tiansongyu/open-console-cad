@@ -19,7 +19,7 @@ def dimensions(name,keys,expected):
  b=App.BoundBox()
  for k in keys:b.add(c[k].Shape.optimalBoundingBox(False,False))
  actual=[b.XLength,b.YLength,b.ZLength]
- checks.append(dict(name=name,actual_mm=actual,expected_mm=expected,max_error_mm=max(abs(a-b) for a,b in zip(actual,expected)),passed=max(abs(a-b) for a,b in zip(actual,expected))<1e-5))
+ checks.append(dict(name=name,actual_mm=actual,expected_mm=expected,tolerance_mm=1e-5,max_error_mm=max(abs(a-b) for a,b in zip(actual,expected)),passed=max(abs(a-b) for a,b in zip(actual,expected))<1e-5))
 dimensions('handheld',[k for k,o in c.items() if o.Assembly in m['handheld_groups']],[239,102,28.4])
 dimensions('tablet',['TabletFrame','TabletRear','FrontBezel','DisplayGlass'],[173,101,13.9])
 for tag in ['L','R']:
@@ -32,7 +32,10 @@ for tag in ['L','R']:
    o=d.getObject('Joy'+tag+side+suffix)
    rounds.append(dict(feature=o.Name,radius_mm=o.Radius.Value,expression=list(o.ExpressionEngine),valid=o.Shape.isValid()))
 shells=[dict(part_id=k,solids=len(c[k].Shape.Solids),valid=c[k].Shape.isValid()) for k in ['JoyLFront','JoyLRear','JoyRFront','JoyRRear','TabletFrame','TabletRear']]
-report=dict(revision=16,model='Nintendo Switch HAC-001',source='devices/switch/output/Switch_Complete.FCStd',source_sha256=hashlib.sha256((out/'Switch_Complete.FCStd').read_bytes()).hexdigest(),physical_components=len(c),solids=sum(len(o.Shape.Solids) for o in c.values()),envelope_checks=checks,native_fillet_features=rounds,shells=shells,local_geometry_basis='Official Nintendo orthographic and oblique product images; radii and control coordinates are fitted estimates, not factory measurements.',invalid_features=invalid,scope='Exterior geometry and retained schematic internals. No claim of production-ready mechanical interchangeability.',passed=all(x['passed'] for x in checks) and all(x['valid'] for x in rounds+shells))
+external_links=[{'object':o.Name,'target':v.Name,'document':v.Document.Name} for o in d.Objects for v in o.OutList if v.Document != d]
+lofts=[dict(feature=o.Name,sections=len(o.Sections),valid=o.Shape.isValid()) for o in d.Objects if o.TypeId=='Part::Loft' and 'UnequalEdgeLoft' in o.Name]
+buttons=[dict(part_id=k,diameter_mm=c[k].Shape.optimalBoundingBox(False,False).XLength) for k in c if 'FaceButton' in k]
+report=dict(revision=17,model='Nintendo Switch HAC-001',source='devices/switch/output/Switch_Complete.FCStd',source_sha256=hashlib.sha256((out/'Switch_Complete.FCStd').read_bytes()).hexdigest(),physical_components=len(c),solids=sum(len(o.Shape.Solids) for o in c.values()),envelope_checks=checks,historical_native_fillet_features=rounds,calibrated_native_lofts=lofts,face_buttons=buttons,shells=shells,local_geometry_basis='Official Nintendo product images and design patent D819642 Fig.3/4; fitted exterior estimates, not factory measurements. Retained V16 cavities and schematic internals.',invalid_features=invalid,external_document_links=external_links,scope='Saved exterior geometry. Envelope tolerance is a CAD numerical check, not a manufacturing tolerance or physical-device accuracy.',passed=not external_links and all(x['passed'] for x in checks) and all(x['valid'] for x in rounds+shells+lofts) and len(lofts)==4 and all(abs(x['diameter_mm']-7.6)<1e-5 for x in buttons))
 (out/'reports/exterior_refinement_audit.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ['native_fillet_features','shells']},indent=2))
 assert report['passed']

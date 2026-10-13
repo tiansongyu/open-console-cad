@@ -1,16 +1,16 @@
 {
-  "revision": 16,
+  "revision": 17,
   "model": "Nintendo Switch HAC-001",
   "source": "devices/switch/output/Switch_Complete.FCStd",
-  "source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
+  "source_sha256": "de743ec79a77cc98815e0502a89766a10bb6bc5afd0c5e34d6ca83111b6f1033",
   "physical_components": 654,
   "solids": 835,
   "envelope_checks": [
     {
       "name": "handheld",
       "actual_mm": [
-        239.0000002,
-        102.00000020000003,
+        239.00000220000004,
+        102.00000220003486,
         28.400000200019903
       ],
       "expected_mm": [
@@ -18,7 +18,8 @@
         102,
         28.4
       ],
-      "max_error_mm": 2.0001990463924813e-07,
+      "tolerance_mm": 1e-05,
+      "max_error_mm": 2.2000348565143213e-06,
       "passed": true
     },
     {
@@ -33,14 +34,15 @@
         101,
         13.9
       ],
+      "tolerance_mm": 1e-05,
       "max_error_mm": 2.0000000233721948e-07,
       "passed": true
     },
     {
       "name": "joy_L",
       "actual_mm": [
-        35.9000001,
-        102.0000002,
+        35.900001100000026,
+        102.00000220001489,
         28.400000200019903
       ],
       "expected_mm": [
@@ -48,14 +50,15 @@
         102,
         28.4
       ],
-      "max_error_mm": 2.0001990463924813e-07,
+      "tolerance_mm": 1e-05,
+      "max_error_mm": 2.2000148902634464e-06,
       "passed": true
     },
     {
       "name": "joy_R",
       "actual_mm": [
-        35.9000001,
-        102.00000020000003,
+        35.90000110000004,
+        102.00000220003486,
         28.400000200019903
       ],
       "expected_mm": [
@@ -63,11 +66,12 @@
         102,
         28.4
       ],
-      "max_error_mm": 2.0001990463924813e-07,
+      "tolerance_mm": 1e-05,
+      "max_error_mm": 2.2000348565143213e-06,
       "passed": true
     }
   ],
-  "native_fillet_features": [
+  "historical_native_fillet_features": [
     {
       "feature": "JoyLFrontOuter15",
       "radius_mm": 20.5,
@@ -201,6 +205,62 @@
       "valid": true
     }
   ],
+  "calibrated_native_lofts": [
+    {
+      "feature": "FrontUnequalEdgeLoft",
+      "sections": 24,
+      "valid": true
+    },
+    {
+      "feature": "RearUnequalEdgeLoft",
+      "sections": 24,
+      "valid": true
+    },
+    {
+      "feature": "FrontUnequalEdgeLoft001",
+      "sections": 24,
+      "valid": true
+    },
+    {
+      "feature": "RearUnequalEdgeLoft001",
+      "sections": 24,
+      "valid": true
+    }
+  ],
+  "face_buttons": [
+    {
+      "part_id": "JoyLFaceButton0",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyLFaceButton1",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyLFaceButton2",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyLFaceButton3",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyRFaceButton0",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyRFaceButton1",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyRFaceButton2",
+      "diameter_mm": 7.600000199999982
+    },
+    {
+      "part_id": "JoyRFaceButton3",
+      "diameter_mm": 7.600000199999982
+    }
+  ],
   "shells": [
     {
       "part_id": "JoyLFront",
@@ -233,8 +293,9 @@
       "valid": true
     }
   ],
-  "local_geometry_basis": "Official Nintendo orthographic and oblique product images; radii and control coordinates are fitted estimates, not factory measurements.",
+  "local_geometry_basis": "Official Nintendo product images and design patent D819642 Fig.3/4; fitted exterior estimates, not factory measurements. Retained V16 cavities and schematic internals.",
   "invalid_features": [],
-  "scope": "Exterior geometry and retained schematic internals. No claim of production-ready mechanical interchangeability.",
+  "external_document_links": [],
+  "scope": "Saved exterior geometry. Envelope tolerance is a CAD numerical check, not a manufacturing tolerance or physical-device accuracy.",
   "passed": true
 }

@@ -513,21 +513,21 @@
     102,
     28.4
   ],
-  "method": "visible-line projection of the final BRep; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices",
+  "method": "visible-line projection of the final BRep; views containing calibrated shells serialize projected edges with 0.01 mm chordal deflection to avoid SVG spline conversion artifacts; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices",
   "pass": true,
   "model_measurements": [
     {
       "measurement": "handheld.XLength",
-      "actual_mm": 239.0000002,
+      "actual_mm": 239.00000220000004,
       "expected_mm": 239,
-      "absolute_error_mm": 1.9999998812636477e-07,
+      "absolute_error_mm": 2.200000039920269e-06,
       "pass": true
     },
     {
       "measurement": "handheld.YLength",
-      "actual_mm": 102.00000020000003,
+      "actual_mm": 102.00000220003486,
       "expected_mm": 102,
-      "absolute_error_mm": 2.0000003075892892e-07,
+      "absolute_error_mm": 2.2000348565143213e-06,
       "pass": true
     },
     {
@@ -581,16 +581,16 @@
     },
     {
       "measurement": "joy_left.XLength",
-      "actual_mm": 35.9000001,
+      "actual_mm": 35.900001100000026,
       "expected_mm": 35.9,
-      "absolute_error_mm": 1.0000000116860974e-07,
+      "absolute_error_mm": 1.1000000270655619e-06,
       "pass": true
     },
     {
       "measurement": "joy_left.YLength",
-      "actual_mm": 102.0000002,
+      "actual_mm": 102.00000220001489,
       "expected_mm": 102,
-      "absolute_error_mm": 2.0000000233721948e-07,
+      "absolute_error_mm": 2.2000148902634464e-06,
       "pass": true
     },
     {
@@ -602,16 +602,16 @@
     },
     {
       "measurement": "joy_right.XLength",
-      "actual_mm": 35.9000001,
+      "actual_mm": 35.90000110000004,
       "expected_mm": 35.9,
-      "absolute_error_mm": 1.0000000116860974e-07,
+      "absolute_error_mm": 1.1000000412764166e-06,
       "pass": true
     },
     {
       "measurement": "joy_right.YLength",
-      "actual_mm": 102.00000020000003,
+      "actual_mm": 102.00000220003486,
       "expected_mm": 102,
-      "absolute_error_mm": 2.0000003075892892e-07,
+      "absolute_error_mm": 2.2000348565143213e-06,
       "pass": true
     },
     {
@@ -665,9 +665,9 @@
     },
     {
       "measurement": "JoyRFaceButton0.XLength",
-      "actual_mm": 6.360000200000002,
-      "expected_mm": 6.36,
-      "absolute_error_mm": 2.0000000144904106e-07,
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
       "pass": true
     },
     {
@@ -699,5 +699,7 @@
       "pass": true
     }
   ],
-  "bounding_method": "optimalBoundingBox(False, False), independent of display triangulation"
+  "bounding_method": "Saved BRep optimalBoundingBox(False, False), independent of display triangulation; numerical model tolerance 0.00001 mm, not a hardware accuracy claim",
+  "full_history_recompute_tested": false,
+  "projection_outline_filter": "Unbounded HLR outline artifacts outside the projected physical envelope are omitted; physical hard, smooth and silhouette edges are retained."
 }
