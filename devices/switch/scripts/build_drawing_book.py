@@ -1,9 +1,18 @@
-"""Fill the copied Kami long-document template and use Kami's PDF build pipeline."""
+"""Fill the existing A3 template; render with Kami or portable WeasyPrint."""
 from pathlib import Path
 import json,html,re,sys,os
 ROOT=Path(__file__).resolve().parents[1];DRAW=ROOT/'output/drawings'
 KAMI=Path(os.environ.get('KAMI_HOME','~/.codex/skills/kami')).expanduser();sys.path.insert(0,str(KAMI/'scripts'))
-from render import render_pdf
+if (KAMI/'scripts/render.py').exists():
+ from render import render_pdf
+ PIPELINE='Kami render_pdf'
+else:
+ from weasyprint import HTML
+ def render_pdf(source, destination):
+  document=HTML(filename=str(source)).render()
+  document.write_pdf(str(destination))
+  return len(document.pages)
+ PIPELINE='WeasyPrint / existing A3 template'
 pages=json.loads((DRAW/'drawing_pages.json').read_text());ir=json.loads((DRAW/'content.json').read_text())
 assert len(pages)==12
 ir['content']['summary']['claim']='本套图纸对应 Nintendo Switch 标准版详细 CAD 模型，公开包络与局部近似尺寸分别标注。视图由实体投影生成，用于装配观察与 FreeCAD 学习，内部是主要模块布局示意。'
@@ -47,7 +56,7 @@ for i,page in enumerate(pages):
  else:
   ch=ir['content']['chapters'][i-1];claim=ch['claim'];notes=ch['paragraphs']
  svg=(DRAW/page['svg']).read_text().replace('rgb(0, 0, 0)','#141413').replace('#000000','#141413')
- body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">SW-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">Nintendo Switch 详细模型图纸</div><div>局部尺寸为本模型近似值 · 内部为布局示意</div></div><div>单位 mm · 比例见各视图<br>CAD Study · 2026.09.08</div><div>图号 SW-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
+ body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">SW-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">Nintendo Switch 详细模型图纸</div><div>局部尺寸为本模型近似值 · 内部为布局示意</div></div><div>单位 mm · 比例见各视图<br>CAD Study · 2026.10.13 · Rev 16</div><div>图号 SW-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
 # Resolve the copied template tokens to literal values so static content visibility is provable.
 declared=dict(re.findall(r'(--[\w-]+)\s*:\s*([^;]+);',head))
 for _ in range(8):head=re.sub(r'var\((--[\w-]+)\)',lambda m:declared.get(m.group(1),m.group(0)),head)
@@ -55,4 +64,4 @@ filled=head+'<body>'+''.join(body)+'</body></html>'
 assert not re.search(r'\{\{[^{}]*\}\}',filled)
 out=DRAW/'Switch_Drawings.html';out.write_text(filled)
 count=render_pdf(out,DRAW/'Switch_Drawings.pdf');assert count==12,count
-print(json.dumps({'pages':count,'html':str(out),'pdf':str(DRAW/'Switch_Drawings.pdf'),'pipeline':'Kami render_pdf'},ensure_ascii=False))
+print(json.dumps({'pages':count,'html':str(out),'pdf':str(DRAW/'Switch_Drawings.pdf'),'pipeline':PIPELINE},ensure_ascii=False))

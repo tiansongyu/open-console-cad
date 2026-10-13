@@ -1,0 +1,29 @@
+{
+  "revision": 16,
+  "date": "2026-10-13",
+  "virtual_display": ":110",
+  "application": "FreeCAD 1.1.3",
+  "source": "devices/switch/output/Switch_Complete.FCStd",
+  "source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
+  "native_views_reviewed": [
+    "front",
+    "back",
+    "hero",
+    "Joy-Con edge detail"
+  ],
+  "pdf": {
+    "file": "devices/switch/output/drawings/Switch_Drawings.pdf",
+    "pages_rendered_and_reviewed": 12,
+    "issues_found": [],
+    "sha256": "4847e61780a48eac80b05274fc3082f02fa7f297588709a45e0c579df610b674"
+  },
+  "repository_checks": "passed",
+  "gltf_validator": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "production_build": "passed; existing JavaScript bundle size advisory",
+  "web_interaction_regression": "not performed in this virtual desktop",
+  "visual_reference": "Official Nintendo HAC-001 product images; local geometry fitted, not factory CAD",
+  "step_roundtrip": "passed; saved BRep, right rear shell sampled at kernel tolerance; numerical cord bounds independently confirmed by empty bidirectional Boolean differences"
+}

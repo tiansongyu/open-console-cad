@@ -1,0 +1,240 @@
+{
+  "revision": 16,
+  "model": "Nintendo Switch HAC-001",
+  "source": "devices/switch/output/Switch_Complete.FCStd",
+  "source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
+  "physical_components": 654,
+  "solids": 835,
+  "envelope_checks": [
+    {
+      "name": "handheld",
+      "actual_mm": [
+        239.0000002,
+        102.00000020000003,
+        28.400000200019903
+      ],
+      "expected_mm": [
+        239,
+        102,
+        28.4
+      ],
+      "max_error_mm": 2.0001990463924813e-07,
+      "passed": true
+    },
+    {
+      "name": "tablet",
+      "actual_mm": [
+        173.0,
+        101.0000002,
+        13.900000100000002
+      ],
+      "expected_mm": [
+        173,
+        101,
+        13.9
+      ],
+      "max_error_mm": 2.0000000233721948e-07,
+      "passed": true
+    },
+    {
+      "name": "joy_L",
+      "actual_mm": [
+        35.9000001,
+        102.0000002,
+        28.400000200019903
+      ],
+      "expected_mm": [
+        35.9,
+        102,
+        28.4
+      ],
+      "max_error_mm": 2.0001990463924813e-07,
+      "passed": true
+    },
+    {
+      "name": "joy_R",
+      "actual_mm": [
+        35.9000001,
+        102.00000020000003,
+        28.400000200019903
+      ],
+      "expected_mm": [
+        35.9,
+        102,
+        28.4
+      ],
+      "max_error_mm": 2.0001990463924813e-07,
+      "passed": true
+    }
+  ],
+  "native_fillet_features": [
+    {
+      "feature": "JoyLFrontOuter15",
+      "radius_mm": 20.5,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyOuterRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyLFrontRailSide15",
+      "radius_mm": 0.65,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyInnerRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyLFrontPerimeterRoll15",
+      "radius_mm": 1.8,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyFrontRoll"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyLRearOuter15",
+      "radius_mm": 20.5,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyOuterRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyLRearRailSide15",
+      "radius_mm": 0.65,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyInnerRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyLRearPerimeterRoll15",
+      "radius_mm": 3.1,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyRearRoll"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRFrontOuter15",
+      "radius_mm": 20.5,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyOuterRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRFrontRailSide15",
+      "radius_mm": 0.65,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyInnerRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRFrontPerimeterRoll15",
+      "radius_mm": 1.8,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyFrontRoll"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRRearOuter15",
+      "radius_mm": 20.5,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyOuterRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRRearRailSide15",
+      "radius_mm": 0.65,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyInnerRadius"
+        ]
+      ],
+      "valid": true
+    },
+    {
+      "feature": "JoyRRearPerimeterRoll15",
+      "radius_mm": 3.1,
+      "expression": [
+        [
+          "Radius",
+          "Parameters.JoyRearRoll"
+        ]
+      ],
+      "valid": true
+    }
+  ],
+  "shells": [
+    {
+      "part_id": "JoyLFront",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "part_id": "JoyLRear",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "part_id": "JoyRFront",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "part_id": "JoyRRear",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "part_id": "TabletFrame",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "part_id": "TabletRear",
+      "solids": 1,
+      "valid": true
+    }
+  ],
+  "local_geometry_basis": "Official Nintendo orthographic and oblique product images; radii and control coordinates are fitted estimates, not factory measurements.",
+  "invalid_features": [],
+  "scope": "Exterior geometry and retained schematic internals. No claim of production-ready mechanical interchangeability.",
+  "passed": true
+}

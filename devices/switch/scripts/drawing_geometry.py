@@ -110,12 +110,13 @@ s.save()
 lkeys=keys_for(['JoyLeft','JoyRailL'],False);rkeys=keys_for(['JoyRight','JoyRailR'],False)
 s=Sheet(3,'左右 Joy-Con 尺寸',['左右手柄具有相同的包络，摇杆与面按键的位置不同。','手柄宽度包含导轨端部，最大厚度包含摇杆与后扳机。'])
 l=s.view('JoyLeftFront',lkeys,56,80,1,center=(-101.55,0,8.8));r=s.view('JoyRightFront',rkeys,158,80,1,center=(101.55,0,8.8));inner=s.view('JoyLeftInnerRail',lkeys,259,80,1,normal=(1,0,0),center=(-101.55,0,8.8));back=s.view('JoyRightBack',rkeys,353,80,1,normal=(0,0,-1),center=(101.55,0,8.8))
-for x,label in [(56,'L 正面'),(158,'R 正面'),(259,'L 内侧'),(353,'R 背面')]:s.text(x,145,label+' · 1:1',anchor='middle')
+for x,label in [(56,'L 正面'),(158,'R 正面'),(259,'L 内侧'),(353,'R 背面')]:
+ s.text(x,174 if x in (158,259) else 145,label+' · 1:1',anchor='middle')
 s.dim(l,(-119.5,0,0),(-83.6,0,0),'x',16,published=True);s.dim(l,(-103,-51,0),(-103,51,0),'y',20,published=True)
-s.dim(r,(93.6,25.1,15.35),(112.4,25.1,15.35),'x',163,label='18.8')
+s.dim(r,(94.2,25.3,15.35),(109.6,25.3,15.35),'x',163,label='15.4')
 s.dim(inner,(-103,0,-5.4),(-103,0,23),'x',163,published=True)
-s.text(10,184,'摇杆帽 Ø15.8 · 面按键 Ø6.36 · 按键中心间距 9.4',3.2)
-s.text(10,194,'L 摇杆中心：X=-103，Y=25.3，R 摇杆中心：X=103，Y=-12',3.2)
+s.text(10,184,'摇杆帽 Ø15.8 · 面按键 Ø6.36 · 按键中心间距 7.7',3.2)
+s.text(10,194,'L 摇杆中心：X=-101.9，Y=25.3，R 摇杆中心：X=101.9，Y=-3.3',3.2)
 s.text(10,204,'上述局部尺寸均为近似值，按当前模型坐标记录。',3.2)
 s.save()
 # 04 / connector, rail and analog details, with enlarged actual BRep curves.
@@ -124,7 +125,7 @@ usbc=[k for k in C if k.startswith('USBC')]
 v=s.view('USBCDetail',usbc,65,49,5,normal=(0,-1,0),up=(0,0,1),center=(0,-50.4,6.9));s.text(65,80,'USB-C 插座正视 · 5:1',anchor='middle')
 s.dim(v,(-4.4,-50.4,6.9),(4.4,-50.4,6.9),'x',27,label='8.8');s.dim(v,(0,-50.4,5.3),(0,-50.4,8.5),'y',20,label='3.2')
 v=s.view('HeadphoneDetail',['HeadphoneRim','HeadphoneContact'],192,49,5,normal=(0,1,0),up=(0,0,1),center=(49,50,7.2));s.text(192,80,'耳机插座 · 5:1',anchor='middle');s.dim(v,(47.24,50,7.2),(50.76,50,7.2),'x',27,label='Ø3.52')
-v=s.view('StickDetail',[k for k in C if k.startswith('JoyLStick')],315,51,2,normal=(0,1,0),up=(0,0,1),center=(-103,25.3,17));s.text(315,80,'摇杆侧视 · 2:1',anchor='middle');s.dim(v,(-103,25.3,13.9),(-103,25.3,23),'y',356,label='9.1')
+v=s.view('StickDetail',[k for k in C if k.startswith('JoyLStick')],315,51,2,normal=(0,1,0),up=(0,0,1),center=(-101.9,25.3,17));s.text(315,80,'摇杆侧视 · 2:1',anchor='middle');s.dim(v,(-101.9,25.3,13.9),(-101.9,25.3,23),'y',356,label='9.1')
 v=s.view('RailSection',['ConsoleRail-1','JoyLRailTongue','JoyLRailBack'],65,150,5,normal=(0,-1,0),up=(0,0,1),center=(-84.7,-10,7.15));s.text(65,196,'导轨端面 · 5:1',anchor='middle')
 v=s.view('RailScrewDetail',['RailScrew-1_1','RailBoss-1_1'],192,150,5,normal=(-1,0,0),up=(0,1,0),center=(-82,-37,7.15));s.text(192,196,'导轨螺钉与安装柱 · 5:1',anchor='middle')
 v=s.view('HapticDetail',['JoyLHapticCase','JoyLHapticMass','JoyLHapticCoil','JoyLHapticSpring0','JoyLHapticSpring1'],315,151,5,normal=(.3,-.3,-1),center=(-100,-34.5,3.8));s.text(315,196,'振动单元 · 5:1',anchor='middle')
@@ -155,7 +156,7 @@ def section_view(sheet,name,keys,x,y,scale,plane_y,center):
 s=Sheet(5,'主机与手柄剖面',['浅色填充表示实体与指定 Y 平面的真实交线所围区域。','本页剖面穿过指定部位，不把未被剖切平面经过的扳机算入厚度。'])
 v=section_view(s,'TabletSectionY0',keys_for(['Tablet','Display','TabletInternal']),198,51,2,0,(0,0,6.95));s.text(198,20,'A-A · 主机 Y=0 剖面 · 2:1',anchor='middle');s.dim(v,(0,0,0),(0,0,13.9),'y',18,published=True)
 v=section_view(s,'JoyLeftSection',keys_for(['JoyLeft','JoyRailL','JoyInternalL']),105,146,5.0,25.3,(-101.55,25.3,11));s.text(105,78,'B-B · L 摇杆中心 · 5:1',anchor='middle')
-v=section_view(s,'JoyRightSection',keys_for(['JoyRight','JoyRailR','JoyInternalR']),293,146,5.0,-12,(101.55,-12,11));s.text(293,78,'C-C · R 摇杆中心 · 5:1',anchor='middle');s.text(105,213,'剖切坐标 Y=25.3',anchor='middle');s.text(293,213,'剖切坐标 Y=-12',anchor='middle');s.save()
+v=section_view(s,'JoyRightSection',keys_for(['JoyRight','JoyRailR','JoyInternalR']),293,146,5.0,-3.3,(101.55,-3.3,11));s.text(293,78,'C-C · R 摇杆中心 · 5:1',anchor='middle');s.text(105,213,'剖切坐标 Y=25.3',anchor='middle');s.text(293,213,'剖切坐标 Y=-3.3',anchor='middle');s.save()
 # 06 / tablet exploded modules and traceable part-number legend.
 s=Sheet(6,'主机分层爆炸图',['沿厚度方向展开主要装配层，爆炸位移只用于展示。','序号对应组件 CSV 与原生模型树，细小固定件保留在所属功能层中。'])
 ks=keys_for(['Tablet','Display','TabletInternal']);v=s.view('TabletExploded',ks,198,73,.34,normal=(1.7,-.2,-1),center=(0,0,-100),exploded=True)
@@ -215,12 +216,12 @@ s=Sheet(12,'尺寸依据与检查索引',['公开包络与本模型局部尺寸�
 for y,title,lines in [
 (16,'公开尺寸',["整机 239 × 102 × 13.9 mm，含摇杆/扳机最大厚 28.4 mm。","主机单体 173 × 101 × 13.9 mm，手柄含轨道宽 35.9 mm。","底座 173 × 104 × 54 mm。"]),
 (59,'模型范围',["局部壁厚、孔位、紧固件和安装间隙为近似设计。","电池、主板、芯片、风扇和控制器内部为主要模块布局示意。","尺寸数字描述此版模型，不能代替制造方工程资料。"]),
-(102,'验证文件',["14 轮设计迭代和每轮模型保存在 iterations/。","14_interference_audit.json：完整实体干涉核验。","parameter_edit_test.json、rebuild_verification.json：参数与源码重建。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
+(102,'验证文件',["16 轮设计源码，15-16 轮为 HAC-001 外形精修。","16_interference_audit.json：本版完整实体干涉核验。","exterior_refinement_audit.json：外形尺寸与版本检查。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
 (157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 2017 年 Nintendo Switch 现场拆解：主要内部模块布局。","完整链接与尺寸依据见 references/SOURCES.md。"])
 ]:
  s.text(10,y,title,4,fill='#1B365D')
  for j,line in enumerate(lines):s.text(10,y+10+j*8,line,3.2)
-s.text(385,210,'CAD STUDY · 2026.09.08',3.2,'end');s.save()
+s.text(385,210,'CAD STUDY · 2026.10.13 · Rev 16',3.2,'end');s.save()
 assert len(PAGES)==12
 (DRAW/'drawing_pages.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2))
 (OUT/'reports/drawing_checks.json').write_text(json.dumps({'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))

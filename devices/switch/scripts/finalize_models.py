@@ -6,7 +6,8 @@ exec(compile((ROOT/'scripts/exploded_layout.py').read_bytes(),'exploded_layout.p
 for i,o in enumerate(C.values(),1):
     if 'PartNumber' not in o.PropertiesList:o.addProperty('App::PropertyString','PartNumber','CAD study')
     o.PartNumber=f'SW-{i:04d}'
-    label=re.sub(r'\d{3,}$','',o.Label).replace('主机框架原坯','主机框架').replace(' · 原坯','')
+    label=re.sub(r'^(?:SW-\d{4}\s*·\s*)+','',o.Label)
+    label=re.sub(r'\d{3,}$','',label).replace('主机框架原坯','主机框架').replace(' · 曲面原坯','').replace(' · 原坯','')
     o.Label=o.PartNumber+' · '+label
 visible(HANDHELD_GROUPS);camera((-.45,-.4,2),target=(0,0,7),span=165)
 D.Label='Nintendo Switch · 完整套装 · 参数化'
@@ -60,7 +61,8 @@ ImportGui.export(list(EC.values()),str(OUT/'Switch_Exploded.step'))
 rows=audit_objects(list(C.values()));erows=audit_objects(list(EC.values()))
 for row,o in zip(rows,C.values()):row.update(part_id=o.PartID,part_number=o.PartNumber,assembly=o.Assembly,layer=o.ExplodeLayer,material=o.MaterialDescription,fidelity=o.Fidelity)
 for row,o in zip(erows,EC.values()):row.update(part_id=o.PartID,part_number=o.PartNumber,assembly=o.Assembly,explode_offset=OFFSET[o.PartID])
-manifest={'project':'Nintendo Switch standard HAC-001 study','design_iterations':14,'physical_components':len(C),'solids':sum(len(o.Shape.Solids) for o in C.values()),'assemblies':dict(Counter(o.Assembly for o in C.values())),'handheld_groups':HANDHELD_GROUPS,'native_files':['Switch_Complete.FCStd','Switch_Exploded.FCStd'],'step_files':['Switch_FullKit.step','Switch_Handheld.step','Switch_Dock.step','Switch_Exploded.step'],'views':FINAL_VIEWS,'objects':rows,'exploded_objects':erows,'offsets':OFFSET,'published_handheld_mm':[239,102,28.4],'published_main_body_depth_mm':13.9,'published_dock_mm':[173,104,54],'fidelity':'Published overall envelopes; local dimensions approximate; major internals schematic'}
+manifest={'project':'Nintendo Switch standard HAC-001 study','design_iterations':16,'physical_components':len(C),'solids':sum(len(o.Shape.Solids) for o in C.values()),'assemblies':dict(Counter(o.Assembly for o in C.values())),'handheld_groups':HANDHELD_GROUPS,'native_files':['Switch_Complete.FCStd','Switch_Exploded.FCStd'],'step_files':['Switch_FullKit.step','Switch_Handheld.step','Switch_Dock.step','Switch_Exploded.step'],'views':FINAL_VIEWS,'objects':rows,'exploded_objects':erows,'offsets':OFFSET,'published_handheld_mm':[239,102,28.4],'published_main_body_depth_mm':13.9,'published_dock_mm':[173,104,54],'fidelity':'Published overall envelopes; exterior radii and control positions fitted to official HAC-001 images; major internals schematic','bounds_basis':'optimalBoundingBox(False, False)','exterior_revision':'2026-10-13 / iterations 15-16'}
+manifest['views']={name:str(Path(path).relative_to(OUT)) for name,path in FINAL_VIEWS.items()}
 (OUT/'reports/final_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 with (OUT/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:
     w=csv.writer(f);w.writerow(['Part number','Part ID','Label','Assembly','Material','Solid count','Volume mm3','X mm','Y mm','Z mm','Fidelity'])
