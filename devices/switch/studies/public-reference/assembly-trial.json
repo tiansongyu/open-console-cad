@@ -1,0 +1,120 @@
+{
+  "accepted_for_assembly": false,
+  "baseline_source_sha256": "614e844676cba7841c09db119252b12c31862f22ddce0322b827cbe5921b7194",
+  "study_source_sha256": "e4a76714abf3fac65c3bd06c935794d1ab5aa1cd680b133b19415c5eeab1492f",
+  "scope": "Left Joy-Con pilot only; fitted cavity plus existing V16 opening tools; right side not tested",
+  "cavity_assumptions_mm": {
+    "width": 30.4,
+    "height": 99.4,
+    "plan_radius": 19.2,
+    "front_inner_roll": 2.35,
+    "rear_inner_roll": 4.85,
+    "front_inner_face_z": 12.75,
+    "rear_inner_face_z": -0.15
+  },
+  "interference_volume_threshold_mm3": 0.001,
+  "results": [
+    {
+      "key": "JoyLFront",
+      "valid": false,
+      "solids": 1,
+      "stages": [
+        {
+          "stage": "envelope",
+          "valid": true
+        },
+        {
+          "stage": "fitted cavity",
+          "valid": false
+        },
+        {
+          "stage": "envelope minus cavity",
+          "valid": false
+        },
+        {
+          "stage": "参考图校准后的全部前面板按键孔 · 刀具",
+          "valid": false
+        },
+        {
+          "stage": "弧形肩键运动间隙 · 刀具",
+          "valid": false
+        }
+      ],
+      "interference_scan_performed": false,
+      "clashes": []
+    },
+    {
+      "key": "JoyLRear",
+      "valid": true,
+      "solids": 1,
+      "stages": [
+        {
+          "stage": "envelope",
+          "valid": true
+        },
+        {
+          "stage": "fitted cavity",
+          "valid": true
+        },
+        {
+          "stage": "envelope minus cavity",
+          "valid": true
+        },
+        {
+          "stage": "修正后三翼螺钉沉孔 · 刀具",
+          "valid": true
+        },
+        {
+          "stage": "圆形释放按钮孔 · 刀具",
+          "valid": true
+        },
+        {
+          "stage": "扳机枢轴穿孔 · 刀具",
+          "valid": true
+        },
+        {
+          "stage": "弯曲扳机容置与活动间隙 · 刀具",
+          "valid": true
+        }
+      ],
+      "interference_scan_performed": true,
+      "clashes": [
+        {
+          "part": "JoyLScrew2",
+          "label": "SW-0170 · 三翼槽紧固螺钉",
+          "volume_mm3": 0.0613017506822177
+        },
+        {
+          "part": "JoyLScrew3",
+          "label": "SW-0171 · 三翼槽紧固螺钉",
+          "volume_mm3": 0.016657552183409807
+        },
+        {
+          "part": "JoyLScrew4",
+          "label": "SW-0172 · 三翼槽紧固螺钉",
+          "volume_mm3": 0.010526919476595743
+        },
+        {
+          "part": "JoyLBoss1",
+          "label": "SW-0379 · 手柄后盖螺钉柱001",
+          "volume_mm3": 2.7722897078294766
+        },
+        {
+          "part": "JoyLBoss2",
+          "label": "SW-0380 · 手柄后盖螺钉柱001",
+          "volume_mm3": 2.284854858024266
+        },
+        {
+          "part": "JoyLBoss3",
+          "label": "SW-0381 · 手柄后盖螺钉柱001",
+          "volume_mm3": 2.2896423887928705
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Invalid shells skip interference scanning; an empty list does not mean a pass.",
+    "Trial shells are excluded from delivered native/STEP files.",
+    "Existing internals are schematic. No factory fit is established."
+  ]
+}

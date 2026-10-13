@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-13",
+  "model": "Nintendo Switch HAC-001 / original Joy-Con",
+  "sources": [
+    {
+      "file": "body-switch03-front.jpg",
+      "url": "https://www.nintendo.com/sg/hardware/detail/switch/img/08-local-specs/body-switch03-front.jpg",
+      "sha256": "a722de2302f0436accdfab5202763fccfa7992cb3f35eac1c99764c8e214a440",
+      "author": "Nintendo",
+      "use": "Retail front view; contour and face-button diameters"
+    },
+    {
+      "file": "USD819642S1.pdf",
+      "url": "https://patentimages.storage.googleapis.com/57/37/2a/8dd4c3079855b2/USD819642S1.pdf",
+      "sha256": "b87297526c12fd3cb73307284293184942d012115ac13b8c3ad660529682e036",
+      "author": "Nintendo Co., Ltd.",
+      "use": "Design patent Figures 3 and 4; edge-transition extents"
+    }
+  ],
+  "official_dimensions_url": "https://www.nintendo.com/my/hardware/switch/modal/specs/joy-con.html",
+  "patent_product_attribution_url": "https://www.nintendo.com/us/patents/",
+  "photo": {
+    "size_px": [
+      1880,
+      1400
+    ],
+    "overall_height_y_px": [
+      168,
+      913
+    ],
+    "published_height_mm": 102,
+    "px_per_mm": 7.303921568627451,
+    "lower_outer_corner_fit": {
+      "center_px": [
+        754.9098595422952,
+        758.5083104078935
+      ],
+      "radius_px": 155.07085300405697,
+      "radius_estimate_mm": 21.231177189817195,
+      "residual_rms_px": 0.23093581085682977,
+      "sample_count": 130,
+      "method": "Least-squares circle, thresholded lower-left contour"
+    },
+    "buttons": [
+      {
+        "key": "L_up",
+        "roi_px": [
+          690,
+          480,
+          83,
+          65
+        ],
+        "center_px": [
+          730.5,
+          511.5
+        ],
+        "radius_px": 28.100000381469727,
+        "diameter_estimate_mm": 7.694496748751442
+      },
+      {
+        "key": "L_left",
+        "roi_px": [
+          642,
+          535,
+          70,
+          67
+        ],
+        "center_px": [
+          672.5,
+          565.5
+        ],
+        "radius_px": 28.200000762939453,
+        "diameter_estimate_mm": 7.721879403543152
+      },
+      {
+        "key": "R_X",
+        "roi_px": [
+          1100,
+          275,
+          73,
+          60
+        ],
+        "center_px": [
+          1129.5,
+          306.5
+        ],
+        "radius_px": 27.899999618530273,
+        "diameter_estimate_mm": 7.639731439168021
+      },
+      {
+        "key": "R_A",
+        "roi_px": [
+          1150,
+          330,
+          70,
+          65
+        ],
+        "center_px": [
+          1188.5,
+          361.5
+        ],
+        "radius_px": 28.0,
+        "diameter_estimate_mm": 7.667114093959731
+      }
+    ],
+    "mean_button_diameter_estimate_mm": 7.680805421355587
+  },
+  "patent": {
+    "page_height_px": 1400,
+    "height_anchor_y_px": [
+      256,
+      1120
+    ],
+    "assumed_height_mm": 102,
+    "mm_per_px": 0.11805555555555555,
+    "front_outer_x_px": [
+      366.72,
+      396.86
+    ],
+    "rear_outer_x_px": [
+      633.31,
+      684.06
+    ],
+    "rear_rail_x_px": [
+      403.28,
+      408.33
+    ],
+    "front_outer_setback_estimate_mm": 3.558194444444443,
+    "rear_outer_setback_estimate_mm": 5.991319444444445,
+    "rear_rail_setback_estimate_mm": 0.5961805555555569,
+    "face_button_diameter_px_approx": 64,
+    "face_button_diameter_estimate_mm": 7.555555555555555,
+    "coordinate_method": "Manual line-group selection in Fig.3/4; orthographic assumption; uniform scale to published overall height"
+  },
+  "study_choices_mm": {
+    "front_outer_setback": 3.5,
+    "rear_outer_setback": 6.0,
+    "rail_side_setback": 0.65,
+    "face_button_diameter": 7.6,
+    "plan_outer_radius_retained": 20.5
+  },
+  "limitations": [
+    "Image-derived values are estimates. Published nominal height does not establish all other dimensions.",
+    "The patent has no manufacturing dimensions, tolerances or assurance that every detail equals retail tooling.",
+    "Line selection, shading, resampling and slight nonuniform image scaling dominate uncertainty.",
+    "A low fitted-pixel residual is NOT a measured error against a physical console.",
+    "Values are deliberately rounded for the study; no submillimetre hardware accuracy is certified.",
+    "The main V16 assembly remains the delivered model. The study is not assembly-fit validated."
+  ]
+}

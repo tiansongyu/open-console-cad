@@ -6,6 +6,8 @@
 
 2026-10-13 外形精修针对初代 HAC-001：重新建立 Joy-Con 外轮廓及前后壳的厚度方向圆角，缩窄肩键并重塑扳机，校正摇杆、按键、扬声器和亮度传感器位置。对比同一视角的[原边缘](output/previews/edge_before.png)与[新边缘](output/previews/edge_after.png)，或查看[独立虚拟桌面截图](output/previews/virtual_desktop_final.png)。圆角和局部坐标依据官方照片拟合，未使用原厂 CAD 或实物扫描，不能视为制造级复刻。
 
+后续的[公开资料外缘校准研究](studies/public-reference/README.md)结合 Nintendo 外观专利与产品图，量化了外侧与导轨侧过渡不对称、面键偏小的问题，并提供独立 FreeCAD / STEP 对照样件。该样件尚未并入本页 V16 整机；测量依据、验证范围和未完成配合均单独记录。
+
 [![模型总览](output/previews/overview.png)](https://tiansongyu.github.io/open-console-cad/?device=switch&view=assembled#viewer)
 
 ## 打开文件

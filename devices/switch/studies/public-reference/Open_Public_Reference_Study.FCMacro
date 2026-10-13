@@ -1,0 +1,8 @@
+"""Open the separate public-reference study, preserving the delivered assembly."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+path = Path(__file__).resolve().parent / 'Switch_Public_Reference_Study.FCStd'
+doc = App.openDocument(str(path))
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().fitAll()
