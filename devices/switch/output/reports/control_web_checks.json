@@ -1,0 +1,100 @@
+{
+  "device": "switch",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 529,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 521,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 331,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 198,
+      "passed": true
+    },
+    {
+      "view": "dock",
+      "components": 97,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 28,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch/output/Switch_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch/output/drawings/Switch_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/switch.glb"
+    }
+  ],
+  "gallery_images": 9,
+  "slider_keyboard": true,
+  "revision": 18,
+  "test_date": "2026-10-29",
+  "source": "devices/switch/output/Switch_Complete.FCStd",
+  "source_sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
+  "glb_sha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+  "web_metadata_sha256": "9637fea6c63d9ad546f37ac016237410d7bc575647311633af595194fae7bba5",
+  "catalog_sha256": "7b064f9e4db474b73f3cfc66d17bded589e147e40abfdd81f20fc8a9d5556b87",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "environment": "Chromium headless; local Vite site; software WebGL",
+  "page_errors": [],
+  "layouts": {
+    "desktop": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+    },
+    "tablet": {
+      "width": 768,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+    },
+    "mobile": {
+      "width": 375,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "stats": "27 款设备24,361 个组件324 页 A3 图纸"
+    }
+  },
+  "gzip": {
+    "checked": true,
+    "bytes": 19361265,
+    "sha256": "d67c0f0080f5fafb9ecfc4f0449aa41f3c0598bded1073f62f0ff02a428f4488",
+    "decoded_sha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+    "lossless": true
+  },
+  "binding_method": "Canonical source and GLB hashes verified against export metadata; browser views/counts/links cross-checked against the current catalog and manifest",
+  "browser_network_payload_hash_verified": false,
+  "scope": "All six Switch views, visible part counts, download targets, gallery images, keyboard explode slider and three viewport widths; no gamepad-navigation or physical-device audit",
+  "raw_browser_report_sha256": {
+    "devices-switch.json": "b1ca230baa3a0480994e1a629878df060fb6ddc5dea6f6332d9f5db46a15e761",
+    "errors-switch.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "layouts.json": "7eada4c52832854aa592cda2ac011df82b31e05d06a2901f7a5c55d8c2cf7b2d"
+  }
+}

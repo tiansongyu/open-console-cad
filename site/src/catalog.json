@@ -5,14 +5,14 @@
     "prefix": "Switch",
     "model": "HAC-001",
     "count": 654,
-    "iterations": 17,
+    "iterations": 18,
     "pages": 12,
-    "bytes": 41558704,
+    "bytes": 41756556,
     "family": "hybrid",
     "views": {
       "assembled": {
         "label": "整机",
-        "description": "初代 HAC-001 外形校准：手柄外侧宽曲面、导轨侧窄过渡与约 7.6 mm 面键。整体按公开尺寸建模，局部形状结合官方图片与外观专利拟合。",
+        "description": "初代 HAC-001 外形与按键校准：修正 HOME、截图键、字样和导轨侧按键比例。整体按公开尺寸建模，局部形状与位置由官方图片和外观专利拟合。",
         "groups": [
           "Tablet",
           "Display",
@@ -74,7 +74,7 @@
       },
       "controllers": {
         "label": "控制件",
-        "description": "分别观察控制件、摇杆、PCB 和电池等组件。",
+        "description": "查看左右 Joy-Con 的按键、摇杆、导轨与内部组件；HOME、截图键、SL/SR、SYNC 和字样已按公开图片校准。局部尺寸为拟合值。",
         "groups": [
           "JoyLeft",
           "JoyRight",
@@ -122,12 +122,28 @@
       [
         "dock",
         "底座外观"
+      ],
+      [
+        "left_controls",
+        "左手柄按键"
+      ],
+      [
+        "right_controls",
+        "右手柄按键"
+      ],
+      [
+        "left_rail",
+        "左手柄侧键"
+      ],
+      [
+        "right_rail",
+        "右手柄侧键"
       ]
     ],
     "gzip": {
-      "bytes": 19274361,
-      "sha256": "56331ea96cf7373359567f8ea3634852235455b80606cdbc6ce6baac29b86f70",
-      "decoded_sha256": "0136e7e3882eb7cc2b176be9a0af453e5b71b3c58f82366ff6107d61b8106ca8",
+      "bytes": 19361265,
+      "sha256": "d67c0f0080f5fafb9ecfc4f0449aa41f3c0598bded1073f62f0ff02a428f4488",
+      "decoded_sha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
       "lossless": true
     }
   },

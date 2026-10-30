@@ -1,0 +1,2331 @@
+{
+  "model": "Nintendo Switch HAC-001 / original Joy-Con",
+  "source": "devices/switch/output/Switch_Complete.FCStd",
+  "geometry_evaluation": "Read-only saved BRep; no feature-history recompute",
+  "scope": "Consistency with declared image-fit targets and published overall envelopes",
+  "factory_equivalence_verified": false,
+  "physical_hardware_accuracy_verified": false,
+  "numerical_tolerance_mm": 1e-05,
+  "tolerance_scope": "CAD arithmetic only; not a manufacturing or physical-device tolerance",
+  "expected_operating_controls": 26,
+  "expected_physical_components": 654,
+  "checks": [
+    {
+      "name": "JoyLStickCap.size.x",
+      "actual_mm": 15.8000002,
+      "expected_mm": 15.8,
+      "absolute_error_mm": 1.999999987845058e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLStickCap.size.y",
+      "actual_mm": 15.800000200000007,
+      "expected_mm": 15.8,
+      "absolute_error_mm": 2.0000000588993316e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLStickCap.size.z",
+      "actual_mm": 2.800000100000009,
+      "expected_mm": 2.8,
+      "absolute_error_mm": 1.0000000916221552e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLStickCap.bbox_center.x",
+      "actual_mm": -101.9,
+      "expected_mm": -101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLStickCap.bbox_center.y",
+      "actual_mm": 25.3,
+      "expected_mm": 25.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLStickCap.bbox_center.z",
+      "actual_mm": 21.600000050000006,
+      "expected_mm": 21.6,
+      "absolute_error_mm": 5.000000413701855e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.size.y",
+      "actual_mm": 7.600000199999998,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.999999987845058e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.bbox_center.x",
+      "actual_mm": -101.9,
+      "expected_mm": -101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.bbox_center.y",
+      "actual_mm": 4.3999999999999995,
+      "expected_mm": 4.4,
+      "absolute_error_mm": 8.881784197001252e-16,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton0.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.size.y",
+      "actual_mm": 7.6000002,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000056086265e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.bbox_center.x",
+      "actual_mm": -94.19999999999999,
+      "expected_mm": -94.2,
+      "absolute_error_mm": 1.4210854715202004e-14,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.bbox_center.y",
+      "actual_mm": -3.3,
+      "expected_mm": -3.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton1.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.size.y",
+      "actual_mm": 7.600000199999998,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.999999987845058e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.bbox_center.x",
+      "actual_mm": -101.9,
+      "expected_mm": -101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.bbox_center.y",
+      "actual_mm": -11.0,
+      "expected_mm": -11.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton2.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.size.y",
+      "actual_mm": 7.6000002,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000056086265e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.bbox_center.x",
+      "actual_mm": -109.60000000000001,
+      "expected_mm": -109.60000000000001,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.bbox_center.y",
+      "actual_mm": -3.3,
+      "expected_mm": -3.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLFaceButton3.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.size.x",
+      "actual_mm": 27.279299890673272,
+      "expected_mm": 27.27929989067327,
+      "absolute_error_mm": 3.552713678800501e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.size.y",
+      "actual_mm": 17.5000002000002,
+      "expected_mm": 17.5,
+      "absolute_error_mm": 2.000002012891855e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.size.z",
+      "actual_mm": 2.600000099999999,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 9.999999894816369e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.bbox_center.x",
+      "actual_mm": -105.63964994533663,
+      "expected_mm": -105.63964994533663,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.bbox_center.y",
+      "actual_mm": 42.2499999999999,
+      "expected_mm": 42.25,
+      "absolute_error_mm": 9.947598300641403e-14,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLBumper.bbox_center.z",
+      "actual_mm": 11.500000049999999,
+      "expected_mm": 11.5,
+      "absolute_error_mm": 4.999999880794803e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.size.x",
+      "actual_mm": 24.900000207140934,
+      "expected_mm": 24.9,
+      "absolute_error_mm": 2.0714093551532642e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.size.y",
+      "actual_mm": 13.22993294843657,
+      "expected_mm": 13.22993294843657,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.size.z",
+      "actual_mm": 6.900000200040598,
+      "expected_mm": 6.9,
+      "absolute_error_mm": 2.000405974200703e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.bbox_center.x",
+      "actual_mm": -104.44999999642954,
+      "expected_mm": -104.45,
+      "absolute_error_mm": 3.5704630363397882e-09,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.bbox_center.y",
+      "actual_mm": 42.98711714353128,
+      "expected_mm": 42.98711714353128,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLTrigger.bbox_center.z",
+      "actual_mm": -1.9499999999995978,
+      "expected_mm": -1.95,
+      "absolute_error_mm": 4.021227795192317e-13,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.size.x",
+      "actual_mm": 4.700000199999977,
+      "expected_mm": 4.7,
+      "absolute_error_mm": 1.9999997658004531e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.size.y",
+      "actual_mm": 4.700000000000003,
+      "expected_mm": 4.7,
+      "absolute_error_mm": 2.6645352591003757e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.size.z",
+      "actual_mm": 1.4,
+      "expected_mm": 1.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.bbox_center.x",
+      "actual_mm": -90.9,
+      "expected_mm": -90.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.bbox_center.y",
+      "actual_mm": 38.0,
+      "expected_mm": 38.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLRelease.bbox_center.z",
+      "actual_mm": -0.95,
+      "expected_mm": -0.95,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.size.x",
+      "actual_mm": 0.7500000999999941,
+      "expected_mm": 0.75,
+      "absolute_error_mm": 9.999999406318238e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.size.y",
+      "actual_mm": 8.200000200000005,
+      "expected_mm": 8.2,
+      "absolute_error_mm": 2.0000000588993316e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.size.z",
+      "actual_mm": 3.600000200000001,
+      "expected_mm": 3.6,
+      "absolute_error_mm": 2.0000000100495186e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.bbox_center.x",
+      "actual_mm": -84.42499995,
+      "expected_mm": -84.425,
+      "absolute_error_mm": 4.999999703159119e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.bbox_center.y",
+      "actual_mm": 23.5,
+      "expected_mm": 23.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.size.x",
+      "actual_mm": 0.7500000999999941,
+      "expected_mm": 0.75,
+      "absolute_error_mm": 9.999999406318238e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.size.y",
+      "actual_mm": 8.200000200000002,
+      "expected_mm": 8.2,
+      "absolute_error_mm": 2.0000000233721948e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.size.z",
+      "actual_mm": 3.600000200000001,
+      "expected_mm": 3.6,
+      "absolute_error_mm": 2.0000000100495186e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.bbox_center.x",
+      "actual_mm": -84.42499995,
+      "expected_mm": -84.425,
+      "absolute_error_mm": 4.999999703159119e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.bbox_center.y",
+      "actual_mm": -18.0,
+      "expected_mm": -18.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.size.x",
+      "actual_mm": 0.6500000000000057,
+      "expected_mm": 0.65,
+      "absolute_error_mm": 5.662137425588298e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.size.y",
+      "actual_mm": 3.0999999999999996,
+      "expected_mm": 3.1,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.size.z",
+      "actual_mm": 3.1000000000000005,
+      "expected_mm": 3.1,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.bbox_center.x",
+      "actual_mm": -84.425,
+      "expected_mm": -84.425,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.bbox_center.y",
+      "actual_mm": -6.0,
+      "expected_mm": -6.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSync.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.size.x",
+      "actual_mm": 15.8000002,
+      "expected_mm": 15.8,
+      "absolute_error_mm": 1.999999987845058e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.size.y",
+      "actual_mm": 15.8000002,
+      "expected_mm": 15.8,
+      "absolute_error_mm": 1.999999987845058e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.size.z",
+      "actual_mm": 2.800000100000009,
+      "expected_mm": 2.8,
+      "absolute_error_mm": 1.0000000916221552e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.bbox_center.x",
+      "actual_mm": 101.9,
+      "expected_mm": 101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.bbox_center.y",
+      "actual_mm": -3.3000000000000003,
+      "expected_mm": -3.3,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRStickCap.bbox_center.z",
+      "actual_mm": 21.600000050000006,
+      "expected_mm": 21.6,
+      "absolute_error_mm": 5.000000413701855e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.size.y",
+      "actual_mm": 7.6000002,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000056086265e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.bbox_center.x",
+      "actual_mm": 101.9,
+      "expected_mm": 101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.bbox_center.y",
+      "actual_mm": 33.0,
+      "expected_mm": 33.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton0.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.size.y",
+      "actual_mm": 7.600000200000004,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000411357632e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.bbox_center.x",
+      "actual_mm": 109.60000000000001,
+      "expected_mm": 109.60000000000001,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.bbox_center.y",
+      "actual_mm": 25.3,
+      "expected_mm": 25.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton1.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.size.y",
+      "actual_mm": 7.600000200000002,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000233721948e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.bbox_center.x",
+      "actual_mm": 101.9,
+      "expected_mm": 101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.bbox_center.y",
+      "actual_mm": 17.6,
+      "expected_mm": 17.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton2.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.size.x",
+      "actual_mm": 7.600000199999982,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 1.9999998279729425e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.size.y",
+      "actual_mm": 7.600000200000004,
+      "expected_mm": 7.6,
+      "absolute_error_mm": 2.0000000411357632e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.size.z",
+      "actual_mm": 2.0,
+      "expected_mm": 2.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.bbox_center.x",
+      "actual_mm": 94.19999999999999,
+      "expected_mm": 94.2,
+      "absolute_error_mm": 1.4210854715202004e-14,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.bbox_center.y",
+      "actual_mm": 25.3,
+      "expected_mm": 25.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRFaceButton3.bbox_center.z",
+      "actual_mm": 14.35,
+      "expected_mm": 14.35,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.size.x",
+      "actual_mm": 27.279299890673244,
+      "expected_mm": 27.27929989067327,
+      "absolute_error_mm": 2.4868995751603507e-14,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.size.y",
+      "actual_mm": 17.50000020000001,
+      "expected_mm": 17.5,
+      "absolute_error_mm": 2.0000000944264684e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.size.z",
+      "actual_mm": 2.600000099999999,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 9.999999894816369e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.bbox_center.x",
+      "actual_mm": 105.63964994533663,
+      "expected_mm": 105.63964994533663,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.bbox_center.y",
+      "actual_mm": 42.25,
+      "expected_mm": 42.25,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRBumper.bbox_center.z",
+      "actual_mm": 11.500000049999999,
+      "expected_mm": 11.5,
+      "absolute_error_mm": 4.999999880794803e-08,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.size.x",
+      "actual_mm": 24.900000207140934,
+      "expected_mm": 24.9,
+      "absolute_error_mm": 2.0714093551532642e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.size.y",
+      "actual_mm": 13.22993294843657,
+      "expected_mm": 13.22993294843657,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.size.z",
+      "actual_mm": 6.900000200040598,
+      "expected_mm": 6.9,
+      "absolute_error_mm": 2.000405974200703e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.bbox_center.x",
+      "actual_mm": 104.44999999642954,
+      "expected_mm": 104.45,
+      "absolute_error_mm": 3.5704630363397882e-09,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.bbox_center.y",
+      "actual_mm": 42.98711714353128,
+      "expected_mm": 42.98711714353128,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRTrigger.bbox_center.z",
+      "actual_mm": -1.9499999999995978,
+      "expected_mm": -1.95,
+      "absolute_error_mm": 4.021227795192317e-13,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.size.x",
+      "actual_mm": 4.700000199999977,
+      "expected_mm": 4.7,
+      "absolute_error_mm": 1.9999997658004531e-07,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.size.y",
+      "actual_mm": 4.700000000000003,
+      "expected_mm": 4.7,
+      "absolute_error_mm": 2.6645352591003757e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.size.z",
+      "actual_mm": 1.4,
+      "expected_mm": 1.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.bbox_center.x",
+      "actual_mm": 90.9,
+      "expected_mm": 90.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.bbox_center.y",
+      "actual_mm": 38.0,
+      "expected_mm": 38.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRRelease.bbox_center.z",
+      "actual_mm": -0.95,
+      "expected_mm": -0.95,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.size.x",
+      "actual_mm": 0.7500000999999941,
+      "expected_mm": 0.75,
+      "absolute_error_mm": 9.999999406318238e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.size.y",
+      "actual_mm": 8.200000200000005,
+      "expected_mm": 8.2,
+      "absolute_error_mm": 2.0000000588993316e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.size.z",
+      "actual_mm": 3.600000200000001,
+      "expected_mm": 3.6,
+      "absolute_error_mm": 2.0000000100495186e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.bbox_center.x",
+      "actual_mm": 84.42499995,
+      "expected_mm": 84.425,
+      "absolute_error_mm": 4.999999703159119e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.bbox_center.y",
+      "actual_mm": 23.5,
+      "expected_mm": 23.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.size.x",
+      "actual_mm": 0.7500000999999941,
+      "expected_mm": 0.75,
+      "absolute_error_mm": 9.999999406318238e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.size.y",
+      "actual_mm": 8.200000200000002,
+      "expected_mm": 8.2,
+      "absolute_error_mm": 2.0000000233721948e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.size.z",
+      "actual_mm": 3.600000200000001,
+      "expected_mm": 3.6,
+      "absolute_error_mm": 2.0000000100495186e-07,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.bbox_center.x",
+      "actual_mm": 84.42499995,
+      "expected_mm": 84.425,
+      "absolute_error_mm": 4.999999703159119e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.bbox_center.y",
+      "actual_mm": -18.0,
+      "expected_mm": -18.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.size.x",
+      "actual_mm": 0.6500000000000057,
+      "expected_mm": 0.65,
+      "absolute_error_mm": 5.662137425588298e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.size.y",
+      "actual_mm": 3.0999999999999996,
+      "expected_mm": 3.1,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.size.z",
+      "actual_mm": 3.1000000000000005,
+      "expected_mm": 3.1,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.bbox_center.x",
+      "actual_mm": 84.425,
+      "expected_mm": 84.425,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.bbox_center.y",
+      "actual_mm": -6.0,
+      "expected_mm": -6.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRSync.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.size.x",
+      "actual_mm": 5.400000000000006,
+      "expected_mm": 5.4,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.size.y",
+      "actual_mm": 1.75,
+      "expected_mm": 1.75,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.size.z",
+      "actual_mm": 1.5,
+      "expected_mm": 1.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.bbox_center.x",
+      "actual_mm": -92.5,
+      "expected_mm": -92.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.bbox_center.y",
+      "actual_mm": 41.1,
+      "expected_mm": 41.1,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "MinusButton.bbox_center.z",
+      "actual_mm": 14.05,
+      "expected_mm": 14.05,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.size.x",
+      "actual_mm": 5.400000000000006,
+      "expected_mm": 5.4,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.size.y",
+      "actual_mm": 5.400000000000006,
+      "expected_mm": 5.4,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.size.z",
+      "actual_mm": 1.5,
+      "expected_mm": 1.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.bbox_center.x",
+      "actual_mm": 92.5,
+      "expected_mm": 92.5,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.bbox_center.y",
+      "actual_mm": 41.1,
+      "expected_mm": 41.1,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "PlusButton.bbox_center.z",
+      "actual_mm": 14.05,
+      "expected_mm": 14.05,
+      "absolute_error_mm": 0.0,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.size.x",
+      "actual_mm": 6.300000000000011,
+      "expected_mm": 6.3,
+      "absolute_error_mm": 1.1546319456101628e-14,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.size.y",
+      "actual_mm": 6.299999999999997,
+      "expected_mm": 6.3,
+      "absolute_error_mm": 2.6645352591003757e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.size.z",
+      "actual_mm": 1.3000000000000007,
+      "expected_mm": 1.3,
+      "absolute_error_mm": 6.661338147750939e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.bbox_center.x",
+      "actual_mm": -96.6,
+      "expected_mm": -96.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.bbox_center.y",
+      "actual_mm": -22.0,
+      "expected_mm": -22.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureButton.bbox_center.z",
+      "actual_mm": 14.0,
+      "expected_mm": 14.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.size.x",
+      "actual_mm": 6.099999999999994,
+      "expected_mm": 6.1,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.size.y",
+      "actual_mm": 6.100000000000001,
+      "expected_mm": 6.1,
+      "absolute_error_mm": 1.7763568394002505e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.size.z",
+      "actual_mm": 1.1500000000000004,
+      "expected_mm": 1.15,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.bbox_center.x",
+      "actual_mm": 96.6,
+      "expected_mm": 96.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.bbox_center.y",
+      "actual_mm": -22.0,
+      "expected_mm": -22.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeButton.bbox_center.z",
+      "actual_mm": 14.024999999999999,
+      "expected_mm": 14.025,
+      "absolute_error_mm": 1.7763568394002505e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyL.face_cluster_horizontal_pitch",
+      "actual_mm": 7.70000000000001,
+      "expected_mm": 7.7,
+      "absolute_error_mm": 9.769962616701378e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyL.face_cluster_vertical_pitch",
+      "actual_mm": 7.699999999999999,
+      "expected_mm": 7.7,
+      "absolute_error_mm": 8.881784197001252e-16,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyR.face_cluster_horizontal_pitch",
+      "actual_mm": 7.70000000000001,
+      "expected_mm": 7.7,
+      "absolute_error_mm": 9.769962616701378e-15,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "JoyR.face_cluster_vertical_pitch",
+      "actual_mm": 7.699999999999999,
+      "expected_mm": 7.7,
+      "absolute_error_mm": 8.881784197001252e-16,
+      "basis": "Retained V17 model geometry; not a hardware measurement",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.size.x",
+      "actual_mm": 8.400000000000006,
+      "expected_mm": 8.4,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.size.y",
+      "actual_mm": 8.399999999999999,
+      "expected_mm": 8.4,
+      "absolute_error_mm": 1.7763568394002505e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.size.z",
+      "actual_mm": 0.5500000000000007,
+      "expected_mm": 0.55,
+      "absolute_error_mm": 6.661338147750939e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.bbox_center.x",
+      "actual_mm": 96.6,
+      "expected_mm": 96.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.bbox_center.y",
+      "actual_mm": -22.0,
+      "expected_mm": -22.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.bbox_center.z",
+      "actual_mm": 13.725,
+      "expected_mm": 13.725,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureGlyph.size.x",
+      "actual_mm": 4.099999999999994,
+      "expected_mm": 4.1,
+      "absolute_error_mm": 5.329070518200751e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureGlyph.size.y",
+      "actual_mm": 4.100000000000001,
+      "expected_mm": 4.1,
+      "absolute_error_mm": 1.7763568394002505e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureGlyph.bbox_center.x",
+      "actual_mm": -96.6,
+      "expected_mm": -96.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "CaptureGlyph.bbox_center.y",
+      "actual_mm": -22.0,
+      "expected_mm": -22.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "HomeRing.inner_diameter",
+      "actual_mm": 6.3,
+      "expected_mm": 6.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphX.size.y",
+      "actual_mm": 3.049999999999997,
+      "expected_mm": 3.05,
+      "absolute_error_mm": 2.6645352591003757e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphX.bbox_center.x",
+      "actual_mm": 101.9,
+      "expected_mm": 101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphX.bbox_center.y",
+      "actual_mm": 33.0,
+      "expected_mm": 33.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow0.size.x",
+      "actual_mm": 2.5999999999999943,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 5.773159728050814e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow0.size.y",
+      "actual_mm": 2.2000000000000015,
+      "expected_mm": 2.2,
+      "absolute_error_mm": 1.3322676295501878e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow0.bbox_center.x",
+      "actual_mm": -101.9,
+      "expected_mm": -101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow0.bbox_center.y",
+      "actual_mm": 4.399999999999999,
+      "expected_mm": 4.3999999999999995,
+      "absolute_error_mm": 8.881784197001252e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphA.size.y",
+      "actual_mm": 3.0500000000000043,
+      "expected_mm": 3.05,
+      "absolute_error_mm": 4.440892098500626e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphA.bbox_center.x",
+      "actual_mm": 109.60000000000001,
+      "expected_mm": 109.60000000000001,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphA.bbox_center.y",
+      "actual_mm": 25.3,
+      "expected_mm": 25.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow1.size.x",
+      "actual_mm": 2.200000000000017,
+      "expected_mm": 2.2,
+      "absolute_error_mm": 1.687538997430238e-14,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow1.size.y",
+      "actual_mm": 2.5999999999999996,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 4.440892098500626e-16,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow1.bbox_center.x",
+      "actual_mm": -94.19999999999999,
+      "expected_mm": -94.19999999999999,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow1.bbox_center.y",
+      "actual_mm": -3.3,
+      "expected_mm": -3.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphB.size.y",
+      "actual_mm": 3.049999923738625,
+      "expected_mm": 3.05,
+      "absolute_error_mm": 7.626137499272545e-08,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphB.bbox_center.x",
+      "actual_mm": 101.9,
+      "expected_mm": 101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphB.bbox_center.y",
+      "actual_mm": 17.6,
+      "expected_mm": 17.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow2.size.x",
+      "actual_mm": 2.5999999999999943,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 5.773159728050814e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow2.size.y",
+      "actual_mm": 2.200000000000003,
+      "expected_mm": 2.2,
+      "absolute_error_mm": 2.6645352591003757e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow2.bbox_center.x",
+      "actual_mm": -101.9,
+      "expected_mm": -101.9,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow2.bbox_center.y",
+      "actual_mm": -11.0,
+      "expected_mm": -11.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphY.size.y",
+      "actual_mm": 3.0500000000000043,
+      "expected_mm": 3.05,
+      "absolute_error_mm": 4.440892098500626e-15,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphY.bbox_center.x",
+      "actual_mm": 94.19999999999999,
+      "expected_mm": 94.19999999999999,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "ButtonGlyphY.bbox_center.y",
+      "actual_mm": 25.3,
+      "expected_mm": 25.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow3.size.x",
+      "actual_mm": 2.200000000000017,
+      "expected_mm": 2.2,
+      "absolute_error_mm": 1.687538997430238e-14,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow3.size.y",
+      "actual_mm": 2.6,
+      "expected_mm": 2.6,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow3.bbox_center.x",
+      "actual_mm": -109.60000000000001,
+      "expected_mm": -109.60000000000001,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "DpadArrow3.bbox_center.y",
+      "actual_mm": -3.3,
+      "expected_mm": -3.3,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED1.bbox_center.y",
+      "actual_mm": 12.0,
+      "expected_mm": 12.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED1.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED2.bbox_center.y",
+      "actual_mm": 8.0,
+      "expected_mm": 8.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED2.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED3.bbox_center.y",
+      "actual_mm": 4.0,
+      "expected_mm": 4.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED3.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED4.bbox_center.y",
+      "actual_mm": 0.0,
+      "expected_mm": 0.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLLED4.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED1.bbox_center.y",
+      "actual_mm": 12.0,
+      "expected_mm": 12.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED1.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED2.bbox_center.y",
+      "actual_mm": 8.0,
+      "expected_mm": 8.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED2.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED3.bbox_center.y",
+      "actual_mm": 4.0,
+      "expected_mm": 4.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED3.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED4.bbox_center.y",
+      "actual_mm": 0.0,
+      "expected_mm": 0.0,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyRLED4.bbox_center.z",
+      "actual_mm": 7.4,
+      "expected_mm": 7.4,
+      "absolute_error_mm": 0.0,
+      "basis": "Declared public-image fit; not a manufacturer dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyLSL.engraving",
+      "basis": "Declared recessed SL/SR lettering; model geometry check only",
+      "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+      "blank_volume_mm3": 21.49619449019235,
+      "actual_volume_mm3": 21.331959542107924,
+      "removed_volume_mm3": 0.1642349540079752,
+      "added_volume_mm3": 0.0,
+      "volume_tolerance_mm3": 1e-06,
+      "removed_solids": 2,
+      "expected_removed_solids": 2,
+      "actual_depth_mm": 0.08000019999998642,
+      "expected_depth_mm": 0.08,
+      "removed_bbox_center_xyz_mm": [
+        -84.09,
+        23.5,
+        7.4
+      ],
+      "expected_removed_bbox_center_xyz_mm": [
+        -84.09,
+        23.5,
+        7.4
+      ],
+      "passed": true
+    },
+    {
+      "name": "JoyLSR.engraving",
+      "basis": "Declared recessed SL/SR lettering; model geometry check only",
+      "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+      "blank_volume_mm3": 21.49619449019235,
+      "actual_volume_mm3": 21.280220877714765,
+      "removed_volume_mm3": 0.21597361761519837,
+      "added_volume_mm3": 0.0,
+      "volume_tolerance_mm3": 1e-06,
+      "removed_solids": 2,
+      "expected_removed_solids": 2,
+      "actual_depth_mm": 0.08000019999998642,
+      "expected_depth_mm": 0.08,
+      "removed_bbox_center_xyz_mm": [
+        -84.09,
+        -18.0,
+        7.4
+      ],
+      "expected_removed_bbox_center_xyz_mm": [
+        -84.09,
+        -18.0,
+        7.4
+      ],
+      "passed": true
+    },
+    {
+      "name": "JoyRSR.engraving",
+      "basis": "Declared recessed SL/SR lettering; model geometry check only",
+      "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+      "blank_volume_mm3": 21.496194490192348,
+      "actual_volume_mm3": 21.280220866900965,
+      "removed_volume_mm3": 0.21597362063168973,
+      "added_volume_mm3": 0.0,
+      "volume_tolerance_mm3": 1e-06,
+      "removed_solids": 2,
+      "expected_removed_solids": 2,
+      "actual_depth_mm": 0.08000019999998642,
+      "expected_depth_mm": 0.08,
+      "removed_bbox_center_xyz_mm": [
+        84.09,
+        23.5,
+        7.400000000000001
+      ],
+      "expected_removed_bbox_center_xyz_mm": [
+        84.09,
+        23.5,
+        7.4
+      ],
+      "passed": true
+    },
+    {
+      "name": "JoyRSL.engraving",
+      "basis": "Declared recessed SL/SR lettering; model geometry check only",
+      "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+      "blank_volume_mm3": 21.496194490192345,
+      "actual_volume_mm3": 21.331959533182992,
+      "removed_volume_mm3": 0.164234956055969,
+      "added_volume_mm3": 0.0,
+      "volume_tolerance_mm3": 1e-06,
+      "removed_solids": 2,
+      "expected_removed_solids": 2,
+      "actual_depth_mm": 0.08000019999998642,
+      "expected_depth_mm": 0.08,
+      "removed_bbox_center_xyz_mm": [
+        84.09,
+        -18.0,
+        7.400000000000001
+      ],
+      "expected_removed_bbox_center_xyz_mm": [
+        84.09,
+        -18.0,
+        7.4
+      ],
+      "passed": true
+    },
+    {
+      "name": "handheld.envelope.x",
+      "actual_mm": 239.00000220000004,
+      "expected_mm": 239.0,
+      "absolute_error_mm": 2.200000039920269e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "handheld.envelope.y",
+      "actual_mm": 102.00000220003487,
+      "expected_mm": 102.0,
+      "absolute_error_mm": 2.200034870725176e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "handheld.envelope.z",
+      "actual_mm": 28.400000200019903,
+      "expected_mm": 28.4,
+      "absolute_error_mm": 2.0001990463924813e-07,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_left.envelope.x",
+      "actual_mm": 35.900001100000026,
+      "expected_mm": 35.9,
+      "absolute_error_mm": 1.1000000270655619e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_left.envelope.y",
+      "actual_mm": 102.00000220001489,
+      "expected_mm": 102.0,
+      "absolute_error_mm": 2.2000148902634464e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_left.envelope.z",
+      "actual_mm": 28.400000200019903,
+      "expected_mm": 28.4,
+      "absolute_error_mm": 2.0001990463924813e-07,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_right.envelope.x",
+      "actual_mm": 35.90000110000004,
+      "expected_mm": 35.9,
+      "absolute_error_mm": 1.1000000412764166e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_right.envelope.y",
+      "actual_mm": 102.00000220003487,
+      "expected_mm": 102.0,
+      "absolute_error_mm": 2.200034870725176e-06,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    },
+    {
+      "name": "joy_right.envelope.z",
+      "actual_mm": 28.400000200019903,
+      "expected_mm": 28.4,
+      "absolute_error_mm": 2.0001990463924813e-07,
+      "basis": "Nintendo published nominal overall envelope",
+      "passed": true
+    }
+  ],
+  "operating_controls": [
+    {
+      "part_id": "JoyLStickCap",
+      "object": "JoyLStickCap",
+      "size_xyz_mm": {
+        "x": 15.8000002,
+        "y": 15.800000200000007,
+        "z": 2.800000100000009
+      },
+      "bbox_center_xyz_mm": {
+        "x": -101.9,
+        "y": 25.3,
+        "z": 21.600000050000006
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLFaceButton0",
+      "object": "JoyLFaceButton001",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.600000199999998,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": -101.9,
+        "y": 4.3999999999999995,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLFaceButton1",
+      "object": "JoyLFaceButton002",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.6000002,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": -94.19999999999999,
+        "y": -3.3,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLFaceButton2",
+      "object": "JoyLFaceButton003",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.600000199999998,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": -101.9,
+        "y": -11.0,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLFaceButton3",
+      "object": "JoyLFaceButton004",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.6000002,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": -109.60000000000001,
+        "y": -3.3,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLBumper",
+      "object": "JoyLBumperRefined",
+      "size_xyz_mm": {
+        "x": 27.279299890673272,
+        "y": 17.5000002000002,
+        "z": 2.600000099999999
+      },
+      "bbox_center_xyz_mm": {
+        "x": -105.63964994533663,
+        "y": 42.2499999999999,
+        "z": 11.500000049999999
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLTrigger",
+      "object": "JoyLTriggerRefined003",
+      "size_xyz_mm": {
+        "x": 24.900000207140934,
+        "y": 13.22993294843657,
+        "z": 6.900000200040598
+      },
+      "bbox_center_xyz_mm": {
+        "x": -104.44999999642954,
+        "y": 42.98711714353128,
+        "z": -1.9499999999995978
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLRelease",
+      "object": "JoyLRelease001",
+      "size_xyz_mm": {
+        "x": 4.700000199999977,
+        "y": 4.700000000000003,
+        "z": 1.4
+      },
+      "bbox_center_xyz_mm": {
+        "x": -90.9,
+        "y": 38.0,
+        "z": -0.95
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyLSL",
+      "object": "JoyLSL001",
+      "size_xyz_mm": {
+        "x": 0.7500000999999941,
+        "y": 8.200000200000005,
+        "z": 3.600000200000001
+      },
+      "bbox_center_xyz_mm": {
+        "x": -84.42499995,
+        "y": 23.5,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "JoyLSR",
+      "object": "JoyLSR001",
+      "size_xyz_mm": {
+        "x": 0.7500000999999941,
+        "y": 8.200000200000002,
+        "z": 3.600000200000001
+      },
+      "bbox_center_xyz_mm": {
+        "x": -84.42499995,
+        "y": -18.0,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "JoyLSync",
+      "object": "JoyLSync001",
+      "size_xyz_mm": {
+        "x": 0.6500000000000057,
+        "y": 3.0999999999999996,
+        "z": 3.1000000000000005
+      },
+      "bbox_center_xyz_mm": {
+        "x": -84.425,
+        "y": -6.0,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "JoyRStickCap",
+      "object": "JoyRStickCap",
+      "size_xyz_mm": {
+        "x": 15.8000002,
+        "y": 15.8000002,
+        "z": 2.800000100000009
+      },
+      "bbox_center_xyz_mm": {
+        "x": 101.9,
+        "y": -3.3000000000000003,
+        "z": 21.600000050000006
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRFaceButton0",
+      "object": "JoyRFaceButton001",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.6000002,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": 101.9,
+        "y": 33.0,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRFaceButton1",
+      "object": "JoyRFaceButton002",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.600000200000004,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": 109.60000000000001,
+        "y": 25.3,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRFaceButton2",
+      "object": "JoyRFaceButton003",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.600000200000002,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": 101.9,
+        "y": 17.6,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRFaceButton3",
+      "object": "JoyRFaceButton004",
+      "size_xyz_mm": {
+        "x": 7.600000199999982,
+        "y": 7.600000200000004,
+        "z": 2.0
+      },
+      "bbox_center_xyz_mm": {
+        "x": 94.19999999999999,
+        "y": 25.3,
+        "z": 14.35
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRBumper",
+      "object": "JoyRBumperRefined001",
+      "size_xyz_mm": {
+        "x": 27.279299890673244,
+        "y": 17.50000020000001,
+        "z": 2.600000099999999
+      },
+      "bbox_center_xyz_mm": {
+        "x": 105.63964994533663,
+        "y": 42.25,
+        "z": 11.500000049999999
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRTrigger",
+      "object": "JoyRTriggerRefined003",
+      "size_xyz_mm": {
+        "x": 24.900000207140934,
+        "y": 13.22993294843657,
+        "z": 6.900000200040598
+      },
+      "bbox_center_xyz_mm": {
+        "x": 104.44999999642954,
+        "y": 42.98711714353128,
+        "z": -1.9499999999995978
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRRelease",
+      "object": "JoyRRelease001",
+      "size_xyz_mm": {
+        "x": 4.700000199999977,
+        "y": 4.700000000000003,
+        "z": 1.4
+      },
+      "bbox_center_xyz_mm": {
+        "x": 90.9,
+        "y": 38.0,
+        "z": -0.95
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "JoyRSR",
+      "object": "JoyRSR001",
+      "size_xyz_mm": {
+        "x": 0.7500000999999941,
+        "y": 8.200000200000005,
+        "z": 3.600000200000001
+      },
+      "bbox_center_xyz_mm": {
+        "x": 84.42499995,
+        "y": 23.5,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "JoyRSL",
+      "object": "JoyRSL001",
+      "size_xyz_mm": {
+        "x": 0.7500000999999941,
+        "y": 8.200000200000002,
+        "z": 3.600000200000001
+      },
+      "bbox_center_xyz_mm": {
+        "x": 84.42499995,
+        "y": -18.0,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "JoyRSync",
+      "object": "JoyRSync001",
+      "size_xyz_mm": {
+        "x": 0.6500000000000057,
+        "y": 3.0999999999999996,
+        "z": 3.1000000000000005
+      },
+      "bbox_center_xyz_mm": {
+        "x": 84.425,
+        "y": -6.0,
+        "z": 7.4
+      },
+      "press_axis": "x",
+      "axis_note": "Rail controls: Y/Z are face dimensions, X is axial thickness"
+    },
+    {
+      "part_id": "MinusButton",
+      "object": "MinusButton",
+      "size_xyz_mm": {
+        "x": 5.400000000000006,
+        "y": 1.75,
+        "z": 1.5
+      },
+      "bbox_center_xyz_mm": {
+        "x": -92.5,
+        "y": 41.1,
+        "z": 14.05
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "PlusButton",
+      "object": "PlusButton",
+      "size_xyz_mm": {
+        "x": 5.400000000000006,
+        "y": 5.400000000000006,
+        "z": 1.5
+      },
+      "bbox_center_xyz_mm": {
+        "x": 92.5,
+        "y": 41.1,
+        "z": 14.05
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "CaptureButton",
+      "object": "CaptureButton001",
+      "size_xyz_mm": {
+        "x": 6.300000000000011,
+        "y": 6.299999999999997,
+        "z": 1.3000000000000007
+      },
+      "bbox_center_xyz_mm": {
+        "x": -96.6,
+        "y": -22.0,
+        "z": 14.0
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    },
+    {
+      "part_id": "HomeButton",
+      "object": "HomeButton001",
+      "size_xyz_mm": {
+        "x": 6.099999999999994,
+        "y": 6.100000000000001,
+        "z": 1.1500000000000004
+      },
+      "bbox_center_xyz_mm": {
+        "x": 96.6,
+        "y": -22.0,
+        "z": 14.024999999999999
+      },
+      "press_axis": "z",
+      "axis_note": "Z is model depth"
+    }
+  ],
+  "source_sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
+  "physical_components_checked": 654,
+  "physical_solids": 835,
+  "duplicate_or_missing_part_ids": [],
+  "invalid_physical_components": [],
+  "inputs_unchanged": true,
+  "passed": true
+}

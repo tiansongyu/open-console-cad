@@ -1,10 +1,12 @@
-import os,sys,json,csv
+import os,sys,json,csv,hashlib
 from pathlib import Path
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 sys.path.insert(0,str(Path(os.environ.get('PATH_TO_FREECAD_LIBDIR','')).parent/'Mod'))
 import FreeCAD as App,Part
 import Sketcher, _PartDesign, Spreadsheet
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';m=json.loads((OUT/'reports/final_manifest.json').read_text());d=App.openDocument(str(OUT/'Switch_Complete.FCStd'));c={r['part_id']:d.getObject(r['name']) for r in m['objects']}
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';m=json.loads((OUT/'reports/final_manifest.json').read_text())
+source=OUT/'Switch_Complete.FCStd';source_sha256=hashlib.sha256(source.read_bytes()).hexdigest()
+d=App.openDocument(str(source));c={r['part_id']:d.getObject(r['name']) for r in m['objects']}
 def bound(keys):
  b=App.BoundBox()
  for key in keys:b.add(c[key].Shape.optimalBoundingBox(False,False))
@@ -24,6 +26,10 @@ a=c['JoyRFaceButton1'].Shape.optimalBoundingBox(False,False).Center;b=c['JoyRFac
 report=json.loads((OUT/'reports/drawing_checks.json').read_text());report['model_measurements']=rows;report['pass']=all(r['pass'] for r in rows) and len(report['dimensions'])==23
 report['bounding_method']='Saved BRep optimalBoundingBox(False, False), independent of display triangulation; numerical model tolerance 0.00001 mm, not a hardware accuracy claim'
 report['full_history_recompute_tested']=False
+assert hashlib.sha256(source.read_bytes()).hexdigest()==source_sha256, 'Native source changed during measurement'
+report['source_sha256']=source_sha256
+report['source']='devices/switch/output/Switch_Complete.FCStd'
+report['revision']=m['design_iterations']
 (OUT/'reports/drawing_checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 # Refresh the CSV from exact boundaries, preserving the stable identifiers.
 with (OUT/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:

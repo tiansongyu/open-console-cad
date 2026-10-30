@@ -3,7 +3,8 @@ original_doc=D
 expected={k:o.Shape.copy() for k,o in C.items()}
 ns={'App':App,'Gui':Gui,'__name__':'__switch_rebuild_check__','PROJECT_ROOT':str(ROOT),'PROJECT_OUTPUT':str(ROOT/'output/rebuild_verification')}
 progress=OUT/'reports/rebuild_progress.json'
-for p in sorted((ROOT/'scripts').glob('iter[0-9][0-9]_*.py')):
+stage_scripts=sorted((ROOT/'scripts').glob('iter[0-9][0-9]_*.py'))
+for p in stage_scripts:
     progress.write_text(json.dumps({'state':'running','stage':p.name,'time':time.time()}))
     exec(compile(p.read_bytes(),str(p),'exec'),ns)
 rebuilt=ns['C'];checks=[]
@@ -20,7 +21,7 @@ for key,o in rebuilt.items():
     checks.append(check)
 assert all(r['pass'] for r in checks)
 ns['D'].saveAs(str(ROOT/'output/rebuild_verification/Switch_Rebuilt.FCStd'))
-RESULT={'pass':True,'stages':14,'physical_components':len(rebuilt),'max_volume_delta_mm3':max(abs(x['volume_delta_mm3']) for x in checks),'max_bbox_delta_mm':max(x['bbox_max_delta_mm'] for x in checks),'checks':checks}
+RESULT={'pass':True,'stages':len(stage_scripts),'physical_components':len(rebuilt),'max_volume_delta_mm3':max(abs(x['volume_delta_mm3']) for x in checks),'max_bbox_delta_mm':max(x['bbox_max_delta_mm'] for x in checks),'checks':checks}
 (OUT/'reports/rebuild_verification.json').write_text(json.dumps(RESULT,ensure_ascii=False,indent=2))
 progress.write_text(json.dumps({'state':'done','pass':True,'time':time.time()}))
 App.closeDocument(ns['D'].Name);App.setActiveDocument(original_doc.Name)

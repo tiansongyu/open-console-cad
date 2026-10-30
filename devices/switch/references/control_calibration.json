@@ -1,0 +1,285 @@
+{
+  "review_date": "2026-10-29",
+  "model_scope": "Original Nintendo Joy-Con HAC-015/HAC-016 paired with Nintendo Switch HAC-001; Joy-Con 2 excluded.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.com/sg/hardware/detail/switch/index.html",
+      "use": "Original Switch product page; published front/back/rail-side Joy-Con images",
+      "verified_online": true
+    },
+    {
+      "url": "https://www.nintendo.com/sg/hardware/detail/switch/img/08-local-specs/body-switch03-front.jpg",
+      "size_px": [
+        1880,
+        1400
+      ],
+      "use": "Both front control layouts, glyphs, HOME and capture",
+      "sha256": "a722de2302f0436accdfab5202763fccfa7992cb3f35eac1c99764c8e214a440",
+      "reference_file": "body-switch03-front.jpg"
+    },
+    {
+      "url": "https://www.nintendo.com/sg/hardware/detail/switch/img/08-local-specs/body-switch03-side.jpg",
+      "size_px": [
+        1880,
+        1400
+      ],
+      "use": "SL/SR caps, SYNC, LEDs, stick silhouette",
+      "sha256": "7aae6f086f6bab5ebf8e603388a891485b51026bda802503cf7fe836f9ac4ee3",
+      "reference_file": "body-switch03-side.jpg"
+    },
+    {
+      "url": "https://www.nintendo.com/sg/hardware/detail/switch/img/08-local-specs/body-switch03-back.jpg",
+      "size_px": [
+        1880,
+        1400
+      ],
+      "use": "Rear triggers and release buttons",
+      "sha256": "594391a5ecb02654f3c7cfc0d1e27ca99984d5d0fc2eac5bda0b8c1c4571a3f8",
+      "reference_file": "body-switch03-back.jpg"
+    },
+    {
+      "url": "https://www.nintendo.com/sg/hardware/switch/modal/specs/joy-con.html?width=960",
+      "use": "Published total Joy-Con 102 x 35.9 x 28.4 mm; no local button dimensions"
+    },
+    {
+      "url": "https://patentimages.storage.googleapis.com/57/37/2a/8dd4c3079855b2/USD819642S1.pdf",
+      "sha256": "b87297526c12fd3cb73307284293184942d012115ac13b8c3ad660529682e036",
+      "use": "Left original Joy-Con Fig.3 front, Fig.4 rear, Fig.5/6 top/bottom, Fig.7 rail side, Fig.8 outer side. Later Fig.9-14 wide-body embodiment excluded from dimensional calibration.",
+      "reference_file": "USD819642S1.pdf"
+    },
+    {
+      "url": "https://www.nintendo.com/us/patents/",
+      "use": "Nintendo associates D819642 with Joy-Con",
+      "verified_online": true
+    }
+  ],
+  "coordinate_basis": {
+    "front_shell_top_bottom_y_px": [
+      174,
+      914
+    ],
+    "front_shell_inner_edge_x_px": {
+      "left": 845,
+      "right": 1016
+    },
+    "front_model_shell_height_mm": 102,
+    "rail_side_shell_top_bottom_y_px": [
+      174,
+      915
+    ],
+    "warning": "Mapping the existing 102 mm model shell to the selected shell edges is a fitting convention. The published overall height includes small projections; the alternate whole-image anchor at y=168-915 changes estimates by up to approximately 0.7 mm. These are not manufacturing dimensions.",
+    "front_mm_per_px": 0.13783783783783785,
+    "rail_side_mm_per_px": 0.13765182186234817,
+    "patent_render_page_height_px": 1400,
+    "patent_standard_embodiment_height_y_px": [
+      256,
+      1120
+    ],
+    "patent_mm_per_px": 0.11805555555555555,
+    "pixel_bbox_order": [
+      "x",
+      "y",
+      "width",
+      "height"
+    ],
+    "model_axes": "X follows handheld width, Y increases toward the shell top, and Z follows housing depth. Front shell top/bottom use Y=+51/-51 mm; inner shell edges use X=-86.5/+86.5 mm."
+  },
+  "front_controls": {
+    "round_face_keys": {
+      "decision": "retain 7.6 mm diameter and 7.7 mm radial pitch",
+      "evidence": "Existing full-image circle fit is about 7.68 mm; patent Fig. 3 gives about 7.56 mm. There is no stronger evidence for changing the existing dimensions.",
+      "retained_diameter_mm": 7.6,
+      "retained_radial_pitch_mm": 7.7
+    },
+    "ABXY_glyph": {
+      "white_pixel_bboxes_px": {
+        "X": [
+          1122,
+          296,
+          17,
+          22
+        ],
+        "B": [
+          1124,
+          406,
+          15,
+          21
+        ],
+        "Y": [
+          1063,
+          351,
+          17,
+          21
+        ]
+      },
+      "method": "OpenCV grayscale > 175 within a 35 x 35 pixel centered ROI; A is occluded by a red callout and excluded from this measurement.",
+      "image_estimate_height_range_mm": [
+        3.0,
+        3.2
+      ],
+      "adopted_actual_glyph_height_mm": 3.05,
+      "alignment": "Center the actual glyph bounds on its button center."
+    },
+    "direction_triangle": {
+      "dark_pixel_bbox_up_px": [
+        722,
+        502,
+        19,
+        15
+      ],
+      "dark_pixel_bbox_down_px": [
+        722,
+        614,
+        19,
+        16
+      ],
+      "appearance": "Dark molded triangle on dark grey face; not white printed arrows",
+      "adopted_width_height_mm": [
+        2.6,
+        2.2
+      ]
+    },
+    "HOME": {
+      "center_px": [
+        1089.5,
+        704.5
+      ],
+      "inner_edge_distance_px": 73.5,
+      "inner_edge_distance_estimate_mm": 10.13,
+      "distance_below_shell_top_px": 530.5,
+      "distance_below_shell_top_estimate_mm": 73.12,
+      "central_cap_diameter_mm": 6.1,
+      "outer_ring_diameter_mm": 8.4,
+      "ring_inner_diameter_mm": 6.3,
+      "appearance": "Grey cap with a black house symbol and a lighter grey outer ring.",
+      "adopted_model_xy_mm": [
+        96.6,
+        -22.0
+      ]
+    },
+    "capture": {
+      "center_px": [
+        771.5,
+        704.5
+      ],
+      "adopted_model_xy_mm": [
+        -96.6,
+        -22.0
+      ],
+      "adopted_square_size_mm": 6.3,
+      "circular_symbol_outer_diameter_mm": 4.1
+    },
+    "plus_minus": {
+      "decision": "Retain the 5.4 mm plus/minus spans and 1.7/1.75 mm strokes; cap-versus-socket ambiguity exceeds the likely change.",
+      "minus_outer_dark_outline_bbox_px": [
+        785,
+        241,
+        43,
+        16
+      ],
+      "plus_outer_dark_outline_bbox_px": [
+        1034,
+        227,
+        43,
+        43
+      ],
+      "approximate_visible_cap_span_px": [
+        39,
+        41
+      ],
+      "approximate_visible_cap_span_mm": [
+        5.38,
+        5.65
+      ],
+      "approximate_stroke_px": [
+        11,
+        13
+      ],
+      "approximate_stroke_mm": [
+        1.52,
+        1.79
+      ],
+      "method": "Neutral pixels with grayscale < 60 identify the outer dark outline, including socket and shadow. The raised cap boundary lies approximately 1-2 pixels inside. A red annotation crosses the central bar, so there is no fully unobscured cap contour.",
+      "uncertainty_mm": [
+        0.3,
+        0.5
+      ]
+    },
+    "stick_cap": {
+      "decision": "Retain the current 15.8 mm cap diameter.",
+      "evidence": "The patent side cap silhouette measures about 127-129 pixels at 102/864 mm per pixel, suggesting 15.0-15.2 mm. The retail side image suggests about 14.5-15.2 mm depending on edge selection. The front patent outer ring is about 17.1 mm but includes another contour. Different projected surfaces and retail-rendering uncertainty do not support a precise replacement diameter.",
+      "retained_cap_diameter_mm": 15.8
+    }
+  },
+  "rail_controls": {
+    "visible_cap_size_px": [
+      26,
+      60
+    ],
+    "upper_center_y_px": 373,
+    "lower_center_y_px": 674,
+    "identity": {
+      "left_upper": "SL",
+      "left_lower": "SR",
+      "right_upper": "SR",
+      "right_lower": "SL"
+    },
+    "sync_center_y_px": 588,
+    "sync_visible_cap_diameter_px": [
+      22,
+      24
+    ],
+    "led_centers_y_px": [
+      455.5,
+      485.5,
+      515.5,
+      543.5
+    ],
+    "cross_section_alignment": "SL/SR, SYNC and LED centers lie at image x approximately 726, within 2 pixels. The adopted model puts all centers on the same rail-depth centerline at Z=7.4 mm.",
+    "estimated_position_uncertainty_mm": [
+      0.3,
+      0.5
+    ],
+    "adopted_width_length_mm": [
+      3.6,
+      8.2
+    ],
+    "adopted_upper_lower_model_y_mm": [
+      23.5,
+      -18.0
+    ],
+    "adopted_sync_model_y_mm": -6.0,
+    "adopted_sync_diameter_mm": 3.1,
+    "adopted_led_model_y_mm": [
+      12,
+      8,
+      4,
+      0
+    ],
+    "adopted_common_model_z_mm": 7.4
+  },
+  "shoulder_trigger_release": {
+    "decision": "Retain current shoulder, rear-trigger and release-button geometry after comparison with Fig. 3/4/5/7.",
+    "reason": "The current shoulder projected extent of 28 mm, trigger span of 24.9 x 13.2 mm, and release cap/hole diameters of 4.7/5.06 mm fall within the broad photograph and patent interpretation. No unambiguous discrepancy supports changing them in this iteration."
+  },
+  "limitations": [
+    "All local dimensions are image estimates, not Nintendo published button dimensions or physical metrology.",
+    "Red leader lines obscure parts of A, left arrow, minus, plus, HOME edge and SYNC lower region.",
+    "Keep separate cap, bevel, socket/ring, glyph and cast shadow boundaries.",
+    "D819642 only directly supplies the left Joy-Con standard embodiment; do not mirror its minus/capture layout to infer right plus/HOME.",
+    "Marketing images are near-front, not certified orthographic camera captures. Retain existing dimensions when evidence is ambiguous."
+  ],
+  "review_notes": [
+    "Reference URLs, asset hashes and image coordinates are retained; reference photographs and patent page images are not redistributed with this record.",
+    "Nintendo source pages and their linked images were checked online; the patent PDF was inspected as complete rendered pages."
+  ],
+  "record_scope": "Public-reference image measurements and adopted modeling values. This record does not certify CAD validity, hardware accuracy or factory equivalence.",
+  "image_measurement_uncertainty": {
+    "typical_estimated_local_range_mm": [
+      0.3,
+      0.5
+    ],
+    "interpretation": "Approximate uncertainty from pixel edge selection, image scaling and occlusion. This is neither a Nintendo manufacturing tolerance nor a verified bound on error against physical hardware. The scale-anchor ambiguity is recorded separately."
+  },
+  "factory_equivalence_verified": false
+}

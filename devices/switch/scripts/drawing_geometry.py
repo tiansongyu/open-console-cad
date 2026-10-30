@@ -7,6 +7,7 @@ sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 import FreeCAD as App,Part,TechDraw,Sketcher,PartDesign,Spreadsheet
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';DRAW=OUT/'drawings';CACHE=DRAW/'projections';CACHE.mkdir(parents=True,exist_ok=True)
 M=json.loads((OUT/'reports/final_manifest.json').read_text())
+SOURCE_HASHES={name:hashlib.sha256((OUT/name).read_bytes()).hexdigest() for name in ['Switch_Complete.FCStd','Switch_Exploded.FCStd']}
 D=App.openDocument(str(OUT/'Switch_Complete.FCStd'));E=App.openDocument(str(OUT/'Switch_Exploded.FCStd'))
 C={r['part_id']:D.getObject(r['name']) for r in M['objects']};EC={r['part_id']:E.getObject(r['name']) for r in M['exploded_objects']}
 HH=M['handheld_groups'];FONT='TsangerJinKai02, Noto Serif CJK SC, serif'
@@ -137,9 +138,9 @@ for x,label in [(56,'L 正面'),(158,'R 正面'),(259,'L 内侧'),(353,'R 背面
 s.dim(l,(-119.5,0,0),(-83.6,0,0),'x',16,published=True);s.dim(l,(-103,-51,0),(-103,51,0),'y',20,published=True)
 s.dim(r,(94.2,25.3,15.35),(109.6,25.3,15.35),'x',163,label='15.4')
 s.dim(inner,(-103,0,-5.4),(-103,0,23),'x',163,published=True)
-s.text(10,184,'摇杆帽 Ø15.8 · 面按键 Ø7.6 · 按键中心间距 7.7',3.2)
-s.text(10,194,'L 摇杆中心：X=-101.9，Y=25.3，R 摇杆中心：X=101.9，Y=-3.3',3.2)
-s.text(10,204,'上述局部尺寸均为近似值，按当前模型坐标记录。',3.2)
+s.text(10,184,'摇杆帽 Ø15.8 · 面键 Ø7.6 / 中心至组中心 7.7 · HOME 外环 Ø8.4 / 芯 Ø6.1 · 截图 6.3×6.3',3.2)
+s.text(10,194,'ABXY 字高 3.05 · SL/SR 3.6×8.2 · SYNC Ø3.1 · 摇杆中心 L(-101.9,25.3) / R(101.9,-3.3)',3.2)
+s.text(10,204,'上述局部尺寸为公开图像拟合或保留的模型近似值，不表示原厂尺寸与公差。',3.2)
 s.save()
 # 04 / connector, rail and analog details, with enlarged actual BRep curves.
 s=Sheet(4,'接口与控制机构详图',['USB-C 的金属壳、绝缘舌片与上下触点分开建模。','导轨与摇杆详图保留实体几何，尺寸为当前研究模型值。'])
@@ -238,14 +239,15 @@ s=Sheet(12,'尺寸依据与检查索引',['公开包络与本模型局部尺寸�
 for y,title,lines in [
 (16,'公开尺寸',["整机 239 × 102 × 13.9 mm，含摇杆/扳机最大厚 28.4 mm。","主机单体 173 × 101 × 13.9 mm，手柄含轨道宽 35.9 mm。","底座 173 × 104 × 54 mm。"]),
 (59,'模型范围',["局部壁厚、孔位、紧固件和安装间隙为近似设计。","电池、主板、芯片、风扇和控制器内部为主要模块布局示意。","尺寸数字描述此版模型，不能代替制造方工程资料。"]),
-(102,'验证文件',["17 轮设计源码，15-17 轮为 HAC-001 外形精修。","17_interference_audit.json：本版完整实体干涉核验。","exterior_refinement_audit.json：外形尺寸与版本检查。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
+(102,'验证文件',["18 轮设计源码；第 18 轮校准按键，本轮未重跑全部源码。","control_calibration_audit.json：26 个操作件及控制布局。","control_interference.json：已保存整套实体的干涉检查。","control_delivery_checks.json：本版交付与检查报告索引。"]),
 (157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 2017 年 Nintendo Switch 现场拆解：主要内部模块布局。","完整链接与尺寸依据见 references/SOURCES.md。"])
 ]:
  s.text(10,y,title,4,fill='#1B365D')
  for j,line in enumerate(lines):s.text(10,y+10+j*8,line,3.2)
-s.text(385,210,'CAD STUDY · 2026.10.13 · Rev 17',3.2,'end');s.save()
+s.text(385,210,'CAD STUDY · 2026.10.29 · Rev 18',3.2,'end');s.save()
 assert len(PAGES)==12
 (DRAW/'drawing_pages.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2))
-(OUT/'reports/drawing_checks.json').write_text(json.dumps({'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; views containing calibrated shells serialize bounded visible hard, smooth and silhouette edges with 0.01 mm chordal deflection; unbounded HLR outline artifacts are omitted; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))
+assert all(hashlib.sha256((OUT/name).read_bytes()).hexdigest()==digest for name,digest in SOURCE_HASHES.items()), 'Native source changed during projection'
+(OUT/'reports/drawing_checks.json').write_text(json.dumps({'source_sha256':SOURCE_HASHES['Switch_Complete.FCStd'],'projection_sources_sha256':SOURCE_HASHES,'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; views containing calibrated shells serialize bounded visible hard, smooth and silhouette edges with 0.01 mm chordal deflection; unbounded HLR outline artifacts are omitted; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))
 App.closeDocument(D.Name);App.closeDocument(E.Name)
 print(json.dumps({'pages':12,'dimensions':len(CHECKS),'completed':True}),flush=True)

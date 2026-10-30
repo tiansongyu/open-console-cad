@@ -1,0 +1,348 @@
+{
+  "device": "switch",
+  "model": "Nintendo Switch HAC-001",
+  "revision": 18,
+  "date": "2026-10-29",
+  "geometry_and_reference_review_date": "2026-10-29",
+  "delivery_integrity_review_date": "2026-10-29",
+  "source": "devices/switch/output/Switch_Complete.FCStd",
+  "source_sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
+  "physical_components": 654,
+  "solids": 835,
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":110",
+  "factory_equivalence_verified": false,
+  "physical_hardware_accuracy_verified": false,
+  "full_history_recompute_tested": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "scope": "Saved native BRep consistency, matched exports and delivery checks. Public overall dimensions constrain the envelope; local control dimensions and positions are image fits. No physical manufacturing tolerance or interchangeability verification.",
+  "controls": {
+    "report": "control_calibration_audit.json",
+    "operating_controls": 26,
+    "checks": 228,
+    "rail_engraving_checks": [
+      {
+        "name": "JoyLSL.engraving",
+        "basis": "Declared recessed SL/SR lettering; model geometry check only",
+        "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+        "blank_volume_mm3": 21.49619449019235,
+        "actual_volume_mm3": 21.331959542107924,
+        "removed_volume_mm3": 0.1642349540079752,
+        "added_volume_mm3": 0.0,
+        "volume_tolerance_mm3": 1e-06,
+        "removed_solids": 2,
+        "expected_removed_solids": 2,
+        "actual_depth_mm": 0.08000019999998642,
+        "expected_depth_mm": 0.08,
+        "removed_bbox_center_xyz_mm": [
+          -84.09,
+          23.5,
+          7.4
+        ],
+        "expected_removed_bbox_center_xyz_mm": [
+          -84.09,
+          23.5,
+          7.4
+        ],
+        "passed": true
+      },
+      {
+        "name": "JoyLSR.engraving",
+        "basis": "Declared recessed SL/SR lettering; model geometry check only",
+        "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+        "blank_volume_mm3": 21.49619449019235,
+        "actual_volume_mm3": 21.280220877714765,
+        "removed_volume_mm3": 0.21597361761519837,
+        "added_volume_mm3": 0.0,
+        "volume_tolerance_mm3": 1e-06,
+        "removed_solids": 2,
+        "expected_removed_solids": 2,
+        "actual_depth_mm": 0.08000019999998642,
+        "expected_depth_mm": 0.08,
+        "removed_bbox_center_xyz_mm": [
+          -84.09,
+          -18.0,
+          7.4
+        ],
+        "expected_removed_bbox_center_xyz_mm": [
+          -84.09,
+          -18.0,
+          7.4
+        ],
+        "passed": true
+      },
+      {
+        "name": "JoyRSR.engraving",
+        "basis": "Declared recessed SL/SR lettering; model geometry check only",
+        "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+        "blank_volume_mm3": 21.496194490192348,
+        "actual_volume_mm3": 21.280220866900965,
+        "removed_volume_mm3": 0.21597362063168973,
+        "added_volume_mm3": 0.0,
+        "volume_tolerance_mm3": 1e-06,
+        "removed_solids": 2,
+        "expected_removed_solids": 2,
+        "actual_depth_mm": 0.08000019999998642,
+        "expected_depth_mm": 0.08,
+        "removed_bbox_center_xyz_mm": [
+          84.09,
+          23.5,
+          7.400000000000001
+        ],
+        "expected_removed_bbox_center_xyz_mm": [
+          84.09,
+          23.5,
+          7.4
+        ],
+        "passed": true
+      },
+      {
+        "name": "JoyRSL.engraving",
+        "basis": "Declared recessed SL/SR lettering; model geometry check only",
+        "method": "Independent rounded-box blank; subtract saved key and reverse-subtract blank",
+        "blank_volume_mm3": 21.496194490192345,
+        "actual_volume_mm3": 21.331959533182992,
+        "removed_volume_mm3": 0.164234956055969,
+        "added_volume_mm3": 0.0,
+        "volume_tolerance_mm3": 1e-06,
+        "removed_solids": 2,
+        "expected_removed_solids": 2,
+        "actual_depth_mm": 0.08000019999998642,
+        "expected_depth_mm": 0.08,
+        "removed_bbox_center_xyz_mm": [
+          84.09,
+          -18.0,
+          7.400000000000001
+        ],
+        "expected_removed_bbox_center_xyz_mm": [
+          84.09,
+          -18.0,
+          7.4
+        ],
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "exterior": {
+    "report": "exterior_refinement_audit.json",
+    "envelope_checks": [
+      {
+        "name": "handheld",
+        "actual_mm": [
+          239.00000220000004,
+          102.00000220003487,
+          28.400000200019903
+        ],
+        "expected_mm": [
+          239,
+          102,
+          28.4
+        ],
+        "tolerance_mm": 1e-05,
+        "max_error_mm": 2.200034870725176e-06,
+        "passed": true
+      },
+      {
+        "name": "tablet",
+        "actual_mm": [
+          173.0,
+          101.0000002,
+          13.900000100000002
+        ],
+        "expected_mm": [
+          173,
+          101,
+          13.9
+        ],
+        "tolerance_mm": 1e-05,
+        "max_error_mm": 2.0000000233721948e-07,
+        "passed": true
+      },
+      {
+        "name": "joy_L",
+        "actual_mm": [
+          35.900001100000026,
+          102.00000220001489,
+          28.400000200019903
+        ],
+        "expected_mm": [
+          35.9,
+          102,
+          28.4
+        ],
+        "tolerance_mm": 1e-05,
+        "max_error_mm": 2.2000148902634464e-06,
+        "passed": true
+      },
+      {
+        "name": "joy_R",
+        "actual_mm": [
+          35.90000110000004,
+          102.00000220003487,
+          28.400000200019903
+        ],
+        "expected_mm": [
+          35.9,
+          102,
+          28.4
+        ],
+        "tolerance_mm": 1e-05,
+        "max_error_mm": 2.200034870725176e-06,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "assembly": {
+    "report": "control_interference.json",
+    "candidate_pairs": 1005,
+    "checked_pairs": 1005,
+    "clashes": 0,
+    "volume_threshold_mm3": 1e-06,
+    "complete": true,
+    "passed": true
+  },
+  "step_roundtrip": {
+    "report": "export_roundtrip_audit.json",
+    "native_recomputed": false,
+    "native_files": [
+      {
+        "file": "Switch_Complete.FCStd",
+        "sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21"
+      },
+      {
+        "file": "Switch_Exploded.FCStd",
+        "sha256": "eef0a91a3d705644c3ea108f0029b125c0f22ba1935592eef5828ca4c7c4ecb3"
+      }
+    ],
+    "step_files": [
+      {
+        "file": "Switch_FullKit.step",
+        "sha256": "ecf9c5427c12a99a8afaa73a4c8dc05da4e8b80f2a7cae31707dc20673889590",
+        "solids": 835
+      },
+      {
+        "file": "Switch_Handheld.step",
+        "sha256": "4346a04ba63c90ad85590b33cc1f8d00ddba76ea67e20fe89fd7a6e36e2e63a9",
+        "solids": 658
+      },
+      {
+        "file": "Switch_Dock.step",
+        "sha256": "60355c9731f0473a1b22379fb53d3b9a03df5bd52a5903614a5f2178cd12e3f2",
+        "solids": 131
+      },
+      {
+        "file": "Switch_Exploded.step",
+        "sha256": "cfee17fba217c2e1cc89ef54f84dd35ec1128f23f10095df17f648395c81a971",
+        "solids": 835
+      }
+    ],
+    "acceptance": {
+      "volume_metric": "reported; discrepant solids require Boolean confirmation, except named parts verified by bidirectional surface samples",
+      "solid_bbox_coordinate_delta_mm": 1e-06,
+      "bbox_discrepancy_confirmation": "Empty bidirectional Boolean differences establish geometry when computed extrema estimates differ.",
+      "boolean_confirmation_trigger_mm3": 1e-06,
+      "boolean_residual_volume_mm3": 1e-06,
+      "surface_sample_distance": "Explicit source/STEP conversion tolerance in mm; not physical-device accuracy",
+      "surface_distance_mm": 0.001
+    },
+    "surface_fallback_part_ids": [
+      "JoyLFront",
+      "JoyLRear",
+      "JoyRFront",
+      "JoyRRear"
+    ],
+    "scope": "Source-to-STEP conversion checks; named surface sampling is not analytical equality or hardware accuracy",
+    "passed": true
+  },
+  "drawings": {
+    "model_measurements": 26,
+    "native_dimension_references": 23,
+    "reopened_pages": 12,
+    "drawings_sha256": "9175ecb6c7edbd778ab6bff6bc23bf97428498e32d3b4b5e5cd78bfea987497e",
+    "pdf_pages_rendered_and_reviewed": 12,
+    "pdf_sha256": "7d6e33cc428d2d3a5ea4bc3be821f9ca79b3ab49030b65917dbb2c5133a2b714",
+    "pdf_report": "control_pdf_review.json",
+    "passed": true
+  },
+  "web": {
+    "report": "control_web_checks.json",
+    "views_tested": 6,
+    "glb_sha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+    "gzip": {
+      "checked": true,
+      "bytes": 19361265,
+      "sha256": "d67c0f0080f5fafb9ecfc4f0449aa41f3c0598bded1073f62f0ff02a428f4488",
+      "decoded_sha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+      "lossless": true
+    },
+    "layout_widths": [
+      1280,
+      768,
+      375
+    ],
+    "passed": true
+  },
+  "unassessed_in_this_summary": [
+    "full stage-by-stage source rebuild",
+    "physical-device tolerances",
+    "gamepad navigation"
+  ],
+  "input_sha256": {
+    "devices/switch/output/Switch_Complete.FCStd": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
+    "devices/switch/output/reports/final_manifest.json": "130d80599e4f30765e3628ccce986ded17b430f4621440a958172d8ca620fd82",
+    "devices/switch/output/reports/control_calibration_audit.json": "985664bf5b743308d229863b05a11db85225d893d657e1a9e45569c8a96056fb",
+    "devices/switch/output/reports/exterior_refinement_audit.json": "be3a1a524bd14aea9e2669c1ed932bab79136c5a7e5d72e30654f880a8bcae69",
+    "devices/switch/output/reports/control_interference.json": "a2785aca7e7bebac067ea9f8f6228111489b11a2e546ef7436423ec690ed2c54",
+    "devices/switch/output/reports/export_roundtrip_audit.json": "471415c0c5d9533a6a36c5567243f7a33ee691c2bff8f68899d5361f888bd3b8",
+    "devices/switch/output/Switch_Exploded.FCStd": "eef0a91a3d705644c3ea108f0029b125c0f22ba1935592eef5828ca4c7c4ecb3",
+    "devices/switch/output/Switch_FullKit.step": "ecf9c5427c12a99a8afaa73a4c8dc05da4e8b80f2a7cae31707dc20673889590",
+    "devices/switch/output/Switch_Handheld.step": "4346a04ba63c90ad85590b33cc1f8d00ddba76ea67e20fe89fd7a6e36e2e63a9",
+    "devices/switch/output/Switch_Dock.step": "60355c9731f0473a1b22379fb53d3b9a03df5bd52a5903614a5f2178cd12e3f2",
+    "devices/switch/output/Switch_Exploded.step": "cfee17fba217c2e1cc89ef54f84dd35ec1128f23f10095df17f648395c81a971",
+    "devices/switch/output/reports/drawing_checks.json": "43f96ba14728eeec5f418f5b0df64d72cfb7639d6d9d51f3cddaab25cb693666",
+    "devices/switch/output/reports/native_drawings_reload.json": "85866bc48bcd0907ab4a016e29e66431b359c1c1aa63d2576477e3ddfeee651b",
+    "devices/switch/output/Switch_Drawings.FCStd": "9175ecb6c7edbd778ab6bff6bc23bf97428498e32d3b4b5e5cd78bfea987497e",
+    "devices/switch/output/reports/control_pdf_review.json": "728d186059863c4042d9e3646e3cdf099bfd9c29bb7a3dffa9e359187554e4e3",
+    "devices/switch/output/drawings/Switch_Drawings.pdf": "7d6e33cc428d2d3a5ea4bc3be821f9ca79b3ab49030b65917dbb2c5133a2b714",
+    "site/public/models/switch.json": "9637fea6c63d9ad546f37ac016237410d7bc575647311633af595194fae7bba5",
+    "devices/switch/output/reports/web_export.json": "9637fea6c63d9ad546f37ac016237410d7bc575647311633af595194fae7bba5",
+    "site/public/models/switch.glb": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+    "site/src/catalog.json": "7b064f9e4db474b73f3cfc66d17bded589e147e40abfdd81f20fc8a9d5556b87",
+    "site/public/models/switch.glb.gz": "d67c0f0080f5fafb9ecfc4f0449aa41f3c0598bded1073f62f0ff02a428f4488",
+    ".local/switch-button-calibration/browser_review/devices-switch.json": "b1ca230baa3a0480994e1a629878df060fb6ddc5dea6f6332d9f5db46a15e761",
+    ".local/switch-button-calibration/browser_review/errors-switch.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    ".local/switch-button-calibration/browser_review/layouts.json": "7eada4c52832854aa592cda2ac011df82b31e05d06a2901f7a5c55d8c2cf7b2d"
+  },
+  "report_sha256": {
+    "control_calibration_audit.json": "985664bf5b743308d229863b05a11db85225d893d657e1a9e45569c8a96056fb",
+    "exterior_refinement_audit.json": "be3a1a524bd14aea9e2669c1ed932bab79136c5a7e5d72e30654f880a8bcae69",
+    "control_interference.json": "a2785aca7e7bebac067ea9f8f6228111489b11a2e546ef7436423ec690ed2c54",
+    "export_roundtrip_audit.json": "471415c0c5d9533a6a36c5567243f7a33ee691c2bff8f68899d5361f888bd3b8",
+    "drawing_checks.json": "43f96ba14728eeec5f418f5b0df64d72cfb7639d6d9d51f3cddaab25cb693666",
+    "native_drawings_reload.json": "85866bc48bcd0907ab4a016e29e66431b359c1c1aa63d2576477e3ddfeee651b",
+    "control_pdf_review.json": "728d186059863c4042d9e3646e3cdf099bfd9c29bb7a3dffa9e359187554e4e3",
+    "web_export.json": "9637fea6c63d9ad546f37ac016237410d7bc575647311633af595194fae7bba5",
+    "final_manifest.json": "130d80599e4f30765e3628ccce986ded17b430f4621440a958172d8ca620fd82",
+    "control_web_checks.json": "b802f7d4f0df3129b1a69510af0d1f0190f80aab06c985836cc8ded2f4b3d053",
+    "measurement_refresh.json": "90d00e934a56aeb5ffb044770e69fca0325772777fdca8274f3574bc2f93c0fc",
+    "native_drawings_audit.json": "16e2410cfb19f70aefcedd0a0616b181e333233d33aae385ee0f2a50e0cc7055"
+  },
+  "passed": true,
+  "repository_checks": {
+    "passed": true,
+    "command": "npm run check",
+    "models_validated": 27,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "log_sha256": "c3a1f67668a35e8edcedc190455e8d674cab4de7dec899ce4f289629b8fdc15b"
+  },
+  "production_build": {
+    "passed": true,
+    "command": "npm run build",
+    "advisory": "Existing JavaScript chunk exceeds 500 kB; no build error",
+    "log_sha256": "9dc934ef4b92f38456644c641a288923f7d1fe60c040d4f8acef1c9bcd3c064b"
+  },
+  "virtual_desktop_preview": "previews/controls_virtual_desktop.png"
+}

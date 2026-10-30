@@ -19,5 +19,6 @@
 | 15 | [iter15_exterior_refinement.py](scripts/iter15_exterior_refinement.py) · 外轮廓、曲面、肩键和控制布局 |
 | 16 | [iter16_exterior_fits.py](scripts/iter16_exterior_fits.py) · 曲面装配配合与前面板细节 |
 | 17 | [iter17_public_reference_edges.py](scripts/iter17_public_reference_edges.py) · 不等宽外缘曲面、保留内腔与 7.6 mm 面键 |
+| 18 | [iter18_control_proportions.py](scripts/iter18_control_proportions.py) · HOME、截图键与字形比例，SL/SR、SYNC 和玩家灯位置校准 |
 
-运行重建宏会依次生成各阶段模型。原始设计说明和最终检查见设备 README 与 output/reports/。
+运行重建宏会依次生成各阶段模型。本次第 18 轮交付从第 17 轮已保存模型更新，未重跑全部阶段。原始设计说明和本版检查范围见设备 README 与 output/reports/control_delivery_checks.json。
