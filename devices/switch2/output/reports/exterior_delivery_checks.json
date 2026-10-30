@@ -1,0 +1,148 @@
+{
+  "device": "switch2",
+  "revision": 16,
+  "geometry_and_reference_review_date": "2026-10-15",
+  "delivery_integrity_review_date": "2026-10-29",
+  "source": "devices/switch2/output/Switch2_Complete.FCStd",
+  "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":110",
+  "physical_components": 799,
+  "factory_equivalence_verified": false,
+  "full_history_recompute_tested": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "scope": "Validate saved native BReps and corresponding exports. Public gross dimensions are constraints; local curves, feature positions and internal components remain estimates. No hardware tolerance or interchangeability validation.",
+  "calibration": {
+    "report": "exterior_calibration_audit.json",
+    "passed": true,
+    "basis": "references/exterior_calibration.json",
+    "invalid_components": []
+  },
+  "assembly": [
+    {
+      "report": "exterior_interference.json",
+      "opening_degrees": null,
+      "candidate_pairs": 1361,
+      "checked_pairs": 1361,
+      "clashes": 0,
+      "volume_threshold_mm3": 1e-06,
+      "passed": true
+    }
+  ],
+  "step_roundtrip": {
+    "passed": true,
+    "report": "export_roundtrip_audit.json",
+    "native_evaluation": "saved BRep (no history recompute)",
+    "step_files": [
+      {
+        "file": "Switch2_FullKit.step",
+        "sha256": "b38e0de8a77bf365fe2d9f4cd111d98cecafd3a979abad9c98fde7841a6a0e29"
+      },
+      {
+        "file": "Switch2_Handheld.step",
+        "sha256": "9ad1c72ac74f60a5378354bbefa9758f6780d22af4a2b2269159adc05de30db5"
+      },
+      {
+        "file": "Switch2_Dock.step",
+        "sha256": "b83bf5fcac3696a9dcfb763f41c1aee7349949fb5b37a025d18ecd35655f8126"
+      },
+      {
+        "file": "Switch2_Exploded.step",
+        "sha256": "e13ee500d3ac275fb56041dca4e4ae584d75f175825d117425bf33bc310fb732"
+      }
+    ]
+  },
+  "drawings": {
+    "model_measurements": 26,
+    "native_dimension_references": 22,
+    "reopened_pages": 12,
+    "pdf_pages_rendered_and_reviewed": 12,
+    "pdf_sha256": "27123f033ccfedba7d2aac9887b879e28d03f83e2043f4f49c8bb0c26b735828",
+    "report": "exterior_pdf_review.json",
+    "passed": true
+  },
+  "web": {
+    "report": "exterior_web_checks.json",
+    "views_tested": 6,
+    "glb_sha256": "fe46853e803d3d0fac3e4d440a7c7ac6e111099d4d390972d70e60df71bc2951",
+    "gzip_lossless": true,
+    "passed": true
+  },
+  "shared_gallery_layout": {
+    "scope": "Default Switch viewer at three viewport widths; not each device at every width",
+    "test_date": "2026-10-15",
+    "layouts": {
+      "desktop": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "tablet": {
+        "width": 768,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "stats": "27 款设备24,361 个组件324 页 A3 图纸"
+      }
+    },
+    "page_errors": [],
+    "passed": true
+  },
+  "repository_checks": "passed",
+  "gltf_validator": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "production_build": "passed; existing JavaScript bundle size advisory",
+  "report_sha256": {
+    "exterior_calibration_audit.json": "e6fd27236f3272aa5a408ecc8b8587174121c05cee3fa20cf009f123ef50075c",
+    "exterior_interference.json": "6e1c88d00dac7c7585c1aa2f44cc72136b829929391a4ffefe669a83586b3138",
+    "export_roundtrip_audit.json": "eed1b18121f8a07131c57a73afc6df5a1579d21645b5d97f2fb98b4637ec16e8",
+    "drawing_checks.json": "965b517f0db84efd41f68194980d4b809f2de5659b250d9451d1f736872ffa58",
+    "native_drawings_audit.json": "bd191186f0282f417f349ea12bcd65f3735af7427ebd332d44f3e6b0d0a6ecb6",
+    "native_drawings_reload.json": "3b1215ae4f2e8b009612af109a5e75ea7daf7473e8928a1c0d1884be5fd75d02",
+    "exterior_pdf_review.json": "a2a5f6278576735a344197efa056a17e3387b9a9cacfdd9202f25d00ea5928f5",
+    "exterior_web_checks.json": "4680a6a21c25f317a706eca98e6968402cba84dd864083b113335f008cdce784"
+  },
+  "passed": true,
+  "post_generation_source_change": {
+    "date": "2026-10-29",
+    "file": "tools/cadlib/handheld_refinement.py",
+    "source_sha256": "c0c075550c34012d24e7be7e48c55da33e945921cdb7983a35bb765bdb2584b3",
+    "change": "Preserve physical-part registration order during replacement, so finalize does not renumber PSP and PSV parts. Delivered native files already preserve the intended order.",
+    "validation_command": "python3 tools/check_handheld_part_order.py",
+    "validation": {
+      "passed": true,
+      "scope": "Pure Python registration and numbering simulation of the actual replacement function; no CAD geometry or full source rebuild exercised",
+      "checks": [
+        {
+          "device": "psp",
+          "physical_components": 346,
+          "replacements": 12,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        },
+        {
+          "device": "psv",
+          "physical_components": 386,
+          "replacements": 2,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        }
+      ]
+    },
+    "native_geometry_regenerated_after_this_change": false,
+    "full_source_rebuild_tested_after_this_change": false,
+    "module_reload": "Rebuild entry points now reload the new helper module to avoid stale functions in an existing FreeCAD session."
+  }
+}

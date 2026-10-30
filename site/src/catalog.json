@@ -137,14 +137,14 @@
     "prefix": "Switch2",
     "model": "BEE-001",
     "count": 799,
-    "iterations": 15,
+    "iterations": 16,
     "pages": 12,
-    "bytes": 13442200,
+    "bytes": 66658932,
     "family": "hybrid",
     "views": {
       "assembled": {
         "label": "整机",
-        "description": "完整手持装配，保留独立外壳、显示组件和内部模块。",
+        "description": "BEE-001 整机，按公开规格约束外形，依官方图片调整 Joy-Con 2 面键比例和间距；局部曲面与孔位为拟合。",
         "groups": [
           "Tablet",
           "Display",
@@ -255,7 +255,13 @@
         "dock",
         "底座外观"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 30106070,
+      "sha256": "f8ac782cff3afd431d8f5c3b6878406b5e7ccf94dd00ea89edf02645e07d3c36",
+      "decoded_sha256": "fe46853e803d3d0fac3e4d440a7c7ac6e111099d4d390972d70e60df71bc2951",
+      "lossless": true
+    }
   },
   {
     "id": "3ds",
@@ -263,15 +269,15 @@
     "prefix": "Nintendo3DS",
     "model": "CTR-001",
     "count": 324,
-    "iterations": 13,
+    "iterations": 14,
     "pages": 12,
-    "bytes": 2968620,
+    "bytes": 8937548,
     "family": "clamshell",
     "opening": 160,
     "views": {
       "assembled": {
         "label": "展开整机",
-        "description": "CTR-001 初代，显示、控制件和铰链为独立组件。使用开合角度滑块观察折叠结构。",
+        "description": "初代 CTR-001 展开外观，校正灰色凹面摇杆帽与下机身边缘；闭合尺寸按公开规格约束，局部形状为拟合。",
         "groups": [
           "Body",
           "Lid",
@@ -400,7 +406,13 @@
         "dock",
         "充电底座与触控笔"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 3142795,
+      "sha256": "adc737033f73d35a17fcb4c64051c27708d10817e0ed282a0a7fe82fb98b57b2",
+      "decoded_sha256": "ce792d943fac2eb661755e8be558534094597ed8fe98bc7b03b7c3e412ef2388",
+      "lossless": true
+    }
   },
   {
     "id": "nds",
@@ -408,15 +420,15 @@
     "prefix": "NintendoDS",
     "model": "NTR-001",
     "count": 321,
-    "iterations": 15,
+    "iterations": 16,
     "pages": 12,
-    "bytes": 3185776,
+    "bytes": 8075344,
     "family": "clamshell",
     "opening": 150,
     "views": {
       "assembled": {
         "label": "展开整机",
-        "description": "NTR-001 初代，等大的双屏、中央铰链、DS / GBA 双卡槽与独立控制件。拖动开合滑块观察折叠结构。",
+        "description": "初代 NTR-001 展开外观，细化上下机身边缘过渡；闭合尺寸按公开规格约束，局部曲率为拟合。",
         "groups": [
           "Body",
           "Lid",
@@ -554,7 +566,13 @@
         "rear",
         "背面结构"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 2365595,
+      "sha256": "acb56ea9587843ee0e33d6e83e8dac846db0224268f565faa87bf2e070911f9c",
+      "decoded_sha256": "87d7dc4b2562b8126a9b3376888f115c0747299be01543c7fbe3ecf5cfeb51b0",
+      "lossless": true
+    }
   },
   {
     "id": "psp",
@@ -562,14 +580,14 @@
     "prefix": "PSP1000",
     "model": "PSP-1000",
     "count": 346,
-    "iterations": 14,
+    "iterations": 15,
     "pages": 12,
-    "bytes": 8752584,
+    "bytes": 8860280,
     "family": "slate",
     "views": {
       "assembled": {
         "label": "整机",
-        "description": "初代 PSP-1000，保留宽屏、单模拟滑杆、HOME 键列、Mini-USB 和 UMD 后舱。",
+        "description": "PSP-1000 整机，依官方手册校正方向键轮廓及面键布局，缩窄显示屏外框；局部尺寸为拟合。",
         "groups": [
           "Body",
           "Display",
@@ -739,7 +757,13 @@
         "media",
         "UMD 与记忆棒"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 2427115,
+      "sha256": "50832edf185716b7793df84eaf0eb0a2c9bb68ba254613c8d883907f8293be7f",
+      "decoded_sha256": "22a456d7b9af19ad5f2aa0dbe14056d2bc433c76ecd45cb3b4ae74c2b8b19f8e",
+      "lossless": true
+    }
   },
   {
     "id": "psv",
@@ -747,14 +771,14 @@
     "prefix": "PSVita",
     "model": "PCH-1000 Wi-Fi OLED",
     "count": 386,
-    "iterations": 14,
+    "iterations": 15,
     "pages": 12,
-    "bytes": 12013232,
+    "bytes": 11994564,
     "family": "slate",
     "views": {
       "assembled": {
         "label": "整机",
-        "description": "初代 PCH-1000 Wi-Fi OLED，双摇杆、前后摄像头与双触控结构分别建模。",
+        "description": "PCH-1000 OLED 整机，依官方图片收小角部挂绳孔；总体外形按公开规格约束，局部孔位和曲面为拟合。",
         "groups": [
           "Body",
           "Display",
@@ -979,7 +1003,13 @@
         "media",
         "专用可拆介质"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 3052553,
+      "sha256": "9c5cddc8fb5f2bf9da005529a2ba4258c0e5281649d779ddccce92c24756eb3b",
+      "decoded_sha256": "d520d3e585d41a3b8f13ffa52dc9d46d2c3da23dce2dd931daf2c9f2d7c69afb",
+      "lossless": true
+    }
   },
   {
     "id": "steamdeck",

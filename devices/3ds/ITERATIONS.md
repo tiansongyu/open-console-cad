@@ -17,3 +17,4 @@
 | 11 | [按实体求交结果调整铰链轴与上盖旋转空间，修正肩键、卡槽、滑块、电池、主板、排线和安装件配合。](output/reports/11_verified_interface_refinement.json) | 305 |
 | 12 | [完成剩余接触面修正、摄像头镜筒、合盖缓冲垫，以及原款 3DS 的被动触点充电底座示意。](output/reports/12_service_details_and_charging_cradle.json) | 324 |
 | 13 | [完成底座后支承座与充电弹片配合，保存可复现的铰链轴参数，准备最终原生文件与图纸。](output/reports/13_cradle_contact_fit.json) | 324 |
+| 14 | [Circle Pad 凹面、灰色胶面和控制面板外缘；局部数值为公开图像估计。](output/reports/14_public_reference_circle_pad_and_edges.json) · [效果图](output/previews/14_public_reference_circle_pad_and_edges_hero.png) | 324 |

@@ -1,0 +1,150 @@
+{
+  "device": "psp",
+  "revision": 15,
+  "geometry_and_reference_review_date": "2026-10-15",
+  "delivery_integrity_review_date": "2026-10-29",
+  "source": "devices/psp/output/PSP1000_Complete.FCStd",
+  "source_sha256": "9f0adaa1147785e56a7ad5fd5e70292ce27c874db5fbcb27bd5910595c893b41",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":110",
+  "physical_components": 346,
+  "factory_equivalence_verified": false,
+  "full_history_recompute_tested": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "scope": "Validate saved native BReps and corresponding exports. Public gross dimensions are constraints; local curves, feature positions and internal components remain estimates. No hardware tolerance or interchangeability validation.",
+  "calibration": {
+    "report": "exterior_calibration_audit.json",
+    "passed": true,
+    "basis": "references/exterior_calibration.json",
+    "invalid_components": []
+  },
+  "assembly": [
+    {
+      "report": "exterior_interference.json",
+      "opening_degrees": null,
+      "candidate_pairs": 466,
+      "checked_pairs": 466,
+      "clashes": 0,
+      "volume_threshold_mm3": 1e-06,
+      "passed": true
+    }
+  ],
+  "step_roundtrip": {
+    "passed": true,
+    "report": "export_roundtrip_audit.json",
+    "native_evaluation": "saved BRep (no history recompute)",
+    "step_files": [
+      {
+        "file": "PSP1000_FullKit.step",
+        "sha256": "5955760f9c933293caad1374e0c880a0cd465bf5d3bb124f073bdfdd26df26c6"
+      },
+      {
+        "file": "PSP1000_Handheld.step",
+        "sha256": "21d35d661d7f64afa9597f8c33d7337620c91d5bbf04420e4ce2eb2b202dbe2f"
+      },
+      {
+        "file": "PSP1000_Exploded.step",
+        "sha256": "6d2088710dba57f6b22d30f4331693beb5be4b2031a68e4dd491065548132c59"
+      }
+    ]
+  },
+  "drawings": {
+    "model_measurements": 23,
+    "native_dimension_references": 19,
+    "reopened_pages": 12,
+    "pdf_pages_rendered_and_reviewed": 12,
+    "pdf_sha256": "efabf3a1e08d44c67d9e68057c35b47afaace5e4f7cf6bed171fbf892df76ec6",
+    "report": "exterior_pdf_review.json",
+    "passed": true
+  },
+  "web": {
+    "report": "exterior_web_checks.json",
+    "views_tested": 9,
+    "glb_sha256": "22a456d7b9af19ad5f2aa0dbe14056d2bc433c76ecd45cb3b4ae74c2b8b19f8e",
+    "gzip_lossless": true,
+    "passed": true
+  },
+  "shared_gallery_layout": {
+    "scope": "Default Switch viewer at three viewport widths; not each device at every width",
+    "test_date": "2026-10-15",
+    "layouts": {
+      "desktop": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "tablet": {
+        "width": 768,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "stats": "27 款设备24,361 个组件324 页 A3 图纸"
+      }
+    },
+    "page_errors": [],
+    "passed": true
+  },
+  "repository_checks": "passed",
+  "gltf_validator": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "production_build": "passed; existing JavaScript bundle size advisory",
+  "report_sha256": {
+    "exterior_calibration_audit.json": "f1e5548311c216505952d19d55c48338520a2f68ee7adf133510f35b2af55e12",
+    "exterior_interference.json": "e595b550dc4935911cbdbd7b8aecea10ebb1043334bc9a8233411b1fd1a107fe",
+    "export_roundtrip_audit.json": "ac8f131c15fd2c1d589bbfce4a3843a6e427df3c18bff52c0c624900e62089b7",
+    "drawing_checks.json": "77e27c81504275a750ad6180cd15056eb47e88f39ef81a222102b174681ea7c8",
+    "native_drawings_audit.json": "0a709dd794bc11d4ba9845cc46191718c7ed0887d49b48d6d0377f0abee84fb5",
+    "native_drawings_reload.json": "8511fdbe86c3775e5a857ede7f1af66a568ceb6fe50f6f59922c01fb9763179e",
+    "exterior_pdf_review.json": "0c0e8a304fdbf91f93ad9a9bbf40ba646047da646d2efc5c874820ac5937ce42",
+    "exterior_web_checks.json": "04ca740784fd842df70e4f39ee224953ad04492abee6c7bc7d5e96b2010307ca"
+  },
+  "passed": true,
+  "post_generation_source_change": {
+    "date": "2026-10-29",
+    "file": "tools/cadlib/handheld_refinement.py",
+    "source_sha256": "c0c075550c34012d24e7be7e48c55da33e945921cdb7983a35bb765bdb2584b3",
+    "change": "Preserve physical-part registration order during replacement, so finalize does not renumber PSP and PSV parts. Delivered native files already preserve the intended order.",
+    "validation_command": "python3 tools/check_handheld_part_order.py",
+    "validation": {
+      "passed": true,
+      "scope": "Pure Python registration and numbering simulation of the actual replacement function; no CAD geometry or full source rebuild exercised",
+      "checks": [
+        {
+          "device": "psp",
+          "physical_components": 346,
+          "replacements": 12,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        },
+        {
+          "device": "psv",
+          "physical_components": 386,
+          "replacements": 2,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        }
+      ]
+    },
+    "native_geometry_regenerated_after_this_change": false,
+    "full_source_rebuild_tested_after_this_change": false,
+    "module_reload": "Rebuild entry points now reload the new helper module to avoid stale functions in an existing FreeCAD session."
+  },
+  "source_provenance": {
+    "saved_native_source_digest": "4e6630436ed39b8383df1c9544898a6f365991cf5822635745255b1cd6726e21",
+    "current_source_digest": "125fd7064d2470e04eecc44008dfaadc45cd9b5286b130a76327eac812b55791",
+    "digest_method": "SHA-256 of concatenated sorted device iter*.py and sorted tools/cadlib/*.py, matching deliver.finalize",
+    "note": "Saved digest is retained as generation provenance. Registration-order and validation-source edits occurred after geometry export; no full rebuild against the current digest was performed."
+  }
+}

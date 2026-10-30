@@ -1,93 +1,112 @@
 {
-  "pass": true,
+  "passed": true,
   "pages": 12,
-  "dimensions": 17,
-  "invalid": [],
+  "dimension_count": 17,
   "checks": [
     {
-      "dimension": "Dimension01_1",
+      "name": "Dimension01_1",
       "expected_mm": 134.0000002,
-      "actual_mm": 134.0000002
+      "actual_mm": 134.0000002,
+      "passed": true
     },
     {
-      "dimension": "Dimension02_1",
+      "name": "Dimension02_1",
       "expected_mm": 134.0000002,
-      "actual_mm": 134.0000002
+      "actual_mm": 134.0000002,
+      "passed": true
     },
     {
-      "dimension": "Dimension02_2",
+      "name": "Dimension02_2",
       "expected_mm": 74.0000002,
-      "actual_mm": 74.0000002
+      "actual_mm": 74.0000002,
+      "passed": true
     },
     {
-      "dimension": "Dimension02_3",
-      "expected_mm": 21.000000000000043,
-      "actual_mm": 21.000000000000036
+      "name": "Dimension02_3",
+      "expected_mm": 21.00000000000003,
+      "actual_mm": 21.000000000000036,
+      "passed": true
     },
     {
-      "dimension": "Dimension03_1",
+      "name": "Dimension03_1",
       "expected_mm": 76.79999999999997,
-      "actual_mm": 76.79999999999995
+      "actual_mm": 76.79999999999995,
+      "passed": true
     },
     {
-      "dimension": "Dimension03_2",
+      "name": "Dimension03_2",
       "expected_mm": 46.07999999999998,
-      "actual_mm": 46.079999999999984
+      "actual_mm": 46.079999999999984,
+      "passed": true
     },
     {
-      "dimension": "Dimension03_3",
+      "name": "Dimension03_3",
       "expected_mm": 61.44000000000002,
-      "actual_mm": 61.44
+      "actual_mm": 61.44,
+      "passed": true
     },
     {
-      "dimension": "Dimension03_4",
+      "name": "Dimension03_4",
       "expected_mm": 46.08,
-      "actual_mm": 46.08
+      "actual_mm": 46.08,
+      "passed": true
     },
     {
-      "dimension": "Dimension04_1",
+      "name": "Dimension04_1",
       "expected_mm": 13.700000100000004,
-      "actual_mm": 13.700000100000004
+      "actual_mm": 13.700000100000004,
+      "passed": true
     },
     {
-      "dimension": "Dimension04_2",
+      "name": "Dimension04_2",
       "expected_mm": 8.249999999999998,
-      "actual_mm": 8.25
+      "actual_mm": 8.25,
+      "passed": true
     },
     {
-      "dimension": "Dimension04_3",
+      "name": "Dimension04_3",
       "expected_mm": 34.79999999999999,
-      "actual_mm": 34.8
+      "actual_mm": 34.8,
+      "passed": true
     },
     {
-      "dimension": "Dimension09_1",
+      "name": "Dimension09_1",
       "expected_mm": 125.99999999999999,
-      "actual_mm": 125.99999999999999
+      "actual_mm": 125.99999999999999,
+      "passed": true
     },
     {
-      "dimension": "Dimension09_2",
+      "name": "Dimension09_2",
       "expected_mm": 33.59999999999999,
-      "actual_mm": 33.599999999999994
+      "actual_mm": 33.599999999999994,
+      "passed": true
     },
     {
-      "dimension": "Dimension09_3",
+      "name": "Dimension09_3",
       "expected_mm": 52.6,
-      "actual_mm": 52.60000000000001
+      "actual_mm": 52.60000000000001,
+      "passed": true
     },
     {
-      "dimension": "Dimension10_1",
+      "name": "Dimension10_1",
       "expected_mm": 143.99999999999997,
-      "actual_mm": 144.0
+      "actual_mm": 144.0,
+      "passed": true
     },
     {
-      "dimension": "Dimension10_2",
+      "name": "Dimension10_2",
       "expected_mm": 84.0,
-      "actual_mm": 84.0
+      "actual_mm": 84.0,
+      "passed": true
     },
     {
-      "dimension": "Dimension10_3",
+      "name": "Dimension10_3",
       "expected_mm": 75.0,
-      "actual_mm": 75.0
+      "actual_mm": 75.0,
+      "passed": true
     }
-  ]
+  ],
+  "drawings_sha256": "ef4bafbf5d999a6cfc1ce0bc44130d952933b7c36e43bc01a94aedcb5acfc07e",
+  "source_sha256": "ed02f75eb04a709e0c78b5c0dcc5854016b64f926aead2d19c128ecc2501a208",
+  "scope": "Reopen independent copy and recompute native dimension references; no open-macro test in this pass."
 }

@@ -2,7 +2,7 @@
 
 [在线整机预览](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer) · [在线爆炸视图](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=exploded#viewer) · [仓库使用说明](../../README.md)
 
-15 轮设计，799 个组件、963 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
+16 轮设计，799 个组件、963 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
 
 [![模型总览](output/previews/overview.png)](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer)
 
@@ -28,3 +28,9 @@
 ## 许可
 
 原创内容按仓库 [MIT](../../LICENSE) 授权；第三方名称、标识、字体与参考资料见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
+
+## 2026-10-15 外观校准 · 第 16 轮
+
+本轮更新面键间距与直径，联动按键孔、传力柱、接点和弹片。总体公开尺寸保持不变；局部数值属于官方图片或说明书拟合，依据与不确定性见 [校准依据](references/exterior_calibration.json)。没有原厂公差图或实机测量，不能证明完全一致或零件互换。
+
+最新交付检查见 [本轮检查](output/reports/exterior_delivery_checks.json)：核对保存后的原生 BRep、装配干涉、公开包络、STEP 回读、图纸尺寸及网页源文件身份。本轮已检查该设备的全部网页视图、组件数量、下载链接、效果图及爆炸滑块，并检查公共查看器的桌面、平板和手机布局。全阶段源码重建与其余 22 款设备的网页交互未重跑；历史报告保留适用版本。本轮文件哈希与交付汇总于 2026-10-29 复核。

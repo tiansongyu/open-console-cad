@@ -12,3 +12,7 @@
 主机单体 198 mm 宽度是本模型比例近似。7.9 英寸显示区采用 16:9 比例推算为约 174.89 × 98.38 mm。局部尺寸、内部厚度、磁体位置、电路布局和紧固件均为观察用途近似设计，不是制造工程资料。英国页面的手柄宽度与日文规格不一致，本项目采用日文官方规格，未将矛盾数值混用。
 
 `switch_mark.svg` 来自官方产品图的矢量标识。SVG 填充轮廓使用本项目 `svg_exact.py` 转换，避免普通导入遗漏字符。DejaVu 字体许可证随项目提供；中文 PDF 字体由本机 Kami 流程嵌入，未打包商业字体文件。
+
+## 2026-10-15 exterior refinement
+
+See [exterior_calibration.json](exterior_calibration.json) for the reference URL, hash, changed geometry and uncertainty. Near-front official product image. Manual image estimate; annotation lines and nonzero projection perspective limit precision. Not a measured hardware tolerance. Overall published dimensions are retained. This iteration does not establish complete factory equivalence.

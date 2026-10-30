@@ -1,0 +1,66 @@
+{
+  "device": "switch2",
+  "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
+  "checks": [
+    {
+      "name": "handheld.X",
+      "actual_mm": 272.0,
+      "expected_mm": 272,
+      "basis": "Nintendo published gross envelope",
+      "passed": true
+    },
+    {
+      "name": "handheld.Y",
+      "actual_mm": 116.0,
+      "expected_mm": 116,
+      "basis": "Nintendo published gross envelope",
+      "passed": true
+    },
+    {
+      "name": "handheld.Z",
+      "actual_mm": 30.700000200000005,
+      "expected_mm": 30.7,
+      "basis": "Nintendo published gross envelope",
+      "passed": true
+    },
+    {
+      "name": "tablet.depth",
+      "actual_mm": 13.900000099999998,
+      "expected_mm": 13.9,
+      "basis": "Nintendo published body depth",
+      "passed": true
+    },
+    {
+      "name": "JoyL.face_button_diameter",
+      "actual_mm": 8.400000199999994,
+      "expected_mm": 8.4,
+      "basis": "Official image fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyL.face_button_pitch",
+      "actual_mm": 8.5,
+      "expected_mm": 8.5,
+      "basis": "Official image fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyR.face_button_diameter",
+      "actual_mm": 8.400000199999994,
+      "expected_mm": 8.4,
+      "basis": "Official image fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "JoyR.face_button_pitch",
+      "actual_mm": 8.499999999999998,
+      "expected_mm": 8.5,
+      "basis": "Official image fit; not a factory dimension",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep measurements; no history recompute"
+}

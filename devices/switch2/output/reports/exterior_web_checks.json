@@ -1,0 +1,62 @@
+{
+  "device": "switch2",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 579,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 570,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 370,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 209,
+      "passed": true
+    },
+    {
+      "view": "dock",
+      "components": 182,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 38,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch2/output/Switch2_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch2/output/drawings/Switch2_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/switch2.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
+  "glb_sha256": "fe46853e803d3d0fac3e4d440a7c7ac6e111099d4d390972d70e60df71bc2951",
+  "test_date": "2026-10-15",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "environment": "Chromium headless; local Vite site; software WebGL",
+  "page_errors": [],
+  "scope": "All configured device views, visible part counts, download link targets, gallery images and keyboard explode slider. No gamepad-navigation audit."
+}

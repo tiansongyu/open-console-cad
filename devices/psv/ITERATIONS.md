@@ -18,3 +18,4 @@
 | 12 | 依据实体求交修正肩键、顶部螺钉、后触控排线、存储卡小板、传感器、麦克风导管、安装柱与 OLED 支架，并对齐后盖紧固件。 | 386 | [查看](output/previews/12_measured_assembly_refinement_hero.png) |
 | 13 | 将腕带孔改为沿机身曲线倾斜的闭合椭圆环，同步调整机壳与按键板让位，消除角部开口越出轮廓的问题。 | 386 | [查看](output/previews/13_closed_corner_strap_eyes_hero.png) |
 | 14 | 调整闭合腕带环与 PS/START 键的边界，保留角部轮廓并同步移动 PS 键传动和安装孔，完成相邻外观件的间隙修正。 | 386 | [查看](output/previews/14_strap_and_system_key_clearance_hero.png) |
+| 15 | 角部腕带环比例与前后壳、操作板对应开孔；局部数值为公开图像估计。 | 386 | [查看](output/previews/15_public_reference_corner_strap_eyes_hero.png) |

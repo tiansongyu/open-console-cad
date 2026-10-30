@@ -2,6 +2,7 @@
   "native": [
     {
       "file": "Switch2_Complete.FCStd",
+      "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
       "components": 799,
       "invalid": [],
       "mismatched_components": [],
@@ -9,6 +10,7 @@
     },
     {
       "file": "Switch2_Exploded.FCStd",
+      "source_sha256": "92c9c4852373c76e798a2cc3550a74b948a89730327384f293de225576b30dc9",
       "components": 799,
       "invalid": [],
       "mismatched_components": [],
@@ -21,11 +23,11 @@
       "valid": true,
       "solids": 963,
       "expected_solids": 963,
-      "compound_volume_delta_mm3": -94.56550522719044,
-      "matched_solid_volume_delta_mm3": -0.028175454954420198,
-      "sum_absolute_solid_volume_delta_mm3": 0.11704257305870862,
+      "compound_volume_delta_mm3": -94.56629334122408,
+      "matched_solid_volume_delta_mm3": -0.028175454997806187,
+      "sum_absolute_solid_volume_delta_mm3": 0.11704257302484299,
       "max_solid_bbox_delta_mm": 6.889422365929931e-11,
-      "colour_entities": 48,
+      "colour_entities": 32,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -842,7 +844,7 @@
           "source_solid": 0,
           "step_solid": 81,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": 2.3919710656628013e-10,
+          "volume_delta_mm3": 2.1009327610954642e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1152,7 +1154,7 @@
           "source_solid": 2,
           "step_solid": 112,
           "bbox_max_delta_mm": 3.7481129311345285e-13,
-          "volume_delta_mm3": -0.00029331753946149064,
+          "volume_delta_mm3": -0.00029331753946193473,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -1169,7 +1171,7 @@
           "source_solid": 3,
           "step_solid": 113,
           "bbox_max_delta_mm": 9.15179043659009e-12,
-          "volume_delta_mm3": -8.219536162812346e-13,
+          "volume_delta_mm3": -8.218981051300034e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1179,7 +1181,7 @@
           "source_solid": 4,
           "step_solid": 114,
           "bbox_max_delta_mm": 3.8760106235713465e-12,
-          "volume_delta_mm3": -0.00010428793075750731,
+          "volume_delta_mm3": -0.0001042879307574518,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -1196,7 +1198,7 @@
           "source_solid": 5,
           "step_solid": 115,
           "bbox_max_delta_mm": 7.982947636264726e-12,
-          "volume_delta_mm3": 5.165923244732085e-12,
+          "volume_delta_mm3": 5.165867733580853e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1206,7 +1208,7 @@
           "source_solid": 6,
           "step_solid": 116,
           "bbox_max_delta_mm": 9.158895863947691e-12,
-          "volume_delta_mm3": 4.496403249731884e-14,
+          "volume_delta_mm3": 4.490852134608758e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1226,7 +1228,7 @@
           "source_solid": 8,
           "step_solid": 118,
           "bbox_max_delta_mm": 9.158895863947691e-12,
-          "volume_delta_mm3": -1.0497158697830855e-13,
+          "volume_delta_mm3": -1.0494383140269292e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1270,7 +1272,7 @@
           "source_solid": 11,
           "step_solid": 121,
           "bbox_max_delta_mm": 3.376854351699876e-12,
-          "volume_delta_mm3": -7.406182701524822e-05,
+          "volume_delta_mm3": -7.406182701523434e-05,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -1307,7 +1309,7 @@
           "source_solid": 14,
           "step_solid": 124,
           "bbox_max_delta_mm": 1.850963826655061e-12,
-          "volume_delta_mm3": 4.538036613155327e-15,
+          "volume_delta_mm3": 4.551914400963142e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1327,7 +1329,7 @@
           "source_solid": 16,
           "step_solid": 126,
           "bbox_max_delta_mm": 4.368061468085216e-12,
-          "volume_delta_mm3": -2.1632695634821175e-13,
+          "volume_delta_mm3": -2.1631307856040394e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -1614,7 +1616,7 @@
           "source_solid": 0,
           "step_solid": 154,
           "bbox_max_delta_mm": 4.440892098500626e-14,
-          "volume_delta_mm3": 8.185452315956354e-12,
+          "volume_delta_mm3": 7.73070496506989e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2330,11 +2332,11 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton0",
+          "name": "JoyLFaceButton001",
           "source_solid": 0,
           "step_solid": 226,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -2.842170943040401e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2354,17 +2356,17 @@
           "source_solid": 0,
           "step_solid": 228,
           "bbox_max_delta_mm": 4.263256414560601e-14,
-          "volume_delta_mm3": -2.255140518769849e-16,
+          "volume_delta_mm3": -2.2898349882893854e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton1",
+          "name": "JoyLFaceButton002",
           "source_solid": 0,
           "step_solid": 229,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2384,17 +2386,17 @@
           "source_solid": 0,
           "step_solid": 231,
           "bbox_max_delta_mm": 3.9968028886505635e-14,
-          "volume_delta_mm3": -2.220446049250313e-16,
+          "volume_delta_mm3": -2.3592239273284576e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton2",
+          "name": "JoyLFaceButton003",
           "source_solid": 0,
           "step_solid": 232,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2414,17 +2416,17 @@
           "source_solid": 0,
           "step_solid": 234,
           "bbox_max_delta_mm": 4.263256414560601e-14,
-          "volume_delta_mm3": -2.255140518769849e-16,
+          "volume_delta_mm3": -2.220446049250313e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton3",
+          "name": "JoyLFaceButton004",
           "source_solid": 0,
           "step_solid": 235,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2433,8 +2435,8 @@
           "name": "JoyLButtonStem3",
           "source_solid": 0,
           "step_solid": 236,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.7763568394002505e-15,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -5.329070518200751e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2444,17 +2446,17 @@
           "source_solid": 0,
           "step_solid": 237,
           "bbox_max_delta_mm": 4.04121180963557e-14,
-          "volume_delta_mm3": -3.157196726277789e-16,
+          "volume_delta_mm3": -2.185751579730777e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton0",
+          "name": "JoyRFaceButton001",
           "source_solid": 0,
           "step_solid": 238,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2473,18 +2475,18 @@
           "name": "GlyphX",
           "source_solid": 0,
           "step_solid": 240,
-          "bbox_max_delta_mm": 3.410605131648481e-13,
-          "volume_delta_mm3": 4.0245584642661925e-16,
+          "bbox_max_delta_mm": 3.481659405224491e-13,
+          "volume_delta_mm3": 4.0939474033052647e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton1",
+          "name": "JoyRFaceButton002",
           "source_solid": 0,
           "step_solid": 241,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2493,8 +2495,8 @@
           "name": "JoyRButtonStem1",
           "source_solid": 0,
           "step_solid": 242,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.7763568394002505e-15,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2504,17 +2506,17 @@
           "source_solid": 0,
           "step_solid": 243,
           "bbox_max_delta_mm": 3.979039320256561e-13,
-          "volume_delta_mm3": -1.8231943732516243e-14,
+          "volume_delta_mm3": -1.817296313433303e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton2",
+          "name": "JoyRFaceButton003",
           "source_solid": 0,
           "step_solid": 244,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -2.842170943040401e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2524,7 +2526,7 @@
           "source_solid": 0,
           "step_solid": 245,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2534,17 +2536,17 @@
           "source_solid": 0,
           "step_solid": 246,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": 1.202857258242318e-14,
+          "volume_delta_mm3": 1.2032042029375134e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton3",
+          "name": "JoyRFaceButton004",
           "source_solid": 0,
           "step_solid": 247,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2604,7 +2606,7 @@
           "source_solid": 0,
           "step_solid": 253,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7284841053187847e-12,
+          "volume_delta_mm3": -4.547473508864641e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2654,7 +2656,7 @@
           "source_solid": 0,
           "step_solid": 258,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1823431123048067e-11,
+          "volume_delta_mm3": 5.4569682106375694e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2854,7 +2856,7 @@
           "source_solid": 0,
           "step_solid": 278,
           "bbox_max_delta_mm": 4.405364961712621e-13,
-          "volume_delta_mm3": -1.739580701709542e-14,
+          "volume_delta_mm3": -1.68962066560141e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -2864,7 +2866,7 @@
           "source_solid": 1,
           "step_solid": 279,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": -1.3690437672408962e-14,
+          "volume_delta_mm3": -1.3418086086680603e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3054,7 +3056,7 @@
           "source_solid": 0,
           "step_solid": 298,
           "bbox_max_delta_mm": 4.405364961712621e-13,
-          "volume_delta_mm3": -1.739580701709542e-14,
+          "volume_delta_mm3": -1.68962066560141e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3064,7 +3066,7 @@
           "source_solid": 1,
           "step_solid": 299,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": -2.566002965664893e-14,
+          "volume_delta_mm3": -2.5309615514501616e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3104,7 +3106,7 @@
           "source_solid": 0,
           "step_solid": 303,
           "bbox_max_delta_mm": 4.263256414560601e-13,
-          "volume_delta_mm3": 2.7054747331334283e-14,
+          "volume_delta_mm3": 2.768618667658984e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3114,7 +3116,7 @@
           "source_solid": 1,
           "step_solid": 304,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": -1.5515366769136563e-14,
+          "volume_delta_mm3": -1.5295056887687508e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3134,7 +3136,7 @@
           "source_solid": 3,
           "step_solid": 306,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": 8.751679936302992e-15,
+          "volume_delta_mm3": 8.777700788442644e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3144,7 +3146,7 @@
           "source_solid": 4,
           "step_solid": 307,
           "bbox_max_delta_mm": 4.618527782440651e-13,
-          "volume_delta_mm3": 5.492134524942571e-15,
+          "volume_delta_mm3": 5.9847959921199845e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3154,7 +3156,7 @@
           "source_solid": 5,
           "step_solid": 308,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": 2.7075564013046005e-14,
+          "volume_delta_mm3": 2.7460672624712856e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3174,7 +3176,7 @@
           "source_solid": 7,
           "step_solid": 310,
           "bbox_max_delta_mm": 4.440892098500626e-13,
-          "volume_delta_mm3": 2.4615726124110893e-14,
+          "volume_delta_mm3": 2.5195123765087146e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3184,7 +3186,7 @@
           "source_solid": 8,
           "step_solid": 311,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": 8.913009219568835e-15,
+          "volume_delta_mm3": 8.916478666520788e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3194,7 +3196,7 @@
           "source_solid": 9,
           "step_solid": 312,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": -2.264508025540124e-14,
+          "volume_delta_mm3": -2.2190582704695316e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3204,7 +3206,7 @@
           "source_solid": 10,
           "step_solid": 313,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": 2.293304435241339e-15,
+          "volume_delta_mm3": 2.789435349370706e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3234,7 +3236,7 @@
           "source_solid": 13,
           "step_solid": 316,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": -1.0585282650410477e-14,
+          "volume_delta_mm3": -1.0064865607617435e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3244,7 +3246,7 @@
           "source_solid": 14,
           "step_solid": 317,
           "bbox_max_delta_mm": 4.440892098500626e-13,
-          "volume_delta_mm3": -1.2961853812498703e-14,
+          "volume_delta_mm3": -1.2535111837408408e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3254,7 +3256,7 @@
           "source_solid": 0,
           "step_solid": 318,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -9.662409761190816e-16,
+          "volume_delta_mm3": -6.938893903907228e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3264,7 +3266,7 @@
           "source_solid": 1,
           "step_solid": 319,
           "bbox_max_delta_mm": 4.050093593832571e-13,
-          "volume_delta_mm3": 1.8713329497099807e-16,
+          "volume_delta_mm3": 2.1250362580715887e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3274,7 +3276,7 @@
           "source_solid": 2,
           "step_solid": 320,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -4.558853294867049e-15,
+          "volume_delta_mm3": -4.376707329889484e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3284,7 +3286,7 @@
           "source_solid": 3,
           "step_solid": 321,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": -1.2904607937791468e-14,
+          "volume_delta_mm3": -1.2906342661267445e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3294,7 +3296,7 @@
           "source_solid": 4,
           "step_solid": 322,
           "bbox_max_delta_mm": 5.009326287108706e-13,
-          "volume_delta_mm3": 2.4154289679501062e-14,
+          "volume_delta_mm3": 2.429133283410323e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3304,7 +3306,7 @@
           "source_solid": 5,
           "step_solid": 323,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": 2.4528989950312052e-15,
+          "volume_delta_mm3": 2.63504496000877e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3314,7 +3316,7 @@
           "source_solid": 6,
           "step_solid": 324,
           "bbox_max_delta_mm": 4.192202140984591e-13,
-          "volume_delta_mm3": 2.768618667658984e-15,
+          "volume_delta_mm3": 2.7668839441830073e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3324,7 +3326,7 @@
           "source_solid": 7,
           "step_solid": 325,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": 1.1796119636642288e-15,
+          "volume_delta_mm3": 1.1830814106161824e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3334,7 +3336,7 @@
           "source_solid": 8,
           "step_solid": 326,
           "bbox_max_delta_mm": 1.5631940186722204e-13,
-          "volume_delta_mm3": 1.601149768326593e-15,
+          "volume_delta_mm3": 1.9203388879063255e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3344,7 +3346,7 @@
           "source_solid": 9,
           "step_solid": 327,
           "bbox_max_delta_mm": 4.227729277772596e-13,
-          "volume_delta_mm3": -1.2705114738054135e-14,
+          "volume_delta_mm3": -1.2571541030403921e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3354,7 +3356,7 @@
           "source_solid": 10,
           "step_solid": 328,
           "bbox_max_delta_mm": 4.583000645652646e-13,
-          "volume_delta_mm3": -4.822531263215524e-15,
+          "volume_delta_mm3": -4.81906181626357e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3364,7 +3366,7 @@
           "source_solid": 11,
           "step_solid": 329,
           "bbox_max_delta_mm": 3.339550858072471e-13,
-          "volume_delta_mm3": -3.191891195797325e-16,
+          "volume_delta_mm3": -5.898059818321144e-17,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3374,7 +3376,7 @@
           "source_solid": 0,
           "step_solid": 330,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -8.0629947163402e-15,
+          "volume_delta_mm3": -7.988401606873197e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3384,7 +3386,7 @@
           "source_solid": 1,
           "step_solid": 331,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 5.4713178432308496e-15,
+          "volume_delta_mm3": 5.68295410730002e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3394,7 +3396,7 @@
           "source_solid": 2,
           "step_solid": 332,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 2.6194324487249787e-15,
+          "volume_delta_mm3": 2.73826100682939e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3404,7 +3406,7 @@
           "source_solid": 3,
           "step_solid": 333,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.826577084029779e-14,
+          "volume_delta_mm3": 1.8367252163642434e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3434,7 +3436,7 @@
           "source_solid": 6,
           "step_solid": 336,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -2.179680047564858e-15,
+          "volume_delta_mm3": -2.0521778720805628e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3444,7 +3446,7 @@
           "source_solid": 7,
           "step_solid": 337,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.1239273400853733e-14,
+          "volume_delta_mm3": 1.134422417115033e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3454,7 +3456,7 @@
           "source_solid": 8,
           "step_solid": 338,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.1270498423421316e-14,
+          "volume_delta_mm3": 1.1372847108503947e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3464,7 +3466,7 @@
           "source_solid": 9,
           "step_solid": 339,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.4171823436992526e-14,
+          "volume_delta_mm3": 1.4170088713516549e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3494,7 +3496,7 @@
           "source_solid": 12,
           "step_solid": 342,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 6.712512490292255e-15,
+          "volume_delta_mm3": 6.877311220510052e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3504,7 +3506,7 @@
           "source_solid": 13,
           "step_solid": 343,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 7.433290094560618e-16,
+          "volume_delta_mm3": 8.612902058224847e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3514,7 +3516,7 @@
           "source_solid": 14,
           "step_solid": 344,
           "bbox_max_delta_mm": 4.636291350834654e-13,
-          "volume_delta_mm3": 4.939625097843958e-15,
+          "volume_delta_mm3": 4.992534163861251e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3524,7 +3526,7 @@
           "source_solid": 15,
           "step_solid": 345,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 7.424616477180734e-16,
+          "volume_delta_mm3": 7.41594285980085e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3534,7 +3536,7 @@
           "source_solid": 16,
           "step_solid": 346,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": 5.9266827556747614e-15,
+          "volume_delta_mm3": 5.924948032198785e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3544,7 +3546,7 @@
           "source_solid": 17,
           "step_solid": 347,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -4.978656376053436e-16,
+          "volume_delta_mm3": -3.7990444123892075e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3554,7 +3556,7 @@
           "source_solid": 18,
           "step_solid": 348,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.4961989980299961e-15,
+          "volume_delta_mm3": -1.3817072486155269e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3644,7 +3646,7 @@
           "source_solid": 0,
           "step_solid": 357,
           "bbox_max_delta_mm": 2.753353101070388e-13,
-          "volume_delta_mm3": 2.7075564013046005e-14,
+          "volume_delta_mm3": 2.7984559114457852e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3654,7 +3656,7 @@
           "source_solid": 1,
           "step_solid": 358,
           "bbox_max_delta_mm": 7.922551503725117e-13,
-          "volume_delta_mm3": 2.983377433984913e-14,
+          "volume_delta_mm3": 2.998643000573509e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3674,7 +3676,7 @@
           "source_solid": 3,
           "step_solid": 360,
           "bbox_max_delta_mm": 2.753353101070388e-13,
-          "volume_delta_mm3": 1.2108369862318114e-14,
+          "volume_delta_mm3": 1.2684298056342413e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3684,7 +3686,7 @@
           "source_solid": 4,
           "step_solid": 361,
           "bbox_max_delta_mm": 2.7711166694643907e-13,
-          "volume_delta_mm3": 1.0514158987895428e-14,
+          "volume_delta_mm3": 1.0829878660523207e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -3694,7 +3696,7 @@
           "source_solid": 5,
           "step_solid": 362,
           "bbox_max_delta_mm": 7.922551503725117e-13,
-          "volume_delta_mm3": -1.5952517085082718e-14,
+          "volume_delta_mm3": -1.5949047638130764e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -4864,7 +4866,7 @@
           "source_solid": 0,
           "step_solid": 479,
           "bbox_max_delta_mm": 7.105427357601002e-15,
-          "volume_delta_mm3": -6.232170335351839e-11,
+          "volume_delta_mm3": -6.234657234926999e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5884,7 +5886,7 @@
           "source_solid": 1,
           "step_solid": 581,
           "bbox_max_delta_mm": 4.698463840213662e-13,
-          "volume_delta_mm3": 3.3514857555871913e-15,
+          "volume_delta_mm3": 3.354955202539145e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5894,7 +5896,7 @@
           "source_solid": 2,
           "step_solid": 582,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -1.9758500391375833e-14,
+          "volume_delta_mm3": -1.9751561497471926e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5914,7 +5916,7 @@
           "source_solid": 4,
           "step_solid": 584,
           "bbox_max_delta_mm": 6.834532939592464e-13,
-          "volume_delta_mm3": 2.3071822230491534e-15,
+          "volume_delta_mm3": 2.3054474995731766e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5924,7 +5926,7 @@
           "source_solid": 5,
           "step_solid": 585,
           "bbox_max_delta_mm": 4.2232883856740955e-13,
-          "volume_delta_mm3": -1.457167719820518e-15,
+          "volume_delta_mm3": -1.4589024432964948e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5934,7 +5936,7 @@
           "source_solid": 0,
           "step_solid": 586,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -2.927779546579856e-15,
+          "volume_delta_mm3": -2.9286469083178446e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5954,7 +5956,7 @@
           "source_solid": 2,
           "step_solid": 588,
           "bbox_max_delta_mm": 1.1457501614131615e-13,
-          "volume_delta_mm3": -3.643786661289283e-15,
+          "volume_delta_mm3": -3.644654023027272e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5964,7 +5966,7 @@
           "source_solid": 3,
           "step_solid": 589,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.2133523352719777e-14,
+          "volume_delta_mm3": -1.2132655990981789e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5984,7 +5986,7 @@
           "source_solid": 5,
           "step_solid": 591,
           "bbox_max_delta_mm": 3.268496584496461e-13,
-          "volume_delta_mm3": 7.810592450585574e-15,
+          "volume_delta_mm3": 7.811459812323562e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -5994,7 +5996,7 @@
           "source_solid": 6,
           "step_solid": 592,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -5.734128449841336e-15,
+          "volume_delta_mm3": -5.7332610881033474e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6014,7 +6016,7 @@
           "source_solid": 8,
           "step_solid": 594,
           "bbox_max_delta_mm": 2.4158453015843406e-13,
-          "volume_delta_mm3": -5.434021288497348e-15,
+          "volume_delta_mm3": -5.43315392675936e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6024,7 +6026,7 @@
           "source_solid": 9,
           "step_solid": 595,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -1.0409208217598831e-14,
+          "volume_delta_mm3": -1.0410942941074808e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6183,8 +6185,8 @@
           "name": "JoyLButtonPad3",
           "source_solid": 0,
           "step_solid": 611,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -1.5543122344752192e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6194,7 +6196,7 @@
           "source_solid": 0,
           "step_solid": 612,
           "bbox_max_delta_mm": 6.609468528040452e-11,
-          "volume_delta_mm3": 1.6554757564790634e-10,
+          "volume_delta_mm3": 1.655480197371162e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6344,7 +6346,7 @@
           "source_solid": 0,
           "step_solid": 627,
           "bbox_max_delta_mm": 2.1316282072803006e-13,
-          "volume_delta_mm3": 1.2228351664589354e-10,
+          "volume_delta_mm3": 1.2228174028905414e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6474,7 +6476,7 @@
           "source_solid": 0,
           "step_solid": 640,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": 4.305583667374435e-15,
+          "volume_delta_mm3": 4.309053114326389e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6484,7 +6486,7 @@
           "source_solid": 1,
           "step_solid": 641,
           "bbox_max_delta_mm": 4.698463840213662e-13,
-          "volume_delta_mm3": 3.3584246494910985e-15,
+          "volume_delta_mm3": 3.3514857555871913e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6494,7 +6496,7 @@
           "source_solid": 2,
           "step_solid": 642,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -1.975503094442388e-14,
+          "volume_delta_mm3": -1.9758500391375833e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6514,7 +6516,7 @@
           "source_solid": 4,
           "step_solid": 644,
           "bbox_max_delta_mm": 6.834532939592464e-13,
-          "volume_delta_mm3": 2.3054474995731766e-15,
+          "volume_delta_mm3": 2.3037127760972e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6524,7 +6526,7 @@
           "source_solid": 5,
           "step_solid": 645,
           "bbox_max_delta_mm": 4.2232883856740955e-13,
-          "volume_delta_mm3": -1.457167719820518e-15,
+          "volume_delta_mm3": -1.4589024432964948e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6534,7 +6536,7 @@
           "source_solid": 0,
           "step_solid": 646,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -2.927345865710862e-15,
+          "volume_delta_mm3": -2.927779546579856e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6554,7 +6556,7 @@
           "source_solid": 2,
           "step_solid": 648,
           "bbox_max_delta_mm": 1.1457501614131615e-13,
-          "volume_delta_mm3": -3.643786661289283e-15,
+          "volume_delta_mm3": -3.644654023027272e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6564,7 +6566,7 @@
           "source_solid": 3,
           "step_solid": 649,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.2133523352719777e-14,
+          "volume_delta_mm3": -1.2132655990981789e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6584,7 +6586,7 @@
           "source_solid": 5,
           "step_solid": 651,
           "bbox_max_delta_mm": 3.268496584496461e-13,
-          "volume_delta_mm3": 7.810592450585574e-15,
+          "volume_delta_mm3": 7.811459812323562e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6594,7 +6596,7 @@
           "source_solid": 6,
           "step_solid": 652,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -5.7332610881033474e-15,
+          "volume_delta_mm3": -5.731526364627371e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6614,7 +6616,7 @@
           "source_solid": 8,
           "step_solid": 654,
           "bbox_max_delta_mm": 2.4158453015843406e-13,
-          "volume_delta_mm3": -5.434021288497348e-15,
+          "volume_delta_mm3": -5.43315392675936e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6624,7 +6626,7 @@
           "source_solid": 9,
           "step_solid": 655,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -1.0410942941074808e-14,
+          "volume_delta_mm3": -1.0412677664550785e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6743,8 +6745,8 @@
           "name": "JoyRButtonPad1",
           "source_solid": 0,
           "step_solid": 667,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -4.440892098500626e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6754,7 +6756,7 @@
           "source_solid": 0,
           "step_solid": 668,
           "bbox_max_delta_mm": 1.9895196601282805e-13,
-          "volume_delta_mm3": -1.2793321957360604e-11,
+          "volume_delta_mm3": -1.2794210135780304e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6774,7 +6776,7 @@
           "source_solid": 0,
           "step_solid": 670,
           "bbox_max_delta_mm": 1.9895196601282805e-13,
-          "volume_delta_mm3": -1.2749357125585448e-11,
+          "volume_delta_mm3": -1.2748913036375598e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -6944,7 +6946,7 @@
           "source_solid": 0,
           "step_solid": 687,
           "bbox_max_delta_mm": 2.1316282072803006e-13,
-          "volume_delta_mm3": 1.2228351664589354e-10,
+          "volume_delta_mm3": 1.2228174028905414e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7054,7 +7056,7 @@
           "source_solid": 0,
           "step_solid": 698,
           "bbox_max_delta_mm": 7.503331289626658e-12,
-          "volume_delta_mm3": -5.6705751205754495e-12,
+          "volume_delta_mm3": -5.668798763736049e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7200,7 +7202,7 @@
           "name": "DockUSBTongue1",
           "source_solid": 0,
           "step_solid": 712,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 3.552713678800501e-15,
           "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -7210,8 +7212,8 @@
           "name": "DockUSB1Contact0",
           "source_solid": 0,
           "step_solid": 713,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7220,8 +7222,8 @@
           "name": "DockUSB1Contact1",
           "source_solid": 0,
           "step_solid": 714,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7230,8 +7232,8 @@
           "name": "DockUSB1Contact2",
           "source_solid": 0,
           "step_solid": 715,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7240,8 +7242,8 @@
           "name": "DockUSB1Contact3",
           "source_solid": 0,
           "step_solid": 716,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7260,7 +7262,7 @@
           "name": "DockUSBTongue2",
           "source_solid": 0,
           "step_solid": 718,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 3.552713678800501e-15,
           "volume_delta_mm3": 5.684341886080802e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -7270,8 +7272,8 @@
           "name": "DockUSB2Contact0",
           "source_solid": 0,
           "step_solid": 719,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7280,8 +7282,8 @@
           "name": "DockUSB2Contact1",
           "source_solid": 0,
           "step_solid": 720,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7290,8 +7292,8 @@
           "name": "DockUSB2Contact2",
           "source_solid": 0,
           "step_solid": 721,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7300,8 +7302,8 @@
           "name": "DockUSB2Contact3",
           "source_solid": 0,
           "step_solid": 722,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7321,7 +7323,7 @@
           "source_solid": 0,
           "step_solid": 724,
           "bbox_max_delta_mm": 6.252776074688882e-13,
-          "volume_delta_mm3": -3.733124920302089e-15,
+          "volume_delta_mm3": -3.729655473350135e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7331,7 +7333,7 @@
           "source_solid": 1,
           "step_solid": 725,
           "bbox_max_delta_mm": 2.6290081223123707e-13,
-          "volume_delta_mm3": -2.546574062733953e-15,
+          "volume_delta_mm3": -2.5396351688300456e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7551,7 +7553,7 @@
           "source_solid": 0,
           "step_solid": 747,
           "bbox_max_delta_mm": 4.689582056016661e-13,
-          "volume_delta_mm3": -2.223221606811876e-14,
+          "volume_delta_mm3": -2.2235685515070713e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -7581,7 +7583,7 @@
           "source_solid": 3,
           "step_solid": 750,
           "bbox_max_delta_mm": 2.2737367544323206e-13,
-          "volume_delta_mm3": -7.606762442158299e-15,
+          "volume_delta_mm3": -7.605027718682322e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8736,7 +8738,7 @@
           "source_solid": 0,
           "step_solid": 862,
           "bbox_max_delta_mm": 1.9095836023552692e-13,
-          "volume_delta_mm3": -1.2678746941219288e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8756,7 +8758,7 @@
           "source_solid": 0,
           "step_solid": 864,
           "bbox_max_delta_mm": 1.9095836023552692e-13,
-          "volume_delta_mm3": -1.2678746941219288e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8776,7 +8778,7 @@
           "source_solid": 0,
           "step_solid": 866,
           "bbox_max_delta_mm": 1.900701818158268e-13,
-          "volume_delta_mm3": -1.270095140171179e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8796,7 +8798,7 @@
           "source_solid": 0,
           "step_solid": 868,
           "bbox_max_delta_mm": 1.900701818158268e-13,
-          "volume_delta_mm3": -1.270095140171179e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8815,8 +8817,8 @@
           "name": "DockUSBCPlug",
           "source_solid": 0,
           "step_solid": 870,
-          "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.3500311979441904e-13,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -8.526512829121202e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -8826,7 +8828,7 @@
           "source_solid": 0,
           "step_solid": 871,
           "bbox_max_delta_mm": 2.842170943040401e-14,
-          "volume_delta_mm3": 4.547473508864641e-13,
+          "volume_delta_mm3": 4.796163466380676e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -9096,7 +9098,7 @@
           "source_solid": 0,
           "step_solid": 898,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -9116,7 +9118,7 @@
           "source_solid": 0,
           "step_solid": 900,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -9210,7 +9212,7 @@
           "source_solid": 0,
           "step_solid": 908,
           "bbox_max_delta_mm": 1.7763568394002505e-14,
-          "volume_delta_mm3": -2.5863755581667647e-12,
+          "volume_delta_mm3": -2.6147972675971687e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -9847,11 +9849,11 @@
       "valid": true,
       "solids": 699,
       "expected_solids": 699,
-      "compound_volume_delta_mm3": -7.419640220789006,
-      "matched_solid_volume_delta_mm3": -0.0022742197639000036,
-      "sum_absolute_solid_volume_delta_mm3": 0.0022743769955021324,
+      "compound_volume_delta_mm3": -7.419640201231232,
+      "matched_solid_volume_delta_mm3": -0.0022742198073109807,
+      "sum_absolute_solid_volume_delta_mm3": 0.0022743769616120732,
       "max_solid_bbox_delta_mm": 6.609468528040452e-11,
-      "colour_entities": 48,
+      "colour_entities": 32,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -10668,7 +10670,7 @@
           "source_solid": 0,
           "step_solid": 81,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": 2.3919710656628013e-10,
+          "volume_delta_mm3": 2.1009327610954642e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -10978,7 +10980,7 @@
           "source_solid": 2,
           "step_solid": 112,
           "bbox_max_delta_mm": 3.7481129311345285e-13,
-          "volume_delta_mm3": -0.00029331753946149064,
+          "volume_delta_mm3": -0.00029331753946193473,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -10995,7 +10997,7 @@
           "source_solid": 3,
           "step_solid": 113,
           "bbox_max_delta_mm": 9.15179043659009e-12,
-          "volume_delta_mm3": -8.219536162812346e-13,
+          "volume_delta_mm3": -8.218981051300034e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11005,7 +11007,7 @@
           "source_solid": 4,
           "step_solid": 114,
           "bbox_max_delta_mm": 3.8760106235713465e-12,
-          "volume_delta_mm3": -0.00010428793075750731,
+          "volume_delta_mm3": -0.0001042879307574518,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -11022,7 +11024,7 @@
           "source_solid": 5,
           "step_solid": 115,
           "bbox_max_delta_mm": 7.982947636264726e-12,
-          "volume_delta_mm3": 5.165923244732085e-12,
+          "volume_delta_mm3": 5.165867733580853e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11032,7 +11034,7 @@
           "source_solid": 6,
           "step_solid": 116,
           "bbox_max_delta_mm": 9.158895863947691e-12,
-          "volume_delta_mm3": 4.496403249731884e-14,
+          "volume_delta_mm3": 4.490852134608758e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11052,7 +11054,7 @@
           "source_solid": 8,
           "step_solid": 118,
           "bbox_max_delta_mm": 9.158895863947691e-12,
-          "volume_delta_mm3": -1.0497158697830855e-13,
+          "volume_delta_mm3": -1.0494383140269292e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11096,7 +11098,7 @@
           "source_solid": 11,
           "step_solid": 121,
           "bbox_max_delta_mm": 3.376854351699876e-12,
-          "volume_delta_mm3": -7.406182701524822e-05,
+          "volume_delta_mm3": -7.406182701523434e-05,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -11133,7 +11135,7 @@
           "source_solid": 14,
           "step_solid": 124,
           "bbox_max_delta_mm": 1.850963826655061e-12,
-          "volume_delta_mm3": 4.538036613155327e-15,
+          "volume_delta_mm3": 4.551914400963142e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11153,7 +11155,7 @@
           "source_solid": 16,
           "step_solid": 126,
           "bbox_max_delta_mm": 4.368061468085216e-12,
-          "volume_delta_mm3": -2.1632695634821175e-13,
+          "volume_delta_mm3": -2.1631307856040394e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -11440,7 +11442,7 @@
           "source_solid": 0,
           "step_solid": 154,
           "bbox_max_delta_mm": 4.440892098500626e-14,
-          "volume_delta_mm3": 8.185452315956354e-12,
+          "volume_delta_mm3": 7.73070496506989e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12156,11 +12158,11 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton0",
+          "name": "JoyLFaceButton001",
           "source_solid": 0,
           "step_solid": 226,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -2.842170943040401e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12180,17 +12182,17 @@
           "source_solid": 0,
           "step_solid": 228,
           "bbox_max_delta_mm": 4.263256414560601e-14,
-          "volume_delta_mm3": -2.255140518769849e-16,
+          "volume_delta_mm3": -2.2898349882893854e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton1",
+          "name": "JoyLFaceButton002",
           "source_solid": 0,
           "step_solid": 229,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12210,17 +12212,17 @@
           "source_solid": 0,
           "step_solid": 231,
           "bbox_max_delta_mm": 3.9968028886505635e-14,
-          "volume_delta_mm3": -2.220446049250313e-16,
+          "volume_delta_mm3": -2.3592239273284576e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton2",
+          "name": "JoyLFaceButton003",
           "source_solid": 0,
           "step_solid": 232,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12240,17 +12242,17 @@
           "source_solid": 0,
           "step_solid": 234,
           "bbox_max_delta_mm": 4.263256414560601e-14,
-          "volume_delta_mm3": -2.255140518769849e-16,
+          "volume_delta_mm3": -2.220446049250313e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyLFaceButton3",
+          "name": "JoyLFaceButton004",
           "source_solid": 0,
           "step_solid": 235,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12259,8 +12261,8 @@
           "name": "JoyLButtonStem3",
           "source_solid": 0,
           "step_solid": 236,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.7763568394002505e-15,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -5.329070518200751e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12270,17 +12272,17 @@
           "source_solid": 0,
           "step_solid": 237,
           "bbox_max_delta_mm": 4.04121180963557e-14,
-          "volume_delta_mm3": -3.157196726277789e-16,
+          "volume_delta_mm3": -2.185751579730777e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton0",
+          "name": "JoyRFaceButton001",
           "source_solid": 0,
           "step_solid": 238,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12299,18 +12301,18 @@
           "name": "GlyphX",
           "source_solid": 0,
           "step_solid": 240,
-          "bbox_max_delta_mm": 3.410605131648481e-13,
-          "volume_delta_mm3": 4.0245584642661925e-16,
+          "bbox_max_delta_mm": 3.481659405224491e-13,
+          "volume_delta_mm3": 4.0939474033052647e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton1",
+          "name": "JoyRFaceButton002",
           "source_solid": 0,
           "step_solid": 241,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12319,8 +12321,8 @@
           "name": "JoyRButtonStem1",
           "source_solid": 0,
           "step_solid": 242,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.7763568394002505e-15,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12330,17 +12332,17 @@
           "source_solid": 0,
           "step_solid": 243,
           "bbox_max_delta_mm": 3.979039320256561e-13,
-          "volume_delta_mm3": -1.8231943732516243e-14,
+          "volume_delta_mm3": -1.817296313433303e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton2",
+          "name": "JoyRFaceButton003",
           "source_solid": 0,
           "step_solid": 244,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -2.842170943040401e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12350,7 +12352,7 @@
           "source_solid": 0,
           "step_solid": 245,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12360,17 +12362,17 @@
           "source_solid": 0,
           "step_solid": 246,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": 1.202857258242318e-14,
+          "volume_delta_mm3": 1.2032042029375134e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton3",
+          "name": "JoyRFaceButton004",
           "source_solid": 0,
           "step_solid": 247,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": -4.263256414560601e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12430,7 +12432,7 @@
           "source_solid": 0,
           "step_solid": 253,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7284841053187847e-12,
+          "volume_delta_mm3": -4.547473508864641e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12480,7 +12482,7 @@
           "source_solid": 0,
           "step_solid": 258,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1823431123048067e-11,
+          "volume_delta_mm3": 5.4569682106375694e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12680,7 +12682,7 @@
           "source_solid": 0,
           "step_solid": 278,
           "bbox_max_delta_mm": 4.405364961712621e-13,
-          "volume_delta_mm3": -1.739580701709542e-14,
+          "volume_delta_mm3": -1.68962066560141e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12690,7 +12692,7 @@
           "source_solid": 1,
           "step_solid": 279,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": -1.3690437672408962e-14,
+          "volume_delta_mm3": -1.3418086086680603e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12880,7 +12882,7 @@
           "source_solid": 0,
           "step_solid": 298,
           "bbox_max_delta_mm": 4.405364961712621e-13,
-          "volume_delta_mm3": -1.739580701709542e-14,
+          "volume_delta_mm3": -1.68962066560141e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12890,7 +12892,7 @@
           "source_solid": 1,
           "step_solid": 299,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": -2.566002965664893e-14,
+          "volume_delta_mm3": -2.5309615514501616e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12930,7 +12932,7 @@
           "source_solid": 0,
           "step_solid": 303,
           "bbox_max_delta_mm": 4.263256414560601e-13,
-          "volume_delta_mm3": 2.7054747331334283e-14,
+          "volume_delta_mm3": 2.768618667658984e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12940,7 +12942,7 @@
           "source_solid": 1,
           "step_solid": 304,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": -1.5515366769136563e-14,
+          "volume_delta_mm3": -1.5295056887687508e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12960,7 +12962,7 @@
           "source_solid": 3,
           "step_solid": 306,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": 8.751679936302992e-15,
+          "volume_delta_mm3": 8.777700788442644e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12970,7 +12972,7 @@
           "source_solid": 4,
           "step_solid": 307,
           "bbox_max_delta_mm": 4.618527782440651e-13,
-          "volume_delta_mm3": 5.492134524942571e-15,
+          "volume_delta_mm3": 5.9847959921199845e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -12980,7 +12982,7 @@
           "source_solid": 5,
           "step_solid": 308,
           "bbox_max_delta_mm": 3.943512183468556e-13,
-          "volume_delta_mm3": 2.7075564013046005e-14,
+          "volume_delta_mm3": 2.7460672624712856e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13000,7 +13002,7 @@
           "source_solid": 7,
           "step_solid": 310,
           "bbox_max_delta_mm": 4.440892098500626e-13,
-          "volume_delta_mm3": 2.4615726124110893e-14,
+          "volume_delta_mm3": 2.5195123765087146e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13010,7 +13012,7 @@
           "source_solid": 8,
           "step_solid": 311,
           "bbox_max_delta_mm": 4.121147867408581e-13,
-          "volume_delta_mm3": 8.913009219568835e-15,
+          "volume_delta_mm3": 8.916478666520788e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13020,7 +13022,7 @@
           "source_solid": 9,
           "step_solid": 312,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": -2.264508025540124e-14,
+          "volume_delta_mm3": -2.2190582704695316e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13030,7 +13032,7 @@
           "source_solid": 10,
           "step_solid": 313,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": 2.293304435241339e-15,
+          "volume_delta_mm3": 2.789435349370706e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13060,7 +13062,7 @@
           "source_solid": 13,
           "step_solid": 316,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": -1.0585282650410477e-14,
+          "volume_delta_mm3": -1.0064865607617435e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13070,7 +13072,7 @@
           "source_solid": 14,
           "step_solid": 317,
           "bbox_max_delta_mm": 4.440892098500626e-13,
-          "volume_delta_mm3": -1.2961853812498703e-14,
+          "volume_delta_mm3": -1.2535111837408408e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13080,7 +13082,7 @@
           "source_solid": 0,
           "step_solid": 318,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -9.662409761190816e-16,
+          "volume_delta_mm3": -6.938893903907228e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13090,7 +13092,7 @@
           "source_solid": 1,
           "step_solid": 319,
           "bbox_max_delta_mm": 4.050093593832571e-13,
-          "volume_delta_mm3": 1.8713329497099807e-16,
+          "volume_delta_mm3": 2.1250362580715887e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13100,7 +13102,7 @@
           "source_solid": 2,
           "step_solid": 320,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -4.558853294867049e-15,
+          "volume_delta_mm3": -4.376707329889484e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13110,7 +13112,7 @@
           "source_solid": 3,
           "step_solid": 321,
           "bbox_max_delta_mm": 4.334310688136611e-13,
-          "volume_delta_mm3": -1.2904607937791468e-14,
+          "volume_delta_mm3": -1.2906342661267445e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13120,7 +13122,7 @@
           "source_solid": 4,
           "step_solid": 322,
           "bbox_max_delta_mm": 5.009326287108706e-13,
-          "volume_delta_mm3": 2.4154289679501062e-14,
+          "volume_delta_mm3": 2.429133283410323e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13130,7 +13132,7 @@
           "source_solid": 5,
           "step_solid": 323,
           "bbox_max_delta_mm": 4.973799150320701e-13,
-          "volume_delta_mm3": 2.4528989950312052e-15,
+          "volume_delta_mm3": 2.63504496000877e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13140,7 +13142,7 @@
           "source_solid": 6,
           "step_solid": 324,
           "bbox_max_delta_mm": 4.192202140984591e-13,
-          "volume_delta_mm3": 2.768618667658984e-15,
+          "volume_delta_mm3": 2.7668839441830073e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13150,7 +13152,7 @@
           "source_solid": 7,
           "step_solid": 325,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": 1.1796119636642288e-15,
+          "volume_delta_mm3": 1.1830814106161824e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13160,7 +13162,7 @@
           "source_solid": 8,
           "step_solid": 326,
           "bbox_max_delta_mm": 1.5631940186722204e-13,
-          "volume_delta_mm3": 1.601149768326593e-15,
+          "volume_delta_mm3": 1.9203388879063255e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13170,7 +13172,7 @@
           "source_solid": 9,
           "step_solid": 327,
           "bbox_max_delta_mm": 4.227729277772596e-13,
-          "volume_delta_mm3": -1.2705114738054135e-14,
+          "volume_delta_mm3": -1.2571541030403921e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13180,7 +13182,7 @@
           "source_solid": 10,
           "step_solid": 328,
           "bbox_max_delta_mm": 4.583000645652646e-13,
-          "volume_delta_mm3": -4.822531263215524e-15,
+          "volume_delta_mm3": -4.81906181626357e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13190,7 +13192,7 @@
           "source_solid": 11,
           "step_solid": 329,
           "bbox_max_delta_mm": 3.339550858072471e-13,
-          "volume_delta_mm3": -3.191891195797325e-16,
+          "volume_delta_mm3": -5.898059818321144e-17,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13200,7 +13202,7 @@
           "source_solid": 0,
           "step_solid": 330,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -8.0629947163402e-15,
+          "volume_delta_mm3": -7.988401606873197e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13210,7 +13212,7 @@
           "source_solid": 1,
           "step_solid": 331,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 5.4713178432308496e-15,
+          "volume_delta_mm3": 5.68295410730002e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13220,7 +13222,7 @@
           "source_solid": 2,
           "step_solid": 332,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 2.6194324487249787e-15,
+          "volume_delta_mm3": 2.73826100682939e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13230,7 +13232,7 @@
           "source_solid": 3,
           "step_solid": 333,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.826577084029779e-14,
+          "volume_delta_mm3": 1.8367252163642434e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13260,7 +13262,7 @@
           "source_solid": 6,
           "step_solid": 336,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -2.179680047564858e-15,
+          "volume_delta_mm3": -2.0521778720805628e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13270,7 +13272,7 @@
           "source_solid": 7,
           "step_solid": 337,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.1239273400853733e-14,
+          "volume_delta_mm3": 1.134422417115033e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13280,7 +13282,7 @@
           "source_solid": 8,
           "step_solid": 338,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.1270498423421316e-14,
+          "volume_delta_mm3": 1.1372847108503947e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13290,7 +13292,7 @@
           "source_solid": 9,
           "step_solid": 339,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 1.4171823436992526e-14,
+          "volume_delta_mm3": 1.4170088713516549e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13320,7 +13322,7 @@
           "source_solid": 12,
           "step_solid": 342,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 6.712512490292255e-15,
+          "volume_delta_mm3": 6.877311220510052e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13330,7 +13332,7 @@
           "source_solid": 13,
           "step_solid": 343,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 7.433290094560618e-16,
+          "volume_delta_mm3": 8.612902058224847e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13340,7 +13342,7 @@
           "source_solid": 14,
           "step_solid": 344,
           "bbox_max_delta_mm": 4.636291350834654e-13,
-          "volume_delta_mm3": 4.939625097843958e-15,
+          "volume_delta_mm3": 4.992534163861251e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13350,7 +13352,7 @@
           "source_solid": 15,
           "step_solid": 345,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": 7.424616477180734e-16,
+          "volume_delta_mm3": 7.41594285980085e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13360,7 +13362,7 @@
           "source_solid": 16,
           "step_solid": 346,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": 5.9266827556747614e-15,
+          "volume_delta_mm3": 5.924948032198785e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13370,7 +13372,7 @@
           "source_solid": 17,
           "step_solid": 347,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -4.978656376053436e-16,
+          "volume_delta_mm3": -3.7990444123892075e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13380,7 +13382,7 @@
           "source_solid": 18,
           "step_solid": 348,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.4961989980299961e-15,
+          "volume_delta_mm3": -1.3817072486155269e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13470,7 +13472,7 @@
           "source_solid": 0,
           "step_solid": 357,
           "bbox_max_delta_mm": 2.753353101070388e-13,
-          "volume_delta_mm3": 2.7075564013046005e-14,
+          "volume_delta_mm3": 2.7984559114457852e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13480,7 +13482,7 @@
           "source_solid": 1,
           "step_solid": 358,
           "bbox_max_delta_mm": 7.922551503725117e-13,
-          "volume_delta_mm3": 2.983377433984913e-14,
+          "volume_delta_mm3": 2.998643000573509e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13500,7 +13502,7 @@
           "source_solid": 3,
           "step_solid": 360,
           "bbox_max_delta_mm": 2.753353101070388e-13,
-          "volume_delta_mm3": 1.2108369862318114e-14,
+          "volume_delta_mm3": 1.2684298056342413e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13510,7 +13512,7 @@
           "source_solid": 4,
           "step_solid": 361,
           "bbox_max_delta_mm": 2.7711166694643907e-13,
-          "volume_delta_mm3": 1.0514158987895428e-14,
+          "volume_delta_mm3": 1.0829878660523207e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -13520,7 +13522,7 @@
           "source_solid": 5,
           "step_solid": 362,
           "bbox_max_delta_mm": 7.922551503725117e-13,
-          "volume_delta_mm3": -1.5952517085082718e-14,
+          "volume_delta_mm3": -1.5949047638130764e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -14690,7 +14692,7 @@
           "source_solid": 0,
           "step_solid": 479,
           "bbox_max_delta_mm": 7.105427357601002e-15,
-          "volume_delta_mm3": -6.232170335351839e-11,
+          "volume_delta_mm3": -6.234657234926999e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15710,7 +15712,7 @@
           "source_solid": 1,
           "step_solid": 581,
           "bbox_max_delta_mm": 4.698463840213662e-13,
-          "volume_delta_mm3": 3.3514857555871913e-15,
+          "volume_delta_mm3": 3.354955202539145e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15720,7 +15722,7 @@
           "source_solid": 2,
           "step_solid": 582,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -1.9758500391375833e-14,
+          "volume_delta_mm3": -1.9751561497471926e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15740,7 +15742,7 @@
           "source_solid": 4,
           "step_solid": 584,
           "bbox_max_delta_mm": 6.834532939592464e-13,
-          "volume_delta_mm3": 2.3071822230491534e-15,
+          "volume_delta_mm3": 2.3054474995731766e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15750,7 +15752,7 @@
           "source_solid": 5,
           "step_solid": 585,
           "bbox_max_delta_mm": 4.2232883856740955e-13,
-          "volume_delta_mm3": -1.457167719820518e-15,
+          "volume_delta_mm3": -1.4589024432964948e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15760,7 +15762,7 @@
           "source_solid": 0,
           "step_solid": 586,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -2.927779546579856e-15,
+          "volume_delta_mm3": -2.9286469083178446e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15780,7 +15782,7 @@
           "source_solid": 2,
           "step_solid": 588,
           "bbox_max_delta_mm": 1.1457501614131615e-13,
-          "volume_delta_mm3": -3.643786661289283e-15,
+          "volume_delta_mm3": -3.644654023027272e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15790,7 +15792,7 @@
           "source_solid": 3,
           "step_solid": 589,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.2133523352719777e-14,
+          "volume_delta_mm3": -1.2132655990981789e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15810,7 +15812,7 @@
           "source_solid": 5,
           "step_solid": 591,
           "bbox_max_delta_mm": 3.268496584496461e-13,
-          "volume_delta_mm3": 7.810592450585574e-15,
+          "volume_delta_mm3": 7.811459812323562e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15820,7 +15822,7 @@
           "source_solid": 6,
           "step_solid": 592,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -5.734128449841336e-15,
+          "volume_delta_mm3": -5.7332610881033474e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15840,7 +15842,7 @@
           "source_solid": 8,
           "step_solid": 594,
           "bbox_max_delta_mm": 2.4158453015843406e-13,
-          "volume_delta_mm3": -5.434021288497348e-15,
+          "volume_delta_mm3": -5.43315392675936e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -15850,7 +15852,7 @@
           "source_solid": 9,
           "step_solid": 595,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -1.0409208217598831e-14,
+          "volume_delta_mm3": -1.0410942941074808e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16009,8 +16011,8 @@
           "name": "JoyLButtonPad3",
           "source_solid": 0,
           "step_solid": 611,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -1.5543122344752192e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16020,7 +16022,7 @@
           "source_solid": 0,
           "step_solid": 612,
           "bbox_max_delta_mm": 6.609468528040452e-11,
-          "volume_delta_mm3": 1.6554757564790634e-10,
+          "volume_delta_mm3": 1.655480197371162e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16170,7 +16172,7 @@
           "source_solid": 0,
           "step_solid": 627,
           "bbox_max_delta_mm": 2.1316282072803006e-13,
-          "volume_delta_mm3": 1.2228351664589354e-10,
+          "volume_delta_mm3": 1.2228174028905414e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16300,7 +16302,7 @@
           "source_solid": 0,
           "step_solid": 640,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": 4.305583667374435e-15,
+          "volume_delta_mm3": 4.309053114326389e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16310,7 +16312,7 @@
           "source_solid": 1,
           "step_solid": 641,
           "bbox_max_delta_mm": 4.698463840213662e-13,
-          "volume_delta_mm3": 3.3584246494910985e-15,
+          "volume_delta_mm3": 3.3514857555871913e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16320,7 +16322,7 @@
           "source_solid": 2,
           "step_solid": 642,
           "bbox_max_delta_mm": 4.831690603168681e-13,
-          "volume_delta_mm3": -1.975503094442388e-14,
+          "volume_delta_mm3": -1.9758500391375833e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16340,7 +16342,7 @@
           "source_solid": 4,
           "step_solid": 644,
           "bbox_max_delta_mm": 6.834532939592464e-13,
-          "volume_delta_mm3": 2.3054474995731766e-15,
+          "volume_delta_mm3": 2.3037127760972e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16350,7 +16352,7 @@
           "source_solid": 5,
           "step_solid": 645,
           "bbox_max_delta_mm": 4.2232883856740955e-13,
-          "volume_delta_mm3": -1.457167719820518e-15,
+          "volume_delta_mm3": -1.4589024432964948e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16360,7 +16362,7 @@
           "source_solid": 0,
           "step_solid": 646,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -2.927345865710862e-15,
+          "volume_delta_mm3": -2.927779546579856e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16380,7 +16382,7 @@
           "source_solid": 2,
           "step_solid": 648,
           "bbox_max_delta_mm": 1.1457501614131615e-13,
-          "volume_delta_mm3": -3.643786661289283e-15,
+          "volume_delta_mm3": -3.644654023027272e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16390,7 +16392,7 @@
           "source_solid": 3,
           "step_solid": 649,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -1.2133523352719777e-14,
+          "volume_delta_mm3": -1.2132655990981789e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16410,7 +16412,7 @@
           "source_solid": 5,
           "step_solid": 651,
           "bbox_max_delta_mm": 3.268496584496461e-13,
-          "volume_delta_mm3": 7.810592450585574e-15,
+          "volume_delta_mm3": 7.811459812323562e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16420,7 +16422,7 @@
           "source_solid": 6,
           "step_solid": 652,
           "bbox_max_delta_mm": 4.4941828036826337e-13,
-          "volume_delta_mm3": -5.7332610881033474e-15,
+          "volume_delta_mm3": -5.731526364627371e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16440,7 +16442,7 @@
           "source_solid": 8,
           "step_solid": 654,
           "bbox_max_delta_mm": 2.4158453015843406e-13,
-          "volume_delta_mm3": -5.434021288497348e-15,
+          "volume_delta_mm3": -5.43315392675936e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16450,7 +16452,7 @@
           "source_solid": 9,
           "step_solid": 655,
           "bbox_max_delta_mm": 3.126388037344441e-13,
-          "volume_delta_mm3": -1.0410942941074808e-14,
+          "volume_delta_mm3": -1.0412677664550785e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16569,8 +16571,8 @@
           "name": "JoyRButtonPad1",
           "source_solid": 0,
           "step_solid": 667,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": -4.440892098500626e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16580,7 +16582,7 @@
           "source_solid": 0,
           "step_solid": 668,
           "bbox_max_delta_mm": 1.9895196601282805e-13,
-          "volume_delta_mm3": -1.2793321957360604e-11,
+          "volume_delta_mm3": -1.2794210135780304e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16600,7 +16602,7 @@
           "source_solid": 0,
           "step_solid": 670,
           "bbox_max_delta_mm": 1.9895196601282805e-13,
-          "volume_delta_mm3": -1.2749357125585448e-11,
+          "volume_delta_mm3": -1.2748913036375598e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16770,7 +16772,7 @@
           "source_solid": 0,
           "step_solid": 687,
           "bbox_max_delta_mm": 2.1316282072803006e-13,
-          "volume_delta_mm3": 1.2228351664589354e-10,
+          "volume_delta_mm3": 1.2228174028905414e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16880,7 +16882,7 @@
           "source_solid": 0,
           "step_solid": 698,
           "bbox_max_delta_mm": 7.503331289626658e-12,
-          "volume_delta_mm3": -5.6705751205754495e-12,
+          "volume_delta_mm3": -5.668798763736049e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16893,9 +16895,9 @@
       "valid": true,
       "solids": 207,
       "expected_solids": 207,
-      "compound_volume_delta_mm3": 50.76387842002441,
-      "matched_solid_volume_delta_mm3": -0.013840232263742161,
-      "sum_absolute_solid_volume_delta_mm3": 0.013840232675574986,
+      "compound_volume_delta_mm3": 50.76387841999531,
+      "matched_solid_volume_delta_mm3": -0.013840232263688752,
+      "sum_absolute_solid_volume_delta_mm3": 0.013840232675570982,
       "max_solid_bbox_delta_mm": 9.00968188943807e-12,
       "colour_entities": 14,
       "solid_checks": [
@@ -17040,7 +17042,7 @@
           "name": "DockUSBTongue1",
           "source_solid": 0,
           "step_solid": 13,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 3.552713678800501e-15,
           "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -17050,8 +17052,8 @@
           "name": "DockUSB1Contact0",
           "source_solid": 0,
           "step_solid": 14,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17060,8 +17062,8 @@
           "name": "DockUSB1Contact1",
           "source_solid": 0,
           "step_solid": 15,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17070,8 +17072,8 @@
           "name": "DockUSB1Contact2",
           "source_solid": 0,
           "step_solid": 16,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17080,8 +17082,8 @@
           "name": "DockUSB1Contact3",
           "source_solid": 0,
           "step_solid": 17,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3869795029440866e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17100,7 +17102,7 @@
           "name": "DockUSBTongue2",
           "source_solid": 0,
           "step_solid": 19,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 3.552713678800501e-15,
           "volume_delta_mm3": 5.684341886080802e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -17110,8 +17112,8 @@
           "name": "DockUSB2Contact0",
           "source_solid": 0,
           "step_solid": 20,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17120,8 +17122,8 @@
           "name": "DockUSB2Contact1",
           "source_solid": 0,
           "step_solid": 21,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17130,8 +17132,8 @@
           "name": "DockUSB2Contact2",
           "source_solid": 0,
           "step_solid": 22,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17140,8 +17142,8 @@
           "name": "DockUSB2Contact3",
           "source_solid": 0,
           "step_solid": 23,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.3314683517128287e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17161,7 +17163,7 @@
           "source_solid": 0,
           "step_solid": 25,
           "bbox_max_delta_mm": 6.252776074688882e-13,
-          "volume_delta_mm3": -3.733124920302089e-15,
+          "volume_delta_mm3": -3.729655473350135e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17171,7 +17173,7 @@
           "source_solid": 1,
           "step_solid": 26,
           "bbox_max_delta_mm": 2.6290081223123707e-13,
-          "volume_delta_mm3": -2.546574062733953e-15,
+          "volume_delta_mm3": -2.5396351688300456e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17391,7 +17393,7 @@
           "source_solid": 0,
           "step_solid": 48,
           "bbox_max_delta_mm": 4.689582056016661e-13,
-          "volume_delta_mm3": -2.223221606811876e-14,
+          "volume_delta_mm3": -2.2235685515070713e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -17421,7 +17423,7 @@
           "source_solid": 3,
           "step_solid": 51,
           "bbox_max_delta_mm": 2.2737367544323206e-13,
-          "volume_delta_mm3": -7.606762442158299e-15,
+          "volume_delta_mm3": -7.605027718682322e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18576,7 +18578,7 @@
           "source_solid": 0,
           "step_solid": 163,
           "bbox_max_delta_mm": 1.9095836023552692e-13,
-          "volume_delta_mm3": -1.2678746941219288e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18596,7 +18598,7 @@
           "source_solid": 0,
           "step_solid": 165,
           "bbox_max_delta_mm": 1.9095836023552692e-13,
-          "volume_delta_mm3": -1.2678746941219288e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18616,7 +18618,7 @@
           "source_solid": 0,
           "step_solid": 167,
           "bbox_max_delta_mm": 1.900701818158268e-13,
-          "volume_delta_mm3": -1.270095140171179e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18636,7 +18638,7 @@
           "source_solid": 0,
           "step_solid": 169,
           "bbox_max_delta_mm": 1.900701818158268e-13,
-          "volume_delta_mm3": -1.270095140171179e-13,
+          "volume_delta_mm3": -1.2656542480726785e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18655,8 +18657,8 @@
           "name": "DockUSBCPlug",
           "source_solid": 0,
           "step_solid": 171,
-          "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": -1.3500311979441904e-13,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -8.526512829121202e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18666,7 +18668,7 @@
           "source_solid": 0,
           "step_solid": 172,
           "bbox_max_delta_mm": 2.842170943040401e-14,
-          "volume_delta_mm3": 4.547473508864641e-13,
+          "volume_delta_mm3": 4.796163466380676e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18936,7 +18938,7 @@
           "source_solid": 0,
           "step_solid": 199,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -18956,7 +18958,7 @@
           "source_solid": 0,
           "step_solid": 201,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -19019,11 +19021,11 @@
       "valid": true,
       "solids": 963,
       "expected_solids": 963,
-      "compound_volume_delta_mm3": -227.8298234542599,
-      "matched_solid_volume_delta_mm3": -0.028175455368760434,
-      "sum_absolute_solid_volume_delta_mm3": 0.1170425736303406,
-      "max_solid_bbox_delta_mm": 6.889422365929931e-11,
-      "colour_entities": 25,
+      "compound_volume_delta_mm3": -227.83061161951628,
+      "matched_solid_volume_delta_mm3": -0.028175455403842913,
+      "sum_absolute_solid_volume_delta_mm3": 0.11704257359504402,
+      "max_solid_bbox_delta_mm": 9.999999406318238e-08,
+      "colour_entities": 17,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -19840,7 +19842,7 @@
           "source_solid": 0,
           "step_solid": 81,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": 2.3919710656628013e-10,
+          "volume_delta_mm3": 2.1009327610954642e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20385,7 +20387,7 @@
           "source_solid": 2,
           "step_solid": 132,
           "bbox_max_delta_mm": 4.511946372076636e-13,
-          "volume_delta_mm3": -4.034966805122053e-15,
+          "volume_delta_mm3": -4.0332320816460765e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20415,7 +20417,7 @@
           "source_solid": 5,
           "step_solid": 135,
           "bbox_max_delta_mm": 2.3803181647963356e-13,
-          "volume_delta_mm3": -6.227657278756737e-16,
+          "volume_delta_mm3": -6.262351748276274e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20425,7 +20427,7 @@
           "source_solid": 6,
           "step_solid": 136,
           "bbox_max_delta_mm": 4.014566457044566e-13,
-          "volume_delta_mm3": 6.929352924789356e-15,
+          "volume_delta_mm3": 6.9284855630513675e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20505,7 +20507,7 @@
           "source_solid": 14,
           "step_solid": 144,
           "bbox_max_delta_mm": 3.872457909892546e-13,
-          "volume_delta_mm3": -3.378373969464832e-15,
+          "volume_delta_mm3": -3.3792413312028202e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20572,7 +20574,7 @@
           "source_solid": 0,
           "step_solid": 150,
           "bbox_max_delta_mm": 8.526512829121202e-14,
-          "volume_delta_mm3": 1.4210854715202004e-14,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20592,7 +20594,7 @@
           "source_solid": 0,
           "step_solid": 152,
           "bbox_max_delta_mm": 8.526512829121202e-14,
-          "volume_delta_mm3": -1.4210854715202004e-14,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20622,7 +20624,7 @@
           "source_solid": 0,
           "step_solid": 155,
           "bbox_max_delta_mm": 8.43769498715119e-14,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 7.105427357601002e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -20972,7 +20974,7 @@
           "source_solid": 0,
           "step_solid": 190,
           "bbox_max_delta_mm": 1.7763568394002505e-15,
-          "volume_delta_mm3": 8.185452315956354e-12,
+          "volume_delta_mm3": 7.73070496506989e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21328,10 +21330,10 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton0",
+          "name": "JoyLFaceButton001",
           "source_solid": 0,
           "step_solid": 226,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
           "volume_delta_mm3": -5.684341886080802e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -21342,7 +21344,7 @@
           "source_solid": 0,
           "step_solid": 227,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.552713678800501e-15,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21358,10 +21360,10 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton1",
+          "name": "JoyLFaceButton002",
           "source_solid": 0,
           "step_solid": 229,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
           "volume_delta_mm3": -5.684341886080802e-14,
           "valid": true,
           "boolean_confirmation": null,
@@ -21388,7 +21390,7 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton2",
+          "name": "JoyLFaceButton003",
           "source_solid": 0,
           "step_solid": 232,
           "bbox_max_delta_mm": 0.0,
@@ -21402,7 +21404,7 @@
           "source_solid": 0,
           "step_solid": 233,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 3.552713678800501e-15,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21418,7 +21420,7 @@
           "pass": true
         },
         {
-          "name": "JoyLFaceButton3",
+          "name": "JoyLFaceButton004",
           "source_solid": 0,
           "step_solid": 235,
           "bbox_max_delta_mm": 0.0,
@@ -21432,7 +21434,7 @@
           "source_solid": 0,
           "step_solid": 236,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 3.552713678800501e-15,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21448,11 +21450,11 @@
           "pass": true
         },
         {
-          "name": "JoyRFaceButton0",
+          "name": "JoyRFaceButton001",
           "source_solid": 0,
           "step_solid": 238,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -2.842170943040401e-14,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
+          "volume_delta_mm3": -5.684341886080802e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21462,7 +21464,7 @@
           "source_solid": 0,
           "step_solid": 239,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21472,17 +21474,17 @@
           "source_solid": 0,
           "step_solid": 240,
           "bbox_max_delta_mm": 3.694822225952521e-13,
-          "volume_delta_mm3": 4.0592529337857286e-16,
+          "volume_delta_mm3": 4.2674197509029455e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton1",
+          "name": "JoyRFaceButton002",
           "source_solid": 0,
           "step_solid": 241,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -4.263256414560601e-14,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
+          "volume_delta_mm3": -7.105427357601002e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21492,7 +21494,7 @@
           "source_solid": 0,
           "step_solid": 242,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21508,11 +21510,11 @@
           "pass": true
         },
         {
-          "name": "JoyRFaceButton2",
+          "name": "JoyRFaceButton003",
           "source_solid": 0,
           "step_solid": 244,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -5.684341886080802e-14,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
+          "volume_delta_mm3": -7.105427357601002e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21522,7 +21524,7 @@
           "source_solid": 0,
           "step_solid": 245,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21532,17 +21534,17 @@
           "source_solid": 0,
           "step_solid": 246,
           "bbox_max_delta_mm": 4.547473508864641e-13,
-          "volume_delta_mm3": 1.169203622808368e-14,
+          "volume_delta_mm3": 1.1698975121987587e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "JoyRFaceButton3",
+          "name": "JoyRFaceButton004",
           "source_solid": 0,
           "step_solid": 247,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -5.684341886080802e-14,
+          "bbox_max_delta_mm": 9.999999406318238e-08,
+          "volume_delta_mm3": -7.105427357601002e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21552,7 +21554,7 @@
           "source_solid": 0,
           "step_solid": 248,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 3.552713678800501e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21602,7 +21604,7 @@
           "source_solid": 0,
           "step_solid": 253,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.4569682106375694e-12,
+          "volume_delta_mm3": 6.366462912410498e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -21652,7 +21654,7 @@
           "source_solid": 0,
           "step_solid": 258,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.546140993013978e-11,
+          "volume_delta_mm3": 9.094947017729282e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23712,7 +23714,7 @@
           "source_solid": 0,
           "step_solid": 464,
           "bbox_max_delta_mm": 3.090860900556436e-12,
-          "volume_delta_mm3": -6.233236149455479e-11,
+          "volume_delta_mm3": -6.232880878087599e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23722,7 +23724,7 @@
           "source_solid": 0,
           "step_solid": 465,
           "bbox_max_delta_mm": 4.654054919228656e-12,
-          "volume_delta_mm3": -6.233058513771539e-11,
+          "volume_delta_mm3": -6.232703242403659e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23751,8 +23753,8 @@
           "name": "FanBlade8",
           "source_solid": 0,
           "step_solid": 468,
-          "bbox_max_delta_mm": 5.048406137575512e-12,
-          "volume_delta_mm3": -6.235012506294879e-11,
+          "bbox_max_delta_mm": 5.030642569181509e-12,
+          "volume_delta_mm3": -6.234301963559119e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23791,8 +23793,8 @@
           "name": "FanBlade12",
           "source_solid": 0,
           "step_solid": 472,
-          "bbox_max_delta_mm": 4.460432023734029e-12,
-          "volume_delta_mm3": -6.231104521248199e-11,
+          "bbox_max_delta_mm": 4.462208380573429e-12,
+          "volume_delta_mm3": -6.227196536201518e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23801,8 +23803,8 @@
           "name": "FanBlade13",
           "source_solid": 0,
           "step_solid": 473,
-          "bbox_max_delta_mm": 3.0890845437170356e-12,
-          "volume_delta_mm3": -6.232170335351839e-11,
+          "bbox_max_delta_mm": 3.0881963652973354e-12,
+          "volume_delta_mm3": -6.228617621673038e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23812,7 +23814,7 @@
           "source_solid": 0,
           "step_solid": 474,
           "bbox_max_delta_mm": 4.661160346586257e-12,
-          "volume_delta_mm3": -6.235545413346699e-11,
+          "volume_delta_mm3": -6.235723049030639e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23822,7 +23824,7 @@
           "source_solid": 0,
           "step_solid": 475,
           "bbox_max_delta_mm": 5.286437954055145e-12,
-          "volume_delta_mm3": -6.232347971035779e-11,
+          "volume_delta_mm3": -6.232170335351839e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23832,7 +23834,7 @@
           "source_solid": 0,
           "step_solid": 476,
           "bbox_max_delta_mm": 3.744560217455728e-12,
-          "volume_delta_mm3": -6.235367777662759e-11,
+          "volume_delta_mm3": -6.235012506294879e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23892,7 +23894,7 @@
           "source_solid": 0,
           "step_solid": 482,
           "bbox_max_delta_mm": 3.0890845437170356e-12,
-          "volume_delta_mm3": -6.232880878087599e-11,
+          "volume_delta_mm3": -6.232525606719719e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23902,7 +23904,7 @@
           "source_solid": 0,
           "step_solid": 483,
           "bbox_max_delta_mm": 4.654943097648356e-12,
-          "volume_delta_mm3": -6.232347971035779e-11,
+          "volume_delta_mm3": -6.232703242403659e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23912,7 +23914,7 @@
           "source_solid": 0,
           "step_solid": 484,
           "bbox_max_delta_mm": 5.286437954055145e-12,
-          "volume_delta_mm3": -6.232880878087599e-11,
+          "volume_delta_mm3": -6.233058513771539e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23922,7 +23924,7 @@
           "source_solid": 0,
           "step_solid": 485,
           "bbox_max_delta_mm": 3.723688024592775e-12,
-          "volume_delta_mm3": -6.233236149455479e-11,
+          "volume_delta_mm3": -6.232880878087599e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23932,7 +23934,7 @@
           "source_solid": 0,
           "step_solid": 486,
           "bbox_max_delta_mm": 5.030642569181509e-12,
-          "volume_delta_mm3": -6.234657234926999e-11,
+          "volume_delta_mm3": -6.235012506294879e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23951,7 +23953,7 @@
           "name": "FanBlade28",
           "source_solid": 0,
           "step_solid": 488,
-          "bbox_max_delta_mm": 5.329070518200751e-15,
+          "bbox_max_delta_mm": 6.217248937900877e-15,
           "volume_delta_mm3": -6.231992699667899e-11,
           "valid": true,
           "boolean_confirmation": null,
@@ -23971,8 +23973,8 @@
           "name": "FanBlade30",
           "source_solid": 0,
           "step_solid": 490,
-          "bbox_max_delta_mm": 4.458655666894629e-12,
-          "volume_delta_mm3": -6.233236149455479e-11,
+          "bbox_max_delta_mm": 4.444444812179427e-12,
+          "volume_delta_mm3": -6.233413785139419e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -23982,7 +23984,7 @@
           "source_solid": 0,
           "step_solid": 491,
           "bbox_max_delta_mm": 3.0873081868776353e-12,
-          "volume_delta_mm3": -6.231815063983959e-11,
+          "volume_delta_mm3": -6.231459792616079e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -24011,8 +24013,8 @@
           "name": "FanBlade34",
           "source_solid": 0,
           "step_solid": 494,
-          "bbox_max_delta_mm": 3.737454790098127e-12,
-          "volume_delta_mm3": -6.231459792616079e-11,
+          "bbox_max_delta_mm": 3.744560217455728e-12,
+          "volume_delta_mm3": -6.234657234926999e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -24132,7 +24134,7 @@
           "source_solid": 0,
           "step_solid": 506,
           "bbox_max_delta_mm": 4.973799150320701e-14,
-          "volume_delta_mm3": 6.139089236967266e-12,
+          "volume_delta_mm3": 5.9117155615240335e-12,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -24452,7 +24454,7 @@
           "source_solid": 0,
           "step_solid": 538,
           "bbox_max_delta_mm": 1.836752971939859e-12,
-          "volume_delta_mm3": -6.430411758628907e-13,
+          "volume_delta_mm3": -6.439293542825908e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25152,7 +25154,7 @@
           "source_solid": 0,
           "step_solid": 608,
           "bbox_max_delta_mm": 6.605205271625891e-11,
-          "volume_delta_mm3": 1.6550982806506909e-10,
+          "volume_delta_mm3": 1.655133807787479e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25192,7 +25194,7 @@
           "source_solid": 0,
           "step_solid": 612,
           "bbox_max_delta_mm": 6.610889613511972e-11,
-          "volume_delta_mm3": 1.6554313475580784e-10,
+          "volume_delta_mm3": 1.655444670234374e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25342,7 +25344,7 @@
           "source_solid": 0,
           "step_solid": 627,
           "bbox_max_delta_mm": 2.2737367544323206e-13,
-          "volume_delta_mm3": 1.2229062207325114e-10,
+          "volume_delta_mm3": 1.2229151025167084e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25732,7 +25734,7 @@
           "source_solid": 0,
           "step_solid": 666,
           "bbox_max_delta_mm": 1.7053025658242404e-13,
-          "volume_delta_mm3": -1.2756906642152899e-11,
+          "volume_delta_mm3": -1.2756462552943049e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25752,7 +25754,7 @@
           "source_solid": 0,
           "step_solid": 668,
           "bbox_max_delta_mm": 1.7053025658242404e-13,
-          "volume_delta_mm3": -1.2790657422101503e-11,
+          "volume_delta_mm3": -1.2791545600521204e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25782,7 +25784,7 @@
           "source_solid": 0,
           "step_solid": 671,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.220446049250313e-16,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25792,7 +25794,7 @@
           "source_solid": 0,
           "step_solid": 672,
           "bbox_max_delta_mm": 1.7053025658242404e-13,
-          "volume_delta_mm3": -1.2758238909782449e-11,
+          "volume_delta_mm3": -1.276090344504155e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -25942,7 +25944,7 @@
           "source_solid": 0,
           "step_solid": 687,
           "bbox_max_delta_mm": 2.2737367544323206e-13,
-          "volume_delta_mm3": 1.2229062207325114e-10,
+          "volume_delta_mm3": 1.2229151025167084e-10,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27484,7 +27486,7 @@
           "source_solid": 0,
           "step_solid": 837,
           "bbox_max_delta_mm": 2.3874235921539366e-12,
-          "volume_delta_mm3": -3.773692469621892e-11,
+          "volume_delta_mm3": -3.773514833937952e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27544,7 +27546,7 @@
           "source_solid": 0,
           "step_solid": 843,
           "bbox_max_delta_mm": 2.4300561562995426e-12,
-          "volume_delta_mm3": -3.800693093580776e-11,
+          "volume_delta_mm3": -3.802291814736236e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27604,7 +27606,7 @@
           "source_solid": 0,
           "step_solid": 849,
           "bbox_max_delta_mm": 2.3874235921539366e-12,
-          "volume_delta_mm3": -3.778666268772213e-11,
+          "volume_delta_mm3": -3.7825742538188933e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27614,7 +27616,7 @@
           "source_solid": 0,
           "step_solid": 850,
           "bbox_max_delta_mm": 1.4210854715202004e-14,
-          "volume_delta_mm3": -3.786304603181634e-11,
+          "volume_delta_mm3": -3.785949331813754e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27654,7 +27656,7 @@
           "source_solid": 0,
           "step_solid": 854,
           "bbox_max_delta_mm": 6.30961949354969e-12,
-          "volume_delta_mm3": -3.8060221640989766e-11,
+          "volume_delta_mm3": -3.801226000632596e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27664,7 +27666,7 @@
           "source_solid": 0,
           "step_solid": 855,
           "bbox_max_delta_mm": 2.4229507289419416e-12,
-          "volume_delta_mm3": -3.75894870785487e-11,
+          "volume_delta_mm3": -3.75930397922275e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27674,7 +27676,7 @@
           "source_solid": 0,
           "step_solid": 856,
           "bbox_max_delta_mm": 1.1368683772161603e-13,
-          "volume_delta_mm3": -3.743139131984208e-11,
+          "volume_delta_mm3": -3.742783860616328e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27684,7 +27686,7 @@
           "source_solid": 0,
           "step_solid": 857,
           "bbox_max_delta_mm": 2.9558577807620168e-12,
-          "volume_delta_mm3": -3.807620885254437e-11,
+          "volume_delta_mm3": -3.801048364948656e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27694,7 +27696,7 @@
           "source_solid": 0,
           "step_solid": 858,
           "bbox_max_delta_mm": 6.934897101018578e-12,
-          "volume_delta_mm3": -3.771383205730672e-11,
+          "volume_delta_mm3": -3.770850298678852e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27734,7 +27736,7 @@
           "source_solid": 0,
           "step_solid": 862,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": -1.2723155862204294e-13,
+          "volume_delta_mm3": -1.2745360322696797e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27754,7 +27756,7 @@
           "source_solid": 0,
           "step_solid": 864,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": -1.2723155862204294e-13,
+          "volume_delta_mm3": -1.2745360322696797e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27774,7 +27776,7 @@
           "source_solid": 0,
           "step_solid": 866,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": -1.2723155862204294e-13,
+          "volume_delta_mm3": -1.270095140171179e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27794,7 +27796,7 @@
           "source_solid": 0,
           "step_solid": 868,
           "bbox_max_delta_mm": 1.9184653865522705e-13,
-          "volume_delta_mm3": -1.2723155862204294e-13,
+          "volume_delta_mm3": -1.270095140171179e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27814,7 +27816,7 @@
           "source_solid": 0,
           "step_solid": 870,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.4921397450962104e-13,
+          "volume_delta_mm3": -9.947598300641403e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27824,7 +27826,7 @@
           "source_solid": 0,
           "step_solid": 871,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.1316282072803006e-13,
+          "volume_delta_mm3": 2.4868995751603507e-13,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27834,7 +27836,7 @@
           "source_solid": 0,
           "step_solid": 872,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27844,7 +27846,7 @@
           "source_solid": 0,
           "step_solid": 873,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27854,7 +27856,7 @@
           "source_solid": 0,
           "step_solid": 874,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27864,7 +27866,7 @@
           "source_solid": 0,
           "step_solid": 875,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27874,7 +27876,7 @@
           "source_solid": 0,
           "step_solid": 876,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27884,7 +27886,7 @@
           "source_solid": 0,
           "step_solid": 877,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27894,7 +27896,7 @@
           "source_solid": 0,
           "step_solid": 878,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27904,7 +27906,7 @@
           "source_solid": 0,
           "step_solid": 879,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27914,7 +27916,7 @@
           "source_solid": 0,
           "step_solid": 880,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27924,7 +27926,7 @@
           "source_solid": 0,
           "step_solid": 881,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27934,7 +27936,7 @@
           "source_solid": 0,
           "step_solid": 882,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27944,7 +27946,7 @@
           "source_solid": 0,
           "step_solid": 883,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27954,7 +27956,7 @@
           "source_solid": 0,
           "step_solid": 884,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.469446951953614e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27964,7 +27966,7 @@
           "source_solid": 0,
           "step_solid": 885,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.469446951953614e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27974,7 +27976,7 @@
           "source_solid": 0,
           "step_solid": 886,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27984,7 +27986,7 @@
           "source_solid": 0,
           "step_solid": 887,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -27994,7 +27996,7 @@
           "source_solid": 0,
           "step_solid": 888,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28004,7 +28006,7 @@
           "source_solid": 0,
           "step_solid": 889,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28014,7 +28016,7 @@
           "source_solid": 0,
           "step_solid": 890,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28024,7 +28026,7 @@
           "source_solid": 0,
           "step_solid": 891,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28034,7 +28036,7 @@
           "source_solid": 0,
           "step_solid": 892,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28044,7 +28046,7 @@
           "source_solid": 0,
           "step_solid": 893,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.8163916471489756e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28054,7 +28056,7 @@
           "source_solid": 0,
           "step_solid": 894,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.469446951953614e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28064,7 +28066,7 @@
           "source_solid": 0,
           "step_solid": 895,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -3.469446951953614e-17,
+          "volume_delta_mm3": 4.753142324176451e-16,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28094,7 +28096,7 @@
           "source_solid": 0,
           "step_solid": 898,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.7763568394002505e-15,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28842,7 +28844,8 @@
     }
   ],
   "pass": true,
-  "started": 1788857602.6062539,
+  "started": 1792044324.4460816,
+  "native_evaluation": "saved BRep (no history recompute)",
   "acceptance": {
     "volume_metric": "reported; geometry acceptance requires Boolean confirmation for differences > 1e-6 mm3",
     "solid_bbox_coordinate_delta_mm": 1e-06,
@@ -28851,5 +28854,5 @@
   },
   "method": "One-to-one source/STEP solid matching by six bounding coordinates; absolute volume errors summed without cancellation; Boolean difference confirmation for discrepant solids. Compound-level volume estimate retained for transparency.",
   "numerical_reference": "https://dev.opencascade.org/doc/refman/html/class_b_rep_g_prop___gauss.html",
-  "elapsed_seconds": 256.170850276947
+  "elapsed_seconds": 295.4361894130707
 }

@@ -1,0 +1,45 @@
+{
+  "device": "psv",
+  "source_sha256": "2b4b58788fc09bcec97ea018ee4f02c5a89c647dd2c60aee44be1fc227badf4c",
+  "checks": [
+    {
+      "name": "body.X",
+      "actual_mm": 182.0000002,
+      "expected_mm": 182,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "body.Y",
+      "actual_mm": 83.50000010000002,
+      "expected_mm": 83.5,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "body.Z",
+      "actual_mm": 18.600000200000004,
+      "expected_mm": 18.6,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "strap_eye_-1.length",
+      "actual_mm": 10.000000199999995,
+      "expected_mm": 10,
+      "basis": "Official oblique image fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "strap_eye_1.length",
+      "actual_mm": 10.000000199999995,
+      "expected_mm": 10,
+      "basis": "Official oblique image fit; not a factory dimension",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep measurements; no history recompute"
+}

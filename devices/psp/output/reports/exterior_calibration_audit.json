@@ -1,0 +1,52 @@
+{
+  "device": "psp",
+  "source_sha256": "9f0adaa1147785e56a7ad5fd5e70292ce27c874db5fbcb27bd5910595c893b41",
+  "checks": [
+    {
+      "name": "body.X",
+      "actual_mm": 170.0000002,
+      "expected_mm": 170,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "body.Y",
+      "actual_mm": 74.0000001,
+      "expected_mm": 74,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "body.Z",
+      "actual_mm": 23.000000200000002,
+      "expected_mm": 23,
+      "basis": "Sony published envelope excluding largest projections",
+      "passed": true
+    },
+    {
+      "name": "directional_span",
+      "actual_mm": 26.0,
+      "expected_mm": 26,
+      "basis": "Original manual image fit",
+      "passed": true
+    },
+    {
+      "name": "face_button_diameter",
+      "actual_mm": 9.199999999999989,
+      "expected_mm": 9.2,
+      "basis": "Original manual image fit",
+      "passed": true
+    },
+    {
+      "name": "face_button_pitch",
+      "actual_mm": 10.4,
+      "expected_mm": 10.4,
+      "basis": "Original manual image fit",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep measurements; no history recompute"
+}

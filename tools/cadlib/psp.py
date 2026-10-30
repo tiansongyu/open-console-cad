@@ -420,3 +420,7 @@ def stage14(m):
     m.checkpoint(14,'flush_top_interfaces_and_rear_mark','将顶部红外窗、UMD 拨钮和 USB 附件安装环露出到机壳表面，并将后部标识移开螺钉孔，完成图纸视图中发现的可见性修正。')
 
 STAGES[14]=stage14
+
+# Public-reference refinement; local values remain estimates.
+from .handheld_refinement import refine_psp
+STAGES[15] = refine_psp

@@ -4,7 +4,7 @@
 
 [![PSP-1000 原生模型](../../site/public/images/psp/hero.webp)](https://tiansongyu.github.io/open-console-cad/?device=psp&view=assembled#viewer)
 
-本项目研究初代 PSP-1000：黑色圆端机身、银色周缘、单模拟滑杆、四向键、几何符号面按键、HOME 系统键列、Mini-USB、红外、记忆棒和 UMD 光驱。模型经过 14 轮迭代，包含 346 个组件、437 个实体。内部为主要模块和装配关系的近似示意，未包含真实电路、固件或游戏内容。
+本项目研究初代 PSP-1000：黑色圆端机身、银色周缘、单模拟滑杆、四向键、几何符号面按键、HOME 系统键列、Mini-USB、红外、记忆棒和 UMD 光驱。模型经过 15 轮迭代，包含 346 个组件、437 个实体。内部为主要模块和装配关系的近似示意，未包含真实电路、固件或游戏内容。
 
 ## 下载文件
 
@@ -21,7 +21,7 @@
 
 参数表 `Parameters` 保存主体尺寸等输入。部分外壳宽高通过表达式连接到参数表；局部孔位、封装和排线采用显式坐标，修改主尺寸后应重新检查这些配合。
 
-`Rebuild_PSP1000.FCMacro` 执行全部 14 阶段，将新模型、STEP 和预览写入 `output/rebuilt/`，保留交付文件。逐轮入口为 `scripts/iterNN_*.py`，共享实现位于仓库 `tools/cadlib/psp.py`。运行时需保留完整仓库目录结构。
+`Rebuild_PSP1000.FCMacro` 执行全部 15 阶段，将新模型、STEP 和预览写入 `output/rebuilt/`，保留交付文件。逐轮入口为 `scripts/iterNN_*.py`，共享实现位于仓库 `tools/cadlib/psp.py`。运行时需保留完整仓库目录结构。
 
 图纸是当前几何的快照，改模后需重新生成。`scripts/drawing_geometry.py` 在 FreeCAD Python 环境中投影实际 BRep；`tools/cadlib/build_book.py devices/psp` 使用 Kami 构建 PDF，并需要继续执行内容、字体和逐页视觉检查。原生图页由 `cadlib.native_sheets.create_native_sheets(model)` 生成，保留自包含 SVG 和可测尺寸参考。
 
@@ -38,7 +38,7 @@
 
 具体链接见 [SOURCES.md](references/SOURCES.md)。初代型号以官方说明书的控制件、接口和容量为依据，社区拆解照片用于相对布局参考。局部曲面、壁厚、孔位、光学和机械细节不代表厂商制造数据。
 
-## 验证范围
+## 历史验证记录
 
 - 346 个物理组件逐件进行独立源码重建比对。
 - 原生整机、爆炸模型和三份 STEP 回读；检查有效性、实体对应关系、包络及必要的双向布尔差集。
@@ -48,3 +48,9 @@
 - 网页 GLB 从同一组 BRep 导出，保留组件编号、颜色、分组和爆炸位移；当前 PSP 预览使用 0.10 mm 线性偏差和 0.15 rad 角度偏差以保留圆弧外观；网格用于展示，继续设计应使用 FCStd 或 STEP。
 
 原创内容遵循根目录 MIT 协议；第三方名称、标识、字体和参考材料的权利说明见 [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)。
+
+## 2026-10-15 外观校准 · 第 15 轮
+
+本轮更新方向键尖端方向与比例、面键布局、屏幕边框、标识和对应示意机构间隙。总体公开尺寸保持不变；局部数值属于官方图片或说明书拟合，依据与不确定性见 [校准依据](references/exterior_calibration.json)。没有原厂公差图或实机测量，不能证明完全一致或零件互换。
+
+最新交付检查见 [本轮检查](output/reports/exterior_delivery_checks.json)：核对保存后的原生 BRep、装配干涉、公开包络、STEP 回读、图纸尺寸及网页源文件身份。本轮已检查该设备的全部网页视图、组件数量、下载链接、效果图及爆炸滑块，并检查公共查看器的桌面、平板和手机布局。全阶段源码重建与其余 22 款设备的网页交互未重跑；历史报告保留适用版本。本轮文件哈希与交付汇总于 2026-10-29 复核。

@@ -20,7 +20,7 @@ for key,o in rebuilt.items():
     checks.append(check)
 assert all(r['pass'] for r in checks)
 ns['D'].saveAs(str(ROOT/'output/rebuild_verification/Switch2_Rebuilt.FCStd'))
-RESULT={'pass':True,'stages':15,'physical_components':len(rebuilt),'max_volume_delta_mm3':max(abs(x['volume_delta_mm3']) for x in checks),'max_bbox_delta_mm':max(x['bbox_max_delta_mm'] for x in checks),'checks':checks}
+RESULT={'pass':True,'stages':16,'physical_components':len(rebuilt),'max_volume_delta_mm3':max(abs(x['volume_delta_mm3']) for x in checks),'max_bbox_delta_mm':max(x['bbox_max_delta_mm'] for x in checks),'checks':checks}
 (OUT/'reports/rebuild_verification.json').write_text(json.dumps(RESULT,ensure_ascii=False,indent=2))
 progress.write_text(json.dumps({'state':'done','pass':True,'time':time.time()}))
 App.closeDocument(ns['D'].Name);App.setActiveDocument(original_doc.Name)

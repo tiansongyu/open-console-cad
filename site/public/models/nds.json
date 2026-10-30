@@ -1,21 +1,28 @@
 {
   "device": "nds",
   "components": 321,
-  "triangles": 79406,
-  "materials": 16,
-  "bytes": 3185776,
-  "deflection_mm": 0.25,
+  "triangles": 227022,
+  "materials": 15,
+  "bytes": 8075344,
+  "deflection_mm": 0.1,
+  "angular_deflection_rad": 0.15,
   "units": "meters",
   "color_conversion": "FreeCAD sRGB to glTF linear RGB",
   "normal_crease_degrees": 40,
   "source": "devices/nds/output/NintendoDS_Complete.FCStd",
-  "source_sha256": "37f5b96256c58854b5d705150a195b08e9cad1e1873cb2ed77e12253b2e91476",
-  "sha256": "a4285207f64fc9180f0bebe56b1596ddbf2ab4110f55f6601eaba3567f8faebb",
+  "source_sha256": "6a07f48b410b46f071f8f6d4c1d6d3ab0698d0f09fa942167a1fe20f8da0064a",
+  "sha256": "87d7dc4b2562b8126a9b3376888f115c0747299be01543c7fbe3ecf5cfeb51b0",
   "preserved": [
     "part IDs",
     "part numbers",
     "assembly groups",
     "colors",
     "exploded offsets"
-  ]
+  ],
+  "gzip": {
+    "bytes": 2365595,
+    "sha256": "acb56ea9587843ee0e33d6e83e8dac846db0224268f565faa87bf2e070911f9c",
+    "decoded_sha256": "87d7dc4b2562b8126a9b3376888f115c0747299be01543c7fbe3ecf5cfeb51b0",
+    "lossless": true
+  }
 }

@@ -10,6 +10,7 @@ import json
 import os
 import sys
 import time
+import hashlib
 from pathlib import Path
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 import FreeCAD as App
@@ -19,13 +20,16 @@ import Sketcher
 out=Path(sys.argv[1]).resolve()
 manifest=json.loads((out/'reports/final_manifest.json').read_text())
 result={'native':[],'step':[],'pass':True,'started':time.time(),
+        'native_evaluation':'saved BRep (no history recompute)' if '--saved-geometry' in sys.argv else 'full history recompute',
         'acceptance':{'volume_metric':'reported; geometry acceptance requires Boolean confirmation for differences > 1e-6 mm3','solid_bbox_coordinate_delta_mm':1e-6,
                       'boolean_confirmation_trigger_mm3':1e-6,'boolean_residual_volume_mm3':1e-6},
         'method':'One-to-one source/STEP solid matching by six bounding coordinates; absolute volume errors summed without cancellation; Boolean difference confirmation for discrepant solids. Compound-level volume estimate retained for transparency.',
         'numerical_reference':'https://dev.opencascade.org/doc/refman/html/class_b_rep_g_prop___gauss.html'}
 docs={}
 for filename,key in [('Switch2_Complete.FCStd','objects'),('Switch2_Exploded.FCStd','exploded_objects')]:
-    d=App.openDocument(str(out/filename));d.recompute();docs[key]=d
+    d=App.openDocument(str(out/filename))
+    if '--saved-geometry' not in sys.argv:d.recompute()
+    docs[key]=d
     rows=manifest[key]
     invalid=[o.Name for o in d.Objects if 'Invalid' in o.State]
     errors=[]
@@ -34,7 +38,7 @@ for filename,key in [('Switch2_Complete.FCStd','objects'),('Switch2_Exploded.FCS
         if o is None or o.Shape.isNull() or not o.Shape.isValid() or len(o.Shape.Solids)!=row['solids'] or abs(o.Shape.Volume-row['volume'])>1e-4:
             errors.append(row['name'])
     passed=not invalid and not errors
-    result['native'].append({'file':filename,'components':len(rows),'invalid':invalid,'mismatched_components':errors,'pass':passed})
+    result['native'].append({'file':filename,'source_sha256':hashlib.sha256((out/filename).read_bytes()).hexdigest(),'components':len(rows),'invalid':invalid,'mismatched_components':errors,'pass':passed})
     result['pass'] &= passed
 
 def bbox(s):

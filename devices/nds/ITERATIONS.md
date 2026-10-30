@@ -19,3 +19,4 @@
 | 13 | 校正合盖后上盖标识的阅读方向，并完成 L/R 薄层标识与机壳边缘的最后配合检查。 | 321 | [效果图](output/previews/13_cover_marking_and_final_fit_hero.png) |
 | 14 | 将铰链处薄分型条改为直端退让轮廓，避免圆柱相切薄片在 STEP 回读修复时发生几何偏差。 | 321 | [效果图](output/previews/14_step_stable_parting_strip_hero.png) |
 | 15 | 将下机身铰链开孔限定在中央铰链范围，恢复两侧连续壳体，修正网页视角中主板外露的问题。 | 321 | [效果图](output/previews/15_central_hinge_enclosure_hero.png) |
+| 16 | 下机身控制面板与上盖的厚度方向边缘过渡；局部数值为公开图像估计。 | 321 | [查看](output/previews/16_public_reference_enclosure_edges_hero.png) |

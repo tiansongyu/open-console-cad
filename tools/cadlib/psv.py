@@ -457,3 +457,7 @@ def stage14(m):
     m.checkpoint(14,'strap_and_system_key_clearance','调整闭合腕带环与 PS/START 键的边界，保留角部轮廓并同步移动 PS 键传动和安装孔，完成相邻外观件的间隙修正。')
 
 STAGES[14]=stage14
+
+# Public-reference refinement; local values remain estimates.
+from .handheld_refinement import refine_psv
+STAGES[15] = refine_psv

@@ -19,3 +19,5 @@
 | 15 | [iter15_cord_transport.py](scripts/iter15_cord_transport.py) |
 
 运行重建宏会依次生成各阶段模型。原始设计说明和最终检查见设备 README 与 output/reports/。
+
+第 16 轮：[面键比例与布局校准](scripts/iter16_public_reference_buttons.py)。面键间距与直径，联动按键孔、传力柱、接点和弹片；局部数值为图像估计。

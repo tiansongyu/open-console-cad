@@ -1,0 +1,87 @@
+{
+  "device": "psv",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 354,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "components": 354,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 344,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 354,
+      "passed": true
+    },
+    {
+      "view": "rear-touch",
+      "components": 9,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 123,
+      "passed": true
+    },
+    {
+      "view": "boards",
+      "components": 144,
+      "passed": true
+    },
+    {
+      "view": "battery",
+      "components": 17,
+      "passed": true
+    },
+    {
+      "view": "optics",
+      "components": 31,
+      "passed": true
+    },
+    {
+      "view": "ports",
+      "components": 59,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 32,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psv/output/PSVita_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psv/output/drawings/PSVita_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/psv.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "2b4b58788fc09bcec97ea018ee4f02c5a89c647dd2c60aee44be1fc227badf4c",
+  "glb_sha256": "d520d3e585d41a3b8f13ffa52dc9d46d2c3da23dce2dd931daf2c9f2d7c69afb",
+  "test_date": "2026-10-15",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "environment": "Chromium headless; local Vite site; software WebGL",
+  "page_errors": [],
+  "scope": "All configured device views, visible part counts, download link targets, gallery images and keyboard explode slider. No gamepad-navigation audit."
+}

@@ -1,0 +1,163 @@
+{
+  "device": "nds",
+  "revision": 16,
+  "geometry_and_reference_review_date": "2026-10-15",
+  "delivery_integrity_review_date": "2026-10-29",
+  "source": "devices/nds/output/NintendoDS_Complete.FCStd",
+  "source_sha256": "6a07f48b410b46f071f8f6d4c1d6d3ab0698d0f09fa942167a1fe20f8da0064a",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":110",
+  "physical_components": 321,
+  "factory_equivalence_verified": false,
+  "full_history_recompute_tested": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "scope": "Validate saved native BReps and corresponding exports. Public gross dimensions are constraints; local curves, feature positions and internal components remain estimates. No hardware tolerance or interchangeability validation.",
+  "calibration": {
+    "report": "exterior_calibration_audit.json",
+    "passed": true,
+    "basis": "references/exterior_calibration.json",
+    "invalid_components": []
+  },
+  "assembly": [
+    {
+      "report": "exterior_interference.json",
+      "opening_degrees": 150.0,
+      "candidate_pairs": 599,
+      "checked_pairs": 599,
+      "clashes": 0,
+      "volume_threshold_mm3": 1e-06,
+      "passed": true
+    },
+    {
+      "report": "exterior_interference_closed.json",
+      "opening_degrees": 0.0,
+      "candidate_pairs": 491,
+      "checked_pairs": 491,
+      "clashes": 0,
+      "volume_threshold_mm3": 1e-06,
+      "passed": true
+    }
+  ],
+  "step_roundtrip": {
+    "passed": true,
+    "report": "export_roundtrip_audit.json",
+    "native_evaluation": "saved BRep (no history recompute)",
+    "step_files": [
+      {
+        "file": "NintendoDS_FullKit.step",
+        "sha256": "9c4b2304e78f78d8a4c6a893531c685ba1c805a8a672742a7a28b904b5a80a3c"
+      },
+      {
+        "file": "NintendoDS_Handheld.step",
+        "sha256": "5e3b6cd7cc756d155c3999351dff820e32ca441d2ee522f03aa0be98c129b5c2"
+      },
+      {
+        "file": "NintendoDS_Exploded.step",
+        "sha256": "d4340aee47207c90f3da0bd06cddd30e734a0834d4e1aac77e4abb5ccee62e83"
+      },
+      {
+        "file": "NintendoDS_Closed.step",
+        "sha256": "818699573c26e900cc56d819d55d00cf804f173557f9508eabf0034ee553eb93"
+      }
+    ]
+  },
+  "drawings": {
+    "model_measurements": 18,
+    "native_dimension_references": 18,
+    "reopened_pages": 12,
+    "pdf_pages_rendered_and_reviewed": 12,
+    "pdf_sha256": "15d12fffdebd809ed968b8ab488b99e1c202c8643226de49a81e2a3b4986da1e",
+    "report": "exterior_pdf_review.json",
+    "passed": true
+  },
+  "web": {
+    "report": "exterior_web_checks.json",
+    "views_tested": 7,
+    "glb_sha256": "87d7dc4b2562b8126a9b3376888f115c0747299be01543c7fbe3ecf5cfeb51b0",
+    "gzip_lossless": true,
+    "passed": true
+  },
+  "shared_gallery_layout": {
+    "scope": "Default Switch viewer at three viewport widths; not each device at every width",
+    "test_date": "2026-10-15",
+    "layouts": {
+      "desktop": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "tablet": {
+        "width": 768,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "stats": "27 款设备\n24,361 个组件\n324 页 A3 图纸"
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "stats": "27 款设备24,361 个组件324 页 A3 图纸"
+      }
+    },
+    "page_errors": [],
+    "passed": true
+  },
+  "repository_checks": "passed",
+  "gltf_validator": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "production_build": "passed; existing JavaScript bundle size advisory",
+  "report_sha256": {
+    "exterior_calibration_audit.json": "64eeb4b01a14c32d81fe248a13d0917fcc6c73625cfdd0ce0e536bccc0fd644a",
+    "exterior_interference.json": "f96d1f5997b7473681bdd1f3322635a30895126fdcc5bfdfc5a4551c859bbd65",
+    "export_roundtrip_audit.json": "0c2ae49cf80650516959a90794cbedbd52a4869a45dac605df78c47bd1bb1931",
+    "drawing_checks.json": "a4a95dbdf7934e3033ffd3ba7d5815402718f40bfe7106f2eb0721bad638448d",
+    "native_drawings_audit.json": "5bd24474d24d16846723cd5350b9e9b82636b273da2ba2dba65355e1b5224031",
+    "native_drawings_reload.json": "615e8652fbfada25736f1f77a22cdcc66242023c757a03459f1ad703b243ba48",
+    "exterior_pdf_review.json": "f7c82d73d0d53b8dcb333e562b57ea06fbb0f108f0bb1217ba7fce954be2b488",
+    "exterior_web_checks.json": "479ccebf092d79c98100c9d7dc35b9295bf2b9fb13c0c0d82b537a4fefd2a80e"
+  },
+  "passed": true,
+  "post_generation_source_change": {
+    "date": "2026-10-29",
+    "file": "tools/cadlib/handheld_refinement.py",
+    "source_sha256": "c0c075550c34012d24e7be7e48c55da33e945921cdb7983a35bb765bdb2584b3",
+    "change": "Preserve physical-part registration order during replacement, so finalize does not renumber PSP and PSV parts. Delivered native files already preserve the intended order.",
+    "validation_command": "python3 tools/check_handheld_part_order.py",
+    "validation": {
+      "passed": true,
+      "scope": "Pure Python registration and numbering simulation of the actual replacement function; no CAD geometry or full source rebuild exercised",
+      "checks": [
+        {
+          "device": "psp",
+          "physical_components": 346,
+          "replacements": 12,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        },
+        {
+          "device": "psv",
+          "physical_components": 386,
+          "replacements": 2,
+          "registry_identity_preserved": true,
+          "registration_order_preserved": true,
+          "all_part_numbers_match_saved_manifest": true,
+          "passed": true
+        }
+      ]
+    },
+    "native_geometry_regenerated_after_this_change": false,
+    "full_source_rebuild_tested_after_this_change": false,
+    "module_reload": "Rebuild entry points now reload the new helper module to avoid stale functions in an existing FreeCAD session."
+  },
+  "source_provenance": {
+    "saved_native_source_digest": "4ac16b6f4d7be03aa591e55ef900fd08b48bb8ff820c83f6d8d7fe9cb63d8e3b",
+    "current_source_digest": "31fab9ad9e292ff46110022dbc9b555bcbf4ab227e146040cc49be92796a4f17",
+    "digest_method": "SHA-256 of concatenated sorted device iter*.py and sorted tools/cadlib/*.py, matching deliver.finalize",
+    "note": "Saved digest is retained as generation provenance. Registration-order and validation-source edits occurred after geometry export; no full rebuild against the current digest was performed."
+  }
+}

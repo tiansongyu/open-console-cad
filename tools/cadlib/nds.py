@@ -395,3 +395,7 @@ def stage15(m):
     m.checkpoint(15,'central_hinge_enclosure','将下机身铰链开孔限定在中央铰链范围，恢复两侧连续壳体，修正网页视角中主板外露的问题。')
 
 STAGES[15]=stage15
+
+# Public-reference refinement; local values remain estimates.
+from .handheld_refinement import refine_nds
+STAGES[16] = refine_nds

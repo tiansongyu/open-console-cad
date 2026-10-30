@@ -1,0 +1,67 @@
+{
+  "device": "nds",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 318,
+      "passed": true
+    },
+    {
+      "view": "closed",
+      "components": 318,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 309,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 318,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 92,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 3,
+      "passed": true
+    },
+    {
+      "view": "ports",
+      "components": 66,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/nds/output/NintendoDS_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/nds/output/drawings/NintendoDS_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/nds.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "6a07f48b410b46f071f8f6d4c1d6d3ab0698d0f09fa942167a1fe20f8da0064a",
+  "glb_sha256": "87d7dc4b2562b8126a9b3376888f115c0747299be01543c7fbe3ecf5cfeb51b0",
+  "test_date": "2026-10-15",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "environment": "Chromium headless; local Vite site; software WebGL",
+  "page_errors": [],
+  "scope": "All configured device views, visible part counts, download link targets, gallery images and keyboard explode slider. No gamepad-navigation audit."
+}

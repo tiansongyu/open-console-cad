@@ -1,0 +1,31 @@
+{
+  "device": "nds",
+  "source_sha256": "6a07f48b410b46f071f8f6d4c1d6d3ab0698d0f09fa942167a1fe20f8da0064a",
+  "checks": [
+    {
+      "name": "closed.X",
+      "actual_mm": 148.70000009999998,
+      "expected_mm": 148.7,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    },
+    {
+      "name": "closed.Y",
+      "actual_mm": 84.7000002,
+      "expected_mm": 84.7,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    },
+    {
+      "name": "closed.Z",
+      "actual_mm": 28.900000100000014,
+      "expected_mm": 28.9,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep measurements; no history recompute"
+}

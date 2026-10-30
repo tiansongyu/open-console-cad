@@ -1,0 +1,38 @@
+{
+  "device": "3ds",
+  "source_sha256": "ed02f75eb04a709e0c78b5c0dcc5854016b64f926aead2d19c128ecc2501a208",
+  "checks": [
+    {
+      "name": "closed.X",
+      "actual_mm": 134.0000002,
+      "expected_mm": 134.0,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    },
+    {
+      "name": "closed.Y",
+      "actual_mm": 74.0000002,
+      "expected_mm": 74.0,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    },
+    {
+      "name": "closed.Z",
+      "actual_mm": 21.00000000000001,
+      "expected_mm": 21.0,
+      "basis": "Nintendo published closed envelope",
+      "passed": true
+    },
+    {
+      "name": "CirclePad.center_depression",
+      "actual_mm": 0.4200000000000017,
+      "expected_mm": 0.42,
+      "basis": "Estimated concavity; not a factory dimension",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep measurements; no history recompute"
+}

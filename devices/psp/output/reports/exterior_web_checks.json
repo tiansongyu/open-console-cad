@@ -1,0 +1,77 @@
+{
+  "device": "psp",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 330,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "components": 330,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 323,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 330,
+      "passed": true
+    },
+    {
+      "view": "drive",
+      "components": 28,
+      "passed": true
+    },
+    {
+      "view": "boards",
+      "components": 110,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 136,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 16,
+      "passed": true
+    },
+    {
+      "view": "ports",
+      "components": 28,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psp/output/PSP1000_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psp/output/drawings/PSP1000_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/psp.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "9f0adaa1147785e56a7ad5fd5e70292ce27c874db5fbcb27bd5910595c893b41",
+  "glb_sha256": "22a456d7b9af19ad5f2aa0dbe14056d2bc433c76ecd45cb3b4ae74c2b8b19f8e",
+  "test_date": "2026-10-15",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "environment": "Chromium headless; local Vite site; software WebGL",
+  "page_errors": [],
+  "scope": "All configured device views, visible part counts, download link targets, gallery images and keyboard explode slider. No gamepad-navigation audit."
+}

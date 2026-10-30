@@ -8,7 +8,7 @@
     "dev": "vite site --host 0.0.0.0",
     "build": "vite build site --base ./ --outDir ../dist --emptyOutDir",
     "preview": "vite preview site --host 0.0.0.0 --outDir ../dist",
-    "check": "python3 tools/check_repository.py && node tools/validate_glb.mjs"
+    "check": "python3 tools/check_repository.py && python3 tools/check_handheld_part_order.py && node tools/validate_glb.mjs"
   },
   "dependencies": {
     "three": "0.185.1"

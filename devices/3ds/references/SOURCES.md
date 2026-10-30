@@ -4,3 +4,7 @@
 - [iFixit 2011 Nintendo 3DS teardown](https://www.ifixit.com/Teardown/Nintendo+3DS+Teardown/5029): firsthand exterior and major internal module references. Battery CTR-003, 1300 mAh / 5 Wh; removable Wi-Fi, IR, Circle Pad and SD modules; upper LCD, speaker assembly and three-camera flex.
 
 Source review: 2026-09-08. Model color: Aqua Blue interpretation. Exterior contours, local wall/connector dimensions, mounting details and internal component dimensions are approximate. Opening angle is a presentation parameter. Reference photographs stay local and are not redistributed. Original reference dimensions refer to the closed console.
+
+## 2026-10-15 exterior refinement
+
+See [exterior_calibration.json](exterior_calibration.json) for the reference URL, hash, changed geometry and uncertainty. Original CTR-001 part diagrams pp20-21. Shape type corroborated; 0.42 mm depression and 0.35 mm edge radius are estimated. Overall published dimensions are retained. This iteration does not establish complete factory equivalence.
