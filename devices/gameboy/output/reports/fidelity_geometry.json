@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "source": "devices/gameboy/output/GameBoy_Complete.FCStd",
+  "source_sha256": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9",
+  "physical_components": 417,
+  "solids": 842,
+  "invalid_features": [],
+  "checks": [
+    {
+      "name": "DisplayGlass.XLength",
+      "actual": 47.0,
+      "expected": 47,
+      "basis": "Nintendo nominal screen size, active pixel boundary unverified",
+      "passed": true
+    },
+    {
+      "name": "DisplayGlass.YLength",
+      "actual": 43.0,
+      "expected": 43,
+      "basis": "Nintendo nominal screen size, active pixel boundary unverified",
+      "passed": true
+    },
+    {
+      "name": "ContrastWheel.YMin",
+      "actual": 23.302900390624433,
+      "expected": 23.3029003906244,
+      "basis": "Photo-fitted center Y28.5",
+      "passed": true
+    },
+    {
+      "name": "ContrastWheel.ZLength",
+      "actual": 1.5500000000000007,
+      "expected": 1.55,
+      "basis": "Retained thin contrast thumbwheel",
+      "passed": true
+    },
+    {
+      "name": "VolumeWheel.ZLength",
+      "actual": 3.0,
+      "expected": 3,
+      "basis": "Photo-fitted thicker volume thumbwheel",
+      "passed": true
+    },
+    {
+      "name": "DCJack.YMin",
+      "actual": 47.0,
+      "expected": 47,
+      "basis": "Photo-fitted power-jack center Y49.5",
+      "passed": true
+    },
+    {
+      "name": "DCJack.ZMin",
+      "actual": 8.5,
+      "expected": 8.5,
+      "basis": "Photo-fitted power-jack center Z11",
+      "passed": true
+    },
+    {
+      "name": "LinkPortShell.YLength",
+      "actual": 14.0,
+      "expected": 14,
+      "basis": "Photo-fitted original large connector width",
+      "passed": true
+    },
+    {
+      "name": "LinkPortShell.ZLength",
+      "actual": 6.3999999999999995,
+      "expected": 6.4,
+      "basis": "Photo-fitted original large connector height",
+      "passed": true
+    },
+    {
+      "name": "contrast on left",
+      "actual": true,
+      "expected": true,
+      "basis": "Original front-view device left",
+      "passed": true
+    },
+    {
+      "name": "volume and link on right",
+      "actual": true,
+      "expected": true,
+      "basis": "Original front-view device right",
+      "passed": true
+    },
+    {
+      "name": "power jack nearer top than contrast",
+      "actual": true,
+      "expected": true,
+      "basis": "Firsthand side photograph",
+      "passed": true
+    },
+    {
+      "name": "link contact rows",
+      "actual": [
+        10.45,
+        11.55
+      ],
+      "expected": [
+        10.45,
+        11.55
+      ],
+      "basis": "Documented 2-by-3 topology; local coordinates fitted",
+      "passed": true
+    },
+    {
+      "name": "link contact columns",
+      "actual": [
+        39.5,
+        42.0,
+        44.5
+      ],
+      "expected": [
+        39.5,
+        42.0,
+        44.5
+      ],
+      "basis": "Documented 2-by-3 topology; pitch fitted",
+      "passed": true
+    },
+    {
+      "name": "six contacts",
+      "actual": 6,
+      "expected": 6,
+      "basis": "Pan Docs external connectors",
+      "passed": true
+    },
+    {
+      "name": "power-jack bore for 3.5mm plug",
+      "actual": true,
+      "expected": true,
+      "basis": "3.5mm nominal plug plus estimated0.1mm diametral clearance",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 0",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 0",
+      "actual": true,
+      "expected": true,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 1",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 1",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 2",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 2",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 3",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 3",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 4",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 4",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "grille recessed groove 5",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed six molded grooves",
+      "passed": true
+    },
+    {
+      "name": "grille floor 5",
+      "actual": false,
+      "expected": false,
+      "basis": "Photographed five through slots; lowest groove remains blind",
+      "passed": true
+    },
+    {
+      "name": "present RearOrigin",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present ContrastLegend",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present VolumeLegend",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present LinkLegend",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present PowerSideLegend",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present PhonesLegend",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    },
+    {
+      "name": "present LinkPortCover",
+      "actual": true,
+      "expected": true,
+      "basis": "Observed original molded marking or removable cover",
+      "passed": true
+    }
+  ],
+  "factory_equivalence_verified": false,
+  "limitations": [
+    "Local contour radii, port coordinates, lettering and fit clearances are fitted to photographs.",
+    "47x43mm is Nintendo nominal screen size; no identified LCD-module drawing establishes the active pixel boundary."
+  ]
+}

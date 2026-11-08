@@ -6,17 +6,17 @@
       "sheet": 1,
       "view": "FrontAssembly",
       "p1": [
-        -45.0000001,
-        4.999999703159119e-08,
-        15.99999995
+        -45.00000000000001,
+        0.0,
+        16.0
       ],
       "p2": [
-        45.0000001,
-        4.999999703159119e-08,
-        15.99999995
+        45.00000000000001,
+        0.0,
+        16.0
       ],
       "axis": "x",
-      "value_mm": 90.00000020000002,
+      "value_mm": 90.00000000000001,
       "label": "90",
       "published": true,
       "label_position": [
@@ -30,15 +30,15 @@
       "p1": [
         0.0,
         -74.0,
-        15.99999995
+        16.0
       ],
       "p2": [
         0.0,
-        74.0000001,
-        15.99999995
+        74.0,
+        16.0
       ],
       "axis": "y",
-      "value_mm": 148.00000009999997,
+      "value_mm": 147.99999999999997,
       "label": "148",
       "published": true,
       "label_position": [
@@ -50,17 +50,17 @@
       "sheet": 2,
       "view": "RightSide",
       "p1": [
-        -7.105427357601002e-15,
-        4.999999703159119e-08,
-        32.0
+        -3.5527136788005e-15,
+        0.0,
+        31.999999999999996
       ],
       "p2": [
-        2.2204462724138882e-23,
-        4.999999703159119e-08,
-        -1.0000001005039394e-07
+        3.552713678800503e-15,
+        0.0,
+        -1.0658141036401503e-14
       ],
       "axis": "x",
-      "value_mm": 32.00000009999999,
+      "value_mm": 31.999999999999996,
       "label": "32",
       "published": true,
       "label_position": [
@@ -160,7 +160,7 @@
       "sheet": 7,
       "view": "MainboardRear",
       "p1": [
-        39.5,
+        39.50000000000001,
         31.0,
         13.200000000000001
       ],
@@ -182,12 +182,12 @@
       "sheet": 7,
       "view": "MainboardRear",
       "p1": [
-        0.0,
+        3.552713678800501e-15,
         -9.0,
         13.200000000000001
       ],
       "p2": [
-        0.0,
+        3.552713678800501e-15,
         71.0,
         13.200000000000001
       ],
@@ -315,21 +315,21 @@
   "model_measurements": [
     {
       "name": "complete_handheld.XLength",
-      "actual_mm": 90.0000002,
+      "actual_mm": 90.00000000000001,
       "expected_mm": 90,
       "basis": "Nintendo nominal Game Boy Classic envelope",
       "passed": true
     },
     {
       "name": "complete_handheld.YLength",
-      "actual_mm": 148.0000001,
+      "actual_mm": 148.0,
       "expected_mm": 148,
       "basis": "Nintendo nominal Game Boy Classic envelope",
       "passed": true
     },
     {
       "name": "complete_handheld.ZLength",
-      "actual_mm": 32.0000001,
+      "actual_mm": 32.0,
       "expected_mm": 32,
       "basis": "Nintendo nominal Game Boy Classic envelope",
       "passed": true
@@ -338,14 +338,14 @@
       "name": "DisplayGlass.XLength",
       "actual_mm": 47.0,
       "expected_mm": 47,
-      "basis": "Nintendo display-area specification",
+      "basis": "Nintendo nominal screen specification; pixel active boundary unverified",
       "passed": true
     },
     {
       "name": "DisplayGlass.YLength",
       "actual_mm": 43.0,
       "expected_mm": 43,
-      "basis": "Nintendo display-area specification",
+      "basis": "Nintendo nominal screen specification; pixel active boundary unverified",
       "passed": true
     },
     {
@@ -448,15 +448,15 @@
     },
     {
       "name": "LinkPortShell.YLength",
-      "actual_mm": 12.400000000000006,
-      "expected_mm": 12.4,
+      "actual_mm": 14.0,
+      "expected_mm": 14,
       "basis": "Declared approximate model dimension",
       "passed": true
     },
     {
       "name": "LinkPortShell.ZLength",
-      "actual_mm": 4.800000000000001,
-      "expected_mm": 4.8,
+      "actual_mm": 6.3999999999999995,
+      "expected_mm": 6.4,
       "basis": "Declared approximate model dimension",
       "passed": true
     },
@@ -495,5 +495,6 @@
       "basis": "Declared approximate model dimension",
       "passed": true
     }
-  ]
+  ],
+  "source_sha256": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9"
 }

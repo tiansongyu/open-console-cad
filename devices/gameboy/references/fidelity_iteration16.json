@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-08",
+  "device": "gameboy",
+  "iteration": 16,
+  "model": "Original gray DMG-01 (1989)",
+  "sources": [
+    {
+      "id": "nintendo_specs",
+      "url": "https://www.nintendo.com/de-de/Support/Fruhere-Konsolen/Technische-Daten-619585.html",
+      "kind": "manufacturer specification",
+      "supports": [
+        "DMG148x90x32mm nominal envelope",
+        "47x43mm nominal screen size",
+        "160x144 pixels and fourAA cells"
+      ],
+      "limit": "Screen size is not an identified LCD module active-area drawing."
+    },
+    {
+      "id": "byers_photos",
+      "url": "https://b13rg.icecdn.tech/Gameboy_DMG/",
+      "author": "Brooke Byers",
+      "date": "2020-06-17",
+      "kind": "firsthand specimen photography",
+      "supports": [
+        "Front controls and molded case details",
+        "Left contrast/DC position and right volume/link arrangement",
+        "Six molded speaker grooves with only five through slots",
+        "Removable original large link-port cover"
+      ],
+      "limit": "Use photographed physical exterior only; unrelated serial-protocol prose is not evidence for DMG electronics."
+    },
+    {
+      "id": "ifixit_teardown",
+      "url": "https://www.ifixit.com/Teardown/Nintendo+Game+Boy+Teardown/122657",
+      "kind": "firsthand teardown photographs",
+      "supports": [
+        "Independent front/back case comparison",
+        "Four exterior rear screws and two battery-compartment screws",
+        "Original DMG board assembly, distinct from modern modification kits"
+      ]
+    },
+    {
+      "id": "gekkio_power",
+      "url": "https://github.com/Gekkio/gb-schematics/blob/main/DMG-CPU-06/schematic/DMG-CPU-06.pdf",
+      "author": "Joonas Javanainen (Gekkio)",
+      "license": "CC BY4.0",
+      "kind": "firsthand reverse-engineering measurements",
+      "supports": [
+        "3.5x1.35mm nominal original DMG power plug"
+      ],
+      "sha256": "026ac3e038e98e7d87aaeb1528e033359c457d14b35273cdf8490902d8abd7e5",
+      "limit": "Does not establish the precise molding position or electrical behavior of this CAD."
+    },
+    {
+      "id": "pandocs_link",
+      "url": "https://github.com/gbdev/pandocs/blob/master/src/External_Connectors.md",
+      "kind": "hardware developer documentation",
+      "supports": [
+        "Original large Game Link has two rows of three contacts; not a single six-contact row"
+      ],
+      "limit": "Contact pitch and pad geometry are not specified here."
+    },
+    {
+      "id": "ifixit_gamebit",
+      "url": "https://www.ifixit.com/products/gamebit-3-8mm",
+      "kind": "repair-tool manufacturer description",
+      "supports": [
+        "Original Nintendo Game Boy cartridge external line-head fastener family:3.6mm, commonly named3.8mm Gamebit"
+      ],
+      "limit": "Local scallop radius, thread/shank, counterbore and manufacturing tolerances remain estimated."
+    }
+  ],
+  "photographs": [
+    {
+      "view": "front",
+      "url": "https://b13rg.icecdn.tech/images/GBDMG/DMG_Front.jpg",
+      "sha256": "a2034e380d2252213fcbb801721e3b5ac370ea71c5f1bd2f06a6d637869bdc50",
+      "redistributed": false
+    },
+    {
+      "view": "side_left",
+      "url": "https://b13rg.icecdn.tech/images/GBDMG/DMG_Side_Left.jpg",
+      "sha256": "5fe912c5a0124f7c1402985aa70065192b209464cfbedfa5a2de4f9fc439a37d",
+      "redistributed": false
+    },
+    {
+      "view": "side_right",
+      "url": "https://b13rg.icecdn.tech/images/GBDMG/DMG_Side_Right.jpg",
+      "sha256": "5bb6627fa4049ab678ea751c5ce7bf329e89a54695ba5453a9ed2e3c48958cd1",
+      "redistributed": false
+    },
+    {
+      "view": "top",
+      "url": "https://b13rg.icecdn.tech/images/GBDMG/DMG_Top.jpg",
+      "sha256": "40973ee671c2873890bb92e2e14685a653ddf7ce7aef6502c07bc26bc7c4566b",
+      "redistributed": false
+    },
+    {
+      "view": "bottom",
+      "url": "https://b13rg.icecdn.tech/images/GBDMG/DMG_Bottom.jpg",
+      "sha256": "3bfc084a11f9d923ec3a5428864bb6981ef8a3a7592acf93df4fad4ea3b7f566",
+      "redistributed": false
+    }
+  ],
+  "changes": [
+    {
+      "area": "left side",
+      "before": "DC jack and contrast wheel both centered atY35mm",
+      "after": "DC centerY49.5/Z11mm; contrast centerY28.5/Z19.675mm; separate fitted legend recesses",
+      "basis": [
+        "byers_photos",
+        "gekkio_power"
+      ],
+      "accuracy": "Photograph fit, not sample metrology"
+    },
+    {
+      "area": "right side",
+      "before": "Volume wheel1.55mm thick; narrow rounded rectangular link shield with six contacts in one row",
+      "after": "Volume wheel3mm thick; keyed14x6.4mm link shield atY42/Z11mm; six contacts in two rows of three; original-style removable cover",
+      "basis": [
+        "byers_photos",
+        "pandocs_link"
+      ],
+      "accuracy": "Topology is documented; outer dimensions and pin coordinates are fitted"
+    },
+    {
+      "area": "front",
+      "before": "Six long through slots, no molded arrows or PHONES label detail",
+      "after": "Six16.2x2.1mm recessed grooves, five12.4x1.2mm through slits; four molded directional arrows; PHONES word, headphone icon and three small lower ribs",
+      "basis": [
+        "byers_photos",
+        "ifixit_teardown"
+      ],
+      "accuracy": "Photograph fit; colors, lettering outlines, wall depths and fine molding curvature remain approximate"
+    },
+    {
+      "area": "rear",
+      "before": "Nonhardware CADSTUDY label",
+      "after": "Recessed identification field and common DMG-01/Nintendo/DC6V/AA/Japan molded wording",
+      "basis": [
+        "byers_photos",
+        "ifixit_teardown"
+      ],
+      "accuracy": "Generic original gray DMG treatment; no copied specimen serial and no complete region-specific regulatory reproduction"
+    },
+    {
+      "area": "optional Game Pak",
+      "before": "Generic cross-drive screw",
+      "after": "External six-lobe line-head profile with rear counterbore",
+      "basis": [
+        "ifixit_gamebit"
+      ],
+      "accuracy": "Fastener family supported; local profile estimated"
+    }
+  ],
+  "screen_decision": {
+    "nominal_mm": [
+      47,
+      43
+    ],
+    "basis": "Nintendo directly publishes4.7x4.3cm, not a diagonal conversion",
+    "active_pixel_boundary_verified": false,
+    "rejected_source": "Sharp LH1511/LH1512 is an LCD-driver IC data sheet, not a dimensioned drawing of the installed LCD module."
+  },
+  "kernel_repairs": {
+    "glyphs": [
+      "BatteryLEDMark",
+      "VRAMText",
+      "WRAMText"
+    ],
+    "glyph_method": "Union overlapping solids, strict check and empty valid bidirectional material differences",
+    "springs": [
+      "AAContactSpring0",
+      "AAContactSpring1",
+      "AAContactSpring2",
+      "AAContactSpring3"
+    ],
+    "spring_method": "Original radius2.7/pitch0.6/height1.8/wire-radius0.16mm and non-Frenet sweep, split at spline knots",
+    "spring_equivalence": "No exact equivalence claimed for legacy C0 sweep; unreliable Boolean results not used as proof"
+  },
+  "factory_equivalence_verified": false,
+  "remaining_uncertainties": [
+    "Exact shell curvature and local port positions lack factory CAD or calibrated sample measurements.",
+    "Fonts and molded logo details are approximations; some minor symbols and region-specific labels remain incomplete.",
+    "The LCD pixel active area is not established by a matching module drawing.",
+    "Internal boards, component packages, wall thicknesses and contact spring details remain schematic."
+  ]
+}

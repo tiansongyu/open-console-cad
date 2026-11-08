@@ -489,8 +489,8 @@
       "order": 8,
       "device": "gameboy",
       "model": "DMG-01 (1989)",
-      "status": "pending",
-      "current_step": null,
+      "status": "completed",
+      "current_step": "validated_iteration_16",
       "baseline": {
         "iterations": 15,
         "physical_components": 410,
@@ -518,11 +518,26 @@
           "Schematic internal layout": 351
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/gameboy/references/fidelity_iteration16.json"
+      ],
+      "changes": [
+        "Calibrated original side controls, DC position, Link cover, six speaker grooves and rear markings against hardware photographs",
+        "Corrected cartridge security-screw treatment and front lower geometry",
+        "Repaired seven historical strict-geometry issues; full417component source reconstruction and strict validation passed"
+      ],
+      "validation": {
+        "report": "devices/gameboy/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Local exterior contours, positions and font shapes are fitted to photographs.",
+        "Nintendo47x43mm is nominal screen size; matching-module active-area drawing not obtained.",
+        "Legacy spring exact equivalence is unproven; original nominal parameters retained with strict-valid segmented sweeps.",
+        "Internal parts and complete regional labels remain approximate."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "a8c3adf2c8ede383d21c6863a61415319c32aa56cde5caf3cd3b27a827e0b21c",
@@ -935,7 +950,8 @@
         "fully_passed": true,
         "failed_parts": [],
         "inconclusive_parts": []
-      }
+      },
+      "last_pushed_commit": "6dee14e"
     },
     {
       "order": 16,

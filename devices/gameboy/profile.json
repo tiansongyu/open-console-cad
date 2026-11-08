@@ -21,7 +21,7 @@
     0.7,
     0.67
   ],
-  "stages": 15,
+  "stages": 16,
   "envelope_basis": "Nintendo nominal 148 x 90 x 32 mm; model matches the full envelope including controls. Local split and wall thickness are approximate.",
   "sources": [
     {
@@ -31,6 +31,22 @@
     {
       "url": "https://www.ifixit.com/Teardown/Nintendo+Game+Boy+Teardown/122657",
       "role": "Firsthand DMG-01 exterior and internal construction reference; board revision may vary"
+    },
+    {
+      "url": "https://b13rg.icecdn.tech/Gameboy_DMG/",
+      "role": "First-hand front/back/side photographs, five open speaker slots, molded case arrows and removable link cover; exterior only, photographed PCB revision not adopted"
+    },
+    {
+      "url": "https://github.com/Gekkio/gb-schematics/blob/main/DMG-CPU-06/schematic/DMG-CPU-06.pdf",
+      "role": "Gekkio first-hand measurements: nominal 3.5 x 1.35 mm DMG power plug; CC BY 4.0; no electrical function claimed"
+    },
+    {
+      "url": "https://github.com/gbdev/pandocs/blob/master/src/External_Connectors.md",
+      "role": "Documented original large Game Link 2-by-3 contact arrangement"
+    },
+    {
+      "url": "https://www.ifixit.com/products/gamebit-3-8mm",
+      "role": "Original Nintendo cartridge line-head fastener family; driver naming distinguished from local profile estimates"
     }
   ],
   "internal_exclude": [
@@ -47,7 +63,9 @@
     "CaseScrew3",
     "CaseScrew4",
     "CaseScrew5",
-    "CartridgeWellBacker"
+    "CartridgeWellBacker",
+    "RearOrigin",
+    "PowerSideLegend"
   ],
   "internal_normal": [
     0.2,

@@ -481,3 +481,257 @@ def stage15(m):
     m.checkpoint(15,'power_harness_upper_exit','为转弯后的三根电源线增加托盘上壁出口，与侧壁穿线孔组成完整的线束通路。')
 
 STAGES[15]=stage15
+
+
+def _repair_stage16_legacy_shapes(m):
+    """Repair legacy topology without asserting equivalence of defective sweeps."""
+    from .handheld_refinement import replace
+    records = []
+    for key in ['BatteryLEDMark', 'VRAMText', 'WRAMText']:
+        before = m.parts[key].Shape.copy()
+        after = before.Solids[0].multiFuse(before.Solids[1:]).removeSplitter()
+        after.check(True)
+        differences = [before.cut(after), after.cut(before)]
+        volumes = [0.0 if x.isNull() else sum(abs(s.Volume) for s in x.Solids)
+                   for x in differences]
+        assert all(x.isNull() or x.isValid() for x in differences)
+        assert max(volumes) < 1e-6, (key, volumes)
+        replace(m, key, after, 'Unite intersecting glyphs with empty bidirectional material difference')
+        records.append({'part_id': key, 'method': 'glyph union',
+                        'removed_added_mm3': volumes, 'material_equivalent': True})
+    # Retain the original radius2.7, pitch0.6, height1.8 and wire radius0.16mm.
+    # Split the sweep at spline knots so no single face spans an internal C0 seam.
+    edge = Part.makeHelix(.6, 1.8, 2.7).Edges[0]
+    curve = edge.Curve
+    knots = [edge.FirstParameter] + [k for k in curve.getKnots()
+            if edge.FirstParameter+1e-9 < k < edge.LastParameter-1e-9] + [edge.LastParameter]
+    edges = [curve.toShape(a, b) for a, b in zip(knots, knots[1:])]
+    circle = Part.Wire(Part.makeCircle(.16, edges[0].Vertexes[0].Point,
+                                      edges[0].tangentAt(edges[0].FirstParameter)))
+    spring = Part.Wire(edges).makePipeShell([circle], True, False)
+    spring.check(True)
+    for i in range(4):
+        key = 'AAContactSpring'+str(i)
+        before = m.parts[key].Shape.copy()
+        after = spring.copy()
+        after.Placement = before.Placement
+        after.check(True)
+        replace(m, key, after, 'Original spring parameters with segmented sweep; legacy C0 equivalence unproven')
+        records.append({'part_id': key, 'method': 'segmented helix sweep',
+                        'radius_pitch_height_wire_radius_mm': [2.7, .6, 1.8, .16],
+                        'material_equivalent': None,
+                        'limitation': 'Legacy C0 Boolean comparison is unreliable; nominal parameters retained, no exact material-equivalence claim'})
+    m.doc.recompute()
+    return records
+
+
+def stage16(m):
+    """Photo-calibrate the original exterior and correct documented interfaces.
+
+    Exterior positions, slot dimensions and cap geometry are fitted to
+    first-hand DMG photographs. Connector row topology and the nominal power
+    plug dimensions have independent documented references.
+    """
+    from .geometry import rotation
+    from .handheld_refinement import replace
+
+    def tool(label, host=None):
+        found = [o for o in m.doc.Objects
+                 if o.Label.startswith(label+' · tool')
+                 and (host is None or o.Name.startswith(host))]
+        assert len(found) == 1, (label, host, len(found))
+        return found[0]
+
+    right = rotation((1, 0, 0), (0, 0, 1))
+    left = rotation((-1, 0, 0), (0, 0, 1))
+
+    # The photographed DC jack is about 21 mm nearer the top than the contrast
+    # wheel. The earlier model incorrectly put both at the same Y coordinate.
+    for key in ['ContrastWheel', 'ContrastSpindle', 'ContrastPot']:
+        _move(m, key, (0, -6.5, -1.8))
+    for key in ['DCJack', 'DCJackContact']:
+        _move(m, key, (0, 14.5, 2.4))
+    contrast_cavity = Part.makeCylinder(5.38, 1.9, V(-39.8, 28.5, 18.75))
+    contrast_mouth = m.rr(11.2, 2.0, 4.0, (-42, 28.5, 19.675), .45, left)
+    tool('Contrast thumbwheel clearance').Shape = contrast_cavity.fuse(contrast_mouth)
+    tool('DC adapter inlet').Shape = Part.makeCylinder(2.75, 6, V(-39.2, 49.5, 11.0), V(-1, 0, 0))
+    tool('Potentiometer body mounting relief', 'MainFrame').Shape = m.parts['ContrastPot'].Shape.copy()
+    tool('Contrast potentiometer board notch').Shape = m.parts['ContrastPot'].Shape.copy()
+    # 3.5 mm is the mating plug diameter. The extra 0.1 mm is an explicitly
+    # estimated model clearance, not a measured production socket tolerance.
+    m.cut('DCJack', Part.makeCylinder(1.8, 6, V(-39.4, 49.5, 11.0), V(-1, 0, 0)),
+          'Clearance for documented 3.5 mm DMG power plug').Refine = False
+
+    # The volume thumbwheel is visibly thicker than the contrast thumbwheel.
+    # Retain its photographed position and rebuild the associated openings.
+    wheel = Part.makeCylinder(5.2, 3.0, V(39.8, 19, 11.975))
+    teeth = [Part.makeCylinder(.19, 3.3,
+             V(39.8+5.12*math.cos(2*math.pi*i/40),
+               19+5.12*math.sin(2*math.pi*i/40), 11.825)) for i in range(40)]
+    wheel = wheel.cut(Part.makeCompound(teeth)).cut(Part.makeCylinder(.95, 3.4, V(39.8, 19, 11.8)))
+    replace(m, 'VolumeWheel', wheel, 'Photo-fitted 3 mm volume wheel; contrast wheel retains its thin profile')
+    _move(m, 'VolumePot', (0, 0, 2.725))
+    replace(m, 'VolumeSpindle', Part.makeCylinder(.8, 3.725, V(39.8, 19, 11.5)),
+            'Spindle follows the thicker volume wheel and relocated pot body')
+    volume_cavity = Part.makeCylinder(5.38, 3.4, V(39.8, 19, 11.775))
+    volume_mouth = m.rr(11.2, 3.4, 4.0, (42, 19, 13.475), .45, right)
+    tool('Volume thumbwheel clearance').Shape = volume_cavity.fuse(volume_mouth)
+    tool('Potentiometer body mounting relief', 'RearShell').Shape = m.parts['VolumePot'].Shape.copy()
+    tool('Volume potentiometer board notch').Shape = Part.makeCompound([
+        m.parts['VolumePot'].Shape, Part.makeCylinder(5.4, 2.4, V(39.8, 19, 12.6))])
+
+    def keyed_section(w, h, depth, origin, corner):
+        points = [(-w/2, h/2), (w/2, h/2), (w/2, -h/2+corner),
+                  (w/2-corner, -h/2), (-w/2+corner, -h/2), (-w/2, -h/2+corner)]
+        shape = _polygon(points, 0, depth)
+        shape.Placement = App.Placement(V(*origin), right)
+        return shape
+
+    # Original large Game Link has chamfered lower corners and two rows of
+    # three contacts; it is not a six-contact single-row socket.
+    outer = keyed_section(14.0, 6.4, 5.5, (39.4, 42, 11.0), 1.2)
+    inner = keyed_section(13.3, 5.7, 6.0, (39.2, 42, 11.0), 1.0)
+    replace(m, 'LinkPortShell', outer.cut(inner), 'Photographed keyed large Game Link shell; local wall thickness fitted')
+    tool('Game Link side opening').Shape = keyed_section(14.4, 6.8, 6.0, (39.2, 42, 11.0), 1.25)
+    replace(m, 'LinkPortTongue', m.rr(9.6, .85, 4.3, (40.4, 42, 11.0), .15, right),
+            'Photo-fitted large connector tongue within the chamfered shield')
+    for i in range(6):
+        row, column = divmod(i, 3)
+        z = 11.55 if row == 0 else 10.45
+        replace(m, 'LinkPin'+str(i), m.rr(.55, .10, 3.2, (41.1, 39.5+column*2.5, z), .02, right),
+                'Documented 2-by-3 Game Link topology; contact positions are fitted')
+    m.doc.recompute()
+    m.cut('MainFrame', m.parts['VolumePot'].Shape, 'Volume potentiometer clearance across the case split').Refine = False
+    m.cut('Mainboard', Part.makeBox(7, 15, 2, V(39.1, 34.5, 12.4)),
+          'Schematic board-edge clearance for the correctly elevated Game Link shell').Refine = False
+
+    # Six molded grooves are visible, but only five pierce the original case.
+    # The lowest/leftmost groove is blind, visible in both reference photographs.
+    slots = []
+    for i in range(6):
+        x, y = 15.5+i*4.5, -63.5+i*2.6
+        # Keep the long molded recess, then open a shorter narrow slit in five
+        # of its floors. The dark opening is not the entire visible groove.
+        groove = _rotate_shape(m.rr(2.1, 16.2, .5, (x, y, 30.45), 1.0), (x, y, 0), 23)
+        if i:
+            opening = m.rr(1.2, 12.4, 1.2, (x-.30, y, 29.4), .58)
+            groove = groove.fuse(_rotate_shape(opening, (x, y, 0), 23)).removeSplitter()
+        slots.append(groove)
+    tool('Six diagonal speaker slots').Shape = Part.makeCompound(slots)
+    m.doc.recompute()
+
+    # Raised case arrows sit outside the original black D-pad.
+    arrows = []
+    for angle in [0, 90, 180, 270]:
+        arrow = _polygon([(-26-.85, -13.9), (-26+.85, -13.9), (-26, -12.5)], 30.795, .065)
+        arrow.rotate(V(-26, -26, 0), V(0, 0, 1), angle)
+        arrows.append(arrow)
+    replace(m, 'FrontFace', m.parts['FrontFace'].Shape.multiFuse(arrows).removeSplitter(),
+            'Restore the four molded directional arrows and the photographed six-groove grille')
+
+    # The original removable port cover is shown detached with the study cart.
+    # The cover is photographed, but these local dimensions are fitted.
+    cb = m.parts['CartridgeBack'].Shape.optimalBoundingBox(False, False)
+    cx, cy = cb.Center.x, cb.YMin-12
+    flange = m.rr(14.0, 6.4, .45, (cx, cy, .2), .75)
+    plug = m.rr(10.8, 3.2, 2.7, (cx, cy, .6), .45)
+    hollow = m.rr(9.4, 1.8, 2.8, (cx, cy, 1.05), .3)
+    m.feature('LinkPortCover', 'Original removable Game Link cover study', flange.fuse(plug).cut(hollow),
+              'Accessories', 0, 'dmgcase')
+
+    # The optional original-style Game Pak uses an external six-lobe line head.
+    sb = m.parts['CartridgeScrew'].Shape.optimalBoundingBox(False, False)
+    center = V(sb.Center.x, sb.Center.y, sb.ZMin)
+    head = Part.makeCylinder(1.8, .38, center)
+    scallops = [Part.makeCylinder(.32, .6,
+                center+V(1.8*math.cos(i*math.pi/3), 1.8*math.sin(i*math.pi/3), -.1)) for i in range(6)]
+    screw = head.cut(Part.makeCompound(scallops)).fuse(Part.makeCylinder(.65, 3.7, center+V(0, 0, .36)))
+    replace(m, 'CartridgeScrew', screw, 'Original-style 3.6 mm line-head family, commonly called 3.8 mm Gamebit; local drive profile fitted')
+    m.cut('CartridgeBack', Part.makeCylinder(2.0, .72, V(center.x, center.y, -.02)),
+          'Estimated service clearance around the line-head cartridge screw').Refine = False
+
+    # Common molded markings follow the photographed case. Regulatory logos
+    # and individual serial numbers are not inferred from a different region.
+    from .geometry import appearance
+    font = m.root/'references/DejaVuSans.ttf'
+
+    def lettering(text, size, pos, orient=App.Rotation(), centered=False):
+        faces = []
+        for char in Part.makeWireString(text, str(font.parent)+'/', font.name, size):
+            if char:
+                faces.extend(Part.makeFace(char, 'Part::FaceMakerBullseye').Faces)
+        solids = [face.extrude(V(0, 0, .018)) for face in faces]
+        shape = solids[0].multiFuse(solids[1:]).removeSplitter()
+        if centered:
+            shape.translate(V(-shape.optimalBoundingBox(False, False).Center.x, 0, 0))
+        shape.Placement = App.Placement(V(*pos), orient).multiply(shape.Placement)
+        shape.check(True)
+        return shape
+
+    old_marks = ['RearModel', 'RearNintendo', 'RearRating', 'RearStudy']
+    inlay_tools = [o for o in m.doc.Objects if o.Label.startswith('Rear information inlay · tool')]
+    assert len(inlay_tools) == 4
+    reverse = App.Rotation(V(0, 1, 0), 180)
+    rows = [('RearModel', 'MODEL NO. DMG-01', 2.1, 29),
+            ('RearNintendo', '©1989 Nintendo', 1.9, 25.3),
+            ('RearRating', 'RATING: DC6V 0.7W', 2.0, 21.6),
+            ('RearStudy', 'BATTERY: SUM-3(AA,R6)X4', 1.8, 17.9)]
+    for key, text, size, y in rows:
+        prior = m.parts[key].Shape.optimalBoundingBox(False, False)
+        original_tool = min(inlay_tools, key=lambda o: abs(o.Shape.optimalBoundingBox(False, False).Center.y-prior.Center.y))
+        new = replace(m, key, lettering(text, size, (20.5, y, .20), reverse),
+                      'Restore common original rear-case wording; layout and lettering fitted')
+        new.Label = text
+        new.MaterialDescription = 'dmgcase'
+        appearance(new, m.colors['dmgcase'])
+        original_tool.Shape = new.Shape.copy()
+        inlay_tools.remove(original_tool)
+    m.feature('RearOrigin', 'MADE IN JAPAN', lettering('MADE IN JAPAN', 1.8, (20.5, 14.2, .20), reverse),
+              'Body', -6, 'dmgcase')
+    m.cut('BackCover', m.rr(46, 20, .22, (0, 22, -.02), .6),
+          'Photo-fitted recessed rear identification panel').Refine = False
+
+    m.cut('MainFrame', m.rr(17, 8.6, .3, (-45.1, 28.5, 22.7), 1, right),
+          'Contrast thumbwheel molded recess and legend field').Refine = False
+    m.cut('MainFrame', m.rr(13.3, 4.1, .3, (45.1, 19, 19), .9, left),
+          'Volume molded legend field').Refine = False
+    m.cut('MainFrame', m.rr(18, 3.8, .3, (45.1, 42, 18.9), .8, left),
+          'Original EXT CONNECTOR molded legend field').Refine = False
+    m.cut('RearShell', m.rr(22, 4.9, .3, (-45.1, 28.5, 14), .7, right),
+          'Original external-power molded legend field').Refine = False
+    for key, text, size, pos, orient, layer in [
+        ('ContrastLegend', 'CONTRAST', 1.55, (-44.8, 28.5, 22.4), left, 0),
+        ('VolumeLegend', 'VOL', 1.5, (44.8, 19, 18.1), right, 0),
+        ('LinkLegend', 'EXT. CONNECTOR', 1.2, (44.8, 42, 18.2), right, 0),
+    ]:
+        m.feature(key, text, lettering(text, size, pos, orient, True), 'Body', layer, 'dmgcase')
+    power_words = Part.makeCompound([
+        lettering('USE ONLY DMG-03.-05', 1.05, (-44.8, 28.5, 14.4), left, True),
+        lettering('DC 6V', 1.1, (-44.8, 28.5, 12.5), left, True)])
+    power_words.check(True)
+    m.feature('PowerSideLegend', 'Original external-power wording', power_words, 'Body', -6, 'dmgcase')
+    m.profile['internal_exclude'].extend(k for k in ['RearOrigin', 'PowerSideLegend']
+                                          if k not in m.profile['internal_exclude'])
+
+    # The PHONES word, headphone pictogram and three bottom ribs are visible
+    # on the original front face. Recess depth and stroke sizes are fitted.
+    m.cut('FrontFace', m.rr(15.8, 3.3, .15, (0, -70.8, 30.69), 1.5),
+          'Original front PHONES molded capsule').Refine = False
+    word = lettering('PHONES', 1.4, (2.0, -71.4, 30.69), centered=True)
+    arch = Part.makeCylinder(1.15, .018, V(-5, -70.9, 30.69)).cut(
+           Part.makeCylinder(.85, .04, V(-5, -70.9, 30.68)))
+    arch = arch.common(Part.makeBox(3, 1.3, .1, V(-6.5, -70.9, 30.65)))
+    cups = [m.rr(.5, .9, .018, (-5+side*.95, -71.35, 30.69), .15) for side in [-1, 1]]
+    icon = arch.multiFuse(cups).removeSplitter()
+    m.feature('PhonesLegend', 'PHONES and headphone pictogram', Part.makeCompound([word, icon]), 'Body', 4, 'dmgcase')
+    ribs = [m.rr(.5, 1.2, .06, (x, -73.2, 30.78), .15) for x in [-1, 0, 1]]
+    replace(m, 'FrontFace', m.parts['FrontFace'].Shape.multiFuse(ribs).removeSplitter(),
+            'Restore the three small molded ribs below PHONES')
+    m.doc.recompute()
+    m.profile['stages'] = 16
+    m.strict_repairs = _repair_stage16_legacy_shapes(m)
+    m.checkpoint(16, 'photo_calibrated_sides_grille_and_link',
+        '按原机六面照片校准 DC/对比度/音量与通信口位置和轮廓，区分六条扬声器凹槽及五个窄通孔；补齐接口盖、壳体箭头与常见模压标记，移除非实机后盖字样，并校正卡带安全螺钉。局部尺寸、曲率和字形为照片拟合。')
+
+
+STAGES[16] = stage16

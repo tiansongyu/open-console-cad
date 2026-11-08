@@ -34,7 +34,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 第 17 轮已验证 |
 | 6 | [Nintendo Switch · HAC-001](../devices/switch/README.md) | 18 | 654 | 第 19 轮已验证 |
 | 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 第 17 轮已验证 |
-| 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
+| 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 第 16 轮已验证 |
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |
 | 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 第 17 轮已验证 |

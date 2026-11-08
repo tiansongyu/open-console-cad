@@ -2,11 +2,11 @@
   "project": "Nintendo Game Boy DMG-01 (1989)",
   "device": "gameboy",
   "prefix": "GameBoy",
-  "design_iterations": 15,
-  "physical_components": 410,
-  "solids": 768,
+  "design_iterations": 16,
+  "physical_components": 417,
+  "solids": 842,
   "assemblies": {
-    "Body": 22,
+    "Body": 28,
     "Display": 18,
     "Controls": 8,
     "ControlsInternal": 79,
@@ -18,7 +18,7 @@
     "Battery": 32,
     "Power": 6,
     "Flex": 10,
-    "Accessories": 43
+    "Accessories": 44
   },
   "handheld_groups": [
     "Body",
@@ -55,20 +55,20 @@
   },
   "objects": [
     {
-      "name": "BackCoverCut014",
-      "label": "GAMEBOY-0001 · Rear enclosure base015",
+      "name": "BackCoverCut015",
+      "label": "GAMEBOY-0001 · Rear enclosure base016",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 1024,
-      "volume": 8370.963642668688,
+      "faces": 317,
+      "volume": 8188.233545799834,
       "bounds": [
-        -45.0000001,
-        45.0000001,
+        -45.0,
+        45.0,
         -74.0,
-        74.0000001,
-        -1e-07,
+        74.0,
+        0.0,
         1.2000000000000002
       ],
       "state": [
@@ -83,14 +83,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "RearShellCut009",
-      "label": "GAMEBOY-0002 · Rear enclosure skirt010",
+      "name": "RearShellCut010",
+      "label": "GAMEBOY-0002 · Rear enclosure skirt011",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 250,
-      "volume": 10084.320082545944,
+      "faces": 260,
+      "volume": 9972.127794117896,
       "bounds": [
         -45.0,
         45.0,
@@ -111,14 +111,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut004",
-      "label": "GAMEBOY-0003 · Front enclosure skirt005",
+      "name": "MainFrameCut008",
+      "label": "GAMEBOY-0003 · Front enclosure skirt009",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 40,
-      "volume": 9338.483098145049,
+      "faces": 75,
+      "volume": 9271.517978634598,
       "bounds": [
         -45.0,
         45.0,
@@ -139,21 +139,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "FrontFaceCut007",
-      "label": "GAMEBOY-0004 · Front control and display panel008",
-      "type": "Part::Cut",
+      "name": "FrontFace001",
+      "label": "GAMEBOY-0004 · Front control and display panel011",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 113,
-      "volume": 9122.493878223951,
+      "faces": 211,
+      "volume": 9218.136934004897,
       "bounds": [
         -44.9,
         44.900000000000006,
         -73.9,
         73.9,
-        29.65,
-        30.799999999999997
+        29.649999999999995,
+        30.860000000000003
       ],
       "state": [
         "Up-to-date"
@@ -174,7 +174,7 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 1784.4528893977133,
+      "volume": 1784.4528893977138,
       "bounds": [
         -38.5,
         38.5,
@@ -230,7 +230,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 9795.67362697409,
+      "volume": 9795.673626974094,
       "bounds": [
         -28.0,
         28.0,
@@ -335,17 +335,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "BatteryLEDMark",
-      "label": "GAMEBOY-0011 · BATTERY",
+      "name": "BatteryLEDMark001",
+      "label": "GAMEBOY-0011 · BATTERY001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 7,
-      "faces": 110,
-      "volume": 0.07540762627695737,
+      "solids": 6,
+      "faces": 104,
+      "volume": 0.07527030036821349,
       "bounds": [
         -35.50397451275168,
-        -26.96948196308725,
+        -26.969481963087247,
         35.5999999,
         37.05637593892618,
         30.777999899999998,
@@ -398,7 +398,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.10076137166941296,
+      "volume": 0.10076137166941293,
       "bounds": [
         -34.3,
         -14.3,
@@ -482,7 +482,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0288832778684237,
+      "volume": 0.028883277868423693,
       "bounds": [
         29.050000000000004,
         36.35,
@@ -515,7 +515,7 @@
         -37.570008389261744,
         -18.32635057114094,
         -2.563892717449664,
-        0.8315437241610734,
+        0.8315437241610738,
         30.8179999,
         30.836000100000003
       ],
@@ -706,7 +706,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 112.57387999220626,
+      "volume": 112.57387999220629,
       "bounds": [
         27.4,
         38.6,
@@ -762,7 +762,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.04060898021661521,
+      "volume": 0.0406089802166152,
       "bounds": [
         35.31750878845115,
         37.78873129239742,
@@ -790,7 +790,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 112.57387999220626,
+      "volume": 112.57387999220629,
       "bounds": [
         12.399999900000001,
         23.6,
@@ -902,7 +902,7 @@
       "null": false,
       "solids": 6,
       "faces": 96,
-      "volume": 0.1149173697232165,
+      "volume": 0.11491736972321652,
       "bounds": [
         -17.21783729407418,
         -7.89411927803145,
@@ -958,7 +958,7 @@
       "null": false,
       "solids": 5,
       "faces": 88,
-      "volume": 0.10061992541275193,
+      "volume": 0.10061992541275191,
       "bounds": [
         -1.2178372940741786,
         6.405793295950136,
@@ -986,10 +986,10 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 128.73056030632478,
+      "volume": 128.73056030632475,
       "bounds": [
         7.5,
-        42.500000000000036,
+        42.50000000000003,
         -72.4,
         -40.0,
         29.35,
@@ -1014,14 +1014,14 @@
       "null": false,
       "solids": 1,
       "faces": 83,
-      "volume": 121.95303525142909,
+      "volume": 121.95303525142913,
       "bounds": [
         -44.997099609375,
         -34.602900390624995,
-        29.802900390624433,
-        40.197099609375,
-        20.7,
-        22.25
+        23.302900390624433,
+        33.697099609375,
+        18.9,
+        20.45
       ],
       "state": [
         "Up-to-date"
@@ -1042,14 +1042,14 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 6.031857894892402,
+      "volume": 6.031857894892403,
       "bounds": [
         -40.599999999999994,
         -39.0,
-        34.2,
-        35.8,
-        19.5,
-        22.5
+        27.7,
+        29.3,
+        17.7,
+        20.7
       ],
       "state": [
         "Up-to-date"
@@ -1074,10 +1074,10 @@
       "bounds": [
         -43.55,
         -36.05,
-        31.25,
-        38.75,
-        22.55,
-        24.45
+        24.75,
+        32.25,
+        20.75,
+        22.65
       ],
       "state": [
         "Up-to-date"
@@ -1091,21 +1091,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "VolumeWheelCut",
-      "label": "GAMEBOY-0038 · Volume adjustment wheel001",
-      "type": "Part::Cut",
+      "name": "VolumeWheel001",
+      "label": "GAMEBOY-0038 · Volume adjustment wheel002",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 83,
-      "volume": 121.95303525147813,
+      "faces": 108,
+      "volume": 236.03813274479617,
       "bounds": [
         34.60290039062492,
         44.997099609375,
         13.802900390625,
         24.197099609375567,
-        10.7,
-        12.25
+        11.975,
+        14.975
       ],
       "state": [
         "Up-to-date"
@@ -1119,21 +1119,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "VolumeSpindle",
-      "label": "GAMEBOY-0039 · Potentiometer spindle001",
+      "name": "VolumeSpindle001",
+      "label": "GAMEBOY-0039 · Potentiometer spindle002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 6.031857894892401,
+      "volume": 7.489556886158064,
       "bounds": [
         39.0,
         40.599999999999994,
         18.2,
         19.8,
-        9.5,
-        12.5
+        11.5,
+        15.225
       ],
       "state": [
         "Up-to-date"
@@ -1154,14 +1154,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 105.2440260418206,
+      "volume": 105.24402604182058,
       "bounds": [
         36.05,
         43.55,
         15.25,
         22.75,
-        12.549999999999999,
-        14.45
+        15.274999999999999,
+        17.174999999999997
       ],
       "state": [
         "Up-to-date"
@@ -1175,21 +1175,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPortShell",
-      "label": "GAMEBOY-0041 · Original large Game Link receptacle",
+      "name": "LinkPortShell001",
+      "label": "GAMEBOY-0041 · Original large Game Link receptacle001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 18,
-      "volume": 164.7567580902799,
+      "faces": 14,
+      "volume": 73.42499999999995,
       "bounds": [
         39.4,
         44.9,
-        35.8,
-        48.2,
-        6.1,
-        10.9
+        35.0,
+        49.0,
+        7.8,
+        14.2
       ],
       "state": [
         "Up-to-date"
@@ -1203,21 +1203,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPortTongue",
-      "label": "GAMEBOY-0042 · Link port insulator",
+      "name": "LinkPortTongue001",
+      "label": "GAMEBOY-0042 · Link port insulator001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.58894908923483,
+      "volume": 35.00494908923483,
       "bounds": [
-        40.4,
-        44.699999999999996,
-        37.8,
-        46.2,
-        8.2,
-        8.8
+        40.39999999999999,
+        44.7,
+        37.2,
+        46.800000000000004,
+        10.574999999999998,
+        11.425
       ],
       "state": [
         "Up-to-date"
@@ -1231,21 +1231,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin0",
-      "label": "GAMEBOY-0043 · Game Link contact study",
+      "name": "LinkPin001",
+      "label": "GAMEBOY-0043 · Game Link contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.17490123859659498,
       "bounds": [
         41.1,
         44.300000000000004,
-        37.974999999999994,
-        38.525000000000006,
-        8.85,
-        8.950000000000001
+        39.224999999999994,
+        39.775000000000006,
+        11.5,
+        11.600000000000001
       ],
       "state": [
         "Up-to-date"
@@ -1259,21 +1259,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin1",
-      "label": "GAMEBOY-0044 · Game Link contact study001",
+      "name": "LinkPin002",
+      "label": "GAMEBOY-0044 · Game Link contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.17490123859659498,
       "bounds": [
         41.1,
         44.300000000000004,
-        39.474999999999994,
-        40.025000000000006,
-        8.85,
-        8.950000000000001
+        41.724999999999994,
+        42.275000000000006,
+        11.5,
+        11.600000000000001
       ],
       "state": [
         "Up-to-date"
@@ -1287,21 +1287,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin2",
-      "label": "GAMEBOY-0045 · Game Link contact study002",
+      "name": "LinkPin003",
+      "label": "GAMEBOY-0045 · Game Link contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.174901238596595,
       "bounds": [
         41.1,
         44.300000000000004,
-        40.974999999999994,
-        41.525000000000006,
-        8.85,
-        8.950000000000001
+        44.224999999999994,
+        44.775000000000006,
+        11.5,
+        11.600000000000001
       ],
       "state": [
         "Up-to-date"
@@ -1315,21 +1315,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin3",
-      "label": "GAMEBOY-0046 · Game Link contact study003",
+      "name": "LinkPin004",
+      "label": "GAMEBOY-0046 · Game Link contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.17490123859659498,
       "bounds": [
         41.1,
         44.300000000000004,
-        42.474999999999994,
-        43.025000000000006,
-        8.85,
-        8.950000000000001
+        39.224999999999994,
+        39.775000000000006,
+        10.399999999999999,
+        10.5
       ],
       "state": [
         "Up-to-date"
@@ -1343,21 +1343,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin4",
-      "label": "GAMEBOY-0047 · Game Link contact study004",
+      "name": "LinkPin005",
+      "label": "GAMEBOY-0047 · Game Link contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659568,
+      "volume": 0.17490123859659498,
       "bounds": [
         41.1,
         44.300000000000004,
-        43.974999999999994,
-        44.525000000000006,
-        8.85,
-        8.950000000000001
+        41.724999999999994,
+        42.275000000000006,
+        10.399999999999999,
+        10.5
       ],
       "state": [
         "Up-to-date"
@@ -1371,21 +1371,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LinkPin5",
-      "label": "GAMEBOY-0048 · Game Link contact study005",
+      "name": "LinkPin006",
+      "label": "GAMEBOY-0048 · Game Link contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659568,
+      "volume": 0.17490123859659498,
       "bounds": [
         41.1,
         44.300000000000004,
-        45.474999999999994,
-        46.025000000000006,
-        8.85,
-        8.950000000000001
+        44.224999999999994,
+        44.775000000000006,
+        10.399999999999999,
+        10.5
       ],
       "state": [
         "Up-to-date"
@@ -1399,21 +1399,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "DCJack",
-      "label": "GAMEBOY-0049 · 6 V DC adapter socket",
-      "type": "Part::Feature",
+      "name": "DCJackCut",
+      "label": "GAMEBOY-0049 · 6 V DC adapter socket001",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 59.8426276619052,
+      "volume": 51.06344699144848,
       "bounds": [
         -44.9,
         -39.5,
-        32.5,
-        37.5,
-        6.1,
-        11.1
+        47.0,
+        52.0,
+        8.5,
+        13.5
       ],
       "state": [
         "Up-to-date"
@@ -1438,10 +1438,10 @@
       "bounds": [
         -44.300000000000004,
         -40.6,
-        34.45,
-        35.55,
-        8.049999999999999,
-        9.15
+        48.95,
+        50.05,
+        10.45,
+        11.55
       ],
       "state": [
         "Up-to-date"
@@ -1490,7 +1490,7 @@
       "null": false,
       "solids": 1,
       "faces": 62,
-      "volume": 29.347349480560695,
+      "volume": 29.347349480560688,
       "bounds": [
         -32.75,
         -21.25,
@@ -1546,7 +1546,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 15.629451271946698,
+      "volume": 15.629451271946696,
       "bounds": [
         -28.6,
         -25.4,
@@ -1574,7 +1574,7 @@
       "null": false,
       "solids": 6,
       "faces": 78,
-      "volume": 0.09113377742387861,
+      "volume": 0.0911337774238786,
       "bounds": [
         -34.86252107315436,
         -22.733125,
@@ -1636,7 +1636,7 @@
         -34.25,
         59.25,
         62.75,
-        0.1,
+        0.09999999999999999,
         8.0
       ],
       "state": [
@@ -1692,7 +1692,7 @@
         37.75,
         59.25,
         62.75,
-        0.1,
+        0.09999999999999999,
         8.0
       ],
       "state": [
@@ -1748,7 +1748,7 @@
         -34.25,
         9.25,
         12.75,
-        0.1,
+        0.09999999999999999,
         8.0
       ],
       "state": [
@@ -1804,7 +1804,7 @@
         37.75,
         9.25,
         12.75,
-        0.1,
+        0.09999999999999999,
         8.0
       ],
       "state": [
@@ -1959,21 +1959,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "RearModel",
-      "label": "GAMEBOY-0069 · MODEL NO. DMG-01",
+      "name": "RearModel001",
+      "label": "GAMEBOY-0069 · MODEL NO. DMG-001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 14,
       "faces": 199,
-      "volume": 0.44145014301023905,
+      "volume": 0.2879874453661468,
       "bounds": [
-        -4.53192953020135,
-        28.671182885906042,
-        33.951140839597315,
-        36.4848323147651,
-        -1e-07,
-        0.018000099999999998
+        -6.583481543624161,
+        20.234416946308727,
+        28.960536812751677,
+        31.006979965771812,
+        0.18199990000000002,
+        0.20000010000000001
       ],
       "state": [
         "Up-to-date"
@@ -1982,26 +1982,26 @@
       "part_number": "GAMEBOY-0069",
       "assembly": "Body",
       "layer": -6,
-      "material": "dmgbezel",
+      "material": "dmgcase",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
     },
     {
-      "name": "RearNintendo",
-      "label": "GAMEBOY-0070 · Nintendo GAME BOY",
+      "name": "RearNintendo001",
+      "label": "GAMEBOY-0070 · ©1989 Nintendo",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 16,
-      "faces": 265,
-      "volume": 0.3408123864125322,
+      "solids": 15,
+      "faces": 298,
+      "volume": 0.19605663494194367,
       "bounds": [
-        -0.4290373322147695,
-        28.71544672818792,
-        27.95771802080537,
-        30.20469808657718,
-        -1e-07,
-        0.018000099999999998
+        0.054358121476508814,
+        20.161682146979867,
+        25.26429520201342,
+        27.161745066442954,
+        0.18199990000000002,
+        0.20000010000000001
       ],
       "state": [
         "Up-to-date"
@@ -2010,26 +2010,26 @@
       "part_number": "GAMEBOY-0070",
       "assembly": "Body",
       "layer": -6,
-      "material": "dmgbezel",
+      "material": "dmgcase",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
     },
     {
-      "name": "RearRating",
-      "label": "GAMEBOY-0071 · DC 6V  /  4 x AA",
+      "name": "RearRating001",
+      "label": "GAMEBOY-0071 · RATING: DC6V 0.7W",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 9,
-      "faces": 134,
-      "volume": 0.19493664248885306,
+      "solids": 15,
+      "faces": 219,
+      "volume": 0.2533888669395448,
       "bounds": [
-        5.89370805369127,
-        28.715446828187922,
-        21.734228187919463,
-        24.1503356704698,
-        -1e-07,
-        0.018000099999999998
+        -5.271308724832213,
+        20.247063858389264,
+        21.562416007382552,
+        23.511409495973158,
+        0.18199990000000002,
+        0.20000010000000001
       ],
       "state": [
         "Up-to-date"
@@ -2038,26 +2038,26 @@
       "part_number": "GAMEBOY-0071",
       "assembly": "Body",
       "layer": -6,
-      "material": "dmgbezel",
+      "material": "dmgcase",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
     },
     {
-      "name": "RearStudy",
-      "label": "GAMEBOY-0072 · 1989  /  CAD STUDY",
+      "name": "RearStudy001",
+      "label": "GAMEBOY-0072 · BATTERY: SUM-3(AA,R6)X4",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 13,
-      "faces": 239,
-      "volume": 0.23089863028410854,
+      "solids": 22,
+      "faces": 354,
+      "volume": 0.2837223604216868,
       "bounds": [
-        3.404614093959733,
-        28.716862416107382,
-        15.763758389261746,
-        17.911409495973157,
-        -1e-07,
-        0.018000099999999998
+        -10.128691275167782,
+        20.272357482550337,
+        17.590738155033556,
+        19.658926274496643,
+        0.18199990000000002,
+        0.20000010000000001
       ],
       "state": [
         "Up-to-date"
@@ -2066,7 +2066,7 @@
       "part_number": "GAMEBOY-0072",
       "assembly": "Body",
       "layer": -6,
-      "material": "dmgbezel",
+      "material": "dmgcase",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
     },
@@ -2193,7 +2193,7 @@
       "volume": 8447.999685726229,
       "bounds": [
         -35.0000001,
-        35.000000000000014,
+        35.00000000000001,
         -71.00000000000001,
         -8.9999999,
         1.3999998999999999,
@@ -2407,21 +2407,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AAContactSpring0",
-      "label": "GAMEBOY-0085 · Battery helical contact spring",
+      "name": "AAContactSpring001",
+      "label": "GAMEBOY-0085 · Battery helical contact spring001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.095680844480787,
+      "faces": 4,
+      "volume": 4.095679903043442,
       "bounds": [
-        -26.860009310168863,
-        -21.13999068983113,
+        -26.860022503963037,
+        -21.139997603148274,
         -67.65990012347928,
         -65.54009987652073,
-        5.889991081368827,
-        11.610008918630852
+        5.8899750609805395,
+        11.61000074279669
       ],
       "state": [
         "Up-to-date"
@@ -2603,21 +2603,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AAContactSpring1",
-      "label": "GAMEBOY-0092 · Battery helical contact spring001",
+      "name": "AAContactSpring002",
+      "label": "GAMEBOY-0092 · Battery helical contact spring002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.095680844480787,
+      "faces": 4,
+      "volume": 4.095679903043442,
       "bounds": [
-        -10.860009310168861,
-        -5.139990689831131,
-        -14.45990012347927,
-        -12.34009987652072,
-        5.889991081369149,
-        11.610008918631172
+        -10.860022503963034,
+        -5.139997603148278,
+        -14.459900123479274,
+        -12.340099876520721,
+        5.88999925720331,
+        11.61002493901946
       ],
       "state": [
         "Up-to-date"
@@ -2799,21 +2799,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AAContactSpring2",
-      "label": "GAMEBOY-0099 · Battery helical contact spring002",
+      "name": "AAContactSpring003",
+      "label": "GAMEBOY-0099 · Battery helical contact spring003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.095680844480787,
+      "faces": 4,
+      "volume": 4.095679903043442,
       "bounds": [
-        5.139990689831138,
-        10.860009310168868,
+        5.139977496036964,
+        10.860002396851721,
         -67.65990012347928,
         -65.54009987652073,
-        5.889991081368827,
-        11.610008918630852
+        5.8899750609805395,
+        11.61000074279669
       ],
       "state": [
         "Up-to-date"
@@ -2890,7 +2890,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 432.3334146164134,
+      "volume": 432.33341461641066,
       "bounds": [
         16.85,
         31.15,
@@ -2918,7 +2918,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 7286.564761801956,
+      "volume": 7286.564761801955,
       "bounds": [
         17.12,
         30.88,
@@ -2995,21 +2995,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AAContactSpring3",
-      "label": "GAMEBOY-0106 · Battery helical contact spring003",
+      "name": "AAContactSpring004",
+      "label": "GAMEBOY-0106 · Battery helical contact spring004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.095680844480787,
+      "faces": 4,
+      "volume": 4.095679903043442,
       "bounds": [
-        21.139990689831137,
-        26.86000931016887,
-        -14.45990012347927,
-        -12.34009987652072,
-        5.889991081369149,
-        11.610008918631172
+        21.139977496036963,
+        26.860002396851726,
+        -14.459900123479274,
+        -12.340099876520721,
+        5.88999925720331,
+        11.61002493901946
       ],
       "state": [
         "Up-to-date"
@@ -3058,7 +3058,7 @@
       "null": false,
       "solids": 2,
       "faces": 26,
-      "volume": 0.05562609418494666,
+      "volume": 0.055626094184946656,
       "bounds": [
         21.51302013422819,
         25.775838926174497,
@@ -3079,14 +3079,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainboardCut004",
-      "label": "GAMEBOY-0109 · DMG main logic PCB study005",
+      "name": "MainboardCut005",
+      "label": "GAMEBOY-0109 · DMG main logic PCB study006",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 5021.812920548189,
+      "volume": 5003.316686946854,
       "bounds": [
         -39.5,
         39.5,
@@ -3113,8 +3113,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 31,
-      "volume": 6318.288124272035,
+      "faces": 25,
+      "volume": 6339.702891884452,
       "bounds": [
         -40.5,
         40.5,
@@ -3142,14 +3142,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 285.8870121330285,
+      "volume": 285.8870121330289,
       "bounds": [
-        -40.5,
-        -39.85,
-        -66.5,
-        -11.5,
-        4.0,
-        12.0
+        -40.500000000000014,
+        -39.84999999999999,
+        -66.50000000000001,
+        -11.499999999999993,
+        3.999999999999993,
+        12.000000000000007
       ],
       "state": [
         "Up-to-date"
@@ -3198,7 +3198,7 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 4145.521624802314,
+      "volume": 4145.521624802313,
       "bounds": [
         -30.0,
         30.0,
@@ -3310,7 +3310,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         -22.075,
         -21.425,
@@ -3366,7 +3366,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894887,
+      "volume": 0.18703518578948863,
       "bounds": [
         -20.575,
         -19.925,
@@ -3422,7 +3422,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         -19.075,
         -18.425,
@@ -3478,7 +3478,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         -17.575,
         -16.925,
@@ -3534,7 +3534,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         -16.075,
         -15.425,
@@ -3590,7 +3590,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         -14.575,
         -13.925,
@@ -3618,7 +3618,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5037424777960756,
+      "volume": 0.5037424777960757,
       "bounds": [
         -13.100000000000001,
         -12.399999999999999,
@@ -3786,7 +3786,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5037424777960756,
+      "volume": 0.5037424777960757,
       "bounds": [
         -8.600000000000001,
         -7.9,
@@ -3926,7 +3926,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948886,
+      "volume": 0.18703518578948883,
       "bounds": [
         -5.575,
         -4.925,
@@ -4038,7 +4038,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894888,
+      "volume": 0.18703518578948877,
       "bounds": [
         -2.575,
         -1.9249999999999998,
@@ -4094,7 +4094,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894888,
+      "volume": 0.18703518578948877,
       "bounds": [
         -1.0750000000000002,
         -0.425,
@@ -4318,7 +4318,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948886,
+      "volume": 0.18703518578948883,
       "bounds": [
         4.925,
         5.575,
@@ -4402,7 +4402,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5037424777960756,
+      "volume": 0.5037424777960757,
       "bounds": [
         7.9,
         8.600000000000001,
@@ -4430,7 +4430,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948877,
+      "volume": 0.18703518578948874,
       "bounds": [
         7.925,
         8.575,
@@ -4458,7 +4458,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5037424777960756,
+      "volume": 0.5037424777960757,
       "bounds": [
         9.399999999999999,
         10.100000000000001,
@@ -4570,7 +4570,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5037424777960756,
+      "volume": 0.5037424777960757,
       "bounds": [
         12.399999999999999,
         13.100000000000001,
@@ -4654,7 +4654,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         13.925,
         14.575,
@@ -4710,7 +4710,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         15.425,
         16.075,
@@ -4766,7 +4766,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894887,
+      "volume": 0.18703518578948863,
       "bounds": [
         16.925,
         17.575,
@@ -4822,7 +4822,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         18.425,
         19.075,
@@ -4878,7 +4878,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894887,
+      "volume": 0.18703518578948863,
       "bounds": [
         19.925,
         20.575,
@@ -4934,7 +4934,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948866,
+      "volume": 0.18703518578948863,
       "bounds": [
         21.425,
         22.075,
@@ -5018,7 +5018,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 231.28375203952615,
+      "volume": 231.28375203952612,
       "bounds": [
         -14.0,
         14.0,
@@ -5357,7 +5357,7 @@
       "volume": 11.697956812281245,
       "bounds": [
         -21.8,
-        3.8000000000000007,
+        3.800000000000001,
         33.2,
         56.8,
         12.4,
@@ -5466,9 +5466,9 @@
       "null": false,
       "solids": 28,
       "faces": 280,
-      "volume": 3.626124884298449,
+      "volume": 3.62612488429845,
       "bounds": [
-        -1.340000000000002,
+        -1.3400000000000019,
         19.340000000000003,
         16.900000000000002,
         31.099999999999998,
@@ -5571,14 +5571,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "VRAMText",
-      "label": "GAMEBOY-0198 · VRAM",
+      "name": "VRAMText001",
+      "label": "GAMEBOY-0198 · VRAM001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 4,
-      "faces": 62,
-      "volume": 0.055026519206342786,
+      "solids": 3,
+      "faces": 59,
+      "volume": 0.0550263540674704,
       "bounds": [
         19.251744966442953,
         24.983892617449666,
@@ -5599,14 +5599,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "WRAMText",
-      "label": "GAMEBOY-0199 · WRAM",
+      "name": "WRAMText001",
+      "label": "GAMEBOY-0199 · WRAM001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 4,
-      "faces": 68,
-      "volume": 0.07168210693732917,
+      "solids": 3,
+      "faces": 65,
+      "volume": 0.07168192051102508,
       "bounds": [
         7.221606543624161,
         13.927265100671141,
@@ -5662,7 +5662,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 87.52778684233861,
+      "volume": 87.5277868423386,
       "bounds": [
         -31.25,
         -26.75,
@@ -5690,7 +5690,7 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.02587626789812428,
+      "volume": 0.025876267898124288,
       "bounds": [
         -30.888582314765102,
         -27.088087248322147,
@@ -5886,7 +5886,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247038,
+      "volume": 0.2775273450247037,
       "bounds": [
         -31.475,
         -30.525,
@@ -5942,7 +5942,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247038,
+      "volume": 0.2775273450247037,
       "bounds": [
         -31.475,
         -30.525,
@@ -5998,7 +5998,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247048,
+      "volume": 0.27752734502470466,
       "bounds": [
         -31.475,
         -30.525,
@@ -6054,7 +6054,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247048,
+      "volume": 0.27752734502470466,
       "bounds": [
         -31.475,
         -30.525,
@@ -6166,7 +6166,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470383,
+      "volume": 0.2775273450247038,
       "bounds": [
         -23.475,
         -22.525,
@@ -6222,7 +6222,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         -23.475,
         -22.525,
@@ -6278,7 +6278,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247048,
+      "volume": 0.27752734502470466,
       "bounds": [
         -23.475,
         -22.525,
@@ -6334,7 +6334,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470444,
+      "volume": 0.2775273450247044,
       "bounds": [
         -15.475,
         -14.525,
@@ -6446,7 +6446,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247045,
+      "volume": 0.27752734502470444,
       "bounds": [
         2.525,
         3.475,
@@ -6476,8 +6476,8 @@
       "faces": 20,
       "volume": 0.1293972388377497,
       "bounds": [
-        2.305,
-        3.695,
+        2.3049999999999997,
+        3.6950000000000003,
         63.654999999999994,
         64.345,
         11.99,
@@ -6530,7 +6530,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.12939723883774953,
+      "volume": 0.1293972388377495,
       "bounds": [
         11.305,
         12.695,
@@ -6614,7 +6614,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         28.525,
         29.475,
@@ -6670,7 +6670,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         33.525,
         34.475,
@@ -6782,7 +6782,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         33.525,
         34.475,
@@ -6838,7 +6838,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         30.525,
         31.475,
@@ -6894,7 +6894,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247035,
+      "volume": 0.27752734502470344,
       "bounds": [
         -15.475,
         -14.525,
@@ -6950,7 +6950,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247035,
+      "volume": 0.27752734502470344,
       "bounds": [
         -8.475,
         -7.5249999999999995,
@@ -7006,7 +7006,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470355,
+      "volume": 0.2775273450247035,
       "bounds": [
         -0.475,
         0.475,
@@ -7062,7 +7062,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247035,
+      "volume": 0.27752734502470344,
       "bounds": [
         7.5249999999999995,
         8.475,
@@ -7118,7 +7118,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470366,
+      "volume": 0.2775273450247036,
       "bounds": [
         15.525,
         16.475,
@@ -7286,7 +7286,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         24.525,
         25.475,
@@ -7566,13 +7566,13 @@
       "null": false,
       "solids": 1,
       "faces": 24,
-      "volume": 310.0779190035656,
+      "volume": 310.0779190035657,
       "bounds": [
         13.0,
         38.0,
         -32.0,
         -15.0,
-        24.15,
+        24.149999999999995,
         27.0
       ],
       "state": [
@@ -8266,7 +8266,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.061114736935448,
+      "volume": 21.061114736935444,
       "bounds": [
         2.25,
         5.75,
@@ -8322,7 +8322,7 @@
       "null": false,
       "solids": 1,
       "faces": 34,
-      "volume": 369.1851036740053,
+      "volume": 369.1851036740055,
       "bounds": [
         -34.4,
         34.4,
@@ -9638,7 +9638,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.277527345024704,
+      "volume": 0.27752734502470394,
       "bounds": [
         -31.475,
         -30.525,
@@ -9666,7 +9666,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.12939723883775023,
+      "volume": 0.12939723883775017,
       "bounds": [
         -31.695,
         -30.305,
@@ -9694,7 +9694,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470394,
+      "volume": 0.277527345024704,
       "bounds": [
         -22.475,
         -21.525,
@@ -9750,7 +9750,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247037,
+      "volume": 0.27752734502470366,
       "bounds": [
         -10.475,
         -9.525,
@@ -10303,14 +10303,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "CartridgeBackCut001",
-      "label": "GAMEBOY-0367 · Game Pak rear shell study002",
+      "name": "CartridgeBackCut002",
+      "label": "GAMEBOY-0367 · Game Pak rear shell study003",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 21,
-      "volume": 3184.7657960554952,
+      "volume": 3182.3035728132445,
       "bounds": [
         77.5,
         134.5,
@@ -10344,7 +10344,7 @@
         134.5,
         -10.5,
         54.5,
-        1.1,
+        1.0999999999999999,
         6.699999999999999
       ],
       "state": [
@@ -10372,7 +10372,7 @@
         134.5,
         -10.5,
         54.5,
-        6.8,
+        6.799999999999999,
         7.9
       ],
       "state": [
@@ -11346,7 +11346,7 @@
       "null": false,
       "solids": 28,
       "faces": 280,
-      "volume": 2.6427552202305495,
+      "volume": 2.6427552202305504,
       "bounds": [
         98.43,
         113.57,
@@ -11374,7 +11374,7 @@
       "null": false,
       "solids": 1,
       "faces": 391,
-      "volume": 187.89783556283606,
+      "volume": 187.89783556283604,
       "bounds": [
         83.4999999,
         128.5000001,
@@ -11479,21 +11479,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "CartridgeScrew",
-      "label": "GAMEBOY-0409 · Cross-head fastener018",
+      "name": "CartridgeScrew001",
+      "label": "GAMEBOY-0409 · Cross-head fastener019",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 7.005818852643341,
+      "faces": 19,
+      "volume": 8.399586510191597,
       "bounds": [
-        104.4,
-        107.6,
-        3.4,
-        6.6,
+        104.22844444444394,
+        107.77155555555606,
+        3.2,
+        6.8,
         0.12,
-        4.15
+        4.18
       ],
       "state": [
         "Up-to-date"
@@ -11533,24 +11533,220 @@
       "material": "dmgcase",
       "fidelity": "Schematic internal layout",
       "pose_group": "Base"
-    }
-  ],
-  "exploded_objects": [
+    },
     {
-      "name": "BackCoverCut014",
-      "label": "GAMEBOY-0001 · Rear enclosure base015",
+      "name": "LinkPortCover",
+      "label": "GAMEBOY-0411 · Original removable Game Link cover study",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 1024,
-      "volume": 8370.96364266866,
+      "faces": 28,
+      "volume": 93.3299002858207,
       "bounds": [
-        -45.0000001,
-        45.0000001,
+        99.0,
+        113.0,
+        -25.7,
+        -19.3,
+        0.2,
+        3.3000000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPortCover",
+      "part_number": "GAMEBOY-0411",
+      "assembly": "Accessories",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RearOrigin",
+      "label": "GAMEBOY-0412 · MADE IN JAPAN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 144,
+      "volume": 0.17461110298255111,
+      "bounds": [
+        3.191233221476511,
+        20.272357382550336,
+        13.736107282550336,
+        15.891275267785234,
+        0.18199989999999827,
+        0.20000009999999954
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearOrigin",
+      "part_number": "GAMEBOY-0412",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "ContrastLegend",
+      "label": "GAMEBOY-0413 · CONTRAST",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 135,
+      "volume": 0.09026476374901453,
+      "bounds": [
+        -44.818000100000006,
+        -44.799999899999996,
+        23.130849362751675,
+        33.869150637248325,
+        22.37087238322147,
+        23.881342381879193
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ContrastLegend",
+      "part_number": "GAMEBOY-0413",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "VolumeLegend",
+      "label": "GAMEBOY-0414 · VOL",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 35,
+      "volume": 0.028949920428257416,
+      "bounds": [
+        44.799999899999996,
+        44.8180001,
+        17.068938758389262,
+        20.931061241610738,
+        18.071811980536914,
+        19.53355714697987
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeLegend",
+      "part_number": "GAMEBOY-0414",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "LinkLegend",
+      "label": "GAMEBOY-0415 · EXT. CONNECTOR",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 193,
+      "volume": 0.0841286538914362,
+      "bounds": [
+        44.79999989999999,
+        44.8180001,
+        35.26940431241611,
+        48.73059568758389,
+        18.17744956442953,
+        19.346845737583894
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkLegend",
+      "part_number": "GAMEBOY-0415",
+      "assembly": "Body",
+      "layer": 0,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PowerSideLegend",
+      "label": "GAMEBOY-0416 · Original external-power wording",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 21,
+      "faces": 345,
+      "volume": 0.10070374884349109,
+      "bounds": [
+        -44.8180001,
+        -44.799999899999996,
+        21.044691594630873,
+        35.95530840536913,
+        12.479328759060403,
+        15.403490032885905
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSideLegend",
+      "part_number": "GAMEBOY-0416",
+      "assembly": "Body",
+      "layer": -6,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "PhonesLegend",
+      "label": "GAMEBOY-0417 · PHONES and headphone pictogram",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 126,
+      "volume": 0.09285334739141483,
+      "bounds": [
+        -6.2,
+        5.609668724161073,
+        -71.8,
+        -69.75,
+        30.6899999,
+        30.708000100000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PhonesLegend",
+      "part_number": "GAMEBOY-0417",
+      "assembly": "Body",
+      "layer": 4,
+      "material": "dmgcase",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "exploded_objects": [
+    {
+      "name": "BackCoverCut015",
+      "label": "GAMEBOY-0001 · Rear enclosure base016",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 317,
+      "volume": 8188.233545799782,
+      "bounds": [
+        -45.0,
+        45.0,
         -74.0,
-        74.0000001,
-        -350.0000001,
+        74.0,
+        -350.0,
         -348.79999999999995
       ],
       "state": [
@@ -11566,14 +11762,14 @@
       ]
     },
     {
-      "name": "RearShellCut009",
-      "label": "GAMEBOY-0002 · Rear enclosure skirt010",
+      "name": "RearShellCut010",
+      "label": "GAMEBOY-0002 · Rear enclosure skirt011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 250,
-      "volume": 10084.320082545937,
+      "faces": 260,
+      "volume": 9972.127794117881,
       "bounds": [
         -45.0,
         45.0,
@@ -11595,14 +11791,14 @@
       ]
     },
     {
-      "name": "MainFrameCut004",
-      "label": "GAMEBOY-0003 · Front enclosure skirt005",
+      "name": "MainFrameCut008",
+      "label": "GAMEBOY-0003 · Front enclosure skirt009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 40,
-      "volume": 9338.483098145049,
+      "faces": 75,
+      "volume": 9271.517978634598,
       "bounds": [
         -45.0,
         45.0,
@@ -11624,21 +11820,21 @@
       ]
     },
     {
-      "name": "FrontFaceCut007",
-      "label": "GAMEBOY-0004 · Front control and display panel008",
+      "name": "FrontFace001",
+      "label": "GAMEBOY-0004 · Front control and display panel011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 113,
-      "volume": 9122.493878223968,
+      "faces": 211,
+      "volume": 9218.136934004922,
       "bounds": [
         -44.9,
         44.900000000000006,
         -73.9,
         73.9,
         239.65,
-        240.8
+        240.86
       ],
       "state": [
         "Up-to-date"
@@ -11718,7 +11914,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 9795.67362697409,
+      "volume": 9795.673626974092,
       "bounds": [
         -28.0,
         28.0,
@@ -11827,17 +12023,17 @@
       ]
     },
     {
-      "name": "BatteryLEDMark",
-      "label": "GAMEBOY-0011 · BATTERY",
+      "name": "BatteryLEDMark001",
+      "label": "GAMEBOY-0011 · BATTERY001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 7,
-      "faces": 110,
-      "volume": 0.0754076262769177,
+      "solids": 6,
+      "faces": 104,
+      "volume": 0.07527030036817493,
       "bounds": [
         -35.50397451275168,
-        -26.96948196308725,
+        -26.969481963087247,
         35.5999999,
         37.05637593892618,
         300.7779999,
@@ -11892,7 +12088,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.10076137166935992,
+      "volume": 0.10076137166935989,
       "bounds": [
         -34.3,
         -14.3,
@@ -11921,7 +12117,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07917527786838258,
+      "volume": 0.07917527786838256,
       "bounds": [
         -34.300000000000004,
         -14.3,
@@ -11950,7 +12146,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.03675337166939271,
+      "volume": 0.0367533716693927,
       "bounds": [
         29.05,
         36.35,
@@ -12013,7 +12209,7 @@
         -37.570008389261744,
         -18.32635057114094,
         -2.563892717449664,
-        0.8315437241610734,
+        0.8315437241610738,
         240.81799990000002,
         240.8360001
       ],
@@ -12385,7 +12581,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 31.1415756426833,
+      "volume": 31.141575642683296,
       "bounds": [
         -17.496362061233636,
         -6.503637938766367,
@@ -12414,7 +12610,7 @@
       "null": false,
       "solids": 6,
       "faces": 96,
-      "volume": 0.11491736972321652,
+      "volume": 0.11491736972321649,
       "bounds": [
         -17.21783729407418,
         -7.89411927803145,
@@ -12472,7 +12668,7 @@
       "null": false,
       "solids": 5,
       "faces": 88,
-      "volume": 0.10061992541275196,
+      "volume": 0.10061992541275193,
       "bounds": [
         -1.2178372940741786,
         6.405793295950136,
@@ -12501,10 +12697,10 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 128.73056030632603,
+      "volume": 128.730560306326,
       "bounds": [
         7.5,
-        42.500000000000036,
+        42.50000000000003,
         -72.4,
         -40.0,
         239.35,
@@ -12530,14 +12726,14 @@
       "null": false,
       "solids": 1,
       "faces": 83,
-      "volume": 121.95303525142909,
+      "volume": 121.95303525142913,
       "bounds": [
         -44.997099609375,
         -34.602900390624995,
-        29.802900390624433,
-        40.197099609375,
-        20.7,
-        22.25
+        23.302900390624433,
+        33.697099609375,
+        18.9,
+        20.45
       ],
       "state": [
         "Up-to-date"
@@ -12559,14 +12755,14 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 6.031857894892402,
+      "volume": 6.031857894892403,
       "bounds": [
         -40.599999999999994,
         -39.0,
-        34.2,
-        35.8,
-        49.5,
-        52.5
+        27.7,
+        29.3,
+        47.7,
+        50.7
       ],
       "state": [
         "Up-to-date"
@@ -12592,10 +12788,10 @@
       "bounds": [
         -43.55,
         -36.05,
-        31.25,
-        38.75,
-        52.55,
-        54.449999999999996
+        24.75,
+        32.25,
+        50.75,
+        52.65
       ],
       "state": [
         "Up-to-date"
@@ -12610,21 +12806,21 @@
       ]
     },
     {
-      "name": "VolumeWheelCut",
-      "label": "GAMEBOY-0038 · Volume adjustment wheel001",
+      "name": "VolumeWheel001",
+      "label": "GAMEBOY-0038 · Volume adjustment wheel002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 83,
-      "volume": 121.95303525147813,
+      "faces": 108,
+      "volume": 236.03813274479617,
       "bounds": [
         34.60290039062492,
         44.997099609375,
         13.802900390625,
         24.197099609375567,
-        10.7,
-        12.25
+        11.975,
+        14.975
       ],
       "state": [
         "Up-to-date"
@@ -12639,21 +12835,21 @@
       ]
     },
     {
-      "name": "VolumeSpindle",
-      "label": "GAMEBOY-0039 · Potentiometer spindle001",
+      "name": "VolumeSpindle001",
+      "label": "GAMEBOY-0039 · Potentiometer spindle002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 6.031857894892401,
+      "volume": 7.4895568861580655,
       "bounds": [
         39.0,
         40.599999999999994,
         18.2,
         19.8,
-        39.5,
-        42.5
+        41.5,
+        45.225
       ],
       "state": [
         "Up-to-date"
@@ -12681,8 +12877,8 @@
         43.55,
         15.25,
         22.75,
-        42.55,
-        44.449999999999996
+        45.275,
+        47.175
       ],
       "state": [
         "Up-to-date"
@@ -12697,21 +12893,21 @@
       ]
     },
     {
-      "name": "LinkPortShell",
-      "label": "GAMEBOY-0041 · Original large Game Link receptacle",
+      "name": "LinkPortShell001",
+      "label": "GAMEBOY-0041 · Original large Game Link receptacle001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 18,
-      "volume": 164.7567580902799,
+      "faces": 14,
+      "volume": 73.42500000000004,
       "bounds": [
         39.4,
         44.9,
-        35.8,
-        48.2,
-        -33.9,
-        -29.099999999999998
+        35.0,
+        49.0,
+        -32.2,
+        -25.8
       ],
       "state": [
         "Up-to-date"
@@ -12726,21 +12922,21 @@
       ]
     },
     {
-      "name": "LinkPortTongue",
-      "label": "GAMEBOY-0042 · Link port insulator",
+      "name": "LinkPortTongue001",
+      "label": "GAMEBOY-0042 · Link port insulator001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.58894908923483,
+      "volume": 35.004949089234806,
       "bounds": [
         40.4,
         44.699999999999996,
-        37.8,
-        46.2,
-        -31.8,
-        -31.2
+        37.2,
+        46.8,
+        -29.425,
+        -28.575
       ],
       "state": [
         "Up-to-date"
@@ -12755,21 +12951,21 @@
       ]
     },
     {
-      "name": "LinkPin0",
-      "label": "GAMEBOY-0043 · Game Link contact study",
+      "name": "LinkPin001",
+      "label": "GAMEBOY-0043 · Game Link contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659562,
+      "volume": 0.1749012385965956,
       "bounds": [
         41.1,
         44.300000000000004,
-        37.974999999999994,
-        38.525000000000006,
-        -31.150000000000002,
-        -31.05
+        39.224999999999994,
+        39.775000000000006,
+        -28.5,
+        -28.4
       ],
       "state": [
         "Up-to-date"
@@ -12784,21 +12980,21 @@
       ]
     },
     {
-      "name": "LinkPin1",
-      "label": "GAMEBOY-0044 · Game Link contact study001",
+      "name": "LinkPin002",
+      "label": "GAMEBOY-0044 · Game Link contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659562,
+      "volume": 0.1749012385965956,
       "bounds": [
         41.1,
         44.300000000000004,
-        39.474999999999994,
-        40.025000000000006,
-        -31.150000000000002,
-        -31.05
+        41.724999999999994,
+        42.275000000000006,
+        -28.5,
+        -28.4
       ],
       "state": [
         "Up-to-date"
@@ -12813,8 +13009,8 @@
       ]
     },
     {
-      "name": "LinkPin2",
-      "label": "GAMEBOY-0045 · Game Link contact study002",
+      "name": "LinkPin003",
+      "label": "GAMEBOY-0045 · Game Link contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -12824,10 +13020,10 @@
       "bounds": [
         41.1,
         44.300000000000004,
-        40.974999999999994,
-        41.525000000000006,
-        -31.150000000000002,
-        -31.05
+        44.224999999999994,
+        44.775000000000006,
+        -28.5,
+        -28.4
       ],
       "state": [
         "Up-to-date"
@@ -12842,21 +13038,21 @@
       ]
     },
     {
-      "name": "LinkPin3",
-      "label": "GAMEBOY-0046 · Game Link contact study003",
+      "name": "LinkPin004",
+      "label": "GAMEBOY-0046 · Game Link contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659562,
+      "volume": 0.1749012385965956,
       "bounds": [
         41.1,
         44.300000000000004,
-        42.474999999999994,
-        43.025000000000006,
-        -31.150000000000002,
-        -31.05
+        39.224999999999994,
+        39.775000000000006,
+        -29.6,
+        -29.5
       ],
       "state": [
         "Up-to-date"
@@ -12871,21 +13067,21 @@
       ]
     },
     {
-      "name": "LinkPin4",
-      "label": "GAMEBOY-0047 · Game Link contact study004",
+      "name": "LinkPin005",
+      "label": "GAMEBOY-0047 · Game Link contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.1749012385965956,
       "bounds": [
         41.1,
         44.300000000000004,
-        43.974999999999994,
-        44.525000000000006,
-        -31.150000000000002,
-        -31.05
+        41.724999999999994,
+        42.275000000000006,
+        -29.6,
+        -29.5
       ],
       "state": [
         "Up-to-date"
@@ -12900,21 +13096,21 @@
       ]
     },
     {
-      "name": "LinkPin5",
-      "label": "GAMEBOY-0048 · Game Link contact study005",
+      "name": "LinkPin006",
+      "label": "GAMEBOY-0048 · Game Link contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.17490123859659565,
+      "volume": 0.17490123859659562,
       "bounds": [
         41.1,
         44.300000000000004,
-        45.474999999999994,
-        46.025000000000006,
-        -31.150000000000002,
-        -31.05
+        44.224999999999994,
+        44.775000000000006,
+        -29.6,
+        -29.5
       ],
       "state": [
         "Up-to-date"
@@ -12929,21 +13125,21 @@
       ]
     },
     {
-      "name": "DCJack",
-      "label": "GAMEBOY-0049 · 6 V DC adapter socket",
+      "name": "DCJackCut",
+      "label": "GAMEBOY-0049 · 6 V DC adapter socket001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 59.8426276619052,
+      "volume": 51.0634469914485,
       "bounds": [
         -44.9,
         -39.5,
-        32.5,
-        37.5,
-        -33.9,
-        -28.9
+        47.0,
+        52.0,
+        -31.5,
+        -26.5
       ],
       "state": [
         "Up-to-date"
@@ -12965,14 +13161,14 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 3.5162275775303806,
+      "volume": 3.51622757753038,
       "bounds": [
         -44.300000000000004,
         -40.6,
-        34.45,
-        35.55,
-        -31.950000000000003,
-        -30.849999999999998
+        48.95,
+        50.05,
+        -29.550000000000004,
+        -28.45
       ],
       "state": [
         "Up-to-date"
@@ -13023,7 +13219,7 @@
       "null": false,
       "solids": 1,
       "faces": 62,
-      "volume": 29.347349480560695,
+      "volume": 29.347349480560688,
       "bounds": [
         -32.75,
         -21.25,
@@ -13509,21 +13705,21 @@
       ]
     },
     {
-      "name": "RearModel",
-      "label": "GAMEBOY-0069 · MODEL NO. DMG-01",
+      "name": "RearModel001",
+      "label": "GAMEBOY-0069 · MODEL NO. DMG-001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 14,
       "faces": 199,
-      "volume": 0.44145014301001234,
+      "volume": 0.2879874453659989,
       "bounds": [
-        -4.53192953020135,
-        28.671182885906042,
-        33.951140839597315,
-        36.4848323147651,
-        -350.0000001,
-        -349.9819999
+        -6.583481543624161,
+        20.234416946308727,
+        28.960536812751677,
+        31.006979965771812,
+        -349.8180001,
+        -349.7999999
       ],
       "state": [
         "Up-to-date"
@@ -13538,21 +13734,21 @@
       ]
     },
     {
-      "name": "RearNintendo",
-      "label": "GAMEBOY-0070 · Nintendo GAME BOY",
+      "name": "RearNintendo001",
+      "label": "GAMEBOY-0070 · ©1989 Nintendo",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 16,
-      "faces": 265,
-      "volume": 0.34081238641235734,
+      "solids": 15,
+      "faces": 298,
+      "volume": 0.19605663494184303,
       "bounds": [
-        -0.4290373322147695,
-        28.71544672818792,
-        27.95771802080537,
-        30.20469808657718,
-        -350.0000001,
-        -349.9819999
+        0.054358121476508814,
+        20.161682146979867,
+        25.26429520201342,
+        27.161745066442954,
+        -349.8180001,
+        -349.7999999
       ],
       "state": [
         "Up-to-date"
@@ -13567,21 +13763,21 @@
       ]
     },
     {
-      "name": "RearRating",
-      "label": "GAMEBOY-0071 · DC 6V  /  4 x AA",
+      "name": "RearRating001",
+      "label": "GAMEBOY-0071 · RATING: DC6V 0.7W",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 9,
-      "faces": 134,
-      "volume": 0.19493664248875292,
+      "solids": 15,
+      "faces": 219,
+      "volume": 0.25338886693941465,
       "bounds": [
-        5.89370805369127,
-        28.715446828187922,
-        21.734228187919463,
-        24.1503356704698,
-        -350.0000001,
-        -349.9819999
+        -5.271308724832213,
+        20.247063858389264,
+        21.562416007382552,
+        23.511409495973158,
+        -349.8180001,
+        -349.7999999
       ],
       "state": [
         "Up-to-date"
@@ -13596,21 +13792,21 @@
       ]
     },
     {
-      "name": "RearStudy",
-      "label": "GAMEBOY-0072 · 1989  /  CAD STUDY",
+      "name": "RearStudy001",
+      "label": "GAMEBOY-0072 · BATTERY: SUM-3(AA,R6)X4",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 13,
-      "faces": 239,
-      "volume": 0.23089863028398996,
+      "solids": 22,
+      "faces": 354,
+      "volume": 0.2837223604215412,
       "bounds": [
-        3.404614093959733,
-        28.716862416107382,
-        15.763758389261746,
-        17.911409495973157,
-        -350.0000001,
-        -349.9819999
+        -10.128691275167782,
+        20.272357482550337,
+        17.590738155033556,
+        19.658926274496643,
+        -349.8180001,
+        -349.7999999
       ],
       "state": [
         "Up-to-date"
@@ -13751,7 +13947,7 @@
       "volume": 8447.999685726243,
       "bounds": [
         -35.0000001,
-        35.000000000000014,
+        35.00000000000001,
         -71.00000000000001,
         -8.9999999,
         -138.60000010000002,
@@ -13973,21 +14169,21 @@
       ]
     },
     {
-      "name": "AAContactSpring0",
-      "label": "GAMEBOY-0085 · Battery helical contact spring",
+      "name": "AAContactSpring001",
+      "label": "GAMEBOY-0085 · Battery helical contact spring001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.09568084448079,
+      "faces": 4,
+      "volume": 4.0956799030434405,
       "bounds": [
-        -26.860009310168863,
-        -21.13999068983113,
+        -26.860022503963037,
+        -21.139997603148274,
         -67.65990012347928,
         -65.54009987652073,
-        -134.11000891863117,
-        -128.38999108136915
+        -134.11002493901947,
+        -128.38999925720333
       ],
       "state": [
         "Up-to-date"
@@ -14038,7 +14234,7 @@
       "null": false,
       "solids": 2,
       "faces": 26,
-      "volume": 0.055626094184947336,
+      "volume": 0.05562609418494733,
       "bounds": [
         -26.48697986577181,
         -22.224161073825503,
@@ -14176,21 +14372,21 @@
       ]
     },
     {
-      "name": "AAContactSpring1",
-      "label": "GAMEBOY-0092 · Battery helical contact spring001",
+      "name": "AAContactSpring002",
+      "label": "GAMEBOY-0092 · Battery helical contact spring002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.09568084448079,
+      "faces": 4,
+      "volume": 4.0956799030434405,
       "bounds": [
-        -10.860009310168861,
-        -5.139990689831131,
-        -14.45990012347927,
-        -12.34009987652072,
-        -134.11000891863085,
-        -128.38999108136883
+        -10.860022503963034,
+        -5.139997603148278,
+        -14.459900123479274,
+        -12.340099876520721,
+        -134.11000074279667,
+        -128.38997506098053
       ],
       "state": [
         "Up-to-date"
@@ -14241,7 +14437,7 @@
       "null": false,
       "solids": 2,
       "faces": 26,
-      "volume": 0.05562609418494733,
+      "volume": 0.055626094184947336,
       "bounds": [
         -10.486979865771811,
         -6.2241610738255035,
@@ -14379,21 +14575,21 @@
       ]
     },
     {
-      "name": "AAContactSpring2",
-      "label": "GAMEBOY-0099 · Battery helical contact spring002",
+      "name": "AAContactSpring003",
+      "label": "GAMEBOY-0099 · Battery helical contact spring003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.09568084448079,
+      "faces": 4,
+      "volume": 4.0956799030434405,
       "bounds": [
-        5.139990689831138,
-        10.860009310168868,
+        5.139977496036964,
+        10.860002396851721,
         -67.65990012347928,
         -65.54009987652073,
-        -134.11000891863117,
-        -128.38999108136915
+        -134.11002493901947,
+        -128.38999925720333
       ],
       "state": [
         "Up-to-date"
@@ -14415,7 +14611,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 18.13132741228721,
+      "volume": 18.131327412287206,
       "bounds": [
         4.75,
         11.25,
@@ -14444,7 +14640,7 @@
       "null": false,
       "solids": 2,
       "faces": 26,
-      "volume": 0.05562609418494733,
+      "volume": 0.055626094184947336,
       "bounds": [
         5.5130201342281895,
         9.775838926174497,
@@ -14582,21 +14778,21 @@
       ]
     },
     {
-      "name": "AAContactSpring3",
-      "label": "GAMEBOY-0106 · Battery helical contact spring003",
+      "name": "AAContactSpring004",
+      "label": "GAMEBOY-0106 · Battery helical contact spring004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 4.095680844480789,
+      "faces": 4,
+      "volume": 4.0956799030434405,
       "bounds": [
-        21.139990689831137,
-        26.86000931016887,
-        -14.45990012347927,
-        -12.34009987652072,
-        -134.11000891863085,
-        -128.38999108136883
+        21.139977496036963,
+        26.860002396851726,
+        -14.459900123479274,
+        -12.340099876520721,
+        -134.11000074279667,
+        -128.38997506098053
       ],
       "state": [
         "Up-to-date"
@@ -14647,7 +14843,7 @@
       "null": false,
       "solids": 2,
       "faces": 26,
-      "volume": 0.055626094184947336,
+      "volume": 0.05562609418494733,
       "bounds": [
         21.51302013422819,
         25.775838926174497,
@@ -14669,21 +14865,21 @@
       ]
     },
     {
-      "name": "MainboardCut004",
-      "label": "GAMEBOY-0109 · DMG main logic PCB study005",
+      "name": "MainboardCut005",
+      "label": "GAMEBOY-0109 · DMG main logic PCB study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 5021.812920548189,
+      "volume": 5003.316686946854,
       "bounds": [
         -39.5,
         39.5,
         -9.0,
         71.0,
         -27.200000000000003,
-        -26.4
+        -26.399999999999995
       ],
       "state": [
         "Up-to-date"
@@ -14704,14 +14900,14 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 31,
-      "volume": 6318.288124272034,
+      "faces": 25,
+      "volume": 6339.702891884453,
       "bounds": [
         -40.5,
         40.5,
         -63.5,
         63.5,
-        53.0,
+        52.99999999999999,
         53.65
       ],
       "state": [
@@ -14792,7 +14988,7 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 4145.521624802314,
+      "volume": 4145.521624802313,
       "bounds": [
         -30.0,
         30.0,
@@ -15227,7 +15423,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.503742477796083,
+      "volume": 0.5037424777960832,
       "bounds": [
         -13.100000000000001,
         -12.399999999999999,
@@ -15256,7 +15452,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894896,
+      "volume": 0.18703518578948958,
       "bounds": [
         -13.075,
         -12.425,
@@ -15314,7 +15510,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894896,
+      "volume": 0.18703518578948958,
       "bounds": [
         -11.575,
         -10.925,
@@ -15372,7 +15568,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894896,
+      "volume": 0.18703518578948958,
       "bounds": [
         -10.075,
         -9.425,
@@ -15430,7 +15626,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894897,
+      "volume": 0.18703518578948966,
       "bounds": [
         -8.575,
         -7.925,
@@ -15488,7 +15684,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948977,
+      "volume": 0.18703518578948974,
       "bounds": [
         -7.075,
         -6.425,
@@ -16010,7 +16206,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.18703518578948977,
+      "volume": 0.18703518578948974,
       "bounds": [
         6.425,
         7.075,
@@ -16126,7 +16322,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894896,
+      "volume": 0.18703518578948958,
       "bounds": [
         9.425,
         10.075,
@@ -16184,7 +16380,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1870351857894896,
+      "volume": 0.18703518578948958,
       "bounds": [
         10.925,
         11.575,
@@ -16213,7 +16409,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.503742477796083,
+      "volume": 0.5037424777960832,
       "bounds": [
         12.399999999999999,
         13.100000000000001,
@@ -17028,7 +17224,7 @@
       "volume": 11.697956812281213,
       "bounds": [
         -21.8,
-        3.8000000000000007,
+        3.800000000000001,
         33.2,
         56.8,
         -27.6,
@@ -17083,7 +17279,7 @@
       "null": false,
       "solids": 28,
       "faces": 280,
-      "volume": 3.6261248842984246,
+      "volume": 3.6261248842984255,
       "bounds": [
         14.4,
         29.599999999999998,
@@ -17141,9 +17337,9 @@
       "null": false,
       "solids": 28,
       "faces": 280,
-      "volume": 3.626124884298437,
+      "volume": 3.626124884298439,
       "bounds": [
-        -1.340000000000002,
+        -1.3400000000000019,
         19.340000000000003,
         16.900000000000002,
         31.099999999999998,
@@ -17250,14 +17446,14 @@
       ]
     },
     {
-      "name": "VRAMText",
-      "label": "GAMEBOY-0198 · VRAM",
+      "name": "VRAMText001",
+      "label": "GAMEBOY-0198 · VRAM001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 4,
-      "faces": 62,
-      "volume": 0.055026519206342786,
+      "solids": 3,
+      "faces": 59,
+      "volume": 0.0550263540674704,
       "bounds": [
         19.251744966442953,
         24.983892617449666,
@@ -17279,14 +17475,14 @@
       ]
     },
     {
-      "name": "WRAMText",
-      "label": "GAMEBOY-0199 · WRAM",
+      "name": "WRAMText001",
+      "label": "GAMEBOY-0199 · WRAM001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 4,
-      "faces": 68,
-      "volume": 0.07168210693732917,
+      "solids": 3,
+      "faces": 65,
+      "volume": 0.0716819205110241,
       "bounds": [
         7.221606543624161,
         13.927265100671141,
@@ -17315,7 +17511,7 @@
       "null": false,
       "solids": 3,
       "faces": 46,
-      "volume": 0.023422542808882785,
+      "volume": 0.02342254280888278,
       "bounds": [
         26.73005023557047,
         29.98791946308725,
@@ -17344,7 +17540,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 87.52778684233861,
+      "volume": 87.5277868423386,
       "bounds": [
         -31.25,
         -26.75,
@@ -17576,7 +17772,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247038,
+      "volume": 0.2775273450247037,
       "bounds": [
         -31.475,
         -30.525,
@@ -17634,7 +17830,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247038,
+      "volume": 0.2775273450247037,
       "bounds": [
         -31.475,
         -30.525,
@@ -17663,7 +17859,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.12939723883775012,
+      "volume": 0.1293972388377501,
       "bounds": [
         -31.695,
         -30.305,
@@ -17692,7 +17888,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         -31.475,
         -30.525,
@@ -17750,7 +17946,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         -31.475,
         -30.525,
@@ -17808,7 +18004,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247037,
+      "volume": 0.2775273450247038,
       "bounds": [
         -23.475,
         -22.525,
@@ -17866,7 +18062,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470383,
+      "volume": 0.2775273450247038,
       "bounds": [
         -23.475,
         -22.525,
@@ -17895,7 +18091,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.1293972388377501,
+      "volume": 0.12939723883775006,
       "bounds": [
         -23.695,
         -22.305,
@@ -17924,7 +18120,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         -23.475,
         -22.525,
@@ -17982,7 +18178,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         -23.475,
         -22.525,
@@ -18069,7 +18265,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.1293972388377494,
+      "volume": 0.12939723883774934,
       "bounds": [
         -15.695,
         -14.305,
@@ -18098,7 +18294,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247044,
+      "volume": 0.27752734502470433,
       "bounds": [
         -7.4750000000000005,
         -6.5249999999999995,
@@ -18156,7 +18352,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247045,
+      "volume": 0.27752734502470444,
       "bounds": [
         2.525,
         3.475,
@@ -18187,8 +18383,8 @@
       "faces": 20,
       "volume": 0.12939723883774956,
       "bounds": [
-        2.305,
-        3.695,
+        2.3049999999999997,
+        3.6950000000000003,
         63.654999999999994,
         64.345,
         -28.009999999999998,
@@ -18243,7 +18439,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.1293972388377494,
+      "volume": 0.12939723883774937,
       "bounds": [
         11.305,
         12.695,
@@ -18330,7 +18526,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         28.525,
         29.475,
@@ -18446,7 +18642,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470466,
+      "volume": 0.2775273450247046,
       "bounds": [
         33.525,
         34.475,
@@ -18562,7 +18758,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247047,
+      "volume": 0.27752734502470466,
       "bounds": [
         30.525,
         31.475,
@@ -19258,7 +19454,7 @@
       "null": false,
       "solids": 1,
       "faces": 54,
-      "volume": 321.279633771797,
+      "volume": 321.2796337717969,
       "bounds": [
         -36.5,
         -15.5,
@@ -19316,7 +19512,7 @@
       "null": false,
       "solids": 1,
       "faces": 24,
-      "volume": 310.07791900356597,
+      "volume": 310.0779190035658,
       "bounds": [
         13.0,
         38.0,
@@ -20099,13 +20295,13 @@
       "null": false,
       "solids": 1,
       "faces": 34,
-      "volume": 369.1851036740053,
+      "volume": 369.1851036740055,
       "bounds": [
         -34.4,
         34.4,
         8.299999999999997,
         63.3,
-        54.0,
+        53.99999999999999,
         54.9
       ],
       "state": [
@@ -20128,7 +20324,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.12658167424734,
+      "volume": 7.126581674247339,
       "bounds": [
         -33.6,
         -30.4,
@@ -20157,7 +20353,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.12658167424734,
+      "volume": 7.126581674247339,
       "bounds": [
         -33.6,
         -30.4,
@@ -20186,7 +20382,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.126581674247343,
+      "volume": 7.126581674247342,
       "bounds": [
         30.4,
         33.6,
@@ -20215,7 +20411,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.126581674247342,
+      "volume": 7.126581674247341,
       "bounds": [
         30.4,
         33.6,
@@ -21462,7 +21658,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.277527345024704,
+      "volume": 0.27752734502470394,
       "bounds": [
         -31.475,
         -30.525,
@@ -21491,7 +21687,7 @@
       "null": false,
       "solids": 2,
       "faces": 20,
-      "volume": 0.12939723883775023,
+      "volume": 0.12939723883775017,
       "bounds": [
         -31.695,
         -30.305,
@@ -21520,7 +21716,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.27752734502470394,
+      "volume": 0.277527345024704,
       "bounds": [
         -22.475,
         -21.525,
@@ -21578,7 +21774,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2775273450247037,
+      "volume": 0.27752734502470366,
       "bounds": [
         -10.475,
         -9.525,
@@ -22151,14 +22347,14 @@
       ]
     },
     {
-      "name": "CartridgeBackCut001",
-      "label": "GAMEBOY-0367 · Game Pak rear shell study002",
+      "name": "CartridgeBackCut002",
+      "label": "GAMEBOY-0367 · Game Pak rear shell study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 21,
-      "volume": 3184.765796055496,
+      "volume": 3182.3035728132445,
       "bounds": [
         27.5,
         84.5,
@@ -22193,7 +22389,7 @@
         84.5,
         -10.5,
         54.5,
-        1.1,
+        1.0999999999999999,
         6.699999999999999
       ],
       "state": [
@@ -22216,7 +22412,7 @@
       "null": false,
       "solids": 1,
       "faces": 171,
-      "volume": 3499.4441272453823,
+      "volume": 3499.444127245383,
       "bounds": [
         27.5,
         84.5,
@@ -23231,7 +23427,7 @@
       "null": false,
       "solids": 28,
       "faces": 280,
-      "volume": 2.642755220230567,
+      "volume": 2.6427552202305673,
       "bounds": [
         48.43,
         63.57,
@@ -23289,7 +23485,7 @@
       "null": false,
       "solids": 7,
       "faces": 110,
-      "volume": 0.49623325243204736,
+      "volume": 0.49623325243204713,
       "bounds": [
         41.267722215436244,
         65.64193791946309,
@@ -23369,21 +23565,21 @@
       ]
     },
     {
-      "name": "CartridgeScrew",
-      "label": "GAMEBOY-0409 · Cross-head fastener018",
+      "name": "CartridgeScrew001",
+      "label": "GAMEBOY-0409 · Cross-head fastener019",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 7.005818852643348,
+      "faces": 19,
+      "volume": 8.399586510191604,
       "bounds": [
-        54.4,
-        57.6,
-        3.4,
-        6.6,
+        54.22844444444393,
+        57.77155555555607,
+        3.2,
+        6.8,
         -39.88,
-        -35.85
+        -35.82
       ],
       "state": [
         "Up-to-date"
@@ -23405,7 +23601,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 571.7247831400877,
+      "volume": 571.7247831400875,
       "bounds": [
         -29.6,
         29.6,
@@ -23424,6 +23620,209 @@
         0.0,
         0.0,
         -140.0
+      ]
+    },
+    {
+      "name": "LinkPortCover",
+      "label": "GAMEBOY-0411 · Original removable Game Link cover study",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 28,
+      "volume": 93.32990028582068,
+      "bounds": [
+        49.0,
+        63.0,
+        -25.7,
+        -19.3,
+        0.2,
+        3.3000000000000003
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkPortCover",
+      "part_number": "GAMEBOY-0411",
+      "assembly": "Accessories",
+      "explode_offset": [
+        -50.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "RearOrigin",
+      "label": "GAMEBOY-0412 · MADE IN JAPAN",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 11,
+      "faces": 144,
+      "volume": 0.1746111029824615,
+      "bounds": [
+        3.191233221476511,
+        20.272357382550336,
+        13.736107282550336,
+        15.891275267785234,
+        -349.8180001,
+        -349.7999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RearOrigin",
+      "part_number": "GAMEBOY-0412",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -350.0
+      ]
+    },
+    {
+      "name": "ContrastLegend",
+      "label": "GAMEBOY-0413 · CONTRAST",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 135,
+      "volume": 0.09026476374901525,
+      "bounds": [
+        -44.8180001,
+        -44.799999899999996,
+        23.13084936275168,
+        33.869150637248325,
+        22.370872383221474,
+        23.881342381879193
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "ContrastLegend",
+      "part_number": "GAMEBOY-0413",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "VolumeLegend",
+      "label": "GAMEBOY-0414 · VOL",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 3,
+      "faces": 35,
+      "volume": 0.02894992042825739,
+      "bounds": [
+        44.799999899999996,
+        44.8180001,
+        17.068938758389262,
+        20.931061241610738,
+        18.071811980536914,
+        19.533557146979867
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VolumeLegend",
+      "part_number": "GAMEBOY-0414",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "LinkLegend",
+      "label": "GAMEBOY-0415 · EXT. CONNECTOR",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 13,
+      "faces": 193,
+      "volume": 0.084128653891436,
+      "bounds": [
+        44.799999899999996,
+        44.8180001,
+        35.26940431241611,
+        48.73059568758389,
+        18.17744956442953,
+        19.346845737583894
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "LinkLegend",
+      "part_number": "GAMEBOY-0415",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "PowerSideLegend",
+      "label": "GAMEBOY-0416 · Original external-power wording",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 21,
+      "faces": 345,
+      "volume": 0.10070374884349179,
+      "bounds": [
+        -44.8180001,
+        -44.799999899999996,
+        21.044691594630873,
+        35.95530840536913,
+        -337.52067124093963,
+        -334.5965099671141
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PowerSideLegend",
+      "part_number": "GAMEBOY-0416",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -350.0
+      ]
+    },
+    {
+      "name": "PhonesLegend",
+      "label": "GAMEBOY-0417 · PHONES and headphone pictogram",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 7,
+      "faces": 126,
+      "volume": 0.09285334739141271,
+      "bounds": [
+        -6.2,
+        5.609668724161073,
+        -71.8,
+        -69.75,
+        240.6899999,
+        240.7080001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "PhonesLegend",
+      "part_number": "GAMEBOY-0417",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        210.0
       ]
     }
   ],
@@ -25477,6 +25876,41 @@
       0.0,
       0.0,
       -140.0
+    ],
+    "LinkPortCover": [
+      -50.0,
+      0.0,
+      0.0
+    ],
+    "RearOrigin": [
+      0.0,
+      0.0,
+      -350.0
+    ],
+    "ContrastLegend": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "VolumeLegend": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "LinkLegend": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "PowerSideLegend": [
+      0.0,
+      0.0,
+      -350.0
+    ],
+    "PhonesLegend": [
+      0.0,
+      0.0,
+      210.0
     ]
   },
   "published_envelope_mm": [
@@ -25486,9 +25920,9 @@
   ],
   "envelope_pose": "body",
   "measured_envelope_mm": [
-    90.0000002,
-    148.0000001,
-    32.0000001
+    90.0,
+    148.0,
+    32.0
   ],
   "pose": {
     "type": "fixed",
@@ -25510,7 +25944,8 @@
     ]
   },
   "fidelity": "Published envelope; approximate exterior details and schematic major internals",
-  "source_digest": "ad1bf73c02916934c13d4d71566c8f8ed0ee7f1946f54fb238a4de1d60aee491",
+  "source_digest": "c8a459eaf8556193e4c585466b12749c7f980fe15c918f2ba07f0eed16c9b4c9",
+  "main_step_file": "GameBoy_Handheld.step",
   "envelope_groups": [
     "Body",
     "Display",
@@ -25527,8 +25962,9 @@
   ],
   "envelope_basis": "Nintendo nominal 148 x 90 x 32 mm; model matches the full envelope including controls. Local split and wall thickness are approximate.",
   "overall_modeled_envelope_mm": [
-    90.0000002,
-    148.0000001,
-    32.0000001
-  ]
+    90.0,
+    148.0,
+    32.0
+  ],
+  "envelope_kind": "published"
 }

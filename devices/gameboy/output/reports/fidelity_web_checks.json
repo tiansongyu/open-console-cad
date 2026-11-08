@@ -1,0 +1,72 @@
+{
+  "device": "gameboy",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 373,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "components": 373,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 357,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 373,
+      "passed": true
+    },
+    {
+      "view": "display",
+      "components": 18,
+      "passed": true
+    },
+    {
+      "view": "controls",
+      "components": 87,
+      "passed": true
+    },
+    {
+      "view": "electronics",
+      "components": 86,
+      "passed": true
+    },
+    {
+      "view": "battery",
+      "components": 32,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 44,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/gameboy/output/GameBoy_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/gameboy/output/drawings/GameBoy_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/gameboy.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9",
+  "glb_sha256": "5691701b17752e76e2564bcc578443422001aa07786beffe2dd12fe575840046",
+  "test_date": "2026-11-08",
+  "scope": "All configured viewer modes, visible part counts, gallery images, download targets, keyboard explosion slider",
+  "console_errors": []
+}

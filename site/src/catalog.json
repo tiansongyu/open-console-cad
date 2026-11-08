@@ -1271,10 +1271,10 @@
     "title": "Nintendo Game Boy",
     "prefix": "GameBoy",
     "model": "DMG-01 (1989)",
-    "count": 410,
-    "iterations": 15,
+    "count": 417,
+    "iterations": 16,
     "pages": 12,
-    "bytes": 19581512,
+    "bytes": 20502068,
     "family": "slate",
     "views": {
       "assembled": {
@@ -1354,7 +1354,9 @@
           "CaseScrew3",
           "CaseScrew4",
           "CaseScrew5",
-          "CartridgeWellBacker"
+          "CartridgeWellBacker",
+          "RearOrigin",
+          "PowerSideLegend"
         ],
         "normal": [
           0.2,
@@ -1471,7 +1473,13 @@
         "cartridge",
         "空白 Game Pak 卡带"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 8736583,
+      "sha256": "e041122afc613ba3e7131e547c7a5d92b8f5f26b99af45451494f063923e966f",
+      "decoded_sha256": "5691701b17752e76e2564bcc578443422001aa07786beffe2dd12fe575840046",
+      "lossless": true
+    }
   },
   {
     "id": "famicom",

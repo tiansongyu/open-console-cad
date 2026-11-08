@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "date": "2026-11-08",
+  "device": "gameboy",
+  "iteration": 16,
+  "physical_components": 417,
+  "solids": 842,
+  "source_native_sha256": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9",
+  "checks": {
+    "reconstructed_components": 417,
+    "strict_checked": 417,
+    "strict_errors": 0,
+    "interference_candidates": 644,
+    "interference_clashes": 0,
+    "step_exports": 3,
+    "fidelity_geometry_checks": 35,
+    "model_measurements": 26,
+    "drawing_dimensions": 14,
+    "native_pages_reloaded": 12,
+    "pdf_pages_visually_reviewed": 12,
+    "parameter_edit_on_independent_document": true,
+    "web_components": 417,
+    "lossless_gzip": true,
+    "glb_validation": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "web_views": 9
+  },
+  "reports": {
+    "fidelity_interference.json": "bb19daa9454e64366c63f6b9bdd26b100ee4ce1e54bb5503f7e73edc9111e16f",
+    "fidelity_source_rebuild.json": "24ec06e87a10502f9071b39255c92e7f623186109a80a261a8bc38ed857e52ce",
+    "fidelity_geometry.json": "bec7111c9a2f16743f863d84490bf642c8c5047d5fa2c6252e583b3cec159201",
+    "fidelity_kernel_repairs.json": "d02c378f92a9969b0814fc2f8974cc3fd4ca6e5dd88619f191983123ec176d89",
+    "fidelity_strict_saved.json": "c6d9cc1fdff6742cdcb5d3b75b8e400e0f3d25b2aae99272ed9a943cb87dc825",
+    "fidelity_exterior_review.json": "9797166cd72b4b57bf50b2f5543b30e082fd69615a298d173be5f56d365d760e",
+    "export_roundtrip_audit.json": "1607b373b4d3b9b1002e943916d3584175bc5bf5248cb5ec8e55a04d4e01d23b",
+    "drawing_checks.json": "64293dbe9cfa6d9379a58f373eb24c1d63ad8fe2d72c19c8bd413600778db021",
+    "native_drawings_audit.json": "ac828de16eaf31f772b45e6f03b8f7a42c7a903770b30fa19415d7a52f702d11",
+    "native_drawings_reload.json": "9f0015adbc47223a915798ce8171048616920d6992fbe937e73ab241c200c223",
+    "parameter_edit_test.json": "33d6c9d3d7edf2190fa3094d764aab1ef8119f906de2c5c6556ab797556a0a3c",
+    "visual_acceptance.json": "70451daf1362f4bfdf8aeb0a9b57db094fac7df5686638e9c5cc6f01a610fcea",
+    "web_export.json": "c53a8e93dc8ff50a7e230cf7d8a2601616a083c0b50d36e9fa7336b2b561ce7c",
+    "fidelity_glb_validation.json": "669f01aa0d3b4bef33b201144cc61278a0169985793ee7545e3e83052cf8479a",
+    "fidelity_web_checks.json": "4362347411c5746ddf01829f060d8de1b1e222421bc0d3b792696711b9b2c4d9"
+  },
+  "file_hashes": {
+    "devices/gameboy/output/GameBoy_Complete.FCStd": "553f7b8e7ecc3dcbc87cda44211509bf9869483ad4436572e1e0525d770b6bc9",
+    "devices/gameboy/output/GameBoy_Exploded.FCStd": "27bafc9d26e1f268a32ae5ed222f4a7186a5c94ccf86c91369aefa9a3de59ac5",
+    "devices/gameboy/output/GameBoy_Drawings.FCStd": "b340800a05ad87dc3adc1f5716282e8dd3131c7f7f8e470d132b907ec415b318",
+    "devices/gameboy/output/drawings/GameBoy_Drawings.pdf": "5b8943c0431bb733771e6d4772c111a15f24a6347c91e4f2b0674e3fc9845140",
+    "devices/gameboy/output/drawings/GameBoy_Drawings.html": "20681b7ad7de2300b1810e9f0442b40df3a2446858a851d70a0a6f355dfeb66c",
+    "site/public/models/gameboy.glb": "5691701b17752e76e2564bcc578443422001aa07786beffe2dd12fe575840046",
+    "site/public/models/gameboy.glb.gz": "e041122afc613ba3e7131e547c7a5d92b8f5f26b99af45451494f063923e966f"
+  },
+  "reference_record": "devices/gameboy/references/fidelity_iteration16.json",
+  "factory_equivalence_verified": false,
+  "web_interaction_review": "Passed current exported model review",
+  "limitations": [
+    "Local exterior contours, positions and font shapes are fitted to photographs.",
+    "Nintendo47x43mm is nominal screen size; matching-module active-area drawing not obtained.",
+    "Legacy spring exact equivalence is unproven; original nominal parameters retained with strict-valid segmented sweeps.",
+    "Internal parts and complete regional labels remain approximate."
+  ]
+}
