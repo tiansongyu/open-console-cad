@@ -1,7 +1,7 @@
 {
   "pass": true,
   "pages": 12,
-  "native_dimension_references": 14,
+  "native_dimension_references": 16,
   "checks": [
     {
       "sheet": 1,
@@ -41,14 +41,14 @@
     {
       "sheet": 3,
       "dimension": "Dimension03_3",
-      "expected_mm": 41.00000020000003,
-      "measured_mm": 41.00000020000003,
+      "expected_mm": 41.00000020000001,
+      "measured_mm": 41.00000020000002,
       "pass": true
     },
     {
       "sheet": 4,
       "dimension": "Dimension04_1",
-      "expected_mm": 53.99999999999999,
+      "expected_mm": 54.0,
       "measured_mm": 54.0,
       "pass": true
     },
@@ -97,8 +97,22 @@
     {
       "sheet": 10,
       "dimension": "Dimension10_1",
-      "expected_mm": 170.99999999999997,
-      "measured_mm": 171.0,
+      "expected_mm": 150.0,
+      "measured_mm": 150.0,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_2",
+      "expected_mm": 99.99999999999999,
+      "measured_mm": 100.0,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_3",
+      "expected_mm": 97.90000000000002,
+      "measured_mm": 97.9,
       "pass": true
     }
   ],

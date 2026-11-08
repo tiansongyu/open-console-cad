@@ -1,0 +1,531 @@
+{
+  "device": "wiiu",
+  "iteration": 23,
+  "source_sha256": "77b90ef634c0f5011a7625f7dd4daa59e68c8e69bb14573cb5fb35ab0c31d792",
+  "checks": [
+    {
+      "name": "console.X",
+      "actual": 172.0000002,
+      "expected": 172,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "console.Y",
+      "actual": 268.50000009999997,
+      "expected": 268.5,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "console.Z",
+      "actual": 46.0000001,
+      "expected": 46,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad.X",
+      "actual": 255.40000020000002,
+      "expected": 255.4,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad.Y",
+      "actual": 133.40000020000002,
+      "expected": 133.4,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad.Z",
+      "actual": 41.0000002,
+      "expected": 41,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "stylus.X",
+      "actual": 8.399999999999977,
+      "expected": 8.4,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "stylus.Y",
+      "actual": 97.9,
+      "expected": 97.9,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "stylus.Z",
+      "actual": 5.4,
+      "expected": 5.4,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "console_adapter.X",
+      "actual": 150.0,
+      "expected": 150,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "console_adapter.Y",
+      "actual": 70.0,
+      "expected": 70,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "console_adapter.Z",
+      "actual": 49.0,
+      "expected": 49,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad_adapter.X",
+      "actual": 100.0,
+      "expected": 100,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad_adapter.Y",
+      "actual": 35.0,
+      "expected": 35,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "gamepad_adapter.Z",
+      "actual": 28.0,
+      "expected": 28,
+      "basis": "Published Nintendo envelope in model axes; accessory cords and protrusions excluded",
+      "passed": true
+    },
+    {
+      "name": "LStickRim.x",
+      "actual": -105.2,
+      "expected": -105.2,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "LStickRim.local_y",
+      "actual": 35.0,
+      "expected": 35,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RStickRim.x",
+      "actual": 105.2,
+      "expected": 105.2,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RStickRim.local_y",
+      "actual": 35.0,
+      "expected": 35,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadDPad.x",
+      "actual": -94.5,
+      "expected": -94.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadDPad.local_y",
+      "actual": 6.5,
+      "expected": 6.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadA.x",
+      "actual": 105.5,
+      "expected": 105.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadA.local_y",
+      "actual": 5.5,
+      "expected": 5.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadB.x",
+      "actual": 95.5,
+      "expected": 95.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadB.local_y",
+      "actual": -4.5,
+      "expected": -4.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadX.x",
+      "actual": 95.5,
+      "expected": 95.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadX.local_y",
+      "actual": 15.5,
+      "expected": 15.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadY.x",
+      "actual": 85.5,
+      "expected": 85.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadY.local_y",
+      "actual": 5.5,
+      "expected": 5.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadPlus.x",
+      "actual": 84.5,
+      "expected": 84.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadPlus.local_y",
+      "actual": -20.5,
+      "expected": -20.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadMinus.x",
+      "actual": 84.5,
+      "expected": 84.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadMinus.local_y",
+      "actual": -33.0,
+      "expected": -33,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadTV.x",
+      "actual": 54.0,
+      "expected": 54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadTV.local_y",
+      "actual": -54.0,
+      "expected": -54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadPower.x",
+      "actual": 66.5,
+      "expected": 66.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadPower.local_y",
+      "actual": -54.0,
+      "expected": -54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadHome.x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadHome.local_y",
+      "actual": -54.0,
+      "expected": -54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "SpeakerOpening-1.x",
+      "actual": -84.5,
+      "expected": -84.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "SpeakerOpening-1.local_y",
+      "actual": -54.0,
+      "expected": -54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "SpeakerOpening1.x",
+      "actual": 84.5,
+      "expected": 84.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "SpeakerOpening1.local_y",
+      "actual": -54.0,
+      "expected": -54,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadVolume.x",
+      "actual": 56.5,
+      "expected": 56.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadAudioJack.x",
+      "actual": -49.0,
+      "expected": -49,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadChargeSocket.x",
+      "actual": -62.5,
+      "expected": -62.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PowerButton.x",
+      "actual": -73.0,
+      "expected": -73,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "EjectButton.x",
+      "actual": -73.0,
+      "expected": -73,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "SyncButton.x",
+      "actual": -38.5,
+      "expected": -38.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RearUSB0.x",
+      "actual": -58.0,
+      "expected": -58,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RearUSB0.z",
+      "actual": 13.5,
+      "expected": 13.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RearUSB1.x",
+      "actual": -58.0,
+      "expected": -58,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RearUSB1.z",
+      "actual": 22.0,
+      "expected": 22,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "dock_contact-1.x",
+      "actual": -16.500000000000004,
+      "expected": -16.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "dock_contact-1.bottom_edge",
+      "actual": 1,
+      "expected": 1,
+      "basis": "Nintendo manual: contacts on bottom edge, not rear face",
+      "passed": true
+    },
+    {
+      "name": "dock_contact1.x",
+      "actual": 16.5,
+      "expected": 16.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "dock_contact1.bottom_edge",
+      "actual": 1,
+      "expected": 1,
+      "basis": "Nintendo manual: contacts on bottom edge, not rear face",
+      "passed": true
+    },
+    {
+      "name": "CameraIRWindow.X",
+      "actual": 72.2,
+      "expected": 72.2,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "CameraIRWindow.Y",
+      "actual": 8.600000000000023,
+      "expected": 8.6,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "LStickCap.X",
+      "actual": 16.400000000000006,
+      "expected": 16.4,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RStickCap.X",
+      "actual": 16.400000000000006,
+      "expected": 16.4,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "LStickRim.X",
+      "actual": 21.599999999999994,
+      "expected": 21.6,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "RStickRim.X",
+      "actual": 21.599999999999994,
+      "expected": 21.6,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "EjectButton.X",
+      "actual": 10.599999999999994,
+      "expected": 10.6,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "EjectButton.Z",
+      "actual": 6.0,
+      "expected": 6,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "FrontFlap.X",
+      "actual": 82.4,
+      "expected": 82.4,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadTVIRWindow.X",
+      "actual": 13.5,
+      "expected": 13.5,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "PadTVIRWindow.Z",
+      "actual": 14.0,
+      "expected": 14,
+      "basis": "Nintendo photograph/diagram fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "rear_grille0.openings",
+      "actual": 21,
+      "expected": 21,
+      "basis": "Nintendo rear photograph: three columns by seven rows",
+      "passed": true
+    },
+    {
+      "name": "rear_grille1.openings",
+      "actual": 21,
+      "expected": 21,
+      "basis": "Nintendo rear photograph: three columns by seven rows",
+      "passed": true
+    }
+  ],
+  "invalid_parts": [],
+  "strict_changed_breps": {
+    "LowerHousing": true,
+    "UpperHousing": true,
+    "FrontBezel": true,
+    "PadFront": true,
+    "PadBack": true,
+    "PadTVIRWindow": true,
+    "PadDockPad-1": true,
+    "PadDockPad1": true,
+    "PadSyncButton": true,
+    "PadDPad": true,
+    "PadTV": true,
+    "NFCMark": true,
+    "CameraIRWindow": true,
+    "LStickCap": true,
+    "RStickCap": true,
+    "StylusCap": true,
+    "ConsoleACLower": true,
+    "ConsoleACUpper": true,
+    "GamePadACLower": true,
+    "GamePadACUpper": true,
+    "PadStartLegend": true,
+    "PadSelectLegend": true,
+    "PadMicLegend": true,
+    "PadHomeLegend": true,
+    "PadBatteryLegend": true,
+    "PadTVLegend": true,
+    "PadPowerLegend": true
+  },
+  "new_features_present": true,
+  "factory_equivalence_verified": false,
+  "scope": "Published overall dimensions and fitted exterior layout; inherited rear crossbar, battery door, shoulder curves and internal structures remain approximate.",
+  "passed": true
+}

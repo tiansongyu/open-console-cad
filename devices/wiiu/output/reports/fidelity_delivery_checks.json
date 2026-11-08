@@ -1,0 +1,71 @@
+{
+  "device": "wiiu",
+  "revision": 23,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "77b90ef634c0f5011a7625f7dd4daa59e68c8e69bb14573cb5fb35ab0c31d792",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":100",
+  "physical_components": 717,
+  "solids": 1080,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration23.json",
+  "changes": [
+    "Console front control/cover fit and rear close stacked USB pair",
+    "GamePad control positions, stick caps, camera/sensor strip and symmetrical speaker outlets",
+    "Correct top-port sides, separate top television IR window and bottom-facing charging contacts",
+    "Original rear SYNC control and empty stylus holder",
+    "Published adapter enclosures and stylus dimensions"
+  ],
+  "validation": {
+    "detail_checks": 70,
+    "strict_changed_objects": 27,
+    "strict_scope": "Listed changed housings, optical windows, caps, adapters and new markings; not a full baseline strict-BOP certification",
+    "preserved_existing_part_numbers": 707,
+    "candidate_pairs": 1119,
+    "interference_threshold_mm3": 1e-06,
+    "step_files": 3,
+    "native_drawing_references": 16,
+    "pdf_pages_reviewed": 12,
+    "web_views": 16,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "Passed targeted check_repository.py wiiu",
+    "production_build": "Passed npm run build"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_wiiu.py": "087033095a375a36b3552a181bb9bae04b44c3dfc71c23ebc0b51be4bd1e1574",
+    "tools/cadlib/wiiu.py": "a936bd92b5e620d317bf1d0f4f007d2623b4c6970e54a86f7afa5b2935cc2e6d",
+    "devices/wiiu/profile.json": "af5c841eaeca039abeb784ae426c0bb6e23a3f79c09f1920dcb1e873ffdd0405",
+    "devices/wiiu/Rebuild_WiiU.FCMacro": "e8abdcfc98e768c10d382504175e614003f0925a5437604c427a3196ef7f83cb",
+    "devices/wiiu/scripts/iter23_official_front_rear_and_gamepad_layout_calibration.py": "80a4ca45c8db2f061eaee3d7b8d1957de3925e9cfd59b6ce8d8b8f4798017057",
+    "devices/wiiu/scripts/audit_fidelity.py": "8494439492af58e8da324ace5766a75bfaab4cc68d3a87c1dadfec542cc89545",
+    "devices/wiiu/scripts/drawing_geometry.py": "0c7ecba07b37f48c106b56260caf7523be2a7e4b6bcf20b032ff29c2eb5ef52d",
+    "devices/wiiu/references/fidelity_iteration23.json": "9b6bff98b6e5f4e15d64ee581b92a939bfae5c039c7987a74469a0dff040d13b"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "fb3352057bdf473080c7603e7e514ebe9ec618d50b2b4e275c28fc69c5eaddad",
+    "fidelity_interference.json": "aa77d0b0d373b41564905cdd35cd613c615ed91b4f4bb8c457173fc8756a8335",
+    "fidelity_exterior_review.json": "66fbff667b3ed9b4aa2422d83becd5f55d0a98c5e04edc2bcf590df27ae72950",
+    "fidelity_numbering_audit.json": "ec65be2c03d141e1dfa459f5a7569ae1c1d028fb35bcb3e6515b8912ea4d918f",
+    "export_roundtrip_audit.json": "fc7412e1d3112ab5df00eea8479842773c2e7fb7e500374a594e80afa1072d1f",
+    "drawing_checks.json": "3bdc3901e2429b59d0234bcf58cdd6dc68723e73d136a87845c657a8a1a90c28",
+    "native_drawings_audit.json": "5a040d3d506322b75ea08b05da97ed051428888aad34b143686e0d0a9d7e6ad6",
+    "native_drawings_reload.json": "0166a15affc73428f3f2ac132a65d61831d47a09285b216e81a076af8867738d",
+    "fidelity_pdf_review.json": "ee06c4296f8a5e8ded07e747d7932e37c5dc1470d5cb3c113f2f0870281352c8",
+    "fidelity_web_checks.json": "c07736527a1a250ac3c950c9cf81ff1d7c7604944146c7d3a166304b80acc867",
+    "fidelity_gltf_validation.json": "f51dc90b335043c344f4ce3397812a05bcad41a40a6003d6fd37fd9f670e7733"
+  },
+  "limitations": [
+    "No physical hardware scan or factory molding drawings were obtained.",
+    "Image-calibrated positions, cap/rim shapes, front-cover size, local wall thicknesses, port depth and optical-window geometry remain estimates.",
+    "The public adapter sizes are applied to the enclosure; cable/strain-relief projections are separate and the manufacturer's precise exclusion convention is not independently measured.",
+    "Button PCB outlines, case-post notches, fan/duct alignment, audio leads and the stylus guide are reconstructed internal accommodations, not factory PCB or airflow geometry.",
+    "Rear crossbar, shoulder surfaces, battery-cover proportions and fine molding transitions remain inherited approximations; the changed controls and ports do not constitute a scan-derived shell.",
+    "The rear SYNC cap is modeled; its unmeasured underlying switch package is not reproduced.",
+    "Photographs show an inserted stylus and open console front cover, while the study displays the stylus separately and normally closes that cover.",
+    "Reference images and manual pages remain local and are not redistributed."
+  ]
+}

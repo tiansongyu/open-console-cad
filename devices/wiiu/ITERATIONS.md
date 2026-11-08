@@ -133,3 +133,9 @@
 根据全部装配求交结果微调底部排线、扬声器引线与电源插头的终端路径，并对完整套装每个组件执行严格实体检查。
 
 [源码入口](scripts/iter22_final_connector_speaker_and_power_cord_fit.py) · [检查记录](output/reports/22_final_connector_speaker_and_power_cord_fit.json)
+
+## 23 · official_front_rear_and_gamepad_layout_calibration
+
+按任天堂原版正背面图和手册校准主机盖板、退盘键、后 USB 与格栅；重排 GamePad 摇杆、十字键、ABXY、系统键、扬声器和顶边端口。补齐独立电视红外窗、底边充电接点、背面 SYNC、触控笔收纳和印字。按公开尺寸修正两只电源壳体及触控笔，并同步开口、传力件和示意板件／线束。后部横梁、肩部曲面及内部构造仍为近似，未完成实机扫描或制造公差验证。
+
+[源码入口](scripts/iter23_official_front_rear_and_gamepad_layout_calibration.py) · [检查记录](output/reports/23_official_front_rear_and_gamepad_layout_calibration.json) · [来源与拟合依据](references/fidelity_iteration23.json)

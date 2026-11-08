@@ -21,4 +21,12 @@ Additional accessory references checked on 2026-09-10:
 - [Nintendo hardware and accessory model-number guide](https://en-americas-support.nintendo.com/app/answers/detail/a_id/1771/p/603/c/286): manufacturer model identifiers.
 - [Nintendo Wii U parts](https://www.nintendo.co.jp/hardware/wiiu/parts/index.html): original controls, NFC, volume, headphone port and stylus-holder identification.
 
-The model includes the Basic kit's two adapters, HDMI cable and stylus. Adapter envelopes (171 × 73 × 50 mm and 96 × 35 × 28 mm), adapter internal components, cable lengths, wire counts and accessory contact layouts are explicitly study estimates. They are not manufacturer dimension claims or a circuit/pinout specification.
+The model includes the Basic kit's two adapters, HDMI cable and stylus. Iteration 23 applies the published adapter enclosures of 150 × 70 × 49 mm (WUP-002) and 100 × 35 × 28 mm (WUP-011), plus the 5.4 × 8.4 × 97.9 mm WUP-015 stylus. Adapter internals, cable lengths, wire counts and accessory contact layouts remain study estimates; the manufacturer’s exact cord/relief exclusion convention is not independently measured.
+
+## Iteration 23 — official exterior comparison, 2026-11-08
+
+The [Nintendo parts guide](https://www.nintendo.co.jp/hardware/wiiu/parts/index.html) supplies original front/rear console and GamePad images. The [operations manual](https://www.nintendo.co.jp/support/wiiu/pdf/wiiu-manual-C4.pdf), pages 12–13, identifies the separate top TV-control infrared window, rear SYNC button, stylus holder and bottom charging contacts. The [electronic manual](https://support.nintendo.com/jp/wiiu/pdf/wiiu_emanual.pdf), pages 82 and 84, supplies the adapter and stylus dimensions above.
+
+The stage calibrates the console’s eject key, front compartment and rear USB/exhaust layout; GamePad sticks, directional cross, face/system keys, optical strip, symmetrical speaker outlets, NFC marking, top ports and missing edge features. Matching holes, plungers and reconstructed board/lead paths follow the revised exterior. The original component IDs and numbers are retained.
+
+[The measurement record](fidelity_iteration23.json) stores source hashes, image coordinate fits and the distinction between published dimensions and estimated details. Rear crossbar, shoulder curvature, battery-cover proportions and fine molding transitions remain inherited approximations. The original photographs and manuals stay in the local research cache; this model is not a scan-derived or factory-tolerance replica.

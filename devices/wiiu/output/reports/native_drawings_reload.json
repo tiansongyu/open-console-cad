@@ -1,107 +1,106 @@
 {
   "passed": true,
   "pages": 12,
-  "dimensions": 14,
+  "dimension_count": 16,
   "checks": [
     {
-      "page": 1,
       "name": "Dimension01_1",
-      "value_mm": 172.0000002,
       "expected_mm": 172.0000002,
+      "actual_mm": 172.0000002,
       "passed": true
     },
     {
-      "page": 1,
       "name": "Dimension01_2",
-      "value_mm": 268.50000009999997,
       "expected_mm": 268.50000009999997,
+      "actual_mm": 268.50000009999997,
       "passed": true
     },
     {
-      "page": 2,
       "name": "Dimension02_1",
-      "value_mm": 46.0,
       "expected_mm": 46.00000000000001,
+      "actual_mm": 46.0,
       "passed": true
     },
     {
-      "page": 3,
       "name": "Dimension03_1",
-      "value_mm": 255.40000020000002,
       "expected_mm": 255.40000020000005,
+      "actual_mm": 255.40000020000002,
       "passed": true
     },
     {
-      "page": 3,
       "name": "Dimension03_2",
-      "value_mm": 133.40000020000002,
       "expected_mm": 133.40000020000002,
+      "actual_mm": 133.40000020000002,
       "passed": true
     },
     {
-      "page": 3,
       "name": "Dimension03_3",
-      "value_mm": 41.00000020000003,
-      "expected_mm": 41.00000020000003,
+      "expected_mm": 41.00000020000001,
+      "actual_mm": 41.00000020000002,
       "passed": true
     },
     {
-      "page": 4,
       "name": "Dimension04_1",
-      "value_mm": 54.0,
-      "expected_mm": 53.99999999999999,
+      "expected_mm": 54.0,
+      "actual_mm": 54.0,
       "passed": true
     },
     {
-      "page": 7,
       "name": "Dimension07_1",
-      "value_mm": 158.0,
       "expected_mm": 158.0,
+      "actual_mm": 158.0,
       "passed": true
     },
     {
-      "page": 7,
       "name": "Dimension07_2",
-      "value_mm": 240.00000000000045,
       "expected_mm": 240.00000000000045,
+      "actual_mm": 240.00000000000045,
       "passed": true
     },
     {
-      "page": 7,
       "name": "Dimension07_3",
-      "value_mm": 46.0,
       "expected_mm": 46.0,
+      "actual_mm": 46.0,
       "passed": true
     },
     {
-      "page": 8,
       "name": "Dimension08_1",
-      "value_mm": 134.0,
       "expected_mm": 133.99999999999997,
+      "actual_mm": 134.0,
       "passed": true
     },
     {
-      "page": 8,
       "name": "Dimension08_2",
-      "value_mm": 42.0,
       "expected_mm": 41.99999999999998,
+      "actual_mm": 42.0,
       "passed": true
     },
     {
-      "page": 9,
       "name": "Dimension09_1",
-      "value_mm": 160.0,
       "expected_mm": 159.99999999999997,
+      "actual_mm": 160.0,
       "passed": true
     },
     {
-      "page": 10,
       "name": "Dimension10_1",
-      "value_mm": 171.0,
-      "expected_mm": 170.99999999999997,
+      "expected_mm": 150.0,
+      "actual_mm": 150.0,
+      "passed": true
+    },
+    {
+      "name": "Dimension10_2",
+      "expected_mm": 99.99999999999999,
+      "actual_mm": 100.0,
+      "passed": true
+    },
+    {
+      "name": "Dimension10_3",
+      "expected_mm": 97.90000000000002,
+      "actual_mm": 97.9,
       "passed": true
     }
   ],
-  "source_sha256": "70f927b530c20a667dae814c6f31eae67261b1dd26ebd9e54498399f04789382",
-  "method": "Saved native drawing reopened; page titles and all native dimensions checked against CAD endpoints."
+  "drawings_sha256": "2dd485b2e5dacc22ed165f29b7ef1ec85c133ad5ff7a4560d7a1d201f5a32574",
+  "source_sha256": "77b90ef634c0f5011a7625f7dd4daa59e68c8e69bb14573cb5fb35ab0c31d792",
+  "scope": "Reopen independent copy and recompute native dimension references; no open-macro test in this pass."
 }

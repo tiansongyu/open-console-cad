@@ -1,0 +1,276 @@
+{
+  "device": "wiiu",
+  "model": "Launch white WUP-001 Basic, original WUP-010 GamePad",
+  "iteration": 23,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/parts/index.html",
+      "publisher": "Nintendo",
+      "scope": "Original console and GamePad component identification; front/rear layout and control types."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/parts/img/gamepad.jpg",
+      "sha256": "136e24bc9c78fa1446c766e0251719645821cf680adfd5700518dba24df4fdc9",
+      "scope": "Official white front image used for image-fit coordinates, camera/IR cover, analog cap proportions and legends."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/parts/img/gamepad_back.jpg",
+      "sha256": "339bb8939d335bbe639cb24a6e1e68bd4f51ce1b41518a484aa8cc69b6d37ccd",
+      "scope": "Correct side of volume, headphone and charging connector; original stylus holder and rear SYNC control. Rear-view X is opposite the front convention."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/parts/img/wiiu.jpg",
+      "sha256": "217fcdfb5525bfd8e809d3cc59277cf26dd194e9315a87bd243170b8c0b5c25c",
+      "scope": "Capsule eject key and front control/compartment layout; front cover is open in the reference."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/hardware/wiiu/parts/img/wiiu_back.jpg",
+      "sha256": "8c9cefd9543fb4a48b0bf30c445ad28fde6b003c90c23f83af7bd372564cf06c",
+      "scope": "Rear USB position, three-by-seven exhaust field and remaining connector ordering."
+    },
+    {
+      "url": "https://support.nintendo.com/jp/wiiu/pdf/wiiu_emanual.pdf",
+      "publisher": "Nintendo",
+      "pdf_pages_one_based": [
+        82,
+        84
+      ],
+      "scope": "WUP-002 150 x 70 x 49 mm; WUP-011 100 x 35 x 28 mm; WUP-015 height5.4 x width8.4 x length97.9 mm. Optional stands listed nearby are not added to the Basic kit."
+    },
+    {
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/1131/p/603/c/947",
+      "publisher": "Nintendo",
+      "scope": "Rear GamePad SYNC control is operated with the supplied stylus."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/support/wiiu/pdf/wiiu-manual-C4.pdf",
+      "publisher": "Nintendo",
+      "sha256": "83a3c4b6e8ecdf78d74715eb250a6a2a3c433af65680ddbfdf82cbc9c5b70322",
+      "pdf_pages_one_based": [
+        12,
+        13
+      ],
+      "scope": "Original GamePad top/back/bottom diagrams distinguish the top TV-control infrared window from the front sensor bar and locate charging terminals on the bottom edge beside the accessory connector."
+    }
+  ],
+  "front_image_fit": {
+    "image_size_px": [
+      1162,
+      978
+    ],
+    "body_box_px": [
+      47,
+      195,
+      1128,
+      765
+    ],
+    "published_xy_mm": [
+      255.4,
+      133.4
+    ],
+    "rule": "local x=(pixel x-587.5)*255.4/1081; local y=(480-pixel y)*133.4/570. Coordinates rounded for the model; image projection and edge selection are not manufacturing tolerances.",
+    "observed_centers_px": {
+      "left_stick": [
+        143,
+        331
+      ],
+      "right_stick": [
+        1034,
+        331
+      ],
+      "dpad": [
+        187,
+        452
+      ],
+      "face_cluster": [
+        992,
+        456
+      ],
+      "start": [
+        944,
+        568
+      ],
+      "select": [
+        944,
+        619
+      ],
+      "left_speaker": [
+        229,
+        711
+      ],
+      "right_speaker": [
+        944,
+        711
+      ],
+      "microphone": [
+        524,
+        711
+      ],
+      "battery_indicator": [
+        759,
+        711
+      ],
+      "tv": [
+        815,
+        711
+      ],
+      "power": [
+        870,
+        711
+      ]
+    },
+    "target_centers_local_mm": {
+      "left_stick": [
+        -105.2,
+        35
+      ],
+      "right_stick": [
+        105.2,
+        35
+      ],
+      "dpad": [
+        -94.5,
+        6.5
+      ],
+      "face_cluster": [
+        95.5,
+        5.5
+      ],
+      "start": [
+        84.5,
+        -20.5
+      ],
+      "select": [
+        84.5,
+        -33
+      ],
+      "left_speaker": [
+        -84.5,
+        -54
+      ],
+      "right_speaker": [
+        84.5,
+        -54
+      ],
+      "microphone": [
+        -15,
+        -54
+      ],
+      "battery_indicator": [
+        40.5,
+        -54
+      ],
+      "tv": [
+        54,
+        -54
+      ],
+      "power": [
+        66.5,
+        -54
+      ]
+    },
+    "camera_ir_cover_mm": [
+      72.2,
+      8.6
+    ],
+    "dpad_span_bar_mm": [
+      23,
+      7.5
+    ],
+    "analog_thumb_cap_diameter_mm": 16.4,
+    "analog_rim_outer_diameter_mm": 21.6,
+    "geometry_note": "These are image fits. The dimensions above are not directly published Nintendo mechanical measurements."
+  },
+  "console_image_fit": {
+    "front_body_box_px": [
+      94,
+      236,
+      1075,
+      495
+    ],
+    "rear_body_box_px": [
+      104,
+      222,
+      1090,
+      484
+    ],
+    "reference_front_width_height_mm": [
+      172,
+      46
+    ],
+    "power_and_eject_x_mm": -73,
+    "eject_cap_width_height_mm": [
+      10.6,
+      6.0
+    ],
+    "front_sd_usb_cover_center_width_mm": [
+      11,
+      82.4
+    ],
+    "front_reader_translation_x_mm": -4.8,
+    "rear_usb_x_mm": -58,
+    "rear_usb_centers_z_mm": [
+      13.5,
+      22.0
+    ],
+    "rear_exhaust_center_x_mm": -22.5,
+    "rear_exhaust_rows_columns": [
+      7,
+      3
+    ],
+    "basis": "Official image fits. The main published plastic envelope remains 172 x 268.5 x 46 mm."
+  },
+  "rear_and_accessory_changes": {
+    "gamepad_front_coordinate_x_mm": {
+      "volume": 56.5,
+      "headphone": -49,
+      "charging": -62.5
+    },
+    "stylus_envelope_xyz_in_model_mm": [
+      8.4,
+      97.9,
+      5.4
+    ],
+    "console_adapter_enclosure_xyz_mm": [
+      150,
+      70,
+      49
+    ],
+    "gamepad_adapter_enclosure_xyz_mm": [
+      100,
+      35,
+      28
+    ],
+    "styling_state": "Stylus remains a separate accessory, so its reconstructed holder is empty. HOME and battery indicator surfaces use the unlit appearance shown by the reference image.",
+    "adapter_numbering": "Existing parameterized power-brick parts are rebuilt with the same PartIDs and registration order; cables begin at the revised strain-relief positions.",
+    "bottom_charging_contact_centers_x_mm": [
+      -16.5,
+      16.5
+    ],
+    "bottom_charging_contact_xz_size_mm": [
+      5,
+      2.8
+    ],
+    "top_tv_ir_window_center_x_z_mm": [
+      -20.5,
+      20.5
+    ],
+    "top_tv_ir_window_xz_size_mm": [
+      13.5,
+      14
+    ],
+    "edge_features_basis": "The manual confirms face and relative layout. Local dimensions are diagram/image fits; contact thickness and window shell profile are reconstructed."
+  },
+  "limitations": [
+    "No physical hardware scan or factory molding drawings were obtained.",
+    "Image-calibrated positions, cap/rim shapes, front-cover size, local wall thicknesses, port depth and optical-window geometry remain estimates.",
+    "The public adapter sizes are applied to the enclosure; cable/strain-relief projections are separate and the manufacturer's precise exclusion convention is not independently measured.",
+    "Button PCB outlines, case-post notches, fan/duct alignment, audio leads and the stylus guide are reconstructed internal accommodations, not factory PCB or airflow geometry.",
+    "Rear crossbar, shoulder surfaces, battery-cover proportions and fine molding transitions remain inherited approximations; the changed controls and ports do not constitute a scan-derived shell.",
+    "The rear SYNC cap is modeled; its unmeasured underlying switch package is not reproduced.",
+    "Photographs show an inserted stylus and open console front cover, while the study displays the stylus separately and normally closes that cover.",
+    "Reference images and manual pages remain local and are not redistributed."
+  ]
+}

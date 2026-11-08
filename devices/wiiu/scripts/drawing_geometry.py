@@ -16,13 +16,13 @@ s=d.Sheet(1,'首发白色 Basic 主机总装与尺寸',['WUP-001 Basic 采用白
 v=s.view_fit('ConsoleIsometric',body,(18,29,169,158),(.5,-1.6,1.3));caption(s,v,'圆角长壳与独立前面板',208)
 v=s.view_fit('ConsoleTop',body,(221,32,154,150),(0,0,1));d.dimension_box(s,v,['LowerHousing','FrontBezel'],'x',20);d.dimension_box(s,v,['LowerHousing','FrontBezel'],'y',210);caption(s,v,'主机宽度与深度',208);s.save()
 
-s=d.Sheet(2,'前后接口与独立前门',['主机前侧保留光盘槽、同步键、SD 和双 USB，背侧包括 HDMI、AV、电源与另两组 USB。','HDMI 接点、端口壁厚和孔位是模型学习几何；屏蔽壳、绝缘载体与触点可在三维工程中分开检查。'])
+s=d.Sheet(2,'前后接口与独立前门',['主机前侧保留光盘槽、同步键、SD 和双 USB，背侧包括 HDMI、AV、电源与另两组 USB。','第 23 轮按官方图校准前部盖板、退盘键和后 USB；局部孔径、深度及 HDMI 接点仍为学习近似。'])
 v=s.view_fit('FrontPorts',[k for k in body if k!='FrontFlap'],(21,28,166,76),(0,-1,0),up);d.dimension_box(s,v,['FrontBezel'],'y',13);caption(s,v,'打开前门后的控制与接口',118)
 v=s.view_fit('RearPorts',body,(222,28,161,76),(0,1,0),up);caption(s,v,'排风格栅与背面接口',118)
 v=s.view_fit('HDMIDetail',starts('HDMIShield','HDMITongue','HDMIContact'),(33,147,145,47),(0,1,0),up);caption(s,v,'十九接点 HDMI Type A',209)
 v=s.view_fit('SDDetail',starts('SDPort','SDTongue','SDContact'),(229,149,145,46),(0,-1,0),up);caption(s,v,'九接点 SD 卡座',209);s.save()
 
-s=d.Sheet(3,'原版 GamePad 外壳与显示层',['WUP-010 GamePad 采用双握柄、6.2 英寸触摸屏、两个模拟摇杆及相机、NFC 和立体声扬声器。','公开主体为 255.4 × 133.4 × 41 mm，不含摇杆等外伸件；曲面壳采用原生轮廓和放样保留编辑历史。'])
+s=d.Sheet(3,'原版 GamePad 外壳与显示层',['WUP-010 GamePad 采用双握柄、6.2 英寸触摸屏、两个模拟摇杆及相机、NFC 和立体声扬声器。','公开主体 255.4 × 133.4 × 41 mm；控制区按原版图拟合，顶边电视红外窗与正面光学条分开建模。'])
 v=s.view_fit('GamePadFront',pad,(26,27,213,144),(0,0,1));d.dimension_box(s,v,['PadBack','PadFront'],'x',20);d.dimension_box(s,v,['PadBack','PadFront'],'y',16);caption(s,v,'完整 GamePad 正面',188)
 v=s.view_fit('GamePadSide',pad,(262,30,118,43),(0,1,0),up);d.dimension_box(s,v,['PadBack','PadFront'],'y',251);caption(s,v,'塑料主体厚度',94)
 v=s.view_fit('DisplayLayers',['LCDBackplate','LCDFrame','LCDPanel','TouchLayer','DisplayBezel'],(262,123,116,65),(1,-.25,.5),exploded=True);caption(s,v,'背板、显示与触摸层',199);s.save()
@@ -60,11 +60,11 @@ v=s.view_fit('PadMainboard',['PadMainPCB']+starts('UIC','DRC','TouchIC','PadAudi
 v=s.view_fit('PadNFC',starts('PadNFCPCB','PadNFCAntenna'),(244,152,55,43),(0,0,1));caption(s,v,'NFC 线圈',211)
 v=s.view_fit('PadRadio',starts('PadRadioPCB','PadRadioIC'),(320,150,55,46),(0,0,-1));caption(s,v,'无线链路小板',211);s.save()
 
-s=d.Sheet(10,'两块电源、HDMI 与独立触控笔',['Basic 套装包括 WUP-002 主机电源、WUP-011 GamePad 电源、HDMI 和 WUP-015 触控笔。','两块电源的尺寸与内部件为照片近似；线缆采用展示长度。内部器件不提供电气安全、制造或性能依据。'])
-v=s.view_fit('PowerAdapters',starts('ConsoleACLower','ConsoleACUpper','ConsoleACMark','GamePadACLower','GamePadACUpper','GamePadACMark'),(25,30,167,151),(0,0,1));d.dimension_box(s,v,['ConsoleACUpper'],'x',21);caption(s,v,'主机与 GamePad 分立电源',210)
+s=d.Sheet(10,'两块电源、HDMI 与独立触控笔',['Basic 套装包括 WUP-002 主机电源、WUP-011 GamePad 电源、HDMI 和 WUP-015 触控笔。','两只电源壳体和触控笔按任天堂公开尺寸校准；线长、护线套及内部件仍为学习近似。'])
+v=s.view_fit('PowerAdapters',starts('ConsoleACLower','ConsoleACUpper','ConsoleACMark','GamePadACLower','GamePadACUpper','GamePadACMark'),(25,30,167,151),(0,0,1));d.dimension_box(s,v,['ConsoleACUpper'],'x',21);d.dimension_box(s,v,['GamePadACUpper'],'x',185);caption(s,v,'主机与 GamePad 分立电源',210)
 v=s.view_fit('AdapterInterior',starts('ConsoleACPCB','ConsoleACTransformer','ConsoleACWinding','ConsoleACBulkCap','ConsoleACOutput','ConsoleACInput','ConsoleACRectifier','ConsoleACHeatPlate'),(235,30,145,73),(.4,-.7,1.3),up);caption(s,v,'电源内部结构学习示意',122)
 v=s.view_fit('HDMIPlug',starts('HDMIGrip0','HDMIHead0','HDMIPlugTongue0','HDMIPlugPin0'),(240,150,66,49),(0,1,1),up);caption(s,v,'HDMI 插头与触点',211)
-v=s.view_fit('Stylus',starts('Stylus'),(338,149,35,49),(0,0,1));caption(s,v,'独立触控笔',211);s.save()
+v=s.view_fit('Stylus',starts('Stylus'),(338,149,35,49),(0,0,1));d.dimension_box(s,v,starts('Stylus'),'y',329);caption(s,v,'独立触控笔',211);s.save()
 
 s=d.Sheet(11,'组件、显示材料与装配索引',['同一组件可能包含多枚引脚或文字实体，因此组件条目与实体数量分开统计。','零件编号贯穿原生装配、STEP 和网页网格；显示材料仅用于辨认结构，不指定真实材料牌号。'])
 names={'Body':'主机外壳与标识','Controls':'前面板控制与灯光','Ports':'主机连接端口','Mainboard':'主板和电子器件','Cooling':'主机散热与风道','Wireless':'三组无线模块与天线','Optical':'吸入光驱与线束','Shield':'上下金属屏蔽','Internal':'主机支承及固定','Controller':'GamePad 外壳与控制件','Display':'显示、触摸与支承','PadInternal':'GamePad 电子和内部机构','Accessories':'两块电源、HDMI 与触控笔'}
@@ -76,9 +76,9 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,211,f"合计 {M['physical_components']} 个组件条目 / {M['solids']} 个实体 · COMPONENTS.csv",3.5,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'版本依据、近似边界与重建入口',['研究对象为首发白色 WUP-001 Basic 8 GB、原版 WUP-010 GamePad 与 Basic 配套附件。','图册是保存模型的版本快照；修改三维实体后，应同步重建投影、尺寸、验证报告和网页预览。'])
-sections=[(16,'来源与版本',['任天堂硬件、各部功能及 2012 年首发说明：主体、端口与套装。','iFixit 11796 拆解：主机、GamePad 板件和装配层次。','任天堂原装电源照片：独立适配器与对应的专用插头。']),
- (67,'尺寸与内容边界',['两个主体的公开包络不包括外伸按钮、脚垫和连接线。','孔位、器件、接点、线数、机构及附件尺寸为学习近似。','Basic 不混入 Premium 支架，原版 1500 mAh 电池保持独立。']),
- (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'完整源码重建、严格实体、装配求交和 STEP 回读分别记录。','图册校验内容、字体、每页视觉和可回读的原生尺寸。']),
+sections=[(16,'来源与版本',['任天堂硬件、各部功能及 2012 年首发说明：主体、端口与套装。','iFixit 11796 拆解：主机、GamePad 板件和装配层次。','任天堂电子手册第 82、84 页：两只电源与触控笔公开尺寸。']),
+ (67,'尺寸与内容边界',['两个主体的公开包络不包括外伸按钮、脚垫和连接线。','孔位、局部曲面、器件、接点、线数和机构仍为学习近似。','Basic 不混入 Premium 支架，原版 1500 mAh 电池保持独立。']),
+ (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'本轮验证保存实体、变更件严格 BRep、求交和 STEP 回读。','图册校验内容、字体、每页视觉和可回读的原生尺寸。']),
  (169,'继续修改的入口',['资料：references/SOURCES.md；清单：output/COMPONENTS.csv。','源码：tools/cadlib/wiiu.py；逐轮入口位于 scripts/。','检查：output/reports/；修改后同步更新 CAD、图纸和网页。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')

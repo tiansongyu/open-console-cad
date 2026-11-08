@@ -851,12 +851,12 @@
         "p1": [
           -86.0000001,
           4.999999703159119e-08,
-          22.99999994999997
+          22.999999949999996
         ],
         "p2": [
           86.0000001,
           4.999999703159119e-08,
-          22.99999994999997
+          22.999999949999996
         ],
         "axis": "x",
         "value_mm": 172.0000002,
@@ -872,12 +872,12 @@
         "p1": [
           0.0,
           -134.25,
-          22.99999994999997
+          22.999999949999996
         ],
         "p2": [
           0.0,
           134.2500001,
-          22.99999994999997
+          22.999999949999996
         ],
         "axis": "y",
         "value_mm": 268.50000009999997,
@@ -896,7 +896,7 @@
     "svg": "02.svg",
     "notes": [
       "主机前侧保留光盘槽、同步键、SD 和双 USB，背侧包括 HDMI、AV、电源与另两组 USB。",
-      "HDMI 接点、端口壁厚和孔位是模型学习几何；屏蔽壳、绝缘载体与触点可在三维工程中分开检查。"
+      "第 23 轮按官方图校准前部盖板、退盘键和后 USB；局部孔径、深度及 HDMI 接点仍为学习近似。"
     ],
     "views": [
       {
@@ -1797,7 +1797,7 @@
         ],
         "x": 301.5,
         "y": 172.0,
-        "scale": 4.867857142857143,
+        "scale": 4.867857142857142,
         "normal": [
           0,
           -1,
@@ -1809,7 +1809,7 @@
           1
         ],
         "center": [
-          -7.0,
+          -11.800000000000002,
           -123.0,
           12.0
         ],
@@ -1847,7 +1847,7 @@
     "svg": "03.svg",
     "notes": [
       "WUP-010 GamePad 采用双握柄、6.2 英寸触摸屏、两个模拟摇杆及相机、NFC 和立体声扬声器。",
-      "公开主体为 255.4 × 133.4 × 41 mm，不含摇杆等外伸件；曲面壳采用原生轮廓和放样保留编辑历史。"
+      "公开主体 255.4 × 133.4 × 41 mm；控制区按原版图拟合，顶边电视红外窗与正面光学条分开建模。"
     ],
     "views": [
       {
@@ -2062,7 +2062,17 @@
           "PadAntenna-1",
           "PadRadioLead-1",
           "PadAntenna1",
-          "PadRadioLead1"
+          "PadRadioLead1",
+          "CameraOuterRing",
+          "PadSyncButton",
+          "PadStartLegend",
+          "PadSelectLegend",
+          "PadMicLegend",
+          "PadHomeLegend",
+          "PadBatteryLegend",
+          "PadTVLegend",
+          "PadPowerLegend",
+          "PadTVIRWindow"
         ],
         "x": 132.5,
         "y": 99.0,
@@ -2297,7 +2307,17 @@
           "PadAntenna-1",
           "PadRadioLead-1",
           "PadAntenna1",
-          "PadRadioLead1"
+          "PadRadioLead1",
+          "CameraOuterRing",
+          "PadSyncButton",
+          "PadStartLegend",
+          "PadSelectLegend",
+          "PadMicLegend",
+          "PadHomeLegend",
+          "PadBatteryLegend",
+          "PadTVLegend",
+          "PadPowerLegend",
+          "PadTVIRWindow"
         ],
         "x": 321.0,
         "y": 51.5,
@@ -2315,7 +2335,7 @@
         "center": [
           0.0,
           -275.0,
-          24.249999949999996
+          24.24999995
         ],
         "exploded": false,
         "source": "open"
@@ -2399,15 +2419,15 @@
         "p1": [
           0.0,
           -275.0,
-          -1.0000001537946446e-07
+          -1.0000001182675078e-07
         ],
         "p2": [
           0.0,
           -275.0,
-          41.000000100000015
+          41.00000010000001
         ],
         "axis": "y",
-        "value_mm": 41.00000020000003,
+        "value_mm": 41.00000020000001,
         "label": "≈ 41",
         "published": false,
         "label_position": [
@@ -2449,9 +2469,9 @@
           1
         ],
         "center": [
-          -96.4113021703321,
-          -239.79252845654483,
-          32.500000000000036
+          -103.61130217033212,
+          -236.7925284565448,
+          32.500000000000014
         ],
         "exploded": false,
         "source": "open"
@@ -2487,9 +2507,9 @@
           1
         ],
         "center": [
-          97.762214549759,
-          -280.52442909951804,
-          33.66384571259886
+          95.262214549759,
+          -269.02442909951804,
+          33.66384571259883
         ],
         "exploded": false,
         "source": "open"
@@ -2504,11 +2524,12 @@
           "PadBatteryLead0",
           "PadBatteryLead1",
           "PadBatteryLead2",
-          "PadBatteryLead3"
+          "PadBatteryLead3",
+          "PadBatteryLegend"
         ],
         "x": 102.0,
         "y": 174.5,
-        "scale": 1.0501545019012248,
+        "scale": 0.5732451011116579,
         "normal": [
           0,
           0,
@@ -2521,8 +2542,8 @@
         ],
         "center": [
           9.75,
-          -278.96499995,
-          19.21599995
+          -296.46499995,
+          26.851000050000003
         ],
         "exploded": false,
         "source": "open"
@@ -2570,11 +2591,11 @@
           16.3
         ],
         "axis": "x",
-        "value_mm": 53.99999999999999,
+        "value_mm": 54.0,
         "label": "≈ 54",
         "published": false,
         "label_position": [
-          112.23900639353694,
+          107.58913973583867,
           141.4
         ]
       }
@@ -3245,11 +3266,21 @@
           "PadAntenna-1",
           "PadRadioLead-1",
           "PadAntenna1",
-          "PadRadioLead1"
+          "PadRadioLead1",
+          "CameraOuterRing",
+          "PadSyncButton",
+          "PadStartLegend",
+          "PadSelectLegend",
+          "PadMicLegend",
+          "PadHomeLegend",
+          "PadBatteryLegend",
+          "PadTVLegend",
+          "PadPowerLegend",
+          "PadTVIRWindow"
         ],
         "x": 198.0,
         "y": 174.0,
-        "scale": 0.9202797181345461,
+        "scale": 0.9224299043868459,
         "normal": [
           0,
           1,
@@ -3263,7 +3294,7 @@
         "center": [
           0.0,
           -283.0,
-          21.44999995
+          21.39999995
         ],
         "source": "open",
         "exploded": false,
@@ -3275,9 +3306,7 @@
           "LCDPanel",
           "TouchLayer",
           "DisplayBezel",
-          "PadDPad",
-          "PadA",
-          "PadY",
+          "PadB",
           "PadBatteryDoor",
           "PadMainPCB",
           "PadRadioPCB",
@@ -3288,13 +3317,7 @@
           "PadBatteryText",
           "PadButtonPCB-1",
           "PadButtonPCB1",
-          "PadDPadCarbon",
-          "PadDPadDome",
-          "PadACarbon",
-          "PadADome",
-          "PadYCarbon",
-          "PadYDome",
-          "PadCarrierDirection",
+          "PadBDome",
           "PadCarrierABXY",
           "PadBatteryScrew0",
           "PadBatteryScrew1",
@@ -3914,11 +3937,21 @@
           "PadBottomSocket",
           "PadBatterySocket",
           "PadAntenna-1",
-          "PadAntenna1"
+          "PadAntenna1",
+          "CameraOuterRing",
+          "PadSyncButton",
+          "PadStartLegend",
+          "PadSelectLegend",
+          "PadMicLegend",
+          "PadHomeLegend",
+          "PadBatteryLegend",
+          "PadTVLegend",
+          "PadPowerLegend",
+          "PadTVIRWindow"
         ],
         "x": 298.5,
         "y": 112.5,
-        "scale": 0.24707394316370063,
+        "scale": 0.24625926129707568,
         "normal": [
           1,
           -0.25,
@@ -3930,9 +3963,9 @@
           0
         ],
         "center": [
-          -4.686666644305944,
+          -5.156666644305943,
           -365.33333333333337,
-          45.331666621945324
+          46.27166662194533
         ],
         "exploded": true,
         "source": "exploded"
@@ -4426,7 +4459,7 @@
         ],
         "x": 303.0,
         "y": 66.0,
-        "scale": 0.7510860726040559,
+        "scale": 0.7411973553205458,
         "normal": [
           0.6,
           1,
@@ -4438,7 +4471,7 @@
           1
         ],
         "center": [
-          -8.866707925170594,
+          -7.116707925170591,
           78.43108215100438,
           23.492996571350343
         ],
@@ -4667,7 +4700,7 @@
         ],
         "x": 110.0,
         "y": 106.5,
-        "scale": 0.7253215077605321,
+        "scale": 0.7037865748709121,
         "normal": [
           0,
           0,
@@ -4679,7 +4712,7 @@
           0
         ],
         "center": [
-          1.25,
+          2.1000000000000014,
           -275.0,
           25.650000000000002
         ],
@@ -4760,8 +4793,8 @@
           0
         ],
         "center": [
-          -98.0,
-          -309.0,
+          -94.5,
+          -300.5,
           27.942500000000003
         ],
         "exploded": false,
@@ -4825,7 +4858,7 @@
     "svg": "10.svg",
     "notes": [
       "Basic 套装包括 WUP-002 主机电源、WUP-011 GamePad 电源、HDMI 和 WUP-015 触控笔。",
-      "两块电源的尺寸与内部件为照片近似；线缆采用展示长度。内部器件不提供电气安全、制造或性能依据。"
+      "两只电源壳体和触控笔按任天堂公开尺寸校准；线长、护线套及内部件仍为学习近似。"
     ],
     "views": [
       {
@@ -4840,7 +4873,7 @@
         ],
         "x": 108.5,
         "y": 105.5,
-        "scale": 0.6065811965811966,
+        "scale": 0.6104946236559139,
         "normal": [
           0,
           0,
@@ -4853,8 +4886,8 @@
         ],
         "center": [
           255.0,
-          -10.5,
-          25.02400005
+          -11.25,
+          24.52400005
         ],
         "exploded": false,
         "source": "open"
@@ -4874,7 +4907,7 @@
         ],
         "x": 307.5,
         "y": 66.5,
-        "scale": 0.6135886100807634,
+        "scale": 0.6809842303983208,
         "normal": [
           0.4,
           -0.7,
@@ -4886,9 +4919,9 @@
           1
         ],
         "center": [
-          255.8016796280075,
-          68.59706065098696,
-          8.105458791024198
+          256.02505569638356,
+          68.20615253132884,
+          8.831431013246416
         ],
         "exploded": false,
         "source": "open"
@@ -4949,7 +4982,7 @@
         ],
         "x": 355.5,
         "y": 173.5,
-        "scale": 0.4596806387225549,
+        "scale": 0.4704800817160367,
         "normal": [
           0,
           0,
@@ -4962,7 +4995,7 @@
         ],
         "center": [
           180.0,
-          -278.9,
+          -280.05,
           5.0
         ],
         "exploded": false,
@@ -4973,22 +5006,64 @@
       {
         "view": "PowerAdapters",
         "p1": [
-          169.5,
+          180.0,
           70.0,
-          37.55999999999988
+          36.81
         ],
         "p2": [
-          340.5,
+          330.0,
           70.0,
-          37.55999999999988
+          36.81
         ],
         "axis": "x",
-        "value_mm": 170.99999999999997,
-        "label": "≈ 171",
+        "value_mm": 150.0,
+        "label": "≈ 150",
         "published": false,
         "label_position": [
           108.5,
           19.4
+        ]
+      },
+      {
+        "view": "PowerAdapters",
+        "p1": [
+          185.0,
+          -110.0,
+          21.059999999999643
+        ],
+        "p2": [
+          285.0,
+          -110.0,
+          21.059999999999643
+        ],
+        "axis": "x",
+        "value_mm": 99.99999999999999,
+        "label": "≈ 100",
+        "published": false,
+        "label_position": [
+          96.29010752688173,
+          183.4
+        ]
+      },
+      {
+        "view": "Stylus",
+        "p1": [
+          180.0,
+          -329.0,
+          5.0
+        ],
+        "p2": [
+          180.0,
+          -231.1,
+          5.0
+        ],
+        "axis": "y",
+        "value_mm": 97.90000000000002,
+        "label": "≈ 97.9",
+        "published": false,
+        "label_position": [
+          327,
+          173.5
         ]
       }
     ]

@@ -1,0 +1,55 @@
+{
+  "device": "wiiu",
+  "iteration": 23,
+  "source_sha256": "77b90ef634c0f5011a7625f7dd4daa59e68c8e69bb14573cb5fb35ab0c31d792",
+  "reviewed_views": [
+    "console_front",
+    "console_rear",
+    "console_side",
+    "gamepad_front",
+    "gamepad_rear",
+    "gamepad_top",
+    "gamepad_bottom"
+  ],
+  "reference_record": "devices/wiiu/references/fidelity_iteration23.json",
+  "before_after_previews": {
+    "console_front": {
+      "before": "devices/wiiu/output/previews/baseline_console_front.png",
+      "after": "devices/wiiu/output/previews/after_console_front.png"
+    },
+    "console_rear": {
+      "before": "devices/wiiu/output/previews/baseline_console_rear.png",
+      "after": "devices/wiiu/output/previews/after_console_rear.png"
+    },
+    "console_side": {
+      "before": "devices/wiiu/output/previews/baseline_console_side.png",
+      "after": "devices/wiiu/output/previews/after_console_side.png"
+    },
+    "gamepad_front": {
+      "before": "devices/wiiu/output/previews/baseline_gamepad_front.png",
+      "after": "devices/wiiu/output/previews/after_gamepad_front.png"
+    },
+    "gamepad_rear": {
+      "before": "devices/wiiu/output/previews/baseline_gamepad_rear.png",
+      "after": "devices/wiiu/output/previews/after_gamepad_rear.png"
+    },
+    "gamepad_top": {
+      "before": "devices/wiiu/output/previews/baseline_gamepad_top.png",
+      "after": "devices/wiiu/output/previews/after_gamepad_top.png"
+    }
+  },
+  "confirmed_changes": [
+    "Console front control/cover fit and rear close stacked USB pair",
+    "GamePad control positions, stick caps, camera/sensor strip and symmetrical speaker outlets",
+    "Correct top-port sides, separate top television IR window and bottom-facing charging contacts",
+    "Original rear SYNC control and empty stylus holder",
+    "Published adapter enclosures and stylus dimensions"
+  ],
+  "remaining_limits": [
+    "Original rear crossbar, shoulder curves, battery-cover size and fine molding transitions remain inherited approximations",
+    "Detailed port dimensions and local positions are image fits, not factory measurements",
+    "Internal button boards, stylus guide, wiring and adapter internals are schematic"
+  ],
+  "factory_equivalence_verified": false,
+  "passed": true
+}
