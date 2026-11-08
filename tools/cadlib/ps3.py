@@ -1429,3 +1429,6 @@ def finalize(model):
         return result
     finally:
         Part.setStaticValue('write.surfacecurve.mode',previous)
+
+from .fidelity_ps3 import stage31
+STAGES[31]=stage31

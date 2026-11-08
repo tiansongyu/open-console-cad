@@ -15,3 +15,9 @@
 主板采用 COK-001 同代可见器件分布，保留 Cell / RSX 朝向散热侧和独立 EE+GS。四 USB 通过端子与主板连接，单独无线模块及小型天线板参考拆解第 15–17 步。硬盘内部沿用通用 2.5 英寸单盘片结构示意，不断言首发 60GB 实机供应商、盘片数量或精确内部尺寸。
 
 - [Sony CECHA00/A01 60GB 维修手册第三版](https://documents.cdn.ifixit.com/6wdEAkIyJYsjXkBP.pdf)，2007-05，编号 SM-PS3-0013E-02，iFixit 托管。已核对第 31–36 页爆炸图：上下盖、读卡板、无线板、触控板、电源、光驱、下方风扇与双处理器热交换器、HDD、屏蔽板及无振动 SIXAXIS 的层次；第 34 页列有风扇与 HDD 型号，不能据此声称所有批次都相同。模型采用十九叶风扇结构示意，局部尺寸及管路不作原厂精确复刻。
+
+## 第 31 轮外观与接口校正
+
+[Sony 原版快速参考第 4 页](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps3-docs/JA_PS3-00-1.0_2_WEB.pdf)用于正背面接口和触控位置；[Evan-Amos 拍摄的 CECHA01 后视图](https://commons.wikimedia.org/wiki/File:Sony-PlayStation-3-CECHA01-Console-BR.jpg)补充同代壳体的横向风口结构。CECHA01 照片只作为共同结构证据，不据此改写 CECHA00 区域标识。
+
+[psx-spx AV MULTI 原始逆向记录](https://psx-spx.consoledev.net/pinouts/#av-multi-out-audiovideo-port)确认十二位单排拓扑；Foxconn HDMI 与 TE RJ45 制造商资料用于兼容接口尺寸和节距，不表示已识别 Sony 原厂供应商。完整来源、文件哈希、照片拟合坐标及剩余误差边界见 [fidelity_iteration31.json](fidelity_iteration31.json)。

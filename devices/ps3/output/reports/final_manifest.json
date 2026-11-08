@@ -2,7 +2,7 @@
   "project": "Sony PlayStation 3 CECHA00 · original Japanese 60 GB",
   "device": "ps3",
   "prefix": "PlayStation3",
-  "design_iterations": 30,
+  "design_iterations": 31,
   "physical_components": 1592,
   "solids": 1676,
   "assemblies": {
@@ -115,21 +115,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "RearFasciaBody",
-      "label": "PS3-0003 · Upper rear closure",
-      "type": "PartDesign::Body",
+      "name": "RearFascia001",
+      "label": "PS3-0003 · Upper rear closure002",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 2414.317521601036,
+      "faces": 13,
+      "volume": 5388.607424106608,
       "bounds": [
-        -151.0,
-        151.0,
-        128.4,
-        130.4,
-        40.5,
-        44.5
+        -151.0000001,
+        151.0000001,
+        128.3999999,
+        130.4000001,
+        40.4999999,
+        50.10573970840164
       ],
       "state": [
         "Up-to-date"
@@ -373,15 +373,15 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 467,
-      "volume": 255138.18905635382,
+      "faces": 523,
+      "volume": 254879.7921402111,
       "bounds": [
-        -154.5,
+        -154.5000001,
         154.5,
         -123.5,
-        123.5,
-        0.0,
-        42.0
+        123.5000001,
+        -1e-07,
+        42.0000001
       ],
       "state": [
         "Up-to-date"
@@ -395,17 +395,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "PowerTouchSurface",
-      "label": "PS3-0013 · Power capacitive-control marking plate",
+      "name": "PowerTouchSurface001",
+      "label": "PS3-0013 · Power capacitive-control marking plate001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 3.6235351232759507,
+      "volume": 3.62353512327595,
       "bounds": [
-        142.1,
-        147.9,
+        127.1,
+        132.9,
         -135.15,
         -134.85,
         50.2,
@@ -423,17 +423,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "EjectTouchSurface",
-      "label": "PS3-0014 · Eject capacitive-control marking plate",
+      "name": "EjectTouchSurface001",
+      "label": "PS3-0014 · Eject capacitive-control marking plate001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 3.6235351232759507,
+      "volume": 3.623535123275949,
       "bounds": [
-        142.1,
-        147.9,
+        72.1,
+        77.9,
         -135.15,
         -134.85,
         44.3,
@@ -906,7 +906,7 @@
       "null": false,
       "solids": 1,
       "faces": 34,
-      "volume": 61.18036073760024,
+      "volume": 61.180360737600246,
       "bounds": [
         -125.55,
         -112.45,
@@ -1851,21 +1851,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIShield",
-      "label": "PS3-0065 · Nineteen-contact HDMI metal shield",
+      "name": "HDMIShield002",
+      "label": "PS3-0065 · Nineteen-contact HDMI metal shield002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 179.76000000000022,
+      "volume": 252.60000000000002,
       "bounds": [
-        1.25,
-        16.75,
-        110.8,
+        -39.5,
+        -24.5,
+        110.79999999999998,
         122.8,
-        18.7,
-        25.3
+        31.174999999999997,
+        36.825
       ],
       "state": [
         "Up-to-date"
@@ -1879,21 +1879,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIBack",
-      "label": "PS3-0066 · HDMI rear insulator",
+      "name": "HDMIBack003",
+      "label": "PS3-0066 · HDMI rear insulator003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 39.43965485471851,
+      "volume": 27.68909733552909,
       "bounds": [
-        2.9999999999999996,
-        15.0,
+        -37.5,
+        -26.5,
         110.95,
         111.64999999999999,
-        19.65,
-        24.349999999999998
+        32.2,
+        35.800000000000004
       ],
       "state": [
         "Up-to-date"
@@ -1907,21 +1907,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMITongue",
-      "label": "PS3-0067 · HDMI insulating tongue",
+      "name": "HDMITongue002",
+      "label": "PS3-0067 · HDMI insulating tongue002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 60.8344203522483,
+      "volume": 86.77575928947448,
       "bounds": [
-        3.15,
-        14.85,
+        -37.65,
+        -26.349999999999998,
         113.3,
         121.3,
-        21.675,
-        22.325
+        33.52,
+        34.480000000000004
       ],
       "state": [
         "Up-to-date"
@@ -1935,21 +1935,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_0",
-      "label": "PS3-0068 · Separate HDMI connector contact",
+      "name": "HDMIContact1_011",
+      "label": "PS3-0068 · Separate HDMI connector contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        4.005,
-        4.2749999999999995,
+        -36.650000000000006,
+        -36.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -1963,21 +1963,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_1",
-      "label": "PS3-0069 · Separate HDMI connector contact001",
+      "name": "HDMIContact1_012",
+      "label": "PS3-0069 · Separate HDMI connector contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491386,
+      "volume": 0.10797939822368716,
       "bounds": [
-        5.085,
-        5.3549999999999995,
+        -35.650000000000006,
+        -35.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -1991,21 +1991,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_2",
-      "label": "PS3-0070 · Separate HDMI connector contact002",
+      "name": "HDMIContact1_013",
+      "label": "PS3-0070 · Separate HDMI connector contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        6.165,
-        6.435,
+        -34.650000000000006,
+        -34.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2019,21 +2019,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_3",
-      "label": "PS3-0071 · Separate HDMI connector contact003",
+      "name": "HDMIContact1_014",
+      "label": "PS3-0071 · Separate HDMI connector contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        7.245,
-        7.515,
+        -33.650000000000006,
+        -33.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2047,21 +2047,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_4",
-      "label": "PS3-0072 · Separate HDMI connector contact004",
+      "name": "HDMIContact1_015",
+      "label": "PS3-0072 · Separate HDMI connector contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        8.325000000000001,
-        8.595,
+        -32.650000000000006,
+        -32.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2075,21 +2075,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_5",
-      "label": "PS3-0073 · Separate HDMI connector contact005",
+      "name": "HDMIContact1_016",
+      "label": "PS3-0073 · Separate HDMI connector contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        9.405,
-        9.674999999999999,
+        -31.65,
+        -31.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2103,21 +2103,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_6",
-      "label": "PS3-0074 · Separate HDMI connector contact006",
+      "name": "HDMIContact1_017",
+      "label": "PS3-0074 · Separate HDMI connector contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491386,
+      "volume": 0.10797939822368717,
       "bounds": [
-        10.485000000000001,
-        10.755,
+        -30.65,
+        -30.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2131,21 +2131,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_7",
-      "label": "PS3-0075 · Separate HDMI connector contact007",
+      "name": "HDMIContact1_018",
+      "label": "PS3-0075 · Separate HDMI connector contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        11.565,
-        11.834999999999999,
+        -29.65,
+        -29.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2159,21 +2159,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_8",
-      "label": "PS3-0076 · Separate HDMI connector contact008",
+      "name": "HDMIContact1_019",
+      "label": "PS3-0076 · Separate HDMI connector contact010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        12.645000000000001,
-        12.915000000000001,
+        -28.65,
+        -28.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2187,21 +2187,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact1_9",
-      "label": "PS3-0077 · Separate HDMI connector contact009",
+      "name": "HDMIContact1_020",
+      "label": "PS3-0077 · Separate HDMI connector contact011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        13.725,
-        13.995,
+        -27.65,
+        -27.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -2215,21 +2215,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_0",
-      "label": "PS3-0078 · Separate HDMI connector contact010",
+      "name": "HDMIContact_1_010",
+      "label": "PS3-0078 · Separate HDMI connector contact012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        4.545,
-        4.8149999999999995,
+        -36.150000000000006,
+        -35.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2243,21 +2243,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_1",
-      "label": "PS3-0079 · Separate HDMI connector contact011",
+      "name": "HDMIContact_1_011",
+      "label": "PS3-0079 · Separate HDMI connector contact013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        5.625,
-        5.895,
+        -35.150000000000006,
+        -34.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2271,21 +2271,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_2",
-      "label": "PS3-0080 · Separate HDMI connector contact012",
+      "name": "HDMIContact_1_012",
+      "label": "PS3-0080 · Separate HDMI connector contact014",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        6.705,
-        6.975,
+        -34.150000000000006,
+        -33.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2299,21 +2299,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_3",
-      "label": "PS3-0081 · Separate HDMI connector contact013",
+      "name": "HDMIContact_1_013",
+      "label": "PS3-0081 · Separate HDMI connector contact015",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        7.785,
-        8.055,
+        -33.150000000000006,
+        -32.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2327,21 +2327,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_4",
-      "label": "PS3-0082 · Separate HDMI connector contact014",
+      "name": "HDMIContact_1_014",
+      "label": "PS3-0082 · Separate HDMI connector contact016",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        8.865,
-        9.135,
+        -32.150000000000006,
+        -31.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2355,21 +2355,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_5",
-      "label": "PS3-0083 · Separate HDMI connector contact015",
+      "name": "HDMIContact_1_015",
+      "label": "PS3-0083 · Separate HDMI connector contact017",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        9.945,
-        10.215,
+        -31.15,
+        -30.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2383,21 +2383,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_6",
-      "label": "PS3-0084 · Separate HDMI connector contact016",
+      "name": "HDMIContact_1_016",
+      "label": "PS3-0084 · Separate HDMI connector contact018",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        11.025,
-        11.295,
+        -30.15,
+        -29.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2411,21 +2411,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_7",
-      "label": "PS3-0085 · Separate HDMI connector contact017",
+      "name": "HDMIContact_1_017",
+      "label": "PS3-0085 · Separate HDMI connector contact019",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        12.105,
-        12.375,
+        -29.15,
+        -28.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2439,21 +2439,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HDMIContact_1_8",
-      "label": "PS3-0086 · Separate HDMI connector contact018",
+      "name": "HDMIContact_1_018",
+      "label": "PS3-0086 · Separate HDMI connector contact020",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368718,
       "bounds": [
-        13.185,
-        13.455,
+        -28.15,
+        -27.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -2467,21 +2467,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANShield",
-      "label": "PS3-0087 · Ethernet folded shield",
+      "name": "LANShield001",
+      "label": "PS3-0087 · Ethernet folded shield001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 486.87417702060213,
+      "volume": 486.87417702060236,
       "bounds": [
-        25.0,
-        41.0,
+        -59.0,
+        -43.0,
         110.5,
         122.7,
-        15.0,
-        29.0
+        24.0,
+        38.0
       ],
       "state": [
         "Up-to-date"
@@ -2495,8 +2495,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANBack",
-      "label": "PS3-0088 · Ethernet rear carrier",
+      "name": "LANBack001",
+      "label": "PS3-0088 · Ethernet rear carrier001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -2504,12 +2504,12 @@
       "faces": 10,
       "volume": 125.44209284952808,
       "bounds": [
-        25.9,
-        40.1,
+        -58.1,
+        -43.9,
         110.625,
         111.375,
-        16.1,
-        27.900000000000002
+        25.1,
+        36.900000000000006
       ],
       "state": [
         "Up-to-date"
@@ -2523,21 +2523,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact0",
-      "label": "PS3-0089 · Independent Ethernet spring contact",
+      "name": "LANContact009",
+      "label": "PS3-0089 · Independent Ethernet spring contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        28.134999999999998,
-        28.485,
+        -54.745000000000005,
+        -54.394999999999996,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2551,21 +2551,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact1",
-      "label": "PS3-0090 · Independent Ethernet spring contact001",
+      "name": "LANContact010",
+      "label": "PS3-0090 · Independent Ethernet spring contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        29.474999999999998,
-        29.825,
+        -53.725,
+        -53.37499999999999,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2579,21 +2579,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact2",
-      "label": "PS3-0091 · Independent Ethernet spring contact002",
+      "name": "LANContact011",
+      "label": "PS3-0091 · Independent Ethernet spring contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        30.814999999999998,
-        31.165,
+        -52.705000000000005,
+        -52.355,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2607,21 +2607,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact3",
-      "label": "PS3-0092 · Independent Ethernet spring contact003",
+      "name": "LANContact012",
+      "label": "PS3-0092 · Independent Ethernet spring contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        32.154999999999994,
-        32.505,
+        -51.685,
+        -51.334999999999994,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2635,8 +2635,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact4",
-      "label": "PS3-0093 · Independent Ethernet spring contact004",
+      "name": "LANContact013",
+      "label": "PS3-0093 · Independent Ethernet spring contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -2644,12 +2644,12 @@
       "faces": 10,
       "volume": 0.5773300353454067,
       "bounds": [
-        33.495,
-        33.845000000000006,
+        -50.665000000000006,
+        -50.315,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2663,21 +2663,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact5",
-      "label": "PS3-0094 · Independent Ethernet spring contact005",
+      "name": "LANContact014",
+      "label": "PS3-0094 · Independent Ethernet spring contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        34.834999999999994,
-        35.185,
+        -49.645,
+        -49.294999999999995,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2691,8 +2691,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact6",
-      "label": "PS3-0095 · Independent Ethernet spring contact006",
+      "name": "LANContact015",
+      "label": "PS3-0095 · Independent Ethernet spring contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -2700,12 +2700,12 @@
       "faces": 10,
       "volume": 0.5773300353454067,
       "bounds": [
-        36.175,
-        36.525000000000006,
+        -48.62500000000001,
+        -48.275,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2719,21 +2719,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANContact7",
-      "label": "PS3-0096 · Independent Ethernet spring contact007",
+      "name": "LANContact016",
+      "label": "PS3-0096 · Independent Ethernet spring contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        37.51499999999999,
-        37.865,
+        -47.605000000000004,
+        -47.254999999999995,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -2747,21 +2747,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANLight0",
-      "label": "PS3-0097 · Ethernet indicator lens",
+      "name": "LANLight001",
+      "label": "PS3-0097 · Ethernet indicator lens001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1.3168373739082109,
+      "volume": 1.3168373739082115,
       "bounds": [
-        26.075,
-        27.525000000000002,
+        -57.925000000000004,
+        -56.475,
         122.77499999999999,
         123.425,
-        25.9,
-        27.349999999999998
+        34.9,
+        36.35
       ],
       "state": [
         "Up-to-date"
@@ -2775,21 +2775,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "LANLight1",
-      "label": "PS3-0098 · Ethernet indicator lens001",
+      "name": "LANLight002",
+      "label": "PS3-0098 · Ethernet indicator lens002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1.3168373739082107,
+      "volume": 1.3168373739082118,
       "bounds": [
-        38.475,
-        39.925000000000004,
+        -45.525,
+        -44.074999999999996,
         122.77499999999999,
         123.425,
-        25.9,
-        27.349999999999998
+        34.9,
+        36.35
       ],
       "state": [
         "Up-to-date"
@@ -2803,21 +2803,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "OpticalSocket",
-      "label": "PS3-0099 · Digital optical socket body",
+      "name": "OpticalSocket001",
+      "label": "PS3-0099 · Digital optical socket body001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 672.843804786343,
+      "volume": 672.8438047863424,
       "bounds": [
-        51.4,
-        62.6,
+        -76.6,
+        -65.4,
         111.0,
         122.7,
-        16.65,
-        27.35
+        26.65,
+        37.35
       ],
       "state": [
         "Up-to-date"
@@ -2831,8 +2831,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "OpticalShutter",
-      "label": "PS3-0100 · Optical connector spring shutter",
+      "name": "OpticalShutter001",
+      "label": "PS3-0100 · Optical connector spring shutter001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -2840,12 +2840,12 @@
       "faces": 10,
       "volume": 20.308388049918364,
       "bounds": [
-        53.05,
-        60.95,
+        -74.95,
+        -67.05,
         122.325,
         122.675,
-        18.3,
-        25.700000000000003
+        28.3,
+        35.7
       ],
       "state": [
         "Up-to-date"
@@ -2859,21 +2859,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "OpticalEmitter",
-      "label": "PS3-0101 · Optical output lens",
+      "name": "OpticalEmitter001",
+      "label": "PS3-0101 · Optical output lens001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 1.8095573684677286,
+      "volume": 1.809557368467729,
       "bounds": [
-        55.8,
-        58.2,
+        -72.2,
+        -69.8,
         112.5,
         112.9,
-        20.8,
-        23.2
+        30.8,
+        33.2
       ],
       "state": [
         "Up-to-date"
@@ -2887,21 +2887,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVShield",
-      "label": "PS3-0102 · Original AV MULTI connector shield",
+      "name": "AVShield002",
+      "label": "PS3-0102 · Original AV MULTI connector shield002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 684.5897277652061,
+      "volume": 315.7687420727599,
       "bounds": [
-        68.5,
-        95.5,
+        -105.5,
+        -86.5,
         110.5,
-        122.9,
-        16.9,
-        27.1
+        122.90000000000002,
+        27.599999999999998,
+        35.4
       ],
       "state": [
         "Up-to-date"
@@ -2915,21 +2915,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVBack",
-      "label": "PS3-0103 · AV MULTI rear insulator",
+      "name": "AVBack002",
+      "label": "PS3-0103 · AV MULTI rear insulator002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 115.76747779607727,
+      "volume": 71.44618134870484,
       "bounds": [
-        70.1,
-        93.9,
+        -104.75,
+        -87.25,
         110.675,
         111.325,
-        18.25,
-        25.75
+        28.35,
+        34.65
       ],
       "state": [
         "Up-to-date"
@@ -2943,21 +2943,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVTongue",
-      "label": "PS3-0104 · AV MULTI insulating tongue",
+      "name": "AVTongue002",
+      "label": "PS3-0104 · AV MULTI insulating tongue002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 206.62701767270536,
+      "volume": 156.91023007675778,
       "bounds": [
-        71.2,
-        92.8,
-        113.05000000000001,
-        121.75,
-        21.45,
-        22.55
+        -104.2,
+        -87.8,
+        113.05,
+        121.75000000000001,
+        30.95,
+        32.05
       ],
       "state": [
         "Up-to-date"
@@ -2971,21 +2971,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_0",
-      "label": "PS3-0105 · Independent AV MULTI terminal",
+      "name": "AVContact_1_007",
+      "label": "PS3-0105 · Independent AV MULTI terminal002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743533,
       "bounds": [
-        73.875,
-        74.625,
+        -103.125,
+        -102.625,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -2999,21 +2999,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_1",
-      "label": "PS3-0106 · Independent AV MULTI terminal001",
+      "name": "AVContact_1_008",
+      "label": "PS3-0106 · Independent AV MULTI terminal003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        76.975,
-        77.725,
+        -101.875,
+        -101.375,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3027,21 +3027,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_2",
-      "label": "PS3-0107 · Independent AV MULTI terminal002",
+      "name": "AVContact_1_009",
+      "label": "PS3-0107 · Independent AV MULTI terminal004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        80.075,
-        80.825,
+        -100.625,
+        -100.125,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3055,21 +3055,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_3",
-      "label": "PS3-0108 · Independent AV MULTI terminal003",
+      "name": "AVContact_1_010",
+      "label": "PS3-0108 · Independent AV MULTI terminal005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        83.175,
-        83.925,
+        -99.375,
+        -98.875,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3083,21 +3083,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_4",
-      "label": "PS3-0109 · Independent AV MULTI terminal004",
+      "name": "AVContact_1_011",
+      "label": "PS3-0109 · Independent AV MULTI terminal006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        86.275,
-        87.025,
+        -98.125,
+        -97.625,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3111,21 +3111,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact_1_5",
-      "label": "PS3-0110 · Independent AV MULTI terminal005",
+      "name": "AVContact_1_012",
+      "label": "PS3-0110 · Independent AV MULTI terminal007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        89.375,
-        90.125,
+        -96.875,
+        -96.375,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3139,21 +3139,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_0",
-      "label": "PS3-0111 · Independent AV MULTI terminal006",
+      "name": "AVContact1_007",
+      "label": "PS3-0111 · Independent AV MULTI terminal008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        73.875,
-        74.625,
+        -95.625,
+        -95.125,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3167,21 +3167,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_1",
-      "label": "PS3-0112 · Independent AV MULTI terminal007",
+      "name": "AVContact1_008",
+      "label": "PS3-0112 · Independent AV MULTI terminal009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        76.975,
-        77.725,
+        -94.375,
+        -93.875,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3195,21 +3195,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_2",
-      "label": "PS3-0113 · Independent AV MULTI terminal008",
+      "name": "AVContact1_009",
+      "label": "PS3-0113 · Independent AV MULTI terminal010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        80.075,
-        80.825,
+        -93.125,
+        -92.625,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3223,21 +3223,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_3",
-      "label": "PS3-0114 · Independent AV MULTI terminal009",
+      "name": "AVContact1_010",
+      "label": "PS3-0114 · Independent AV MULTI terminal011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        83.175,
-        83.925,
+        -91.875,
+        -91.375,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3251,21 +3251,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_4",
-      "label": "PS3-0115 · Independent AV MULTI terminal010",
+      "name": "AVContact1_011",
+      "label": "PS3-0115 · Independent AV MULTI terminal012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        86.275,
-        87.025,
+        -90.625,
+        -90.125,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3279,21 +3279,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVContact1_5",
-      "label": "PS3-0116 · Independent AV MULTI terminal011",
+      "name": "AVContact1_012",
+      "label": "PS3-0116 · Independent AV MULTI terminal013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        89.375,
-        90.125,
+        -89.375,
+        -88.875,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -3307,21 +3307,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACBlade0",
-      "label": "PS3-0117 · Separate AC inlet blade",
+      "name": "ACBlade001",
+      "label": "PS3-0117 · Separate AC inlet blade001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248312,
+      "volume": 12.578420352248322,
       "bounds": [
-        117.9,
-        120.1,
+        -140.1,
+        -137.9,
         112.0,
         120.80000000000001,
-        19.0,
-        19.65
+        13.0,
+        13.65
       ],
       "state": [
         "Up-to-date"
@@ -3335,21 +3335,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACBlade1",
-      "label": "PS3-0118 · Separate AC inlet blade001",
+      "name": "ACBlade002",
+      "label": "PS3-0118 · Separate AC inlet blade002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248308,
+      "volume": 12.578420352248322,
       "bounds": [
-        127.9,
-        130.1,
+        -130.1,
+        -127.9,
         112.0,
         120.80000000000001,
-        19.0,
-        19.65
+        13.0,
+        13.65
       ],
       "state": [
         "Up-to-date"
@@ -3363,21 +3363,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACBlade2",
-      "label": "PS3-0119 · Separate AC inlet blade002",
+      "name": "ACBlade003",
+      "label": "PS3-0119 · Separate AC inlet blade003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248312,
+      "volume": 12.578420352248308,
       "bounds": [
-        122.9,
-        125.1,
+        -135.1,
+        -132.9,
         112.0,
         120.80000000000001,
-        25.5,
-        26.15
+        19.5,
+        20.15
       ],
       "state": [
         "Up-to-date"
@@ -3391,8 +3391,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "MasterSwitch",
-      "label": "PS3-0120 · Original rear master rocker switch",
+      "name": "MasterSwitch001",
+      "label": "PS3-0120 · Original rear master rocker switch001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -3400,12 +3400,12 @@
       "faces": 10,
       "volume": 572.4197867217612,
       "bounds": [
-        114.6,
-        133.4,
+        -143.4,
+        -124.6,
         120.15,
         124.65,
-        32.6,
-        39.4
+        30.0,
+        36.8
       ],
       "state": [
         "Up-to-date"
@@ -3482,7 +3482,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 9.488084122884542,
+      "volume": 9.488084122884544,
       "bounds": [
         -145.2,
         -141.2,
@@ -3538,7 +3538,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 9.488084122884544,
+      "volume": 9.488084122884546,
       "bounds": [
         -145.2,
         -141.2,
@@ -22494,7 +22494,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 8.68602047702965,
+      "volume": 8.686020477029654,
       "bounds": [
         -130.8,
         -127.2,
@@ -22606,7 +22606,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 8.686020477029654,
+      "volume": 8.686020477029656,
       "bounds": [
         -130.8,
         -127.2,
@@ -23390,7 +23390,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 6.874578152969775,
+      "volume": 6.874578152969777,
       "bounds": [
         144.89999999999998,
         148.5,
@@ -23439,17 +23439,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControlPCBBody",
-      "label": "PS3-0836 · Original power and eject touch-control board study",
-      "type": "PartDesign::Body",
+      "name": "ControlPCB",
+      "label": "PS3-0836 · Original power and eject touch-control board study001",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 499.1415926535898,
+      "volume": 749.1415926535898,
       "bounds": [
-        91.0,
-        141.0,
+        65.0,
+        140.0,
         -116.0,
         -106.0,
         35.0,
@@ -23467,8 +23467,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "TouchController0",
-      "label": "PS3-0837 · Touch-control sensing package study",
+      "name": "TouchController001",
+      "label": "PS3-0837 · Touch-control sensing package study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -23476,8 +23476,8 @@
       "faces": 10,
       "volume": 21.94098449493431,
       "bounds": [
-        101.5,
-        106.5,
+        72.5,
+        77.5,
         -113.0,
         -109.0,
         36.2,
@@ -23495,17 +23495,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "TouchCopper0",
-      "label": "PS3-0838 · Separate capacitive sensing electrode study",
+      "name": "TouchCopper001",
+      "label": "PS3-0838 · Separate capacitive sensing electrode study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 2.2338194671058305,
+      "volume": 2.233819467105831,
       "bounds": [
-        100.5,
-        107.5,
+        71.5,
+        78.5,
         -113.0,
         -109.0,
         34.8,
@@ -23523,8 +23523,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "TouchController1",
-      "label": "PS3-0839 · Touch-control sensing package study001",
+      "name": "TouchController002",
+      "label": "PS3-0839 · Touch-control sensing package study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -23532,8 +23532,8 @@
       "faces": 10,
       "volume": 21.94098449493431,
       "bounds": [
-        123.5,
-        128.5,
+        127.5,
+        132.5,
         -113.0,
         -109.0,
         36.2,
@@ -23551,17 +23551,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "TouchCopper1",
-      "label": "PS3-0840 · Separate capacitive sensing electrode study001",
+      "name": "TouchCopper002",
+      "label": "PS3-0840 · Separate capacitive sensing electrode study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 2.2338194671058305,
+      "volume": 2.233819467105831,
       "bounds": [
-        122.5,
-        129.5,
+        126.5,
+        133.5,
         -113.0,
         -109.0,
         34.8,
@@ -23705,7 +23705,7 @@
         -2.0,
         2.0,
         3.2699999999999996,
-        6.1000000000000005
+        6.1
       ],
       "state": [
         "Up-to-date"
@@ -23761,7 +23761,7 @@
         68.32126278729642,
         72.32126278729642,
         3.2699999999999996,
-        6.1000000000000005
+        6.1
       ],
       "state": [
         "Up-to-date"
@@ -23817,7 +23817,7 @@
         -72.3212627872964,
         -68.3212627872964,
         3.2699999999999996,
-        6.1000000000000005
+        6.1
       ],
       "state": [
         "Up-to-date"
@@ -24013,7 +24013,7 @@
         -77.5000001,
         77.5000001,
         4.4999999,
-        19.200000100000718
+        19.20000010000072
       ],
       "state": [
         "Up-to-date"
@@ -26750,7 +26750,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.478392260989737,
+      "volume": 7.478392260989739,
       "bounds": [
         -135.8,
         -132.2,
@@ -26806,7 +26806,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.478392260989732,
+      "volume": 7.478392260989735,
       "bounds": [
         -135.8,
         -132.2,
@@ -26918,7 +26918,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 7.478392260989735,
+      "volume": 7.478392260989734,
       "bounds": [
         -13.8,
         -10.2,
@@ -28794,7 +28794,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 27.360981720275312,
+      "volume": 27.36098172027532,
       "bounds": [
         7.0,
         11.0,
@@ -28850,7 +28850,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 27.360981720275277,
+      "volume": 27.36098172027529,
       "bounds": [
         132.0,
         136.0,
@@ -28906,7 +28906,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 27.360981720275305,
+      "volume": 27.36098172027532,
       "bounds": [
         132.0,
         136.0,
@@ -30558,7 +30558,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 16.13003931110407,
+      "volume": 16.13003931110408,
       "bounds": [
         -140.0,
         -136.0,
@@ -30642,7 +30642,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 16.13003931110407,
+      "volume": 16.13003931110408,
       "bounds": [
         136.0,
         140.0,
@@ -30726,7 +30726,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 16.130039311104074,
+      "volume": 16.13003931110408,
       "bounds": [
         -140.0,
         -136.0,
@@ -30810,7 +30810,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 16.130039311104074,
+      "volume": 16.13003931110408,
       "bounds": [
         136.0,
         140.0,
@@ -32044,9 +32044,9 @@
       "faces": 14,
       "volume": 152.59423916359924,
       "bounds": [
-        32.0,
-        52.70436092868628,
-        -92.0,
+        31.999999999999986,
+        52.70436092868626,
+        -92.00000000000001,
         -60.131786259341744,
         50.650000000000006,
         51.300000000000004
@@ -32101,9 +32101,9 @@
       "volume": 152.59423916359924,
       "bounds": [
         101.29563907131373,
-        122.0,
-        -92.0,
-        -60.131786259341744,
+        122.00000000000003,
+        -91.99999999999999,
+        -60.13178625934173,
         50.650000000000006,
         51.300000000000004
       ],
@@ -33694,7 +33694,7 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 172.22488929690013,
+      "volume": 172.22488929690007,
       "bounds": [
         -105.0,
         -77.0,
@@ -33862,7 +33862,7 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 174.44488929690027,
+      "volume": 174.44488929690021,
       "bounds": [
         63.5,
         92.5,
@@ -33890,7 +33890,7 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 123.44486942641069,
+      "volume": 123.44486942641066,
       "bounds": [
         64.5,
         91.5,
@@ -34058,7 +34058,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 25.2961285650376,
+      "volume": 25.296128565037602,
       "bounds": [
         -87.50000010000002,
         -72.1999999,
@@ -34247,20 +34247,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInternalLead0",
-      "label": "PS3-1222 · Independent routed ACInternalLead0 study",
+      "name": "ACInternalLead001",
+      "label": "PS3-1222 · Independent routed ACInternalLead0 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 13,
-      "volume": 197.72801751342612,
+      "faces": 11,
+      "volume": 171.2811733811606,
       "bounds": [
-        -26.550000100000002,
-        121.15000009999999,
+        -139.5500001,
+        -25.449999899999998,
         81.46660540623002,
-        111.84358227615493,
-        18.774999899999997,
+        111.8,
+        12.774999900000001,
         52.350000099999995
       ],
       "state": [
@@ -34275,21 +34275,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInternalLead1",
-      "label": "PS3-1223 · Independent routed ACInternalLead1 study",
+      "name": "ACInternalLead002",
+      "label": "PS3-1223 · Independent routed ACInternalLead1 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 192.61918454809685,
+      "volume": 166.0098947721918,
       "bounds": [
-        -22.550000100000002,
-        124.55000009999999,
+        -134.5500001,
+        -21.449999899999998,
         81.29647320453336,
         111.8,
-        25.2749999,
-        53.750000099999994
+        19.2749999,
+        53.7500001
       ],
       "state": [
         "Up-to-date"
@@ -34303,20 +34303,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInternalLead2",
-      "label": "PS3-1224 · Independent routed ACInternalLead2 study",
+      "name": "ACInternalLead003",
+      "label": "PS3-1224 · Independent routed ACInternalLead2 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 201.90634570583748,
+      "volume": 173.3963923745103,
       "bounds": [
-        -18.550000100000002,
-        129.5500001,
+        -129.5500001,
+        -17.449999899999998,
         81.19755313599404,
         111.8,
-        18.7749999,
+        12.774999900000001,
         55.15000009999999
       ],
       "state": [
@@ -34331,21 +34331,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACSocketCut002",
-      "label": "PS3-1225 · Grounded AC inlet insulating shell003",
-      "type": "Part::Cut",
+      "name": "ACSocket002",
+      "label": "PS3-1225 · Grounded AC inlet insulating shell005",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 24,
-      "volume": 2170.389936711011,
+      "faces": 22,
+      "volume": 2171.035085027257,
       "bounds": [
-        111.9999999,
-        136.0000001,
-        109.4999999,
+        -146.0,
+        -122.0,
+        109.5,
         122.8,
-        13.1999999,
-        30.800000100000002
+        7.199999999999996,
+        24.8
       ],
       "state": [
         "Up-to-date"
@@ -34478,14 +34478,14 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 11592.533333333371,
+      "volume": 11592.53333333337,
       "bounds": [
         -162.15000010000006,
         -160.84999989999994,
         -128.00000010000002,
         128.0000001,
-        42.399999899999976,
-        91.85570135427595
+        42.3999999,
+        91.85570135427594
       ],
       "state": [
         "Up-to-date"
@@ -34506,10 +34506,10 @@
       "null": false,
       "solids": 1,
       "faces": 99,
-      "volume": 9816.217933486747,
+      "volume": 9816.21793348675,
       "bounds": [
-        160.8499999,
-        162.15000010000003,
+        160.84999989999997,
+        162.1500001,
         -128.0000001,
         128.0000001,
         42.3999999,
@@ -34590,7 +34590,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621742,
+      "volume": 46.00314473621745,
       "bounds": [
         -147.2,
         -142.8,
@@ -34611,8 +34611,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "CasePillar1",
-      "label": "PS3-1235 · Separate lower case fixing pillar study001",
+      "name": "CasePillar001",
+      "label": "PS3-1235 · Separate lower case fixing pillar study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -34622,8 +34622,8 @@
       "bounds": [
         -148.2,
         -141.8,
-        111.8,
-        118.2,
+        91.8,
+        98.2,
         2.5,
         26.0
       ],
@@ -34639,8 +34639,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "CaseUpperSpacer1",
-      "label": "PS3-1236 · Case-to-frame support sleeve001",
+      "name": "CaseUpperSpacer001",
+      "label": "PS3-1236 · Case-to-frame support sleeve002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -34650,8 +34650,8 @@
       "bounds": [
         -147.5,
         -142.5,
-        112.5,
-        117.5,
+        92.5,
+        97.5,
         26.8,
         36.8
       ],
@@ -34667,19 +34667,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "CaseFixing1",
-      "label": "PS3-1237 · Cross-head fastener029",
+      "name": "CaseFixing001",
+      "label": "PS3-1237 · Cross-head fastener030",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621742,
+      "volume": 46.00314473621745,
       "bounds": [
         -147.2,
         -142.8,
-        112.8,
-        117.2,
+        92.8,
+        97.2,
         4.270000000000003,
         38.6
       ],
@@ -34758,7 +34758,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621742,
+      "volume": 46.00314473621745,
       "bounds": [
         142.8,
         147.2,
@@ -34842,7 +34842,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621742,
+      "volume": 46.00314473621745,
       "bounds": [
         142.8,
         147.2,
@@ -34869,8 +34869,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 42,
-      "volume": 104480.2013468927,
+      "faces": 45,
+      "volume": 104451.73157539972,
       "bounds": [
         -146.00000000000023,
         146.00000000000023,
@@ -34897,8 +34897,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 101,
-      "volume": 14101.146519034419,
+      "faces": 104,
+      "volume": 14034.018544501747,
       "bounds": [
         -146.0000001,
         146.0,
@@ -34925,15 +34925,15 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 75,
-      "volume": 19928.06307016185,
+      "faces": 77,
+      "volume": 19926.080414308068,
       "bounds": [
-        -146.0000001,
-        146.0000001,
-        -113.5000001,
-        107.50000010000137,
-        26.2999999,
-        26.650000100000003
+        -146.0,
+        146.0,
+        -113.5,
+        107.50000000000138,
+        26.3,
+        26.650000000000002
       ],
       "state": [
         "Up-to-date"
@@ -34988,8 +34988,8 @@
         45.0,
         5.0,
         39.0,
-        -0.07000000000000674,
-        -0.019999999999993266
+        -0.07,
+        -0.02
       ],
       "state": [
         "Up-to-date"
@@ -35016,8 +35016,8 @@
         17.819106643624163,
         19.70469798657718,
         22.389261844966445,
-        -0.1030001000000043,
-        -0.08499990000000003
+        -0.10300010000000001,
+        -0.0849999
       ],
       "state": [
         "Up-to-date"
@@ -35542,7 +35542,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.013603252105761198,
+      "volume": 0.013603252105761196,
       "bounds": [
         -47.9018456375839,
         -46.78313758389262,
@@ -35626,7 +35626,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.013603252105761198,
+      "volume": 0.013603252105761196,
       "bounds": [
         46.0981543624161,
         47.21686241610738,
@@ -38678,7 +38678,7 @@
       "null": false,
       "solids": 1,
       "faces": 180,
-      "volume": 403.942586587867,
+      "volume": 403.94258658786725,
       "bounds": [
         -62.98480562080936,
         62.984805620810235,
@@ -40106,7 +40106,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04539269908170222,
+      "volume": 0.04539269908170223,
       "bounds": [
         22.825,
         23.175,
@@ -40442,7 +40442,7 @@
       "null": false,
       "solids": 1,
       "faces": 167,
-      "volume": 43548.96257268637,
+      "volume": 43548.96257268635,
       "bounds": [
         -74.40886114488325,
         74.40886114488323,
@@ -40778,7 +40778,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365602,
+      "volume": 5.191727856365601,
       "bounds": [
         7.65,
         8.35,
@@ -40806,7 +40806,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.0041149837619927675,
+      "volume": 0.004114983761992769,
       "bounds": [
         7.755725671140939,
         8.37101510067114,
@@ -40862,7 +40862,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365601,
+      "volume": 5.1917278563656,
       "bounds": [
         10.65,
         11.35,
@@ -40890,10 +40890,10 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 0.0048768915452324065,
+      "volume": 0.004876891545232408,
       "bounds": [
         10.703817014093959,
-        11.359941375167784,
+        11.359941375167786,
         -226.0000001,
         -224.94872473221477,
         31.024999899999997,
@@ -40918,7 +40918,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5708495559215374,
+      "volume": 0.5708495559215372,
       "bounds": [
         13.6,
         14.4,
@@ -40946,7 +40946,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365601,
+      "volume": 5.1917278563656,
       "bounds": [
         13.65,
         14.35,
@@ -41030,7 +41030,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365609,
+      "volume": 5.191727856365608,
       "bounds": [
         16.65,
         17.35,
@@ -41058,7 +41058,7 @@
       "null": false,
       "solids": 1,
       "faces": 16,
-      "volume": 0.005233322704882512,
+      "volume": 0.005233322704882513,
       "bounds": [
         16.669211409395974,
         17.422231543624164,
@@ -41142,7 +41142,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 13.601525393717003,
+      "volume": 13.601525393717004,
       "bounds": [
         23.6,
         26.4,
@@ -42208,7 +42208,7 @@
       "faces": 251,
       "volume": 0.11119240458534363,
       "bounds": [
-        -4.872437080536916,
+        -4.872437080536917,
         12.889576442281879,
         -247.15355704697987,
         -245.75758379261745,
@@ -42234,13 +42234,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 5169.097335529234,
+      "volume": 5169.0973355292335,
       "bounds": [
         209.6,
         230.4,
         -28.0,
-        -2.9999999999999982,
-        2.999999999999994,
+        -3.0,
+        2.999999999999999,
         13.0
       ],
       "state": [
@@ -42262,13 +42262,13 @@
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 194.39681348704602,
+      "volume": 194.3968134870462,
       "bounds": [
         211.1,
         228.9,
         -2.700000000000001,
         5.700000000000002,
-        4.6999999999999975,
+        4.699999999999999,
         11.3
       ],
       "state": [
@@ -42290,13 +42290,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 130.91832075864633,
+      "volume": 130.91832075864636,
       "bounds": [
         212.0,
         228.0,
         -2.6,
-        3.7,
-        7.349999999999998,
+        3.6999999999999997,
+        7.35,
         8.65
       ],
       "state": [
@@ -42318,13 +42318,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         212.875,
         213.375,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42346,13 +42346,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         214.125,
         214.625,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42374,13 +42374,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         215.375,
         215.875,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42402,13 +42402,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         216.625,
         217.125,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42430,13 +42430,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         217.875,
         218.375,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42458,13 +42458,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         219.125,
         219.625,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42486,13 +42486,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293848,
+      "volume": 0.4153646003293853,
       "bounds": [
         220.375,
         220.875,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42514,13 +42514,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938477,
+      "volume": 0.41536460032938527,
       "bounds": [
         221.625,
         222.125,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42542,13 +42542,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938477,
+      "volume": 0.41536460032938527,
       "bounds": [
         222.875,
         223.375,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42570,13 +42570,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938477,
+      "volume": 0.41536460032938527,
       "bounds": [
         224.125,
         224.625,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42598,13 +42598,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938477,
+      "volume": 0.41536460032938527,
       "bounds": [
         225.375,
         225.875,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42626,13 +42626,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938477,
+      "volume": 0.41536460032938527,
       "bounds": [
         226.625,
         227.125,
         -1.8,
         4.2,
-        8.709999999999997,
+        8.709999999999999,
         8.85
       ],
       "state": [
@@ -42682,7 +42682,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1111.4159265358978,
+      "volume": 1111.4159265358976,
       "bounds": [
         303.0,
         317.0,
@@ -43270,7 +43270,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.62999999999976,
+      "volume": 21.62999999999975,
       "bounds": [
         269.0,
         275.0,
@@ -43298,7 +43298,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.62999999999976,
+      "volume": 21.62999999999975,
       "bounds": [
         269.0,
         275.0,
@@ -43410,14 +43410,14 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 9.129732362439457,
+      "volume": 9.129732362439452,
       "bounds": [
         199.2,
         207.65329983228432,
         161.0,
         167.0,
         5.3,
-        5.7
+        5.700000000000001
       ],
       "state": [
         "Up-to-date"
@@ -43584,7 +43584,7 @@
         221.0,
         -240.8,
         -228.8,
-        3.7499999999999973,
+        3.75,
         8.25
       ],
       "state": [
@@ -44250,7 +44250,7 @@
       "null": false,
       "solids": 1,
       "faces": 64,
-      "volume": 2088.02443250725,
+      "volume": 2088.0244325072495,
       "bounds": [
         209.15,
         220.85,
@@ -44695,21 +44695,21 @@
       ]
     },
     {
-      "name": "RearFasciaBody",
-      "label": "PS3-0003 · Upper rear closure",
+      "name": "RearFascia001",
+      "label": "PS3-0003 · Upper rear closure002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 2414.317521601036,
+      "faces": 13,
+      "volume": 5388.607424106608,
       "bounds": [
-        -151.0,
-        151.0,
-        128.4,
-        130.4,
-        70.5,
-        74.5
+        -151.0000001,
+        151.0000001,
+        128.3999999,
+        130.4000001,
+        70.4999999,
+        80.10573970840164
       ],
       "state": [
         "Up-to-date"
@@ -44962,15 +44962,15 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 467,
-      "volume": 255138.18905635434,
+      "faces": 523,
+      "volume": 254879.7921402132,
       "bounds": [
-        -154.5,
+        -154.5000001,
         154.5,
         -123.5,
-        123.5,
-        -250.0,
-        -208.0
+        123.5000001,
+        -250.0000001,
+        -207.9999999
       ],
       "state": [
         "Up-to-date"
@@ -44985,17 +44985,17 @@
       ]
     },
     {
-      "name": "PowerTouchSurface",
-      "label": "PS3-0013 · Power capacitive-control marking plate",
+      "name": "PowerTouchSurface001",
+      "label": "PS3-0013 · Power capacitive-control marking plate001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 3.623535123275963,
+      "volume": 3.6235351232759614,
       "bounds": [
-        142.1,
-        147.9,
+        127.1,
+        132.9,
         -135.15,
         -134.85,
         260.2,
@@ -45014,17 +45014,17 @@
       ]
     },
     {
-      "name": "EjectTouchSurface",
-      "label": "PS3-0014 · Eject capacitive-control marking plate",
+      "name": "EjectTouchSurface001",
+      "label": "PS3-0014 · Eject capacitive-control marking plate001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 3.623535123275963,
+      "volume": 3.6235351232759614,
       "bounds": [
-        142.1,
-        147.9,
+        72.1,
+        77.9,
         -135.15,
         -134.85,
         254.3,
@@ -45514,7 +45514,7 @@
       "null": false,
       "solids": 1,
       "faces": 34,
-      "volume": 61.18036073760024,
+      "volume": 61.180360737600246,
       "bounds": [
         -125.55,
         -112.45,
@@ -46493,21 +46493,21 @@
       ]
     },
     {
-      "name": "HDMIShield",
-      "label": "PS3-0065 · Nineteen-contact HDMI metal shield",
+      "name": "HDMIShield002",
+      "label": "PS3-0065 · Nineteen-contact HDMI metal shield002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 179.76000000000022,
+      "volume": 252.60000000000002,
       "bounds": [
-        1.25,
-        16.75,
-        110.8,
+        -39.5,
+        -24.5,
+        110.79999999999998,
         122.8,
-        18.7,
-        25.3
+        31.174999999999997,
+        36.825
       ],
       "state": [
         "Up-to-date"
@@ -46522,21 +46522,21 @@
       ]
     },
     {
-      "name": "HDMIBack",
-      "label": "PS3-0066 · HDMI rear insulator",
+      "name": "HDMIBack003",
+      "label": "PS3-0066 · HDMI rear insulator003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 39.43965485471851,
+      "volume": 27.68909733552909,
       "bounds": [
-        2.9999999999999996,
-        15.0,
+        -37.5,
+        -26.5,
         110.95,
         111.64999999999999,
-        19.65,
-        24.349999999999998
+        32.2,
+        35.800000000000004
       ],
       "state": [
         "Up-to-date"
@@ -46551,21 +46551,21 @@
       ]
     },
     {
-      "name": "HDMITongue",
-      "label": "PS3-0067 · HDMI insulating tongue",
+      "name": "HDMITongue002",
+      "label": "PS3-0067 · HDMI insulating tongue002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 60.8344203522483,
+      "volume": 86.77575928947448,
       "bounds": [
-        3.15,
-        14.85,
+        -37.65,
+        -26.349999999999998,
         113.3,
         121.3,
-        21.675,
-        22.325
+        33.52,
+        34.480000000000004
       ],
       "state": [
         "Up-to-date"
@@ -46580,21 +46580,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_0",
-      "label": "PS3-0068 · Separate HDMI connector contact",
+      "name": "HDMIContact1_011",
+      "label": "PS3-0068 · Separate HDMI connector contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        4.005,
-        4.2749999999999995,
+        -36.650000000000006,
+        -36.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46609,21 +46609,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_1",
-      "label": "PS3-0069 · Separate HDMI connector contact001",
+      "name": "HDMIContact1_012",
+      "label": "PS3-0069 · Separate HDMI connector contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491386,
+      "volume": 0.10797939822368716,
       "bounds": [
-        5.085,
-        5.3549999999999995,
+        -35.650000000000006,
+        -35.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46638,21 +46638,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_2",
-      "label": "PS3-0070 · Separate HDMI connector contact002",
+      "name": "HDMIContact1_013",
+      "label": "PS3-0070 · Separate HDMI connector contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        6.165,
-        6.435,
+        -34.650000000000006,
+        -34.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46667,21 +46667,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_3",
-      "label": "PS3-0071 · Separate HDMI connector contact003",
+      "name": "HDMIContact1_014",
+      "label": "PS3-0071 · Separate HDMI connector contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        7.245,
-        7.515,
+        -33.650000000000006,
+        -33.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46696,21 +46696,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_4",
-      "label": "PS3-0072 · Separate HDMI connector contact004",
+      "name": "HDMIContact1_015",
+      "label": "PS3-0072 · Separate HDMI connector contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        8.325000000000001,
-        8.595,
+        -32.650000000000006,
+        -32.349999999999994,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46725,21 +46725,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_5",
-      "label": "PS3-0073 · Separate HDMI connector contact005",
+      "name": "HDMIContact1_016",
+      "label": "PS3-0073 · Separate HDMI connector contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        9.405,
-        9.674999999999999,
+        -31.65,
+        -31.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46754,21 +46754,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_6",
-      "label": "PS3-0074 · Separate HDMI connector contact006",
+      "name": "HDMIContact1_017",
+      "label": "PS3-0074 · Separate HDMI connector contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491386,
+      "volume": 0.10797939822368717,
       "bounds": [
-        10.485000000000001,
-        10.755,
+        -30.65,
+        -30.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46783,21 +46783,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_7",
-      "label": "PS3-0075 · Separate HDMI connector contact007",
+      "name": "HDMIContact1_018",
+      "label": "PS3-0075 · Separate HDMI connector contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        11.565,
-        11.834999999999999,
+        -29.65,
+        -29.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46812,21 +46812,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_8",
-      "label": "PS3-0076 · Separate HDMI connector contact008",
+      "name": "HDMIContact1_019",
+      "label": "PS3-0076 · Separate HDMI connector contact010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        12.645000000000001,
-        12.915000000000001,
+        -28.65,
+        -28.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46841,21 +46841,21 @@
       ]
     },
     {
-      "name": "HDMIContact1_9",
-      "label": "PS3-0077 · Separate HDMI connector contact009",
+      "name": "HDMIContact1_020",
+      "label": "PS3-0077 · Separate HDMI connector contact011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        13.725,
-        13.995,
+        -27.65,
+        -27.35,
         114.6,
         120.6,
-        22.38,
-        22.459999999999997
+        34.5,
+        34.56
       ],
       "state": [
         "Up-to-date"
@@ -46870,21 +46870,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_0",
-      "label": "PS3-0078 · Separate HDMI connector contact010",
+      "name": "HDMIContact_1_010",
+      "label": "PS3-0078 · Separate HDMI connector contact012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        4.545,
-        4.8149999999999995,
+        -36.150000000000006,
+        -35.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -46899,21 +46899,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_1",
-      "label": "PS3-0079 · Separate HDMI connector contact011",
+      "name": "HDMIContact_1_011",
+      "label": "PS3-0079 · Separate HDMI connector contact013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        5.625,
-        5.895,
+        -35.150000000000006,
+        -34.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -46928,21 +46928,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_2",
-      "label": "PS3-0080 · Separate HDMI connector contact012",
+      "name": "HDMIContact_1_012",
+      "label": "PS3-0080 · Separate HDMI connector contact014",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        6.705,
-        6.975,
+        -34.150000000000006,
+        -33.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -46957,21 +46957,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_3",
-      "label": "PS3-0081 · Separate HDMI connector contact013",
+      "name": "HDMIContact_1_013",
+      "label": "PS3-0081 · Separate HDMI connector contact015",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368717,
       "bounds": [
-        7.785,
-        8.055,
+        -33.150000000000006,
+        -32.849999999999994,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -46986,21 +46986,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_4",
-      "label": "PS3-0082 · Separate HDMI connector contact014",
+      "name": "HDMIContact_1_014",
+      "label": "PS3-0082 · Separate HDMI connector contact016",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        8.865,
-        9.135,
+        -32.150000000000006,
+        -31.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -47015,21 +47015,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_5",
-      "label": "PS3-0083 · Separate HDMI connector contact015",
+      "name": "HDMIContact_1_015",
+      "label": "PS3-0083 · Separate HDMI connector contact017",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368717,
       "bounds": [
-        9.945,
-        10.215,
+        -31.15,
+        -30.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -47044,21 +47044,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_6",
-      "label": "PS3-0084 · Separate HDMI connector contact016",
+      "name": "HDMIContact_1_016",
+      "label": "PS3-0084 · Separate HDMI connector contact018",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        11.025,
-        11.295,
+        -30.15,
+        -29.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -47073,21 +47073,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_7",
-      "label": "PS3-0085 · Separate HDMI connector contact017",
+      "name": "HDMIContact_1_017",
+      "label": "PS3-0085 · Separate HDMI connector contact019",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1295725309649139,
+      "volume": 0.10797939822368718,
       "bounds": [
-        12.105,
-        12.375,
+        -29.15,
+        -28.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -47102,21 +47102,21 @@
       ]
     },
     {
-      "name": "HDMIContact_1_8",
-      "label": "PS3-0086 · Separate HDMI connector contact018",
+      "name": "HDMIContact_1_018",
+      "label": "PS3-0086 · Separate HDMI connector contact020",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.12957253096491392,
+      "volume": 0.10797939822368718,
       "bounds": [
-        13.185,
-        13.455,
+        -28.15,
+        -27.85,
         114.6,
         120.6,
-        21.54,
-        21.619999999999997
+        33.44,
+        33.5
       ],
       "state": [
         "Up-to-date"
@@ -47131,21 +47131,21 @@
       ]
     },
     {
-      "name": "LANShield",
-      "label": "PS3-0087 · Ethernet folded shield",
+      "name": "LANShield001",
+      "label": "PS3-0087 · Ethernet folded shield001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 486.87417702060213,
+      "volume": 486.87417702060236,
       "bounds": [
-        25.0,
-        41.0,
+        -59.0,
+        -43.0,
         110.5,
         122.7,
-        15.0,
-        29.0
+        24.0,
+        38.0
       ],
       "state": [
         "Up-to-date"
@@ -47160,8 +47160,8 @@
       ]
     },
     {
-      "name": "LANBack",
-      "label": "PS3-0088 · Ethernet rear carrier",
+      "name": "LANBack001",
+      "label": "PS3-0088 · Ethernet rear carrier001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -47169,12 +47169,12 @@
       "faces": 10,
       "volume": 125.44209284952808,
       "bounds": [
-        25.9,
-        40.1,
+        -58.1,
+        -43.9,
         110.625,
         111.375,
-        16.1,
-        27.900000000000002
+        25.1,
+        36.900000000000006
       ],
       "state": [
         "Up-to-date"
@@ -47189,21 +47189,21 @@
       ]
     },
     {
-      "name": "LANContact0",
-      "label": "PS3-0089 · Independent Ethernet spring contact",
+      "name": "LANContact009",
+      "label": "PS3-0089 · Independent Ethernet spring contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        28.134999999999998,
-        28.485,
+        -54.745000000000005,
+        -54.394999999999996,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47218,21 +47218,21 @@
       ]
     },
     {
-      "name": "LANContact1",
-      "label": "PS3-0090 · Independent Ethernet spring contact001",
+      "name": "LANContact010",
+      "label": "PS3-0090 · Independent Ethernet spring contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        29.474999999999998,
-        29.825,
+        -53.725,
+        -53.37499999999999,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47247,21 +47247,21 @@
       ]
     },
     {
-      "name": "LANContact2",
-      "label": "PS3-0091 · Independent Ethernet spring contact002",
+      "name": "LANContact011",
+      "label": "PS3-0091 · Independent Ethernet spring contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454105,
+      "volume": 0.5773300353454067,
       "bounds": [
-        30.814999999999998,
-        31.165,
+        -52.705000000000005,
+        -52.355,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47276,21 +47276,21 @@
       ]
     },
     {
-      "name": "LANContact3",
-      "label": "PS3-0092 · Independent Ethernet spring contact003",
+      "name": "LANContact012",
+      "label": "PS3-0092 · Independent Ethernet spring contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        32.154999999999994,
-        32.505,
+        -51.685,
+        -51.334999999999994,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47305,8 +47305,8 @@
       ]
     },
     {
-      "name": "LANContact4",
-      "label": "PS3-0093 · Independent Ethernet spring contact004",
+      "name": "LANContact013",
+      "label": "PS3-0093 · Independent Ethernet spring contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -47314,12 +47314,12 @@
       "faces": 10,
       "volume": 0.5773300353454067,
       "bounds": [
-        33.495,
-        33.845000000000006,
+        -50.665000000000006,
+        -50.315,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47334,21 +47334,21 @@
       ]
     },
     {
-      "name": "LANContact5",
-      "label": "PS3-0094 · Independent Ethernet spring contact005",
+      "name": "LANContact014",
+      "label": "PS3-0094 · Independent Ethernet spring contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        34.834999999999994,
-        35.185,
+        -49.645,
+        -49.294999999999995,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47363,8 +47363,8 @@
       ]
     },
     {
-      "name": "LANContact6",
-      "label": "PS3-0095 · Independent Ethernet spring contact006",
+      "name": "LANContact015",
+      "label": "PS3-0095 · Independent Ethernet spring contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -47372,12 +47372,12 @@
       "faces": 10,
       "volume": 0.5773300353454067,
       "bounds": [
-        36.175,
-        36.525000000000006,
+        -48.62500000000001,
+        -48.275,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47392,21 +47392,21 @@
       ]
     },
     {
-      "name": "LANContact7",
-      "label": "PS3-0096 · Independent Ethernet spring contact007",
+      "name": "LANContact016",
+      "label": "PS3-0096 · Independent Ethernet spring contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5773300353454066,
+      "volume": 0.5773300353454067,
       "bounds": [
-        37.51499999999999,
-        37.865,
+        -47.605000000000004,
+        -47.254999999999995,
         113.15,
         120.65,
-        18.3,
-        18.52
+        27.3,
+        27.52
       ],
       "state": [
         "Up-to-date"
@@ -47421,21 +47421,21 @@
       ]
     },
     {
-      "name": "LANLight0",
-      "label": "PS3-0097 · Ethernet indicator lens",
+      "name": "LANLight001",
+      "label": "PS3-0097 · Ethernet indicator lens001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1.316837373908212,
+      "volume": 1.3168373739082115,
       "bounds": [
-        26.075,
-        27.525000000000002,
+        -57.925000000000004,
+        -56.475,
         122.77499999999999,
         123.425,
-        55.9,
-        57.35
+        64.9,
+        66.35000000000001
       ],
       "state": [
         "Up-to-date"
@@ -47450,8 +47450,8 @@
       ]
     },
     {
-      "name": "LANLight1",
-      "label": "PS3-0098 · Ethernet indicator lens001",
+      "name": "LANLight002",
+      "label": "PS3-0098 · Ethernet indicator lens002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -47459,12 +47459,12 @@
       "faces": 10,
       "volume": 1.3168373739082118,
       "bounds": [
-        38.475,
-        39.925000000000004,
+        -45.525,
+        -44.074999999999996,
         122.77499999999999,
         123.425,
-        55.9,
-        57.35
+        64.9,
+        66.35000000000001
       ],
       "state": [
         "Up-to-date"
@@ -47479,21 +47479,21 @@
       ]
     },
     {
-      "name": "OpticalSocket",
-      "label": "PS3-0099 · Digital optical socket body",
+      "name": "OpticalSocket001",
+      "label": "PS3-0099 · Digital optical socket body001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 672.843804786343,
+      "volume": 672.8438047863424,
       "bounds": [
-        51.4,
-        62.6,
+        -76.6,
+        -65.4,
         111.0,
         122.7,
-        16.65,
-        27.35
+        26.65,
+        37.35
       ],
       "state": [
         "Up-to-date"
@@ -47508,21 +47508,21 @@
       ]
     },
     {
-      "name": "OpticalShutter",
-      "label": "PS3-0100 · Optical connector spring shutter",
+      "name": "OpticalShutter001",
+      "label": "PS3-0100 · Optical connector spring shutter001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 20.308388049918356,
+      "volume": 20.308388049918367,
       "bounds": [
-        53.05,
-        60.95,
+        -74.95,
+        -67.05,
         122.325,
         122.675,
-        48.3,
-        55.699999999999996
+        58.3,
+        65.7
       ],
       "state": [
         "Up-to-date"
@@ -47537,21 +47537,21 @@
       ]
     },
     {
-      "name": "OpticalEmitter",
-      "label": "PS3-0101 · Optical output lens",
+      "name": "OpticalEmitter001",
+      "label": "PS3-0101 · Optical output lens001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 1.8095573684677286,
+      "volume": 1.809557368467729,
       "bounds": [
-        55.8,
-        58.2,
+        -72.2,
+        -69.8,
         112.5,
         112.9,
-        20.8,
-        23.2
+        30.8,
+        33.2
       ],
       "state": [
         "Up-to-date"
@@ -47566,21 +47566,21 @@
       ]
     },
     {
-      "name": "AVShield",
-      "label": "PS3-0102 · Original AV MULTI connector shield",
+      "name": "AVShield002",
+      "label": "PS3-0102 · Original AV MULTI connector shield002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 684.5897277652061,
+      "volume": 315.7687420727599,
       "bounds": [
-        68.5,
-        95.5,
+        -105.5,
+        -86.5,
         110.5,
-        122.9,
-        16.9,
-        27.1
+        122.90000000000002,
+        27.599999999999998,
+        35.4
       ],
       "state": [
         "Up-to-date"
@@ -47595,21 +47595,21 @@
       ]
     },
     {
-      "name": "AVBack",
-      "label": "PS3-0103 · AV MULTI rear insulator",
+      "name": "AVBack002",
+      "label": "PS3-0103 · AV MULTI rear insulator002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 115.76747779607727,
+      "volume": 71.44618134870484,
       "bounds": [
-        70.1,
-        93.9,
+        -104.75,
+        -87.25,
         110.675,
         111.325,
-        18.25,
-        25.75
+        28.35,
+        34.65
       ],
       "state": [
         "Up-to-date"
@@ -47624,21 +47624,21 @@
       ]
     },
     {
-      "name": "AVTongue",
-      "label": "PS3-0104 · AV MULTI insulating tongue",
+      "name": "AVTongue002",
+      "label": "PS3-0104 · AV MULTI insulating tongue002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 206.62701767270536,
+      "volume": 156.91023007675778,
       "bounds": [
-        71.2,
-        92.8,
-        113.05000000000001,
-        121.75,
-        21.45,
-        22.55
+        -104.2,
+        -87.8,
+        113.05,
+        121.75000000000001,
+        30.95,
+        32.05
       ],
       "state": [
         "Up-to-date"
@@ -47653,21 +47653,21 @@
       ]
     },
     {
-      "name": "AVContact_1_0",
-      "label": "PS3-0105 · Independent AV MULTI terminal",
+      "name": "AVContact_1_007",
+      "label": "PS3-0105 · Independent AV MULTI terminal002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743533,
       "bounds": [
-        73.875,
-        74.625,
+        -103.125,
+        -102.625,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47682,21 +47682,21 @@
       ]
     },
     {
-      "name": "AVContact_1_1",
-      "label": "PS3-0106 · Independent AV MULTI terminal001",
+      "name": "AVContact_1_008",
+      "label": "PS3-0106 · Independent AV MULTI terminal003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        76.975,
-        77.725,
+        -101.875,
+        -101.375,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47711,21 +47711,21 @@
       ]
     },
     {
-      "name": "AVContact_1_2",
-      "label": "PS3-0107 · Independent AV MULTI terminal002",
+      "name": "AVContact_1_009",
+      "label": "PS3-0107 · Independent AV MULTI terminal004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        80.075,
-        80.825,
+        -100.625,
+        -100.125,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47740,21 +47740,21 @@
       ]
     },
     {
-      "name": "AVContact_1_3",
-      "label": "PS3-0108 · Independent AV MULTI terminal003",
+      "name": "AVContact_1_010",
+      "label": "PS3-0108 · Independent AV MULTI terminal005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        83.175,
-        83.925,
+        -99.375,
+        -98.875,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47769,21 +47769,21 @@
       ]
     },
     {
-      "name": "AVContact_1_4",
-      "label": "PS3-0109 · Independent AV MULTI terminal004",
+      "name": "AVContact_1_011",
+      "label": "PS3-0109 · Independent AV MULTI terminal006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        86.275,
-        87.025,
+        -98.125,
+        -97.625,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47798,21 +47798,21 @@
       ]
     },
     {
-      "name": "AVContact_1_5",
-      "label": "PS3-0110 · Independent AV MULTI terminal005",
+      "name": "AVContact_1_012",
+      "label": "PS3-0110 · Independent AV MULTI terminal007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        89.375,
-        90.125,
+        -96.875,
+        -96.375,
         114.1,
         120.9,
-        21.22,
-        21.38
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47827,21 +47827,21 @@
       ]
     },
     {
-      "name": "AVContact1_0",
-      "label": "PS3-0111 · Independent AV MULTI terminal006",
+      "name": "AVContact1_007",
+      "label": "PS3-0111 · Independent AV MULTI terminal008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        73.875,
-        74.625,
+        -95.625,
+        -95.125,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47856,21 +47856,21 @@
       ]
     },
     {
-      "name": "AVContact1_1",
-      "label": "PS3-0112 · Independent AV MULTI terminal007",
+      "name": "AVContact1_008",
+      "label": "PS3-0112 · Independent AV MULTI terminal009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193197,
+      "volume": 0.4758918406743532,
       "bounds": [
-        76.975,
-        77.725,
+        -94.375,
+        -93.875,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47885,21 +47885,21 @@
       ]
     },
     {
-      "name": "AVContact1_2",
-      "label": "PS3-0113 · Independent AV MULTI terminal008",
+      "name": "AVContact1_009",
+      "label": "PS3-0113 · Independent AV MULTI terminal010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        80.075,
-        80.825,
+        -93.125,
+        -92.625,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47914,21 +47914,21 @@
       ]
     },
     {
-      "name": "AVContact1_3",
-      "label": "PS3-0114 · Independent AV MULTI terminal009",
+      "name": "AVContact1_010",
+      "label": "PS3-0114 · Independent AV MULTI terminal011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        83.175,
-        83.925,
+        -91.875,
+        -91.375,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47943,21 +47943,21 @@
       ]
     },
     {
-      "name": "AVContact1_4",
-      "label": "PS3-0115 · Independent AV MULTI terminal010",
+      "name": "AVContact1_011",
+      "label": "PS3-0115 · Independent AV MULTI terminal012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        86.275,
-        87.025,
+        -90.625,
+        -90.125,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -47972,21 +47972,21 @@
       ]
     },
     {
-      "name": "AVContact1_5",
-      "label": "PS3-0116 · Independent AV MULTI terminal011",
+      "name": "AVContact1_012",
+      "label": "PS3-0116 · Independent AV MULTI terminal013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.8157802477193196,
+      "volume": 0.4758918406743532,
       "bounds": [
-        89.375,
-        90.125,
+        -89.375,
+        -88.875,
         114.1,
         120.9,
-        22.62,
-        22.78
+        32.12,
+        32.26
       ],
       "state": [
         "Up-to-date"
@@ -48001,21 +48001,21 @@
       ]
     },
     {
-      "name": "ACBlade0",
-      "label": "PS3-0117 · Separate AC inlet blade",
+      "name": "ACBlade001",
+      "label": "PS3-0117 · Separate AC inlet blade001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248312,
+      "volume": 12.578420352248322,
       "bounds": [
-        117.9,
-        120.1,
+        -140.1,
+        -137.9,
         112.0,
         120.80000000000001,
-        19.0,
-        19.65
+        13.0,
+        13.65
       ],
       "state": [
         "Up-to-date"
@@ -48030,21 +48030,21 @@
       ]
     },
     {
-      "name": "ACBlade1",
-      "label": "PS3-0118 · Separate AC inlet blade001",
+      "name": "ACBlade002",
+      "label": "PS3-0118 · Separate AC inlet blade002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248308,
+      "volume": 12.578420352248322,
       "bounds": [
-        127.9,
-        130.1,
+        -130.1,
+        -127.9,
         112.0,
         120.80000000000001,
-        19.0,
-        19.65
+        13.0,
+        13.65
       ],
       "state": [
         "Up-to-date"
@@ -48059,21 +48059,21 @@
       ]
     },
     {
-      "name": "ACBlade2",
-      "label": "PS3-0119 · Separate AC inlet blade002",
+      "name": "ACBlade003",
+      "label": "PS3-0119 · Separate AC inlet blade003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 12.578420352248312,
+      "volume": 12.578420352248308,
       "bounds": [
-        122.9,
-        125.1,
+        -135.1,
+        -132.9,
         112.0,
         120.80000000000001,
-        25.5,
-        26.15
+        19.5,
+        20.15
       ],
       "state": [
         "Up-to-date"
@@ -48088,21 +48088,21 @@
       ]
     },
     {
-      "name": "MasterSwitch",
-      "label": "PS3-0120 · Original rear master rocker switch",
+      "name": "MasterSwitch001",
+      "label": "PS3-0120 · Original rear master rocker switch001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 572.4197867217614,
+      "volume": 572.4197867217612,
       "bounds": [
-        114.6,
-        133.4,
+        -143.4,
+        -124.6,
         120.15,
         124.65,
-        62.6,
-        69.4
+        60.0,
+        66.8
       ],
       "state": [
         "Up-to-date"
@@ -68779,7 +68779,7 @@
         39.5,
         62.5,
         152.0,
-        153.0
+        153.00000000000003
       ],
       "state": [
         "Up-to-date"
@@ -68852,17 +68852,17 @@
       ]
     },
     {
-      "name": "ControlPCBBody",
-      "label": "PS3-0836 · Original power and eject touch-control board study",
+      "name": "ControlPCB",
+      "label": "PS3-0836 · Original power and eject touch-control board study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 499.1415926535898,
+      "volume": 749.1415926535898,
       "bounds": [
-        91.0,
-        141.0,
+        65.0,
+        140.0,
         -116.0,
         -106.0,
         105.0,
@@ -68881,8 +68881,8 @@
       ]
     },
     {
-      "name": "TouchController0",
-      "label": "PS3-0837 · Touch-control sensing package study",
+      "name": "TouchController001",
+      "label": "PS3-0837 · Touch-control sensing package study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -68890,8 +68890,8 @@
       "faces": 10,
       "volume": 21.94098449493426,
       "bounds": [
-        101.5,
-        106.5,
+        72.5,
+        77.5,
         -113.0,
         -109.0,
         146.2,
@@ -68910,8 +68910,8 @@
       ]
     },
     {
-      "name": "TouchCopper0",
-      "label": "PS3-0838 · Separate capacitive sensing electrode study",
+      "name": "TouchCopper001",
+      "label": "PS3-0838 · Separate capacitive sensing electrode study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -68919,8 +68919,8 @@
       "faces": 10,
       "volume": 2.233819467105831,
       "bounds": [
-        100.5,
-        107.5,
+        71.5,
+        78.5,
         -113.0,
         -109.0,
         104.8,
@@ -68939,8 +68939,8 @@
       ]
     },
     {
-      "name": "TouchController1",
-      "label": "PS3-0839 · Touch-control sensing package study001",
+      "name": "TouchController002",
+      "label": "PS3-0839 · Touch-control sensing package study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -68948,8 +68948,8 @@
       "faces": 10,
       "volume": 21.94098449493426,
       "bounds": [
-        123.5,
-        128.5,
+        127.5,
+        132.5,
         -113.0,
         -109.0,
         146.2,
@@ -68968,17 +68968,17 @@
       ]
     },
     {
-      "name": "TouchCopper1",
-      "label": "PS3-0840 · Separate capacitive sensing electrode study001",
+      "name": "TouchCopper002",
+      "label": "PS3-0840 · Separate capacitive sensing electrode study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 2.2338194671058305,
+      "volume": 2.233819467105831,
       "bounds": [
-        122.5,
-        129.5,
+        126.5,
+        133.5,
         -113.0,
         -109.0,
         104.8,
@@ -76144,7 +76144,7 @@
         138.0,
         -103.0,
         49.0,
-        107.29999999999998,
+        107.3,
         108.5
       ],
       "state": [
@@ -77764,10 +77764,10 @@
       "faces": 14,
       "volume": 152.594239163598,
       "bounds": [
-        31.999999999999986,
-        52.70436092868626,
+        31.99999999999998,
+        52.704360928686256,
         -91.99999999999999,
-        -60.13178625934173,
+        -60.131786259341744,
         350.65,
         351.3
       ],
@@ -77820,12 +77820,12 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 152.594239163598,
+      "volume": 152.59423916359796,
       "bounds": [
-        101.2956390713137,
+        101.29563907131373,
         122.0,
-        -91.99999999999999,
-        -60.13178625934173,
+        -91.99999999999997,
+        -60.131786259341716,
         350.65,
         351.3
       ],
@@ -79473,7 +79473,7 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 172.22488929690056,
+      "volume": 172.2248892969005,
       "bounds": [
         -105.0,
         -77.0,
@@ -79647,7 +79647,7 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 174.4448892969007,
+      "volume": 174.44488929690067,
       "bounds": [
         63.5,
         92.5,
@@ -79821,7 +79821,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 25.282544904214408,
+      "volume": 25.282544904214404,
       "bounds": [
         -90.30000010000002,
         -75.19999990000001,
@@ -79879,7 +79879,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 25.309887357870426,
+      "volume": 25.309887357870423,
       "bounds": [
         -84.70000009999995,
         -69.19999990000001,
@@ -80046,20 +80046,20 @@
       ]
     },
     {
-      "name": "ACInternalLead0",
-      "label": "PS3-1222 · Independent routed ACInternalLead0 study",
+      "name": "ACInternalLead001",
+      "label": "PS3-1222 · Independent routed ACInternalLead0 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 13,
-      "volume": 197.72801751342573,
+      "faces": 11,
+      "volume": 171.28117338116044,
       "bounds": [
-        -26.550000100000002,
-        121.15000009999999,
+        -139.5500001,
+        -25.449999899999998,
         81.46660540623002,
-        111.84358227615493,
-        88.77499990000001,
+        111.8,
+        82.77499990000001,
         122.35000009999999
       ],
       "state": [
@@ -80075,20 +80075,20 @@
       ]
     },
     {
-      "name": "ACInternalLead1",
-      "label": "PS3-1223 · Independent routed ACInternalLead1 study",
+      "name": "ACInternalLead002",
+      "label": "PS3-1223 · Independent routed ACInternalLead1 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 192.61918454809657,
+      "volume": 166.00989477219198,
       "bounds": [
-        -22.550000100000002,
-        124.55000009999999,
+        -134.5500001,
+        -21.449999899999998,
         81.29647320453336,
         111.8,
-        95.27499990000001,
+        89.27499990000001,
         123.7500001
       ],
       "state": [
@@ -80104,20 +80104,20 @@
       ]
     },
     {
-      "name": "ACInternalLead2",
-      "label": "PS3-1224 · Independent routed ACInternalLead2 study",
+      "name": "ACInternalLead003",
+      "label": "PS3-1224 · Independent routed ACInternalLead2 study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 201.9063457058377,
+      "volume": 173.39639237451053,
       "bounds": [
-        -18.550000100000002,
-        129.5500001,
+        -129.5500001,
+        -17.449999899999998,
         81.19755313599404,
         111.8,
-        88.77499990000001,
+        82.77499990000001,
         125.15000009999999
       ],
       "state": [
@@ -80133,21 +80133,21 @@
       ]
     },
     {
-      "name": "ACSocketCut002",
-      "label": "PS3-1225 · Grounded AC inlet insulating shell003",
+      "name": "ACSocket002",
+      "label": "PS3-1225 · Grounded AC inlet insulating shell005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 24,
-      "volume": 2170.389936711011,
+      "faces": 22,
+      "volume": 2171.035085027257,
       "bounds": [
-        111.9999999,
-        136.0000001,
-        109.4999999,
+        -146.0,
+        -122.0,
+        109.5,
         122.8,
-        13.1999999,
-        30.800000100000002
+        7.199999999999996,
+        24.8
       ],
       "state": [
         "Up-to-date"
@@ -80292,7 +80292,7 @@
         -128.00000010000002,
         128.0000001,
         312.39999989999995,
-        361.855701354276
+        361.85570135427594
       ],
       "state": [
         "Up-to-date"
@@ -80314,10 +80314,10 @@
       "null": false,
       "solids": 1,
       "faces": 99,
-      "volume": 9816.217933486747,
+      "volume": 9816.217933486754,
       "bounds": [
-        160.8499999,
-        162.15000010000003,
+        160.84999989999997,
+        162.1500001,
         -128.0000001,
         128.0000001,
         312.39999989999995,
@@ -80423,8 +80423,8 @@
       ]
     },
     {
-      "name": "CasePillar1",
-      "label": "PS3-1235 · Separate lower case fixing pillar study001",
+      "name": "CasePillar001",
+      "label": "PS3-1235 · Separate lower case fixing pillar study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -80434,8 +80434,8 @@
       "bounds": [
         -148.2,
         -141.8,
-        111.8,
-        118.2,
+        91.8,
+        98.2,
         -137.5,
         -114.0
       ],
@@ -80452,8 +80452,8 @@
       ]
     },
     {
-      "name": "CaseUpperSpacer1",
-      "label": "PS3-1236 · Case-to-frame support sleeve001",
+      "name": "CaseUpperSpacer001",
+      "label": "PS3-1236 · Case-to-frame support sleeve002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -80463,8 +80463,8 @@
       "bounds": [
         -147.5,
         -142.5,
-        112.5,
-        117.5,
+        92.5,
+        97.5,
         26.8,
         36.8
       ],
@@ -80481,8 +80481,8 @@
       ]
     },
     {
-      "name": "CaseFixing1",
-      "label": "PS3-1237 · Cross-head fastener029",
+      "name": "CaseFixing001",
+      "label": "PS3-1237 · Cross-head fastener030",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -80492,8 +80492,8 @@
       "bounds": [
         -147.2,
         -142.8,
-        112.8,
-        117.2,
+        92.8,
+        97.2,
         114.26999999999998,
         148.6
       ],
@@ -80575,7 +80575,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621741,
+      "volume": 46.00314473621743,
       "bounds": [
         142.8,
         147.2,
@@ -80662,7 +80662,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 46.00314473621741,
+      "volume": 46.00314473621743,
       "bounds": [
         142.8,
         147.2,
@@ -80690,8 +80690,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 42,
-      "volume": 104480.2013468927,
+      "faces": 45,
+      "volume": 104451.73157539972,
       "bounds": [
         -146.00000000000023,
         146.00000000000023,
@@ -80719,8 +80719,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 101,
-      "volume": 14101.146519034332,
+      "faces": 104,
+      "volume": 14034.018544501652,
       "bounds": [
         -146.0000001,
         146.0,
@@ -80748,15 +80748,15 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 75,
-      "volume": 19928.063070161814,
+      "faces": 77,
+      "volume": 19926.080414308024,
       "bounds": [
-        -146.0000001,
-        146.0000001,
-        -113.5000001,
-        107.50000010000137,
-        -13.700000099999999,
-        -13.349999899999998
+        -146.0,
+        146.0,
+        -113.5,
+        107.50000000000138,
+        -13.7,
+        -13.349999999999998
       ],
       "state": [
         "Up-to-date"
@@ -85708,7 +85708,7 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 355.32338020179196,
+      "volume": 355.3233802017921,
       "bounds": [
         15.0,
         31.00000000000281,
@@ -86433,7 +86433,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 3.831749756613352,
+      "volume": 3.8317497566133523,
       "bounds": [
         45.260185126570484,
         48.73981487342951,
@@ -86582,7 +86582,7 @@
       "bounds": [
         -4.0,
         4.0,
-        -325.0,
+        -325.00000000000006,
         -319.0,
         82.8,
         91.0
@@ -86810,7 +86810,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365658,
+      "volume": 5.191727856365657,
       "bounds": [
         7.65,
         8.35,
@@ -86839,7 +86839,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.004114983761990594,
+      "volume": 0.004114983761990595,
       "bounds": [
         7.755725671140939,
         8.37101510067114,
@@ -86897,7 +86897,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365658,
+      "volume": 5.191727856365657,
       "bounds": [
         10.65,
         11.35,
@@ -86926,10 +86926,10 @@
       "null": false,
       "solids": 1,
       "faces": 23,
-      "volume": 0.004876891545229834,
+      "volume": 0.004876891545229836,
       "bounds": [
         10.703817014093959,
-        11.359941375167784,
+        11.359941375167786,
         -326.0000001,
         -324.94872473221477,
         331.02499989999995,
@@ -86984,7 +86984,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365658,
+      "volume": 5.191727856365657,
       "bounds": [
         13.65,
         14.35,
@@ -87013,7 +87013,7 @@
       "null": false,
       "solids": 1,
       "faces": 31,
-      "volume": 0.005016796558288708,
+      "volume": 0.005016796558288709,
       "bounds": [
         13.707969698657719,
         14.388318053020134,
@@ -87071,7 +87071,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 5.191727856365665,
+      "volume": 5.191727856365664,
       "bounds": [
         16.65,
         17.35,
@@ -87767,7 +87767,7 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 36.60466367599938,
+      "volume": 36.60466367599939,
       "bounds": [
         -4.0,
         4.0,
@@ -87883,7 +87883,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 1.1278769262668635,
+      "volume": 1.1278769262668633,
       "bounds": [
         -2.6500000999999997,
         -2.3499999000000003,
@@ -87999,7 +87999,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 1.1207523162220867,
+      "volume": 1.120752316222087,
       "bounds": [
         20.8,
         27.0,
@@ -88057,7 +88057,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 1.1207523162220867,
+      "volume": 1.120752316222087,
       "bounds": [
         20.8,
         27.0,
@@ -88289,9 +88289,9 @@
       "null": false,
       "solids": 16,
       "faces": 251,
-      "volume": 0.11119240458534552,
+      "volume": 0.11119240458534557,
       "bounds": [
-        -4.872437080536916,
+        -4.872437080536917,
         12.889576442281879,
         -347.15355704697987,
         -345.7575837926174,
@@ -88347,13 +88347,13 @@
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 194.39681348704588,
+      "volume": 194.39681348704582,
       "bounds": [
         161.1,
         178.9,
         -2.700000000000001,
         5.700000000000002,
-        4.6999999999999975,
+        4.699999999999999,
         11.3
       ],
       "state": [
@@ -88782,7 +88782,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1111.4159265358978,
+      "volume": 1111.4159265358976,
       "bounds": [
         253.0,
         267.0,
@@ -89391,7 +89391,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.62999999999976,
+      "volume": 21.62999999999975,
       "bounds": [
         219.0,
         225.0,
@@ -89420,7 +89420,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 21.62999999999976,
+      "volume": 21.62999999999975,
       "bounds": [
         219.0,
         225.0,
@@ -89536,14 +89536,14 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 9.129732362439457,
+      "volume": 9.129732362439452,
       "bounds": [
         149.2,
         157.65329983228432,
         161.0,
         167.0,
         5.3,
-        5.7
+        5.700000000000001
       ],
       "state": [
         "Up-to-date"
@@ -89716,7 +89716,7 @@
         171.0,
         -240.8,
         -228.8,
-        3.7499999999999973,
+        3.75,
         8.25
       ],
       "state": [
@@ -89739,7 +89739,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 23.10226325452878,
+      "volume": 23.102263254528776,
       "bounds": [
         159.6,
         170.4,
@@ -90406,7 +90406,7 @@
       "null": false,
       "solids": 1,
       "faces": 64,
-      "volume": 2088.02443250725,
+      "volume": 2088.0244325072495,
       "bounds": [
         159.15,
         170.85,
@@ -98798,7 +98798,7 @@
     ]
   },
   "fidelity": "Approximate original enclosure and early-family internal structure study",
-  "source_digest": "ac1d27e009db2ecb0419bc421fdca0e48f1d54ebf6b33a11150c42fb1181eb85",
+  "source_digest": "52f31db35dcf74d3fdd53159259b54f6f8719dbd542ed585d6f7ecbffb95de0a",
   "main_step_file": "PlayStation3_Console.step",
   "envelope_groups": [
     "Body",

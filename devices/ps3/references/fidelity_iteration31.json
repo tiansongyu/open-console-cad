@@ -1,0 +1,87 @@
+{
+  "device": "ps3",
+  "model": "CECHA00 original Japanese 60 GB",
+  "iteration": 31,
+  "date": "2026-11-08",
+  "sources": [
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps3-docs/JA_PS3-00-1.0_2_WEB.pdf",
+      "page": 4,
+      "role": "Sony original CECHA00 front/rear layout, control separation, connector order and side",
+      "sha256": "124fa6e254b2c5407b2f0dd53f2b7d50ae3bd88022d29a92f7b7edfaf49cd0e5"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Sony-PlayStation-3-CECHA01-Console-BR.jpg",
+      "role": "Evan-Amos firsthand photograph, 2016-08-19, CECHA01 same launch shell family; confirms rear vent pattern and relative interface heights, not Japanese labels",
+      "sha256": "eef3c8eacd3c065c773959f0b4896da30db9f4c8a9f65a7734b09806f8873618"
+    },
+    {
+      "url": "https://psx-spx.consoledev.net/pinouts/#av-multi-out-audiovideo-port",
+      "role": "Original reverse-engineering AV MULTI twelve-position single-row topology, consistent with the photograph; compatible family reference only"
+    },
+    {
+      "url": "https://www.fit-foxconn.com/w73/fit/image/Products/Drawing/Drawing/QJ51191-WFD6-4F_301-0000-2217_A.pdf",
+      "role": "Manufacturer compatible HDMI Type A interface drawing; 19 positions, 15 x 5.65 mm sleeve; not identified as Sony OEM connector"
+    },
+    {
+      "url": "https://www.te.com/en/product-1888068-1.html",
+      "role": "Manufacturer eight-position RJ45 interface, nominal 1.02 mm contact pitch; not identified as Sony OEM part"
+    }
+  ],
+  "changes": [
+    "Rear HDMI, LAN, optical, AV MULTI and AC moved from the incorrect side to negative model X, matching the right side of a rear view.",
+    "Data interface heights separated from the lower AC inlet; native shell cutters and master switch follow.",
+    "Two six-column horizontal vent banks replace the two-row vertical vent bank; left outer column omits two lower slots.",
+    "Power and eject touch positions separated along X; sensing packages/electrodes and illustrative board envelope follow.",
+    "AV MULTI changes from 6+6 contacts to twelve in one row; sleeve and tongue reduced to match existing accessory plug.",
+    "HDMI Type A sleeve and nominal pitch updated; Ethernet spring pitch reduced from 1.34 to 1.02 mm.",
+    "Three AC harness routes and existing board/shield cut tools follow relocated inlet.",
+    "Rear closure skirt extended to the hood underside to mask the former open gap.",
+    "One illustrative rear fastening stack and its three board/shield clearances move inward to avoid the relocated AC inlet; upper-shield control-board opening follows separated sensors."
+  ],
+  "estimated_dimensions": {
+    "rear_centres_xz_mm": {
+      "HDMI": [
+        -32,
+        34
+      ],
+      "LAN": [
+        -51,
+        31
+      ],
+      "OpticalAudio": [
+        -71,
+        32
+      ],
+      "AVMulti": [
+        -96,
+        31.5
+      ],
+      "ACInlet": [
+        -134,
+        16
+      ]
+    },
+    "touch_x_mm": {
+      "Power": 130,
+      "Eject": 75
+    },
+    "AV_pitch_mm": 1.25,
+    "basis": "Centre coordinates are photo/manual fits calibrated by the published body envelope. AV pitch follows the existing study plug; contact thickness, depth, shell profiles, vent sizes and control board are estimated.",
+    "rear_fixing_stack_xy_mm": [
+      -145,
+      95
+    ]
+  },
+  "existing_part_ids_and_numbers_preserved": true,
+  "factory_match_verified": false,
+  "full_source_rebuild_executed": false,
+  "cad_execution_verified": true,
+  "remaining_limitations": [
+    "No factory shell, motherboard, optical-drive or controller dimensional CAD verified.",
+    "Rear photograph depicts CECHA01; local labels and regional markings are not copied to the CECHA00 study.",
+    "Accessory AV plug models the twelve-position compatible envelope; original composite cable population and electrical wiring are not reproduced.",
+    "Local casing curvature, graphics, internal electronics and cable lengths remain approximate."
+  ],
+  "validated_source_sha256": "f8c0ec66d5eef59665d8018729907fe89e7bbff4c0ea522f3e6c1b2770b5dfc4"
+}

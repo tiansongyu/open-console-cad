@@ -47,7 +47,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |
 | 19 | [Sony PlayStation · SCPH-1000 · 初代日版灰色](../devices/ps1/README.md) | 25 | 929 | 待开始 |
 | 20 | [Sony PlayStation 2 · SCPH-10000 · 初代日版黑色](../devices/ps2/README.md) | 34 | 1,352 | 待开始 |
-| 21 | [Sony PlayStation 3 · CECHA00 · 日本原版 60 GB](../devices/ps3/README.md) | 30 | 1,592 | 待开始 |
+| 21 | [Sony PlayStation 3 · CECHA00 · 日本原版 60 GB](../devices/ps3/README.md) | 30 | 1,592 | 第 31 轮已验证 |
 | 22 | [Sony PlayStation 4 · CUH-1000A · 初代黑色](../devices/ps4/README.md) | 29 | 1,039 | 待开始 |
 | 23 | [Sony PlayStation 5 · CFI-1000A 系列 · 原版光驱](../devices/ps5/README.md) | 34 | 1,635 | 待开始 |
 | 24 | [Microsoft Xbox · Original Black v1.0 · 2001 · Duke](../devices/xbox/README.md) | 18 | 978 | 待开始 |

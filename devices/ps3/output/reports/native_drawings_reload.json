@@ -1,8 +1,51 @@
 {
-  "passed": true,
+  "source_sha256": "f8c0ec66d5eef59665d8018729907fe89e7bbff4c0ea522f3e6c1b2770b5dfc4",
+  "drawings_sha256": "add402060f5caad0458305a4a16c3bd78076543cf571727ec3cb30b760850c49",
   "pages": 12,
-  "dimension_count": 7,
-  "open_macro_passed": true,
-  "reloaded_file": "devices/ps3/output/PlayStation3_Drawings.FCStd",
-  "source_sha256": "3f37ef547290b608128e8a9588fd9ac70291c838e3ce5d81b53e31f06bb8a95d"
+  "dimensions": 7,
+  "checks": [
+    {
+      "dimension": "Dimension01_1",
+      "expected_mm": 325.0000002000002,
+      "measured_mm": 325.0000002000001,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension01_2",
+      "expected_mm": 274.00000020000004,
+      "measured_mm": 274.00000020000004,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension03_1",
+      "expected_mm": 148.81772228976646,
+      "measured_mm": 148.8177222897665,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension03_2",
+      "expected_mm": 96.41901033837942,
+      "measured_mm": 96.41901033837942,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension07_1",
+      "expected_mm": 292.0000000000005,
+      "measured_mm": 292.00000000000045,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension07_2",
+      "expected_mm": 224.0000000000002,
+      "measured_mm": 224.0000000000002,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension08_1",
+      "expected_mm": 128.0,
+      "measured_mm": 128.0,
+      "passed": true
+    }
+  ],
+  "passed": true
 }

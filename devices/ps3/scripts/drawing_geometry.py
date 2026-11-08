@@ -16,7 +16,7 @@ s=d.Sheet(1,'原版 CECHA00 与拱形亮面上盖',['选择日本首发 60 GB CE
 v=s.view_fit('ConsoleIsometric',body,(17,28,186,154),(.4,-1.3,.9));caption(s,v,'原版横置主机',210)
 v=s.view_fit('ConsoleTop',body,(230,35,151,142),(0,0,1));d.dimension_box(s,v,['GlossCrown'],'x',20,published=True);d.dimension_box(s,v,body,'y',215);caption(s,v,'参考包络与模型深度',210);s.save()
 
-s=d.Sheet(2,'四 USB、读卡器与原版后部接口',['前部四组 USB 与三格式读卡器分别建立金属屏蔽、绝缘舌和独立接点。','后部保留 AV MULTI、HDMI、LAN、光纤音频与接地 AC 插座；内部端子均为非功能性近似。'])
+s=d.Sheet(2,'四 USB、读卡器与原版后部接口',['前部四组 USB 与三格式读卡器分别建立金属屏蔽、绝缘舌和独立接点。','后排接口按官方图移至正确侧别，并校正相对高度与两组横向风口；局部坐标为图像拟合。'])
 v=s.view_fit('ConsoleFront',body,(20,27,176,73),(0,-1,0),up);caption(s,v,'前置盘口、控制与读卡区域',118)
 v=s.view_fit('ConsoleRear',body,(221,27,165,73),(0,1,0),up);caption(s,v,'原版后部连接口',118)
 v=s.view_fit('FrontIO',without(d.keys_for(['FrontIO']),'CardReaderFlap','DiscBrush'),(26,142,155,57),(.2,-.7,1.5),up);caption(s,v,'USB 与三格式读卡板',212)
@@ -69,10 +69,10 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,213,f"合计 {M['physical_components']} 个组件条目 / {M['solids']} 个实体 · COMPONENTS.csv",3.5,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'版本资料、近似边界与重建入口',['图册选择 CECHA00 原版 60 GB PS3 与早期 SIXAXIS；外观和原配套装以 Sony 原版手册为依据。','图纸来自当前三维实体，修改后须同步更新投影、尺寸、组件清单、检查报告及网页网格。'])
-sections=[(16,'资料与版本',['Sony 日本原版手册及快速参考给出主体包络与套装清单。','Sony 维修资料与 iFixit 原版拆解提供机构及 COK-001 布局依据。','SIXAXIS 同代拆解用于无振动结构；不宣称精确制造尺寸。']),
+sections=[(16,'资料与版本',['Sony 日本原版手册及快速参考给出主体包络与套装清单。','第 31 轮：官方正背视图、同代实机后视照片与兼容接口资料。','SIXAXIS 同代拆解用于无振动结构；不宣称精确制造尺寸。']),
  (67,'近似与内容边界',['325 × 274 × 98 mm 主体参考包络不含最大突出部。','曲率、壁厚、元件、孔位、线束与传动间隙均按学习用途近似。','不复现制造公差、生产电路、游戏数据或实际电气功能。']),
- (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'源码重建、严格实体、装配求交与 STEP 回读分别保留报告。','图册字体、逐页视觉、模型尺寸与原生图纸引用随交付检查。']),
- (169,'继续修改的入口',['资料：references/SOURCES.md；清单：output/COMPONENTS.csv。','源码：tools/cadlib/ps3.py；逐轮入口：scripts/。','检查：output/reports/；修改后同步 CAD、图纸及网页。'])]
+ (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'本轮保存实体检查与历史源码重建报告分别标记适用版本。','图册字体、逐页视觉、模型尺寸与原生图纸引用随交付检查。']),
+ (169,'继续修改的入口',['资料：references/fidelity_iteration31.json 与 SOURCES.md。','源码：tools/cadlib/ps3.py；逐轮入口：scripts/。','检查：output/reports/；修改后同步 CAD、图纸及网页。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)

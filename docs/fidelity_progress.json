@@ -413,7 +413,8 @@
           "JoyLHapticCoil",
           "JoyRHapticCoil"
         ]
-      }
+      },
+      "last_pushed_commit": "037a206"
     },
     {
       "order": 7,
@@ -1171,8 +1172,8 @@
       "order": 21,
       "device": "ps3",
       "model": "CECHA00 · 日本原版 60 GB",
-      "status": "pending",
-      "current_step": null,
+      "status": "completed",
+      "current_step": "validated_iteration_31",
       "baseline": {
         "iterations": 30,
         "physical_components": 1592,
@@ -1200,11 +1201,25 @@
           "Schematic internal layout": 1433
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/ps3/references/fidelity_iteration31.json"
+      ],
+      "changes": [
+        "Corrected original rear interface side, height and 52 horizontal ventilation slots",
+        "Separated POWER/EJECT positions and corrected twelve-contact single-row AV MULTI OUT",
+        "Aligned HDMI/LAN pitches and closed unintended shell gap with corresponding internal clearances"
+      ],
+      "validation": {
+        "report": "devices/ps3/output/reports/fidelity_delivery.json",
+        "source_sha256": "f8c0ec66d5eef59665d8018729907fe89e7bbff4c0ea522f3e6c1b2770b5dfc4",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Port and touch locations, vent sizes, shell closure and shifted mounting stack are photograph-guided construction estimates.",
+        "Manufacturer references establish compatible interface geometry, not identified Sony OEM part numbers.",
+        "Fine shell curves, graphic marks, controller geometry and internal circuits retain study approximations."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "b73fca35dddd7c843fb3e79a403fb4b864b01cced4ef7d1060186b700c93a679",
