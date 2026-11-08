@@ -1,8 +1,8 @@
 {
   "project": "Nintendo Switch standard HAC-001 study",
-  "design_iterations": 18,
+  "design_iterations": 19,
   "physical_components": 654,
-  "solids": 835,
+  "solids": 834,
   "assemblies": {
     "Display": 3,
     "Tablet": 96,
@@ -41,25 +41,25 @@
     "Switch_Exploded.step"
   ],
   "views": {
-    "front": "previews/final_front.png",
-    "back": "previews/final_back.png",
-    "hero": "previews/final_hero.png",
-    "hero_back": "previews/final_hero_back.png",
-    "top": "previews/final_top.png",
-    "bottom": "previews/final_bottom.png",
-    "internal": "previews/final_internal.png",
-    "cooling": "previews/final_cooling.png",
-    "usb_detail": "previews/final_usb_detail.png",
-    "dock": "previews/final_dock.png",
-    "dock_open": "previews/final_dock_open.png",
-    "grip": "previews/final_grip.png",
-    "straps": "previews/final_straps.png",
-    "exploded_handheld": "previews/final_exploded_handheld.png",
-    "exploded_tablet": "previews/final_exploded_tablet.png",
-    "exploded_joy_left": "previews/final_exploded_joy_left.png",
-    "exploded_joy_right": "previews/final_exploded_joy_right.png",
-    "exploded_dock": "previews/final_exploded_dock.png",
-    "exploded_grip": "previews/final_exploded_grip.png"
+    "front": "devices/switch/output/previews/final_front.png",
+    "back": "devices/switch/output/previews/final_back.png",
+    "hero": "devices/switch/output/previews/final_hero.png",
+    "hero_back": "devices/switch/output/previews/final_hero_back.png",
+    "top": "devices/switch/output/previews/final_top.png",
+    "bottom": "devices/switch/output/previews/final_bottom.png",
+    "internal": "devices/switch/output/previews/final_internal.png",
+    "cooling": "devices/switch/output/previews/final_cooling.png",
+    "usb_detail": "devices/switch/output/previews/final_usb_detail.png",
+    "dock": "devices/switch/output/previews/final_dock.png",
+    "dock_open": "devices/switch/output/previews/final_dock_open.png",
+    "grip": "devices/switch/output/previews/final_grip.png",
+    "straps": "devices/switch/output/previews/final_straps.png",
+    "exploded_handheld": "devices/switch/output/previews/final_exploded_handheld.png",
+    "exploded_tablet": "devices/switch/output/previews/final_exploded_tablet.png",
+    "exploded_joy_left": "devices/switch/output/previews/final_exploded_joy_left.png",
+    "exploded_joy_right": "devices/switch/output/previews/final_exploded_joy_right.png",
+    "exploded_dock": "devices/switch/output/previews/final_exploded_dock.png",
+    "exploded_grip": "devices/switch/output/previews/final_exploded_grip.png"
   },
   "objects": [
     {
@@ -2061,21 +2061,21 @@
       "fidelity": "Approximate exterior detail; published envelope dimensions"
     },
     {
-      "name": "MicroSDCageRefined",
-      "label": "SW-0075 · microSD 卡座金属屏蔽",
-      "type": "Part::Cut",
+      "name": "MicroSDCage002",
+      "label": "SW-0075 · microSD 卡座金属屏蔽002",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 85.26790892654265,
+      "volume": 96.27019662783928,
       "bounds": [
         58.3,
         71.7,
         -45.9,
         -32.1,
         1.7,
-        2.9
+        3.2
       ],
       "state": [
         "Up-to-date"
@@ -2088,21 +2088,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDCard",
-      "label": "SW-0076 · microSD 卡片示意",
+      "name": "MicroSDCard002",
+      "label": "SW-0076 · microSD 卡片示意002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 111.28710795723909,
+      "faces": 87,
+      "volume": 156.1647746903511,
       "bounds": [
-        59.55,
-        70.45,
-        -46.2,
-        -31.4,
-        1.97,
-        2.66
+        59.5,
+        70.5,
+        -46.3,
+        -31.299999999999997,
+        1.96,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2115,21 +2115,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad0",
-      "label": "SW-0077 · microSD 镀金触点",
+      "name": "MicroSDPad009",
+      "label": "SW-0077 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737225,
+      "volume": 0.05096566370614369,
       "bounds": [
-        61.15,
-        61.85,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        60.809999999999995,
+        61.49,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2142,21 +2142,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad1",
-      "label": "SW-0078 · microSD 镀金触点",
+      "name": "MicroSDPad010",
+      "label": "SW-0078 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737225,
+      "volume": 0.05096566370614369,
       "bounds": [
-        62.15,
-        62.85,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        61.91,
+        62.59,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2169,21 +2169,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad2",
-      "label": "SW-0079 · microSD 镀金触点",
+      "name": "MicroSDPad011",
+      "label": "SW-0079 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737225,
+      "volume": 0.0509656637061437,
       "bounds": [
-        63.15,
-        63.85,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        63.01,
+        63.690000000000005,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2196,21 +2196,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad3",
-      "label": "SW-0080 · microSD 镀金触点",
+      "name": "MicroSDPad012",
+      "label": "SW-0080 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737185,
+      "volume": 0.0509656637061437,
       "bounds": [
-        64.14999999999999,
-        64.85000000000001,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        64.11,
+        64.79,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2223,21 +2223,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad4",
-      "label": "SW-0081 · microSD 镀金触点",
+      "name": "MicroSDPad013",
+      "label": "SW-0081 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737185,
+      "volume": 0.0509656637061437,
       "bounds": [
-        65.14999999999999,
-        65.85000000000001,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        65.21,
+        65.89,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2250,21 +2250,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad5",
-      "label": "SW-0082 · microSD 镀金触点",
+      "name": "MicroSDPad014",
+      "label": "SW-0082 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737185,
+      "volume": 0.05096566370614369,
       "bounds": [
-        66.14999999999999,
-        66.85000000000001,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        66.31,
+        66.99000000000001,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2277,21 +2277,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad6",
-      "label": "SW-0083 · microSD 镀金触点",
+      "name": "MicroSDPad015",
+      "label": "SW-0083 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737185,
+      "volume": 0.0509656637061437,
       "bounds": [
-        67.14999999999999,
-        67.85000000000001,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        67.41,
+        68.09,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2304,21 +2304,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad7",
-      "label": "SW-0084 · microSD 镀金触点",
+      "name": "MicroSDPad016",
+      "label": "SW-0084 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737185,
+      "volume": 0.0509656637061437,
       "bounds": [
-        68.14999999999999,
-        68.85000000000001,
-        -34.5,
-        -31.5,
-        2.67,
-        2.6999999999999997
+        68.50999999999999,
+        69.19,
+        -34.9,
+        -31.9,
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -5247,16 +5247,16 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "TegraMark",
-      "label": "SW-0193 · TEGRA",
+      "name": "TegraMark001",
+      "label": "SW-0193 · TEGRA001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 5,
-      "faces": 86,
-      "volume": 0.09200740767758099,
+      "solids": 4,
+      "faces": 83,
+      "volume": 0.09200715996927038,
       "bounds": [
-        43.64375838926175,
+        43.64375828926175,
         54.00906040268456,
         -5.04510077114094,
         -2.7063086248322152,
@@ -5271,7 +5271,7 @@
       "assembly": "TabletInternal",
       "layer": -1,
       "material": "white",
-      "fidelity": "Approximate exterior detail; published envelope dimensions"
+      "fidelity": "Schematic internal layout"
     },
     {
       "name": "RAM1Package",
@@ -8898,8 +8898,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 402.0496231798695,
+      "faces": 23,
+      "volume": 402.0496211049302,
       "bounds": [
         -81.5000001,
         -64.5,
@@ -8979,8 +8979,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 402.0496233431279,
+      "faces": 23,
+      "volume": 402.04962123610363,
       "bounds": [
         64.5,
         81.5000001,
@@ -10107,21 +10107,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "JoyLHapticCoil",
-      "label": "SW-0373 · HD Rumble 连续铜绕组",
+      "name": "JoyLHapticCoil001",
+      "label": "SW-0373 · HD Rumble 连续铜绕组001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 11.995319502823723,
+      "faces": 32,
+      "volume": 13.936499007582142,
       "bounds": [
         -107.10493652284279,
-        -92.8950634771573,
-        -33.80524044658002,
-        -30.394759553491223,
-        2.0949888522589517,
-        5.505011147740871
+        -92.89506347715724,
+        -33.80522634406577,
+        -30.3947736559388,
+        2.0949998990765164,
+        5.505000100000292
       ],
       "state": [
         "Up-to-date"
@@ -11268,21 +11268,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "JoyRHapticCoil",
-      "label": "SW-0416 · HD Rumble 连续铜绕组",
+      "name": "JoyRHapticCoil001",
+      "label": "SW-0416 · HD Rumble 连续铜绕组001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 11.995319502823723,
+      "faces": 32,
+      "volume": 13.936499007582139,
       "bounds": [
         98.89506347715721,
-        113.1049365228427,
-        -29.805240446580022,
-        -26.394759553491223,
-        2.0949888522589517,
-        5.505011147740871
+        113.10493652284276,
+        -29.805226344065776,
+        -26.3947736559388,
+        2.0949998990765164,
+        5.505000100000292
       ],
       "state": [
         "Up-to-date"
@@ -18107,7 +18107,7 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 0.010218104049367247,
+      "volume": 0.010218104049367249,
       "bounds": [
         -55.085968959731545,
         -53.23072567114094,
@@ -18397,14 +18397,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 17.254980686354987,
+      "volume": 17.254980686354983,
       "bounds": [
         -3.35,
         3.35,
         -50.1,
         -46.15,
         6.57,
-        7.23
+        7.230000000000001
       ],
       "state": [
         "Up-to-date"
@@ -18426,14 +18426,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176159,
       "bounds": [
         -2.865,
         -2.635,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18455,14 +18455,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176149,
+      "volume": 0.04131920337176159,
       "bounds": [
         -2.365,
         -2.135,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18484,14 +18484,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176157,
       "bounds": [
         -1.865,
         -1.635,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18513,14 +18513,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176158,
       "bounds": [
         -1.365,
         -1.135,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18542,14 +18542,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176146,
+      "volume": 0.04131920337176157,
       "bounds": [
         -0.865,
         -0.635,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18571,14 +18571,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176158,
       "bounds": [
         -0.365,
         -0.135,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18600,14 +18600,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.041319203371761586,
       "bounds": [
         0.135,
         0.365,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18629,14 +18629,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.041319203371761586,
       "bounds": [
         0.635,
         0.865,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18658,14 +18658,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176158,
       "bounds": [
         1.135,
         1.365,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18687,14 +18687,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176146,
+      "volume": 0.041319203371761586,
       "bounds": [
         1.635,
         1.865,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18716,14 +18716,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176159,
       "bounds": [
         2.135,
         2.365,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18745,14 +18745,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176159,
       "bounds": [
         2.635,
         2.865,
         -50.02,
         -47.220000000000006,
         6.4875,
-        6.552499999999999
+        6.5525
       ],
       "state": [
         "Up-to-date"
@@ -18774,14 +18774,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176159,
       "bounds": [
         -2.865,
         -2.635,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18803,14 +18803,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176158,
       "bounds": [
         -2.365,
         -2.135,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18832,14 +18832,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176146,
+      "volume": 0.04131920337176158,
       "bounds": [
         -1.865,
         -1.635,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18861,14 +18861,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.041319203371761475,
+      "volume": 0.04131920337176158,
       "bounds": [
         -1.365,
         -1.135,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18890,14 +18890,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176146,
+      "volume": 0.04131920337176157,
       "bounds": [
         -0.865,
         -0.635,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18919,14 +18919,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176157,
       "bounds": [
         -0.365,
         -0.135,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18948,14 +18948,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176157,
       "bounds": [
         0.135,
         0.365,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -18977,14 +18977,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176157,
       "bounds": [
         0.635,
         0.865,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -19006,14 +19006,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176158,
       "bounds": [
         1.135,
         1.365,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -19035,14 +19035,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176147,
+      "volume": 0.04131920337176157,
       "bounds": [
         1.635,
         1.865,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -19064,14 +19064,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.041319203371761586,
       "bounds": [
         2.135,
         2.365,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -19093,14 +19093,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.04131920337176148,
+      "volume": 0.04131920337176159,
       "bounds": [
         2.635,
         2.865,
         -50.02,
         -47.220000000000006,
         7.2475000000000005,
-        7.3125
+        7.312500000000001
       ],
       "state": [
         "Up-to-date"
@@ -19818,7 +19818,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 15.56219336882238,
+      "volume": 15.56219336882235,
       "bounds": [
         54.3,
         75.8,
@@ -19869,21 +19869,21 @@
       ]
     },
     {
-      "name": "MicroSDCageRefined",
-      "label": "SW-0075 · microSD 卡座金属屏蔽",
+      "name": "MicroSDCage002",
+      "label": "SW-0075 · microSD 卡座金属屏蔽002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 85.26790892654287,
+      "volume": 96.27019662783925,
       "bounds": [
         58.3,
         71.7,
         -45.9,
         -32.1,
         -118.3,
-        -117.1
+        -116.8
       ],
       "state": [
         "Up-to-date"
@@ -19898,21 +19898,21 @@
       ]
     },
     {
-      "name": "MicroSDCard",
-      "label": "SW-0076 · microSD 卡片示意",
+      "name": "MicroSDCard002",
+      "label": "SW-0076 · microSD 卡片示意002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 111.28710795723894,
+      "faces": 87,
+      "volume": 156.16477469035104,
       "bounds": [
-        59.55,
-        70.45,
-        -46.2,
-        -31.4,
-        -118.03,
-        -117.34
+        59.5,
+        70.5,
+        -46.3,
+        -31.299999999999997,
+        -118.04,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -19927,21 +19927,21 @@
       ]
     },
     {
-      "name": "MicroSDPad0",
-      "label": "SW-0077 · microSD 镀金触点",
+      "name": "MicroSDPad009",
+      "label": "SW-0077 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737318,
+      "volume": 0.05096566370614762,
       "bounds": [
-        61.15,
-        61.85,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        60.809999999999995,
+        61.49,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -19956,21 +19956,21 @@
       ]
     },
     {
-      "name": "MicroSDPad1",
-      "label": "SW-0078 · microSD 镀金触点",
+      "name": "MicroSDPad010",
+      "label": "SW-0078 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737318,
+      "volume": 0.050965663706147614,
       "bounds": [
-        62.15,
-        62.85,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        61.91,
+        62.59,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -19985,21 +19985,21 @@
       ]
     },
     {
-      "name": "MicroSDPad2",
-      "label": "SW-0079 · microSD 镀金触点",
+      "name": "MicroSDPad011",
+      "label": "SW-0079 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737318,
+      "volume": 0.05096566370614762,
       "bounds": [
-        63.15,
-        63.85,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        63.01,
+        63.690000000000005,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -20014,21 +20014,21 @@
       ]
     },
     {
-      "name": "MicroSDPad3",
-      "label": "SW-0080 · microSD 镀金触点",
+      "name": "MicroSDPad012",
+      "label": "SW-0080 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737278,
+      "volume": 0.05096566370614762,
       "bounds": [
-        64.14999999999999,
-        64.85000000000001,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        64.11,
+        64.79,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -20043,21 +20043,21 @@
       ]
     },
     {
-      "name": "MicroSDPad4",
-      "label": "SW-0081 · microSD 镀金触点",
+      "name": "MicroSDPad013",
+      "label": "SW-0081 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737278,
+      "volume": 0.05096566370614762,
       "bounds": [
-        65.14999999999999,
-        65.85000000000001,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        65.21,
+        65.89,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -20072,21 +20072,21 @@
       ]
     },
     {
-      "name": "MicroSDPad5",
-      "label": "SW-0082 · microSD 镀金触点",
+      "name": "MicroSDPad014",
+      "label": "SW-0082 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737278,
+      "volume": 0.05096566370614762,
       "bounds": [
-        66.14999999999999,
-        66.85000000000001,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        66.31,
+        66.99000000000001,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -20101,21 +20101,21 @@
       ]
     },
     {
-      "name": "MicroSDPad6",
-      "label": "SW-0083 · microSD 镀金触点",
+      "name": "MicroSDPad015",
+      "label": "SW-0083 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737278,
+      "volume": 0.05096566370614762,
       "bounds": [
-        67.14999999999999,
-        67.85000000000001,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        67.41,
+        68.09,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -20130,21 +20130,21 @@
       ]
     },
     {
-      "name": "MicroSDPad7",
-      "label": "SW-0084 · microSD 镀金触点",
+      "name": "MicroSDPad016",
+      "label": "SW-0084 · microSD UHS-I card pad ",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06295879644737278,
+      "volume": 0.05096566370614762,
       "bounds": [
-        68.14999999999999,
-        68.85000000000001,
-        -34.5,
-        -31.5,
-        -117.33,
-        -117.3
+        68.50999999999999,
+        69.19,
+        -34.9,
+        -31.9,
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -21558,7 +21558,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 0.05148000000000072,
+      "volume": 0.051480000000000706,
       "bounds": [
         -252.29999999999998,
         -250.1,
@@ -22341,7 +22341,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 17.255197649841914,
+      "volume": 17.255197649841936,
       "bounds": [
         -266.5,
         -253.5,
@@ -22747,7 +22747,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 17.255197649841914,
+      "volume": 17.255197649841936,
       "bounds": [
         253.5,
         266.5,
@@ -23291,16 +23291,16 @@
       ]
     },
     {
-      "name": "TegraMark",
-      "label": "SW-0193 · TEGRA",
+      "name": "TegraMark001",
+      "label": "SW-0193 · TEGRA001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 5,
-      "faces": 86,
-      "volume": 0.09200740767758324,
+      "solids": 4,
+      "faces": 83,
+      "volume": 0.0920071599692746,
       "bounds": [
-        43.64375838926175,
+        43.64375828926175,
         54.00906040268456,
         -5.04510077114094,
         -2.7063086248322152,
@@ -26024,12 +26024,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999979,
+      "volume": 10.063149999999974,
       "bounds": [
         21.805456090131088,
         29.908730895213004,
-        24.319977130022856,
-        28.828687561938974,
+        24.31997713002286,
+        28.828687561938978,
         -346.25,
         -342.85
       ],
@@ -26053,11 +26053,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999988,
+      "volume": 10.06314999999997,
       "bounds": [
         21.233428289111416,
-        28.037753112603703,
-        25.55,
+        28.0377531126037,
+        25.549999999999997,
         31.91015969889343,
         -346.25,
         -342.85
@@ -26082,12 +26082,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999982,
+      "volume": 10.063149999999979,
       "bounds": [
         20.37289934625983,
         25.41457069611991,
-        26.606244584051396,
-        34.384419177103425,
+        26.606244584051392,
+        34.38441917710342,
         -346.25,
         -342.85
       ],
@@ -26111,7 +26111,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999993,
+      "volume": 10.063149999999972,
       "bounds": [
         19.282512886940356,
         22.21794919243112,
@@ -26140,11 +26140,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999986,
+      "volume": 10.06314999999997,
       "bounds": [
         18.036576946406793,
-        18.665733074346907,
-        27.926221714074245,
+        18.665733074346903,
+        27.92622171407425,
         36.94400707562309,
         -346.25,
         -342.85
@@ -26169,10 +26169,10 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999979,
+      "volume": 10.063149999999977,
       "bounds": [
-        14.65,
-        17.0,
+        14.650000000000002,
+        17.000000000000004,
         28.05,
         36.900000000000006,
         -346.25,
@@ -26198,10 +26198,10 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999982,
+      "volume": 10.06314999999998,
       "bounds": [
-        11.171312438061026,
-        15.680022869977144,
+        11.171312438061019,
+        15.68002286997714,
         27.805456090131088,
         35.908730895213004,
         -346.25,
@@ -26227,11 +26227,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999972,
+      "volume": 10.063149999999968,
       "bounds": [
-        8.089840301106568,
-        14.45,
-        27.23342828911141,
+        8.089840301106571,
+        14.450000000000003,
+        27.233428289111412,
         34.037753112603696,
         -346.25,
         -342.85
@@ -26258,9 +26258,9 @@
       "faces": 6,
       "volume": 10.063149999999979,
       "bounds": [
-        5.6155808228965896,
+        5.615580822896591,
         13.393755415948611,
-        26.372899346259835,
+        26.372899346259832,
         31.414570696119924,
         -346.25,
         -342.85
@@ -26285,9 +26285,9 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999991,
+      "volume": 10.06314999999997,
       "bounds": [
-        3.9171506979639616,
+        3.917150697963965,
         12.583270440699362,
         25.282512886940356,
         28.21794919243112,
@@ -26314,12 +26314,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999986,
+      "volume": 10.06314999999998,
       "bounds": [
-        3.055992924376911,
-        12.073778285925753,
+        3.055992924376909,
+        12.073778285925751,
         24.036576946406793,
-        24.665733074346907,
+        24.66573307434691,
         -346.25,
         -342.85
       ],
@@ -26372,12 +26372,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999979,
+      "volume": 10.063149999999972,
       "bounds": [
-        4.091269104786995,
-        12.194543909868914,
-        17.171312438061026,
-        21.680022869977144,
+        4.091269104786994,
+        12.194543909868912,
+        17.171312438061022,
+        21.68002286997714,
         -346.25,
         -342.85
       ],
@@ -26401,11 +26401,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.06314999999999,
+      "volume": 10.063149999999977,
       "bounds": [
-        5.962246887396299,
-        12.766571710888583,
-        14.089840301106568,
+        5.9622468873963,
+        12.766571710888584,
+        14.08984030110657,
         20.45,
         -346.25,
         -342.85
@@ -26430,12 +26430,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.06314999999998,
+      "volume": 10.063149999999977,
       "bounds": [
-        8.585429303880092,
-        13.627100653740172,
-        11.615580822896579,
-        19.393755415948604,
+        8.585429303880083,
+        13.627100653740168,
+        11.615580822896582,
+        19.393755415948608,
         -346.25,
         -342.85
       ],
@@ -26461,9 +26461,9 @@
       "faces": 6,
       "volume": 10.06314999999998,
       "bounds": [
-        11.782050807568861,
-        14.717487113059638,
-        9.917150697963974,
+        11.782050807568867,
+        14.71748711305964,
+        9.91715069796397,
         18.583270440699366,
         -346.25,
         -342.85
@@ -26488,12 +26488,12 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999975,
+      "volume": 10.06314999999998,
       "bounds": [
-        15.334266925653093,
-        15.963423053593209,
-        9.055992924376913,
-        18.073778285925755,
+        15.334266925653088,
+        15.963423053593207,
+        9.055992924376909,
+        18.07377828592575,
         -346.25,
         -342.85
       ],
@@ -26517,10 +26517,10 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999975,
+      "volume": 10.063149999999982,
       "bounds": [
         17.0,
-        19.35,
+        19.350000000000005,
         9.099999999999998,
         17.95,
         -346.25,
@@ -26546,10 +26546,10 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.06314999999999,
+      "volume": 10.063149999999993,
       "bounds": [
-        18.319977130022853,
-        22.82868756193896,
+        18.31997713002285,
+        22.828687561938956,
         10.091269104786983,
         18.19454390986891,
         -346.25,
@@ -26575,9 +26575,9 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999986,
+      "volume": 10.063149999999968,
       "bounds": [
-        19.55,
+        19.549999999999997,
         25.91015969889343,
         11.962246887396299,
         18.766571710888584,
@@ -26604,7 +26604,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999977,
+      "volume": 10.063149999999975,
       "bounds": [
         20.60624458405139,
         28.38441917710341,
@@ -26633,11 +26633,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999977,
+      "volume": 10.06314999999999,
       "bounds": [
         21.416729559300634,
-        30.082849302036024,
-        17.78205080756886,
+        30.082849302036028,
+        17.782050807568865,
         20.71748711305964,
         -346.25,
         -342.85
@@ -26662,11 +26662,11 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 10.063149999999986,
+      "volume": 10.06314999999998,
       "bounds": [
-        21.926221714074245,
-        30.944007075623087,
-        21.334266925653093,
+        21.92622171407425,
+        30.94400707562309,
+        21.33426692565309,
         21.963423053593207,
         -346.25,
         -342.85
@@ -27212,8 +27212,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 402.04962317986985,
+      "faces": 23,
+      "volume": 402.04962110493045,
       "bounds": [
         -81.5000001,
         -64.5,
@@ -27299,8 +27299,8 @@
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 22,
-      "volume": 402.0496233431282,
+      "faces": 23,
+      "volume": 402.049621236104,
       "bounds": [
         64.5,
         81.5000001,
@@ -27706,7 +27706,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 12.73444582132621,
+      "volume": 12.734445821326213,
       "bounds": [
         -265.6,
         -252.20000000000002,
@@ -27735,7 +27735,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 5.511924310723287,
+      "volume": 5.511924310723286,
       "bounds": [
         -259.45,
         -258.34999999999997,
@@ -27764,7 +27764,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 5.511924310723287,
+      "volume": 5.511924310723286,
       "bounds": [
         -259.45,
         -258.34999999999997,
@@ -28511,21 +28511,21 @@
       ]
     },
     {
-      "name": "JoyLHapticCoil",
-      "label": "SW-0373 · HD Rumble 连续铜绕组",
+      "name": "JoyLHapticCoil001",
+      "label": "SW-0373 · HD Rumble 连续铜绕组001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 11.995319502823744,
+      "faces": 32,
+      "volume": 13.936499007582139,
       "bounds": [
         -264.1049365228428,
-        -249.8950634771573,
-        -253.80524044658,
-        -250.3947595534912,
-        -57.90501114774105,
-        -54.494988852259134
+        -249.89506347715724,
+        -253.80522634406577,
+        -250.3947736559388,
+        -57.90500010092349,
+        -54.49499989999971
       ],
       "state": [
         "Up-to-date"
@@ -28953,7 +28953,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 12.7344458213262,
+      "volume": 12.734445821326204,
       "bounds": [
         252.2,
         265.59999999999997,
@@ -29758,21 +29758,21 @@
       ]
     },
     {
-      "name": "JoyRHapticCoil",
-      "label": "SW-0416 · HD Rumble 连续铜绕组",
+      "name": "JoyRHapticCoil001",
+      "label": "SW-0416 · HD Rumble 连续铜绕组001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 3,
-      "volume": 11.995319502823758,
+      "faces": 32,
+      "volume": 13.936499007582146,
       "bounds": [
         255.8950634771572,
         270.10493652284276,
-        -249.80524044658,
-        -246.3947595534912,
-        -57.90501114774105,
-        -54.494988852259134
+        -249.80522634406577,
+        -246.3947736559388,
+        -57.90500010092349,
+        -54.49499989999971
       ],
       "state": [
         "Up-to-date"
@@ -30345,7 +30345,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 16.61902513749,
+      "volume": 16.619025137489995,
       "bounds": [
         -123.15,
         -120.85,
@@ -30374,7 +30374,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 16.61902513749,
+      "volume": 16.619025137489995,
       "bounds": [
         -99.15,
         -96.85,
@@ -32462,7 +32462,7 @@
       "null": false,
       "solids": 8,
       "faces": 140,
-      "volume": 0.08124805847822276,
+      "volume": 0.08124805847822278,
       "bounds": [
         58.52300745033555,
         71.67255043557044,
@@ -32491,7 +32491,7 @@
       "null": false,
       "solids": 1,
       "faces": 8,
-      "volume": 0.006552823746678375,
+      "volume": 0.0065528237466783755,
       "bounds": [
         -260.77235738255035,
         -259.7202181208053,
@@ -32520,7 +32520,7 @@
       "null": false,
       "solids": 1,
       "faces": 25,
-      "volume": 0.011748069720677295,
+      "volume": 0.011748069720677297,
       "bounds": [
         259.2276425174496,
         260.5447987577181,
@@ -35449,7 +35449,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -112.865,
         -112.635,
@@ -35478,7 +35478,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -112.365,
         -112.135,
@@ -35507,7 +35507,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -111.865,
         -111.635,
@@ -35536,7 +35536,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -111.365,
         -111.135,
@@ -35565,7 +35565,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -110.865,
         -110.635,
@@ -35594,7 +35594,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06311037588411009,
+      "volume": 0.06311037588411006,
       "bounds": [
         -110.365,
         -110.135,
@@ -35623,7 +35623,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06311037588411009,
+      "volume": 0.06311037588411006,
       "bounds": [
         -109.865,
         -109.635,
@@ -35652,7 +35652,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06311037588411009,
+      "volume": 0.06311037588411006,
       "bounds": [
         -109.365,
         -109.135,
@@ -35681,7 +35681,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06311037588411009,
+      "volume": 0.06311037588411006,
       "bounds": [
         -108.865,
         -108.635,
@@ -35710,7 +35710,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06311037588411009,
+      "volume": 0.06311037588411006,
       "bounds": [
         -108.365,
         -108.135,
@@ -35739,7 +35739,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -107.865,
         -107.635,
@@ -35768,7 +35768,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -107.365,
         -107.135,
@@ -35797,7 +35797,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -112.865,
         -112.635,
@@ -35826,7 +35826,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -112.365,
         -112.135,
@@ -35855,7 +35855,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -111.865,
         -111.635,
@@ -35884,7 +35884,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -111.365,
         -111.135,
@@ -35913,7 +35913,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -110.865,
         -110.635,
@@ -35942,7 +35942,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -110.365,
         -110.135,
@@ -35971,7 +35971,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -109.865,
         -109.635,
@@ -36000,7 +36000,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -109.365,
         -109.135,
@@ -36029,7 +36029,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -108.865,
         -108.635,
@@ -36058,7 +36058,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -108.365,
         -108.135,
@@ -36087,7 +36087,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -107.865,
         -107.635,
@@ -36116,7 +36116,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0631103758841101,
+      "volume": 0.06311037588411007,
       "bounds": [
         -107.365,
         -107.135,
@@ -36174,7 +36174,7 @@
       "null": false,
       "solids": 1,
       "faces": 30,
-      "volume": 7.023921987007961,
+      "volume": 7.023921987007963,
       "bounds": [
         -84.0,
         -80.24,
@@ -36348,7 +36348,7 @@
       "null": false,
       "solids": 1,
       "faces": 30,
-      "volume": 7.023921987007961,
+      "volume": 7.023921987007963,
       "bounds": [
         -84.0,
         -80.24,
@@ -36406,7 +36406,7 @@
       "null": false,
       "solids": 1,
       "faces": 30,
-      "volume": 7.023921987007963,
+      "volume": 7.023921987007961,
       "bounds": [
         80.24,
         84.0,
@@ -36580,7 +36580,7 @@
       "null": false,
       "solids": 1,
       "faces": 30,
-      "volume": 7.023921987007963,
+      "volume": 7.023921987007961,
       "bounds": [
         80.24,
         84.0,
@@ -39973,6 +39973,6 @@
     54
   ],
   "fidelity": "Published overall envelopes; exterior radii and control positions fitted to official HAC-001 images; major internals schematic",
-  "bounds_basis": "Measured from the saved native BReps with optimalBoundingBox(False, False); refreshed after serialization.",
+  "bounds_basis": "optimalBoundingBox(False, False)",
   "exterior_revision": "2026-10-29 / iterations 15-18"
 }

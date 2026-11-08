@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-08",
+  "iteration": 19,
+  "model": "Nintendo Switch HAC-001",
+  "scope": "Existing inserted generic microSD UHS-I study card and reader clearance; no bundled-card claim.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.com/en-gb/Support/Nintendo-Switch/microSD-Card-FAQ-1500171.html",
+      "supports": "Original Nintendo Switch uses microSD, microSDHC or microSDXC cards sold separately."
+    },
+    {
+      "url": "https://www.sdcard.org/developers/sd-standard-overview/",
+      "dimension_image_url": "https://www.sdcard.org/wp-content/uploads/2020/12/microsd_01.gif",
+      "dimension_image_sha256": "f8a1a42457e66522b3bb29528176b8cf87879bc3b3011885143a92dc37eb9ba1",
+      "supports": "Nominal microSD form factor 11 x 15 x 1.0 mm and eight legacy High-Speed/UHS-I contacts."
+    },
+    {
+      "url": "https://www.sdcard.org/pdf/SD_Cards_8_0_WhitePaper20200515.pdf",
+      "sha256": "66870b81e5d5ab80e2962a95530dcfafc32d87c3cfbe2560f02e630d782f18bf",
+      "pages": [
+        6
+      ],
+      "supports": "Figure 2 provides a public microSD silhouette for qualitative keying; its Express-only extra contact row is not used on this HAC-001 study card."
+    },
+    {
+      "url": "https://www.hirose.com/de/product/document?clcode=CL0609-0032-3-00&documentid=D49662_en&documenttype=Catalog&lang=de&productname=DM3CS-SF&series=DM3",
+      "pages": [
+        9
+      ],
+      "supports": "Legacy 8-contact connector pattern with 1.1 mm pitch; not identification of the Nintendo card reader."
+    }
+  ],
+  "changes": [
+    {
+      "part_ids": [
+        "MicroSDCard"
+      ],
+      "before_nominal_mm": [
+        10.9,
+        14.8,
+        0.69
+      ],
+      "after_nominal_mm": [
+        11,
+        15,
+        1
+      ],
+      "basis": "SD Association form-factor dimensions",
+      "local_keying": "Fitted to public diagram; no factory contour tolerance established"
+    },
+    {
+      "part_ids": [
+        "MicroSDPad0",
+        "MicroSDPad1",
+        "MicroSDPad2",
+        "MicroSDPad3",
+        "MicroSDPad4",
+        "MicroSDPad5",
+        "MicroSDPad6",
+        "MicroSDPad7"
+      ],
+      "before_rows": [
+        8
+      ],
+      "after_rows": [
+        8
+      ],
+      "basis": "Legacy microSD/UHS-I contact arrangement retained; contacts made flush with card surface",
+      "local_pad_dimensions": "Fitted to public diagrams; not certified contact-pad coordinates"
+    },
+    {
+      "part_ids": [
+        "MicroSDCage"
+      ],
+      "change": "Reader outer height 1.2→1.5 mm; channel height 0.86→1.14 mm, now 1.90–3.04 mm Z; 1 mm card at 1.96–2.96 mm Z",
+      "basis": "Model clearance needed for corrected card thickness; reader construction remains approximate"
+    }
+  ],
+  "uncertainties": [
+    "Exact commercial card manufacturer/capacity is not fixed; the existing object remains a generic study card.",
+    "Card keying, pad lengths and reader spring geometry are not metrology-certified.",
+    "Console port location and reader PCB geometry are unchanged approximate reconstruction."
+  ],
+  "factory_equivalence_verified": false,
+  "source_rebuild_correction": {
+    "script": "devices/switch/scripts/iter15_exterior_refinement.py",
+    "change": "Use explicit -Y-facing rotation for shoulder legends and IR insert instead of session-global YROT",
+    "reason": "Full source execution inherited +Y from stage03, unlike the delivered interactive build",
+    "scope": "Restores previously delivered exterior locations; not a new hardware dimension"
+  },
+  "kernel_repairs": {
+    "exact_material_checks": [
+      "TegraMark glyph union",
+      "SpeakerLHousing unrefined Boolean",
+      "SpeakerRHousing unrefined Boolean"
+    ],
+    "same_parameter_reconstruction": [
+      "JoyLHapticCoil",
+      "JoyRHapticCoil"
+    ],
+    "legacy_coil_comparison": "The old C0 surfaces can yield invalid or failed Boolean residuals; no exact equivalence claim. A 200-point-per-direction surface sample found a maximum of approximately0.000036mm on the representative coil.",
+    "remaining_strict_diagnostics": [
+      "JoyLFront",
+      "JoyRFront",
+      "JoyLRear",
+      "JoyRRear"
+    ]
+  }
+}

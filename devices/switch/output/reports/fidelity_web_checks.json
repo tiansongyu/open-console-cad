@@ -1,0 +1,57 @@
+{
+  "device": "switch",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 529,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 521,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 331,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 198,
+      "passed": true
+    },
+    {
+      "view": "dock",
+      "components": 97,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 28,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch/output/Switch_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch/output/drawings/Switch_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/switch.glb"
+    }
+  ],
+  "gallery_images": 9,
+  "slider_keyboard": true,
+  "source_sha256": "8ec74b032e81c44b71baaeefa3cf13036269f8f168cf3100587582c9771443ec",
+  "glb_sha256": "9cd4085815a1cbc8e45039e408c0f42b4489b8b1e3cd787fef082a117eee45a3",
+  "test_date": "2026-11-08",
+  "scope": "All configured viewer modes, visible part counts, gallery images, download targets, keyboard explosion slider",
+  "console_errors": []
+}

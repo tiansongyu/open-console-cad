@@ -56,11 +56,12 @@ for i,page in enumerate(pages):
  else:
   ch=ir['content']['chapters'][i-1];claim=ch['claim'];notes=ch['paragraphs']
  svg=(DRAW/page['svg']).read_text().replace('rgb(0, 0, 0)','#141413').replace('#000000','#141413')
- body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">SW-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">Nintendo Switch 详细模型图纸</div><div>局部尺寸为本模型近似值 · 内部为布局示意</div></div><div>单位 mm · 比例见各视图<br>CAD Study · 2026.10.29 · Rev 18</div><div>图号 SW-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
+ body.append(f'''<section class="drawing-sheet" id="sheet-{i+1:02d}"><div class="drawing-header"><div class="eyebrow">{html.escape(ir['content']['subtitle'])} <span style="float:right">SW-DWG-{i+1:02d} / 12</span></div><h1>{html.escape(page['title'])}</h1><p class="claim">{html.escape(claim)}</p></div><figure class="drawing-figure">{svg}</figure><div class="drawing-notes">{''.join('<p>'+html.escape(x)+'</p>' for x in notes)}</div><div class="title-block"><div><div class="title">Nintendo Switch 详细模型图纸</div><div>局部尺寸为本模型近似值 · 内部为布局示意</div></div><div>单位 mm · 比例见各视图<br>CAD Study · {html.escape(ir['content'].get('date','2026-11-08'))} · Rev {json.loads((DRAW.parent/'reports/final_manifest.json').read_text())['design_iterations']}</div><div>图号 SW-DWG-{i+1:02d}<br>第 {i+1} / 12 页 · A3</div></div></section>''')
 # Resolve the copied template tokens to literal values so static content visibility is provable.
 declared=dict(re.findall(r'(--[\w-]+)\s*:\s*([^;]+);',head))
 for _ in range(8):head=re.sub(r'var\((--[\w-]+)\)',lambda m:declared.get(m.group(1),m.group(0)),head)
 filled=head+'<body>'+''.join(body)+'</body></html>'
+filled='\n'.join(line.rstrip() for line in filled.splitlines())+'\n'
 assert not re.search(r'\{\{[^{}]*\}\}',filled)
 out=DRAW/'Switch_Drawings.html';out.write_text(filled)
 count=render_pdf(out,DRAW/'Switch_Drawings.pdf');assert count==12,count

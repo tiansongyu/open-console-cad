@@ -22,3 +22,5 @@
 | 18 | [iter18_control_proportions.py](scripts/iter18_control_proportions.py) · HOME、截图键与字形比例，SL/SR、SYNC 和玩家灯位置校准 |
 
 运行重建宏会依次生成各阶段模型。本次第 18 轮交付从第 17 轮已保存模型更新，未重跑全部阶段。原始设计说明和本版检查范围见设备 README 与 output/reports/control_delivery_checks.json。
+
+第 19 轮：[microSD 标称外形与保存几何修复](scripts/iter19_microsd_nominal_geometry.py)。补齐卡片厚度、齐平接点与防误插轮廓，修复重叠字形、扬声器布尔精化及绕组连续性；四个曲面壳的严格检查问题保留在交付记录中。第 15 轮的肩键/红外旋转轴也已明确写入源码，重建不再依赖先前会话变量。

@@ -239,12 +239,12 @@ s=Sheet(12,'尺寸依据与检查索引',['公开包络与本模型局部尺寸�
 for y,title,lines in [
 (16,'公开尺寸',["整机 239 × 102 × 13.9 mm，含摇杆/扳机最大厚 28.4 mm。","主机单体 173 × 101 × 13.9 mm，手柄含轨道宽 35.9 mm。","底座 173 × 104 × 54 mm。"]),
 (59,'模型范围',["局部壁厚、孔位、紧固件和安装间隙为近似设计。","电池、主板、芯片、风扇和控制器内部为主要模块布局示意。","尺寸数字描述此版模型，不能代替制造方工程资料。"]),
-(102,'验证文件',["18 轮设计源码；第 18 轮校准按键，本轮未重跑全部源码。","control_calibration_audit.json：26 个操作件及控制布局。","control_interference.json：已保存整套实体的干涉检查。","control_delivery_checks.json：本版交付与检查报告索引。"]),
+(102,'验证文件',[f"{M['design_iterations']} 轮源码重建，保留可核对的阶段记录。","control_calibration_audit.json：26 个操作件及控制布局。","fidelity_interference.json：当前整套实体的干涉检查。","fidelity_delivery_checks.json：交付检查及严格检查遗留项。","4 个 Joy-Con 曲面壳仍有严格 BOP 曲线检查问题。"]),
 (157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 2017 年 Nintendo Switch 现场拆解：主要内部模块布局。","完整链接与尺寸依据见 references/SOURCES.md。"])
 ]:
  s.text(10,y,title,4,fill='#1B365D')
  for j,line in enumerate(lines):s.text(10,y+10+j*8,line,3.2)
-s.text(385,210,'CAD STUDY · 2026.10.29 · Rev 18',3.2,'end');s.save()
+s.text(385,210,'CAD STUDY · 2026-11-08 · Rev 19',3.2,'end');s.save()
 assert len(PAGES)==12
 (DRAW/'drawing_pages.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2))
 assert all(hashlib.sha256((OUT/name).read_bytes()).hexdigest()==digest for name,digest in SOURCE_HASHES.items()), 'Native source changed during projection'

@@ -359,8 +359,8 @@
       "order": 6,
       "device": "switch",
       "model": "HAC-001",
-      "status": "pending",
-      "current_step": null,
+      "status": "completed",
+      "current_step": "validated_iteration_19",
       "baseline": {
         "iterations": 18,
         "physical_components": 654,
@@ -376,11 +376,26 @@
           "Schematic internal layout": 396
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/switch/references/fidelity_20261108.json"
+      ],
+      "changes": [
+        "Corrected nominal microSD envelope to 11 x 15 x 1 mm and eight contacts",
+        "Repaired five historical strict shape issues; four Joy-Con shell curve diagnostics remain open",
+        "Made stage15 orientation explicit and verified all 654 components from fresh stages1–19"
+      ],
+      "validation": {
+        "report": "devices/switch/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "8ec74b032e81c44b71baaeefa3cf13036269f8f168cf3100587582c9771443ec",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Card keying, contact details and reader clearances remain diagram-fitted.",
+        "Four Joy-Con shell strict diagnostics remain unresolved.",
+        "The rebuilt haptic coils use original nominal parameters. Legacy C0 Boolean residuals are unreliable; surface sampling does not prove exact material equivalence.",
+        "No physical sample interchangeability or factory tolerance is certified."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
@@ -833,7 +848,8 @@
         "fully_passed": true,
         "failed_parts": [],
         "inconclusive_parts": []
-      }
+      },
+      "last_pushed_commit": "9584979"
     },
     {
       "order": 15,
@@ -1005,7 +1021,7 @@
       ],
       "pass_completed": true,
       "factory_equivalence_verified": false,
-      "last_pushed_commit": "b93e793",
+      "last_pushed_commit": "26d97f1",
       "strict_brep_baseline_summary": {
         "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
         "fully_passed": true,

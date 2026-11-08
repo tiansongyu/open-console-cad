@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "date": "2026-11-08",
+  "device": "switch",
+  "iteration": 19,
+  "physical_components": 654,
+  "solids": 834,
+  "source_native_sha256": "8ec74b032e81c44b71baaeefa3cf13036269f8f168cf3100587582c9771443ec",
+  "checks": {
+    "reconstructed_components": 654,
+    "interference_candidates": 1013,
+    "interference_clashes": 0,
+    "step_exports": 4,
+    "model_measurements": 26,
+    "drawing_dimensions": 23,
+    "native_pages_reloaded": 12,
+    "pdf_pages_visually_reviewed": 12,
+    "parameter_edit_on_independent_document": true,
+    "web_components": 654,
+    "lossless_gzip": true,
+    "glb_validation": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "strict_brep_passed": false,
+    "web_views": 6
+  },
+  "reports": {
+    "fidelity_interference.json": "3601c5ba2dffaf069790ec4b0212df184f6339b91feab65e53559f400336e569",
+    "fidelity_source_rebuild.json": "f124871f2be1fec889a64404fa3cee02c2f42854e61d94718bbb4df21fd87586",
+    "fidelity_dimensions.json": "99b3a1c32e0d8893107f240c98e69fe2981731eedb2086f4c8946588b4bb41ee",
+    "fidelity_kernel_repairs.json": "9d7d97672eedbf20bd2e1d7068b0d006a11de8d0cc62f18239ba35952ea89808",
+    "fidelity_strict_saved.json": "ceec2d53a63298479f6446d2b736ed5aa6ae28e27027bef74f4c9b35a8ce0676",
+    "export_roundtrip_audit.json": "1899e58b0949bdeff96b1fe43810411e4e71ef9b0c219452fe4ef3e3425f1c23",
+    "control_calibration_audit.json": "7c8dea7f9ca51b5efb3461b16af18a992def3c84c81e3a4ac42617b43bad9faf",
+    "exterior_refinement_audit.json": "cd18626261484628cb28fa21850355869d564ca58713996d1b536b154d11c71f",
+    "drawing_checks.json": "8d47e0bd23ee3cdba7677a46440f5b7cab7c3d213f0d58125da422c41c46671e",
+    "native_drawings_audit.json": "924c13aaa1d877a1eb350eee57e9767824673a4a011eaa4744ba38f7b084973b",
+    "native_drawings_reload.json": "f8a8585985a2183e1d0c0f57e6635f83ce1fd106feb30636ac5d1cf2a52a7873",
+    "parameter_edit_test.json": "cd625554d998de80c00ff39e692ef98d6ea363cfcf2d783db65f45f6a7d0be2b",
+    "visual_acceptance.json": "18c2aa3ff6fbbf4883b3254b52e19e3702510d8424c9854f30a7c07ad1e72796",
+    "web_export.json": "079d33dfa33e09d728cac63f4568c462aa4fc2131216bf2ffd3ba4c2de15bcaa",
+    "fidelity_glb_validation.json": "bed6868e5c8d3d4d5036151dd91bbd4c5c8864227b5c7d1a68f0643f0f796388",
+    "fidelity_web_checks.json": "51eea11f8f63abad89f3df3e4118a573195e8dfb60e66a169a69fc73ce308fc0"
+  },
+  "file_hashes": {
+    "devices/switch/output/Switch_Complete.FCStd": "8ec74b032e81c44b71baaeefa3cf13036269f8f168cf3100587582c9771443ec",
+    "devices/switch/output/Switch_Exploded.FCStd": "efefec97ff2ef5ab614f431b6aede2854c2bbbe19a495a28e1274dec1ff09fc2",
+    "devices/switch/output/Switch_Drawings.FCStd": "1746fab7fc81c82273731c08093bd7d386e901fc75f77e1ead9bcd35bf173e4f",
+    "devices/switch/output/drawings/Switch_Drawings.pdf": "779cf4935857119a1e5894e23b06dd07096aa49ea99d0f528379c119909f49bf",
+    "devices/switch/output/drawings/Switch_Drawings.html": "21671b64c0369e59c95fdfdcc7476922baff7821e0a4cc113b1ad9b4c4d5cafc",
+    "site/public/models/switch.glb": "9cd4085815a1cbc8e45039e408c0f42b4489b8b1e3cd787fef082a117eee45a3",
+    "site/public/models/switch.glb.gz": "96e64ca576d429ac476c976d0107ff8d75617bd7625579b9f5ce129a10eeaafd"
+  },
+  "strict_check": {
+    "passed": false,
+    "checked": 654,
+    "remaining_failures": [
+      "JoyLFront",
+      "JoyRFront",
+      "JoyLRear",
+      "JoyRRear"
+    ],
+    "diagnostic": "BOPAlgo_InvalidCurveOnSurface",
+    "interpretation": "Known legacy shell-curve diagnostics remain open; delivery passed covers the separately listed file, interference, reconstruction and display checks only."
+  },
+  "reference_record": "devices/switch/references/fidelity_20261108.json",
+  "factory_equivalence_verified": false,
+  "web_interaction_review": "Passed current exported model review",
+  "limitations": [
+    "Card keying, contact details and reader clearances remain diagram-fitted.",
+    "Four Joy-Con shell strict diagnostics remain unresolved.",
+    "The rebuilt haptic coils use original nominal parameters. Legacy C0 Boolean residuals are unreliable; surface sampling does not prove exact material equivalence.",
+    "No physical sample interchangeability or factory tolerance is certified."
+  ]
+}

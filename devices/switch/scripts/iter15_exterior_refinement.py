@@ -5,6 +5,10 @@ radii and image-derived control locations are estimates, not factory CAD.
 """
 
 REFINEMENT_CHANGED = set()
+# The exterior insert and shoulder lettering face -Y. Do not reuse the +Y
+# port extrusion rotation established in iteration 03: an interactive session
+# previously supplied a different YROT and hid this full-rebuild discrepancy.
+EXTERIOR_YROT = App.Rotation(vec(1, 0, 0), 90)
 
 
 def exterior_revision(key, shape, reason):
@@ -225,7 +229,7 @@ for side, tag in [(-1, 'L'), (1, 'R')]:
 
     # Shoulder legends are placed on their actual exposed surfaces.
     for key, text, size, pos, orient in [
-        ('BumperLegend' + tag, tag, 1.8, (x - 1, 50.5, 10.7), YROT),
+        ('BumperLegend' + tag, tag, 1.8, (x - 1, 50.5, 10.7), EXTERIOR_YROT),
         ('TriggerLegend' + tag, 'Z' + tag, 2.0, (side * 101.0 + 2, 44.8, -5.385), BACKROT),
     ]:
         temp = printed_text(D, key + '15Glyph', text, text, size, pos, orient,
@@ -236,7 +240,7 @@ for side, tag in [(-1, 'L'), (1, 'R')]:
 
 (OUT / 'reports/refinement_progress.json').write_text(json.dumps({'stage': 'tablet'}))
 # The right IR insert follows the curved base, within the 102 mm envelope.
-ir_tool = rr_shape(14.4, 6.2, .95, 1.5, (96.5, -49.5, 3.1), YROT)
+ir_tool = rr_shape(14.4, 6.2, .95, 1.5, (96.5, -49.5, 3.1), EXTERIOR_YROT)
 ir = ir_tool.common(JOY_ENVELOPES['R'][1])
 exterior_revision('IRWindow', ir, '红外窗口嵌入下缘曲面，不超出手柄包络')
 cut('JoyRRear', ir_tool, '红外透镜曲面嵌位')

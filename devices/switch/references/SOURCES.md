@@ -54,3 +54,9 @@
 八枚圆形面键保留直径 7.6、中心至组中心距离 7.7；摇杆帽保留直径 15.8。+/-、肩键、后扳机和释放键经图像复核后保留现有尺寸：正面暗轮廓可能包含孔沿和阴影，现有资料不足以支持更小幅度的调整。
 
 上述局部值均为图像估计。选边、缩放和遮挡带来的局部估计误差约为 0.3–0.5 mm；这不是原厂公差，也不是经过实机测量验证的误差上限。改用包含顶部微小突出部位的整高作为缩放基准，还会使部分估计变化约 0.7 mm，记录中单独说明了这一影响。专利图没有制造尺寸，营销图也不是经标定的正投影照片，因此这些资料不能证明原厂一致性或零件互换性。本节只记录参考依据与采用值，不替代 CAD 几何和装配检查。
+
+## 2026-11-08 microSD and reproducibility review
+
+The [SD Association overview](https://www.sdcard.org/developers/sd-standard-overview/) supplies the nominal 11 × 15 × 1 mm microSD form factor and eight legacy contacts. [Nintendo's microSD FAQ](https://www.nintendo.com/en-gb/Support/Nintendo-Switch/microSD-Card-FAQ-1500171.html) confirms the original Switch card family and that cards are sold separately. The existing card remains a generic study object; local keying, pad geometry and reader clearance are fitted. Evidence and limits are in [fidelity_20261108.json](fidelity_20261108.json).
+
+The explicit exterior rotation in iteration 15 restores reproducibility of the accepted shoulder legends and IR insert. Glyph union and unrefined speaker cuts preserve represented material by bidirectional Boolean checks. The segmented helix repair retains its original construction parameters but is not certified equivalent to the defective legacy C0 sweep. Four Joy-Con shell curve-on-surface diagnostics remain unresolved.

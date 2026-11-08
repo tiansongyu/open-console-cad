@@ -1,0 +1,149 @@
+{
+  "source_sha256": "8ec74b032e81c44b71baaeefa3cf13036269f8f168cf3100587582c9771443ec",
+  "repairs": [
+    {
+      "part_id": "TegraMark",
+      "method": "glyph union",
+      "removed_added_mm3": [
+        0,
+        0
+      ],
+      "residual_valid": [
+        true,
+        true
+      ],
+      "residual_null": [
+        false,
+        false
+      ],
+      "boolean_errors": [
+        null,
+        null
+      ],
+      "material_equivalent": true
+    },
+    {
+      "part_id": "SpeakerLHousing",
+      "method": "unrefined Boolean",
+      "removed_added_mm3": [
+        0,
+        0
+      ],
+      "residual_valid": [
+        true,
+        true
+      ],
+      "residual_null": [
+        false,
+        false
+      ],
+      "boolean_errors": [
+        null,
+        null
+      ],
+      "material_equivalent": true
+    },
+    {
+      "part_id": "SpeakerRHousing",
+      "method": "unrefined Boolean",
+      "removed_added_mm3": [
+        0,
+        0
+      ],
+      "residual_valid": [
+        true,
+        true
+      ],
+      "residual_null": [
+        false,
+        false
+      ],
+      "boolean_errors": [
+        null,
+        null
+      ],
+      "material_equivalent": true
+    },
+    {
+      "part_id": "JoyLHapticCoil",
+      "method": "split helix at spline knots",
+      "removed_added_mm3": [
+        0.006691972971182137,
+        0.043908516569638276
+      ],
+      "residual_valid": [
+        false,
+        false
+      ],
+      "residual_null": [
+        false,
+        false
+      ],
+      "boolean_errors": [
+        null,
+        null
+      ],
+      "material_equivalent": false,
+      "comparison_limit": "Legacy C0 sweep is not certified equivalent; invalid Boolean remnants are recorded when encountered",
+      "radius_pitch_height_wire_radius_mm": [
+        1.6,
+        0.35,
+        14.0,
+        0.105
+      ]
+    },
+    {
+      "part_id": "JoyRHapticCoil",
+      "method": "split helix at spline knots",
+      "removed_added_mm3": [
+        null,
+        null
+      ],
+      "residual_valid": [
+        false,
+        false
+      ],
+      "residual_null": [
+        null,
+        null
+      ],
+      "boolean_errors": [
+        "Null shape",
+        "Null shape"
+      ],
+      "material_equivalent": false,
+      "comparison_limit": "Legacy C0 sweep is not certified equivalent; invalid Boolean remnants are recorded when encountered",
+      "radius_pitch_height_wire_radius_mm": [
+        1.6,
+        0.35,
+        14.0,
+        0.105
+      ]
+    }
+  ],
+  "coil_surface_comparison": {
+    "surface_samples": [
+      {
+        "points": 267343,
+        "samples": 200,
+        "sample_max_distance_mm": 3.575321888370887e-05,
+        "mean_distance_mm": 8.648855227514611e-06
+      },
+      {
+        "points": 1078887,
+        "samples": 200,
+        "sample_max_distance_mm": 2.935875054008446e-05,
+        "mean_distance_mm": 7.669585362216668e-06
+      }
+    ],
+    "bbox_max_delta_mm": 1.4102514249714204e-05,
+    "sampling_deflection_mm": 0.02
+  },
+  "coil_comparison_limit": "Sampled surface distances do not prove equivalence. Legacy C0 coil Boolean residuals may be invalid or null. Rebuilt coils use original nominal parameters and pass strict BRep checking.",
+  "remaining_strict_failures": [
+    "JoyLFront",
+    "JoyRFront",
+    "JoyLRear",
+    "JoyRRear"
+  ]
+}

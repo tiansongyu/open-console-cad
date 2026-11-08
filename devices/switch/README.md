@@ -2,7 +2,7 @@
 
 [在线整机预览](https://tiansongyu.github.io/open-console-cad/?device=switch&view=assembled#viewer) · [在线爆炸视图](https://tiansongyu.github.io/open-console-cad/?device=switch&view=exploded#viewer) · [仓库使用说明](../../README.md)
 
-18 轮设计，654 个组件、835 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
+19 轮设计，654 个组件、834 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
 
 2026-10-29 第 18 轮根据 Nintendo 官方图像复核 HAC-015/HAC-016 Joy-Con 的 26 个操作件。HOME 改为灰色芯与黑色房屋图形，芯直径 6.1 mm、外环外径 8.4 mm；截图键边长 6.3 mm，内部图案外径 4.1 mm。两键中心分别为 X=96.6 / -96.6 mm、Y=-22 mm。ABXY 字形按实际边界居中，字高 3.05 mm；方向三角为 2.6 × 2.2 mm。
 
@@ -40,6 +40,14 @@
 
 原创内容按仓库 [MIT](../../LICENSE) 授权；第三方名称、标识、字体与参考资料见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
 
-本版验证范围与结果见[交付检查索引](output/reports/control_delivery_checks.json)、[按键与位置](output/reports/control_calibration_audit.json)、[装配干涉](output/reports/control_interference.json)、[外形与原生特征](output/reports/exterior_refinement_audit.json)、[导出回读](output/reports/export_roundtrip_audit.json)及[图纸尺寸](output/reports/drawing_checks.json)。尺寸由已保存的原生 BRep 使用 `optimalBoundingBox(False, False)` 测量；手持整机与 239 × 102 mm 的名义包络相符（这是 CAD 数值检查，不是实机公差），主机厚 13.9 mm，含摇杆和扳机的最大厚度为 28.4 mm。
+当前验证范围与结果见[交付检查索引](output/reports/fidelity_delivery_checks.json)、[按键与位置](output/reports/control_calibration_audit.json)、[装配干涉](output/reports/fidelity_interference.json)、[外形与原生特征](output/reports/exterior_refinement_audit.json)、[导出回读](output/reports/export_roundtrip_audit.json)及[图纸尺寸](output/reports/drawing_checks.json)。尺寸由已保存的原生 BRep 使用 `optimalBoundingBox(False, False)` 测量；手持整机与 239 × 102 mm 的名义包络相符（这是 CAD 数值检查，不是实机公差），主机厚 13.9 mm，含摇杆和扳机的最大厚度为 28.4 mm。
 
-第 18 轮从第 17 轮已保存成品更新按键，本轮未重跑全部 18 轮源码或参数编辑测试。第 17 轮此前从第 14 轮成品执行第 15–17 轮。导出回读以已保存 BRep 为依据；四片校准外壳包含大量相切与重合曲面，使用 `audit_exports.py output --saved-geometry --surface-fallback=JoyLFront,JoyLRear,JoyRFront,JoyRRear --surface-distance-mm=0.001` 进行双向表面采样检查。0.001 mm 是文件转换检查阈值，不表示实机精度，采样不等同于解析几何恒等证明。旧的 `14_interference_audit.json`、`16_interference_audit.json`、`17_interference_audit.json`、`completion_audit.json`、`rebuild_verification.json`、`parameter_edit_test.json`、`open_macro_test.json` 等报告及 `Switch_Cutaway.FCStd` 保留为历史资料，不代表本版验证。
+第 18 轮从第 17 轮已保存成品更新按键，当轮未重跑全部 18 轮源码或参数编辑测试。第 17 轮此前从第 14 轮成品执行第 15–17 轮。导出回读以已保存 BRep 为依据；四片校准外壳包含大量相切与重合曲面，使用 `audit_exports.py output --saved-geometry --surface-fallback=JoyLFront,JoyLRear,JoyRFront,JoyRRear --surface-distance-mm=0.001` 进行双向表面采样检查。0.001 mm 是文件转换检查阈值，不表示实机精度，采样不等同于解析几何恒等证明。旧的 `14_interference_audit.json`、`16_interference_audit.json`、`17_interference_audit.json`、`completion_audit.json`、`rebuild_verification.json`、`open_macro_test.json` 等报告及 `Switch_Cutaway.FCStd` 保留为历史资料。第 19 轮重新生成的同名参数、导出与图纸报告以本轮交付索引中的文件哈希为准。
+
+## 2026-11-08 · 第 19 轮
+
+已有 microSD 示意卡按 SD Association 标称外形修正为 11 × 15 × 1 mm，保留八个 UHS-I 接点，补充防误插轮廓、齐平接点和卡座净空。局部缺口、接点及卡座尺寸仍为图示拟合，依据见 [本轮资料](references/fidelity_20261108.json)。
+
+同时修正第 15 轮脚本对会话旋转变量的依赖，使源码重建中的肩键文字和红外窗口与已交付位置一致。重叠的 TEGRA 字形合并、扬声器壳保留未精化布尔后，双向差集确认实体范围不变；两根绕组按原半径、螺距、长度和线径分段重建。旧绕组的布尔差集不稳定，不能据此证明旧新几何完全等价。
+
+当前检查见 [第 19 轮交付记录](output/reports/fidelity_delivery_checks.json)。四个 Joy-Con 曲面壳仍未通过 OCCT 严格曲线检查，分别为 `JoyLFront`、`JoyRFront`、`JoyLRear`、`JoyRRear`；详见 [严格检查](output/reports/fidelity_strict_saved.json)。其余交付检查与这项遗留问题分别记录，不将普通实体有效性或网页显示通过写成整机严格 BOP 通过。
