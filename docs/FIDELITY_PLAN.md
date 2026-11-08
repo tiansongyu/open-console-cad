@@ -1,6 +1,6 @@
 # 全模型实机校准计划
 
-本轮从 Nintendo DS NTR-001 开始，覆盖模型库全部 27 款设备及其已建模控制器、附件。目标是依据实机资料逐款改进尺寸、轮廓、接口、按键和结构，并同步 CAD、STEP、图纸与网页预览。当前状态为进行中，尚无设备完成本轮验收。
+本轮从 Nintendo DS NTR-001 开始，覆盖模型库全部 27 款设备及其已建模控制器、附件。目标是依据实机资料逐款改进尺寸、轮廓、接口、按键和结构，并同步 CAD、STEP、图纸与网页预览。当前状态为进行中；已完成设备及其验证范围见下表和进度记录。
 
 进度与基线保存在 [fidelity_progress.json](fidelity_progress.json)。开始日期为 2026-11-08。
 
@@ -43,7 +43,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 第 16 轮已验证 |
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 官方多视图与附件校准中 |
 | 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 第 24 轮已验证 |
-| 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 14 轮已验证；第 15 轮校准中 |
+| 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 15 轮已验证 |
 | 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |
 | 19 | [Sony PlayStation · SCPH-1000 · 初代日版灰色](../devices/ps1/README.md) | 25 | 929 | 待开始 |
 | 20 | [Sony PlayStation 2 · SCPH-10000 · 初代日版黑色](../devices/ps2/README.md) | 34 | 1,352 | 待开始 |

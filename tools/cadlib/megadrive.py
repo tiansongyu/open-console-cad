@@ -474,3 +474,5 @@ STAGES={1:stage01,2:stage02,3:stage03,4:stage04,5:stage05,6:stage06,7:stage07,8:
 # Keep the source rebuild consistent with the delivered interface refinement.
 from .fidelity_megadrive import stage14
 STAGES[14] = stage14
+from .fidelity_megadrive_interfaces import stage15
+STAGES[15] = stage15

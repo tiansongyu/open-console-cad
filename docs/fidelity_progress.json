@@ -955,7 +955,7 @@
       "device": "megadrive",
       "model": "HAA-2510 · 初代日版",
       "status": "completed",
-      "current_step": "iteration_15_official_multiview_correction_in_progress",
+      "current_step": "validated_iteration_15",
       "baseline": {
         "iterations": 13,
         "physical_components": 825,
@@ -984,22 +984,24 @@
         }
       },
       "reference_evidence": [
-        "devices/megadrive/references/fidelity_din8_262.json"
+        "devices/megadrive/references/fidelity_iteration14.json",
+        "devices/megadrive/references/fidelity_iteration15.json"
       ],
       "changes": [
-        "Corrected original keyed DIN-8 262-degree socket and cable plug to seven outer contacts plus an offset central contact",
-        "Corrected documented mating dimensions and keying",
-        "Repaired five pre-existing strict BRep issues without visible shape change"
+        "Retained iteration14 DIN8 262-degree correction",
+        "Corrected original front/rear port positions against SEGA views",
+        "Corrected DE9 and cartridge contact pitch; matched controller plug and EXT socket",
+        "Closed unintended shell seam while preserving side expansion opening"
       ],
       "validation": {
         "report": "devices/megadrive/output/reports/fidelity_delivery.json",
-        "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+        "source_sha256": "ddbcc054979e2523f0b38187633ded846670e9034451b02b594e42545f217a01",
         "passed": true
       },
       "remaining_uncertainties": [
-        "Connector manufacturer reference establishes compatible interface, not original SEGA OEM supplier.",
-        "Outer contact radius scaled from drawing; socket clearances and axial geometry remain approximate.",
-        "Existing shell, PCB and accessory details retain photographic study dimensions."
+        "Port centres, local connector housings and internal overlap lip are photo-fitted or construction estimates.",
+        "Standard-compatible contact pitches and DC plug dimensions do not identify SEGA OEM components.",
+        "Shell curvature, markings, PCB detail and other accessory geometry retain study dimensions."
       ],
       "pass_completed": true,
       "factory_equivalence_verified": false,

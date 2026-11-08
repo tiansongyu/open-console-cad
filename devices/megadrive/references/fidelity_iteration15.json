@@ -1,0 +1,132 @@
+{
+  "device": "megadrive",
+  "model": "HAA-2510 Japanese Model 1 / VA2 study",
+  "review_date": "2026-11-08",
+  "iteration": 15,
+  "coordinate_system": "X increases to the right in the front view; Y points rearward; Z points upward. Rear photograph X is reversed when mapped into this frame.",
+  "sources": [
+    {
+      "url": "https://www.sega.jp/history/hard/megadrive/index.html",
+      "role": "Official original hardware and published 280 mm body width"
+    },
+    {
+      "url": "https://www.sega.jp/history/hard/img/megadrive/photo_img.jpg",
+      "sha256": "691f14b104fe77145c338162eaf76b98d3e05c8026d6b938c7530434b48e4f55",
+      "role": "Official front/rear/top/side photograph: two right-hand front controller sockets, left headphone jack, rear EXT/AV/DC order and female EXT face"
+    },
+    {
+      "url": "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_hd_stamped_formed_straight_pcb.pdf",
+      "role": "Manufacturer standard-density DE-9 2.77 mm pitch, 2.84 mm row separation and 24.99 mm mounting-axis separation; not identification of original Sega connector bodies"
+    },
+    {
+      "url": "https://www.raphnet-tech.com/products/db9joy_usb_v3/index.php",
+      "role": "Adapter maker documents and tests the shared DB9 mechanical interface with original three-button Sega controllers"
+    },
+    {
+      "url": "https://www.ukvac.com/forum/threads/open-source-sega-mega-tech-reproduction-game-carts.83027/",
+      "role": "Working Mega-Tech-to-Mega-Drive converter designer specifies a two-row 32-position 2.54 mm edge connector in post14"
+    },
+    {
+      "url": "https://github.com/mourix/Mega-Tech-Cartridges/tree/main/Mega-Tech%20-%20Mega%20Drive%20Converter",
+      "role": "Primary designer's accompanying PCB/BOM for the demonstrated cartridge converter; no circuit or game data copied"
+    },
+    {
+      "url": "https://www.consolesunleashed.com/tech/sega-mega-drive/",
+      "role": "Firsthand console repair/modification provider identifies the Model1 5.5 mm OD / 2.1 mm ID coaxial power connector"
+    },
+    {
+      "url": "https://www.triadmagnetics.com/Asset/WSU090-1300-R.pdf",
+      "role": "Manufacturer compatible plug drawing; only radial interface used, not the modern adapter enclosure or electrical design"
+    }
+  ],
+  "photo_fit": {
+    "body_width_reference_mm": 280,
+    "front_projected_body_x_px": [
+      72,
+      622
+    ],
+    "front_feature_x_px": {
+      "controller1": 453,
+      "controller2": 517,
+      "headphones": 177
+    },
+    "rear_projected_body_x_px": [
+      74,
+      620
+    ],
+    "rear_feature_x_px": {
+      "EXT": 405,
+      "AV": 486,
+      "DC": 526
+    },
+    "before_x_mm": {
+      "controller1": -59,
+      "controller2": 5,
+      "headphones": -113,
+      "EXT": 36,
+      "AV": -11,
+      "DC": 83
+    },
+    "after_x_mm": {
+      "controller1": 54,
+      "controller2": 86.5,
+      "headphones": -86.5,
+      "EXT": -29.7,
+      "AV": -71.3,
+      "DC": -91.8
+    },
+    "limitation": "Manually identified projected landmarks. Perspective, edge selection, local heights and axial depths are not calibrated to manufacturing accuracy. One decimal place is a CAD construction choice, not a precision claim."
+  },
+  "interface_changes": {
+    "DE9_contact_pitch_before_after_mm": [
+      2.75,
+      2.77
+    ],
+    "DE9_row_spacing_before_after_mm": [
+      4.0,
+      2.84
+    ],
+    "EXT_contact_gender_before_after": [
+      "male",
+      "female"
+    ],
+    "front_port_outer_envelope_before_after_mm": [
+      [
+        25,
+        10.6
+      ],
+      [
+        18.4,
+        10.0
+      ]
+    ],
+    "front_port_display_material": "black molded housing study",
+    "female_pad_nose_outer_mm": [
+      16.33,
+      7.9
+    ],
+    "cartridge_reader_and_finger_pitch_before_after_mm": [
+      2.8,
+      2.54
+    ],
+    "DC_plug_radial_dimensions_mm": {
+      "outside": 5.5,
+      "inside": 2.1
+    },
+    "DC_socket_entry": "Open annular insertion space around a recessed centre pin",
+    "case_joint": "Estimated inner overlap lip closes the exposed case-seam sightline; side expansion opening remains clear."
+  },
+  "estimated_clearances_and_details": [
+    "DE9 female contact inner diameter 1.04 mm around retained 0.98 mm male contacts is a study clearance.",
+    "Front/rear custom housing outlines, connector depths, supports and plug overmold remain approximate.",
+    "DC socket bore 5.6 mm and centre pin 2.0 mm are study clearances for the nominal 5.5/2.1 mm plug.",
+    "Cartridge shell, PCB outline and edge-contact pad dimensions remain photographic study geometry.",
+    "Inner lip is a construction estimate: 1.2 mm wall, Z17.6 to20.3mm, with a lower supporting flange. It is not a measured molding feature."
+  ],
+  "existing_component_ids_and_order_preserved": true,
+  "prior_DIN_262_correction_retained": true,
+  "factory_match_verified": false,
+  "cad_execution_verified": true,
+  "full_source_rebuild_executed": false,
+  "validated_source_sha256": "ddbcc054979e2523f0b38187633ded846670e9034451b02b594e42545f217a01"
+}

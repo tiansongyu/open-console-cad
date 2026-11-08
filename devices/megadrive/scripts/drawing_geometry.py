@@ -17,7 +17,7 @@ s=d.Sheet(1,'初代日版主机总装与尺寸参考',['HAA-2510 大机型保留
 v=s.view_fit('ConsoleIsometric',outer,(17,30,172,155),(-.7,-1.2,1.5));caption(s,v,'日版 Model 1 外观',205)
 v=s.view_fit('ConsoleTop',outer,(220,33,157,149),(0,0,1));d.dimension_box(s,v,['LowerHousing'],'x',20);d.dimension_box(s,v,['LowerHousing'],'y',207);caption(s,v,'底壳宽度与前后深度',205);s.save()
 
-s=d.Sheet(2,'前后接口与接点细节',['前方包含两只 DE-9 手柄接口和耳机口，后方保留扩展控制接口、音视频与电源输入。','AV 口采用 262° 七外一内触点与顶部定位槽；中心触点偏移 0.9 mm，孔距半径及插座间隙仍为近似值。'])
+s=d.Sheet(2,'前后接口与接点细节',['按 SEGA 官方图校正前部右侧双手柄口、左耳机口，以及背部 EXT、AV、DC 的侧别和位置；局部坐标为图像拟合。','DE-9 采用 2.77×2.84 mm 节距，EXT 为母口；AV 保留 262° 七外一内触点，壳体及配合间隙仍为近似。'])
 v=s.view_fit('ConsoleFront',outer,(22,29,168,68),(0,-1,0),up);d.dimension_box(s,v,outer,'y',18);caption(s,v,'正面接口与模型高度',115)
 v=s.view_fit('ConsoleRear',outer,(220,29,160,68),(0,1,0),up);caption(s,v,'后面板原始接口',115)
 v=s.view_fit('ControllerDE9',starts('PadPort1Shield','PadPort1Insert','PadPort1Pin','PadPort1Tab'),(26,150,104,44),(0,-1,0),up);d.dimension_box(s,v,['PadPort1Shield'],'x',139);caption(s,v,'DE-9 手柄端口',207)
@@ -48,7 +48,7 @@ v=s.view_fit('Mainboard',d.keys_for(['Mainboard']),(22,31,178,151),(0,0,1));d.di
 v=s.view_fit('CPU68000Detail',starts('CPU68000'),(244,31,126,64),(0,0,1));d.dimension_box(s,v,['CPU68000'],'x',21);caption(s,v,'68000 双列直插封装',119)
 v=s.view_fit('VDPDetail',starts('VDP'),(252,146,110,49),(.3,-.6,2));caption(s,v,'图形处理器封装示意',211);s.save()
 
-s=d.Sheet(8,'卡带触点、散热片与控制传动',['卡带座保留两排共 64 个弹片，防尘门、导向框和电源锁结构分别建模。','折弯散热片与稳压器位于内部，音量、电源和 RESET 的简化传动用于说明空间关系。'])
+s=d.Sheet(8,'卡带触点、散热片与控制传动',['卡带座与空白卡带均采用两排 2.54 mm 节距，共 64 个接点；防尘门、导向框和电源锁分别建模。','折弯散热片与稳压器位于内部，音量、电源和 RESET 的简化传动用于说明空间关系。'])
 v=s.view_fit('CardReaderDetail',[k for k in d.keys_for(['CardReader']) if k not in ['CartridgeFlap','CardGuide']],(27,28,163,86),(0,0,1));d.dimension_box(s,v,['CardReaderHousing'],'x',18);caption(s,v,'两排 64 接点插座',133)
 v=s.view_fit('RegulatorAssembly',d.keys_for(['Power']),(246,33,114,68),(.8,-1,1.3),up);caption(s,v,'线性稳压器与折弯散热片',133)
 v=s.view_fit('ControlMechanisms',starts('VolumeMechanism','VolumeStem','PowerMechanism','PowerStem','CartridgeLock','ResetSwitch','ResetPlunger'),(43,160,313,36),(.2,-.7,1.2),up);caption(s,v,'三个控制件的内部传动',212);s.save()
