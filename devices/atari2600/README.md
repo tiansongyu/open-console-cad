@@ -1,6 +1,6 @@
 # Atari 2600 · CX2600 Heavy Sixer
 
-本模型以 1977 年木纹六开关 VCS 为研究对象，经过 **23 轮建模，包含 684 个组件条目、1,511 个实体**，提供可编辑工程、12 页 A3 图纸与十一种交互式视图。
+本模型以 1977 年木纹六开关 VCS 为研究对象，经过 **24 轮建模，包含 684 个组件条目、1,510 个实体**，提供可编辑工程、12 页 A3 图纸与十一种交互式视图。
 
 [在线 3D 预览](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=internal#viewer) · [CX10 摇杆机构](https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=mechanism#viewer) · [A3 图册](output/drawings/Atari2600_Drawings.pdf)
 
@@ -26,14 +26,21 @@
 
 ## 尺寸与参考边界
 
-本模型主机学习包络约 **346 × 232.443 × 88.304 mm**，包含表面标识，外伸线缆、独立控制器及附件另计。未取得原厂尺寸图或实机测量，整体与局部尺寸均为近似学习尺寸，不作为原厂规格或制造尺寸使用。参数表及清单明确记录这一点。
+本模型主机学习包络约 **346 × 232.443 × 88.304 mm**，包含表面标识，外伸线缆、独立控制器及附件另计。未取得原厂壳体尺寸图或实机测量，本体和多数局部尺寸为近似学习尺寸；卡带接口的兼容硬件依据另见本轮说明，仍不提供制造公差。参数表及清单明确记录这一点。
 
 卡带使用原创 VCS STUDY 标签，不包含游戏 ROM、封面或电路数据。适配器内部采用通用变压器、整流和滤波结构示意；切换盒局部尺寸和触点位置为学习近似。线缆展示收纳片段，不代表原装长度。来源及版本差异见 [SOURCES.md](references/SOURCES.md)。
 
 ## 验证记录
 
-- [完整源码重建](output/reports/rebuild_verification.json)：从新工程执行 23 轮，逐项核对 684 个组件的有效性、实体数、包围盒和体积。
-- [整套装配求交](output/reports/final_interference_audit.json)：2,016 对候选组件完成检查，无超过 0.000001 mm³ 的干涉。
+2026-11-08 第 24 轮将卡座和空白卡带的接点节距从 4.0 mm 改为 2.54 mm，同步弹片通道、主板钻孔和卡带开口。金手指尺寸 1.524×6.35 mm、配合板舌宽 32.512 mm 取自已在原装卡壳上验证的兼容 PCB；33.2 mm 开口是本模型采用的配合间隙。按实物后视图将 DE-9 改为宽边朝上、上排五针，缩小边框并同步母插头，内侧遮挡唇盖住装配间隙。已有 Fuji 标记改为平滑曲线并与字样对齐。另修复旧线圈、RF 展示线和 ROM 字形的严格实体错误。
+
+- [本轮接口与严格实体检查](output/reports/fidelity_geometry.json) · [整套装配求交](output/reports/fidelity_interference.json) · [交付检查](output/reports/fidelity_delivery.json)
+- [本轮来源与边界](references/fidelity_iteration24.json)：兼容 PCB 的接口尺寸不代表原厂完整电路板；壳体、弹片形状及配合间隙仍有估计值。
+
+本轮在第 23 轮保存的原生历史上追加修改。第 24 轮已接入重建入口，但未从空文档重跑全部源码；以下旧轮次重建、线上及视觉记录保留历史适用范围。
+
+- [第 23 轮完整源码重建](output/reports/rebuild_verification.json)：从新工程执行 23 轮，逐项核对 684 个组件的有效性、实体数、包围盒和体积。
+- [第 23 轮整套装配求交](output/reports/final_interference_audit.json)：2,016 对候选组件完成检查，无超过 0.000001 mm³ 的干涉。
 - [原生与 STEP 回读](output/reports/export_roundtrip_audit.json)：两份原生工程及三份 STEP 通过，STEP 实体逐一匹配；曲面体积积分差异以双向布尔差集进一步核对。
 - [尺寸与投影核对](output/reports/drawing_checks.json)：33 项模型测量；[原生图纸](output/reports/native_drawings_audit.json) 含 12 页和 15 个尺寸引用，[保存后重开](output/reports/native_drawings_reload.json) 与打开宏均通过。
 - [PDF 视觉验收](output/reports/visual_acceptance.json) · [独立审阅](output/reports/independent_pdf_review.json)：Kami 字体、内容、样式、密度和占位符检查通过，全部 12 页完成逐页审阅。独立审阅的范围和限制见报告。

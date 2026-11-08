@@ -7,13 +7,13 @@
       "view": "ConsoleTop",
       "p1": [
         -173.0,
-        0.026500049999995667,
-        44.151795294194464
+        0.026499999999998636,
+        44.15179529419446
       ],
       "p2": [
         173.0,
-        0.026500049999995667,
-        44.151795294194464
+        0.026499999999998636,
+        44.15179529419446
       ],
       "axis": "x",
       "value_mm": 345.9999999999999,
@@ -29,16 +29,16 @@
       "view": "ConsoleTop",
       "p1": [
         0.0,
-        -116.19500000000001,
-        44.151795294194464
+        -116.1950001,
+        44.15179529419446
       ],
       "p2": [
         0.0,
         116.2480001,
-        44.151795294194464
+        44.15179529419446
       ],
       "axis": "y",
-      "value_mm": 232.44300010000003,
+      "value_mm": 232.44300020000003,
       "label": "≈ 232.44",
       "published": false,
       "label_position": [
@@ -51,16 +51,16 @@
       "view": "ConsoleFront",
       "p1": [
         0.0,
-        0.026500049999981456,
+        0.026499999999984425,
         -2.1316282072803006e-14
       ],
       "p2": [
         0.0,
-        0.026500050000001066,
-        88.30359058838894
+        0.026500000000004034,
+        88.30359058838893
       ],
       "axis": "y",
-      "value_mm": 88.30359058838899,
+      "value_mm": 88.30359058838894,
       "label": "≈ 88.3",
       "published": false,
       "label_position": [
@@ -333,239 +333,5 @@
       ]
     }
   ],
-  "method": "BRep orthographic projections, model-derived endpoints, and planar cross sections; source pose identified per view",
-  "model_measurements": [
-    {
-      "name": "body.XLength",
-      "actual_mm": 346.0,
-      "expected_mm": 346,
-      "basis": "Model-measured approximate envelope; not a manufacturer specification",
-      "passed": true
-    },
-    {
-      "name": "body.YLength",
-      "actual_mm": 232.4430001,
-      "expected_mm": 232.4430001,
-      "basis": "Model-measured approximate envelope; not a manufacturer specification",
-      "passed": true
-    },
-    {
-      "name": "body.ZLength",
-      "actual_mm": 88.30359058838891,
-      "expected_mm": 88.30359058838891,
-      "basis": "Model-measured approximate envelope; not a manufacturer specification",
-      "passed": true
-    },
-    {
-      "name": "Mainboard.XLength",
-      "actual_mm": 96.0,
-      "expected_mm": 96,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Mainboard.YLength",
-      "actual_mm": 202.0,
-      "expected_mm": 202,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Mainboard.ZLength",
-      "actual_mm": 1.6000000000000014,
-      "expected_mm": 1.6,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "CPU.XLength",
-      "actual_mm": 35.5,
-      "expected_mm": 35.5,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "CPU.YLength",
-      "actual_mm": 14.0,
-      "expected_mm": 14,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "RIOT.XLength",
-      "actual_mm": 50.0,
-      "expected_mm": 50,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "TIA.XLength",
-      "actual_mm": 50.0,
-      "expected_mm": 50,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1Bottom.XLength",
-      "actual_mm": 90.0,
-      "expected_mm": 90,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1Bottom.YLength",
-      "actual_mm": 90.0,
-      "expected_mm": 90,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1Bottom.ZLength",
-      "actual_mm": 2.0,
-      "expected_mm": 2,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J2Bottom.XLength",
-      "actual_mm": 90.0,
-      "expected_mm": 90,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J2Bottom.YLength",
-      "actual_mm": 90.0,
-      "expected_mm": 90,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1PCB.XLength",
-      "actual_mm": 72.0,
-      "expected_mm": 72,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1PCB.YLength",
-      "actual_mm": 70.0,
-      "expected_mm": 70,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J1PCB.ZLength",
-      "actual_mm": 1.5999999999999996,
-      "expected_mm": 1.6,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J2PCB.XLength",
-      "actual_mm": 72.0,
-      "expected_mm": 72,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "J2PCB.YLength",
-      "actual_mm": 70.0,
-      "expected_mm": 70,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "CartBack.XLength",
-      "actual_mm": 82.0,
-      "expected_mm": 82,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "CartBack.YLength",
-      "actual_mm": 98.0,
-      "expected_mm": 98,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "CartBack.ZLength",
-      "actual_mm": 1.6,
-      "expected_mm": 1.6,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Pad1Bottom.XLength",
-      "actual_mm": 65.0,
-      "expected_mm": 65,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Pad1Bottom.YLength",
-      "actual_mm": 93.0,
-      "expected_mm": 93,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Pad1PotBase.XLength",
-      "actual_mm": 24.0,
-      "expected_mm": 24,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "AdapterBack.XLength",
-      "actual_mm": 55.0,
-      "expected_mm": 55,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "AdapterBack.YLength",
-      "actual_mm": 65.0,
-      "expected_mm": 65,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "TVBoxBase.XLength",
-      "actual_mm": 55.0,
-      "expected_mm": 55,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "TVBoxBase.YLength",
-      "actual_mm": 72.0,
-      "expected_mm": 72,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Switchboard.local.XLength",
-      "actual_mm": 284.00000000000006,
-      "expected_mm": 284,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Switchboard.local.YLength",
-      "actual_mm": 66.00000000000003,
-      "expected_mm": 66,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    },
-    {
-      "name": "Switchboard.local.ZLength",
-      "actual_mm": 1.6000000000000263,
-      "expected_mm": 1.6,
-      "basis": "Declared approximate study dimension",
-      "passed": true
-    }
-  ],
-  "envelope_kind": "approximate"
+  "method": "BRep orthographic projections, model-derived endpoints, and planar cross sections; source pose identified per view"
 }

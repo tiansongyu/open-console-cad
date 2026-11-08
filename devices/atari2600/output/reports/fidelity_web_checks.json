@@ -1,0 +1,81 @@
+{
+  "device": "atari2600",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 475,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "components": 335,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 308,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 475,
+      "passed": true
+    },
+    {
+      "view": "joysticks",
+      "components": 140,
+      "passed": true
+    },
+    {
+      "view": "mechanism",
+      "components": 37,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "components": 135,
+      "passed": true
+    },
+    {
+      "view": "power",
+      "components": 79,
+      "passed": true
+    },
+    {
+      "view": "paddles",
+      "components": 82,
+      "passed": true
+    },
+    {
+      "view": "cartridge",
+      "components": 53,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 209,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/atari2600/output/Atari2600_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/atari2600/output/drawings/Atari2600_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/atari2600.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "833ca82b96e3ab9fc63e5ea757d82be57831384057508c0660bc7b028bbf8d35",
+  "glb_sha256": "7d16f81a6c9efeb8b6869ce9007e669f8895adbff22088370831f61d2384052f",
+  "test_date": "2026-11-08",
+  "scope": "All 11 configured viewer modes, component counts, downloads, gallery and keyboard explosion slider"
+}

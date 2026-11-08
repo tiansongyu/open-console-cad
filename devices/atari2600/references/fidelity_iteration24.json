@@ -1,0 +1,91 @@
+{
+  "device": "atari2600",
+  "model": "CX2600 Heavy Sixer (1977)",
+  "review_date": "2026-11-08",
+  "iteration": 24,
+  "sources": [
+    {
+      "url": "https://github.com/sanni/cartreader/blob/master/Cart_Reader/2600.ino",
+      "role": "Working cartridge-reader implementation explicitly identifies a 24-position 2.54 mm pitch connector"
+    },
+    {
+      "url": "https://hackaday.io/project/113217/components",
+      "role": "Independent firsthand cartridge-reader BOM specifies two rows, 24 contacts and 2.54 mm pitch"
+    },
+    {
+      "url": "https://github.com/sarweiler/a2k6-cart",
+      "role": "Author's working cartridge PCB was tested in an original Starmaster case; provides a demonstrated compatible mating interface, not an original Atari PCB drawing"
+    },
+    {
+      "url": "https://github.com/sarweiler/a2k6-cart/blob/76844799d1cc4aaa2144c5743320d50991ddcc22/kicad/a2k6-cart.kicad_pcb",
+      "sha256": "2b5ad2dc309c3f06cb3a7dcdde8fde0ebf4c0ef3d2a7e4eaf2b06fc9aee19a96",
+      "role": "Atari:2600_Cartridge_Port footprint has 1.524 x 6.35 mm fingers at 2.54 mm pitch; mating tab Edge.Cuts span 136.398 to 168.910 mm, width 32.512 mm; measurements only, no traces or game data copied"
+    },
+    {
+      "url": "https://www.atari-computermuseum.de/2600.htm",
+      "role": "Firsthand original Heavy Sixer board and enclosure photographs; retained outer guide and two-board construction"
+    },
+    {
+      "url": "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_hd_stamped_formed_straight_pcb.pdf",
+      "role": "Manufacturer standard DE-9 contact pitch 2.77 mm and row spacing 2.84 mm; Atari plastic housings retain photo-derived dimensions."
+    }
+  ],
+  "before": {
+    "reader_contact_pitch_mm": 4.0,
+    "cartridge_contact_pitch_mm": 4.0,
+    "cartridge_pad_dimensions_mm": [
+      2.8,
+      9.0
+    ],
+    "cartridge_edge_tab_width_mm": 50.0,
+    "reader_insertion_slot_width_mm": 69.0,
+    "cartridge_case_edge_opening_width_mm": 53.0
+  },
+  "after": {
+    "reader_contact_pitch_mm": 2.54,
+    "cartridge_contact_pitch_mm": 2.54,
+    "contacts_each_side": 12,
+    "cartridge_pad_dimensions_mm": [
+      1.524,
+      6.35
+    ],
+    "cartridge_edge_tab_width_mm": 32.512,
+    "reader_insertion_slot_width_mm": 33.2,
+    "cartridge_case_edge_opening_width_mm": 33.2,
+    "reader_channels_and_mainboard_bores_updated": true,
+    "existing_component_ids_and_order_preserved": true
+  },
+  "remaining_estimates": [
+    "33.2 mm insertion opening is a study clearance around the compatible board tab, not an original Atari tolerance.",
+    "Socket exterior, tilt, spring form and termination depths remain photographic study dimensions.",
+    "Blank cartridge enclosure and main PCB are original study geometry; only the mating tab and contact array use compatible-board measurements.",
+    "No original housing dimensional drawing, complete dust-door mechanism or functional circuit is verified."
+  ],
+  "factory_match_verified": false,
+  "cad_execution_verified": true,
+  "full_source_rebuild_executed": false,
+  "legacy_repairs": {
+    "parts": [
+      "RFCable",
+      "SwitchReturnSpring4",
+      "SwitchReturnSpring5",
+      "RFCoilWinding",
+      "CartROMMark"
+    ],
+    "scope": "Strict saved-native audit detected old C0 sweep surfaces and touching glyph boundaries. Springs use the existing split-helix helper at unchanged radius/pitch/placement; RF cable retains endpoints and uses an approximate analytic storage route; text solids are unioned."
+  },
+  "exterior_review": {
+    "source": "https://www.atari-computermuseum.de/2600.htm",
+    "rear_photo_sha256": "e599bae0eb94cbf56fb8a413c2d0b49efed6c73cf4f84dee6298b4e6e6096595",
+    "front_photo_sha256": "3a91f8594f895235699ce4ab11065eaed9755884e878bcc188275cfa6710b22b",
+    "changes": [
+      "Rear D-shaped sockets and contact rows corrected from wide-bottom/five-lower to wide-top/five-upper.",
+      "Raised rear surrounds reduced from 34 x 18 mm to 24 x 14 mm; housings to 20.8 x 10.5 mm with fitted D-shaped case apertures.",
+      "Both CX10 female noses and paddle female nose match the corrected keying, while preserving the original six used contacts.",
+      "Existing Fuji mark redrawn with smooth curves and aligned above the existing wordmark.",
+      "Inner sealing flanges mask the housing clearance without exposing boards or wires."
+    ],
+    "basis": "Local outline dimensions and mark proportions are photograph fits, scaled against the existing approximate body envelope; not factory dimensions."
+  },
+  "validated_source_sha256": "833ca82b96e3ab9fc63e5ea757d82be57831384057508c0660bc7b028bbf8d35"
+}

@@ -1188,3 +1188,6 @@ def stage23(m):
 
 
 STAGES[23]=stage23
+
+from .fidelity_atari2600 import stage24
+STAGES[24] = stage24

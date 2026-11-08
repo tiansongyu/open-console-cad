@@ -352,7 +352,8 @@
           "TriggerSpring-1",
           "TriggerSpring1"
         ]
-      }
+      },
+      "last_pushed_commit": "3872853"
     },
     {
       "order": 6,
@@ -866,8 +867,8 @@
       "order": 16,
       "device": "atari2600",
       "model": "CX2600 · Heavy Sixer (1977)",
-      "status": "in_progress",
-      "current_step": "cartridge_interface_geometry_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_24",
       "baseline": {
         "iterations": 23,
         "physical_components": 684,
@@ -895,11 +896,26 @@
           "Schematic internal layout": 505
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/atari2600/references/fidelity_iteration24.json"
+      ],
+      "changes": [
+        "Corrected cartridge reader and mating fingers from 4.0 to 2.54 mm pitch with compatible PCB tab dimensions",
+        "Corrected rear DE9 orientation, five/four contact rows and photographed surround proportions",
+        "Matched CX10 and paddle plug keying; repaired legacy wire, spring and glyph BRep defects"
+      ],
+      "validation": {
+        "report": "devices/atari2600/output/reports/fidelity_delivery.json",
+        "source_sha256": "833ca82b96e3ab9fc63e5ea757d82be57831384057508c0660bc7b028bbf8d35",
+        "passed": true,
+        "all_components_strict_brep_passed": true
+      },
+      "remaining_uncertainties": [
+        "Whole body envelope and local housing outlines remain photographic study dimensions.",
+        "Cartridge dimensions describe a demonstrated compatible interface, not the complete original Atari PCB.",
+        "DE9 housings, plug overmolds and fitted graphic contours are approximate; no manufacturing tolerances or functional circuit supplied."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "0d72d298190bdda4598a86b1069afe826cb2231b20e6c99aa55f1dcb2f5ec25d",
@@ -920,7 +936,7 @@
       "device": "megadrive",
       "model": "HAA-2510 · 初代日版",
       "status": "completed",
-      "current_step": "validated_iteration_14",
+      "current_step": "iteration_15_official_multiview_correction_in_progress",
       "baseline": {
         "iterations": 13,
         "physical_components": 825,

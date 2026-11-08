@@ -22,7 +22,7 @@ s=d.Sheet(1,'六开关主机总装与学习包络',['CX2600 Heavy Sixer 学习�
 v=s.view_fit('ConsoleIsometric',external,(17,30,170,157),(-.7,-1.3,1.7));caption(s,v,'木纹六开关主机',206)
 v=s.view_fit('ConsoleTop',external,(219,32,157,150),(0,0,1));d.dimension_box(s,v,body,'x',19);d.dimension_box(s,v,body,'y',207);caption(s,v,'宽 × 深，包含表面标识',206);s.save()
 
-s=d.Sheet(2,'前后接口与主体高度',['后部包含两组 DE-9、3.5 mm 电源接口及固定 RF 线；主机前部保留木纹饰板。','尺寸按 X 宽、Y 深、Z 高记录；接口与孔位均为当前模型的学习几何。'])
+s=d.Sheet(2,'前后接口与主体高度',['后部 DE-9 按实物照片采用宽边朝上、上排五针；前部保留木纹饰板及居中对齐的 Fuji 标记。','接点节距 2.77×2.84 mm；边框、插口壳与标记为照片拟合，内侧遮挡唇封住安装间隙。'])
 v=s.view_fit('ConsoleFront',external,(22,30,169,69),(0,-1,0),up);d.dimension_box(s,v,body,'y',12);caption(s,v,'正面与主体高度',116)
 v=s.view_fit('ConsoleRear',external,(217,30,166,69),(0,1,0),up);caption(s,v,'原始后面板接口',116)
 v=s.view_fit('DE9Rear',starts('ControllerSocket0','ControllerPin0_','ControllerSurround0'),(20,147,110,45),(0,1,0),up);caption(s,v,'DE-9 手柄接口',204)
@@ -49,7 +49,7 @@ s=d.Sheet(6,'主机与双摇杆的爆炸总览',['爆炸装配沿组件清单中
 keys=[k for k in main if C[k].Assembly not in ['Cables','Wiring'] and not any(t in k for t in ['SignalWire','Plug','Cable'])]
 v=s.view_fit('FullConsoleExploded',keys,(12,25,372,169),(1,-1,.9),up,exploded=True);caption(s,v,'整机、屏蔽与两只 CX10',210);s.save()
 
-s=d.Sheet(7,'主逻辑板与 24 接点卡座',['窄长主板包括 6507、6532 RIOT、TIA 与 CD4050 封装示意，并保留穿孔引脚和焊盘。','卡带接口具有两排共 24 个接点；芯片位置、封装和 PCB 尺寸均为学习近似。'])
+s=d.Sheet(7,'主逻辑板与 24 接点卡座',['窄长主板包括 6507、6532 RIOT、TIA 与 CD4050 封装示意，并保留穿孔引脚和焊盘。','两排共 24 个接点采用兼容硬件确认的 2.54 mm 节距；主板孔位与弹片通道同步，壳体和弹片外形仍为近似。'])
 v=s.view_fit('LogicPCB',d.keys_for(['Mainboard']),(24,28,169,154),(0,0,1));d.dimension_box(s,v,['Mainboard'],'x',18);d.dimension_box(s,v,['Mainboard'],'y',13);caption(s,v,'主板 · '+C['Mainboard'].PartNumber,202)
 v=s.view_fit('CardReader',[k for k in d.keys_for(['CardReader']) if k!='CartridgeGuide'],(233,31,142,64),(.6,-1,1.2));caption(s,v,'移开导向口后的 24 接点卡座',116)
 v=s.view_fit('CPUDetail',['CPU','CPUPins','CPUMark','CPUSolderLands'],(238,145,132,44),(.3,-.8,1.7));caption(s,v,'6507 封装 · '+C['CPU'].PartNumber,209);s.save()
@@ -67,7 +67,7 @@ pot=starts('Pad1Pot','Pad1Resistance','Pad1Wiper');pot=[k for k in pot if k not 
 v=s.view_fit('Potentiometer',pot,(225,28,152,87),(.5,-.8,1.5));caption(s,v,'1 MΩ 电位器内部示意',136)
 v=s.view_fit('SharedPaddleLead',starts('PaddleY','PaddleShared','PaddlePlug'),(44,168,310,36),(0,0,1));caption(s,v,'共用 Y 接头与 DE-9 插头',212);s.save()
 
-s=d.Sheet(10,'学习卡带、适配器与电视切换盒',['空白卡带包含 24 接点和 ROM 封装示意，使用原创标签，不包含游戏数据或封面。','适配器内部为通用结构示意；TV/GAME 切换盒按同代接口关系建模，尺寸并非原厂制造数据。'])
+s=d.Sheet(10,'学习卡带、适配器与电视切换盒',['空白卡带含两排 2.54 mm 节距金手指，配合板舌宽 32.512 mm；依据实机适配过的 PCB，保留原创无游戏数据标签。','金手指为 1.524×6.35 mm；其余 PCB、适配器和 TV/GAME 切换盒为学习结构，不代表原厂电路或制造数据。'])
 v=s.view_fit('BlankCartridge',[k for k in starts('Cart') if C[k].Assembly=='Accessories'],(24,28,148,137),(0,0,1));d.dimension_box(s,v,['CartBack'],'x',18);d.dimension_box(s,v,['CartBack'],'y',12);caption(s,v,'空白卡带 · 24 接点',186)
 v=s.view_fit('PowerAdapter',starts('Adapter','Transformer'),(217,29,164,62),(.5,-.8,1.5));caption(s,v,'9 V / 500 mA 适配器示意',111)
 v=s.view_fit('TVGameBox',starts('TVBox'),(221,146,157,42),(.3,-1,1.5));caption(s,v,'天线端子、RCA 与双线输出',208);s.save()

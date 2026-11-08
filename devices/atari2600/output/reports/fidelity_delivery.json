@@ -1,0 +1,71 @@
+{
+  "device": "atari2600",
+  "iteration": 24,
+  "date": "2026-11-08",
+  "source_sha256": "833ca82b96e3ab9fc63e5ea757d82be57831384057508c0660bc7b028bbf8d35",
+  "physical_components": 684,
+  "solids": 1510,
+  "baseline_commit": "0ae2d75",
+  "existing_ids_and_part_numbers_preserved": true,
+  "checks": {
+    "strict_geometry": {
+      "report": "fidelity_geometry.json",
+      "passed": true,
+      "sha256": "cb3ac72efcab48f10a5eab25f1d90c15a77d73fb5826579791129fe9d2d22bf5"
+    },
+    "interference": {
+      "report": "fidelity_interference.json",
+      "passed": true,
+      "sha256": "91a7b3a7b88191f8fb6296002cbdd491053b2a95cf28ae7070bb50e564b459e1"
+    },
+    "step_roundtrip": {
+      "report": "export_roundtrip_audit.json",
+      "passed": true,
+      "sha256": "09a5c62d9c2311d63a455d414057a36ecc3a6e7519a28e77a5cc3411f61aac1b"
+    },
+    "pdf_visual": {
+      "report": "fidelity_pdf_review.json",
+      "passed": true,
+      "sha256": "ef2fd23f4aa243fec7cd221086f516ba48eb4885a7b18b9032c8cebad6b058da"
+    },
+    "exterior_visual": {
+      "report": "fidelity_exterior_review.json",
+      "passed": true,
+      "sha256": "b12adeaaf6a76c0e51c770eab541314d94c6370e4226b4b9ad43b27a2a00f7d8"
+    },
+    "native_drawings": {
+      "report": "native_drawings_audit.json",
+      "passed": true,
+      "sha256": "040e45ed082de74849b186261efc14d994048c7257d894121996ce6a754ff98a"
+    },
+    "native_drawings_reload": {
+      "report": "native_drawings_reload.json",
+      "passed": true,
+      "sha256": "9a2c7842bee3e8db64dfcc38c6d7e2fa459562b2c1ad36a84224d29b98d10e2a"
+    },
+    "glb": {
+      "report": "fidelity_glb_validation.json",
+      "passed": true,
+      "sha256": "ae0da348d2e293e6017b965ccfa5697b7d75c82a7b330d7f433f7eb8fbe0bf7d"
+    },
+    "web_viewer": {
+      "report": "fidelity_web_checks.json",
+      "passed": true,
+      "sha256": "bc2eaebf035c1c36c3eaa8cbf99c9522a0d0873af334cd61521e037e98c8bae5"
+    }
+  },
+  "web_source_and_hash_match": true,
+  "gzip_lossless": true,
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Appended stage24 to the saved stage23 native history; the complete source rebuild macro includes stage24 but was not rerun from an empty document.",
+  "legacy_repair_scope": "Four old C0 sweep surfaces rebuilt from retained coil parameters or an analytic storage route; touching ROM legend solids united after empty bidirectional Boolean differences. No exact BRep-equivalence claim for the rebuilt sweeps.",
+  "factory_match_verified": false,
+  "remaining_uncertainties": [
+    "Whole body envelope and local housing outlines remain photographic study dimensions.",
+    "Cartridge dimensions describe a demonstrated compatible interface, not the complete original Atari PCB.",
+    "DE9 housings, plug overmolds and fitted graphic contours are approximate; no manufacturing tolerances or functional circuit supplied."
+  ],
+  "passed": true,
+  "repository_checks": "passed (device scope)",
+  "production_build": "passed; existing bundle-size advisory"
+}
