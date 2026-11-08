@@ -1,0 +1,1080 @@
+{
+  "schema_version": 1,
+  "started_date": "2026-11-08",
+  "updated_date": "2026-11-08",
+  "status": "active",
+  "objective": "从 NDS 开始逐款优化全部 27 款设备，依据实机资料尽量实现 1:1 复刻，完成每款的模型修订与交付验证。",
+  "scope": "现有型号及其已建模主机、控制器与附件；沿用型号和地区版本。",
+  "baseline_method": "只读读取当前目录、profile 和 final_manifest；未重跑几何检查，历史报告不视为本轮验收。",
+  "completion_rule": "全部设备完成资料核对、实际修订、相关输出更新、当前文件验证和差异说明后，才算本轮优化完成；不等于证明制造级完全一致。",
+  "factory_equivalence_verified": false,
+  "devices": [
+    {
+      "order": 1,
+      "device": "nds",
+      "model": "NTR-001",
+      "status": "in_progress",
+      "current_step": "reference_review",
+      "baseline": {
+        "iterations": 16,
+        "physical_components": 321,
+        "manifest_path": "devices/nds/output/reports/final_manifest.json",
+        "manifest_sha256": "a02162e5f37c033cc354552538f5b5cad2e96064ba039c7ccf87ce37bdabc566",
+        "reference_envelope_mm": [
+          148.7,
+          84.7,
+          28.9
+        ],
+        "measured_envelope_mm": [
+          148.70000009999998,
+          84.7000002,
+          28.900000100000014
+        ],
+        "envelope_delta_mm": [
+          1e-07,
+          2e-07,
+          1e-07
+        ],
+        "envelope_basis": "Published closed or body envelope",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 80,
+          "Schematic internal layout": 241
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 2,
+      "device": "3ds",
+      "model": "CTR-001",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 14,
+        "physical_components": 324,
+        "manifest_path": "devices/3ds/output/reports/final_manifest.json",
+        "manifest_sha256": "5f0b7e11696f6a51b34dd2fa68ea78b23182132d7d1b2dfec94e5d5e01f716ea",
+        "reference_envelope_mm": [
+          134.0,
+          74.0,
+          21.0
+        ],
+        "measured_envelope_mm": [
+          134.0000002,
+          74.0000002,
+          21.00000000000001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          2e-07,
+          0.0
+        ],
+        "envelope_basis": "Published closed or body envelope",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 95,
+          "Schematic internal layout": 229
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 3,
+      "device": "psp",
+      "model": "PSP-1000",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 346,
+        "manifest_path": "devices/psp/output/reports/final_manifest.json",
+        "manifest_sha256": "30619ec571d224a4a9cdc455d3761e67a7f7ec91aaea9313a3456d9a6aa109f0",
+        "reference_envelope_mm": [
+          170,
+          74,
+          23
+        ],
+        "measured_envelope_mm": [
+          170.0000002,
+          74.0000001,
+          23.000000200000002
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          1e-07,
+          2e-07
+        ],
+        "envelope_basis": "Published body dimensions excluding maximum projections; controls and interface projections reported separately.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 110,
+          "Schematic internal layout": 236
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 4,
+      "device": "psv",
+      "model": "PCH-1000 Wi-Fi OLED",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 386,
+        "manifest_path": "devices/psv/output/reports/final_manifest.json",
+        "manifest_sha256": "adb0f3d5c0fd03a36b6508953e7ce0e13982e9cee718997a6e5ef4f060359269",
+        "reference_envelope_mm": [
+          182,
+          83.5,
+          18.6
+        ],
+        "measured_envelope_mm": [
+          182.0000002,
+          83.50000010000002,
+          18.600000200000004
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          1e-07,
+          2e-07
+        ],
+        "envelope_basis": "Published PCH-1000 body envelope, excluding maximum projections.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 122,
+          "Schematic internal layout": 264
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 5,
+      "device": "steamdeck",
+      "model": "2022 LCD",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 16,
+        "physical_components": 498,
+        "manifest_path": "devices/steamdeck/output/reports/final_manifest.json",
+        "manifest_sha256": "8a67e70a7bc25633332efb83df7ddc88355a6e37fecc4abe86f7fa5310de467f",
+        "reference_envelope_mm": [
+          298,
+          117,
+          49
+        ],
+        "measured_envelope_mm": [
+          298.0,
+          117.0000001,
+          49.0000001
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          1e-07,
+          1e-07
+        ],
+        "envelope_basis": "Published complete handheld envelope includes controls; 37 mm shell datum is a model construction parameter.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 106,
+          "Schematic internal layout": 392
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 6,
+      "device": "switch",
+      "model": "HAC-001",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 18,
+        "physical_components": 654,
+        "manifest_path": "devices/switch/output/reports/final_manifest.json",
+        "manifest_sha256": "130d80599e4f30765e3628ccce986ded17b430f4621440a958172d8ca620fd82",
+        "reference_envelope_mm": null,
+        "measured_envelope_mm": null,
+        "envelope_delta_mm": null,
+        "envelope_basis": null,
+        "fidelity": "Published overall envelopes; exterior radii and control positions fitted to official HAC-001 images; major internals schematic",
+        "component_fidelity_counts": {
+          "Approximate exterior detail; published envelope dimensions": 258,
+          "Schematic internal layout": 396
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 7,
+      "device": "switch2",
+      "model": "BEE-001",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 16,
+        "physical_components": 799,
+        "manifest_path": "devices/switch2/output/reports/final_manifest.json",
+        "manifest_sha256": "8e8ffd99fdf4a9d687b297462336ed678b52fbc2f96ab38d98b671c071f626e8",
+        "reference_envelope_mm": null,
+        "measured_envelope_mm": null,
+        "envelope_delta_mm": null,
+        "envelope_basis": null,
+        "fidelity": "Published overall envelopes; local dimensions approximate; major internals schematic",
+        "component_fidelity_counts": {
+          "Approximate exterior detail; published envelope dimensions": 302,
+          "Schematic internal layout": 497
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 8,
+      "device": "gameboy",
+      "model": "DMG-01 (1989)",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 410,
+        "manifest_path": "devices/gameboy/output/reports/final_manifest.json",
+        "manifest_sha256": "2b6eedf039a450ab7ad1d5890d585a759c25cc2a25a414b89acd8836b8ff3f6c",
+        "reference_envelope_mm": [
+          90,
+          148,
+          32
+        ],
+        "measured_envelope_mm": [
+          90.0000002,
+          148.0000001,
+          32.0000001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          1e-07,
+          1e-07
+        ],
+        "envelope_basis": "Nintendo nominal 148 x 90 x 32 mm; model matches the full envelope including controls. Local split and wall thickness are approximate.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 59,
+          "Schematic internal layout": 351
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 9,
+      "device": "gba",
+      "model": "AGB-001 Indigo · early AGB-CPU-02",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 17,
+        "physical_components": 779,
+        "manifest_path": "devices/gba/output/reports/final_manifest.json",
+        "manifest_sha256": "851f77b334e3aeda06750f6c3e9c92d9276e8b5a41af503b1ff62f3c1fc41b0a",
+        "reference_envelope_mm": [
+          144.5,
+          82,
+          24.5
+        ],
+        "measured_envelope_mm": [
+          144.50000066184452,
+          82.00000023138679,
+          24.500000200000002
+        ],
+        "envelope_delta_mm": [
+          6.62e-07,
+          2.31e-07,
+          2e-07
+        ],
+        "envelope_basis": "Nintendo original AGB-001 published 144.5 x 82 x 24.5 mm envelope; local curves, wall thickness and component dimensions approximate.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 45,
+          "Schematic internal layout": 734
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 10,
+      "device": "gamewatch",
+      "model": "DK-52 · Donkey Kong · Original 1982",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 592,
+        "manifest_path": "devices/gamewatch/output/reports/final_manifest.json",
+        "manifest_sha256": "8c9002d035aa66a2d930d77749a094cc2facf455a4cf154b5c0d0469582c1fd0",
+        "reference_envelope_mm": [
+          115,
+          73,
+          23
+        ],
+        "measured_envelope_mm": [
+          115.0000002,
+          73.0,
+          23.13600020000001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          0.0,
+          0.1360002
+        ],
+        "envelope_basis": "Museums Victoria HT38633 measured specimen; not factory drawing",
+        "fidelity": "Reference measured specimen envelope; reconstructed local geometry and nonfunctional internal study",
+        "component_fidelity_counts": {
+          "Museum specimen envelope; approximate local geometry": 129,
+          "Schematic internal layout": 463
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 11,
+      "device": "famicom",
+      "model": "HVC-001 · 圆形按键",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 16,
+        "physical_components": 634,
+        "manifest_path": "devices/famicom/output/reports/final_manifest.json",
+        "manifest_sha256": "257f937e0a66042ea2d61c2c6018f94c8b9e3e84ab2785613e884821b8215968",
+        "reference_envelope_mm": [
+          150,
+          220,
+          60
+        ],
+        "measured_envelope_mm": [
+          150.0,
+          220.0,
+          60.0
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "envelope_basis": "Nintendo original-manual body dimensions: width150 x depth220 x height60 mm. Controller cables and separately displayed accessories excluded. Local shape and wall dimensions approximate.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate local detail": 133,
+          "Schematic internal layout": 501
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 12,
+      "device": "sfc",
+      "model": "SHVC-001 · SHVC-CPU-01 · Original Japan",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 21,
+        "physical_components": 1918,
+        "manifest_path": "devices/sfc/output/reports/final_manifest.json",
+        "manifest_sha256": "a62c14b5025090395acd80b0a6dde617ff946a2af39146a7964f1927f2e7f6a9",
+        "reference_envelope_mm": [
+          200,
+          242,
+          74
+        ],
+        "measured_envelope_mm": [
+          200.0000002,
+          242.00000020000002,
+          74.0
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          2e-07,
+          0.0
+        ],
+        "envelope_basis": "Japanese SHVC-001 original manual:200x242x74mm; do not substitute UK PAL SNES72mm height",
+        "fidelity": "Early Japanese SHVC-001 structure study; internal geometry approximate and nonfunctional",
+        "component_fidelity_counts": {
+          "Japanese original curved grey enclosure; published envelope and approximate local details": 228,
+          "Schematic internal layout": 1690
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 13,
+      "device": "n64",
+      "model": "NUS-001 · 初代灰色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 747,
+        "manifest_path": "devices/n64/output/reports/final_manifest.json",
+        "manifest_sha256": "086e41337cad307063dadd8f5f25ea2f6b58dce2d397507b267a511ee4e63a5a",
+        "reference_envelope_mm": [
+          260,
+          190,
+          73
+        ],
+        "measured_envelope_mm": [
+          260.0,
+          190.0,
+          73.07000000000001
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.0,
+          0.07
+        ],
+        "envelope_basis": "Nintendo official NUS-001 body reference 260 x 190 x 73 mm; local details and internal layouts are approximate. External cables and detached controller/accessories are excluded.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate photographic exterior detail": 154,
+          "Schematic internal layout": 593
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 14,
+      "device": "wii",
+      "model": "RVL-001 · 初代白色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 15,
+        "physical_components": 654,
+        "manifest_path": "devices/wii/output/reports/final_manifest.json",
+        "manifest_sha256": "010a0d547e9a36bfaec80ed56e819231d15684ef22b8f339b731f684000cd3f8",
+        "reference_envelope_mm": [
+          157,
+          215.4,
+          44
+        ],
+        "measured_envelope_mm": [
+          157.0,
+          215.7580001,
+          44.0
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.3580001,
+          0.0
+        ],
+        "envelope_basis": "Published closed or body envelope",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate photographic exterior detail": 153,
+          "Schematic internal layout": 501
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 15,
+      "device": "wiiu",
+      "model": "WUP-001 · 首发白色 Basic",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 22,
+        "physical_components": 707,
+        "manifest_path": "devices/wiiu/output/reports/final_manifest.json",
+        "manifest_sha256": "8e4afa871a744bf63cee5c3e19f714c8fcd9c6e73e87c887ed59b1ea0f526a24",
+        "reference_envelope_mm": [
+          172,
+          268.5,
+          46
+        ],
+        "measured_envelope_mm": [
+          172.0000002,
+          268.7780001,
+          47.2
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          0.2780001,
+          1.2
+        ],
+        "envelope_basis": "Published plastic body 172 × 268.5 × 46 mm; protruding feet and controls measured separately",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate photographic exterior detail": 171,
+          "Schematic internal layout": 536
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 16,
+      "device": "atari2600",
+      "model": "CX2600 · Heavy Sixer (1977)",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 23,
+        "physical_components": 684,
+        "manifest_path": "devices/atari2600/output/reports/final_manifest.json",
+        "manifest_sha256": "c28d741ddbc9b85bde669ca021430500017e705314a3636c8652f3e1b7e67f4e",
+        "reference_envelope_mm": [
+          346.0,
+          232.4430001,
+          88.30359058838891
+        ],
+        "measured_envelope_mm": [
+          346.0,
+          232.4430001,
+          88.30359058838891
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "envelope_basis": "Model-measured study envelope, including applied body marks; external leads, detached controllers and accessories excluded. No manufacturer dimensioned drawing or physical measurement was verified.",
+        "fidelity": "Approximate exterior envelope and details; schematic major internals",
+        "component_fidelity_counts": {
+          "Approximate exterior and envelope; photographic study": 179,
+          "Schematic internal layout": 505
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 17,
+      "device": "megadrive",
+      "model": "HAA-2510 · 初代日版",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 13,
+        "physical_components": 825,
+        "manifest_path": "devices/megadrive/output/reports/final_manifest.json",
+        "manifest_sha256": "07e5d934b6d52d190959f7090bc5c57319f8bbd5c2b48a06a27b9d046fa39037",
+        "reference_envelope_mm": [
+          280,
+          212,
+          70
+        ],
+        "measured_envelope_mm": [
+          280.0000002,
+          212.5000001,
+          70.0280001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          0.5000001,
+          0.0280001
+        ],
+        "envelope_basis": "SEGA Model 1 official body reference 280 x 212 x 70 mm; applied labels and connector protrusions may extend the study envelope. Local details are approximate.",
+        "fidelity": "Published envelope; approximate exterior details and schematic major internals",
+        "component_fidelity_counts": {
+          "Published envelope; approximate photographic exterior detail": 137,
+          "Schematic internal layout": 688
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 18,
+      "device": "saturn",
+      "model": "HST-3200 · 初代日版灰色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 22,
+        "physical_components": 715,
+        "manifest_path": "devices/saturn/output/reports/final_manifest.json",
+        "manifest_sha256": "84497782aaf3a2aed1ea78b622349328f7bc2ee9fd8ccb03e0d1269d51429215",
+        "reference_envelope_mm": [
+          260,
+          230,
+          83
+        ],
+        "measured_envelope_mm": [
+          260.0000002,
+          230.2980001,
+          83.3500001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          0.2980001,
+          0.3500001
+        ],
+        "envelope_basis": "Approximate HST-3200 exterior using later HST-3210 official family dimensions",
+        "fidelity": "Approximate original HST-3200 exterior and schematic internals; family envelope is a study reference",
+        "component_fidelity_counts": {
+          "Approximate original Japanese exterior": 133,
+          "Schematic internal layout": 582
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 19,
+      "device": "ps1",
+      "model": "SCPH-1000 · 初代日版灰色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 25,
+        "physical_components": 929,
+        "manifest_path": "devices/ps1/output/reports/final_manifest.json",
+        "manifest_sha256": "a828773adda9d30e337d4196f4845b4a536fb6181509ef801414b3c6e0c511a4",
+        "reference_envelope_mm": [
+          270.0,
+          188.0,
+          60.0
+        ],
+        "measured_envelope_mm": [
+          270.00000009999997,
+          188.9,
+          60.0430001
+        ],
+        "envelope_delta_mm": [
+          1e-07,
+          0.9,
+          0.0430001
+        ],
+        "envelope_basis": "Approximate original-body study using family dimensions from Sony SCPH-5500 manual. No original SCPH-1000 dimensioned drawing or direct measurement verified. Separate controller/accessories excluded.",
+        "fidelity": "Approximate exterior envelope and details; schematic major internals",
+        "component_fidelity_counts": {
+          "Approximate SCPH-1000 exterior; family dimensions and firsthand photographs": 212,
+          "Schematic internal layout": 717
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 20,
+      "device": "ps2",
+      "model": "SCPH-10000 · 初代日版黑色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 34,
+        "physical_components": 1352,
+        "manifest_path": "devices/ps2/output/reports/final_manifest.json",
+        "manifest_sha256": "ee5755b82c5f39302589a526ceb9c95667125211c70a3e4f0b732d58ff08a1b9",
+        "reference_envelope_mm": [
+          301.0,
+          182.0,
+          78.0
+        ],
+        "measured_envelope_mm": [
+          301.0,
+          185.44981519180345,
+          78.0430001
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          3.449815192,
+          0.0430001
+        ],
+        "envelope_basis": "Sony SCPH-10000 official body envelope; lettering and external connections may extend beyond it. Local stepped-case splits and wall dimensions are photographic estimates.",
+        "fidelity": "Published original body envelope with approximate local geometry and schematic internals",
+        "component_fidelity_counts": {
+          "Published body envelope; approximate local exterior detail": 207,
+          "Schematic internal layout": 1145
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 21,
+      "device": "ps3",
+      "model": "CECHA00 · 日本原版 60 GB",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 30,
+        "physical_components": 1592,
+        "manifest_path": "devices/ps3/output/reports/final_manifest.json",
+        "manifest_sha256": "9269756feaa2010347d8bcd659a352f9c7c58af48d9e2edc42c4c65c7e6cdf87",
+        "reference_envelope_mm": [
+          325.0,
+          274.0,
+          98.0
+        ],
+        "measured_envelope_mm": [
+          325.0000002000001,
+          274.00000020000004,
+          99.31800009999999
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          2e-07,
+          1.3180001
+        ],
+        "envelope_basis": "Japanese original 60 GB CECHA00 horizontal body: X width, Y depth, Z height; maximum projections excluded from official dimensions.",
+        "fidelity": "Approximate original enclosure and early-family internal structure study",
+        "component_fidelity_counts": {
+          "Published approximate body envelope; photo-estimated local curves and details": 159,
+          "Schematic internal layout": 1433
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 22,
+      "device": "ps4",
+      "model": "CUH-1000A · 初代黑色",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 29,
+        "physical_components": 1039,
+        "manifest_path": "devices/ps4/output/reports/final_manifest.json",
+        "manifest_sha256": "1303246094d6e74c80992842d6c5acf4aa86f599f7198c982d6bf4dc8fe154aa",
+        "reference_envelope_mm": [
+          275.0,
+          305.0,
+          53.0
+        ],
+        "measured_envelope_mm": [
+          275.0,
+          304.4905660377359,
+          53.000000000000014
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          -0.509433962,
+          0.0
+        ],
+        "envelope_basis": "Original CUH-1000A approximate announced envelope. Slopes, split positions and walls are photographic study estimates.",
+        "fidelity": "Approximate original body study with schematic internals",
+        "component_fidelity_counts": {
+          "Published approximate body envelope; photo-estimated local geometry": 175,
+          "Schematic internal layout": 864
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 23,
+      "device": "ps5",
+      "model": "CFI-1000A 系列 · 原版光驱",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 34,
+        "physical_components": 1635,
+        "manifest_path": "devices/ps5/output/reports/final_manifest.json",
+        "manifest_sha256": "cdb69c4689ce44aa8aebe819a402af2696574e89b156591e8d5c59e6334b8385",
+        "reference_envelope_mm": [
+          390.0,
+          260.0,
+          104.0
+        ],
+        "measured_envelope_mm": [
+          390.00000020000004,
+          260.00000020000004,
+          103.9337691481972
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          2e-07,
+          -0.066230852
+        ],
+        "envelope_basis": "2020 original disc-console approximate envelope, excluding its Base. Horizontal presentation uses X width, Y depth, Z height.",
+        "fidelity": "Approximate original enclosure study with schematic internals",
+        "component_fidelity_counts": {
+          "Published approximate body envelope; photo-estimated local curves and details": 161,
+          "Schematic internal layout": 1474
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 24,
+      "device": "xbox",
+      "model": "Original Black v1.0 · 2001 · Duke",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 18,
+        "physical_components": 978,
+        "manifest_path": "devices/xbox/output/reports/final_manifest.json",
+        "manifest_sha256": "d5e98e74e75830ca4efca926536da67dfa73bab6e3e194f5c49c03af1c99d999",
+        "reference_envelope_mm": [
+          320,
+          260,
+          100
+        ],
+        "measured_envelope_mm": [
+          320.0,
+          260.2760002,
+          99.60000000000001
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.2760002,
+          -0.4
+        ],
+        "envelope_basis": "Microsoft explicitly approximate320x100x260mm; reordered XYZ320x260x100mm",
+        "fidelity": "Original2001 v1.0 structural study with activeGPU cooling and wiredDuke; approximate and nonfunctional",
+        "component_fidelity_counts": {
+          "Official approximate envelope; photograph-guided original2001 local geometry": 74,
+          "Schematic internal layout": 904
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 25,
+      "device": "xbox360",
+      "model": "Premium 20 GB · Xenon · 北美原版",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 35,
+        "physical_components": 2005,
+        "manifest_path": "devices/xbox360/output/reports/final_manifest.json",
+        "manifest_sha256": "968b3ff43e07338d83b8ad1f85c8436f7a8544de11c1c9873d1befd7b9859bf0",
+        "reference_envelope_mm": [
+          309.0,
+          258.0,
+          83.0
+        ],
+        "measured_envelope_mm": [
+          330.85,
+          259.5380001,
+          83.62735889889197
+        ],
+        "envelope_delta_mm": [
+          21.85,
+          1.5380001,
+          0.627358899
+        ],
+        "envelope_basis": "Horizontal study orientation: X width, Y depth, Z height; removable HDD extends beyond body",
+        "fidelity": "Approximate original console and wireless controller structure study",
+        "component_fidelity_counts": {
+          "Approximate original white Xenon enclosure, not manufacturing dimensions": 221,
+          "Schematic internal layout": 1784
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 26,
+      "device": "xboxone",
+      "model": "Model 1540 · 500 GB · Original 2013",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 28,
+        "physical_components": 1791,
+        "manifest_path": "devices/xboxone/output/reports/final_manifest.json",
+        "manifest_sha256": "c0ae12fe76c01168058ef2c057e20461eaf644c4904f74278ef874e219c12278",
+        "reference_envelope_mm": [
+          343.0,
+          263.0,
+          80.0
+        ],
+        "measured_envelope_mm": [
+          343.00000000000006,
+          263.00000000000006,
+          80.0000001
+        ],
+        "envelope_delta_mm": [
+          0.0,
+          0.0,
+          1e-07
+        ],
+        "envelope_basis": "Microsoft original Xbox One column in official family specification sheet:343x263x80mm; horizontal X width,Y depth,Z height",
+        "fidelity": "Original Xbox One 1540 structure study with approximate internals",
+        "component_fidelity_counts": {
+          "Original black enclosure study; published envelope, approximate local detail": 142,
+          "Schematic internal layout": 1649
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    },
+    {
+      "order": 27,
+      "device": "seriesx",
+      "model": "Original optical · 2020 · 1 TB",
+      "status": "pending",
+      "current_step": null,
+      "baseline": {
+        "iterations": 19,
+        "physical_components": 1047,
+        "manifest_path": "devices/seriesx/output/reports/final_manifest.json",
+        "manifest_sha256": "c600bc7ae98d5950e5dda163f458a0fb0ad78a240687a8b65a161f6250792fda",
+        "reference_envelope_mm": [
+          151,
+          151,
+          301
+        ],
+        "measured_envelope_mm": [
+          151.0000002,
+          151.0000002,
+          301.0000001000001
+        ],
+        "envelope_delta_mm": [
+          2e-07,
+          2e-07,
+          1e-07
+        ],
+        "envelope_basis": "Microsoft Xbox Series X official Disc design specification151x151x301mm",
+        "fidelity": "Original2020 optical SeriesX and original wireless controller structure study; nonfunctional approximate local geometry",
+        "component_fidelity_counts": {
+          "Published outer envelope; approximate original2020 local geometry": 177,
+          "Schematic internal layout": 870
+        }
+      },
+      "reference_evidence": [],
+      "changes": [],
+      "validation": {},
+      "remaining_uncertainties": [],
+      "pass_completed": false,
+      "factory_equivalence_verified": false
+    }
+  ],
+  "iteration_delivery_policy": "每轮模型修订验证通过后单独 commit 并 push；记录提交号与远程同步结果。",
+  "baseline_audit": {
+    "path": "docs/fidelity_baseline_audit.json",
+    "sha256": "b4386abb1f06fa7754c6ef149f37cf55c6df1d343ebc81a188a16cdd5292728b",
+    "complete": true,
+    "geometry_passed": true,
+    "total_devices": 27,
+    "physical_components": 24361,
+    "connector_count_mismatch_count": 5,
+    "factory_equivalence_verified": false
+  }
+}
