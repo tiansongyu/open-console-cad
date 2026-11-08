@@ -16,10 +16,10 @@ s=d.Sheet(1,'2020 年原版光驱 Xbox Series X 总装',['代表版本为黑色 
 v=s.view_fit('ConsoleHero',console,(17,27,190,170),(.8,-1,.65),(0,0,1));caption(s,v,'方塔主机、凹面顶部排风与固定底座',212)
 v=s.view_fit('ControllerHero',controller,(225,50,157,124),(.2,-.5,1.8));caption(s,v,'Series 原版布局控制器',212);s.save()
 
-s=d.Sheet(2,'官方包络与前后接口位置',['微软 Disc design 规格为 151 × 151 × 301 mm；局部孔位、壁厚和接口轮廓为近似。','尺寸标注读取当前 CAD 投影；前 USB、配对、退碟、电源与背部接口保持独立零件。'])
+s=d.Sheet(2,'官方包络与前后接口位置',['微软 Disc design 规格为 151 × 151 × 301 mm；顶部为实机 12×12 孔阵列，孔径约 10 mm。','三只 USB-A 各 9 触点、RJ45 为 8 触点、HDMI 为 19 触点；背板保留模塑触觉标记，局部尺寸仍为近似。'])
 v=s.view_fit('Front',console,(23,33,91,158),(0,-1,0),(0,0,1));d.dimension_box(s,v,console,'x',18);d.dimension_box(s,v,console,'y',15);caption(s,v,'原版前面板',212)
 v=s.view_fit('Rear',console,(151,33,90,158),(0,1,0),(0,0,1));caption(s,v,'双 USB / LAN / 存储扩展 / HDMI / AC',212)
-v=s.view_fit('Top',console,(278,54,96,110),(0,0,1));d.dimension_box(s,v,console,'y',390);caption(s,v,'顶部真实通孔与绿色内壁',187);s.save()
+v=s.view_fit('Top',console,(278,54,96,110),(0,0,1));d.dimension_box(s,v,console,'y',390);caption(s,v,'顶部 144 个通孔与绿色内壁',187);s.save()
 
 s=d.Sheet(3,'中央铸件、双主板与散热路径',['原版两块主板位于中央铸铝中框两侧，APU 一侧接铜均热板和阶梯鳍片。','另一侧布置光驱与上部电源；顶部轴流风扇向上排风，绿色格栅不是照明。'])
 v=s.view_fit('CoreThermal',d.keys_for(['Frame','Mainboard','Storage','Cooling','Fan']), (18,27,178,169),(1,-.6,.5),(0,0,1));caption(s,v,'中框、双板与散热侧',212)

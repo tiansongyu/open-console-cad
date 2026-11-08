@@ -1,0 +1,68 @@
+{
+  "device": "seriesx",
+  "iteration": 20,
+  "source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036",
+  "module_sha256": {
+    "tools/cadlib/fidelity_seriesx.py": "b7a366f49319c4cdb05210eeffb9b6888b26f4f3289aff0fe372ccaf8c27f51d",
+    "tools/cadlib/seriesx.py": "bfe793e368369577110335c60dc3fe3e3e64ae33975012bc5fe5e99142b22993",
+    "devices/seriesx/scripts/iter20_original_144_exhaust_holes_and_tactile_ports.py": "34a7f86a1238c4b433a73f676b4123193a29a0e77d2c26d2daa31f13863cbb72"
+  },
+  "checks": {
+    "strict_saved_brep": true,
+    "component_count": true,
+    "manifest_ids": true,
+    "manifest_part_numbers": true,
+    "green_layers_144": true,
+    "grid_12_by_12": true,
+    "grid_symmetry": true,
+    "144_cylindrical_10mm_holes": true,
+    "FrontUSB_contact_count": true,
+    "RearUSB1_contact_count": true,
+    "RearUSB2_contact_count": true,
+    "Ethernet_contact_count": true,
+    "HDMI_contact_count": true,
+    "RearUSB1_tongue_orientation": true,
+    "RearUSB2_tongue_orientation": true,
+    "hdmi_opposed_10_and_9": true,
+    "rear_tactile_13_dots": true
+  },
+  "strict_brep_errors": [],
+  "top_hole_faces": 144,
+  "contact_counts": {
+    "FrontUSB": 9,
+    "RearUSB1": 9,
+    "RearUSB2": 9,
+    "Ethernet": 8,
+    "HDMI": 19
+  },
+  "grid_x_coordinates_mm": [
+    -66.0,
+    -54.0,
+    -42.0,
+    -30.0,
+    -18.0,
+    -6.0,
+    6.0,
+    18.0,
+    30.0,
+    42.0,
+    54.0,
+    66.0
+  ],
+  "grid_y_coordinates_mm": [
+    -66.0,
+    -54.0,
+    -42.0,
+    -30.0,
+    -18.0,
+    -6.0,
+    6.0,
+    18.0,
+    30.0,
+    42.0,
+    54.0,
+    66.0
+  ],
+  "factory_match_verified": false,
+  "passed": true
+}

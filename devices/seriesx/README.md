@@ -1,6 +1,6 @@
 # Microsoft Xbox Series X · 原版光驱机
 
-2020 年黑色 1 TB 原版光驱主机与 Series 控制器结构学习模型，包含 **19 轮源码、1047 个组件条目和 1067 个实体**：方塔壳、凹面通孔格栅、双主板、中框、APU 与十枚显存、M.2 2230 固态盘、铜均热板与 48 片鳍片、五叶风扇、光驱、电源、内部线束、双板手柄、双 AA 与四组电机。提供完整和爆炸原生工程、三份 STEP、十二页 A3 图册及二十二个网页视图。
+2020 年黑色 1 TB 原版光驱主机与 Series 控制器结构学习模型，包含 **20 轮源码、1104 个组件条目和 1127 个实体**：方塔壳、凹面通孔格栅、双主板、中框、APU 与十枚显存、M.2 2230 固态盘、铜均热板与 48 片鳍片、五叶风扇、光驱、电源、内部线束、双板手柄、双 AA 与四组电机。提供完整和爆炸原生工程、三份 STEP、十二页 A3 图册及二十二个网页视图。
 
 <table>
 <tr>
@@ -24,7 +24,14 @@
 - [源码重建比对](output/reports/rebuild_verification.json) · [严格实体检查](output/reports/strict_saved_native.json) · [装配求交](output/reports/assembly_interference.json)
 - [STEP 回读](output/reports/export_roundtrip_audit.json) · [参数修改复原](output/reports/parameter_edit_test.json) · [交付核对](output/reports/completion_audit.json)
 
-使用 FreeCAD 1.1.3 打开工程。壳体草图、拉伸、手柄曲线放样与布尔历史保留修改入口；`Parameters.Width` 驱动主机外壳宽度约束。重建宏从空文档执行全部十九轮，输出到 `output/rebuilt/`。主机 STEP 包含主机与控制器，全套另含 HDMI 和电源线；局部元件并非一键缩放的制造设计。
+2026-11-08 第 20 轮按原版资料校正顶部 12×12 排风孔，孔径约 10 mm，并补入背板触觉圆点和 HDMI 横条。三只 USB-A 均改为 4+5 触点，RJ45 改为八个弹性接点，HDMI 改为梯形插口及 10+9 双面接点，背部 USB 舌片随竖向插口对齐。原有 1047 个组件的标识和编号保留，新增 57 个条目。
+
+- [本轮几何检查](output/reports/fidelity_geometry.json) · [整套求交](output/reports/fidelity_interference.json) · [交付检查](output/reports/fidelity_delivery.json)
+- [尺寸与来源](references/fidelity_iteration20.json)：通风孔距、曲率、触觉标记尺寸和部分连接器尺寸仍为估计；厂商接口资料用于核对结构，不表示确认了 Xbox 原装连接器供应商。
+
+本轮在第 19 轮保存的原生历史上追加修改；重建入口已接入第 20 轮，但本轮未从空文档重跑全部源码。此前源码重建和线上交互记录保留为历史证据。
+
+使用 FreeCAD 1.1.3 打开工程。壳体草图、拉伸、手柄曲线放样与布尔历史保留修改入口；`Parameters.Width` 驱动主机外壳宽度约束。重建宏从空文档执行全部二十轮，输出到 `output/rebuilt/`。主机 STEP 包含主机与控制器，全套另含 HDMI 和电源线；局部元件并非一键缩放的制造设计。
 
 主机采用微软 Disc design 官方 **151 × 151 × 301 mm** 包络；选择 2020 年原版黑色 1 TB 光驱机，不混用后期白色数字版或 2 TB 机型。内部位置依据 iFixit 原版拆解，顶部风扇按照片重构为五叶；绿色通风孔内衬不是灯光。
 

@@ -1,0 +1,67 @@
+{
+  "device": "seriesx",
+  "iteration": 20,
+  "date": "2026-11-08",
+  "source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036",
+  "physical_components": 1104,
+  "solids": 1127,
+  "preserved_existing_parts": 1047,
+  "new_components": 57,
+  "baseline_commit": "0ae2d75",
+  "existing_ids_and_part_numbers_preserved": true,
+  "checks": {
+    "strict_geometry": {
+      "report": "fidelity_geometry.json",
+      "passed": true,
+      "sha256": "a7f7e94f97d7ab2c25970d3b459bc7e978a0287a43de45a5606ba83beb53589a"
+    },
+    "interference": {
+      "report": "fidelity_interference.json",
+      "passed": true,
+      "sha256": "170d7f632f68589262aca1d74642b7259912de117c121693b83d0087b0bdec8f"
+    },
+    "step_roundtrip": {
+      "report": "export_roundtrip_audit.json",
+      "passed": true,
+      "sha256": "8d7298a27659987b7ecae7f1ee43432ff1e87bc00289013d395461c14df14f29"
+    },
+    "pdf_visual": {
+      "report": "fidelity_pdf_review.json",
+      "passed": true,
+      "sha256": "1f9333537864c9ca955d0f87c00424f47a76a579ced7dcbf28838bd267c7b7ab"
+    },
+    "native_drawings": {
+      "report": "native_drawings_audit.json",
+      "passed": true,
+      "sha256": "97964fc45c3b74c304afa685a0ee775c095084c88ca7b9c51a77e6abf5208c04"
+    },
+    "native_drawings_reload": {
+      "report": "native_drawings_reload.json",
+      "passed": true,
+      "sha256": "7ce30fbc37365436add91657ec924b8813c29f822a7c1231313394ed458645de"
+    },
+    "glb": {
+      "report": "fidelity_glb_validation.json",
+      "passed": true,
+      "sha256": "0faa230f0d49211a8b892924bc9c536561dffa0bfac0dd447af40718cf9c2aa9"
+    },
+    "web_viewer": {
+      "report": "fidelity_web_checks.json",
+      "passed": true,
+      "sha256": "4668cf7344a77cce5b7e697130c10ae5478d46da548d096a03ff6fd058fd9cf3"
+    }
+  },
+  "web_source_and_hash_match": true,
+  "gzip_lossless": true,
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Appended stage20 to saved stage19 native history. Source rebuild macro includes stage20; not rerun from empty document.",
+  "factory_match_verified": false,
+  "remaining_uncertainties": [
+    "Top pitch/dish and tactile-mark dimensions remain photograph-based estimates.",
+    "Manufacturer connector references establish compatible interface geometry, not Xbox OEM component identities.",
+    "Storage expansion contacts, accessory cable interiors, controller local contours and electronics remain schematic."
+  ],
+  "passed": true,
+  "repository_checks": "passed",
+  "production_build": "passed; existing bundle-size advisory"
+}

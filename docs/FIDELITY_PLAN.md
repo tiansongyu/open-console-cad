@@ -37,12 +37,12 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |
-| 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 待开始 |
+| 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 卡带与扩展口校准中 |
 | 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 待开始 |
 | 13 | [Nintendo 64 · NUS-001 · 初代灰色](../devices/n64/README.md) | 15 | 747 | 待开始 |
 | 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 待开始 |
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 待开始 |
-| 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 待开始 |
+| 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 卡带接口验证中 |
 | 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 14 轮已验证 |
 | 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |
 | 19 | [Sony PlayStation · SCPH-1000 · 初代日版灰色](../devices/ps1/README.md) | 25 | 929 | 待开始 |
@@ -53,7 +53,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 24 | [Microsoft Xbox · Original Black v1.0 · 2001 · Duke](../devices/xbox/README.md) | 18 | 978 | 待开始 |
 | 25 | [Microsoft Xbox 360 · Premium 20 GB · Xenon · 北美原版](../devices/xbox360/README.md) | 35 | 2,005 | 待开始 |
 | 26 | [Microsoft Xbox One · Model 1540 · 500 GB · Original 2013](../devices/xboxone/README.md) | 28 | 1,791 | 待开始 |
-| 27 | [Microsoft Xbox Series X · Original optical · 2020 · 1 TB](../devices/seriesx/README.md) | 19 | 1,047 | 最终交付核验中 |
+| 27 | [Microsoft Xbox Series X · Original optical · 2020 · 1 TB](../devices/seriesx/README.md) | 19 | 1,047 | 第 20 轮已验证 |
 
 ## 基线发现
 

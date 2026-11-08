@@ -179,7 +179,8 @@
         "No manufacturing interchangeability or electrical operation claim."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "70c8245"
     },
     {
       "order": 4,
@@ -475,8 +476,8 @@
       "order": 11,
       "device": "famicom",
       "model": "HVC-001 · 圆形按键",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "cartridge_and_expansion_reference_calibration",
       "baseline": {
         "iterations": 16,
         "physical_components": 634,
@@ -675,8 +676,8 @@
       "order": 16,
       "device": "atari2600",
       "model": "CX2600 · Heavy Sixer (1977)",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "cartridge_interface_geometry_validation",
       "baseline": {
         "iterations": 23,
         "physical_components": 684,
@@ -1130,8 +1131,8 @@
       "order": 27,
       "device": "seriesx",
       "model": "Original optical · 2020 · 1 TB",
-      "status": "in_progress",
-      "current_step": "final_delivery_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_20",
       "baseline": {
         "iterations": 19,
         "physical_components": 1047,
@@ -1159,11 +1160,25 @@
           "Schematic internal layout": 870
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/seriesx/references/fidelity_iteration20.json"
+      ],
+      "changes": [
+        "Replaced121top exhaust openings with12×12=144",
+        "Corrected HDMI to19contacts, Ethernet to8, andthreeSuperSpeedUSB-A ports to9each",
+        "Added original rear tactile port identifiers and retained1047existingpartidentities"
+      ],
+      "validation": {
+        "report": "devices/seriesx/output/reports/fidelity_delivery.json",
+        "source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Top pitch/dish and tactile-mark dimensions remain photograph-based estimates.",
+        "Manufacturer connector references establish compatible interface geometry, not Xbox OEM component identities.",
+        "Storage expansion contacts, accessory cable interiors, controller local contours and electronics remain schematic."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     }
   ],

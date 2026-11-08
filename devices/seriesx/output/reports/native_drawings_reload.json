@@ -2,7 +2,39 @@
   "passed": true,
   "pages": 12,
   "dimension_count": 5,
-  "open_macro_passed": true,
-  "reloaded_file": "devices/seriesx/output/XboxSeriesX_Drawings.FCStd",
-  "source_sha256": "c80dd4d0e04e8d76175657c1fb96061e1a97d125203f206563d8e15dd4ceca2e"
+  "checks": [
+    {
+      "dimension": "Dimension02_1",
+      "expected_mm": 151.00000019999996,
+      "actual_mm": 151.0000002,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension02_2",
+      "expected_mm": 301.0000001000001,
+      "actual_mm": 301.0000001000001,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension02_3",
+      "expected_mm": 151.00000020000002,
+      "actual_mm": 151.0000002,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension04_1",
+      "expected_mm": 224.0,
+      "actual_mm": 224.0,
+      "passed": true
+    },
+    {
+      "dimension": "Dimension08_1",
+      "expected_mm": 131.84242770282364,
+      "actual_mm": 131.84242770282364,
+      "passed": true
+    }
+  ],
+  "drawings_sha256": "850eba4a340a075216e116642de6bc62bdb729d0dcfc8ab9f5214cb84a933e04",
+  "source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036",
+  "scope": "Independent saved copy reopened and native dimension references recomputed."
 }

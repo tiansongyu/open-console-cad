@@ -1,0 +1,107 @@
+{
+  "device": "seriesx",
+  "model": "Original Carbon Black 1 TB optical / 2020",
+  "review_date": "2026-11-08",
+  "iteration": 20,
+  "sources": [
+    {
+      "url": "https://news.xbox.com/en-us/2020/09/23/designing-the-next-generation-of-consoles-xbox-series-x-and-xbox-series-s/",
+      "role": "Microsoft design team describes the variable-depth top vents, green subsurface colour and rear tactile interface identifiers"
+    },
+    {
+      "url": "https://arstechnica.com/gaming/2020/09/xbox-series-x-hands-on-the-big-back-compat-dive-begins/",
+      "role": "Firsthand original 2020 hardware review explicitly counts the top grid as 12 by 12, 144 holes"
+    },
+    {
+      "url": "https://arstechnica.com/gaming/2020/10/xbox-series-x-unleashed-our-unrestricted-preview/",
+      "role": "Firsthand original hardware measurement reports 10 mm top vent diameter; not a manufacturer tolerance"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Xbox+Series+X+Teardown/138451",
+      "role": "Firsthand 2020 exterior and teardown, step 2 rear panel and tactile markings"
+    },
+    {
+      "url": "https://d3nevzfk7ii3be.cloudfront.net/igi/Y1QhPHrThNg3yHcj.huge",
+      "role": "iFixit tactile-dot close-up: 3 dots per USB, 2 Ethernet, 4 storage; broader step 2 photograph also shows power dot and HDMI bar",
+      "sha256": "d0fe4eb45d019b91804e0786fd5389e72bbaf75dc4c545a2376eaa0695fa1f6e"
+    },
+    {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/484/48405/484050003_sd.pdf?inline=",
+      "role": "Manufacturer SD-48405-001 Type-A USB3 drawing and pin assignment: four legacy contacts plus five SuperSpeed contacts; compatible interface reference only"
+    },
+    {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/208/208658/2086581201_sd.pdf",
+      "role": "Manufacturer HDMI Type A drawing, pin1/pin19 and pin2/pin18 on opposing tongue faces, 19 contacts total; shell is fitted to existing study aperture, not copied as identified Xbox OEM part"
+    },
+    {
+      "url": "https://www.amphenol-cs.com/product/10029449001tlf.html",
+      "role": "Manufacturer confirms HDMI Type A receptacle with 19 positions"
+    },
+    {
+      "url": "https://www.te.com/en/product-1888068-1.html",
+      "role": "Manufacturer RJ45 reference with eight loaded positions and 1.02 mm pitch; no claim that this CAT5e connector is the Xbox original component"
+    },
+    {
+      "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocFormat=pdf&DocLang=English&DocNm=1888068&DocType=Customer+Drawing&PartCntxt=1888068-1",
+      "role": "TE customer drawing C2 for the standard eight-contact modular interface"
+    },
+    {
+      "url": "https://www.fit-foxconn.com/w73/fit/image/Products/Drawing/Drawing/QJ51191-WFD6-4F_301-0000-2217_A.pdf",
+      "role": "Manufacturer Type A 19-pin receptacle drawing with 15 mm width and 5.65 mm height; used for sleeve height and compatible interface check, not Xbox OEM identity"
+    }
+  ],
+  "changes": [
+    {
+      "feature": "top exhaust",
+      "before": "11 x 11, 121 holes, 8.7 mm opening diameter",
+      "after": "12 x 12, 144 holes, approximately 10 mm diameter"
+    },
+    {
+      "feature": "green interior",
+      "before": "121 thick sleeves",
+      "after": "144 thin display-colour layers following the corrected grid"
+    },
+    {
+      "feature": "rear tactile identification",
+      "before": "absent",
+      "after": "13 moulded dots plus one HDMI bar, fused into RearPanel"
+    },
+    {
+      "feature": "FrontUSB, RearUSB1, RearUSB2",
+      "before_contacts_each": 4,
+      "after_contacts_each": 9,
+      "after_layout": "4 legacy plus 5 SuperSpeed; rear tongues aligned with the tall openings"
+    },
+    {
+      "feature": "Ethernet",
+      "before_contacts": 4,
+      "after_contacts": 8,
+      "after_layout": "1.02 mm pitch spring contacts and upper carrier"
+    },
+    {
+      "feature": "HDMI",
+      "before_contacts": 4,
+      "after_contacts": 19,
+      "after_layout": "10 + 9 contacts on opposing tongue faces; keyed 15 x 5.65 mm trapezoidal sleeve, 14 x 4.55 mm mating opening and upright HDMI OUT legend"
+    }
+  ],
+  "estimated_dimensions": {
+    "top_grid_pitch_mm": 12,
+    "retained_dish_sphere_radius_mm": 410,
+    "green_layer_thickness_mm": 0.02,
+    "tactile_dot_dimensions": "Photographic estimate; moulded caps lie within the nominal outer envelope",
+    "port_dimensions": "Console port positions and outer apertures retained; local tongue, pin thickness, axial depth and sleeve details fitted to available space"
+  },
+  "existing_part_ids_and_numbers_preserved": true,
+  "new_component_count": 57,
+  "factory_match_verified": false,
+  "full_source_rebuild_executed": false,
+  "cad_execution_verified": true,
+  "remaining_limitations": [
+    "No factory dimensional drawing for the original shell or board was verified.",
+    "Standard connector references establish contact count and topology, not Xbox OEM part identities.",
+    "Storage expansion connector contacts and cable accessory interiors remain schematic.",
+    "Controller local curves and electronics remain approximate."
+  ],
+  "validated_source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036"
+}

@@ -633,6 +633,10 @@ def stage19(m):
 STAGES[19]=stage19
 
 
+from .fidelity_seriesx import stage20
+STAGES[20] = stage20
+
+
 def finalize(model):
     from .deliver import finalize as shared_finalize
     configure(model)

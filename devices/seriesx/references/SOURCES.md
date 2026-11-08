@@ -11,3 +11,9 @@
 照片和微软手册仅在本地用于参考，未作为项目自产图像重新分发。项目预览、图纸和网页模型均由本项目的 FreeCAD 几何生成。字体见同目录的许可证。
 
 模型中的电源、接点数量、导线、触点及芯片不可作为可用电路；风扇叶片与散热器不用于计算性能。没有虚构序列号、认证标识或工厂公差。壁厚、安装间隙与通用附件仅用于说明结构。
+
+## 2026-11-08 vent and connector correction
+
+The 2020 firsthand [September preview](https://arstechnica.com/gaming/2020/09/xbox-series-x-hands-on-the-big-back-compat-dive-begins/) counts 144 top holes; the [October hardware inspection](https://arstechnica.com/gaming/2020/10/xbox-series-x-unleashed-our-unrestricted-preview/) reports approximately 10 mm diameters. The model now uses a 12×12 grid. Pitch and retained dish curvature remain estimates. Microsoft's [design-team account](https://news.xbox.com/en-us/2020/09/23/designing-the-next-generation-of-consoles-xbox-series-x-and-xbox-series-s/) and [iFixit's original teardown](https://www.ifixit.com/Teardown/Xbox+Series+X+Teardown/138451) support the green subsurface treatment and tactile rear-port identifiers.
+
+The five standard interfaces no longer share a four-contact placeholder. Each USB-A has four legacy contacts plus five SuperSpeed contacts, the Ethernet jack has eight springs, and HDMI Type A has 19 contacts on opposing tongue faces. Compatible manufacturer drawings and product specifications establish those interface structures; the Xbox connector supplier, solder tails and complete factory dimensions are not verified. See [fidelity_iteration20.json](fidelity_iteration20.json) for source URLs, changes and remaining estimates.
