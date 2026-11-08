@@ -635,8 +635,8 @@
       "order": 11,
       "device": "famicom",
       "model": "HVC-001 · 圆形按键",
-      "status": "in_progress",
-      "current_step": "cartridge_and_expansion_reference_calibration",
+      "status": "completed",
+      "current_step": "validated_iteration_17",
       "baseline": {
         "iterations": 16,
         "physical_components": 634,
@@ -664,11 +664,28 @@
           "Schematic internal layout": 501
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/famicom/references/fidelity_iteration17.json"
+      ],
+      "changes": [
+        "Corrected cartridge contact pitch2.54mm and PCB row pitch5.08mm",
+        "Calibrated offset expansion port, metal rim, thirteen rear vents and recessed controls against Nintendo photographs",
+        "Added nameplate gold rules and removable red expansion dust cap; adjusted compatible DC/RCA interfaces",
+        "Repaired sixteen legacy strict-geometry defects; all638saved components now pass"
+      ],
+      "validation": {
+        "report": "devices/famicom/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "abb3bf597f96c49c74db0f204277713909c827584a15dcc3ef3731c1caca183e",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "No physical specimen or original manufacturing tolerance drawings measured.",
+        "Expansion-port depth, pin diameter, local housing, removable cap and shell details remain photograph-guided estimates.",
+        "Uncalibrated photograph colors and approximate glyphs are not certified factory pigments or typography.",
+        "Compatible connector references constrain selected interfaces without establishing Nintendo OEM part identity.",
+        "Internal electronics, cable length/pose, spring performance and electrical behavior remain schematic."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "dbc6daec9849c5953052ceaba128d21315065fb798b3d50efb12ab91a9bc8848",
@@ -1226,7 +1243,8 @@
         "fully_passed": true,
         "failed_parts": [],
         "inconclusive_parts": []
-      }
+      },
+      "last_pushed_commit": "286adc4"
     },
     {
       "order": 22,

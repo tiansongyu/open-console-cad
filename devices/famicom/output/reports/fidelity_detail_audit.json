@@ -1,0 +1,180 @@
+{
+  "device": "famicom",
+  "iteration": 17,
+  "source_sha256": "abb3bf597f96c49c74db0f204277713909c827584a15dcc3ef3731c1caca183e",
+  "physical_components": 638,
+  "checks": [
+    {
+      "name": "body.X_mm",
+      "actual": 150.0,
+      "expected": 150.0,
+      "basis": "Nintendo original body specification; loose accessories and cables excluded",
+      "passed": true
+    },
+    {
+      "name": "body.Y_mm",
+      "actual": 220.0,
+      "expected": 220.0,
+      "basis": "Nintendo original body specification; loose accessories and cables excluded",
+      "passed": true
+    },
+    {
+      "name": "body.Z_mm",
+      "actual": 60.0,
+      "expected": 60.0,
+      "basis": "Nintendo original body specification; loose accessories and cables excluded",
+      "passed": true
+    },
+    {
+      "name": "reader.row0_pitch_mm",
+      "actual": 2.54,
+      "expected": 2.54,
+      "basis": "Famicom-compatible hardware and GPM-02 footprint",
+      "passed": true
+    },
+    {
+      "name": "reader.row0_span_mm",
+      "actual": 73.66,
+      "expected": 73.66,
+      "basis": "29 intervals at 2.54 mm",
+      "passed": true
+    },
+    {
+      "name": "reader.row1_pitch_mm",
+      "actual": 2.54,
+      "expected": 2.54,
+      "basis": "Famicom-compatible hardware and GPM-02 footprint",
+      "passed": true
+    },
+    {
+      "name": "reader.row1_span_mm",
+      "actual": 73.66,
+      "expected": 73.66,
+      "basis": "29 intervals at 2.54 mm",
+      "passed": true
+    },
+    {
+      "name": "cartridge.Front_pitch_mm",
+      "actual": 2.540000000000001,
+      "expected": 2.54,
+      "basis": "Famicom-compatible card edge",
+      "passed": true
+    },
+    {
+      "name": "cartridge.Rear_pitch_mm",
+      "actual": 2.540000000000001,
+      "expected": 2.54,
+      "basis": "Famicom-compatible card edge",
+      "passed": true
+    },
+    {
+      "name": "reader.solder_row_gap_mm",
+      "actual": 5.079999999999998,
+      "expected": 5.08,
+      "basis": "GPM-02 reconstruction footprint",
+      "passed": true
+    },
+    {
+      "name": "expansion.row0_pitch_mm",
+      "actual": 2.77,
+      "expected": 2.77,
+      "basis": "Compatible DA-15 nominal mating grid; OEM tolerance unverified",
+      "passed": true
+    },
+    {
+      "name": "expansion.row1_pitch_mm",
+      "actual": 2.770000000000001,
+      "expected": 2.77,
+      "basis": "Compatible DA-15 nominal mating grid; OEM tolerance unverified",
+      "passed": true
+    },
+    {
+      "name": "expansion.row_gap_mm",
+      "actual": 2.8400000000000016,
+      "expected": 2.84,
+      "basis": "Compatible DA-15 nominal grid",
+      "passed": true
+    },
+    {
+      "name": "expansion.center_x_mm",
+      "actual": 16.5,
+      "expected": 16.5,
+      "basis": "Official photograph fit; not a factory datum",
+      "passed": true
+    },
+    {
+      "name": "rear_field.through_openings",
+      "actual": 13,
+      "expected": 13,
+      "basis": "Nintendo original-console photograph",
+      "passed": true
+    },
+    {
+      "name": "power.recess_top_mm",
+      "actual": 52.5,
+      "expected": 52.5,
+      "basis": "Fitted 0.5 mm control-field recess",
+      "passed": true
+    },
+    {
+      "name": "reset.recess_top_mm",
+      "actual": 52.5,
+      "expected": 52.5,
+      "basis": "Fitted 0.5 mm control-field recess",
+      "passed": true
+    },
+    {
+      "name": "protective_cap_present",
+      "actual": true,
+      "expected": true,
+      "basis": "Removable red cap visible in Nintendo hero photograph",
+      "passed": true
+    },
+    {
+      "name": "protective_cap_separate_display",
+      "actual": "Accessories",
+      "expected": "Accessories",
+      "basis": "Documented detached presentation",
+      "passed": true
+    },
+    {
+      "name": "dc_plug.outer_diameter_mm",
+      "actual": 5.5,
+      "expected": 5.5,
+      "basis": "Famicom-compatible DC connector",
+      "passed": true
+    },
+    {
+      "name": "dc_plug.bore_diameter_mm",
+      "actual": 2.1,
+      "expected": 2.1,
+      "basis": "Famicom-compatible DC connector",
+      "passed": true
+    },
+    {
+      "name": "rf_jack.outer_diameter_mm",
+      "actual": 8.299999999999997,
+      "expected": 8.3,
+      "basis": "Compatible manufacturer RCA jack drawing",
+      "passed": true
+    },
+    {
+      "name": "rf_plug.pin_diameter_mm",
+      "actual": 3.1999999999999886,
+      "expected": 3.2,
+      "basis": "Within RCP-02 manufacturer 3.25 +0/-0.15 mm range",
+      "passed": true
+    },
+    {
+      "name": "rf_plug.pin_projection_mm",
+      "actual": 7.999999999999972,
+      "expected": 8.0,
+      "basis": "Compatible RCA plug drawing",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Saved BRep bounds, sections and material-point classification; fitted coordinates are model targets, not factory tolerances"
+}

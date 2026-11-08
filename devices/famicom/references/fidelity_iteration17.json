@@ -1,0 +1,147 @@
+{
+  "device": "famicom",
+  "model": "HVC-001 round-button, GPM-02 layout reference",
+  "iteration": 17,
+  "date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://www.crowdsupply.com/tall-dog-electronics/tinynes/updates/new-features-and-accessories-for-tinynes",
+      "publisher": "Daniel G / Tall Dog Electronics, TinyNES hardware developer",
+      "verified": "Famicom uses 60 positions at 2.54 mm pitch; NES uses 72 positions at 2.50 mm pitch."
+    },
+    {
+      "url": "https://github.com/4920616d20546f6d/Nintendo_Famicom_Console/tree/9b2f6c0e6b72e61ebf11a940803392ce121962d6/HVC-CPU-GPM-02/Nintendo.pretty",
+      "publisher": "Famicom reconstruction author",
+      "commit": "9b2f6c0e6b72e61ebf11a940803392ce121962d6",
+      "verified": "Famicom_2x30_cartridge_connector.kicad_mod pads 1–60 use 2.54 mm pitch and Y=±2.54 mm. The auxiliary 15-pin footprint uses an approximate 2.75 mm grid; it corroborates layout, not factory mating tolerances."
+    },
+    {
+      "url": "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_d_sub_sd_hd_stamped_formed_straight_pcb.pdf",
+      "publisher": "Amphenol",
+      "printed_page": 2,
+      "verified": "Compatible standard-density DA-15 nominal contact pitch is 2.77 mm, with a 2.84 mm row gap. This does not identify the Nintendo OEM connector or establish its custom depth and pin diameter."
+    },
+    {
+      "url": "https://forums.nesdev.org/viewtopic.php?p=249042",
+      "publisher": "Firsthand Famicom peripheral builders",
+      "verified": "Firsthand peripheral builders report that the original Famicom port is deeper and its pins thicker than a stock D-sub. Its custom housing and depth are retained."
+    },
+    {
+      "url": "https://www.nintendo.com/jp/famicom/hardware/index.html",
+      "publisher": "Nintendo",
+      "verified": "Original HVC-001 photographs show thirteen rear ventilation slots, recessed POWER/RESET fields, an expansion port offset to the right, its metal surround and amber insulator, and the gold rule on the front nameplate."
+    },
+    {
+      "url": "https://www.pcbway.com/project/shareproject/Famicom_Power_and_AV_board_ddb9a7f2.html",
+      "publisher": "Famicom replacement-board designer",
+      "verified": "A demonstrated Famicom power-board design specifies a 5.5 x 2.1 mm DC jack; this is interface compatibility evidence, not an OEM housing drawing."
+    },
+    {
+      "url": "https://www.sameskydevices.com/product/resource/rcp-02.pdf",
+      "publisher": "Same Sky",
+      "printed_page": 2,
+      "verified": "Compatible RCA plug: centre pin 3.25 +0/-0.15 mm, 8 mm exposed beyond a 5.5 mm long, 9 mm diameter sleeve. The model selects 3.20 mm within that range; local overmold remains estimated."
+    },
+    {
+      "url": "https://www.sameskydevices.com/product/resource/rcj-01.pdf",
+      "publisher": "Same Sky",
+      "printed_page": 2,
+      "verified": "Compatible RCA jack: 8.30 mm exterior and 3.60 mm entrance opening. Nintendo OEM part identity and spring-contact tolerances are not established."
+    }
+  ],
+  "changes": [
+    {
+      "scope": "60 reader contacts and 60 cartridge fingers",
+      "old_pitch_mm": 2.5,
+      "new_pitch_mm": 2.54
+    },
+    {
+      "scope": "Reader solder legs and PCB bores",
+      "old_row_spacing_mm": 8.4,
+      "new_row_spacing_mm": 5.08,
+      "basis": "Selected GPM-02 compatible PCB footprint; spring bends and housing remain estimated."
+    },
+    {
+      "scope": "15-pin expansion mating grid",
+      "old_column_pitch_mm": 3.5,
+      "new_column_pitch_mm": 2.77,
+      "old_row_spacing_mm": 3.8,
+      "new_row_spacing_mm": 2.84,
+      "basis": "Compatible DA-15 nominal grid; OEM tolerances and PCB-tail bends are not verified."
+    },
+    {
+      "scope": "Rear field and control-area exterior",
+      "basis": "Thirteen complete rear openings in a continuous recessed field; shallow POWER/RESET control fields restored from official photos."
+    },
+    {
+      "scope": "Expansion-port exterior",
+      "basis": "Photograph-fitted rightward offset, separate metal rim and recessed insulator. Pin diameter and depth remain unmeasured."
+    },
+    {
+      "scope": "Appearance and display leads",
+      "basis": "Official-photo color estimates and nameplate rules; controller display leads rebuilt with analytic arcs after legacy C0 continuity errors. Their free cable pose is illustrative."
+    },
+    {
+      "scope": "Removable protective cap",
+      "basis": "Nintendo hero photograph shows a red expansion-port cap; reconstructed as a separately displayed accessory with fitted dimensions."
+    },
+    {
+      "scope": "Power and RF mating interfaces",
+      "basis": "Correct the adapter barrel to 5.5 x 2.1 mm and RCA pin/sleeve to compatible manufacturer dimensions; clear the schematic RF shield along both insertion paths."
+    }
+  ],
+  "reference_hashes": {
+    "cartridge.kicad_mod": "bebebdbead8fda080bffb2b1f94984e49b5e1e172531ba56e0234d74341c16ed",
+    "connector_aux_15p.kicad_mod": "feeb2b39fe0cf45d9f831c403cd9d66e6896300243bc3826bd0f9d4b719e4765",
+    "img_func_famicom.webp": "3c132efcc4eee74eef716c5b1fbae238ad2663863b433221a3b8f98467cabec0",
+    "img_func_famicom_9.webp": "007b71f05998db0b597e51be959419ff44c3c440108edd84c487a579a009be82",
+    "img_contoroller_1.webp": "8c359c1e8cf0985449e49f15d072aade6ba5c5a5c15e13dff9640969202db880",
+    "img_contoroller_2.webp": "1df187946959c221284089c8e21f702d70d8b3746c0971d6652e42b57d72f645",
+    "rcp-02.pdf": "dc8996f2dae10b15948e7f2499a4aa797df40c594d9fb6b9808422b3f1673ac1",
+    "rcj-01.pdf": "f180e181627a2c81ac91de0714c3ca7da30b61d0e2ba9dd2eaf023fbd545dd59"
+  },
+  "limitations": [
+    "No physical hardware measurements were performed.",
+    "Compatible PCB and connector references constrain mating grids, not OEM housing walls or contact-spring tolerances.",
+    "Cartridge pad length, PCB thickness, outer shells and internal PCB traces remain approximate.",
+    "Custom expansion-port diameter and depth are retained as existing estimates; physical interchangeability is not certified.",
+    "The front wordmark uses approximate typography; controller paint graphics and flexible cable lengths are not complete factory reproductions."
+  ],
+  "exterior_fit": {
+    "expansion_center_x_mm": 16.5,
+    "visible_metal_surround_mm": [
+      27.8,
+      10.1
+    ],
+    "vent_count": 13,
+    "vent_pitch_mm": 5.0,
+    "vent_width_and_length_mm": [
+      2.0,
+      27.0
+    ],
+    "control_field_depth_mm": 0.5,
+    "basis": "Counts and presence from official photographs; local coordinates, dimensions, curvature and display colors are fitted estimates. No metrology or color calibration."
+  },
+  "legacy_geometry_repairs": {
+    "scope": [
+      "ControllerCable1",
+      "ControllerCable2",
+      "P1CableGrommet",
+      "P2CableGrommet",
+      "EjectReturnSpring",
+      "RFCoilWinding0",
+      "RFCoilWinding1",
+      "PowerHarness0",
+      "PowerHarness1",
+      "PowerHarness2",
+      "AdapterCable",
+      "RFInputCable",
+      "RFTVCable",
+      "Mainboard",
+      "PowerSwitchBody",
+      "RFShield"
+    ],
+    "method": "Analytic display routes, helix splitting and unrefined Boolean output. Mainboard change verified by empty bidirectional Boolean differences. Other cable poses are reconstructed, not asserted geometrically identical to old splines."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "device": "famicom",
+  "iteration": 17,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "abb3bf597f96c49c74db0f204277713909c827584a15dcc3ef3731c1caca183e",
+  "physical_components": 638,
+  "solids": 1457,
+  "preserved_part_ids_and_numbers": 634,
+  "virtual_display_used": ":99",
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Stage17 appended to saved stage16 native history; current native geometry, STEP files and drawings independently reopened. Full stages1–17 were not rerun from an empty document.",
+  "factory_equivalence_verified": false,
+  "checks": {
+    "strict_brep_components": 638,
+    "feature_measurements": 24,
+    "model_measurements": 28,
+    "drawing_dimensions": 13,
+    "interference_pairs": 1559,
+    "interference_clashes": 0,
+    "step_exports": 3,
+    "pdf_pages": 12,
+    "web_views": 9,
+    "glb_errors": 0,
+    "glb_warnings": 0,
+    "lossless_gzip": true,
+    "repository_check": "passed device-scope check",
+    "production_build": "passed"
+  },
+  "reports": {
+    "fidelity_detail_audit.json": "819659b90059aaf5161bf9c067cae28963b2da25106130e3f11035f2ca7dd623",
+    "fidelity_strict.json": "1cdfae763def9e6bf7f8dd593d2f286a734ac2ae47040e926920b88028935072",
+    "fidelity_interference.json": "085483c63ae175b8743387936f661330de277258e5cc37a4fc3d1272194d1fdd",
+    "export_roundtrip_audit.json": "f67cb12e36f6d9196b26a385fa75bbbca51bd2b59bbbb1348f0e89eded1b1110",
+    "drawing_checks.json": "6213324dbfc37fb16f852e6358caeec4ae32aced65f4ec503529e57cc7344f45",
+    "native_drawings_audit.json": "0316bff09a373d6ce3de0a9c7b433d61e32d11df68b75188ee24fc612ec854b9",
+    "native_drawings_reload.json": "db8e9ca9f8e16a43dd534f9231c84f84c54d89a43b98af0906fe7258363a1ddb",
+    "fidelity_pdf_review.json": "ec96d66bfdc08ecdbf05897009e99978a186a2108fd7b9ad8a054cbb04d88327",
+    "fidelity_web_checks.json": "a86b968a02d7fd79bbb0ff162701c000812450aeffcda5c8566e4be5a60648fe",
+    "web_export.json": "10378692dec41aee95fef48a822103e12d553b731a9ad586812a8b79841ea53c"
+  },
+  "module_sha256": {
+    "tools/cadlib/fidelity_famicom.py": "18f240718c2174e794655d519c08451868a3a4d1d0444743e71285eb8adb0652",
+    "tools/cadlib/famicom.py": "a4d0b11456bc8c5facfebeeee4984f2cf70d153c898b29e4ff6b8f7109682954",
+    "devices/famicom/profile.json": "18c1aaf316de668cd314cebbcbc1b1dc18ed4df314cf7ee1673113b94f723c0d",
+    "devices/famicom/scripts/audit_fidelity.py": "73a6081273c6c7b7c7585d3b4291f142f02b4fb6dad8e968a8afb73cc7ae3a3e",
+    "devices/famicom/scripts/drawing_geometry.py": "fa13d5f5faa149de09408e3a9e2781148545064d050bfa7a6aa7ca6659b1fc5f"
+  },
+  "file_hashes": {
+    "devices/famicom/output/Famicom_Complete.FCStd": "abb3bf597f96c49c74db0f204277713909c827584a15dcc3ef3731c1caca183e",
+    "devices/famicom/output/Famicom_Exploded.FCStd": "3d751988cb64c13979b433e05ade62dbc548502b590b399cdc810819cdd42e9f",
+    "devices/famicom/output/Famicom_Drawings.FCStd": "a317b191716c56495b708bea8eb85c673a4e0feef4cf2097b2e37333626cb9f4",
+    "devices/famicom/output/drawings/Famicom_Drawings.pdf": "84f15e888ec2be6d37406c0f6e273923904b2d800d8e5f3208e111a711575813",
+    "site/public/models/famicom.glb": "61a6f49eba9fc0f8950da5e5dc65b0b21b604441ef1df2fdb8b930721112e814",
+    "site/public/models/famicom.glb.gz": "399688e23f0ee22a5d79d2c665bcbaecf8d3a459cb975b10b087e1a0a5a8059a"
+  },
+  "remaining_uncertainties": [
+    "No physical specimen or original manufacturing tolerance drawings measured.",
+    "Expansion-port depth, pin diameter, local housing, removable cap and shell details remain photograph-guided estimates.",
+    "Uncalibrated photograph colors and approximate glyphs are not certified factory pigments or typography.",
+    "Compatible connector references constrain selected interfaces without establishing Nintendo OEM part identity.",
+    "Internal electronics, cable length/pose, spring performance and electrical behavior remain schematic."
+  ]
+}

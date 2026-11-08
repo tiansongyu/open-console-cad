@@ -26,7 +26,7 @@ v=s.view_fit('ConsoleTop',ext,(217,27,157,158),(0,0,1));d.dimension_box(s,v,body
 s=d.Sheet(2,'前后接口与机身高度',['前部为 15 接点扩展口，后部为 DC 电源、TV/GAME、频道选择与 RF 输出。','图示采用主机坐标：X 为宽，Y 为前后深度，Z 为高度；线缆不参与主机尺寸。'])
 v=s.view_fit('ConsoleFront',ext,(22,29,169,75),(0,-1,0),up);d.dimension_box(s,v,body,'y',12,True);caption(s,v,'正面及完整高度',119)
 v=s.view_fit('ConsoleRear',ext,(217,29,166,75),(0,1,0),up);caption(s,v,'原始 RF 后面板',119)
-v=s.view_fit('ExpansionPort',starts('Expansion'),(24,149,146,39),(0,-1,0),up);caption(s,v,'15 接点扩展口',206)
+v=s.view_fit('ExpansionPort',(['ExpansionHousing','ExpansionMetalRim']+starts('ExpansionPin')),(24,149,146,39),(0,-1,0),up);caption(s,v,'15 接点扩展口',206)
 v=s.view_fit('DCReceptacle',starts('DCJack'),(220,145,62,48),(0,1,0),up);caption(s,v,'DC 电源口',206)
 v=s.view_fit('RFReceptacle',starts('RFJack'),(316,145,62,48),(0,1,0),up);caption(s,v,'同轴 RF 输出',206);s.save()
 
@@ -50,7 +50,7 @@ s=d.Sheet(6,'主机与手柄的分层爆炸总览',['主机沿 Z 方向展开；
 keys=[k for k in main if C[k].Assembly not in ['Cables','Wiring']]
 v=s.view_fit('AssemblyExploded',keys,(11,23,375,166),(1.4,-1,1.1),exploded=True);caption(s,v,'原生爆炸偏移与组件编号一致',208);s.save()
 
-s=d.Sheet(7,'主逻辑板与 60 接点卡座',['主板布局参考 HVC-CPU-GPM-02，包含 Ricoh CPU/PPU、两块 RAM 与辅助逻辑。','穿孔引脚与板底焊盘分别建模；封装和连接位置为近似研究几何。'])
+s=d.Sheet(7,'主逻辑板与 60 接点卡座',['主板布局参考 HVC-CPU-GPM-02，包含 Ricoh CPU/PPU、两块 RAM 与辅助逻辑。','卡边标称节距 2.54 mm、焊脚排距 5.08 mm；其余封装和连接形状为近似值。'])
 v=s.view_fit('MainboardTop',d.keys_for(['Mainboard']),(24,28,176,146),(0,0,1));d.dimension_box(s,v,['Mainboard'],'x',18);d.dimension_box(s,v,['Mainboard'],'y',14);caption(s,v,'主板布局 · '+C['Mainboard'].PartNumber,189)
 v=s.view_fit('CartridgeSocket',[k for k in d.keys_for(['CardReader']) if k not in ['CartridgeDustFlap','DustFlapRearRidge']],(239,31,131,59),(.4,-.8,1.8));caption(s,v,'60 接点卡座 · '+C['CardSocket'].PartNumber,111)
 v=s.view_fit('DIPPackage',['CPU','CPUPins','CPUMark'],(240,136,131,42),(.3,-.6,1.7));caption(s,v,'CPU 封装 · '+C['CPU'].PartNumber,197);s.save()
@@ -71,7 +71,8 @@ s=d.Sheet(10,'空白卡带与电源、RF 附件',['卡带包含分壳、卡扣�
 cart=starts('GamePak')
 v=s.view_fit('GamePakFront',cart,(24,33,154,134),(0,0,1));d.dimension_box(s,v,['GamePakBack'],'x',21);d.dimension_box(s,v,['GamePakBack'],'y',14);caption(s,v,'独立空白 FC 卡带',184)
 v=s.view_fit('PowerAdapter',starts('Adapter'),(220,28,158,72),(.5,-.7,1.5));caption(s,v,'10 V 电源与 DC 插头示意',120)
-v=s.view_fit('RFBoxAndConverter',starts('RFSwitch','Antenna','RFInput','RFPlug','RFTV','Converter'),(217,142,164,51),(.2,-.3,1.6));caption(s,v,'RF 盒与 75 / 300 Ω 转换器',210);s.save()
+v=s.view_fit('RFBoxAndConverter',starts('RFSwitch','Antenna','RFInput','RFPlug','RFTV','Converter'),(217,142,164,51),(.2,-.3,1.6));caption(s,v,'RF 盒与 75 / 300 Ω 转换器',210)
+v=s.view_fit('ExpansionDustCap',['ExpansionDustCap'],(64,190,74,15),(0,-1,0),up);caption(s,v,'扩展口防尘盖（拆下展示）',211);s.save()
 
 s=d.Sheet(11,'组件、材料与装配索引',['组件编号贯穿原生文件、STEP、网页网格和零件清单。','一个组件条目可能包含多枚芯片引脚或文字实体，条目数和实体数分别统计。'])
 names={'Body':'机壳与标识','Controls':'主机操作件','CardReader':'卡带连接器','Controller1':'一号有线手柄','Controller2':'二号有线手柄','Ports':'前后接口','PowerRF':'电源/RF 小板','Cables':'外接手柄线','Mainboard':'主逻辑板','Mechanism':'退卡及开关机构','Wiring':'内部线束','Internal':'安装与支承','Accessories':'卡带及电源/RF 附件'}
@@ -83,7 +84,7 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,207,f"合计 {M['physical_components']} 个组件条目 / {M['solids']} 个实体；详见 COMPONENTS.csv",3.5,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'版本、尺寸来源与验证范围',['HVC-001 原版红白机外观，采用圆形按键手柄修订版和 RF 输出形式。','本图册是当前 CAD 几何的快照；修改模型后应重新生成和检查。'])
-sections=[(16,'公开规格',['任天堂原始说明书：主机宽 150、深 220、高 60 mm。','专用适配器标称 DC 10 V / 850 mA；主机耗电约 4 W。','一号手柄为 START/SELECT，二号手柄为 MIC/VOLUME。']),(67,'版本与近似范围',['主逻辑板采用 iFixit 拆机中 HVC-CPU-GPM-02 布局参考。','不代表最早的方形按键手柄或所有生产批次的电路板。','壁厚、孔位、封装、线缆、卡带与附件尺寸为近似学习值。']),(118,'验证与文件',[f"{M['design_iterations']} 轮源码；{M['physical_components']} 个组件条目参与重建核对。",'原生整机与爆炸装配、STEP 回读及实体求交分别检查。','Kami 图册包含字体、内容覆盖和逐页视觉验证。']),(169,'维护入口',['参考：references/SOURCES.md；组件清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/famicom.py。','Parameters 中 Depth(Y) 与 Height(Z) 保留原有表达式别名。'])]
+sections=[(16,'公开规格',['任天堂原始说明书：主机宽 150、深 220、高 60 mm。','专用适配器标称 DC 10 V / 850 mA；主机耗电约 4 W。','一号手柄为 START/SELECT，二号手柄为 MIC/VOLUME。']),(67,'版本与近似范围',['主逻辑板采用 iFixit 拆机中 HVC-CPU-GPM-02 布局参考。','不代表最早的方形按键手柄或所有生产批次的电路板。','壁厚、孔位、封装、线缆、卡带与附件尺寸为近似学习值。']),(118,'验证与文件',[f"第 {M['design_iterations']} 轮；{M['physical_components']} 个组件；本轮未重跑完整源码。",'原生整机与爆炸装配、STEP 回读及实体求交分别检查。','当前检查范围与文件哈希见 fidelity_delivery_checks.json。']),(169,'维护入口',['参考：references/SOURCES.md；组件清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/famicom.py。','Parameters 中 Depth(Y) 与 Height(Z) 保留原有表达式别名。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)

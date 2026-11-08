@@ -735,3 +735,6 @@ def stage16(m):
 
 
 STAGES[16]=stage16
+
+from .fidelity_famicom import stage17
+STAGES[17] = stage17

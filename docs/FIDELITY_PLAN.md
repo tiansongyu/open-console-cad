@@ -37,7 +37,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |
-| 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 卡带与扩展口校准中 |
+| 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 第 17 轮已验证 |
 | 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 待开始 |
 | 13 | [Nintendo 64 · NUS-001 · 初代灰色](../devices/n64/README.md) | 15 | 747 | 待开始 |
 | 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 第 16 轮已验证 |

@@ -1,0 +1,72 @@
+{
+  "device": "famicom",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 513,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 498,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 513,
+      "passed": true
+    },
+    {
+      "view": "controller1",
+      "components": 69,
+      "passed": true
+    },
+    {
+      "view": "controller2",
+      "components": 69,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "components": 204,
+      "passed": true
+    },
+    {
+      "view": "eject",
+      "components": 15,
+      "passed": true
+    },
+    {
+      "view": "rf",
+      "components": 78,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 125,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/famicom/output/Famicom_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/famicom/output/drawings/Famicom_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/famicom.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "abb3bf597f96c49c74db0f204277713909c827584a15dcc3ef3731c1caca183e",
+  "glb_sha256": "61a6f49eba9fc0f8950da5e5dc65b0b21b604441ef1df2fdb8b930721112e814",
+  "test_date": "2026-11-08",
+  "scope": "All configured viewer modes, visible part counts, gallery images, download targets, keyboard explosion slider",
+  "console_errors": []
+}

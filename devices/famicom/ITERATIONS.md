@@ -1,6 +1,6 @@
 # Famicom construction iterations
 
-All sixteen source stages have passed a fresh rebuild and final CAD, drawing and local web verification. The complete release is linked from README.md. Historical native binaries can be regenerated from the numbered scripts.
+Stages 1–16 passed the historical source rebuild. Stage 17 is applied to the saved stage-16 history and independently checked; a fresh full 17-stage rebuild has not been run. Current delivery evidence is linked from README.md. Historical native binaries can be regenerated from the numbered scripts.
 
 | Stage | Change | Components |
 | --- | --- | ---: |
@@ -20,3 +20,5 @@ All sixteen source stages have passed a fresh rebuild and final CAD, drawing and
 | 14 | 分开手柄导线层并调整二号寄存器位置，修正按键柱、音量传动槽、导轨横梁开口及稳压器引脚间隙，记录主机与手柄各自的爆炸方向。 | 634 |
 | 15 | 约束附件线缆的端部切线，使电源和 RF 插头接线方向一致，并补齐适配器与 RF 盒的线缆入口和护套安装孔。 | 634 |
 | 16 | 修正四枚 A/B 键的凹面深度，保留帽底实体，并以凹面内外取样点核对按键帽的真实剖面。 | 634 |
+
+| 17 | 按资料改为 2.54 mm 卡带节距与 5.08 mm PCB 排距；校正右偏扩展口、13 条后部散热槽、控制凹面、铭牌金线、可拆防尘帽及 DC/RF 接口。保留原有 634 个组件标识，新增 4 个组件；解析重建线缆/弹簧并修复旧布尔拓扑。 | 638 |
