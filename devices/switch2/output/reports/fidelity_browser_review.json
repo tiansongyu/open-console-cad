@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "source_native_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+  "glb_sha256": "a359f4da32327bed51be9586e177d0c54838722b3b02fa56c1453a6bea55c497",
+  "method": "Root browser review of all6 local preview views, component counts, gallery, download links and keyboard slider",
+  "results": [
+    {
+      "device": "switch2",
+      "passed": true,
+      "views": [
+        {
+          "view": "assembled",
+          "components": 587,
+          "passed": true
+        },
+        {
+          "view": "internal",
+          "components": 578,
+          "passed": true
+        },
+        {
+          "view": "exploded",
+          "components": 378,
+          "passed": true
+        },
+        {
+          "view": "controllers",
+          "components": 209,
+          "passed": true
+        },
+        {
+          "view": "dock",
+          "components": 182,
+          "passed": true
+        },
+        {
+          "view": "accessories",
+          "components": 38,
+          "passed": true
+        }
+      ],
+      "links": [
+        {
+          "id": "download-cad",
+          "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch2/output/Switch2_Complete.FCStd"
+        },
+        {
+          "id": "download-pdf",
+          "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/switch2/output/drawings/Switch2_Drawings.pdf"
+        },
+        {
+          "id": "download-glb",
+          "url": "http://127.0.0.1:5174/models/switch2.glb"
+        }
+      ],
+      "gallery_images": 5,
+      "slider_keyboard": true
+    }
+  ]
+}

@@ -1,142 +1,143 @@
 {
   "passed": true,
   "pages": 12,
-  "dimension_count": 22,
+  "dimensions": 22,
   "checks": [
     {
-      "name": "Dimension01_1",
+      "dimension": "Dimension01_1",
       "expected_mm": 272.0,
       "actual_mm": 272.0,
       "passed": true
     },
     {
-      "name": "Dimension01_2",
+      "dimension": "Dimension01_2",
       "expected_mm": 116.0,
       "actual_mm": 116.0,
       "passed": true
     },
     {
-      "name": "Dimension01_3",
+      "dimension": "Dimension01_3",
       "expected_mm": 30.700000000000045,
       "actual_mm": 30.7,
       "passed": true
     },
     {
-      "name": "Dimension02_1",
+      "dimension": "Dimension02_1",
       "expected_mm": 198.00000000000006,
       "actual_mm": 198.0,
       "passed": true
     },
     {
-      "name": "Dimension02_2",
+      "dimension": "Dimension02_2",
       "expected_mm": 116.0,
       "actual_mm": 116.0,
       "passed": true
     },
     {
-      "name": "Dimension02_3",
+      "dimension": "Dimension02_3",
       "expected_mm": 174.89034727941203,
       "actual_mm": 174.89034727941205,
       "passed": true
     },
     {
-      "name": "Dimension02_4",
+      "dimension": "Dimension02_4",
       "expected_mm": 183.00000000000006,
       "actual_mm": 183.00000000000003,
       "passed": true
     },
     {
-      "name": "Dimension02_5",
+      "dimension": "Dimension02_5",
       "expected_mm": 58.87411967464942,
       "actual_mm": 58.87411967464943,
       "passed": true
     },
     {
-      "name": "Dimension02_6",
+      "dimension": "Dimension02_6",
       "expected_mm": 13.900000000000022,
       "actual_mm": 13.899999999999999,
       "passed": true
     },
     {
-      "name": "Dimension03_1",
+      "dimension": "Dimension03_1",
       "expected_mm": 41.400000000000006,
       "actual_mm": 41.400000000000006,
       "passed": true
     },
     {
-      "name": "Dimension03_2",
+      "dimension": "Dimension03_2",
       "expected_mm": 116.0,
       "actual_mm": 116.0,
       "passed": true
     },
     {
-      "name": "Dimension03_3",
-      "expected_mm": 21.599999999999994,
-      "actual_mm": 21.60000000000001,
+      "dimension": "Dimension03_3",
+      "expected_mm": 17.0,
+      "actual_mm": 17.0,
       "passed": true
     },
     {
-      "name": "Dimension03_4",
+      "dimension": "Dimension03_4",
       "expected_mm": 30.700000000000017,
       "actual_mm": 30.7,
       "passed": true
     },
     {
-      "name": "Dimension04_1",
+      "dimension": "Dimension04_1",
       "expected_mm": 8.8,
       "actual_mm": 8.8,
       "passed": true
     },
     {
-      "name": "Dimension04_2",
+      "dimension": "Dimension04_2",
       "expected_mm": 3.2,
       "actual_mm": 3.2000000000000015,
       "passed": true
     },
     {
-      "name": "Dimension04_3",
+      "dimension": "Dimension04_3",
       "expected_mm": 10.799999999999997,
       "actual_mm": 10.799999999999999,
       "passed": true
     },
     {
-      "name": "Dimension05_1",
+      "dimension": "Dimension05_1",
       "expected_mm": 13.899999999999997,
       "actual_mm": 13.899999999999999,
       "passed": true
     },
     {
-      "name": "Dimension08_1",
+      "dimension": "Dimension08_1",
       "expected_mm": 201.0,
       "actual_mm": 201.0,
       "passed": true
     },
     {
-      "name": "Dimension08_2",
+      "dimension": "Dimension08_2",
       "expected_mm": 115.0,
       "actual_mm": 115.0,
       "passed": true
     },
     {
-      "name": "Dimension08_3",
+      "dimension": "Dimension08_3",
       "expected_mm": 51.200000000000045,
       "actual_mm": 51.2,
       "passed": true
     },
     {
-      "name": "Dimension10_1",
+      "dimension": "Dimension10_1",
       "expected_mm": 144.0000000000433,
       "actual_mm": 144.0000000000433,
       "passed": true
     },
     {
-      "name": "Dimension10_2",
+      "dimension": "Dimension10_2",
       "expected_mm": 164.58471030197714,
       "actual_mm": 164.58471030197708,
       "passed": true
     }
   ],
-  "drawings_sha256": "9decaea9bbf68341d3a1c1aaccdf1bad87bf79206510930bc4c7c02062a64f1e",
-  "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
-  "scope": "Reopen independent copy and recompute native dimension references; no open-macro test in this pass."
+  "invalid_features": [],
+  "drawing_sha256": "b1daeca3c571746383cb9cd84dd864953932a4eed22a0c8e1ac3ca1d317f7de5",
+  "source_native_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+  "method": "Fresh isolated GUI reload; all native dimension endpoints checked after page3 caption correction"
 }

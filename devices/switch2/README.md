@@ -2,7 +2,7 @@
 
 [在线整机预览](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer) · [在线爆炸视图](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=exploded#viewer) · [仓库使用说明](../../README.md)
 
-16 轮设计，799 个组件、963 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
+17 轮设计，807 个组件、971 个实体。包含主机、左右手柄、底座、非充电握把与两套腕带。整体包络参考官方数据，局部尺寸和内部结构为近似示意。
 
 [![模型总览](output/previews/overview.png)](https://tiansongyu.github.io/open-console-cad/?device=switch2&view=assembled#viewer)
 
@@ -34,3 +34,9 @@
 本轮更新面键间距与直径，联动按键孔、传力柱、接点和弹片。总体公开尺寸保持不变；局部数值属于官方图片或说明书拟合，依据与不确定性见 [校准依据](references/exterior_calibration.json)。没有原厂公差图或实机测量，不能证明完全一致或零件互换。
 
 最新交付检查见 [本轮检查](output/reports/exterior_delivery_checks.json)：核对保存后的原生 BRep、装配干涉、公开包络、STEP 回读、图纸尺寸及网页源文件身份。本轮已检查该设备的全部网页视图、组件数量、下载链接、效果图及爆炸滑块，并检查公共查看器的桌面、平板和手机布局。全阶段源码重建与其余 22 款设备的网页交互未重跑；历史报告保留适用版本。本轮文件哈希与交付汇总于 2026-10-29 复核。
+
+## 2026-11-08 实机资料校准 · 第 17 轮
+
+按 SD Association 的公开规格，将已有 microSD Express 示意卡从 10.9 × 14.7 × 0.7 mm 修正为标称 11 × 15 × 1 mm，并改为两排共 16 个接点。接点嵌入卡体表面，补充防误插轮廓，并扩大卡座内部净空。卡片为另售存储卡的结构示意；没有假定特定品牌、容量或可选的第 17 个接点。图纸中的面键直径、布局间距与摇杆标注改为读取当前 BRep，修正了沿用旧版数值的说明。
+
+标称尺寸与接点排布依据见 [本轮资料](references/fidelity_20261108.json)。防误插轮廓、接点长度、第二排间距及卡座结构仍是公开图示拟合，尚不能用于制造或证明与某一实物完全互换。当前文件的重建、干涉、STEP、图纸及网页身份核对结果见 [第 17 轮交付检查](output/reports/fidelity_delivery_checks.json)。

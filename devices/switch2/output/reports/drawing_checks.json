@@ -247,18 +247,18 @@
       "sheet": 3,
       "view": "JoyRightFront",
       "p1": [
-        107.2,
+        109.5,
         29.3,
-        15.35
+        14.375
       ],
       "p2": [
-        128.8,
+        126.5,
         29.3,
-        15.35
+        14.375
       ],
       "axis": "x",
-      "value_mm": 21.599999999999994,
-      "label": "≈ 21.6",
+      "value_mm": 17.0,
+      "label": "≈ 17",
       "published": false,
       "label_position": [
         160.7,
@@ -675,8 +675,65 @@
       "expected_mm": 17.0,
       "absolute_error_mm": 0.0,
       "pass": true
+    },
+    {
+      "measurement": "drawing.face_button_opposite_spacing",
+      "actual_mm": 17.0,
+      "expected_mm": 17.0,
+      "absolute_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "measurement": "caption.stick_cap_diameter",
+      "actual_mm": 17.1,
+      "expected_mm": 17.100000199999982,
+      "absolute_error_mm": 1.999999810209374e-07,
+      "pass": true
+    },
+    {
+      "measurement": "caption.face_button_diameter",
+      "actual_mm": 8.4,
+      "expected_mm": 8.400000199999994,
+      "absolute_error_mm": 1.999999934554353e-07,
+      "pass": true
+    },
+    {
+      "measurement": "caption.button_center_radius",
+      "actual_mm": 8.5,
+      "expected_mm": 8.5,
+      "absolute_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "measurement": "caption.stick_left_x",
+      "actual_mm": -118.0,
+      "expected_mm": -118.0,
+      "absolute_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "measurement": "caption.stick_left_y",
+      "actual_mm": 29.0,
+      "expected_mm": 29.0,
+      "absolute_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "measurement": "caption.stick_right_x",
+      "actual_mm": 118.0,
+      "expected_mm": 118.0,
+      "absolute_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "measurement": "caption.stick_right_y",
+      "actual_mm": 0.0,
+      "expected_mm": 0.0,
+      "absolute_error_mm": 0.0,
+      "pass": true
     }
   ],
   "geometry_source": "saved BRep; full feature history not recomputed",
-  "bounding_method": "optimalBoundingBox(False, False), independent of display triangulation"
+  "bounding_method": "optimalBoundingBox(False, False), independent of display triangulation",
+  "source_native_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6"
 }

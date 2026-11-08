@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "date": "2026-11-08",
+  "device": "switch2",
+  "iteration": 17,
+  "physical_components": 807,
+  "solids": 971,
+  "source_native_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+  "checks": {
+    "full_source_rebuild_components": 807,
+    "interference_candidates": 1393,
+    "interference_clashes": 0,
+    "step_exports": 4,
+    "model_measurements": 34,
+    "drawing_dimensions": 22,
+    "native_pages_reloaded": 12,
+    "pdf_pages_visually_reviewed": 12,
+    "parameter_edit_on_copy": true,
+    "web_components": 807,
+    "lossless_gzip": true,
+    "glb_validation": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "saved_svg_caption_values": 7,
+    "browser_views": 6
+  },
+  "reports": {
+    "fidelity_interference.json": "9735341e05d6a3257be50883264a2b84f18b5ef0aa441674bfdbffa409752b11",
+    "fidelity_source_rebuild.json": "76692c699e1d80dccd020c0a6a86d27b913fac165000f0eff5f9fabe6ae6f1b9",
+    "fidelity_dimensions.json": "f87bb3cf5ce02f08a6b4ba3db5f855ab41c72dae29278498c17ae510b5d32c9a",
+    "export_roundtrip_audit.json": "84972a6fdb957d9ef003e987dd713aafbce814ddb1863dd5edb364c659f06784",
+    "drawing_checks.json": "90df49db8ed846831628cb578c9b779d81d98a765861b7acd580cd1842244339",
+    "native_drawings_audit.json": "4402fd07d189ea4d2d5e3ae6ac8afeb3572309b04b78c4776e1dac349b4a3f67",
+    "native_drawings_reload.json": "789c7a27c460466d5530552e594de7dbddc120b75829b9476b14fb6492d3b1ae",
+    "parameter_edit_test.json": "31ac3b04be067d4cc74f6c1583cd1c13f75e2a3886e4b499db7ce228a279dec8",
+    "visual_acceptance.json": "7252498eb4cb428f25a8f8d7a9f9642383bea815f7811df659070bf070cbf2ef",
+    "web_export.json": "ae87bb905f0a6352f69d2a6411e15112e32a60ec4e7bf010af7ca55b9a793ae6",
+    "fidelity_glb_validation.json": "d42ce7d8db3ff458e84c7515d02de9df9819b5602a9d1295615be0e380ea57d2",
+    "fidelity_browser_review.json": "e42c5a3fdcbc3751a998eba859ad02cda49dd7d425953498e5a79bf09270a820"
+  },
+  "file_hashes": {
+    "devices/switch2/output/Switch2_Complete.FCStd": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+    "devices/switch2/output/Switch2_Exploded.FCStd": "82660c72f003b495fa0298a440f6b3c5cb9ce1dd855c30324f86daeaa6bc3c68",
+    "devices/switch2/output/Switch2_Drawings.FCStd": "b1daeca3c571746383cb9cd84dd864953932a4eed22a0c8e1ac3ca1d317f7de5",
+    "devices/switch2/output/drawings/Switch2_Drawings.pdf": "a67c8655985c685d0cd5ffc49ef977d471342bf2cdd8bb163ab7c0cc49ee99fa",
+    "site/public/models/switch2.glb": "a359f4da32327bed51be9586e177d0c54838722b3b02fa56c1453a6bea55c497",
+    "site/public/models/switch2.glb.gz": "91b9b01c9188d84106bc5079a9432b7de5c0b2ac782756ccfda4b56855c7fc86",
+    "devices/switch2/output/drawings/Switch2_Drawings.html": "9200ef0ab9efe51bf2067c5d508d15966e04e861a353a0ce545c36803e5d7cd9"
+  },
+  "reference_record": "devices/switch2/references/fidelity_20261108.json",
+  "factory_equivalence_verified": false,
+  "limitations": [
+    "Nominal card envelope and two-row topology are source-backed.",
+    "Keying, pad lengths, second-row pitch and reader construction remain diagram-fitted.",
+    "No PCB electrical behavior, manufacturing tolerance or physical sample interchangeability is certified."
+  ],
+  "web_interaction_review": "Root verified all6 device views, component counts, gallery, download links and keyboard slider in local preview",
+  "drawing_caption_correction": "Page3 face-button diameter8.4mm, center radius8.5mm and opposite span17mm now derive from saved BRep; stick diameter17.1mm and centers also measured.",
+  "repository_checks": "Full collection passed before concurrent PSV/PSP promotion; current Switch2 checked again after drawing correction",
+  "production_build": "passed"
+}

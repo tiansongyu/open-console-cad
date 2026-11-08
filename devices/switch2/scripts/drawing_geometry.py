@@ -134,10 +134,15 @@ s=Sheet(3,'左右 Joy-Con 2 尺寸',['左右手柄具有相同的包络，摇杆
 l=s.view('JoyLeftFront',lkeys,56,80,1,center=(-115.3,0,9.35));r=s.view('JoyRightFront',rkeys,158,80,1,center=(115.3,0,9.35));inner=s.view('JoyLeftInnerRail',lkeys,259,80,1,normal=(1,0,0),center=(-115.3,0,9.35));back=s.view('JoyRightBack',rkeys,353,80,1,normal=(0,0,-1),center=(115.3,0,9.35))
 for x,label in [(56,'L 正面'),(158,'R 正面'),(259,'L 磁吸面'),(353,'R 背面')]:s.text(x,145,label+' · 1:1',anchor='middle')
 s.dim(l,(-136,0,0),(-94.6,0,0),'x',16,published=True);s.dim(l,(-118,-58,0),(-118,58,0),'y',20,published=True)
-s.dim(r,(107.2,29.3,15.35),(128.8,29.3,15.35),'x',163,label='21.6')
+button_left=bb(['JoyRFaceButton3']).Center;button_right=bb(['JoyRFaceButton1']).Center
+s.dim(r,tuple(button_left),tuple(button_right),'x',163)
 s.dim(inner,(-118,0,-6),(-118,0,24.7),'x',163,published=True)
-s.text(10,184,'摇杆帽 Ø17.1 · 面按键 Ø7.4 · 相邻方向中心距 10.8',3.2)
-s.text(10,194,'L 摇杆中心：X=-118，Y=29，R 摇杆中心：X=118，Y=0',3.2)
+stick_diameter=bb(['JoyLStickCap']).XLength;button_diameter=bb(['JoyRFaceButton0']).XLength
+button_radius=abs(button_right.x-button_left.x)/2
+fmt=lambda value:f'{value:.3f}'.rstrip('0').rstrip('.')
+s.text(10,184,f'摇杆帽 Ø{fmt(stick_diameter)} · 面按键 Ø{fmt(button_diameter)} · 面键组中心至单键 {fmt(button_radius)}',3.2)
+left_stick=bb(['JoyLStickCap']).Center;right_stick=bb(['JoyRStickCap']).Center
+s.text(10,194,f'L 摇杆中心：X={fmt(left_stick.x)}，Y={fmt(left_stick.y)}，R 摇杆中心：X={fmt(right_stick.x)}，Y={fmt(right_stick.y)}',3.2)
 s.text(10,204,'上述局部尺寸均为近似值，按当前模型坐标记录。',3.2)
 s.save()
 # 04 / six enlarged model-derived interface and mechanism details.
@@ -236,12 +241,12 @@ s=Sheet(12,'尺寸依据与检查索引',['公开包络与本模型局部尺寸�
 for y,title,lines in [
 (16,'公开尺寸',["整机 272 × 116 × 13.9 mm，含摇杆/扳机最大厚 30.7 mm。","手柄含连接突起宽 41.4 mm，主机单体宽 198 mm 为近似。","底座 201 × 115 × 51.2 mm。"]),
 (59,'模型范围',["局部壁厚、孔位、紧固件和安装间隙为近似设计。","电池、主板、芯片、风扇和控制器内部为主要模块布局示意。","尺寸数字描述此版模型，不能代替制造方工程资料。"]),
-(102,'验证文件',["15 轮设计迭代和每轮模型保存在 iterations/。","15_interference_audit.json：完整实体干涉核验。","parameter_edit_test.json、rebuild_verification.json：参数与源码重建。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
-(157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 2025 年 Nintendo Switch 2 现场拆解：主要内部模块布局。","完整链接与尺寸依据见 references/SOURCES.md。"])
+(102,'验证文件',[f"{M['design_iterations']} 轮源码可重建；历史二进制检查点保存在本地。","fidelity_interference.json：当前文件的完整实体干涉检查。","fidelity_source_rebuild.json：全部组件的源码重建比对。","export_roundtrip_audit.json、drawing_checks.json：导出回读与尺寸检查。"]),
+(157,'参考来源',["Nintendo 官方产品规格、Joy-Con/底座规格、部位图和数字手册。","iFixit 现场拆解；SD Association 标称卡片尺寸与双排接点图。","完整链接与本轮限制见 references/fidelity_20261108.json。"])
 ]:
  s.text(10,y,title,4,fill='#1B365D')
  for j,line in enumerate(lines):s.text(10,y+10+j*8,line,3.2)
-s.text(385,210,'CAD STUDY · 2026.09.08',3.2,'end');s.save()
+s.text(385,210,'CAD STUDY · 2026-11-08',3.2,'end');s.save()
 assert len(PAGES)==12
 (DRAW/'drawing_pages.json').write_text(json.dumps(PAGES,ensure_ascii=False,indent=2))
 (OUT/'reports/drawing_checks.json').write_text(json.dumps({'page_count':12,'dimensions':CHECKS,'model_envelope':M['published_handheld_mm'],'method':'visible-line projection of the final BRep; coordinates projected with the same rotation as dimension endpoints; section regions from planar BRep slices; strap front uses its top planar face and cord midplane silhouette discretized with 0.015 mm deflection','pass':all(c['value_mm']>0 for c in CHECKS)},ensure_ascii=False,indent=2))

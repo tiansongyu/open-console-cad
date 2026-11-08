@@ -1,12 +1,12 @@
 {
   "project": "Nintendo Switch 2 BEE-001 launch model study",
-  "design_iterations": 16,
-  "physical_components": 799,
-  "solids": 963,
+  "design_iterations": 17,
+  "physical_components": 807,
+  "solids": 971,
   "assemblies": {
     "Display": 4,
     "Tablet": 115,
-    "TabletInternal": 251,
+    "TabletInternal": 259,
     "JoyLeft": 29,
     "JoyInternalL": 47,
     "JoyMountL": 27,
@@ -2358,14 +2358,14 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDCageRefined",
-      "label": "SW2-0086 · microSD Express 金属卡座",
-      "type": "Part::Cut",
+      "name": "MicroSDCage001",
+      "label": "SW2-0086 · microSD Express 金属卡座001",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 121.61986596223193,
+      "volume": 81.13993974197601,
       "bounds": [
         -91.5,
         -78.5,
@@ -2385,21 +2385,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDCard",
-      "label": "SW2-0087 · microSD Express 示意卡片",
+      "name": "MicroSDCard001",
+      "label": "SW2-0087 · microSD Express 示意卡片001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 112.13696459430055,
+      "faces": 159,
+      "volume": 155.9736493807013,
       "bounds": [
-        -90.45,
-        -79.55,
-        -29.75,
-        -15.049999999999999,
-        2.08,
-        2.7800000000000002
+        -90.5,
+        -79.5,
+        -29.9,
+        -14.899999999999999,
+        1.96,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2412,21 +2412,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad0",
-      "label": "SW2-0088 · 存储卡接点",
+      "name": "MicroSDPad001",
+      "label": "SW2-0088 · microSD Express legacy card pad 1",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -88.81,
-        -88.19,
-        -18.1,
+        -89.19,
+        -88.50999999999999,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2439,21 +2439,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad1",
-      "label": "SW2-0089 · 存储卡接点",
+      "name": "MicroSDPad002",
+      "label": "SW2-0089 · microSD Express legacy card pad 2",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -87.81,
-        -87.19,
-        -18.1,
+        -88.09,
+        -87.41,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2466,21 +2466,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad2",
-      "label": "SW2-0090 · 存储卡接点",
+      "name": "MicroSDPad003",
+      "label": "SW2-0090 · microSD Express legacy card pad 3",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -86.81,
-        -86.19,
-        -18.1,
+        -86.99000000000001,
+        -86.31,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2493,21 +2493,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad3",
-      "label": "SW2-0091 · 存储卡接点",
+      "name": "MicroSDPad004",
+      "label": "SW2-0091 · microSD Express legacy card pad 4",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.050965663706143714,
       "bounds": [
-        -85.81,
-        -85.19,
-        -18.1,
+        -85.89,
+        -85.21,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2520,21 +2520,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad4",
-      "label": "SW2-0092 · 存储卡接点",
+      "name": "MicroSDPad005",
+      "label": "SW2-0092 · microSD Express legacy card pad 5",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -84.81,
-        -84.19,
-        -18.1,
+        -84.79,
+        -84.11,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2547,21 +2547,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad5",
-      "label": "SW2-0093 · 存储卡接点",
+      "name": "MicroSDPad006",
+      "label": "SW2-0093 · microSD Express legacy card pad 6",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -83.81,
-        -83.19,
-        -18.1,
+        -83.69,
+        -83.00999999999999,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2574,21 +2574,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad6",
-      "label": "SW2-0094 · 存储卡接点",
+      "name": "MicroSDPad007",
+      "label": "SW2-0094 · microSD Express legacy card pad 7",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -82.81,
-        -82.19,
-        -18.1,
+        -82.59,
+        -81.91,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -2601,21 +2601,21 @@
       "fidelity": "Schematic internal layout"
     },
     {
-      "name": "MicroSDPad7",
-      "label": "SW2-0095 · 存储卡接点",
+      "name": "MicroSDPad008",
+      "label": "SW2-0095 · microSD Express legacy card pad 8",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192982993,
+      "volume": 0.05096566370614371,
       "bounds": [
-        -81.81,
-        -81.19,
-        -18.1,
+        -81.49000000000001,
+        -80.81,
+        -18.5,
         -15.5,
-        2.81,
-        2.85
+        2.935,
+        2.96
       ],
       "state": [
         "Up-to-date"
@@ -5227,12 +5227,12 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 0.027279999999999985,
+      "volume": 0.027280000000000002,
       "bounds": [
         -110.05,
         -108.5,
-        -2.1000000000000005,
-        0.10000000000000053,
+        -2.1,
+        0.10000000000000075,
         15.312,
         15.328
       ],
@@ -5394,7 +5394,7 @@
         -127.50000000000001,
         -125.95000000000002,
         -2.1000000000000005,
-        0.09999999999999987,
+        0.10000000000000009,
         15.312,
         15.328
       ],
@@ -5497,7 +5497,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 102.07449690230705,
+      "volume": 102.07449690230703,
       "bounds": [
         122.2999999,
         130.70000009999998,
@@ -5956,7 +5956,7 @@
       "null": false,
       "solids": 1,
       "faces": 62,
-      "volume": 6206.368107959808,
+      "volume": 6206.368107959807,
       "bounds": [
         99.0,
         136.0,
@@ -21634,6 +21634,222 @@
       "layer": 0,
       "material": "black",
       "fidelity": "Approximate exterior detail; published envelope dimensions"
+    },
+    {
+      "name": "MicroSDPad8",
+      "label": "SW2-0800 · microSD Express PCIe card pad 9",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143723,
+      "bounds": [
+        -88.79,
+        -88.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad8",
+      "part_number": "SW2-0800",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad9",
+      "label": "SW2-0801 · microSD Express PCIe card pad 10",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -87.79,
+        -87.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad9",
+      "part_number": "SW2-0801",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad10",
+      "label": "SW2-0802 · microSD Express PCIe card pad 11",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -86.79,
+        -86.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad10",
+      "part_number": "SW2-0802",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad11",
+      "label": "SW2-0803 · microSD Express PCIe card pad 12",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -85.79,
+        -85.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad11",
+      "part_number": "SW2-0803",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad12",
+      "label": "SW2-0804 · microSD Express PCIe card pad 13",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -84.79,
+        -84.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad12",
+      "part_number": "SW2-0804",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad13",
+      "label": "SW2-0805 · microSD Express PCIe card pad 14",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -83.79,
+        -83.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad13",
+      "part_number": "SW2-0805",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad14",
+      "label": "SW2-0806 · microSD Express PCIe card pad 15",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -82.79,
+        -82.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad14",
+      "part_number": "SW2-0806",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
+    },
+    {
+      "name": "MicroSDPad15",
+      "label": "SW2-0807 · microSD Express PCIe card pad 16",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706143716,
+      "bounds": [
+        -81.79,
+        -81.21,
+        -20.925,
+        -19.275000000000002,
+        2.935,
+        2.96
+      ],
+      "state": [
+        "Touched"
+      ],
+      "part_id": "MicroSDPad15",
+      "part_number": "SW2-0807",
+      "assembly": "TabletInternal",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout"
     }
   ],
   "exploded_objects": [
@@ -24103,14 +24319,14 @@
       ]
     },
     {
-      "name": "MicroSDCageRefined",
-      "label": "SW2-0086 · microSD Express 金属卡座",
+      "name": "MicroSDCage001",
+      "label": "SW2-0086 · microSD Express 金属卡座001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 121.61986596223224,
+      "volume": 81.13993974197638,
       "bounds": [
         -91.5,
         -78.5,
@@ -24132,21 +24348,21 @@
       ]
     },
     {
-      "name": "MicroSDCard",
-      "label": "SW2-0087 · microSD Express 示意卡片",
+      "name": "MicroSDCard001",
+      "label": "SW2-0087 · microSD Express 示意卡片001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 112.1369645943007,
+      "faces": 159,
+      "volume": 155.97364938070152,
       "bounds": [
-        -90.45,
-        -79.55,
-        -29.75,
-        -15.049999999999999,
-        -117.92,
-        -117.22
+        -90.5,
+        -79.5,
+        -29.9,
+        -14.899999999999999,
+        -118.04,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24161,21 +24377,21 @@
       ]
     },
     {
-      "name": "MicroSDPad0",
-      "label": "SW2-0088 · 存储卡接点",
+      "name": "MicroSDPad001",
+      "label": "SW2-0088 · microSD Express legacy card pad 1",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983327,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -88.81,
-        -88.19,
-        -18.1,
+        -89.19,
+        -88.50999999999999,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24190,21 +24406,21 @@
       ]
     },
     {
-      "name": "MicroSDPad1",
-      "label": "SW2-0089 · 存储卡接点",
+      "name": "MicroSDPad002",
+      "label": "SW2-0089 · microSD Express legacy card pad 2",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983327,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -87.81,
-        -87.19,
-        -18.1,
+        -88.09,
+        -87.41,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24219,21 +24435,21 @@
       ]
     },
     {
-      "name": "MicroSDPad2",
-      "label": "SW2-0090 · 存储卡接点",
+      "name": "MicroSDPad003",
+      "label": "SW2-0090 · microSD Express legacy card pad 3",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -86.81,
-        -86.19,
-        -18.1,
+        -86.99000000000001,
+        -86.31,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24248,21 +24464,21 @@
       ]
     },
     {
-      "name": "MicroSDPad3",
-      "label": "SW2-0091 · 存储卡接点",
+      "name": "MicroSDPad004",
+      "label": "SW2-0091 · microSD Express legacy card pad 4",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -85.81,
-        -85.19,
-        -18.1,
+        -85.89,
+        -85.21,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24277,21 +24493,21 @@
       ]
     },
     {
-      "name": "MicroSDPad4",
-      "label": "SW2-0092 · 存储卡接点",
+      "name": "MicroSDPad005",
+      "label": "SW2-0092 · microSD Express legacy card pad 5",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614762,
       "bounds": [
-        -84.81,
-        -84.19,
-        -18.1,
+        -84.79,
+        -84.11,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24306,21 +24522,21 @@
       ]
     },
     {
-      "name": "MicroSDPad5",
-      "label": "SW2-0093 · 存储卡接点",
+      "name": "MicroSDPad006",
+      "label": "SW2-0093 · microSD Express legacy card pad 6",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -83.81,
-        -83.19,
-        -18.1,
+        -83.69,
+        -83.00999999999999,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24335,21 +24551,21 @@
       ]
     },
     {
-      "name": "MicroSDPad6",
-      "label": "SW2-0094 · 存储卡接点",
+      "name": "MicroSDPad007",
+      "label": "SW2-0094 · microSD Express legacy card pad 7",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -82.81,
-        -82.19,
-        -18.1,
+        -82.59,
+        -81.91,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -24364,21 +24580,21 @@
       ]
     },
     {
-      "name": "MicroSDPad7",
-      "label": "SW2-0095 · 存储卡接点",
+      "name": "MicroSDPad008",
+      "label": "SW2-0095 · microSD Express legacy card pad 8",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.06442506192983326,
+      "volume": 0.05096566370614763,
       "bounds": [
-        -81.81,
-        -81.19,
-        -18.1,
+        -81.49000000000001,
+        -80.81,
+        -18.5,
         -15.5,
-        -117.19,
-        -117.14999999999999
+        -117.065,
+        -117.03999999999999
       ],
       "state": [
         "Up-to-date"
@@ -27039,7 +27255,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 102.07449690230743,
+      "volume": 102.07449690230742,
       "bounds": [
         -279.2000001,
         -270.7999999,
@@ -27126,7 +27342,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 102.07449690230743,
+      "volume": 102.07449690230742,
       "bounds": [
         -270.7000001,
         -262.2999999,
@@ -27213,7 +27429,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 102.07449690230743,
+      "volume": 102.07449690230742,
       "bounds": [
         -279.2000001,
         -270.7999999,
@@ -27387,7 +27603,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 102.07449690230742,
+      "volume": 102.0744969023074,
       "bounds": [
         270.7999999,
         279.2000001,
@@ -27822,7 +28038,7 @@
       "null": false,
       "solids": 1,
       "faces": 49,
-      "volume": 6266.802745038359,
+      "volume": 6266.80274503836,
       "bounds": [
         -293.0,
         -256.0,
@@ -44807,6 +45023,238 @@
         -300.0,
         0.0
       ]
+    },
+    {
+      "name": "MicroSDPad8",
+      "label": "SW2-0800 · microSD Express PCIe card pad 9",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.02389066370614556,
+      "bounds": [
+        -88.79,
+        -88.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad8",
+      "part_number": "SW2-0800",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad9",
+      "label": "SW2-0801 · microSD Express PCIe card pad 10",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -87.79,
+        -87.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad9",
+      "part_number": "SW2-0801",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad10",
+      "label": "SW2-0802 · microSD Express PCIe card pad 11",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -86.79,
+        -86.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad10",
+      "part_number": "SW2-0802",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad11",
+      "label": "SW2-0803 · microSD Express PCIe card pad 12",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -85.79,
+        -85.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad11",
+      "part_number": "SW2-0803",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad12",
+      "label": "SW2-0804 · microSD Express PCIe card pad 13",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -84.79,
+        -84.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad12",
+      "part_number": "SW2-0804",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad13",
+      "label": "SW2-0805 · microSD Express PCIe card pad 14",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -83.79,
+        -83.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad13",
+      "part_number": "SW2-0805",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad14",
+      "label": "SW2-0806 · microSD Express PCIe card pad 15",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -82.79,
+        -82.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad14",
+      "part_number": "SW2-0806",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "name": "MicroSDPad15",
+      "label": "SW2-0807 · microSD Express PCIe card pad 16",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.023890663706145555,
+      "bounds": [
+        -81.79,
+        -81.21,
+        -20.925,
+        -19.275000000000002,
+        -117.065,
+        -117.03999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MicroSDPad15",
+      "part_number": "SW2-0807",
+      "assembly": "TabletInternal",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -120.0
+      ]
     }
   ],
   "offsets": {
@@ -48804,6 +49252,46 @@
       0.0,
       -300.0,
       0.0
+    ],
+    "MicroSDPad8": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad9": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad10": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad11": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad12": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad13": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad14": [
+      0.0,
+      0.0,
+      -120.0
+    ],
+    "MicroSDPad15": [
+      0.0,
+      0.0,
+      -120.0
     ]
   },
   "published_handheld_mm": [

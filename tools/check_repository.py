@@ -1,10 +1,16 @@
 """Check publishable assets, GLB identity/structure, CAD archives and source syntax."""
 from pathlib import Path
-import ast, gzip, hashlib, json, struct, zipfile
+import argparse, ast, gzip, hashlib, json, struct, zipfile
 ROOT=Path(__file__).resolve().parents[1]
 catalog=json.loads((ROOT/'site/src/catalog.json').read_text())
 assert len({entry['id'] for entry in catalog})==len(catalog), 'Duplicate device in catalog'
-for entry in catalog:
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('devices', nargs='*', help='Optional device IDs; omitted checks the entire collection')
+args=parser.parse_args()
+unknown=set(args.devices)-{entry['id'] for entry in catalog}
+if unknown:parser.error('Unknown device IDs: '+', '.join(sorted(unknown)))
+selected=[entry for entry in catalog if not args.devices or entry['id'] in args.devices]
+for entry in selected:
     device,count=entry['id'],entry['count']
     folder=ROOT/'devices'/device;report=json.loads((ROOT/'site/public/models'/f'{device}.json').read_text())
     manifest=json.loads((folder/'output/reports/final_manifest.json').read_text())
@@ -43,4 +49,4 @@ for entry in catalog:
             assert p.stat().st_size<100*1024*1024,p
             if p.suffix in ['.py','.md','.json','.FCMacro']:assert '/home/ubuntu/' not in p.read_text(),p
     print(f'{device}: {count} component identities, GLB hashes, FCStd archives and sources OK')
-print('Repository checks passed')
+print('Repository checks passed ('+str(len(selected))+' devices)')

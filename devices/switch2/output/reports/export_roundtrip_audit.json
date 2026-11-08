@@ -2,16 +2,16 @@
   "native": [
     {
       "file": "Switch2_Complete.FCStd",
-      "source_sha256": "837d4ec000ab2bc6eab440d94e77710d3f39a87e829fc61d5701df6b1e9bbdaa",
-      "components": 799,
+      "source_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+      "components": 807,
       "invalid": [],
       "mismatched_components": [],
       "pass": true
     },
     {
       "file": "Switch2_Exploded.FCStd",
-      "source_sha256": "92c9c4852373c76e798a2cc3550a74b948a89730327384f293de225576b30dc9",
-      "components": 799,
+      "source_sha256": "82660c72f003b495fa0298a440f6b3c5cb9ce1dd855c30324f86daeaa6bc3c68",
+      "components": 807,
       "invalid": [],
       "mismatched_components": [],
       "pass": true
@@ -21,13 +21,13 @@
     {
       "file": "Switch2_FullKit.step",
       "valid": true,
-      "solids": 963,
-      "expected_solids": 963,
-      "compound_volume_delta_mm3": -94.56629334122408,
-      "matched_solid_volume_delta_mm3": -0.028175454997806187,
-      "sum_absolute_solid_volume_delta_mm3": 0.11704257302484299,
+      "solids": 971,
+      "expected_solids": 971,
+      "compound_volume_delta_mm3": -95.14985027862713,
+      "matched_solid_volume_delta_mm3": -0.02817545499089977,
+      "sum_absolute_solid_volume_delta_mm3": 0.11704257303180626,
       "max_solid_bbox_delta_mm": 6.889422365929931e-11,
-      "colour_entities": 32,
+      "colour_entities": 36,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -950,37 +950,37 @@
           "pass": true
         },
         {
-          "name": "MicroSDCageRefined",
+          "name": "MicroSDCage001",
           "source_solid": 0,
           "step_solid": 92,
           "bbox_max_delta_mm": 1.63069557856943e-12,
-          "volume_delta_mm3": 2.901856532844249e-11,
+          "volume_delta_mm3": 3.595346242946107e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDCard",
+          "name": "MicroSDCard001",
           "source_solid": 0,
           "step_solid": 93,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad0",
+          "name": "MicroSDPad001",
           "source_solid": 0,
           "step_solid": 94,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad1",
+          "name": "MicroSDPad002",
           "source_solid": 0,
           "step_solid": 95,
           "bbox_max_delta_mm": 0.0,
@@ -990,27 +990,27 @@
           "pass": true
         },
         {
-          "name": "MicroSDPad2",
+          "name": "MicroSDPad003",
           "source_solid": 0,
           "step_solid": 96,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad3",
+          "name": "MicroSDPad004",
           "source_solid": 0,
           "step_solid": 97,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad4",
+          "name": "MicroSDPad005",
           "source_solid": 0,
           "step_solid": 98,
           "bbox_max_delta_mm": 0.0,
@@ -1020,31 +1020,31 @@
           "pass": true
         },
         {
-          "name": "MicroSDPad5",
+          "name": "MicroSDPad006",
           "source_solid": 0,
           "step_solid": 99,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad6",
+          "name": "MicroSDPad007",
           "source_solid": 0,
           "step_solid": 100,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad7",
+          "name": "MicroSDPad008",
           "source_solid": 0,
           "step_solid": 101,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -9840,6 +9840,86 @@
             "pass": true
           },
           "pass": true
+        },
+        {
+          "name": "MicroSDPad8",
+          "source_solid": 0,
+          "step_solid": 963,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad9",
+          "source_solid": 0,
+          "step_solid": 964,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -6.938893903907228e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad10",
+          "source_solid": 0,
+          "step_solid": 965,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -6.938893903907228e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad11",
+          "source_solid": 0,
+          "step_solid": 966,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad12",
+          "source_solid": 0,
+          "step_solid": 967,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad13",
+          "source_solid": 0,
+          "step_solid": 968,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad14",
+          "source_solid": 0,
+          "step_solid": 969,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad15",
+          "source_solid": 0,
+          "step_solid": 970,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
@@ -9847,13 +9927,13 @@
     {
       "file": "Switch2_Handheld.step",
       "valid": true,
-      "solids": 699,
-      "expected_solids": 699,
-      "compound_volume_delta_mm3": -7.419640201231232,
-      "matched_solid_volume_delta_mm3": -0.0022742198073109807,
-      "sum_absolute_solid_volume_delta_mm3": 0.0022743769616120732,
+      "solids": 707,
+      "expected_solids": 707,
+      "compound_volume_delta_mm3": -7.333271835319465,
+      "matched_solid_volume_delta_mm3": -0.0022742198004045643,
+      "sum_absolute_solid_volume_delta_mm3": 0.0022743769685753677,
       "max_solid_bbox_delta_mm": 6.609468528040452e-11,
-      "colour_entities": 32,
+      "colour_entities": 36,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -10776,37 +10856,37 @@
           "pass": true
         },
         {
-          "name": "MicroSDCageRefined",
+          "name": "MicroSDCage001",
           "source_solid": 0,
           "step_solid": 92,
           "bbox_max_delta_mm": 1.63069557856943e-12,
-          "volume_delta_mm3": 2.901856532844249e-11,
+          "volume_delta_mm3": 3.595346242946107e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDCard",
+          "name": "MicroSDCard001",
           "source_solid": 0,
           "step_solid": 93,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad0",
+          "name": "MicroSDPad001",
           "source_solid": 0,
           "step_solid": 94,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad1",
+          "name": "MicroSDPad002",
           "source_solid": 0,
           "step_solid": 95,
           "bbox_max_delta_mm": 0.0,
@@ -10816,27 +10896,27 @@
           "pass": true
         },
         {
-          "name": "MicroSDPad2",
+          "name": "MicroSDPad003",
           "source_solid": 0,
           "step_solid": 96,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad3",
+          "name": "MicroSDPad004",
           "source_solid": 0,
           "step_solid": 97,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad4",
+          "name": "MicroSDPad005",
           "source_solid": 0,
           "step_solid": 98,
           "bbox_max_delta_mm": 0.0,
@@ -10846,31 +10926,31 @@
           "pass": true
         },
         {
-          "name": "MicroSDPad5",
+          "name": "MicroSDPad006",
           "source_solid": 0,
           "step_solid": 99,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad6",
+          "name": "MicroSDPad007",
           "source_solid": 0,
           "step_solid": 100,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad7",
+          "name": "MicroSDPad008",
           "source_solid": 0,
           "step_solid": 101,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -16886,6 +16966,86 @@
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
+        },
+        {
+          "name": "MicroSDPad8",
+          "source_solid": 0,
+          "step_solid": 699,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad9",
+          "source_solid": 0,
+          "step_solid": 700,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -6.938893903907228e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad10",
+          "source_solid": 0,
+          "step_solid": 701,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -6.938893903907228e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad11",
+          "source_solid": 0,
+          "step_solid": 702,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad12",
+          "source_solid": 0,
+          "step_solid": 703,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad13",
+          "source_solid": 0,
+          "step_solid": 704,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad14",
+          "source_solid": 0,
+          "step_solid": 705,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad15",
+          "source_solid": 0,
+          "step_solid": 706,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
@@ -19019,13 +19179,13 @@
     {
       "file": "Switch2_Exploded.step",
       "valid": true,
-      "solids": 963,
-      "expected_solids": 963,
-      "compound_volume_delta_mm3": -227.83061161951628,
-      "matched_solid_volume_delta_mm3": -0.028175455403842913,
-      "sum_absolute_solid_volume_delta_mm3": 0.11704257359504402,
+      "solids": 971,
+      "expected_solids": 971,
+      "compound_volume_delta_mm3": -228.546560121933,
+      "matched_solid_volume_delta_mm3": -0.028175455396879746,
+      "sum_absolute_solid_volume_delta_mm3": 0.11704257360206408,
       "max_solid_bbox_delta_mm": 9.999999406318238e-08,
-      "colour_entities": 17,
+      "colour_entities": 18,
       "solid_checks": [
         {
           "name": "DisplayGlass",
@@ -19948,37 +20108,37 @@
           "pass": true
         },
         {
-          "name": "MicroSDCageRefined",
+          "name": "MicroSDCage001",
           "source_solid": 0,
           "step_solid": 92,
           "bbox_max_delta_mm": 1.63069557856943e-12,
-          "volume_delta_mm3": 2.8961721909581684e-11,
+          "volume_delta_mm3": 3.595346242946107e-11,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDCard",
+          "name": "MicroSDCard001",
           "source_solid": 0,
           "step_solid": 93,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": -2.842170943040401e-14,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad0",
+          "name": "MicroSDPad001",
           "source_solid": 0,
           "step_solid": 94,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad1",
+          "name": "MicroSDPad002",
           "source_solid": 0,
           "step_solid": 95,
           "bbox_max_delta_mm": 0.0,
@@ -19988,61 +20148,61 @@
           "pass": true
         },
         {
-          "name": "MicroSDPad2",
+          "name": "MicroSDPad003",
           "source_solid": 0,
           "step_solid": 96,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": -6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad3",
+          "name": "MicroSDPad004",
           "source_solid": 0,
           "step_solid": 97,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad4",
+          "name": "MicroSDPad005",
           "source_solid": 0,
           "step_solid": 98,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad5",
+          "name": "MicroSDPad006",
           "source_solid": 0,
           "step_solid": 99,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": -6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad6",
+          "name": "MicroSDPad007",
           "source_solid": 0,
           "step_solid": 100,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": 6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
         },
         {
-          "name": "MicroSDPad7",
+          "name": "MicroSDPad008",
           "source_solid": 0,
           "step_solid": 101,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.3877787807814457e-17,
+          "volume_delta_mm3": -6.938893903907228e-18,
           "valid": true,
           "boolean_confirmation": null,
           "pass": true
@@ -28838,13 +28998,93 @@
             "pass": true
           },
           "pass": true
+        },
+        {
+          "name": "MicroSDPad8",
+          "source_solid": 0,
+          "step_solid": 963,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad9",
+          "source_solid": 0,
+          "step_solid": 964,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad10",
+          "source_solid": 0,
+          "step_solid": 965,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 0.0,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad11",
+          "source_solid": 0,
+          "step_solid": 966,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad12",
+          "source_solid": 0,
+          "step_solid": 967,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad13",
+          "source_solid": 0,
+          "step_solid": 968,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad14",
+          "source_solid": 0,
+          "step_solid": 969,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "MicroSDPad15",
+          "source_solid": 0,
+          "step_solid": 970,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": 3.469446951953614e-18,
+          "valid": true,
+          "boolean_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
     }
   ],
   "pass": true,
-  "started": 1792044324.4460816,
+  "started": 1794131083.5346,
   "native_evaluation": "saved BRep (no history recompute)",
   "acceptance": {
     "volume_metric": "reported; geometry acceptance requires Boolean confirmation for differences > 1e-6 mm3",
@@ -28854,5 +29094,5 @@
   },
   "method": "One-to-one source/STEP solid matching by six bounding coordinates; absolute volume errors summed without cancellation; Boolean difference confirmation for discrepant solids. Compound-level volume estimate retained for transparency.",
   "numerical_reference": "https://dev.opencascade.org/doc/refman/html/class_b_rep_g_prop___gauss.html",
-  "elapsed_seconds": 295.4361894130707
+  "elapsed_seconds": 261.2927186489105
 }

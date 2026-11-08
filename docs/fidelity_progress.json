@@ -275,8 +275,8 @@
       "order": 7,
       "device": "switch2",
       "model": "BEE-001",
-      "status": "in_progress",
-      "current_step": "candidate_geometry_and_reference_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_17",
       "baseline": {
         "iterations": 16,
         "physical_components": 799,
@@ -292,11 +292,26 @@
           "Schematic internal layout": 497
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/switch2/references/fidelity_20261108.json"
+      ],
+      "changes": [
+        "Corrected microSD Express to nominal11×15×1mm and two rows of8contacts",
+        "Enlarged reader clearance and fitted card keying",
+        "Corrected inherited Joy-Con2 drawing captions and dimension endpoints from current BRep geometry"
+      ],
+      "validation": {
+        "report": "devices/switch2/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+        "passed": true,
+        "full_source_rebuild_components": 807
+      },
+      "remaining_uncertainties": [
+        "Nominal card envelope and two-row topology are source-backed.",
+        "Keying, pad lengths, second-row pitch and reader construction remain diagram-fitted.",
+        "No PCB electrical behavior, manufacturing tolerance or physical sample interchangeability is certified."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     },
     {
@@ -711,7 +726,8 @@
         "Existing shell, PCB and accessory details retain photographic study dimensions."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "b93e793"
     },
     {
       "order": 18,

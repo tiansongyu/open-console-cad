@@ -1,4 +1,5 @@
-import os,sys,json,csv
+import os,sys,json,csv,re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 sys.path.insert(0,os.environ.get('PATH_TO_FREECAD_LIBDIR',''))
 import FreeCAD as App,Part
@@ -16,6 +17,21 @@ radii=sorted(set(round(f.Surface.Radius,8) for f in c['HeadphoneRim'].Shape.Face
 check('stick_projection',bound(['JoyLStickCap']).ZMax-13.9,10.8)
 check('dock_guide_gap',bound(['DockFrontGuide-1']).ZMin-bound(['DockRearGuide-1']).ZMax,14.25)
 a=c['JoyRFaceButton1'].Shape.optimalBoundingBox(False,False).Center;b=c['JoyRFaceButton3'].Shape.optimalBoundingBox(False,False).Center;check('face_button_opposite_spacing',abs(a.x-b.x),17.0)
+# Audit the saved drawing annotations, including prose captions. Previously a
+# historical 7.4 / 10.8 caption and 21.6 dimension survived a button revision.
+pages=json.loads((OUT/'drawings/drawing_pages.json').read_text());control_page=next(p for p in pages if p['number']==3)
+opposite=next(x for x in control_page['dimensions'] if x['view']=='JoyRightFront')
+check('drawing.face_button_opposite_spacing',opposite['value_mm'],abs(a.x-b.x))
+texts=[''.join(node.itertext()) for node in ET.parse(OUT/'drawings'/control_page['svg']).iter() if node.tag.rsplit('}',1)[-1]=='text']
+caption=next(text for text in texts if text.startswith('摇杆帽 Ø'))
+values=[float(x) for x in re.findall(r'-?\d+(?:\.\d+)?',caption)]
+assert len(values)==3,caption
+for name,value,expected in zip(['stick_cap_diameter','face_button_diameter','button_center_radius'],values,[bound(['JoyLStickCap']).XLength,bound(['JoyRFaceButton0']).XLength,abs(a.x-b.x)/2]):check('caption.'+name,value,expected)
+caption=next(text for text in texts if text.startswith('L 摇杆中心：'))
+values=[float(x) for x in re.findall(r'-?\d+(?:\.\d+)?',caption)]
+left=bound(['JoyLStickCap']).Center;right=bound(['JoyRStickCap']).Center
+assert len(values)==4,caption
+for name,value,expected in zip(['left_x','left_y','right_x','right_y'],values,[left.x,left.y,right.x,right.y]):check('caption.stick_'+name,value,expected)
 report=json.loads((OUT/'reports/drawing_checks.json').read_text());report['model_measurements']=rows;report['pass']=all(r['pass'] for r in rows) and len(report['dimensions'])>20
 report['geometry_source']='saved BRep; full feature history not recomputed'
 report['bounding_method']='optimalBoundingBox(False, False), independent of display triangulation'

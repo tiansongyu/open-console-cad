@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-08",
+  "iteration": 17,
+  "model": "Nintendo Switch 2 BEE-001",
+  "scope": "Installed generic study microSD Express card and reader clearance; card is separately sold, not a bundled accessory.",
+  "sources": [
+    {
+      "url": "https://www.nintendo.com/en-gb/Support/Nintendo-Switch-2/microSD-Express-Card-FAQ-2843737.html",
+      "supports": "Switch2 uses microSD Express; cards sold separately."
+    },
+    {
+      "url": "https://www.sdcard.org/developers/sd-standard-overview/",
+      "dimension_image_url": "https://www.sdcard.org/wp-content/uploads/2020/12/microsd_01.gif",
+      "dimension_image_sha256": "f8a1a42457e66522b3bb29528176b8cf87879bc3b3011885143a92dc37eb9ba1",
+      "supports": "Nominal microSD form factor 11 x 15 x 1.0 mm; microSD Express has 16–17 contacts."
+    },
+    {
+      "url": "https://www.sdcard.org/pdf/SD_Cards_8_0_WhitePaper20200515.pdf",
+      "sha256": "66870b81e5d5ab80e2962a95530dcfafc32d87c3cfbe2560f02e630d782f18bf",
+      "pages": [
+        6
+      ],
+      "supports": "Figure 2: two rows of microSD Express contacts; optional 17th 1.2 V supply. Card outline and short second row qualitatively guide the study."
+    },
+    {
+      "url": "https://www.hirose.com/de/product/document?clcode=CL0609-0032-3-00&documentid=D49662_en&documenttype=Catalog&lang=de&productname=DM3CS-SF&series=DM3",
+      "pages": [
+        9
+      ],
+      "supports": "Legacy 8-contact connector pattern with 1.1 mm pitch; not identification of the Nintendo card reader."
+    }
+  ],
+  "changes": [
+    {
+      "part_ids": [
+        "MicroSDCard"
+      ],
+      "before_nominal_mm": [
+        10.9,
+        14.7,
+        0.7
+      ],
+      "after_nominal_mm": [
+        11,
+        15,
+        1
+      ],
+      "basis": "SD Association form-factor dimensions",
+      "local_keying": "Fitted to public diagram; no factory contour tolerance established"
+    },
+    {
+      "part_ids": [
+        "MicroSDPad0",
+        "MicroSDPad1",
+        "MicroSDPad2",
+        "MicroSDPad3",
+        "MicroSDPad4",
+        "MicroSDPad5",
+        "MicroSDPad6",
+        "MicroSDPad7",
+        "MicroSDPad8",
+        "MicroSDPad9",
+        "MicroSDPad10",
+        "MicroSDPad11",
+        "MicroSDPad12",
+        "MicroSDPad13",
+        "MicroSDPad14",
+        "MicroSDPad15"
+      ],
+      "before_rows": [
+        8
+      ],
+      "after_rows": [
+        8,
+        8
+      ],
+      "basis": "SD 7.1 two-row 16-contact option; optional 1.2 V pad not assumed",
+      "local_pad_dimensions": "Fitted to public diagrams; not certified contact-pad coordinates"
+    },
+    {
+      "part_ids": [
+        "MicroSDCage"
+      ],
+      "change": "Channel height 0.92→1.14 mm, now 1.90–3.04 mm Z; 1 mm card at 1.96–2.96 mm Z",
+      "basis": "Model clearance needed for corrected card thickness; reader construction remains approximate"
+    }
+  ],
+  "uncertainties": [
+    "Exact commercial card manufacturer/capacity is not fixed; the existing object remains a generic study card.",
+    "Card keying, pad lengths, second-row pitch and reader spring geometry are not metrology-certified.",
+    "Console port location and reader PCB geometry are unchanged approximate reconstruction."
+  ],
+  "factory_equivalence_verified": false
+}

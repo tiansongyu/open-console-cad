@@ -19,6 +19,8 @@
 
 网页不会自动读取改过的 FCStd；只有重新导出并提交 GLB 后才会更新。原生模型与网页模型的源文件 SHA-256 必须一致，CI 会检查这一点。
 
+并行迭代时，可以用 `python3 tools/check_repository.py nds` 和 `node tools/validate_glb.mjs nds` 核验已就绪的单款设备，避免把其他尚在导出的工作副本当成交付版本。不传设备名仍检查全库；每次 push 后的 CI 继续执行完整的 `npm run check`。
+
 ## 新增设备
 
 - 按 `devices/<device>/` 组织独立源码、宏、来源资料和输出。

@@ -21,3 +21,5 @@
 运行重建宏会依次生成各阶段模型。原始设计说明和最终检查见设备 README 与 output/reports/。
 
 第 16 轮：[面键比例与布局校准](scripts/iter16_public_reference_buttons.py)。面键间距与直径，联动按键孔、传力柱、接点和弹片；局部数值为图像估计。
+
+第 17 轮：[microSD Express 标称尺寸与双排接点](scripts/iter17_microsd_express_geometry.py)。卡片改为 11 × 15 × 1 mm、两排共 16 个接点，接点齐平嵌入卡体，修正防误插轮廓与卡座净空；局部细节为公开图示拟合；同步修正第 3 页沿用旧值的面键尺寸，改为从当前 BRep 生成标注。[卡片预览](output/previews/17_microsd_express_geometry_card.png)。

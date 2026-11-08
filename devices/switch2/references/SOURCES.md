@@ -16,3 +16,9 @@
 ## 2026-10-15 exterior refinement
 
 See [exterior_calibration.json](exterior_calibration.json) for the reference URL, hash, changed geometry and uncertainty. Near-front official product image. Manual image estimate; annotation lines and nonzero projection perspective limit precision. Not a measured hardware tolerance. Overall published dimensions are retained. This iteration does not establish complete factory equivalence.
+
+## 2026-11-08 microSD Express refinement
+
+[SD Association form-factor overview](https://www.sdcard.org/developers/sd-standard-overview/) gives the nominal microSD envelope of 11 × 15 × 1 mm and 16–17 contacts for microSD Express. Figure 2 on page 6 of the [SD Express white paper](https://www.sdcard.org/pdf/SD_Cards_8_0_WhitePaper20200515.pdf) supports the two-row layout and identifies the optional seventeenth contact. This study uses the 16-contact option. Card keying and local pad geometry are fitted to the diagram, without manufacturer tolerances.
+
+[Nintendo's microSD Express FAQ](https://www.nintendo.com/en-gb/Support/Nintendo-Switch-2/microSD-Express-Card-FAQ-2843737.html) confirms that the cards are sold separately. The existing inserted card remains a generic study object. Source hashes, changes and uncertainties are recorded in [fidelity_20261108.json](fidelity_20261108.json).

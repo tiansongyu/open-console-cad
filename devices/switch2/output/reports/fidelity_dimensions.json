@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "handheld",
+      "actual_mm": [
+        272.0,
+        116.0,
+        30.700000200000005
+      ],
+      "expected_mm": [
+        272,
+        116,
+        30.7
+      ],
+      "basis": "Nintendo published handheld envelope",
+      "passed": true
+    },
+    {
+      "name": "microSD_card",
+      "actual_mm": [
+        11.0,
+        15.0,
+        1.0
+      ],
+      "expected_mm": [
+        11,
+        15,
+        1
+      ],
+      "basis": "SD Association nominal form-factor envelope",
+      "passed": true
+    }
+  ],
+  "card_contact_count": 16,
+  "contact_rows": {
+    "-17.0": 8,
+    "-20.1": 8
+  },
+  "strict_modified_shapes_valid": true,
+  "source_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+  "factory_equivalence_verified": false
+}

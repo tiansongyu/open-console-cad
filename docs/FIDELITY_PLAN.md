@@ -33,7 +33,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 4 | [PlayStation Vita · PCH-1000 Wi-Fi OLED](../devices/psv/README.md) | 15 | 386 | 候选模型验证中 |
 | 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 待开始 |
 | 6 | [Nintendo Switch · HAC-001](../devices/switch/README.md) | 18 | 654 | 待开始 |
-| 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 候选模型验证中 |
+| 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 第 17 轮已验证 |
 | 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |

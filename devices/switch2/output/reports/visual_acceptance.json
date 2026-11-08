@@ -1,5 +1,8 @@
 {
-  "pass": true,
+  "passed": true,
+  "pages": 12,
+  "pdf_sha256": "a67c8655985c685d0cd5ffc49ef977d471342bf2cdd8bb163ab7c0cc49ee99fa",
+  "method": "All12 rendered pages reviewed; corrected page3 inspected at110dpi; other11 pages verified raster-identical, then final whitespace-normalized HTML/PDF all12 pages verified raster-identical",
   "reviewed_pages": [
     1,
     2,
@@ -14,34 +17,20 @@
     11,
     12
   ],
-  "rechecked_pages": [
-    1,
-    2,
-    4,
-    7,
-    10,
+  "detail_reviewed_pages": [
+    3,
+    6,
+    11,
     12
   ],
-  "P0_findings": [],
-  "P1_findings": [],
-  "page_count": 12,
-  "font": "TsangerJinKai02",
-  "content_atomic_values": 29,
-  "dimension_values": 22,
-  "pdf_sha256": "0b5274e4cc13a9c311b553556937f5365971b09cc4252949b8fa39ed3a364953",
-  "checks": [
-    "A3 landscape page size",
-    "legible CJK labels",
-    "no clipped geometry",
-    "repaired periodic cord silhouette",
-    "model-derived dimensions",
-    "published versus approximate values distinguished",
-    "native 12 pages and 22 measurable references",
-    "orthographic sections and exploded assembly layers",
-    "representative final CAD views and assembly layers inspected"
-  ],
-  "second_pass": "Reviewed artifact brief, content-coverage output and corrected page images against acceptance and preserve requirements; no unresolved P0/P1 defects.",
-  "historical": true,
-  "applies_to_source_sha256": "df03948b9d29031be0f5311d182d4e220444c38e6c5396e4b0c21f7e303f47a5",
-  "superseded_by": "exterior_delivery_checks.json"
+  "render_dpi": 75,
+  "layout_issues": [],
+  "geometry_source_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+  "factory_equivalence_verified": false,
+  "caption_values_checked": {
+    "stick_cap_diameter_mm": 17.1,
+    "face_button_diameter_mm": 8.4,
+    "face_button_center_radius_mm": 8.5,
+    "face_button_opposite_spacing_mm": 17
+  }
 }
