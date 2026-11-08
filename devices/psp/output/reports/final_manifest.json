@@ -2,15 +2,15 @@
   "project": "Sony PSP-1000 PSP-1000",
   "device": "psp",
   "prefix": "PSP1000",
-  "design_iterations": 15,
-  "physical_components": 346,
-  "solids": 436,
+  "design_iterations": 16,
+  "physical_components": 350,
+  "solids": 440,
   "assemblies": {
     "Body": 19,
     "Display": 5,
     "Controls": 47,
     "Internal": 89,
-    "Ports": 28,
+    "Ports": 32,
     "UMD": 32,
     "Battery": 10,
     "Mainboard": 100,
@@ -76,14 +76,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut026",
-      "label": "PSP-0002 · Original PSP structural perimeter027",
+      "name": "MainFrameCut029",
+      "label": "PSP-0002 · Original PSP structural perimeter030",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 167,
-      "volume": 14208.526699838449,
+      "faces": 180,
+      "volume": 14127.162246146754,
       "bounds": [
         -85.0000001,
         85.0000001,
@@ -104,18 +104,18 @@
       "pose_group": "Base"
     },
     {
-      "name": "FrontBezelCut029",
-      "label": "PSP-0003 · Glossy PSP front face blank030",
+      "name": "FrontBezelCut030",
+      "label": "PSP-0003 · Glossy PSP front face blank031",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 484,
-      "volume": 5671.207073532714,
+      "faces": 493,
+      "volume": 5671.138032707627,
       "bounds": [
         -84.80000009999999,
         84.8000001,
-        -36.800000000000004,
+        -36.8000001,
         36.8000001,
         21.7999999,
         23.0000001
@@ -393,10 +393,10 @@
       "faces": 7,
       "volume": 72.61800000000004,
       "bounds": [
-        -63.20000000000002,
-        -52.000000000000014,
-        0.29999999999999716,
-        8.70000000000001,
+        -63.2,
+        -52.0,
+        0.29999999999999627,
+        8.700000000000003,
         22.6,
         23.55
       ],
@@ -447,10 +447,10 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 0.03199999999999926,
+      "volume": 0.0319999999999993,
       "bounds": [
-        -57.100000000000016,
-        -55.50000000000001,
+        -57.1,
+        -55.5,
         3.700000000000003,
         5.299999999999997,
         23.56,
@@ -535,8 +535,8 @@
       "bounds": [
         -65.8,
         -64.2,
-        -5.000000000000001,
-        -3.4000000000000012,
+        -4.999999999999993,
+        -3.3999999999999932,
         23.56,
         23.584999999999997
       ],
@@ -559,12 +559,12 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 72.61800000000001,
+      "volume": 72.61800000000005,
       "bounds": [
         -78.0,
-        -66.80000000000001,
-        0.2999999999999956,
-        8.70000000000001,
+        -66.8,
+        0.29999999999999716,
+        8.700000000000003,
         22.6,
         23.55
       ],
@@ -615,11 +615,11 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 0.03199999999999933,
+      "volume": 0.03199999999999928,
       "bounds": [
-        -74.50000000000001,
-        -72.9,
-        3.7000000000000024,
+        -74.5,
+        -72.89999999999999,
+        3.700000000000003,
         5.299999999999997,
         23.56,
         23.584999999999997
@@ -755,7 +755,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 75.85352165032025,
+      "volume": 75.85352165032026,
       "bounds": [
         70.80000000000001,
         80.0,
@@ -839,7 +839,7 @@
       "null": false,
       "solids": 1,
       "faces": 5,
-      "volume": 75.85352165032025,
+      "volume": 75.85352165032026,
       "bounds": [
         60.4,
         69.6,
@@ -1896,21 +1896,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "HeadsetRemotePort",
-      "label": "PSP-0067 · Remote-control connector body",
-      "type": "Part::Feature",
+      "name": "HeadsetRemotePortCut001",
+      "label": "PSP-0067 · Remote-control connector body002",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 59.76375203952619,
+      "faces": 19,
+      "volume": 29.979372920974868,
       "bounds": [
         -61.25,
         -54.75,
         -36.05,
         -32.849999999999994,
         8.55,
-        11.45
+        11.450000000000001
       ],
       "state": [
         "Up-to-date"
@@ -1924,21 +1924,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "RemoteContact0",
-      "label": "PSP-0068 · Remote contact",
+      "name": "RemoteContact001",
+      "label": "PSP-0068 · Remote contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.01917253096491484,
+      "volume": 0.02076265482457443,
       "bounds": [
-        -60.2,
-        -59.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -60.275,
+        -59.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -1952,21 +1952,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "RemoteContact1",
-      "label": "PSP-0069 · Remote contact001",
+      "name": "RemoteContact002",
+      "label": "PSP-0069 · Remote contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.01917253096491484,
+      "volume": 0.02076265482457443,
       "bounds": [
-        -58.2,
-        -57.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -58.275,
+        -57.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -1980,21 +1980,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "RemoteContact2",
-      "label": "PSP-0070 · Remote contact002",
+      "name": "RemoteContact003",
+      "label": "PSP-0070 · Remote contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.019172530964914836,
+      "volume": 0.020762654824574428,
       "bounds": [
-        -56.2,
-        -55.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -56.275,
+        -55.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -2148,21 +2148,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryStickDoor",
-      "label": "PSP-0076 · Curved Memory Stick Duo cover",
+      "name": "MemoryStickDoor001",
+      "label": "PSP-0076 · Curved Memory Stick Duo cover001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 90.60064768067332,
+      "faces": 9,
+      "volume": 90.40404297746028,
       "bounds": [
         -84.98000000000002,
-        -83.48033242689098,
-        -13.000000000000014,
-        13.0,
-        12.9,
-        18.0
+        -81.0,
+        -5.0,
+        21.0,
+        14.5,
+        19.6
       ],
       "state": [
         "Up-to-date"
@@ -2647,8 +2647,8 @@
       "part_number": "PSP-0093",
       "assembly": "Ports",
       "layer": 4,
-      "material": "red",
-      "fidelity": "Published envelope; approximate local detail",
+      "material": "access_orange",
+      "fidelity": "Orange Memory Stick access light observed in firsthand LED replacement; presentation color approximate",
       "pose_group": "Base"
     },
     {
@@ -3156,21 +3156,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "BatteryPouchCut",
-      "label": "PSP-0112 · PSP-110 battery enclosure001",
-      "type": "Part::Cut",
+      "name": "BatteryPouch001",
+      "label": "PSP-0112 · PSP-110 battery enclosure002",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 3093.202944285119,
+      "volume": 4130.579707578907,
       "bounds": [
-        -79.05,
-        -48.55,
-        -24.0,
-        24.0,
-        2.0,
-        12.3
+        -81.8,
+        -45.8,
+        -26.0,
+        26.0,
+        1.8,
+        14.3
       ],
       "state": [
         "Up-to-date"
@@ -3180,25 +3180,25 @@
       "assembly": "Battery",
       "layer": -4,
       "material": "battery",
-      "fidelity": "Schematic internal layout",
+      "fidelity": "Schematic internal walls; published approximate PSP-110 pack envelope",
       "pose_group": "Base"
     },
     {
-      "name": "BatteryCell",
-      "label": "PSP-0113 · Battery-cell stack study",
+      "name": "BatteryCell001",
+      "label": "PSP-0113 · Battery-cell stack study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 10902.52717931903,
+      "volume": 16998.12096004045,
       "bounds": [
-        -78.25,
-        -49.349999999999994,
-        -23.200000000000003,
-        23.200000000000003,
-        2.85,
-        11.15
+        -80.85,
+        -46.74999999999999,
+        -25.050000000000004,
+        25.050000000000004,
+        2.75,
+        13.35
       ],
       "state": [
         "Up-to-date"
@@ -3212,21 +3212,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "BatteryTray",
-      "label": "PSP-0114 · Battery locating rim",
+      "name": "BatteryTray001",
+      "label": "PSP-0114 · Battery locating rim001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 59.14345542498297,
+      "volume": 39.58649173363604,
       "bounds": [
-        -79.8,
-        -47.8,
-        -24.75,
-        24.75,
-        1.5,
-        1.85
+        -82.2,
+        -45.4,
+        -26.4,
+        26.4,
+        1.35,
+        1.6500000000000001
       ],
       "state": [
         "Up-to-date"
@@ -3251,8 +3251,8 @@
       "bounds": [
         -68.05,
         -59.55,
-        24.349999999999998,
-        27.05,
+        26.95,
+        29.650000000000002,
         8.5,
         10.5
       ],
@@ -3279,8 +3279,8 @@
       "bounds": [
         -66.7,
         -65.89999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         10.65,
         10.77
       ],
@@ -3307,8 +3307,8 @@
       "bounds": [
         -64.2,
         -63.39999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         10.65,
         10.77
       ],
@@ -3335,8 +3335,8 @@
       "bounds": [
         -61.7,
         -60.89999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         10.65,
         10.77
       ],
@@ -3359,14 +3359,14 @@
       "null": false,
       "solids": 7,
       "faces": 116,
-      "volume": 0.13654986007014022,
+      "volume": 0.13654986007014025,
       "bounds": [
         -65.70761335503354,
         -54.09087657785234,
         11.956778423489933,
         14.198120905369127,
-        1.9619999,
-        1.9800001
+        1.7619998999999984,
+        1.7800001
       ],
       "state": [
         "Up-to-date"
@@ -3393,8 +3393,8 @@
         -53.083137583892615,
         2.9624160073825503,
         4.959731643624161,
-        1.9619999,
-        1.9800001
+        1.7619998999999984,
+        1.7800000999999999
       ],
       "state": [
         "Up-to-date"
@@ -3415,14 +3415,14 @@
       "null": false,
       "solids": 11,
       "faces": 159,
-      "volume": 0.07928369194409178,
+      "volume": 0.07928369194409182,
       "bounds": [
         -65.35726929530202,
         -52.96440855704697,
         -10.024429630201341,
         -8.757583792617451,
-        1.9619999,
-        1.9800001
+        1.7619998999999986,
+        1.7800000999999996
       ],
       "state": [
         "Up-to-date"
@@ -3436,21 +3436,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainboardCut006",
-      "label": "PSP-0122 · PSP mainboard with control-side arm007",
+      "name": "MainboardCut007",
+      "label": "PSP-0122 · PSP mainboard with control-side arm008",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 35,
-      "volume": 5865.943792337225,
+      "faces": 41,
+      "volume": 5805.111261492897,
       "bounds": [
         -51.0,
         72.5,
         -31.0,
         31.0,
         14.6,
-        15.40000000000002
+        15.400000000000002
       ],
       "state": [
         "Up-to-date"
@@ -3807,14 +3807,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 427.28495559215384,
+      "volume": 427.2849555921538,
       "bounds": [
-        -82.8,
-        -51.8,
-        -11.5,
-        11.5,
-        12.95,
-        13.549999999999999
+        -78.8,
+        -47.8,
+        -3.5,
+        19.5,
+        14.549999999999999,
+        15.149999999999999
       ],
       "state": [
         "Up-to-date"
@@ -3835,14 +3835,14 @@
       "null": false,
       "solids": 1,
       "faces": 16,
-      "volume": 524.6714641489921,
+      "volume": 524.6714641489917,
       "bounds": [
-        -82.3,
-        -52.3,
-        -10.75,
-        10.75,
-        13.7,
-        15.85
+        -78.3,
+        -48.3,
+        -2.75,
+        18.75,
+        15.299999999999999,
+        17.45
       ],
       "state": [
         "Up-to-date"
@@ -3863,14 +3863,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614305,
+      "volume": 0.28516566370614316,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -7.96,
-        -7.340000000000001,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        0.03999999999999965,
+        0.6599999999999997,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -3891,14 +3891,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.285165663706143,
+      "volume": 0.28516566370614316,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -6.26,
-        -5.640000000000001,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        1.7399999999999998,
+        2.36,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -3921,12 +3921,12 @@
       "faces": 10,
       "volume": 0.2851656637061431,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -4.56,
-        -3.94,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        3.44,
+        4.06,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -3947,14 +3947,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614316,
+      "volume": 0.28516566370614305,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -2.8600000000000008,
-        -2.2400000000000007,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        5.14,
+        5.759999999999999,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -3975,14 +3975,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614316,
+      "volume": 0.28516566370614305,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -1.1600000000000006,
-        -0.5400000000000005,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        6.84,
+        7.459999999999999,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -4003,14 +4003,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614316,
+      "volume": 0.2851656637061433,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        0.5399999999999996,
-        1.1599999999999997,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        8.54,
+        9.16,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -4031,14 +4031,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614316,
+      "volume": 0.28516566370614327,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        2.239999999999999,
-        2.859999999999999,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        10.239999999999998,
+        10.86,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -4059,14 +4059,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2851656637061431,
+      "volume": 0.28516566370614327,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        3.94,
-        4.56,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        11.94,
+        12.56,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -4087,14 +4087,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614305,
+      "volume": 0.28516566370614327,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        5.64,
-        6.259999999999999,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        13.639999999999999,
+        14.26,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -4115,14 +4115,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370614305,
+      "volume": 0.28516566370614327,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        7.339999999999999,
-        7.959999999999998,
-        14.15,
-        14.25
+        -53.300000000000004,
+        -48.699999999999996,
+        15.339999999999998,
+        15.959999999999999,
+        15.75,
+        15.85
       ],
       "state": [
         "Up-to-date"
@@ -6641,8 +6641,8 @@
         -52.25,
         -7.0,
         16.0,
-        16.5,
-        17.0
+        17.5,
+        18.0
       ],
       "state": [
         "Up-to-date"
@@ -6669,8 +6669,8 @@
         -62.849999999999994,
         10.85,
         15.15,
-        17.06,
-        17.119999999999997
+        18.06,
+        18.119999999999997
       ],
       "state": [
         "Up-to-date"
@@ -6697,8 +6697,8 @@
         -63.54999999999999,
         11.55,
         14.45,
-        17.24,
-        17.4
+        18.24,
+        18.4
       ],
       "state": [
         "Up-to-date"
@@ -6712,20 +6712,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControlRubber0",
-      "label": "PSP-0239 · Silicone button cup",
+      "name": "ControlRubber001",
+      "label": "PSP-0239 · Silicone button cup001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653401,
+      "volume": 21.237166338267006,
       "bounds": [
         -67.6,
-        -62.39999999999999,
+        -62.4,
         10.4,
         15.6,
-        17.61,
+        18.61,
         19.61
       ],
       "state": [
@@ -6781,8 +6781,8 @@
         -54.35,
         2.35,
         6.65,
-        17.06,
-        17.119999999999997
+        18.06,
+        18.119999999999997
       ],
       "state": [
         "Up-to-date"
@@ -6809,8 +6809,8 @@
         -55.05,
         3.05,
         5.95,
-        17.24,
-        17.4
+        18.24,
+        18.4
       ],
       "state": [
         "Up-to-date"
@@ -6824,20 +6824,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControlRubber1",
-      "label": "PSP-0243 · Silicone button cup001",
+      "name": "ControlRubber002",
+      "label": "PSP-0243 · Silicone button cup002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.474332676534,
+      "volume": 21.237166338267006,
       "bounds": [
         -59.1,
         -53.9,
         1.9,
         7.1,
-        17.61,
+        18.61,
         19.61
       ],
       "state": [
@@ -6893,8 +6893,8 @@
         -62.85,
         -6.15,
         -1.85,
-        17.06,
-        17.119999999999997
+        18.06,
+        18.119999999999997
       ],
       "state": [
         "Up-to-date"
@@ -6921,8 +6921,8 @@
         -63.55,
         -5.45,
         -2.55,
-        17.24,
-        17.4
+        18.24,
+        18.4
       ],
       "state": [
         "Up-to-date"
@@ -6936,20 +6936,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControlRubber2",
-      "label": "PSP-0247 · Silicone button cup002",
+      "name": "ControlRubber003",
+      "label": "PSP-0247 · Silicone button cup003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653401,
+      "volume": 21.237166338267006,
       "bounds": [
         -67.6,
         -62.4,
         -6.6,
         -1.4,
-        17.61,
+        18.61,
         19.61
       ],
       "state": [
@@ -7005,8 +7005,8 @@
         -71.35,
         2.35,
         6.65,
-        17.06,
-        17.119999999999997
+        18.06,
+        18.119999999999997
       ],
       "state": [
         "Up-to-date"
@@ -7033,8 +7033,8 @@
         -72.05,
         3.05,
         5.95,
-        17.24,
-        17.4
+        18.24,
+        18.4
       ],
       "state": [
         "Up-to-date"
@@ -7048,20 +7048,20 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControlRubber3",
-      "label": "PSP-0251 · Silicone button cup003",
+      "name": "ControlRubber004",
+      "label": "PSP-0251 · Silicone button cup004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653402,
+      "volume": 21.23716633826701,
       "bounds": [
         -76.1,
         -70.9,
         1.9,
         7.1,
-        17.61,
+        18.61,
         19.61
       ],
       "state": [
@@ -8289,12 +8289,12 @@
       "faces": 10,
       "volume": 4.99463495408496,
       "bounds": [
-        -53.5,
-        -48.5,
-        7.0,
-        17.0,
-        16.1,
-        16.200000000000003
+        -49.5,
+        -44.5,
+        13.0,
+        23.0,
+        17.5,
+        17.6
       ],
       "state": [
         "Up-to-date"
@@ -9734,6 +9734,118 @@
       "material": "white",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact3",
+      "label": "PSP-0347 · HPRM remote contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -60.275,
+        -59.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact3",
+      "part_number": "PSP-0347",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact4",
+      "label": "PSP-0348 · HPRM remote contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -58.275,
+        -57.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact4",
+      "part_number": "PSP-0348",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "RemoteContact5",
+      "label": "PSP-0349 · HPRM remote contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -56.275,
+        -55.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact5",
+      "part_number": "PSP-0349",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "HoldIndicator001",
+      "label": "PSP-0350 · HOLD mechanical indicator (unlocked state)001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1380823001646929,
+      "bounds": [
+        76.1,
+        77.9,
+        -19.325,
+        -18.675,
+        22.94,
+        23.060000000000002
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HoldIndicator",
+      "part_number": "PSP-0350",
+      "assembly": "Ports",
+      "layer": 4,
+      "material": "black",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
     }
   ],
   "exploded_objects": [
@@ -9767,14 +9879,14 @@
       ]
     },
     {
-      "name": "MainFrameCut026",
-      "label": "PSP-0002 · Original PSP structural perimeter027",
+      "name": "MainFrameCut029",
+      "label": "PSP-0002 · Original PSP structural perimeter030",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 167,
-      "volume": 14208.526699838449,
+      "faces": 180,
+      "volume": 14127.162246146754,
       "bounds": [
         -85.0000001,
         85.0000001,
@@ -9796,18 +9908,18 @@
       ]
     },
     {
-      "name": "FrontBezelCut029",
-      "label": "PSP-0003 · Glossy PSP front face blank030",
+      "name": "FrontBezelCut030",
+      "label": "PSP-0003 · Glossy PSP front face blank031",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 484,
-      "volume": 5671.207073532701,
+      "faces": 493,
+      "volume": 5671.13803270761,
       "bounds": [
         -84.80000009999999,
         84.8000001,
-        -36.800000000000004,
+        -36.8000001,
         36.8000001,
         231.79999990000002,
         233.0000001
@@ -10093,7 +10205,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 72.61799999999977,
+      "volume": 72.61799999999975,
       "bounds": [
         -63.20000000000002,
         -52.000000000000014,
@@ -11652,14 +11764,14 @@
       ]
     },
     {
-      "name": "HeadsetRemotePort",
-      "label": "PSP-0067 · Remote-control connector body",
+      "name": "HeadsetRemotePortCut001",
+      "label": "PSP-0067 · Remote-control connector body002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 59.76375203952619,
+      "faces": 19,
+      "volume": 29.979372920974868,
       "bounds": [
         -61.25,
         -54.75,
@@ -11681,21 +11793,21 @@
       ]
     },
     {
-      "name": "RemoteContact0",
-      "label": "PSP-0068 · Remote contact",
+      "name": "RemoteContact001",
+      "label": "PSP-0068 · Remote contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.01917253096491484,
+      "volume": 0.02076265482457443,
       "bounds": [
-        -60.2,
-        -59.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -60.275,
+        -59.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -11710,21 +11822,21 @@
       ]
     },
     {
-      "name": "RemoteContact1",
-      "label": "PSP-0069 · Remote contact001",
+      "name": "RemoteContact002",
+      "label": "PSP-0069 · Remote contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.01917253096491484,
+      "volume": 0.02076265482457443,
       "bounds": [
-        -58.2,
-        -57.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -58.275,
+        -57.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -11739,21 +11851,21 @@
       ]
     },
     {
-      "name": "RemoteContact2",
-      "label": "PSP-0070 · Remote contact002",
+      "name": "RemoteContact003",
+      "label": "PSP-0070 · Remote contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.019172530964914836,
+      "volume": 0.020762654824574428,
       "bounds": [
-        -56.2,
-        -55.8,
-        -36.16,
-        -36.08,
-        9.7,
-        10.3
+        -56.275,
+        -55.725,
+        -36.190000000000005,
+        -36.09,
+        10.46,
+        10.84
       ],
       "state": [
         "Up-to-date"
@@ -11913,21 +12025,21 @@
       ]
     },
     {
-      "name": "MemoryStickDoor",
-      "label": "PSP-0076 · Curved Memory Stick Duo cover",
+      "name": "MemoryStickDoor001",
+      "label": "PSP-0076 · Curved Memory Stick Duo cover001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 90.60064768067332,
+      "faces": 9,
+      "volume": 90.40404297746028,
       "bounds": [
         -84.98000000000002,
-        -83.48033242689098,
-        -13.000000000000014,
-        13.0,
-        12.9,
-        18.0
+        -81.0,
+        -5.0,
+        21.0,
+        14.5,
+        19.6
       ],
       "state": [
         "Up-to-date"
@@ -12957,21 +13069,21 @@
       ]
     },
     {
-      "name": "BatteryPouchCut",
-      "label": "PSP-0112 · PSP-110 battery enclosure001",
+      "name": "BatteryPouch001",
+      "label": "PSP-0112 · PSP-110 battery enclosure002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 3093.2029442851226,
+      "volume": 4130.579707578905,
       "bounds": [
-        -79.05,
-        -48.55,
-        -24.0,
-        24.0,
-        -138.0,
-        -127.7
+        -81.8,
+        -45.8,
+        -26.0,
+        26.0,
+        -138.2,
+        -125.69999999999999
       ],
       "state": [
         "Up-to-date"
@@ -12986,21 +13098,21 @@
       ]
     },
     {
-      "name": "BatteryCell",
-      "label": "PSP-0113 · Battery-cell stack study",
+      "name": "BatteryCell001",
+      "label": "PSP-0113 · Battery-cell stack study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 10902.527179319033,
+      "volume": 16998.120960040447,
       "bounds": [
-        -78.25,
-        -49.349999999999994,
-        -23.200000000000003,
-        23.200000000000003,
-        -137.15,
-        -128.85
+        -80.85,
+        -46.74999999999999,
+        -25.050000000000004,
+        25.050000000000004,
+        -137.25,
+        -126.65
       ],
       "state": [
         "Up-to-date"
@@ -13015,21 +13127,21 @@
       ]
     },
     {
-      "name": "BatteryTray",
-      "label": "PSP-0114 · Battery locating rim",
+      "name": "BatteryTray001",
+      "label": "PSP-0114 · Battery locating rim001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 59.143455424982626,
+      "volume": 39.58649173363655,
       "bounds": [
-        -79.8,
-        -47.8,
-        -24.75,
-        24.75,
-        -248.5,
-        -248.15
+        -82.2,
+        -45.4,
+        -26.4,
+        26.4,
+        -248.65,
+        -248.35
       ],
       "state": [
         "Up-to-date"
@@ -13055,8 +13167,8 @@
       "bounds": [
         -68.05,
         -59.55,
-        24.349999999999998,
-        27.05,
+        26.95,
+        29.650000000000002,
         -131.5,
         -129.5
       ],
@@ -13084,8 +13196,8 @@
       "bounds": [
         -66.7,
         -65.89999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         -129.35,
         -129.23
       ],
@@ -13113,8 +13225,8 @@
       "bounds": [
         -64.2,
         -63.39999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         -129.35,
         -129.23
       ],
@@ -13142,8 +13254,8 @@
       "bounds": [
         -61.7,
         -60.89999999999999,
-        24.7,
-        26.7,
+        27.3,
+        29.3,
         -129.35,
         -129.23
       ],
@@ -13167,14 +13279,14 @@
       "null": false,
       "solids": 7,
       "faces": 116,
-      "volume": 0.13654986007014194,
+      "volume": 0.13654986007014192,
       "bounds": [
         -65.70761335503354,
         -54.09087657785234,
         11.956778423489933,
         14.198120905369127,
-        -138.0380001,
-        -138.01999990000002
+        -138.2380001,
+        -138.2199999
       ],
       "state": [
         "Up-to-date"
@@ -13196,14 +13308,14 @@
       "null": false,
       "solids": 7,
       "faces": 143,
-      "volume": 0.13218067076792872,
+      "volume": 0.13218067076792878,
       "bounds": [
         -65.86006721409395,
         -53.083137583892615,
         2.9624160073825503,
         4.959731643624161,
-        -138.0380001,
-        -138.01999990000002
+        -138.2380001,
+        -138.2199999
       ],
       "state": [
         "Up-to-date"
@@ -13225,14 +13337,14 @@
       "null": false,
       "solids": 11,
       "faces": 159,
-      "volume": 0.07928369194409278,
+      "volume": 0.07928369194409277,
       "bounds": [
         -65.35726929530202,
         -52.96440855704697,
         -10.024429630201341,
         -8.757583792617451,
-        -138.0380001,
-        -138.01999990000002
+        -138.2380001,
+        -138.2199999
       ],
       "state": [
         "Up-to-date"
@@ -13247,21 +13359,21 @@
       ]
     },
     {
-      "name": "MainboardCut006",
-      "label": "PSP-0122 · PSP mainboard with control-side arm007",
+      "name": "MainboardCut007",
+      "label": "PSP-0122 · PSP mainboard with control-side arm008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 35,
-      "volume": 5865.943792337225,
+      "faces": 41,
+      "volume": 5805.111261492897,
       "bounds": [
         -51.0,
         72.5,
         -31.0,
         31.0,
         -25.4,
-        -24.59999999999998
+        -24.599999999999998
       ],
       "state": [
         "Up-to-date"
@@ -13633,12 +13745,12 @@
       "faces": 10,
       "volume": 427.2849555921525,
       "bounds": [
-        -82.8,
-        -51.8,
-        -11.5,
-        11.5,
-        -87.05,
-        -86.45
+        -78.8,
+        -47.8,
+        -3.5,
+        19.5,
+        -85.45,
+        -84.85000000000001
       ],
       "state": [
         "Up-to-date"
@@ -13662,12 +13774,12 @@
       "faces": 16,
       "volume": 524.6714641489925,
       "bounds": [
-        -82.3,
-        -52.3,
-        -10.75,
-        10.75,
-        -86.3,
-        -84.14999999999999
+        -78.3,
+        -48.3,
+        -2.75,
+        18.75,
+        -84.7,
+        -82.55
       ],
       "state": [
         "Up-to-date"
@@ -13689,14 +13801,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370613794,
+      "volume": 0.28516566370613805,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -7.96,
-        -7.340000000000001,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        0.03999999999999965,
+        0.6599999999999997,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13718,14 +13830,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370613794,
+      "volume": 0.28516566370613805,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -6.26,
-        -5.640000000000001,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        1.7399999999999998,
+        2.36,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13749,12 +13861,12 @@
       "faces": 10,
       "volume": 0.28516566370613805,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -4.56,
-        -3.94,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        3.44,
+        4.06,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13776,14 +13888,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370613805,
+      "volume": 0.28516566370613794,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -2.8600000000000008,
-        -2.2400000000000007,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        5.14,
+        5.759999999999999,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13805,14 +13917,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2851656637061381,
+      "volume": 0.28516566370613794,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        -1.1600000000000006,
-        -0.5400000000000005,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        6.84,
+        7.459999999999999,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13834,14 +13946,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2851656637061381,
+      "volume": 0.2851656637061382,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        0.5399999999999996,
-        1.1599999999999997,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        8.54,
+        9.16,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13863,14 +13975,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2851656637061381,
+      "volume": 0.2851656637061382,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        2.239999999999999,
-        2.859999999999999,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        10.239999999999998,
+        10.86,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13892,14 +14004,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.285165663706138,
+      "volume": 0.2851656637061382,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        3.94,
-        4.56,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        11.94,
+        12.56,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13921,14 +14033,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370613794,
+      "volume": 0.2851656637061382,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        5.64,
-        6.259999999999999,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        13.639999999999999,
+        14.26,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -13950,14 +14062,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.28516566370613794,
+      "volume": 0.2851656637061382,
       "bounds": [
-        -57.300000000000004,
-        -52.699999999999996,
-        7.339999999999999,
-        7.959999999999998,
-        -85.85,
-        -85.75
+        -53.300000000000004,
+        -48.699999999999996,
+        15.339999999999998,
+        15.959999999999999,
+        -84.25,
+        -84.15
       ],
       "state": [
         "Up-to-date"
@@ -16566,8 +16678,8 @@
         -52.25,
         -7.0,
         16.0,
-        46.5,
-        47.0
+        47.5,
+        48.0
       ],
       "state": [
         "Up-to-date"
@@ -16595,8 +16707,8 @@
         -62.849999999999994,
         10.85,
         15.15,
-        47.06,
-        47.120000000000005
+        48.06,
+        48.120000000000005
       ],
       "state": [
         "Up-to-date"
@@ -16624,8 +16736,8 @@
         -63.54999999999999,
         11.55,
         14.45,
-        47.239999999999995,
-        47.4
+        48.239999999999995,
+        48.4
       ],
       "state": [
         "Up-to-date"
@@ -16640,20 +16752,20 @@
       ]
     },
     {
-      "name": "ControlRubber0",
-      "label": "PSP-0239 · Silicone button cup",
+      "name": "ControlRubber001",
+      "label": "PSP-0239 · Silicone button cup001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653401,
+      "volume": 21.237166338267006,
       "bounds": [
         -67.6,
-        -62.39999999999999,
+        -62.4,
         10.4,
         15.6,
-        87.61,
+        88.61,
         89.61
       ],
       "state": [
@@ -16711,8 +16823,8 @@
         -54.35,
         2.35,
         6.65,
-        47.06,
-        47.120000000000005
+        48.06,
+        48.120000000000005
       ],
       "state": [
         "Up-to-date"
@@ -16740,8 +16852,8 @@
         -55.05,
         3.05,
         5.95,
-        47.239999999999995,
-        47.4
+        48.239999999999995,
+        48.4
       ],
       "state": [
         "Up-to-date"
@@ -16756,20 +16868,20 @@
       ]
     },
     {
-      "name": "ControlRubber1",
-      "label": "PSP-0243 · Silicone button cup001",
+      "name": "ControlRubber002",
+      "label": "PSP-0243 · Silicone button cup002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.474332676534004,
+      "volume": 21.237166338267006,
       "bounds": [
         -59.1,
         -53.9,
         1.9,
         7.1,
-        87.61,
+        88.61,
         89.61
       ],
       "state": [
@@ -16827,8 +16939,8 @@
         -62.85,
         -6.15,
         -1.85,
-        47.06,
-        47.120000000000005
+        48.06,
+        48.120000000000005
       ],
       "state": [
         "Up-to-date"
@@ -16856,8 +16968,8 @@
         -63.55,
         -5.45,
         -2.55,
-        47.239999999999995,
-        47.4
+        48.239999999999995,
+        48.4
       ],
       "state": [
         "Up-to-date"
@@ -16872,20 +16984,20 @@
       ]
     },
     {
-      "name": "ControlRubber2",
-      "label": "PSP-0247 · Silicone button cup002",
+      "name": "ControlRubber003",
+      "label": "PSP-0247 · Silicone button cup003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653401,
+      "volume": 21.237166338267006,
       "bounds": [
         -67.6,
         -62.4,
         -6.6,
         -1.4,
-        87.61,
+        88.61,
         89.61
       ],
       "state": [
@@ -16943,8 +17055,8 @@
         -71.35,
         2.35,
         6.65,
-        47.06,
-        47.120000000000005
+        48.06,
+        48.120000000000005
       ],
       "state": [
         "Up-to-date"
@@ -16972,8 +17084,8 @@
         -72.05,
         3.05,
         5.95,
-        47.239999999999995,
-        47.4
+        48.239999999999995,
+        48.4
       ],
       "state": [
         "Up-to-date"
@@ -16988,20 +17100,20 @@
       ]
     },
     {
-      "name": "ControlRubber3",
-      "label": "PSP-0251 · Silicone button cup003",
+      "name": "ControlRubber004",
+      "label": "PSP-0251 · Silicone button cup004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 42.47433267653402,
+      "volume": 21.23716633826701,
       "bounds": [
         -76.1,
         -70.9,
         1.9,
         7.1,
-        87.61,
+        88.61,
         89.61
       ],
       "state": [
@@ -18273,12 +18385,12 @@
       "faces": 10,
       "volume": 4.99463495408496,
       "bounds": [
-        -53.5,
-        -48.5,
-        7.0,
-        17.0,
-        46.1,
-        46.2
+        -49.5,
+        -44.5,
+        13.0,
+        23.0,
+        47.5,
+        47.6
       ],
       "state": [
         "Up-to-date"
@@ -19769,6 +19881,122 @@
         -50.0,
         0.0,
         0.0
+      ]
+    },
+    {
+      "name": "RemoteContact3",
+      "label": "PSP-0347 · HPRM remote contact",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -60.275,
+        -59.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact3",
+      "part_number": "PSP-0347",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "RemoteContact4",
+      "label": "PSP-0348 · HPRM remote contact001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -58.275,
+        -57.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact4",
+      "part_number": "PSP-0348",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "RemoteContact5",
+      "label": "PSP-0349 · HPRM remote contact002",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.020762654824574428,
+      "bounds": [
+        -56.275,
+        -55.725,
+        -36.190000000000005,
+        -36.09,
+        9.16,
+        9.54
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "RemoteContact5",
+      "part_number": "PSP-0349",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "HoldIndicator001",
+      "label": "PSP-0350 · HOLD mechanical indicator (unlocked state)001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.13808230016469428,
+      "bounds": [
+        76.1,
+        77.9,
+        -19.325,
+        -18.675,
+        232.94,
+        233.06
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "HoldIndicator",
+      "part_number": "PSP-0350",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        210.0
       ]
     }
   ],
@@ -21502,6 +21730,26 @@
       -50.0,
       0.0,
       0.0
+    ],
+    "RemoteContact3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RemoteContact4": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RemoteContact5": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "HoldIndicator": [
+      0.0,
+      0.0,
+      210.0
     ]
   },
   "published_envelope_mm": [
@@ -21535,7 +21783,7 @@
     ]
   },
   "fidelity": "Published envelope; approximate exterior details and schematic major internals",
-  "source_digest": "4e6630436ed39b8383df1c9544898a6f365991cf5822635745255b1cd6726e21",
+  "source_digest": "bf9f5bd28dbed0bfef8d9f692cd007b8bc67bef1a0e3faef596bca82d3d632c5",
   "main_step_file": "PSP1000_Handheld.step",
   "envelope_groups": [
     "Body"

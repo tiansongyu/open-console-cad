@@ -424,3 +424,6 @@ STAGES[14]=stage14
 # Public-reference refinement; local values remain estimates.
 from .handheld_refinement import refine_psp
 STAGES[15] = refine_psp
+
+from .fidelity_psp import stage16
+STAGES[16] = stage16

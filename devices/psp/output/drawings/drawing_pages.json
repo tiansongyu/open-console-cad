@@ -104,7 +104,11 @@
           "RAMMark",
           "FlashMark",
           "PMICMark",
-          "AudioICMark"
+          "AudioICMark",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 197.0,
         "y": 100.0,
@@ -278,7 +282,11 @@
           "RAMMark",
           "FlashMark",
           "PMICMark",
-          "AudioICMark"
+          "AudioICMark",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 106.5,
         "y": 68.0,
@@ -397,7 +405,11 @@
           "RAMMark",
           "FlashMark",
           "PMICMark",
-          "AudioICMark"
+          "AudioICMark",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 299.0,
         "y": 68.0,
@@ -516,7 +528,11 @@
           "RAMMark",
           "FlashMark",
           "PMICMark",
-          "AudioICMark"
+          "AudioICMark",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 105.5,
         "y": 164.5,
@@ -635,7 +651,11 @@
           "RAMMark",
           "FlashMark",
           "PMICMark",
-          "AudioICMark"
+          "AudioICMark",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 298.5,
         "y": 164.5,
@@ -992,7 +1012,7 @@
         ],
         "x": 330.0,
         "y": 53.5,
-        "scale": 3.390434393293693,
+        "scale": 3.3904343932936927,
         "normal": [
           -1,
           -0.2,
@@ -1004,9 +1024,9 @@
           1
         ],
         "center": [
-          -67.09306906969661,
-          0.041386186060675456,
-          14.2043562113495
+          -63.09306906969662,
+          8.041386186060683,
+          15.804356211349504
         ],
         "exploded": false,
         "source": "open"
@@ -1018,7 +1038,10 @@
           "HeadsetRemotePort",
           "RemoteContact0",
           "RemoteContact1",
-          "RemoteContact2"
+          "RemoteContact2",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5"
         ],
         "x": 70.5,
         "y": 160.5,
@@ -1035,7 +1058,7 @@
         ],
         "center": [
           -61.725,
-          -32.53,
+          -32.545,
           10.0
         ],
         "exploded": false,
@@ -1461,7 +1484,11 @@
           "LCDPad0",
           "LCDPad1",
           "LCDPad2",
-          "LCDPad3"
+          "LCDPad3",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 198.0,
         "y": 61.5,
@@ -1998,7 +2025,11 @@
           "LCDPad0",
           "LCDPad1",
           "LCDPad2",
-          "LCDPad3"
+          "LCDPad3",
+          "RemoteContact3",
+          "RemoteContact4",
+          "RemoteContact5",
+          "HoldIndicator"
         ],
         "x": 198.0,
         "y": 105.0,
@@ -2030,7 +2061,7 @@
     "svg": "07.svg",
     "notes": [
       "主板含控制侧臂，CPU、媒体引擎及存储器采用独立封装实体。",
-      "PSP-110 电池按官方 1800 mAh 标识，壳体和电芯尺寸为近似值。"
+      "PSP-110 外包络按索尼约 36 × 52 × 12.5 mm；圆角与内部电芯为近似值。"
     ],
     "views": [
       {
@@ -2139,7 +2170,7 @@
         ],
         "x": 129.5,
         "y": 85.5,
-        "scale": 1.2951622780159215,
+        "scale": 1.327683615819209,
         "normal": [
           0,
           0,
@@ -2151,7 +2182,7 @@
           0
         ],
         "center": [
-          -1.1499999999999986,
+          0.8500000000000014,
           1.3000000000000007,
           12.375
         ],
@@ -2174,7 +2205,7 @@
         ],
         "x": 324.5,
         "y": 88.0,
-        "scale": 2.1413127413127415,
+        "scale": 1.864673913043478,
         "normal": [
           0,
           0,
@@ -2187,8 +2218,8 @@
         ],
         "center": [
           -63.8,
-          1.1500000000000004,
-          6.9
+          1.6250000000000018,
+          7.825
         ],
         "exploded": false,
         "source": "open"
@@ -2200,37 +2231,37 @@
         "p1": [
           -51.0,
           3.552713678800501e-15,
-          15.00000000000001
+          15.000000000000002
         ],
         "p2": [
           72.5,
           3.552713678800501e-15,
-          15.00000000000001
+          15.000000000000002
         ],
         "axis": "x",
-        "value_mm": 123.50000000000001,
+        "value_mm": 123.5,
         "label": "≈ 123.5",
         "published": false,
         "label_position": [
-          144.91243110838946,
+          142.64406779661016,
           14.4
         ]
       },
       {
         "view": "BatteryDetail",
         "p1": [
-          -48.55,
-          1.7763568394002505e-15,
-          7.15
+          -45.8,
+          0.0,
+          8.05
         ],
         "p2": [
-          -79.05,
-          1.7763568394002505e-15,
-          7.15
+          -81.8,
+          0.0,
+          8.05
         ],
         "axis": "x",
-        "value_mm": 30.500000000000014,
-        "label": "≈ 30.5",
+        "value_mm": 36.00000000000001,
+        "label": "≈ 36",
         "published": false,
         "label_position": [
           324.5,
@@ -2241,21 +2272,21 @@
         "view": "BatteryDetail",
         "p1": [
           -63.8,
-          -24.0,
-          7.15
+          -26.0,
+          8.05
         ],
         "p2": [
           -63.8,
-          24.0,
-          7.15
+          26.0,
+          8.05
         ],
         "axis": "y",
-        "value_mm": 48.0,
-        "label": "≈ 48",
+        "value_mm": 52.0,
+        "label": "≈ 52",
         "published": false,
         "label_position": [
           384,
-          90.46250965250964
+          91.03009510869565
         ]
       }
     ]
@@ -2460,7 +2491,7 @@
         ],
         "x": 296.0,
         "y": 67.5,
-        "scale": 3.007934750674554,
+        "scale": 3.0383263612516416,
         "normal": [
           0.6,
           -0.4,
@@ -2473,8 +2504,8 @@
         ],
         "center": [
           -65.57156282821862,
-          4.895865125627162,
-          19.280728619635628
+          4.89586512562716,
+          19.780728619635635
         ],
         "exploded": false,
         "source": "open"

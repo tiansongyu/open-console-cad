@@ -19,3 +19,4 @@
 | 13 | 收窄肩键内缘，保留与屏框和 LCD 支架之间的独立装配间隙，完成最后的肩键配合修正。 | 346 | [查看](output/previews/13_shoulder_display_clearance_hero.png) |
 | 14 | 将顶部红外窗、UMD 拨钮和 USB 附件安装环露出到机壳表面，并将后部标识移开螺钉孔，完成图纸视图中发现的可见性修正。 | 346 | [查看](output/previews/14_flush_top_interfaces_and_rear_mark_hero.png) |
 | 15 | 方向键尖端方向与比例、面键布局、屏幕边框、标识和对应示意机构间隙；局部数值为公开图像估计。 | 346 | [查看](output/previews/15_public_reference_directional_petals_hero.png) |
+| 16 | 校正 PSP-110 公开包络和内部示意安装层，补齐六针遥控口、HOLD 状态窗与记忆棒访问灯。350 个组件从空工程重建匹配。 | 350 | [效果图](output/previews/16_published_battery_six_pin_remote_and_hold_indicator_hero.png) |

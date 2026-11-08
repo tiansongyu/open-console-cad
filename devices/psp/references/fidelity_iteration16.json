@@ -1,0 +1,100 @@
+{
+  "device": "psp",
+  "model": "PSP-1000 / PSP-110 battery",
+  "iteration": 16,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://sonyinteractive.com/uploads/sites/5/2023/02/041027a.pdf",
+      "publisher": "Sony Computer Entertainment",
+      "printed_page": 3,
+      "sha256": "6f9a6220aea6474f64c63099aaf128fe631ff9f79b564eadd8ebec5743cc5ac2",
+      "verified": "PSP-110 published approximately 52 × 12.5 × 36 mm excluding projections,3.6 V / 1800 mAh. Installed model axes are 36 × 52 × 12.5 mm. Sony also specifies Memory Stick Duo 20 × 1.6 × 31 mm, unchanged existing accessory."
+    },
+    {
+      "url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/psp-docs/JA_PSP-1000_WEB.pdf",
+      "publisher": "Sony",
+      "printed_pages": [
+        20,
+        21,
+        22,
+        32
+      ],
+      "verified": "Original PSP-1000 HPRM location, Memory Stick side entry, HOLD mechanical indicator that appears yellow in locked state. Model uses unlocked dark indicator."
+    },
+    {
+      "url": "https://nil.rpc1.org/psp/remote.html",
+      "publisher": "Original PSP remote-interface experiment author",
+      "verified": "Original remote mating connector has six pins; original hardware experimentation, not later PSP-2000 video interface."
+    },
+    {
+      "url": "https://hitmen.c02.at/files/yapspd/psp_doc/chap3.html",
+      "publisher": "yet another PlayStationPortable Documentation contributors",
+      "verified": "Headphone/remote interface diagram: two rows of three remote pins next to 3.5 mm headphone jack."
+    },
+    {
+      "url": "https://acidmods.com/forum/index.php/topic,27375.0.html",
+      "publisher": "Neubit / firsthand PSP LED replacement",
+      "verified": "Orange Memory Stick access indicator described in hardware LED replacement guide. RGB values are illustrative, not measured chromaticity."
+    }
+  ],
+  "changes": [
+    {
+      "parts": [
+        "BatteryPouch",
+        "BatteryCell",
+        "BatteryTray"
+      ],
+      "before_pack_mm": [
+        30.5,
+        48,
+        10.3
+      ],
+      "after_pack_mm": [
+        36,
+        52,
+        12.5
+      ],
+      "basis": "Sony approximate external battery specification. Corner radius 12 mm, cell cavity and rim are estimated."
+    },
+    {
+      "parts": [
+        "MemoryReaderPCB",
+        "MemoryReaderCage",
+        "MemoryStickDoor",
+        "MemoryFlex",
+        "DPadPCB",
+        "Mainboard",
+        "MainFrame"
+      ],
+      "basis": "Rearranged schematic internal layers and side cover for larger battery. Reader shifted 4 mm inward, 8 mm upward in plane, 1.6 mm toward control face; D-pad board/contact stack raised 1 mm with shorter schematic cups. No exact OEM PCB layout claim."
+    },
+    {
+      "parts": [
+        "RemoteContact0",
+        "RemoteContact1",
+        "RemoteContact2",
+        "RemoteContact3",
+        "RemoteContact4",
+        "RemoteContact5",
+        "HeadsetRemotePort"
+      ],
+      "basis": "Restore 6 contacts in 2 rows and open mating mouth. Local pitch and contact proportions estimated."
+    },
+    {
+      "parts": [
+        "MemoryLED",
+        "HoldIndicator"
+      ],
+      "basis": "Orange Memory Stick access display and previously absent HOLD flag. Indicator size/placement fitted."
+    }
+  ],
+  "limitations": [
+    "No physical PSP-1000 or factory mold drawings available.",
+    "Battery maximum approximate dimensions are verified; package corner curvature, cell stack and retention features are reconstructed.",
+    "Internal reader/control board heights, membrane dimensions and frame relief remain schematic.",
+    "HPRM count/topology is based on firsthand interface documentation; mechanical pitch/tolerance and pin function are not manufacturer-certified.",
+    "No manufacturing interchangeability or electrical operation claim."
+  ]
+}

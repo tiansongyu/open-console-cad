@@ -29,7 +29,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | ---: | --- | ---: | ---: | --- |
 | 1 | [Nintendo DS · NTR-001](../devices/nds/README.md) | 16 | 321 | 第 17 轮已验证 |
 | 2 | [Nintendo 3DS · CTR-001](../devices/3ds/README.md) | 14 | 324 | 第 15 轮已验证 |
-| 3 | [Sony PSP-1000 · PSP-1000](../devices/psp/README.md) | 15 | 346 | 候选模型验证中 |
+| 3 | [Sony PSP-1000 · PSP-1000](../devices/psp/README.md) | 15 | 346 | 第 16 轮已验证 |
 | 4 | [PlayStation Vita · PCH-1000 Wi-Fi OLED](../devices/psv/README.md) | 15 | 386 | 第 16 轮已验证 |
 | 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 官方机械资料校准中 |
 | 6 | [Nintendo Switch · HAC-001](../devices/switch/README.md) | 18 | 654 | 待开始 |
@@ -53,7 +53,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 24 | [Microsoft Xbox · Original Black v1.0 · 2001 · Duke](../devices/xbox/README.md) | 18 | 978 | 待开始 |
 | 25 | [Microsoft Xbox 360 · Premium 20 GB · Xenon · 北美原版](../devices/xbox360/README.md) | 35 | 2,005 | 待开始 |
 | 26 | [Microsoft Xbox One · Model 1540 · 500 GB · Original 2013](../devices/xboxone/README.md) | 28 | 1,791 | 待开始 |
-| 27 | [Microsoft Xbox Series X · Original optical · 2020 · 1 TB](../devices/seriesx/README.md) | 19 | 1,047 | 待开始 |
+| 27 | [Microsoft Xbox Series X · Original optical · 2020 · 1 TB](../devices/seriesx/README.md) | 19 | 1,047 | 最终交付核验中 |
 
 ## 基线发现
 

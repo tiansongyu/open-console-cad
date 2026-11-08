@@ -1,0 +1,65 @@
+{
+  "device": "psp",
+  "revision": 16,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "d71f8be7532b3e6093e4f33dce2dd069413875acf61a80bdab79661ddfeb07d4",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":99",
+  "physical_components": 350,
+  "solids": 440,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": true,
+  "rebuild_checkpoint_rendering_skipped": true,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration16.json",
+  "changes": [
+    "Corrected PSP-110 installed envelope from30.5x48x10.3 to approximately36x52x12.5mm",
+    "Rearranged schematic internal reader/control installation and frame clearances",
+    "Restored original two-row six-contact HPRM interface and mating cavity",
+    "Added HOLD mechanical indicator and corrected Memory Stick activity tint"
+  ],
+  "validation": {
+    "detail_checks": 11,
+    "source_rebuilt_components": 350,
+    "identical_rebuilt_breps": 337,
+    "remaining_rebuilds_checked_by_bidirectional_boolean_difference": 13,
+    "candidate_pairs": 474,
+    "step_files": 3,
+    "model_dimensions": 24,
+    "native_drawing_references": 19,
+    "pdf_pages_reviewed": 12,
+    "web_views": 9,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "passed",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_psp.py": "1847f8228393391014d17fd9ec7b030f27aa00f23a2046341de09e3f0571cd16",
+    "tools/cadlib/psp.py": "65d969f638387b451ac675a912fbe1c66f5cd3cc53a09ec7628236e6756d7b2a",
+    "devices/psp/profile.json": "f64f2a57138b06fcaf9c45ac732330c60e6d71a968f36e166be61c4ce370985e",
+    "devices/psp/scripts/audit_fidelity.py": "3544f20653f078272c93be294703ac03809e5e828f13b762146a2a1520f6fcd6",
+    "devices/psp/scripts/audit_dimensions.py": "8374354924b9db7254ec22f7305deb6c59e65d7e1b1a883c82d4b30406ab154a",
+    "devices/psp/scripts/drawing_geometry.py": "1c4b39e6d99d7462fe4a42aa79934c7ef2805485cff9c11d0ad046dffff62126",
+    "devices/psp/Rebuild_PSP1000.FCMacro": "2db5f6c59b925d77ac02fac52e867c613ed93abb6a3b5a0aca1a3bba4540ea5b"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "5767d81e18b188c58108705e0a3c3dcafb7e37efe74af6bd81b69574aa1fc5b4",
+    "fidelity_interference.json": "2091e12fdd4682e88609434905370f7746e65a2baf14e045bc857620333a7316",
+    "fidelity_source_rebuild.json": "bee1e9571a3578ee2e029e30cef36c092eb01f958eec2c8451b2b22b9540ef7c",
+    "export_roundtrip_audit.json": "e0d98b85455e99a8a107a9361c00e7eb8f414e5d04faa73d692daf748c2f930a",
+    "drawing_checks.json": "3ed37c05c27f324ec190fce98779336f7774106cba00557190bac35212b1d270",
+    "native_drawings_audit.json": "0814b750a2dce02cc41a7a1596d8b407cf68e53d0bebfd8e1bcbea32b9fc688a",
+    "native_drawings_reload.json": "1d16fcfdad29c11520c6aae56e5bb05528cba215a68e4d307653806fb66b5a56",
+    "fidelity_pdf_review.json": "b57f80eb98a52720773999d4fa9a94220a253aa842494433c7f199d8b21961e3",
+    "fidelity_web_checks.json": "d806e8a584d3dd6470a660715a221720225544da9124d8c25a73691b51eafa77"
+  },
+  "limitations": [
+    "No physical PSP-1000 or factory mold drawings available.",
+    "Battery maximum approximate dimensions are verified; package corner curvature, cell stack and retention features are reconstructed.",
+    "Internal reader/control board heights, membrane dimensions and frame relief remain schematic.",
+    "HPRM count/topology is based on firsthand interface documentation; mechanical pitch/tolerance and pin function are not manufacturer-certified.",
+    "No manufacturing interchangeability or electrical operation claim."
+  ]
+}

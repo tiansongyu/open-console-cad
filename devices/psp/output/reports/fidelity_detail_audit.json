@@ -1,0 +1,94 @@
+{
+  "device": "psp",
+  "iteration": 16,
+  "source_sha256": "d71f8be7532b3e6093e4f33dce2dd069413875acf61a80bdab79661ddfeb07d4",
+  "physical_components": 350,
+  "checks": [
+    {
+      "name": "battery.installed_X_mm",
+      "actual": 36.0,
+      "expected": 36.0,
+      "basis": "Sony 2004-10-27 release p.3; approximate envelope excluding projections",
+      "passed": true
+    },
+    {
+      "name": "battery.installed_Y_mm",
+      "actual": 52.0,
+      "expected": 52.0,
+      "basis": "Sony 2004-10-27 release p.3; approximate envelope excluding projections",
+      "passed": true
+    },
+    {
+      "name": "battery.installed_Z_mm",
+      "actual": 12.5,
+      "expected": 12.5,
+      "basis": "Sony 2004-10-27 release p.3; approximate envelope excluding projections",
+      "passed": true
+    },
+    {
+      "name": "original_HPRM_contact_count",
+      "actual": 6,
+      "expected": 6,
+      "basis": "Firsthand original PSP remote-interface documentation",
+      "passed": true
+    },
+    {
+      "name": "original_HPRM_row_population",
+      "actual": [
+        3,
+        3
+      ],
+      "expected": [
+        3,
+        3
+      ],
+      "basis": "Original PSP-1000 two-row connector; not PSP-2000 video connector",
+      "passed": true
+    },
+    {
+      "name": "hold_flag_present",
+      "actual": true,
+      "expected": true,
+      "basis": "Sony original parts guide pp.20-21",
+      "passed": true
+    },
+    {
+      "name": "hold_flag_state",
+      "actual": "black",
+      "expected": "black",
+      "basis": "Unlocked display state; mechanical flag",
+      "passed": true
+    },
+    {
+      "name": "memory_access_tint",
+      "actual": "access_orange",
+      "expected": "access_orange",
+      "basis": "Firsthand LED replacement guide; illustrative RGB, not measured chromaticity",
+      "passed": true
+    },
+    {
+      "name": "published_body_X_mm",
+      "actual": 170.0000002,
+      "expected": 170.0,
+      "basis": "Sony body convention excludes maximum projections",
+      "passed": true
+    },
+    {
+      "name": "published_body_Y_mm",
+      "actual": 74.0000001,
+      "expected": 74.0,
+      "basis": "Sony body convention excludes maximum projections",
+      "passed": true
+    },
+    {
+      "name": "published_body_Z_mm",
+      "actual": 23.000000200000002,
+      "expected": 23.0,
+      "basis": "Sony body convention excludes maximum projections",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false
+}

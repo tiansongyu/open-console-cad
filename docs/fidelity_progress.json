@@ -127,8 +127,8 @@
       "order": 3,
       "device": "psp",
       "model": "PSP-1000",
-      "status": "in_progress",
-      "current_step": "candidate_geometry_and_reference_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_16",
       "baseline": {
         "iterations": 15,
         "physical_components": 346,
@@ -156,11 +156,29 @@
           "Schematic internal layout": 236
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/psp/references/fidelity_iteration16.json"
+      ],
+      "changes": [
+        "Corrected PSP-110 installed envelope from30.5x48x10.3 to approximately36x52x12.5mm",
+        "Rearranged schematic internal reader/control installation and frame clearances",
+        "Restored original two-row six-contact HPRM interface and mating cavity",
+        "Added HOLD mechanical indicator and corrected Memory Stick activity tint"
+      ],
+      "validation": {
+        "report": "devices/psp/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "d71f8be7532b3e6093e4f33dce2dd069413875acf61a80bdab79661ddfeb07d4",
+        "passed": true,
+        "full_source_rebuild_components": 350
+      },
+      "remaining_uncertainties": [
+        "No physical PSP-1000 or factory mold drawings available.",
+        "Battery maximum approximate dimensions are verified; package corner curvature, cell stack and retention features are reconstructed.",
+        "Internal reader/control board heights, membrane dimensions and frame relief remain schematic.",
+        "HPRM count/topology is based on firsthand interface documentation; mechanical pitch/tolerance and pin function are not manufacturer-certified.",
+        "No manufacturing interchangeability or electrical operation claim."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     },
     {
@@ -218,7 +236,8 @@
         "Whole-collection responsive-layout checks are outside this targeted device pass."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "07b6bd6"
     },
     {
       "order": 5,
@@ -1111,8 +1130,8 @@
       "order": 27,
       "device": "seriesx",
       "model": "Original optical · 2020 · 1 TB",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "final_delivery_validation",
       "baseline": {
         "iterations": 19,
         "physical_components": 1047,

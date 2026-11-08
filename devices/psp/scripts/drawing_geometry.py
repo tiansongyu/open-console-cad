@@ -46,9 +46,9 @@ s.text(298,130,'C-C · 光头 X=16 纵剖面',4,'middle');v=d.section_view(s,'Dr
 s=d.Sheet(6,'整机分层爆炸总览',['外壳、显示、控制件和电子模块按装配层展开。','UMD 子装配单独移开便于观察，所有展示位移均保存于原生爆炸文件和网页节点。'])
 v=s.view_fit('ExplodedAssembly',main,(12,19,372,172),(1.7,-.2,-1),exploded=True);caption(s,v,'完整主机 · 展示偏移',207);s.save()
 
-s=d.Sheet(7,'主板、无线与电池组件',['主板含控制侧臂，CPU、媒体引擎及存储器采用独立封装实体。','PSP-110 电池按官方 1800 mAh 标识，壳体和电芯尺寸为近似值。'])
+s=d.Sheet(7,'主板、无线与电池组件',['主板含控制侧臂，CPU、媒体引擎及存储器采用独立封装实体。','PSP-110 外包络按索尼约 36 × 52 × 12.5 mm；圆角与内部电芯为近似值。'])
 v=s.view_fit('MainboardDetail',d.keys_for(['Mainboard']),(17,26,225,119),(0,0,1));d.dimension_box(s,v,['Mainboard'],'x',16);caption(s,v,'主板与子板',160)
-v=s.view_fit('BatteryDetail',d.keys_for(['Battery']),(288,29,73,118),(0,0,-1));d.dimension_box(s,v,['BatteryPouch'],'x',17);d.dimension_box(s,v,['BatteryPouch'],'y',386);caption(s,v,'电池组件',160)
+v=s.view_fit('BatteryDetail',d.keys_for(['Battery']),(288,29,73,118),(0,0,-1));d.dimension_box(s,v,['BatteryPouch'],'x',17);d.dimension_box(s,v,['BatteryPouch'],'y',386);caption(s,v,'电池约 36 × 52 × 12.5 mm（装配轴）',160)
 s.text(14,185,'独立模块：CPU / ME / RAM / Flash / 电源 / 音频 / 无线 / 记忆棒。');s.text(14,199,'仅表示模块和装配关系，不包含真实电路、走线或制造公差。');s.save()
 
 s=d.Sheet(8,'光驱机构与 UMD 子装配爆炸',['光驱包含打孔底盘、主轴、导杆、丝杆、光头载架和进给机构。','驱动机构尺寸及传动关系为近似研究模型；镜头和柔性电路分别建模。'])
@@ -80,7 +80,7 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,203,f"合计 {M['physical_components']} 个组件 / {M['solids']} 个实体；完整清单见 COMPONENTS.csv",3.6,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'尺寸来源与验证记录',['索尼公开的主体口径与局部近似值分开记录。','图纸是当前 CAD 版本的快照；改模后需要重新投影、导出并检查。'])
-sections=[(16,'公开尺寸依据',['索尼 2004 年产品规格及 PSP-1000 原始说明书。','主体 170 × 74 × 23 mm，明确不含最大突出部位。','4.3 英寸 16:9 TFT；UMD 卡壳 65 × 64 × 4.2 mm，光盘 Ø60。']), (67,'结构与版本依据',['PSP-1000 说明书第 20–23 页：初代控制件与接口。','iFixit 社区实机拆解用于模块划分与相对布局参考。','曲面、孔位、排线、封装和光驱传动细节为近似值。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；{M['physical_components']} 个组件独立源码重建匹配。",'原生整机、爆炸文件和三份 STEP 回读检查通过。','最终求交、直接尺寸与原生图纸检查记录见 reports/。']), (169,'维护入口',['来源：references/SOURCES.md；零件表：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；共享实现：tools/cadlib/psp.py。','网页网格来自同一原生组件，精确实体以 FCStd / STEP 为准。'])]
+sections=[(16,'公开尺寸依据',['索尼 2004 年产品规格及 PSP-1000 原始说明书。','主体 170 × 74 × 23 mm，明确不含最大突出部位。','4.3 英寸 16:9 TFT；UMD 卡壳 65 × 64 × 4.2 mm，光盘 Ø60。']), (67,'结构与版本依据',['PSP-1000 说明书第 20–23 页：初代控制件与接口。','PSP-110 包络依据索尼 2004-10-27 发布资料第 3 页。','曲面、孔位、排线、封装和光驱传动细节为近似值。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；{M['physical_components']} 个组件独立源码重建匹配。",'原生整机、爆炸文件和三份 STEP 回读检查通过。','最终求交、直接尺寸与原生图纸检查记录见 reports/。']), (169,'维护入口',['来源：references/SOURCES.md；零件表：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；共享实现：tools/cadlib/psp.py。','网页网格来自同一原生组件，精确实体以 FCStd / STEP 为准。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)
