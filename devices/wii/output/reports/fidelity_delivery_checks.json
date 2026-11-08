@@ -1,0 +1,85 @@
+{
+  "device": "wii",
+  "revision": 16,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "5fb9d668b3dcb0568801536452d55b36c1a287559ecf136170584b6e8ebecad1",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":100",
+  "physical_components": 659,
+  "solids": 905,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration16.json",
+  "changes": [
+    "Corrected console cover/control proportions and original faceplate wordmark orientation",
+    "Changed rear exhaust to 25 cells, close USB pairing and reference connector color roles",
+    "Calibrated original Remote key stacks, apertures, contacts, speaker and lamps to the manufacturer photograph",
+    "Restored 18 speaker holes, one-to-four player dots, Wii/POWER/HOME printing and rounded key edges",
+    "Added the original SYNC control and an integral rear-shell lanyard passage without later accessories"
+  ],
+  "validation": {
+    "detail_checks": 33,
+    "strict_changed_objects": 21,
+    "strict_scope": "Only the listed changed housings, connector, key caps and new markings; not a full baseline strict-BOP certification",
+    "preserved_existing_part_numbers": 654,
+    "candidate_pairs": 1358,
+    "interference_threshold_mm3": 1e-06,
+    "step_files": 3,
+    "native_drawing_references": 16,
+    "pdf_pages_reviewed": 12,
+    "web_views": 17,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "passed (device scope)",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "envelope_conventions": {
+    "published_horizontal_mm": [
+      157,
+      215.4,
+      44
+    ],
+    "plastic_core_mm": [
+      157.00000000000003,
+      215.4,
+      42.5
+    ],
+    "modeled_console_including_feet_and_controls_mm": [
+      157.00000000000003,
+      215.7580001,
+      44.0
+    ],
+    "note": "The inherited model splits Z into 42.5 mm plastic plus 1.5 mm feet. Exact manufacturer protrusion exclusion and local molding remain unverified; this iteration does not rescale that construction."
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_wii.py": "5b3b02fa272c7b43c2ac1cde7fdbca88f986502d0a8f7565d7f688700dab47fd",
+    "tools/cadlib/wii.py": "f81f7f610c48aca0e210b8b116bbb51c5546559adecfd2983798b4f5c37808aa",
+    "devices/wii/profile.json": "843a60488f8b51bf8ef37c7fe3d85cf113abf436c41b4b41a2b2f7acf418913c",
+    "devices/wii/Rebuild_Wii.FCMacro": "04ce40b81130cf56e46253e7e794399e4d8621766d6d962c6c29b975086b41aa",
+    "devices/wii/scripts/iter16_documented_rear_panel_and_remote_service_details.py": "08cea05e6a36e427f60bc62eac2529c361b387833c66baa3400b519c12f37099",
+    "devices/wii/scripts/audit_fidelity.py": "9e3ecf9cfa1f39014567ff3ad3ccf53ec6f342cec0b15763bda70d238e524128",
+    "devices/wii/scripts/drawing_geometry.py": "80c66eb19bf1d9b7a97ec6a2f45314f96e14c837af21c4b856f9085e7385cc35",
+    "devices/wii/references/fidelity_iteration16.json": "8320e003ce851d260a7cd662b2acddb3072bf0b7e4e926051275063fbfc64ffd"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "6724eec6907e6da0e1d0c99e326cfebc20e4e64f8bb54f1b4d4c41c8fc42042d",
+    "fidelity_interference.json": "5c67d143ea56e5a9b0fec176fa7c49aabf5a1a866bb0e171230d81c486de56f4",
+    "fidelity_visual_comparison.json": "6a93682e5ab28e801be63171d054500838fc88bdf75eb30d07f846658b09d768",
+    "export_roundtrip_audit.json": "8497d362169c4c46463b2a4f0799d79aa33a292d12d1b4de885747ff1bda590b",
+    "drawing_checks.json": "337a388e25e415944fe45f2b180393ea8c86d2f8b8cb517bb643c8c70b9e7d60",
+    "native_drawings_audit.json": "39d2cf28f426e817035d33f47bd679834329a3bbcf6276b637b0a054eeefbd14",
+    "native_drawings_reload.json": "526f397748a39e9c5026524195c68eddaada90b3a6be5755e328f741b12b108c",
+    "fidelity_pdf_review.json": "7f1199af3557a1f86e343a1dafc669a65ec6d1db5d1880e412eed53f5a05a276",
+    "fidelity_web_checks.json": "4f0a6bf53b629fe0526802431f416a442e7a42f2e8de57667ffcae60ec4ef6f6",
+    "fidelity_gltf_validation.json": "a68fcace3538429a718c29b530a00c80babaa562bca344211a45987ab1a0b2b1"
+  },
+  "limitations": [
+    "No hardware sample, factory connector drawing or molding tolerance data was measured.",
+    "The source printing includes later accessories; only the explicitly identified original console and Remote body features are used.",
+    "The existing internal PCB and mechanism layout remains schematic; valid fit does not establish electrical or mechanical operation.",
+    "Official reference images remain local and are not redistributed.",
+    "Original rear-shell longitudinal contour, B-trigger profile and typography remain approximate."
+  ]
+}

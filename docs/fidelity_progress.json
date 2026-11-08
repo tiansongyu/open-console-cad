@@ -775,8 +775,8 @@
       "order": 14,
       "device": "wii",
       "model": "RVL-001 · 初代白色",
-      "status": "in_progress",
-      "current_step": "official_multiview_reference_calibration",
+      "status": "completed",
+      "current_step": "validated_iteration_16",
       "baseline": {
         "iterations": 15,
         "physical_components": 654,
@@ -804,11 +804,29 @@
           "Schematic internal layout": 501
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/wii/references/fidelity_iteration16.json"
+      ],
+      "changes": [
+        "Corrected console cover/control proportions and original faceplate wordmark orientation",
+        "Changed rear exhaust to 25 cells, close USB pairing and reference connector color roles",
+        "Calibrated original Remote key stacks, apertures, contacts, speaker and lamps to the manufacturer photograph",
+        "Restored 18 speaker holes, one-to-four player dots, Wii/POWER/HOME printing and rounded key edges",
+        "Added the original SYNC control and an integral rear-shell lanyard passage without later accessories"
+      ],
+      "validation": {
+        "report": "devices/wii/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "5fb9d668b3dcb0568801536452d55b36c1a287559ecf136170584b6e8ebecad1",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "No hardware sample, factory connector drawing or molding tolerance data was measured.",
+        "The source printing includes later accessories; only the explicitly identified original console and Remote body features are used.",
+        "The existing internal PCB and mechanism layout remains schematic; valid fit does not establish electrical or mechanical operation.",
+        "Official reference images remain local and are not redistributed.",
+        "Original rear-shell longitudinal contour, B-trigger profile and typography remain approximate."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "562eade4da624cd26a1c994e22e509a0b498b1e3eb30ca25588f46c0474c049c",
@@ -821,8 +839,8 @@
       "order": 15,
       "device": "wiiu",
       "model": "WUP-001 · 首发白色 Basic",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "official_multiview_and_accessory_calibration",
       "baseline": {
         "iterations": 22,
         "physical_components": 707,
@@ -929,7 +947,8 @@
         "inconclusive_parts": [
           "RFCoilWinding"
         ]
-      }
+      },
+      "last_pushed_commit": "aede3f3"
     },
     {
       "order": 17,

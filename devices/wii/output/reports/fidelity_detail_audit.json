@@ -1,0 +1,289 @@
+{
+  "device": "wii",
+  "iteration": 16,
+  "source_sha256": "5fb9d668b3dcb0568801536452d55b36c1a287559ecf136170584b6e8ebecad1",
+  "checks": [
+    {
+      "name": "plastic.width",
+      "actual": 157.00000000000003,
+      "expected": 157,
+      "basis": "Nintendo horizontal body-axis convention",
+      "passed": true
+    },
+    {
+      "name": "plastic.depth",
+      "actual": 215.4,
+      "expected": 215.4,
+      "basis": "Nintendo horizontal body-axis convention excluding controls",
+      "passed": true
+    },
+    {
+      "name": "rear_grille0.cells",
+      "actual": 25,
+      "expected": 25,
+      "basis": "Nintendo original body diagram, printed pages 26-27",
+      "passed": true
+    },
+    {
+      "name": "rear_grille1.cells",
+      "actual": 25,
+      "expected": 25,
+      "basis": "Nintendo original body diagram, printed pages 26-27",
+      "passed": true
+    },
+    {
+      "name": "remote_speaker.holes",
+      "actual": 18,
+      "expected": 18,
+      "basis": "Nintendo RVL-003 manual and original product photograph",
+      "passed": true
+    },
+    {
+      "name": "remote_speaker.columns",
+      "actual": 3,
+      "expected": 3,
+      "basis": "Documented hole arrangement",
+      "passed": true
+    },
+    {
+      "name": "remote_speaker.rows",
+      "actual": 6,
+      "expected": 6,
+      "basis": "Documented hole arrangement",
+      "passed": true
+    },
+    {
+      "name": "usb_pair.center_spacing",
+      "actual": 8.5,
+      "expected": 8.5,
+      "basis": "Image-fit parameter, not a manufacturer connector dimension",
+      "passed": true
+    },
+    {
+      "name": "rear_lanyard_shell.solids",
+      "actual": 1,
+      "expected": 1,
+      "basis": "The retaining bridge is integral with the rear molding",
+      "passed": true
+    },
+    {
+      "name": "front_sd_cover.width",
+      "actual": 61.5,
+      "expected": 61.5,
+      "basis": "Original front-image proportion fit; not a factory dimension",
+      "passed": true
+    },
+    {
+      "name": "front_wordmark.vertical_orientation",
+      "actual": 1,
+      "expected": 1,
+      "basis": "The original upright-console wordmark rotates with the horizontal console",
+      "passed": true
+    },
+    {
+      "name": "RemoteDPad.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteDPad.local_y",
+      "actual": 50.0,
+      "expected": 50,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteA.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteA.local_y",
+      "actual": 28.5,
+      "expected": 28.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteMinus.local_x",
+      "actual": -10.5,
+      "expected": -10.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteMinus.local_y",
+      "actual": 3.5,
+      "expected": 3.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteHome.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteHome.local_y",
+      "actual": 3.5,
+      "expected": 3.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemotePlus.local_x",
+      "actual": 10.5,
+      "expected": 10.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemotePlus.local_y",
+      "actual": 3.5,
+      "expected": 3.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteOne.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteOne.local_y",
+      "actual": -35.5,
+      "expected": -35.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteTwo.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteTwo.local_y",
+      "actual": -48.5,
+      "expected": -48.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemotePower.local_x",
+      "actual": -9.5,
+      "expected": -9.5,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemotePower.local_y",
+      "actual": 67.0,
+      "expected": 67,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteSpeaker.local_x",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "RemoteSpeaker.local_y",
+      "actual": -15.0,
+      "expected": -15,
+      "basis": "Nintendo original photograph fit; not factory dimensions",
+      "passed": true
+    },
+    {
+      "name": "player1.dot_count",
+      "actual": 1,
+      "expected": 1,
+      "basis": "Original player marking uses one through four outlined dots",
+      "passed": true
+    },
+    {
+      "name": "player2.dot_count",
+      "actual": 2,
+      "expected": 2,
+      "basis": "Original player marking uses one through four outlined dots",
+      "passed": true
+    },
+    {
+      "name": "player3.dot_count",
+      "actual": 3,
+      "expected": 3,
+      "basis": "Original player marking uses one through four outlined dots",
+      "passed": true
+    },
+    {
+      "name": "player4.dot_count",
+      "actual": 4,
+      "expected": 4,
+      "basis": "Original player marking uses one through four outlined dots",
+      "passed": true
+    }
+  ],
+  "invalid_parts": [],
+  "strict_changed_breps": {
+    "LowerHousing": true,
+    "UpperHousing": true,
+    "FrontBezel": true,
+    "RemoteFront": true,
+    "RemoteBack": true,
+    "RemoteDPad": true,
+    "USB1Shell": true,
+    "RemoteA": true,
+    "RemoteMinus": true,
+    "RemoteHome": true,
+    "RemotePlus": true,
+    "RemoteOne": true,
+    "RemoteTwo": true,
+    "RemotePower": true,
+    "RemoteWiiMark": true,
+    "RemotePowerLegend": true,
+    "RemoteHomeLegend": true,
+    "RemoteLEDMark1": true,
+    "RemoteLEDMark2": true,
+    "RemoteLEDMark3": true,
+    "RemoteLEDMark4": true
+  },
+  "sync_parts_present": true,
+  "original_legends_present": true,
+  "color_roles": {
+    "av": "black",
+    "sensor": "sensor_orange"
+  },
+  "envelope_conventions": {
+    "published_horizontal_mm": [
+      157,
+      215.4,
+      44
+    ],
+    "plastic_core_mm": [
+      157.00000000000003,
+      215.4,
+      42.5
+    ],
+    "modeled_console_including_feet_and_controls_mm": [
+      157.00000000000003,
+      215.7580001,
+      44.0
+    ],
+    "note": "The inherited model splits Z into 42.5 mm plastic plus 1.5 mm feet. Exact manufacturer protrusion exclusion and local molding remain unverified; this iteration does not rescale that construction."
+  },
+  "factory_equivalence_verified": false,
+  "scope": "Saved geometry, documented feature topology and fitted spacing; no factory-tolerance assertion",
+  "passed": true
+}

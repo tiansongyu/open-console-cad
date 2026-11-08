@@ -40,8 +40,8 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 卡带与扩展口校准中 |
 | 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 待开始 |
 | 13 | [Nintendo 64 · NUS-001 · 初代灰色](../devices/n64/README.md) | 15 | 747 | 待开始 |
-| 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 官方多视图校准中 |
-| 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 待开始 |
+| 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 第 16 轮已验证 |
+| 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 官方多视图与附件校准中 |
 | 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 第 24 轮已验证 |
 | 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 14 轮已验证；第 15 轮校准中 |
 | 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |

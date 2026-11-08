@@ -726,6 +726,9 @@ def stage15(m):
 
 STAGES=[stage01,stage02,stage03,stage04,stage05,stage06,stage07,stage08,stage09,stage10,stage11,stage12,stage13,stage14,stage15]
 
+from .fidelity_wii import stage16
+STAGES.append(stage16)
+
 
 def finalize(model):
     """Shared deliverables plus views suited to the Wii's horizontal enclosure."""

@@ -1,0 +1,189 @@
+{
+  "device": "wii",
+  "model": "RVL-001 original white with RVL-003 Remote and RVL-004 Nunchuk",
+  "iteration": 16,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/wii/support/pdf/wiimanual_setup.pdf",
+      "publisher": "Nintendo",
+      "printed_pages": [
+        26,
+        27
+      ],
+      "verified": "RVL-001 front/rear and GameCube compartment arrangements. Rear exhaust has a five-by-five field; rear USB sockets form a close pair.",
+      "scope": "Original RVL-001 body diagrams; this later manual printing does not define a launch-bundle wrist-strap revision."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/support/manual/wiiu/accessories/pdf/RVL-A-C-JPN.pdf",
+      "publisher": "Nintendo",
+      "printed_pages": [
+        7,
+        8,
+        26
+      ],
+      "verified": "Original RVL-003 Remote, three columns by six rows of speaker holes, battery-compartment SYNC control and housing strap attachment.",
+      "scope": "Body details only. The illustrated RVL-018A strap and RVL-022 jacket are not added to this model."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/wii/controllers/wiiRemote.html",
+      "image_url": "https://www.nintendo.co.jp/wii/controllers/img_wiiRemote/phShiro.jpg",
+      "publisher": "Nintendo",
+      "verified": "Original white Remote front and side photograph corroborates eighteen graded-size speaker holes.",
+      "scope": "Photographic proportions; not factory dimensions."
+    },
+    {
+      "url": "https://www.nintendo.co.jp/wii/news/strap.html",
+      "publisher": "Nintendo",
+      "date": "2006-12-15",
+      "verified": "Early 0.6 mm and replacement 1 mm strap cords differ.",
+      "scope": "Variant check only; no later strap revision is silently substituted."
+    }
+  ],
+  "exterior_review": [
+    {
+      "view": "console front",
+      "before": "Overlong 70.3 mm SD cover, short/wide controls, and Wii wordmark kept horizontal after the console was laid down.",
+      "after": "Cover width fitted to 61.5 mm, narrower/taller power/reset/eject caps with corresponding holes, and the wordmark rotated with the original faceplate.",
+      "basis": "Official front diagram normalized by the 157 mm axis; local dimensions and font shapes remain estimates. Main slot location and control ordering retained."
+    },
+    {
+      "view": "console rear",
+      "before": "Ten tall exhaust slits, 17 mm USB center spacing and a pale AV connector surround.",
+      "after": "Twenty-five square exhaust cells, 8.5 mm USB center spacing, dark AV surround and orange sensor-bar keying.",
+      "basis": "Opening topology and color roles are documented; cell size 6.2 mm, pitch 6.8 mm, USB spacing and numerical RGB values are diagram fits. Existing fan center is retained."
+    },
+    {
+      "view": "GameCube side",
+      "finding": "Side, controller-port order with port 1 nearest the front, and memory slots behind the controller bank agree with the manual. Covers are hidden for comparison; exact local slot and hinge dimensions remain unmeasured."
+    },
+    {
+      "view": "Remote front",
+      "before": "Main controls were about 7-10 mm too low in the photograph fit; twenty-one speaker holes; numerical player marks below the lamps; no bottom Wii wordmark.",
+      "after": "Repositioned key/plunger/contact stacks, speaker and lamps; eighteen graded holes; one-to-four dot patterns above the lamps and bottom Wii lettering.",
+      "basis": "Original product photograph normalized to 36.2 x 148 mm. All local positions, hole sizes and the replacement font remain fitted approximations; the schematic EEPROM package moves 3 mm within the board to clear the corrected speaker."
+    },
+    {
+      "view": "Remote rear",
+      "finding": "Add the documented red SYNC button with a schematic PCB-mounted switch and an integral lanyard passage. No strap or jacket added."
+    },
+    {
+      "view": "shell profiles",
+      "finding": "Public gross console envelope retained. Local longitudinal Remote rear curvature, B-trigger contour and detailed console molding have not been measured and remain reconstruction limits."
+    }
+  ],
+  "model_parameters_not_factory_dimensions": {
+    "front_sd_cover_width_mm": 61.5,
+    "front_control_sizes_mm": {
+      "power": [
+        5.2,
+        13.0
+      ],
+      "reset": [
+        3.8,
+        12.5
+      ],
+      "eject": [
+        6.2,
+        12.0
+      ]
+    },
+    "rear_vent_cell_mm": [
+      6.2,
+      6.2
+    ],
+    "rear_vent_pitch_mm": 6.8,
+    "rear_usb_centers_z_mm": [
+      13.0,
+      21.5
+    ],
+    "remote_speaker_pitch_mm": 2.5,
+    "remote_speaker_radii_mm": [
+      0.3,
+      0.45,
+      0.6,
+      0.6,
+      0.45,
+      0.3
+    ],
+    "sync_and_strap_geometry": "Estimated local placement and package/bridge dimensions; not a Nintendo switch or molding drawing.",
+    "remote_cap_edge_radii_mm": {
+      "A": 0.85,
+      "minus_home_plus": 0.3,
+      "one_two": 0.35,
+      "power": 0.25
+    }
+  },
+  "remote_front_calibration": {
+    "image_url": "https://www.nintendo.co.jp/wii/controllers/img_wiiRemote/phShiro.jpg",
+    "image_sha256": "33a57d59efd3ee93ce054a5413f5d97bc6e73a48af36f9eed9646f289aa24442",
+    "image_size_px": [
+      366,
+      316
+    ],
+    "body_box_px": [
+      121,
+      14,
+      188,
+      284
+    ],
+    "reference_size_mm": [
+      36.2,
+      148
+    ],
+    "coordinate_rule": "local x=(pixel x-154.5)*36.2/67; local y=(149-pixel y)*148/270. Most target coordinates rounded to 0.5 mm; pixel selections and perspective are not manufacturing tolerances.",
+    "centers_local_mm": {
+      "dpad": [
+        0,
+        50
+      ],
+      "a": [
+        0,
+        28.5
+      ],
+      "minus": [
+        -10.5,
+        3.5
+      ],
+      "home": [
+        0,
+        3.5
+      ],
+      "plus": [
+        10.5,
+        3.5
+      ],
+      "one": [
+        0,
+        -35.5
+      ],
+      "two": [
+        0,
+        -48.5
+      ],
+      "power": [
+        -9.5,
+        67
+      ],
+      "speaker": [
+        0,
+        -15
+      ]
+    },
+    "player_lamp_y_mm": -58.5,
+    "player_lamp_pitch_mm": 6.5,
+    "wordmark_center_y_mm": -67,
+    "wordmark_note": "Existing CAD font used; original typeface is not claimed.",
+    "additional_legends": [
+      "POWER",
+      "HOME"
+    ]
+  },
+  "limitations": [
+    "No hardware sample, factory connector drawing or molding tolerance data was measured.",
+    "The source printing includes later accessories; only the explicitly identified original console and Remote body features are used.",
+    "The existing internal PCB and mechanism layout remains schematic; valid fit does not establish electrical or mechanical operation.",
+    "Official reference images remain local and are not redistributed."
+  ]
+}

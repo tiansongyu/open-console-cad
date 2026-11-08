@@ -921,7 +921,7 @@
     "title": "原始前后接口与 GameCube 兼容仓",
     "svg": "02.svg",
     "notes": [
-      "前面板包含电源、重置、同步、SD 和退盘控制；背面保留双 USB、Multi AV、感应条及电源口。",
+      "前面板包含电源、重置、同步、SD 和退盘控制；背面保留紧密双 USB、五乘五排风、Multi AV、感应条及电源口。",
       "四个 GameCube 手柄口和两个存储卡槽属于初代 RVL-001；触点与孔位不作为制造公差使用。"
     ],
     "views": [
@@ -1959,7 +1959,7 @@
     "svg": "03.svg",
     "notes": [
       "RVL-003 使用红外指向窗口、十字键、A/B 键、HOME 和四个玩家指示灯。",
-      "本模型保留原版轮廓，不增加 MotionPlus 结构；电池、相机、扬声器和振动器均独立建模。"
+      "修正为十八孔扬声器，补齐电池仓 SYNC 与一体挂绳通道；不增加 MotionPlus、后期腕带或硅胶套。"
     ],
     "views": [
       {
@@ -1992,7 +1992,10 @@
           "RemoteLED4",
           "RemoteLEDMark4",
           "RemoteBatteryDoor",
-          "RemoteB"
+          "RemoteB",
+          "RemoteWiiMark",
+          "RemotePowerLegend",
+          "RemoteHomeLegend"
         ],
         "x": 61.5,
         "y": 112.5,
@@ -2109,7 +2112,9 @@
           "RemoteTwoCarbon",
           "RemoteTwoRubber",
           "RemotePowerCarbon",
-          "RemotePowerRubber"
+          "RemotePowerRubber",
+          "RemoteSyncButton",
+          "RemoteSyncSwitch"
         ],
         "x": 311.5,
         "y": 111.5,
@@ -3814,7 +3819,12 @@
           "RemoteCaseScrew2",
           "RemoteCaseScrew3",
           "NunchukCaseScrew0",
-          "NunchukCaseScrew1"
+          "NunchukCaseScrew1",
+          "RemoteSyncButton",
+          "RemoteSyncSwitch",
+          "RemoteWiiMark",
+          "RemotePowerLegend",
+          "RemoteHomeLegend"
         ],
         "x": 329.5,
         "y": 111.5,

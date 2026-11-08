@@ -19,13 +19,13 @@ s=d.Sheet(1,'初代白色主机总装与尺寸参考',['RVL-001 保留吸入式�
 v=s.view_fit('ConsoleIsometric',outer,(18,30,169,155),(.5,-1.6,1.3));caption(s,v,'白色机壳与独立前面板',205)
 v=s.view_fit('ConsoleTop',outer,(220,32,156,151),(0,0,1));d.dimension_box(s,v,['LowerHousing','FrontBezel'],'x',20);d.dimension_box(s,v,['LowerHousing','FrontBezel'],'y',210);caption(s,v,'横放坐标的宽度与深度',205);s.save()
 
-s=d.Sheet(2,'原始前后接口与 GameCube 兼容仓',['前面板包含电源、重置、同步、SD 和退盘控制；背面保留双 USB、Multi AV、感应条及电源口。','四个 GameCube 手柄口和两个存储卡槽属于初代 RVL-001；触点与孔位不作为制造公差使用。'])
+s=d.Sheet(2,'原始前后接口与 GameCube 兼容仓',['前面板包含电源、重置、同步、SD 和退盘控制；背面保留紧密双 USB、五乘五排风、Multi AV、感应条及电源口。','四个 GameCube 手柄口和两个存储卡槽属于初代 RVL-001；触点与孔位不作为制造公差使用。'])
 v=s.view_fit('Front',outer,(26,29,165,61),(0,-1,0),up);d.dimension_box(s,v,['FrontBezel','LowerHousing','UpperHousing']+starts('Foot'),'y',18);caption(s,v,'前面板与机身厚度',108)
 v=s.view_fit('Rear',outer,(224,29,158,61),(0,1,0),up);caption(s,v,'双 USB、排风与供电接口',108)
 v=s.view_fit('GameCubeBay',d.keys_for(['GameCube']),(20,147,228,52),(-1,0,0),up);caption(s,v,'四个六接点端口与双十二接点卡槽',211)
 v=s.view_fit('USBDetail',starts('USB0'),(290,148,74,49),(0,1,0),up);d.dimension_box(s,v,['USB0Shell'],'x',137);caption(s,v,'USB 接口的独立接触件',211);s.save()
 
-s=d.Sheet(3,'原版遥控器的外壳与内部结构',['RVL-003 使用红外指向窗口、十字键、A/B 键、HOME 和四个玩家指示灯。','本模型保留原版轮廓，不增加 MotionPlus 结构；电池、相机、扬声器和振动器均独立建模。'])
+s=d.Sheet(3,'原版遥控器的外壳与内部结构',['RVL-003 使用红外指向窗口、十字键、A/B 键、HOME 和四个玩家指示灯。','修正为十八孔扬声器，补齐电池仓 SYNC 与一体挂绳通道；不增加 MotionPlus、后期腕带或硅胶套。'])
 v=s.view_fit('RemoteTop',remote,(27,31,69,163),(0,0,1));d.dimension_box(s,v,['RemoteFront'],'x',20);d.dimension_box(s,v,['RemoteFront'],'y',17);caption(s,v,'原版遥控器正面',210)
 v=s.view_fit('RemoteBack',['RemoteBack','RemoteBatteryDoor','RemoteB']+starts('RemoteCaseScrew'),(150,31,65,163),(0,0,-1));caption(s,v,'电池门与背部 B 键',210)
 inside=[k for k in d.keys_for(['Controller']) if k not in remote and not k.startswith('RemoteCaseScrew') and k not in ['RemoteBPCB','RemoteBSwitch']]
@@ -81,8 +81,8 @@ s.text(12,211,f"合计 {M['physical_components']} 个组件条目 / {M['solids']
 
 s=d.Sheet(12,'版本依据、近似边界与重建入口',['研究对象为白色初代 RVL-001、原版 RVL-003 遥控器及 RVL-004 双节棍。','图册是保存模型的版本快照，修改三维几何后需要同步重建投影、尺寸、验证报告和网页。'])
 sections=[(16,'来源与版本',['任天堂硬件页和说明书：尺寸、原始接口、配件与控制器家族。','iFixit 与 Dig and Rescue：主机、光驱及内部组件实物照片。','板件照片含 RVL-CPU-40，模型不宣称复刻首批电路板。']),
- (67,'尺寸与内容边界',['主机按横放坐标绘制，公开主体包络不包括外伸件和连接线。','壁厚、孔位、接点、器件布局及机制细节为原创学习近似。','空白光盘无游戏数据；电源与电子封装不作为电路设计依据。']),
- (118,'可核对的验证记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'原生实体、严格 BRep、完整重建、装配求交及 STEP 回读分别记录。','图册检查字体、内容覆盖、每页视觉与原生可测量尺寸引用。']),
+ (67,'尺寸与内容边界',['横放塑料厚度按42.5 mm、脚垫1.5 mm建模；官方突出部位口径待实测。','壁厚、孔位、接点、器件布局及机制细节为原创学习近似。','空白光盘无游戏数据；电源与电子封装不作为电路设计依据。']),
+ (118,'可核对的验证记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'本轮保存实体、受改动壳体严格 BOP、装配求交及 STEP 回读分别记录。','本轮未重跑全部源码；结果与文件哈希见 fidelity_delivery_checks.json。']),
  (169,'继续修改的入口',['资料：references/SOURCES.md；清单：output/COMPONENTS.csv。','源码：tools/cadlib/wii.py；逐轮入口位于 scripts/。','检查：output/reports/；修改后同步更新 CAD、图纸与网页。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')

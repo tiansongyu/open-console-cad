@@ -1,0 +1,78 @@
+{
+  "device": "wii",
+  "iteration": 16,
+  "reviewed": true,
+  "reference_urls": [
+    "https://www.nintendo.co.jp/wii/support/pdf/wiimanual_setup.pdf",
+    "https://www.nintendo.co.jp/support/manual/wiiu/accessories/pdf/RVL-A-C-JPN.pdf",
+    "https://www.nintendo.co.jp/wii/controllers/wiiRemote.html",
+    "https://www.nintendo.co.jp/wii/news/strap.html"
+  ],
+  "baseline_native_sha256": "562eade4da624cd26a1c994e22e509a0b498b1e3eb30ca25588f46c0474c049c",
+  "views": [
+    {
+      "name": "console_front",
+      "before": "devices/wii/output/previews/baseline_console_front.png",
+      "after": "devices/wii/output/previews/after_console_front.png",
+      "reviewed": true
+    },
+    {
+      "name": "console_rear",
+      "before": "devices/wii/output/previews/baseline_console_rear.png",
+      "after": "devices/wii/output/previews/after_console_rear.png",
+      "reviewed": true
+    },
+    {
+      "name": "gamecube_side",
+      "before": "devices/wii/output/previews/baseline_gamecube_side.png",
+      "after": "devices/wii/output/previews/after_gamecube_side.png",
+      "reviewed": true
+    },
+    {
+      "name": "remote_front",
+      "before": "devices/wii/output/previews/baseline_remote_front.png",
+      "after": "devices/wii/output/previews/after_remote_front.png",
+      "reviewed": true
+    },
+    {
+      "name": "remote_rear",
+      "before": "devices/wii/output/previews/baseline_remote_rear.png",
+      "after": "devices/wii/output/previews/after_remote_rear.png",
+      "reviewed": true
+    }
+  ],
+  "scope": "Official front/rear/GameCube-side diagrams and RVL-003 front photograph compared with before/after CAD views; local fitted values and unmeasured shell profile limits are retained. Reference imagery remains local.",
+  "findings": [
+    {
+      "view": "console front",
+      "before": "Overlong 70.3 mm SD cover, short/wide controls, and Wii wordmark kept horizontal after the console was laid down.",
+      "after": "Cover width fitted to 61.5 mm, narrower/taller power/reset/eject caps with corresponding holes, and the wordmark rotated with the original faceplate.",
+      "basis": "Official front diagram normalized by the 157 mm axis; local dimensions and font shapes remain estimates. Main slot location and control ordering retained."
+    },
+    {
+      "view": "console rear",
+      "before": "Ten tall exhaust slits, 17 mm USB center spacing and a pale AV connector surround.",
+      "after": "Twenty-five square exhaust cells, 8.5 mm USB center spacing, dark AV surround and orange sensor-bar keying.",
+      "basis": "Opening topology and color roles are documented; cell size 6.2 mm, pitch 6.8 mm, USB spacing and numerical RGB values are diagram fits. Existing fan center is retained."
+    },
+    {
+      "view": "GameCube side",
+      "finding": "Side, controller-port order with port 1 nearest the front, and memory slots behind the controller bank agree with the manual. Covers are hidden for comparison; exact local slot and hinge dimensions remain unmeasured."
+    },
+    {
+      "view": "Remote front",
+      "before": "Main controls were about 7-10 mm too low in the photograph fit; twenty-one speaker holes; numerical player marks below the lamps; no bottom Wii wordmark.",
+      "after": "Repositioned key/plunger/contact stacks, speaker and lamps; eighteen graded holes; one-to-four dot patterns above the lamps and bottom Wii lettering.",
+      "basis": "Original product photograph normalized to 36.2 x 148 mm. All local positions, hole sizes and the replacement font remain fitted approximations; the schematic EEPROM package moves 3 mm within the board to clear the corrected speaker."
+    },
+    {
+      "view": "Remote rear",
+      "finding": "Add the documented red SYNC button with a schematic PCB-mounted switch and an integral lanyard passage. No strap or jacket added."
+    },
+    {
+      "view": "shell profiles",
+      "finding": "Public gross console envelope retained. Local longitudinal Remote rear curvature, B-trigger contour and detailed console molding have not been measured and remain reconstruction limits."
+    }
+  ],
+  "source_sha256": "5fb9d668b3dcb0568801536452d55b36c1a287559ecf136170584b6e8ebecad1"
+}

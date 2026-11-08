@@ -18,3 +18,11 @@ Sources checked on 2026-09-10. Reference photographs and manuals are kept in the
 The body envelope follows the official dimensions. Wall thickness, connector positions and contact shapes, chips, interconnect fields, passive-component banks and mechanisms are original study approximations. They do not reproduce a production PCB netlist, manufacturing tolerances, electrical behavior or tested motion. Internal component counts describe this CAD model only.
 
 DejaVu Sans is used for CAD markings under its existing repository license. Final document typography follows the shared Kami workflow.
+
+## 2026-11-08 exterior comparison
+
+The original RVL-001 setup diagrams (printed pages 26–27) were compared with front, rear and open-GameCube-side CAD views. This corrects the cover proportion, wordmark orientation, narrow front controls, rear five-by-five grille and close USB pairing. Port size/pitch and RGB values are image fits, not factory dimensions.
+
+The [original Remote product photograph](https://www.nintendo.co.jp/wii/controllers/img_wiiRemote/phShiro.jpg) was normalized to the published 36.2 × 148 mm frontal envelope. The existing controls were too low; the key stacks, apertures, contacts, speaker and lamps now follow that fit. The original manual corroborates the eighteen-hole grille, one-to-four player dots, rear SYNC control and lanyard attachment. Pixel bounds and target coordinates are in [fidelity_iteration16.json](fidelity_iteration16.json).
+
+The manufacturer [2006 strap notice](https://www.nintendo.co.jp/wii/news/strap.html) distinguishes early and replacement cords. The later manual's RVL-018A strap and jacket are not added; this pass changes the original Remote housing only. Reference imagery remains local. Detailed shell profiles, hardware tolerances and the PCB arrangement remain unverified.

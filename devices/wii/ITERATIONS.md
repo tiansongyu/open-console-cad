@@ -1,6 +1,6 @@
 # Wii CAD iterations
 
-The RVL-001 study includes fifteen source stages and a complete CAD, drawing and web delivery. Local details and internals are approximate.
+The RVL-001 study includes sixteen source stages and a complete CAD, drawing and web delivery. Local details and internals are approximate.
 
 | Stage | Source | Work |
 | --- | --- | --- |
@@ -19,3 +19,4 @@ The RVL-001 study includes fifteen source stages and a complete CAD, drawing and
 | 13 | [iter13](scripts/iter13_power_adapter_av_connections_and_blank_media.py) | 加入原版电源适配器的结构示意、日式电源插头、双芯直流插头、十六位 AV 转三 RCA 线，以及不含游戏数据的 12 cm 与 8 cm 空白光盘。 |
 | 14 | [iter14](scripts/iter14_harness_antenna_case_bosses_and_final_fit.py) | 补齐光驱排线与供电线、前灯和风扇线束、两条 Wi-Fi 天线线及遥控器/双节棍三翼螺钉，修正小板与接点间隙，并打开主机前缘的光盘与走线通道。 |
 | 15 | [iter15](scripts/iter15_verified_routing_and_strict_brep_final_fit.py) | 依据全装配求交结果移动双节棍前固定点、避让光驱支柱并分开前灯线束的转弯高度，逐一执行全部组件的严格 BRep 检查。 |
+| 16 | [iter16](scripts/iter16_documented_rear_panel_and_remote_service_details.py) | 对照官方正背/侧图校准主机面板与原版遥控器整排控件、孔位、点阵和字标，补齐SYNC与挂绳通道；局部尺寸和字体仍为拟合。 |
