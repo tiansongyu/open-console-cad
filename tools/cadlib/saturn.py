@@ -785,3 +785,6 @@ def finalize(model):
     model.snapshot('final_hero',normal=(.3,-.7,2.3),assemblies=result[0]['handheld_groups'])
     model.doc.save()
     return result
+
+from .fidelity_saturn import stage23
+STAGES.append(stage23)

@@ -44,7 +44,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 第 23 轮已验证 |
 | 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 第 24 轮已验证 |
 | 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 15 轮已验证 |
-| 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |
+| 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 第 23 轮已验证 |
 | 19 | [Sony PlayStation · SCPH-1000 · 初代日版灰色](../devices/ps1/README.md) | 25 | 929 | 待开始 |
 | 20 | [Sony PlayStation 2 · SCPH-10000 · 初代日版黑色](../devices/ps2/README.md) | 34 | 1,352 | 待开始 |
 | 21 | [Sony PlayStation 3 · CECHA00 · 日本原版 60 GB](../devices/ps3/README.md) | 30 | 1,592 | 第 31 轮已验证 |

@@ -1,0 +1,93 @@
+{
+  "device": "saturn",
+  "model": "HST-3200 original Japanese grey",
+  "iteration": 23,
+  "date": "2026-11-08",
+  "sources": [
+    {
+      "url": "https://www.sega.jp/history/hard/segasaturn/index.html",
+      "role": "Family dimensions and exterior overview; official HST-3210 specification is not claimed as a measured HST-3200 dimension"
+    },
+    {
+      "url": "https://digandrescue.com/hardware/sega/sega-segasaturn-hst-3200/",
+      "role": "Firsthand HST-3200 exterior and teardown, especially photo 041 rear T-shaped inlet and mini-DIN-10 key",
+      "rear_detail_sha256": "065f874610b063a0498a62ee151e8277d41e92b43a1b3835e261a06e7a22d535"
+    },
+    {
+      "url": "https://github.com/andersm/usbcart",
+      "commit": "8ae97586e01dcc76b1f93e19c9b468263c56eb65",
+      "role": "Anders Montonen working Sega Saturn USB cartridge, original KiCad manufacturing design",
+      "footprint": "usbcart-kicad/libraries/usbcart.mod",
+      "footprint_sha256": "e43ccedff76028108aab667aa8a520476dfaf65caf03bf0c9a058e3d976958f4",
+      "board": "usbcart-kicad/usbcart.brd",
+      "board_sha256": "64af033e5d0518fa44b19b364a88d1908909765d965faadadc5945511553de4a",
+      "unit": "InternalUnit 0.000100 INCH, explicitly declared in board file"
+    },
+    {
+      "url": "https://www.volex.com/media/0dodxec5/volex-power-cords-catalogue-august-2025.pdf",
+      "pages": [
+        228,
+        229
+      ],
+      "role": "Manufacturer VNBC7S compatible IEC C7 nominal interface: 8.6 mm contact centres, 16.0 mm width and 7.85 mm height; not Sega OEM part identity",
+      "sha256": "c48c3206d8b3fecaa857bf78cc66e2cab4032d6c06217d88a764399cc3732be5"
+    },
+    {
+      "url": "https://retro-access.com/knowledge-center/connectors/",
+      "role": "Cable maker confirms nominal 9.5 mm mini-DIN male sleeve and off-standard Saturn female socket; key fit inferred from firsthand console detail"
+    }
+  ],
+  "card_edge_measurement": {
+    "rows": 2,
+    "contacts_per_row": 67,
+    "pitch_mm": 1.0,
+    "contact_groups_per_face": [
+      36,
+      31
+    ],
+    "centre_gap_between_pins_36_37_mm": 8.0,
+    "card_notch_width_mm": 6.0,
+    "left_tab_width_mm": 37.0,
+    "right_tab_width_mm": 32.0,
+    "board_thickness_mm": 1.6,
+    "coordinate_quantization_mm": 0.00254,
+    "method": "Read pad names, centres and board-edge segments in KiCad legacy text, convert declared 0.0001 inch units to millimetres and report nominal dimensions within file quantization."
+  },
+  "changes": [
+    "Card reader changes from two continuous 66-contact rows at 1.65 mm to keyed 67-contact rows at 1.0 mm.",
+    "Reader opening narrows to the verified card-edge width and gains a locating key for the 6 mm notch; outer case bay is retained.",
+    "Rear power inlet plate gains the photographed T-shaped lower stem and lower-left fixing; shell cut tool follows.",
+    "C7/C8 paired contact centres change to 8.6 mm; cable nose follows nominal 16 x 7.85 mm profile and contact bores clear retained study pins.",
+    "AV socket and cable gain paired upper orientation keys and lower flat stops; cable sleeve nominal diameter becomes 9.5 mm.",
+    "Controller receptacle contacts follow the existing plug study pitch of 2.55 mm, closing the previous 2.7/2.55 mismatch.",
+    "Estimated internal overlap lip closes the formerly see-through case seam, retaining all controller/service/side-vent clearances."
+  ],
+  "estimated_dimensions": {
+    "reader_outer_width_mm": 83.4,
+    "reader_slot_width_mm": 75.4,
+    "reader_key_width_mm": 5.6,
+    "card_slot_depth_mm": 12.7,
+    "inlet_plate": "T silhouette and fixing position fitted from original HST-3200 detail; not a factory measurement",
+    "C8_pin_diameter_mm": 1.8,
+    "C7_contact_bore_mm": 2.1,
+    "mini_DIN": "Socket clearance, flat-stop depth, key dimensions, axial depth and existing 3/4/3 contact centres remain approximate",
+    "controller_pitch_mm": 2.55,
+    "controller_pitch_basis": "Existing study cable pitch, not verified OEM pitch",
+    "lower_fixing_xz_mm": [
+      -79,
+      35.5
+    ],
+    "case_overlap_lip": "Estimated 1.2 mm internal wall with 0.3 mm nominal side clearance; no OEM drawing"
+  },
+  "existing_part_ids_and_numbers_preserved": true,
+  "factory_match_verified": false,
+  "full_source_rebuild_executed": false,
+  "cad_execution_verified": true,
+  "remaining_limitations": [
+    "Body curves, side/front details and graphics remain photographic estimates.",
+    "Primary working PCB establishes mating card geometry, not the original connector supplier or spring form.",
+    "The off-standard mini-DIN contact positions and local key clearances require physical metrology for a factory-equivalent model.",
+    "Controller interface pitch and C8 pin diameter remain explicit study dimensions; this model is not manufacturing or electrical documentation."
+  ],
+  "validated_source_sha256": "cad51a9ff3440e3217af49124da7ea0ab7d9b284547e8d191bd90d56691db5cb"
+}

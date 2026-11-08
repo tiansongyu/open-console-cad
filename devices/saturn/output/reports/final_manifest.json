@@ -2,9 +2,9 @@
   "project": "Sega Saturn HST-3200 · original Japanese grey",
   "device": "saturn",
   "prefix": "Saturn",
-  "design_iterations": 22,
+  "design_iterations": 23,
   "physical_components": 715,
-  "solids": 2558,
+  "solids": 2560,
   "assemblies": {
     "Body": 20,
     "Optical": 114,
@@ -49,19 +49,19 @@
   },
   "objects": [
     {
-      "name": "LowerHousingCut012",
-      "label": "SATURN-0001 · HST-3200 lower enclosure014",
-      "type": "Part::Cut",
+      "name": "LowerHousingFuse001",
+      "label": "SATURN-0001 · HST-3200 lower enclosure015",
+      "type": "Part::Fuse",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 565,
-      "volume": 149197.77589952803,
+      "faces": 765,
+      "volume": 151491.40490067255,
       "bounds": [
         -130.0,
         130.0,
         -115.0,
-        115.0,
+        115.00000000000001,
         2.0,
         31.0
       ],
@@ -83,8 +83,8 @@
       "valid": true,
       "null": false,
       "solids": 3,
-      "faces": 421,
-      "volume": 220600.73945893953,
+      "faces": 427,
+      "volume": 220674.24834638162,
       "bounds": [
         -130.0000001,
         130.0000001,
@@ -224,7 +224,7 @@
       "null": false,
       "solids": 1,
       "faces": 49,
-      "volume": 41596.544664952846,
+      "volume": 41596.54466495284,
       "bounds": [
         -82.10660181779821,
         82.10660181779821,
@@ -252,11 +252,11 @@
       "null": false,
       "solids": 1,
       "faces": 28,
-      "volume": 43674.42285193047,
+      "volume": 43674.422851930525,
       "bounds": [
         -79.6015957827749,
         79.60159578277488,
-        -87.2881599246995,
+        -87.28815992469951,
         58.81730195868828,
         60.5,
         78.3
@@ -280,7 +280,7 @@
       "null": false,
       "solids": 1,
       "faces": 39,
-      "volume": 2037.028977473378,
+      "volume": 2037.0289774733776,
       "bounds": [
         -62.0,
         62.0,
@@ -396,7 +396,7 @@
       "bounds": [
         -2.000000000000007,
         66.0,
-        1.0,
+        0.9999999999999998,
         9.026706508981007,
         82.95,
         82.985
@@ -504,7 +504,7 @@
       "null": false,
       "solids": 1,
       "faces": 45,
-      "volume": 2491.5144860814607,
+      "volume": 2491.514486081449,
       "bounds": [
         -98.07106791186547,
         98.07106791186547,
@@ -532,7 +532,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 693.0353537858297,
+      "volume": 693.0353537858296,
       "bounds": [
         -90.3042067929352,
         -65.6957931745191,
@@ -588,7 +588,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 735.7609739728944,
+      "volume": 735.7609739728945,
       "bounds": [
         65.69579317942724,
         90.30420682548088,
@@ -616,7 +616,7 @@
       "null": false,
       "solids": 5,
       "faces": 93,
-      "volume": 0.35323352196470564,
+      "volume": 0.3532335219647058,
       "bounds": [
         71.06411063825503,
         82.28290268456375,
@@ -646,7 +646,7 @@
       "faces": 21,
       "volume": 1338.7436546133397,
       "bounds": [
-        -21.500000100000015,
+        -21.5000001,
         21.5000001,
         -110.0000001,
         -97.9999999,
@@ -672,7 +672,7 @@
       "null": false,
       "solids": 4,
       "faces": 64,
-      "volume": 0.3203654194019441,
+      "volume": 0.32036541940194396,
       "bounds": [
         -11.407399428859064,
         -1.9738421818791967,
@@ -784,7 +784,7 @@
       "null": false,
       "solids": 6,
       "faces": 127,
-      "volume": 0.3288542932093989,
+      "volume": 0.3288542932093988,
       "bounds": [
         40.0251676852349,
         52.59039439530202,
@@ -812,14 +812,14 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 2366.741943334419,
+      "volume": 2366.7419433344185,
       "bounds": [
         -54.5,
         -23.5,
         -114.8,
         -100.8,
         16.0,
-        28.000000000000004
+        28.0
       ],
       "state": [
         "Up-to-date"
@@ -861,8 +861,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_0",
-      "label": "SATURN-0030 · Controller spring contact",
+      "name": "ControllerContact1_001",
+      "label": "SATURN-0030 · Controller spring contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -870,8 +870,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        -50.25,
-        -49.349999999999994,
+        -49.650000000000006,
+        -48.75,
         -112.5,
         -105.5,
         21.45,
@@ -889,17 +889,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_1",
-      "label": "SATURN-0031 · Controller spring contact001",
+      "name": "ControllerContact1_002",
+      "label": "SATURN-0031 · Controller spring contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        -47.550000000000004,
-        -46.65,
+        -47.1,
+        -46.199999999999996,
         -112.5,
         -105.5,
         21.45,
@@ -917,17 +917,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_2",
-      "label": "SATURN-0032 · Controller spring contact002",
+      "name": "ControllerContact1_003",
+      "label": "SATURN-0032 · Controller spring contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        -44.85,
-        -43.949999999999996,
+        -44.550000000000004,
+        -43.65,
         -112.5,
         -105.5,
         21.45,
@@ -945,17 +945,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_3",
-      "label": "SATURN-0033 · Controller spring contact003",
+      "name": "ControllerContact1_004",
+      "label": "SATURN-0033 · Controller spring contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579605,
       "bounds": [
-        -42.150000000000006,
-        -41.25,
+        -42.0,
+        -41.099999999999994,
         -112.5,
         -105.5,
         21.45,
@@ -973,8 +973,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_4",
-      "label": "SATURN-0034 · Controller spring contact004",
+      "name": "ControllerContact1_005",
+      "label": "SATURN-0034 · Controller spring contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1001,8 +1001,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_5",
-      "label": "SATURN-0035 · Controller spring contact005",
+      "name": "ControllerContact1_006",
+      "label": "SATURN-0035 · Controller spring contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1010,8 +1010,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        -36.75,
-        -35.849999999999994,
+        -36.900000000000006,
+        -36.0,
         -112.5,
         -105.5,
         21.45,
@@ -1029,17 +1029,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_6",
-      "label": "SATURN-0036 · Controller spring contact006",
+      "name": "ControllerContact1_007",
+      "label": "SATURN-0036 · Controller spring contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579605,
       "bounds": [
-        -34.050000000000004,
-        -33.15,
+        -34.35,
+        -33.449999999999996,
         -112.5,
         -105.5,
         21.45,
@@ -1057,8 +1057,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_7",
-      "label": "SATURN-0037 · Controller spring contact007",
+      "name": "ControllerContact1_008",
+      "label": "SATURN-0037 · Controller spring contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1066,8 +1066,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        -31.349999999999998,
-        -30.45,
+        -31.8,
+        -30.900000000000002,
         -112.5,
         -105.5,
         21.45,
@@ -1085,8 +1085,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact1_8",
-      "label": "SATURN-0038 · Controller spring contact008",
+      "name": "ControllerContact1_009",
+      "label": "SATURN-0038 · Controller spring contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1094,8 +1094,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        -28.65,
-        -27.75,
+        -29.25,
+        -28.35,
         -112.5,
         -105.5,
         21.45,
@@ -1120,7 +1120,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.054413008423044695,
+      "volume": 0.0544130084230447,
       "bounds": [
         -39.433724832214764,
         -37.196308724832214,
@@ -1148,14 +1148,14 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 2366.741943334419,
+      "volume": 2366.7419433344185,
       "bounds": [
         23.5,
         54.5,
         -114.8,
         -100.8,
         16.0,
-        28.000000000000004
+        28.0
       ],
       "state": [
         "Up-to-date"
@@ -1197,8 +1197,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_0",
-      "label": "SATURN-0042 · Controller spring contact009",
+      "name": "ControllerContact2_001",
+      "label": "SATURN-0042 · Controller spring contact010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1206,8 +1206,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        27.75,
-        28.65,
+        28.35,
+        29.25,
         -112.5,
         -105.5,
         21.45,
@@ -1225,8 +1225,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_1",
-      "label": "SATURN-0043 · Controller spring contact010",
+      "name": "ControllerContact2_002",
+      "label": "SATURN-0043 · Controller spring contact011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1234,8 +1234,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        30.45,
-        31.349999999999998,
+        30.900000000000002,
+        31.8,
         -112.5,
         -105.5,
         21.45,
@@ -1253,8 +1253,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_2",
-      "label": "SATURN-0044 · Controller spring contact011",
+      "name": "ControllerContact2_003",
+      "label": "SATURN-0044 · Controller spring contact012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1262,8 +1262,8 @@
       "faces": 10,
       "volume": 0.7553407431579607,
       "bounds": [
-        33.15,
-        34.050000000000004,
+        33.449999999999996,
+        34.35,
         -112.5,
         -105.5,
         21.45,
@@ -1281,8 +1281,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_3",
-      "label": "SATURN-0045 · Controller spring contact012",
+      "name": "ControllerContact2_004",
+      "label": "SATURN-0045 · Controller spring contact013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1290,8 +1290,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        35.849999999999994,
-        36.75,
+        36.0,
+        36.900000000000006,
         -112.5,
         -105.5,
         21.45,
@@ -1309,8 +1309,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_4",
-      "label": "SATURN-0046 · Controller spring contact013",
+      "name": "ControllerContact2_005",
+      "label": "SATURN-0046 · Controller spring contact014",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1337,17 +1337,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_5",
-      "label": "SATURN-0047 · Controller spring contact014",
+      "name": "ControllerContact2_006",
+      "label": "SATURN-0047 · Controller spring contact015",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579605,
+      "volume": 0.7553407431579606,
       "bounds": [
-        41.25,
-        42.150000000000006,
+        41.099999999999994,
+        42.0,
         -112.5,
         -105.5,
         21.45,
@@ -1365,17 +1365,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_6",
-      "label": "SATURN-0048 · Controller spring contact015",
+      "name": "ControllerContact2_007",
+      "label": "SATURN-0048 · Controller spring contact016",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579606,
       "bounds": [
-        43.949999999999996,
-        44.85,
+        43.65,
+        44.550000000000004,
         -112.5,
         -105.5,
         21.45,
@@ -1393,17 +1393,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_7",
-      "label": "SATURN-0049 · Controller spring contact016",
+      "name": "ControllerContact2_008",
+      "label": "SATURN-0049 · Controller spring contact017",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579606,
       "bounds": [
-        46.65,
-        47.550000000000004,
+        46.199999999999996,
+        47.1,
         -112.5,
         -105.5,
         21.45,
@@ -1421,17 +1421,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "ControllerContact2_8",
-      "label": "SATURN-0050 · Controller spring contact017",
+      "name": "ControllerContact2_009",
+      "label": "SATURN-0050 · Controller spring contact018",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        49.349999999999994,
-        50.25,
+        48.75,
+        49.650000000000006,
         -112.5,
         -105.5,
         21.45,
@@ -1477,21 +1477,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInlet",
-      "label": "SATURN-0052 · Original figure-eight mains inlet",
+      "name": "ACInlet001",
+      "label": "SATURN-0052 · Original figure-eight mains inlet001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 14,
-      "volume": 1812.4271877407577,
+      "faces": 24,
+      "volume": 1651.0827705050806,
       "bounds": [
-        -106.60000000000001,
-        -75.39999999999999,
-        111.5,
-        114.5,
-        35.9,
-        58.1
+        -106.6000001,
+        -75.3999999,
+        111.4999998999999,
+        114.50000010000002,
+        33.0999999,
+        58.1000001
       ],
       "state": [
         "Up-to-date"
@@ -1505,8 +1505,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInletPin0",
-      "label": "SATURN-0053 · Mains inlet pin study",
+      "name": "ACInletPin001",
+      "label": "SATURN-0053 · Mains inlet pin study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1514,8 +1514,8 @@
       "faces": 3,
       "volume": 15.268140296446404,
       "bounds": [
-        -95.60000000000001,
-        -93.8,
+        -96.2,
+        -94.39999999999999,
         107.7,
         113.7,
         46.1,
@@ -1533,8 +1533,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACInletPin1",
-      "label": "SATURN-0054 · Mains inlet pin study001",
+      "name": "ACInletPin002",
+      "label": "SATURN-0054 · Mains inlet pin study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -1542,8 +1542,8 @@
       "faces": 3,
       "volume": 15.268140296446404,
       "bounds": [
-        -88.2,
-        -86.39999999999999,
+        -87.60000000000001,
+        -85.8,
         107.7,
         113.7,
         46.1,
@@ -1617,21 +1617,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACFixing2",
-      "label": "SATURN-0057 · Rear mains-inlet fixing head002",
+      "name": "ACFixing002",
+      "label": "SATURN-0057 · Rear mains-inlet fixing head004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 4.321486315913917,
+      "volume": 4.321486315913915,
       "bounds": [
-        -92.6,
-        -89.4,
+        -80.6,
+        -77.4,
         114.65,
         115.25,
-        28.4,
-        31.6
+        33.9,
+        37.1
       ],
       "state": [
         "Up-to-date"
@@ -1645,21 +1645,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVShell",
-      "label": "SATURN-0058 · AV mini-DIN metal sleeve",
+      "name": "AVShell001",
+      "label": "SATURN-0058 · AV mini-DIN metal sleeve001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 342.8105903597177,
+      "faces": 6,
+      "volume": 110.03248056112308,
       "bounds": [
-        -97.6,
-        -84.4,
+        -96.1,
+        -85.9,
         103.3,
         114.3,
-        10.4,
-        23.6
+        11.9,
+        22.1
       ],
       "state": [
         "Up-to-date"
@@ -1673,21 +1673,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVCarrier",
-      "label": "SATURN-0059 · AV contact insulator",
+      "name": "AVCarrier001",
+      "label": "SATURN-0059 · AV contact insulator001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 13,
-      "volume": 238.91812130550392,
+      "faces": 32,
+      "volume": 139.5656407123564,
       "bounds": [
-        -96.5,
-        -85.5,
+        -95.35875000000101,
+        -86.641249999999,
         108.0,
         111.0,
-        11.5,
-        22.5
+        12.6,
+        21.75
       ],
       "state": [
         "Up-to-date"
@@ -1988,13 +1988,13 @@
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 444.6522113490004,
+      "volume": 444.6522113490006,
       "bounds": [
         -63.1,
         -38.9,
         104.5,
         114.5,
-        12.399999999999997,
+        12.399999999999999,
         21.6
       ],
       "state": [
@@ -2296,7 +2296,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 4153.299468070466,
+      "volume": 4153.2994680704705,
       "bounds": [
         15.899999999999999,
         108.1,
@@ -2380,7 +2380,7 @@
       "null": false,
       "solids": 5,
       "faces": 86,
-      "volume": 0.07709938531062889,
+      "volume": 0.07709938531062892,
       "bounds": [
         56.16988245033557,
         64.70536912751678,
@@ -2438,7 +2438,7 @@
       "faces": 150,
       "volume": 3.0800000000000183,
       "bounds": [
-        52.949999999999996,
+        52.95,
         54.95,
         56.86,
         75.14,
@@ -2464,11 +2464,11 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000183,
       "bounds": [
         55.86,
         74.14,
-        53.949999999999996,
+        53.95,
         55.95,
         10.7,
         10.92
@@ -2604,9 +2604,9 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000183,
       "bounds": [
-        52.949999999999996,
+        52.95,
         54.95,
         22.86,
         41.14,
@@ -2632,12 +2632,12 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000165,
       "bounds": [
         55.86,
         74.14,
-        19.949999999999996,
-        21.950000000000003,
+        19.95,
+        21.95,
         10.7,
         10.92
       ],
@@ -2660,7 +2660,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000125,
+      "volume": 3.0800000000000143,
       "bounds": [
         75.05,
         77.05,
@@ -2716,7 +2716,7 @@
       "null": false,
       "solids": 4,
       "faces": 56,
-      "volume": 0.07153912605991944,
+      "volume": 0.07153912605991943,
       "bounds": [
         -52.97986577181208,
         -46.2988255033557,
@@ -2744,7 +2744,7 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000014,
+      "volume": 4.928000000000007,
       "bounds": [
         -53.14,
         -26.86,
@@ -2772,9 +2772,9 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000016,
+      "volume": 4.928000000000009,
       "bounds": [
-        -56.050000000000004,
+        -56.05,
         -54.05,
         26.86,
         53.14,
@@ -2800,12 +2800,12 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.9280000000000195,
+      "volume": 4.928000000000016,
       "bounds": [
         -53.14,
         -26.86,
-        23.949999999999996,
-        25.950000000000003,
+        23.95,
+        25.95,
         10.7,
         10.92
       ],
@@ -2828,10 +2828,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000013,
+      "volume": 4.928000000000016,
       "bounds": [
-        -25.950000000000003,
-        -23.949999999999996,
+        -25.95,
+        -23.95,
         26.86,
         53.14,
         10.7,
@@ -2912,7 +2912,7 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000012,
+      "volume": 4.928000000000011,
       "bounds": [
         -13.14,
         13.139999999999999,
@@ -2940,10 +2940,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.9280000000000195,
+      "volume": 4.928000000000016,
       "bounds": [
-        -16.050000000000004,
-        -14.049999999999999,
+        -16.05,
+        -14.05,
         26.86,
         53.14,
         10.7,
@@ -2968,12 +2968,12 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000017,
+      "volume": 4.928000000000014,
       "bounds": [
-        -13.14,
-        13.139999999999999,
-        23.949999999999996,
-        25.950000000000003,
+        -13.139999999999999,
+        13.14,
+        23.95,
+        25.95,
         10.7,
         10.92
       ],
@@ -2996,10 +2996,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000015,
+      "volume": 4.928000000000016,
       "bounds": [
-        14.049999999999997,
-        16.050000000000004,
+        14.05,
+        16.05,
         26.86,
         53.14,
         10.7,
@@ -3052,7 +3052,7 @@
       "null": false,
       "solids": 3,
       "faces": 66,
-      "volume": 0.054008230203595166,
+      "volume": 0.05400823020359518,
       "bounds": [
         -41.33011754966443,
         -36.40142607449664,
@@ -3080,7 +3080,7 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.43520000000001,
+      "volume": 4.435200000000012,
       "bounds": [
         -41.64,
         -18.36,
@@ -3108,12 +3108,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000013,
+      "volume": 4.435200000000015,
       "bounds": [
-        -44.550000000000004,
+        -44.55,
         -42.55,
         -26.64,
-        -3.3599999999999994,
+        -3.360000000000001,
         10.7,
         10.92
       ],
@@ -3136,12 +3136,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000015,
+      "volume": 4.435200000000013,
       "bounds": [
         -41.64,
         -18.36,
-        -29.550000000000004,
-        -27.549999999999997,
+        -29.55,
+        -27.55,
         10.7,
         10.92
       ],
@@ -3164,12 +3164,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000012,
+      "volume": 4.4352000000000125,
       "bounds": [
-        -17.450000000000003,
-        -15.449999999999996,
+        -17.45,
+        -15.45,
         -26.64,
-        -3.360000000000003,
+        -3.3599999999999994,
         10.7,
         10.92
       ],
@@ -3248,7 +3248,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000103,
+      "volume": 3.9424000000000112,
       "bounds": [
         -88.14,
         -65.86,
@@ -3276,7 +3276,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000086,
+      "volume": 3.9424000000000037,
       "bounds": [
         -91.05,
         -89.05,
@@ -3304,7 +3304,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000086,
+      "volume": 3.9424000000000077,
       "bounds": [
         -88.14,
         -65.86,
@@ -3332,10 +3332,10 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000117,
+      "volume": 3.942400000000003,
       "bounds": [
         -64.95,
-        -62.949999999999996,
+        -62.95,
         -69.14,
         -46.86,
         10.7,
@@ -3444,12 +3444,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9712000000000072,
+      "volume": 1.971200000000006,
       "bounds": [
         -89.05,
         -87.05,
         -29.14,
-        -12.859999999999998,
+        -12.86,
         10.7,
         10.92
       ],
@@ -3472,12 +3472,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.971200000000003,
+      "volume": 1.9712000000000072,
       "bounds": [
         -86.14,
         -69.86,
-        -32.050000000000004,
-        -30.049999999999997,
+        -32.05,
+        -30.05,
         10.7,
         10.92
       ],
@@ -3500,12 +3500,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9712000000000076,
+      "volume": 1.9712000000000047,
       "bounds": [
         -68.95,
         -66.95,
-        -29.140000000000004,
-        -12.860000000000001,
+        -29.14,
+        -12.86,
         10.7,
         10.92
       ],
@@ -3556,7 +3556,7 @@
       "null": false,
       "solids": 4,
       "faces": 83,
-      "volume": 0.08053009563899284,
+      "volume": 0.08053009563899285,
       "bounds": [
         77.16988245033558,
         84.07189607315436,
@@ -3612,7 +3612,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.080000000000012,
+      "volume": 3.080000000000011,
       "bounds": [
         73.95,
         75.95,
@@ -3668,7 +3668,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.080000000000014,
+      "volume": 3.0800000000000156,
       "bounds": [
         94.05,
         96.05,
@@ -3752,7 +3752,7 @@
       "null": false,
       "solids": 20,
       "faces": 120,
-      "volume": 1.5680000000000047,
+      "volume": 1.5680000000000058,
       "bounds": [
         7.86,
         46.14,
@@ -3780,7 +3780,7 @@
       "null": false,
       "solids": 20,
       "faces": 120,
-      "volume": 1.5679999999999985,
+      "volume": 1.567999999999999,
       "bounds": [
         7.86,
         46.14,
@@ -3836,7 +3836,7 @@
       "null": false,
       "solids": 7,
       "faces": 124,
-      "volume": 0.1177113197905481,
+      "volume": 0.11771131979054804,
       "bounds": [
         37.5,
         50.05967701342282,
@@ -3948,7 +3948,7 @@
       "null": false,
       "solids": 7,
       "faces": 124,
-      "volume": 0.1177113197905476,
+      "volume": 0.11771131979054757,
       "bounds": [
         67.5,
         80.05967701342281,
@@ -4088,7 +4088,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.0976000000000057,
       "bounds": [
         -93.14,
         -70.86,
@@ -4116,7 +4116,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000055,
+      "volume": 1.0976000000000057,
       "bounds": [
         -93.14,
         -70.86,
@@ -4172,7 +4172,7 @@
       "null": false,
       "solids": 9,
       "faces": 160,
-      "volume": 0.13417191456972813,
+      "volume": 0.13417191456972807,
       "bounds": [
         54.9999999,
         69.46340604026845,
@@ -4200,7 +4200,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.097600000000005,
       "bounds": [
         54.86,
         75.14,
@@ -4228,7 +4228,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.097600000000005,
+      "volume": 1.0976000000000048,
       "bounds": [
         54.86,
         75.14,
@@ -4284,7 +4284,7 @@
       "null": false,
       "solids": 5,
       "faces": 63,
-      "volume": 0.06527810401018408,
+      "volume": 0.0652781040101841,
       "bounds": [
         -82.98288590604027,
         -76.18238664496644,
@@ -4340,7 +4340,7 @@
       "null": false,
       "solids": 12,
       "faces": 72,
-      "volume": 0.9408000000000047,
+      "volume": 0.9408000000000041,
       "bounds": [
         -83.14,
         -64.86,
@@ -4396,7 +4396,7 @@
       "null": false,
       "solids": 8,
       "faces": 118,
-      "volume": 0.1050389615344386,
+      "volume": 0.10503896153443863,
       "bounds": [
         -95.98322147651007,
         -83.86066824451902,
@@ -4424,7 +4424,7 @@
       "null": false,
       "solids": 10,
       "faces": 60,
-      "volume": 0.7839999999999996,
+      "volume": 0.7839999999999993,
       "bounds": [
         -96.14,
         -85.86,
@@ -4508,7 +4508,7 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.06211978144778545,
+      "volume": 0.062119781447785426,
       "bounds": [
         -59.0,
         -52.603393456375834,
@@ -4536,7 +4536,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999997,
+      "volume": 1.0976000000000004,
       "bounds": [
         -59.14,
         -34.86,
@@ -4564,7 +4564,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999997,
+      "volume": 1.0976000000000006,
       "bounds": [
         -59.14,
         -34.86,
@@ -4622,7 +4622,7 @@
       "faces": 62,
       "volume": 0.06211978144778534,
       "bounds": [
-        -25.0,
+        -25.000000000000004,
         -18.60339345637584,
         -47.700000100000004,
         -46.10268446375839,
@@ -4648,7 +4648,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999957,
+      "volume": 1.0975999999999955,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -4676,7 +4676,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999955,
+      "volume": 1.0975999999999957,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -4732,7 +4732,7 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.062119781447785495,
+      "volume": 0.06211978144778548,
       "bounds": [
         -59.0,
         -52.603393456375834,
@@ -4760,7 +4760,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.097600000000005,
       "bounds": [
         -59.14,
         -34.86,
@@ -4788,7 +4788,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999995,
+      "volume": 1.0976000000000004,
       "bounds": [
         -59.14,
         -34.86,
@@ -4844,9 +4844,9 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.06211978144778544,
+      "volume": 0.062119781447785426,
       "bounds": [
-        -25.0,
+        -25.000000000000004,
         -18.60339345637584,
         -67.7000001,
         -66.1026844637584,
@@ -4900,7 +4900,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999952,
+      "volume": 1.097599999999995,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -5320,7 +5320,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -105.75,
         -104.25,
@@ -5376,7 +5376,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -105.75,
         -104.25,
@@ -5404,7 +5404,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -105.75,
         -104.25,
@@ -5432,7 +5432,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -105.75,
         -104.25,
@@ -5488,7 +5488,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -105.75,
         -104.25,
@@ -5516,7 +5516,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -102.25,
         -100.75,
@@ -5572,7 +5572,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -102.25,
         -100.75,
@@ -5600,7 +5600,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -102.25,
         -100.75,
@@ -5628,7 +5628,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -102.25,
         -100.75,
@@ -5684,7 +5684,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -102.25,
         -100.75,
@@ -5712,7 +5712,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -98.75,
         -97.25,
@@ -5768,7 +5768,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -98.75,
         -97.25,
@@ -5796,7 +5796,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -98.75,
         -97.25,
@@ -5824,7 +5824,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -98.75,
         -97.25,
@@ -5880,7 +5880,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -98.75,
         -97.25,
@@ -5908,7 +5908,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -95.25,
         -93.75,
@@ -5964,7 +5964,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -95.25,
         -93.75,
@@ -5992,7 +5992,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -95.25,
         -93.75,
@@ -6020,7 +6020,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -95.25,
         -93.75,
@@ -6076,7 +6076,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -95.25,
         -93.75,
@@ -6104,7 +6104,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         -107.75,
         -106.25,
@@ -6132,7 +6132,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -107.75,
         -106.25,
@@ -6188,7 +6188,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -107.75,
         -106.25,
@@ -6272,7 +6272,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897842,
+      "volume": 0.7167037157897841,
       "bounds": [
         -104.15,
         -102.65,
@@ -6300,7 +6300,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -6328,7 +6328,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -6356,7 +6356,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -6384,7 +6384,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -6412,7 +6412,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -6440,7 +6440,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         -100.55,
         -99.05,
@@ -6468,7 +6468,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -6496,7 +6496,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -6524,7 +6524,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -6552,7 +6552,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -6580,7 +6580,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -6608,7 +6608,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.7167037157897839,
       "bounds": [
         -96.95,
         -95.45,
@@ -6636,7 +6636,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -6664,7 +6664,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -6692,7 +6692,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -6720,7 +6720,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -6748,7 +6748,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -6776,7 +6776,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -6804,7 +6804,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -6832,7 +6832,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         13.25,
         14.75,
@@ -6860,7 +6860,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -6888,7 +6888,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -6916,7 +6916,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         17.25,
         18.75,
@@ -6944,7 +6944,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         17.25,
         18.75,
@@ -6972,7 +6972,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         17.25,
         18.75,
@@ -7000,7 +7000,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         17.25,
         18.75,
@@ -7028,7 +7028,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         17.25,
         18.75,
@@ -7056,7 +7056,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         21.25,
         22.75,
@@ -7084,7 +7084,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         21.25,
         22.75,
@@ -7112,7 +7112,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         21.25,
         22.75,
@@ -7140,7 +7140,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         21.25,
         22.75,
@@ -7168,7 +7168,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         21.25,
         22.75,
@@ -7196,7 +7196,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         25.25,
         26.75,
@@ -7224,7 +7224,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         25.25,
         26.75,
@@ -7252,7 +7252,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         25.25,
         26.75,
@@ -7280,7 +7280,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         25.25,
         26.75,
@@ -7308,7 +7308,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         25.25,
         26.75,
@@ -7392,7 +7392,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         29.25,
         30.75,
@@ -7420,7 +7420,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         29.25,
         30.75,
@@ -7448,7 +7448,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         29.25,
         30.75,
@@ -7476,7 +7476,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -7504,7 +7504,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -7532,7 +7532,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         33.25,
         34.75,
@@ -7560,7 +7560,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -7588,7 +7588,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -7616,7 +7616,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -7644,7 +7644,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -7672,7 +7672,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         37.25,
         38.75,
@@ -7700,7 +7700,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -7728,7 +7728,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -7756,7 +7756,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -7784,7 +7784,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -7812,7 +7812,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         41.25,
         42.75,
@@ -7840,7 +7840,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -7868,7 +7868,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -7896,7 +7896,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -7924,7 +7924,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -7952,7 +7952,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -7980,7 +7980,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -8008,7 +8008,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -8036,7 +8036,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -8064,7 +8064,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -8092,7 +8092,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -8204,7 +8204,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -8.75,
         -7.25,
@@ -8232,7 +8232,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -8260,7 +8260,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -8288,7 +8288,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -8316,7 +8316,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -8428,7 +8428,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -0.75,
         0.75,
@@ -8456,7 +8456,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -8484,7 +8484,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -8512,7 +8512,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -8540,7 +8540,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         3.25,
         4.75,
@@ -8568,7 +8568,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -8596,7 +8596,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -8624,7 +8624,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -8652,7 +8652,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -8764,7 +8764,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         11.25,
         12.75,
@@ -9464,7 +9464,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         81.25,
         82.75,
@@ -9492,7 +9492,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         81.25,
         82.75,
@@ -9520,7 +9520,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         81.25,
         82.75,
@@ -9548,7 +9548,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         81.25,
         82.75,
@@ -9576,7 +9576,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         85.25,
         86.75,
@@ -9604,7 +9604,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         85.25,
         86.75,
@@ -9632,7 +9632,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         85.25,
         86.75,
@@ -9660,7 +9660,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         85.25,
         86.75,
@@ -9688,7 +9688,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         89.25,
         90.75,
@@ -9716,7 +9716,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         89.25,
         90.75,
@@ -9744,7 +9744,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         89.25,
         90.75,
@@ -9772,7 +9772,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         89.25,
         90.75,
@@ -9800,7 +9800,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         93.25,
         94.75,
@@ -9828,7 +9828,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         93.25,
         94.75,
@@ -9856,7 +9856,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         93.25,
         94.75,
@@ -9884,7 +9884,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         93.25,
         94.75,
@@ -9912,7 +9912,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         97.25,
         98.75,
@@ -9940,7 +9940,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         97.25,
         98.75,
@@ -9968,7 +9968,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         97.25,
         98.75,
@@ -9996,7 +9996,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         97.25,
         98.75,
@@ -10024,7 +10024,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         101.25,
         102.75,
@@ -10052,7 +10052,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         101.25,
         102.75,
@@ -10080,7 +10080,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         101.25,
         102.75,
@@ -10108,7 +10108,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         101.25,
         102.75,
@@ -10136,7 +10136,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 213.42477796076938,
+      "volume": 213.42477796076935,
       "bounds": [
         -46.0,
         -34.0,
@@ -10220,7 +10220,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 134.58796447372308,
+      "volume": 134.5879644737231,
       "bounds": [
         94.5,
         103.5,
@@ -10276,7 +10276,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 83.58796447372312,
+      "volume": 83.5879644737231,
       "bounds": [
         -16.5,
         -9.5,
@@ -10670,7 +10670,7 @@
       "faces": 150,
       "volume": 3.0799999999999867,
       "bounds": [
-        30.449999999999996,
+        30.45,
         32.45,
         29.36,
         50.64,
@@ -10700,8 +10700,8 @@
       "bounds": [
         33.36,
         54.64,
-        26.449999999999996,
-        28.450000000000003,
+        26.45,
+        28.45,
         22.0,
         22.22
       ],
@@ -10724,10 +10724,10 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.079999999999986,
+      "volume": 3.07999999999999,
       "bounds": [
         55.55,
-        57.550000000000004,
+        57.55,
         29.36,
         50.64,
         22.0,
@@ -10808,7 +10808,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.942399999999981,
+      "volume": 3.94239999999998,
       "bounds": [
         71.36,
         94.64,
@@ -10836,7 +10836,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9423999999999833,
+      "volume": 3.942399999999985,
       "bounds": [
         68.45,
         70.45,
@@ -10864,12 +10864,12 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9423999999999806,
+      "volume": 3.942399999999981,
       "bounds": [
         71.36,
         94.64,
-        19.449999999999996,
-        21.450000000000003,
+        19.45,
+        21.45,
         22.0,
         22.22
       ],
@@ -10976,7 +10976,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000061,
+      "volume": 1.0976000000000063,
       "bounds": [
         63.86,
         90.14,
@@ -11144,7 +11144,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         36.0,
         37.400000000000006,
@@ -11172,7 +11172,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         39.699999999999996,
         41.1,
@@ -11200,7 +11200,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         43.4,
         44.800000000000004,
@@ -11284,7 +11284,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.557253096491488,
+      "volume": 0.5572530964914881,
       "bounds": [
         54.5,
         55.900000000000006,
@@ -11340,7 +11340,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         36.0,
         37.400000000000006,
@@ -11368,7 +11368,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         39.699999999999996,
         41.1,
@@ -11396,7 +11396,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         43.4,
         44.800000000000004,
@@ -11480,7 +11480,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.557253096491488,
+      "volume": 0.5572530964914881,
       "bounds": [
         54.5,
         55.900000000000006,
@@ -11648,7 +11648,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 89.50555736846769,
+      "volume": 89.5055573684677,
       "bounds": [
         39.5,
         44.5,
@@ -11697,17 +11697,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "CartridgeReader",
-      "label": "SATURN-0417 · Two-sided cartridge-edge connector study",
+      "name": "CartridgeReader001",
+      "label": "SATURN-0417 · Two-sided cartridge-edge connector study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 19,
-      "volume": 18984.141102509344,
+      "faces": 27,
+      "volume": 13069.64079216688,
       "bounds": [
-        -61.5,
-        61.5,
+        -41.7,
+        41.7,
         74.5,
         87.5,
         65.0,
@@ -11725,17 +11725,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "CartridgeContactBank_1",
-      "label": "SATURN-0418 · Cartridge contact bank study",
+      "name": "CartridgeContactBank_001",
+      "label": "SATURN-0418 · Cartridge contact bank study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 66,
-      "faces": 396,
-      "volume": 60.40319999999882,
+      "solids": 67,
+      "faces": 402,
+      "volume": 61.31839999999891,
       "bounds": [
-        -53.9,
-        53.9,
+        -36.775,
+        36.775,
         79.97,
         80.13,
         68.0,
@@ -11753,17 +11753,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "CartridgeContactBank1",
-      "label": "SATURN-0419 · Cartridge contact bank study001",
+      "name": "CartridgeContactBank001",
+      "label": "SATURN-0419 · Cartridge contact bank study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 66,
-      "faces": 396,
-      "volume": 60.40319999999883,
+      "solids": 67,
+      "faces": 402,
+      "volume": 61.31839999999891,
       "bounds": [
-        -53.9,
-        53.9,
+        -36.775,
+        36.775,
         81.87,
         82.03,
         68.0,
@@ -11956,7 +11956,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 8.686020477029643,
+      "volume": 8.686020477029645,
       "bounds": [
         60.2,
         63.8,
@@ -12152,7 +12152,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.18052807105694,
+      "volume": 34.18052807105695,
       "bounds": [
         57.6,
         66.4,
@@ -12432,7 +12432,7 @@
       "null": false,
       "solids": 1,
       "faces": 31,
-      "volume": 4023.8798246880574,
+      "volume": 4023.879824688059,
       "bounds": [
         -40.0,
         40.0,
@@ -12572,7 +12572,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 14.306812944447897,
+      "volume": 14.306812944447888,
       "bounds": [
         -4.0,
         4.0,
@@ -12740,14 +12740,14 @@
       "null": false,
       "solids": 1,
       "faces": 98,
-      "volume": 140.0862377440729,
+      "volume": 140.0862377440725,
       "bounds": [
         21.979957662564804,
         24.020038108233734,
         -11.0000001,
         60.0000001,
-        50.47997144998817,
-        52.52005863641149
+        50.47997144998816,
+        52.520058636411484
       ],
       "state": [
         "Up-to-date"
@@ -12852,7 +12852,7 @@
       "null": false,
       "solids": 1,
       "faces": 83,
-      "volume": 42.10390856696739,
+      "volume": 42.1039085669674,
       "bounds": [
         18.82911248078931,
         27.17088751921069,
@@ -12964,7 +12964,7 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.97119999999999,
+      "volume": 1.9711999999999903,
       "bounds": [
         -43.05,
         -41.05,
@@ -12992,7 +12992,7 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9711999999999914,
+      "volume": 1.9711999999999892,
       "bounds": [
         -40.14,
         -25.86,
@@ -13020,10 +13020,10 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.971199999999989,
+      "volume": 1.9711999999999925,
       "bounds": [
-        -24.950000000000003,
-        -22.949999999999996,
+        -24.95,
+        -22.95,
         -65.14,
         -50.86,
         45.1,
@@ -13244,7 +13244,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914868,
       "bounds": [
         4.699999999999998,
         6.099999999999999,
@@ -13272,7 +13272,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914866,
       "bounds": [
         -6.7,
         -5.3,
@@ -13300,7 +13300,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         -2.9000000000000004,
         -1.5,
@@ -13328,7 +13328,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914866,
       "bounds": [
         0.8999999999999997,
         2.3,
@@ -13384,7 +13384,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914869,
+      "volume": 0.5572530964914868,
       "bounds": [
         -6.7,
         -5.3,
@@ -13412,7 +13412,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         -2.9000000000000004,
         -1.5,
@@ -13440,7 +13440,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         0.8999999999999997,
         2.3,
@@ -13748,7 +13748,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 604.645486677649,
+      "volume": 604.6454866776489,
       "bounds": [
         -82.4,
         -81.6,
@@ -14224,7 +14224,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 88.73814120077702,
+      "volume": 88.73814120077701,
       "bounds": [
         -81.0,
         -75.0,
@@ -14392,7 +14392,7 @@
       "null": false,
       "solids": 1,
       "faces": 12,
-      "volume": 859.1860357071429,
+      "volume": 859.1860357071428,
       "bounds": [
         -80.0,
         80.0,
@@ -14672,14 +14672,14 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 11.979694728108099,
+      "volume": 11.979694728108097,
       "bounds": [
         77.2608295820568,
         83.2391704179432,
         60.15999990000042,
         64.8400000999996,
         75.8599999,
-        80.5400001000001
+        80.54000010000009
       ],
       "state": [
         "Up-to-date"
@@ -14700,7 +14700,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 2.3503040039668703,
+      "volume": 2.3503040039668712,
       "bounds": [
         -84.8,
         -84.45,
@@ -14728,7 +14728,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 2.3503040039668703,
+      "volume": 2.3503040039668712,
       "bounds": [
         84.8,
         85.14999999999999,
@@ -14784,7 +14784,7 @@
       "null": false,
       "solids": 1,
       "faces": 83,
-      "volume": 84.0395043715034,
+      "volume": 84.03950437150341,
       "bounds": [
         -82.50000000000003,
         -80.5,
@@ -14840,7 +14840,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 230.94172009607132,
+      "volume": 230.9417200960713,
       "bounds": [
         -80.0,
         -79.4,
@@ -14952,7 +14952,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 2.0624785195749715,
+      "volume": 2.0624785195749697,
       "bounds": [
         44.851416089307094,
         49.14858391069289,
@@ -15652,7 +15652,7 @@
       "null": false,
       "solids": 1,
       "faces": 85,
-      "volume": 25425.527989515424,
+      "volume": 25425.52798951541,
       "bounds": [
         -75.0000001,
         75.0000001,
@@ -15680,13 +15680,13 @@
       "null": false,
       "solids": 1,
       "faces": 131,
-      "volume": 20411.019922095333,
+      "volume": 20411.01992209534,
       "bounds": [
         -75.0000001,
         75.0000001,
         -263.2032330074586,
         -167.4999999,
-        13.249999899999999,
+        13.249999899999997,
         26.0000001
       ],
       "state": [
@@ -15736,7 +15736,7 @@
       "null": false,
       "solids": 4,
       "faces": 20,
-      "volume": 0.15299999999999772,
+      "volume": 0.15299999999999758,
       "bounds": [
         -51.96015510839149,
         -30.039844891608514,
@@ -15792,7 +15792,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.04345788608199021,
+      "volume": 0.04345788608199022,
       "bounds": [
         26.030201342281877,
         28.61241610738255,
@@ -15848,7 +15848,7 @@
       "null": false,
       "solids": 1,
       "faces": 27,
-      "volume": 0.05473754913031846,
+      "volume": 0.054737549130318454,
       "bounds": [
         42.3794042624161,
         44.37835580469799,
@@ -15904,7 +15904,7 @@
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 0.0368491353940283,
+      "volume": 0.03684913539402829,
       "bounds": [
         55.21707204765101,
         57.48972325436242,
@@ -16016,7 +16016,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 0.029682161382089053,
+      "volume": 0.029682161382089064,
       "bounds": [
         32.99244966442953,
         35.3689177852349,
@@ -16131,7 +16131,7 @@
       "volume": 0.08706970289908238,
       "bounds": [
         -5.33011754966443,
-        2.460318791946309,
+        2.4603187919463094,
         -219.53758399261744,
         -217.58859050402685,
         26.0499999,
@@ -16186,7 +16186,7 @@
       "faces": 11,
       "volume": 991.6977054525483,
       "bounds": [
-        -57.500000100000015,
+        -57.50000010000001,
         -26.499999899999995,
         -182.5000001,
         -173.4999999,
@@ -16215,7 +16215,7 @@
       "volume": 991.6976417670201,
       "bounds": [
         26.499999899999995,
-        57.5000001,
+        57.50000010000001,
         -182.5000001,
         -173.4999999,
         20.699999899999998,
@@ -16268,7 +16268,7 @@
       "null": false,
       "solids": 1,
       "faces": 27,
-      "volume": 639.0956363208632,
+      "volume": 639.0956363208634,
       "bounds": [
         -57.5,
         -24.5,
@@ -16302,7 +16302,7 @@
         65.0000001,
         -240.0000001,
         -175.9999999,
-        19.4999999,
+        19.49999989999999,
         23.3
       ],
       "state": [
@@ -16324,7 +16324,7 @@
       "null": false,
       "solids": 1,
       "faces": 16,
-      "volume": 104.85388232167104,
+      "volume": 104.85388232167105,
       "bounds": [
         -8.0,
         8.0,
@@ -17024,7 +17024,7 @@
       "null": false,
       "solids": 4,
       "faces": 24,
-      "volume": 0.2764799999999969,
+      "volume": 0.276479999999997,
       "bounds": [
         -2.5,
         2.769999999999999,
@@ -17052,7 +17052,7 @@
       "null": false,
       "solids": 4,
       "faces": 24,
-      "volume": 0.2764799999999969,
+      "volume": 0.276479999999997,
       "bounds": [
         -2.5,
         2.769999999999999,
@@ -17108,7 +17108,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897881,
+      "volume": 0.620703715789788,
       "bounds": [
         -11.15,
         -9.85,
@@ -17164,7 +17164,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.620703715789788,
+      "volume": 0.6207037157897879,
       "bounds": [
         -4.15,
         -2.8499999999999996,
@@ -17220,7 +17220,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897881,
+      "volume": 0.620703715789788,
       "bounds": [
         2.8499999999999996,
         4.15,
@@ -17248,7 +17248,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897882,
+      "volume": 0.6207037157897881,
       "bounds": [
         6.35,
         7.65,
@@ -17276,7 +17276,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897881,
+      "volume": 0.620703715789788,
       "bounds": [
         9.85,
         11.15,
@@ -17612,7 +17612,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 16.458169906812486,
+      "volume": 16.45816990681248,
       "bounds": [
         -119.6800001,
         -100.1699999,
@@ -17640,7 +17640,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 17.171521399601236,
+      "volume": 17.17152139960122,
       "bounds": [
         -120.1800001,
         -98.2699999,
@@ -17696,7 +17696,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 18.60115194576072,
+      "volume": 18.601151945760716,
       "bounds": [
         -121.1800001,
         -94.4699999,
@@ -17724,7 +17724,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 19.316857683539254,
+      "volume": 19.31685768353927,
       "bounds": [
         -121.6800001,
         -92.5699999,
@@ -17780,7 +17780,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 9.755834487611175,
+      "volume": 9.755834487611173,
       "bounds": [
         -105.12000010000003,
         -75.7799999,
@@ -17808,7 +17808,7 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 150.52500000000282,
+      "volume": 150.52500000000265,
       "bounds": [
         -9.5,
         5.5,
@@ -18004,7 +18004,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 4.9560676621093025,
+      "volume": 4.9560676621093,
       "bounds": [
         -47.730000100000005,
         -14.369999899999998,
@@ -18116,7 +18116,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 4.710511798080308,
+      "volume": 4.710511798080306,
       "bounds": [
         -8.130000100000002,
         15.467739592469384,
@@ -18144,7 +18144,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 6.016287731375292,
+      "volume": 6.016287731375293,
       "bounds": [
         17.21855779602083,
         78.13000009999999,
@@ -18172,7 +18172,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 4.765381413308777,
+      "volume": 4.76538141330878,
       "bounds": [
         -7.330000100000001,
         16.373566871566926,
@@ -18200,7 +18200,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 5.958988954840871,
+      "volume": 5.958988954840869,
       "bounds": [
         18.222129469923697,
         78.93000009999999,
@@ -18340,7 +18340,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 1.3509682846790378,
+      "volume": 1.350968284679038,
       "bounds": [
         -0.7700000999999996,
         -0.2599999000000009,
@@ -18398,7 +18398,7 @@
       "faces": 7,
       "volume": 1.3509682846790387,
       "bounds": [
-        0.2599999000000009,
+        0.25999990000000095,
         0.7700000999999996,
         -190.0,
         -164.0,
@@ -18452,7 +18452,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 1.3524374439365912,
+      "volume": 1.352437443936591,
       "bounds": [
         1.0199999000000008,
         2.0700000999999997,
@@ -18564,14 +18564,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 8108.460153515902,
+      "volume": 8108.460153515905,
       "bounds": [
         175.2,
         197.2,
         -178.5,
         -147.5,
-        8.0,
-        20.0
+        7.99999999999999,
+        20.000000000000004
       ],
       "state": [
         "Up-to-date"
@@ -18620,14 +18620,14 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 134.1253096491487,
+      "volume": 134.12530964914882,
       "bounds": [
         200.0,
         208.0,
         -175.0,
         -151.0,
-        13.450000000000001,
-        14.15
+        13.449999999999996,
+        14.150000000000004
       ],
       "state": [
         "Up-to-date"
@@ -18648,13 +18648,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293857,
+      "volume": 0.4153646003293841,
       "bounds": [
         201.0,
         207.0,
         -173.54999999999998,
         -172.85,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18676,13 +18676,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.41536460032938405,
       "bounds": [
         201.0,
         207.0,
         -171.0,
         -170.3,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18704,13 +18704,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.41536460032938405,
       "bounds": [
         201.0,
         207.0,
         -168.45,
         -167.75,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18732,13 +18732,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.41536460032938416,
       "bounds": [
         201.0,
         207.0,
         -165.9,
         -165.20000000000002,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18760,13 +18760,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293856,
+      "volume": 0.4153646003293841,
       "bounds": [
         201.0,
         207.0,
         -163.35,
         -162.65,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18788,13 +18788,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293856,
+      "volume": 0.4153646003293841,
       "bounds": [
         201.0,
         207.0,
         -160.79999999999998,
         -160.1,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18816,13 +18816,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.4153646003293841,
       "bounds": [
         201.0,
         207.0,
         -158.25,
         -157.55,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18844,13 +18844,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293856,
+      "volume": 0.415364600329384,
       "bounds": [
         201.0,
         207.0,
         -155.7,
         -155.0,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18872,13 +18872,13 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.41536460032938416,
       "bounds": [
         201.0,
         207.0,
         -153.15,
         -152.45000000000002,
-        14.25,
+        14.249999999999998,
         14.350000000000001
       ],
       "state": [
@@ -18900,7 +18900,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 49.48636747934597,
+      "volume": 49.48636747934631,
       "bounds": [
         -59.1,
         -22.9,
@@ -19012,7 +19012,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 1935.1652053436053,
+      "volume": 1935.165205343605,
       "bounds": [
         218.1999999,
         321.80000010000003,
@@ -19033,19 +19033,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACDeviceGrip",
-      "label": "SATURN-0679 · Figure-eight connector grip",
+      "name": "ACDeviceGrip001",
+      "label": "SATURN-0679 · Figure-eight connector grip001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 2865.4929158456675,
+      "volume": 4545.492915845667,
       "bounds": [
         268.0,
         292.0,
-        14.0,
-        26.0,
+        10.5,
+        29.5,
         3.0,
         13.0
       ],
@@ -19061,21 +19061,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACDeviceHead",
-      "label": "SATURN-0680 · C7-style two-position connector study",
+      "name": "ACDeviceHead001",
+      "label": "SATURN-0680 · C7-style two-position connector study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 12,
-      "volume": 864.1397982589519,
+      "faces": 10,
+      "volume": 862.9955513905195,
       "bounds": [
-        257.8,
-        267.8,
-        12.7,
-        27.3,
-        4.0,
-        12.0
+        257.2999999,
+        267.80000010000003,
+        11.9999999,
+        28.0000001,
+        4.0749999,
+        11.9250001
       ],
       "state": [
         "Up-to-date"
@@ -19089,21 +19089,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACDeviceContact0",
-      "label": "SATURN-0681 · Device mains socket contact",
+      "name": "ACDeviceContact001",
+      "label": "SATURN-0681 · Device mains socket contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 9.613273519984762,
+      "volume": 11.074114103904023,
       "bounds": [
         259.5,
         265.5,
-        15.7,
-        17.7,
-        7.0,
-        9.0
+        14.399999999999999,
+        17.0,
+        6.7,
+        9.3
       ],
       "state": [
         "Up-to-date"
@@ -19117,21 +19117,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "ACDeviceContact1",
-      "label": "SATURN-0682 · Device mains socket contact001",
+      "name": "ACDeviceContact002",
+      "label": "SATURN-0682 · Device mains socket contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 9.613273519984762,
+      "volume": 11.074114103904012,
       "bounds": [
         259.5,
         265.5,
-        22.3,
-        24.3,
-        7.0,
-        9.0
+        23.0,
+        25.6,
+        6.7,
+        9.3
       ],
       "state": [
         "Up-to-date"
@@ -19173,21 +19173,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVPlugShield",
-      "label": "SATURN-0684 · AV plug metal sleeve",
+      "name": "AVPlugShield002",
+      "label": "SATURN-0684 · AV plug metal sleeve002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 215.33732684765835,
+      "faces": 10,
+      "volume": 59.1789807673093,
       "bounds": [
-        214.5,
-        225.5,
+        215.25,
+        224.75,
         -2.7,
-        5.7,
-        2.5,
-        13.5
+        5.700000000000001,
+        3.5999999999999996,
+        12.69041575982343
       ],
       "state": [
         "Up-to-date"
@@ -19201,21 +19201,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "AVPlugCarrier",
-      "label": "SATURN-0685 · AV plug contact insulator",
+      "name": "AVPlugCarrier002",
+      "label": "SATURN-0685 · AV plug contact insulator002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 17,
-      "volume": 151.42138609647375,
+      "faces": 22,
+      "volume": 144.95709577079558,
       "bounds": [
         215.62205,
         224.37795,
         -2.6,
-        0.3999999999999999,
-        3.5999999999999996,
-        12.4
+        0.40000000000000036,
+        4.0,
+        12.335608377148471
       ],
       "state": [
         "Up-to-date"
@@ -19432,7 +19432,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         216.6,
         217.4,
@@ -19460,7 +19460,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         219.6,
         220.4,
@@ -19488,7 +19488,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         222.6,
         223.4,
@@ -19544,7 +19544,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1111.4159265358978,
+      "volume": 1111.4159265358976,
       "bounds": [
         303.0,
         317.0,
@@ -20020,7 +20020,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 29.153665666047935,
+      "volume": 29.15366566604794,
       "bounds": [
         223.0,
         257.0,
@@ -20048,7 +20048,7 @@
       "null": false,
       "solids": 7,
       "faces": 109,
-      "volume": 0.3136011707542039,
+      "volume": 0.3136011707542038,
       "bounds": [
         227.3794042624161,
         246.63691285167783,
@@ -20071,19 +20071,19 @@
   ],
   "exploded_objects": [
     {
-      "name": "LowerHousingCut012",
-      "label": "SATURN-0001 · HST-3200 lower enclosure014",
+      "name": "LowerHousingFuse001",
+      "label": "SATURN-0001 · HST-3200 lower enclosure015",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 565,
-      "volume": 149197.7758995277,
+      "faces": 765,
+      "volume": 151491.40490066714,
       "bounds": [
         -130.0,
         130.0,
         -115.0,
-        115.0,
+        115.00000000000001,
         -348.0,
         -319.0
       ],
@@ -20106,8 +20106,8 @@
       "valid": true,
       "null": false,
       "solids": 3,
-      "faces": 421,
-      "volume": 220600.73945893877,
+      "faces": 427,
+      "volume": 220674.24834638147,
       "bounds": [
         -130.0000001,
         130.0000001,
@@ -20285,7 +20285,7 @@
       "bounds": [
         -79.6015957827749,
         79.60159578277488,
-        -87.2881599246995,
+        -87.28815992469951,
         58.81730195868828,
         270.5,
         288.3
@@ -20310,7 +20310,7 @@
       "null": false,
       "solids": 1,
       "faces": 39,
-      "volume": 2037.0289774733717,
+      "volume": 2037.0289774733712,
       "bounds": [
         -62.0,
         62.0,
@@ -20430,7 +20430,7 @@
       "bounds": [
         -2.000000000000007,
         66.0,
-        1.0,
+        0.9999999999999998,
         9.026706508981007,
         382.95,
         382.985
@@ -20542,7 +20542,7 @@
       "null": false,
       "solids": 1,
       "faces": 45,
-      "volume": 2491.514486081418,
+      "volume": 2491.5144860814153,
       "bounds": [
         -98.07106791186547,
         98.07106791186547,
@@ -20571,7 +20571,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 693.0353537858283,
+      "volume": 693.0353537858284,
       "bounds": [
         -90.3042067929352,
         -65.6957931745191,
@@ -20629,7 +20629,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 735.7609739728932,
+      "volume": 735.7609739728935,
       "bounds": [
         65.69579317942724,
         90.30420682548088,
@@ -20687,9 +20687,9 @@
       "null": false,
       "solids": 1,
       "faces": 21,
-      "volume": 1338.743654613337,
+      "volume": 1338.7436546133372,
       "bounds": [
-        -21.500000100000015,
+        -21.5000001,
         21.5000001,
         -110.0000001,
         -97.9999999,
@@ -20861,14 +20861,14 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 2366.741943334419,
+      "volume": 2366.7419433344185,
       "bounds": [
         -54.5,
         -23.5,
         -114.8,
         -100.8,
         16.0,
-        28.000000000000004
+        28.0
       ],
       "state": [
         "Up-to-date"
@@ -20912,8 +20912,8 @@
       ]
     },
     {
-      "name": "ControllerContact1_0",
-      "label": "SATURN-0030 · Controller spring contact",
+      "name": "ControllerContact1_001",
+      "label": "SATURN-0030 · Controller spring contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -20921,8 +20921,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        -50.25,
-        -49.349999999999994,
+        -49.650000000000006,
+        -48.75,
         -112.5,
         -105.5,
         21.45,
@@ -20941,17 +20941,17 @@
       ]
     },
     {
-      "name": "ControllerContact1_1",
-      "label": "SATURN-0031 · Controller spring contact001",
+      "name": "ControllerContact1_002",
+      "label": "SATURN-0031 · Controller spring contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        -47.550000000000004,
-        -46.65,
+        -47.1,
+        -46.199999999999996,
         -112.5,
         -105.5,
         21.45,
@@ -20970,17 +20970,17 @@
       ]
     },
     {
-      "name": "ControllerContact1_2",
-      "label": "SATURN-0032 · Controller spring contact002",
+      "name": "ControllerContact1_003",
+      "label": "SATURN-0032 · Controller spring contact003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        -44.85,
-        -43.949999999999996,
+        -44.550000000000004,
+        -43.65,
         -112.5,
         -105.5,
         21.45,
@@ -20999,17 +20999,17 @@
       ]
     },
     {
-      "name": "ControllerContact1_3",
-      "label": "SATURN-0033 · Controller spring contact003",
+      "name": "ControllerContact1_004",
+      "label": "SATURN-0033 · Controller spring contact004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579605,
       "bounds": [
-        -42.150000000000006,
-        -41.25,
+        -42.0,
+        -41.099999999999994,
         -112.5,
         -105.5,
         21.45,
@@ -21028,8 +21028,8 @@
       ]
     },
     {
-      "name": "ControllerContact1_4",
-      "label": "SATURN-0034 · Controller spring contact004",
+      "name": "ControllerContact1_005",
+      "label": "SATURN-0034 · Controller spring contact005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21057,8 +21057,8 @@
       ]
     },
     {
-      "name": "ControllerContact1_5",
-      "label": "SATURN-0035 · Controller spring contact005",
+      "name": "ControllerContact1_006",
+      "label": "SATURN-0035 · Controller spring contact006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21066,8 +21066,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        -36.75,
-        -35.849999999999994,
+        -36.900000000000006,
+        -36.0,
         -112.5,
         -105.5,
         21.45,
@@ -21086,17 +21086,17 @@
       ]
     },
     {
-      "name": "ControllerContact1_6",
-      "label": "SATURN-0036 · Controller spring contact006",
+      "name": "ControllerContact1_007",
+      "label": "SATURN-0036 · Controller spring contact007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579605,
       "bounds": [
-        -34.050000000000004,
-        -33.15,
+        -34.35,
+        -33.449999999999996,
         -112.5,
         -105.5,
         21.45,
@@ -21115,8 +21115,8 @@
       ]
     },
     {
-      "name": "ControllerContact1_7",
-      "label": "SATURN-0037 · Controller spring contact007",
+      "name": "ControllerContact1_008",
+      "label": "SATURN-0037 · Controller spring contact008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21124,8 +21124,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        -31.349999999999998,
-        -30.45,
+        -31.8,
+        -30.900000000000002,
         -112.5,
         -105.5,
         21.45,
@@ -21144,8 +21144,8 @@
       ]
     },
     {
-      "name": "ControllerContact1_8",
-      "label": "SATURN-0038 · Controller spring contact008",
+      "name": "ControllerContact1_009",
+      "label": "SATURN-0038 · Controller spring contact009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21153,8 +21153,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        -28.65,
-        -27.75,
+        -29.25,
+        -28.35,
         -112.5,
         -105.5,
         21.45,
@@ -21180,7 +21180,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 0.054413008423044834,
+      "volume": 0.05441300842304484,
       "bounds": [
         -39.433724832214764,
         -37.196308724832214,
@@ -21209,14 +21209,14 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 2366.741943334419,
+      "volume": 2366.7419433344185,
       "bounds": [
         23.5,
         54.5,
         -114.8,
         -100.8,
         16.0,
-        28.000000000000004
+        28.0
       ],
       "state": [
         "Up-to-date"
@@ -21260,8 +21260,8 @@
       ]
     },
     {
-      "name": "ControllerContact2_0",
-      "label": "SATURN-0042 · Controller spring contact009",
+      "name": "ControllerContact2_001",
+      "label": "SATURN-0042 · Controller spring contact010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21269,8 +21269,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        27.75,
-        28.65,
+        28.35,
+        29.25,
         -112.5,
         -105.5,
         21.45,
@@ -21289,8 +21289,8 @@
       ]
     },
     {
-      "name": "ControllerContact2_1",
-      "label": "SATURN-0043 · Controller spring contact010",
+      "name": "ControllerContact2_002",
+      "label": "SATURN-0043 · Controller spring contact011",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21298,8 +21298,8 @@
       "faces": 10,
       "volume": 0.7553407431579587,
       "bounds": [
-        30.45,
-        31.349999999999998,
+        30.900000000000002,
+        31.8,
         -112.5,
         -105.5,
         21.45,
@@ -21318,8 +21318,8 @@
       ]
     },
     {
-      "name": "ControllerContact2_2",
-      "label": "SATURN-0044 · Controller spring contact011",
+      "name": "ControllerContact2_003",
+      "label": "SATURN-0044 · Controller spring contact012",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21327,8 +21327,8 @@
       "faces": 10,
       "volume": 0.7553407431579607,
       "bounds": [
-        33.15,
-        34.050000000000004,
+        33.449999999999996,
+        34.35,
         -112.5,
         -105.5,
         21.45,
@@ -21347,8 +21347,8 @@
       ]
     },
     {
-      "name": "ControllerContact2_3",
-      "label": "SATURN-0045 · Controller spring contact012",
+      "name": "ControllerContact2_004",
+      "label": "SATURN-0045 · Controller spring contact013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21356,8 +21356,8 @@
       "faces": 10,
       "volume": 0.7553407431579606,
       "bounds": [
-        35.849999999999994,
-        36.75,
+        36.0,
+        36.900000000000006,
         -112.5,
         -105.5,
         21.45,
@@ -21376,8 +21376,8 @@
       ]
     },
     {
-      "name": "ControllerContact2_4",
-      "label": "SATURN-0046 · Controller spring contact013",
+      "name": "ControllerContact2_005",
+      "label": "SATURN-0046 · Controller spring contact014",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21405,17 +21405,17 @@
       ]
     },
     {
-      "name": "ControllerContact2_5",
-      "label": "SATURN-0047 · Controller spring contact014",
+      "name": "ControllerContact2_006",
+      "label": "SATURN-0047 · Controller spring contact015",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579605,
+      "volume": 0.7553407431579606,
       "bounds": [
-        41.25,
-        42.150000000000006,
+        41.099999999999994,
+        42.0,
         -112.5,
         -105.5,
         21.45,
@@ -21434,17 +21434,17 @@
       ]
     },
     {
-      "name": "ControllerContact2_6",
-      "label": "SATURN-0048 · Controller spring contact015",
+      "name": "ControllerContact2_007",
+      "label": "SATURN-0048 · Controller spring contact016",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579606,
       "bounds": [
-        43.949999999999996,
-        44.85,
+        43.65,
+        44.550000000000004,
         -112.5,
         -105.5,
         21.45,
@@ -21463,17 +21463,17 @@
       ]
     },
     {
-      "name": "ControllerContact2_7",
-      "label": "SATURN-0049 · Controller spring contact016",
+      "name": "ControllerContact2_008",
+      "label": "SATURN-0049 · Controller spring contact017",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579607,
+      "volume": 0.7553407431579606,
       "bounds": [
-        46.65,
-        47.550000000000004,
+        46.199999999999996,
+        47.1,
         -112.5,
         -105.5,
         21.45,
@@ -21492,17 +21492,17 @@
       ]
     },
     {
-      "name": "ControllerContact2_8",
-      "label": "SATURN-0050 · Controller spring contact017",
+      "name": "ControllerContact2_009",
+      "label": "SATURN-0050 · Controller spring contact018",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7553407431579606,
+      "volume": 0.7553407431579607,
       "bounds": [
-        49.349999999999994,
-        50.25,
+        48.75,
+        49.650000000000006,
         -112.5,
         -105.5,
         21.45,
@@ -21550,21 +21550,21 @@
       ]
     },
     {
-      "name": "ACInlet",
-      "label": "SATURN-0052 · Original figure-eight mains inlet",
+      "name": "ACInlet001",
+      "label": "SATURN-0052 · Original figure-eight mains inlet001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 14,
-      "volume": 1812.427187740757,
+      "faces": 24,
+      "volume": 1651.0827705050808,
       "bounds": [
-        -106.60000000000001,
-        -75.39999999999999,
-        111.5,
-        114.5,
-        145.9,
-        168.1
+        -106.6000001,
+        -75.3999999,
+        111.4999998999999,
+        114.50000010000002,
+        143.0999999,
+        168.1000001
       ],
       "state": [
         "Up-to-date"
@@ -21579,8 +21579,8 @@
       ]
     },
     {
-      "name": "ACInletPin0",
-      "label": "SATURN-0053 · Mains inlet pin study",
+      "name": "ACInletPin001",
+      "label": "SATURN-0053 · Mains inlet pin study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21588,8 +21588,8 @@
       "faces": 3,
       "volume": 15.268140296446418,
       "bounds": [
-        -95.60000000000001,
-        -93.8,
+        -96.2,
+        -94.39999999999999,
         107.7,
         113.7,
         156.1,
@@ -21608,8 +21608,8 @@
       ]
     },
     {
-      "name": "ACInletPin1",
-      "label": "SATURN-0054 · Mains inlet pin study001",
+      "name": "ACInletPin002",
+      "label": "SATURN-0054 · Mains inlet pin study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21617,8 +21617,8 @@
       "faces": 3,
       "volume": 15.268140296446418,
       "bounds": [
-        -88.2,
-        -86.39999999999999,
+        -87.60000000000001,
+        -85.8,
         107.7,
         113.7,
         156.1,
@@ -21644,7 +21644,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 4.321486315913928,
+      "volume": 4.321486315913929,
       "bounds": [
         -104.6,
         -101.4,
@@ -21673,7 +21673,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 4.321486315913929,
+      "volume": 4.32148631591393,
       "bounds": [
         -80.6,
         -77.4,
@@ -21695,21 +21695,21 @@
       ]
     },
     {
-      "name": "ACFixing2",
-      "label": "SATURN-0057 · Rear mains-inlet fixing head002",
+      "name": "ACFixing002",
+      "label": "SATURN-0057 · Rear mains-inlet fixing head004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 4.321486315913928,
+      "volume": 4.32148631591393,
       "bounds": [
-        -92.6,
-        -89.4,
+        -80.6,
+        -77.4,
         114.65,
         115.25,
-        138.4,
-        141.6
+        143.9,
+        147.1
       ],
       "state": [
         "Up-to-date"
@@ -21724,21 +21724,21 @@
       ]
     },
     {
-      "name": "AVShell",
-      "label": "SATURN-0058 · AV mini-DIN metal sleeve",
+      "name": "AVShell001",
+      "label": "SATURN-0058 · AV mini-DIN metal sleeve001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 342.8105903597177,
+      "faces": 6,
+      "volume": 110.03248056112308,
       "bounds": [
-        -97.6,
-        -84.4,
+        -96.1,
+        -85.9,
         103.3,
         114.3,
-        10.4,
-        23.6
+        11.9,
+        22.1
       ],
       "state": [
         "Up-to-date"
@@ -21753,21 +21753,21 @@
       ]
     },
     {
-      "name": "AVCarrier",
-      "label": "SATURN-0059 · AV contact insulator",
+      "name": "AVCarrier001",
+      "label": "SATURN-0059 · AV contact insulator001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 13,
-      "volume": 238.91812130550392,
+      "faces": 32,
+      "volume": 139.5656407123564,
       "bounds": [
-        -96.5,
-        -85.5,
+        -95.35875000000101,
+        -86.641249999999,
         108.0,
         111.0,
-        11.5,
-        22.5
+        12.6,
+        21.75
       ],
       "state": [
         "Up-to-date"
@@ -22079,13 +22079,13 @@
       "null": false,
       "solids": 1,
       "faces": 18,
-      "volume": 444.6522113490004,
+      "volume": 444.6522113490006,
       "bounds": [
         -63.1,
         -38.9,
         104.5,
         114.5,
-        12.399999999999997,
+        12.399999999999999,
         21.6
       ],
       "state": [
@@ -22485,7 +22485,7 @@
       "null": false,
       "solids": 5,
       "faces": 86,
-      "volume": 0.07709938531062889,
+      "volume": 0.07709938531062892,
       "bounds": [
         56.16988245033557,
         64.70536912751678,
@@ -22545,7 +22545,7 @@
       "faces": 150,
       "volume": 3.0800000000000183,
       "bounds": [
-        52.949999999999996,
+        52.95,
         54.95,
         56.86,
         75.14,
@@ -22572,11 +22572,11 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000183,
       "bounds": [
         55.86,
         74.14,
-        53.949999999999996,
+        53.95,
         55.95,
         10.7,
         10.92
@@ -22717,9 +22717,9 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000183,
       "bounds": [
-        52.949999999999996,
+        52.95,
         54.95,
         22.86,
         41.14,
@@ -22746,12 +22746,12 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000174,
+      "volume": 3.0800000000000165,
       "bounds": [
         55.86,
         74.14,
-        19.949999999999996,
-        21.950000000000003,
+        19.95,
+        21.95,
         10.7,
         10.92
       ],
@@ -22775,7 +22775,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.0800000000000125,
+      "volume": 3.0800000000000143,
       "bounds": [
         75.05,
         77.05,
@@ -22833,7 +22833,7 @@
       "null": false,
       "solids": 4,
       "faces": 56,
-      "volume": 0.07153912605991944,
+      "volume": 0.07153912605991943,
       "bounds": [
         -52.97986577181208,
         -46.2988255033557,
@@ -22862,7 +22862,7 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000014,
+      "volume": 4.928000000000007,
       "bounds": [
         -53.14,
         -26.86,
@@ -22891,9 +22891,9 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000016,
+      "volume": 4.928000000000009,
       "bounds": [
-        -56.050000000000004,
+        -56.05,
         -54.05,
         26.86,
         53.14,
@@ -22920,12 +22920,12 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.9280000000000195,
+      "volume": 4.928000000000016,
       "bounds": [
         -53.14,
         -26.86,
-        23.949999999999996,
-        25.950000000000003,
+        23.95,
+        25.95,
         10.7,
         10.92
       ],
@@ -22949,10 +22949,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000013,
+      "volume": 4.928000000000016,
       "bounds": [
-        -25.950000000000003,
-        -23.949999999999996,
+        -25.95,
+        -23.95,
         26.86,
         53.14,
         10.7,
@@ -23036,7 +23036,7 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000012,
+      "volume": 4.928000000000011,
       "bounds": [
         -13.14,
         13.139999999999999,
@@ -23065,10 +23065,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.9280000000000195,
+      "volume": 4.928000000000016,
       "bounds": [
-        -16.050000000000004,
-        -14.049999999999999,
+        -16.05,
+        -14.05,
         26.86,
         53.14,
         10.7,
@@ -23094,12 +23094,12 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000017,
+      "volume": 4.928000000000014,
       "bounds": [
-        -13.14,
-        13.139999999999999,
-        23.949999999999996,
-        25.950000000000003,
+        -13.139999999999999,
+        13.14,
+        23.95,
+        25.95,
         10.7,
         10.92
       ],
@@ -23123,10 +23123,10 @@
       "null": false,
       "solids": 40,
       "faces": 240,
-      "volume": 4.928000000000015,
+      "volume": 4.928000000000016,
       "bounds": [
-        14.049999999999997,
-        16.050000000000004,
+        14.05,
+        16.05,
         26.86,
         53.14,
         10.7,
@@ -23181,7 +23181,7 @@
       "null": false,
       "solids": 3,
       "faces": 66,
-      "volume": 0.054008230203595166,
+      "volume": 0.05400823020359518,
       "bounds": [
         -41.33011754966443,
         -36.40142607449664,
@@ -23210,7 +23210,7 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.43520000000001,
+      "volume": 4.435200000000012,
       "bounds": [
         -41.64,
         -18.36,
@@ -23239,12 +23239,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000013,
+      "volume": 4.435200000000015,
       "bounds": [
-        -44.550000000000004,
+        -44.55,
         -42.55,
         -26.64,
-        -3.3599999999999994,
+        -3.360000000000001,
         10.7,
         10.92
       ],
@@ -23268,12 +23268,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000015,
+      "volume": 4.435200000000013,
       "bounds": [
         -41.64,
         -18.36,
-        -29.550000000000004,
-        -27.549999999999997,
+        -29.55,
+        -27.55,
         10.7,
         10.92
       ],
@@ -23297,12 +23297,12 @@
       "null": false,
       "solids": 36,
       "faces": 216,
-      "volume": 4.435200000000012,
+      "volume": 4.4352000000000125,
       "bounds": [
-        -17.450000000000003,
-        -15.449999999999996,
+        -17.45,
+        -15.45,
         -26.64,
-        -3.360000000000003,
+        -3.3599999999999994,
         10.7,
         10.92
       ],
@@ -23384,7 +23384,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000103,
+      "volume": 3.9424000000000112,
       "bounds": [
         -88.14,
         -65.86,
@@ -23413,7 +23413,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000086,
+      "volume": 3.9424000000000037,
       "bounds": [
         -91.05,
         -89.05,
@@ -23442,7 +23442,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000086,
+      "volume": 3.9424000000000077,
       "bounds": [
         -88.14,
         -65.86,
@@ -23471,10 +23471,10 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9424000000000117,
+      "volume": 3.942400000000003,
       "bounds": [
         -64.95,
-        -62.949999999999996,
+        -62.95,
         -69.14,
         -46.86,
         10.7,
@@ -23587,12 +23587,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9712000000000072,
+      "volume": 1.971200000000006,
       "bounds": [
         -89.05,
         -87.05,
         -29.14,
-        -12.859999999999998,
+        -12.86,
         10.7,
         10.92
       ],
@@ -23616,12 +23616,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.971200000000003,
+      "volume": 1.9712000000000072,
       "bounds": [
         -86.14,
         -69.86,
-        -32.050000000000004,
-        -30.049999999999997,
+        -32.05,
+        -30.05,
         10.7,
         10.92
       ],
@@ -23645,12 +23645,12 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9712000000000076,
+      "volume": 1.9712000000000047,
       "bounds": [
         -68.95,
         -66.95,
-        -29.140000000000004,
-        -12.860000000000001,
+        -29.14,
+        -12.86,
         10.7,
         10.92
       ],
@@ -23703,7 +23703,7 @@
       "null": false,
       "solids": 4,
       "faces": 83,
-      "volume": 0.08053009563899284,
+      "volume": 0.08053009563899285,
       "bounds": [
         77.16988245033558,
         84.07189607315436,
@@ -23761,7 +23761,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.080000000000012,
+      "volume": 3.080000000000011,
       "bounds": [
         73.95,
         75.95,
@@ -23819,7 +23819,7 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.080000000000014,
+      "volume": 3.0800000000000156,
       "bounds": [
         94.05,
         96.05,
@@ -23906,7 +23906,7 @@
       "null": false,
       "solids": 20,
       "faces": 120,
-      "volume": 1.5680000000000047,
+      "volume": 1.5680000000000058,
       "bounds": [
         7.86,
         46.14,
@@ -23935,7 +23935,7 @@
       "null": false,
       "solids": 20,
       "faces": 120,
-      "volume": 1.5679999999999985,
+      "volume": 1.567999999999999,
       "bounds": [
         7.86,
         46.14,
@@ -23993,7 +23993,7 @@
       "null": false,
       "solids": 7,
       "faces": 124,
-      "volume": 0.1177113197905481,
+      "volume": 0.11771131979054804,
       "bounds": [
         37.5,
         50.05967701342282,
@@ -24109,7 +24109,7 @@
       "null": false,
       "solids": 7,
       "faces": 124,
-      "volume": 0.1177113197905476,
+      "volume": 0.11771131979054757,
       "bounds": [
         67.5,
         80.05967701342281,
@@ -24254,7 +24254,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.0976000000000057,
       "bounds": [
         -93.14,
         -70.86,
@@ -24283,7 +24283,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000055,
+      "volume": 1.0976000000000057,
       "bounds": [
         -93.14,
         -70.86,
@@ -24341,7 +24341,7 @@
       "null": false,
       "solids": 9,
       "faces": 160,
-      "volume": 0.13417191456972813,
+      "volume": 0.13417191456972807,
       "bounds": [
         54.9999999,
         69.46340604026845,
@@ -24370,7 +24370,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.097600000000005,
       "bounds": [
         54.86,
         75.14,
@@ -24399,7 +24399,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.097600000000005,
+      "volume": 1.0976000000000048,
       "bounds": [
         54.86,
         75.14,
@@ -24457,7 +24457,7 @@
       "null": false,
       "solids": 5,
       "faces": 63,
-      "volume": 0.06527810401018408,
+      "volume": 0.0652781040101841,
       "bounds": [
         -82.98288590604027,
         -76.18238664496644,
@@ -24515,7 +24515,7 @@
       "null": false,
       "solids": 12,
       "faces": 72,
-      "volume": 0.9408000000000047,
+      "volume": 0.9408000000000041,
       "bounds": [
         -83.14,
         -64.86,
@@ -24573,7 +24573,7 @@
       "null": false,
       "solids": 8,
       "faces": 118,
-      "volume": 0.1050389615344386,
+      "volume": 0.10503896153443863,
       "bounds": [
         -95.98322147651007,
         -83.86066824451902,
@@ -24602,7 +24602,7 @@
       "null": false,
       "solids": 10,
       "faces": 60,
-      "volume": 0.7839999999999996,
+      "volume": 0.7839999999999993,
       "bounds": [
         -96.14,
         -85.86,
@@ -24689,7 +24689,7 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.06211978144778545,
+      "volume": 0.062119781447785426,
       "bounds": [
         -59.0,
         -52.603393456375834,
@@ -24718,7 +24718,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999997,
+      "volume": 1.0976000000000004,
       "bounds": [
         -59.14,
         -34.86,
@@ -24747,7 +24747,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999997,
+      "volume": 1.0976000000000006,
       "bounds": [
         -59.14,
         -34.86,
@@ -24807,7 +24807,7 @@
       "faces": 62,
       "volume": 0.06211978144778534,
       "bounds": [
-        -25.0,
+        -25.000000000000004,
         -18.60339345637584,
         -47.700000100000004,
         -46.10268446375839,
@@ -24834,7 +24834,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999957,
+      "volume": 1.0975999999999955,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -24863,7 +24863,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999955,
+      "volume": 1.0975999999999957,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -24921,7 +24921,7 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.062119781447785495,
+      "volume": 0.06211978144778548,
       "bounds": [
         -59.0,
         -52.603393456375834,
@@ -24950,7 +24950,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000052,
+      "volume": 1.097600000000005,
       "bounds": [
         -59.14,
         -34.86,
@@ -24979,7 +24979,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999995,
+      "volume": 1.0976000000000004,
       "bounds": [
         -59.14,
         -34.86,
@@ -25037,9 +25037,9 @@
       "null": false,
       "solids": 4,
       "faces": 62,
-      "volume": 0.06211978144778544,
+      "volume": 0.062119781447785426,
       "bounds": [
-        -25.0,
+        -25.000000000000004,
         -18.60339345637584,
         -67.7000001,
         -66.1026844637584,
@@ -25095,7 +25095,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0975999999999952,
+      "volume": 1.097599999999995,
       "bounds": [
         -25.14,
         -0.8600000000000001,
@@ -25530,7 +25530,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -105.75,
         -104.25,
@@ -25588,7 +25588,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -105.75,
         -104.25,
@@ -25617,7 +25617,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -105.75,
         -104.25,
@@ -25646,7 +25646,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -105.75,
         -104.25,
@@ -25704,7 +25704,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -105.75,
         -104.25,
@@ -25733,7 +25733,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -102.25,
         -100.75,
@@ -25791,7 +25791,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -102.25,
         -100.75,
@@ -25820,7 +25820,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -102.25,
         -100.75,
@@ -25849,7 +25849,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -102.25,
         -100.75,
@@ -25907,7 +25907,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -102.25,
         -100.75,
@@ -25936,7 +25936,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -98.75,
         -97.25,
@@ -25994,7 +25994,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -98.75,
         -97.25,
@@ -26023,7 +26023,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -98.75,
         -97.25,
@@ -26052,7 +26052,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -98.75,
         -97.25,
@@ -26110,7 +26110,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -98.75,
         -97.25,
@@ -26139,7 +26139,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897848,
+      "volume": 0.7167037157897846,
       "bounds": [
         -95.25,
         -93.75,
@@ -26197,7 +26197,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -95.25,
         -93.75,
@@ -26226,7 +26226,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897851,
+      "volume": 0.7167037157897849,
       "bounds": [
         -95.25,
         -93.75,
@@ -26255,7 +26255,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897849,
+      "volume": 0.7167037157897848,
       "bounds": [
         -95.25,
         -93.75,
@@ -26313,7 +26313,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         -95.25,
         -93.75,
@@ -26342,7 +26342,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         -107.75,
         -106.25,
@@ -26371,7 +26371,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -107.75,
         -106.25,
@@ -26429,7 +26429,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -107.75,
         -106.25,
@@ -26516,7 +26516,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897842,
+      "volume": 0.7167037157897841,
       "bounds": [
         -104.15,
         -102.65,
@@ -26545,7 +26545,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -26574,7 +26574,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -26603,7 +26603,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -26632,7 +26632,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -26661,7 +26661,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -104.15,
         -102.65,
@@ -26690,7 +26690,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         -100.55,
         -99.05,
@@ -26719,7 +26719,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -26748,7 +26748,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -26777,7 +26777,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -26806,7 +26806,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -26835,7 +26835,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         -100.55,
         -99.05,
@@ -26864,7 +26864,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.7167037157897839,
       "bounds": [
         -96.95,
         -95.45,
@@ -26893,7 +26893,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -26922,7 +26922,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -26951,7 +26951,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -26980,7 +26980,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -27009,7 +27009,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897875,
       "bounds": [
         -96.95,
         -95.45,
@@ -27038,7 +27038,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -27067,7 +27067,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -27096,7 +27096,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         13.25,
         14.75,
@@ -27125,7 +27125,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -27154,7 +27154,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         13.25,
         14.75,
@@ -27183,7 +27183,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         17.25,
         18.75,
@@ -27212,7 +27212,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         17.25,
         18.75,
@@ -27241,7 +27241,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         17.25,
         18.75,
@@ -27270,7 +27270,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         17.25,
         18.75,
@@ -27299,7 +27299,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         17.25,
         18.75,
@@ -27328,7 +27328,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         21.25,
         22.75,
@@ -27357,7 +27357,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         21.25,
         22.75,
@@ -27386,7 +27386,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         21.25,
         22.75,
@@ -27415,7 +27415,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         21.25,
         22.75,
@@ -27444,7 +27444,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         21.25,
         22.75,
@@ -27473,7 +27473,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         25.25,
         26.75,
@@ -27502,7 +27502,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         25.25,
         26.75,
@@ -27531,7 +27531,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         25.25,
         26.75,
@@ -27560,7 +27560,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         25.25,
         26.75,
@@ -27589,7 +27589,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         25.25,
         26.75,
@@ -27676,7 +27676,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         29.25,
         30.75,
@@ -27705,7 +27705,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         29.25,
         30.75,
@@ -27734,7 +27734,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         29.25,
         30.75,
@@ -27763,7 +27763,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -27792,7 +27792,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -27821,7 +27821,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         33.25,
         34.75,
@@ -27850,7 +27850,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -27879,7 +27879,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         33.25,
         34.75,
@@ -27908,7 +27908,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -27937,7 +27937,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -27966,7 +27966,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         37.25,
         38.75,
@@ -27995,7 +27995,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -28024,7 +28024,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         37.25,
         38.75,
@@ -28053,7 +28053,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -28082,7 +28082,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -28111,7 +28111,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         41.25,
         42.75,
@@ -28140,7 +28140,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -28169,7 +28169,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897839,
+      "volume": 0.7167037157897838,
       "bounds": [
         41.25,
         42.75,
@@ -28198,7 +28198,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -28227,7 +28227,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -28256,7 +28256,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -28285,7 +28285,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -16.75,
         -15.25,
@@ -28314,7 +28314,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -28343,7 +28343,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -28372,7 +28372,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -28401,7 +28401,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -12.75,
         -11.25,
@@ -28517,7 +28517,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -8.75,
         -7.25,
@@ -28546,7 +28546,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -28575,7 +28575,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -28604,7 +28604,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -28633,7 +28633,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         -4.75,
         -3.25,
@@ -28749,7 +28749,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         -0.75,
         0.75,
@@ -28778,7 +28778,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -28807,7 +28807,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -28836,7 +28836,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897878,
+      "volume": 0.7167037157897876,
       "bounds": [
         3.25,
         4.75,
@@ -28865,7 +28865,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         3.25,
         4.75,
@@ -28894,7 +28894,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -28923,7 +28923,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -28952,7 +28952,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -28981,7 +28981,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897875,
+      "volume": 0.7167037157897874,
       "bounds": [
         7.25,
         8.75,
@@ -29097,7 +29097,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897876,
+      "volume": 0.7167037157897875,
       "bounds": [
         11.25,
         12.75,
@@ -29822,7 +29822,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         81.25,
         82.75,
@@ -29851,7 +29851,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         81.25,
         82.75,
@@ -29880,7 +29880,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         81.25,
         82.75,
@@ -29909,7 +29909,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         81.25,
         82.75,
@@ -29938,7 +29938,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         85.25,
         86.75,
@@ -29967,7 +29967,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         85.25,
         86.75,
@@ -29996,7 +29996,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         85.25,
         86.75,
@@ -30025,7 +30025,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         85.25,
         86.75,
@@ -30054,7 +30054,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         89.25,
         90.75,
@@ -30083,7 +30083,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         89.25,
         90.75,
@@ -30112,7 +30112,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         89.25,
         90.75,
@@ -30141,7 +30141,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         89.25,
         90.75,
@@ -30170,7 +30170,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         93.25,
         94.75,
@@ -30199,7 +30199,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         93.25,
         94.75,
@@ -30228,7 +30228,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         93.25,
         94.75,
@@ -30257,7 +30257,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         93.25,
         94.75,
@@ -30286,7 +30286,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         97.25,
         98.75,
@@ -30315,7 +30315,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         97.25,
         98.75,
@@ -30344,7 +30344,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         97.25,
         98.75,
@@ -30373,7 +30373,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         97.25,
         98.75,
@@ -30402,7 +30402,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         101.25,
         102.75,
@@ -30431,7 +30431,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         101.25,
         102.75,
@@ -30460,7 +30460,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.716703715789784,
+      "volume": 0.7167037157897839,
       "bounds": [
         101.25,
         102.75,
@@ -30489,7 +30489,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.7167037157897841,
+      "volume": 0.716703715789784,
       "bounds": [
         101.25,
         102.75,
@@ -30518,7 +30518,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 213.42477796076938,
+      "volume": 213.42477796076935,
       "bounds": [
         -46.0,
         -34.0,
@@ -30605,7 +30605,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 134.58796447372308,
+      "volume": 134.5879644737231,
       "bounds": [
         94.5,
         103.5,
@@ -30663,7 +30663,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 83.58796447372312,
+      "volume": 83.5879644737231,
       "bounds": [
         -16.5,
         -9.5,
@@ -31071,7 +31071,7 @@
       "faces": 150,
       "volume": 3.0799999999999867,
       "bounds": [
-        30.449999999999996,
+        30.45,
         32.45,
         29.36,
         50.64,
@@ -31102,8 +31102,8 @@
       "bounds": [
         33.36,
         54.64,
-        26.449999999999996,
-        28.450000000000003,
+        26.45,
+        28.45,
         22.0,
         22.22
       ],
@@ -31127,10 +31127,10 @@
       "null": false,
       "solids": 25,
       "faces": 150,
-      "volume": 3.079999999999986,
+      "volume": 3.07999999999999,
       "bounds": [
         55.55,
-        57.550000000000004,
+        57.55,
         29.36,
         50.64,
         22.0,
@@ -31214,7 +31214,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.942399999999981,
+      "volume": 3.94239999999998,
       "bounds": [
         71.36,
         94.64,
@@ -31243,7 +31243,7 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9423999999999833,
+      "volume": 3.942399999999985,
       "bounds": [
         68.45,
         70.45,
@@ -31272,12 +31272,12 @@
       "null": false,
       "solids": 32,
       "faces": 192,
-      "volume": 3.9423999999999806,
+      "volume": 3.942399999999981,
       "bounds": [
         71.36,
         94.64,
-        19.449999999999996,
-        21.450000000000003,
+        19.45,
+        21.45,
         22.0,
         22.22
       ],
@@ -31388,7 +31388,7 @@
       "null": false,
       "solids": 14,
       "faces": 84,
-      "volume": 1.0976000000000061,
+      "volume": 1.0976000000000063,
       "bounds": [
         63.86,
         90.14,
@@ -31562,7 +31562,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         36.0,
         37.400000000000006,
@@ -31591,7 +31591,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         39.699999999999996,
         41.1,
@@ -31620,7 +31620,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         43.4,
         44.800000000000004,
@@ -31707,7 +31707,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.557253096491488,
+      "volume": 0.5572530964914881,
       "bounds": [
         54.5,
         55.900000000000006,
@@ -31765,7 +31765,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         36.0,
         37.400000000000006,
@@ -31794,7 +31794,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         39.699999999999996,
         41.1,
@@ -31823,7 +31823,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914881,
+      "volume": 0.5572530964914882,
       "bounds": [
         43.4,
         44.800000000000004,
@@ -31910,7 +31910,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.557253096491488,
+      "volume": 0.5572530964914881,
       "bounds": [
         54.5,
         55.900000000000006,
@@ -32084,7 +32084,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 89.50555736846769,
+      "volume": 89.5055573684677,
       "bounds": [
         39.5,
         44.5,
@@ -32135,17 +32135,17 @@
       ]
     },
     {
-      "name": "CartridgeReader",
-      "label": "SATURN-0417 · Two-sided cartridge-edge connector study",
+      "name": "CartridgeReader001",
+      "label": "SATURN-0417 · Two-sided cartridge-edge connector study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 19,
-      "volume": 18984.141102509344,
+      "faces": 27,
+      "volume": 13069.640792166878,
       "bounds": [
-        -61.5,
-        61.5,
+        -41.7,
+        41.7,
         74.5,
         87.5,
         175.0,
@@ -32164,17 +32164,17 @@
       ]
     },
     {
-      "name": "CartridgeContactBank_1",
-      "label": "SATURN-0418 · Cartridge contact bank study",
+      "name": "CartridgeContactBank_001",
+      "label": "SATURN-0418 · Cartridge contact bank study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 66,
-      "faces": 396,
-      "volume": 60.403199999998655,
+      "solids": 67,
+      "faces": 402,
+      "volume": 61.31839999999891,
       "bounds": [
-        -53.9,
-        53.9,
+        -36.775,
+        36.775,
         79.97,
         80.13,
         178.0,
@@ -32193,17 +32193,17 @@
       ]
     },
     {
-      "name": "CartridgeContactBank1",
-      "label": "SATURN-0419 · Cartridge contact bank study001",
+      "name": "CartridgeContactBank001",
+      "label": "SATURN-0419 · Cartridge contact bank study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
-      "solids": 66,
-      "faces": 396,
-      "volume": 60.40319999999867,
+      "solids": 67,
+      "faces": 402,
+      "volume": 61.31839999999891,
       "bounds": [
-        -53.9,
-        53.9,
+        -36.775,
+        36.775,
         81.87,
         82.03,
         178.0,
@@ -32258,7 +32258,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.18052807105693,
+      "volume": 34.18052807105694,
       "bounds": [
         -66.4,
         -57.6,
@@ -32374,7 +32374,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.18052807105695,
+      "volume": 34.180528071056955,
       "bounds": [
         57.6,
         66.4,
@@ -32403,7 +32403,7 @@
       "null": false,
       "solids": 1,
       "faces": 22,
-      "volume": 8.686020477029643,
+      "volume": 8.686020477029645,
       "bounds": [
         60.2,
         63.8,
@@ -32490,7 +32490,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.18052807105694,
+      "volume": 34.18052807105695,
       "bounds": [
         -66.4,
         -57.6,
@@ -32577,7 +32577,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 784.3190263209406,
+      "volume": 784.3190263209405,
       "bounds": [
         58.4,
         65.6,
@@ -32606,7 +32606,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.18052807105694,
+      "volume": 34.18052807105695,
       "bounds": [
         57.6,
         66.4,
@@ -32699,8 +32699,8 @@
         66.0,
         -82.0,
         62.0,
-        72.29999999999998,
-        73.1
+        72.3,
+        73.10000000000001
       ],
       "state": [
         "Up-to-date"
@@ -32728,7 +32728,7 @@
         53.0,
         -73.5,
         55.5,
-        73.29999999999998,
+        73.3,
         74.2
       ],
       "state": [
@@ -33041,13 +33041,13 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 14.306812944447843,
+      "volume": 14.306812944447834,
       "bounds": [
         -4.0,
         4.0,
         16.0,
         24.0,
-        168.05,
+        168.04999999999998,
         168.65
       ],
       "state": [
@@ -33215,14 +33215,14 @@
       "null": false,
       "solids": 1,
       "faces": 98,
-      "volume": 140.08623774407297,
+      "volume": 140.0862377440725,
       "bounds": [
         21.979957662564804,
         24.020038108233734,
         -11.0000001,
         60.0000001,
         120.47997144998818,
-        122.52005863641149
+        122.52005863641146
       ],
       "state": [
         "Up-to-date"
@@ -33447,7 +33447,7 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.97119999999999,
+      "volume": 1.9711999999999903,
       "bounds": [
         -43.05,
         -41.05,
@@ -33476,7 +33476,7 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.9711999999999914,
+      "volume": 1.9711999999999892,
       "bounds": [
         -40.14,
         -25.86,
@@ -33505,10 +33505,10 @@
       "null": false,
       "solids": 16,
       "faces": 96,
-      "volume": 1.971199999999989,
+      "volume": 1.9711999999999925,
       "bounds": [
-        -24.950000000000003,
-        -22.949999999999996,
+        -24.95,
+        -22.95,
         -65.14,
         -50.86,
         45.1,
@@ -33650,7 +33650,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914868,
       "bounds": [
         -6.7,
         -5.3,
@@ -33679,7 +33679,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914868,
       "bounds": [
         -2.9000000000000004,
         -1.5,
@@ -33737,7 +33737,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914868,
       "bounds": [
         4.699999999999998,
         6.099999999999999,
@@ -33766,7 +33766,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         -6.7,
         -5.3,
@@ -33795,7 +33795,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         -2.9000000000000004,
         -1.5,
@@ -33824,7 +33824,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914867,
+      "volume": 0.5572530964914866,
       "bounds": [
         0.8999999999999997,
         2.3,
@@ -33882,7 +33882,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914869,
+      "volume": 0.5572530964914868,
       "bounds": [
         -6.7,
         -5.3,
@@ -33940,7 +33940,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.5572530964914868,
+      "volume": 0.5572530964914867,
       "bounds": [
         0.8999999999999997,
         2.3,
@@ -34259,7 +34259,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 604.645486677649,
+      "volume": 604.6454866776489,
       "bounds": [
         -82.4,
         -81.6,
@@ -34752,7 +34752,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 88.73814120077702,
+      "volume": 88.73814120077701,
       "bounds": [
         -81.0,
         -75.0,
@@ -34810,7 +34810,7 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 18.76309120123209,
+      "volume": 18.763091201232093,
       "bounds": [
         -104.4200001,
         -94.2799999,
@@ -34926,7 +34926,7 @@
       "null": false,
       "solids": 1,
       "faces": 12,
-      "volume": 859.1860357071429,
+      "volume": 859.1860357071428,
       "bounds": [
         -80.0,
         80.0,
@@ -35245,7 +35245,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 2.3503040039668797,
+      "volume": 2.3503040039668806,
       "bounds": [
         -84.8,
         -84.45,
@@ -35274,7 +35274,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 2.3503040039668797,
+      "volume": 2.3503040039668806,
       "bounds": [
         84.8,
         85.14999999999999,
@@ -35390,7 +35390,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 230.94172009607132,
+      "volume": 230.94172009607126,
       "bounds": [
         -80.0,
         -79.4,
@@ -35506,7 +35506,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 2.0624785195749706,
+      "volume": 2.0624785195749675,
       "bounds": [
         44.851416089307094,
         49.14858391069289,
@@ -35738,7 +35738,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 4.280308337277144,
+      "volume": 4.2803083372771455,
       "bounds": [
         5.999984407793968,
         10.000015592206163,
@@ -36260,7 +36260,7 @@
       "null": false,
       "solids": 1,
       "faces": 131,
-      "volume": 20411.01992209539,
+      "volume": 20411.019922095395,
       "bounds": [
         -75.0000001,
         75.0000001,
@@ -36318,7 +36318,7 @@
       "null": false,
       "solids": 4,
       "faces": 20,
-      "volume": 0.15299999999995376,
+      "volume": 0.15299999999995348,
       "bounds": [
         -51.96015510839149,
         -30.039844891608514,
@@ -36492,7 +36492,7 @@
       "null": false,
       "solids": 1,
       "faces": 20,
-      "volume": 0.03684913539400894,
+      "volume": 0.03684913539400893,
       "bounds": [
         55.21707204765101,
         57.48972325436242,
@@ -36550,7 +36550,7 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 0.039695961708841355,
+      "volume": 0.03969596170884136,
       "bounds": [
         19.115142617449663,
         21.527474832214764,
@@ -36608,7 +36608,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 0.029682161382073507,
+      "volume": 0.02968216138207351,
       "bounds": [
         32.99244966442953,
         35.3689177852349,
@@ -36724,10 +36724,10 @@
       "null": false,
       "solids": 5,
       "faces": 88,
-      "volume": 0.08706970289903623,
+      "volume": 0.08706970289903625,
       "bounds": [
         -5.33011754966443,
-        2.460318791946309,
+        2.4603187919463094,
         -299.5375839926175,
         -297.5885905040268,
         296.0499999,
@@ -36784,7 +36784,7 @@
       "faces": 11,
       "volume": 991.6977054525483,
       "bounds": [
-        -57.500000100000015,
+        -57.50000010000001,
         -26.499999899999995,
         -262.5000001,
         -253.4999999,
@@ -36814,7 +36814,7 @@
       "volume": 991.6976417670203,
       "bounds": [
         26.499999899999995,
-        57.5000001,
+        57.50000010000001,
         -262.5000001,
         -253.4999999,
         290.69999989999997,
@@ -36875,7 +36875,7 @@
         -24.5,
         -310.5,
         -277.5,
-        49.5,
+        49.49999999999999,
         53.3
       ],
       "state": [
@@ -36898,13 +36898,13 @@
       "null": false,
       "solids": 1,
       "faces": 58,
-      "volume": 1573.432339628627,
+      "volume": 1573.4323396286272,
       "bounds": [
         11.9999999,
         65.0000001,
         -320.0000001,
         -255.9999999,
-        49.4999999,
+        49.49999989999999,
         53.3
       ],
       "state": [
@@ -36927,13 +36927,13 @@
       "null": false,
       "solids": 1,
       "faces": 16,
-      "volume": 104.85388232167088,
+      "volume": 104.8538823216709,
       "bounds": [
         -8.0,
         8.0,
         -310.5,
         -300.5,
-        49.5,
+        49.49999999999999,
         53.3
       ],
       "state": [
@@ -37623,7 +37623,7 @@
       "null": false,
       "solids": 6,
       "faces": 77,
-      "volume": 0.03574311381300443,
+      "volume": 0.03574311381300442,
       "bounds": [
         -3.0482383550335572,
         2.4822316436241603,
@@ -37652,7 +37652,7 @@
       "null": false,
       "solids": 4,
       "faces": 24,
-      "volume": 0.27647999999999695,
+      "volume": 0.276479999999997,
       "bounds": [
         -2.5,
         2.769999999999999,
@@ -37681,7 +37681,7 @@
       "null": false,
       "solids": 4,
       "faces": 24,
-      "volume": 0.27647999999999695,
+      "volume": 0.276479999999997,
       "bounds": [
         -2.5,
         2.769999999999999,
@@ -37739,7 +37739,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897755,
+      "volume": 0.6207037157897753,
       "bounds": [
         -11.15,
         -9.85,
@@ -37797,7 +37797,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897753,
+      "volume": 0.6207037157897752,
       "bounds": [
         -4.15,
         -2.8499999999999996,
@@ -37826,7 +37826,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897753,
+      "volume": 0.6207037157897752,
       "bounds": [
         -0.65,
         0.65,
@@ -37855,7 +37855,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897755,
+      "volume": 0.6207037157897753,
       "bounds": [
         2.8499999999999996,
         4.15,
@@ -37884,7 +37884,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897753,
+      "volume": 0.6207037157897752,
       "bounds": [
         6.35,
         7.65,
@@ -37913,7 +37913,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.6207037157897755,
+      "volume": 0.6207037157897753,
       "bounds": [
         9.85,
         11.15,
@@ -38232,7 +38232,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 15.746552382674496,
+      "volume": 15.746552382674494,
       "bounds": [
         -119.1800001,
         -102.0699999,
@@ -38261,7 +38261,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 16.458169906812497,
+      "volume": 16.458169906812476,
       "bounds": [
         -119.6800001,
         -100.1699999,
@@ -38290,7 +38290,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 17.17152139960124,
+      "volume": 17.17152139960123,
       "bounds": [
         -120.1800001,
         -98.2699999,
@@ -38348,7 +38348,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 18.60115194576071,
+      "volume": 18.601151945760705,
       "bounds": [
         -121.1800001,
         -94.4699999,
@@ -38464,7 +38464,7 @@
       "null": false,
       "solids": 1,
       "faces": 14,
-      "volume": 150.52500000000225,
+      "volume": 150.52500000000208,
       "bounds": [
         -9.5,
         5.5,
@@ -38638,7 +38638,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 17.32966212249652,
+      "volume": 17.329662122496522,
       "bounds": [
         38.64097000104498,
         107.96000009999999,
@@ -38667,7 +38667,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 4.956067662109309,
+      "volume": 4.956067662109305,
       "bounds": [
         -47.730000100000005,
         -14.369999899999998,
@@ -38725,7 +38725,7 @@
       "null": false,
       "solids": 1,
       "faces": 13,
-      "volume": 6.302410689876631,
+      "volume": 6.30241068987663,
       "bounds": [
         -12.630000100000002,
         46.5300001,
@@ -38783,7 +38783,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 4.71051179808031,
+      "volume": 4.710511798080308,
       "bounds": [
         -8.130000100000002,
         15.467739592469384,
@@ -38812,7 +38812,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 6.01628773137525,
+      "volume": 6.016287731375249,
       "bounds": [
         17.21855779602083,
         78.13000009999999,
@@ -38870,7 +38870,7 @@
       "null": false,
       "solids": 1,
       "faces": 11,
-      "volume": 5.958988954840854,
+      "volume": 5.9589889548408514,
       "bounds": [
         18.222129469923697,
         78.93000009999999,
@@ -39073,9 +39073,9 @@
       "null": false,
       "solids": 1,
       "faces": 7,
-      "volume": 1.3509682846790403,
+      "volume": 1.35096828467904,
       "bounds": [
-        0.2599999000000009,
+        0.25999990000000095,
         0.7700000999999996,
         -270.0,
         -244.0,
@@ -39276,7 +39276,7 @@
       "null": false,
       "solids": 1,
       "faces": 19,
-      "volume": 1348.0710250169102,
+      "volume": 1348.0710250169097,
       "bounds": [
         197.4,
         208.4,
@@ -39334,7 +39334,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293857,
+      "volume": 0.41536460032938566,
       "bounds": [
         201.0,
         207.0,
@@ -39363,7 +39363,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.4153646003293856,
       "bounds": [
         201.0,
         207.0,
@@ -39392,7 +39392,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293857,
+      "volume": 0.41536460032938566,
       "bounds": [
         201.0,
         207.0,
@@ -39421,7 +39421,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.4153646003293856,
       "bounds": [
         201.0,
         207.0,
@@ -39479,7 +39479,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293857,
+      "volume": 0.41536460032938566,
       "bounds": [
         201.0,
         207.0,
@@ -39508,7 +39508,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.4153646003293857,
+      "volume": 0.41536460032938566,
       "bounds": [
         201.0,
         207.0,
@@ -39537,7 +39537,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.4153646003293856,
       "bounds": [
         201.0,
         207.0,
@@ -39566,7 +39566,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.41536460032938566,
+      "volume": 0.4153646003293856,
       "bounds": [
         201.0,
         207.0,
@@ -39595,7 +39595,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 49.486367479345404,
+      "volume": 49.486367479345745,
       "bounds": [
         -59.1,
         -22.9,
@@ -39711,7 +39711,7 @@
       "null": false,
       "solids": 1,
       "faces": 9,
-      "volume": 1935.1652053436046,
+      "volume": 1935.165205343605,
       "bounds": [
         168.1999999,
         271.80000010000003,
@@ -39733,19 +39733,19 @@
       ]
     },
     {
-      "name": "ACDeviceGrip",
-      "label": "SATURN-0679 · Figure-eight connector grip",
+      "name": "ACDeviceGrip001",
+      "label": "SATURN-0679 · Figure-eight connector grip001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 2865.492915845667,
+      "volume": 4545.492915845667,
       "bounds": [
         218.0,
         242.0,
-        14.0,
-        26.0,
+        10.5,
+        29.5,
         3.0,
         13.0
       ],
@@ -39762,21 +39762,21 @@
       ]
     },
     {
-      "name": "ACDeviceHead",
-      "label": "SATURN-0680 · C7-style two-position connector study",
+      "name": "ACDeviceHead001",
+      "label": "SATURN-0680 · C7-style two-position connector study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 12,
-      "volume": 864.139798258952,
+      "faces": 10,
+      "volume": 862.9955513905195,
       "bounds": [
-        207.8,
-        217.8,
-        12.7,
-        27.3,
-        4.0,
-        12.0
+        207.29999990000002,
+        217.8000001,
+        11.9999999,
+        28.0000001,
+        4.0749999,
+        11.9250001
       ],
       "state": [
         "Up-to-date"
@@ -39791,21 +39791,21 @@
       ]
     },
     {
-      "name": "ACDeviceContact0",
-      "label": "SATURN-0681 · Device mains socket contact",
+      "name": "ACDeviceContact001",
+      "label": "SATURN-0681 · Device mains socket contact001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 9.613273519984762,
+      "volume": 11.074114103904023,
       "bounds": [
         209.5,
         215.5,
-        15.7,
-        17.7,
-        7.0,
-        9.0
+        14.399999999999999,
+        17.0,
+        6.7,
+        9.3
       ],
       "state": [
         "Up-to-date"
@@ -39820,21 +39820,21 @@
       ]
     },
     {
-      "name": "ACDeviceContact1",
-      "label": "SATURN-0682 · Device mains socket contact001",
+      "name": "ACDeviceContact002",
+      "label": "SATURN-0682 · Device mains socket contact002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 9.613273519984762,
+      "volume": 11.074114103904012,
       "bounds": [
         209.5,
         215.5,
-        22.3,
-        24.3,
-        7.0,
-        9.0
+        23.0,
+        25.6,
+        6.7,
+        9.3
       ],
       "state": [
         "Up-to-date"
@@ -39878,21 +39878,21 @@
       ]
     },
     {
-      "name": "AVPlugShield",
-      "label": "SATURN-0684 · AV plug metal sleeve",
+      "name": "AVPlugShield002",
+      "label": "SATURN-0684 · AV plug metal sleeve002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 215.33732684765835,
+      "faces": 10,
+      "volume": 59.17898076730941,
       "bounds": [
-        164.5,
-        175.5,
+        165.25,
+        174.75,
         -2.7,
-        5.7,
-        2.5,
-        13.5
+        5.700000000000001,
+        3.5999999999999996,
+        12.69041575982343
       ],
       "state": [
         "Up-to-date"
@@ -39907,21 +39907,21 @@
       ]
     },
     {
-      "name": "AVPlugCarrier",
-      "label": "SATURN-0685 · AV plug contact insulator",
+      "name": "AVPlugCarrier002",
+      "label": "SATURN-0685 · AV plug contact insulator002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 17,
-      "volume": 151.42138609647373,
+      "faces": 22,
+      "volume": 144.95709577079552,
       "bounds": [
         165.62205,
         174.37795,
         -2.6,
-        0.3999999999999999,
-        3.5999999999999996,
-        12.4
+        0.40000000000000036,
+        4.0,
+        12.335608377148471
       ],
       "state": [
         "Up-to-date"
@@ -40146,7 +40146,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         166.6,
         167.4,
@@ -40175,7 +40175,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         169.6,
         170.4,
@@ -40204,7 +40204,7 @@
       "null": false,
       "solids": 1,
       "faces": 3,
-      "volume": 2.965663464988761,
+      "volume": 2.9656634649887605,
       "bounds": [
         172.6,
         173.4,
@@ -40262,7 +40262,7 @@
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 1111.4159265358978,
+      "volume": 1111.4159265358976,
       "bounds": [
         253.0,
         267.0,
@@ -40755,7 +40755,7 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 29.153665666047935,
+      "volume": 29.15366566604794,
       "bounds": [
         173.0,
         207.0,
@@ -44409,7 +44409,7 @@
     ]
   },
   "fidelity": "Approximate original HST-3200 exterior and schematic internals; family envelope is a study reference",
-  "source_digest": "0beccc213a681e8a0045643f12cf63e4aef5c2f5500ba32c079a64778c479d01",
+  "source_digest": "5ecc6c1e0acf9675eec34f87a9e0b783764b7d9ac1c48e087f96864221ac1afd",
   "main_step_file": "Saturn_Console.step",
   "envelope_groups": [
     "Body",

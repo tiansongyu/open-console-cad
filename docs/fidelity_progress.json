@@ -552,7 +552,8 @@
           "WRAMText"
         ],
         "inconclusive_parts": []
-      }
+      },
+      "last_pushed_commit": "32753d6"
     },
     {
       "order": 9,
@@ -1089,8 +1090,8 @@
       "order": 18,
       "device": "saturn",
       "model": "HST-3200 · 初代日版灰色",
-      "status": "pending",
-      "current_step": null,
+      "status": "completed",
+      "current_step": "validated_iteration_23",
       "baseline": {
         "iterations": 22,
         "physical_components": 715,
@@ -1118,11 +1119,26 @@
           "Schematic internal layout": 582
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/saturn/references/fidelity_iteration23.json"
+      ],
+      "changes": [
+        "Corrected original cartridge connector to two67-contact banks at1mm pitch with keyed separation",
+        "Matched C7/C8 power connector at8.6mm contact spacing and16x7.85mm nominal plug profile",
+        "Calibrated original rear power mounting plate, keyed mini-DIN interface and shell overlap lip"
+      ],
+      "validation": {
+        "report": "devices/saturn/output/reports/fidelity_delivery.json",
+        "source_sha256": "cad51a9ff3440e3217af49124da7ea0ab7d9b284547e8d191bd90d56691db5cb",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Body curves, side/front details and graphics remain photographic estimates.",
+        "Primary working PCB establishes mating card geometry, not the original connector supplier or spring form.",
+        "The off-standard mini-DIN contact positions and local key clearances require physical metrology for a factory-equivalent model.",
+        "Controller interface pitch and C8 pin diameter remain explicit study dimensions; this model is not manufacturing or electrical documentation."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "5cc505b1e54c205aa9531b95a37e27b1a90da245c5bcb73071ced513ed167020",

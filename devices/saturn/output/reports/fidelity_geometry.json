@@ -1,0 +1,41 @@
+{
+  "device": "saturn",
+  "iteration": 23,
+  "source_sha256": "cad51a9ff3440e3217af49124da7ea0ab7d9b284547e8d191bd90d56691db5cb",
+  "module_sha256": {
+    "tools/cadlib/saturn.py": "1bfbbf53cad130e5a696bc4f587cfce3cd2adee0b4404e75d86d7bc4f23be8b8",
+    "tools/cadlib/fidelity_saturn.py": "0c83ce3a098412c96a4df5f197ee2e5f9d30bfcfb34958e36aaeeab35ea0802f",
+    "devices/saturn/scripts/iter23_keyed_134_contact_cartridge_and_original_rear_interfaces.py": "384b050f92f16bd2ab19298205012020799ba91173848d5859f3051bc0dc184b"
+  },
+  "checks": {
+    "strict_saved_brep": true,
+    "components": true,
+    "part_ids_and_numbers": true,
+    "contacts_67_-1": true,
+    "contact_centres_-1": true,
+    "contacts_67_1": true,
+    "contact_centres_1": true,
+    "cartridge_locating_key": true,
+    "cartridge_left_tab_clear": true,
+    "cartridge_right_tab_clear": true,
+    "case_overlap_lip": true,
+    "reader_width": true,
+    "C8_pitch": true,
+    "C7_pitch": true,
+    "C7_nose_width": true,
+    "C7_nose_height": true,
+    "C7_contacts_clear_male_pin": true,
+    "inlet_T_stem": true,
+    "inlet_lower_fixing": true,
+    "mini_DIN_male_diameter": true,
+    "mini_DIN_continuous_sleeve": true,
+    "socket_key": true,
+    "male_key_slot": true,
+    "male_flat_wall": true,
+    "matched_controller_pitch_1": true,
+    "matched_controller_pitch_2": true
+  },
+  "strict_brep_errors": [],
+  "passed": true,
+  "factory_match_verified": false
+}

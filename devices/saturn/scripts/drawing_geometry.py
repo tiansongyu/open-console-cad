@@ -16,11 +16,11 @@ s=d.Sheet(1,'日版初代灰色主机总装与近似尺寸',['HST-3200 采用灰
 v=s.view_fit('ConsoleIsometric',body,(18,29,173,153),(.5,-1.6,1.25));caption(s,v,'灰色外壳与原始控制布局',208)
 v=s.view_fit('ConsoleTop',body,(225,35,150,145),(0,0,1));d.dimension_box(s,v,['LowerHousing','UpperHousing'],'x',20);d.dimension_box(s,v,['LowerHousing','UpperHousing'],'y',214);caption(s,v,'保存模型的宽度与深度',208);s.save()
 
-s=d.Sheet(2,'原始前后接口与服务盖',['前侧保留两组手柄端口，后侧包括上壳电源座、AV、通信接口与可拆电池扩展盖。','插头、弹性触点、绝缘载体与金属套分开建模；接点和孔位是模型学习几何，不定义原厂引脚电路。'])
+s=d.Sheet(2,'原始前后接口与服务盖',['前侧保留两组手柄端口，后侧包括上壳电源座、AV、通信接口与可拆电池扩展盖。','第 23 轮补齐原版电源 T 形板和 mini-DIN 防呆键；C7/C8 接点间距为 8.6 mm，局部轮廓仍为估计。'])
 v=s.view_fit('ConsoleFront',body,(24,28,166,72),(0,-1,0),up);d.dimension_box(s,v,['LowerHousing','UpperHousing','Foot0','Foot1','Foot2','Foot3'],'y',14);caption(s,v,'双手柄接口与前部控制',119)
 v=s.view_fit('ConsoleRear',body,(224,28,161,72),(0,1,0),up);caption(s,v,'后部连接与维修开口',119)
 v=s.view_fit('ControllerPort',starts('ControllerPort1','ControllerTongue1','ControllerContact1'),(27,151,153,42),(0,-1,0),up);caption(s,v,'单排九接点手柄端口',211)
-v=s.view_fit('AVSocket',starts('AVShell','AVCarrier','AVContact'),(257,142,93,61),(0,1,0),up);caption(s,v,'十接点 AV 连接器',211);s.save()
+v=s.view_fit('AVSocket',starts('AVShell','AVCarrier','AVContact'),(257,142,93,61),(0,1,0),up);caption(s,v,'带方向键的十接点 AV 连接器',211);s.save()
 
 s=d.Sheet(3,'原版六键手柄的曲面外壳',['HSS-0101 选择原始灰色外观，ABC 为黑色，XYZ 与 START 为蓝色，并保留左右肩键和圆盘十字键。','前后壳由原生样条截面放样建立；外形、壁厚、孔位与下面的测量值均为学习近似。'])
 v=s.view_fit('PadFront',pad,(26,28,201,146),(0,0,1));d.dimension_box(s,v,['PadBack','PadFront'],'x',20);d.dimension_box(s,v,['PadBack','PadFront'],'y',15);caption(s,v,'灰色六键手柄正面',207)
@@ -32,7 +32,7 @@ v=s.view_fit('LidGearTrain',starts('LidSector','LidDamping','LidGearBracket','Li
 v=s.view_fit('LidSpring',['LidHingePin1','LidReturnSpring','LidHingeWasher1'],(238,30,137,69),(.3,-1,1),up);caption(s,v,'右侧钢轴与回位弹簧',129)
 keys=without(starts('OpenLatch','OpenReturn','OpenSpring','OpenBracket','DoorSense'),'Lead')
 v=s.view_fit('ReleaseMechanism',keys,(38,150,131,45),(.6,-1,1.2),up);caption(s,v,'导向、锁扣与检测开关',211)
-v=s.view_fit('CartridgeDoor',['CartridgeFlap0','CartridgeDeck','CartridgeHingePin','CartridgeSpring'],(225,150,150,24),(0,0,1));d.dimension_box(s,v,['CartridgeFlap0'],'x',142);caption(s,v,'整片卡槽防尘门',184)
+v=s.view_fit('CartridgeDoor',['CartridgeReader','CartridgeContactBank-1','CartridgeContactBank1'],(225,150,150,24),(0,0,1));d.dimension_box(s,v,['CartridgeReader'],'x',142);caption(s,v,'双面 67 位卡座与偏置防呆键',184)
 v=s.view_fit('CartridgeSpringDetail',['CartridgeSpring'],(312,190,50,14),(.3,-1,1),up);caption(s,v,'右侧回位弹簧',211);s.save()
 
 s=d.Sheet(5,'主机与手柄的真实实体剖面',['本页将交付的实际三维 BRep 与指定 Y 平面相交，填充只表示真正切到的材料。','主机截面说明上壳电源、屏蔽与光驱的高度关系，手柄截面说明曲面壳、输入件与电路板。'])
@@ -79,8 +79,8 @@ s.text(12,211,f"合计 {M['physical_components']} 个组件条目 / {M['solids']
 s=d.Sheet(12,'版本依据、近似边界与重建入口',['外观选择日版灰色 HST-3200 与灰色 HSS-0101 六键手柄，保留原版控制与接口家族。','图册是保存模型的版本快照；改变三维实体后，需要同步生成投影、尺寸、验证记录和网页。'])
 sections=[(16,'资料与版本',['世嘉官方家族及周边资料：型号、接口和原始配件类别。','Dig and Rescue：HST-3200 及 HSS-0101 实物拆解。','手柄内构照片含浅色家族版本，外观依据原始灰色照片。']),
  (67,'近似与内容边界',['HST-3210 的 260 × 230 × 83 mm 仅作为家族包络参考。','本 HST-3200 模型的局部尺寸、引脚、机构与线束均为学习近似。','未复现生产电路、制造公差、光盘数据或经过验证的运动。']),
- (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'完整重建、严格实体、装配求交与 STEP 回读分别记录。','字体、内容、每页视觉和原生尺寸引用随交付一并检查。']),
- (169,'继续修改的入口',['资料：references/SOURCES.md；清单：output/COMPONENTS.csv。','主要源码：tools/cadlib/saturn.py；逐轮入口：scripts/。','检查：output/reports/；修改后同步更新 CAD、图纸与网页。'])]
+ (118,'可核对的检查记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'本轮保存实体检查与历史空文档重建分别标记适用版本。','字体、内容、每页视觉和原生尺寸引用随交付一并检查。']),
+ (169,'继续修改的入口',['资料：references/fidelity_iteration23.json 与 SOURCES.md。','主要源码：tools/cadlib/saturn.py；逐轮入口：scripts/。','检查：output/reports/；修改后同步更新 CAD、图纸与网页。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)

@@ -1,0 +1,74 @@
+{
+  "device": "saturn",
+  "iteration": 23,
+  "date": "2026-11-08",
+  "source_sha256": "cad51a9ff3440e3217af49124da7ea0ab7d9b284547e8d191bd90d56691db5cb",
+  "physical_components": 715,
+  "solids": 2560,
+  "preserved_part_ids_and_numbers": 715,
+  "new_components": 0,
+  "module_sha256": {
+    "tools/cadlib/saturn.py": "1bfbbf53cad130e5a696bc4f587cfce3cd2adee0b4404e75d86d7bc4f23be8b8",
+    "tools/cadlib/fidelity_saturn.py": "0c83ce3a098412c96a4df5f197ee2e5f9d30bfcfb34958e36aaeeab35ea0802f",
+    "devices/saturn/scripts/iter23_keyed_134_contact_cartridge_and_original_rear_interfaces.py": "384b050f92f16bd2ab19298205012020799ba91173848d5859f3051bc0dc184b"
+  },
+  "checks": {
+    "fidelity_geometry": {
+      "report": "fidelity_geometry.json",
+      "passed": true,
+      "sha256": "d8fa6a56f50154c4cae0f4a6954eb01ddc5462952714318baedf4e63f10f8e59"
+    },
+    "fidelity_interference": {
+      "report": "fidelity_interference.json",
+      "passed": true,
+      "sha256": "f03bd2d453dadb2dbb585f11dd3b392fd2378f66324ca1e239675dcd7057a808"
+    },
+    "export_roundtrip_audit": {
+      "report": "export_roundtrip_audit.json",
+      "passed": true,
+      "sha256": "348daa6949e429c0fb58fd939f36f001295d35578f8f0316b19709b5760a02eb"
+    },
+    "fidelity_pdf_review": {
+      "report": "fidelity_pdf_review.json",
+      "passed": true,
+      "sha256": "5ca546a0645bf1802024ca10453d4606c33237247214a19c17553a6db2033c37"
+    },
+    "fidelity_exterior_review": {
+      "report": "fidelity_exterior_review.json",
+      "passed": true,
+      "sha256": "7cdf10e42623fe9c93a29ffca3d67c5949450f99fca8dba4f070f4ee44a57e18"
+    },
+    "native_drawings_audit": {
+      "report": "native_drawings_audit.json",
+      "passed": true,
+      "sha256": "fd8dbd8e1d5d1539d58095fced4bda880b8c2b3ec96c9c667bfdaa677743ddef"
+    },
+    "native_drawings_reload": {
+      "report": "native_drawings_reload.json",
+      "passed": true,
+      "sha256": "30ba6d28719f93af79d8dbeccca3d697d7cac607969bde965bf91d84f9c39fa2"
+    },
+    "fidelity_glb_validation": {
+      "report": "fidelity_glb_validation.json",
+      "passed": true,
+      "sha256": "d272a6198984ff0a4b02e54a6933b9e2d991731e9ea5aeafd6e95c79ea01d114"
+    },
+    "fidelity_web_checks": {
+      "report": "fidelity_web_checks.json",
+      "passed": true,
+      "sha256": "3c87bbba880f03da7521e1b86824daa32d247e5dc39fbe4816a847168454c4ca"
+    }
+  },
+  "web_source_and_hash_match": true,
+  "gzip_lossless": true,
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Appended stage 23 to saved stage 22 native history. Rebuild macro includes the new stage; not rerun from an empty document.",
+  "factory_match_verified": false,
+  "remaining_uncertainties": [
+    "Body curves, side/front details and graphics remain photographic estimates.",
+    "Primary working PCB establishes mating card geometry, not the original connector supplier or spring form.",
+    "The off-standard mini-DIN contact positions and local key clearances require physical metrology for a factory-equivalent model.",
+    "Controller interface pitch and C8 pin diameter remain explicit study dimensions; this model is not manufacturing or electrical documentation."
+  ],
+  "passed": true
+}

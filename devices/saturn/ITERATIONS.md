@@ -133,3 +133,9 @@
 移开第二根电源开关线与第一根下降弯管的局部相交，保留端头位置及相邻板件间隙。
 
 [源码](scripts/iter22_power_switch_bend_final_clearance.py) · [记录](output/reports/22_power_switch_bend_final_clearance.json)
+
+## 23 · keyed_134_contact_cartridge_and_original_rear_interfaces
+
+卡座按原始可制造 PCB 改为 134 位、1 mm 节距和偏置防呆键；后电源 T 形面板及下侧固定点与 HST-3200 实机图对照。C7/C8 配对端采用 8.6 mm 间距，mini-DIN 插头采用 9.5 mm 套筒和匹配键槽，手柄接口与既有插头采用一致的示意节距。局部壳形和间隙仍为估计。本轮追加原生历史，未从空文档重建。
+
+[源码](scripts/iter23_keyed_134_contact_cartridge_and_original_rear_interfaces.py) · [证据](references/fidelity_iteration23.json) · [交付检查](output/reports/fidelity_delivery.json)

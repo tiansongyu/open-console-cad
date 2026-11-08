@@ -2,7 +2,9 @@
 
 日版初代灰色 Sega Saturn 的 FreeCAD 结构学习模型，包含 **原版 HSS-0101 六键手柄、电源线、AV 连接线和空白 12 cm 光盘**。提供完整工程、分层爆炸、彩色 STEP、12 页 A3 图纸和十六种交互视图。
 
-模型包含 **715 个组件条目、2,558 个实体与 22 轮建模源码**。组件条目与实体数量分开统计；一个组件可包含多枚触点或文字实体。
+模型包含 **715 个组件条目、2,560 个实体与 23 轮建模源码**。组件条目与实体数量分开统计；一个组件可包含多枚触点或文字实体。
+
+第 23 轮按可制造的 Saturn 卡带 PCB，将卡座修正为双面各 67 接点、1 mm 节距及 36/31 防呆分段。后部电源面板改为实机的 T 形轮廓，C7/C8 插头和入口统一为 8.6 mm 接点间距；mini-DIN 插头套筒改为 9.5 mm，并补上配对方向键。接口外形、局部间隙、C8 针径和手柄节距仍有估计，见[本轮证据和边界](references/fidelity_iteration23.json)。
 
 [在线 3D](https://tiansongyu.github.io/open-console-cad/?device=saturn&view=assembled#viewer) · [光驱机构](https://tiansongyu.github.io/open-console-cad/?device=saturn&view=optical#viewer) · [原版手柄](https://tiansongyu.github.io/open-console-cad/?device=saturn&view=controller#viewer) · [A3 图册](output/drawings/Saturn_Drawings.pdf)
 
@@ -35,15 +37,16 @@
 
 使用 FreeCAD 1.1.3 打开工程，或运行 [Open_Saturn.FCMacro](Open_Saturn.FCMacro) 打开完整装配、爆炸模型和原生图纸。通过装配分组切换可见性，并查看原生草图和加工历史。
 
-保留仓库结构，运行 [Rebuild_Saturn.FCMacro](Rebuild_Saturn.FCMacro)，可按 22 轮源码重新生成 CAD / STEP，结果写入 `output/rebuilt/`。图纸和网页网格按仓库 [README](../../README.md) 的交付流程另行更新。主要源码为 [saturn.py](../../tools/cadlib/saturn.py)。
+保留仓库结构，运行 [Rebuild_Saturn.FCMacro](Rebuild_Saturn.FCMacro)，可按 23 轮源码重新生成 CAD / STEP，结果写入 `output/rebuilt/`。图纸和网页网格按仓库 [README](../../README.md) 的交付流程另行更新。主要源码为 [saturn.py](../../tools/cadlib/saturn.py)。
 
 ## 验证范围
 
-- [完整源码重建](output/reports/rebuild_verification.json)：新工程执行全部源码，并逐组件核对有效性、实体数量、边界和体积。
-- [严格 BRep](output/reports/strict_bop_audit.json) · [装配求交](output/reports/final_interference_audit.json)：检查当前学习模型的实体及装配间隙。
+- [当前校正与交付](output/reports/fidelity_delivery.json)：在第 22 轮保存工程上追加第 23 轮，保留原有 ID 和编号；本轮未从空文档重跑。
+- [历史源码重建](output/reports/rebuild_verification.json)：第 22 轮以前的独立重建与逐组件核验。
+- [严格 BRep](output/reports/fidelity_geometry.json) · [装配求交](output/reports/fidelity_interference.json)：检查当前学习模型的实体及装配间隙。
 - [原生与 STEP 回读](output/reports/export_roundtrip_audit.json)：两份原生装配、三份 STEP 逐实体匹配，数值积分差异经双向布尔差集确认。
 - [图纸尺寸](output/reports/drawing_checks.json) · [原生图页](output/reports/native_drawings_audit.json) · [保存后重开](output/reports/native_drawings_reload.json)。
-- [图册视觉检查](output/reports/visual_acceptance.json) · [独立复核](output/reports/independent_pdf_review.json) · [网页预览检查](output/reports/web_preview_checks.json)。
+- [当前图册审阅](output/reports/fidelity_pdf_review.json) · [整机视图对照](output/reports/fidelity_exterior_review.json)。
 
 检查结果对应当前保存的模型与交付文件；修改几何后需重新生成并检查。建模通过 neka-nat/freecad-mcp 在 FreeCAD 主线程执行，网页网格直接由组件 BRep 导出。
 

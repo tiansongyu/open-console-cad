@@ -1,0 +1,107 @@
+{
+  "device": "saturn",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 674,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "components": 580,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 557,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 580,
+      "passed": true
+    },
+    {
+      "view": "controller",
+      "components": 94,
+      "passed": true
+    },
+    {
+      "view": "controller-internal",
+      "components": 56,
+      "passed": true
+    },
+    {
+      "view": "controller-exploded",
+      "components": 69,
+      "passed": true
+    },
+    {
+      "view": "inputs",
+      "components": 25,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "components": 288,
+      "passed": true
+    },
+    {
+      "view": "cd-subsystem",
+      "components": 44,
+      "passed": true
+    },
+    {
+      "view": "optical",
+      "components": 53,
+      "passed": true
+    },
+    {
+      "view": "lid-mechanism",
+      "components": 25,
+      "passed": true
+    },
+    {
+      "view": "cartridge",
+      "components": 7,
+      "passed": true
+    },
+    {
+      "view": "power",
+      "components": 31,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 41,
+      "passed": true
+    },
+    {
+      "view": "fullkit",
+      "components": 715,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/saturn/output/Saturn_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/saturn/output/drawings/Saturn_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/saturn.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "cad51a9ff3440e3217af49124da7ea0ab7d9b284547e8d191bd90d56691db5cb",
+  "glb_sha256": "e7ce0fb8bf5f8661adbdde3982bd9d37729d28a7a8f7ba6adaa34833559c1b4c",
+  "test_date": "2026-11-08",
+  "scope": "All configured viewer modes, visible part counts, gallery images, download targets, keyboard explosion slider",
+  "console_errors": []
+}
