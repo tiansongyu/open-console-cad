@@ -616,8 +616,12 @@ def finalize(model):
     Part.setStaticValue('write.surfacecurve.mode',1)
     try:
         result=shared_finalize(model)
+        model.snapshot('final_internal',normal=model.profile.get('internal_normal',(.2,-.6,1.7)),assemblies=model.profile['internal_groups'],exclude=model.profile.get('internal_exclude',[])+['FlapInstruction','FlapArrow'])
         model.snapshot('final_front',normal=(.3,-1.2,.8),assemblies=model.profile['envelope_groups'])
         model.snapshot('final_controller',normal=(.15,-.3,2),assemblies=['Controller1'],exclude=[k for k in model.parts if k.startswith(('Pad1Cable','Pad1Plug','Pad1Strain'))])
         model.snapshot('final_hero',normal=(.25,-.7,1.8),assemblies=result[0]['handheld_groups'])
         model.doc.save();return result
     finally:Part.setStaticValue('write.surfacecurve.mode',previous)
+
+from .fidelity_sfc import stage22
+STAGES[22] = stage22

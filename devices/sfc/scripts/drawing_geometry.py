@@ -14,9 +14,9 @@ body=d.keys_for(M['envelope_groups']);pad=without(d.keys_for(['Controller1']),'P
 
 s=d.Sheet(1,'日版 SHVC-001 原版外壳与名义包络',['选择早期 SHVC-CPU-01 与独立 SHVC-SOUND，保留浅灰曲面外壳和独立深灰顶面板。','200 × 242 × 74 mm 依据日版说明书规格；局部曲率、壁厚、孔位及机构尺寸为近似。'])
 v=s.view_fit('ConsoleIso',body,(18,29,181,157),(.35,-1.0,1.2));caption(s,v,'原版 POWER / EJECT / RESET 布局',210)
-v=s.view_fit('ConsoleTop',body,(230,34,150,145),(0,0,1));d.dimension_box(s,v,['BottomShell'],'x',20,published=True);d.dimension_box(s,v,body,'y',215,published=True);caption(s,v,'日版原机顶面与名义尺寸',210);s.save()
+v=s.view_fit('ConsoleTop',body,(230,34,150,145),(0,0,1));d.dimension_box(s,v,['BottomShell'],'x',20,published=True);d.dimension_box(s,v,['BottomShell'],'y',215,published=True);caption(s,v,'日版原机顶面与名义尺寸',210);s.save()
 
-s=d.Sheet(2,'双手柄接口与原版后部连接区',['前面板保留两只七触点控制器插座，底部具有独立可拆的 28 接点扩展口盖。','背面按原版照片布置 MULTI OUT、RF OUT、CH1/CH2 与 DC IN；各连接器接点独立。'])
+s=d.Sheet(2,'双手柄接口与原版后部连接区',['前面板保留两只七触点控制器插座，底部具有独立可拆的 28 接点扩展口盖。','第 22 轮校正前板、左右手柄口与外侧圈号；布局和局部轮廓按实物照片拟合。'])
 v=s.view_fit('ConsoleFront',body,(21,29,175,75),(0,-1,0),up);caption(s,v,'前部控制器插座与状态灯',122)
 v=s.view_fit('ConsoleRear',body,(220,29,166,75),(0,1,0),up);caption(s,v,'原版后置接口和竖向通风孔',122)
 v=s.view_fit('ConsoleBottom',without(body,'BottomLabel','BottomModelMark'),(22,148,171,48),(0,0,-1));caption(s,v,'被动通风、扩展盖和外壳螺钉',213)
@@ -27,11 +27,11 @@ v=s.view_fit('PadFront',pad,(24,35,203,127),(0,0,1));d.dimension_box(s,v,['Pad1B
 v=s.view_fit('PadBack',pad,(249,35,135,78),(0,0,-1));caption(s,v,'五枚后盖螺钉与分离壳体',132)
 v=s.view_fit('PadPlug',starts('Pad1Plug','Pad1Strain'),(251,156,132,40),(.2,.8,1.1));caption(s,v,'七接点插头与护套',212);s.save()
 
-s=d.Sheet(4,'62P 上下连接器与退卡机构',['任天堂维修手册将卡带连接区列为上下两个 62P 连接器，模型保留可拆上下壳体。','防尘盖、钢轴、回位扭簧、白色退卡摇臂及电源联动锁分别表达；未作动力学验证。'])
-v=s.view_fit('CartConnector',without(d.keys_for(['CartridgeInterface']),'CartridgeFlap','FlapRidge','FlapPivot','FlapSpring'),(19,31,177,91),(.25,-.6,1.7));caption(s,v,'上下连接壳体和独立 62P 接点',140)
+s=d.Sheet(4,'62P 上下连接器与退卡机构',['任天堂维修手册将卡带连接区列为上下两个 62P 连接器，模型保留可拆上下壳体。','62 接点采用 2.50 mm 节距与两处 7.50 mm 中心间距；弹片、分区壁和机构形状近似。'])
+v=s.view_fit('CartConnector',without(d.keys_for(['CartridgeInterface']),'CartridgeFlap','FlapRidge','FlapPivot','FlapSpring','FlapInstruction','FlapArrow'),(19,31,177,91),(.25,-.6,1.7));caption(s,v,'上下连接壳体和独立 62P 接点',140)
 v=s.view_fit('EjectMechanism',d.keys_for(['EjectMechanism']),(220,31,164,91),(.2,-.5,1.5));caption(s,v,'摇臂、长钢轴与电源联动锁',140)
-v=s.view_fit('CartFlap',starts('CartridgeFlap','FlapRidge','FlapPivot','FlapSpring'),(22,165,171,31),(.1,-.4,1.3));caption(s,v,'单片防尘盖和独立扭簧',213)
-v=s.view_fit('TopControls',starts('PowerCap','ResetCap','EjectCap','PowerSwitch','ResetStem','ResetSwitch'),(222,165,159,31),(.1,-.5,1.7));caption(s,v,'顶端控制和传力件',213);s.save()
+v=s.view_fit('CartFlap',starts('CartridgeFlap','FlapRidge','FlapPivot','FlapSpring','FlapInstruction','FlapArrow'),(22,165,171,31),(.1,-.4,1.3));caption(s,v,'单片防尘盖和独立扭簧',213)
+v=s.view_fit('TopControls',starts('PowerCap','PowerRidge','PowerLightSurround','ResetLightSurround','ResetCap','EjectCap','PowerSwitch','ResetStem','ResetSwitch'),(222,165,159,31),(.1,-.5,1.7));caption(s,v,'顶端控制和传力件',213);s.save()
 
 s=d.Sheet(5,'由保存实体生成的主机与手柄剖面',['剖面由 BRep 与指定 Y 平面实际相交生成，剖面填充只对应切到的真实材料。','主机展示卡槽/板件/外壳层次；手柄展示上下壳、PCB、橡胶膜及按键柱。'])
 s.text(198,17,'A-A · 主机 Y=27',4,'middle');v=d.section_view(s,'ConsoleSection',body,(23,34,351,58),offset=27);caption(s,v,'卡槽连接区和主板支承层次',114)
@@ -73,7 +73,7 @@ s.text(12,213,f"合计 {M['physical_components']} 个组件条目 / {M['solids']
 s=d.Sheet(12,'资料、版本边界与继续重建',['本册选择早期日版 SHVC-001、独立声卡与 1992 年原版 SHVC-005 手柄板。','所有投影来自保存的实体，修改后须同步 CAD、图纸、尺寸、清单、报告和网页网格。'])
 sections=[(16,'一手资料与版本选择',['日版使用说明书规格提供 200 × 242 × 74 mm 包络及原装双手柄配置。','任天堂 1992 年维修手册指导上下 62P 连接器、排线磁芯和退卡结构。','早期主板、声卡、原版手柄与 HVC-002 拆机照片指导机械分件。']),
  (67,'近似及附件边界',['局部曲率、孔位、封装、机构尺寸及线缆展示路线均近似。','采用有独立声卡的早期主板，不混入后期 1CHIP 或迷你复刻版。','AC / AV 为另售学习件；电路、线缆与电源均非功能性模型。']),
- (118,'可查对的交付记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'源码重建、严格实体、装配求交及 STEP 回读分别保留报告。','原生图纸、字体、逐页视觉、尺寸和网页随交付一起核对。']),
+ (118,'可查对的交付记录',[f"{M['design_iterations']} 轮源码 / {M['physical_components']} 组件 / {M['solids']} 实体。",'本轮在第 21 轮历史上执行；未从空文档重跑全部源码。','当前严格实体、装配、STEP 与图纸检查见 fidelity_delivery_checks.json。']),
  (169,'继续修改入口',['资料：references/SOURCES.md；清单：output/COMPONENTS.csv。','源码：tools/cadlib/sfc.py；逐轮入口：scripts/。','检查：output/reports/；修改后同步 CAD、图册与网页。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')

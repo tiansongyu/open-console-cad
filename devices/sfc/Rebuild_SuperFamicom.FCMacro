@@ -3,7 +3,8 @@ from pathlib import Path
 import sys,importlib
 root=Path(__file__).resolve().parent;repo=root.parents[1]
 sys.path.insert(0,str(repo/'tools'))
-from cadlib import core,sfc,deliver
+from cadlib import core,sfc,deliver,fidelity_sfc
+importlib.reload(fidelity_sfc)
 importlib.reload(sfc)
 model=core.Study(repo,'sfc');model.out=root/'output/rebuilt'
 for folder in ['iterations','reports','previews','drawings']:(model.out/folder).mkdir(parents=True,exist_ok=True)

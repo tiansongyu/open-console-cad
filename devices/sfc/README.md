@@ -1,6 +1,6 @@
 # Nintendo Super Famicom · SHVC-001
 
-早期日版 SHVC-CPU-01 / 独立 SHVC-SOUND 结构学习模型包含 **21 轮源码、1,918 个组件条目与 2,224 个实体**：原生曲面分体外壳、主板、分立 CPU / PPU、上下 62P 卡槽连接器、独立声卡、RF 模块、屏蔽、退卡机构及前板排线；另含两只原版 SHVC-005 手柄和另售 HVC-002 / SHVC-008 学习附件。提供完整及爆炸原生工程、三份 STEP、12 页 A3 PDF / SVG / 原生图纸和 25 个网页视图。
+早期日版 SHVC-CPU-01 / 独立 SHVC-SOUND 结构学习模型包含 **22 轮源码、1,925 个组件条目与 2,264 个实体**：原生曲面分体外壳、主板、分立 CPU / PPU、上下 62P 卡槽连接器、独立声卡、RF 模块、屏蔽、退卡机构及前板排线；另含两只原版 SHVC-005 手柄和另售 HVC-002 / SHVC-008 学习附件。提供完整及爆炸原生工程、三份 STEP、12 页 A3 PDF / SVG / 原生图纸和 25 个网页视图。
 
 <table>
 <tr>
@@ -21,7 +21,7 @@
 - [12 页 A3 PDF](output/drawings/SuperFamicom_Drawings.pdf) · [HTML 图册](output/drawings/SuperFamicom_Drawings.html) · [SVG 目录](output/drawings/) · [原生图纸](output/SuperFamicom_Drawings.FCStd)
 - [组件清单](output/COMPONENTS.csv) · [模型清单](output/reports/final_manifest.json)
 - [完整重建宏](Rebuild_SuperFamicom.FCMacro) · [逐轮记录](ITERATIONS.md) · [建模源码](../../tools/cadlib/sfc.py)
-- [源码重建比对](output/reports/rebuild_verification.json) · [严格实体检查](output/reports/strict_saved_native.json) · [装配求交](output/reports/assembly_interference.json)
+- [本轮源码重放比对](output/reports/fidelity_source_replay.json) · [严格实体检查](output/reports/fidelity_strict.json) · [装配求交](output/reports/fidelity_interference.json)
 - [STEP 回读](output/reports/export_roundtrip_audit.json) · [参数编辑复原](output/reports/parameter_edit_test.json) · [资料与边界](references/SOURCES.md)
 
 使用 FreeCAD 1.1.3 打开工程。下壳草图与拉伸、上壳分段放样、狗骨形手柄轮廓和布尔历史保留修改入口；重建宏从空文档执行全部轮次，并写入 `output/rebuilt/`。`Parameters.Width` 驱动底壳原生宽度约束；其他局部几何并非一键缩放的制造设计。
@@ -32,6 +32,8 @@
 
 壁厚、曲率、孔位、弹簧、导电胶、元件、走线和附件尺寸均为非功能性学习近似；不提供制造公差、工作电路或接口配合保证。原版外包络、实物结构依据与局部近似在图册和资料页中分别说明。
 
-全部 1,918 个组件的源码重建比对、严格实体、2,638 对装配候选求交、参数复原、三份 STEP 回读及图册/网页检查通过；详细范围见各项报告。
+第 22 轮校正了卡座 2.50 mm 节距和两处分区间隔、左右手柄口与配套插头、前板外侧圈号、POWER 凸起、浅色控制边框、指示灯与图文比例，并按兼容接口资料修订 DC/RCA 尺寸。原有 1,918 个组件标识和编号保留，新增 7 个外观组件。
 
-已发布版本 `efc601d` 的 14 份线上文件哈希、25 个网页视图、三种屏幕布局、键盘滑块及设备切换均核对通过，见 [线上文件](output/reports/live_delivery_audit.json) 与 [线上交互](output/reports/live_ui_checks.json)。
+当前 1,925 个组件通过严格 BRep 检查，2,647 对装配求交无超过 0.000001 mm³ 的干涉。第 22 轮从独立载入的第 21 轮历史重放，逐件与交付模型核对；本轮未从空文档重跑全部 22 轮，也未重复历史参数编辑测试。36 项校准特征、3 份 STEP 回读、12 页图纸与 25 种网页视图按当前文件核对，详见 [交付报告](output/reports/fidelity_delivery_checks.json)。
+
+旧版本 `efc601d` 的线上检查保留为历史记录；它不覆盖第 22 轮的新文件。当前来源、照片拟合方法与未确认尺寸见 [第 22 轮证据](references/fidelity_iteration22.json)。

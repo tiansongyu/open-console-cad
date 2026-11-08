@@ -38,7 +38,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |
 | 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 第 17 轮已验证 |
-| 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 待开始 |
+| 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 第 22 轮已验证 |
 | 13 | [Nintendo 64 · NUS-001 · 初代灰色](../devices/n64/README.md) | 15 | 747 | 待开始 |
 | 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 第 16 轮已验证 |
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 第 23 轮已验证 |

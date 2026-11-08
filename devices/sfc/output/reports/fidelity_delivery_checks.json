@@ -1,0 +1,66 @@
+{
+  "device": "sfc",
+  "iteration": 22,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "f3682ae668907974d6846b80adabc9aaac491237be8f965b84943d2342253ae8",
+  "physical_components": 1925,
+  "solids": 2264,
+  "preserved_part_ids_and_numbers": 1918,
+  "virtual_display_used": ":99",
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Stage22 replayed from an independently reopened stage21 native history and compared with current delivery geometry. All1925components match;194 require bidirectional Boolean differences rather than identical serialization. Full stages1–22 were not rerun from an empty document.",
+  "factory_equivalence_verified": false,
+  "checks": {
+    "strict_brep_components": 1925,
+    "feature_measurements": 36,
+    "interference_pairs": 2647,
+    "interference_clashes": 0,
+    "step_exports": 3,
+    "native_drawing_dimensions": 7,
+    "pdf_pages": 12,
+    "web_views": 25,
+    "glb_errors": 0,
+    "glb_warnings": 0,
+    "lossless_gzip": true,
+    "repository_check": "passed device-scope check",
+    "production_build": "passed"
+  },
+  "reports": {
+    "fidelity_strict.json": "4985c9dacebc457733162c8ed2a671b6ba482cd6e1fa62f419f6cbcbd24163a9",
+    "fidelity_interference.json": "97254608f41913cf1c5ee2c272e24dcea4320254b701eef3ae0bdab6e1852f60",
+    "fidelity_detail_audit.json": "ba24376face90cab525409619b98883102c04ef9e9a8346652d23a797edbfb49",
+    "fidelity_source_replay.json": "242dfc19a3eac280d093b1ae74b6e0b3acf11549cdf6b83571f91e7fc8c04feb",
+    "export_roundtrip_audit.json": "47f09d61d12c77fa67176fbe8e795832f80373fc09df3a5fd6e19d85266caa3d",
+    "drawing_checks.json": "4afd4ca740fe15649d1d15158563d17ae805a55a09aead0ee38e214972aef38c",
+    "native_drawings_audit.json": "6df2d6bf75e83892f84ad9842c2152460fdca9626fcd97886ce8bd99aef2a09a",
+    "native_drawings_reload.json": "a96a04d54230cfaa1d34e4abccdf4c4c56478f1aebfa89049ab1ba10fe14137c",
+    "fidelity_pdf_review.json": "8af6fd97b8548946d088017f27b32d2e1dd1270504a20895c1d5befd3f324bd4",
+    "fidelity_web_checks.json": "1c1f97604a3a8ca2da3d3f5933ab325f385783d37176f43038c318606c05b4c3",
+    "web_export.json": "76225ef483c840aefe56c9cde2758edb123d809ac91ed81a239f62af3be2cf5c"
+  },
+  "module_sha256": {
+    "tools/cadlib/sfc.py": "52045bf0a9dcf3d3caafe1acc539d5d751320e890be367307f4ebfa8d3d932ea",
+    "tools/cadlib/fidelity_sfc.py": "572cd46f3b5a9ed51c825765f7aac28e6ea236e4419a65670c06d374e86b2870",
+    "devices/sfc/profile.json": "26ce3bd2cc0be62a58136be8c4cebcda9e0974ed66b81bd3be494a87452198a0",
+    "devices/sfc/scripts/audit_fidelity.py": "7dfcceacd5a02594910b2aeaaf5e37061fe0ad6963314a0a4ef023ff5400322a",
+    "devices/sfc/scripts/drawing_geometry.py": "c4c0c1a22d44007688fff165eee2ccf7ce33c8c010a493a0b6869986b6917f73"
+  },
+  "file_hashes": {
+    "devices/sfc/output/SuperFamicom_Complete.FCStd": "f3682ae668907974d6846b80adabc9aaac491237be8f965b84943d2342253ae8",
+    "devices/sfc/output/SuperFamicom_Exploded.FCStd": "58d5bb4bd8113791a43be64105fc96fe7a5d7d9e5d63d99663805f7dc32ea313",
+    "devices/sfc/output/SuperFamicom_Drawings.FCStd": "1e506e33dd1b38683d432e1426b394e97b0f491b04fdcaa845eab16935611645",
+    "devices/sfc/output/drawings/SuperFamicom_Drawings.pdf": "835cb71bc09d7d7f28545b31dd899e7b9765bfd383693a6f8a16b7d23b11ac20",
+    "site/public/models/sfc.glb": "9622bba0cc3c18fbdf1d6cf7e5e05cf1a3d024329683a34699eec9431063d3d1",
+    "site/public/models/sfc.glb.gz": "d48174535198646c84992dc453640f0efd1cde605f020a0816739f5fc6df1b39"
+  },
+  "remaining_uncertainties": [
+    "Existing upper shell curvature, wall thickness and internal component shapes remain schematic.",
+    "Controller contact pitch/gender, terminal form, axial insertion depth and keyed-wall dimensions lack OEM mechanical drawings.",
+    "62-position pitch and bank separation are corroborated; original spring-tip row spacing is not derived from PCB footprints.",
+    "DC/RCA data describe compatible interfaces, not verified OEM component identities or electrically functional assemblies.",
+    "No physical specimen or manufacturing tolerance drawing measured.",
+    "A0.02mm estimated raised port-number surround projects past the242mm lower-shell depth; the drawing dimension explicitly measures the shell datum.",
+    "No new parameter edit or whole-collection responsive test was performed in this pass."
+  ]
+}

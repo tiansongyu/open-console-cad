@@ -2,7 +2,51 @@
   "passed": true,
   "pages": 12,
   "dimension_count": 7,
-  "open_macro_passed": true,
-  "reloaded_file": "devices/sfc/output/SuperFamicom_Drawings.FCStd",
-  "source_sha256": "7c05ca3bac4a33d9a239357e788a5ea980e43bc6f7dcbb7e76a7ffcd0b1c31e5"
+  "checks": [
+    {
+      "name": "Dimension01_1",
+      "expected_mm": 200.0000001,
+      "actual_mm": 200.0000001,
+      "passed": true
+    },
+    {
+      "name": "Dimension01_2",
+      "expected_mm": 242.00000010000002,
+      "actual_mm": 242.0000001,
+      "passed": true
+    },
+    {
+      "name": "Dimension03_1",
+      "expected_mm": 144.0000002,
+      "actual_mm": 144.0000002,
+      "passed": true
+    },
+    {
+      "name": "Dimension03_2",
+      "expected_mm": 58.00000019999998,
+      "actual_mm": 58.000000199999995,
+      "passed": true
+    },
+    {
+      "name": "Dimension07_1",
+      "expected_mm": 174.0000000000001,
+      "actual_mm": 174.00000000000009,
+      "passed": true
+    },
+    {
+      "name": "Dimension07_2",
+      "expected_mm": 192.00000000000003,
+      "actual_mm": 192.0,
+      "passed": true
+    },
+    {
+      "name": "Dimension08_1",
+      "expected_mm": 70.00000000000001,
+      "actual_mm": 70.0,
+      "passed": true
+    }
+  ],
+  "drawings_sha256": "1e506e33dd1b38683d432e1426b394e97b0f491b04fdcaa845eab16935611645",
+  "source_sha256": "f3682ae668907974d6846b80adabc9aaac491237be8f965b84943d2342253ae8",
+  "scope": "Reopen independent copy and recompute native dimension references; no open-macro test in this pass."
 }

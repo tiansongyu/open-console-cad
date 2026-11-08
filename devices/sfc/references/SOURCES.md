@@ -14,3 +14,9 @@
 - [HVC-002 原版拆机照片](https://desktopmusik.com/junk/game/family-computer-adapter)：已查看原版外观、插片面、打开外壳与铁芯/滤波板照片。只参考原适配器，没有混入文中另一只现代电源。尺寸近似，非功能模型。
 - [SHVC-008 收藏实物照片](https://chromagi.com/nintendo/n64/shvc-008/)：已查看灰色 MULTI OUT 与黄/白/红 RCA 插头。日本标准主机的 AC/AV 另售关系以原版主机手册为准。
 - [原版后部接口照片](https://www.nintendolife.com/news/2020/11/hardware_classics_super_famicom)：已查看 MULTI OUT、RF、CH1/CH2、DC IN 排列及后面板通风。
+
+## 第 22 轮依据
+
+[证据记录](fidelity_iteration22.json)列出可追溯来源、局部参考文件哈希和照片拟合方法。Sanni 的可用卡座封装给出 2.50 mm 节距和两处 7.50 mm 分区间隔；PCB 引脚排距不直接当作弹片配合间距。原版 SHVC-CPU-01 实物照片用于核对手柄口朝向、前板比例、POWER 凸起、灯与标识。Same Sky RCA 图纸及 HVC-002 兼容 DC 接口资料只约束部分配合尺寸，不确定任天堂 OEM 料号。
+
+顶面与前面板坐标是照片拟合值；弯曲壳体、拍摄透视和字形会带来偏差。没有实机测量或原厂公差文件，不能据此证明整机完全一致。

@@ -1,0 +1,77 @@
+{
+  "device": "sfc",
+  "model": "Japanese SHVC-001 / early SHVC-CPU-01 / original SHVC-005 controllers",
+  "iteration": 22,
+  "date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/sanni/cartreader/master/hardware/footprints/!OSCR.pretty/SNES%20Slot.kicad_mod",
+      "publisher": "sanni / Open Source Cartridge Reader",
+      "verified": "62-pad compatible SNES/SFC footprint; two 31-position banks, 2.50 mm normal pitch and 7.50 mm adjacent-centre gaps after positions4 and27. PCB-tail row gap is not treated as spring-tip spacing.",
+      "sha256": "9cd8ac2eb5323928023d6f4d098a65bf5e8cd3ab9f97d42e3b2fc1197432aac6"
+    },
+    {
+      "url": "https://www.boards.ie/discussion/2058337820/super-famicom-a-capacitance-for-greatness",
+      "publisher": "Inviere, original hardware owner/repairer",
+      "verified": "Original Japanese SHVC-CPU-01 machine with discrete sound module; exterior top/front photograph supports handed controller banks, outboard circled port numbers, white control surrounds, raised POWER ridge, wordmark and indicator positions.",
+      "local_reference_sha256": "5436d37a11c1d6aa7dabc722ce7615157e9e47f68e2ffc9e604bccf2657056ba"
+    },
+    {
+      "url": "https://www.ifixit.com/Teardown/Super+Famicom+Teardown/96507",
+      "publisher": "Arty Boomshaka, firsthand teardown",
+      "verified": "Early separate sound module and removable controller/eject assemblies; six bottom Gamebit screws."
+    },
+    {
+      "url": "https://documents.cdn.ifixit.com/UsnpFRnT5n2fTQrV.pdf",
+      "publisher": "Nintendo, 1992 service manual (mirror)",
+      "verified": "Existing downloaded original manual depicts early SHVC-001 parts including separate upper and lower62P connectors. Current URL requests sign-in; no authentication bypass used.",
+      "local_reference_sha256": "0fbc6f1f7525f42d396b5d703ae83559406fb126a192cd0d29a03f1d2762bae0"
+    },
+    {
+      "url": "https://www.pcbway.com/project/shareproject/Famicom_Power_and_AV_board_ddb9a7f2.html",
+      "publisher": "Compatible Famicom power-board designer",
+      "verified": "5.5 x2.1 mm DC connection compatible with the HVC-002 supply shared by Japanese Famicom/SFC; original molded body dimensions unverified."
+    },
+    {
+      "url": "https://www.sameskydevices.com/product/resource/rcp-02.pdf",
+      "publisher": "Same Sky",
+      "verified": "Compatible RCA plug: pin3.25+0/-0.15 mm, sleeve9 mm diameter and5.5 mm exposed length, pin projection8 mm."
+    },
+    {
+      "url": "https://www.sameskydevices.com/product/resource/rcj-01.pdf",
+      "publisher": "Same Sky",
+      "verified": "Compatible RCA jack nominal8.30 mm outer diameter. Does not identify Nintendo OEM part."
+    }
+  ],
+  "photo_fit": {
+    "method": "Front-panel horizontal proportions compared within the same near-frontal face. Top-feature layout cross-checked after approximate planar rectification using existing model top rim; these are construction fits without manufacturing tolerances.",
+    "targets_mm": {
+      "front_panel_width": 148,
+      "socket_centres_x": [
+        -34,
+        34
+      ],
+      "port_number_centres_x": [
+        -64,
+        64
+      ],
+      "power_lens_centre": [
+        54,
+        -95
+      ],
+      "power_ridge_height": 2.28,
+      "front_wordmarks_width": [
+        47,
+        68
+      ]
+    },
+    "limits": "Lens perspective, curved shell, worn hardware color and approximate source fonts remain uncertain. No physical specimen measured."
+  },
+  "retained_uncertainties": [
+    "Existing upper shell curvature, wall thickness and internal component shapes remain schematic.",
+    "Controller contact pitch/gender, terminal form, axial insertion depth and keyed-wall dimensions lack OEM mechanical drawings.",
+    "62-position pitch and bank separation are corroborated; original spring-tip row spacing is not derived from PCB footprints.",
+    "DC/RCA data describe compatible interfaces, not verified OEM component identities or electrically functional assemblies."
+  ]
+}

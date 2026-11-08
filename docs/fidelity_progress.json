@@ -733,8 +733,8 @@
       "order": 12,
       "device": "sfc",
       "model": "SHVC-001 · SHVC-CPU-01 · Original Japan",
-      "status": "pending",
-      "current_step": null,
+      "status": "completed",
+      "current_step": "validated_iteration_22",
       "baseline": {
         "iterations": 21,
         "physical_components": 1918,
@@ -762,11 +762,30 @@
           "Schematic internal layout": 1690
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/sfc/references/fidelity_iteration22.json"
+      ],
+      "changes": [
+        "Corrected62-position cartridge banks to2.50mm pitch with two7.50mm centre gaps",
+        "Calibrated handed controller sockets/plugs, front-panel proportions and circled outboard numbers",
+        "Restored raised POWER ridge, control surrounds, indicator and original top graphics proportions",
+        "Corrected compatible DC/RCA interfaces; retained all1918oldpartnumbers and added7components"
+      ],
+      "validation": {
+        "report": "devices/sfc/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "f3682ae668907974d6846b80adabc9aaac491237be8f965b84943d2342253ae8",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Existing upper shell curvature, wall thickness and internal component shapes remain schematic.",
+        "Controller contact pitch/gender, terminal form, axial insertion depth and keyed-wall dimensions lack OEM mechanical drawings.",
+        "62-position pitch and bank separation are corroborated; original spring-tip row spacing is not derived from PCB footprints.",
+        "DC/RCA data describe compatible interfaces, not verified OEM component identities or electrically functional assemblies.",
+        "No physical specimen or manufacturing tolerance drawing measured.",
+        "A0.02mm estimated raised port-number surround projects past the242mm lower-shell depth; the drawing dimension explicitly measures the shell datum.",
+        "No new parameter edit or whole-collection responsive test was performed in this pass."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false,
       "strict_brep_baseline_summary": {
         "source_sha256": "777263617704dc107ebb5742f8bcd1b00d38c6f5b52ab473d639a1b46718ecc7",
@@ -1145,7 +1164,8 @@
         "fully_passed": true,
         "failed_parts": [],
         "inconclusive_parts": []
-      }
+      },
+      "last_pushed_commit": "24ae3ac"
     },
     {
       "order": 19,
