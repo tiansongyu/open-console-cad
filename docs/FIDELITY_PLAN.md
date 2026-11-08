@@ -31,7 +31,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 2 | [Nintendo 3DS · CTR-001](../devices/3ds/README.md) | 14 | 324 | 第 15 轮已验证 |
 | 3 | [Sony PSP-1000 · PSP-1000](../devices/psp/README.md) | 15 | 346 | 第 16 轮已验证 |
 | 4 | [PlayStation Vita · PCH-1000 Wi-Fi OLED](../devices/psv/README.md) | 15 | 386 | 第 16 轮已验证 |
-| 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 官方机械资料校准中 |
+| 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 第 17 轮已验证 |
 | 6 | [Nintendo Switch · HAC-001](../devices/switch/README.md) | 18 | 654 | 待开始 |
 | 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 第 17 轮已验证 |
 | 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
@@ -40,7 +40,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 11 | [Nintendo Famicom · HVC-001 · 圆形按键](../devices/famicom/README.md) | 16 | 634 | 卡带与扩展口校准中 |
 | 12 | [Nintendo Super Famicom · SHVC-001 · SHVC-CPU-01 · Original Japan](../devices/sfc/README.md) | 21 | 1,918 | 待开始 |
 | 13 | [Nintendo 64 · NUS-001 · 初代灰色](../devices/n64/README.md) | 15 | 747 | 待开始 |
-| 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 待开始 |
+| 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 官方多视图校准中 |
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 待开始 |
 | 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 卡带接口验证中 |
 | 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 第 14 轮已验证 |

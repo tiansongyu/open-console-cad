@@ -1,0 +1,66 @@
+{
+  "device": "steamdeck",
+  "revision": 17,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "830f4b812b63e8628caa4379046c198461edff8d3f4d369f328dddeda7c5ce24",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":100",
+  "physical_components": 500,
+  "solids": 577,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration17.json",
+  "changes": [
+    "Published active display 151.7 x 95.2 mm and cover 173.7 x 106.7 mm",
+    "Measured microphone centers +/-62, 53.819 mm and aperture diameter 0.764 mm",
+    "Measured trackpad and lower system-key positions with reconstructed support clearances",
+    "Ten speaker openings per side and eleven centered exhaust slots",
+    "Documented ambient-light sensor with estimated optical-window geometry"
+  ],
+  "validation": {
+    "detail_checks": 35,
+    "preserved_existing_part_numbers": 498,
+    "candidate_pairs": 820,
+    "interference_threshold_mm3": 1e-06,
+    "step_files": 3,
+    "step_acceptance": "One-to-one solid matching and empty bidirectional Boolean differences where numerical volume integration differs",
+    "model_dimensions": 28,
+    "native_drawing_references": 15,
+    "pdf_pages_reviewed": 12,
+    "web_views": 10,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "passed (device scope)",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_steamdeck.py": "275e87296e395edc773b076d35952865e985cf3417b715da308b64b525af74c7",
+    "tools/cadlib/steamdeck.py": "21b067d57f98052a06e5308c46db9199e340d2fb3fcb6466305c993e93c14ecf",
+    "devices/steamdeck/profile.json": "a460a0dd8bf8249df550a71ae2d029a0bc5e57ec78e73396d0052c85fd80a3a8",
+    "devices/steamdeck/Rebuild_SteamDeck.FCMacro": "491a203e496703cc61cfd60a26759833a24771b2ad97b59a873fabb256c021dc",
+    "devices/steamdeck/scripts/iter17_valve_display_dimensions_audio_fields_and_exhaust.py": "1c0eb8221bbfb5dec68fd60cf3b38fcf1e4a5ea9af4878f7a646dc1528aaa103",
+    "devices/steamdeck/scripts/audit_fidelity.py": "5a6212372d17cfc35b19b5944b4f577e7b030de0f7eb0d6e72d6ec2328fef8f5",
+    "devices/steamdeck/scripts/audit_dimensions.py": "8cf3e869b2d6fb7c091dc4362cf0608c1bebc1cd46ea5eaeb921b87c675fc49a",
+    "devices/steamdeck/scripts/drawing_geometry.py": "3d0d269cd9b24ebf058da48da660cd337c3cffc71dfbaa543876e0c5365ad6ed"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "68a6dea1c1a49668f974af2f897f63d637273c7edac88ac81c3b895118b04036",
+    "fidelity_interference.json": "62a4f2bbc848b2acd42deefebc5e0b0647906cc1e46af9009f5aecb466d04027",
+    "export_roundtrip_audit.json": "0c7537f67152fe0a99f5a0dc8f1fb1191b2164e50f4991cc69ac9286ed8e61e2",
+    "drawing_checks.json": "049c65298a9639c92283d1fcdb945bda0d9780d81a69eb280ce26bc2a7fb6f59",
+    "native_drawings_audit.json": "d1b7ed2d5beb3bee34ec0e9f2b606ab318024dc0c0b86e86d86e075731ba6bb9",
+    "native_drawings_reload.json": "ca0625c740c276099e4b2e668b8475739d5fdcc269b67982024ab7250334a541",
+    "fidelity_pdf_review.json": "1ea7edff97e94c4ad1c02aa662fa9c7205d34310b1ac3dbfba49334e34404aed",
+    "fidelity_web_checks.json": "5117716afd82cb6e7c6d2c2a19128aae7c2fbed2ebce9907b34a7d02f90c70ea",
+    "fidelity_gltf_validation.json": "7bcabe569d8bb3c5f0152089ac4e5272e44a184d2114ec6bb9a4fec96306b3db"
+  },
+  "limitations": [
+    "No hardware sample measured. Reference CAD is a public external-topology release, not a manufacturing tolerance model.",
+    "Published 298 x 117 x 49 mm overall envelope retained; measured public CAD extents differ slightly from the rounded product specification.",
+    "Existing enclosure curvature, shell thickness, control travel and internal electronic/thermal layout remain approximate.",
+    "Trackpad, lower system-key and speaker support parts move with their exterior features; these internal shapes are not verified factory designs. Microphone package depth is moved 1.3 mm above the previous schematic layer to clear the existing antenna foil; that depth is not measured from Valve exterior CAD.",
+    "The corrected exhaust row does not establish that the existing schematic heat exchanger and duct layout reproduce actual airflow or factory geometry."
+  ]
+}

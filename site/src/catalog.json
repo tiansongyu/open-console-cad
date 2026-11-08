@@ -1032,15 +1032,15 @@
     "title": "Steam Deck",
     "prefix": "SteamDeck",
     "model": "2022 LCD",
-    "count": 498,
-    "iterations": 16,
+    "count": 500,
+    "iterations": 17,
     "pages": 12,
-    "bytes": 15677636,
+    "bytes": 15988976,
     "family": "slate",
     "views": {
       "assembled": {
         "label": "整机",
-        "description": "2022 年初代 LCD，双摇杆、双方形触控板、扳机与四枚背键独立建模。",
+        "description": "2022 LCD版，按Valve参考图修正显示区、盖板、麦克风、触控板、系统键和声学开孔；局部曲面与内部结构仍近似。",
         "groups": [
           "Body",
           "Display",
@@ -1258,7 +1258,13 @@
         "cooling",
         "风机与铜热管"
       ]
-    ]
+    ],
+    "gzip": {
+      "bytes": 6283504,
+      "sha256": "a957f8eb8fbf23cdb0f6ff64398afc791d445e01187050c970647645ed2e819b",
+      "decoded_sha256": "5483c3c6928d24d8d819f95b4bb1139af2e7d8412278a47c5fcf3aecdf387dfa",
+      "lossless": true
+    }
   },
   {
     "id": "gameboy",

@@ -1,0 +1,262 @@
+{
+  "device": "steamdeck",
+  "iteration": 17,
+  "source_sha256": "830f4b812b63e8628caa4379046c198461edff8d3f4d369f328dddeda7c5ce24",
+  "checks": [
+    {
+      "name": "complete.XLength",
+      "actual": 298.0,
+      "expected": 298,
+      "basis": "Valve rounded public product specification including controls",
+      "passed": true
+    },
+    {
+      "name": "complete.YLength",
+      "actual": 117.0000001,
+      "expected": 117,
+      "basis": "Valve rounded public product specification including controls",
+      "passed": true
+    },
+    {
+      "name": "complete.ZLength",
+      "actual": 49.0000001,
+      "expected": 49,
+      "basis": "Valve rounded public product specification including controls",
+      "passed": true
+    },
+    {
+      "name": "DisplayGlass.width",
+      "actual": 151.7,
+      "expected": 151.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "DisplayGlass.height",
+      "actual": 95.2,
+      "expected": 95.2,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "DisplaySurround.width",
+      "actual": 173.7,
+      "expected": 173.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "DisplaySurround.height",
+      "actual": 106.7,
+      "expected": 106.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "trackpad-1.x",
+      "actual": -105.78,
+      "expected": -105.78,
+      "basis": "Measured reference CAD top-face center",
+      "passed": true
+    },
+    {
+      "name": "trackpad-1.y",
+      "actual": 1.3369999999999997,
+      "expected": 1.337,
+      "basis": "Measured reference CAD top-face center",
+      "passed": true
+    },
+    {
+      "name": "trackpad1.x",
+      "actual": 105.78,
+      "expected": 105.78,
+      "basis": "Measured reference CAD top-face center",
+      "passed": true
+    },
+    {
+      "name": "trackpad1.y",
+      "actual": 1.3369999999999997,
+      "expected": 1.337,
+      "basis": "Measured reference CAD top-face center",
+      "passed": true
+    },
+    {
+      "name": "microphone0.x",
+      "actual": -62.0,
+      "expected": -62,
+      "basis": "Measured reference CAD microphone cylinder",
+      "passed": true
+    },
+    {
+      "name": "microphone0.y",
+      "actual": 53.819,
+      "expected": 53.819,
+      "basis": "Measured reference CAD microphone cylinder",
+      "passed": true
+    },
+    {
+      "name": "microphone1.x",
+      "actual": 62.0,
+      "expected": 62,
+      "basis": "Measured reference CAD microphone cylinder",
+      "passed": true
+    },
+    {
+      "name": "microphone1.y",
+      "actual": 53.819,
+      "expected": 53.819,
+      "basis": "Measured reference CAD microphone cylinder",
+      "passed": true
+    },
+    {
+      "name": "microphone_aperture0.diameter",
+      "actual": 0.7639999999999958,
+      "expected": 0.764,
+      "basis": "Measured physical cylinder; the drawing diameter 2 annotation is accessory keepout",
+      "passed": true
+    },
+    {
+      "name": "microphone_aperture1.diameter",
+      "actual": 0.7639999999999958,
+      "expected": 0.764,
+      "basis": "Measured physical cylinder; the drawing diameter 2 annotation is accessory keepout",
+      "passed": true
+    },
+    {
+      "name": "SteamKey.x",
+      "actual": -97.655,
+      "expected": -97.655,
+      "basis": "Measured reference CAD key-face center",
+      "passed": true
+    },
+    {
+      "name": "SteamKey.y",
+      "actual": -24.092,
+      "expected": -24.092,
+      "basis": "Measured reference CAD key-face center",
+      "passed": true
+    },
+    {
+      "name": "QuickAccessKey.x",
+      "actual": 97.655,
+      "expected": 97.655,
+      "basis": "Measured reference CAD key-face center",
+      "passed": true
+    },
+    {
+      "name": "QuickAccessKey.y",
+      "actual": -24.092,
+      "expected": -24.092,
+      "basis": "Measured reference CAD key-face center",
+      "passed": true
+    },
+    {
+      "name": "speaker0.openings",
+      "actual": 10,
+      "expected": 10,
+      "basis": "Valve reference three-row topology, including the longer inner opening",
+      "passed": true
+    },
+    {
+      "name": "speaker1.openings",
+      "actual": 10,
+      "expected": 10,
+      "basis": "Valve reference three-row topology, including the longer inner opening",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.openings",
+      "actual": 11,
+      "expected": 11,
+      "basis": "Valve reference exterior slot count",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center0",
+      "actual": -25.0,
+      "expected": -25,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center1",
+      "actual": -20.0,
+      "expected": -20,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center2",
+      "actual": -15.0,
+      "expected": -15,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center3",
+      "actual": -10.0,
+      "expected": -10,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center4",
+      "actual": -5.0,
+      "expected": -5,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center5",
+      "actual": 0.0,
+      "expected": 0,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center6",
+      "actual": 5.0,
+      "expected": 5,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center7",
+      "actual": 10.0,
+      "expected": 10,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center8",
+      "actual": 15.0,
+      "expected": 15,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center9",
+      "actual": 20.0,
+      "expected": 20,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    },
+    {
+      "name": "top_exhaust.center10",
+      "actual": 25.0,
+      "expected": 25,
+      "basis": "Measured reference CAD 5 mm slot-center pitch",
+      "passed": true
+    }
+  ],
+  "invalid_parts": [],
+  "ambient_sensor_window_present": true,
+  "reference_feature_tool_counts": {
+    "microphones": 2,
+    "speaker_fields": 2,
+    "exhaust_fields": 1
+  },
+  "factory_equivalence_verified": false,
+  "scope": "Saved BRep consistency with published/measured public-reference facts. Sensor window size, local edge geometry and internal layout remain approximate.",
+  "passed": true
+}

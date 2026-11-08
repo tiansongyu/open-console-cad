@@ -72,19 +72,19 @@
       "sheet": 3,
       "view": "LCDWindow",
       "p1": [
-        -75.385,
+        -75.85,
         0.0,
         36.9
       ],
       "p2": [
-        75.385,
+        75.85,
         0.0,
         36.9
       ],
       "axis": "x",
-      "value_mm": 150.77000000000004,
-      "label": "≈ 150.77",
-      "published": false,
+      "value_mm": 151.7,
+      "label": "151.7",
+      "published": true,
       "label_position": [
         133.0,
         15.4
@@ -95,18 +95,18 @@
       "view": "LCDWindow",
       "p1": [
         0.0,
-        -47.115,
+        -47.6,
         36.9
       ],
       "p2": [
         0.0,
-        47.115,
+        47.6,
         36.9
       ],
       "axis": "y",
-      "value_mm": 94.23000000000002,
-      "label": "≈ 94.23",
-      "published": false,
+      "value_mm": 95.2,
+      "label": "95.2",
+      "published": true,
       "label_position": [
         15,
         93.0
@@ -160,13 +160,13 @@
       "sheet": 4,
       "view": "TrackpadFace",
       "p1": [
-        -125.25,
-        -4.000000000000001,
+        -122.03,
+        1.3369999999999997,
         36.425000000000004
       ],
       "p2": [
-        -92.75,
-        -4.000000000000001,
+        -89.53,
+        1.3369999999999997,
         36.425000000000004
       ],
       "axis": "x",
@@ -182,13 +182,13 @@
       "sheet": 4,
       "view": "TrackpadFace",
       "p1": [
-        -109.0,
-        -20.25,
+        -105.78,
+        -14.913,
         36.425000000000004
       ],
       "p2": [
-        -109.0,
-        12.25,
+        -105.78,
+        17.587,
         36.425000000000004
       ],
       "axis": "y",
@@ -358,16 +358,30 @@
     },
     {
       "name": "DisplayGlass.XLength",
-      "actual_mm": 150.77,
-      "expected_mm": 150.77,
-      "basis": "7-inch 16:10 geometric conversion",
+      "actual_mm": 151.7,
+      "expected_mm": 151.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
       "passed": true
     },
     {
       "name": "DisplayGlass.YLength",
-      "actual_mm": 94.23,
-      "expected_mm": 94.23,
-      "basis": "7-inch 16:10 geometric conversion",
+      "actual_mm": 95.2,
+      "expected_mm": 95.2,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "DisplaySurround.XLength",
+      "actual_mm": 173.7,
+      "expected_mm": 173.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
+      "passed": true
+    },
+    {
+      "name": "DisplaySurround.YLength",
+      "actual_mm": 106.7,
+      "expected_mm": 106.7,
+      "basis": "Valve reference drawing Rev B sheet 2",
       "passed": true
     },
     {

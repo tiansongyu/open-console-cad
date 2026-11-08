@@ -1,0 +1,47 @@
+{
+  "device": "steamdeck",
+  "model": "2022 LCD",
+  "iteration": 17,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "reference": {
+    "creator": "Valve Corporation",
+    "revision": "B, initial drawing release 2022-02-02",
+    "official_repository": "https://gitlab.steamos.cloud/SteamDeck/hardware",
+    "official_announcement": "https://steamcommunity.com/games/1675180/announcements/detail/3106923225208810471",
+    "retrieval_note": "The official GitLab endpoint returned an anti-bot access denial. The published files were inspected from a public mirror; this is not a separately authenticated factory drawing.",
+    "mirror_commit": "df60b63ca35b4f922b835ec45252f3b5be535c34",
+    "drawing_url": "https://raw.githubusercontent.com/KagamiChan/steam-hardware/df60b63ca35b4f922b835ec45252f3b5be535c34/steamdeck_2d_20220202.pdf",
+    "drawing_sha256": "fcba125f72fab2e7160241b3701e3b9d718f6125a0815cd390beda19c7f8cdfc",
+    "step_url": "https://raw.githubusercontent.com/KagamiChan/steam-hardware/df60b63ca35b4f922b835ec45252f3b5be535c34/steamdeck_step_20220202.stp",
+    "step_sha256": "8bdf3832273c34a7d21727744f81ad3ab259b991092f7f09509d5d7b62ac81a4",
+    "source_license": "CC BY-NC-SA 4.0",
+    "use": "Sparse dimensional facts and feature counts used to reconstruct primitives. No Valve faces, wires, meshes, reference drawings or STEP data embedded or redistributed in the project."
+  },
+  "published_dimensions_mm": {
+    "active_display": [151.7, 95.2],
+    "cover_glass": [173.7, 106.7],
+    "basis": "Reference drawing sheet 2. Supersedes the previous exact-7-inch geometric conversion of 150.77 x 94.23 mm."
+  },
+  "measured_reference_features": {
+    "coordinate_basis": "X/Y reference front coordinates; front surface near Z0. Current model front datum Z37 is retained as a construction parameter.",
+    "microphones": {"centers_xy_mm": [[-62.0, 53.819], [62.0, 53.819]], "aperture_diameter_mm": 0.764, "reference_cylinder_faces": [1123, 1124, 1153, 1154]},
+    "trackpads": {"centers_xy_mm": [[-105.78, 1.337], [105.78, 1.337]], "reference_top_faces": [85, 102], "retained_surface_side_mm": 32.5},
+    "steam_and_quick_access": {"centers_xy_mm": [[-97.655, -24.092], [97.655, -24.092]], "reference_top_face_size_mm": [15.85, 6.10], "reconstructed_outer_size_mm": [16.25, 6.5], "edge_roll_mm": 0.2},
+    "speakers": {"openings_per_side": 10, "rows_from_top": [4, 3, 3], "row_y_mm": [-34.035, -37.235, -40.435], "note": "The middle row has one longer inner opening. Side fields are mirrored; rim cross sections are reconstructed approximations."},
+    "top_exhaust": {"openings": 11, "centers_x_mm": [-25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25], "pitch_mm": 5, "note": "Overall slot height and local rim geometry reconstructed; the 56.5 mm drawing annotation is an accessory keepout, not aperture width."},
+    "ambient_light_sensor": {"presence": "Identified by Valve drawing detail E", "center_xy_mm": [0, 52.05], "position_basis": "Centerline and 1.3 mm drawing offset from the cover edge, interpreted in the model coordinates", "reconstructed_window_diameter_mm": 1.44, "diameter_basis": "Estimate; no physical aperture diameter located in the reference STEP."}
+  },
+  "keepout_distinctions": [
+    "Microphone diameter 2 mm is accessory clearance, not its physical hole diameter.",
+    "Ambient-light sensor diameter 3 mm is accessory clearance, not its physical optical window diameter.",
+    "Exhaust 56.5 mm and speaker 20.1 x 10.1 mm annotations are keepout regions."
+  ],
+  "limitations": [
+    "No hardware sample measured. Reference CAD is a public external-topology release, not a manufacturing tolerance model.",
+    "Published 298 x 117 x 49 mm overall envelope retained; measured public CAD extents differ slightly from the rounded product specification.",
+    "Existing enclosure curvature, shell thickness, control travel and internal electronic/thermal layout remain approximate.",
+    "Trackpad, lower system-key and speaker support parts move with their exterior features; these internal shapes are not verified factory designs. Microphone package depth is moved 1.3 mm above the previous schematic layer to clear the existing antenna foil; that depth is not measured from Valve exterior CAD.",
+    "The corrected exhaust row does not establish that the existing schematic heat exchanger and duct layout reproduce actual airflow or factory geometry."
+  ]
+}

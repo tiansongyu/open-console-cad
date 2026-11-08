@@ -514,3 +514,6 @@ def stage16(m):
     m.checkpoint(16,'elliptical_heatpipe_exchange_geometry','将热管改为直接扫掠椭圆截面，同步更新冷却底板座和屏蔽罩通道，消除 STEP 回读中的曲面接缝无效问题。')
 
 STAGES[16]=stage16
+
+from .fidelity_steamdeck import stage17
+STAGES[17]=stage17

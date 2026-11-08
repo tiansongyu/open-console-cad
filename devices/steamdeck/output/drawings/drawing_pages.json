@@ -110,6 +110,7 @@
           "RAMMark3",
           "FrontGripField-1",
           "FrontGripField1",
+          "AmbientLightSensorWindow",
           "RearScrew0",
           "RearScrew1",
           "RearScrew2",
@@ -297,6 +298,7 @@
           "RAMMark3",
           "FrontGripField-1",
           "FrontGripField1",
+          "AmbientLightSensorWindow",
           "RearScrew0",
           "RearScrew1",
           "RearScrew2",
@@ -429,6 +431,7 @@
           "RAMMark3",
           "FrontGripField-1",
           "FrontGripField1",
+          "AmbientLightSensorWindow",
           "RearScrew0",
           "RearScrew1",
           "RearScrew2",
@@ -561,6 +564,7 @@
           "RAMMark3",
           "FrontGripField-1",
           "FrontGripField1",
+          "AmbientLightSensorWindow",
           "RearScrew0",
           "RearScrew1",
           "RearScrew2",
@@ -693,6 +697,7 @@
           "RAMMark3",
           "FrontGripField-1",
           "FrontGripField1",
+          "AmbientLightSensorWindow",
           "RearScrew0",
           "RearScrew1",
           "RearScrew2",
@@ -753,7 +758,7 @@
     "title": "七英寸显示层与主操作件尺寸",
     "svg": "03.svg",
     "notes": [
-      "7 英寸 16:10 显示窗口换算为约 150.77 × 94.23 mm。",
+      "Valve 参考图标注显示区 151.7 × 95.2 mm，盖板 173.7 × 106.7 mm。",
       "双电容感应摇杆、十字键与 ABXY 独立建模，局部标注取自模型。"
     ],
     "views": [
@@ -764,11 +769,13 @@
           "LCDBackplate",
           "LCD",
           "TouchLayer",
-          "DisplayGlass"
+          "DisplayGlass",
+          "AmbientLightSensorWindow",
+          "AmbientLightSensorPackage"
         ],
         "x": 133.0,
         "y": 93.0,
-        "scale": 1.1795366795366795,
+        "scale": 1.1452671040299904,
         "normal": [
           0,
           0,
@@ -868,19 +875,19 @@
       {
         "view": "LCDWindow",
         "p1": [
-          -75.385,
+          -75.85,
           0.0,
           36.9
         ],
         "p2": [
-          75.385,
+          75.85,
           0.0,
           36.9
         ],
         "axis": "x",
-        "value_mm": 150.77000000000004,
-        "label": "≈ 150.77",
-        "published": false,
+        "value_mm": 151.7,
+        "label": "151.7",
+        "published": true,
         "label_position": [
           133.0,
           15.4
@@ -890,18 +897,18 @@
         "view": "LCDWindow",
         "p1": [
           0.0,
-          -47.115,
+          -47.6,
           36.9
         ],
         "p2": [
           0.0,
-          47.115,
+          47.6,
           36.9
         ],
         "axis": "y",
-        "value_mm": 94.23000000000002,
-        "label": "≈ 94.23",
-        "published": false,
+        "value_mm": 95.2,
+        "label": "95.2",
+        "published": true,
         "label_position": [
           15,
           93.0
@@ -996,8 +1003,8 @@
           0
         ],
         "center": [
-          -109.0,
-          -4.000000000000001,
+          -105.78,
+          1.3369999999999997,
           31.36
         ],
         "exploded": false,
@@ -1039,8 +1046,8 @@
           0
         ],
         "center": [
-          -108.38616890620372,
-          -2.5900848030580335,
+          -105.16616890620372,
+          2.74691519694197,
           195.5959817095316
         ],
         "exploded": true,
@@ -1051,13 +1058,13 @@
       {
         "view": "TrackpadFace",
         "p1": [
-          -125.25,
-          -4.000000000000001,
+          -122.03,
+          1.3369999999999997,
           36.425000000000004
         ],
         "p2": [
-          -92.75,
-          -4.000000000000001,
+          -89.53,
+          1.3369999999999997,
           36.425000000000004
         ],
         "axis": "x",
@@ -1072,13 +1079,13 @@
       {
         "view": "TrackpadFace",
         "p1": [
-          -109.0,
-          -20.25,
+          -105.78,
+          -14.913,
           36.425000000000004
         ],
         "p2": [
-          -109.0,
-          12.25,
+          -105.78,
+          17.587,
           36.425000000000004
         ],
         "axis": "y",
@@ -1594,7 +1601,9 @@
           "BumperPlunger1",
           "AntennaFoil1",
           "AntennaCoaxRight",
-          "AntennaCoaxLeft"
+          "AntennaCoaxLeft",
+          "AmbientLightSensorWindow",
+          "AmbientLightSensorPackage"
         ],
         "x": 198.0,
         "y": 62.5,
@@ -1644,10 +1653,14 @@
           "ControlPCB-1",
           "ControlPCB1",
           "TrackpadPCB-1",
+          "HapticCoil-1",
+          "HapticMagnet-1",
           "HapticArmature-1",
           "TrackpadSpring-1_-1",
           "TrackpadSpring-1_1",
           "TrackpadPCB1",
+          "HapticCoil1",
+          "HapticMagnet1",
           "HapticArmature1",
           "TrackpadSpring1_-1",
           "TrackpadSpring1_1",
@@ -2341,7 +2354,9 @@
           "BumperPlunger1",
           "AntennaFoil1",
           "AntennaCoaxRight",
-          "AntennaCoaxLeft"
+          "AntennaCoaxLeft",
+          "AmbientLightSensorWindow",
+          "AmbientLightSensorPackage"
         ],
         "x": 198.0,
         "y": 104.5,
@@ -3129,9 +3144,9 @@
           0
         ],
         "center": [
-          -101.40871840707544,
-          -44.70229348429988,
-          30.59546932154093
+          -96.40871840707544,
+          -37.43729348429988,
+          30.595469321540925
         ],
         "exploded": false,
         "source": "open"
@@ -3230,7 +3245,7 @@
     "title": "尺寸来源、近似范围与验证入口",
     "svg": "12.svg",
     "notes": [
-      "公开整机尺寸、显示区换算和局部近似值分别记录。",
+      "公开整机与显示区尺寸、参考特征测量和局部近似值分别记录。",
       "图纸为当前版本 BRep 快照，修改原生模型后应重新生成投影。"
     ],
     "views": [],

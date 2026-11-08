@@ -26,8 +26,8 @@ v=s.view_fit('RightSide',ext,(227,38,143,60),(1,0,0),(0,0,1));d.dimension_box(s,
 v=s.view_fit('TopPorts',ext,(18,146,175,39),(0,1,0),(0,0,1));caption(s,v,'顶部排风与接口',202)
 v=s.view_fit('BottomPorts',ext,(215,146,168,39),(0,-1,0),(0,0,1));caption(s,v,'底部 microSD 入口',202);s.save()
 
-s=d.Sheet(3,'七英寸显示层与主操作件尺寸',['7 英寸 16:10 显示窗口换算为约 150.77 × 94.23 mm。','双电容感应摇杆、十字键与 ABXY 独立建模，局部标注取自模型。'])
-v=s.view_fit('LCDWindow',d.keys_for(['Display']),(25,28,216,130),(0,0,1));d.dimension_box(s,v,['DisplayGlass'],'x',17);d.dimension_box(s,v,['DisplayGlass'],'y',17);caption(s,v,'LCD、触控层与显示窗口',180)
+s=d.Sheet(3,'七英寸显示层与主操作件尺寸',['Valve 参考图标注显示区 151.7 × 95.2 mm，盖板 173.7 × 106.7 mm。','双电容感应摇杆、十字键与 ABXY 独立建模，局部标注取自模型。'])
+v=s.view_fit('LCDWindow',d.keys_for(['Display']),(25,28,216,130),(0,0,1));d.dimension_box(s,v,['DisplayGlass'],'x',17,True);d.dimension_box(s,v,['DisplayGlass'],'y',17,True);caption(s,v,'LCD、触控层与显示窗口',180)
 v=s.view_fit('StickDetail',right_stick,(280,30,86,66),(0,0,1));d.dimension_box(s,v,['StickCap1'],'x',18);caption(s,v,'凹面电容感应摇杆',115)
 v=s.view_fit('FaceButtons',starts('Button'),(280,142,86,48),(0,0,1));d.dimension_box(s,v,['ButtonY'],'x',132);caption(s,v,'ABXY 面按键',207);s.save()
 
@@ -75,8 +75,8 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
  s.text(12,y,names[name]);s.text(124,y,count,anchor='middle');s.text(160,y,' / '.join(sorted(set(r['material'] for r in rows))[:3]),3.0);s.text(282,y,rows[0]['part_number']+' … '+rows[-1]['part_number'],3.0);s.line((12,y+4),(384,y+4))
 s.text(12,207,f"合计 {M['physical_components']} 个组件 / {M['solids']} 个实体；完整清单见 COMPONENTS.csv",3.5,fill='#1B365D');s.save()
 
-s=d.Sheet(12,'尺寸来源、近似范围与验证入口',['公开整机尺寸、显示区换算和局部近似值分别记录。','图纸为当前版本 BRep 快照，修改原生模型后应重新生成投影。'])
-sections=[(16,'公开规格与版本',['Valve 2022 LCD：整机 298 × 117 × 49 mm，包含控制件。','7 英寸 16:10 LCD；40 Wh 电池；45 W USB-C 供电。','本模型采用早期银色罩与黑色电源键，不使用 OLED 版布局。']), (67,'参考与近似范围',['Valve 原始产品技术规格与 iFixit 原始 LCD 拆机照片。','维修指南中的后期修订图像仅用于辨别，不混入当前版本。','局部曲面、壁厚、孔位、电芯、接点和排线均为近似研究几何。']), (118,'检查记录',[f"{M['design_iterations']} 轮源码构建；{M['physical_components']} 个组件重建匹配。",'原生整机与爆炸、三份 STEP 回读和组件求交检查。','模型尺寸、原生图纸参考、字体与逐页检查见 reports/。']), (169,'维护入口',['来源：references/SOURCES.md；清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/steamdeck.py。','网页来自同一组 BRep，精确实体以 FCStd / STEP 为准。'])]
+s=d.Sheet(12,'尺寸来源、近似范围与验证入口',['公开整机与显示区尺寸、参考特征测量和局部近似值分别记录。','图纸为当前版本 BRep 快照，修改原生模型后应重新生成投影。'])
+sections=[(16,'公开规格与版本',['Valve 2022 LCD：整机 298 × 117 × 49 mm，包含控制件。','7 英寸 16:10 LCD；40 Wh 电池；45 W USB-C 供电。','本模型采用早期银色罩与黑色电源键，不使用 OLED 版布局。']), (67,'参考与近似范围',['Valve 原始规格、2022-02-02 外部参考图及 iFixit LCD 拆机照片。','显示区与盖板按参考图；麦克风、控制区和开孔按参考特征修正。','未直接复制 Valve CAD；局部曲面、壁厚、电芯、接点与排线仍近似。']), (118,'检查记录',[f"{M['design_iterations']} 轮建模；当前 {M['physical_components']} 个组件，本轮未重跑整套源码。",'原生整机与爆炸、三份 STEP 回读和组件求交检查。','本轮尺寸、图纸与文件哈希见 fidelity_delivery_checks.json。']), (169,'维护入口',['来源：references/SOURCES.md；清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/steamdeck.py。','网页来自同一组 BRep，精确实体以 FCStd / STEP 为准。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)
