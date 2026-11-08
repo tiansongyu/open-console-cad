@@ -6,14 +6,16 @@ import FreeCAD as App
 import FreeCADGui as Gui
 import Part,ImportGui
 from . import geometry as g
+from .part_numbers import allocate_part_numbers
 V=g.vec
 
 
 def finalize(m):
     p=m.profile;out=m.out;prefix=p['prefix'];main_step=prefix+'_'+p.get('main_step_suffix','Handheld')+'.step';main_groups=[a for a in m.groups if a not in ['Accessories','Cradle','Construction']]
-    for i,o in enumerate(m.parts.values(),1):
+    numbers=allocate_part_numbers([getattr(o,'PartNumber','') for o in m.parts.values()],p['id'].upper(),p.get('preserve_part_numbers',False),p.get('retired_part_numbers',[]))
+    for o,number in zip(m.parts.values(),numbers):
         if 'PartNumber' not in o.PropertiesList:o.addProperty('App::PropertyString','PartNumber','Study')
-        o.PartNumber=p['id'].upper()+f'-{i:04d}';o.Label=o.PartNumber+' · '+re.sub(r'^\S+-\d{4} · ','',o.Label)
+        o.PartNumber=number;o.Label=o.PartNumber+' · '+re.sub(r'^\S+-\d{4,} · ','',o.Label)
     m.set_pose(p.get('default_opening',180));m.doc.Label=p['title']+' · complete CAD study'
     info=m.doc.getObject('StudyInfo') or m.doc.addObject('App::FeaturePython','StudyInfo')
     for key,typ in [('ProfileJSON','App::PropertyString'),('HingePivot','App::PropertyVector'),('OpeningDegrees','App::PropertyFloat'),('SourceDigest','App::PropertyString')]:
@@ -96,6 +98,8 @@ def finalize(m):
     report={'project':p['title']+' '+p['model'],'device':p['id'],'prefix':prefix,'design_iterations':p['stages'],'physical_components':len(m.parts),'solids':sum(len(o.Shape.Solids) for o in m.parts.values()),'assemblies':dict(Counter(o.Assembly for o in m.parts.values())),'handheld_groups':main_groups,'native_files':native,'step_files':steps,'views':{k:str(Path(v).relative_to(m.repo)) for k,v in views.items()},'objects':rows,'exploded_objects':erows,'offsets':offsets,'published_envelope_mm':[p['width'],p['height'],p['closed_depth']],'envelope_pose':'closed' if p['family']=='clamshell' else 'body','measured_envelope_mm':[envelope.XLength,envelope.YLength,envelope.ZLength],'pose':{'type':'hinge' if p['family']=='clamshell' else 'fixed','group':'Lid','pivot_mm':[0,p.get('hinge_y',0),p.get('hinge_z',0)],'axis':[1,0,0],'default_opening':p.get('default_opening',180),'range':[0,p.get('default_opening',180)]},'fidelity':'Published envelope; approximate exterior details and schematic major internals','source_digest':info.SourceDigest}
     report.update(main_step_file=main_step,envelope_groups=envelope_groups,envelope_basis=p.get('envelope_basis','Published closed or body envelope'),overall_modeled_envelope_mm=[overall.XLength,overall.YLength,overall.ZLength],envelope_kind=p.get('envelope_kind','published'))
     report['fidelity']=p.get('fidelity',report['fidelity'])
+    if p.get('preserve_part_numbers'):
+        report['numbering']={'policy':'preserve_existing','retired_part_numbers':p.get('retired_part_numbers',[]),'retired_part_ids':p.get('retired_part_ids',[])}
     if report['envelope_kind']=='approximate':report['reference_envelope_mm']=report.pop('published_envelope_mm')
     (out/'reports/final_manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     with (out/'COMPONENTS.csv').open('w',newline='',encoding='utf-8-sig') as f:

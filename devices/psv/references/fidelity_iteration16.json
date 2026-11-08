@@ -1,0 +1,26 @@
+{
+  "device": "psv",
+  "model": "PCH-1000 Wi-Fi OLED",
+  "iteration": 16,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {"url": "https://sonyinteractive.com/jp/press-releases/2011/110914c/", "publisher": "Sony Computer Entertainment", "verified": "Original Vita memory-card height 12.5 mm, width 15.0 mm, thickness 1.6 mm.", "scope": "Published accessory envelope; corner geometry and contacts not dimensioned."},
+    {"url": "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/psvita-docs/PCH-1001_1101-1.0_2_EN_AMER_QSG.pdf", "publisher": "Sony Computer Entertainment", "page": 2, "verified": "Original PCH-1000-family game-card access indicator beside the card slot.", "scope": "Presence and side verified from the Removing the PS Vita card diagram; lens size and coordinates estimated."},
+    {"url": "https://www.psdevwiki.com/vita/Media", "publisher": "Vita hardware reverse-engineering contributors", "verified": "Ten game-card contacts; pinout attributed to motoharu; approximately 1.4 mm pitch.", "scope": "Physical mating-contact count; reconstructed terminal cross sections and spring shapes."},
+    {"url": "https://yifan.lu/2014/02/17/how-to-disassemble-vita-game-cartridges/", "publisher": "Yifan Lu", "verified": "Firsthand disassembled game-card photographs visibly corroborate ten terminal lands.", "scope": "Photographs inspected locally; not redistributed."},
+    {"url": "https://www.psdevwiki.com/vita/Memory_Card", "publisher": "Vita hardware reverse-engineering contributors", "verified": "Nine proprietary memory-card contacts; pinout credited to Asdron and confirmed by RichDevX.", "scope": "Contact count only; no electrical-function claim for the CAD."}
+  ],
+  "changes": [
+    {"parts": "GameCardContact0..19 and VitaGamePad0..19", "before_contacts_each": 20, "after_contacts_each": 10, "retired_indices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]},
+    {"parts": "MemoryCardContact0..8 and VitaMemoryPad0..8", "before_contacts_each": 8, "after_contacts_each": 9},
+    {"part": "VitaMemoryCard", "before_xy_mm": [12.5, 15.0], "after_xy_mm": [15.0, 12.5], "thickness_mm": 1.6},
+    {"part": "GameCardAccessLens", "change": "Add a fixed rail lens beside the game-card cover; estimated local dimensions."}
+  ],
+  "limitations": [
+    "No physical PCH-1000 specimen or factory molding drawing was measured.",
+    "Socket widths, shield thicknesses, support PCB outline and installation clearances are reconstructed approximations.",
+    "Contact counts are corroborated; manufacturing pitch tolerances, terminal forms and electrical behavior are not validated.",
+    "Retired contact identities are retained in document history and reserved in numbering; they are excluded from physical exports."
+  ]
+}

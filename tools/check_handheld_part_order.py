@@ -2,6 +2,7 @@
 import ast,json
 from pathlib import Path
 from types import SimpleNamespace
+from cadlib.part_numbers import allocate_part_numbers
 
 repo=Path(__file__).resolve().parents[1]
 source=repo/'tools/cadlib/handheld_refinement.py'
@@ -33,7 +34,9 @@ for device,replacements in {
  'psp':['DPadUp','DPadRight','DPadDown','DPadLeft','DPadCarrier','DPadPCB','ButtonTriangle','ButtonCircle','ButtonCross','ButtonSquare','DisplaySurround','PowerBoard'],
  'psv':['StrapEye-1','StrapEye1'],
 }.items():
-    rows=json.loads((repo/'devices'/device/'output/reports/final_manifest.json').read_text())['objects']
+    manifest=json.loads((repo/'devices'/device/'output/reports/final_manifest.json').read_text())
+    profile=json.loads((repo/'devices'/device/'profile.json').read_text())
+    rows=manifest['objects']
     model=FakeModel(rows);registry=model.parts;order=list(registry)
     for key in replacements:
         old=model.parts[key];new=replace(model,key,SimpleNamespace(isValid=lambda:True,Solids=[object()]),'registration order regression check')
@@ -43,11 +46,15 @@ for device,replacements in {
         assert new.PhysicalPart and not old.PhysicalPart and not old.Visibility
         assert new.PartNumber==old.PartNumber
         assert new.ViewObject.ShapeAppearance is old.ViewObject.ShapeAppearance
-    # Mirror deliver.finalize's ordering rule against the saved delivery BOM.
+    # Exercise the same allocator used by deliver.finalize, including retained
+    # identities with deliberate gaps after false contacts have been retired.
     expected={r['part_id']:r['part_number'] for r in rows}
-    for i,(key,part) in enumerate(model.parts.items(),1):
-        assigned=f'{device.upper()}-{i:04d}'
+    retired=manifest.get('numbering',{}).get('retired_part_numbers',[])
+    numbers=allocate_part_numbers([part.PartNumber for part in model.parts.values()],
+                                  device.upper(),profile.get('preserve_part_numbers',False),retired)
+    for (key,part),assigned in zip(model.parts.items(),numbers):
         assert assigned==expected[key],(key,assigned,expected[key])
+    assert not set(retired).intersection(numbers)
     results.append({'device':device,'physical_components':len(rows),'replacements':len(replacements),'registry_identity_preserved':True,'registration_order_preserved':True,'all_part_numbers_match_saved_manifest':True,'passed':True})
 report={'passed':True,'scope':'Pure Python registration and numbering simulation of the actual replacement function; no CAD geometry or full source rebuild exercised','checks':results}
 print(json.dumps(report,indent=2))

@@ -2,24 +2,24 @@
   "project": "PlayStation Vita PCH-1000 Wi-Fi",
   "device": "psv",
   "prefix": "PSVita",
-  "design_iterations": 15,
-  "physical_components": 386,
-  "solids": 845,
+  "design_iterations": 16,
+  "physical_components": 369,
+  "solids": 828,
   "assemblies": {
     "Body": 16,
     "Display": 5,
     "Controls": 40,
     "Internal": 22,
-    "Ports": 32,
+    "Ports": 33,
     "Optics": 10,
     "RearTouch": 9,
     "Battery": 17,
     "Mainboard": 85,
     "ControlsInternal": 61,
-    "CardReaders": 31,
+    "CardReaders": 22,
     "Audio": 21,
     "Flex": 5,
-    "Accessories": 32
+    "Accessories": 23
   },
   "handheld_groups": [
     "Body",
@@ -85,14 +85,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut021",
-      "label": "PSV-0002 · PCH-1000 structural perimeter022",
+      "name": "MainFrameCut023",
+      "label": "PSV-0002 · PCH-1000 structural perimeter024",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 134,
-      "volume": 9523.938073496394,
+      "faces": 145,
+      "volume": 9490.28277405781,
       "bounds": [
         -91.0000001,
         91.0000001,
@@ -141,14 +141,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "SilverRimCut019",
-      "label": "PSV-0004 · Original OLED-model silver perimeter rim020",
+      "name": "SilverRimCut021",
+      "label": "PSV-0004 · Original OLED-model silver perimeter rim022",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 58,
-      "volume": 1236.2904851370984,
+      "faces": 59,
+      "volume": 1236.0081895103256,
       "bounds": [
         -90.9900001,
         90.9900001,
@@ -2444,12 +2444,12 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.394305147187566,
+      "volume": 34.39430514718758,
       "bounds": [
-        -73.20395037754743,
-        -64.19604962245258,
-        -38.035209260074936,
-        -32.26479073992505,
+        -73.20395037754744,
+        -64.19604962245259,
+        -38.03520926007492,
+        -32.26479073992503,
         16.899999899999997,
         18.6000001
       ],
@@ -2558,10 +2558,10 @@
       "faces": 4,
       "volume": 34.39430514718819,
       "bounds": [
-        64.19604962245258,
-        73.20395037754743,
-        -38.035209260074936,
-        -32.26479073992505,
+        64.19604962245259,
+        73.20395037754744,
+        -38.03520926007492,
+        -32.26479073992503,
         16.899999899999997,
         18.6000001
       ],
@@ -3921,17 +3921,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact0",
-      "label": "PSV-0139 · Game-card contact study",
+      "name": "GameCardContact001",
+      "label": "PSV-0139 · Game-card contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -41.25,
-        -40.75,
+        -37.775,
+        -36.824999999999996,
         20.0,
         26.0,
         9.86,
@@ -3949,17 +3949,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact1",
-      "label": "PSV-0140 · Game-card contact study001",
+      "name": "GameCardContact002",
+      "label": "PSV-0140 · Game-card contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.39892639157004633,
       "bounds": [
-        -40.2,
-        -39.7,
+        -36.375,
+        -35.425,
         20.0,
         26.0,
         9.86,
@@ -3977,17 +3977,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact2",
-      "label": "PSV-0141 · Game-card contact study002",
+      "name": "GameCardContact003",
+      "label": "PSV-0141 · Game-card contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.39892639157004633,
       "bounds": [
-        -39.15,
-        -38.65,
+        -34.975,
+        -34.025,
         20.0,
         26.0,
         9.86,
@@ -4005,17 +4005,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact3",
-      "label": "PSV-0142 · Game-card contact study003",
+      "name": "GameCardContact004",
+      "label": "PSV-0142 · Game-card contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -38.1,
-        -37.6,
+        -33.575,
+        -32.625,
         20.0,
         26.0,
         9.86,
@@ -4033,17 +4033,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact4",
-      "label": "PSV-0143 · Game-card contact study004",
+      "name": "GameCardContact005",
+      "label": "PSV-0143 · Game-card contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700457,
       "bounds": [
-        -37.05,
-        -36.55,
+        -32.175,
+        -31.224999999999998,
         20.0,
         26.0,
         9.86,
@@ -4061,17 +4061,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact5",
-      "label": "PSV-0144 · Game-card contact study005",
+      "name": "GameCardContact006",
+      "label": "PSV-0144 · Game-card contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700462,
       "bounds": [
-        -36.0,
-        -35.5,
+        -30.775000000000002,
+        -29.825,
         20.0,
         26.0,
         9.86,
@@ -4089,17 +4089,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact6",
-      "label": "PSV-0145 · Game-card contact study006",
+      "name": "GameCardContact007",
+      "label": "PSV-0145 · Game-card contact study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700462,
       "bounds": [
-        -34.95,
-        -34.45,
+        -29.375,
+        -28.424999999999997,
         20.0,
         26.0,
         9.86,
@@ -4117,17 +4117,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact7",
-      "label": "PSV-0146 · Game-card contact study007",
+      "name": "GameCardContact008",
+      "label": "PSV-0146 · Game-card contact study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.39892639157004617,
       "bounds": [
-        -33.9,
-        -33.4,
+        -27.975,
+        -27.025,
         20.0,
         26.0,
         9.86,
@@ -4145,17 +4145,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact8",
-      "label": "PSV-0147 · Game-card contact study008",
+      "name": "GameCardContact009",
+      "label": "PSV-0147 · Game-card contact study009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -32.85,
-        -32.35,
+        -26.575000000000003,
+        -25.625,
         20.0,
         26.0,
         9.86,
@@ -4173,17 +4173,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact9",
-      "label": "PSV-0148 · Game-card contact study009",
+      "name": "GameCardContact010",
+      "label": "PSV-0148 · Game-card contact study010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430082,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -31.799999999999997,
-        -31.299999999999997,
+        -25.175,
+        -24.224999999999998,
         20.0,
         26.0,
         9.86,
@@ -4201,301 +4201,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "GameCardContact10",
-      "label": "PSV-0149 · Game-card contact study010",
+      "name": "MemoryCardCage001",
+      "label": "PSV-0159 · Proprietary Vita memory-card socket001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
+      "faces": 17,
+      "volume": 196.92473325285656,
       "bounds": [
-        -30.75,
-        -30.25,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact10",
-      "part_number": "PSV-0149",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact11",
-      "label": "PSV-0150 · Game-card contact study011",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -29.7,
-        -29.2,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact11",
-      "part_number": "PSV-0150",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact12",
-      "label": "PSV-0151 · Game-card contact study012",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.2099759645943008,
-      "bounds": [
-        -28.65,
-        -28.15,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact12",
-      "part_number": "PSV-0151",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact13",
-      "label": "PSV-0152 · Game-card contact study013",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -27.6,
-        -27.1,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact13",
-      "part_number": "PSV-0152",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact14",
-      "label": "PSV-0153 · Game-card contact study014",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -26.549999999999997,
-        -26.049999999999997,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact14",
-      "part_number": "PSV-0153",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact15",
-      "label": "PSV-0154 · Game-card contact study015",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -25.5,
-        -25.0,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact15",
-      "part_number": "PSV-0154",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact16",
-      "label": "PSV-0155 · Game-card contact study016",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -24.45,
-        -23.95,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact16",
-      "part_number": "PSV-0155",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact17",
-      "label": "PSV-0156 · Game-card contact study017",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -23.4,
-        -22.9,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact17",
-      "part_number": "PSV-0156",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact18",
-      "label": "PSV-0157 · Game-card contact study018",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -22.349999999999998,
-        -21.849999999999998,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact18",
-      "part_number": "PSV-0157",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "GameCardContact19",
-      "label": "PSV-0158 · Game-card contact study019",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -21.3,
-        -20.8,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact19",
-      "part_number": "PSV-0158",
-      "assembly": "CardReaders",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Schematic internal layout",
-      "pose_group": "Base"
-    },
-    {
-      "name": "MemoryCardCage",
-      "label": "PSV-0159 · Proprietary Vita memory-card socket",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 14,
-      "volume": 199.70641577581412,
-      "bounds": [
-        46.75,
-        61.25,
-        -39.0,
-        -25.0,
-        4.4,
-        6.7
+        45.65,
+        62.35,
+        -39.25,
+        -24.75,
+        4.35,
+        6.8999999999999995
       ],
       "state": [
         "Up-to-date"
@@ -4509,17 +4229,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact0",
-      "label": "PSV-0160 · Proprietary memory contact study",
+      "name": "MemoryCardContact001",
+      "label": "PSV-0160 · Proprietary memory contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859423,
       "bounds": [
-        49.49999999999999,
-        50.1,
+        48.900000000000006,
+        49.5,
         -33.85,
         -29.15,
         4.9,
@@ -4537,17 +4257,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact1",
-      "label": "PSV-0161 · Proprietary memory contact study001",
+      "name": "MemoryCardContact002",
+      "label": "PSV-0161 · Proprietary memory contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1973759645943002,
+      "volume": 0.19736244467859426,
       "bounds": [
+        50.1,
         50.699999999999996,
-        51.300000000000004,
         -33.85,
         -29.15,
         4.9,
@@ -4565,17 +4285,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact2",
-      "label": "PSV-0162 · Proprietary memory contact study002",
+      "name": "MemoryCardContact003",
+      "label": "PSV-0162 · Proprietary memory contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859426,
       "bounds": [
-        51.89999999999999,
-        52.5,
+        51.300000000000004,
+        51.9,
         -33.85,
         -29.15,
         4.9,
@@ -4593,17 +4313,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact3",
-      "label": "PSV-0163 · Proprietary memory contact study003",
+      "name": "MemoryCardContact004",
+      "label": "PSV-0163 · Proprietary memory contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1973759645943002,
+      "volume": 0.19736244467859423,
       "bounds": [
+        52.5,
         53.099999999999994,
-        53.7,
         -33.85,
         -29.15,
         4.9,
@@ -4621,17 +4341,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact4",
-      "label": "PSV-0164 · Proprietary memory contact study004",
+      "name": "MemoryCardContact005",
+      "label": "PSV-0164 · Proprietary memory contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859426,
       "bounds": [
-        54.29999999999999,
-        54.9,
+        53.7,
+        54.3,
         -33.85,
         -29.15,
         4.9,
@@ -4649,17 +4369,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact5",
-      "label": "PSV-0165 · Proprietary memory contact study005",
+      "name": "MemoryCardContact006",
+      "label": "PSV-0165 · Proprietary memory contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859426,
       "bounds": [
-        55.49999999999999,
-        56.1,
+        54.900000000000006,
+        55.5,
         -33.85,
         -29.15,
         4.9,
@@ -4677,17 +4397,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact6",
-      "label": "PSV-0166 · Proprietary memory contact study006",
+      "name": "MemoryCardContact007",
+      "label": "PSV-0166 · Proprietary memory contact study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859426,
       "bounds": [
+        56.1,
         56.699999999999996,
-        57.300000000000004,
         -33.85,
         -29.15,
         4.9,
@@ -4705,17 +4425,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryCardContact7",
-      "label": "PSV-0167 · Proprietary memory contact study007",
+      "name": "MemoryCardContact008",
+      "label": "PSV-0167 · Proprietary memory contact study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459430023,
+      "volume": 0.19736244467859426,
       "bounds": [
-        57.89999999999999,
-        58.5,
+        57.300000000000004,
+        57.9,
         -33.85,
         -29.15,
         4.9,
@@ -4733,17 +4453,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "MemoryReaderPCB",
-      "label": "PSV-0168 · Memory reader carrier board",
+      "name": "MemoryReaderPCB001",
+      "label": "PSV-0168 · Memory reader carrier board001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 113.21982957588392,
+      "volume": 128.27968467358644,
       "bounds": [
-        45.9,
-        62.10000000000029,
+        44.8,
+        63.20000000000064,
         -39.65,
         -24.0,
         7.0,
@@ -9913,21 +9633,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGameCardCut020",
-      "label": "PSV-0353 · Blank proprietary Vita game card021",
-      "type": "Part::Cut",
+      "name": "VitaGameCard001",
+      "label": "PSV-0353 · Blank proprietary Vita game card022",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 226,
-      "volume": 1291.9616348430638,
+      "faces": 136,
+      "volume": 1292.2425414801285,
       "bounds": [
         114.75,
         137.25,
         -0.25,
         30.25,
         0.0,
-        1.9000000000000001
+        1.9
       ],
       "state": [
         "Up-to-date"
@@ -9941,17 +9661,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad0",
-      "label": "PSV-0354 · Game-card terminal study",
+      "name": "VitaGamePad001",
+      "label": "PSV-0354 · Game-card terminal study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        116.74499999999999,
-        117.395,
+        119.175,
+        120.22500000000001,
         22.95,
         27.45,
         1.875,
@@ -9969,17 +9689,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad1",
-      "label": "PSV-0355 · Game-card terminal study001",
+      "name": "VitaGamePad002",
+      "label": "PSV-0355 · Game-card terminal study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        117.685,
-        118.33500000000001,
+        120.57499999999999,
+        121.625,
         22.95,
         27.45,
         1.875,
@@ -9997,17 +9717,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad2",
-      "label": "PSV-0356 · Game-card terminal study002",
+      "name": "VitaGamePad003",
+      "label": "PSV-0356 · Game-card terminal study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        118.625,
-        119.275,
+        121.975,
+        123.025,
         22.95,
         27.45,
         1.875,
@@ -10025,17 +9745,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad3",
-      "label": "PSV-0357 · Game-card terminal study003",
+      "name": "VitaGamePad004",
+      "label": "PSV-0357 · Game-card terminal study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0730906637061437,
+      "volume": 0.11809066370614388,
       "bounds": [
-        119.565,
-        120.215,
+        123.375,
+        124.42500000000001,
         22.95,
         27.45,
         1.875,
@@ -10053,17 +9773,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad4",
-      "label": "PSV-0358 · Game-card terminal study004",
+      "name": "VitaGamePad005",
+      "label": "PSV-0358 · Game-card terminal study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        120.505,
-        121.155,
+        124.77499999999999,
+        125.825,
         22.95,
         27.45,
         1.875,
@@ -10081,17 +9801,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad5",
-      "label": "PSV-0359 · Game-card terminal study005",
+      "name": "VitaGamePad006",
+      "label": "PSV-0359 · Game-card terminal study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0730906637061437,
+      "volume": 0.11809066370614388,
       "bounds": [
-        121.445,
-        122.095,
+        126.175,
+        127.22500000000001,
         22.95,
         27.45,
         1.875,
@@ -10109,17 +9829,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad6",
-      "label": "PSV-0360 · Game-card terminal study006",
+      "name": "VitaGamePad007",
+      "label": "PSV-0360 · Game-card terminal study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        122.38499999999999,
-        123.035,
+        127.57499999999999,
+        128.625,
         22.95,
         27.45,
         1.875,
@@ -10137,17 +9857,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad7",
-      "label": "PSV-0361 · Game-card terminal study007",
+      "name": "VitaGamePad008",
+      "label": "PSV-0361 · Game-card terminal study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        123.325,
-        123.97500000000001,
+        128.975,
+        130.025,
         22.95,
         27.45,
         1.875,
@@ -10165,17 +9885,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad8",
-      "label": "PSV-0362 · Game-card terminal study008",
+      "name": "VitaGamePad009",
+      "label": "PSV-0362 · Game-card terminal study009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614373,
+      "volume": 0.11809066370614388,
       "bounds": [
-        124.265,
-        124.915,
+        130.375,
+        131.425,
         22.95,
         27.45,
         1.875,
@@ -10193,17 +9913,17 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaGamePad9",
-      "label": "PSV-0363 · Game-card terminal study009",
+      "name": "VitaGamePad010",
+      "label": "PSV-0363 · Game-card terminal study010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        125.205,
-        125.855,
+        131.775,
+        132.82500000000002,
         22.95,
         27.45,
         1.875,
@@ -10214,286 +9934,6 @@
       ],
       "part_id": "VitaGamePad9",
       "part_number": "PSV-0363",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad10",
-      "label": "PSV-0364 · Game-card terminal study010",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        126.145,
-        126.795,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad10",
-      "part_number": "PSV-0364",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad11",
-      "label": "PSV-0365 · Game-card terminal study011",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        127.085,
-        127.735,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad11",
-      "part_number": "PSV-0365",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad12",
-      "label": "PSV-0366 · Game-card terminal study012",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        128.025,
-        128.67499999999998,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad12",
-      "part_number": "PSV-0366",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad13",
-      "label": "PSV-0367 · Game-card terminal study013",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        128.965,
-        129.61499999999998,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad13",
-      "part_number": "PSV-0367",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad14",
-      "label": "PSV-0368 · Game-card terminal study014",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        129.905,
-        130.55499999999998,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad14",
-      "part_number": "PSV-0368",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad15",
-      "label": "PSV-0369 · Game-card terminal study015",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        130.845,
-        131.49499999999998,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad15",
-      "part_number": "PSV-0369",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad16",
-      "label": "PSV-0370 · Game-card terminal study016",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        131.78500000000003,
-        132.435,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad16",
-      "part_number": "PSV-0370",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad17",
-      "label": "PSV-0371 · Game-card terminal study017",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        132.72500000000002,
-        133.375,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad17",
-      "part_number": "PSV-0371",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad18",
-      "label": "PSV-0372 · Game-card terminal study018",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614266,
-      "bounds": [
-        133.66500000000002,
-        134.315,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad18",
-      "part_number": "PSV-0372",
-      "assembly": "Accessories",
-      "layer": 0,
-      "material": "gold",
-      "fidelity": "Published envelope; approximate local detail",
-      "pose_group": "Base"
-    },
-    {
-      "name": "VitaGamePad19",
-      "label": "PSV-0373 · Game-card terminal study019",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614267,
-      "bounds": [
-        134.60500000000002,
-        135.255,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad19",
-      "part_number": "PSV-0373",
       "assembly": "Accessories",
       "layer": 0,
       "material": "gold",
@@ -10529,19 +9969,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryCardCut008",
-      "label": "PSV-0375 · Proprietary Vita memory-card study009",
-      "type": "Part::Cut",
+      "name": "VitaMemoryCard001",
+      "label": "PSV-0375 · Proprietary Vita memory-card study010",
+      "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 123,
-      "volume": 298.8350164318132,
+      "faces": 132,
+      "volume": 298.7788007681072,
       "bounds": [
-        119.75,
-        132.25,
-        -37.5,
-        -22.5,
+        118.5,
+        133.5,
+        -36.25,
+        -23.75,
         0.0,
         1.6
       ],
@@ -10553,23 +9993,23 @@
       "assembly": "Accessories",
       "layer": 0,
       "material": "black",
-      "fidelity": "Published envelope; approximate local detail",
+      "fidelity": "Sony published card envelope; estimated corner and contact geometry",
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad0",
-      "label": "PSV-0376 · Memory-card terminal study",
+      "name": "VitaMemoryPad001",
+      "label": "PSV-0376 · Memory-card terminal study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.05621566370614352,
+      "volume": 0.056215663706143525,
       "bounds": [
-        121.25,
-        122.0,
-        -27.0,
-        -24.0,
+        120.825,
+        121.575,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10585,8 +10025,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad1",
-      "label": "PSV-0377 · Memory-card terminal study001",
+      "name": "VitaMemoryPad002",
+      "label": "PSV-0377 · Memory-card terminal study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -10594,10 +10034,10 @@
       "faces": 10,
       "volume": 0.05621566370614352,
       "bounds": [
-        122.5,
-        123.25,
-        -27.0,
-        -24.0,
+        122.025,
+        122.775,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10613,19 +10053,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad2",
-      "label": "PSV-0378 · Memory-card terminal study002",
+      "name": "VitaMemoryPad003",
+      "label": "PSV-0378 · Memory-card terminal study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.05621566370614352,
+      "volume": 0.056215663706143525,
       "bounds": [
-        123.75,
-        124.5,
-        -27.0,
-        -24.0,
+        123.225,
+        123.975,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10641,19 +10081,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad3",
-      "label": "PSV-0379 · Memory-card terminal study003",
+      "name": "VitaMemoryPad004",
+      "label": "PSV-0379 · Memory-card terminal study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.05621566370614352,
+      "volume": 0.056215663706143525,
       "bounds": [
-        125.0,
-        125.75,
-        -27.0,
-        -24.0,
+        124.425,
+        125.175,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10669,8 +10109,8 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad4",
-      "label": "PSV-0380 · Memory-card terminal study004",
+      "name": "VitaMemoryPad005",
+      "label": "PSV-0380 · Memory-card terminal study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -10678,10 +10118,10 @@
       "faces": 10,
       "volume": 0.05621566370614352,
       "bounds": [
-        126.25,
-        127.0,
-        -27.0,
-        -24.0,
+        125.625,
+        126.375,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10697,19 +10137,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad5",
-      "label": "PSV-0381 · Memory-card terminal study005",
+      "name": "VitaMemoryPad006",
+      "label": "PSV-0381 · Memory-card terminal study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.05621566370614352,
+      "volume": 0.056215663706143525,
       "bounds": [
-        127.5,
-        128.25,
-        -27.0,
-        -24.0,
+        126.825,
+        127.575,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10725,19 +10165,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad6",
-      "label": "PSV-0382 · Memory-card terminal study006",
+      "name": "VitaMemoryPad007",
+      "label": "PSV-0382 · Memory-card terminal study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614351,
       "bounds": [
-        128.75,
-        129.5,
-        -27.0,
-        -24.0,
+        128.025,
+        128.775,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10753,19 +10193,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "VitaMemoryPad7",
-      "label": "PSV-0383 · Memory-card terminal study007",
+      "name": "VitaMemoryPad008",
+      "label": "PSV-0383 · Memory-card terminal study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614352,
       "bounds": [
-        130.0,
-        130.75,
-        -27.0,
-        -24.0,
+        129.225,
+        129.975,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -10863,6 +10303,90 @@
       "material": "black",
       "fidelity": "Schematic internal layout",
       "pose_group": "Base"
+    },
+    {
+      "name": "VitaMemoryPad8",
+      "label": "PSV-0387 · Ninth Vita memory-card gold terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.05621566370614352,
+      "bounds": [
+        130.425,
+        131.175,
+        -27.25,
+        -24.25,
+        1.575,
+        1.5999999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VitaMemoryPad8",
+      "part_number": "PSV-0387",
+      "assembly": "Accessories",
+      "layer": 0,
+      "material": "gold",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "MemoryCardContact8",
+      "label": "PSV-0388 · Ninth memory-reader spring terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.19736244467859426,
+      "bounds": [
+        58.5,
+        59.099999999999994,
+        -33.85,
+        -29.15,
+        4.9,
+        4.970000000000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryCardContact8",
+      "part_number": "PSV-0388",
+      "assembly": "CardReaders",
+      "layer": -3,
+      "material": "gold",
+      "fidelity": "Schematic internal layout",
+      "pose_group": "Base"
+    },
+    {
+      "name": "GameCardAccessLens",
+      "label": "PSV-0389 · Original game-card access indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.2822909494809648,
+      "bounds": [
+        -50.779999999999994,
+        -49.82,
+        41.35,
+        41.74,
+        10.92,
+        11.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GameCardAccessLens",
+      "part_number": "PSV-0389",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "indicator_off",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
     }
   ],
   "exploded_objects": [
@@ -10896,14 +10420,14 @@
       ]
     },
     {
-      "name": "MainFrameCut021",
-      "label": "PSV-0002 · PCH-1000 structural perimeter022",
+      "name": "MainFrameCut023",
+      "label": "PSV-0002 · PCH-1000 structural perimeter024",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 134,
-      "volume": 9523.938073496394,
+      "faces": 145,
+      "volume": 9490.28277405781,
       "bounds": [
         -91.0000001,
         91.0000001,
@@ -10932,7 +10456,7 @@
       "null": false,
       "solids": 1,
       "faces": 206,
-      "volume": 5757.604447060004,
+      "volume": 5757.604447060002,
       "bounds": [
         -90.8000001,
         90.8000001,
@@ -10954,14 +10478,14 @@
       ]
     },
     {
-      "name": "SilverRimCut019",
-      "label": "PSV-0004 · Original OLED-model silver perimeter rim020",
+      "name": "SilverRimCut021",
+      "label": "PSV-0004 · Original OLED-model silver perimeter rim022",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 58,
-      "volume": 1236.2904851370984,
+      "faces": 59,
+      "volume": 1236.0081895103256,
       "bounds": [
         -90.9900001,
         90.9900001,
@@ -13339,12 +12863,12 @@
       "null": false,
       "solids": 1,
       "faces": 4,
-      "volume": 34.394305147187495,
+      "volume": 34.39430514718751,
       "bounds": [
-        -73.20395037754743,
-        -64.19604962245258,
-        -38.035209260074936,
-        -32.26479073992505,
+        -73.20395037754744,
+        -64.19604962245259,
+        -38.03520926007492,
+        -32.26479073992503,
         226.8999999,
         228.6000001
       ],
@@ -13457,10 +12981,10 @@
       "faces": 4,
       "volume": 34.39430514718812,
       "bounds": [
-        64.19604962245258,
-        73.20395037754743,
-        -38.035209260074936,
-        -32.26479073992505,
+        64.19604962245259,
+        73.20395037754744,
+        -38.03520926007492,
+        -32.26479073992503,
         226.8999999,
         228.6000001
       ],
@@ -14869,17 +14393,17 @@
       ]
     },
     {
-      "name": "GameCardContact0",
-      "label": "PSV-0139 · Game-card contact study",
+      "name": "GameCardContact001",
+      "label": "PSV-0139 · Game-card contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -41.25,
-        -40.75,
+        -37.775,
+        -36.824999999999996,
         20.0,
         26.0,
         9.86,
@@ -14898,17 +14422,17 @@
       ]
     },
     {
-      "name": "GameCardContact1",
-      "label": "PSV-0140 · Game-card contact study001",
+      "name": "GameCardContact002",
+      "label": "PSV-0140 · Game-card contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.39892639157004633,
       "bounds": [
-        -40.2,
-        -39.7,
+        -36.375,
+        -35.425,
         20.0,
         26.0,
         9.86,
@@ -14927,17 +14451,17 @@
       ]
     },
     {
-      "name": "GameCardContact2",
-      "label": "PSV-0141 · Game-card contact study002",
+      "name": "GameCardContact003",
+      "label": "PSV-0141 · Game-card contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.39892639157004633,
       "bounds": [
-        -39.15,
-        -38.65,
+        -34.975,
+        -34.025,
         20.0,
         26.0,
         9.86,
@@ -14956,17 +14480,17 @@
       ]
     },
     {
-      "name": "GameCardContact3",
-      "label": "PSV-0142 · Game-card contact study003",
+      "name": "GameCardContact004",
+      "label": "PSV-0142 · Game-card contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -38.1,
-        -37.6,
+        -33.575,
+        -32.625,
         20.0,
         26.0,
         9.86,
@@ -14985,17 +14509,17 @@
       ]
     },
     {
-      "name": "GameCardContact4",
-      "label": "PSV-0143 · Game-card contact study004",
+      "name": "GameCardContact005",
+      "label": "PSV-0143 · Game-card contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700457,
       "bounds": [
-        -37.05,
-        -36.55,
+        -32.175,
+        -31.224999999999998,
         20.0,
         26.0,
         9.86,
@@ -15014,17 +14538,17 @@
       ]
     },
     {
-      "name": "GameCardContact5",
-      "label": "PSV-0144 · Game-card contact study005",
+      "name": "GameCardContact006",
+      "label": "PSV-0144 · Game-card contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.3989263915700462,
       "bounds": [
-        -36.0,
-        -35.5,
+        -30.775000000000002,
+        -29.825,
         20.0,
         26.0,
         9.86,
@@ -15043,17 +14567,17 @@
       ]
     },
     {
-      "name": "GameCardContact6",
-      "label": "PSV-0145 · Game-card contact study006",
+      "name": "GameCardContact007",
+      "label": "PSV-0145 · Game-card contact study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700462,
       "bounds": [
-        -34.95,
-        -34.45,
+        -29.375,
+        -28.424999999999997,
         20.0,
         26.0,
         9.86,
@@ -15072,17 +14596,17 @@
       ]
     },
     {
-      "name": "GameCardContact7",
-      "label": "PSV-0146 · Game-card contact study007",
+      "name": "GameCardContact008",
+      "label": "PSV-0146 · Game-card contact study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.2099759645943008,
+      "volume": 0.39892639157004617,
       "bounds": [
-        -33.9,
-        -33.4,
+        -27.975,
+        -27.025,
         20.0,
         26.0,
         9.86,
@@ -15101,17 +14625,17 @@
       ]
     },
     {
-      "name": "GameCardContact8",
-      "label": "PSV-0147 · Game-card contact study008",
+      "name": "GameCardContact009",
+      "label": "PSV-0147 · Game-card contact study009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430085,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -32.85,
-        -32.35,
+        -26.575000000000003,
+        -25.625,
         20.0,
         26.0,
         9.86,
@@ -15130,17 +14654,17 @@
       ]
     },
     {
-      "name": "GameCardContact9",
-      "label": "PSV-0148 · Game-card contact study009",
+      "name": "GameCardContact010",
+      "label": "PSV-0148 · Game-card contact study010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.20997596459430082,
+      "volume": 0.3989263915700463,
       "bounds": [
-        -31.799999999999997,
-        -31.299999999999997,
+        -25.175,
+        -24.224999999999998,
         20.0,
         26.0,
         9.86,
@@ -15159,311 +14683,21 @@
       ]
     },
     {
-      "name": "GameCardContact10",
-      "label": "PSV-0149 · Game-card contact study010",
+      "name": "MemoryCardCage001",
+      "label": "PSV-0159 · Proprietary Vita memory-card socket001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
+      "faces": 17,
+      "volume": 196.92473325285587,
       "bounds": [
-        -30.75,
-        -30.25,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact10",
-      "part_number": "PSV-0149",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact11",
-      "label": "PSV-0150 · Game-card contact study011",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -29.7,
-        -29.2,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact11",
-      "part_number": "PSV-0150",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact12",
-      "label": "PSV-0151 · Game-card contact study012",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.2099759645943008,
-      "bounds": [
-        -28.65,
-        -28.15,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact12",
-      "part_number": "PSV-0151",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact13",
-      "label": "PSV-0152 · Game-card contact study013",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -27.6,
-        -27.1,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact13",
-      "part_number": "PSV-0152",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact14",
-      "label": "PSV-0153 · Game-card contact study014",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -26.549999999999997,
-        -26.049999999999997,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact14",
-      "part_number": "PSV-0153",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact15",
-      "label": "PSV-0154 · Game-card contact study015",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -25.5,
-        -25.0,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact15",
-      "part_number": "PSV-0154",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact16",
-      "label": "PSV-0155 · Game-card contact study016",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430085,
-      "bounds": [
-        -24.45,
-        -23.95,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact16",
-      "part_number": "PSV-0155",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact17",
-      "label": "PSV-0156 · Game-card contact study017",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -23.4,
-        -22.9,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact17",
-      "part_number": "PSV-0156",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact18",
-      "label": "PSV-0157 · Game-card contact study018",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -22.349999999999998,
-        -21.849999999999998,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact18",
-      "part_number": "PSV-0157",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "GameCardContact19",
-      "label": "PSV-0158 · Game-card contact study019",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.20997596459430082,
-      "bounds": [
-        -21.3,
-        -20.8,
-        20.0,
-        26.0,
-        9.86,
-        9.93
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "GameCardContact19",
-      "part_number": "PSV-0158",
-      "assembly": "CardReaders",
-      "explode_offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "MemoryCardCage",
-      "label": "PSV-0159 · Proprietary Vita memory-card socket",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 14,
-      "volume": 199.70641577581387,
-      "bounds": [
-        46.75,
-        61.25,
-        -39.0,
-        -25.0,
-        -95.6,
-        -93.3
+        45.65,
+        62.35,
+        -39.25,
+        -24.75,
+        -95.65,
+        -93.10000000000001
       ],
       "state": [
         "Up-to-date"
@@ -15478,17 +14712,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact0",
-      "label": "PSV-0160 · Proprietary memory contact study",
+      "name": "MemoryCardContact001",
+      "label": "PSV-0160 · Proprietary memory contact study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429355,
+      "volume": 0.19736244467858757,
       "bounds": [
-        49.49999999999999,
-        50.1,
+        48.900000000000006,
+        49.5,
         -33.85,
         -29.15,
         -95.1,
@@ -15507,17 +14741,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact1",
-      "label": "PSV-0161 · Proprietary memory contact study001",
+      "name": "MemoryCardContact002",
+      "label": "PSV-0161 · Proprietary memory contact study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1973759645942935,
+      "volume": 0.1973624446785876,
       "bounds": [
+        50.1,
         50.699999999999996,
-        51.300000000000004,
         -33.85,
         -29.15,
         -95.1,
@@ -15536,17 +14770,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact2",
-      "label": "PSV-0162 · Proprietary memory contact study002",
+      "name": "MemoryCardContact003",
+      "label": "PSV-0162 · Proprietary memory contact study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429352,
+      "volume": 0.1973624446785876,
       "bounds": [
-        51.89999999999999,
-        52.5,
+        51.300000000000004,
+        51.9,
         -33.85,
         -29.15,
         -95.1,
@@ -15565,17 +14799,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact3",
-      "label": "PSV-0163 · Proprietary memory contact study003",
+      "name": "MemoryCardContact004",
+      "label": "PSV-0163 · Proprietary memory contact study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429352,
+      "volume": 0.19736244467858757,
       "bounds": [
+        52.5,
         53.099999999999994,
-        53.7,
         -33.85,
         -29.15,
         -95.1,
@@ -15594,17 +14828,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact4",
-      "label": "PSV-0164 · Proprietary memory contact study004",
+      "name": "MemoryCardContact005",
+      "label": "PSV-0164 · Proprietary memory contact study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429355,
+      "volume": 0.19736244467858757,
       "bounds": [
-        54.29999999999999,
-        54.9,
+        53.7,
+        54.3,
         -33.85,
         -29.15,
         -95.1,
@@ -15623,17 +14857,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact5",
-      "label": "PSV-0165 · Proprietary memory contact study005",
+      "name": "MemoryCardContact006",
+      "label": "PSV-0165 · Proprietary memory contact study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429352,
+      "volume": 0.1973624446785876,
       "bounds": [
-        55.49999999999999,
-        56.1,
+        54.900000000000006,
+        55.5,
         -33.85,
         -29.15,
         -95.1,
@@ -15652,17 +14886,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact6",
-      "label": "PSV-0166 · Proprietary memory contact study006",
+      "name": "MemoryCardContact007",
+      "label": "PSV-0166 · Proprietary memory contact study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429352,
+      "volume": 0.19736244467858757,
       "bounds": [
+        56.1,
         56.699999999999996,
-        57.300000000000004,
         -33.85,
         -29.15,
         -95.1,
@@ -15681,17 +14915,17 @@
       ]
     },
     {
-      "name": "MemoryCardContact7",
-      "label": "PSV-0167 · Proprietary memory contact study007",
+      "name": "MemoryCardContact008",
+      "label": "PSV-0167 · Proprietary memory contact study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19737596459429352,
+      "volume": 0.19736244467858757,
       "bounds": [
-        57.89999999999999,
-        58.5,
+        57.300000000000004,
+        57.9,
         -33.85,
         -29.15,
         -95.1,
@@ -15710,17 +14944,17 @@
       ]
     },
     {
-      "name": "MemoryReaderPCB",
-      "label": "PSV-0168 · Memory reader carrier board",
+      "name": "MemoryReaderPCB001",
+      "label": "PSV-0168 · Memory reader carrier board001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 113.21982957588413,
+      "volume": 128.2796846735867,
       "bounds": [
-        45.9,
-        62.10000000000029,
+        44.8,
+        63.20000000000064,
         -39.65,
         -24.0,
         -93.0,
@@ -21075,21 +20309,21 @@
       ]
     },
     {
-      "name": "VitaGameCardCut020",
-      "label": "PSV-0353 · Blank proprietary Vita game card021",
+      "name": "VitaGameCard001",
+      "label": "PSV-0353 · Blank proprietary Vita game card022",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 226,
-      "volume": 1291.9616348430643,
+      "faces": 136,
+      "volume": 1292.2425414801285,
       "bounds": [
         64.75,
         87.25,
         -0.25,
         30.25,
         0.0,
-        1.9000000000000001
+        1.9
       ],
       "state": [
         "Up-to-date"
@@ -21104,17 +20338,17 @@
       ]
     },
     {
-      "name": "VitaGamePad0",
-      "label": "PSV-0354 · Game-card terminal study",
+      "name": "VitaGamePad001",
+      "label": "PSV-0354 · Game-card terminal study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614385,
       "bounds": [
-        66.74499999999999,
-        67.395,
+        69.175,
+        70.22500000000001,
         22.95,
         27.45,
         1.875,
@@ -21133,17 +20367,17 @@
       ]
     },
     {
-      "name": "VitaGamePad1",
-      "label": "PSV-0355 · Game-card terminal study001",
+      "name": "VitaGamePad002",
+      "label": "PSV-0355 · Game-card terminal study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614388,
       "bounds": [
-        67.685,
-        68.33500000000001,
+        70.57499999999999,
+        71.625,
         22.95,
         27.45,
         1.875,
@@ -21162,17 +20396,17 @@
       ]
     },
     {
-      "name": "VitaGamePad2",
-      "label": "PSV-0356 · Game-card terminal study002",
+      "name": "VitaGamePad003",
+      "label": "PSV-0356 · Game-card terminal study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.0730906637061437,
+      "volume": 0.11809066370614385,
       "bounds": [
-        68.625,
-        69.275,
+        71.975,
+        73.025,
         22.95,
         27.45,
         1.875,
@@ -21191,17 +20425,17 @@
       ]
     },
     {
-      "name": "VitaGamePad3",
-      "label": "PSV-0357 · Game-card terminal study003",
+      "name": "VitaGamePad004",
+      "label": "PSV-0357 · Game-card terminal study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        69.565,
-        70.215,
+        73.375,
+        74.42500000000001,
         22.95,
         27.45,
         1.875,
@@ -21220,17 +20454,17 @@
       ]
     },
     {
-      "name": "VitaGamePad4",
-      "label": "PSV-0358 · Game-card terminal study004",
+      "name": "VitaGamePad005",
+      "label": "PSV-0358 · Game-card terminal study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        70.505,
-        71.155,
+        74.77499999999999,
+        75.825,
         22.95,
         27.45,
         1.875,
@@ -21249,17 +20483,17 @@
       ]
     },
     {
-      "name": "VitaGamePad5",
-      "label": "PSV-0359 · Game-card terminal study005",
+      "name": "VitaGamePad006",
+      "label": "PSV-0359 · Game-card terminal study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        71.445,
-        72.095,
+        76.175,
+        77.22500000000001,
         22.95,
         27.45,
         1.875,
@@ -21278,17 +20512,17 @@
       ]
     },
     {
-      "name": "VitaGamePad6",
-      "label": "PSV-0360 · Game-card terminal study006",
+      "name": "VitaGamePad007",
+      "label": "PSV-0360 · Game-card terminal study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614388,
       "bounds": [
-        72.38499999999999,
-        73.035,
+        77.57499999999999,
+        78.625,
         22.95,
         27.45,
         1.875,
@@ -21307,17 +20541,17 @@
       ]
     },
     {
-      "name": "VitaGamePad7",
-      "label": "PSV-0361 · Game-card terminal study007",
+      "name": "VitaGamePad008",
+      "label": "PSV-0361 · Game-card terminal study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614388,
       "bounds": [
-        73.325,
-        73.97500000000001,
+        78.975,
+        80.025,
         22.95,
         27.45,
         1.875,
@@ -21336,17 +20570,17 @@
       ]
     },
     {
-      "name": "VitaGamePad8",
-      "label": "PSV-0362 · Game-card terminal study008",
+      "name": "VitaGamePad009",
+      "label": "PSV-0362 · Game-card terminal study009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614386,
       "bounds": [
-        74.265,
-        74.915,
+        80.375,
+        81.42500000000001,
         22.95,
         27.45,
         1.875,
@@ -21365,17 +20599,17 @@
       ]
     },
     {
-      "name": "VitaGamePad9",
-      "label": "PSV-0363 · Game-card terminal study009",
+      "name": "VitaGamePad010",
+      "label": "PSV-0363 · Game-card terminal study010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.07309066370614371,
+      "volume": 0.11809066370614388,
       "bounds": [
-        75.205,
-        75.855,
+        81.775,
+        82.82500000000002,
         22.95,
         27.45,
         1.875,
@@ -21386,296 +20620,6 @@
       ],
       "part_id": "VitaGamePad9",
       "part_number": "PSV-0363",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad10",
-      "label": "PSV-0364 · Game-card terminal study010",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        76.145,
-        76.795,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad10",
-      "part_number": "PSV-0364",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad11",
-      "label": "PSV-0365 · Game-card terminal study011",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        77.085,
-        77.735,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad11",
-      "part_number": "PSV-0365",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad12",
-      "label": "PSV-0366 · Game-card terminal study012",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        78.02499999999999,
-        78.675,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad12",
-      "part_number": "PSV-0366",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad13",
-      "label": "PSV-0367 · Game-card terminal study013",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        78.96499999999999,
-        79.615,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad13",
-      "part_number": "PSV-0367",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad14",
-      "label": "PSV-0368 · Game-card terminal study014",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        79.90499999999999,
-        80.55499999999999,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad14",
-      "part_number": "PSV-0368",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad15",
-      "label": "PSV-0369 · Game-card terminal study015",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        80.84499999999998,
-        81.49499999999999,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad15",
-      "part_number": "PSV-0369",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad16",
-      "label": "PSV-0370 · Game-card terminal study016",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.0730906637061437,
-      "bounds": [
-        81.78500000000001,
-        82.43500000000002,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad16",
-      "part_number": "PSV-0370",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad17",
-      "label": "PSV-0371 · Game-card terminal study017",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        82.72500000000001,
-        83.37500000000001,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad17",
-      "part_number": "PSV-0371",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad18",
-      "label": "PSV-0372 · Game-card terminal study018",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        83.665,
-        84.31500000000001,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad18",
-      "part_number": "PSV-0372",
-      "assembly": "Accessories",
-      "explode_offset": [
-        -50.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "VitaGamePad19",
-      "label": "PSV-0373 · Game-card terminal study019",
-      "type": "Part::Feature",
-      "valid": true,
-      "null": false,
-      "solids": 1,
-      "faces": 10,
-      "volume": 0.07309066370614371,
-      "bounds": [
-        84.605,
-        85.25500000000001,
-        22.95,
-        27.45,
-        1.875,
-        1.9
-      ],
-      "state": [
-        "Up-to-date"
-      ],
-      "part_id": "VitaGamePad19",
-      "part_number": "PSV-0373",
       "assembly": "Accessories",
       "explode_offset": [
         -50.0,
@@ -21713,19 +20657,19 @@
       ]
     },
     {
-      "name": "VitaMemoryCardCut008",
-      "label": "PSV-0375 · Proprietary Vita memory-card study009",
+      "name": "VitaMemoryCard001",
+      "label": "PSV-0375 · Proprietary Vita memory-card study010",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 123,
-      "volume": 298.83501643181324,
+      "faces": 132,
+      "volume": 298.77880076810715,
       "bounds": [
-        69.75,
-        82.25,
-        -37.5,
-        -22.5,
+        68.5,
+        83.5,
+        -36.25,
+        -23.75,
         0.0,
         1.6
       ],
@@ -21742,8 +20686,8 @@
       ]
     },
     {
-      "name": "VitaMemoryPad0",
-      "label": "PSV-0376 · Memory-card terminal study",
+      "name": "VitaMemoryPad001",
+      "label": "PSV-0376 · Memory-card terminal study001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21751,10 +20695,10 @@
       "faces": 10,
       "volume": 0.056215663706143525,
       "bounds": [
-        71.25,
-        72.0,
-        -27.0,
-        -24.0,
+        70.825,
+        71.575,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21771,19 +20715,19 @@
       ]
     },
     {
-      "name": "VitaMemoryPad1",
-      "label": "PSV-0377 · Memory-card terminal study001",
+      "name": "VitaMemoryPad002",
+      "label": "PSV-0377 · Memory-card terminal study002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614353,
       "bounds": [
-        72.5,
-        73.25,
-        -27.0,
-        -24.0,
+        72.025,
+        72.775,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21800,19 +20744,19 @@
       ]
     },
     {
-      "name": "VitaMemoryPad2",
-      "label": "PSV-0378 · Memory-card terminal study002",
+      "name": "VitaMemoryPad003",
+      "label": "PSV-0378 · Memory-card terminal study003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614351,
       "bounds": [
-        73.75,
-        74.5,
-        -27.0,
-        -24.0,
+        73.225,
+        73.975,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21829,19 +20773,19 @@
       ]
     },
     {
-      "name": "VitaMemoryPad3",
-      "label": "PSV-0379 · Memory-card terminal study003",
+      "name": "VitaMemoryPad004",
+      "label": "PSV-0379 · Memory-card terminal study004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614352,
       "bounds": [
-        75.0,
-        75.75,
-        -27.0,
-        -24.0,
+        74.425,
+        75.175,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21858,8 +20802,8 @@
       ]
     },
     {
-      "name": "VitaMemoryPad4",
-      "label": "PSV-0380 · Memory-card terminal study004",
+      "name": "VitaMemoryPad005",
+      "label": "PSV-0380 · Memory-card terminal study005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21867,10 +20811,10 @@
       "faces": 10,
       "volume": 0.056215663706143525,
       "bounds": [
-        76.25,
-        77.0,
-        -27.0,
-        -24.0,
+        75.625,
+        76.375,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21887,19 +20831,19 @@
       ]
     },
     {
-      "name": "VitaMemoryPad5",
-      "label": "PSV-0381 · Memory-card terminal study005",
+      "name": "VitaMemoryPad006",
+      "label": "PSV-0381 · Memory-card terminal study006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614353,
       "bounds": [
-        77.5,
-        78.25,
-        -27.0,
-        -24.0,
+        76.825,
+        77.575,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21916,19 +20860,19 @@
       ]
     },
     {
-      "name": "VitaMemoryPad6",
-      "label": "PSV-0382 · Memory-card terminal study006",
+      "name": "VitaMemoryPad007",
+      "label": "PSV-0382 · Memory-card terminal study007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.056215663706143525,
+      "volume": 0.05621566370614353,
       "bounds": [
-        78.75,
-        79.5,
-        -27.0,
-        -24.0,
+        78.025,
+        78.775,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -21945,8 +20889,8 @@
       ]
     },
     {
-      "name": "VitaMemoryPad7",
-      "label": "PSV-0383 · Memory-card terminal study007",
+      "name": "VitaMemoryPad008",
+      "label": "PSV-0383 · Memory-card terminal study008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -21954,10 +20898,10 @@
       "faces": 10,
       "volume": 0.056215663706143525,
       "bounds": [
-        80.0,
-        80.75,
-        -27.0,
-        -24.0,
+        79.225,
+        79.975,
+        -27.25,
+        -24.25,
         1.575,
         1.5999999999999999
       ],
@@ -22058,6 +21002,93 @@
         0.0,
         0.0,
         -250.0
+      ]
+    },
+    {
+      "name": "VitaMemoryPad8",
+      "label": "PSV-0387 · Ninth Vita memory-card gold terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.05621566370614352,
+      "bounds": [
+        80.42500000000001,
+        81.17500000000001,
+        -27.25,
+        -24.25,
+        1.575,
+        1.5999999999999999
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "VitaMemoryPad8",
+      "part_number": "PSV-0387",
+      "assembly": "Accessories",
+      "explode_offset": [
+        -50.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "MemoryCardContact8",
+      "label": "PSV-0388 · Ninth memory-reader spring terminal",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 10,
+      "volume": 0.1973624446785876,
+      "bounds": [
+        58.5,
+        59.099999999999994,
+        -33.85,
+        -29.15,
+        -95.1,
+        -95.03
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "MemoryCardContact8",
+      "part_number": "PSV-0388",
+      "assembly": "CardReaders",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -100.0
+      ]
+    },
+    {
+      "name": "GameCardAccessLens",
+      "label": "PSV-0389 · Original game-card access indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.2822909494809648,
+      "bounds": [
+        -50.779999999999994,
+        -49.82,
+        41.35,
+        41.74,
+        10.92,
+        11.88
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "GameCardAccessLens",
+      "part_number": "PSV-0389",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
       ]
     }
   ],
@@ -22798,56 +21829,6 @@
       0.0
     ],
     "GameCardContact9": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact10": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact11": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact12": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact13": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact14": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact15": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact16": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact17": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact18": [
-      0.0,
-      0.0,
-      0.0
-    ],
-    "GameCardContact19": [
       0.0,
       0.0,
       0.0
@@ -23877,56 +22858,6 @@
       0.0,
       0.0
     ],
-    "VitaGamePad10": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad11": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad12": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad13": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad14": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad15": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad16": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad17": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad18": [
-      -50.0,
-      0.0,
-      0.0
-    ],
-    "VitaGamePad19": [
-      -50.0,
-      0.0,
-      0.0
-    ],
     "VitaGameMark": [
       -50.0,
       0.0,
@@ -23991,6 +22922,21 @@
       0.0,
       0.0,
       -250.0
+    ],
+    "VitaMemoryPad8": [
+      -50.0,
+      0.0,
+      0.0
+    ],
+    "MemoryCardContact8": [
+      0.0,
+      0.0,
+      -100.0
+    ],
+    "GameCardAccessLens": [
+      0.0,
+      0.0,
+      0.0
     ]
   },
   "published_envelope_mm": [
@@ -24024,7 +22970,7 @@
     ]
   },
   "fidelity": "Published envelope; approximate exterior details and schematic major internals",
-  "source_digest": "c1c69f5d46d2951762ade88f376c029f42f9e1bdc13b641cf544c31c5b44d2bc",
+  "source_digest": "064cd943751bf4933e0fa88701d80a4c0b0d2060fc8031eb2106d652a337a48a",
   "main_step_file": "PSVita_Handheld.step",
   "envelope_groups": [
     "Body"
@@ -24035,5 +22981,52 @@
     83.586,
     24.050000100000002
   ],
-  "envelope_kind": "published"
+  "envelope_kind": "published",
+  "numbering": {
+    "policy": "preserve_existing",
+    "retired_part_numbers": [
+      "PSV-0149",
+      "PSV-0150",
+      "PSV-0151",
+      "PSV-0152",
+      "PSV-0153",
+      "PSV-0154",
+      "PSV-0155",
+      "PSV-0156",
+      "PSV-0157",
+      "PSV-0158",
+      "PSV-0364",
+      "PSV-0365",
+      "PSV-0366",
+      "PSV-0367",
+      "PSV-0368",
+      "PSV-0369",
+      "PSV-0370",
+      "PSV-0371",
+      "PSV-0372",
+      "PSV-0373"
+    ],
+    "retired_part_ids": [
+      "GameCardContact10",
+      "GameCardContact11",
+      "GameCardContact12",
+      "GameCardContact13",
+      "GameCardContact14",
+      "GameCardContact15",
+      "GameCardContact16",
+      "GameCardContact17",
+      "GameCardContact18",
+      "GameCardContact19",
+      "VitaGamePad10",
+      "VitaGamePad11",
+      "VitaGamePad12",
+      "VitaGamePad13",
+      "VitaGamePad14",
+      "VitaGamePad15",
+      "VitaGamePad16",
+      "VitaGamePad17",
+      "VitaGamePad18",
+      "VitaGamePad19"
+    ]
+  }
 }

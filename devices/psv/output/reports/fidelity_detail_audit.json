@@ -1,0 +1,132 @@
+{
+  "device": "psv",
+  "iteration": 16,
+  "source_sha256": "0948aaf0896f26743fcebb73e767f6497509584c1eae921acf9a796ded2e770d",
+  "checks": [
+    {
+      "name": "GameCardContact.count",
+      "actual": 10,
+      "expected": 10,
+      "basis": "Primary hardware pinout documentation and game-card teardown",
+      "passed": true
+    },
+    {
+      "name": "VitaGamePad.count",
+      "actual": 10,
+      "expected": 10,
+      "basis": "Primary hardware pinout documentation and game-card teardown",
+      "passed": true
+    },
+    {
+      "name": "MemoryCardContact.count",
+      "actual": 9,
+      "expected": 9,
+      "basis": "Primary hardware pinout documentation and game-card teardown",
+      "passed": true
+    },
+    {
+      "name": "VitaMemoryPad.count",
+      "actual": 9,
+      "expected": 9,
+      "basis": "Primary hardware pinout documentation and game-card teardown",
+      "passed": true
+    },
+    {
+      "name": "memory_card.XLength",
+      "actual": 15.0,
+      "expected": 15,
+      "basis": "Sony original memory-card specification: width 15, height 12.5, thickness 1.6 mm",
+      "passed": true
+    },
+    {
+      "name": "memory_card.YLength",
+      "actual": 12.5,
+      "expected": 12.5,
+      "basis": "Sony original memory-card specification: width 15, height 12.5, thickness 1.6 mm",
+      "passed": true
+    },
+    {
+      "name": "memory_card.ZLength",
+      "actual": 1.6,
+      "expected": 1.6,
+      "basis": "Sony original memory-card specification: width 15, height 12.5, thickness 1.6 mm",
+      "passed": true
+    },
+    {
+      "name": "body.XLength",
+      "actual": 182.0000002,
+      "expected": 182,
+      "basis": "Sony published body envelope excluding projections",
+      "passed": true
+    },
+    {
+      "name": "body.YLength",
+      "actual": 83.50000010000002,
+      "expected": 83.5,
+      "basis": "Sony published body envelope excluding projections",
+      "passed": true
+    },
+    {
+      "name": "body.ZLength",
+      "actual": 18.600000200000004,
+      "expected": 18.6,
+      "basis": "Sony published body envelope excluding projections",
+      "passed": true
+    }
+  ],
+  "invalid_parts": [],
+  "part_identity": {
+    "passed": true,
+    "baseline_components": 386,
+    "preserved_existing_numbers": 366,
+    "retired_part_ids": [
+      "GameCardContact10",
+      "GameCardContact11",
+      "GameCardContact12",
+      "GameCardContact13",
+      "GameCardContact14",
+      "GameCardContact15",
+      "GameCardContact16",
+      "GameCardContact17",
+      "GameCardContact18",
+      "GameCardContact19",
+      "VitaGamePad10",
+      "VitaGamePad11",
+      "VitaGamePad12",
+      "VitaGamePad13",
+      "VitaGamePad14",
+      "VitaGamePad15",
+      "VitaGamePad16",
+      "VitaGamePad17",
+      "VitaGamePad18",
+      "VitaGamePad19"
+    ],
+    "retired_part_numbers": [
+      "PSV-0149",
+      "PSV-0150",
+      "PSV-0151",
+      "PSV-0152",
+      "PSV-0153",
+      "PSV-0154",
+      "PSV-0155",
+      "PSV-0156",
+      "PSV-0157",
+      "PSV-0158",
+      "PSV-0364",
+      "PSV-0365",
+      "PSV-0366",
+      "PSV-0367",
+      "PSV-0368",
+      "PSV-0369",
+      "PSV-0370",
+      "PSV-0371",
+      "PSV-0372",
+      "PSV-0373"
+    ],
+    "mismatches": []
+  },
+  "access_indicator_present": true,
+  "factory_equivalence_verified": false,
+  "scope": "Saved BRep envelope, contact counts and traceable identity; no electrical or manufacturing certification",
+  "passed": true
+}

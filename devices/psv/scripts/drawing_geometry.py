@@ -63,11 +63,11 @@ v=s.view_fit('MicrophoneDetail',starts('Microphone'),(25,146,110,42),(.6,-1,.7))
 v=s.view_fit('RearControllerDetail',['RearTouchPCB','RearTouchController'],(170,146,97,42),(0,0,1));caption(s,v,'后触控控制器',207)
 v=s.view_fit('FrontControllerDetail',['FrontTouchPackage'],(303,146,50,42),(0,0,1));caption(s,v,'前触控控制器',207);s.save()
 
-s=d.Sheet(10,'专用接口与空白可拆介质',['底部多功能接口和卡槽按初代专用接口建模。','介质、接点与局部开口尺寸为视觉学习示意，不作为电气引脚定义。'])
+s=d.Sheet(10,'专用接口与空白可拆介质',['底部多功能接口和卡槽按初代专用接口建模。','专用存储卡为索尼公布的 15 × 12.5 × 1.6 mm；游戏卡外形与接点几何仍近似，不作为电气引脚定义。'])
 v=s.view_fit('MultiPortDetail',starts('MultiPort','PortScrew'),(20,25,157,58),(0,-1,0),(0,0,1));caption(s,v,'多功能接口与固定螺钉',104)
 v=s.view_fit('ReaderDetail',d.keys_for(['CardReaders']),(218,24,158,59),(.2,-.6,1));caption(s,v,'独立卡座组件',104)
 v=s.view_fit('GameMedia',['VitaGameCard','VitaGameMark']+starts('VitaGamePad'),(33,132,102,68),(0,0,1));d.dimension_box(s,v,['VitaGameCard'],'x',122);d.dimension_box(s,v,['VitaGameCard'],'y',23);caption(s,v,'空白游戏卡',211)
-v=s.view_fit('MemoryMedia',['VitaMemoryCard','VitaMemoryMark']+starts('VitaMemoryPad'),(260,143,82,48),(0,0,1));d.dimension_box(s,v,['VitaMemoryCard'],'x',130);d.dimension_box(s,v,['VitaMemoryCard'],'y',368);caption(s,v,'专用存储卡示意',211);s.save()
+v=s.view_fit('MemoryMedia',['VitaMemoryCard','VitaMemoryMark']+starts('VitaMemoryPad'),(260,143,82,48),(0,0,1));d.dimension_box(s,v,['VitaMemoryCard'],'x',130,True);d.dimension_box(s,v,['VitaMemoryCard'],'y',368,True);caption(s,v,'专用存储卡：15 × 12.5 × 1.6 mm',211);s.save()
 
 s=d.Sheet(11,'组件与材料索引',['组件编号贯穿原生模型、爆炸装配、组件清单和网页节点。','重复印纹与文字字形按一个组件记录，多实体数量与组件数量分开统计。'])
 names={'Body':'机身外壳','Display':'OLED 与前触控','Controls':'操作件','Internal':'安装与支承件','Ports':'接口与盖板','Optics':'摄像头','RearTouch':'后触控组件','Battery':'电池','Mainboard':'主板与封装','ControlsInternal':'左右操作板','CardReaders':'专用卡座','Audio':'音频组件','Flex':'互连排线','Accessories':'可拆介质'}
@@ -79,7 +79,7 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,205,f"合计 {M['physical_components']} 个组件 / {M['solids']} 个实体；完整清单见 COMPONENTS.csv",3.5,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'尺寸依据与验证范围',['公开主体尺寸、显示区几何换算及局部近似值分别记录。','图纸是当前 CAD 版本的快照，改模后需重新投影和检查。'])
-sections=[(16,'公开规格与版本',['Sony PCH-1000 系列：主体 182 × 83.5 × 18.6 mm。','5 英寸 16:9 OLED，前后电容触控，前后摄像头。','用户指定 Wi-Fi OLED；不包括 3G、SIM 或 GPS 硬件。']), (67,'参考与近似范围',['索尼原始产品规格及 PCH-1000/PCH-1100 快速入门指南。','iFixit 3G 型拆解仅用于共有模块和结构的照片参考。','孔位、壁厚、封装、接点、印纹和排线均为近似研究几何。']), (118,'检查记录',[f"{M['design_iterations']} 轮源码构建；{M['physical_components']} 个组件重建匹配。",'原生整机、爆炸和三份 STEP 回读，最终组件求交检查。','直接模型尺寸、原生图纸参考与字体检查记录见 reports/。']), (169,'维护入口',['来源：references/SOURCES.md；清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/psv.py。','网页来自同一组 BRep，精确实体以 FCStd / STEP 为准。'])]
+sections=[(16,'公开规格与版本',['Sony PCH-1000 系列：主体 182 × 83.5 × 18.6 mm。','5 英寸 16:9 OLED，前后电容触控，前后摄像头。','用户指定 Wi-Fi OLED；不包括 3G、SIM 或 GPS 硬件。']), (67,'参考与近似范围',['索尼原始产品规格及 PCH-1000/PCH-1100 快速入门指南。','iFixit 3G 型拆解仅用于共有模块和结构的照片参考。','存储卡尺寸按索尼规格；游戏卡十触点、存储卡九触点按实物及针脚记录。']), (118,'检查记录',[f"{M['design_iterations']} 轮建模；当前 {M['physical_components']} 个组件，本轮未重跑整套源码。",'原生整机、爆炸和三份 STEP 回读，最终组件求交检查。','本轮尺寸、原生图纸与文件哈希见 fidelity_delivery_checks.json。']), (169,'维护入口',['来源：references/SOURCES.md；清单：COMPONENTS.csv。','逐轮入口：scripts/iterNN_*.py；实现：tools/cadlib/psv.py。','网页来自同一组 BRep，精确实体以 FCStd / STEP 为准。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)

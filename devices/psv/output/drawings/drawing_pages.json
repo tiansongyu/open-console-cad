@@ -101,6 +101,7 @@
           "CPUMark",
           "NANDMark",
           "GameDoorMark",
+          "GameCardAccessLens",
           "StickStem-1",
           "StickStem1"
         ],
@@ -273,6 +274,7 @@
           "CPUMark",
           "NANDMark",
           "GameDoorMark",
+          "GameCardAccessLens",
           "StickStem-1",
           "StickStem1"
         ],
@@ -390,6 +392,7 @@
           "CPUMark",
           "NANDMark",
           "GameDoorMark",
+          "GameCardAccessLens",
           "StickStem-1",
           "StickStem1"
         ],
@@ -507,6 +510,7 @@
           "CPUMark",
           "NANDMark",
           "GameDoorMark",
+          "GameCardAccessLens",
           "StickStem-1",
           "StickStem1"
         ],
@@ -624,6 +628,7 @@
           "CPUMark",
           "NANDMark",
           "GameDoorMark",
+          "GameCardAccessLens",
           "StickStem-1",
           "StickStem1"
         ],
@@ -1171,16 +1176,6 @@
           "GameCardContact7",
           "GameCardContact8",
           "GameCardContact9",
-          "GameCardContact10",
-          "GameCardContact11",
-          "GameCardContact12",
-          "GameCardContact13",
-          "GameCardContact14",
-          "GameCardContact15",
-          "GameCardContact16",
-          "GameCardContact17",
-          "GameCardContact18",
-          "GameCardContact19",
           "MemoryCardCage",
           "MemoryCardContact0",
           "MemoryCardContact1",
@@ -1376,7 +1371,9 @@
           "AccessoryPortShell",
           "GameDoorMark",
           "RearBoss0",
-          "RearBoss1"
+          "RearBoss1",
+          "MemoryCardContact8",
+          "GameCardAccessLens"
         ],
         "x": 198.0,
         "y": 61.0,
@@ -1691,16 +1688,6 @@
           "GameCardContact7",
           "GameCardContact8",
           "GameCardContact9",
-          "GameCardContact10",
-          "GameCardContact11",
-          "GameCardContact12",
-          "GameCardContact13",
-          "GameCardContact14",
-          "GameCardContact15",
-          "GameCardContact16",
-          "GameCardContact17",
-          "GameCardContact18",
-          "GameCardContact19",
           "MemoryCardCage",
           "MemoryCardContact0",
           "MemoryCardContact1",
@@ -1896,7 +1883,9 @@
           "AccessoryPortShell",
           "GameDoorMark",
           "RearBoss0",
-          "RearBoss1"
+          "RearBoss1",
+          "MemoryCardContact8",
+          "GameCardAccessLens"
         ],
         "x": 198.0,
         "y": 104.5,
@@ -2528,7 +2517,7 @@
     "svg": "10.svg",
     "notes": [
       "底部多功能接口和卡槽按初代专用接口建模。",
-      "介质、接点与局部开口尺寸为视觉学习示意，不作为电气引脚定义。"
+      "专用存储卡为索尼公布的 15 × 12.5 × 1.6 mm；游戏卡外形与接点几何仍近似，不作为电气引脚定义。"
     ],
     "views": [
       {
@@ -2594,16 +2583,6 @@
           "GameCardContact7",
           "GameCardContact8",
           "GameCardContact9",
-          "GameCardContact10",
-          "GameCardContact11",
-          "GameCardContact12",
-          "GameCardContact13",
-          "GameCardContact14",
-          "GameCardContact15",
-          "GameCardContact16",
-          "GameCardContact17",
-          "GameCardContact18",
-          "GameCardContact19",
           "MemoryCardCage",
           "MemoryCardContact0",
           "MemoryCardContact1",
@@ -2613,11 +2592,12 @@
           "MemoryCardContact5",
           "MemoryCardContact6",
           "MemoryCardContact7",
-          "MemoryReaderPCB"
+          "MemoryReaderPCB",
+          "MemoryCardContact8"
         ],
         "x": 297.0,
         "y": 53.5,
-        "scale": 0.8326739729742523,
+        "scale": 0.828324592068148,
         "normal": [
           0.2,
           -0.6,
@@ -2629,9 +2609,9 @@
           0
         ],
         "center": [
-          8.518812958199844,
-          1.6125728026667998,
-          8.71906479099846
+          9.03506157803519,
+          1.4474807893150974,
+          8.550307890174341
         ],
         "exploded": false,
         "source": "open"
@@ -2650,17 +2630,7 @@
           "VitaGamePad6",
           "VitaGamePad7",
           "VitaGamePad8",
-          "VitaGamePad9",
-          "VitaGamePad10",
-          "VitaGamePad11",
-          "VitaGamePad12",
-          "VitaGamePad13",
-          "VitaGamePad14",
-          "VitaGamePad15",
-          "VitaGamePad16",
-          "VitaGamePad17",
-          "VitaGamePad18",
-          "VitaGamePad19"
+          "VitaGamePad9"
         ],
         "x": 84.0,
         "y": 166.0,
@@ -2695,11 +2665,12 @@
           "VitaMemoryPad4",
           "VitaMemoryPad5",
           "VitaMemoryPad6",
-          "VitaMemoryPad7"
+          "VitaMemoryPad7",
+          "VitaMemoryPad8"
         ],
         "x": 301.0,
         "y": 167.0,
-        "scale": 3.008,
+        "scale": 3.6095999999999995,
         "normal": [
           0,
           0,
@@ -2765,19 +2736,19 @@
       {
         "view": "MemoryMedia",
         "p1": [
-          119.75,
+          118.5,
           -30.0,
           0.8
         ],
         "p2": [
-          132.25,
+          133.5,
           -30.0,
           0.8
         ],
         "axis": "x",
-        "value_mm": 12.500000000000007,
-        "label": "≈ 12.5",
-        "published": false,
+        "value_mm": 15.000000000000004,
+        "label": "15",
+        "published": true,
         "label_position": [
           301.0,
           128.4
@@ -2787,18 +2758,18 @@
         "view": "MemoryMedia",
         "p1": [
           126.0,
-          -37.5,
+          -36.25,
           0.8
         ],
         "p2": [
           126.0,
-          -22.5,
+          -23.75,
           0.8
         ],
         "axis": "y",
-        "value_mm": 15.000000000000002,
-        "label": "≈ 15",
-        "published": false,
+        "value_mm": 12.500000000000004,
+        "label": "12.5",
+        "published": true,
         "label_position": [
           366,
           167.0

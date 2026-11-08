@@ -14,3 +14,12 @@ The selected model is PCH-1000 Wi-Fi OLED. The iFixit unit is a PCH-1100-series 
 ## 2026-10-15 exterior refinement
 
 See [exterior_calibration.json](exterior_calibration.json) for the reference URL, hash, changed geometry and uncertainty. PCH-1000 official front parts photograph supports smaller visual prominence. Exact 10 x 3.8 mm outer dimensions and retained centers are estimates, not factory measurements. Overall published dimensions are retained. This iteration does not establish complete factory equivalence.
+
+## 2026-11-08 original media-interface review
+
+- [Sony original accessory announcement, 2011-09-14](https://sonyinteractive.com/jp/press-releases/2011/110914c/): memory-card height 12.5 mm, width 15.0 mm, thickness 1.6 mm. The previous model transposed width and height.
+- [Sony PCH-1001/PCH-1101 quick-start guide](https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/psvita-docs/PCH-1001_1101-1.0_2_EN_AMER_QSG.pdf), page 2, Removing the PS Vita card: card-access indicator beside the original game-card slot.
+- [Vita hardware media pinouts](https://www.psdevwiki.com/vita/Media): ten game-card mating contacts. [Yifan Lu's firsthand cartridge teardown](https://yifan.lu/2014/02/17/how-to-disassemble-vita-game-cartridges/) photographs corroborate the ten gold lands.
+- [Memory-card hardware pinout](https://www.psdevwiki.com/vita/Memory_Card), credited to Asdron and confirmed by RichDevX: nine memory-card mating contacts.
+
+The contact counts and Sony card envelope are supported by these sources. Terminal cross sections, socket and support shapes, installation clearances and indicator size remain reconstructed approximations. Reference images stay local; no third-party images are redistributed. See [fidelity_iteration16.json](fidelity_iteration16.json) for scope and retired component identities.

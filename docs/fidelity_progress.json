@@ -167,8 +167,8 @@
       "order": 4,
       "device": "psv",
       "model": "PCH-1000 Wi-Fi OLED",
-      "status": "in_progress",
-      "current_step": "candidate_geometry_and_reference_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_16",
       "baseline": {
         "iterations": 15,
         "physical_components": 386,
@@ -196,19 +196,36 @@
           "Schematic internal layout": 264
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/psv/references/fidelity_iteration16.json"
+      ],
+      "changes": [
+        "Corrected game-card/socket to ten contacts each and memory-card/socket to nine each",
+        "Corrected Sony memory-card width15 x height12.5 x thickness1.6 mm",
+        "Added fixed original game-card access indicator lens",
+        "Retained 366 existing part numbers; retired 20 surplus contacts without reusing their numbers; added 3 new parts"
+      ],
+      "validation": {
+        "report": "devices/psv/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "0948aaf0896f26743fcebb73e767f6497509584c1eae921acf9a796ded2e770d",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "No physical PCH-1000 specimen or factory molding drawing was measured.",
+        "Socket widths, shield thicknesses, support PCB outline and installation clearances are reconstructed approximations.",
+        "Contact counts are corroborated; manufacturing pitch tolerances, terminal forms and electrical behavior are not validated.",
+        "Retired contact identities are retained in document history and reserved in numbering; they are excluded from physical exports.",
+        "Whole-collection responsive-layout checks are outside this targeted device pass."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     },
     {
       "order": 5,
       "device": "steamdeck",
       "model": "2022 LCD",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "official_reference_geometry_calibration",
       "baseline": {
         "iterations": 16,
         "physical_components": 498,
@@ -312,7 +329,8 @@
         "No PCB electrical behavior, manufacturing tolerance or physical sample interchangeability is certified."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "81b7c5d"
     },
     {
       "order": 8,

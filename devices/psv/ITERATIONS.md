@@ -19,3 +19,4 @@
 | 13 | 将腕带孔改为沿机身曲线倾斜的闭合椭圆环，同步调整机壳与按键板让位，消除角部开口越出轮廓的问题。 | 386 | [查看](output/previews/13_closed_corner_strap_eyes_hero.png) |
 | 14 | 调整闭合腕带环与 PS/START 键的边界，保留角部轮廓并同步移动 PS 键传动和安装孔，完成相邻外观件的间隙修正。 | 386 | [查看](output/previews/14_strap_and_system_key_clearance_hero.png) |
 | 15 | 角部腕带环比例与前后壳、操作板对应开孔；局部数值为公开图像估计。 | 386 | [查看](output/previews/15_public_reference_corner_strap_eyes_hero.png) |
+| 16 | 将游戏卡及卡座修正为十触点、专用存储卡及卡座修正为九触点，按索尼规格纠正存储卡宽高，补齐卡槽访问指示窗；保留有效零件编号并停用二十个多余触点。 | 369 | [查看](output/previews/16_documented_media_contacts_dimensions_and_access_light_hero.png) |

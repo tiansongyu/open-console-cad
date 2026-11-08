@@ -1,0 +1,70 @@
+{
+  "device": "psv",
+  "revision": 16,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "0948aaf0896f26743fcebb73e767f6497509584c1eae921acf9a796ded2e770d",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":100",
+  "physical_components": 369,
+  "solids": 828,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration16.json",
+  "changes": [
+    "Corrected game-card/socket to ten contacts each and memory-card/socket to nine each",
+    "Corrected Sony memory-card width15 x height12.5 x thickness1.6 mm",
+    "Added fixed original game-card access indicator lens",
+    "Retained 366 existing part numbers; retired 20 surplus contacts without reusing their numbers; added 3 new parts"
+  ],
+  "validation": {
+    "detail_checks": 10,
+    "preserved_existing_part_numbers": 366,
+    "retired_part_numbers": 20,
+    "candidate_pairs": 746,
+    "interference_threshold_mm3": 1e-06,
+    "step_files": 3,
+    "model_dimensions": 25,
+    "native_drawing_references": 17,
+    "pdf_pages_reviewed": 12,
+    "web_views": 11,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "numbering_regression_tests": 4,
+    "repository_checks": "passed",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_psv.py": "a769d0b7e2275224279a3a4b9f1f823b27892fbb1e496fec165462f3a86d1e44",
+    "tools/cadlib/psv.py": "7aaecc85cb9c9538a65b32ea482c834e7f58a0f75db0eb2171841bb974a42e88",
+    "tools/cadlib/deliver.py": "f0ea07fc286f8fd6e56ac4726a9a1ccb7988a74538f6ed0a6e35b8096f382d6c",
+    "tools/cadlib/part_numbers.py": "2fecf628d59dc00810d5092e17a04e37784c5eda4ea0a0cfb76cc6924d33b738",
+    "tools/check_handheld_part_order.py": "790a4ce390bc05a0251975a23d4372df74cbb863017ec56917e57568313e9ee8",
+    "tools/test_part_numbers.py": "65916b735baec85d6b90f454ac1f91c8a4e9af0b0a41f9746fa7f12a2debd0e8",
+    "devices/psv/profile.json": "b15a2e8bb9b30345a276d9b1b3998db385500e1c827574ddae23315897c790c2",
+    "devices/psv/Rebuild_PSVita.FCMacro": "aca65c415b26fb675f308ca7908a9e15bf6566964a1d4ba64464979dc2690037",
+    "devices/psv/scripts/iter16_documented_media_contacts_dimensions_and_access_light.py": "dc0208acd16cb5a1fe51457bdd40587213691fcd54cdd49ccca29d7d04e12f15",
+    "devices/psv/scripts/audit_fidelity.py": "0fe2f6bad9b4699045a70509804dfb58de5c5a8503d56383f1e542e61e5f4395",
+    "devices/psv/scripts/audit_dimensions.py": "735c7db9fe99c0e8c6e12c156709a15c4a5059fe02db328e98139c4c2dcba61a",
+    "devices/psv/scripts/drawing_geometry.py": "859b9aed3eca054ff1c443da5bf7ed13e1e2c4848f47bd43b41b444499468555"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "dc12ad6493b194820c3476663b8f0c0f22dd3f40a8b95dc23c0d706099590d38",
+    "fidelity_interference.json": "307399d0717e5c35ae93beb92e2a751218e3b6b2d95b7432ad96571db720c4a2",
+    "export_roundtrip_audit.json": "ae7e4fe93267cd3a00ccc757d3cd9c811ab7292dd842ffbabd788dcdba45a399",
+    "drawing_checks.json": "ad90fbcff7bdf55d0c6b0c92a2435bd0251b13acdf91362ba110e02e342e511d",
+    "native_drawings_audit.json": "dea3f9f506a575b1db74f5d15311b28ca113b94ac48fb1856251324c21dce85d",
+    "native_drawings_reload.json": "aa4f89b06f61564baa9a08f5130192a8aee3a49fdb6d30d2a7e7dc0c1eeb910f",
+    "fidelity_pdf_review.json": "fc982bee913723bbf1fc599fa3d3478070a9d35fe5917ad794da1b2d8e8da50a",
+    "fidelity_web_checks.json": "93d8ab5df626ea799bc3e368bd6ac1c17465ea9971627212efb6b1046fb74a9c",
+    "fidelity_gltf_validation.json": "fb9ffced4384843ef100d19d230a855388cfcb40fb6cbf0e014321e0130dedd2"
+  },
+  "limitations": [
+    "No physical PCH-1000 specimen or factory molding drawing was measured.",
+    "Socket widths, shield thicknesses, support PCB outline and installation clearances are reconstructed approximations.",
+    "Contact counts are corroborated; manufacturing pitch tolerances, terminal forms and electrical behavior are not validated.",
+    "Retired contact identities are retained in document history and reserved in numbering; they are excluded from physical exports.",
+    "Whole-collection responsive-layout checks are outside this targeted device pass."
+  ]
+}

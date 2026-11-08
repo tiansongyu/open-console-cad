@@ -461,3 +461,6 @@ STAGES[14]=stage14
 # Public-reference refinement; local values remain estimates.
 from .handheld_refinement import refine_psv
 STAGES[15] = refine_psv
+
+from .fidelity_psv import stage16
+STAGES[16] = stage16

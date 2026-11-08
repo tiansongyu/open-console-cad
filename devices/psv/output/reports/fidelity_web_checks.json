@@ -1,0 +1,82 @@
+{
+  "device": "psv",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 346,
+      "passed": true
+    },
+    {
+      "view": "rear",
+      "components": 346,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 336,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 346,
+      "passed": true
+    },
+    {
+      "view": "rear-touch",
+      "components": 9,
+      "passed": true
+    },
+    {
+      "view": "controllers",
+      "components": 123,
+      "passed": true
+    },
+    {
+      "view": "boards",
+      "components": 144,
+      "passed": true
+    },
+    {
+      "view": "battery",
+      "components": 17,
+      "passed": true
+    },
+    {
+      "view": "optics",
+      "components": 31,
+      "passed": true
+    },
+    {
+      "view": "ports",
+      "components": 51,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 23,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psv/output/PSVita_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/psv/output/drawings/PSVita_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/psv.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "0948aaf0896f26743fcebb73e767f6497509584c1eae921acf9a796ded2e770d",
+  "glb_sha256": "8a0357fa78cde74e84fae63b0609acc49d172c14b12ea13babc353aae4969d06",
+  "page_errors": [],
+  "gzip_lossless": true,
+  "scope": "Targeted local PCH-1000 viewer modes, visible component counts, links, gallery images and explode keyboard. No whole-collection responsive-layout assertion."
+}
