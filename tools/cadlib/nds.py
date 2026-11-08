@@ -399,3 +399,6 @@ STAGES[15]=stage15
 # Public-reference refinement; local values remain estimates.
 from .handheld_refinement import refine_nds
 STAGES[16] = refine_nds
+
+from .fidelity_nds import stage17
+STAGES[17] = stage17

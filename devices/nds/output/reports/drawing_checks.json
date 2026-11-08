@@ -356,6 +356,28 @@
     },
     {
       "sheet": 10,
+      "view": "Stylus",
+      "p1": [
+        -89.0,
+        1.5,
+        4.0
+      ],
+      "p2": [
+        -85.0,
+        1.5,
+        4.0
+      ],
+      "axis": "x",
+      "value_mm": 3.999999999999999,
+      "label": "≈ 4",
+      "published": false,
+      "label_position": [
+        47.5,
+        13.4
+      ]
+    },
+    {
+      "sheet": 10,
       "view": "BatteryDoor",
       "p1": [
         -32.5,
@@ -399,133 +421,5 @@
       ]
     }
   ],
-  "method": "BRep orthographic projections, model-derived endpoints, and planar cross sections; source pose identified per view",
-  "model_measurements": [
-    {
-      "name": "closed.XLength",
-      "actual_mm": 148.70000009999998,
-      "expected_mm": 148.7,
-      "basis": "Nintendo published NTR-001 closed envelope",
-      "passed": true
-    },
-    {
-      "name": "closed.YLength",
-      "actual_mm": 84.7000002,
-      "expected_mm": 84.7,
-      "basis": "Nintendo published NTR-001 closed envelope",
-      "passed": true
-    },
-    {
-      "name": "closed.ZLength",
-      "actual_mm": 28.9000001,
-      "expected_mm": 28.9,
-      "basis": "Nintendo published NTR-001 closed envelope",
-      "passed": true
-    },
-    {
-      "name": "UpperGlass.width",
-      "actual_mm": 60.96,
-      "expected_mm": 60.96,
-      "basis": "3-inch diagonal at 4:3, geometric conversion",
-      "passed": true
-    },
-    {
-      "name": "UpperGlass.height",
-      "actual_mm": 45.72000000000001,
-      "expected_mm": 45.72,
-      "basis": "3-inch diagonal at 4:3, geometric conversion",
-      "passed": true
-    },
-    {
-      "name": "LowerGlass.width",
-      "actual_mm": 60.96,
-      "expected_mm": 60.96,
-      "basis": "3-inch diagonal at 4:3, geometric conversion",
-      "passed": true
-    },
-    {
-      "name": "LowerGlass.height",
-      "actual_mm": 45.72,
-      "expected_mm": 45.72,
-      "basis": "3-inch diagonal at 4:3, geometric conversion",
-      "passed": true
-    },
-    {
-      "name": "DPad.XLength",
-      "actual_mm": 19.0,
-      "expected_mm": 19,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "GameCardMouth.XLength",
-      "actual_mm": 36.2,
-      "expected_mm": 36.2,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "GBAMouth.XLength",
-      "actual_mm": 64.4,
-      "expected_mm": 64.4,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "ChargeJackShell.XLength",
-      "actual_mm": 8.400000000000002,
-      "expected_mm": 8.4,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "Mainboard.XLength",
-      "actual_mm": 139.0,
-      "expected_mm": 139,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "Mainboard.YLength",
-      "actual_mm": 75.0,
-      "expected_mm": 75,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "BatteryPouch.XLength",
-      "actual_mm": 31.0,
-      "expected_mm": 31,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "BatteryPouch.YLength",
-      "actual_mm": 54.0,
-      "expected_mm": 54,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "BatteryDoor.XLength",
-      "actual_mm": 33.0,
-      "expected_mm": 33,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "BatteryDoor.YLength",
-      "actual_mm": 58.0,
-      "expected_mm": 58,
-      "basis": "declared approximate model dimension",
-      "passed": true
-    },
-    {
-      "name": "stylus.length",
-      "actual_mm": 75.0,
-      "expected_mm": 75,
-      "basis": "Approximate 75 mm original stylus specification",
-      "passed": true
-    }
-  ]
+  "method": "BRep orthographic projections, model-derived endpoints, and planar cross sections; source pose identified per view"
 }

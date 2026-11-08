@@ -27,13 +27,13 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 
 | 顺序 | 设备与版本 | 历史轮次 | 基线组件数 | 本轮状态 |
 | ---: | --- | ---: | ---: | --- |
-| 1 | [Nintendo DS · NTR-001](../devices/nds/README.md) | 16 | 321 | 资料核对中 |
-| 2 | [Nintendo 3DS · CTR-001](../devices/3ds/README.md) | 14 | 324 | 待开始 |
+| 1 | [Nintendo DS · NTR-001](../devices/nds/README.md) | 16 | 321 | 第 17 轮已验证 |
+| 2 | [Nintendo 3DS · CTR-001](../devices/3ds/README.md) | 14 | 324 | 候选模型验证中 |
 | 3 | [Sony PSP-1000 · PSP-1000](../devices/psp/README.md) | 15 | 346 | 待开始 |
 | 4 | [PlayStation Vita · PCH-1000 Wi-Fi OLED](../devices/psv/README.md) | 15 | 386 | 待开始 |
 | 5 | [Steam Deck · 2022 LCD](../devices/steamdeck/README.md) | 16 | 498 | 待开始 |
 | 6 | [Nintendo Switch · HAC-001](../devices/switch/README.md) | 18 | 654 | 待开始 |
-| 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 待开始 |
+| 7 | [Nintendo Switch 2 · BEE-001](../devices/switch2/README.md) | 16 | 799 | 候选模型验证中 |
 | 8 | [Nintendo Game Boy · DMG-01 (1989)](../devices/gameboy/README.md) | 15 | 410 | 待开始 |
 | 9 | [Nintendo Game Boy Advance · AGB-001 Indigo · early AGB-CPU-02](../devices/gba/README.md) | 17 | 779 | 待开始 |
 | 10 | [Nintendo Game & Watch · DK-52 · Donkey Kong · Original 1982](../devices/gamewatch/README.md) | 15 | 592 | 待开始 |
@@ -43,7 +43,7 @@ CAD 几何修改与渲染使用独立虚拟桌面和独立 FreeCAD 配置，遵�
 | 14 | [Nintendo Wii · RVL-001 · 初代白色](../devices/wii/README.md) | 15 | 654 | 待开始 |
 | 15 | [Nintendo Wii U · WUP-001 · 首发白色 Basic](../devices/wiiu/README.md) | 22 | 707 | 待开始 |
 | 16 | [Atari 2600 · CX2600 · Heavy Sixer (1977)](../devices/atari2600/README.md) | 23 | 684 | 待开始 |
-| 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 待开始 |
+| 17 | [Sega Mega Drive · HAA-2510 · 初代日版](../devices/megadrive/README.md) | 13 | 825 | 候选模型验证中 |
 | 18 | [Sega Saturn · HST-3200 · 初代日版灰色](../devices/saturn/README.md) | 22 | 715 | 待开始 |
 | 19 | [Sony PlayStation · SCPH-1000 · 初代日版灰色](../devices/ps1/README.md) | 25 | 929 | 待开始 |
 | 20 | [Sony PlayStation 2 · SCPH-10000 · 初代日版黑色](../devices/ps2/README.md) | 34 | 1,352 | 待开始 |

@@ -1,0 +1,74 @@
+{
+  "device": "nds",
+  "revision": 17,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "46506248345716e88138a3b3f0f7323c4d97ab91bd615a512b4fb355f2c6c660",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":99",
+  "physical_components": 321,
+  "solids": 424,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration17.json",
+  "changes": [
+    "Stylus maximum diameter 3.4 to approximately 4.0 mm",
+    "Left orange recharge and right green normal power indicators",
+    "Seven Y00 rear screw drives",
+    "Initial display center parameters aligned with previously saved geometry"
+  ],
+  "validation": {
+    "detail_checks": 12,
+    "pose_checks": [
+      {
+        "opening": 0,
+        "candidate_pairs": 491,
+        "passed": true
+      },
+      {
+        "opening": 75,
+        "candidate_pairs": 573,
+        "passed": true
+      },
+      {
+        "opening": 150,
+        "candidate_pairs": 599,
+        "passed": true
+      }
+    ],
+    "step_files": 4,
+    "native_drawing_references": 19,
+    "pdf_pages_reviewed": 12,
+    "web_views": 7,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "passed",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_nds.py": "6bbc6f8c87ee0ba721aa456262bc164bd2881c77437e3293629ce68043bf9602",
+    "tools/cadlib/nds.py": "c87bbc63c03d84e6fb54a3f8e969c54d7f35a1d9603621f525b734d2f0d52327",
+    "devices/nds/scripts/iter17_documented_stylus_indicators_and_rear_fixings.py": "ed670a766c1977cd39009eb1b756bf73f5148b30b7f76df8f36cd53ba138f9e7",
+    "devices/nds/scripts/audit_fidelity.py": "6a289f3f85b23b4e927199a6715fa7a13e824153ab85f0bbd6671280fe6fb6d6",
+    "devices/nds/profile.json": "a78bf8e0a8dc4bfc4fad331ab4f9cd53bb75c3ca963ff81612738d45bf7c5676"
+  },
+  "reports_sha256": {
+    "fidelity_detail_audit.json": "4228d6027913c123a5558a18f372979b25abd42e3eed2e636e0ea3be6514729d",
+    "fidelity_interference_0.json": "d790f20b854adf9a1cda462415fdcb18c9330ddd8caea233dec952d72335c8f3",
+    "fidelity_interference_75.json": "8326842dd51822a102fe6e8f22d87851c9067410bd25cc223a8e78343284af00",
+    "fidelity_interference_150.json": "6eaeff39c1aa0e7182f6326bdc06f1b48198ea04e6aa78f83d3faaaa365e41bc",
+    "export_roundtrip_audit.json": "4760c28998ceba40cdc2ebe1f1c2563a362ed16b06a3f9cf8bd255e3243b4274",
+    "drawing_checks.json": "7b7ad5228302da978d985989ac5d0f0613d64a8f2175de471f4efd088e2fd59b",
+    "native_drawings_audit.json": "ccf3abe5869edb4a49156d53191258c78faf0d4d11adfaeb714596119e33dc8f",
+    "native_drawings_reload.json": "a99767b90b83b53d18a64371f30c9485ca149b8a364c9ec57023ca8862d61a4f",
+    "fidelity_pdf_review.json": "5ecb2d6646ce042237199a3cad15e9a3750318151ef6695f3610b94277bb0de6",
+    "fidelity_web_checks.json": "96eab1fbd581990cb0e3a05dd68728139934c5d4f67ae8a2ae957e2c979f14af"
+  },
+  "limitations": [
+    "No physical specimen measurements or manufacturing drawings.",
+    "Stylus taper and retention details remain reconstructed.",
+    "Rear screw length and PCB/stand-off layout remain schematic.",
+    "Screen nominal 3-inch conversion retained; rounded pixel-pitch data does not establish exact active-area measurement."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "passed": true,
   "pages": 12,
-  "dimension_count": 18,
+  "dimension_count": 19,
   "checks": [
     {
       "name": "Dimension01_1",
@@ -101,18 +101,24 @@
     },
     {
       "name": "Dimension10_2",
+      "expected_mm": 3.999999999999999,
+      "actual_mm": 4.0,
+      "passed": true
+    },
+    {
+      "name": "Dimension10_3",
       "expected_mm": 32.999999999999986,
       "actual_mm": 33.0,
       "passed": true
     },
     {
-      "name": "Dimension10_3",
+      "name": "Dimension10_4",
       "expected_mm": 57.99999999999999,
       "actual_mm": 58.0,
       "passed": true
     }
   ],
-  "drawings_sha256": "2334c661bff980137de8abae6f7f2c96099392216a6987d9cdfc183f517e80c4",
-  "source_sha256": "6a07f48b410b46f071f8f6d4c1d6d3ab0698d0f09fa942167a1fe20f8da0064a",
+  "drawings_sha256": "47183affcacba9b7b9c41b4c04a9d5f8040d6f8d91bd0c837f40548d1dc13d96",
+  "source_sha256": "46506248345716e88138a3b3f0f7323c4d97ab91bd615a512b4fb355f2c6c660",
   "scope": "Reopen independent copy and recompute native dimension references; no open-macro test in this pass."
 }

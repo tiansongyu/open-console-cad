@@ -1,0 +1,75 @@
+{
+  "device": "nds",
+  "model": "NTR-001",
+  "iteration": 17,
+  "review_date": "2026-11-08",
+  "factory_equivalence_verified": false,
+  "sources": [
+    {
+      "url": "https://www.nintendo.co.jp/ds/spec/index.html",
+      "publisher": "Nintendo",
+      "verified": "Original DS stylus approximately 75.0 mm long and 4.0 mm diameter; closed body 148.7 x 84.7 x 28.9 mm."
+    },
+    {
+      "url": "https://www.nintendo.com/eu/media/downloads/support_1/nintendo_ds_19/NDS_Manual_UK_DE_FR.pdf",
+      "publisher": "Nintendo",
+      "printed_pages": [
+        8,
+        9
+      ],
+      "sha256": "61b3c5f7016b8975752d42191c0ac0678acecb261b3d16be3aff2c86945d9308",
+      "verified": "Left recharge indicator is orange; right power indicator is green in the normal powered state (red at low battery). Comparison uses original NTR-001 components diagram."
+    },
+    {
+      "url": "https://www.ifixit.com/Guide/Nintendo+DS+Main+Circuit+Board+Replacement/1301",
+      "publisher": "iFixit / firsthand repair contributors",
+      "step": 4,
+      "verified": "Seven rear-case fixings use Y00 tri-point drive. This iteration corrects the drive only; reported 6.4 mm fastener length is not yet incorporated into schematic internal mounts."
+    }
+  ],
+  "changes": [
+    {
+      "parts": [
+        "StylusGrip"
+      ],
+      "before_maximum_diameter_mm": 3.4,
+      "after_maximum_diameter_mm": 4.0,
+      "basis": "Published approximate maximum diameter; shaft/tip and retention profile remain estimates."
+    },
+    {
+      "parts": [
+        "StatusLED0",
+        "StatusLED1"
+      ],
+      "before": [
+        "green",
+        "red"
+      ],
+      "after": [
+        "orange recharge",
+        "green normal power"
+      ],
+      "basis": "Official manual pp.8-9; color values are presentation approximations."
+    },
+    {
+      "parts": [
+        "RearCoverScrew0",
+        "RearCoverScrew1",
+        "RearCoverScrew2",
+        "RearCoverScrew3",
+        "RearCoverScrew4",
+        "RearCoverScrew5",
+        "RearCoverScrew6"
+      ],
+      "before": "cross drive",
+      "after": "three-arm Y drive",
+      "basis": "Firsthand disassembly; unchanged modeled shank lengths and head sizes remain approximate."
+    }
+  ],
+  "remaining_uncertainties": [
+    "No physical specimen measurements or manufacturing drawings.",
+    "Stylus taper and retention details remain reconstructed.",
+    "Rear screw length and PCB/stand-off layout remain schematic.",
+    "Screen nominal 3-inch conversion retained; rounded pixel-pitch data does not establish exact active-area measurement."
+  ]
+}

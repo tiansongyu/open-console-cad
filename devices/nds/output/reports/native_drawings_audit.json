@@ -1,7 +1,7 @@
 {
   "pass": true,
   "pages": 12,
-  "native_dimension_references": 18,
+  "native_dimension_references": 19,
   "checks": [
     {
       "sheet": 1,
@@ -118,13 +118,20 @@
     {
       "sheet": 10,
       "dimension": "Dimension10_2",
+      "expected_mm": 3.999999999999999,
+      "measured_mm": 4.0,
+      "pass": true
+    },
+    {
+      "sheet": 10,
+      "dimension": "Dimension10_3",
       "expected_mm": 32.999999999999986,
       "measured_mm": 33.0,
       "pass": true
     },
     {
       "sheet": 10,
-      "dimension": "Dimension10_3",
+      "dimension": "Dimension10_4",
       "expected_mm": 57.99999999999999,
       "measured_mm": 58.0,
       "pass": true

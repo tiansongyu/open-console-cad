@@ -20,3 +20,4 @@
 | 14 | 将铰链处薄分型条改为直端退让轮廓，避免圆柱相切薄片在 STEP 回读修复时发生几何偏差。 | 321 | [效果图](output/previews/14_step_stable_parting_strip_hero.png) |
 | 15 | 将下机身铰链开孔限定在中央铰链范围，恢复两侧连续壳体，修正网页视角中主板外露的问题。 | 321 | [效果图](output/previews/15_central_hinge_enclosure_hero.png) |
 | 16 | 下机身控制面板与上盖的厚度方向边缘过渡；局部数值为公开图像估计。 | 321 | [查看](output/previews/16_public_reference_enclosure_edges_hero.png) |
+| 17 | 按官方约 4 mm 修正触控笔最大直径，纠正充电／电源指示灯颜色与顺序，将七枚后盖螺钉改为 Y 形槽。 | 321 | [效果图](output/previews/17_documented_stylus_indicators_and_rear_fixings_hero.png) |

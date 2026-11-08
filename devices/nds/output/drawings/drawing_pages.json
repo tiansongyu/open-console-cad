@@ -70,6 +70,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -172,6 +179,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -308,6 +322,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -410,6 +431,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -512,6 +540,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -614,6 +649,13 @@
           "Shoulder-1",
           "Shoulder1",
           "BatteryDoor",
+          "RearCoverScrew0",
+          "RearCoverScrew1",
+          "RearCoverScrew2",
+          "RearCoverScrew3",
+          "RearCoverScrew4",
+          "RearCoverScrew5",
+          "RearCoverScrew6",
           "RearModelMark",
           "StylusEntrance",
           "BatteryType",
@@ -2643,8 +2685,8 @@
     "title": "触控笔与独立电池仓结构",
     "svg": "10.svg",
     "notes": [
-      "初代触控笔为固定长度，笔尖、笔杆和卡扣帽分别建模。",
-      "电池仓拥有独立盖板及一枚固定螺钉，组件尺寸为本模型近似值。"
+      "初代触控笔官方长度约 75 mm、最大直径约 4 mm，笔尖、笔杆和卡扣帽分别建模。",
+      "电池仓拥有独立盖板及一枚固定螺钉，其余局部尺寸为近似值。"
     ],
     "views": [
       {
@@ -2750,6 +2792,27 @@
         "label_position": [
           88,
           99.5
+        ]
+      },
+      {
+        "view": "Stylus",
+        "p1": [
+          -89.0,
+          1.5,
+          4.0
+        ],
+        "p2": [
+          -85.0,
+          1.5,
+          4.0
+        ],
+        "axis": "x",
+        "value_mm": 3.999999999999999,
+        "label": "≈ 4",
+        "published": false,
+        "label_position": [
+          47.5,
+          13.4
         ]
       },
       {

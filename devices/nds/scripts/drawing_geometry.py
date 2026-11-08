@@ -65,9 +65,9 @@ v=s.view_fit('MotherboardDetail',d.keys_for(['Mainboard']),(20,22,225,118),(0,0,
 v=s.view_fit('BatteryDetail',d.keys_for(['Battery']),(285,25,82,113),(0,0,-1));d.dimension_box(s,v,['BatteryPouch'],'x',14);d.dimension_box(s,v,['BatteryPouch'],'y',390);caption(s,v,'电池与端子',153)
 s.text(12,178,'ARM9 / ARM7 / RAM / 电源与音频封装：近似布局');s.text(12,190,'独立 Wi-Fi 射频小板；DS 与 GBA 接口见第 4 页');s.text(12,202,'不包含真实电路、布线、料号精度或制造公差。');s.save()
 
-s=d.Sheet(10,'触控笔与独立电池仓结构',['初代触控笔为固定长度，笔尖、笔杆和卡扣帽分别建模。','电池仓拥有独立盖板及一枚固定螺钉，组件尺寸为本模型近似值。'])
+s=d.Sheet(10,'触控笔与独立电池仓结构',['初代触控笔官方长度约 75 mm、最大直径约 4 mm，笔尖、笔杆和卡扣帽分别建模。','电池仓拥有独立盖板及一枚固定螺钉，其余局部尺寸为近似值。'])
 sk=d.keys_for(['Accessories'])
-v=s.view_fit('Stylus',sk,(24,24,47,151),(0,0,1));d.dimension_box(s,v,sk,'y',90);caption(s,v,'75 mm 触控笔',202)
+v=s.view_fit('Stylus',sk,(24,24,47,151),(0,0,1));d.dimension_box(s,v,sk,'y',90);d.dimension_box(s,v,sk,'x',15);caption(s,v,'约 75 × Ø4 mm 触控笔',202)
 v=s.view_fit('StylusTip',['StylusTip','StylusBarrel'],(112,26,51,131),(.8,0,1));caption(s,v,'笔杆与锥形尖端',185)
 v=s.view_fit('BatteryDoor',['BatteryDoor','BatteryDoorScrew'],(238,26,98,145),(0,0,-1));d.dimension_box(s,v,['BatteryDoor'],'x',17);d.dimension_box(s,v,['BatteryDoor'],'y',367);caption(s,v,'独立电池仓盖',202);s.save()
 
@@ -81,7 +81,7 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,203,f"合计 {M['physical_components']} 个组件 / {M['solids']} 个实体；完整清单见 COMPONENTS.csv",3.6,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'尺寸依据与验证索引',['官方闭合尺寸与本模型局部近似尺寸分别记录。','图纸为已保存 CAD 版本的快照，改模后需要重新生成和检查。'])
-sections=[(16,'官方尺寸依据',['Nintendo DS NTR-001：闭合 148.7 × 84.7 × 28.9 mm。','双 3 英寸 4:3 屏幕换算为 60.96 × 45.72 mm。','来源：Nintendo 日本官网初代 DS 产品规格页。']), (67,'结构参考',['iFixit Nintendo DS 主板更换指南及实机照片。','局部外形、壁厚、孔位和内部模块为近似设计。','触控笔、内部厚度与 150° 开角属于展示模型参数。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；{M['physical_components']} 个组件独立源码重建匹配。",'原生展开、闭合、爆炸文件及四份 STEP 已回读检查。','最终装配实体求交、图纸尺寸和字体检查记录见 reports/。']), (169,'维护入口',['来源链接：references/SOURCES.md。','零件索引：COMPONENTS.csv；源码：scripts/iterNN_*.py。','网页网格由同一 FreeCAD 组件导出，精确实体以 FCStd / STEP 为准。'])]
+sections=[(16,'官方尺寸依据',['Nintendo DS NTR-001：闭合 148.7 × 84.7 × 28.9 mm。','双 3 英寸 4:3 屏幕换算为 60.96 × 45.72 mm。','来源：Nintendo 日本官网初代 DS 产品规格页。']), (67,'结构参考',['iFixit Nintendo DS 主板更换指南及实机照片。','局部外形、壁厚、孔位和内部模块为近似设计。','触控笔公开约 75 × Ø4 mm；内部厚度和展示开角近似。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；{M['physical_components']} 个组件；当前验证范围见 fidelity_delivery_checks.json。",'原生展开、闭合、爆炸文件及四份 STEP 已回读检查。','最终装配实体求交、图纸尺寸和字体检查记录见 reports/。']), (169,'维护入口',['来源链接：references/SOURCES.md。','零件索引：COMPONENTS.csv；源码：scripts/iterNN_*.py。','网页网格由同一 FreeCAD 组件导出，精确实体以 FCStd / STEP 为准。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)

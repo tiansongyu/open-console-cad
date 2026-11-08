@@ -1,0 +1,193 @@
+{
+  "device": "nds",
+  "iteration": 17,
+  "source_sha256": "46506248345716e88138a3b3f0f7323c4d97ab91bd615a512b4fb355f2c6c660",
+  "checks": [
+    {
+      "name": "stylus.length_mm",
+      "actual": 75.0,
+      "expected": 75.0,
+      "basis": "Nintendo published approximate length",
+      "passed": true
+    },
+    {
+      "name": "stylus.maximum_diameter_mm",
+      "actual": 4.0,
+      "expected": 4.0,
+      "basis": "Nintendo published approximate diameter",
+      "passed": true
+    },
+    {
+      "name": "left_indicator_role",
+      "actual": "charge_orange",
+      "expected": "charge_orange",
+      "basis": "Nintendo manual pp.8-9",
+      "passed": true
+    },
+    {
+      "name": "right_indicator_role",
+      "actual": "led",
+      "expected": "led",
+      "basis": "Nintendo manual pp.8-9, normal powered state",
+      "passed": true
+    },
+    {
+      "name": "indicator_left_to_right",
+      "actual": true,
+      "expected": true,
+      "basis": "Nintendo component diagram",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_0_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_1_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_2_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_3_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_4_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_5_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    },
+    {
+      "name": "rear_screw_6_three_arm_recess",
+      "actual": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "basis": "Firsthand Y00 rear screw evidence; geometric section test",
+      "passed": true
+    }
+  ],
+  "invalid_components": [],
+  "passed": true,
+  "factory_equivalence_verified": false,
+  "method": "Read-only saved BRep, material roles and head-recess point classification"
+}
