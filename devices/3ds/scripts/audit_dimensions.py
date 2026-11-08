@@ -15,6 +15,8 @@ for key,w,h in [('UpperGlass',76.8,46.08),('LowerGlass',61.44,46.08)]:
  if key=='UpperGlass':sh.Placement=App.Placement(App.Vector(),App.Rotation(App.Vector(1,0,0),-20)).multiply(sh.Placement)
  b=sh.optimalBoundingBox(False,False);check(key+'.width',b.XLength,w);check(key+'.height',b.YLength,h)
 for key,axis,expected in [('CirclePadCap','XLength',13.7),('GameCardMouth','XLength',34.8),('ChargeJackShell','XLength',8.25),('BatteryPouch','XLength',33.6),('BatteryPouch','YLength',52.6),('Mainboard','XLength',126),('Mainboard','YLength',64),('CradleBase','XLength',144),('CradleBase','YLength',84)]:check(key+'.'+axis,getattr(c[key].Shape.optimalBoundingBox(False,False),axis),expected)
+for axis,expected in zip(('XLength','YLength','ZLength'),(32,24,2.1)):
+ check('SDCard.standard.'+axis,getattr(c['SDCard'].Shape.optimalBoundingBox(False,False),axis),expected)
 report=json.loads((out/'reports/drawing_checks.json').read_text());report['model_measurements']=checks;report['pass']=all(r['pass'] for r in checks) and len(report['dimensions'])==17
 (out/'reports/drawing_checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps({'pass':report['pass'],'model_measurements':len(checks),'annotations':len(report['dimensions'])}))
 App.closeDocument(doc.Name);App.closeDocument(closed.Name)

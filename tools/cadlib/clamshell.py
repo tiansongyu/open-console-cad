@@ -429,3 +429,6 @@ STAGES[13]=stage13
 # Public-reference refinement; local values remain estimates.
 from .handheld_refinement import refine_3ds
 STAGES[14] = refine_3ds
+
+from .fidelity_3ds import stage15
+STAGES[15] = stage15

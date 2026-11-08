@@ -88,8 +88,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 99.5,
         "y": 106.0,
@@ -192,8 +198,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 296.5,
         "y": 106.0,
@@ -330,8 +342,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 109,
         "y": 62,
@@ -434,8 +452,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 302,
         "y": 62,
@@ -538,8 +562,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 110,
         "y": 163,
@@ -642,8 +672,14 @@
           "BatteryCapacity",
           "BatteryStudy",
           "ARMLabel",
+          "SDCard",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 302,
         "y": 163,
@@ -954,7 +990,7 @@
     "svg": "04.svg",
     "notes": [
       "圆形滑控钮、充电口、SD 读卡器和摄像头采用独立组件。",
-      "放大视图展示当前实体几何，所有局部尺寸按近似值标注。"
+      "SD 卡为标准 32 × 24 × 2.1 mm；卡座与其他局部尺寸仍为近似值。"
     ],
     "views": [
       {
@@ -1035,7 +1071,7 @@
         ],
         "x": 328.5,
         "y": 52.0,
-        "scale": 2.1898988478171146,
+        "scale": 2.315301446347092,
         "normal": [
           -1,
           -0.15,
@@ -1047,9 +1083,9 @@
           0
         ],
         "center": [
-          -50.818679625894006,
-          -12.032436090225564,
-          3.669943700715205
+          -48.93784435411471,
+          -12.09750592140989,
+          4.410275483291766
         ],
         "exploded": false,
         "source": "open"
@@ -1071,11 +1107,12 @@
           "OuterRightCameraSensor",
           "OuterLeftCameraBarrel",
           "OuterRightCameraBarrel",
-          "InnerCameraBarrel"
+          "InnerCameraBarrel",
+          "OuterCameraLEDLens"
         ],
         "x": 66.5,
         "y": 154.0,
-        "scale": 2.501719408016557,
+        "scale": 2.1787657963683458,
         "normal": [
           0.3,
           -0.4,
@@ -1087,9 +1124,9 @@
           0
         ],
         "center": [
-          0.02711112253581227,
-          93.8390311536573,
-          28.35530335539748
+          3.004339785631272,
+          93.60364512087268,
+          28.607045014988067
         ],
         "exploded": false,
         "source": "open"
@@ -1495,7 +1532,11 @@
           "MicrophonePCB",
           "MicrophoneCapsule",
           "LowerScreenFoam-1",
-          "LowerScreenFoam1"
+          "LowerScreenFoam1",
+          "NotificationLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 198.0,
         "y": 52.0,
@@ -1537,6 +1578,7 @@
           "ARMPackage",
           "SDReaderPCB",
           "SDReaderCage",
+          "SDCard",
           "EMIShield",
           "LowerScreenFoam-1",
           "LowerScreenFoam1"
@@ -1601,7 +1643,8 @@
           "OuterRightCameraBarrel",
           "InnerCameraBarrel",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "OuterCameraLEDLens"
         ],
         "x": 198.0,
         "y": 157.5,
@@ -1964,7 +2007,12 @@
           "OuterRightCameraBarrel",
           "InnerCameraBarrel",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "NotificationLens",
+          "OuterCameraLEDLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 198.0,
         "y": 100.5,
@@ -2251,7 +2299,11 @@
           "MicrophonePCB",
           "MicrophoneCapsule",
           "LowerScreenFoam-1",
-          "LowerScreenFoam1"
+          "LowerScreenFoam1",
+          "NotificationLens",
+          "WirelessLEDLens",
+          "StrapAnchor-1",
+          "StrapAnchor1"
         ],
         "x": 198.0,
         "y": 78.0,
@@ -2344,7 +2396,8 @@
           "OuterRightCameraBarrel",
           "InnerCameraBarrel",
           "LidBumper-1",
-          "LidBumper1"
+          "LidBumper1",
+          "OuterCameraLEDLens"
         ],
         "x": 198.0,
         "y": 78.0,
@@ -2477,7 +2530,7 @@
         ],
         "x": 132.5,
         "y": 81.0,
-        "scale": 1.6555223880597014,
+        "scale": 1.63953488372093,
         "normal": [
           0,
           0,
@@ -2489,7 +2542,7 @@
           0
         ],
         "center": [
-          0.0,
+          -1.5,
           1.5,
           5.200000000000001
         ],
@@ -2546,11 +2599,11 @@
           7.324999999999973
         ],
         "axis": "x",
-        "value_mm": 125.99999999999999,
+        "value_mm": 126.0,
         "label": "≈ 126",
         "published": false,
         "label_position": [
-          132.5,
+          130.0406976744186,
           11.4
         ]
       },

@@ -2,24 +2,24 @@
   "native": [
     {
       "file": "Nintendo3DS_Complete.FCStd",
-      "source_sha256": "ed02f75eb04a709e0c78b5c0dcc5854016b64f926aead2d19c128ecc2501a208",
-      "components": 324,
+      "source_sha256": "806a2ab5a510c4aa1ff4f8070085de3f9228becdb92583150013085009786a8d",
+      "components": 329,
       "invalid": [],
       "mismatched_components": [],
       "pass": true
     },
     {
       "file": "Nintendo3DS_Exploded.FCStd",
-      "source_sha256": "4a37982ab00f2e9a78ef3ffff4e36de2ae69e4060d591826225c835f83a264a1",
-      "components": 324,
+      "source_sha256": "12037826e0562f5f7dd42d28b4352ad3b2a4a586a5a4e204795d95d186fd1848",
+      "components": 329,
       "invalid": [],
       "mismatched_components": [],
       "pass": true
     },
     {
       "file": "Nintendo3DS_Closed.FCStd",
-      "source_sha256": "df5b1a0a9b6517dbfff74704831d4f56e1ffe83837de0272a813df81436d3e46",
-      "components": 324,
+      "source_sha256": "242c0512213efd4caaf6489c87f45297c5d2b1f27ac4dd047a033f71912558f8",
+      "components": 329,
       "invalid": [],
       "mismatched_components": [],
       "pass": true
@@ -29,31 +29,31 @@
     {
       "file": "Nintendo3DS_FullKit.step",
       "valid": true,
-      "solids": 388,
-      "expected_solids": 388,
-      "compound_volume_delta_mm3": 6.683418177999556e-05,
-      "matched_solid_volume_delta_mm3": -0.00013319018866367284,
-      "sum_absolute_solid_volume_delta_mm3": 0.00014332218846111562,
+      "solids": 393,
+      "expected_solids": 393,
+      "compound_volume_delta_mm3": 0.031340269051725045,
+      "matched_solid_volume_delta_mm3": 0.031194012998959506,
+      "sum_absolute_solid_volume_delta_mm3": 0.03144300603055018,
       "max_solid_bbox_delta_mm": 1.0000000116860974e-07,
-      "colour_entities": 32,
+      "colour_entities": 44,
       "solid_checks": [
         {
-          "name": "BackCoverCut008",
+          "name": "BackCoverCut010",
           "source_solid": 0,
           "step_solid": 0,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.8189894035458565e-12,
+          "volume_delta_mm3": -7.275957614183426e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "MainFrameCut020",
+          "name": "MainFrameCut025",
           "source_solid": 0,
           "step_solid": 1,
           "bbox_max_delta_mm": 2.5579538487363607e-13,
-          "volume_delta_mm3": -9.009371660795296e-05,
+          "volume_delta_mm3": 0.03131335051057249,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -107,11 +107,11 @@
           "pass": true
         },
         {
-          "name": "LidBackCoverCut002",
+          "name": "LidBackCoverCut003",
           "source_solid": 0,
           "step_solid": 5,
           "bbox_max_delta_mm": 3.0098590286797844e-11,
-          "volume_delta_mm3": -7.09405867382884e-11,
+          "volume_delta_mm3": -7.639755494892597e-11,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -169,11 +169,11 @@
           "pass": true
         },
         {
-          "name": "RightHingeSleeve",
+          "name": "RightHingeSleeveCut",
           "source_solid": 0,
           "step_solid": 10,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 9.071689532902383e-08,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -1401,11 +1401,11 @@
           "pass": true
         },
         {
-          "name": "RearSupportPlateCut010",
+          "name": "RearSupportPlateCut012",
           "source_solid": 0,
           "step_solid": 122,
           "bbox_max_delta_mm": 2.220446049250313e-16,
-          "volume_delta_mm3": -1.3642420526593924e-11,
+          "volume_delta_mm3": -1.950866135302931e-10,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -2383,62 +2383,62 @@
           "pass": true
         },
         {
-          "name": "SDReaderPCB",
+          "name": "SDReaderPCB001",
           "source_solid": 0,
           "step_solid": 210,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1368683772161603e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDReaderCage",
+          "name": "SDReaderCageCut002",
           "source_solid": 0,
           "step_solid": 211,
-          "bbox_max_delta_mm": 6.661338147750939e-16,
-          "volume_delta_mm3": -1.7053025658242404e-13,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": 2.2737367544323206e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDCard",
+          "name": "SDCardCut",
           "source_solid": 0,
           "step_solid": 212,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1368683772161603e-13,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": 9.094947017729282e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact0",
+          "name": "SDContact001",
           "source_solid": 0,
           "step_solid": 213,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact1",
+          "name": "SDContact002",
           "source_solid": 0,
           "step_solid": 214,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact2",
+          "name": "SDContact003",
           "source_solid": 0,
           "step_solid": 215,
           "bbox_max_delta_mm": 0.0,
@@ -2449,20 +2449,31 @@
           "pass": true
         },
         {
-          "name": "SDContact3",
+          "name": "SDContact004",
           "source_solid": 0,
           "step_solid": 216,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact4",
+          "name": "SDContact005",
           "source_solid": 0,
           "step_solid": 217,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "SDContact006",
+          "source_solid": 0,
+          "step_solid": 218,
           "bbox_max_delta_mm": 0.0,
           "volume_delta_mm3": 0.0,
           "valid": true,
@@ -2471,18 +2482,7 @@
           "pass": true
         },
         {
-          "name": "SDContact5",
-          "source_solid": 0,
-          "step_solid": 218,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
-          "valid": true,
-          "boolean_confirmation": null,
-          "sampled_bounds_confirmation": null,
-          "pass": true
-        },
-        {
-          "name": "SDContact6",
+          "name": "SDContact007",
           "source_solid": 0,
           "step_solid": 219,
           "bbox_max_delta_mm": 0.0,
@@ -2493,22 +2493,22 @@
           "pass": true
         },
         {
-          "name": "SDContact7",
+          "name": "SDContact008",
           "source_solid": 0,
           "step_solid": 220,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact8",
+          "name": "SDContact009",
           "source_solid": 0,
           "step_solid": 221,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -3923,11 +3923,11 @@
           "pass": true
         },
         {
-          "name": "EMIShieldCut",
+          "name": "EMIShieldCut001",
           "source_solid": 0,
           "step_solid": 350,
           "bbox_max_delta_mm": 3.552713678800501e-15,
-          "volume_delta_mm3": 6.821210263296962e-13,
+          "volume_delta_mm3": 1.9326762412674725e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -4339,6 +4339,75 @@
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
+        },
+        {
+          "name": "NotificationLens",
+          "source_solid": 0,
+          "step_solid": 388,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": 2.2851129877210496e-09,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "OuterCameraLEDLens",
+          "source_solid": 0,
+          "step_solid": 389,
+          "bbox_max_delta_mm": 2.8325786161076394e-11,
+          "volume_delta_mm3": 1.6653345369377348e-15,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "WirelessLEDLens",
+          "source_solid": 0,
+          "step_solid": 390,
+          "bbox_max_delta_mm": 2.6645352591003757e-15,
+          "volume_delta_mm3": -7.771561172376096e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor_1",
+          "source_solid": 0,
+          "step_solid": 391,
+          "bbox_max_delta_mm": 3.488764832582092e-12,
+          "volume_delta_mm3": -3.816722492899771e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor1",
+          "source_solid": 0,
+          "step_solid": 392,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": -3.816662660938164e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
@@ -4346,31 +4415,31 @@
     {
       "file": "Nintendo3DS_Handheld.step",
       "valid": true,
-      "solids": 370,
-      "expected_solids": 370,
-      "compound_volume_delta_mm3": -0.00014958913379814476,
-      "matched_solid_volume_delta_mm3": -0.00013312168056261965,
-      "sum_absolute_solid_volume_delta_mm3": 0.00014325368033164072,
+      "solids": 375,
+      "expected_solids": 375,
+      "compound_volume_delta_mm3": 0.031030803598696366,
+      "matched_solid_volume_delta_mm3": 0.03119408150706056,
+      "sum_absolute_solid_volume_delta_mm3": 0.03144293752242071,
       "max_solid_bbox_delta_mm": 1.0000000116860974e-07,
-      "colour_entities": 32,
+      "colour_entities": 44,
       "solid_checks": [
         {
-          "name": "BackCoverCut008",
+          "name": "BackCoverCut010",
           "source_solid": 0,
           "step_solid": 0,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.8189894035458565e-12,
+          "volume_delta_mm3": -7.275957614183426e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "MainFrameCut020",
+          "name": "MainFrameCut025",
           "source_solid": 0,
           "step_solid": 1,
           "bbox_max_delta_mm": 2.5579538487363607e-13,
-          "volume_delta_mm3": -9.009371660795296e-05,
+          "volume_delta_mm3": 0.03131335051057249,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -4424,11 +4493,11 @@
           "pass": true
         },
         {
-          "name": "LidBackCoverCut002",
+          "name": "LidBackCoverCut003",
           "source_solid": 0,
           "step_solid": 5,
           "bbox_max_delta_mm": 3.0098590286797844e-11,
-          "volume_delta_mm3": -7.09405867382884e-11,
+          "volume_delta_mm3": -7.639755494892597e-11,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -4486,11 +4555,11 @@
           "pass": true
         },
         {
-          "name": "RightHingeSleeve",
+          "name": "RightHingeSleeveCut",
           "source_solid": 0,
           "step_solid": 10,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 9.071689532902383e-08,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -5718,11 +5787,11 @@
           "pass": true
         },
         {
-          "name": "RearSupportPlateCut010",
+          "name": "RearSupportPlateCut012",
           "source_solid": 0,
           "step_solid": 122,
           "bbox_max_delta_mm": 2.220446049250313e-16,
-          "volume_delta_mm3": -1.3642420526593924e-11,
+          "volume_delta_mm3": -1.950866135302931e-10,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -6656,62 +6725,62 @@
           "pass": true
         },
         {
-          "name": "SDReaderPCB",
+          "name": "SDReaderPCB001",
           "source_solid": 0,
           "step_solid": 206,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1368683772161603e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDReaderCage",
+          "name": "SDReaderCageCut002",
           "source_solid": 0,
           "step_solid": 207,
-          "bbox_max_delta_mm": 6.661338147750939e-16,
-          "volume_delta_mm3": -1.7053025658242404e-13,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": 2.2737367544323206e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDCard",
+          "name": "SDCardCut",
           "source_solid": 0,
           "step_solid": 208,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1368683772161603e-13,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": 9.094947017729282e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact0",
+          "name": "SDContact001",
           "source_solid": 0,
           "step_solid": 209,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact1",
+          "name": "SDContact002",
           "source_solid": 0,
           "step_solid": 210,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact2",
+          "name": "SDContact003",
           "source_solid": 0,
           "step_solid": 211,
           "bbox_max_delta_mm": 0.0,
@@ -6722,20 +6791,31 @@
           "pass": true
         },
         {
-          "name": "SDContact3",
+          "name": "SDContact004",
           "source_solid": 0,
           "step_solid": 212,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact4",
+          "name": "SDContact005",
           "source_solid": 0,
           "step_solid": 213,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "SDContact006",
+          "source_solid": 0,
+          "step_solid": 214,
           "bbox_max_delta_mm": 0.0,
           "volume_delta_mm3": 0.0,
           "valid": true,
@@ -6744,18 +6824,7 @@
           "pass": true
         },
         {
-          "name": "SDContact5",
-          "source_solid": 0,
-          "step_solid": 214,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
-          "valid": true,
-          "boolean_confirmation": null,
-          "sampled_bounds_confirmation": null,
-          "pass": true
-        },
-        {
-          "name": "SDContact6",
+          "name": "SDContact007",
           "source_solid": 0,
           "step_solid": 215,
           "bbox_max_delta_mm": 0.0,
@@ -6766,22 +6835,22 @@
           "pass": true
         },
         {
-          "name": "SDContact7",
+          "name": "SDContact008",
           "source_solid": 0,
           "step_solid": 216,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact8",
+          "name": "SDContact009",
           "source_solid": 0,
           "step_solid": 217,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -8196,11 +8265,11 @@
           "pass": true
         },
         {
-          "name": "EMIShieldCut",
+          "name": "EMIShieldCut001",
           "source_solid": 0,
           "step_solid": 346,
           "bbox_max_delta_mm": 3.552713678800501e-15,
-          "volume_delta_mm3": 6.821210263296962e-13,
+          "volume_delta_mm3": 1.9326762412674725e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -8458,6 +8527,75 @@
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
+        },
+        {
+          "name": "NotificationLens",
+          "source_solid": 0,
+          "step_solid": 370,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": 2.2851129877210496e-09,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "OuterCameraLEDLens",
+          "source_solid": 0,
+          "step_solid": 371,
+          "bbox_max_delta_mm": 2.8325786161076394e-11,
+          "volume_delta_mm3": 1.6653345369377348e-15,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "WirelessLEDLens",
+          "source_solid": 0,
+          "step_solid": 372,
+          "bbox_max_delta_mm": 2.6645352591003757e-15,
+          "volume_delta_mm3": -7.771561172376096e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor_1",
+          "source_solid": 0,
+          "step_solid": 373,
+          "bbox_max_delta_mm": 3.488764832582092e-12,
+          "volume_delta_mm3": -3.816722492899771e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor1",
+          "source_solid": 0,
+          "step_solid": 374,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": -3.816662660938164e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
@@ -8465,31 +8603,31 @@
     {
       "file": "Nintendo3DS_Exploded.step",
       "valid": true,
-      "solids": 388,
-      "expected_solids": 388,
-      "compound_volume_delta_mm3": 0.0003537784214131534,
-      "matched_solid_volume_delta_mm3": -0.00013319006364619947,
-      "sum_absolute_solid_volume_delta_mm3": 0.00014332209977420754,
+      "solids": 393,
+      "expected_solids": 393,
+      "compound_volume_delta_mm3": 0.03111515028285794,
+      "matched_solid_volume_delta_mm3": 0.03119401311656457,
+      "sum_absolute_solid_volume_delta_mm3": 0.031443005942237784,
       "max_solid_bbox_delta_mm": 1.0000000028043132e-07,
-      "colour_entities": 17,
+      "colour_entities": 22,
       "solid_checks": [
         {
-          "name": "BackCoverCut008",
+          "name": "BackCoverCut010",
           "source_solid": 0,
           "step_solid": 0,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -9.094947017729282e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "MainFrameCut020",
+          "name": "MainFrameCut025",
           "source_solid": 0,
           "step_solid": 1,
           "bbox_max_delta_mm": 2.5579538487363607e-13,
-          "volume_delta_mm3": -9.009371660795296e-05,
+          "volume_delta_mm3": 0.03131335051057249,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -8543,11 +8681,11 @@
           "pass": true
         },
         {
-          "name": "LidBackCoverCut002",
+          "name": "LidBackCoverCut003",
           "source_solid": 0,
           "step_solid": 5,
           "bbox_max_delta_mm": 9.71454028331209e-11,
-          "volume_delta_mm3": -1.8189894035458565e-12,
+          "volume_delta_mm3": -5.4569682106375694e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -8605,11 +8743,11 @@
           "pass": true
         },
         {
-          "name": "RightHingeSleeve",
+          "name": "RightHingeSleeveCut",
           "source_solid": 0,
           "step_solid": 10,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 9.071689532902383e-08,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -9837,11 +9975,11 @@
           "pass": true
         },
         {
-          "name": "RearSupportPlateCut010",
+          "name": "RearSupportPlateCut012",
           "source_solid": 0,
           "step_solid": 122,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.3642420526593924e-11,
+          "volume_delta_mm3": -1.9326762412674725e-10,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -10819,54 +10957,43 @@
           "pass": true
         },
         {
-          "name": "SDReaderPCB",
+          "name": "SDReaderPCB001",
           "source_solid": 0,
           "step_solid": 210,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1368683772161603e-13,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDReaderCage",
+          "name": "SDReaderCageCut002",
           "source_solid": 0,
           "step_solid": 211,
           "bbox_max_delta_mm": 1.4210854715202004e-14,
-          "volume_delta_mm3": 2.6147972675971687e-12,
+          "volume_delta_mm3": -3.410605131648481e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDCard",
+          "name": "SDCardCut",
           "source_solid": 0,
           "step_solid": 212,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": 4.547473508864641e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact0",
+          "name": "SDContact001",
           "source_solid": 0,
           "step_solid": 213,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
-          "valid": true,
-          "boolean_confirmation": null,
-          "sampled_bounds_confirmation": null,
-          "pass": true
-        },
-        {
-          "name": "SDContact1",
-          "source_solid": 0,
-          "step_solid": 214,
-          "bbox_max_delta_mm": 0.0,
           "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
@@ -10874,7 +11001,18 @@
           "pass": true
         },
         {
-          "name": "SDContact2",
+          "name": "SDContact002",
+          "source_solid": 0,
+          "step_solid": 214,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "SDContact003",
           "source_solid": 0,
           "step_solid": 215,
           "bbox_max_delta_mm": 0.0,
@@ -10885,18 +11023,18 @@
           "pass": true
         },
         {
-          "name": "SDContact3",
+          "name": "SDContact004",
           "source_solid": 0,
           "step_solid": 216,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact4",
+          "name": "SDContact005",
           "source_solid": 0,
           "step_solid": 217,
           "bbox_max_delta_mm": 0.0,
@@ -10907,32 +11045,32 @@
           "pass": true
         },
         {
-          "name": "SDContact5",
+          "name": "SDContact006",
           "source_solid": 0,
           "step_solid": 218,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact6",
+          "name": "SDContact007",
           "source_solid": 0,
           "step_solid": 219,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact7",
+          "name": "SDContact008",
           "source_solid": 0,
           "step_solid": 220,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
           "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
@@ -10940,10 +11078,10 @@
           "pass": true
         },
         {
-          "name": "SDContact8",
+          "name": "SDContact009",
           "source_solid": 0,
           "step_solid": 221,
-          "bbox_max_delta_mm": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
           "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
@@ -12359,11 +12497,11 @@
           "pass": true
         },
         {
-          "name": "EMIShieldCut",
+          "name": "EMIShieldCut001",
           "source_solid": 0,
           "step_solid": 350,
           "bbox_max_delta_mm": 3.552713678800501e-15,
-          "volume_delta_mm3": 7.958078640513122e-13,
+          "volume_delta_mm3": 1.8189894035458565e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -12775,6 +12913,75 @@
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
+        },
+        {
+          "name": "NotificationLens",
+          "source_solid": 0,
+          "step_solid": 388,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": 2.2851129877210496e-09,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "OuterCameraLEDLens",
+          "source_solid": 0,
+          "step_solid": 389,
+          "bbox_max_delta_mm": 9.532641342957504e-11,
+          "volume_delta_mm3": 6.661338147750939e-15,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "WirelessLEDLens",
+          "source_solid": 0,
+          "step_solid": 390,
+          "bbox_max_delta_mm": 2.6645352591003757e-15,
+          "volume_delta_mm3": -7.771561172376096e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor_1",
+          "source_solid": 0,
+          "step_solid": 391,
+          "bbox_max_delta_mm": 3.488764832582092e-12,
+          "volume_delta_mm3": -3.816722514216053e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor1",
+          "source_solid": 0,
+          "step_solid": 392,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": -3.816662682254446e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
@@ -12782,31 +12989,31 @@
     {
       "file": "Nintendo3DS_Closed.step",
       "valid": true,
-      "solids": 370,
-      "expected_solids": 370,
-      "compound_volume_delta_mm3": -0.00016150543524418026,
-      "matched_solid_volume_delta_mm3": -0.00013312169349017234,
-      "sum_absolute_solid_volume_delta_mm3": 0.0001432536660967475,
+      "solids": 375,
+      "expected_solids": 375,
+      "compound_volume_delta_mm3": 0.031180420279270038,
+      "matched_solid_volume_delta_mm3": 0.031194081495952,
+      "sum_absolute_solid_volume_delta_mm3": 0.03144293750636683,
       "max_solid_bbox_delta_mm": 1.0000000116860974e-07,
-      "colour_entities": 32,
+      "colour_entities": 44,
       "solid_checks": [
         {
-          "name": "BackCoverCut008",
+          "name": "BackCoverCut010",
           "source_solid": 0,
           "step_solid": 0,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": -1.8189894035458565e-12,
+          "volume_delta_mm3": -7.275957614183426e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "MainFrameCut020",
+          "name": "MainFrameCut025",
           "source_solid": 0,
           "step_solid": 1,
           "bbox_max_delta_mm": 2.5579538487363607e-13,
-          "volume_delta_mm3": -9.009371660795296e-05,
+          "volume_delta_mm3": 0.03131335051057249,
           "valid": true,
           "boolean_confirmation": {
             "residual_volumes_mm3": [
@@ -12860,11 +13067,11 @@
           "pass": true
         },
         {
-          "name": "LidBackCoverCut002",
+          "name": "LidBackCoverCut003",
           "source_solid": 0,
           "step_solid": 5,
           "bbox_max_delta_mm": 3.183231456205249e-12,
-          "volume_delta_mm3": -7.275957614183426e-11,
+          "volume_delta_mm3": -7.639755494892597e-11,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -12922,11 +13129,11 @@
           "pass": true
         },
         {
-          "name": "RightHingeSleeve",
+          "name": "RightHingeSleeveCut",
           "source_solid": 0,
           "step_solid": 10,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": 9.071689532902383e-08,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -14154,11 +14361,11 @@
           "pass": true
         },
         {
-          "name": "RearSupportPlateCut010",
+          "name": "RearSupportPlateCut012",
           "source_solid": 0,
           "step_solid": 122,
           "bbox_max_delta_mm": 2.220446049250313e-16,
-          "volume_delta_mm3": -1.3642420526593924e-11,
+          "volume_delta_mm3": -1.950866135302931e-10,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -15092,62 +15299,62 @@
           "pass": true
         },
         {
-          "name": "SDReaderPCB",
+          "name": "SDReaderPCB001",
           "source_solid": 0,
           "step_solid": 206,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1368683772161603e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDReaderCage",
+          "name": "SDReaderCageCut002",
           "source_solid": 0,
           "step_solid": 207,
-          "bbox_max_delta_mm": 6.661338147750939e-16,
-          "volume_delta_mm3": -1.7053025658242404e-13,
+          "bbox_max_delta_mm": 1.4210854715202004e-14,
+          "volume_delta_mm3": 2.2737367544323206e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDCard",
+          "name": "SDCardCut",
           "source_solid": 0,
           "step_solid": 208,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 1.1368683772161603e-13,
+          "bbox_max_delta_mm": 1.7763568394002505e-15,
+          "volume_delta_mm3": 9.094947017729282e-13,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact0",
+          "name": "SDContact001",
           "source_solid": 0,
           "step_solid": 209,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 2.7755575615628914e-17,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact1",
+          "name": "SDContact002",
           "source_solid": 0,
           "step_solid": 210,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact2",
+          "name": "SDContact003",
           "source_solid": 0,
           "step_solid": 211,
           "bbox_max_delta_mm": 0.0,
@@ -15158,20 +15365,31 @@
           "pass": true
         },
         {
-          "name": "SDContact3",
+          "name": "SDContact004",
           "source_solid": 0,
           "step_solid": 212,
           "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "volume_delta_mm3": 1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact4",
+          "name": "SDContact005",
           "source_solid": 0,
           "step_solid": 213,
+          "bbox_max_delta_mm": 0.0,
+          "volume_delta_mm3": -1.1102230246251565e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "SDContact006",
+          "source_solid": 0,
+          "step_solid": 214,
           "bbox_max_delta_mm": 0.0,
           "volume_delta_mm3": 0.0,
           "valid": true,
@@ -15180,18 +15398,7 @@
           "pass": true
         },
         {
-          "name": "SDContact5",
-          "source_solid": 0,
-          "step_solid": 214,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
-          "valid": true,
-          "boolean_confirmation": null,
-          "sampled_bounds_confirmation": null,
-          "pass": true
-        },
-        {
-          "name": "SDContact6",
+          "name": "SDContact007",
           "source_solid": 0,
           "step_solid": 215,
           "bbox_max_delta_mm": 0.0,
@@ -15202,22 +15409,22 @@
           "pass": true
         },
         {
-          "name": "SDContact7",
+          "name": "SDContact008",
           "source_solid": 0,
           "step_solid": 216,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 5.551115123125783e-17,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": 0.0,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
         },
         {
-          "name": "SDContact8",
+          "name": "SDContact009",
           "source_solid": 0,
           "step_solid": 217,
-          "bbox_max_delta_mm": 0.0,
-          "volume_delta_mm3": 0.0,
+          "bbox_max_delta_mm": 4.440892098500626e-16,
+          "volume_delta_mm3": -1.1102230246251565e-16,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -16632,11 +16839,11 @@
           "pass": true
         },
         {
-          "name": "EMIShieldCut",
+          "name": "EMIShieldCut001",
           "source_solid": 0,
           "step_solid": 346,
           "bbox_max_delta_mm": 3.552713678800501e-15,
-          "volume_delta_mm3": 6.821210263296962e-13,
+          "volume_delta_mm3": 1.9326762412674725e-12,
           "valid": true,
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
@@ -16894,13 +17101,82 @@
           "boolean_confirmation": null,
           "sampled_bounds_confirmation": null,
           "pass": true
+        },
+        {
+          "name": "NotificationLens",
+          "source_solid": 0,
+          "step_solid": 370,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": 2.2851129877210496e-09,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "OuterCameraLEDLens",
+          "source_solid": 0,
+          "step_solid": 371,
+          "bbox_max_delta_mm": 1.7763568394002505e-14,
+          "volume_delta_mm3": 1.6653345369377348e-15,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "WirelessLEDLens",
+          "source_solid": 0,
+          "step_solid": 372,
+          "bbox_max_delta_mm": 2.6645352591003757e-15,
+          "volume_delta_mm3": -7.771561172376096e-16,
+          "valid": true,
+          "boolean_confirmation": null,
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor_1",
+          "source_solid": 0,
+          "step_solid": 373,
+          "bbox_max_delta_mm": 3.488764832582092e-12,
+          "volume_delta_mm3": -3.816722492899771e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
+        },
+        {
+          "name": "StrapAnchor1",
+          "source_solid": 0,
+          "step_solid": 374,
+          "bbox_max_delta_mm": 7.105427357601002e-15,
+          "volume_delta_mm3": -3.816662660938164e-05,
+          "valid": true,
+          "boolean_confirmation": {
+            "residual_volumes_mm3": [
+              0,
+              0
+            ],
+            "valid": true,
+            "pass": true
+          },
+          "sampled_bounds_confirmation": null,
+          "pass": true
         }
       ],
       "pass": true
     }
   ],
   "pass": true,
-  "started": 1792044088.4918916,
+  "started": 1794130422.5534735,
   "native_evaluation": "saved BRep (no history recompute)",
   "acceptance": {
     "volume_metric": "reported; geometry acceptance requires Boolean confirmation for differences > 1e-6 mm3",
@@ -16911,5 +17187,5 @@
   },
   "method": "One-to-one source/STEP solid matching by six bounding coordinates; absolute volume errors summed without cancellation; Boolean difference confirmation for discrepant solids. Compound-level volume estimate retained for transparency.",
   "numerical_reference": "https://dev.opencascade.org/doc/refman/html/class_b_rep_g_prop___gauss.html",
-  "elapsed_seconds": 45.05230259895325
+  "elapsed_seconds": 55.49007296562195
 }

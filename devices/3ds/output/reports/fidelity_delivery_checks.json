@@ -1,0 +1,77 @@
+{
+  "device": "3ds",
+  "revision": 15,
+  "date": "2026-11-08",
+  "passed": true,
+  "source_sha256": "806a2ab5a510c4aa1ff4f8070085de3f9228becdb92583150013085009786a8d",
+  "application": "FreeCAD 1.1.3",
+  "virtual_display_used": ":100",
+  "physical_components": 329,
+  "solids": 393,
+  "factory_equivalence_verified": false,
+  "full_source_rebuild_tested_this_revision": false,
+  "full_history_recompute_tested": false,
+  "reference_evidence": "references/fidelity_iteration15.json",
+  "changes": [
+    "Added notification, wireless and outer-camera indicator lenses; identified the 3D indicator glyph",
+    "Added two connected strap passages with reinforced molded anchors",
+    "Corrected SD card to 32 x 24 x 2.1 mm and side-entry nine-terminal reader",
+    "Adjusted schematic carrier, frame and shield clearances around the enlarged reader"
+  ],
+  "validation": {
+    "preserved_existing_part_numbers": 324,
+    "pose_checks": [
+      {
+        "opening": 0,
+        "candidate_pairs": 463,
+        "passed": true
+      },
+      {
+        "opening": 80,
+        "candidate_pairs": 587,
+        "passed": true
+      },
+      {
+        "opening": 160,
+        "candidate_pairs": 595,
+        "passed": true
+      }
+    ],
+    "step_files": 4,
+    "model_dimensions": 19,
+    "native_drawing_references": 17,
+    "pdf_pages_reviewed": 12,
+    "web_views": 7,
+    "gltf_errors": 0,
+    "gltf_warnings": 0,
+    "repository_checks": "passed",
+    "production_build": "passed; existing bundle-size advisory"
+  },
+  "source_files_sha256": {
+    "tools/cadlib/fidelity_3ds.py": "02da351b492c07ca3f262cdcf2f004188225ec8d881cadcd0b4b2a32c37ceec3",
+    "tools/cadlib/clamshell.py": "a998706f1cbefd4b61b6bc7478a10d8135479bee830878abca233c3b52cbbde8",
+    "devices/3ds/profile.json": "5c1c301cd80fd54d2afcd82c4af04babfb573d7dd16e9a3b1af9c8047ee0c71c",
+    "devices/3ds/Rebuild_Nintendo3DS.FCMacro": "deadddf16fde33bb4e0eeab04bb00879daef1c58a8f08595dfa68eebfdbbcc66",
+    "devices/3ds/scripts/iter15_manual_indicators_strap_tunnels_and_standard_sd.py": "e045f6f0eb956bedab009183cc56784723cf05f42dda597bb58ae4ff56b8a2fd",
+    "devices/3ds/scripts/audit_dimensions.py": "f6ec6aa2b0424f2e9b3b6c5f4e7f0dda8761cf03441708276a2bc9fca7962057",
+    "devices/3ds/scripts/drawing_geometry.py": "2091f059e5be3e98e9099f3dc60b8ceeaa2a77e416478b3965bef98778762830"
+  },
+  "reports_sha256": {
+    "fidelity_interference_0.json": "0aca2fce309c1a2d030fba54d95c2490e0ce4d5a0b50e5e1b766b7a75d723b91",
+    "fidelity_interference_80.json": "824702a56ed70becfa1e03f93f4ef8ef272f76020a3ebcbf7cff51d7944aeefd",
+    "fidelity_interference_160.json": "740d710f27bb862f8e15abcc9b843f95703fc1e99f9876af9c9b1c854ad28e87",
+    "export_roundtrip_audit.json": "3bcca800345f74322c1bd27a7f08fea0ec1e8201fbe4addf7df16ef0b1ae6ec8",
+    "drawing_checks.json": "2f41e794a2e8c9722b8f5ac7403fdb443fbc755baa4360d94117a1887d10e447",
+    "native_drawings_audit.json": "40cab252142a4b4e5de2d897bedc39b0bf6f76af734955bcbdf23692b1cd3e9b",
+    "native_drawings_reload.json": "2ddea1927694418a0ef633ddcd2c55d9d1993bc7a73526e8c832d5c0699b052c",
+    "fidelity_pdf_review.json": "53ca27cbb6102d43011609d31b58d8f1cf73f1f9ceecb550a78000491e58f260",
+    "fidelity_web_checks.json": "5df448fc4e076eb2681d69f6265f7ec5ed274bafcc4c624175c6a10b3ae25e8f",
+    "fidelity_gltf_validation.json": "8d1a9cbed2e0aa29a0b775d11f9d49154c8c86f4fb6c406e95a1dd0797bf8f71"
+  },
+  "limitations": [
+    "No physical specimen measurements or factory molding drawings.",
+    "Indicator/strap locations and dimensions are fitted from official diagrams.",
+    "Only the SD card external envelope is standards-based; keyed details, reader, support and relief geometry remain approximate.",
+    "No new whole-collection browser or responsive-layout audit in this device pass."
+  ]
+}

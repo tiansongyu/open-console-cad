@@ -258,11 +258,11 @@
         7.324999999999973
       ],
       "axis": "x",
-      "value_mm": 125.99999999999999,
+      "value_mm": 126.0,
       "label": "≈ 126",
       "published": false,
       "label_position": [
-        132.5,
+        130.0406976744186,
         11.4
       ]
     },
@@ -473,6 +473,24 @@
       "name": "CradleBase.YLength",
       "actual_mm": 84.0,
       "expected_mm": 84,
+      "pass": true
+    },
+    {
+      "name": "SDCard.standard.XLength",
+      "actual_mm": 32.0,
+      "expected_mm": 32,
+      "pass": true
+    },
+    {
+      "name": "SDCard.standard.YLength",
+      "actual_mm": 24.0,
+      "expected_mm": 24,
+      "pass": true
+    },
+    {
+      "name": "SDCard.standard.ZLength",
+      "actual_mm": 2.100000000000002,
+      "expected_mm": 2.1,
       "pass": true
     }
   ]

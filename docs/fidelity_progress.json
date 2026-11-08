@@ -63,14 +63,15 @@
         "Screen nominal 3-inch conversion retained; rounded pixel-pitch data does not establish exact active-area measurement."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "781a1e0"
     },
     {
       "order": 2,
       "device": "3ds",
       "model": "CTR-001",
-      "status": "in_progress",
-      "current_step": "candidate_geometry_and_reference_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_15",
       "baseline": {
         "iterations": 14,
         "physical_components": 324,
@@ -98,19 +99,35 @@
           "Schematic internal layout": 229
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/3ds/references/fidelity_iteration15.json"
+      ],
+      "changes": [
+        "Added notification, wireless and outer-camera indicator lenses; identified the 3D indicator glyph",
+        "Added two connected strap passages with reinforced molded anchors",
+        "Corrected SD card to 32 x 24 x 2.1 mm and side-entry nine-terminal reader",
+        "Adjusted schematic carrier, frame and shield clearances around the enlarged reader"
+      ],
+      "validation": {
+        "report": "devices/3ds/output/reports/fidelity_delivery_checks.json",
+        "source_sha256": "806a2ab5a510c4aa1ff4f8070085de3f9228becdb92583150013085009786a8d",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "No physical specimen measurements or factory molding drawings.",
+        "Indicator/strap locations and dimensions are fitted from official diagrams.",
+        "Only the SD card external envelope is standards-based; keyed details, reader, support and relief geometry remain approximate.",
+        "No new whole-collection browser or responsive-layout audit in this device pass."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     },
     {
       "order": 3,
       "device": "psp",
       "model": "PSP-1000",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "candidate_geometry_and_reference_validation",
       "baseline": {
         "iterations": 15,
         "physical_components": 346,

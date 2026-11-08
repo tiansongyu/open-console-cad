@@ -18,3 +18,4 @@
 | 12 | [完成剩余接触面修正、摄像头镜筒、合盖缓冲垫，以及原款 3DS 的被动触点充电底座示意。](output/reports/12_service_details_and_charging_cradle.json) | 324 |
 | 13 | [完成底座后支承座与充电弹片配合，保存可复现的铰链轴参数，准备最终原生文件与图纸。](output/reports/13_cradle_contact_fit.json) | 324 |
 | 14 | [Circle Pad 凹面、灰色胶面和控制面板外缘；局部数值为公开图像估计。](output/reports/14_public_reference_circle_pad_and_edges.json) · [效果图](output/previews/14_public_reference_circle_pad_and_edges_hero.png) | 324 |
+| 15 | [按官方手册补齐指示窗与双侧挂绳通道，修正标准 SD 卡、侧向卡座和九个触点；局部位置与内部避让近似。](output/reports/15_manual_indicators_strap_tunnels_and_standard_sd.json) · [效果图](output/previews/15_manual_indicators_strap_tunnels_and_standard_sd_hero.png) | 329 |

@@ -2,17 +2,17 @@
   "project": "Nintendo 3DS CTR-001",
   "device": "3ds",
   "prefix": "Nintendo3DS",
-  "design_iterations": 14,
-  "physical_components": 324,
-  "solids": 388,
+  "design_iterations": 15,
+  "physical_components": 329,
+  "solids": 393,
   "assemblies": {
-    "Body": 14,
-    "Lid": 15,
-    "Hinge": 6,
+    "Body": 16,
+    "Lid": 16,
+    "Hinge": 7,
     "Display": 5,
     "LidDisplay": 4,
     "Controls": 33,
-    "Ports": 31,
+    "Ports": 32,
     "LidInternal": 36,
     "Internal": 60,
     "Accessories": 4,
@@ -58,14 +58,14 @@
   },
   "objects": [
     {
-      "name": "BackCoverCut008",
-      "label": "3DS-0001 · Removable lower rear cover009",
+      "name": "BackCoverCut010",
+      "label": "3DS-0001 · Removable lower rear cover011",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 310,
-      "volume": 9623.953950839963,
+      "faces": 326,
+      "volume": 9615.673287284519,
       "bounds": [
         -66.4,
         66.4,
@@ -86,14 +86,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "MainFrameCut020",
-      "label": "3DS-0002 · Lower structural side frame021",
+      "name": "MainFrameCut025",
+      "label": "3DS-0002 · Lower structural side frame026",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 156,
-      "volume": 5491.860904517424,
+      "faces": 195,
+      "volume": 5347.2370209728815,
       "bounds": [
         -67.0000001,
         67.0000001,
@@ -121,7 +121,7 @@
       "null": false,
       "solids": 1,
       "faces": 97,
-      "volume": 4289.413240401477,
+      "volume": 4289.4132404014745,
       "bounds": [
         -66.80000009999999,
         66.8000001,
@@ -170,14 +170,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "LidBackCoverCut002",
-      "label": "3DS-0005 · Upper outer cover003",
+      "name": "LidBackCoverCut003",
+      "label": "3DS-0005 · Upper outer cover004",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 12,
-      "volume": 8227.090854024245,
+      "faces": 13,
+      "volume": 8226.235555424304,
       "bounds": [
         -66.8,
         66.8,
@@ -310,21 +310,21 @@
       "pose_group": "Lid"
     },
     {
-      "name": "RightHingeSleeve",
-      "label": "3DS-0010 · Hinge knuckle002",
-      "type": "Part::Feature",
+      "name": "RightHingeSleeveCut",
+      "label": "3DS-0010 · Hinge knuckle003",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 180.7747811099253,
+      "faces": 13,
+      "volume": 176.86126640747378,
       "bounds": [
-        56.2,
-        65.2,
-        31.200000000000003,
-        37.0,
-        10.0,
-        15.8
+        56.1999999,
+        65.2000001,
+        31.1999999,
+        37.0000001,
+        9.9999999,
+        15.8000001
       ],
       "state": [
         "Up-to-date"
@@ -709,7 +709,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 103.56130215794028,
+      "volume": 103.56130215794033,
       "bounds": [
         -56.8500001,
         -43.15,
@@ -2803,7 +2803,7 @@
     },
     {
       "name": "DepthLegend",
-      "label": "3DS-0099 · 3D",
+      "label": "3DS-0099 · 3D indicator diffuser glyph",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -2825,7 +2825,7 @@
       "part_number": "3DS-0099",
       "assembly": "Lid",
       "layer": 6,
-      "material": "white",
+      "material": "led",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Lid"
     },
@@ -2886,14 +2886,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "RearSupportPlateCut010",
-      "label": "3DS-0102 · Rear support plate with battery opening011",
+      "name": "RearSupportPlateCut012",
+      "label": "3DS-0102 · Rear support plate with battery opening013",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 29,
-      "volume": 3577.971155664901,
+      "faces": 37,
+      "volume": 3563.919506638291,
       "bounds": [
         -65.2,
         65.2,
@@ -4146,19 +4146,19 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDReaderPCB",
-      "label": "3DS-0147 · Removable SD-reader daughterboard",
+      "name": "SDReaderPCB001",
+      "label": "3DS-0147 · Removable SD-reader daughterboard001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 417.3476282401553,
+      "volume": 538.3076282401554,
       "bounds": [
-        -63.0,
-        -39.0,
-        -26.5,
-        2.500000000000001,
+        -66.0,
+        -32.0,
+        -25.2,
+        1.2,
         2.7,
         3.3000000000000003
       ],
@@ -4174,21 +4174,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDReaderCage",
-      "label": "3DS-0148 · SD card-reader metal cage",
-      "type": "Part::Feature",
+      "name": "SDReaderCageCut002",
+      "label": "3DS-0148 · SD card-reader metal cage004",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 16,
-      "volume": 438.22092560555353,
+      "faces": 51,
+      "volume": 606.7120927583128,
       "bounds": [
-        -62.0,
-        -40.0,
-        -25.0,
-        1.0000000000000007,
-        3.38,
-        5.73
+        -65.80000000000001,
+        -32.1,
+        -24.85,
+        0.85,
+        3.35,
+        6.300000000000001
       ],
       "state": [
         "Up-to-date"
@@ -4202,21 +4202,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDCard",
-      "label": "3DS-0149 · SD memory-card study",
-      "type": "Part::Feature",
+      "name": "SDCardCut",
+      "label": "3DS-0149 · Full-size SD memory card, 32 x 24 x 2.1 mm001",
+      "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 607.9310563750809,
+      "faces": 92,
+      "volume": 1592.275941139885,
       "bounds": [
-        -61.95,
-        -41.25,
-        -23.75,
-        -0.24999999999999967,
-        3.95,
-        5.2
+        -65.0,
+        -33.0,
+        -24.0,
+        0.0,
+        3.65,
+        5.750000000000001
       ],
       "state": [
         "Up-to-date"
@@ -4226,25 +4226,25 @@
       "assembly": "Mainboard",
       "layer": -3,
       "material": "blue",
-      "fidelity": "Schematic internal layout",
+      "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
     },
     {
-      "name": "SDContact0",
-      "label": "3DS-0150 · SD-reader terminal",
+      "name": "SDContact001",
+      "label": "3DS-0150 · SD-reader terminal001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1923725309649155,
+      "volume": 0.7189527786842336,
       "bounds": [
-        -59.325,
-        -58.675,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -22.775,
+        -21.225,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4258,21 +4258,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact1",
-      "label": "3DS-0151 · SD-reader terminal001",
+      "name": "SDContact002",
+      "label": "3DS-0151 · SD-reader terminal002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491552,
+      "volume": 0.7189527786842336,
       "bounds": [
-        -57.425000000000004,
-        -56.775,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -20.275,
+        -18.725,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4286,21 +4286,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact2",
-      "label": "3DS-0152 · SD-reader terminal002",
+      "name": "SDContact003",
+      "label": "3DS-0152 · SD-reader terminal003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491552,
+      "volume": 0.7189527786842336,
       "bounds": [
-        -55.525000000000006,
-        -54.875,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -17.775,
+        -16.225,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4314,21 +4314,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact3",
-      "label": "3DS-0153 · SD-reader terminal003",
+      "name": "SDContact004",
+      "label": "3DS-0153 · SD-reader terminal004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491547,
+      "volume": 0.7189527786842342,
       "bounds": [
-        -53.625,
-        -52.974999999999994,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -15.275,
+        -13.725,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4342,21 +4342,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact4",
-      "label": "3DS-0154 · SD-reader terminal004",
+      "name": "SDContact005",
+      "label": "3DS-0154 · SD-reader terminal005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491547,
+      "volume": 0.7189527786842342,
       "bounds": [
-        -51.725,
-        -51.074999999999996,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -12.775,
+        -11.225,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4370,21 +4370,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact5",
-      "label": "3DS-0155 · SD-reader terminal005",
+      "name": "SDContact006",
+      "label": "3DS-0155 · SD-reader terminal006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491547,
+      "volume": 0.7189527786842342,
       "bounds": [
-        -49.825,
-        -49.175,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -10.275,
+        -8.725,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4398,21 +4398,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact6",
-      "label": "3DS-0156 · SD-reader terminal006",
+      "name": "SDContact007",
+      "label": "3DS-0156 · SD-reader terminal007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.1923725309649155,
+      "volume": 0.7189527786842342,
       "bounds": [
-        -47.925000000000004,
-        -47.275,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -7.775,
+        -6.225,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4426,21 +4426,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact7",
-      "label": "3DS-0157 · SD-reader terminal007",
+      "name": "SDContact008",
+      "label": "3DS-0157 · SD-reader terminal008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491547,
+      "volume": 0.7189527786842342,
       "bounds": [
-        -46.025000000000006,
-        -45.375,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -5.275,
+        -3.7249999999999996,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -4454,21 +4454,21 @@
       "pose_group": "Base"
     },
     {
-      "name": "SDContact8",
-      "label": "3DS-0158 · SD-reader terminal008",
+      "name": "SDContact009",
+      "label": "3DS-0158 · SD-reader terminal009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491547,
+      "volume": 0.718952778684234,
       "bounds": [
-        -44.125,
-        -43.474999999999994,
-        -3.85,
-        -0.1499999999999999,
-        3.79,
-        3.87
+        -40.2,
+        -34.39999999999999,
+        -2.7750000000000004,
+        -1.2249999999999999,
+        5.6899999999999995,
+        5.77
       ],
       "state": [
         "Up-to-date"
@@ -8066,14 +8066,14 @@
       "pose_group": "Base"
     },
     {
-      "name": "EMIShieldCut",
-      "label": "3DS-0287 · Lower EMI shield layout001",
+      "name": "EMIShieldCut001",
+      "label": "3DS-0287 · Lower EMI shield layout002",
       "type": "Part::Cut",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 36,
-      "volume": 745.6796850762292,
+      "faces": 41,
+      "volume": 742.022780618564,
       "bounds": [
         -46.0,
         26.000000000000004,
@@ -9128,18 +9128,158 @@
       "material": "rubber",
       "fidelity": "Published envelope; approximate local detail",
       "pose_group": "Base"
-    }
-  ],
-  "exploded_objects": [
+    },
     {
-      "name": "BackCoverCut008",
-      "label": "3DS-0001 · Removable lower rear cover009",
+      "name": "NotificationLens",
+      "label": "3DS-0325 · Right-hinge notification light lens",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 310,
-      "volume": 9623.953950839961,
+      "faces": 11,
+      "volume": 3.913514702486971,
+      "bounds": [
+        61.9999999,
+        64.2000001,
+        33.1499999,
+        35.050000100000005,
+        14.799999900000001,
+        15.8000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NotificationLens",
+      "part_number": "3DS-0325",
+      "assembly": "Hinge",
+      "layer": 0,
+      "material": "indicator_off",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "OuterCameraLEDLens",
+      "label": "3DS-0326 · Outer-camera activity indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.8552985999398242,
+      "bounds": [
+        25.95,
+        27.05,
+        94.11871805508171,
+        95.46019806693931,
+        26.237223550331358,
+        27.45916906669691
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OuterCameraLEDLens",
+      "part_number": "3DS-0326",
+      "assembly": "Lid",
+      "layer": -6,
+      "material": "indicator_off",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Lid"
+    },
+    {
+      "name": "WirelessLEDLens",
+      "label": "3DS-0327 · Right-side wireless indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.936000000000009,
+      "bounds": [
+        66.35,
+        67.0,
+        -3.9,
+        -2.299999999999997,
+        6.55,
+        7.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WirelessLEDLens",
+      "part_number": "3DS-0327",
+      "assembly": "Ports",
+      "layer": 0,
+      "material": "wireless_amber",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StrapAnchor_1",
+      "label": "3DS-0328 · Molded corner strap anchor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 73.49170403172992,
+      "bounds": [
+        -65.7500001,
+        -60.45,
+        -36.10000000000001,
+        -31.499999999999996,
+        1.0499999,
+        4.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StrapAnchor-1",
+      "part_number": "3DS-0328",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    },
+    {
+      "name": "StrapAnchor1",
+      "label": "3DS-0329 · Molded corner strap anchor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 73.49170402765972,
+      "bounds": [
+        60.45,
+        65.7500001,
+        -36.099999999999994,
+        -31.499999999999996,
+        1.0499999,
+        4.95
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StrapAnchor1",
+      "part_number": "3DS-0329",
+      "assembly": "Body",
+      "layer": -5,
+      "material": "accent",
+      "fidelity": "Published envelope; approximate local detail",
+      "pose_group": "Base"
+    }
+  ],
+  "exploded_objects": [
+    {
+      "name": "BackCoverCut010",
+      "label": "3DS-0001 · Removable lower rear cover011",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 326,
+      "volume": 9615.673287284526,
       "bounds": [
         -66.4,
         66.4,
@@ -9161,14 +9301,14 @@
       ]
     },
     {
-      "name": "MainFrameCut020",
-      "label": "3DS-0002 · Lower structural side frame021",
+      "name": "MainFrameCut025",
+      "label": "3DS-0002 · Lower structural side frame026",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 156,
-      "volume": 5491.860904517424,
+      "faces": 195,
+      "volume": 5347.2370209728815,
       "bounds": [
         -67.0000001,
         67.0000001,
@@ -9197,7 +9337,7 @@
       "null": false,
       "solids": 1,
       "faces": 97,
-      "volume": 4289.413240401477,
+      "volume": 4289.413240401475,
       "bounds": [
         -66.80000009999999,
         66.8000001,
@@ -9248,14 +9388,14 @@
       ]
     },
     {
-      "name": "LidBackCoverCut002",
-      "label": "3DS-0005 · Upper outer cover003",
+      "name": "LidBackCoverCut003",
+      "label": "3DS-0005 · Upper outer cover004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 12,
-      "volume": 8227.090854024185,
+      "faces": 13,
+      "volume": 8226.235555424244,
       "bounds": [
         -66.8,
         66.8,
@@ -9393,21 +9533,21 @@
       ]
     },
     {
-      "name": "RightHingeSleeve",
-      "label": "3DS-0010 · Hinge knuckle002",
+      "name": "RightHingeSleeveCut",
+      "label": "3DS-0010 · Hinge knuckle003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 4,
-      "volume": 180.7747811099253,
+      "faces": 13,
+      "volume": 176.86126640747378,
       "bounds": [
-        56.2,
-        65.2,
-        31.200000000000003,
-        37.0,
-        10.0,
-        15.8
+        56.1999999,
+        65.2000001,
+        31.1999999,
+        37.0000001,
+        9.9999999,
+        15.8000001
       ],
       "state": [
         "Up-to-date"
@@ -9806,7 +9946,7 @@
       "null": false,
       "solids": 1,
       "faces": 6,
-      "volume": 103.56130215794074,
+      "volume": 103.5613021579408,
       "bounds": [
         -56.8500001,
         -43.15,
@@ -11975,7 +12115,7 @@
     },
     {
       "name": "DepthLegend",
-      "label": "3DS-0099 · 3D",
+      "label": "3DS-0099 · 3D indicator diffuser glyph",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
@@ -12061,14 +12201,14 @@
       ]
     },
     {
-      "name": "RearSupportPlateCut010",
-      "label": "3DS-0102 · Rear support plate with battery opening011",
+      "name": "RearSupportPlateCut012",
+      "label": "3DS-0102 · Rear support plate with battery opening013",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 29,
-      "volume": 3577.9711556649027,
+      "faces": 37,
+      "volume": 3563.91950663829,
       "bounds": [
         -65.2,
         65.2,
@@ -13366,19 +13506,19 @@
       ]
     },
     {
-      "name": "SDReaderPCB",
-      "label": "3DS-0147 · Removable SD-reader daughterboard",
+      "name": "SDReaderPCB001",
+      "label": "3DS-0147 · Removable SD-reader daughterboard001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 417.34762824015394,
+      "volume": 538.3076282401537,
       "bounds": [
-        -63.0,
-        -39.0,
-        -26.5,
-        2.500000000000001,
+        -66.0,
+        -32.0,
+        -25.2,
+        1.2,
         -97.3,
         -96.7
       ],
@@ -13395,21 +13535,21 @@
       ]
     },
     {
-      "name": "SDReaderCage",
-      "label": "3DS-0148 · SD card-reader metal cage",
+      "name": "SDReaderCageCut002",
+      "label": "3DS-0148 · SD card-reader metal cage004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 16,
-      "volume": 438.2209256055519,
+      "faces": 51,
+      "volume": 606.7120927583151,
       "bounds": [
-        -62.0,
-        -40.0,
-        -25.0,
-        1.0000000000000007,
-        -96.62,
-        -94.27000000000001
+        -65.80000000000001,
+        -32.1,
+        -24.85,
+        0.85,
+        -96.65,
+        -93.69999999999999
       ],
       "state": [
         "Up-to-date"
@@ -13424,21 +13564,21 @@
       ]
     },
     {
-      "name": "SDCard",
-      "label": "3DS-0149 · SD memory-card study",
+      "name": "SDCardCut",
+      "label": "3DS-0149 · Full-size SD memory card, 32 x 24 x 2.1 mm001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 10,
-      "volume": 607.9310563750809,
+      "faces": 92,
+      "volume": 1592.2759411398827,
       "bounds": [
-        -61.95,
-        -41.25,
-        -23.75,
-        -0.24999999999999967,
-        -96.05,
-        -94.8
+        -65.0,
+        -33.0,
+        -24.0,
+        0.0,
+        -96.35,
+        -94.25
       ],
       "state": [
         "Up-to-date"
@@ -13453,21 +13593,21 @@
       ]
     },
     {
-      "name": "SDContact0",
-      "label": "3DS-0150 · SD-reader terminal",
+      "name": "SDContact001",
+      "label": "3DS-0150 · SD-reader terminal001",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491405,
+      "volume": 0.7189527786842282,
       "bounds": [
-        -59.325,
-        -58.675,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -22.775,
+        -21.225,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13482,21 +13622,21 @@
       ]
     },
     {
-      "name": "SDContact1",
-      "label": "3DS-0151 · SD-reader terminal001",
+      "name": "SDContact002",
+      "label": "3DS-0151 · SD-reader terminal002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491408,
+      "volume": 0.7189527786842282,
       "bounds": [
-        -57.425000000000004,
-        -56.775,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -20.275,
+        -18.725,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13511,21 +13651,21 @@
       ]
     },
     {
-      "name": "SDContact2",
-      "label": "3DS-0152 · SD-reader terminal002",
+      "name": "SDContact003",
+      "label": "3DS-0152 · SD-reader terminal003",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491408,
+      "volume": 0.7189527786842282,
       "bounds": [
-        -55.525000000000006,
-        -54.875,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -17.775,
+        -16.225,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13540,21 +13680,21 @@
       ]
     },
     {
-      "name": "SDContact3",
-      "label": "3DS-0153 · SD-reader terminal003",
+      "name": "SDContact004",
+      "label": "3DS-0153 · SD-reader terminal004",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491408,
+      "volume": 0.7189527786842289,
       "bounds": [
-        -53.625,
-        -52.974999999999994,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -15.275,
+        -13.725,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13569,21 +13709,21 @@
       ]
     },
     {
-      "name": "SDContact4",
-      "label": "3DS-0154 · SD-reader terminal004",
+      "name": "SDContact005",
+      "label": "3DS-0154 · SD-reader terminal005",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491402,
+      "volume": 0.7189527786842289,
       "bounds": [
-        -51.725,
-        -51.074999999999996,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -12.775,
+        -11.225,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13598,21 +13738,21 @@
       ]
     },
     {
-      "name": "SDContact5",
-      "label": "3DS-0155 · SD-reader terminal005",
+      "name": "SDContact006",
+      "label": "3DS-0155 · SD-reader terminal006",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491402,
+      "volume": 0.7189527786842289,
       "bounds": [
-        -49.825,
-        -49.175,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -10.275,
+        -8.725,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13627,21 +13767,21 @@
       ]
     },
     {
-      "name": "SDContact6",
-      "label": "3DS-0156 · SD-reader terminal006",
+      "name": "SDContact007",
+      "label": "3DS-0156 · SD-reader terminal007",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491405,
+      "volume": 0.7189527786842289,
       "bounds": [
-        -47.925000000000004,
-        -47.275,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -7.775,
+        -6.225,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13656,21 +13796,21 @@
       ]
     },
     {
-      "name": "SDContact7",
-      "label": "3DS-0157 · SD-reader terminal007",
+      "name": "SDContact008",
+      "label": "3DS-0157 · SD-reader terminal008",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491408,
+      "volume": 0.7189527786842287,
       "bounds": [
-        -46.025000000000006,
-        -45.375,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -5.275,
+        -3.7249999999999996,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -13685,21 +13825,21 @@
       ]
     },
     {
-      "name": "SDContact8",
-      "label": "3DS-0158 · SD-reader terminal008",
+      "name": "SDContact009",
+      "label": "3DS-0158 · SD-reader terminal009",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
       "faces": 10,
-      "volume": 0.19237253096491402,
+      "volume": 0.7189527786842287,
       "bounds": [
-        -44.125,
-        -43.474999999999994,
-        -3.85,
-        -0.1499999999999999,
-        -96.21,
-        -96.13
+        -40.2,
+        -34.39999999999999,
+        -2.7750000000000004,
+        -1.2249999999999999,
+        -94.31,
+        -94.23
       ],
       "state": [
         "Up-to-date"
@@ -17426,14 +17566,14 @@
       ]
     },
     {
-      "name": "EMIShieldCut",
-      "label": "3DS-0287 · Lower EMI shield layout001",
+      "name": "EMIShieldCut001",
+      "label": "3DS-0287 · Lower EMI shield layout002",
       "type": "Part::Feature",
       "valid": true,
       "null": false,
       "solids": 1,
-      "faces": 36,
-      "volume": 745.6796850762277,
+      "faces": 41,
+      "volume": 742.0227806185626,
       "bounds": [
         -46.0,
         26.000000000000004,
@@ -18525,6 +18665,151 @@
         0.0,
         -70.0,
         30.0
+      ]
+    },
+    {
+      "name": "NotificationLens",
+      "label": "3DS-0325 · Right-hinge notification light lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 11,
+      "volume": 3.913514702486971,
+      "bounds": [
+        61.9999999,
+        64.2000001,
+        33.1499999,
+        35.050000100000005,
+        14.799999900000001,
+        15.8000001
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "NotificationLens",
+      "part_number": "3DS-0325",
+      "assembly": "Hinge",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "OuterCameraLEDLens",
+      "label": "3DS-0326 · Outer-camera activity indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 3,
+      "volume": 0.8552985999398183,
+      "bounds": [
+        25.95,
+        27.05,
+        497.2459696523224,
+        498.58744966418004,
+        -312.05211993259564,
+        -310.8301744162301
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "OuterCameraLEDLens",
+      "part_number": "3DS-0326",
+      "assembly": "Lid",
+      "explode_offset": [
+        0.0,
+        403.12725159724073,
+        -338.289343482927
+      ]
+    },
+    {
+      "name": "WirelessLEDLens",
+      "label": "3DS-0327 · Right-side wireless indicator lens",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 6,
+      "volume": 0.936000000000009,
+      "bounds": [
+        66.35,
+        67.0,
+        -3.9,
+        -2.299999999999997,
+        6.55,
+        7.45
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "WirelessLEDLens",
+      "part_number": "3DS-0327",
+      "assembly": "Ports",
+      "explode_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "StrapAnchor_1",
+      "label": "3DS-0328 · Molded corner strap anchor",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 73.49170403173,
+      "bounds": [
+        -65.7500001,
+        -60.45,
+        -36.10000000000001,
+        -31.499999999999996,
+        -248.9500001,
+        -245.04999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StrapAnchor-1",
+      "part_number": "3DS-0328",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -250.0
+      ]
+    },
+    {
+      "name": "StrapAnchor1",
+      "label": "3DS-0329 · Molded corner strap anchor001",
+      "type": "Part::Feature",
+      "valid": true,
+      "null": false,
+      "solids": 1,
+      "faces": 24,
+      "volume": 73.49170402765978,
+      "bounds": [
+        60.45,
+        65.7500001,
+        -36.099999999999994,
+        -31.499999999999996,
+        -248.9500001,
+        -245.04999999999998
+      ],
+      "state": [
+        "Up-to-date"
+      ],
+      "part_id": "StrapAnchor1",
+      "part_number": "3DS-0329",
+      "assembly": "Body",
+      "explode_offset": [
+        0.0,
+        0.0,
+        -250.0
       ]
     }
   ],
@@ -20148,6 +20433,31 @@
       0.0,
       -70.0,
       30.0
+    ],
+    "NotificationLens": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "OuterCameraLEDLens": [
+      0.0,
+      403.12725159724073,
+      -338.289343482927
+    ],
+    "WirelessLEDLens": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "StrapAnchor-1": [
+      0.0,
+      0.0,
+      -250.0
+    ],
+    "StrapAnchor1": [
+      0.0,
+      0.0,
+      -250.0
     ]
   },
   "published_envelope_mm": [
@@ -20181,7 +20491,7 @@
     ]
   },
   "fidelity": "Published envelope; approximate exterior details and schematic major internals",
-  "source_digest": "3511014082fb6e4d693c502da4dbcb0dd8a62d9e51006441556d74b932c713b6",
+  "source_digest": "8fb23b93defdbda3b54127ce1abcd00c32243a328fff43a77adea59c4c2ddc73",
   "main_step_file": "Nintendo3DS_Handheld.step",
   "envelope_groups": [
     "Body",

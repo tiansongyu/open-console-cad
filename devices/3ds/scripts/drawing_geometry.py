@@ -34,10 +34,11 @@ v=s.view_fit('LowerDisplay',lk,(225,23,152,99),(0,0,1));d.dimension_box(s,v,['Lo
 v=s.view_fit('UpperDisplaySide',uk,(24,156,155,24),up,normal);caption(s,v,'上屏层叠侧视',198)
 v=s.view_fit('LowerDisplaySide',lk,(225,156,151,24),(0,1,0),(0,0,1));caption(s,v,'下屏层叠侧视',198);s.save()
 
-s=d.Sheet(4,'控制件与接口详图',['圆形滑控钮、充电口、SD 读卡器和摄像头采用独立组件。','放大视图展示当前实体几何，所有局部尺寸按近似值标注。'])
+s=d.Sheet(4,'控制件与接口详图',['圆形滑控钮、充电口、SD 读卡器和摄像头采用独立组件。','SD 卡为标准 32 × 24 × 2.1 mm；卡座与其他局部尺寸仍为近似值。'])
 v=s.view_fit('CirclePadDetail',[k for k in C if k.startswith('CirclePad')],(14,16,104,72),(0,0,1));d.dimension_box(s,v,['CirclePadCap'],'x',10);caption(s,v,'Circle Pad',99)
 v=s.view_fit('ChargeDetail',['ChargeJackShell','ChargeJackTongue'],(155,23,79,56),(0,1,0),(0,0,1));d.dimension_box(s,v,['ChargeJackShell'],'x',15);caption(s,v,'充电插孔',99)
 v=s.view_fit('SDDetail',[k for k in C if k.startswith('SD') and k not in ['SDDoor','SDCard','SDFlex']],(276,16,105,72),(-1,-.15,.8));caption(s,v,'SD 卡座（取出卡片）',99)
+s.text(328,109,'SD 卡：32 × 24 × 2.1 mm（标准）',3.0,anchor='middle')
 v=s.view_fit('CameraDetail',[k for k in C if 'Camera' in k and k not in ['CameraFlex']],(14,122,105,64),(.3,-.4,-1));caption(s,v,'三摄像头组件',207)
 v=s.view_fit('SpeakerDetail',['SpeakerFrame-1','SpeakerMagnet-1','SpeakerDiaphragm-1','SpeakerGasket-1'],(142,122,109,64),normal,up);caption(s,v,'单侧上屏扬声器',207)
 v=s.view_fit('CardDetail',[k for k in C if k.startswith(('GameCard','CardContact'))],(276,122,105,64),(0,1,0),(0,0,1));d.dimension_box(s,v,['GameCardMouth'],'x',117);caption(s,v,'游戏卡插槽',207);s.save()
@@ -82,7 +83,7 @@ for i,(name,count) in enumerate(M['assemblies'].items()):
 s.text(12,203,f"合计 {M['physical_components']} 个组件 / {M['solids']} 个实体；完整清单见 COMPONENTS.csv",3.6,fill='#1B365D');s.save()
 
 s=d.Sheet(12,'尺寸依据与验证索引',['官方闭合尺寸与本模型局部近似尺寸分别记录。','图纸为已保存 CAD 版本的快照，改模后需要重新生成和检查。'])
-sections=[(16,'官方尺寸依据',['Nintendo 3DS CTR-001：闭合 134 × 74 × 21 mm。','上屏 76.8 × 46.08 mm；下屏 61.44 × 46.08 mm。','来源：Nintendo 官方说明书第 20–23、100–101 页。']), (67,'结构参考',['iFixit 2011 Nintendo 3DS 实机拆解。','局部外形、壁厚、孔位和内部模块为近似设计。','充电底座、触控笔与 160° 开角属于展示模型参数。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；{M['physical_components']} 个组件独立源码重建匹配。",'原生展开、闭合、爆炸文件及四份 STEP 已回读检查。','最终装配实体求交、图纸尺寸和字体检查记录见 reports/。']), (169,'维护入口',['来源链接：references/SOURCES.md。','零件索引：COMPONENTS.csv；源码：scripts/iterNN_*.py。','网页网格由同一 FreeCAD 组件导出，精确实体以 FCStd / STEP 为准。'])]
+sections=[(16,'官方尺寸依据',['Nintendo 3DS CTR-001：闭合 134 × 74 × 21 mm。','上屏 76.8 × 46.08 mm；下屏 61.44 × 46.08 mm。','来源：Nintendo 官方说明书第 20–23、100–101 页。']), (67,'结构参考',['iFixit 2011 Nintendo 3DS 实机拆解；SD 卡外形采用 SD Association 标准。','局部外形、壁厚、孔位和内部模块为近似设计。','充电底座、触控笔与 160° 开角属于展示模型参数。']), (118,'检查证据',[f"{M['design_iterations']} 轮建模；当前 {M['physical_components']} 个组件，整套源码重建未重跑。",'原生展开、闭合、爆炸文件及四份 STEP 另行回读检查。','本轮装配求交、图纸尺寸与文件哈希见 fidelity_delivery_checks.json。']), (169,'维护入口',['来源链接：references/SOURCES.md。','零件索引：COMPONENTS.csv；源码：scripts/iterNN_*.py。','网页网格由同一 FreeCAD 组件导出，精确实体以 FCStd / STEP 为准。'])]
 for y,title,lines in sections:
  s.text(12,y,title,4,fill='#1B365D')
  for i,line in enumerate(lines):s.text(12,y+11+i*8,line,3.2)
