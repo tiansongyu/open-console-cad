@@ -14,7 +14,7 @@
 
 > **模型范围**：本项目为非官方学习模型。主要外形参考公开规格，局部尺寸、孔位、壁厚和内部模块为近似设计，不作为制造或电路设计依据。各型号的来源与限制见设备说明。
 
-2026-11-08 [全库实机复核](docs/FIDELITY_PLAN.md)启动：27 款模型的保存实体基线检查通过；[NDS 第 17 轮](devices/nds/README.md)修正触控笔最大直径、指示灯与后盖螺钉槽型，已同步 CAD、STEP、图纸和网页模型。[3DS 第 15 轮](devices/3ds/README.md)补齐指示窗与挂绳通道，校正标准 SD 卡和卡座。其余设备按[进度记录](docs/fidelity_progress.json)继续处理。
+2026-11-08 [全库实机复核](docs/FIDELITY_PLAN.md)：27 款模型的保存实体基线检查通过；本轮已优化 3/27 款，逐款同步 CAD、STEP、图纸与网页模型。改动、验证范围和未确定尺寸见[进度记录](docs/fidelity_progress.json)。
 
 2026-10-29 [Switch 第 18 轮按键更新](devices/switch/README.md)：根据 Nintendo 官方图像校准 HOME、截图键、字形及导轨侧 SL/SR、SYNC 和玩家灯，修正右手柄侧键顺序。CAD、STEP、图纸和网页模型已更新并检查；局部尺寸仍为图像拟合，本轮未重跑全部源码。
 

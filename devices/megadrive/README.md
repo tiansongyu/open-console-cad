@@ -1,6 +1,6 @@
 # Sega Mega Drive · HAA-2510
 
-初代日版大机型的 FreeCAD 学习模型，包含 **825 个组件条目、1,209 个实体与 13 轮建模源码**。提供主机、SJ-3500 三键手柄、空白卡带、适配器与连接线，并附 12 页 A3 图纸。
+初代日版大机型的 FreeCAD 学习模型，包含 **825 个组件条目、1,205 个实体与 14 轮建模源码**。提供主机、SJ-3500 三键手柄、空白卡带、适配器与连接线，并附 12 页 A3 图纸。
 
 [在线 3D](https://tiansongyu.github.io/open-console-cad/?device=megadrive&view=assembled#viewer) · [内部结构](https://tiansongyu.github.io/open-console-cad/?device=megadrive&view=internal#viewer) · [三键手柄](https://tiansongyu.github.io/open-console-cad/?device=megadrive&view=controller#viewer) · [A3 图册](output/drawings/MegaDrive_Drawings.pdf)
 
@@ -14,7 +14,7 @@
 - [整套 STEP](output/MegaDrive_FullKit.step) · [主机与手柄 STEP](output/MegaDrive_Console.step) · [爆炸 STEP](output/MegaDrive_Exploded.step)
 - [组件清单](output/COMPONENTS.csv) · [逐轮记录](ITERATIONS.md) · [参考来源](references/SOURCES.md)
 
-使用 FreeCAD 1.1.3 打开工程，或运行 [Open_MegaDrive.FCMacro](Open_MegaDrive.FCMacro) 同时打开整机、爆炸装配和图纸。[Rebuild_MegaDrive.FCMacro](Rebuild_MegaDrive.FCMacro) 从 13 轮源码重建 CAD 与 STEP，写入 `output/rebuilt/`，保留正式文件。请保留完整仓库结构。
+使用 FreeCAD 1.1.3 打开工程，或运行 [Open_MegaDrive.FCMacro](Open_MegaDrive.FCMacro) 同时打开整机、爆炸装配和图纸。[Rebuild_MegaDrive.FCMacro](Rebuild_MegaDrive.FCMacro) 从 14 轮源码重建 CAD 与 STEP，写入 `output/rebuilt/`，保留正式文件。请保留完整仓库结构。
 
 上下壳保留原生曲线剖面、放样及布尔加工历史。外壳局部轮廓和内部布局主要由源码控制，参数表记录参考尺寸。修改后需重新检查配合，并生成图纸和网页网格。
 
@@ -36,8 +36,16 @@ SJ-3500 保留曲线双握柄、浮动方向圆盘、斜列 ABC、蓝色 START�
 
 ## 验证记录
 
-- [完整源码重建](output/reports/rebuild_verification.json)：825 个组件的有效性、实体数、边界和体积逐项一致。
-- [整套装配求交](output/reports/final_interference_audit.json)：1,769 对候选组件检查完成，无超过 0.000001 mm³ 的干涉。
+2026-11-08 第 14 轮修正 AV 插座与插头：采用 262° 七外一内触点、顶部定位键、1.5 mm 插针与 13.2 mm 配合外径，同时修复旧 RAM 字形接触边界和分线护套曲面数据。825 个组件标识和编号保持不变。孔距半径、插座间隙和轴向结构仍有估计值，详见 [尺寸依据](references/fidelity_din8_262.json)。
+
+- [本轮严格实体与接口尺寸](output/reports/fidelity_geometry.json)：独立重开全部 825 个组件，严格 BRep 检查通过，核对插针、配合外径和偏心触点。
+- [本轮整套装配求交](output/reports/fidelity_interference.json)：1,769 对候选组件无超过 0.000001 mm³ 的干涉。
+- [本轮交付检查](output/reports/fidelity_delivery.json)：原生、STEP、网页和图纸的版本与检查记录。
+
+以下旧轮次记录保留历史适用范围；本轮从已保存原生历史追加修改，未声称完成全部 14 轮源码重跑。
+
+- [第 13 轮完整源码重建](output/reports/rebuild_verification.json)：825 个组件的有效性、实体数、边界和体积逐项一致。
+- [第 13 轮整套装配求交](output/reports/final_interference_audit.json)：1,769 对候选组件检查完成，无超过 0.000001 mm³ 的干涉。
 - [原生与 STEP 回读](output/reports/export_roundtrip_audit.json)：两份原生工程和三份 STEP 通过，实体逐一匹配，数值积分差异进一步通过双向布尔差集核对。
 - [图纸尺寸](output/reports/drawing_checks.json) · [原生图页](output/reports/native_drawings_audit.json) · [保存后重开](output/reports/native_drawings_reload.json)：12 页及 14 个原生尺寸引用。
 - [图册视觉验收](output/reports/visual_acceptance.json) · [独立复核](output/reports/independent_pdf_review.json) · [网页检查](output/reports/web_preview_checks.json)。

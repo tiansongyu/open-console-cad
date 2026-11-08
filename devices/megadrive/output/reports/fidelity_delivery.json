@@ -1,0 +1,65 @@
+{
+  "device": "megadrive",
+  "iteration": 14,
+  "date": "2026-11-08",
+  "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+  "physical_components": 825,
+  "solids": 1205,
+  "replaced_parts": 26,
+  "checks": {
+    "strict_geometry": {
+      "report": "fidelity_geometry.json",
+      "passed": true,
+      "sha256": "7ac4c9cd2162c1473127767de07717cba9ab6623950ccfd546adb3d1e1a45fdf"
+    },
+    "interference": {
+      "report": "fidelity_interference.json",
+      "passed": true,
+      "sha256": "9509c3886cd0490c1990a14a6caca3acb5aadb0cfae1d81cd8408940c11c7d58"
+    },
+    "step_roundtrip": {
+      "report": "export_roundtrip_audit.json",
+      "passed": true,
+      "sha256": "4869814541286d9edb6e8daa528ed3b13e045d8193d47d1cec4a5bf52b8d4283"
+    },
+    "pdf_visual": {
+      "report": "fidelity_pdf_review.json",
+      "passed": true,
+      "sha256": "b10ba1e1b2ea2da1e66255c466ea25e5468ec76c237839080075f0fac2047e92"
+    },
+    "native_drawings": {
+      "report": "native_drawings_audit.json",
+      "passed": true,
+      "sha256": "bf929ea2a24b784655158976d1b4d4e4e5c190944db4e1839ff7c3d3406e6445"
+    },
+    "native_drawings_reload": {
+      "report": "native_drawings_reload.json",
+      "passed": true,
+      "sha256": "86bbb67e8b35c43e41e97ac410154c4369ba92ee96c9e036ad4b292c1d1cdbed"
+    },
+    "glb": {
+      "report": "fidelity_glb_validation.json",
+      "passed": true,
+      "sha256": "32453580a03328e664c54aab9f564bdd2dedac309f52b6dd456983800e38c735"
+    },
+    "web_viewer": {
+      "report": "fidelity_web_checks.json",
+      "passed": true,
+      "sha256": "5f9187a6858420949a563b736326c782cbd321dcf84dcc0f30705e4b354d70e8"
+    }
+  },
+  "web_source_and_hash_match": true,
+  "gzip_lossless": true,
+  "full_source_rebuild_executed": false,
+  "execution_basis": "Appended stage14 to saved stage13 native history. Existing source rebuild macro now includes stage14; not rerun from empty document.",
+  "factory_match_verified": false,
+  "remaining_uncertainties": [
+    "Connector manufacturer reference establishes compatible interface, not original SEGA OEM supplier.",
+    "Outer contact radius scaled from drawing; socket clearances and axial geometry remain approximate.",
+    "Existing shell, PCB and accessory details retain photographic study dimensions."
+  ],
+  "historical_report_note": "Prior rebuild, live-web and visual reports retain historical flag and original source SHA.",
+  "passed": true,
+  "repository_checks": "passed",
+  "production_build": "passed; existing bundle-size advisory"
+}

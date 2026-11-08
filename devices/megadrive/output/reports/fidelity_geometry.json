@@ -1,0 +1,63 @@
+{
+  "device": "megadrive",
+  "iteration": 14,
+  "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+  "module_sha256": {
+    "tools/cadlib/fidelity_megadrive.py": "bb57a77900b55f90c6b7fcdb7ad8c8e8570ed569ea081e1592e8c031f501dbf7",
+    "tools/cadlib/megadrive.py": "a716a81b5704e0a1a25910036d5750c94ee0d36762c22fd2c8fad1c5042c2ed9",
+    "devices/megadrive/scripts/iter14_din8_262_contact_pattern_and_key.py": "b0f2e259b314cdfd6771e1bafc505d95f08aeef47fd5edeba024d657f13aef01"
+  },
+  "checks": {
+    "strict_brep": true,
+    "preserved_ids": true,
+    "preserved_numbers": true,
+    "pin_diameter_0": true,
+    "pin_diameter_1": true,
+    "pin_diameter_2": true,
+    "pin_diameter_3": true,
+    "pin_diameter_4": true,
+    "pin_diameter_5": true,
+    "pin_diameter_6": true,
+    "pin_diameter_7": true,
+    "offset_contact": true,
+    "seven_outer_contacts": true,
+    "male_barrel_diameter": true
+  },
+  "strict_brep_errors": [],
+  "contact_centres_mm": [
+    [
+      -3.2075157159467835,
+      2.7882508732096554
+    ],
+    [
+      -4.25,
+      0.0
+    ],
+    [
+      -3.005203820042823,
+      -3.0052038200428264
+    ],
+    [
+      0.0,
+      -4.25
+    ],
+    [
+      3.005203820042823,
+      -3.005203820042828
+    ],
+    [
+      4.25,
+      0.0
+    ],
+    [
+      3.2075157159467835,
+      2.7882508732096554
+    ],
+    [
+      0.0,
+      0.9000000000000004
+    ]
+  ],
+  "passed": true,
+  "factory_match_verified": false
+}

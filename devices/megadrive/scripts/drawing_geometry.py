@@ -17,11 +17,11 @@ s=d.Sheet(1,'初代日版主机总装与尺寸参考',['HAA-2510 大机型保留
 v=s.view_fit('ConsoleIsometric',outer,(17,30,172,155),(-.7,-1.2,1.5));caption(s,v,'日版 Model 1 外观',205)
 v=s.view_fit('ConsoleTop',outer,(220,33,157,149),(0,0,1));d.dimension_box(s,v,['LowerHousing'],'x',20);d.dimension_box(s,v,['LowerHousing'],'y',207);caption(s,v,'底壳宽度与前后深度',205);s.save()
 
-s=d.Sheet(2,'前后接口与接点细节',['前方包含两只 DE-9 手柄接口和耳机口，后方保留扩展控制接口、音视频与电源输入。','金属外壳、绝缘支架与触点分别记录，接口孔位和配合尺寸为当前学习模型的近似值。'])
+s=d.Sheet(2,'前后接口与接点细节',['前方包含两只 DE-9 手柄接口和耳机口，后方保留扩展控制接口、音视频与电源输入。','AV 口采用 262° 七外一内触点与顶部定位槽；中心触点偏移 0.9 mm，孔距半径及插座间隙仍为近似值。'])
 v=s.view_fit('ConsoleFront',outer,(22,29,168,68),(0,-1,0),up);d.dimension_box(s,v,outer,'y',18);caption(s,v,'正面接口与模型高度',115)
 v=s.view_fit('ConsoleRear',outer,(220,29,160,68),(0,1,0),up);caption(s,v,'后面板原始接口',115)
 v=s.view_fit('ControllerDE9',starts('PadPort1Shield','PadPort1Insert','PadPort1Pin','PadPort1Tab'),(26,150,104,44),(0,-1,0),up);d.dimension_box(s,v,['PadPort1Shield'],'x',139);caption(s,v,'DE-9 手柄端口',207)
-v=s.view_fit('DINAV',starts('AVBarrel','AVInsulator','AVInsert','AVContact'),(165,145,65,53),(0,1,0),up);caption(s,v,'八接点 DIN 音视频口',207)
+v=s.view_fit('DINAV',starts('AVBarrel','AVInsulator','AVInsert','AVContact'),(165,145,65,53),(0,1,0),up);caption(s,v,'DIN-8 262° 音视频口',207)
 v=s.view_fit('PowerDC',starts('PowerDC','PowerCenter'),(286,146,78,49),(0,1,0),up);caption(s,v,'同轴 DC 电源口',207);s.save()
 
 s=d.Sheet(3,'初代 SJ-3500 三键手柄外观',['初代手柄采用双握柄弧形壳体、浮动方向圆盘和斜列 ABC 三个动作键。','上下壳保留原生曲线剖面，蓝色 START 与六处后壳固定均独立建模。'])
@@ -58,7 +58,7 @@ v=s.view_fit('BlankCart',[k for k in starts('Cart') if C[k].Assembly=='Accessori
 v=s.view_fit('AdapterExternal',['AdapterLower','AdapterUpper','AdapterLabel','AdapterMark','AdapterStudyMark']+starts('ACBlade'),(233,31,135,72),(.5,-.8,1.4));caption(s,v,'外接变压器式适配器',126)
 v=s.view_fit('AdapterInternal',['AdapterLower','TransformerCore','TransformerBobbin'],(249,153,101,43),(.6,-.8,1.5));caption(s,v,'变压器内部学习示意',211);s.save()
 
-s=d.Sheet(10,'原始连接线与插头结构',['原始单声道连接方式使用 DIN 转双 RCA，主机电源采用独立 DC 适配器。','线缆由圆弧与直线扫掠，展示的是收纳位置和短线段，不代表原装线长。'])
+s=d.Sheet(10,'原始连接线与插头结构',['原始单声道连接方式使用 DIN 转双 RCA，主机电源采用独立 DC 适配器。','DIN 插针直径 1.5 mm、配合外径 13.2 mm 参考兼容连接器图纸；护套、轴向结构与展示线长仍为近似值。'])
 keys=starts('AVCable','AVSplit','AVBranch','DINGrip','DINShield','DINInsert','DINPin','RCAGrip','RCAShield','RCAPin')
 v=s.view_fit('MonoAVLead',keys,(22,30,170,142),(0,0,1));caption(s,v,'DIN 转音频 / 视频双 RCA',198)
 v=s.view_fit('PadPlugDetail',starts('PadPlug'),(239,28,127,67),(.5,-.8,1.3),up);caption(s,v,'手柄 DE-9 母头与护套',116)

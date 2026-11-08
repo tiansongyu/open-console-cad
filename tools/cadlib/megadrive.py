@@ -470,3 +470,7 @@ def stage13(m):
 
 
 STAGES={1:stage01,2:stage02,3:stage03,4:stage04,5:stage05,6:stage06,7:stage07,8:stage08,9:stage09,10:stage10,11:stage11,12:stage12,13:stage13}
+
+# Keep the source rebuild consistent with the delivered interface refinement.
+from .fidelity_megadrive import stage14
+STAGES[14] = stage14

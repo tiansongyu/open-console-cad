@@ -1,0 +1,81 @@
+{
+  "device": "megadrive",
+  "passed": true,
+  "views": [
+    {
+      "view": "assembled",
+      "components": 719,
+      "passed": true
+    },
+    {
+      "view": "console",
+      "components": 614,
+      "passed": true
+    },
+    {
+      "view": "internal",
+      "components": 605,
+      "passed": true
+    },
+    {
+      "view": "exploded",
+      "components": 614,
+      "passed": true
+    },
+    {
+      "view": "controller",
+      "components": 105,
+      "passed": true
+    },
+    {
+      "view": "mechanism",
+      "components": 93,
+      "passed": true
+    },
+    {
+      "view": "mainboard",
+      "components": 418,
+      "passed": true
+    },
+    {
+      "view": "cardreader",
+      "components": 106,
+      "passed": true
+    },
+    {
+      "view": "cartridge",
+      "components": 73,
+      "passed": true
+    },
+    {
+      "view": "accessories",
+      "components": 106,
+      "passed": true
+    },
+    {
+      "view": "fullkit",
+      "components": 825,
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "id": "download-cad",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/megadrive/output/MegaDrive_Complete.FCStd"
+    },
+    {
+      "id": "download-pdf",
+      "url": "https://github.com/tiansongyu/open-console-cad/raw/refs/heads/main/devices/megadrive/output/drawings/MegaDrive_Drawings.pdf"
+    },
+    {
+      "id": "download-glb",
+      "url": "http://127.0.0.1:5174/models/megadrive.glb"
+    }
+  ],
+  "gallery_images": 5,
+  "slider_keyboard": true,
+  "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+  "glb_sha256": "304941f9026ecfbb2dcb5d5bd248b0afb447d7a53f1d5ff75b9eaf716a873b33",
+  "test_date": "2026-11-08",
+  "scope": "All 11 configured viewer modes, visible part counts, gallery images, download targets, keyboard explosion slider"
+}

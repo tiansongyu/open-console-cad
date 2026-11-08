@@ -120,7 +120,8 @@
         "No new whole-collection browser or responsive-layout audit in this device pass."
       ],
       "pass_completed": true,
-      "factory_equivalence_verified": false
+      "factory_equivalence_verified": false,
+      "last_pushed_commit": "5ab61f2"
     },
     {
       "order": 3,
@@ -166,8 +167,8 @@
       "order": 4,
       "device": "psv",
       "model": "PCH-1000 Wi-Fi OLED",
-      "status": "pending",
-      "current_step": null,
+      "status": "in_progress",
+      "current_step": "candidate_geometry_and_reference_validation",
       "baseline": {
         "iterations": 15,
         "physical_components": 386,
@@ -662,8 +663,8 @@
       "order": 17,
       "device": "megadrive",
       "model": "HAA-2510 · 初代日版",
-      "status": "in_progress",
-      "current_step": "candidate_geometry_and_reference_validation",
+      "status": "completed",
+      "current_step": "validated_iteration_14",
       "baseline": {
         "iterations": 13,
         "physical_components": 825,
@@ -691,11 +692,25 @@
           "Schematic internal layout": 688
         }
       },
-      "reference_evidence": [],
-      "changes": [],
-      "validation": {},
-      "remaining_uncertainties": [],
-      "pass_completed": false,
+      "reference_evidence": [
+        "devices/megadrive/references/fidelity_din8_262.json"
+      ],
+      "changes": [
+        "Corrected original keyed DIN-8 262-degree socket and cable plug to seven outer contacts plus an offset central contact",
+        "Corrected documented mating dimensions and keying",
+        "Repaired five pre-existing strict BRep issues without visible shape change"
+      ],
+      "validation": {
+        "report": "devices/megadrive/output/reports/fidelity_delivery.json",
+        "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+        "passed": true
+      },
+      "remaining_uncertainties": [
+        "Connector manufacturer reference establishes compatible interface, not original SEGA OEM supplier.",
+        "Outer contact radius scaled from drawing; socket clearances and axial geometry remain approximate.",
+        "Existing shell, PCB and accessory details retain photographic study dimensions."
+      ],
+      "pass_completed": true,
       "factory_equivalence_verified": false
     },
     {
