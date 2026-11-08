@@ -1,0 +1,796 @@
+{
+  "commit": "387285309847b10333a200fb1188aff63afa3149",
+  "complete": true,
+  "method": "Read-only saved BRep Shape.check(True) in a bounded subprocess; immutable Git snapshot",
+  "timeout_seconds_per_component": 20,
+  "factory_equivalence_verified": false,
+  "devices": [
+    {
+      "device": "switch",
+      "source": "devices/switch/output/Switch_Complete.FCStd",
+      "source_sha256": "14828bdf3384e444fe4aace0ac22fd01998e42ea08ac28fcd809c518441a1d21",
+      "complete": true,
+      "attempted": 654,
+      "completed_checks": 652,
+      "errors": [
+        {
+          "part_id": "TegraMark",
+          "name": "TegraMark",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "JoyLHapticCoil",
+          "name": "JoyLHapticCoil",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "JoyRHapticCoil",
+          "name": "JoyRHapticCoil",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "SpeakerLHousing",
+          "name": "SpeakerLHousingRefined001",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "SpeakerRHousing",
+          "name": "SpeakerRHousingRefined001",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "JoyLRear",
+          "name": "JoyLRearRefined014",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "JoyRRear",
+          "name": "JoyRRearRefined017",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "JoyLFront",
+          "name": "JoyLFrontRefined013",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "JoyRFront",
+          "name": "JoyRFrontRefined013",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        }
+      ],
+      "physical_components": 654,
+      "elapsed_seconds": 80.84576082229614,
+      "passed": false
+    },
+    {
+      "device": "switch2",
+      "source": "devices/switch2/output/Switch2_Complete.FCStd",
+      "source_sha256": "6164a9de7704e604dcc50229058c5ffeb4a36a21c1a22fcea9506692ad6ad6d6",
+      "complete": true,
+      "attempted": 807,
+      "completed_checks": 805,
+      "errors": [
+        {
+          "part_id": "RearNintendoMark",
+          "name": "RearNintendoMark001",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "TabletRear",
+          "name": "TabletRearRefined007",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "JoyLHapticCoil",
+          "name": "JoyLHapticCoil",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "JoyRHapticCoil",
+          "name": "JoyRHapticCoil",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "DockLogo",
+          "name": "DockLogo",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "DockFront",
+          "name": "DockFrontRefined",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "DockSpring1",
+          "name": "DockSpring1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "DockSpring2",
+          "name": "DockSpring2",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "DockSpring3",
+          "name": "DockSpring3",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "DockSpring4",
+          "name": "DockSpring4",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "GripLogo",
+          "name": "GripLogo",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "GripBridge",
+          "name": "GripBridgeRefined005",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Compound: BOPAlgo OperationAborted\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "StrapLCord",
+          "name": "StrapLCord",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "StrapRCord",
+          "name": "StrapRCord",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "BatterySocket",
+          "name": "BatterySocketRefined",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "StrapLFrame",
+          "name": "StrapLFrameRefined004",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "StrapRFrame",
+          "name": "StrapRFrameRefined004",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        }
+      ],
+      "physical_components": 807,
+      "elapsed_seconds": 103.28467273712158,
+      "passed": false
+    },
+    {
+      "device": "3ds",
+      "source": "devices/3ds/output/Nintendo3DS_Complete.FCStd",
+      "source_sha256": "806a2ab5a510c4aa1ff4f8070085de3f9228becdb92583150013085009786a8d",
+      "complete": true,
+      "attempted": 329,
+      "completed_checks": 329,
+      "errors": [
+        {
+          "part_id": "CradleSpring0",
+          "name": "CradleSpring0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "CradleSpring1",
+          "name": "CradleSpring1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        }
+      ],
+      "physical_components": 329,
+      "elapsed_seconds": 10.818543672561646,
+      "passed": false
+    },
+    {
+      "device": "nds",
+      "source": "devices/nds/output/NintendoDS_Complete.FCStd",
+      "source_sha256": "46506248345716e88138a3b3f0f7323c4d97ab91bd615a512b4fb355f2c6c660",
+      "complete": true,
+      "attempted": 321,
+      "completed_checks": 321,
+      "errors": [
+        {
+          "part_id": "RAMLabel",
+          "name": "RAMLabel",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        }
+      ],
+      "physical_components": 321,
+      "elapsed_seconds": 10.766643047332764,
+      "passed": false
+    },
+    {
+      "device": "psp",
+      "source": "devices/psp/output/PSP1000_Complete.FCStd",
+      "source_sha256": "d71f8be7532b3e6093e4f33dce2dd069413875acf61a80bdab79661ddfeb07d4",
+      "complete": true,
+      "attempted": 350,
+      "completed_checks": 350,
+      "errors": [
+        {
+          "part_id": "RAMMark",
+          "name": "RAMMark",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "PerimeterTrim",
+          "name": "PerimeterTrimCut",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "MainFrame",
+          "name": "MainFrameCut029",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        }
+      ],
+      "physical_components": 350,
+      "elapsed_seconds": 23.488847255706787,
+      "passed": false
+    },
+    {
+      "device": "psv",
+      "source": "devices/psv/output/PSVita_Complete.FCStd",
+      "source_sha256": "0948aaf0896f26743fcebb73e767f6497509584c1eae921acf9a796ded2e770d",
+      "complete": true,
+      "attempted": 369,
+      "completed_checks": 369,
+      "errors": [
+        {
+          "part_id": "CPUMark",
+          "name": "CPUMark",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        }
+      ],
+      "physical_components": 369,
+      "elapsed_seconds": 21.437429428100586,
+      "passed": false
+    },
+    {
+      "device": "steamdeck",
+      "source": "devices/steamdeck/output/SteamDeck_Complete.FCStd",
+      "source_sha256": "830f4b812b63e8628caa4379046c198461edff8d3f4d369f328dddeda7c5ce24",
+      "complete": true,
+      "attempted": 500,
+      "completed_checks": 498,
+      "errors": [
+        {
+          "part_id": "RearPaddle-1_0",
+          "name": "RearPaddle_1_0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RearPaddle-1_1",
+          "name": "RearPaddle_1_1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RearPaddle1_0",
+          "name": "RearPaddle1_0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RearPaddle1_1",
+          "name": "RearPaddle1_1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RearPlate",
+          "name": "RearPlateCut010",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n"
+        },
+        {
+          "part_id": "RAMMark0",
+          "name": "RAMMark0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "RAMMark1",
+          "name": "RAMMark1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "RAMMark2",
+          "name": "RAMMark2",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "RAMMark3",
+          "name": "RAMMark3",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "TriggerSpring-1",
+          "name": "TriggerSpring_1",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "TriggerSpring1",
+          "name": "TriggerSpring1",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "RearGrip-1",
+          "name": "RearGrip_1Cut006",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RearGrip1",
+          "name": "RearGrip1Cut006",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        }
+      ],
+      "physical_components": 500,
+      "elapsed_seconds": 63.27547812461853,
+      "passed": false
+    },
+    {
+      "device": "gameboy",
+      "source": "devices/gameboy/output/GameBoy_Complete.FCStd",
+      "source_sha256": "a8c3adf2c8ede383d21c6863a61415319c32aa56cde5caf3cd3b27a827e0b21c",
+      "complete": true,
+      "attempted": 410,
+      "completed_checks": 410,
+      "errors": [
+        {
+          "part_id": "BatteryLEDMark",
+          "name": "BatteryLEDMark",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "AAContactSpring0",
+          "name": "AAContactSpring0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "AAContactSpring1",
+          "name": "AAContactSpring1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "AAContactSpring2",
+          "name": "AAContactSpring2",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "AAContactSpring3",
+          "name": "AAContactSpring3",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "VRAMText",
+          "name": "VRAMText",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "WRAMText",
+          "name": "WRAMText",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\n"
+        }
+      ],
+      "physical_components": 410,
+      "elapsed_seconds": 54.82509517669678,
+      "passed": false
+    },
+    {
+      "device": "famicom",
+      "source": "devices/famicom/output/Famicom_Complete.FCStd",
+      "source_sha256": "dbc6daec9849c5953052ceaba128d21315065fb798b3d50efb12ab91a9bc8848",
+      "complete": true,
+      "attempted": 634,
+      "completed_checks": 631,
+      "errors": [
+        {
+          "part_id": "ControllerCable1",
+          "name": "ControllerCable1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "ControllerCable2",
+          "name": "ControllerCable2",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "EjectReturnSpring",
+          "name": "EjectReturnSpring",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "RFCoilWinding0",
+          "name": "RFCoilWinding0",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "RFCoilWinding1",
+          "name": "RFCoilWinding1",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "P1CableGrommet",
+          "name": "P1CableGrommetCut",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "P2CableGrommet",
+          "name": "P2CableGrommetCut",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "PowerHarness0",
+          "name": "PowerHarness0",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "PowerHarness1",
+          "name": "PowerHarness1",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "PowerHarness2",
+          "name": "PowerHarness2",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "AdapterCable",
+          "name": "AdapterCable",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RFInputCable",
+          "name": "RFInputCable",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RFTVCable",
+          "name": "RFTVCable",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "Mainboard",
+          "name": "MainboardCut005",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\n"
+        },
+        {
+          "part_id": "PowerSwitchBody",
+          "name": "PowerSwitchBodyCut",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RFShield",
+          "name": "RFShieldCut",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        }
+      ],
+      "physical_components": 634,
+      "elapsed_seconds": 110.16303563117981,
+      "passed": false
+    },
+    {
+      "device": "atari2600",
+      "source": "devices/atari2600/output/Atari2600_Complete.FCStd",
+      "source_sha256": "0d72d298190bdda4598a86b1069afe826cb2231b20e6c99aa55f1dcb2f5ec25d",
+      "complete": true,
+      "attempted": 684,
+      "completed_checks": 683,
+      "errors": [
+        {
+          "part_id": "RFCable",
+          "name": "RFCable",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "SwitchReturnSpring4",
+          "name": "SwitchReturnSpring4",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "SwitchReturnSpring5",
+          "name": "SwitchReturnSpring5",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Face: BOPAlgo GeomAbs_C0\n"
+        },
+        {
+          "part_id": "RFCoilWinding",
+          "name": "RFCoilWinding",
+          "status": "timeout",
+          "error": "Strict BOP check exceeded 20.0 seconds; not accepted as passed"
+        },
+        {
+          "part_id": "CartROMMark",
+          "name": "CartROMMark",
+          "status": "failed",
+          "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Vertex: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Face: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\n"
+        }
+      ],
+      "physical_components": 684,
+      "elapsed_seconds": 72.22264289855957,
+      "passed": false
+    },
+    {
+      "device": "megadrive",
+      "source": "devices/megadrive/output/MegaDrive_Complete.FCStd",
+      "source_sha256": "c7df3bed3ccba59875d9c2899a32d3739cda1e837ef8d0119627ebe67044ce72",
+      "complete": true,
+      "attempted": 825,
+      "completed_checks": 825,
+      "errors": [],
+      "physical_components": 825,
+      "elapsed_seconds": 21.24091410636902,
+      "passed": true
+    },
+    {
+      "device": "n64",
+      "source": "devices/n64/output/Nintendo64_Complete.FCStd",
+      "source_sha256": "b1f4076977f001afb08ed05d12f47cec55f2ba8c8119acf78b6b8cbe0449f1cd",
+      "complete": true,
+      "attempted": 747,
+      "completed_checks": 747,
+      "errors": [],
+      "physical_components": 747,
+      "elapsed_seconds": 21.709477186203003,
+      "passed": true
+    },
+    {
+      "device": "wii",
+      "source": "devices/wii/output/Wii_Complete.FCStd",
+      "source_sha256": "562eade4da624cd26a1c994e22e509a0b498b1e3eb30ca25588f46c0474c049c",
+      "complete": true,
+      "attempted": 654,
+      "completed_checks": 654,
+      "errors": [],
+      "physical_components": 654,
+      "elapsed_seconds": 17.08487629890442,
+      "passed": true
+    },
+    {
+      "device": "wiiu",
+      "source": "devices/wiiu/output/WiiU_Complete.FCStd",
+      "source_sha256": "de72dfca9df092df33c1165737b1b668f7202aa70af9601b97f06c4a7f28180f",
+      "complete": true,
+      "attempted": 707,
+      "completed_checks": 707,
+      "errors": [],
+      "physical_components": 707,
+      "elapsed_seconds": 24.009443998336792,
+      "passed": true
+    },
+    {
+      "device": "saturn",
+      "source": "devices/saturn/output/Saturn_Complete.FCStd",
+      "source_sha256": "5cc505b1e54c205aa9531b95a37e27b1a90da245c5bcb73071ced513ed167020",
+      "complete": true,
+      "attempted": 715,
+      "completed_checks": 715,
+      "errors": [],
+      "physical_components": 715,
+      "elapsed_seconds": 50.86137127876282,
+      "passed": true
+    },
+    {
+      "device": "ps1",
+      "source": "devices/ps1/output/PlayStation_Complete.FCStd",
+      "source_sha256": "9ac44a577d4bc526893394bb974d772868f8214c4c548f5b88d47f15aa68770b",
+      "complete": true,
+      "attempted": 929,
+      "completed_checks": 929,
+      "errors": [],
+      "physical_components": 929,
+      "elapsed_seconds": 78.0899007320404,
+      "passed": true
+    },
+    {
+      "device": "ps2",
+      "source": "devices/ps2/output/PlayStation2_Complete.FCStd",
+      "source_sha256": "964c02f17ff505059e03e253cabea7446e240771d36a0b5e134ac5c3b33d3c97",
+      "complete": true,
+      "attempted": 1352,
+      "completed_checks": 1352,
+      "errors": [],
+      "physical_components": 1352,
+      "elapsed_seconds": 81.49369645118713,
+      "passed": true
+    },
+    {
+      "device": "ps4",
+      "source": "devices/ps4/output/PlayStation4_Complete.FCStd",
+      "source_sha256": "9b363ce5e37b72b8942d4702ff9387077237914e2dc54ec71e6b74d3d558d170",
+      "complete": true,
+      "attempted": 1039,
+      "completed_checks": 1039,
+      "errors": [],
+      "physical_components": 1039,
+      "elapsed_seconds": 50.17548441886902,
+      "passed": true
+    },
+    {
+      "device": "ps5",
+      "source": "devices/ps5/output/PlayStation5_Complete.FCStd",
+      "source_sha256": "ff4f1149d9d41130dcce413d2b439d98b892fa574a55753848ecd216ea38a323",
+      "complete": true,
+      "attempted": 1635,
+      "completed_checks": 1635,
+      "errors": [],
+      "physical_components": 1635,
+      "elapsed_seconds": 36.084003925323486,
+      "passed": true
+    },
+    {
+      "device": "ps3",
+      "source": "devices/ps3/output/PlayStation3_Complete.FCStd",
+      "source_sha256": "b73fca35dddd7c843fb3e79a403fb4b864b01cced4ef7d1060186b700c93a679",
+      "complete": true,
+      "attempted": 1592,
+      "completed_checks": 1592,
+      "errors": [],
+      "physical_components": 1592,
+      "elapsed_seconds": 34.65967154502869,
+      "passed": true
+    },
+    {
+      "device": "xbox360",
+      "source": "devices/xbox360/output/Xbox360_Complete.FCStd",
+      "source_sha256": "2cff66ec4845b17d6f941d2dbadca2738ebc792c080498e0d9d9054d3e00b706",
+      "complete": true,
+      "attempted": 2005,
+      "completed_checks": 2005,
+      "errors": [],
+      "physical_components": 2005,
+      "elapsed_seconds": 64.67994093894958,
+      "passed": true
+    },
+    {
+      "device": "gba",
+      "source": "devices/gba/output/GameBoyAdvance_Complete.FCStd",
+      "source_sha256": "3d8b2b7a44c39d27d1c9a9678a774d795f1d3725e4d05cb04b676ab6606496ee",
+      "complete": true,
+      "attempted": 779,
+      "completed_checks": 779,
+      "errors": [],
+      "physical_components": 779,
+      "elapsed_seconds": 21.835769176483154,
+      "passed": true
+    },
+    {
+      "device": "xboxone",
+      "source": "devices/xboxone/output/XboxOne_Complete.FCStd",
+      "source_sha256": "c35079ef73ef1ed8d7d00bca43f1a0d2c608529ced960459721aeeeebe59c433",
+      "complete": true,
+      "attempted": 1791,
+      "completed_checks": 1791,
+      "errors": [],
+      "physical_components": 1791,
+      "elapsed_seconds": 37.92627453804016,
+      "passed": true
+    },
+    {
+      "device": "sfc",
+      "source": "devices/sfc/output/SuperFamicom_Complete.FCStd",
+      "source_sha256": "777263617704dc107ebb5742f8bcd1b00d38c6f5b52ab473d639a1b46718ecc7",
+      "complete": true,
+      "attempted": 1918,
+      "completed_checks": 1918,
+      "errors": [],
+      "physical_components": 1918,
+      "elapsed_seconds": 44.448604106903076,
+      "passed": true
+    },
+    {
+      "device": "gamewatch",
+      "source": "devices/gamewatch/output/GameWatchDK52_Complete.FCStd",
+      "source_sha256": "3bc143d437c1eed20bda525ca0009712d281fbb557712a563baf16c6fd18e035",
+      "complete": true,
+      "attempted": 592,
+      "completed_checks": 592,
+      "errors": [],
+      "physical_components": 592,
+      "elapsed_seconds": 16.374674320220947,
+      "passed": true
+    },
+    {
+      "device": "seriesx",
+      "source": "devices/seriesx/output/XboxSeriesX_Complete.FCStd",
+      "source_sha256": "df8e3f8626cf98426b5f83e9c256299f7f17e7004851fd6d9c7698df2f56b036",
+      "complete": true,
+      "attempted": 1104,
+      "completed_checks": 1104,
+      "errors": [],
+      "physical_components": 1104,
+      "elapsed_seconds": 24.788738250732422,
+      "passed": true
+    },
+    {
+      "device": "xbox",
+      "source": "devices/xbox/output/OriginalXbox_Complete.FCStd",
+      "source_sha256": "3bd1b77255a492610c6951b4c9d97b54354e411161860db1f9ceb86be30ee9b3",
+      "complete": true,
+      "attempted": 978,
+      "completed_checks": 978,
+      "errors": [],
+      "physical_components": 978,
+      "elapsed_seconds": 22.016256093978882,
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "summary": {
+    "devices": 27,
+    "physical_components": 24420,
+    "devices_fully_passed": 17,
+    "failed_component_checks": 64,
+    "inconclusive_component_checks": 10
+  },
+  "script_sha256": "a615fcd5040677eb3b9b9547b2d67bbcca3f41081c084ff2c3313289e64001a1"
+}
